@@ -10,7 +10,7 @@ body {
 .banner {
     background-color: #34495e;
     color: #fff;
-    padding: 15px; /* Halvert fra 30px til 15px */
+    padding: 15px;
     text-align: center;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
@@ -22,7 +22,7 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    margin: 40px;
+    margin: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
@@ -44,8 +44,9 @@ body {
 .profiles {
     display: flex;
     justify-content: space-between;
-    padding: 20px; /* Halvert fra 40px til 20px */
-    margin: 40px;
+    flex-wrap: wrap; /* Legger til flex wrap for mobilvennlighet */
+    padding: 20px;
+    margin: 20px;
 }
 
 .profile {
@@ -56,7 +57,7 @@ body {
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .profile img {
@@ -81,9 +82,30 @@ footer {
     background-color: #34495e;
     color: #fff;
     font-size: 0.9em;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 footer p {
     margin: 5px 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .concept {
+        flex-direction: column; /* Vertikale retning for mindre skjermer */
+        padding: 15px;
+    }
+    
+    .concept-content, .concept-image {
+        width: 100%; /* Full bredde for små skjermer */
+        margin-bottom: 20px;
+    }
+
+    .profiles {
+        justify-content: center; /* Senterer profilene på mindre skjermer */
+    }
+
+    .profile {
+        width: 90%; /* Full bredde for profiler på små skjermer */
+    }
 }
