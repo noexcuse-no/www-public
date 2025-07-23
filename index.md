@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "No Excuse AS"
+tagline: "No Excuse - gj&oslash;r det ordentlig!"
 description: "Forbedrer internkultur og kommunikasjon i bedrifter."
 
 profiles:
