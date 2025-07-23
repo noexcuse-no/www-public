@@ -194,3 +194,9 @@ button#dark-mode-toggle:hover {
     padding: 15px;
     text-align: center;
 }
+
+.logo {
+    max-width: 100px; /* Eller en annen passende størrelse */
+    height: auto;
+    margin-bottom: 10px; /* For litt mellomrom under logoen */
+}
