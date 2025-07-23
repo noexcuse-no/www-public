@@ -37,7 +37,6 @@
             
             <div class="fullscreen" id="profile-detail">
                 <button class="close-button" aria-label="Close">&#10006;</button>
-                <!-- Profilkortets bakside -->
                 <div class="profile-detail-content">
                     <div class="profile-header">
                         <img src="#" alt="Profilbilde" id="profile-image">
@@ -105,34 +104,6 @@
     </footer>
 
     <script src="{{ '/assets/scripts/dark-mode-toggle.js' | relative_url }}"></script>
-    <!-- Oppdatert profil-kort script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const profiles = document.querySelectorAll('.profile');
-            const profileDetail = document.getElementById('profile-detail');
-            const profileImage = document.getElementById('profile-image');
-            const profileName = document.getElementById('profile-name');
-            const profileDetailText = document.getElementById('profile-detail-text');
-            const closeButton = document.querySelector('.close-button');
-
-            profiles.forEach(profile => {
-                profile.addEventListener('click', function() {
-                    const imageSrc = profile.querySelector('img').src;
-                    const name = profile.querySelector('h3').textContent;
-                    const description = profile.getAttribute('data-description');
-
-                    profileImage.src = imageSrc;
-                    profileName.textContent = name;
-                    profileDetailText.textContent = description;
-
-                    profileDetail.classList.add('active');
-                });
-            });
-
-            closeButton.addEventListener('click', function() {
-                profileDetail.classList.remove('active');
-            });
-        });
-    </script>
+    <script src="{{ '/assets/scripts/profile-card.js' | relative_url }}"></script>
 </body>
 </html>
