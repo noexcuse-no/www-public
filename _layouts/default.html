@@ -16,10 +16,15 @@
     <header>
         <div class="banner">
             <h1>{{ page.tagline }}</h1>
+            <nav>
+                <a href="#profiles">HVEM</a>
+                <a href="#products">HVA</a>
+                <a href="#podcast">HVORFOR</a>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="profiles">
+        <section id="profiles" class="profiles">
             {% for profile in site.profiles %}
             <div class="profile" data-description="{{ profile.content | strip_newlines | escape }}">
                 <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
@@ -29,6 +34,16 @@
                 <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
             </div>
             {% endfor %}
+        </section>
+        <section id="products" class="products">
+            <h2>Produkter</h2>
+            <p>Her finner du informasjon om våre produkter...</p>
+            <!-- Legg inn mer innhold relatert til produkter her -->
+        </section>
+        <section id="podcast" class="podcast">
+            <h2>Podcast</h2>
+            <p>Lytt til vår podcast...</p>
+            <!-- Legg inn mer innhold relatert til podcast her -->
         </section>
     </main>
     <footer>
