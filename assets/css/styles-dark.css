@@ -1,0 +1,9 @@
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+.dark-mode .banner, 
+.dark-mode footer {
+    background-color: #1a1a1a;
+}
