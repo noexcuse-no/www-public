@@ -13,7 +13,7 @@ html, body {
 .banner {
     background-color: #3a4e58;
     color: #fff;
-    height: 20vh; 
+    height: auto; /* Justert for å være auto og bruke innholdets størrelse */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,10 +21,11 @@ html, body {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding: 10px; /* Redusert padding for å minimere plass */
 }
 
 .banner nav {
-    margin-top: 10px;
+    margin-top: 5px; /* Redusert margin for mindre mellomrom */
     font-size: 0.8em;
 }
 
@@ -42,21 +43,25 @@ main {
     flex: 1;
 }
 
-.profiles, .products, .podcast {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin: 20px;
-    /* Bakgrunnsfarge fjernet
-    background-color: #fff; 
-    */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-}
-
 .profiles {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+    /* Bakgrunnsfarge og kantlinje fjernet
+    background-color: #fff; 
+    border-radius: 15px;
+    */
+}
+
+.products, .podcast {
+    padding: 20px;
+    margin: 20px;
+    /* Bakgrunnsfarge og kantlinje fjernet
+    background-color: #fff; 
+    border-radius: 15px;
+    */
 }
 
 .profile {
@@ -64,9 +69,7 @@ main {
     background-color: #fff;
     padding: 15px;
     text-align: center;
-    border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
     margin-bottom: 10px;
     min-height: 300px; 
     cursor: pointer;
