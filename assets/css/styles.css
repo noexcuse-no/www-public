@@ -10,10 +10,13 @@ body {
 .banner {
     background-color: #3a4e58; /* Mørk blå hovedfarge */
     color: #fff;
-    padding: 7px; /* Halvert fra 15px til 7px */
-    text-align: center;
+    height: 15vh; /* Sett høyden til 15% av visningens høyde */
+    display: flex; /* Bruk flex for å sentrere innholdet */
+    justify-content: center;
+    align-items: center;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
+    padding: 0; /* Redusert padding for bedre plassutnyttelse */
 }
 
 .concept {
@@ -45,29 +48,30 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .profile {
     width: 40%;
     background-color: #fff;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    height: calc((100vh - 15vh - 60px) / 2);
 }
 
 .profile img {
-    max-width: 70%;
+    max-width: 35%; /* Halvparten av tidligere bredde */
     height: auto;
     border-radius: 50%;
 }
 
 a {
-    color: #ff4800; /* Aksentfarge for URL-er */
+    color: #5c748c; /* Lysere nyanse av tekstfargen for profiler */
     text-decoration: none;
 }
 
@@ -81,7 +85,7 @@ footer {
     background-color: #3a4e58; /* Mørk blå hovedfarge */
     color: #fff;
     font-size: 0.9em;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 footer p {
@@ -90,6 +94,10 @@ footer p {
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
+    .banner {
+        font-size: 1.5em; /* Reduser fontstørrelsen for små skjermer */
+    }
+
     .concept {
         flex-direction: column;
         padding: 15px;
@@ -106,5 +114,6 @@ footer p {
 
     .profile {
         width: 90%;
+        height: auto; /* Fjerner høydebegrensningen for bedre mobiltilpasning */
     }
 }
