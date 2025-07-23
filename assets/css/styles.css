@@ -1,10 +1,13 @@
-body {
+html, body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #37474f; /* Grå-blå tekstfarge */
     background-color: #e2e8f0; /* Lys grå-blå bakgrunn */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .banner {
@@ -17,6 +20,10 @@ body {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     padding: 0; /* Redusert padding for bedre plassutnyttelse */
+}
+
+main {
+    flex: 1; /* For å fylle tilgjengelig plass og holde footer nederst */
 }
 
 .concept {
@@ -86,10 +93,6 @@ footer {
     color: #fff;
     font-size: 0.9em;
     margin-top: 10px;
-}
-
-footer p {
-    margin: 5px 0;
 }
 
 /* Media queries for responsive design */
