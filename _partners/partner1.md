@@ -1,5 +1,6 @@
 ---
 title: "Placeholder Partner 1"
+logo: "assets/images/case1-logo.jpg"
 description: "Formal partnerskap med Partner 1"
 ---
 
