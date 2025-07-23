@@ -15,48 +15,46 @@ html, body {
     color: #fff;
     height: 15vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
 }
 
+.banner nav {
+    margin-top: 10px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.banner nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner nav a:hover {
+    text-decoration: underline;
+}
+
 main {
     flex: 1;
 }
 
-.concept {
+.profiles, .products, .podcast {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding: 20px;
-    background-color: #fff;
     margin: 20px;
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
 
-.concept-content {
-    width: 50%;
-}
-
-.concept-image {
-    width: 45%;
-}
-
-.concept-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
 .profiles {
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px;
-    margin: 10px;
-    position: relative;
 }
 
 .profile {
@@ -94,7 +92,7 @@ main {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    backdrop-filter: blur(8px); /* Blur-effekt på bakgrunnen */
+    backdrop-filter: blur(8px);
     border-radius: 15px;
 }
 
@@ -110,7 +108,7 @@ main {
     border: none;
     font-size: 1.5em;
     cursor: pointer;
-    color: #37474f; /* Synligere farge */
+    color: #37474f;
 }
 
 a {
