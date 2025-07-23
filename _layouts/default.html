@@ -10,19 +10,10 @@
 <body>
     <header>
         <div class="banner">
-            <h1>{{ site.title }}</h1>
+            <h1>{{ page.title }}</h1>
         </div>
     </header>
     <main>
-        <section class="concept">
-            <div class="concept-content">
-                <h2>{{ page.concept_title }}</h2>
-                <p>{{ page.concept_text }}</p>
-            </div>
-            <div class="concept-image">
-                <img src="{{ site.baseurl }}/assets/images/joharis-vindu.jpg" alt="Joharis Vindu illustrasjon">
-            </div>
-        </section>
         <section class="profiles">
             {% for profile in page.profiles %}
             <div class="profile">
@@ -33,6 +24,15 @@
                 <p><strong>LinkedIn:</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
             </div>
             {% endfor %}
+        </section>
+        <section class="concept">
+            <div class="concept-content">
+                <h2>{{ page.concept_title }}</h2>
+                <p>{{ page.concept_text }}</p>
+            </div>
+            <div class="concept-image">
+                <img src="{{ site.baseurl }}/assets/images/joharis-vindu.jpg" alt="Joharis Vindu illustrasjon">
+            </div>
         </section>
     </main>
     <footer>
