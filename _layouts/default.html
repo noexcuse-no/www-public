@@ -41,7 +41,6 @@
                 <div class="product">
                     <h3>{{ product.title }}</h3>
                     <img src="{{ site.baseurl }}/{{ product.image }}" alt="{{ product.title }}">
-                    <p>Pris: {{ product.price }}</p>
                     <p>{{ product.content | strip_html }}</p>
                 </div>
                 {% endfor %}
