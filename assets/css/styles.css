@@ -1,129 +1,42 @@
-html, body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #37474f; /* Grå-blå tekstfarge */
-    background-color: #e2e8f0; /* Lys grå-blå bakgrunn */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles-dark.css' | relative_url }}" id="dark-style" disabled>
+</head>
+<body>
+    <button id="dark-mode-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+        &#9788; <!-- Initial ikon for day mode -->
+    </button>
 
-.banner {
-    background-color: #3a4e58; /* Mørk blå hovedfarge */
-    color: #fff;
-    height: 15vh; /* Sett høyden til 15% av visningens høyde */
-    display: flex; /* Bruk flex for å sentrere innholdet */
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0; /* Redusert padding for bedre plassutnyttelse */
-}
+    <header>
+        <div class="banner">
+            <h1>{{ page.tagline }}</h1>
+        </div>
+    </header>
+    <main>
+        <section class="profiles">
+            {% for profile in page.profiles %}
+            <div class="profile">
+                <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
+                <h3>{{ profile.name }}</h3>
+                <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
+                <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
+                <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
+            </div>
+            {% endfor %}
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 {{ page.title }}</p>
+        <p>E-post: <a href="mailto:firmapost@noexcuse.no">firmapost@noexcuse.no</a></p>
+        <p>Orgnr: 935 794 420</p>
+    </footer>
 
-main {
-    flex: 1; /* For å fylle tilgjengelig plass og holde footer nederst */
-}
-
-.concept {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-}
-
-.concept-content {
-    width: 50%;
-}
-
-.concept-image {
-    width: 45%;
-}
-
-.concept-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
-.profiles {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 10px;
-}
-
-.profile {
-    width: 40%; /* Initial bredde for større skjermer */
-    background-color: #fff;
-    padding: 15px; /* Økt padding for mer luft til teksten */
-    text-align: center;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    margin-bottom: 10px;
-    min-height: 300px; /* Setter en minimumshøyde for profilkortene */
-}
-
-.profile img {
-    max-width: 35%; /* Halvparten av tidligere bredde */
-    height: auto;
-    border-radius: 50%;
-}
-
-a {
-    color: #5c748c; /* Lysere nyanse av tekstfargen for profiler */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #3a4e58; /* Mørk blå hovedfarge */
-    color: #fff;
-    font-size: 0.9em;
-    margin-top: 10px;
-}
-
-/* Media queries for responsive design */
-@media (max-width: 1200px) {
-    .profile {
-        width: 20%; /* Halvert bredde for laptop-skjermer */
-        min-height: 350px; /* Justerer høyden for å gi mer plass til tekst */
-    }
-}
-
-@media (max-width: 768px) {
-    .banner {
-        font-size: 1.5em; /* Reduser fontstørrelsen for små skjermer */
-    }
-
-    .concept {
-        flex-direction: column;
-        padding: 15px;
-    }
-    
-    .concept-content, .concept-image {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .profiles {
-        justify-content: center;
-    }
-
-    .profile {
-        width: 90%;
-        min-height: 400px; /* Gir enda mer høyde for tekst på mobile enheter */
-    }
-}
+    <script src="{{ '/assets/scripts/dark-mode-toggle.js' | relative_url }}"></script>
+</body>
+</html>
