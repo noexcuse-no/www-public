@@ -62,13 +62,13 @@ main {
 .profile {
     width: 40%; /* Initial bredde for større skjermer */
     background-color: #fff;
-    padding: 10px;
+    padding: 15px; /* Økt padding for mer luft til teksten */
     text-align: center;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     margin-bottom: 10px;
-    height: calc((100vh - 15vh - 60px) / 2);
+    min-height: 300px; /* Setter en minimumshøyde for profilkortene */
 }
 
 .profile img {
@@ -99,6 +99,7 @@ footer {
 @media (max-width: 1200px) {
     .profile {
         width: 20%; /* Halvert bredde for laptop-skjermer */
+        min-height: 350px; /* Justerer høyden for å gi mer plass til tekst */
     }
 }
 
@@ -123,6 +124,6 @@ footer {
 
     .profile {
         width: 90%;
-        height: auto; /* Fjerner høydebegrensningen for bedre mobiltilpasning */
+        min-height: 400px; /* Gir enda mer høyde for tekst på mobile enheter */
     }
 }
