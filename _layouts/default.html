@@ -37,8 +37,16 @@
         </section>
         <section id="products" class="products">
             <h2>Produkter</h2>
-            <p>Her finner du informasjon om våre produkter...</p>
-            <!-- Legg inne mer innhold relatert til produkter her -->
+            <div class="product-list">
+                {% for product in site.products %}
+                <div class="product">
+                    <h3>{{ product.title }}</h3>
+                    <img src="{{ site.baseurl }}/{{ product.image }}" alt="{{ product.title }}">
+                    <p>Pris: {{ product.price }}</p>
+                    <p>{{ product.content | strip_html }}</p>
+                </div>
+                {% endfor %}
+            </div>
         </section>
         <section id="podcast" class="podcast">
             <div class="embed-container">
