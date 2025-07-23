@@ -60,7 +60,7 @@ main {
 }
 
 .profile {
-    width: 40%;
+    width: 40%; /* Initial bredde for større skjermer */
     background-color: #fff;
     padding: 10px;
     text-align: center;
@@ -96,6 +96,12 @@ footer {
 }
 
 /* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .profile {
+        width: 20%; /* Halvert bredde for laptop-skjermer */
+    }
+}
+
 @media (max-width: 768px) {
     .banner {
         font-size: 1.5em; /* Reduser fontstørrelsen for små skjermer */
