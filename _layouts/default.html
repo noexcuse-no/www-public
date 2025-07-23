@@ -6,8 +6,13 @@
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles-dark.css' | relative_url }}" id="dark-style" disabled> <!-- Oppdatert filnavn -->
 </head>
 <body>
+    <button id="dark-mode-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+        💡
+    </button>
+
     <header>
         <div class="banner">
             <h1>{{ page.tagline }}</h1>
@@ -31,5 +36,31 @@
         <p>E-post: <a href="mailto:firmapost@noexcuse.no">firmapost@noexcuse.no</a></p>
         <p>Orgnr: 935 794 420</p>
     </footer>
+
+    <script>
+        // Script for å toggle dark mode CSS-stilark
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+            const darkStyle = document.getElementById('dark-style');
+            darkStyle.disabled = !darkStyle.disabled;
+            document.body.classList.toggle('dark-mode'); // Effektiv CSS toggle
+        });
+    </script>
+    <style>
+        /* Styling for lampesymbol 
+           Monokromt, uten bakgrunn eller omriss */
+        button#dark-mode-toggle {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        button#dark-mode-toggle:hover {
+            transform: scale(1.1); /* Effekt on mouseover */
+        }
+    </style>
 </body>
 </html>
