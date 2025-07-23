@@ -20,7 +20,7 @@
     </header>
     <main>
         <section class="profiles">
-            {% for profile in page.profiles %}
+            {% for profile in site.profiles %}
             <div class="profile">
                 <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
                 <h3>{{ profile.name }}</h3>
@@ -38,6 +38,6 @@
     </footer>
 
     <script src="{{ '/assets/scripts/dark-mode-toggle.js' | relative_url }}"></script>
-    <script src="{{ '/assets/scripts/profile-card.js' | relative_url }}"></script> <!-- Legger til profile-card.js -->
+    <script src="{{ '/assets/scripts/profile-card.js' | relative_url }}"></script>
 </body>
 </html>
