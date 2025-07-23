@@ -35,6 +35,18 @@
             </div>
             {% endfor %}
         </section>
+        <section id="partners" class="partners">
+            <div class="partner-list">
+                {% for partner in site.partners %}
+                <div class="partner">
+                    <h3>{{ partner.title }}</h3>
+                    <img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{ partner.title }} Logo" class="logo">
+                    <p>{{ partner.description }}</p>
+                    <div>{{ partner.content | strip_html }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
         <section id="products" class="products">
             <div class="product-list">
                 {% for product in site.products %}
@@ -59,18 +71,6 @@
                     <img src="{{ site.baseurl }}/{{ case.logo }}" alt="{{ case.title }} Logo" class="logo">
                     <p>{{ case.summary }}</p>
                     <div>{{ case.content | strip_html }}</div>
-                </div>
-                {% endfor %}
-            </div>
-        </section>
-        <section id="partners" class="partners">
-            <div class="partner-list">
-                {% for partner in site.partners %}
-                <div class="partner">
-                    <h3>{{ partner.title }}</h3>
-                    <img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{ partner.title }} Logo" class="logo">
-                    <p>{{ partner.description }}</p>
-                    <div>{{ partner.content | strip_html }}</div>
                 </div>
                 {% endfor %}
             </div>
