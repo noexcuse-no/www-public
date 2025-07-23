@@ -3,12 +3,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f9;
+    color: #37474f; /* Grå-blå tekstfarge */
+    background-color: #e2e8f0; /* Lys grå-blå bakgrunn */
 }
 
 .banner {
-    background-color: #34495e;
+    background-color: #3a4e58; /* Mørk blå hovedfarge */
     color: #fff;
     padding: 15px;
     text-align: center;
@@ -44,7 +44,7 @@ body {
 .profiles {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Legger til flex wrap for mobilvennlighet */
+    flex-wrap: wrap;
     padding: 20px;
     margin: 20px;
 }
@@ -67,19 +67,18 @@ body {
 }
 
 a {
-    color: #007bff;
+    color: #ff4800; /* Aksentfarge for URL-er */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #0056b3;
 }
 
 footer {
     padding: 20px;
     text-align: center;
-    background-color: #34495e;
+    background-color: #3a4e58; /* Mørk blå hovedfarge */
     color: #fff;
     font-size: 0.9em;
     margin-top: 20px;
@@ -92,20 +91,20 @@ footer p {
 /* Media queries for responsive design */
 @media (max-width: 768px) {
     .concept {
-        flex-direction: column; /* Vertikale retning for mindre skjermer */
+        flex-direction: column;
         padding: 15px;
     }
     
     .concept-content, .concept-image {
-        width: 100%; /* Full bredde for små skjermer */
+        width: 100%;
         margin-bottom: 20px;
     }
 
     .profiles {
-        justify-content: center; /* Senterer profilene på mindre skjermer */
+        justify-content: center;
     }
 
     .profile {
-        width: 90%; /* Full bredde for profiler på små skjermer */
+        width: 90%;
     }
 }
