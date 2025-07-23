@@ -1,5 +1,6 @@
 ---
 title: "Placeholder Case 2"
+logo: "assets/images/case2-logo.jpg"
 summary: "En oversikt over hva case 2 innebærer."
 ---
 
