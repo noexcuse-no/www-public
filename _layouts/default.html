@@ -17,7 +17,7 @@
         <section class="profiles">
             {% for profile in page.profiles %}
             <div class="profile">
-                <img src="{{ site.baseurl }}/{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
+                <img src="{{ site.baseurl }}/assets/images/{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
                 <h3>{{ profile.name }}</h3>
                 <p><strong>Mobil:</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
                 <p><strong>E-post:</strong> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
