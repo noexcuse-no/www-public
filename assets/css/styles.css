@@ -1,5 +1,4 @@
 body {
-    /* Fonten gir et moderne og profesjonelt utseende */
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -11,69 +10,69 @@ body {
 .banner {
     background-color: #34495e;
     color: #fff;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
-    font-size: 2.5em; /* Gjøre overskriften større */
-    font-family: 'Montserrat', sans-serif; /* Endret font for header */
+    font-size: 2em; /* Redusert størrelse */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .concept {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
     background-color: #fff;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 15px; /* Mer avrundet for mykere utseende */
+    margin: 40px; /* Mer luft rundt seksjonen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
 .concept-content {
-    width: 60%;
+    width: 50%; /* Redusert bredde for mer luft */
 }
 
 .concept-image {
-    width: 35%;
+    width: 45%; /* Redusert bredde for mer luft */
 }
 
 .concept-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 15px; /* Avrunding av bildets hjørner */
+    border-radius: 15px;
 }
 
 .profiles {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
-    margin: 20px;
+    padding: 20px;
+    margin: 40px;
 }
 
 .profile {
-    width: 45%;
+    width: 40%; /* Redusert bredde for mer luft */
     background-color: #fff;
-    padding: 20px;
+    padding: 15px; /* Mindre innholdsstørrelse */
     text-align: center;
-    border: 1px solid #ccc; /* Lysere kantlinje for mindre grått på grått */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 15px; /* Mer avrundet for mykere utseende */
-    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 40px; /* Mer plass nederst for lufting */
 }
 
 .profile img {
-    max-width: 80%; /* Redusert størrelse for å minske visuell dominans */
+    max-width: 70%; /* Mindre profilbildeforhold */
     height: auto;
     border-radius: 50%;
 }
 
 a {
-    color: #007bff; /* Endret farge for URL-er til en mer klassisk blå */
+    color: #007bff;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #0056b3; /* Mørkere blå for hover-effekt */
+    color: #0056b3;
 }
 
 footer {
@@ -82,6 +81,7 @@ footer {
     background-color: #34495e;
     color: #fff;
     font-size: 0.9em;
+    margin-top: 40px; /* Luft mellom main og footer */
 }
 
 footer p {
