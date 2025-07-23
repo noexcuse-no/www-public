@@ -7,3 +7,7 @@ body.dark-mode {
 .dark-mode footer {
     background-color: #1a1a1a;
 }
+
+.dark-mode .profile {
+    background-color: #4b4b4b; /* Mørk bakgrunnsfarge for profilkortene */
+}
