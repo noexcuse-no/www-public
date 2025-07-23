@@ -3,9 +3,13 @@ document.querySelectorAll('.profile').forEach(profile => {
     profile.addEventListener('click', function() {
         const fullscreen = document.createElement('div');
         fullscreen.classList.add('fullscreen');
+        
+        const profileName = this.querySelector('h3').textContent;
+        const profileDescription = site.profiles.find(p => p.name === profileName).description;
+
         fullscreen.innerHTML = `
-            <h1>${this.querySelector('h3').textContent}</h1>
-            <p>Beskrivelse av personens bakside kommer her...</p>
+            <h1>${profileName}</h1>
+            <p>${profileDescription}</p>
             <button class="close-button">&#10006;</button>
         `;
 
