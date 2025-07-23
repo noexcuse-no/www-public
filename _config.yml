@@ -3,3 +3,7 @@ collections:
     output: true
   products:
     output: true
+  cases:
+    output: true
+  partners:
+    output: true
