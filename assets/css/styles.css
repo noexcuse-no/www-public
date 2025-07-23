@@ -19,7 +19,7 @@ html, body {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans;
     text-align: center;
     padding: 0;
 }
@@ -57,16 +57,16 @@ main {
 }
 
 .product-list {
-    width: 100%; /* Gir hele sidebredden til produktlisten */
+    width: 100%;
 }
 
 .product {
-    width: 100%; /* Gir hele sidebredden til hvert produkt */
-    background-color: transparent; /* Fjernet bakgrunnsfarge */
-    padding: 15px 0; /* Endrer padding som ønsket */
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 0;
     text-align: center;
     margin-bottom: 10px;
-    box-shadow: none; /* Fjernet skygge */
+    box-shadow: none;
 }
 
 .profile {
@@ -74,12 +74,12 @@ main {
     background-color: #fff;
     padding: 15px;
     text-align: center;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
     min-height: 300px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    border-radius: 15px;
 }
 
 .profile img {
@@ -122,6 +122,45 @@ main {
     color: #37474f;
 }
 
+.partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.partner {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.partner-header {
+    display: flex;
+    align-items: center;
+}
+
+.partner-logo {
+    flex: 0 0 100px;
+    margin-right: 20px;
+}
+
+.partner-info {
+    flex: 1;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.partner-content {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+
 a {
     color: #5c748c;
     text-decoration: none;
@@ -140,7 +179,6 @@ footer {
     margin-top: 10px;
 }
 
-/* Dark mode knappen styling */
 button#dark-mode-toggle {
     position: absolute;
     top: 10px;
@@ -156,7 +194,6 @@ button#dark-mode-toggle:hover {
     transform: scale(1.1);
 }
 
-/* Media queries for responsive design */
 @media (max-width: 1200px) {
     .profile {
         width: 20%;
@@ -185,7 +222,7 @@ button#dark-mode-toggle:hover {
 
     .profile {
         width: 90%;
-        min-height: 200px; /* Redusert minimumshøyde for mobil */
+        min-height: 200px;
     }
 
     button#dark-mode-toggle {
