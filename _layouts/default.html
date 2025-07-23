@@ -20,6 +20,8 @@
                 <a href="#profiles">HVEM</a>
                 <a href="#products">HVA</a>
                 <a href="#podcast">HVORFOR</a>
+                <a href="#cases">CASEER</a>
+                <a href="#partners">PARTNERE</a>
             </nav>
         </div>
     </header>
@@ -48,7 +50,31 @@
         </section>
         <section id="podcast" class="podcast">
             <div class="embed-container">
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4PTG3Z6ehGkBFwjybzWkR8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4PTG3Z6ehGkBFwjybzWkR8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section id="cases" class="cases">
+            <div class="case-list">
+                {% for case in site.cases %}
+                <div class="case">
+                    <h3>{{ case.title }}</h3>
+                    <img src="{{ site.baseurl }}/{{ case.logo }}" alt="{{ case.title }} Logo" class="logo">
+                    <p>{{ case.summary }}</p>
+                    <div>{{ case.content | strip_html }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <section id="partners" class="partners">
+            <div class="partner-list">
+                {% for partner in site.partners %}
+                <div class="partner">
+                    <h3>{{ partner.title }}</h3>
+                    <img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{ partner.title }} Logo" class="logo">
+                    <p>{{ partner.description }}</p>
+                    <div>{{ partner.content | strip_html }}</div>
+                </div>
+                {% endfor %}
             </div>
         </section>
     </main>
