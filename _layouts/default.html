@@ -34,27 +34,39 @@
                 <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
             </div>
             {% endfor %}
+            
+            <div class="fullscreen" id="profile-detail">
+                <button class="close-button" aria-label="Close">&#10006;</button>
+                <!-- Profilkortets bakside -->
+                <div class="profile-detail-content">
+                    <div class="profile-header">
+                        <img src="#" alt="Profilbilde" id="profile-image">
+                        <h3 id="profile-name">Navn</h3>
+                    </div>
+                    <p id="profile-detail-text">Detaljer om profil</p>
+                </div>
+            </div>
         </section>
-<section id="partners" class="partners">
-    <div class="partner-list">
-        {% for partner in site.partners %}
-        <div class="partner">
-            <div class="partner-header">
-                <div class="partner-logo">
-                    <img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{ partner.title }} Logo" class="logo">
+        <section id="partners" class="partners">
+            <div class="partner-list">
+                {% for partner in site.partners %}
+                <div class="partner">
+                    <div class="partner-header">
+                        <div class="partner-logo">
+                            <img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{ partner.title }} Logo" class="logo">
+                        </div>
+                        <div class="partner-info">
+                            <h3>{{ partner.title }}</h3>
+                            <p>{{ partner.description }}</p>
+                        </div>
+                    </div>
+                    <div class="partner-content">
+                        {{ partner.content | strip_html }}
+                    </div>
                 </div>
-                <div class="partner-info">
-                    <h3>{{ partner.title }}</h3>
-                    <p>{{ partner.description }}</p>
-                </div>
+                {% endfor %}
             </div>
-            <div class="partner-content">
-                {{ partner.content | strip_html }}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</section>
+        </section>
         <section id="products" class="products">
             <div class="product-list">
                 {% for product in site.products %}
@@ -71,20 +83,20 @@
                 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4PTG3Z6ehGkBFwjybzWkR8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
         </section>
-<section id="cases" class="cases">
-    <div class="case-list">
-        {% for case in site.cases %}
-        <div class="case">
-            <img src="{{ site.baseurl }}/{{ case.logo }}" alt="{{ case.title }} Logo" class="case-logo">
-            <div class="case-info">
-                <h3>{{ case.title }}</h3>
-                <p>{{ case.summary }}</p>
-                <div>{{ case.content | strip_html }}</div>
+        <section id="cases" class="cases">
+            <div class="case-list">
+                {% for case in site.cases %}
+                <div class="case">
+                    <img src="{{ site.baseurl }}/{{ case.logo }}" alt="{{ case.title }} Logo" class="case-logo">
+                    <div class="case-info">
+                        <h3>{{ case.title }}</h3>
+                        <p>{{ case.summary }}</p>
+                        <div>{{ case.content | strip_html }}</div>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
-        </div>
-        {% endfor %}
-    </div>
-</section>
+        </section>
     </main>
     <footer>
         <p>&copy; {{ page.footer.copyright_year }} {{ page.title }}</p>
@@ -93,6 +105,34 @@
     </footer>
 
     <script src="{{ '/assets/scripts/dark-mode-toggle.js' | relative_url }}"></script>
-    <script src="{{ '/assets/scripts/profile-card.js' | relative_url }}"></script>
+    <!-- Oppdatert profil-kort script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const profiles = document.querySelectorAll('.profile');
+            const profileDetail = document.getElementById('profile-detail');
+            const profileImage = document.getElementById('profile-image');
+            const profileName = document.getElementById('profile-name');
+            const profileDetailText = document.getElementById('profile-detail-text');
+            const closeButton = document.querySelector('.close-button');
+
+            profiles.forEach(profile => {
+                profile.addEventListener('click', function() {
+                    const imageSrc = profile.querySelector('img').src;
+                    const name = profile.querySelector('h3').textContent;
+                    const description = profile.getAttribute('data-description');
+
+                    profileImage.src = imageSrc;
+                    profileName.textContent = name;
+                    profileDetailText.textContent = description;
+
+                    profileDetail.classList.add('active');
+                });
+            });
+
+            closeButton.addEventListener('click', function() {
+                profileDetail.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
