@@ -1,3 +1,5 @@
 collections:
   profiles:
     output: true
+  products:
+    output: true
