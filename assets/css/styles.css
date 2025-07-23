@@ -10,7 +10,7 @@ body {
 .banner {
     background-color: #3a4e58; /* Mørk blå hovedfarge */
     color: #fff;
-    padding: 15px;
+    padding: 7px; /* Halvert fra 15px til 7px */
     text-align: center;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
