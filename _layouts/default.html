@@ -21,7 +21,7 @@
     <main>
         <section class="profiles">
             {% for profile in site.profiles %}
-            <div class="profile">
+            <div class="profile" data-description="{{ profile.content | strip_newlines | escape }}">
                 <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
                 <h3>{{ profile.name }}</h3>
                 <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
@@ -32,9 +32,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 {{ page.title }}</p>
-        <p>E-post: <a href="mailto:firmapost@noexcuse.no">firmapost@noexcuse.no</a></p>
-        <p>Orgnr: 935 794 420</p>
+        <p>&copy; {{ page.footer.copyright_year }} {{ page.title }}</p>
+        <p>E-post: <a href="mailto:{{ page.footer.email }}">{{ page.footer.email }}</a></p>
+        <p>Orgnr: {{ page.footer.orgnr }}</p>
     </footer>
 
     <script src="{{ '/assets/scripts/dark-mode-toggle.js' | relative_url }}"></script>
