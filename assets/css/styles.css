@@ -1,42 +1,59 @@
-<!DOCTYPE html>
-<html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ page.description }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/styles-dark.css' | relative_url }}" id="dark-style" disabled>
-</head>
-<body>
-    <button id="dark-mode-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
-        &#9788; <!-- Initial ikon for day mode -->
-    </button>
+.profiles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    position: relative; /* For å posisjonere fullskjerm-element korrekt */
+}
 
-    <header>
-        <div class="banner">
-            <h1>{{ page.tagline }}</h1>
-        </div>
-    </header>
-    <main>
-        <section class="profiles">
-            {% for profile in page.profiles %}
-            <div class="profile">
-                <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
-                <h3>{{ profile.name }}</h3>
-                <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
-                <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
-                <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
-            </div>
-            {% endfor %}
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 {{ page.title }}</p>
-        <p>E-post: <a href="mailto:firmapost@noexcuse.no">firmapost@noexcuse.no</a></p>
-        <p>Orgnr: 935 794 420</p>
-    </footer>
+.profile {
+    width: 40%; 
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    min-height: 300px; 
+    cursor: pointer; /* Indikerer at elementet er klikkbart */
+    transition: transform 0.3s ease; /* Animasjonseffekt når man klikker */
+}
 
-    <script src="{{ '/assets/scripts/dark-mode-toggle.js' | relative_url }}"></script>
-</body>
-</html>
+.profile img {
+    max-width: 35%; 
+    height: auto;
+    border-radius: 50%;
+}
+
+.fullscreen {
+    display: none; /* Som standard ikke synlig */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fullscreen.active {
+    display: flex;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
