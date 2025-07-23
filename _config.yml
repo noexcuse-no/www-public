@@ -2,8 +2,8 @@ collections:
   profiles:
     output: true
   products:
-    output: true
+    output: false
   cases:
-    output: true
+    output: false
   partners:
-    output: true
+    output: false
