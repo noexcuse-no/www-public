@@ -1,30 +1,26 @@
-document.querySelectorAll('.profile').forEach(profileElement => {
-    profileElement.addEventListener('click', function() {
-        // Hent beskrivelse fra data-attributt
-        const profileDescription = this.getAttribute('data-description');
-        const profileName = this.querySelector('h3').textContent;
+document.addEventListener('DOMContentLoaded', function() {
+    const profiles = document.querySelectorAll('.profile');
+    const profileDetail = document.getElementById('profile-detail');
+    const profileImage = document.getElementById('profile-image');
+    const profileName = document.getElementById('profile-name');
+    const profileDetailText = document.getElementById('profile-detail-text');
+    const closeButton = document.querySelector('.close-button');
 
-        // Sørg for at fullscreen visning opprettes
-        const fullscreen = document.createElement('div');
-        fullscreen.classList.add('fullscreen');
-        fullscreen.innerHTML = `
-            <h1>${profileName}</h1>
-            <p>${profileDescription}</p>
-            <button class="close-button">&#10006;</button>
-        `;
+    profiles.forEach(profile => {
+        profile.addEventListener('click', function() {
+            const imageSrc = profile.querySelector('img').src;
+            const name = profile.querySelector('h3').textContent;
+            const description = profile.getAttribute('data-description');
 
-        document.body.appendChild(fullscreen);
+            profileImage.src = imageSrc;
+            profileName.textContent = name;
+            profileDetailText.textContent = description;
 
-        // Legg til event listener for lukking av fullscreen visningen
-        fullscreen.querySelector('.close-button').addEventListener('click', function() {
-            fullscreen.classList.remove('active');
-            setTimeout(() => {
-                document.body.removeChild(fullscreen);
-            }, 300);
+            profileDetail.classList.add('active');
         });
+    });
 
-        if(fullscreen) {
-            fullscreen.classList.add('active');
-        }
+    closeButton.addEventListener('click', function() {
+        profileDetail.classList.remove('active');
     });
 });
