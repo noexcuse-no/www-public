@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="banner">
-            <h1>{{ page.title }}</h1>
+            <h1>{{ page.tagline }}</h1>
         </div>
     </header>
     <main>
@@ -19,9 +19,9 @@
             <div class="profile">
                 <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
                 <h3>{{ profile.name }}</h3>
-                <p><strong>Mobil:</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
-                <p><strong>E-post:</strong> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
-                <p><strong>LinkedIn:</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
+                <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
+                <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
+                <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
             </div>
             {% endfor %}
         </section>
