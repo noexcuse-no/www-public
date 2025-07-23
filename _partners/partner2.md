@@ -1,5 +1,6 @@
 ---
 title: "Placeholder Partner 2"
+logo: "assets/images/partner2-logo.jpg"
 description: "Oversikt av samarbeid"
 ---
 
