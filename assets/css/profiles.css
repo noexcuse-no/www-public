@@ -9,7 +9,7 @@
 .profile {
     background-color: var(--box-background-light);
     color: var(--text-color-light);
-    width: 40%;
+    width: 40%; /* Original bredde */
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -23,7 +23,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 24px;
+    font-size: 48px; /* Øk størrelsen for å være dobbelt så stort */
     color: var(--link-color-light);
 }
 
@@ -37,7 +37,7 @@
     overflow: auto;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5px); /* Sjå tåkete effekt ved aktiv visning */
+    backdrop-filter: blur(5px); /* Tåkete effekt ved visning */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Transparent bakgrunn */
     z-index: 1000;
@@ -54,6 +54,7 @@
     min-width: 300px;
     min-height: 400px;
     padding: 15px;
+    position: relative; /* Sørg for at close-button er innenfor denne konteksten */
 }
 
 .profile-header {
@@ -65,7 +66,7 @@
 .profile-header img {
     height: 2em;
     margin-right: 10px;
-    border-radius: 50%;
+    border-radius: 50%; /* Setter bilder til å være runde */
 }
 
 .profile-header h3 {
@@ -78,13 +79,19 @@
     right: 10px;
     background: none;
     border: none;
-    font-size: 1.5em;
+    font-size: 2em;  /* Øk til bedre synlighet */
     cursor: pointer;
-    color: var(--text-color-light);
+    color: var(--link-color-light);
+    z-index: 1100; /* Sørg for at knappen er over andre elementer i overlayen */
 }
 
-/* Responive Møbilarjusteringer */
+/* Mobiljusteringer */
 @media (max-width: 599px) {
+    .profile {
+        width: 90%; /* Match produktkort bredde */
+        margin-bottom: 20px; /* Litt mer avstand mellom kortene */
+    }
+
     .profile-header {
         flex-direction: column;
         align-items: center;
@@ -94,7 +101,6 @@
         margin-bottom: 10px;
     }
 
-    /* Justering for profil-names på mobil */
     .profile-header h3 {
         font-size: 1em; /* Justert font størrelse */
     }
