@@ -18,8 +18,6 @@
 }
 
 .profile img {
-    height: 50em;
-    width: 50em;
     border-radius: 50%; 
     object-fit: cover;
     align-items: center;
