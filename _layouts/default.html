@@ -2,25 +2,11 @@
 <html lang="no">
 <head>
     {% include head.html %}
-
-    <!-- Felles CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/colors.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/layout.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/typography.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/utilities.css' | relative_url }}">
-
-    <!-- Komponenter CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/navbar.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/profiles.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/products.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/podcast.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/cases.css' | relative_url }}">
+    {% include styles.html %}
 </head>
 <body>
     <button id="dark-mode-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode" class="button btn">
-        &#9788; <!-- Initial ikon for lys mode -->
+        &#9788; <!-- Initial icon for light mode -->
     </button>
 
     {% include header.html %}
