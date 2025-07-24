@@ -2,7 +2,7 @@
     {% for profile in site.profiles %}
     <div class="profile" id="profile" data-description="{{ profile.content | strip_newlines | escape }}">
         <div class="booking-icon">
-            <a href="{{ profile.booking_url }}" title="Book et møte med meg">Møtebooking</a>
+            <a href="{{ profile.booking_url }}" title="Book et møte med meg">Book møte</a>
         </div>
         <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
         <h3>{{ profile.name }}</h3>
