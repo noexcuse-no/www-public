@@ -57,6 +57,7 @@
     position: relative; /* Sørg for at close-button er innenfor denne konteksten */
 }
 
+/* Profil header on both front and back side */
 .profile-header {
     display: flex;
     flex-direction: column; /* Sentrere bildene i kolonne retning */
@@ -64,6 +65,7 @@
     margin-bottom: 10px;
 }
 
+/* Stiler for både fremsiden og baksiden profilbilder */
 .profile-header img {
     height: 100px;
     width: 100px;
