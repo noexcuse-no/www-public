@@ -7,8 +7,6 @@
 }
 
 .profile {
-    background-color: var(--box-background-light);
-    color: var(--text-color-light);
     width: 40%;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -23,55 +21,37 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 48px; /* Øk størrelsen for å være dobbelt så stort */
-    color: var(--link-color-light);
+    font-size: 48px;
 }
 
 .fullscreen {
-    display: none; /* Kontroller initial visning */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px); /* Tåkete effekt ved visning */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent bakgrunn */
-    z-index: 1000;
+    display: none;
 }
 
 .fullscreen.active {
-    display: flex; /* Blir synlig når aktivert via JS */
+    display: flex;
 }
 
 .profile-detail-content {
     max-width: 800px;
-    background-color: var(--box-background-light);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     min-width: 300px;
     min-height: 400px;
     padding: 15px;
-    position: relative; /* Sørg for at close-button er innenfor denne konteksten */
 }
 
-/* Profil header on both front and back side */
 .profile-header {
     display: flex;
-    flex-direction: column; /* Sentrere bildene i kolonne retning */
+    flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
 }
 
-/* Stiler for både fremsiden og baksiden profilbilder */
 .profile-header img {
     height: 100px;
     width: 100px;
     margin-bottom: 10px;
-    border-radius: 50%; /* Gjør bildet rundt */
-    object-fit: cover; /* Sørg for at bildene fyller den runde masken riktig */
+    border-radius: 50%; 
+    object-fit: cover;
 }
 
 .profile-header h3 {
@@ -85,24 +65,18 @@
     right: 10px;
     background: none;
     border: none;
-    font-size: 2em;  /* Øk til bedre synlighet */
+    font-size: 2em;
     cursor: pointer;
-    color: var(--link-color-light);
-    z-index: 1100; /* Sørg for at knappen er over andre elementer i overlayen */
+    z-index: 1100;
 }
 
-/* Mobiljusteringer */
 @media (max-width: 599px) {
     .profile {
-        width: 90%; /* Match produktkort bredde */
-        margin-bottom: 20px; /* Litt mer avstand mellom kortene */
-    }
-
-    .profile-header img {
-        margin-bottom: 10px;
+        width: 90%; 
+        margin-bottom: 20px;
     }
 
     .profile-header h3 {
-        font-size: 1em; /* Justert font størrelse */
+        font-size: 1em;
     }
 }
