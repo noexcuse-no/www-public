@@ -21,7 +21,7 @@
 /* Hover-effekt for lenker */
 .navbar a:hover {
     color: var(--navbar-link-hover-color);
-    border-bottom: 2px solid var(--navbar-link-hover-color);
+    font-size: 1.5em; /* Normal fontstørrelse for desktop */
 }
 
 /* Mobiljusteringer */
@@ -34,4 +34,9 @@
         font-size: 0.8em; /* Redusert fontstørrelse for mobilvisning */
         margin: 0 1.5ch; /* Litt mindre avstand på mobiler for kompakt visning */
     }
+ 
+    .navbar a:hover {
+    color: var(--navbar-link-hover-color);
+    font-size: 1em; /* Normal fontstørrelse for desktop */
+}
 }
