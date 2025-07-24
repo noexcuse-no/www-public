@@ -26,12 +26,17 @@
     position: absolute;
     top: 50px;
     left: 0px;
+    opacity: 0.5;
     font-size: 2em;
     text-transform: uppercase;
     rotate: z -41deg;
     border-radius: 50%;
     color: var(--primary-accent-contrast);
     background-color: var(--primary-accent);
+}
+
+.booking-icon a:hover {
+    opacity: 1.0;
 }
 
 .profile-fullscreen {
