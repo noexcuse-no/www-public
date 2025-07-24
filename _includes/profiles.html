@@ -1,6 +1,6 @@
 <section id="profiles" class="profiles">
     {% for profile in site.profiles %}
-    <div class="profile" data-description="{{ profile.content | strip_newlines | escape }}">
+    <div class="profile" id="profile" data-description="{{ profile.content | strip_newlines | escape }}">
         <a href="{{ profile.booking_url }}" class="booking-icon" title="Book et møte med meg">
             &#128197;
         </a>
