@@ -1,23 +1,23 @@
 :root {
     /* Light Mode Colors */
-    --background-color-light: #e2e8f0;
-    --text-color-light: #37474f;
-    --banner-background-light: #3a4e58;
-    --banner-text-light: #fff;
-    --box-background-light: #fff;
-    --link-color-light: #5c748c;
-    --link-hover-light: #5c748c;
-    --footer-background-light: #3a4e58;
-    --footer-text-light: #fff;
+    --background-color-light: #e2e8f0; /* Lys bakgrunnsfarge */
+    --text-color-light: #37474f; /* Lys tekstfarge */
+    --banner-background-light: #3a4e58; /* Banner bakgrunn i lys modus */
+    --banner-text-light: #ffffff; /* Banner tekst i lys modus */
+    --box-background-light: #ffffff; /* Bakgrunn for kort og bokser i lys modus */
+    --link-color-light: #5c748c; /* Lenkefarge i lys modus */
+    --link-hover-light: #5c748c; /* Lenkefarge ved hover i lys modus */
+    --footer-background-light: #3a4e58; /* Footer bakgrunn i lys modus */
+    --footer-text-light: #ffffff; /* Footer tekst i lys modus */
 
     /* Dark Mode Colors */
-    --background-color-dark: #121212;
-    --text-color-dark: #ffffff;
-    --banner-background-dark: #222;
-    --banner-text-dark: #fffa;
-    --box-background-dark: #333;
-    --link-color-dark: #8ab4f8;
-    --link-hover-dark: #8ab4f8;
-    --footer-background-dark: #222;
-    --footer-text-dark: #fffa;
+    --background-color-dark: #121212; /* Mørk bakgrunnsfarge */
+    --text-color-dark: #ffffff; /* Mørk tekstfarge */
+    --banner-background-dark: #222222; /* Banner bakgrunn i mørk modus */
+    --banner-text-dark: #ffffffaa; /* Banner tekst i mørk modus */
+    --box-background-dark: #333333; /* Bakgrunn for kort og bokser i mørk modus */
+    --link-color-dark: #8ab4f8; /* Lenkefarge i mørk modus */
+    --link-hover-dark: #8ab4f8; /* Lenkefarge ved hover i mørk modus */
+    --footer-background-dark: #222222; /* Footer bakgrunn i mørk modus */
+    --footer-text-dark: #ffffffaa; /* Footer tekst i mørk modus */
 }
