@@ -32,7 +32,7 @@
     color: var(--primary-accent);
     background-color: var(--banner-background-light);
     border: 5px solid var(--banner-background-light);
-    border-radius: 50%;
+
     border-style: dotted;
 }
 
