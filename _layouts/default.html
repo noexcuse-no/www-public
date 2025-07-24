@@ -5,14 +5,20 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/styles-dark.css' | relative_url }}" id="dark-style" disabled>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/colors.css' | relative_url }}"> <!-- Fargevariabler -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}"> <!-- Generelle stiler -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles-light.css' | relative_url }}"> <!-- Light Mode stil -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles-dark.css' | relative_url }}" id="dark-style" disabled> <!-- Dark Mode stil -->
 </head>
 <body>
+    <!-- Dark Mode Toggle Button -->
     <button id="dark-mode-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
-        &#9788; <!-- Initial ikon for day mode -->
+        &#9788; <!-- Initial ikon for lys mode -->
     </button>
 
+    <!-- Header Section -->
     <header>
         <div class="banner">
             <h1>{{ page.tagline }}</h1>
@@ -23,12 +29,15 @@
             </nav>
         </div>
     </header>
+
+    <!-- Main Content Section -->
     <main>
+        <!-- Profiles Section -->
         <section id="profiles" class="profiles">
             {% for profile in site.profiles %}
             <div class="profile" data-description="{{ profile.content | strip_newlines | escape }}">
                 <a href="{{ profile.booking_url }}" class="booking-icon" title="Book et møte med meg">
-                    &#128197; 
+                    &#128197; <!-- UTF-8 Kalender ikon -->
                 </a>
                 <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
                 <h3>{{ profile.name }}</h3>
@@ -38,6 +47,7 @@
             </div>
             {% endfor %}
             
+            <!-- Profile Detail for Fullscreen View -->
             <div class="fullscreen" id="profile-detail">
                 <button class="close-button" aria-label="Close">&#10006;</button>
                 <div class="profile-detail-content">
@@ -49,64 +59,44 @@
                 </div>
             </div>
         </section>
-        <section id="partners" class="partners">
-            <div class="partner-list">
-                {% for partner in site.partners %}
-                <div class="partner">
-                    <div class="partner-header">
-                        <div class="partner-logo">
-                            <img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{ partner.title }} Logo" class="logo">
-                        </div>
-                        <div class="partner-info">
-                            <h3>{{ partner.title }}</h3>
-                            <p>{{ partner.description }}</p>
-                        </div>
-                    </div>
-                    <div class="partner-content">
-                        {{ partner.content | strip_html }}
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </section>
+
+        <!-- Products Section -->
         <section id="products" class="products">
-            <div class="product-list">
-                {% for product in site.products %}
-                <div class="product">
-                    <h3>{{ product.title }}</h3>
-                    <img src="{{ site.baseurl }}/{{ product.image }}" alt="{{ product.title }}">
-                    <p>{{ product.content | strip_html }}</p>
-                </div>
-                {% endfor %}
+            {% for product in site.products %}
+            <div class="product">
+                <img src="{{ site.baseurl }}{{ product.image }}" alt="{{ product.name }} produktbilde">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
             </div>
+            {% endfor %}
         </section>
+
+        <!-- Podcast Section -->
         <section id="podcast" class="podcast">
             <div class="embed-container">
                 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4PTG3Z6ehGkBFwjybzWkR8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
         </section>
-        <section id="cases" class="cases">
-            <div class="case-list">
-                {% for case in site.cases %}
-                <div class="case">
-                    <img src="{{ site.baseurl }}/{{ case.logo }}" alt="{{ case.title }} Logo" class="case-logo">
-                    <div class="case-info">
-                        <h3>{{ case.title }}</h3>
-                        <p>{{ case.summary }}</p>
-                        <div>{{ case.content | strip_html }}</div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </section>
+
+        <!-- Additional Sections -->
+        <!-- Add more sections here if necessary -->
     </main>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; {{ page.footer.copyright_year }} {{ page.title }}, <a href="https://virksomhet.brreg.no/nb/oppslag/enheter/935794420">{{ page.footer.orgnr }}</a>, <a href="mailto:{{ page.footer.email }}">{{ page.footer.email }}</a>. Oslo, 🇳🇴</p>
+        <p>&copy; {{ page.footer.copyright_year }} {{ page.title }}, 
+            <a href="https://virksomhet.brreg.no/nb/oppslag/enheter/935794420">{{ page.footer.orgnr }}</a>, 
+            <a href="mailto:{{ page.footer.email }}">{{ page.footer.email }}</a>. 
+            Oslo, 🇳🇴
+        </p>
         <p>
-            <a title="GDPR-compliant Web Analytics" href="https://clicky.com/101489216"><img alt="Clicky" src="https://static.getclicky.com/media/links/badge.gif" border="0" /></a>
+            <a title="GDPR-compliant Web Analytics" href="https://clicky.com/101489216">
+                <img alt="Clicky" src="https://static.getclicky.com/media/links/badge.gif" border="0" />
+            </a>
         </p>
     </footer>
 
+    <!-- JavaScript Files -->
     <script async data-id="101489216" src="//static.getclicky.com/js"></script>
     <script src="{{ '/assets/scripts/dark-mode-toggle.js' | relative_url }}"></script>
     <script src="{{ '/assets/scripts/profile-card.js' | relative_url }}"></script>
