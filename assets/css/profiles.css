@@ -29,11 +29,8 @@
     font-size: 2em;
     font-variant: caps;
     rotate: z -41deg;
-    color: var(--primary-accent);
-    background-color: var(--banner-background-light);
-    border: 5px solid var(--banner-background-light);
-
-    border-style: dotted;
+    color: var(--primary-accent-contrast);
+    background-color: var(--primary-accent);
 }
 
 .profile-fullscreen {
