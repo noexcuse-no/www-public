@@ -2,9 +2,13 @@
     background-color: var(--banner-background-light);
     color: var(--banner-text-light);
     text-align: center;
-    padding: 0px;
+    padding: 0;
 }
 
 .banner {
     font-size: 2em;
+}
+
+.banner h1 {
+    margin: 0;
 }
