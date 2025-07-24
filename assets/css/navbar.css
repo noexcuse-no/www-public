@@ -1,13 +1,30 @@
+/* Generelle stiler for navbar */
 .navbar {
-    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: var(--navbar-background); /* Sørg for korrekt bakgrunnsfarge */
 }
 
+/* Navigasjonslenker */
 .navbar a {
-    color: var(--banner-text-light);
-    margin: 0 15px;
     text-decoration: none;
+    color: var(--navbar-link-color); /* Korrekt farge for lenker */
+    font-size: 1em; /* Juster fontstørrelse for desktop */
+    margin: 0 15px; /* Middels avstand mellom lenker for god visuell klarhet */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smidig overgang for hover-effekt */
 }
 
+/* Hover-effekt for lenker */
 .navbar a:hover {
-    text-decoration: underline;
+    color: var(--navbar-link-hover-color); /* Skift til ønsket farge ved hover, definere farge i CSS-vars */
+    border-bottom: 2px solid var(--navbar-link-hover-color); /* Legg til en understrek ved hover */
+}
+
+/* Mobiljusteringer */
+@media (max-width: 599px) {
+    .navbar a {
+        font-size: 0.8em; /* Reduser fontstørrelse for mobilvisning */
+        margin: 0 10px; /* Juster margin for å sikre at teksten ikke bryter linjene */
+    }
 }
