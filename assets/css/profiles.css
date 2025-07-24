@@ -24,11 +24,11 @@
     font-size: 48px;
 }
 
-.fullscreen {
+.profile-fullscreen {
     display: none;
 }
 
-.fullscreen.active {
+.profile-fullscreen.active {
     display: flex;
 }
 
