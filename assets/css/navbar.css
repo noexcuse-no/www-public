@@ -1,9 +1,12 @@
 /* Generelle stiler for navbar */
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Sentraliserer innholdet i navbaren */
+    align-items: center;
     padding: 10px 0;
     background-color: var(--navbar-background);
+    max-width: 30%; /* Begrens bredde til maksimum 30% */
+    margin: 0 auto; /* Sentraliserer navbaren i sin container */
 }
 
 /* Navigasjonslenker */
@@ -23,6 +26,10 @@
 
 /* Mobiljusteringer */
 @media (max-width: 599px) {
+    .navbar {
+        max-width: 90%; /* Justerer breddebegrensning for mobilvisning */
+    }
+
     .navbar a {
         font-size: 0.8em; /* Redusert fontstørrelse for mobilvisning */
         margin: 0 1.5ch; /* Litt mindre avstand på mobiler for kompakt visning */
