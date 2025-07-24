@@ -1,0 +1,13 @@
+.navbar {
+    margin-top: 0;
+}
+
+.navbar a {
+    color: var(--banner-text-light);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
