@@ -1,0 +1,18 @@
+/* Typography.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color-light);
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.banner h1 {
+    font-size: 2em;
+}
+
+.profile-header h3 {
+    text-align: left;
+}
