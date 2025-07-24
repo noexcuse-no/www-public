@@ -1,0 +1,23 @@
+:root {
+    /* Light Mode Colors */
+    --background-color-light: #e2e8f0;
+    --text-color-light: #37474f;
+    --banner-background-light: #3a4e58;
+    --banner-text-light: #fff;
+    --box-background-light: #fff;
+    --link-color-light: #5c748c;
+    --link-hover-light: #5c748c;
+    --footer-background-light: #3a4e58;
+    --footer-text-light: #fff;
+
+    /* Dark Mode Colors */
+    --background-color-dark: #121212;
+    --text-color-dark: #ffffff;
+    --banner-background-dark: #222;
+    --banner-text-dark: #fffa;
+    --box-background-dark: #333;
+    --link-color-dark: #8ab4f8;
+    --link-hover-dark: #8ab4f8;
+    --footer-background-dark: #222;
+    --footer-text-dark: #fffa;
+}
