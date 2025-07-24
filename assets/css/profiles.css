@@ -27,7 +27,7 @@
     top: 50px;
     left: 0px;
     font-size: 2em;
-    font-variant: caps;
+    text-transform: uppercase;
     rotate: z -41deg;
     color: var(--primary-accent-contrast);
     background-color: var(--primary-accent);
