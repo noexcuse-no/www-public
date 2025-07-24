@@ -1,6 +1,3 @@
-{% comment %}
-Section displaying user profiles.
-{% endcomment %}
 <section id="profiles" class="profiles">
     {% for profile in site.profiles %}
     <div class="profile" data-description="{{ profile.content | strip_newlines | escape }}">
