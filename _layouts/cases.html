@@ -1,0 +1,11 @@
+{% comment %}
+Section displaying case studies.
+{% endcomment %}
+<section id="cases" class="cases">
+    {% for case in site.cases %}
+    <div class="case">
+        <h3>{{ case.title }}</h3>
+        <p>{{ case.description }}</p>
+    </div>
+    {% endfor %}
+</section>
