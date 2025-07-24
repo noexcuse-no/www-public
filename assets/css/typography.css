@@ -15,11 +15,11 @@ a:hover, a:active {
 
 /* Overskrifter */
 h1, h2, h3 {
+     margin: 0;
 }
 
 h1 {
     font-size: 5em;
-    margin: 0;
 }
 
 /* Mobiler justeringer */
