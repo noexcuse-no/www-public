@@ -27,6 +27,9 @@
         <section id="profiles" class="profiles">
             {% for profile in site.profiles %}
             <div class="profile" data-description="{{ profile.content | strip_newlines | escape }}">
+                <a href="{{ profile.booking_url }}" class="booking-icon" title="Book et møte med meg">
+                    &#128197; 
+                </a>
                 <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
                 <h3>{{ profile.name }}</h3>
                 <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
