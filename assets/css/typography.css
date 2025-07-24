@@ -1,10 +1,11 @@
-/* Typography.css */
+/* Generelle typografi-justeringer */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color-light);
 }
 
+/* Overskrifter */
 h1, h2, h3 {
     margin: 0;
 }
@@ -13,6 +14,23 @@ h1, h2, h3 {
     font-size: 2em;
 }
 
-.profile-header h3 {
-    text-align: left;
+/* Mobiler justeringer */
+@media (max-width: 599px) {
+    /* Mobil */
+
+    /* Justering for banner overskriften */
+    .banner h1 {
+        font-size: 1.5em; /* Redusert fontstørrelse for bedre tilpassing på mobil */
+    }
+
+    /* Justering for navbar-lenker */
+    .navbar a {
+        font-size: 0.9em; /* Reduser fontstørrelsen for å passe bedre på mobil */
+        margin: 0 10px;  /*er margin for å sikre at menyen holder seg på én linje */
+    }
+
+    /* Justering for profil header tekst */
+    .profile-header h3 {
+        font-size: 1em; /* Redusert fontstørrelse for profilnavn */
+    }
 }
