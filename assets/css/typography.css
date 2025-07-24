@@ -31,8 +31,4 @@ h1 {
         font-size: 0.8em; /* Redusert fontstørrelse for bedre tilpassing på mobil */
     }
 
-    /* Justering for profil header tekst */
-    .profile-header h3 {
-        font-size: 1em; /* Redusert fontstørrelse for profilnavn */
-    }
 }
