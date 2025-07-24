@@ -5,7 +5,7 @@ body {
     color: var(--text-color-light);
 }
 
-a:link a:visited {
+a a:link a:visited {
     text-decoration: none;
 }
 
@@ -15,11 +15,10 @@ a:hover a:active {
 
 /* Overskrifter */
 h1, h2, h3 {
-    margin: 0;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 5em;
     margin: 0;
 }
 
