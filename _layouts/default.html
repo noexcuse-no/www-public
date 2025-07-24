@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    {% include /_layout/head.html %}
+    {% include_relative head.html %}
 
     <!-- Felles CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/colors.css' | relative_url }}">
@@ -25,12 +25,12 @@
 
     {% include header.html %}
     <main>
-        {% include profiles.html %}
-        {% include products.html %}
-        {% include podcast.html %}
-        {% include cases.html %}
+        {% include_relative profiles.html %}
+        {% include_relative products.html %}
+        {% include_relative podcast.html %}
+        {% include_relative cases.html %}
     </main>
-    {% include footer.html %}
-    {% include scripts.html %}
+    {% include_relative footer.html %}
+    {% include_relative scripts.html %}
 </body>
 </html>
