@@ -1,28 +1,21 @@
-/* Dark Mode Styles */
-
 body {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
 }
 
-/* Header Styles */
 .header {
-    background-color: var(--box-background-dark); /* Ensartet mørk bakgrunnsfarge for header */
+    background-color: var(--box-background-dark);
     padding: 20px;
-    margin: 0; /* Fjern margin, hvis det brukes */
 }
 
-/* Hvis paddingen rundt headeren er et separat element: */
-.header-padding, .header-margin {
-    background-color: var(--box-background-dark); /* Sørg for at det har samme farge som header */
+.header-margin {
+    background-color: var(--box-background-dark);
 }
 
-/* Other Styles */
 .navbar {
     background-color: var(--navbar-background-dark);
 }
 
-/* Justere farger for lenker og hover */
 .navbar a {
     color: var(--link-color-dark);
     transition: color 0.3s ease, border-bottom 0.3s ease;
@@ -44,10 +37,20 @@ body {
 }
 
 .booking-icon, .close-button {
-    color: var(--icon-color-dark);
+    color: var(--link-color-dark);
 }
 
 .banner {
     background-color: var(--banner-background-dark);
     color: var(--banner-text-dark);
+}
+
+.profile {
+    background-color: var(--box-background-dark);
+    color: var(--text-color-dark);
+}
+
+.profile-detail-content {
+    background-color: var(--box-background-dark);
+    color: var(--text-color-dark);
 }
