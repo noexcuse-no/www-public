@@ -56,6 +56,13 @@
     padding: 15px;
 }
 
+.profile-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;    
+}
+
 .profile-header {
     display: flex;
     flex-direction: column;
