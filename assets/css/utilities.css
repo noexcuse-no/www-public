@@ -17,3 +17,15 @@ img {
 .shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--link-color-light); /* eller en annen farge som passer til både lys og mørk modus */
+    z-index: 1100; /* Sørg for at knappen er over andre elementer */
+}
