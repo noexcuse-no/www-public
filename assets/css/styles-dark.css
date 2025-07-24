@@ -28,14 +28,9 @@ a:hover {
     color: var(--footer-text-dark);
 }
 
-.button {
+.button, .close-button {
     background-color: var(--button-background-dark);
     color: var(--button-text-color-light);
-}
-
-.booking-icon, .close-button {
-    background-color: var(--banner-background-dark);
-    border: 5px solid var(--banner-background-dark);
 }
 
 .banner {
