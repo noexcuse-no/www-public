@@ -11,7 +11,7 @@
     text-decoration: none;
     color: var(--navbar-link-color);
     font-size: 1em; /* Normal fontstørrelse for desktop */
-    margin: 0 5px; /* Redusert margin for tettere plassering av lenker */
+    margin: 0 2ch; /* To karakterers avstand mellom lenkene */
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
@@ -25,6 +25,6 @@
 @media (max-width: 599px) {
     .navbar a {
         font-size: 0.8em; /* Redusert fontstørrelse for mobilvisning */
-        margin: 0 3px; /* Ytterligere redusert margin på mobile enheter */
+        margin: 0 1.5ch; /* Litt mindre avstand på mobiler for kompakt visning */
     }
 }
