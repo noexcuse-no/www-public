@@ -3,7 +3,13 @@
 <head>
     {% include head.html %}
 
-    <!-- Moduler CSS -->
+    <!-- Felles CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/colors.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/layout.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/typography.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/utilities.css' | relative_url }}">
+
+    <!-- Komponenter CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/navbar.css' | relative_url }}">
@@ -13,7 +19,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/cases.css' | relative_url }}">
 </head>
 <body>
-    <button id="dark-mode-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+    <button id="dark-mode-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode" class="button btn">
         &#9788; <!-- Initial ikon for lys mode -->
     </button>
 
