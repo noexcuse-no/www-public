@@ -9,7 +9,7 @@
 .profile {
     background-color: var(--box-background-light);
     color: var(--text-color-light);
-    width: 40%; /* Original bredde */
+    width: 40%;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -54,23 +54,27 @@
     min-width: 300px;
     min-height: 400px;
     padding: 15px;
-    position: relative; /* Sørg for at close-button er innenfor denne konteksten */ 
+    position: relative; /* Sørg for at close-button er innenfor denne konteksten */
 }
 
 .profile-header {
     display: flex;
+    flex-direction: column; /* Sentrere bildene i kolonne retning */
     align-items: center;
     margin-bottom: 10px;
 }
 
 .profile-header img {
-    height: 2em;
-    margin-right: 10px;
-    border-radius: 50%; /* Setter bilder til å være runde */
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Gjør bildet rundt */
+    object-fit: cover; /* Sørg for at bildene fyller den runde masken riktig */
 }
 
 .profile-header h3 {
     margin: 0;
+    text-align: center;
 }
 
 .close-button {
@@ -90,11 +94,6 @@
     .profile {
         width: 90%; /* Match produktkort bredde */
         margin-bottom: 20px; /* Litt mer avstand mellom kortene */
-    }
-
-    .profile-header {
-        flex-direction: column;
-        align-items: center;
     }
 
     .profile-header img {
