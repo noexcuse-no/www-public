@@ -31,6 +31,7 @@
         max-width: 90%; /* Justerer breddebegrensning for mobilvisning */
     }
 
+    /* Justering for navbar-lenker */
     .navbar a {
         font-size: 0.8em; /* Redusert fontstørrelse for mobilvisning */
         margin: 0 1.5ch; /* Litt mindre avstand på mobiler for kompakt visning */
