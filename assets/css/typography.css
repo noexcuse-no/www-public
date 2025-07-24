@@ -5,6 +5,13 @@ body {
     color: var(--text-color-light);
 }
 
+a {
+    text-decoration: none;
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Overskrifter */
 h1, h2, h3 {
     margin: 0;
