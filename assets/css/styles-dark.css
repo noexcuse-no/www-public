@@ -1,56 +1,42 @@
-/* Global Dark Mode Styles */
+/* Dark Mode Styles */
 
 body {
-    background-color: var(--background-dark);
-    color: var(--text-light);
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
 }
 
 /* Header Styles */
-
 .header {
-    background-color: var(--box-background-dark);
+    background-color: var(--box-background-dark); /* Ensartet mørk bakgrunnsfarge for header */
     padding: 20px;
+    margin: 0; /* Fjern margin, hvis det brukes */
 }
 
-.header-margin {
-    background-color: var(--box-background-dark);
+/* Hvis paddingen rundt headeren er et separat element: */
+.header-padding, .header-margin {
+    background-color: var(--box-background-dark); /* Sørg for at det har samme farge som header */
 }
 
-/* Navbar Styles */
-
+/* Other Styles */
 .navbar {
     background-color: var(--navbar-background-dark);
 }
 
+/* Justere farger for lenker og hover */
 .navbar a {
-    color: var(--navbar-link-color-dark);
+    color: var(--link-color-dark);
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .navbar a:hover {
-    color: var(--navbar-link-hover-color-dark);
-    border-bottom: 2px solid var(--navbar-link-hover-color-dark);
+    color: var(--link-hover-dark);
+    border-bottom: 2px solid var(--link-hover-dark);
 }
-
-/* Profiles and Cards */
-
-.profile {
-    background-color: var(--box-background-dark);
-    color: var(--text-light);
-}
-
-.profile-detail-content {
-    background-color: var(--box-background-dark);
-}
-
-/* Footer Styles */
 
 .footer {
     background-color: var(--footer-background-dark);
-    color: var(--footer-text-color-dark);
+    color: var(--footer-text-dark);
 }
-
-/* Buttons, Icons, and Interactive Elements */
 
 .button {
     background-color: var(--button-background-dark);
@@ -61,9 +47,7 @@ body {
     color: var(--icon-color-dark);
 }
 
-/* Other Custom Elements */
-
 .banner {
     background-color: var(--banner-background-dark);
-    color: var(--banner-text-color-light);
+    color: var(--banner-text-dark);
 }
