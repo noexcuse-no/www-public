@@ -2,7 +2,6 @@
     background-color: var(--banner-background-light);
     color: var(--banner-text-light);
     text-align: center;
-    padding: 20px;
 }
 
 .banner {
