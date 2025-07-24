@@ -1,27 +1,74 @@
-html, body {
-    color: var(--text-color-dark);
-    background-color: var(--background-color-dark);
+/* Global Dark Mode Styles */
+
+body {
+    background-color: #121212; /* Mørk bakgrunnsfarge for hele siden */
+    color: #e0e0e0; /* Lys tekstfarge for lesbarhet */
 }
 
-.banner {
-    background-color: var(--banner-background-dark);
-    color: var(--banner-text-dark);
+/* Header Styles */
+
+.header {
+    background-color: #1f1f1f; /* Mørk bakgrunn for header */
+    padding: 20px;
 }
 
-.profile, .partner, .product, .case {
-    background-color: var(--box-background-dark);
-    color: var(--text-color-dark);
+.header-margin {
+    background-color: #1f1f1f; /* Samme farge som header for margin-effekt */
 }
+
+/* Navbar Styles */
+
+.navbar {
+    background-color: #1f1f1f; /* Mørk bakgrunn for navbar */
+}
+
+.navbar a {
+    color: #e0e0e0; /* Lys tekstfarge for navbar linker */
+}
+
+/* Profiles and Cards */
+
+.profile {
+    background-color: #1f1f1f; /* Mørk bakgrunn for profilkort */
+    color: #e0e0e0; /* Lys tekstfarge for profilkort */
+}
+
+.profile-detail-content {
+    background-color: #1f1f1f; /* Mørk bakgrunn for profildetaljer/bakside */
+}
+
+/* Footer Styles */
+
+.footer {
+    background-color: #1f1f1f; /* Mørk bakgrunn for footer */
+    color: #e0e0e0; /* Lys tekstfarge for footer elementer */
+}
+
+/* Buttons, Icons, and Interactive Elements */
+
+.button {
+    background-color: #303030; /* Mørkere farge for knapper */
+    color: #f5f5f5; /* Litt lysere tekstfarge for knapper for bedre synlighet */
+}
+
+.booking-icon, .close-button {
+    /* Farger for ikoner (for eksempel, book møte eller lukk-knapper) */
+    color: #ffa500; /* For eksempel orange for bedre synlighet av ikoner i mindre detaljer */
+}
+
+/* Links and Emphasis */
 
 a {
-    color: var(--link-color-dark);
+    color: #bb86fc; /* Lys lilla for lenker */
 }
 
 a:hover {
-    color: var(--link-hover-dark);
+    color: #ff4081; /* Rosa hover-farge for lenker */
 }
 
-footer {
-    background-color: var(--footer-background-dark);
-    color: var(--footer-text-dark);
+/* Other Custom Elements */
+
+.banner {
+    background-color: #1f1f1f; /* Mørk bakgrunnsfarge for bannerseksjon hvis relevant */
+    color: #e0e0e0; /* Korriger fontfarge for teksten i banner */
 }
