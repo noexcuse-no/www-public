@@ -4,4 +4,4 @@ image: "path/to/product1-image.jpg"
 price: "100 NOK"
 ---
 
-Dette er en placeholder-beskrivelse for Produkt 1. Det tilbyr fantastisk funksjonalitet og verdi.
+Dette er en placeholder-beskrivelse for Produkt 1-b. Det tilbyr fantastisk funksjonalitet og verdi.
