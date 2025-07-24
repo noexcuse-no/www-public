@@ -42,15 +42,8 @@ main {
     flex: 1;
 }
 
-.profiles {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 20px;
-}
-
-.profile {
+/* Ensuring similar style across profiles, partners, products, and cases */
+.profile, .partner, .product, .case {
     width: 40%;
     background-color: #fff;
     padding: 15px;
@@ -58,15 +51,21 @@ main {
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
-    min-height: 300px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.profile img {
-    max-width: 35%;
+.profiles, .partners, .product-list, .case-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+}
+
+.profile img, .product img, .partner img, .case img {
+    max-width: 100px; /* Restrict size for logos/images */
     height: auto;
-    border-radius: 50%;
 }
 
 .fullscreen {
@@ -102,7 +101,7 @@ main {
 }
 
 .profile-header img {
-    height: 2em; 
+    height: 2em;
     margin-right: 10px;
     border-radius: 50%;
 }
@@ -123,86 +122,14 @@ main {
     color: #37474f;
 }
 
-.partner-list {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 20px;
+.partner-header, .case-info {
+    text-align: left; /* Keep text alignment consistent along cases as well */
 }
 
-.partner {
-    flex: 0 0 auto;
-    margin-right: 15px;
-    text-align: left;
-}
-
-.partner-header {
-    display: flex;
-    align-items: center;
-}
-
-.partner-logo {
-    flex: 0 0 100px;
-    margin-right: 20px;
-}
-
-.partner-info {
-    flex: 1;
-}
-
-.logo {
-    max-width: 100px;
-    height: auto;
-}
-
-.partner-content {
-    margin-top: 10px;
-    width: 100%;
-    text-align: left;
-}
-
-.products, .podcast {
-    padding: 20px;
-    margin: 20px;
-}
-
-.product-list {
-    width: 100%;
-}
-
-.product {
-    width: 100%;
-    background-color: transparent;
-    padding: 15px 0;
-    text-align: center;
-    margin-bottom: 10px;
-    box-shadow: none;
-}
-
-.case-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.case {
-    width: 70%;
-    margin: 15px 0;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: none;
-    border-radius: 0;
-}
-
-.case-logo {
+.partner-logo, .case-logo {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.case-info {
-    padding: 15px;
-    text-align: left;
 }
 
 a {
@@ -239,15 +166,22 @@ button#dark-mode-toggle:hover {
 }
 
 @media (max-width: 1200px) {
-    .profile {
+    .profile, .partner, .product, .case {
         width: 20%;
-        min-height: 350px;
     }
 }
 
 @media (max-width: 768px) {
     .banner {
         font-size: 1.5em; 
+    }
+
+    .profiles, .partners, .product-list, .case-list {
+        justify-content: center;
+    }
+
+    .profile, .partner, .product, .case {
+        width: 90%;
     }
 
     .concept {
@@ -258,19 +192,6 @@ button#dark-mode-toggle:hover {
     .concept-content, .concept-image {
         width: 100%;
         margin-bottom: 20px;
-    }
-
-    .profiles {
-        justify-content: center;
-    }
-
-    .profile {
-        width: 90%;
-        min-height: 200px;
-    }
-
-    .case {
-        width: 90%;
     }
 
     button#dark-mode-toggle {
