@@ -1,26 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
     const profiles = document.querySelectorAll('.profile');
-    const profileDetail = document.getElementById('profile-detail');
-    const profileImage = document.getElementById('profile-image');
-    const profileName = document.getElementById('profile-name');
-    const profileDetailText = document.getElementById('profile-detail-text');
-    const closeButton = document.querySelector('.close-button');
+    const fullscreen = document.querySelector('.fullscreen');
+    const closeButton = fullscreen.querySelector('.close-button');
 
     profiles.forEach(profile => {
-        profile.addEventListener('click', function() {
-            const imageSrc = profile.querySelector('img').src;
-            const name = profile.querySelector('h3').textContent;
-            const description = profile.getAttribute('data-description');
-
-            profileImage.src = imageSrc;
-            profileName.textContent = name;
-            profileDetailText.textContent = description;
-
-            profileDetail.classList.add('active');
+        profile.addEventListener('click', () => {
+            // Activerer fullscreen view med profilinnhold
+            fullscreen.classList.add('active');
+            
+            // Henter profil detalj-innhold
+            const detailText = profile.dataset.description;
+            const detailImageSrc = profile.querySelector('img').src;
+            
+            // Setter inn innhold i fullscreen visningen
+            fullscreen.querySelector('#profile-detail-text').textContent = detailText;
+            fullscreen.querySelector('#profile-image').src = detailImageSrc;
+            fullscreen.querySelector('#profile-name').textContent = profile.querySelector('h3').textContent;
         });
     });
 
-    closeButton.addEventListener('click', function() {
-        profileDetail.classList.remove('active');
+    closeButton.addEventListener('click', () => {
+        // Lukker fullscreen view
+        fullscreen.classList.remove('active');
     });
 });
