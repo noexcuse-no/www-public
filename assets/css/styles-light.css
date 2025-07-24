@@ -1,0 +1,47 @@
+html, body {
+    color: var(--text-color-light);
+    background-color: var(--background-color-light);
+}
+
+.banner {
+    background-color: var(--banner-background-light);
+    color: var(--banner-text-light);
+}
+
+.banner nav a {
+    color: var(--banner-text-light);
+}
+
+.profile, .partner, .product, .case {
+    background-color: var(--box-background-light);
+    color: var(--text-color-light);
+}
+
+.booking-icon {
+    color: var(--link-color-light);
+}
+
+.fullscreen {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.profile-detail-content {
+    background-color: var(--box-background-light);
+}
+
+.close-button {
+    color: var(--text-color-light);
+}
+
+a {
+    color: var(--link-color-light);
+}
+
+a:hover {
+    color: var(--link-hover-light);
+}
+
+footer {
+    background-color: var(--footer-background-light);
+    color: var(--footer-text-light);
+}
