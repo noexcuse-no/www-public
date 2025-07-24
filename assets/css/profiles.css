@@ -37,10 +37,11 @@
 
 .booking-icon a:hover {
     opacity: 1.0;
+    color: var(--primary-accent-contrast);
 }
 
 .profile-fullscreen {
-    display: none;
+    display: flex;
 }
 
 .profile-fullscreen.active {
