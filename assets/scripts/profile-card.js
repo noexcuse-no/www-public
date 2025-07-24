@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const profiles = document.querySelectorAll('.profile');
     const profileFullscreen = document.querySelector('.profile-fullscreen');
-    const closeButton = fullscreen.querySelector('.close-button');
+    const closeButton = profile-fullscreen.querySelector('.close-button');
 
     profiles.forEach(profile => {
         profile.addEventListener('click', () => {
