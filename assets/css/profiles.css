@@ -28,7 +28,7 @@
 }
 
 .fullscreen {
-    display: none; /* Start med display: none */
+    display: none; /* Kontroller initial visning */
     position: fixed;
     top: 0;
     left: 0;
@@ -37,14 +37,14 @@
     overflow: auto;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5px); /* Tåkete effekt ved visning */
+    backdrop-filter: blur(5px); /* Sjå tåkete effekt ved aktiv visning */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Transparent bakgrunn */
     z-index: 1000;
 }
 
 .fullscreen.active {
-    display: flex; /* Blir synlig når aktivert */
+    display: flex; /* Blir synlig når aktivert via JS */
 }
 
 .profile-detail-content {
@@ -81,4 +81,21 @@
     font-size: 1.5em;
     cursor: pointer;
     color: var(--text-color-light);
+}
+
+/* Responive Møbilarjusteringer */
+@media (max-width: 599px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-header img {
+        margin-bottom: 10px;
+    }
+
+    /* Justering for profil-names på mobil */
+    .profile-header h3 {
+        font-size: 1em; /* Justert font størrelse */
+    }
 }
