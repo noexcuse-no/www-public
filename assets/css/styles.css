@@ -42,9 +42,16 @@ main {
     flex: 1;
 }
 
-/* Ensuring similar style across profiles, partners, products, and cases */
 .profile, .partner, .product, .case {
-    width: 40%;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.profile {
     background-color: #fff;
     padding: 15px;
     text-align: center;
