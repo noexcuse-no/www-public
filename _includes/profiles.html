@@ -1,9 +1,9 @@
 <section id="profiles" class="profiles">
     {% for profile in site.profiles %}
     <div class="profile" id="profile" data-description="{{ profile.content | strip_newlines | escape }}">
-        <a href="{{ profile.booking_url }}" class="booking-icon" title="Book et møte med meg">
-            &#128197;
-        </a>
+        <div class="booking-icon">
+            <a href="{{ profile.booking_url }}" title="Book et møte med meg">Møtebooking</a>
+        </div>
         <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
         <h3>{{ profile.name }}</h3>
         <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
@@ -19,7 +19,9 @@
                 <img src="#" alt="Profilbilde" id="profile-image">
                 <h3 id="profile-name">Navn</h3>
             </div>
-            <p id="profile-detail-text">Detaljer om profil</p>
+            <div class="profile-body">
+                <p id="profile-detail-text">{{ profile.content }}</p>
+            </div>
         </div>
     </div>
 </section>
