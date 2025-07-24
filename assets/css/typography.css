@@ -5,10 +5,10 @@ body {
     color: var(--text-color-light);
 }
 
-a {
+a:link a:visited {
     text-decoration: none;
 
-a:hover {
+a:hover a:active {
     text-decoration: underline;
 }
 
@@ -19,6 +19,7 @@ h1, h2, h3 {
 
 .banner h1 {
     font-size: 2em;
+    margin: 0;
 }
 
 /* Mobiler justeringer */
@@ -27,7 +28,7 @@ h1, h2, h3 {
 
     /* Justering for banner overskriften */
     .banner h1 {
-        font-size: 1.5em; /* Redusert fontstørrelse for bedre tilpassing på mobil */
+        font-size: 0.8em; /* Redusert fontstørrelse for bedre tilpassing på mobil */
     }
 
     /* Justering for navbar-lenker */
