@@ -5,11 +5,11 @@ body {
     color: var(--text-color-light);
 }
 
-a a:link a:visited {
+a, a:link, a:visited {
     text-decoration: none;
 }
 
-a:hover a:active {
+a:hover, a:active {
     text-decoration: underline;
 }
 
