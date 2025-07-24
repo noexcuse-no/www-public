@@ -5,7 +5,6 @@ body {
 
 a {
     color: var(--link-color-dark);
-    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 a:hover {
