@@ -1,0 +1,28 @@
+{% comment %}
+Section displaying user profiles.
+{% endcomment %}
+<section id="profiles" class="profiles">
+    {% for profile in site.profiles %}
+    <div class="profile" data-description="{{ profile.content | strip_newlines | escape }}">
+        <a href="{{ profile.booking_url }}" class="booking-icon" title="Book et møte med meg">
+            &#128197;
+        </a>
+        <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
+        <h3>{{ profile.name }}</h3>
+        <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
+        <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
+        <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
+    </div>
+    {% endfor %}
+
+    <div class="fullscreen" id="profile-detail">
+        <button class="close-button" aria-label="Close">&#10006;</button>
+        <div class="profile-detail-content">
+            <div class="profile-header">
+                <img src="#" alt="Profilbilde" id="profile-image">
+                <h3 id="profile-name">Navn</h3>
+            </div>
+            <p id="profile-detail-text">Detaljer om profil</p>
+        </div>
+    </div>
+</section>
