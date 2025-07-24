@@ -1,6 +1,43 @@
-html, body {
-    color: var(--text-color-light);
+body {
     background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+.header {
+    background-color: var(--box-background-light);
+    padding: 20px;
+}
+
+.header-margin {
+    background-color: var(--box-background-light);
+}
+
+.navbar {
+    background-color: var(--navbar-background-light);
+}
+
+.navbar a {
+    color: var(--link-color-light);
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--link-hover-light);
+    border-bottom: 2px solid var(--link-hover-light);
+}
+
+.footer {
+    background-color: var(--footer-background-light);
+    color: var(--footer-text-light);
+}
+
+.button {
+    background-color: var(--button-background-light);
+    color: var(--button-text-color-dark);
+}
+
+.booking-icon, .close-button {
+    color: var(--link-color-light);
 }
 
 .banner {
@@ -8,40 +45,12 @@ html, body {
     color: var(--banner-text-light);
 }
 
-.banner nav a {
-    color: var(--banner-text-light);
-}
-
-.profile, .partner, .product, .case {
+.profile {
     background-color: var(--box-background-light);
     color: var(--text-color-light);
-}
-
-.booking-icon {
-    color: var(--link-color-light);
-}
-
-.fullscreen {
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .profile-detail-content {
     background-color: var(--box-background-light);
-}
-
-.close-button {
     color: var(--text-color-light);
-}
-
-a {
-    color: var(--link-color-light);
-}
-
-a:hover {
-    color: var(--link-hover-light);
-}
-
-footer {
-    background-color: var(--footer-background-light);
-    color: var(--footer-text-light);
 }
