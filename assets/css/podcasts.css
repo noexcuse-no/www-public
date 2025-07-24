@@ -1,0 +1,13 @@
+.podcast {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.embed-container {
+    position: relative;
+    width: 100%;
+    height: 352px;
+    overflow: hidden;
+    border-radius: 12px;
+}
