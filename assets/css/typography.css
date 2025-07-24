@@ -27,7 +27,7 @@ h1 {
     /* Mobil */
 
     /* Justering for banner overskriften */
-    .banner h1 {
+    h1 {
         font-size: 0.8em; /* Redusert fontstørrelse for bedre tilpassing på mobil */
     }
 
