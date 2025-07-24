@@ -26,11 +26,12 @@
     position: absolute;
     top: 50px;
     left: 0px;
+    margin: 5px;
     opacity: 0.5;
     font-size: 2em;
     text-transform: uppercase;
     rotate: z -41deg;
-    border-radius: 50%;
+    border-radius: 5px;
     color: var(--primary-accent-contrast);
     background-color: var(--primary-accent);
 }
@@ -41,7 +42,7 @@
 }
 
 .profile-fullscreen {
-    display: flex;
+    display: none;
 }
 
 .profile-fullscreen.active {
