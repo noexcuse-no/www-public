@@ -1,0 +1,12 @@
+{% comment %}
+Section displaying product listings.
+{% endcomment %}
+<section id="products" class="products">
+    {% for product in site.products %}
+    <div class="product">
+        <img src="{{ site.baseurl }}{{ product.image }}" alt="{{ product }} produktbilde">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+    </div>
+    {% endfor %}
+</section>
