@@ -35,6 +35,7 @@ a:hover {
 
 .booking-icon, .close-button {
     color: var(--link-color-dark);
+    border: 5px solid var(--banner-background-dark);
 }
 
 .banner {
