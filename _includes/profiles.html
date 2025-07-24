@@ -5,10 +5,12 @@
             <a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a>
         </div>
         <img src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
-        <h3>{{ profile.name }}</h3>
-        <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
-        <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
-        <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
+        <div class="profile-summary">
+            <h3>{{ profile.name }}</h3>
+            <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}">{{ profile.phone }}</a></p>
+            <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
+            <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></p>
+        </div>
     </div>
     {% endfor %}
 
@@ -20,7 +22,7 @@
                 <h3 id="profile-name">Navn</h3>
             </div>
             <div class="profile-body">
-                <p id="profile-detail-text">{{ profile.content }}</p>
+                <p id="profile-detail-text">Profiltekst</p>
             </div>
         </div>
     </div>
