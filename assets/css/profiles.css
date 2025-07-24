@@ -54,7 +54,7 @@
     min-width: 300px;
     min-height: 400px;
     padding: 15px;
-    position: relative; /* Sørg for at close-button er innenfor denne konteksten */
+    position: relative; /* Sørg for at close-button er innenfor denne konteksten */ 
 }
 
 .profile-header {
