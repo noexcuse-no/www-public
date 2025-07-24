@@ -1,6 +1,7 @@
 :root {
 
     --primary-accent: #ff4800;
+    --primary-accent-contrast: #000000;
     
     /* Light Mode Colors */
     --background-color-light: #e2e8f0; /* Lys bakgrunnsfarge */
