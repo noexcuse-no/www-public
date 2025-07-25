@@ -50,8 +50,14 @@
     display: none;
 }
 
+
+.profile-compact.inactive {
+    display: none;
+}
+
 .profile-expanded.active {
     width: 800px;
+    display: flex;
 }
 
 .profile-detail-content {
