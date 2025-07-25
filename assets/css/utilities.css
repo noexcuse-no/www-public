@@ -34,6 +34,9 @@ img {
     #dark-mode-toggle {
         font-size: 1.8em; /* Øk font size litt på mobil */
     }
+    #dark-mode-toggle:hover {
+        font-size: 2em;
+}
 }
 
 @media (min-width: 600px) {
@@ -41,4 +44,7 @@ img {
     #dark-mode-toggle {
         font-size: 2.5em; /* Øk font size mye på laptop */
     }
+    #dark-mode-toggle:hover {
+       font-size: 3em;
+}
 }
