@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
     
     profilesCollapsed.forEach(profile => {
         profile.addEventListener('click', () => {
-            profileExpanded.classList.add('active');
-            profileCollapsed.classList.add('inactive');
+            profile.classList.add('active');
+            profile.classList.add('inactive');
         });
     });
 });
