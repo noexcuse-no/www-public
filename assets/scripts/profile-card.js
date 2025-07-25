@@ -1,26 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const profiles = document.querySelectorAll('.profile');
-    const profileFullscreen = document.querySelector('.profile-fullscreen');
-    const closeButton = profileFullscreen.querySelector('.close-button');
+    const profiles = document.querySelectorAll('.profile-compact');
+    const profileExpanded = document.querySelector('.profile-expanded');
+    const closeButton = profileExpanded.querySelector('.close-button');
 
     profiles.forEach(profile => {
         profile.addEventListener('click', () => {
             // Activerer fullscreen view med profilinnhold
-            profileFullscreen.classList.add('active');
-            
-            // Henter profil detalj-innhold
-            const detailText = profile.dataset.description;
-            const detailImageSrc = profile.querySelector('img').src;
-            
-            // Setter inn innhold i fullscreen visningen
-            profileFullscreen.querySelector('#profile-detail-text').textContent = detailText;
-            profileFullscreen.querySelector('#profile-image').src = profile.dataset.image;
-            profileFullscreen.querySelector('#profile-name').textContent = profile.querySelector('h3').textContent;
+            profileExpanded.classList.add('active');
+            profile.classList.add('inactive');
         });
     });
 
     closeButton.addEventListener('click', () => {
         // Lukker fullscreen view
-        profileFullscreen.classList.remove('active');
+        profileExpanded.classList.remove('active');
+        profile.classList.remove('inactive');
     });
 });
