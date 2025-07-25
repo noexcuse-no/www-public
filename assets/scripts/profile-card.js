@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // Setter inn innhold i fullscreen visningen
             profileFullscreen.querySelector('#profile-detail-text').textContent = detailText;
-            profileFullscreen.querySelector('#profile-image').src = detailImageSrc;
+            profileFullscreen.querySelector('#profile-image').src = profile.dataset.image;
             profileFullscreen.querySelector('#profile-name').textContent = profile.querySelector('h3').textContent;
         });
     });
