@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         profile.addEventListener('click', () => {
             const profileCollapsed = profile.querySelector('.profile-compact');
             const profileExpanded = profile.querySelector('.profile-expanded');
-            profilesExpanded.forEach(n => { n.ClassList.remove('active'); };
+            profilesExpanded.forEach(n => { n.ClassList.remove('active'); });
             profileCollapsed.classList.add('inactive');
             profileExpanded.classList.add('active');
         });
