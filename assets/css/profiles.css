@@ -59,8 +59,8 @@
 .profile-contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;    
+    align-items: left;
+    margin-left: 60px;    
 }
 
 .profile-header {
@@ -103,5 +103,9 @@
     .profile-header h3 {
         font-size: 1em;
     }
-    
+    .profile-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    }
 }
