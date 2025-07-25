@@ -8,8 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
         profile.addEventListener('click', () => {
             const profileCollapsed = profile.querySelector('.profile-compact');
             const profileExpanded = profile.querySelector('.profile-expanded');
-            profileExpanded.classList.add('active');
+            profilesExpanded.forEach.remove('active');
             profileCollapsed.classList.add('inactive');
+            profileExpanded.classList.add('active');
         });
     });
 });
