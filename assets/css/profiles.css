@@ -51,8 +51,7 @@
 }
 
 .profile-expanded.active {
-    position: absolute;
-    width: 100%;
+    width: 800px;
 }
 
 .profile-detail-content {
@@ -107,6 +106,10 @@
         margin-bottom: 20px;
     }
 
+.profile-expanded.active {
+    width: 500px;
+}
+    
     .profile-header h3 {
         font-size: 1em;
     }
