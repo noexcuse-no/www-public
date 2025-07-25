@@ -50,15 +50,9 @@
     display: none;
 }
 
-.profile-fullscreen.active {
-    position: fixed;
-    display: flex;
-    margin: 10px;
-    bottom: 0;
-    right: 0;
-    width: 300px;
-    border: 2px solid var(--primary-accent);
-    z-index: 10;
+.profile-expanded.active {
+    position: absolute;
+    width: 100%;
 }
 
 .profile-detail-content {
