@@ -58,6 +58,7 @@
 .profile-expanded.active {
     width: 800px;
     display: flex;
+    flex-direction: column;
 }
 
 .profile-detail-content {
