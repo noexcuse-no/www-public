@@ -46,7 +46,7 @@
     color: var(--primary-accent-contrast);
 }
 
-.profile-fullscreen {
+.profile-expanded {
     display: none;
 }
 
