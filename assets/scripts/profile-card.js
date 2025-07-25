@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     profiles.forEach(profile => {
         profile.addEventListener('click', () => {
-            // Activerer fullscreen view med profilinnhold
+            const profileCompact = profile.querySelector('.profile-compact');
             profileExpanded.classList.add('active');
             profile.classList.add('inactive');
         });
@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
     closeButton.addEventListener('click', () => {
         // Lukker fullscreen view
         profileExpanded.classList.remove('active');
-        profile.classList.remove('inactive');
+        profileCompact.classList.remove('inactive');
     });
 });
