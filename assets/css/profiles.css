@@ -12,14 +12,13 @@
     padding: 15px;
     margin-bottom: 10px;
     position: relative;
-    display: flex;
-    align-items: center;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .profile h3 {
     font-size: 1.5em;
+    text-align: center;
 }
 
 .profile img {
