@@ -4,10 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const profilesCollapsed = document.querySelectorAll('.profile-compact');
     const profilesExpanded = document.querySelectorAll('.profile-expanded');
     
-    profilesCollapsed.forEach(profile => {
+    profiles.forEach(profile => {
         profile.addEventListener('click', () => {
-            profile.classList.add('active');
-            profile.classList.add('inactive');
+            const profileCollapsed = profile.querySelector('.profile-compact');
+            const profileExpanded = profile.querySelector('.profile-expanded');
+            profileExpanded.classList.add('active');
+            profileCollapsed.classList.add('inactive');
         });
     });
 });
