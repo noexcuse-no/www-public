@@ -17,6 +17,10 @@
     transition: transform 0.3s ease;
 }
 
+.profile h3 {
+    font-size: 1.5em;
+}
+
 .profile img {
     border-radius: 50%; 
     object-fit: cover;
@@ -111,6 +115,7 @@
     .profile-header h3 {
         font-size: 1em;
     }
+    
     .profile-contact {
     display: flex;
     flex-direction: column;
