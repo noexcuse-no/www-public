@@ -12,7 +12,7 @@
     padding: 15px;
     margin-bottom: 10px;
     position: relative;
-    position: flex;
+    display: flex;
     align-items: center;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -52,13 +52,13 @@
 }
 
 .profile-fullscreen.active {
+    position: fixed;
     display: flex;
-    position: absolute;
-    backdrop-filter: blur(5px);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    margins: 10px;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 2px solid var(--primary-accent);
     z-index: 10;
 }
 
