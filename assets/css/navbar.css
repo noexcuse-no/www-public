@@ -1,7 +1,6 @@
 /* Generelle stiler for navbar */
 .navbar {
-    display: none;
-    /*    display: flex; */
+    display: flex;
     justify-content: center; /* Sentraliserer innholdet i navbaren */
     align-items: center;
     padding: 10px 0;
