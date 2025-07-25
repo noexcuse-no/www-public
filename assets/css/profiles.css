@@ -56,12 +56,7 @@
     z-index: 10;
 }
 
-.profile-detail-content {
-    max-width: 800px;
-    min-width: 300px;
-    min-height: 400px;
-    padding: 15px;
-}
+
 
 .profile-contact {
     display: flex;
