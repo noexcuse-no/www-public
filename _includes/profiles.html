@@ -1,43 +1,40 @@
 <section id="profiles" class="profiles">
     {% for profile in site.profiles %}
-    <div class="profile" id="profile">
-        <div class="booking-icon">
-            <a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a>
+    <div class="profile">
+        <div class="profile-compact">
+            <div class="booking-icon">
+                <a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a>
+            </div>
+            <img class="profile-image" src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
+            <h3 class="profile-name">{{ profile.name }}</h3>
+            <div class="profile-contact">
+                <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}" class="profile-phone">{{ profile.phone }}</a></p>
+                <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}" class="profile-email">{{ profile.email }}</a></p>
+                <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank" class="profile-linkedin">{{ profile.linkedin }}</a></p>
+            </div>
         </div>
-        <img class="profile-image" src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
-        <h3 class="profile-name">{{ profile.name }}</h3>
-        <div class="profile-contact">
-            <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}" class="profile-phone">{{ profile.phone }}</a></p>
-            <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}" class="profile-email">{{ profile.email }}</a></p>
-            <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank" class="profile-linkedin">{{ profile.linkedin }}</a></p>
+        <div class="profile-expanded">
+            <button class="close-button" aria-label="Close">&#10006;</button>
+            <div class="profile-expanded-container">
+                <div class="profile-expanded-header">
+                    <div class="profile-expanded-header-picture-name">
+                        <img class="profile-image" src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
+                        <h3 class="profile-name">{{ profile.name }}</h3>
+                    </div>
+                    <div class="profile-expanded-header-contact">
+                        <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}" class="profile-phone">{{ profile.phone }}</a></p>
+                        <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}" class="profile-email">{{ profile.email }}</a></p>
+                        <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank" class="profile-linkedin">{{ profile.linkedin }}</a></p>
+                    </div>
+                    <div class="profile-tags">
+                        <p>{{ profile.tags }}</p>
+                    </div>
+                </div>
+            <div class="profile-content">
+                {{ profile.content }}
+            </div>
         </div>
-        <div style="display: none;">
-            <div class="profile-content">{{ profile.content }}</div>
-            <div class="profile-tags">{{ profile.tags }}</div>
-        </div>
+    </div>
     </div>
     {% endfor %}
-
-    <div class="profile-fullscreen" id="profile-detail">
-        <button class="close-button" aria-label="Close">&#10006;</button>
-        <div class="profile-detail-content">
-            <div class="profile-header">
-                <div class="profile-header-picture-name">
-                    <img src="#" alt="Profilbilde" id="profile-image" class="profile-image">
-                    <h3 id="profile-name" class="profile-name">Navn</h3>
-                </div>
-                <div class="profile-header-contact">
-                    <p><strong>&phone;</strong> <a href="tel:Phone" id="profile-phone" class="profile-phone">Phone</a></p>
-                    <p><strong>&#9993;</strong> <a href="mailto:Email" id="profile-email" class="profile-phone">Email</a></p>
-                    <p><strong>❧</strong> <a href="Linkedin" target="_blank" id="profile-linkedin" class="profile-linkedin">Linkedin</a></p>
-                </div>
-                <div class="profile-header-tags">
-                    <p id="profile-tags" class="profile-tags">Tags</p>
-                </div>
-            </div>
-            <div id="profile-content" class="profile-content">
-                Profilinnhold
-            </div>
-        </div>
-    </div>
 </section>
