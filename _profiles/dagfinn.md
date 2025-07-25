@@ -5,7 +5,7 @@ phone: "+4790820258"
 email: "dagfinn@noexcuse.no"
 linkedin: "https://linkedin.com/in/bang"
 booking_url: ""
-keywords: "ledelse, kvalitet, logistikk"
+tags: "ledelse, kvalitet, logistikk"
 ---
 
 # Profiltekst
