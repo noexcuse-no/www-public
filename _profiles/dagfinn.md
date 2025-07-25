@@ -7,3 +7,7 @@ linkedin: "https://linkedin.com/in/bang"
 booking_url: ""
 keywords: "ledelse, kvalitet, logistikk"
 ---
+
+# Profiltekst
+
+Sånn som dette.
