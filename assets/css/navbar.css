@@ -13,7 +13,7 @@
 .navbar a {
     text-decoration: none;
     color: var(--navbar-link-color);
-    font-size: 1em; /* Normal fontstørrelse for desktop */
+    font-size: 2em; /* Normal fontstørrelse for desktop */
     margin: 0 2ch; /* To karakterers avstand mellom lenkene */
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
