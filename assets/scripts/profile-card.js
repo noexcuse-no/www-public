@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const profiles = document.querySelectorAll('.profile-compact');
     const profileExpanded = document.querySelector('.profile-expanded');
     const closeButton = profileExpanded.querySelector('.close-button');
-    const profileCompact = document.querySelector('.profile-compact.inactive');
     
     profiles.forEach(profile => {
         profile.addEventListener('click', () => {
