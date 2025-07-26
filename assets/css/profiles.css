@@ -64,12 +64,8 @@
 .profile-expanded.active {
     width: 800px;
     display: flex;
-    flex-direction: column;
-}
-
-.profile-expanded-heading  {
-    display: flex;
     flex-direction: row;
+    flex-wrap: flex;
 }
 
 profile-expanded-image {
