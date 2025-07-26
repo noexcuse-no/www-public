@@ -22,14 +22,12 @@
                     <h3 class="profile-name">{{ profile.name }}</h3>
                 </div>
                 <div class="profile-expanded-contact">
-                    <p>
                         <a href="tel:{{ profile.phone }}" class="profile-expanded-contact-phone">{{ profile.phone }}</a> 
                         <a href="mailto:{{ profile.email }}" class="profile-expanded-contact-email">{{ profile.email }}</a> 
                         <a href="{{ profile.linkedin }}" target="_blank" class="profile-expanded-contact-linkedin">{{ profile.linkedin }}</a>
-                    </p>
                 </div>
                 <div class="profile-expanded-tags">
-                    <p>{{ profile.tags }}</p>
+                    {{ profile.tags }}
                 </div>
             <div class="booking-expanded-icon">
                 <a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a>
