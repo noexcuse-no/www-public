@@ -69,14 +69,18 @@
 }
 
  .profile-expanded-heading  {
-    display: flex;
+    display: flex wrap;
     padding: 15px;
     margin: 15px;
     flex-direction: row;
 }
 
-profile-expanded-image {
-    height: 150px;
+.profile-expanded-image {
+    margin: 15px;
+}
+
+profile-expanded-name {
+    flex: 1;
     margin: 15px;
 }
 
@@ -86,21 +90,13 @@ profile-expanded-image {
 }
 
 .profile-expanded-contact {
-    width: 300px;
+    flex: 1;
     margin: 15px;
 }
 
 .profile-expanded-content {
     width: 100%;
     margin: 15px;
-}
-
-.profile-detail-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .profile-contact {
