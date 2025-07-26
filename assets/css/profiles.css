@@ -47,6 +47,21 @@
     color: var(--primary-accent-contrast);
 }
 
+.booking-expanded-icon a {
+    padding: 10px;
+    opacity: 0.5;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: var(--primary-accent-contrast);
+    background-color: var(--primary-accent);
+}
+
+.booking-expanded-icon a:hover {
+    opacity: 1.0;
+    color: var(--primary-accent-contrast);
+}
+
 .profile-expanded {
     display: none;
 }
