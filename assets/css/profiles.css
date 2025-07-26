@@ -51,9 +51,7 @@
 }
 
 .profile-expanded-picture {
-    height: 150px;
-    width: 150px;
-    grid-row: auto;
+    margin: 15px;
 }
 
 
@@ -74,12 +72,7 @@
     flex-direction: row;
 }
 
-.profile-expanded-image {
-    margin: 15px;
-}
-
 profile-expanded-name {
-    flex: 1;
     margin: 15px;
 }
 
