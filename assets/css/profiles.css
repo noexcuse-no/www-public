@@ -150,6 +150,13 @@ profile-expanded-image {
 .profile-expanded.active {
     width: 500px;
 }
+
+.profile-expanded-heading  {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    flex-direction: column;
+}
     
     .profile-header h3 {
         font-size: 1em;
