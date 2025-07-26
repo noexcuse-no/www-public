@@ -14,9 +14,6 @@
             </div>
         </div>
         <div class="profile-expanded">
-            <div class="booking-icon">
-                <a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a>
-            </div>
             <div class="profile-expanded-heading">
                 <div class="profile-expanded-picture">
                     <img class="profile-image" src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
@@ -34,6 +31,7 @@
                 <div class="profile-expanded-tags">
                     <p>{{ profile.tags }}</p>
                 </div>
+                <a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a>
             </div>
             <div class="profile-expanded-content">
                 {{ profile.content }}
