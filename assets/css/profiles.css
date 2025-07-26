@@ -53,6 +53,7 @@
 
 .profile-expanded-picture {
     margin: 15px;
+    width: 3em;
 }
 
 
@@ -67,7 +68,8 @@
 }
 
  .profile-expanded-heading  {
-    display: flex wrap;
+    display: flex;
+    flex-wrap: wrap;
     padding: 15px;
     margin: 15px;
     flex-direction: row;
