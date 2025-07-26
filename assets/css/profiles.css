@@ -64,13 +64,21 @@
 .profile-expanded.active {
     width: 800px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: flex;
+    flex-direction: column;
     margins: 10px;
+}
+
+ .profile-expanded-heading  {
+    display: flex;
+    flex-direction: row;
 }
 
 profile-expanded-image {
     height: 150px;
+}
+
+.profile-expanded-contact {
+    width: 100%;
 }
 
 
