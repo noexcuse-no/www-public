@@ -25,15 +25,15 @@
             <div class="profile-expanded-picture">
                     <img class="profile-image" src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
                 </div>
+                <div class="profile-expanded-tags">
+                    <p>{{ profile.tags }}</p>
+                </div>
                 <div class="profile-expanded-contact">
                     <p><strong>&phone;</strong> <a href="tel:{{ profile.phone }}" class="profile-expanded-contact-phone">{{ profile.phone }}</a></p>
                     <p><strong>&#9993;</strong> <a href="mailto:{{ profile.email }}" class="profile-expanded-contact-email">{{ profile.email }}</a></p>
                     <p><strong>❧</strong> <a href="{{ profile.linkedin }}" target="_blank" class="profile-expanded-contact-linkedin">{{ profile.linkedin }}</a></p>
                 </div>
-                <div class="profile-expanded-tags">
-                    <p>{{ profile.tags }}</p>
-                </div>
-        </div>
+            </div>
             <div class="profile-expanded-content">
                 {{ profile.content }}
             </div>
