@@ -110,7 +110,7 @@ profile-expanded-name {
 }
 
 .profile-contact {
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
 }
 
@@ -164,9 +164,8 @@ profile-expanded-name {
         font-size: 1em;
     }
     
-    .profile-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+    .profile-contact {    
+    font-size: 3em;
+    text-align: center;
     }
 }
