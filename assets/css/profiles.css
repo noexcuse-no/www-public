@@ -71,20 +71,28 @@
  .profile-expanded-heading  {
     display: flex;
     padding: 15px;
+    margin: 15px;
     flex-direction: row;
 }
 
 profile-expanded-image {
     height: 150px;
+    margin: 15px;
 }
 
 .profile-expanded-tags {
-    width: 100%;
+    flex: 1;
+    margin: 15px;
+}
+
+.profile-expanded-contact {
+    width: 300px;
+    margin: 15px;
 }
 
 .profile-expanded-content {
     width: 100%;
-    
+    margin: 15px;
 }
 
 .profile-detail-content {
