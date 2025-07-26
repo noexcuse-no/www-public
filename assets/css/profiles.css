@@ -65,11 +65,12 @@
     width: 800px;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 15px;
 }
 
  .profile-expanded-heading  {
     display: flex;
+    padding: 15px;
     flex-direction: row;
 }
 
@@ -81,6 +82,10 @@ profile-expanded-image {
     width: 100%;
 }
 
+.profile-expanded-content {
+    width: 100%;
+    
+}
 
 .profile-detail-content {
     width: 100%;
