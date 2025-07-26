@@ -62,7 +62,6 @@
 }
 
 .profile-expanded.active {
-    width: 800px;
     display: flex;
     flex-direction: column;
     margin: 15px;
@@ -143,9 +142,7 @@ profile-expanded-name {
         margin-bottom: 20px;
     }
 
-.profile-expanded.active {
-    width: 500px;
-}
+
 
 .profile-expanded-heading  {
     display: flex;
