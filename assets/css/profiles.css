@@ -65,7 +65,7 @@
     width: 800px;
     display: flex;
     flex-direction: column;
-    margins: 10px;
+    margin: 10px;
 }
 
  .profile-expanded-heading  {
