@@ -95,10 +95,8 @@ profile-expanded-name {
 }
 
 .profile-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-left: 40px;    
+    font-size: 2em;
+    align-items: center;
 }
 
 .profile-header {
