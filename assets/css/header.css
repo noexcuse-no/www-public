@@ -6,5 +6,6 @@
 }
 
 .banner-title {
-    height: 2em;
+    display: flex;
+    flex-direction: row;
 }
