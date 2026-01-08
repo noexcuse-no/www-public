@@ -3,3 +3,6 @@
     color: var(--banner-text-light);
     text-align: center;
 }
+.header {
+    padding-top: 1em;
+}
