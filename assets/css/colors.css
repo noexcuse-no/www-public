@@ -11,7 +11,7 @@
     --box-background-light: #ffffff; /* Bakgrunn for kort og bokser i lys modus */
     --link-color-light: #000a14; /* Lenkefarge i lys modus */
     --link-hover-light: #000a1f; /* Lenkefarge ved hover i lys modus */
-    --footer-background-light: #3a4e58; /* Footer bakgrunn i lys modus */
+    --footer-background-light: #ffffff; /* Footer bakgrunn i lys modus */
     --footer-text-light: #000a14; /* Footer tekst i lys modus */
 
     /* Dark Mode Colors */
