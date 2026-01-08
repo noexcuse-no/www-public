@@ -18,7 +18,7 @@
     --background-color-dark: #121212; /* Mørk bakgrunnsfarge */
     --text-color-dark: #ffffff; /* Mørk tekstfarge */
     --banner-background-dark: #222222; /* Banner bakgrunn i mørk modus */
-    --banner-text-dark: #000a14; /* Banner tekst i mørk modus */
+    --banner-text-dark: azure; /* Banner tekst i mørk modus */
     --box-background-dark: #333333; /* Bakgrunn for kort og bokser i mørk modus */
     --link-color-dark: azure; /* Lenkefarge i mørk modus */
     --link-hover-dark: #8ab4f8; /* Lenkefarge ved hover i mørk modus */
