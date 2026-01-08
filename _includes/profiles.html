@@ -21,17 +21,20 @@
                 <div class="profile-expanded-name">
                     <h3 class="profile-name">{{ profile.name }}</h3>
                 </div>
-                <div class="profile-expanded-contact">
-                        <a href="tel:{{ profile.phone }}" class="profile-expanded-contact-phone">{{ profile.phone }}</a> 
-                        <a href="mailto:{{ profile.email }}" class="profile-expanded-contact-email">{{ profile.email }}</a> 
-                        <a href="{{ profile.linkedin }}" target="_blank" class="profile-expanded-contact-linkedin">{{ profile.linkedin }}</a>
-                </div>
                 <div class="profile-expanded-tags">
                     {{ profile.tags }}
                 </div>
-            <div class="booking-expanded-icon">
-                <a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a>
-            </div>
+                <div class="profile-expanded-bio">
+                    {{ profile.bio }}
+                </div>
+                <div class="profile-expanded-contact">
+                    &bull; <a href="tel:{{ profile.phone }}" class="profile-expanded-contact-phone">{{ profile.phone }}</a> <br />
+                    &bull; <a href="mailto:{{ profile.email }}" class="profile-expanded-contact-email">{{ profile.email }}</a> <br />
+                    &bull; <a href="{{ profile.linkedin }}" target="_blank" class="profile-expanded-contact-linkedin">{{ profile.linkedin }}</a>
+                </div>
+                <div class="booking-expanded-icon">
+                    <a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a>
+                </div>
             </div>
             <div class="profile-expanded-content">
                 {{ profile.content }}
