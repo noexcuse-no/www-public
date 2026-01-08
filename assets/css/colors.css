@@ -7,7 +7,7 @@
     --background-color-light: #e2e8f0; /* Lys bakgrunnsfarge */
     --text-color-light: #37474f; /* Lys tekstfarge */
     --banner-background-light: #3a4e58; /* Banner bakgrunn i lys modus */
-    --banner-text-light: #ffffff; /* Banner tekst i lys modus */
+    --banner-text-light: azure; /* Banner tekst i lys modus */
     --box-background-light: #ffffff; /* Bakgrunn for kort og bokser i lys modus */
     --link-color-light: #000a14; /* Lenkefarge i lys modus */
     --link-hover-light: #000a1f; /* Lenkefarge ved hover i lys modus */
@@ -18,7 +18,7 @@
     --background-color-dark: #121212; /* Mørk bakgrunnsfarge */
     --text-color-dark: #ffffff; /* Mørk tekstfarge */
     --banner-background-dark: #222222; /* Banner bakgrunn i mørk modus */
-    --banner-text-dark: #ffffffaa; /* Banner tekst i mørk modus */
+    --banner-text-dark: #000a14; /* Banner tekst i mørk modus */
     --box-background-dark: #333333; /* Bakgrunn for kort og bokser i mørk modus */
     --link-color-dark: azure; /* Lenkefarge i mørk modus */
     --link-hover-dark: #8ab4f8; /* Lenkefarge ved hover i mørk modus */
