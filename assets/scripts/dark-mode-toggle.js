@@ -6,11 +6,11 @@ toggleButton.addEventListener('click', function() {
     
     const isDarkMode = !darkStyle.disabled;
     if (isDarkMode) {
-        toggleButton.innerHTML = '&#9788;'; // Ikon for dagmodus
+        toggleButton.innerHTML = '&#9728;'; // Ikon for dagmodus
         toggleButton.style.color = ''; // Default farge
     } else {
-        toggleButton.innerHTML = '&#9790;'; // Ikon for nattmodus
-        toggleButton.style.color = '#f4f4f9'; // Lys farge for nattmodus
+        toggleButton.innerHTML = '&#9728;'; // Ikon for nattmodus
+        toggleButton.style.color = 'azure'; // Lys farge for nattmodus
     }
     
     darkStyle.disabled = isDarkMode;
