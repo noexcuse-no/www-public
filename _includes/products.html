@@ -5,5 +5,8 @@
         <h3>{{ product.name }}</h3>
         <p>{{ product.description }}</p>
     </div>
+    <div class="booking-product">
+        <center><a href="{{ product.booking_url }}" title="Book et møte med meg">Avtal møte</a></center>
+    </div>
     {% endfor %}
 </section>
