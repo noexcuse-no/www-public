@@ -47,3 +47,8 @@ a:hover {
     background-color: var(--box-background-dark);
     color: var(--text-color-dark);
 }
+
+.product {
+    background-color: var(--box-background-dark);
+    color: var(--text-color-dark);
+}
