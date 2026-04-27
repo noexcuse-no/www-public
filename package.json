@@ -1,0 +1,30 @@
+{
+  "name": "noexcuse-no-www",
+  "version": "1.0.0",
+  "description": "Public website for No Excuse AS - a Norwegian management consulting company",
+  "type": "module",
+  "scripts": {
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js && npm test",
+    "lint:html": "htmlhint _includes/ _layouts/ *.html",
+    "lint:css": "stylelint 'assets/css/**/*.css'",
+    "lint:js": "eslint 'assets/scripts/**/*.js'",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.0.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "eslint": "^6.4.0",
+    "vitest": "^2.0.0",
+    "happy-dom": "^14.0.0"
+  },
+  "keywords": [
+    "jekyll",
+    "static-site",
+    "consulting",
+    "norway"
+  ],
+  "author": "No Excuse AS",
+  "license": "UNLICENSED"
+}

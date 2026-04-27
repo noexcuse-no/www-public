@@ -1,0 +1,16 @@
+env:
+  browser: true
+  es6: true
+  node: true
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: module
+rules:
+  no-unused-vars: warn
+  no-undef: warn
+  semi: error
+  quotes: [error, single]
+  indent: [error, 4]
+  comma-dangle: [error, never]
+  no-multiple-empty-lines: [error, max: 1]
+  eol-last: error
