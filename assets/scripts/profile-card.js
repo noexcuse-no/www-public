@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     const profiles = document.querySelectorAll('.profile');
     const profilesCollapsed = document.querySelectorAll('.profile-compact');

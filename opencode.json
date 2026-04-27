@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    ".opencode/rules/architecture/rules.md",
+    ".opencode/rules/naming/rules.md",
+    ".opencode/rules/frontmatter/rules.md",
+    ".opencode/rules/css/rules.md",
+    ".opencode/rules/js/rules.md",
+    ".opencode/rules/html/rules.md",
+    ".opencode/rules/accessibility/rules.md",
+    ".opencode/rules/privacy/rules.md",
+    ".opencode/rules/linting/rules.md",
+    ".opencode/rules/task-management/rules.md"
+  ]
+}
