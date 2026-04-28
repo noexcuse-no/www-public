@@ -11,6 +11,7 @@ All tasks and work-in-progress are tracked here.
 ## Done
 
 - [ ] Set up linting and test infrastructure (this plan)
+- [ ] Phase 1: Brand Design - Create .design/ folder structure
 - [ ] Explore codebase and document architecture
 - [ ] Plan linting, rules, and documentation
 - [ ] Environment testing

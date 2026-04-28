@@ -171,7 +171,7 @@ Placeholder case studies (real examples to be added later):
 - [x] Target audience definition
 
 ### Phase 1: Brand Design
-- [ ] Create `.design/` folder structure
+- [x] Create `.design/` folder structure
 - [ ] Visual identity rules
 - [ ] Color palette specification
 - [ ] Typography selection

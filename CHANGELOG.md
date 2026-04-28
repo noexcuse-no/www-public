@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Brand design specifications (.design/ folder)
+- Design specification document (SPEC.md)
+- Color palette documentation (colors.md)
+- Typography guidelines (typography.md)
+- Page layouts and wireframes (layouts.md)
+- Reusable components library (components.md)
+- Brand perception and tone guide (brand-perception.md)
 - Linting infrastructure: HTMLHint, Stylelint, ESLint
 - Test infrastructure: Vitest with happy-dom
 - Test files for dark-mode-toggle and profile-card
