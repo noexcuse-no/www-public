@@ -210,6 +210,28 @@ npm test           # Unit tests (Vitest)
 
 ---
 
+## Development Process
+
+### Design Documents
+
+Design specifications live in `.design/` (see `SPEC.md` for index). Before planning or implementing work, read all relevant design documents to ensure alignment. Update design documents when decisions change the visual, UX, or brand direction.
+
+### Functional Specifications
+
+When a feature requires structured requirements beyond what fits in a backlog item, create a functional specification document in `.specs/<feature>/README.md`. This document should describe:
+- Purpose and scope
+- Requirements and acceptance criteria
+- Data structures and schemas (frontmatter, collections, etc.)
+- Dependencies and related components
+
+Read the relevant functional spec before starting work on a feature. Update it when requirements evolve during implementation.
+
+### Backlog Management
+
+- **Approved tasks and features** must be written to `BACKLOG.md` under "To Do" before implementation begins.
+- **On completion**: Remove the item from `BACKLOG.md` (instead of moving to "Done") and add a changelog entry under "[Unreleased]". This avoids duplication between backlog and changelog.
+- Keep "Done" section empty — completed work lives only in `CHANGELOG.md`.
+
 ## Task Management
 
 ### Files
@@ -220,11 +242,12 @@ npm test           # Unit tests (Vitest)
 
 ### Rules
 
-1. **On task initiation**: Read `BACKLOG.md`, `CHANGELOG.md`, `VERSION`
-2. **On task completion**: Update:
-   - `BACKLOG.md` - Move task to completed
+1. **On task initiation**: Read `BACKLOG.md`, `CHANGELOG.md`, `VERSION`, relevant `.design/` and `.specs/` documents.
+2. **Progress reporting**: Always show currently running task progress to the user using the `todowrite` tool before beginning work, and update status as tasks complete.
+3. **On task completion**: Update:
+   - `BACKLOG.md` - Remove the completed item (no "Done" section)
    - `CHANGELOG.md` - Add entry under "[Unreleased]"
-3. **Branch creation**: Before making any code modifications:
+4. **Branch creation**: Before making any code modifications:
    - Create a new git branch for changes: `git checkout -b feature/description`
    - Make all changes within this branch
    - Do NOT commit directly to main branch
@@ -252,3 +275,7 @@ Update `VERSION` file accordingly.
 
 - Primary: Norwegian (Bokmål)
 - Code: English (identifiers, comments)
+
+## Markdown
+
+- Footnotes use Pandoc style: `[^ref]` inline and `[^ref]: Content` at bottom of file.
