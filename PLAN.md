@@ -203,6 +203,28 @@ Placeholder case studies (real examples to be added later):
 ### Phase 4: Content
 - [ ] Homepage (hero + value proposition + services + direct booking CTA)
 - [ ] Service: Ledelse 60:2 (refine existing)
+  - [ ] Restructure `_products/modenhetsvurdering.md` frontmatter:
+    - `short_description` — one-liner hero text
+    - `benefits[]` — array of {title, text, icon} for 4 benefit cards
+    - `process_steps[]` — array of {title, text, icon} for 3-step flow
+    - `story` — short "why we made it" paragraph
+  - [ ] Generate 8 graphics via GPT Image 2:
+    - 1 hero illustration (chaos → clarity, 16:9)
+    - 7 line-art icons (control, AI, compass, group, chat, checklist, report) in azure, 1:1
+    - Place in `assets/images/icons/`
+  - [ ] Rewrite `_includes/products.html` template:
+    - Hero section: image + punchy headline + sub-text + inline booking link
+    - Benefit cards: 2×2 grid with icon + title + one-liner
+    - Process steps: 3-step horizontal flow with icons and arrows
+    - Story section: shortened paragraph
+    - CTA: inline "Bestill uforpliktende prat →" link
+  - [ ] Rewrite `assets/css/products.css`:
+    - `.product-hero` — flex layout, stacked on mobile (≤599px)
+    - `.benefits-grid` — CSS grid 2×2 → 1 column mobile
+    - `.benefit-card` — card with icon, title, text
+    - `.process-steps` — flex row with arrows → column mobile
+    - `.process-step` — centered content with icon
+    - `.booking-link` — inline arrow link style
 - [ ] Service: Katalysator (new page)
 - [ ] Case Studies (2-3 placeholder templates)
 - [ ] Profile: Dagfinn Bang-Johansen (update bio)
