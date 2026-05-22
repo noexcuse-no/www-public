@@ -8,12 +8,12 @@
 
 ## Task Initiation
 
-On task initiation: Read `BACKLOG.md`, `CHANGELOG.md`, `VERSION`
+On task initiation: Read `BACKLOG.md`, `CHANGELOG.md`, `VERSION`, relevant `.design/` and `.specs/` documents.
 
 ## Task Completion
 
 On task completion:
-- Update `BACKLOG.md` - Move task to completed
+- Update `BACKLOG.md` - Remove the completed item (no "Done" section kept)
 - Update `CHANGELOG.md` - Add entry under "[Unreleased]"
 - Push changes to remote
 
