@@ -1,39 +1,31 @@
-/* Generelle stiler for navbar */
 .navbar {
     display: flex;
-    justify-content: center; /* Sentraliserer innholdet i navbaren */
+    justify-content: center;
     align-items: center;
+    gap: 32px;
     padding: 10px 0;
     background-color: var(--navbar-background);
-    max-width: 30%; /* Begrens bredde til maksimum 30% */
-    margin: 0 auto; /* Sentraliserer navbaren i sin container */
 }
 
-/* Navigasjonslenker */
 .navbar a {
     text-decoration: none;
     color: var(--navbar-link-color);
-    font-size: 1.8em; /* Normal fontstørrelse for desktop */
-    margin: 0 2ch; /* To karakterers avstand mellom lenkene */
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hover-effekt for lenker */
 .navbar a:hover {
     color: var(--navbar-link-hover-color);
-    font-weight: bolder;
+    opacity: 0.8;
 }
 
-/* Mobiljusteringer */
 @media (max-width: 599px) {
     .navbar {
-        max-width: 90%; /* Justerer breddebegrensning for mobilvisning */
+        gap: 20px;
     }
 
-    /* Justering for navbar-lenker */
     .navbar a {
-        font-size: 0.8em; /* Redusert fontstørrelse for mobilvisning */
-        margin: 0 1.5ch; /* Litt mindre avstand på mobiler for kompakt visning */
+        font-size: 0.95em;
     }
- 
 }

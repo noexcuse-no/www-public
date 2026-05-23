@@ -1,17 +1,328 @@
 .products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.product {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    margin-bottom: 10px;
-    max-width: 550px;
+.product-hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.product-hero-content {
+    flex: 1;
+}
+
+.product-hero-content h2 {
+    font-size: 2em;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.product-short-description {
+    font-size: 1.15em;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    opacity: 0.85;
+}
+
+.product-hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.product-hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.product-cta {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: var(--primary-accent);
+    color: var(--primary-accent-contrast);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.05em;
+    transition: opacity 0.2s;
+}
+
+.product-cta:hover {
+    opacity: 0.85;
+}
+
+.product-link {
+    display: inline-block;
+    margin-left: 16px;
+    color: var(--primary-accent);
+    text-decoration: underline;
+    font-size: 0.95em;
+}
+
+.product-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.benefit-card {
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: var(--box-background-light);
+    transition: transform 0.2s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-2px);
+}
+
+.benefit-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+}
+
+.benefit-card h4 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.benefit-card p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.product-cta-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Landing page styles */
+
+.landing-hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.landing-hero-content {
+    flex: 1;
+}
+
+.landing-hero-content h1 {
+    font-size: 2.5em;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.landing-hero-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    opacity: 0.85;
+}
+
+.landing-scroll-link {
+    display: inline-block;
+    margin-left: 16px;
+    color: var(--primary-accent);
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.landing-scroll-link:hover {
+    text-decoration: underline;
+}
+
+.landing-hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.landing-hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.landing-benefits,
+.landing-process,
+.landing-story,
+.landing-cases,
+.landing-cta {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.landing-benefits h2,
+.landing-process h2,
+.landing-story h2,
+.landing-cases h2,
+.landing-cta h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 40px;
+}
+
+.landing-benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.landing-process-steps {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.process-step {
+    flex: 1;
+    text-align: center;
+    padding: 32px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: var(--box-background-light);
+    position: relative;
+}
+
+.process-step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-accent);
+    color: var(--primary-accent-contrast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0 auto 16px;
+}
+
+.process-step-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 12px;
+}
+
+.process-step h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.process-step p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.landing-story p {
+    font-size: 1.05em;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.landing-science-link {
+    color: var(--primary-accent);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.landing-cases-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.case-card {
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: var(--box-background-light);
+}
+
+.case-card h3 {
+    font-size: 1.15em;
+    margin-bottom: 8px;
+}
+
+.case-result {
+    margin-top: 12px;
+    color: var(--primary-accent);
+}
+
+.case-customer {
+    margin-top: 4px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.landing-cta {
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.landing-cta p {
+    font-size: 1.1em;
+    margin-bottom: 32px;
+    opacity: 0.85;
+}
+
+.product-cta--large {
+    padding: 18px 48px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .product-hero,
+    .landing-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+        padding: 40px 20px;
+    }
+
+    .landing-hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .product-link {
+        margin-left: 0;
+        margin-top: 12px;
+        display: block;
+    }
+
+    .product-benefits,
+    .landing-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-process-steps {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .landing-cases-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-benefits,
+    .landing-process,
+    .landing-story,
+    .landing-cases,
+    .landing-cta {
+        padding: 40px 20px;
+    }
 }
