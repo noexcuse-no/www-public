@@ -7,3 +7,6 @@ collections:
     output: true
   partners:
     output: true
+  pages:
+    output: true
+    permalink: /:path/
