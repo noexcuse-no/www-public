@@ -1,6 +1,6 @@
 ---
 name: "Ledelse 60:2"
-short_description: "Enkel, kunnskapsbasert orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
+short_description: "Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål for bedre situasjonsforståelse."
 url: "/ledelse-60-2/"
 benefits:
   - title: "Få kontroll uten byråkrati"

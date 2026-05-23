@@ -16,7 +16,7 @@
         <div class="profile-expanded">
             <div class="profile-expanded-heading">
                 <div class="profile-expanded-picture">
-                    <img class="profile-image" src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
+<img class="profile-image" src="{{ profile.image | relative_url }}" alt="{{ profile.name }}s profilbilde">
                 </div>
                 <div class="profile-expanded-name">
                     <h3 class="profile-name">{{ profile.name }}</h3>

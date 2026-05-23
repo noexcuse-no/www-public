@@ -1,0 +1,116 @@
+.avtale-page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.avtale-logo {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 40px;
+}
+
+.avtale-page h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+
+.avtale-meta {
+    text-align: center;
+    font-size: 0.9em;
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+.avtale-page h2 {
+    font-size: 1.3em;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.avtale-page p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+    .avtale-logo {
+        max-width: 200px;
+    }
+
+    .avtale-page h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media print {
+    .avtale-page {
+        max-width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .avtale-logo {
+        max-width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .avtale-page h1 {
+        font-size: 18pt;
+        margin-bottom: 6px;
+    }
+
+    .avtale-meta {
+        font-size: 10pt;
+        margin-bottom: 30px;
+    }
+
+    .avtale-page h2 {
+        font-size: 12pt;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #ccc;
+        page-break-after: avoid;
+    }
+
+    .avtale-page p {
+        font-size: 11pt;
+        line-height: 1.5;
+        margin-bottom: 12px;
+        orphans: 3;
+        widows: 3;
+    }
+
+    header, footer, nav, .navbar, .banner, .product-cta, .product-link {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-size: 11pt;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .avtale-page {
+        padding: 0;
+    }
+
+    h1, h2 {
+        page-break-after: avoid;
+    }
+
+    p {
+        page-break-inside: avoid;
+    }
+}
