@@ -13,7 +13,7 @@ json_ld:
     logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.png"
     contactPoint:
       contactType: "booking"
-      url: "https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no"
+      url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   url: "https://noexcuse.no/ledelse-60-2/"
   areaServed: "NO"
   serviceType: "Leadership Assessment"
@@ -41,7 +41,7 @@ json_ld:
     <div class="landing-hero-content">
         <h1>Ledelse 60:2</h1>
         <p class="landing-hero-description">Enkel, kunnskapsbasert orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg.</p>
-        <a href="https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no" class="product-cta">Book en uforpliktende samtale</a>
+        <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Book en uforpliktende samtale</a>
         <a href="#hvordan" class="landing-scroll-link">Hvordan fungerer det? ↓</a>
     </div>
     <div class="landing-hero-image">
@@ -128,5 +128,5 @@ json_ld:
 <section class="landing-cta">
     <h2>Klar for en mer moden ledelse?</h2>
     <p>Book en uforpliktende samtale, så finner vi ut om Ledelse 60:2 er rett for dere.</p>
-    <a href="https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no" class="product-cta product-cta--large">Book samtale</a>
+    <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta product-cta--large">Book samtale</a>
 </section>

@@ -26,7 +26,7 @@ process_steps:
     description: "Du får en rapport som sammenlikner ledelsen med typisk bestepraksis, og anbefalinger om enkle muligheter for forbedringer på områder dere er opptatt av."
     banner: "assets/images/banners/step-report.png"
 story: "«Ledelse 60:2» er vår tilnærming til å bruke en enkel vitenskapelig metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet. Virksomhetens utbytte er å få et bedre beslutningsgrunnlag for å prioritere forbedringer av hvordan ledelsen fungerer, og forbedring av administrative støttefunksjoner for styring og kontroll. Vår motivasjon er å utvikle ny kunnskap om nordisk ledelses- og styringspraksis, noe som vi tror vil være viktig for norske virksomheters konkurranseevne."
-booking_url: "https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no"
+booking_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
 image: "assets/images/hero-illustration.png"
 tags: "#ledelse #orientering #analyse #ledelse60-2"
 ---
