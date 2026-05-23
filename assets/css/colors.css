@@ -2,7 +2,7 @@
 
     --primary-accent: azure;
     --primary-accent-contrast: #000a14;
-    
+
     /* Light Mode Colors */
     --background-color-light: #e2e8f0; /* Lys bakgrunnsfarge */
     --text-color-light: #37474f; /* Lys tekstfarge */
@@ -13,6 +13,7 @@
     --link-hover-light: #000a1f; /* Lenkefarge ved hover i lys modus */
     --footer-background-light: #ffffff; /* Footer bakgrunn i lys modus */
     --footer-text-light: #000a14; /* Footer tekst i lys modus */
+    --box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.08); /* Box shadow i lys modus */
 
     /* Dark Mode Colors */
     --background-color-dark: #121212; /* Mørk bakgrunnsfarge */
@@ -24,4 +25,5 @@
     --link-hover-dark: #8ab4f8; /* Lenkefarge ved hover i mørk modus */
     --footer-background-dark: #222222; /* Footer bakgrunn i mørk modus */
     --footer-text-dark: azure; /* Footer tekst i mørk modus */
+    --box-shadow-dark: 0 2px 8px rgba(0, 0, 0, 0.3); /* Box shadow i mørk modus */
 }

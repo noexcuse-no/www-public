@@ -93,3 +93,94 @@ tags: "#samarbeid"              # optional
 - **CSS**: `assets/css/products.css` rewrite with hero layout, 2×2 grid, step flow
 - **Navigation**: `.specs/navigation/README.md`
 - **Content**: `_products/ledelse-60-2.md` frontmatter rewrite
+
+## Banner Specifications (v2)
+
+### Overview
+
+Benefits and process steps now use **mini-hero banners** instead of icons. These are abstract 16:9 horizontal illustrations that visually represent each concept, matching the style of the main hero illustration.
+
+### Banner Files
+
+**Benefits (4 banners):**
+```
+assets/images/banners/benefit-control.png
+assets/images/banners/benefit-ai.png
+assets/images/banners/benefit-future.png
+assets/images/banners/benefit-anchoring.png
+```
+
+**Process Steps (3 banners):**
+```
+assets/images/banners/step-talk.png
+assets/images/banners/step-interview.png
+assets/images/banners/step-report.png
+```
+
+### Design Guidelines
+
+| Property | Value |
+|----------|-------|
+| **Aspect Ratio** | 16:9 (horizontal) |
+| **Style** | Abstract illustration, matching hero-illustration.png style |
+| **Color Palette** | Brand colors (azure accent, neutral tones) |
+| **Content** | Abstract/symbolic, no text |
+| **File Format** | PNG with transparency |
+| **Dimensions** | 1600×900 recommended, minimum 800×450 |
+
+### Visual Direction for Each Banner
+
+**Benefits:**
+1. **"Få kontroll uten byråkrati"** — Abstract representation of trust-based leadership vs. rigid structure
+2. **"Oppnå målbare gevinster med KI"** — Abstract representation of human-AI collaboration
+3. **"Bli forberedt på en usikker fremtid"** — Abstract representation of forward vision/planning
+4. **"Forankre initiativer i ledergruppen"** — Abstract representation of group alignment/collaboration
+
+**Process Steps:**
+1. **"Uforpliktende samtale"** — Abstract representation of dialogue/consultation
+2. **"To timers strukturert intervju"** — Abstract representation of focused interview/discussion
+3. **"Rapport og anbefalinger"** — Abstract representation of insights/delivery
+
+### CSS Updates Required
+
+```css
+/* Banner dimensions */
+.benefit-banner,
+.process-banner {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+}
+
+/* Grid adjustments */
+.landing-benefits-grid {
+    gap: 32px;
+}
+
+.landing-process-steps {
+    gap: 32px;
+}
+```
+
+### Frontmatter Update
+
+Replace `icon` fields with `banner`:
+
+```yaml
+benefits:
+  - title: "Få kontroll uten byråkrati"
+    description: "..."
+    banner: "assets/images/banners/benefit-control.png"
+  - title: "Oppnå målbare gevinster med KI"
+    description: "..."
+    banner: "assets/images/banners/benefit-ai.png"
+  # ... etc
+
+process_steps:
+  - title: "1. Uforpliktende samtale"
+    description: "..."
+    banner: "assets/images/banners/step-talk.png"
+  # ... etc
+```

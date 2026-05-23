@@ -52,3 +52,23 @@ a:hover {
     background-color: var(--box-background-dark);
     color: var(--text-color-dark);
 }
+
+.landing-hero {
+    background-color: var(--background-color-dark);
+}
+
+.landing-benefits,
+.landing-process,
+.landing-story,
+.landing-cases,
+.landing-cta {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.benefit-card,
+.process-step,
+.case-card {
+    background-color: var(--box-background-dark);
+    box-shadow: var(--box-shadow-dark);
+}
