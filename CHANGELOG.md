@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-05-23
+
+### Added
+
+- Architecture specification (`.specs/architecture/README.md`) — Jekyll patterns, path handling, collection schemas
+- Design architecture doc (`.design/architecture.md`) — site structure, URL conventions
+- AI knowledge base spec (`.specs/knowledge-base/README.md`) — three AI contexts documentation
+- 7 mini-hero banners (16:9 abstract illustrations) via GPT Image 2: 4 benefit + 3 process step
+- JSON-LD schemas in all `_pages/` frontmatter (Service, Organization, TechArticle)
+- CSS variable validation tests (`tests/css-variables.test.js`)
+- Generic `_includes/image.html` partial for consistent image path handling
+- Box-shadow CSS variables (`--box-shadow-light`, `--box-shadow-dark`)
+
+### Changed
+
+- **BREAKING** Moved pages from root to `_pages/` collection (ledelse-60-2, om-oss, vitenskapelig-grunnlag)
+- Refactored `_layouts/landing.html` to be generic (no hard-coded product references)
+- Fixed path handling: replaced `site.baseurl` with `relative_url` filter throughout
+- Updated `products.css`: banner dimensions (16:9 aspect ratio, max-width 400px), CSS variable box-shadow
+- Updated `styles-dark.css`: dark variants for `.landing-*` sections and `.benefit-card`, `.process-step`, `.case-card`
+- Updated `_products/ledelse-60-2.md`: `icon` → `banner` field, added `url` field
+- Updated `components.md`: dark mode component requirements and checklist
+- Updated `task-management/rules.md`: blocked items strategy, research preferences (prefer Kaggle)
+
+### Fixed
+
+- Dark mode for landing page sections (benefit-card, process-step, case-card)
+
+## [1.3.0] - 2026-05-22
+
 ### Added
 
 - Functional specification documents (.specs/) for Ledelse 60:2, cases, partners, navigation, and om-oss
@@ -29,8 +59,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated _layouts/default.html to include partners section
 - Updated _includes/navbar.html with active links and revised navbar.css
 - Updated BACKLOG.md — removed completed tasks (no Done section)
-
-### Fixed
 
 ## [1.0.0] - YYYY-MM-DD
 
