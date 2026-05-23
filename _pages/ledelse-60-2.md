@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: page
 title: "Ledelse 60:2 — Modenhetsanalyse for ledergruppen"
 permalink: /ledelse-60-2/
 json_ld:
@@ -102,7 +102,7 @@ json_ld:
 <section class="landing-story">
     <h2>Historien bak metoden</h2>
     <p>«Ledelse 60:2» er vår tilnærming til å bruke en enkel vitenskapelig metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet.</p>
-    <a href="{{ '/vitenskapelig-grunnlag/' | relative_url }}" class="landing-science-link">Les det vitenskapelige grunnlaget →</a>
+    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="landing-science-link">Les det vitenskapelige grunnlaget →</a>
 </section>
 
 {% if site.cases.size > 0 %}

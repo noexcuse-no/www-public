@@ -4,7 +4,7 @@
         <div class="product-hero-content">
             <h2>{{ product.name }}</h2>
             <p class="product-short-description">{{ product.short_description }}</p>
-            <a href="{{ product.booking_url }}" class="product-cta" title="Book et møte">Bestill nå</a>
+            <a href="{{ product.booking_url }}" class="product-cta" title="Book et møte" onclick="openBookingModal('{{ product.booking_url }}'); return false;">Bestill nå</a>
             <a href="{{ product.url | relative_url }}" class="product-cta" title="Les mer">Les mer om metoden →</a>
         </div>
         <div class="product-hero-image">
@@ -21,7 +21,7 @@
         {% endfor %}
     </div>
     <div class="product-cta-footer">
-        <a href="{{ product.booking_url }}" class="product-cta" title="Book et møte">Book en uforpliktende samtale</a>
+        <a href="{{ product.booking_url }}" class="product-cta" title="Book et møte" onclick="openBookingModal('{{ product.booking_url }}'); return false;">Book en uforpliktende samtale</a>
     </div>
     {% endfor %}
 </section>

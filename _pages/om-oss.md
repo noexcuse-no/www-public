@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "Om No Excuse"
+layout: home
+title: "Om oss"
 permalink: /om-oss/
 json_ld:
   type: "Organization"

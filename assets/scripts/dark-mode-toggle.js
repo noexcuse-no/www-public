@@ -1,17 +1,16 @@
-// Script for å toggle dark mode CSS-stilark
-const toggleButton = document.getElementById('dark-mode-toggle');
-toggleButton.addEventListener('click', function() {
+(function() {
     const darkStyle = document.getElementById('dark-style');
-    document.body.classList.toggle('dark-mode');
-    
-    const isDarkMode = !darkStyle.disabled;
-    if (isDarkMode) {
-        toggleButton.innerHTML = '&#9728;'; // Ikon for dagmodus
-        toggleButton.style.color = ''; // Default farge
+    const lightStyle = document.getElementById('light-style');
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (prefersDark) {
+        darkStyle.disabled = false;
+        lightStyle.disabled = true;
+        document.body.classList.add('dark-mode');
     } else {
-        toggleButton.innerHTML = '&#9728;'; // Ikon for nattmodus
-        toggleButton.style.color = 'azure'; // Lys farge for nattmodus
+        darkStyle.disabled = true;
+        lightStyle.disabled = false;
+        document.body.classList.remove('dark-mode');
     }
-    
-    darkStyle.disabled = isDarkMode;
-});
+})();
