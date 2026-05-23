@@ -1,14 +1,27 @@
 <section id="products" class="products">
     {% for product in site.products %}
-    <div class="product">
-   <!--      <img src="{{ site.baseurl }}{{ product.image }}" alt="{{ product }} produktbilde"> -->
-        <h3>{{ product.name }}</h3>
-        {{ product.description }}
+    <div class="product-hero">
+        <div class="product-hero-content">
+            <h2>{{ product.name }}</h2>
+            <p class="product-short-description">{{ product.short_description }}</p>
+            <a href="{{ product.booking_url }}" class="product-cta" title="Book et møte">Bestill nå</a>
+            <a href="/ledelse-60-2/" class="product-link">Les mer om metoden →</a>
+        </div>
+        <div class="product-hero-image">
+            <img src="{{ site.baseurl }}{{ product.image }}" alt="{{ product.name }} — illustrasjon">
+        </div>
     </div>
-    <!-- Dette styles senere
-    <div class="booking-product">
-        <center><a href="{{ product.booking_url }}" title="Book et møte med meg">Jeg er interessert</a></center>
-    </div> 
-    -->
+    <div class="product-benefits">
+        {% for benefit in product.benefits %}
+        <div class="benefit-card">
+            <img src="{{ site.baseurl }}{{ benefit.icon }}" alt="" class="benefit-icon" aria-hidden="true">
+            <h4>{{ benefit.title }}</h4>
+            <p>{{ benefit.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="product-cta-footer">
+        <a href="{{ product.booking_url }}" class="product-cta" title="Book et møte">Book en uforpliktende samtale</a>
+    </div>
     {% endfor %}
 </section>

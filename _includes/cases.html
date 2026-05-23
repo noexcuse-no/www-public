@@ -1,8 +1,17 @@
 <section id="cases" class="cases">
     {% for case in site.cases %}
     <div class="case">
+        {% if case.image %}
+        <img src="{{ site.baseurl }}{{ case.image }}" alt="" class="case-image" aria-hidden="true">
+        {% endif %}
         <h3>{{ case.title }}</h3>
         <p>{{ case.description }}</p>
+        {% if case.result %}
+        <p class="case-result"><strong>Resultat:</strong> {{ case.result }}</p>
+        {% endif %}
+        {% if case.customer %}
+        <p class="case-customer">— {{ case.customer }}</p>
+        {% endif %}
     </div>
     {% endfor %}
 </section>
