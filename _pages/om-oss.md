@@ -12,7 +12,7 @@ json_ld:
   foundingDate: "2025-06"
   foundingLocation: "Norge"
   areaServed: "Norge"
-  description: "No Excuse AS ble grunnlagt i juni 2025 av Rasmus S. Olsen og Dagfinn Bang-Johansen. Vi bistår virksomheter med å lede bedre gjennom kvalitative metoder og refleksjon."
+  description: "No Excuse AS ble grunnlagt i juni 2025 av Rasmus S. Olsen og Dagfinn Bang-Johansen. Vi bistår virksomheter med å forbedre ledelsesfunksjonen."
   contactPoint:
     type: "ContactPoint"
     contactType: "customer service"
@@ -29,17 +29,16 @@ json_ld:
 
 <section class="about-story">
     <h2>Hvorfor No Excuse?</h2>
-    <p>No Excuse AS ble grunnlagt i juni 2025 av Rasmus S. Olsen og Dagfinn Bang-Johansen. Vi så et behov for en mer tilgjengelig og tidseffektiv måte å analysere og forbedre ledelsesfunksjonen i norske virksomheter — uten dyre konsulentrapporter og unødvendig kompleksitet.</p>
+    <p>No Excuse AS ble grunnlagt i juni 2025 av Rasmus S. Olsen og Dagfinn Bang-Johansen. Vi så et behov for å forbedre ledelsesfunksjonen i norske virksomheter uten dyre konsulentrapporter og unødvendig kompleksitet.</p>
     <p>Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals fire perspektiver) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse, refleksjon fremfor skjemaer, og at de beste svarene ofte finnes internt — om man stiller de riktige spørsmålene.</p>
 </section>
 
 <section class="about-values">
-    <h2>Våre verdier</h2>
+    <h2>Vårt oppdrag og verdigrunnlag</h2>
     <ul>
-        <li><strong>Direkte:</strong> Vi sier hva vi mener, uten konsulentspråk</li>
-        <li><strong>Kompetent:</strong> Dokumenterte resultater, reell erfaring</li>
-        <li><strong>Skandinavisk minimal:</strong> Rene linjer, funksjonelt, ingen unødvendig fluff</li>
-        <li><strong>Anti-etablissement:</strong> Vi utfordrer det opplagte og stiller spørsmål ved konvensjoner</li>
+        <li>Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse</li>
+        <li>Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget</li>
+        <li>Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater</li>
     </ul>
 </section>
 

@@ -1,0 +1,133 @@
+<div id="booking-overlay" class="booking-overlay" aria-hidden="true">
+    <button class="booking-close" aria-label="Lukk">&times;</button>
+    <div class="booking-container">
+        <iframe id="booking-iframe" src="" title="Booking"></iframe>
+    </div>
+</div>
+
+<style>
+.booking-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.booking-overlay.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booking-close:hover {
+    background: white;
+}
+
+.booking-container {
+    position: relative;
+    width: calc(100% - 32px);
+    max-width: 900px;
+    height: calc(100vh - 80px);
+    max-height: 700px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.booking-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .booking-overlay.active {
+        align-items: flex-end;
+    }
+
+    .booking-container {
+        width: 100%;
+        max-width: 100%;
+        height: 90vh;
+        max-height: none;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .booking-close {
+        top: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-container {
+        height: 85vh;
+    }
+}
+</style>
+
+<script>
+(function() {
+    const overlay = document.getElementById('booking-overlay');
+    const iframe = document.getElementById('booking-iframe');
+    const closeBtn = document.querySelector('.booking-close');
+
+    function openBooking(url) {
+        iframe.src = url;
+        overlay.classList.add('active');
+        overlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeBooking() {
+        overlay.classList.remove('active');
+        overlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        setTimeout(() => {
+            iframe.src = '';
+        }, 300);
+    }
+
+    closeBtn.addEventListener('click', closeBooking);
+
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closeBooking();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            closeBooking();
+        }
+    });
+
+    window.openBookingModal = openBooking;
+})();
+</script>
