@@ -3,9 +3,9 @@
     <div class="profile">
         <div class="profile-compact">
             <div class="booking-icon">
-                <a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a>
+                <a href="{{ profile.booking_url }}" title="Book et møte med meg" onclick="openBookingModal('{{ profile.booking_url }}'); return false;">Avtal møte</a>
             </div>
-            <img class="profile-image" src="{{ site.baseurl }}{{ profile.image }}" alt="{{ profile.name }}s profilbilde">
+            <img class="profile-image" src="{{ profile.image | relative_url }}" alt="{{ profile.name }}s profilbilde">
             <h3 class="profile-name">{{ profile.name }}</h3>
             <div class="profile-contact">
                 <a href="tel:{{ profile.phone }}" class="profile-phone"><strong>{{ profile.phone }}</strong></a><br>
@@ -13,33 +13,290 @@
                 <a href="{{ profile.linkedin }}" target="_blank" class="profile-linkedin"><strong>{{ profile.linkedin }}</strong></a>
             </div>
         </div>
-        <div class="profile-expanded">
-            <div class="profile-expanded-heading">
-                <div class="profile-expanded-picture">
-<img class="profile-image" src="{{ profile.image | relative_url }}" alt="{{ profile.name }}s profilbilde">
-                </div>
-                <div class="profile-expanded-name">
-                    <h3 class="profile-name">{{ profile.name }}</h3>
-                </div>
-                <div class="profile-expanded-tags">
-                   Nøkkelord: {{ profile.tags }}
+        <div class="profile-expanded" id="profile-expanded-{{ forloop.index }}">
+            <button class="profile-close" aria-label="Lukk">&times;</button>
+            <div class="profile-expanded-content">
+                <div class="profile-expanded-header">
+                    <img class="profile-image-large" src="{{ profile.image | relative_url }}" alt="{{ profile.name }}s profilbilde">
+                    <div class="profile-expanded-info">
+                        <h3 class="profile-name">{{ profile.name }}</h3>
+                        <p class="profile-tags">{{ profile.tags }}</p>
+                    </div>
                 </div>
                 <div class="profile-expanded-bio">
                     {{ profile.bio }}
                 </div>
                 <div class="profile-expanded-contact">
-                    &bull; <a href="tel:{{ profile.phone }}" class="profile-expanded-contact-phone">{{ profile.phone }}</a> <br />
-                    &bull; <a href="mailto:{{ profile.email }}" class="profile-expanded-contact-email">{{ profile.email }}</a> <br />
-                    &bull; <a href="{{ profile.linkedin }}" target="_blank" class="profile-expanded-contact-linkedin">{{ profile.linkedin }}</a>
+                    <a href="tel:{{ profile.phone }}" class="profile-contact-item">{{ profile.phone }}</a>
+                    <a href="mailto:{{ profile.email }}" class="profile-contact-item">{{ profile.email }}</a>
+                    <a href="{{ profile.linkedin }}" target="_blank" class="profile-contact-item">{{ profile.linkedin }}</a>
                 </div>
-                <div class="booking-expanded-icon">
-                    <center><a href="{{ profile.booking_url }}" title="Book et møte med meg">Avtal møte</a></center>
+                <div class="profile-expanded-actions">
+                    <a href="{{ profile.booking_url }}" class="profile-booking-btn" onclick="openBookingModal('{{ profile.booking_url }}'); return false;">Avtal møte</a>
                 </div>
-            </div>
-            <div class="profile-expanded-content">
-                {{ profile.content }}
+                <div class="profile-expanded-details">
+                    {{ profile.content }}
+                </div>
             </div>
         </div>
     </div>
     {% endfor %}
 </section>
+
+<style>
+.profile {
+    position: relative;
+}
+
+.profile-compact {
+    border-radius: 15px;
+    box-shadow: var(--box-shadow-light);
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--box-background-light);
+    max-width: 350px;
+}
+
+.profile-compact:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--box-shadow-light-hover);
+}
+
+.profile-expanded {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-expanded.active {
+    display: flex;
+}
+
+.profile-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s ease;
+}
+
+.profile-close:hover {
+    background: white;
+}
+
+.profile-expanded-content {
+    background: var(--box-background-light);
+    border-radius: 16px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.profile-expanded-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.profile-image-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.profile-expanded-info {
+    flex: 1;
+}
+
+.profile-expanded-info .profile-name {
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+    text-align: left;
+}
+
+.profile-tags {
+    font-size: 0.9em;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.profile-expanded-bio {
+    padding: 24px 30px;
+    font-size: 1.05em;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.profile-expanded-contact {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.profile-contact-item {
+    font-size: 0.95em;
+    color: var(--link-color-light);
+}
+
+.profile-expanded-actions {
+    padding: 20px 30px;
+}
+
+.profile-booking-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--primary-accent);
+    color: var(--primary-accent-contrast);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.profile-booking-btn:hover {
+    opacity: 0.85;
+    color: var(--primary-accent-contrast);
+}
+
+.profile-expanded-details {
+    padding: 20px 30px 30px;
+}
+
+.profile-contact {
+    font-size: 1em;
+    text-align: center;
+}
+
+@media (max-width: 599px) {
+    .profile-compact {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .profile-expanded {
+        padding: 0;
+        align-items: flex-end;
+    }
+
+    .profile-expanded.active {
+        display: flex;
+    }
+
+    .profile-expanded-content {
+        border-radius: 16px 16px 0 0;
+        max-height: 85vh;
+        width: 100%;
+    }
+
+    .profile-expanded-header {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image-large {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-expanded-info .profile-name {
+        text-align: center;
+    }
+
+    .profile-expanded-bio {
+        padding: 20px;
+    }
+
+    .profile-expanded-contact {
+        padding: 16px 20px;
+        justify-content: center;
+    }
+
+    .profile-expanded-actions {
+        padding: 16px 20px;
+        text-align: center;
+    }
+
+    .profile-expanded-details {
+        padding: 16px 20px 24px;
+    }
+
+    .close-button {
+        top: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const profiles = document.querySelectorAll('.profile');
+    
+    profiles.forEach(profile => {
+        const compact = profile.querySelector('.profile-compact');
+        const expanded = profile.querySelector('.profile-expanded');
+        const closeBtn = expanded.querySelector('.profile-close');
+        
+        compact.addEventListener('click', () => {
+            expanded.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            expanded.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        expanded.addEventListener('click', (e) => {
+            if (e.target === expanded) {
+                expanded.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const active = document.querySelector('.profile-expanded.active');
+            if (active) {
+                active.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+    });
+});
+</script>
