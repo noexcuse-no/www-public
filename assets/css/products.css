@@ -135,7 +135,7 @@
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 16px;
+    border-radius: 0;
 }
 
 .landing-hero-content {
