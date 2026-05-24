@@ -34,7 +34,7 @@ json_ld:
     <div class="science-hero-content">
         <p class="science-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
         <h1>Vitenskapelig grunnlag</h1>
-        <p class="science-intro">«Ledelse 60:2» er en intervjubasert modenhetsanalyse som kartlegger ledelseskultur gjennom 60 diagnostiske spørsmål på to timer. Metoden bygger på et tverrfaglig vitenskapelig fundament — fra organisasjonsteori og maktanalyse til kulturforskning og beslutningsvitenskap.</p>
+        <p class="science-intro">«Ledelse 60:2» er en metode som bruker intervjubasert kartlegging av kulturelle faktorer i en ledergruppe som metodikk for datafangst. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kulturforskning og beslutningsvitenskap - som gir den høy fleksibel anvendelighet for kunden på tvers av domener og problemstillinger. Ut over den vitenskapelig funderte metodikken for datafangst, så innebærer "Ledelse 60:2" at de strukturerte intervjuene er en del av en langsiktig metode for å produsere kunnskap fra innsamlede data.</p>
     </div>
 </section>
 
@@ -42,44 +42,44 @@ json_ld:
     <h2><span class="section-number">1</span> Teoretisk grunnlag</h2>
     <p>Intervjustrukturen i «Ledelse 60:2» tar direkte utgangspunkt i Lee G. Bolman og Terrence E. Deals firedelte rammeverk for organisasjonsanalyse, først presentert i <em>Reframing Organizations</em> (1984) og videreutviklet gjennom seks utgaver fram til 2017 (Bolman & Deal, 2017). Rammeverket er også tilgjengelig på norsk i <em>Nytt perspektiv på organisasjon og ledelse</em> (Bolman & Deal, 2024).</p>
 
-    <p>De fire perspektivene — eller rammene — utgjør selve ryggraden i de 60 spørsmålene. Hver ramme gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen gjennom én ramme, risikerer å oversees avgjørende forhold.</p>
+    <p>De fire perspektivene — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — utgjør selve ryggraden i de 60 spørsmålene. Hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold.</p>
 
     <div class="frames-horizontal">
         <div class="frames-row">
             <div class="frame-item frame-struct">
-                <img src="{{ '/assets/images/banners/frame-structure.png' | relative_url }}" alt="Strukturrammen" class="frame-image">
+                <img src="{{ '/assets/images/banners/frame-structure.png' | relative_url }}" alt="Struktur" class="frame-image">
                 <div class="frame-content">
-                    <h3>Struktur</h3>
+                    <h3>Strukturperspektivet</h3>
                     <p class="frame-desc">Roller, mål, prosesser, koordinering, ansvar</p>
                     <p class="frame-detail-text">Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig.</p>
                     <cite>Hubbard (2014)</cite>
                 </div>
             </div>
             <div class="frame-item frame-human">
-                <img src="{{ '/assets/images/banners/frame-human.png' | relative_url }}" alt="Menneskerammen" class="frame-image">
+                <img src="{{ '/assets/images/banners/frame-human.png' | relative_url }}" alt="Menneske" class="frame-image">
                 <div class="frame-content">
-                    <h3>Mennesker</h3>
+                    <h3>Menneskeperspektivet</h3>
                     <p class="frame-desc">Tillit, motivasjon, relasjoner, utvikling, medvirkning</p>
-                    <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at tjenerledelse er en konkurransekraft.</p>
+                    <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at "servant leadership" er et konkurransefortrinn.</p>
                     <cite>Blanchard & Barrett (2011)</cite>
                 </div>
             </div>
         </div>
         <div class="frames-row">
             <div class="frame-item frame-political">
-                <img src="{{ '/assets/images/banners/frame-political.png' | relative_url }}" alt="Politikkrammen" class="frame-image">
+                <img src="{{ '/assets/images/banners/frame-political.png' | relative_url }}" alt="Påvirkning" class="frame-image">
                 <div class="frame-content">
-                    <h3>Politikk</h3>
-                    <p class="frame-desc">Makt, interesser, konflikt, ressurser, påvirkning</p>
+                    <h3>Påvirkningsperspektivet</h3>
+                    <p class="frame-desc">Makt, interesser, konflikt, ressurser, politikk</p>
                     <p class="frame-detail-text">Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet.</p>
                     <cite>Pfeffer (2010)</cite>
                 </div>
             </div>
             <div class="frame-item frame-symbol">
-                <img src="{{ '/assets/images/banners/frame-symbol.png' | relative_url }}" alt="Symbolrammen" class="frame-image">
+                <img src="{{ '/assets/images/banners/frame-symbol.png' | relative_url }}" alt="Identitet" class="frame-image">
                 <div class="frame-content">
-                    <h3>Symboler</h3>
-                    <p class="frame-desc">Kultur, mening, identitet, verdier, historier</p>
+                    <h3>Identitetsperspektivet</h3>
+                    <p class="frame-desc">Kultur, mening, symboler, verdier, historier</p>
                     <p class="frame-detail-text">Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier.</p>
                     <cite>Logan, King & Fischer-Wright (2011)</cite>
                 </div>
