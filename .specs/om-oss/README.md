@@ -46,6 +46,24 @@ minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible
 
 ---
 
+## Vitenskapelig grunnlag Hero
+
+**File**: `assets/images/banners/science-foundation.png`
+**Style**: Minimalist Nordic — three abstract human silhouettes in a forest, one tending to a tree with four branches, bright white/light gray background, azure accent in light.
+
+**Prompt used**:
+```
+Three abstract human silhouettes seen from behind in a forest, one figure
+kneeling and tending to a young slender tree with four distinct branches,
+the other two figures standing and observing, bright white/light gray
+background, cool Nordic color palette with azure (#F0FFFF) accent in the
+light, minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible
+```
+
+**Symbolism**: Tree with four branches = four perspectives (Bolman & Deal); tending = knowledge cultivation.
+
+---
+
 ## Dependencies
 
 - **Profiles**: Already implemented — `_profiles/dagfinn.md`, `_includes/profiles.html`, `assets/css/profiles.css`
