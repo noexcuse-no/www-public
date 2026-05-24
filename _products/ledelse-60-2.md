@@ -3,19 +3,19 @@ name: "Ledelse 60:2"
 short_description: "Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen."
 url: "/ledelse-60-2/"
 cta_a:
-  text: "Bestill nå"
-  title: "Bestill"
+  text: "Bestill Ledelse 60:2"
+  title: "Bestill Ledelse 60:2"
   url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   modal: true
 cta_b:
-  text: "Les mer om metoden →"
-  title: "Les mer"
+  text: "Les mer →"
+  title: "Les mer →"
   url: "/ledelse-60-2/"
   modal: false
 cta_c:
   text: "Book en uforpliktende samtale"
-  title: "Book samtale"
-  url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  title: "Book en uforpliktende samtale"
+  url: "https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no"
   modal: true
 benefits:
   - title: "Bedre ledelse uten byråkrati"

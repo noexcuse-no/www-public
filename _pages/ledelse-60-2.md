@@ -45,14 +45,14 @@ json_ld:
         <h1>Ledelse 60:2</h1>
         <p class="landing-hero-description">Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen.</p>
         <div class="landing-hero-buttons">
-            <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Book en uforpliktende samtale</a>
+            <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill Ledelse 60:2</a>
             <a href="#hvordan" class="product-cta product-cta--secondary">Hvordan fungerer det? ↓</a>
         </div>
     </div>
 </section>
 
 <section class="landing-benefits">
-    <h2>Fire grunner til å velge Ledelse 60:2</h2>
+    <h2>Fire gode grunner</h2>
     <div class="landing-benefits-grid">
         <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-control.png' | relative_url }}" alt="Få kontroll uten byråkrati" class="benefit-banner">
@@ -78,7 +78,7 @@ json_ld:
 </section>
 
 <section id="hvordan" class="landing-process">
-    <h2>Hvordan gjør vi Ledelse 60:2?</h2>
+    <h2>Hvordan gjør vi det?</h2>
     <div class="landing-process-steps">
         <div class="process-step">
             <div class="process-step-number">1</div>
@@ -104,12 +104,12 @@ json_ld:
 <section class="landing-story">
     <h2>Historien bak metoden</h2>
     <p>«Ledelse 60:2» er vår tilnærming til å bruke en enkel vitenskapelig metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet.</p>
-    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="product-cta product-cta--secondary">Les det vitenskapelige grunnlaget →</a>
+    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="product-cta product-cta--secondary">Vitenskapelig metode →</a>
 </section>
 
 {% if site.cases.size > 0 %}
 <section class="landing-cases">
-    <h2>Resultater fra virkelige virksomheter</h2>
+    <h2>Kundecaser</h2>
     <div class="landing-cases-grid">
         {% for case in site.cases %}
         <div class="case-card">
@@ -128,7 +128,7 @@ json_ld:
 {% endif %}
 
 <section class="landing-cta">
-    <h2>Klar for en mer moden ledelse?</h2>
+    <h2>Klar for bedre ledelse?</h2>
     <p>Book en uforpliktende samtale, så finner vi ut om Ledelse 60:2 er rett for dere.</p>
-    <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta product-cta--large" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Book samtale</a>
+    <a href="https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no" class="product-cta product-cta--large" onclick="openBookingModal('https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no'); return false;">Book samtale</a>
 </section>
