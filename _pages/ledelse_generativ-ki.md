@@ -21,7 +21,7 @@ json_ld:
 
 <section class="frame-hero">
     <div class="frame-hero-image">
-        <img src="{{ '/assets/images/banners/banner-mastyring.png' | relative_url }}" alt="Målstyring i praksis">
+        <img src="{{ '/assets/images/banners/benefit-ai.png' | relative_url }}" alt="Målstyring i praksis">
     </div>
     <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
