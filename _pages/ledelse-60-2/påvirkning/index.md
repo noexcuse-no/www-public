@@ -2,7 +2,7 @@
 layout: page
 title: "Påvirkningsperspektivet i ledelse — Makt, interesser og konflikt"
 description: "Lær hvordan påvirkningsperspektivet kan hjelpe ledergruppen å forstå maktbalanse, interessekonflikter og hvordan beslutninger faktisk tas."
-permalink: /ledelse-60-2/politikk/
+permalink: /ledelse-60-2/påvirkning/
 json_ld:
   type: "Article"
   name: "Påvirkningsperspektivet i ledelse"

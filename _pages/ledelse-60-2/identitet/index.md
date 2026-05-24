@@ -2,7 +2,7 @@
 layout: page
 title: "Identitetsperspektivet i ledelse — Kultur, mening og verdier"
 description: "Lær hvordan identitetsperspektivet kan hjelpe ledergruppen å forstå organisasjonskultur, meningsskaping og hvordan verdier faktisk lever — eller bare henger på veggen."
-permalink: /ledelse-60-2/symboler/
+permalink: /ledelse-60-2/identitet/
 json_ld:
   type: "Article"
   name: "Identitetsperspektivet i ledelse"
