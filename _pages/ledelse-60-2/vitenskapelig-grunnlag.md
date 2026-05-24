@@ -140,7 +140,7 @@ json_ld:
 
     <p><strong>Forskningsetikkloven § 4</strong> bestemmer at "Forskere skal opptre med aktsomhet for å sikre at all forskning skjer i henhold til anerkjente forskningsetiske normer. Dette gjelder også under forberedelser til forskning, rapportering av forskning og andre forskningsrelaterte aktiviteter."</p>
 
-    <p>Vi følger <strong>NESH-retningslinjene</strong> (2021, 5. utg.) og anvender et standardskjema for å sikre at samtykke fra personer som inngår i datafangsten er informert, frivillig, utvetydig og dokumentert.</p>
+    <p>Vi følger <strong>NESH-retningslinjene</strong> (2021, 5. utg.) og anvender <a href="https://noexcuse.no/assets/samtykke.pdf">et standardskjema</a> for å sikre at samtykke fra personer som inngår i datafangsten er informert, frivillig, utvetydig og dokumentert.</p>
 
     <div class="science-highlight">
         <h3>Metoden blir bedre jo flere som bruker den</h3>
