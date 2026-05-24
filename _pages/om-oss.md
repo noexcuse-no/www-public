@@ -23,7 +23,7 @@ json_ld:
 ---
 
 <section class="about-hero">
-    <h1>Om No Excuse</h1>
+    <h1>Om oss</h1>
     <p class="about-tagline">Vi hjelper ledergrupper med å få kontroll — uten byråkrati.</p>
 </section>
 
@@ -34,7 +34,7 @@ json_ld:
 </section>
 
 <section class="about-values">
-    <h2>Vårt oppdrag og verdigrunnlag</h2>
+    <h2>Oppdrag og verdier</h2>
     <ul>
         <li>Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse</li>
         <li>Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget</li>
@@ -43,7 +43,7 @@ json_ld:
 </section>
 
 <section class="about-team">
-    <h2>Menneskene</h2>
+    <h2>Hvem vi er</h2>
     {% include profiles.html %}
 </section>
 
