@@ -90,7 +90,7 @@ json_ld:
 
 <section id="forskning" class="science-section">
     <h2><span class="section-number">2</span> Forskning i praksis</h2>
-    <p class="lead">«Ledelse 60:2» er ikke bare en kommersiell tjeneste. Metoden er utformet for å <em>utvikle ny kunnskap om nordisk ledelses- og styringspraksis</em>.</p>
+    <p class="lead">«Ledelse 60:2» er ikke bare en tjeneste som vi tilbyr organisasjoner for å hjelpe med å forbedre ledelsesfunksjonen. Det er også en metode som er utformet for å <em>utvikle ny kunnskap om nordisk ledelses- og styringspraksis</em>.</p>
 
     <div class="science-highlight">
         <h3>Hver gjennomføring styrker kunnskapsgrunnlaget</h3>
@@ -99,7 +99,7 @@ json_ld:
 
     <div class="science-quote">
         <p>«NO EXCUSE AS har rett til å vederlagsfritt anvende anonymiserte data fra bistanden og arbeidsresultatet til forskning i tråd med generelle og fagspesifikke forskningsetiske retningslinjer som bestemt av De nasjonale forskningsetiske komiteene.»</p>
-        <cite>— Standard avtalevilkår § 32–34</cite>
+        <cite>— Standard avtalevilkår § 3.3</cite>
     </div>
 
     <div class="science-divider">
@@ -138,11 +138,13 @@ json_ld:
         </div>
     </div>
 
-    <p>I tillegg følger vi <strong>NESH-retningslinjene</strong> (2021, 5. utg.) for kvalitative intervjuer — det metodisk nærmeste slektskapet til «Ledelse 60:2». <strong>Forskningsetikkloven</strong> (Lov 2017-04-28 nr. 23) utgjør det juridiske rammeverket.</p>
+    <p><strong>Forskningsetikkloven § 4</strong> bestemmer at "Forskere skal opptre med aktsomhet for å sikre at all forskning skjer i henhold til anerkjente forskningsetiske normer. Dette gjelder også under forberedelser til forskning, rapportering av forskning og andre forskningsrelaterte aktiviteter."</p>
+
+    <p>Vi følger <strong>NESH-retningslinjene</strong> (2021, 5. utg.) og anvender et standardskjema for å sikre at samtykke fra personer som inngår i datafangsten er informert, frivillig, utvetydig og dokumentert.</p>
 
     <div class="science-highlight">
         <h3>Metoden blir bedre jo flere som bruker den</h3>
-        <p>Standard avtalevilkår § 29–30 fastslår at No Excuse AS «kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale». Metodegrunnlaget forbedres kontinuerlig — ikke gjennom teoretiske antakelser, men gjennom praktisk erfaring fra virkelige ledergrupper.</p>
+        <p>Standard avtalevilkår § 3.1 fastslår at kunden eier resultatene av bistanden, men at No Excuse AS «kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale». Dette er et prinsipp som kommer alle kunder til gode - slik blir vi ledere i stand til å sikkert sammenlikne seg selv med praksisen i andre organisasjoner. Metodegrunnlaget forbedres kontinuerlig — ikke gjennom teoretiske antakelser, men gjennom praktisk erfaring fra virkelige ledergrupper.</p>
     </div>
 </section>
 
@@ -155,21 +157,16 @@ json_ld:
         <div class="founder-card">
             <img src="{{ '/assets/images/dagfinn.png' | relative_url }}" alt="Dagfinn Bang-Johansen">
             <h3>Dagfinn Bang-Johansen</h3>
-            <p>Nestn 30 års erfaring fra salgs- og lederroller i logistikk- og teknologibransjen. Studerte organisasjon og ledelse ved Høgskolen på Lillehammer. Levereglene: kom hel til mål, bli sliten, ha det gøy.</p>
+            <p>Nesten 30 års erfaring fra salgs- og lederroller i logistikk- og teknologibransjen. Studerte organisasjon og ledelse ved Høgskolen på Lillehammer. Levereglene: kom hel til mål, bli sliten, ha det gøy.</p>
         </div>
         <div class="founder-card">
             <img src="{{ '/assets/images/rasmus.png' | relative_url }}" alt="Rasmus S. Olsen">
             <h3>Rasmus S. Olsen</h3>
-            <p>Bakgrunn fra arbeid med etterlevelse av rammeverk og regulatoriske krav. Erfarte at den menneskelige faktoren er den viktigste suksessfaktoren i styring og kontroll.</p>
+            <p>Mange års konsulenterfaring med etterlevelse av rammeverk og regulatoriske krav innen IT. Utdannet idéhistoriker og IT-tekniker. Erfarte at den menneskelige faktoren er den viktigste suksessfaktoren i styring og kontroll.</p>
         </div>
     </div>
 
-    <p>Sammen bygger de på en overbevisning om at ledelse må forstås fra flere perspektiver — slik Bolman & Deal har argumentert for i over 40 år. De kvalitative metodene i «Ledelse 60:2» er et bevisst svar på en tid preget av KI og helautomatiske løsninger.</p>
-
-    <div class="science-quote">
-        <p>«Ingen ledere har ledig tid å kaste bort, og tid er penger.»</p>
-        <cite>— Metodegrunnlaget</cite>
-    </div>
+    <p>Sammen bygger de på en overbevisning om at ledelse må forstås fra flere perspektiver — slik Bolman & Deal har argumentert for i over 40 år. De kvalitative metodene i «Ledelse 60:2» er vårt svar på en tid preget av KI, mistillit og helautomatiske løsninger.</p>
 </section>
 
 <section id="referanser" class="science-section references">
