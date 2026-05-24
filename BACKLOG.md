@@ -1,6 +1,9 @@
 # BACKLOG
 
-All tasks and work-in-progress are tracked here.
+All planned tasks and work-in-progress are tracked here.
+Design for all tasks shall always follow the .design rules.
+Details shall be described under .spec before work initiation.
+Completed tasks are tracked in CHANGELOG.md and should not appear here.
 
 ## To Do
 
@@ -21,11 +24,6 @@ All tasks and work-in-progress are tracked here.
 - **blocked:** awaiting user input — iterative research + brainstorming sessions need to resume
 - **blocked:** needs research — mid-market continuous coaching models, competitive landscape
 
----
+## Completed
 
-## Completed (see CHANGELOG.md)
-
-- Architecture refactoring (_pages/ collection, generic landing layout, path handling)
-- Mini-hero banners (7 x 16:9 abstract illustrations)
-- AI knowledge base (three AI contexts, JSON-LD in pages)
-- Dark mode fixes (landing sections, CSS variable tests)
+Do not add completed work here, add them to CHANGELOG.md

@@ -21,19 +21,39 @@
 
 ## Image Types
 
-### Hero Images (16:9)
+## Hero Images (16:9)
 
 - **Aspect ratio**: 1920×1080 or proportional
 - **Usage**: Page tops, banner sections
 - **Style**: Abstract Scandinavian landscape or structural metaphor
 - **Content**: No text, no faces, no logos
 
-**Prompt style:**
+**Style signature (confirmed working):**
+- Bright white/light gray background (not dark)
+- Abstract human silhouettes seen from behind
+- Forest/nature or architectural motifs
+- Azure (#F0FFFF) as accent in light
+- Minimalist Nordic style — keep prompts short and descriptive
+
+**Prompt template:**
 ```
-Minimal Scandinavian abstract, cool gray and azure palette,
-geometric architecture with soft shadows, 16:9 composition,
-clean lines, editorial photography style, no text
+Three abstract human silhouettes seen from behind standing in a forest,
+looking toward a distant horizon, bright white/light gray background,
+cool Nordic color palette with azure (#F0FFFF) accent in the light,
+minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible
 ```
+
+**Style modifiers to use:**
+- `bright white/light gray background`
+- `minimalist Nordic style`
+- `cool Nordic color palette`
+- `azure (#F0FFFF) accent`
+
+**Style modifiers to avoid:**
+- `architectural photography style`
+- `soft diffused natural light`
+- `Minimal Scandinavian forest landscape` (too specific)
+- `light birch or pine trees` (too specific)
 
 ### Frame Illustrations (16:9)
 

@@ -6,17 +6,6 @@
     margin: 20px;
 }
 
-.profile {
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    margin-bottom: 10px;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    max-width: 550px;
-}
-
 .profile h3 {
     font-size: 1.5em;
     text-align: center;
