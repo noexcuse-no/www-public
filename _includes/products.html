@@ -4,8 +4,12 @@
         <div class="product-hero-content">
             <h2>{{ product.name }}</h2>
             <p class="product-short-description">{{ product.short_description }}</p>
-            <a href="{{ product.booking_url }}" class="product-cta" title="Book et møte" onclick="openBookingModal('{{ product.booking_url }}'); return false;">Bestill nå</a>
-            <a href="{{ product.url | relative_url }}" class="product-cta" title="Les mer">Les mer om metoden →</a>
+            {% if product.cta_a %}
+            <a href="{{ product.cta_a.url }}" class="product-cta" title="{{ product.cta_a.title }}" {% if product.cta_a.modal %}onclick="openBookingModal('{{ product.cta_a.url }}'); return false;"{% endif %}>{{ product.cta_a.text }}</a>
+            {% endif %}
+            {% if product.cta_b %}
+            <a href="{{ product.cta_b.url }}" class="product-cta" title="{{ product.cta_b.title }}" {% if product.cta_b.modal %}onclick="openBookingModal('{{ product.cta_b.url }}'); return false;"{% endif %}>{{ product.cta_b.text }}</a>
+            {% endif %}
         </div>
         <div class="product-hero-image">
             <img src="{{ product.image | relative_url }}" alt="{{ product.name }} — illustrasjon">
@@ -21,7 +25,9 @@
         {% endfor %}
     </div>
     <div class="product-cta-footer">
-        <a href="{{ product.booking_url }}" class="product-cta" title="Book et møte" onclick="openBookingModal('{{ product.booking_url }}'); return false;">Book en uforpliktende samtale</a>
+        {% if product.cta_c %}
+        <a href="{{ product.cta_c.url }}" class="product-cta" title="{{ product.cta_c.title }}" {% if product.cta_c.modal %}onclick="openBookingModal('{{ product.cta_c.url }}'); return false;"{% endif %}>{{ product.cta_c.text }}</a>
+        {% endif %}
     </div>
     {% endfor %}
 </section>

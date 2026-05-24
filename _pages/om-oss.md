@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Om oss"
 permalink: /om-oss/
 json_ld:

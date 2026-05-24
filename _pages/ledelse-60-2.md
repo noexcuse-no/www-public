@@ -38,39 +38,41 @@ json_ld:
 ---
 
 <section class="landing-hero">
-    <div class="landing-hero-content">
-        <h1>Ledelse 60:2</h1>
-        <p class="landing-hero-description">Enkel, kunnskapsbasert orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg.</p>
-        <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Book en uforpliktende samtale</a>
-        <a href="#hvordan" class="landing-scroll-link">Hvordan fungerer det? ↓</a>
-    </div>
     <div class="landing-hero-image">
         <img src="{{ '/assets/images/hero-illustration.png' | relative_url }}" alt="Ledelse 60:2">
+    </div>
+    <div class="landing-hero-content">
+        <h1>Ledelse 60:2</h1>
+        <p class="landing-hero-description">Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen.</p>
+        <div class="landing-hero-buttons">
+            <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Book en uforpliktende samtale</a>
+            <a href="#hvordan" class="product-cta product-cta--secondary">Hvordan fungerer det? ↓</a>
+        </div>
     </div>
 </section>
 
 <section class="landing-benefits">
     <h2>Fire grunner til å velge Ledelse 60:2</h2>
     <div class="landing-benefits-grid">
-        <div class="benefit-card" style="box-shadow: var(--box-shadow-light);">
+        <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-control.png' | relative_url }}" alt="Få kontroll uten byråkrati" class="benefit-banner">
-            <h3>Få kontroll uten byråkrati</h3>
+            <h3>Bedre ledelse uten byråkrati</h3>
             <p>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema.</p>
         </div>
-        <div class="benefit-card" style="box-shadow: var(--box-shadow-light);">
+        <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-ai.png' | relative_url }}" alt="Oppnå målbare gevinster med KI" class="benefit-banner">
-            <h3>Oppnå målbare gevinster med KI</h3>
-            <p>KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes.</p>
+            <h3>Målbare gevinster med GenKI</h3>
+            <p>Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle maser om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
         </div>
-        <div class="benefit-card" style="box-shadow: var(--box-shadow-light);">
+        <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-future.png' | relative_url }}" alt="Bli forberedt på en usikker fremtid" class="benefit-banner">
             <h3>Bli forberedt på en usikker fremtid</h3>
-            <p>Styr unna uønskede hendelser og fang mulighetene som byr seg.</p>
+            <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.</p>
         </div>
-        <div class="benefit-card" style="box-shadow: var(--box-shadow-light);">
+        <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-anchoring.png' | relative_url }}" alt="Forankre initiativer i ledergruppen" class="benefit-banner">
             <h3>Forankre initiativer i ledergruppen</h3>
-            <p>Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft.</p>
+            <p>Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft.</p>
         </div>
     </div>
 </section>
@@ -78,19 +80,19 @@ json_ld:
 <section id="hvordan" class="landing-process">
     <h2>Hvordan gjør vi Ledelse 60:2?</h2>
     <div class="landing-process-steps">
-        <div class="process-step" style="box-shadow: var(--box-shadow-light);">
+        <div class="process-step">
             <div class="process-step-number">1</div>
             <img src="{{ '/assets/images/banners/step-talk.png' | relative_url }}" alt="Uforpliktende samtale" class="process-banner">
             <h3>Uforpliktende samtale</h3>
             <p>Vi konkretiserer hva dere vil oppnå med modenhetsanalysen.</p>
         </div>
-        <div class="process-step" style="box-shadow: var(--box-shadow-light);">
+        <div class="process-step">
             <div class="process-step-number">2</div>
             <img src="{{ '/assets/images/banners/step-interview.png' | relative_url }}" alt="To timers strukturert intervju" class="process-banner">
             <h3>To timers strukturert intervju</h3>
             <p>60 diagnostiske spørsmål med inntil fem ledere.</p>
         </div>
-        <div class="process-step" style="box-shadow: var(--box-shadow-light);">
+        <div class="process-step">
             <div class="process-step-number">3</div>
             <img src="{{ '/assets/images/banners/step-report.png' | relative_url }}" alt="Rapport og anbefalinger" class="process-banner">
             <h3>Rapport og anbefalinger</h3>
@@ -102,7 +104,7 @@ json_ld:
 <section class="landing-story">
     <h2>Historien bak metoden</h2>
     <p>«Ledelse 60:2» er vår tilnærming til å bruke en enkel vitenskapelig metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet.</p>
-    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="landing-science-link">Les det vitenskapelige grunnlaget →</a>
+    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="product-cta product-cta--secondary">Les det vitenskapelige grunnlaget →</a>
 </section>
 
 {% if site.cases.size > 0 %}
@@ -110,7 +112,7 @@ json_ld:
     <h2>Resultater fra virkelige virksomheter</h2>
     <div class="landing-cases-grid">
         {% for case in site.cases %}
-        <div class="case-card" style="box-shadow: var(--box-shadow-light);">
+        <div class="case-card">
             <h3>{{ case.title }}</h3>
             <p>{{ case.description }}</p>
             {% if case.result %}
@@ -128,5 +130,5 @@ json_ld:
 <section class="landing-cta">
     <h2>Klar for en mer moden ledelse?</h2>
     <p>Book en uforpliktende samtale, så finner vi ut om Ledelse 60:2 er rett for dere.</p>
-    <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta product-cta--large">Book samtale</a>
+    <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta product-cta--large" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Book samtale</a>
 </section>
