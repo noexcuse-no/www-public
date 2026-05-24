@@ -24,6 +24,36 @@ Reference individual rule files via `opencode.json` instructions field.
 
 ---
 
+## Quick Reference
+
+### On Task Initiation
+
+1. Read `BACKLOG.md`, `CHANGELOG.md`, `VERSION`
+2. Read relevant `.design/` and `.specs/` documents
+3. Check git branch with `git branch && git log --oneline -3`
+
+### Brand Voice
+
+- Direct, competent, Scandinavian minimal, anti-establishment
+- No consultant-speak (avoid "bærekraftig", "verdiøking", "helhetlig")
+- Write like a knowledgeable colleague, not a corporation
+
+### Technical Requirements
+
+- Language: Norwegian Bokmål (all content)
+- Dark mode: Use CSS variables from `colors.css`; test both themes
+- Touch targets: minimum 44×44px
+- Images: No embedded text (multilingual site); use descriptive alt attributes
+
+### State Management
+
+- **Branch state**: git branch + commit messages
+- **Task state**: BACKLOG.md (current work, blocked items)
+- **Completed state**: CHANGELOG.md under "[Unreleased]"
+- **Documentation**: .design/ (visual/UX), .specs/ (functional) — invariant, no branch-specific content
+
+---
+
 ## Directory Structure
 
 ```
@@ -174,7 +204,7 @@ All SEO/social meta tags in `_includes/metadata.html`, populated from `_data/met
 
 1. **No personal data in public**: Contact info only in `_data/metadata.yml`
 2. **No tracking scripts**: Without consent placeholders
-3. **Public repository**: No embarrassing or confidential information
+3. **Public repository**: No embarrassing or confidential information, API keys or proprietary content
 
 ---
 
@@ -214,14 +244,15 @@ npm test           # Unit tests (Vitest)
 
 ### Design Documents
 
-Design specifications live in `.design/` (see `SPEC.md` for index). Before planning or implementing work, read all relevant design documents to ensure alignment. Update design documents when decisions change the visual, UX, or brand direction.
+Design specifications live in `.design/` (see `SPEC.md` for index). Before planning or implementing work, read all relevant design documents to ensure alignment. Update design documents when decisions change the visual, UX, or brand direction. Never change design documents without user confirmation for proposed changes.
 
 ### Functional Specifications
 
-When a feature requires structured requirements beyond what fits in a backlog item, create a functional specification document in `.specs/<feature>/README.md`. This document should describe:
+Maintain structured requirements beyond what fits in a backlog item for all features, keep a functional specification document in `.specs/<feature>/README.md`. This document should describe:
 - Purpose and scope
-- Requirements and acceptance criteria
+- Requirements and acceptance criteria, including mandatory tests
 - Data structures and schemas (frontmatter, collections, etc.)
+- Applicable design rules, including for generative image prompting
 - Dependencies and related components
 
 Read the relevant functional spec before starting work on a feature. Update it when requirements evolve during implementation.
@@ -229,8 +260,9 @@ Read the relevant functional spec before starting work on a feature. Update it w
 ### Backlog Management
 
 - **Approved tasks and features** must be written to `BACKLOG.md` under "To Do" before implementation begins.
-- **On completion**: Remove the item from `BACKLOG.md` (instead of moving to "Done") and add a changelog entry under "[Unreleased]". This avoids duplication between backlog and changelog.
-- Keep "Done" section empty — completed work lives only in `CHANGELOG.md`.
+- **Initiated tasks and features** must be written to `BACKLOG.md` under "In Progress" (a) after switching to correct git branch and (b) before editing any files implementation begins.
+- **On completion**: Remove the item from `BACKLOG.md` (instead of moving to "Completed" or "Done") and add a changelog entry under "[Unreleased]". This avoids duplication between backlog and changelog.
+- Keep "Completed" section empty — completed work lives only in `CHANGELOG.md`.
 
 ## Task Management
 
@@ -245,12 +277,19 @@ Read the relevant functional spec before starting work on a feature. Update it w
 1. **On task initiation**: Read `BACKLOG.md`, `CHANGELOG.md`, `VERSION`, relevant `.design/` and `.specs/` documents.
 2. **Progress reporting**: Always show currently running task progress to the user using the `todowrite` tool before beginning work, and update status as tasks complete.
 3. **On task completion**: Update:
-   - `BACKLOG.md` - Remove the completed item (no "Done" section)
+   - `BACKLOG.md` - Remove the completed item (no "Completed" section)
    - `CHANGELOG.md` - Add entry under "[Unreleased]"
 4. **Branch creation**: Before making any code modifications:
    - Create a new git branch for changes: `git checkout -b feature/description`
    - Make all changes within this branch
    - Do NOT commit directly to main branch
+5. **Releases**: When planned work is finished for a branch:
+   - Write new tests as needed, run all tests, fix any errors
+   - Update documentation as necessary - never modify .spec or .design without asking user!
+   - Fetch any upstream changes to main branch, fix inconsistencies, create a PR
+   - If the user has specifically demanded to be asked for confirmation of a successful release, wait
+   - If else, after submitting the PR do move the entry out of "[Unreleased]" in the CHANGELOG.md - it is now released
+
 
 ### Version Bumping
 

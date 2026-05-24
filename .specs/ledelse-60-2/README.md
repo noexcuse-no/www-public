@@ -86,6 +86,46 @@ tags: "#samarbeid"              # optional
 ---
 ```
 
+## Frame Articles
+
+Four frame articles implement Bolman & Deals rammeverk for leadership. Each is a standalone SEO article.
+
+### File Structure
+
+| File | Permalink | Topic |
+|------|-----------|-------|
+| `_pages/ledelse_struktur.md` | `/ledelse-60-2/struktur/` | Strukturperspektivet |
+| `_pages/ledelse_mennesker.md` | `/ledelse-60-2/mennesker/` | Menneskeperspektivet |
+| `_pages/ledelse_påvirkning.md` | `/ledelse-60-2/påvirkning/` | Påvirkningsperspektivet |
+| `_pages/ledelse_identitet.md` | `/ledelse-60-2/identitet/` | Identitetsperspektivet |
+
+### Content Guidelines
+
+- Abstract: 2-3 sentences, no consultant-speak, direct Norwegian
+- Body: ~1500 words, semi-formal, scannable with H2/H3 headers
+- Bibliography: Cite primary sources (Bolman & Deal, Pfeffer, Hubbard, etc.)
+- Illustrations: Scandinavian minimal, no text, 16:9
+- Dark mode: Use CSS variables, test both themes
+
+### Bibliography Mapping
+
+| Article | Primary Source | Secondary Sources |
+|---------|----------------|-------------------|
+| Struktur | Pfeffer (2010) | Hubbard (2014), Bolman & Deal (2017) |
+| Mennesker | Blanchard's framework | Blanchard & Barrett (2011) |
+| Påvirkning | Pfeffer (2010) | Pfeffer's power in orgs |
+| Identitet | Logan (2011) | Bolman & Deal (2017) |
+
+See `assets/bibliography/briefs/` for synthesis of each source.
+
+### Linking
+
+- Frame articles linked from `/om_forskning/` (vitenskapelig grunnlag page)
+- Benefit cards on Ledelse 60:2 landing page link to relevant frame articles
+- Use `class="frame-link"` for styled links
+
+---
+
 ## Dependencies
 
 - **Graphics**: 8 assets required (1 hero illustration + 7 icons) via GPT Image 2
