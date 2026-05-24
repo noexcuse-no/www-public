@@ -58,21 +58,25 @@ json_ld:
             <img src="{{ '/assets/images/banners/benefit-control.png' | relative_url }}" alt="Få kontroll uten byråkrati" class="benefit-banner">
             <h3>Bedre ledelse uten byråkrati</h3>
             <p>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema.</p>
+            <a href="{{ '/tillit-i-ledelse/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-ai.png' | relative_url }}" alt="Oppnå målbare gevinster med KI" class="benefit-banner">
             <h3>Målbare gevinster med GenKI</h3>
             <p>Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle maser om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
+            <a href="{{ '/mastyring/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-future.png' | relative_url }}" alt="Bli forberedt på en usikker fremtid" class="benefit-banner">
             <h3>Bli forberedt på en usikker fremtid</h3>
             <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.</p>
+            <a href="{{ '/organisasjonskultur/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-anchoring.png' | relative_url }}" alt="Forankre initiativer i ledergruppen" class="benefit-banner">
             <h3>Forankre initiativer i ledergruppen</h3>
             <p>Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft.</p>
+            <a href="{{ '/beslutningstaking/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
     </div>
 </section>

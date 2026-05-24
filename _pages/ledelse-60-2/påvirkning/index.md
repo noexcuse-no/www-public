@@ -38,6 +38,7 @@ json_ld:
 
 <section class="frame-section">
     <h2>De tre hovedelementene</h2>
+    <img src="{{ '/assets/images/banners/illustrasjon-pavirknng-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i påvirkningsperspektivet" class="section-illustration">
     
     <div class="frame-element">
         <h3>Makt og innflytelse</h3>
@@ -63,12 +64,13 @@ json_ld:
 
 <section class="frame-section">
     <h2>Hvorfor påvirkningsperspektivet betyr noe for ledergruppen</h2>
-    <p>Mange ledere har最好不要 en «politisk» tilnærming. De ser på makt og innflytelse som noe forkastelig som helst unngås. Men det er nettopp denne blindheten som gjør dem sårbare — de som forstår spillereglene, lykkes.</p>
+    <p>Mange ledere har sjelden trives godt med en «politisk» tilnærming. De ser på makt og innflytelse som noe forkastelig som helst unngås. Men det er nettopp denne blindheten som gjør dem sårbare — de som forstår spillereglene, lykkes.[^pfeffer]</p>
     <p>Pfeffers research viser at politisk dyktighet korrelerer sterkt med ledereffektivitet. Ikke fordi makt er målet, men fordi evnen til å navigere organisasjonens politiske landskap er en forutsetning for å få gjennomført endringer.</p>
 </section>
 
 <section class="frame-section">
     <h2>Vanlige utfordringer i påvirkningsdimensjonen</h2>
+    <img src="{{ '/assets/images/banners/illustrasjon-pavirknng-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige utfordringer i påvirkningsdimensjonen" class="section-illustration">
     
     <div class="frame-challenges">
         <div class="frame-challenge">
@@ -102,6 +104,7 @@ json_ld:
 </section>
 
 <section class="frame-cta">
+    <img src="{{ '/assets/images/banners/illustrasjon-pavirknng-cta.png' | relative_url }}" alt="Illustrasjon for kartlegging av påvirkning" class="section-illustration">
     <h2>Få kartlagt ledergruppens påvirkning og maktbalanse</h2>
     <p>Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonflikter og konflikhåndtering. Bestill en uforpliktende samtale for å lære mer.</p>
     <div class="frame-cta-buttons">

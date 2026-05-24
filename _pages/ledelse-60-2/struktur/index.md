@@ -38,6 +38,7 @@ json_ld:
 
 <section class="frame-section">
     <h2>De tre hovedelementene</h2>
+    <img src="{{ '/assets/images/banners/illustrasjon-struktur-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i strukturperspektivet" class="section-illustration">
     
     <div class="frame-element">
         <h3>Roller og ansvar</h3>
@@ -69,6 +70,7 @@ json_ld:
 
 <section class="frame-section">
     <h2>Vanlige strukturelle utfordringer</h2>
+    <img src="{{ '/assets/images/banners/illustrasjon-struktur-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige strukturelle utfordringer" class="section-illustration">
     
     <div class="frame-challenges">
         <div class="frame-challenge">
@@ -102,6 +104,7 @@ json_ld:
 </section>
 
 <section class="frame-cta">
+    <img src="{{ '/assets/images/banners/illustrasjon-struktur-cta.png' | relative_url }}" alt="Illustrasjon for kartlegging av struktur" class="section-illustration">
     <h2>Få kartlagt ledergruppens strukturelle modenhet</h2>
     <p>Ledelse 60:2 inneholder 15 spørsmål som handler om strukturperspektivet. Gjennomfør en uforpliktende samtale for å lære mer om hvordan metoden kan hjelpe ledergruppen din.</p>
     <div class="frame-cta-buttons">
@@ -242,6 +245,10 @@ json_ld:
     background: var(--box-background-light);
     border-radius: 16px;
     margin-bottom: 40px;
+}
+
+.frame-cta .section-illustration {
+    margin: 0 auto 24px;
 }
 
 .frame-cta h2 {
