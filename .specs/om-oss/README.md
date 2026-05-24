@@ -29,6 +29,23 @@ permalink: /om-oss/
 - **Profiles section**: Renders `{% include profiles.html %}` to display team members
 - **CTA**: "Book et møte" link or Microsoft Bookings embed
 
+## Hero Image
+
+**File**: `assets/images/banners/banner-om-oss.png`
+**Style**: Minimalist Nordic — three abstract human silhouettes seen from behind in a forest, looking toward horizon. Bright white/light gray background, azure accent in light.
+
+**Prompt used**:
+```
+Three abstract human silhouettes seen from behind standing in a forest,
+looking toward a distant horizon, bright white/light gray background,
+cool Nordic color palette with azure (#F0FFFF) accent in the light,
+minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible
+```
+
+**Reference**: `https://noexcuse.no/assets/images/hero-illustration.png` (same style family)
+
+---
+
 ## Dependencies
 
 - **Profiles**: Already implemented — `_profiles/dagfinn.md`, `_includes/profiles.html`, `assets/css/profiles.css`
