@@ -52,7 +52,7 @@ json_ld:
                     <h3>Strukturperspektivet</h3>
                     <p class="frame-desc">Roller, mål, prosesser, koordinering, ansvar</p>
                     <p class="frame-detail-text">Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig.</p>
-                    <cite>Hubbard (2014)</cite>
+                    <a href="{{ '/ledelse-60-2/struktur/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
             <div class="frame-item frame-human">
@@ -61,7 +61,7 @@ json_ld:
                     <h3>Menneskeperspektivet</h3>
                     <p class="frame-desc">Tillit, motivasjon, relasjoner, utvikling, medvirkning</p>
                     <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at "servant leadership" er et konkurransefortrinn.</p>
-                    <cite>Blanchard & Barrett (2011)</cite>
+                    <a href="{{ '/ledelse-60-2/mennesker/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@ json_ld:
                     <h3>Påvirkningsperspektivet</h3>
                     <p class="frame-desc">Makt, interesser, konflikt, ressurser, politikk</p>
                     <p class="frame-detail-text">Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet.</p>
-                    <cite>Pfeffer (2010)</cite>
+                    <a href="{{ '/ledelse-60-2/påvirkning/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
             <div class="frame-item frame-symbol">
@@ -81,7 +81,7 @@ json_ld:
                     <h3>Identitetsperspektivet</h3>
                     <p class="frame-desc">Kultur, mening, symboler, verdier, historier</p>
                     <p class="frame-detail-text">Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier.</p>
-                    <cite>Logan, King & Fischer-Wright (2011)</cite>
+                    <a href="{{ '/ledelse-60-2/identitet/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
         </div>
@@ -323,6 +323,18 @@ json_ld:
     font-size: 0.8em;
     font-style: italic;
     opacity: 0.7;
+}
+
+.frame-link {
+    display: inline-block;
+    font-size: 0.85em;
+    color: var(--link-color-light);
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.frame-link:hover {
+    text-decoration: underline;
 }
 
 .science-highlight {

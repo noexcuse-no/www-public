@@ -38,6 +38,7 @@ json_ld:
 
 <section class="frame-section">
     <h2>De tre hovedelementene</h2>
+    <img src="{{ '/assets/images/banners/illustrasjon-identitet-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i identitetsperspektivet" class="section-illustration">
     
     <div class="frame-element">
         <h3>Kultur og språk</h3>
@@ -48,7 +49,7 @@ json_ld:
 
     <div class="frame-element">
         <h3>Verdier og mening</h3>
-        <p>Verdier er ikke决定 som henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.</p>
+        <p>Verdier er ikke noe som bestemmes som henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.[^schein]
         <p><strong>Tegn på levende verdier:</strong> Folk kan fortelle om situasjoner der verdiene ble levd ut i praksis. Nye folk læres opp i «hvordan vi gjør ting her» med konkrete eksempler.</p>
         <p><strong>Tegn på verdiproblemer:</strong> Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert.</p>
     </div>
@@ -57,7 +58,7 @@ json_ld:
         <h3>Ritualer og identitet</h3>
         <p>Ritualer er de gjentatte handlingene som holder kulturen i live: møter, feiringer, seremonier. Identitet er følelsen av tilhørighet til noe større enn seg selv.</p>
         <p><strong>Tegn på sterke ritualer:</strong> Det finnes «ting man gjør» som nye folk tar opp naturlig. Suksesser feires på måter som faller seg naturlig for gruppen. Spesielle tradisjoner som forplanter seg.</p>
-        <p><strong>Tegn på svekkede ritualer:</strong> Møter er blitt rutine uten innhold. Feiringer er pålagt og føles falske. Nyansatte opplever孤立 raskt.</p>
+        <p><strong>Tegn på svekkede ritualer:</strong> Møter er blitt rutine uten innhold. Feiringer er pålagt og føles falske. Nyansatte opplever silo raskt.</p>
     </div>
 </section>
 
@@ -69,6 +70,7 @@ json_ld:
 
 <section class="frame-section">
     <h2>Vanlige kulturelle utfordringer</h2>
+    <img src="{{ '/assets/images/banners/illustrasjon-identitet-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige kulturelle utfordringer" class="section-illustration">
     
     <div class="frame-challenges">
         <div class="frame-challenge">
@@ -77,7 +79,7 @@ json_ld:
         </div>
         <div class="frame-challenge">
             <h4>Individuell dominans</h4>
-            <p>En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid.飞轮效应 som demper kollektiv vekst.</p>
+            <p>En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Einzelgänger-kultur som demper kollektiv vekst.[^collins]</p>
         </div>
         <div class="frame-challenge">
             <h4>Historieløshet</h4>
@@ -102,6 +104,7 @@ json_ld:
 </section>
 
 <section class="frame-cta">
+    <img src="{{ '/assets/images/banners/illustrasjon-identitet-cta.png' | relative_url }}" alt="Illustrasjon for kartlegging av kultur" class="section-illustration">
     <h2>Få kartlagt ledergruppens kulturelle modenhet</h2>
     <p>Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gjennomfør en uforpliktende samtale for å lære mer om metoden.</p>
     <div class="frame-cta-buttons">

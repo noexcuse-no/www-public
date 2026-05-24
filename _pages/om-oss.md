@@ -23,8 +23,13 @@ json_ld:
 ---
 
 <section class="about-hero">
-    <h1>Om oss</h1>
-    <p class="about-tagline">Vi hjelper ledergrupper med å få kontroll — uten byråkrati.</p>
+    <div class="about-hero-image">
+        <img src="{{ '/assets/images/banners/banner-om-oss.png' | relative_url }}" alt="No Excuse AS - Vi hjelper ledergrupper">
+    </div>
+    <div class="about-hero-content">
+        <h1>Om oss</h1>
+        <p class="about-tagline">Vi hjelper ledergrupper med å få kontroll — uten byråkrati.</p>
+    </div>
 </section>
 
 <section class="about-story">

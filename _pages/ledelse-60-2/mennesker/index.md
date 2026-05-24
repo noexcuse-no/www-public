@@ -38,6 +38,7 @@ json_ld:
 
 <section class="frame-section">
     <h2>De tre hovedelementene</h2>
+    <img src="{{ '/assets/images/banners/illustrasjon-mennesker-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i menneskeperspektivet" class="section-illustration">
     
     <div class="frame-element">
         <h3>Tillit og trygghet</h3>
@@ -69,6 +70,7 @@ json_ld:
 
 <section class="frame-section">
     <h2>Vanlige menneskelige utfordringer</h2>
+    <img src="{{ '/assets/images/banners/illustrasjon-mennesker-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige menneskelige utfordringer" class="section-illustration">
     
     <div class="frame-challenges">
         <div class="frame-challenge">
@@ -80,7 +82,7 @@ json_ld:
             <p>Organisasjonen har verdier på veggen, men de stemmer ikke med hvordan folk faktisk oppfører seg. Verdiene er blitt flosler, ikke veiledning.</p>
         </div>
         <div class="frame-challenge">
-            <h4>Sil og孤立</h4>
+            <h4>Sil og silo</h4>
             <p>Avdelinger og individer jobber i siloer. Folk kjenner ikke til hva naboen driver med. Kunden matcher med én person som blir en flaskehals.</p>
         </div>
         <div class="frame-challenge">
@@ -102,6 +104,7 @@ json_ld:
 </section>
 
 <section class="frame-cta">
+    <img src="{{ '/assets/images/banners/illustrasjon-mennesker-cta.png' | relative_url }}" alt="Illustrasjon for kartlegging av mennesker" class="section-illustration">
     <h2>Få kartlagt ledergruppens menneskedimensjon</h2>
     <p>Ledelse 60:2 inneholder spørsmål som handler om tillit, motivasjon og relasjoner. Gjennomfør en uforpliktende samtale for å lære mer.</p>
     <div class="frame-cta-buttons">
