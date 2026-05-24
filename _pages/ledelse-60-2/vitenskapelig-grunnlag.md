@@ -200,11 +200,12 @@ json_ld:
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 16px;
+    border-radius: 0;
+    margin-bottom: 0;
 }
 
 .science-hero-content {
-    padding: 40px;
+    padding: 40px 40px 0;
     text-align: center;
 }
 
@@ -360,7 +361,6 @@ json_ld:
 }
 
 .science-divider {
-    position: relative;
     margin: 40px 0;
     border-radius: 12px;
     overflow: hidden;
@@ -378,13 +378,7 @@ json_ld:
 }
 
 .science-divider-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 40px 24px 24px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.7));
-    color: white;
+    padding: 24px 0;
 }
 
 .science-divider-content h3 {
@@ -394,7 +388,7 @@ json_ld:
 
 .science-divider-content p {
     margin: 0;
-    opacity: 0.9;
+    opacity: 0.7;
     font-size: 0.95em;
 }
 

@@ -8,9 +8,9 @@ cta_a:
   url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   modal: true
 cta_b:
-  text: "Les mer om metoden →"
-  title: "Les mer om metoden →"
-  url: "/ledelse-60-2/vitenskapelig-grunnlag/"
+  text: "Les mer →"
+  title: "Les mer →"
+  url: "/ledelse-60-2/"
   modal: false
 cta_c:
   text: "Book en uforpliktende samtale"
