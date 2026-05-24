@@ -36,6 +36,9 @@
 ## Color Palette
 See `colors.md` for full specification.
 
+## Graphics
+See `graphics.md` for full specification.
+
 ## Typography
 See `typography.md` for full specification.
 

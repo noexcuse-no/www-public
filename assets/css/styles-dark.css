@@ -38,11 +38,6 @@ a:hover {
     color: var(--banner-text-dark);
 }
 
-.profile {
-    background-color: var(--box-background-dark);
-    color: var(--text-color-dark);
-}
-
 .profile-detail-content {
     background-color: var(--box-background-dark);
     color: var(--text-color-dark);
