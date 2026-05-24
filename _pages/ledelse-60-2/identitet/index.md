@@ -21,7 +21,7 @@ json_ld:
 
 <section class="frame-hero">
     <div class="frame-hero-image">
-        <img src="{{ '/assets/images/banners/frame-symbol.png' | relative_url }}" alt="Identitetsperspektivet i ledelse">
+        <img src="{{ '/assets/images/banners/frame-identitet.png' | relative_url }}" alt="Identitetsperspektivet i ledelse">
     </div>
     <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
@@ -79,7 +79,7 @@ json_ld:
         </div>
         <div class="frame-challenge">
             <h4>Individuell dominans</h4>
-            <p>En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Einzelgänger-kultur som demper kollektiv vekst.[^collins]</p>
+            <p>En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Individualistisk tankegang som demper kollektiv vekst.[^collins]</p>
         </div>
         <div class="frame-challenge">
             <h4>Historieløshet</h4>

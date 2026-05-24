@@ -21,7 +21,7 @@ json_ld:
 
 <section class="frame-hero">
     <div class="frame-hero-image">
-        <img src="{{ '/assets/images/banners/frame-structure.png' | relative_url }}" alt="Strukturperspektivet i ledelse">
+        <img src="{{ '/assets/images/banners/frame-struktur.png' | relative_url }}" alt="Strukturperspektivet i ledelse">
     </div>
     <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
