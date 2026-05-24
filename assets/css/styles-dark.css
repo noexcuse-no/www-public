@@ -72,3 +72,40 @@ a:hover {
     background-color: var(--box-background-dark);
     box-shadow: var(--box-shadow-dark);
 }
+
+.booking-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.booking-container {
+    background: var(--box-background-dark);
+}
+
+.booking-close {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.profile-compact {
+    background: var(--box-background-dark);
+    box-shadow: var(--box-shadow-dark);
+}
+
+.profile-modal-content {
+    background: var(--box-background-dark);
+}
+
+.profile-close {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.profile-expand-btn {
+    color: var(--link-color-dark);
+}
+
+.landing-benefits-grid .benefit-card,
+.landing-process-steps .process-step {
+    background-color: var(--box-background-dark);
+    box-shadow: var(--box-shadow-dark);
+}

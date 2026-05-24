@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Standard Avtalevilkår for Oppdrag"
 permalink: /standard-avtalevilkår/
 avtale: true

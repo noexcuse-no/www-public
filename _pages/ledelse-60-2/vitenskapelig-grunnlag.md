@@ -28,22 +28,13 @@ json_ld:
 ---
 
 <section class="science-hero">
-    <div class="science-hero-content">
-        <p class="science-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
-        <h1>Vitenskapelig grunnlag</h1>
-        <p class="science-intro">«Ledelse 60:2» er en intervjubasert modenhetsanalyse som kartlegger ledelseskultur gjennom 60 diagnostiske spørsmål på to timer. Metoden bygger på et tverrfaglig vitenskapelig fundament — fra organisasjonsteori og maktanalyse til kulturforskning og beslutningsvitenskap.</p>
-    </div>
     <div class="science-hero-image">
         <img src="{{ '/assets/images/banners/science-foundation.png' | relative_url }}" alt="Vitenskapelig fundament">
     </div>
-</section>
-
-<section class="science-section">
-    <div class="science-nav">
-        <a href="#teoretisk" class="science-nav-item">Teoretisk grunnlag</a>
-        <a href="#forskning" class="science-nav-item">Forskning i praksis</a>
-        <a href="#hvorfor" class="science-nav-item">Hvorfor vi gjør dette</a>
-        <a href="#referanser" class="science-nav-item">Referanser</a>
+    <div class="science-hero-content">
+        <p class="science-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
+        <h1>Vitenskapelig grunnlag</h1>
+        <p class="science-intro">«Ledelse 60:2» er en metode som bruker intervjubasert kartlegging av kulturelle faktorer i en ledergruppe som metodikk for datafangst. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kulturforskning og beslutningsvitenskap - som gir den høy fleksibel anvendelighet for kunden på tvers av domener og problemstillinger. Ut over den vitenskapelig funderte metodikken for datafangst, så innebærer "Ledelse 60:2" at de strukturerte intervjuene er en del av en langsiktig metode for å produsere kunnskap fra innsamlede data.</p>
     </div>
 </section>
 
@@ -51,63 +42,55 @@ json_ld:
     <h2><span class="section-number">1</span> Teoretisk grunnlag</h2>
     <p>Intervjustrukturen i «Ledelse 60:2» tar direkte utgangspunkt i Lee G. Bolman og Terrence E. Deals firedelte rammeverk for organisasjonsanalyse, først presentert i <em>Reframing Organizations</em> (1984) og videreutviklet gjennom seks utgaver fram til 2017 (Bolman & Deal, 2017). Rammeverket er også tilgjengelig på norsk i <em>Nytt perspektiv på organisasjon og ledelse</em> (Bolman & Deal, 2024).</p>
 
-    <div class="science-frames">
-        <div class="frame-card frame-struct">
-            <div class="frame-icon">🏛️</div>
-            <h3>Struktur</h3>
-            <p>Roller, mål, prosesser, koordinering, ansvar</p>
-            <cite>Hubbard (2014)</cite>
+    <p>De fire perspektivene — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — utgjør selve ryggraden i de 60 spørsmålene. Hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold.</p>
+
+    <div class="frames-horizontal">
+        <div class="frames-row">
+            <div class="frame-item frame-struct">
+                <img src="{{ '/assets/images/banners/frame-structure.png' | relative_url }}" alt="Struktur" class="frame-image">
+                <div class="frame-content">
+                    <h3>Strukturperspektivet</h3>
+                    <p class="frame-desc">Roller, mål, prosesser, koordinering, ansvar</p>
+                    <p class="frame-detail-text">Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig.</p>
+                    <cite>Hubbard (2014)</cite>
+                </div>
+            </div>
+            <div class="frame-item frame-human">
+                <img src="{{ '/assets/images/banners/frame-human.png' | relative_url }}" alt="Menneske" class="frame-image">
+                <div class="frame-content">
+                    <h3>Menneskeperspektivet</h3>
+                    <p class="frame-desc">Tillit, motivasjon, relasjoner, utvikling, medvirkning</p>
+                    <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at "servant leadership" er et konkurransefortrinn.</p>
+                    <cite>Blanchard & Barrett (2011)</cite>
+                </div>
+            </div>
         </div>
-        <div class="frame-card frame-human">
-            <div class="frame-icon">👥</div>
-            <h3>Mennesker</h3>
-            <p>Tillit, motivasjon, relasjoner, utvikling, medvirkning</p>
-            <cite>Blanchard & Barrett (2011)</cite>
+        <div class="frames-row">
+            <div class="frame-item frame-political">
+                <img src="{{ '/assets/images/banners/frame-political.png' | relative_url }}" alt="Påvirkning" class="frame-image">
+                <div class="frame-content">
+                    <h3>Påvirkningsperspektivet</h3>
+                    <p class="frame-desc">Makt, interesser, konflikt, ressurser, politikk</p>
+                    <p class="frame-detail-text">Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet.</p>
+                    <cite>Pfeffer (2010)</cite>
+                </div>
+            </div>
+            <div class="frame-item frame-symbol">
+                <img src="{{ '/assets/images/banners/frame-symbol.png' | relative_url }}" alt="Identitet" class="frame-image">
+                <div class="frame-content">
+                    <h3>Identitetsperspektivet</h3>
+                    <p class="frame-desc">Kultur, mening, symboler, verdier, historier</p>
+                    <p class="frame-detail-text">Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier.</p>
+                    <cite>Logan, King & Fischer-Wright (2011)</cite>
+                </div>
+            </div>
         </div>
-        <div class="frame-card frame-political">
-            <div class="frame-icon">⚡</div>
-            <h3>Politikk</h3>
-            <p>Makt, interesser, konflikt, ressurser, påvirkning</p>
-            <cite>Pfeffer (2010)</cite>
-        </div>
-        <div class="frame-card frame-symbol">
-            <div class="frame-icon">✨</div>
-            <h3>Symboler</h3>
-            <p>Kultur, mening, identitet, verdier, historier</p>
-            <cite>Logan, King & Fischer-Wright (2011)</cite>
-        </div>
     </div>
-
-    <p>De fire perspektivene — eller rammene — utgjør selve ryggraden i de 60 spørsmålene. Hver ramme gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen gjennom én ramme, risikerer å oversees avgjørende forhold.</p>
-
-    <div class="frame-detail">
-        <h3>Strukturrammen</h3>
-        <p>Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. Når noe ikke fungerer, kan årsaken være utydelige roller, feil dimensjonert organisering eller manglende koordinering. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig — ledelseskvalitet, risiko og beslutningseffektivitet.</p>
-    </div>
-
-    <div class="frame-detail">
-        <h3>Menneskerammen</h3>
-        <p>Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. Når individ og organisasjon passer sammen, tjener begge på det. <strong>Blanchard & Barrett (2011)</strong> viser gjennom Southwest Airlines' 40 år med lønnsom drift at tjenerledelse — å sette medarbeidere først — er en konkurransekraft, ikke idealisme.</p>
-    </div>
-
-    <div class="frame-detail">
-        <h3>Politikkrammen</h3>
-        <p>Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. Konflikt er naturlig, og makt er nødvendig for å få gjennomslag. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet — og at prestasjon alene sjelden er nok.</p>
-    </div>
-
-    <div class="frame-detail">
-        <h3>Symbolrammen</h3>
-        <p>Ser organisasjonen som en kultur preget av ritualer, historier og verdier. Det som betyr noe, er ikke bare hva som skjer, men hva det <em>betyr</em>. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan organisasjonskultur utvikler seg gjennom fem forutsigbare stadier, fra «livet suger» til «livet er fantastisk» — og at språket ledere bruker, avslører hvilket stadium kulturen befinner seg på.</p>
-    </div>
-</section>
-
-<section class="science-divider">
-    <img src="{{ '/assets/images/banners/science-research.png' | relative_url }}" alt="">
 </section>
 
 <section id="forskning" class="science-section">
     <h2><span class="section-number">2</span> Forskning i praksis</h2>
-    <p class="lead">«Ledelse 60:2» er ikke bare en kommersiell tjeneste. Metoden er utformet for å <em>utvikle ny kunnskap om nordisk ledelses- og styringspraksis</em>.</p>
+    <p class="lead">«Ledelse 60:2» er ikke bare en tjeneste som vi tilbyr organisasjoner for å hjelpe med å forbedre ledelsesfunksjonen. Det er også en metode som er utformet for å <em>utvikle ny kunnskap om nordisk ledelses- og styringspraksis</em>.</p>
 
     <div class="science-highlight">
         <h3>Hver gjennomføring styrker kunnskapsgrunnlaget</h3>
@@ -116,40 +99,52 @@ json_ld:
 
     <div class="science-quote">
         <p>«NO EXCUSE AS har rett til å vederlagsfritt anvende anonymiserte data fra bistanden og arbeidsresultatet til forskning i tråd med generelle og fagspesifikke forskningsetiske retningslinjer som bestemt av De nasjonale forskningsetiske komiteene.»</p>
-        <cite>— Standard avtalevilkår § 32–34</cite>
+        <cite>— Standard avtalevilkår § 3.3</cite>
+    </div>
+
+    <div class="science-divider">
+        <div class="science-divider-image">
+            <img src="{{ '/assets/images/banners/science-research.png' | relative_url }}" alt="">
+        </div>
+        <div class="science-divider-content">
+            <h3>Forskning i praksis</h3>
+            <p>Datainnsamling innenfor norske forskningsetiske standarder</p>
+        </div>
     </div>
 
     <h3>Forankring i norsk forskningsetikk</h3>
     <p>Databehandlingen følger <strong>De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer</strong> (2014), som bygger på fire prinsipper:</p>
 
-    <div class="ethics-grid">
-        <div class="ethics-card">
-            <div class="ethics-icon">🤝</div>
+    <div class="ethics-columns">
+        <div class="ethics-column">
+            <div class="ethics-icon">🏛️</div>
             <h4>Respekt</h4>
             <p>Informantene behandles med verdighet og integritet</p>
         </div>
-        <div class="ethics-card">
+        <div class="ethics-column">
             <div class="ethics-icon">🌱</div>
             <h4>Gode konsekvenser</h4>
             <p>Forskningen skal ha positiv nytteverdi for deltakerne og samfunnet</p>
         </div>
-        <div class="ethics-card">
+        <div class="ethics-column">
             <div class="ethics-icon">⚖️</div>
             <h4>Rettferdighet</h4>
             <p>Prosjektet er rettferdig utformet og gjennomført</p>
         </div>
-        <div class="ethics-card">
+        <div class="ethics-column">
             <div class="ethics-icon">🔬</div>
             <h4>Integritet</h4>
             <p>Vi følger anerkjente normer og opptrer ansvarlig</p>
         </div>
     </div>
 
-    <p>I tillegg følger vi <strong>NESH-retningslinjene</strong> (2021, 5. utg.) for kvalitative intervjuer — det metodisk nærmeste slektskapet til «Ledelse 60:2». <strong>Forskningsetikkloven</strong> (Lov 2017-04-28 nr. 23) utgjør det juridiske rammeverket.</p>
+    <p><strong>Forskningsetikkloven § 4</strong> bestemmer at "Forskere skal opptre med aktsomhet for å sikre at all forskning skjer i henhold til anerkjente forskningsetiske normer. Dette gjelder også under forberedelser til forskning, rapportering av forskning og andre forskningsrelaterte aktiviteter."</p>
+
+    <p>Vi følger <strong>NESH-retningslinjene</strong> (2021, 5. utg.) og anvender <a href="https://noexcuse.no/assets/samtykke.pdf">et standardskjema</a> for å sikre at samtykke fra personer som inngår i datafangsten er informert, frivillig, utvetydig og dokumentert.</p>
 
     <div class="science-highlight">
         <h3>Metoden blir bedre jo flere som bruker den</h3>
-        <p>Standard avtalevilkår § 29–30 fastslår at No Excuse AS «kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale». Metodegrunnlaget forbedres kontinuerlig — ikke gjennom teoretiske antakelser, men gjennom praktisk erfaring fra virkelige ledergrupper.</p>
+        <p>Standard avtalevilkår § 3.1 fastslår at kunden eier resultatene av bistanden, men at No Excuse AS «kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale». Dette er et prinsipp som kommer alle kunder til gode - slik blir vi ledere i stand til å sikkert sammenlikne seg selv med praksisen i andre organisasjoner. Metodegrunnlaget forbedres kontinuerlig — ikke gjennom teoretiske antakelser, men gjennom praktisk erfaring fra virkelige ledergrupper.</p>
     </div>
 </section>
 
@@ -162,21 +157,16 @@ json_ld:
         <div class="founder-card">
             <img src="{{ '/assets/images/dagfinn.png' | relative_url }}" alt="Dagfinn Bang-Johansen">
             <h3>Dagfinn Bang-Johansen</h3>
-            <p>Nestn 30 års erfaring fra salgs- og lederroller i logistikk- og teknologibransjen. Studerte organisasjon og ledelse ved Høgskolen på Lillehammer. Levereglene: kom hel til mål, bli sliten, ha det gøy.</p>
+            <p>Nesten 30 års erfaring fra salgs- og lederroller i logistikk- og teknologibransjen. Studerte organisasjon og ledelse ved Høgskolen på Lillehammer. Levereglene: kom hel til mål, bli sliten, ha det gøy.</p>
         </div>
         <div class="founder-card">
             <img src="{{ '/assets/images/rasmus.png' | relative_url }}" alt="Rasmus S. Olsen">
             <h3>Rasmus S. Olsen</h3>
-            <p>Bakgrunn fra arbeid med etterlevelse av rammeverk og regulatoriske krav. Erfarte at den menneskelige faktoren er den viktigste suksessfaktoren i styring og kontroll.</p>
+            <p>Mange års konsulenterfaring med etterlevelse av rammeverk og regulatoriske krav innen IT. Utdannet idéhistoriker og IT-tekniker. Erfarte at den menneskelige faktoren er den viktigste suksessfaktoren i styring og kontroll.</p>
         </div>
     </div>
 
-    <p>Sammen bygger de på en overbevisning om at ledelse må forstås fra flere perspektiver — slik Bolman & Deal har argumentert for i over 40 år. De kvalitative metodene i «Ledelse 60:2» er et bevisst svar på en tid preget av KI og helautomatiske løsninger.</p>
-
-    <div class="science-quote">
-        <p>«Ingen ledere har ledig tid å kaste bort, og tid er penger.»</p>
-        <cite>— Metodegrunnlaget</cite>
-    </div>
+    <p>Sammen bygger de på en overbevisning om at ledelse må forstås fra flere perspektiver — slik Bolman & Deal har argumentert for i over 40 år. De kvalitative metodene i «Ledelse 60:2» er vårt svar på en tid preget av KI, mistillit og helautomatiske løsninger.</p>
 </section>
 
 <section id="referanser" class="science-section references">
@@ -197,16 +187,25 @@ json_ld:
 
 <style>
 .science-hero {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    padding: 60px 40px;
     max-width: 1100px;
     margin: 0 auto;
+    padding: 0;
+}
+
+.science-hero-image {
+    width: 100%;
+}
+
+.science-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
 }
 
 .science-hero-content {
-    flex: 1;
+    padding: 40px;
+    text-align: center;
 }
 
 .science-breadcrumb {
@@ -227,42 +226,12 @@ json_ld:
     font-size: 1.15em;
     line-height: 1.7;
     opacity: 0.9;
-}
-
-.science-hero-image {
-    flex: 0 0 300px;
-}
-
-.science-hero-image img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-.science-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 24px;
-    background: var(--box-background-light);
-    border-radius: 12px;
-    margin-bottom: 40px;
-}
-
-.science-nav-item {
-    padding: 8px 16px;
-    background: var(--primary-accent);
-    color: var(--primary-accent-contrast);
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-.science-nav-item:hover {
-    opacity: 0.85;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .science-section {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -285,6 +254,7 @@ json_ld:
     color: var(--primary-accent-contrast);
     border-radius: 50%;
     font-size: 0.8em;
+    flex-shrink: 0;
 }
 
 .lead {
@@ -293,41 +263,24 @@ json_ld:
     margin-bottom: 32px;
 }
 
-.science-frames {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 16px;
+.frames-horizontal {
     margin: 32px 0;
 }
 
-.frame-card {
-    padding: 24px 20px;
+.frames-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.frame-item {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
     background: var(--box-background-light);
     border-radius: 12px;
-    text-align: center;
-    border-top: 4px solid var(--primary-accent);
-}
-
-.frame-icon {
-    font-size: 2em;
-    margin-bottom: 12px;
-}
-
-.frame-card h3 {
-    margin: 0 0 8px 0;
-    font-size: 1.1em;
-}
-
-.frame-card p {
-    font-size: 0.9em;
-    opacity: 0.8;
-    margin: 0 0 12px 0;
-}
-
-.frame-card cite {
-    font-size: 0.8em;
-    font-style: italic;
-    opacity: 0.7;
+    border-left: 4px solid var(--primary-accent);
 }
 
 .frame-struct { border-color: #4A90D9; }
@@ -335,21 +288,40 @@ json_ld:
 .frame-political { border-color: #E6A817; }
 .frame-symbol { border-color: #9B59B6; }
 
-.frame-detail {
-    background: var(--box-background-light);
-    padding: 24px;
-    border-radius: 12px;
-    margin: 24px 0;
+.frame-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
-.frame-detail h3 {
-    margin: 0 0 12px 0;
-    font-size: 1.2em;
+.frame-content {
+    flex: 1;
+    min-width: 0;
 }
 
-.frame-detail p {
-    margin: 0;
-    line-height: 1.6;
+.frame-content h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.1em;
+}
+
+.frame-desc {
+    font-size: 0.85em;
+    opacity: 0.7;
+    margin: 0 0 8px 0;
+}
+
+.frame-detail-text {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0 0 8px 0;
+}
+
+.frame-content cite {
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0.7;
 }
 
 .science-highlight {
@@ -387,18 +359,63 @@ json_ld:
     opacity: 0.85;
 }
 
-.ethics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-    margin: 24px 0;
+.science-divider {
+    position: relative;
+    margin: 40px 0;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.ethics-card {
-    padding: 20px;
+.science-divider-image {
+    width: 100%;
+}
+
+.science-divider-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.science-divider-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 24px 24px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+}
+
+.science-divider-content h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.3em;
+}
+
+.science-divider-content p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.95em;
+}
+
+.ethics-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin: 24px 0;
     background: var(--box-background-light);
     border-radius: 12px;
+    overflow: hidden;
+}
+
+.ethics-column {
+    padding: 24px 16px;
     text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ethics-column:last-child {
+    border-right: none;
 }
 
 .ethics-icon {
@@ -406,15 +423,16 @@ json_ld:
     margin-bottom: 12px;
 }
 
-.ethics-card h4 {
+.ethics-column h4 {
     margin: 0 0 8px 0;
     font-size: 1em;
 }
 
-.ethics-card p {
+.ethics-column p {
     margin: 0;
-    font-size: 0.9em;
+    font-size: 0.85em;
     opacity: 0.8;
+    line-height: 1.4;
 }
 
 .founders-grid {
@@ -465,46 +483,7 @@ json_ld:
     border-bottom: none;
 }
 
-@media (max-width: 768px) {
-    .science-hero {
-        flex-direction: column;
-        padding: 40px 20px;
-    }
-
-    .science-hero-image {
-        flex: none;
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .science-hero h1 {
-        font-size: 2em;
-    }
-
-    .science-frames {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .founders-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .science-frames {
-        grid-template-columns: 1fr;
-    }
-}
-
-.dark-mode .science-nav {
-    background: var(--box-background-dark);
-}
-
-.dark-mode .frame-card {
-    background: var(--box-background-dark);
-}
-
-.dark-mode .frame-detail {
+.dark-mode .frame-item {
     background: var(--box-background-dark);
 }
 
@@ -512,8 +491,12 @@ json_ld:
     background: var(--box-background-dark);
 }
 
-.dark-mode .ethics-card {
+.dark-mode .ethics-columns {
     background: var(--box-background-dark);
+}
+
+.dark-mode .ethics-column {
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode .founder-card {
@@ -524,15 +507,57 @@ json_ld:
     border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
-.science-divider {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+@media (max-width: 768px) {
+    .science-hero-content {
+        padding: 24px;
+    }
+
+    .science-hero h1 {
+        font-size: 2em;
+    }
+
+    .frames-row {
+        grid-template-columns: 1fr;
+    }
+
+    .frame-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .frame-image {
+        margin: 0 auto;
+    }
+
+    .ethics-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ethics-column {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .ethics-column:nth-child(2) {
+        border-right: none;
+    }
+
+    .founders-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-.science-divider img {
-    width: 100%;
-    border-radius: 12px;
-    opacity: 0.6;
+@media (max-width: 480px) {
+    .ethics-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .ethics-column {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .ethics-column:last-child {
+        border-bottom: none;
+    }
 }
 </style>
