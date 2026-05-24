@@ -79,7 +79,7 @@ json_ld:
         </div>
         <div class="frame-challenge">
             <h4>Individuell dominans</h4>
-            <p>En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Einzelgänger-kultur som demper kollektiv vekst.[^collins]</p>
+            <p>En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Individualistisk tankegang som demper kollektiv vekst.[^collins]</p>
         </div>
         <div class="frame-challenge">
             <h4>Historieløshet</h4>
