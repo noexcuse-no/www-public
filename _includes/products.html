@@ -8,7 +8,7 @@
             <a href="{{ product.cta_a.url }}" class="product-cta" title="{{ product.cta_a.title }}" {% if product.cta_a.modal %}onclick="openBookingModal('{{ product.cta_a.url }}'); return false;"{% endif %}>{{ product.cta_a.text }}</a>
             {% endif %}
             {% if product.cta_b %}
-            <a href="{{ product.cta_b.url }}" class="product-cta" title="{{ product.cta_b.title }}" {% if product.cta_b.modal %}onclick="openBookingModal('{{ product.cta_b.url }}'); return false;"{% endif %}>{{ product.cta_b.text }}</a>
+            <a href="{{ product.cta_b.url }}" class="product-cta product-cta--spaced" title="{{ product.cta_b.title }}" {% if product.cta_b.modal %}onclick="openBookingModal('{{ product.cta_b.url }}'); return false;"{% endif %}>{{ product.cta_b.text }}</a>
             {% endif %}
         </div>
         <div class="product-hero-image">

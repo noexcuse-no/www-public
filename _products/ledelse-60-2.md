@@ -10,7 +10,7 @@ cta_a:
 cta_b:
   text: "Les mer om metoden →"
   title: "Les mer"
-  url: "/ledelse-60-2/vitenskapelig-grunnlag/"
+  url: "/ledelse-60-2/"
   modal: false
 cta_c:
   text: "Book en uforpliktende samtale"

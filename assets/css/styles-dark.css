@@ -109,3 +109,74 @@ a:hover {
     background-color: var(--box-background-dark);
     box-shadow: var(--box-shadow-dark);
 }
+
+#profiles {
+    background-color: var(--background-color-dark);
+}
+
+.profile {
+    background-color: var(--background-color-dark);
+}
+
+.profile-compact {
+    background: var(--box-background-dark);
+    box-shadow: var(--box-shadow-dark);
+}
+
+.profile-compact:hover {
+    box-shadow: var(--box-shadow-dark);
+}
+
+.profile-image {
+    border-color: var(--box-background-dark);
+}
+
+.profile-name {
+    color: var(--text-color-dark);
+}
+
+.profile-contact {
+    color: var(--text-color-dark);
+}
+
+.profile-expand-btn {
+    color: var(--link-color-dark);
+}
+
+.profile-expanded {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.profile-modal-content {
+    background: var(--box-background-dark);
+    color: var(--text-color-dark);
+}
+
+.profile-header-info .profile-name {
+    color: var(--text-color-dark);
+}
+
+.profile-tags {
+    color: var(--text-color-dark);
+}
+
+.profile-bio {
+    color: var(--text-color-dark);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-contact-grid {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-contact-item {
+    color: var(--link-color-dark);
+}
+
+.profile-details {
+    color: var(--text-color-dark);
+}
+
+.product-cta-footer {
+    background-color: var(--background-color-dark);
+}
