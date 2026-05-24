@@ -48,7 +48,7 @@ json_ld:
 </section>
 
 <section class="about-team">
-    <h2>Hvem vi er</h2>
+    <h2>Kontaktinformasjon</h2>
     {% include profiles.html %}
 </section>
 

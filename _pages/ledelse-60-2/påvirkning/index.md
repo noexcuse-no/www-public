@@ -21,7 +21,7 @@ json_ld:
 
 <section class="frame-hero">
     <div class="frame-hero-image">
-        <img src="{{ '/assets/images/banners/frame-political.png' | relative_url }}" alt="Påvirkningsperspektivet i ledelse">
+        <img src="{{ '/assets/images/banners/frame-påvirkning.png' | relative_url }}" alt="Påvirkningsperspektivet i ledelse">
     </div>
     <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
@@ -38,7 +38,7 @@ json_ld:
 
 <section class="frame-section">
     <h2>De tre hovedelementene</h2>
-    <img src="{{ '/assets/images/banners/illustrasjon-pavirknng-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i påvirkningsperspektivet" class="section-illustration">
+    <img src="{{ '/assets/images/banners/illustrasjon-påvirkning-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i påvirkningsperspektivet" class="section-illustration">
     
     <div class="frame-element">
         <h3>Makt og innflytelse</h3>
@@ -70,7 +70,7 @@ json_ld:
 
 <section class="frame-section">
     <h2>Vanlige utfordringer i påvirkningsdimensjonen</h2>
-    <img src="{{ '/assets/images/banners/illustrasjon-pavirknng-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige utfordringer i påvirkningsdimensjonen" class="section-illustration">
+    <img src="{{ '/assets/images/banners/illustrasjon-påvirkning-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige utfordringer i påvirkningsdimensjonen" class="section-illustration">
     
     <div class="frame-challenges">
         <div class="frame-challenge">
@@ -104,7 +104,7 @@ json_ld:
 </section>
 
 <section class="frame-cta">
-    <img src="{{ '/assets/images/banners/illustrasjon-pavirknng-cta.png' | relative_url }}" alt="Illustrasjon for kartlegging av påvirkning" class="section-illustration">
+    <img src="{{ '/assets/images/banners/illustrasjon-påvirkning-cta.png' | relative_url }}" alt="Illustrasjon for kartlegging av påvirkning" class="section-illustration">
     <h2>Få kartlagt ledergruppens påvirkning og maktbalanse</h2>
     <p>Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonflikter og konflikhåndtering. Bestill en uforpliktende samtale for å lære mer.</p>
     <div class="frame-cta-buttons">
