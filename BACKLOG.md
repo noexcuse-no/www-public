@@ -216,6 +216,25 @@ See `.specs/ledelse-60-2/perspektiv-articles.md` for full specification.
 - [ ] Add to products include
 - **blocked:** awaiting user input — iterative research + brainstorming
 
+## Image Optimization
+
+**Spec:** `.specs/image-optimization/README.md`
+**Design:** `.design/graphics.md` §Image Resize Guidelines
+
+Convert all PNG images to WebP format with appropriate resizing for web performance.
+
+- [ ] **IMG1:** Create `.design/graphics/originals/` directory structure
+- [ ] **IMG2:** Copy all 44 PNG files to `.design/graphics/originals/` preserving folder structure
+- [ ] **IMG3:** Convert banners (32 files) — 1920×1080 max, quality 85
+- [ ] **IMG4:** Convert icons (9 files) — 512×512 max, quality 85
+- [ ] **IMG5:** Convert hero/illustration images — 1920×1080 max, quality 85
+- [ ] **IMG6:** Convert logo files (2 files) — 400×400 max, quality 85
+- [ ] **IMG7:** Convert profile photos (1 file) — 400×400 max, quality 85
+- [ ] **IMG8:** Delete original PNG files from `assets/images/`
+- [ ] **IMG9:** Update `.design/graphics.md` with resize guidelines section
+
+---
+
 ## SEO Foundation
 
 See `.specs/seo/README.md` for full specification.
@@ -274,6 +293,54 @@ All new images must follow `.design/graphics.md` prompt rules:
 | `/identitet/` → tribal stages | `/triader/` | "Hvordan bygge triader →" | After Logan's stages |
 | `/usikkerhet/` → Kotter | `/triader/` | "Verktøy for kulturendring: triader →" | After Kotter section |
 | All 4 frame articles → "Det vitenskapelige grunnlaget" | `/perspektiv/` | "Les om hvorfor vi ikke scorer →" | Per-frame "no scoring" sentence |
+
+---
+
+### Part V — UI Upgrade
+
+See `.specs/ui-upgrade/README.md` (functional), `.design/ui-upgrade.md` (visual).
+
+**U1 — CSS Animation Architecture**
+- **Spec:** `.specs/ui-upgrade/README.md` §1
+- **Design:** `.design/ui-upgrade.md` §1
+- **Files:** `assets/css/animations.css`, `assets/scripts/animations.js`
+- **Content:** Scroll-triggered fadeInUp/slideInLeft via Intersection Observer, stagger pattern, reduced-motion support
+
+**U2 — Article Hero Overlay**
+- **Spec:** `.specs/ui-upgrade/README.md` §2
+- **Design:** `.design/ui-upgrade.md` §2
+- **Files:** `assets/css/article.css`
+- **Content:** Title text overlaid on banner image with gradient overlay, breadcrumb above gradient
+- **Target pages:** `/ledelse-60-2/`, `/om-oss/`, `/tillit/`, `/usikkerhet/`, `/struktur/`, `/mennesker/`, `/påvirkning/`, `/identitet/`, `/forankring/`
+
+**U3 — Typography Unification**
+- **Spec:** `.specs/ui-upgrade/README.md` §3
+- **Design:** `.design/ui-upgrade.md` §3
+- **Files:** `assets/css/typography.css`
+- **Content:** Complete h2/h3 sizes, body line-height 1.7, reading width 65ch, consistent heading margins
+
+**U4 — Landing Page Hero Gradient**
+- **Spec:** `.specs/ui-upgrade/README.md` §4
+- **Design:** `.design/ui-upgrade.md` §4
+- **Files:** `assets/css/products.css`, `assets/css/about.css`
+- **Content:** Bottom gradient on hero images transitioning to background color
+
+**U5 — Button & Card Micro-interactions**
+- **Spec:** `.specs/ui-upgrade/README.md` §5
+- **Design:** `.design/ui-upgrade.md` §5
+- **Files:** `assets/css/products.css`, `assets/css/article.css`
+- **Content:** translateY(-2px) lift + shadow on hover for CTAs, translateY(-4px) for cards
+
+**U6 — Scroll-Triggered Content Animations**
+- **Spec:** `.specs/ui-upgrade/README.md` §6
+- **Design:** `.design/ui-upgrade.md` §6
+- **Content:** Staggered entrance for .frame-section, .frame-challenges, .frame-questions, landing grids
+
+**U7 — Dark Mode Finalization**
+- **Spec:** `.specs/ui-upgrade/README.md` §7
+- **Design:** `.design/ui-upgrade.md` §8
+- **Files:** `assets/css/styles-dark.css`
+- **Content:** Dark variants for all new overlay and card components
 
 ---
 
