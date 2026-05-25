@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Ledelse 60:2 — Modenhetsanalyse for ledergruppen"
+title: "Ledelse 60:2 — Orientering for ledergruppen"
 permalink: /ledelse-60-2/
 json_ld:
   type: "Service"
   name: "Ledelse 60:2"
-  description: "Tidseffektiv modenhetsanalyse for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
+  description: "Tidseffektiv orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
   provider:
     type: "Organization"
     name: "No Excuse AS"
@@ -20,7 +20,7 @@ json_ld:
   offers:
     type: "Offer"
     priceCurrency: "NOK"
-    description: "Modenhetsanalyse for ledergruppen"
+    description: "Orientering for ledergruppen"
   hasOfferCatalog:
     type: "OfferCatalog"
     name: "Ledelse 60:2 Tjenester"
@@ -46,7 +46,7 @@ json_ld:
         <p class="landing-hero-description">Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen.</p>
         <div class="landing-hero-buttons">
             <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill Ledelse 60:2</a>
-            <a href="#hvordan" class="product-cta product-cta--secondary">Hvordan fungerer det? ↓</a>
+            <a href="#hvordan" class="product-cta">Hvordan fungerer det? ↓</a>
         </div>
     </div>
 </section>
@@ -57,26 +57,26 @@ json_ld:
         <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-control.png' | relative_url }}" alt="Få kontroll uten byråkrati" class="benefit-banner">
             <h3>Bedre ledelse uten byråkrati</h3>
-            <p>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema.</p>
-            <a href="{{ '/tillit-i-ledelse/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            <p>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema. Dyrk engasjement og eierskap blant ansatte, ikke regler og regimer. Ikke fall for fristelsen å møte økt kompleksitet med micromanagement og mistenksomhet - ha tro på at ansatte kan bruke sunn fornuft!</p>
+            <a href="{{ '/tillit/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-ai.png' | relative_url }}" alt="Oppnå målbare gevinster med KI" class="benefit-banner">
             <h3>Målbare gevinster med GenKI</h3>
             <p>Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle maser om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
-            <a href="{{ '/mastyring/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            <a href="{{ '/generativ-ki/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-future.png' | relative_url }}" alt="Bli forberedt på en usikker fremtid" class="benefit-banner">
             <h3>Bli forberedt på en usikker fremtid</h3>
             <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.</p>
-            <a href="{{ '/organisasjonskultur/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            <a href="{{ '/usikkerhet/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-anchoring.png' | relative_url }}" alt="Forankre initiativer i ledergruppen" class="benefit-banner">
             <h3>Forankre initiativer i ledergruppen</h3>
             <p>Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft.</p>
-            <a href="{{ '/beslutningstaking/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            <a href="{{ '/forankring/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
     </div>
 </section>
@@ -107,8 +107,8 @@ json_ld:
 
 <section class="landing-story">
     <h2>Historien bak metoden</h2>
-    <p>«Ledelse 60:2» er vår tilnærming til å bruke en enkel vitenskapelig metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet.</p>
-    <a href="{{ '/forskning/' | relative_url }}" class="product-cta product-cta--secondary">Vitenskapelig metode →</a>
+    <p>«Ledelse 60:2» er vår tilnærming til å bruke en enkel kunnskapsbasert metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet.</p>
+    <a href="{{ '/metode/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om metoden →</a>
 </section>
 
 {% if site.cases.size > 0 %}
@@ -132,7 +132,9 @@ json_ld:
 {% endif %}
 
 <section class="landing-cta">
-    <h2>Klar for bedre ledelse?</h2>
-    <p>Book en uforpliktende samtale, så finner vi ut om Ledelse 60:2 er rett for dere.</p>
-    <a href="https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no" class="product-cta product-cta--large" onclick="openBookingModal('https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no'); return false;">Book samtale</a>
+    <h2>Hvordan jobber dere med bedre ledelse?</h2>
+    <p>Ta en uforpliktende samtale med oss, så finner vi ut om Ledelse 60:2 er rett for dere.</p>
+    <div class="landing-hero-content">
+        <a href="https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no" class="product-cta product-cta--large" onclick="openBookingModal('https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no'); return false;">Velg et tidspunkt</a>
+    </div>
 </section>

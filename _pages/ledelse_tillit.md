@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Tillit i ledelse — Slik bygger du psykologisk trygghet"
+title: "Bedre ledelse uten byråkrati"
 description: "Lær hvordan tillit og psykologisk trygghet i ledelse faktisk fungerer. Forskning fra Greenleaf, Edmondson og andre viser hvordan du kan skape en organisasjon der folk tør si ifra."
 permalink: /tillit/
 json_ld:
   type: "Article"
-  name: "Tillit i ledelse"
+  name: "Bedre ledelse uten byråkrati"
   description: "Hvordan ledere bygger psykologisk trygghet og tillit i organisasjoner. Forskning på servant leadership, tillitsbasert ledelse og hvordan skape kulturer der folk tør være ærlige."
   author:
     type: "Organization"
@@ -25,7 +25,7 @@ json_ld:
     </div>
     <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1>Tillit i ledelse</h1>
+        <h1>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema.</h1>
         <p class="frame-intro">Den viktigste faktoren for en velfungerende organisasjon er ikke strategi, struktur eller prosesser. Det er tillit. Lær hvordan du bygger den.</p>
     </div>
 </section>

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Organisasjonskultur og endring — Hvorfor endring er så vanskelig"
+title: "Bli forberedt på en usikker fremtid, jobb med organisasjonskultur og endring"
 description: "Lær hvorfor organisasjonskultur er så vanskelig å endre — og hva forskningen sier om hvordan det faktisk kan lade seg gjøre. Fra Schein til Kotter."
 permalink: /organisasjonskultur/
 json_ld:
   type: "Article"
-  name: "Organisasjonskultur og endring"
+  name: "Bli forberedt på en usikker fremtid, jobb med organisasjonskultur og endring"
   description: "Hvorfor er organisasjonskultur så vanskelig å endre? Forskning på kulturnivåer, endringsledelse og hvordan logan, kotter og schein beskriver fenomenet."
   author:
     type: "Organization"
@@ -25,9 +25,13 @@ json_ld:
     </div>
     <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1>Organisasjonskultur og endring</h1>
+        <h1>Bli forberedt på en usikker fremtid, jobb med organisasjonskultur og endring</h1>
         <p class="frame-intro">Kultur spiser strategi til frokost, het det. Men hva er kultur egentlig — og hvordan kan den endres? Forskningen gir noen overraskende svar.</p>
     </div>
+</section>
+
+<section class="frame-section">
+    <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.</p>
 </section>
 
 <section class="frame-section">

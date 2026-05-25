@@ -1,0 +1,11 @@
+{
+  "opencode-go": true,
+  "openai": false,
+  "claude": false,
+  "gemini": false,
+  "copilot": false,
+  "opencode-zen": false,
+  "zai-coding-plan": false,
+  "kimi-for-coding": false,
+  "vercel-ai-gateway": false
+}

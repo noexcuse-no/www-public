@@ -1,18 +1,18 @@
 ---
 layout: page
-title: "Forskningsbasert ledelsesforbedring"
-permalink: /forskning/
+title: "En metode for kunnskapsbasert ledelsesforbedring"
+permalink: /metode/
 json_ld:
   type: "TechArticle"
-  name: "Forskningsbasert ledelsesforbedring"
-  description: "Det teoretiske grunnlaget for Ledelse 60:2 metoden — organisasjonsteori, maktanalyse, kulturforskning og beslutningsvitenskap."
+  name: "En metode for kunnskapsbasertbasert ledelsesforbedring"
+  description: "Den kunnskapsbaserte metoden for No Excuse Ledelse 60:2
   author:
     type: "Organization"
     name: "No Excuse AS"
   about:
     - type: "Thing"
       name: "Ledelse 60:2"
-      description: "Intervjubasert modenhetsanalyse for ledergruppen"
+      description: "Intervjubasert kartlegging av ledelsesfunksjonen"
     - type: "Thing"
       name: "Bolman & Deal Four-Frame Model"
       description: "Organisasjonsanalyse og lederskap"
@@ -33,16 +33,16 @@ json_ld:
     </div>
     <div class="science-hero-content">
         <p class="science-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
-        <h1>Vitenskapelig grunnlag</h1>
-        <p class="science-intro">«Ledelse 60:2» er en metode som bruker intervjubasert kartlegging av kulturelle faktorer i en ledergruppe som metodikk for datafangst. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kulturforskning og beslutningsvitenskap - som gir den høy fleksibel anvendelighet for kunden på tvers av domener og problemstillinger. Ut over den vitenskapelig funderte metodikken for datafangst, så innebærer "Ledelse 60:2" at de strukturerte intervjuene er en del av en langsiktig metode for å produsere kunnskap fra innsamlede data.</p>
+        <h1>En metode for kunnskapsbasert ledelsesforbedring</h1>
+        <p class="science-intro">«Ledelse 60:2» anvender strukturert intervjuer for kartlegging av kulturelle faktorer i en ledergruppe som metodikk for datafangst. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kulturforskning og beslutningsvitenskap - som gir den høy fleksibel anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.</p>
     </div>
 </section>
 
 <section id="teoretisk" class="science-section">
-    <h2><span class="section-number">1</span> Teoretisk grunnlag</h2>
-    <p>Intervjustrukturen i «Ledelse 60:2» tar direkte utgangspunkt i Lee G. Bolman og Terrence E. Deals firedelte rammeverk for organisasjonsanalyse, først presentert i <em>Reframing Organizations</em> (1984) og videreutviklet gjennom seks utgaver fram til 2017 (Bolman & Deal, 2017). Rammeverket er også tilgjengelig på norsk i <em>Nytt perspektiv på organisasjon og ledelse</em> (Bolman & Deal, 2024).</p>
+    <h2><span class="section-number">1</span> Teoretisk grunnlag for tilnærmingen</h2>
+    <p>Intervjustrukturen i «Ledelse 60:2» tar direkte utgangspunkt i Lee G. Bolman og Terrence E. Deals firedelte rammeverk for organisasjonsanalyse, først presentert i <em>Reframing Organizations</em> (1984) og senere revidert i seks seks utgaver fram til 2017 (Bolman & Deal, 2017), utgitt på norsk som <em>Nytt perspektiv på organisasjon og ledelse</em> (Bolman & Deal, 2024).</p>
 
-    <p>De fire perspektivene — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — utgjør selve ryggraden i de 60 spørsmålene. Hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold.</p>
+    <p>De fire perspektivene — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — er den analytiske strukturen for de 60 spørsmålene. Med Bolman & Deal legger vi til grunn antakelsen at hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold. De fire valgte perspektivene er ikke nødvendigvis de eneste, de mest riktige, uttømmende eller uten overlapp; først og fremst har vi valgt å anvende disse fire perspektivene som ordnende prinsipp fordi (a) de er relativt ukontroversielle og godt innarbeidet i domenet, og (b) perspektivene gjenspeiler en gjenkjennbarn og legitim kunnskapsontologi fra samtidens vestlige samfunn. De instrumentaliseres i moderne nyprofesjons- og fagstudier slik som <strong>Ledelse</strong> og <strong>HR</strong></p>
 
     <div class="frames-horizontal">
         <div class="frames-row">
@@ -51,7 +51,7 @@ json_ld:
                 <div class="frame-content">
                     <h3>Strukturperspektivet</h3>
                     <p class="frame-desc">Roller, mål, prosesser, koordinering, ansvar</p>
-                    <p class="frame-detail-text">Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig.</p>
+                    <p class="frame-detail-text">Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig. Symbolsk representerer dette kunnskapsdomenet for resepsjonen og anvendelse av det som på universitetet struktureres under <strong>Økonomi</strong>.</p>
                     <a href="{{ '/struktur/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
@@ -60,7 +60,7 @@ json_ld:
                 <div class="frame-content">
                     <h3>Menneskeperspektivet</h3>
                     <p class="frame-desc">Tillit, motivasjon, relasjoner, utvikling, medvirkning</p>
-                    <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at "servant leadership" er et konkurransefortrinn.</p>
+                    <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at "servant leadership" er et konkurransefortrinn. Symbolsk representerer dette kunnskapsdomenet for resepsjonen og anvendelse av det som på universitetet struktureres under <strong>Psykologi</strong>.</p>
                     <a href="{{ '/mennesker/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
@@ -71,7 +71,7 @@ json_ld:
                 <div class="frame-content">
                     <h3>Påvirkningsperspektivet</h3>
                     <p class="frame-desc">Makt, interesser, konflikt, ressurser, politikk</p>
-                    <p class="frame-detail-text">Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet.</p>
+                    <p class="frame-detail-text">Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet. Symbolsk representerer dette kunnskapsdomenet for resepsjonen og anvendelse av det som på universitetet struktureres under <strong>Statsvitenskap & Sosiologi</strong>.</p>
                     <a href="{{ '/påvirkning/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
@@ -80,7 +80,7 @@ json_ld:
                 <div class="frame-content">
                     <h3>Identitetsperspektivet</h3>
                     <p class="frame-desc">Kultur, mening, symboler, verdier, historier</p>
-                    <p class="frame-detail-text">Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier.</p>
+                    <p class="frame-detail-text">Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier. Symbolsk representerer dette kunnskapsdomenet for resepsjonen og anvendelse av det som på universitetet struktureres under <strong>Sosialantropologi</strong>.</p>
                     <a href="{{ '/identitet/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
@@ -89,12 +89,12 @@ json_ld:
 </section>
 
 <section id="forskning" class="science-section">
-    <h2><span class="section-number">2</span> Forskning i praksis</h2>
-    <p class="lead">«Ledelse 60:2» er ikke bare en tjeneste som vi tilbyr organisasjoner for å hjelpe med å forbedre ledelsesfunksjonen. Det er også en metode som er utformet for å <em>utvikle ny kunnskap om nordisk ledelses- og styringspraksis</em>.</p>
+    <h2><span class="section-number">2</span> Kunnskapsproduksjon i praksis</h2>
+    <p class="lead">«Ledelse 60:2» er ikke bare en tjeneste som vi tilbyr organisasjoner for å hjelpe med å forbedre ledelsesfunksjonen, det er en metode for å <em>utvikle ny kunnskap om nordisk ledelses- og styringspraksis</em>.</p>
 
     <div class="science-highlight">
         <h3>Hver gjennomføring styrker kunnskapsgrunnlaget</h3>
-        <p>Hvert intervju produserer strukturerte, sammenliknbare data som anonymiseres og inngår i et voksende datasett. Dette gjør at den komparative analysen blir stadig mer presis etter hvert som flere virksomheter deltar. Datagrunnlaget vokser, og referansepunktene blir skarpere.</p>
+        <p>Hvert intervju produserer strukturerte, sammenliknbare data som anonymiseres og inngår i et voksende datasett.</p> Dette er et viktig moment for oss, og former både salg og gjennomføring.
     </div>
 
     <div class="science-quote">
@@ -107,13 +107,11 @@ json_ld:
             <img src="{{ '/assets/images/banners/science-research.png' | relative_url }}" alt="">
         </div>
         <div class="science-divider-content">
-            <h3>Forskning i praksis</h3>
-            <p>Datainnsamling innenfor norske forskningsetiske standarder</p>
+            <h3>Norske forskningsetiske standarder</h3>
         </div>
     </div>
 
-    <h3>Forankring i norsk forskningsetikk</h3>
-    <p>Databehandlingen følger <strong>De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer</strong> (2014), som bygger på fire prinsipper:</p>
+    <p>Databehandlingen følger <strong>De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer</strong> (2014). Vi fremhever fire prinsipper:</p>
 
     <div class="ethics-columns">
         <div class="ethics-column">
@@ -134,13 +132,13 @@ json_ld:
         <div class="ethics-column">
             <div class="ethics-icon">🔬</div>
             <h4>Integritet</h4>
-            <p>Vi følger anerkjente normer og opptrer ansvarlig</p>
+            <p>Prosjektet følger anerkjente normer og opptrer ansvarlig</p>
         </div>
     </div>
 
     <p><strong>Forskningsetikkloven § 4</strong> bestemmer at "Forskere skal opptre med aktsomhet for å sikre at all forskning skjer i henhold til anerkjente forskningsetiske normer. Dette gjelder også under forberedelser til forskning, rapportering av forskning og andre forskningsrelaterte aktiviteter."</p>
 
-    <p>Vi følger <strong>NESH-retningslinjene</strong> (2021, 5. utg.) og anvender <a href="https://noexcuse.no/assets/samtykke.pdf">et standardskjema</a> for å sikre at samtykke fra personer som inngår i datafangsten er informert, frivillig, utvetydig og dokumentert.</p>
+    <p>Vi følger <strong>NESH-retningslinjene</strong> (2021, 5. utg.) og anvender <a href="https://noexcuse.no/assets/samtykke.pdf">et standardskjema (link)</a> for å sikre at samtykke fra personer er informert, frivillig, utvetydig og dokumentert. Det får ingen konsekvenser for den enkelte eller for virksomheten om enkeltpersoner ikke ønsker å bidra, det betyr bare at de ikke inngår som datakilde og kun eventuelt bidrar lokalt innenfor oppdraget hos virksomheten.</p>
 
     <div class="science-highlight">
         <h3>Metoden blir bedre jo flere som bruker den</h3>
@@ -151,22 +149,9 @@ json_ld:
 <section id="hvorfor" class="science-section">
     <h2><span class="section-number">3</span> Hvorfor vi gjør dette</h2>
 
-    <p>No Excuse AS ble stiftet i juni 2025 av <strong>Rasmus S. Olsen</strong> og <strong>Dagfinn Bang-Johansen</strong>. Forretningsidéen kom fra erfaring med å bistå virksomheter med etterlevelse av ISO-rammeverk, lov- og kundekrav. Innsikten var at god ledelse ofte blir erstattet av tungrodd administrasjon og byråkrati.</p>
+    <p>No Excuse AS ble stiftet i juni 2025. Forretningsidéen kom fra erfaring med å bistå virksomheter med etterlevelse av ISO-rammeverk, lov- og kundekrav. Innsikten var at god ledelse ofte blir erstattet av tungrodd administrasjon og byråkrati. Det er et kjerneproblem dersom virksomheten skal være i stand til å møte usikkerhet og nye muligheter. Det er intensjonen bak en regel som gjør den relevant og verdifull, det er liten vits i å "simulere" moden ledelse.</p>
 
-    <div class="founders-grid">
-        <div class="founder-card">
-            <img src="{{ '/assets/images/dagfinn.png' | relative_url }}" alt="Dagfinn Bang-Johansen">
-            <h3>Dagfinn Bang-Johansen</h3>
-            <p>Nesten 30 års erfaring fra salgs- og lederroller i logistikk- og teknologibransjen. Studerte organisasjon og ledelse ved Høgskolen på Lillehammer. Levereglene: kom hel til mål, bli sliten, ha det gøy.</p>
-        </div>
-        <div class="founder-card">
-            <img src="{{ '/assets/images/rasmus.png' | relative_url }}" alt="Rasmus S. Olsen">
-            <h3>Rasmus S. Olsen</h3>
-            <p>Mange års konsulenterfaring med etterlevelse av rammeverk og regulatoriske krav innen IT. Utdannet idéhistoriker og IT-tekniker. Erfarte at den menneskelige faktoren er den viktigste suksessfaktoren i styring og kontroll.</p>
-        </div>
-    </div>
-
-    <p>Sammen bygger de på en overbevisning om at ledelse må forstås fra flere perspektiver — slik Bolman & Deal har argumentert for i over 40 år. De kvalitative metodene i «Ledelse 60:2» er vårt svar på en tid preget av KI, mistillit og helautomatiske løsninger.</p>
+    <p>Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspektiver — slik Bolman & Deal har argumentert for i over 40 år. De kvalitative metodene i «Ledelse 60:2» er vårt svar på en tid preget av KI, mistillit og helautomatiske løsninger. Ved å komme mennesker i møte og legge til rette for å lære av hverandre styrker vi det unikt menneskelige. Dette gjenspeiles også i hvordan vi har en skeptisk og kritisk innstilling til bruk av maskinlæring og maskingenerert innhold i det metodiske arbeidet. En statistisk algoritme kan ikke "tenke" eller "forstå".</p>
 </section>
 
 <section id="referanser" class="science-section references">

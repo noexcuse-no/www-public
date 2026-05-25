@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Hvordan avgjørelser egentlig oppnår forankring i ledergrupper"
+title: "Forankre initiativer i ledergruppen"
 description: "Lær hvordan beslutninger faktisk tas i organisasjoner — og hvorfor rasjonelle ledere ofte tar irrasjonelle valg. Forskning på makt, bias og beslutningsprosesser."
 permalink: /forankring/
 json_ld:
   type: "Article"
-  name: "Hvordan avgjørelser egentlig oppnår forankring i ledergrupper"
+  name: "Forankre initiativer i ledergruppen"
   description: "Lær hvordan beslutninger faktisk tas i organisasjoner — og hvorfor rasjonelle ledere ofte tar irrasjonelle valg. Forskning på makt, bias og beslutningsprosesser."
   author:
     type: "Organization"
@@ -26,7 +26,7 @@ json_ld:
     <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
         <h1>Beslutningstaking i ledelse</h1>
-        <p class="frame-intro">De fleste ledere tror de tar rasjonelle beslutninger. Virkeligheten er mer komplisert. Lær hva forskningen sier om hvordan beslutninger faktisk tas.</p>
+        <p class="frame-intro">Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft. De fleste ledere tror de tar rasjonelle beslutninger. Virkeligheten er mer komplisert. Lær hva forskningen sier om hvordan beslutninger faktisk tas.</p>
     </div>
 </section>
 

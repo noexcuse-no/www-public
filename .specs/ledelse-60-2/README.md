@@ -86,9 +86,11 @@ tags: "#samarbeid"              # optional
 ---
 ```
 
-## Frame Articles
+## Perspektiv Articles
 
-Four frame articles implement Bolman & Deals rammeverk for leadership. Each is a standalone SEO article.
+**Note:** Frame articles have been renamed to "perspektiv" articles. See `.specs/ledelse-60-2/perspektiv-articles.md` for the new architecture.
+
+Four perspektiv articles implement Bolman & Deals rammeverk for leadership. Each is a standalone SEO article using a hybrid metadata-driven layout.
 
 ### File Structure
 
@@ -98,6 +100,13 @@ Four frame articles implement Bolman & Deals rammeverk for leadership. Each is a
 | `_pages/ledelse_mennesker.md` | `/mennesker/` | Menneskeperspektivet |
 | `_pages/ledelse_påvirkning.md` | `/påvirkning/` | Påvirkningsperspektivet |
 | `_pages/ledelse_identitet.md` | `/identitet/` | Identitetsperspektivet |
+
+### Architecture
+
+- `_frames/` collection stores metadata for each article
+- `_layouts/perspektiv.html` renders all standard sections from frontmatter
+- `_pages/ledelse_*.md` are lightweight content files
+- CSS extracted to `_includes/perspektiv-styles.css`
 
 ### Content Guidelines
 
@@ -116,13 +125,13 @@ Four frame articles implement Bolman & Deals rammeverk for leadership. Each is a
 | Påvirkning | Pfeffer (2010) | Pfeffer's power in orgs |
 | Identitet | Logan (2011) | Bolman & Deal (2017) |
 
-See `assets/bibliography/briefs/` for synthesis of each source.
+See `.specs/shared/` for synthesis of each source.
 
 ### Linking
 
-- Frame articles linked from `/om_forskning/` (vitenskapelig grunnlag page)
-- Benefit cards on Ledelse 60:2 landing page link to relevant frame articles
-- Use `class="frame-link"` for styled links
+- Perspektiv articles linked from `/om_forskning/` (vitenskapelig grunnlag page)
+- Benefit cards on Ledelse 60:2 landing page link to relevant perspektiv articles
+- Use `class="perspektiv-link"` for styled links
 
 ---
 

@@ -12,7 +12,7 @@ json_ld:
   foundingDate: "2025-06"
   foundingLocation: "Norge"
   areaServed: "Norge"
-  description: "No Excuse AS ble grunnlagt i juni 2025 av Rasmus S. Olsen og Dagfinn Bang-Johansen. Vi bistår virksomheter med å forbedre ledelsesfunksjonen."
+  description: "No Excuse AS ble grunnlagt i juni 2025. Vi bistår virksomheter med å forbedre ledelsesfunksjonen."
   contactPoint:
     type: "ContactPoint"
     contactType: "customer service"
@@ -28,13 +28,13 @@ json_ld:
     </div>
     <div class="about-hero-content">
         <h1>Om oss</h1>
-        <p class="about-tagline">Vi hjelper ledergrupper med å få kontroll — uten byråkrati.</p>
+        <p class="about-tagline">Vi hjelper ledergrupper med å bli bedre — uten byråkrati.</p>
     </div>
 </section>
 
 <section class="about-story">
     <h2>Hvorfor No Excuse?</h2>
-    <p>No Excuse AS ble grunnlagt i juni 2025 av Rasmus S. Olsen og Dagfinn Bang-Johansen. Vi så et behov for å forbedre ledelsesfunksjonen i norske virksomheter uten dyre konsulentrapporter og unødvendig kompleksitet.</p>
+    <p>No Excuse AS ble grunnlagt i juni 2025. Vi så et behov for å forbedre ledelsesfunksjonen i norske virksomheter uten dyre konsulentrapporter og unødvendig kompleksitet.</p>
     <p>Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals fire perspektiver) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse, refleksjon fremfor skjemaer, og at de beste svarene ofte finnes internt — om man stiller de riktige spørsmålene.</p>
 </section>
 
@@ -45,6 +45,11 @@ json_ld:
         <li>Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget</li>
         <li>Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater</li>
     </ul>
+</section>
+
+<section class="about-legal">
+    <h2>Standard avtalevilkår</h2>
+    <p>Du finner våre standard avtalevilkår <a href="/avtale/">her</a>.</p>
 </section>
 
 <section class="about-team">

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Målstyring i praksis — Hvordan sette mål som faktisk fungere"
-description: "Lær hvordan målstyring faktisk fungerer i praksis. OKR, KPI, balansert målstyring — forskning på hva som virker og hva som ikke virker."
+title: "Målbare gevinster med GenKI"
+description: "Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes."
 permalink: /generativ-ki/
 json_ld:
   type: "Article"
-  name: "Målstyring i praksis"
-  description: "Hvordan sette og følge opp mål som faktisk gir resultater. Forskning på OKR, balansert målstyring, og hvordan unngå målstyringsfallgruber."
+  name: "Målbare gevinster med GenKI"
+  description: "Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes."
   author:
     type: "Organization"
     name: "No Excuse AS"
@@ -26,7 +26,7 @@ json_ld:
     <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
         <h1>Målstyring i praksis</h1>
-        <p class="frame-intro">De fleste organisasjoner har mål. Få har mål som faktisk fungerer. Lær hva forskningen sier om effektiv målstyring.</p>
+        <p class="frame-intro">Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle maser om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
     </div>
 </section>
 
