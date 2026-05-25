@@ -65,7 +65,7 @@ json_ld:
 <section class="frame-section">
     <h2>Hvorfor menneskeperspektivet betyr noe for ledergruppen</h2>
     <p>Menneskeperspektivet ser ut til å være «mykt» og vanskelig å handle på, men det har målbare konsekvenser. Southwest Airlines' langvarige lønnsomhet handlet ikke om strategi eller struktur — det handlet om en kultur der ledere tjente de ansatte, som igjen tjente kundene.</p>
-    <p>For ledergruppen er spørsmålene: Bruker vi tid på å bygge relasjoner og tillit? Har vi en kultur der folk tørr å si ifra? Tiltrekker og beholder vi talent? Eller er vi en organisasjon der folk写作业 for å overleve, ikke for å trives?</p>
+    <p>For ledergruppen er spørsmålene: Bruker vi tid på å bygge relasjoner og tillit? Har vi en kultur der folk tørr å si ifra? Tiltrekker og beholder vi talent? Eller er vi en organisasjon der folk bare overlever, ikke for å trives?</p>
 </section>
 
 <section class="frame-section">

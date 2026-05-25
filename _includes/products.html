@@ -21,6 +21,7 @@
             <img src="{{ benefit.banner | relative_url }}" alt="{{ benefit.title }}" class="benefit-banner">
             <h4>{{ benefit.title }}</h4>
             <p>{{ benefit.description }}</p>
+            <a href="{{ benefit.article_url }}" class="product-cta" title="{{ benefit.title }}">Les mer →</a>
         </div>
         {% endfor %}
     </div>
