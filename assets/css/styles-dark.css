@@ -88,6 +88,7 @@ a:hover {
 
 .profile-modal-content {
     background: var(--box-background-dark);
+    color: var(--text-color-dark);
 }
 
 .profile-close {
@@ -113,11 +114,6 @@ a:hover {
     background-color: var(--background-color-dark);
 }
 
-.profile-compact {
-    background: var(--box-background-dark);
-    box-shadow: var(--box-shadow-dark);
-}
-
 .profile-compact:hover {
     box-shadow: var(--box-shadow-dark);
 }
@@ -134,17 +130,8 @@ a:hover {
     color: var(--text-color-dark);
 }
 
-.profile-expand-btn {
-    color: var(--link-color-dark);
-}
-
 .profile-expanded {
     background: rgba(0, 0, 0, 0.8);
-}
-
-.profile-modal-content {
-    background: var(--box-background-dark);
-    color: var(--text-color-dark);
 }
 
 .profile-header-info .profile-name {
