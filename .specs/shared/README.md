@@ -4,6 +4,10 @@ Common patterns used across multiple features. Reusable guidelines for consisten
 
 ---
 
+## Domain knowledge
+
+Look up domain knowledge on the subject matter by starting at .spec/shared/synthesis.md
+
 ## Linking Frame Articles
 
 Frame articles are linked from:
@@ -11,7 +15,7 @@ Frame articles are linked from:
 1. **Vitenskapelig grunnlag page** (`_pages/om_forskning.md`):
    - 4 frame links in 2×2 grid
    - Use `class="frame-link"` for styled links
-   - Permalinks: `/ledelse-60-2/struktur/`, `/ledelse-60-2/mennesker/`, `/ledelse-60-2/påvirkning/`, `/ledelse-60-2/identitet/`
+   - Permalinks: `/struktur/`, `/mennesker/`, `/påvirkning/`, `/identitet/`
 
 2. **Ledelse 60:2 benefit cards** (on landing page):
    - Each benefit links to relevant frame article
@@ -20,7 +24,7 @@ Frame articles are linked from:
 ### Link Pattern
 
 ```html
-<a href="{{ '/ledelse-60-2/struktur/' | relative_url }}" class="frame-link">Les artikkelen →</a>
+<a href="{{ '/struktur/' | relative_url }}" class="frame-link">Les artikkelen →</a>
 ```
 
 ---
@@ -74,7 +78,7 @@ body.dark-mode .component {
 
 ## Bibliography Linking
 
-Frame articles cite primary sources from `assets/bibliography/briefs/`:
+Cite domain knowledge from `.spec/shared/`:
 
 | Article | Primary Source File |
 |---------|-------------------|
@@ -85,7 +89,7 @@ Frame articles cite primary sources from `assets/bibliography/briefs/`:
 
 ### Bibliography Brief Structure
 
-Each brief in `assets/bibliography/briefs/` contains:
+Each brief in `.spec/shared/` contains:
 - Key thesis (1-2 sentences)
 - Main conclusions (bullet list)
 - Relevance to practice

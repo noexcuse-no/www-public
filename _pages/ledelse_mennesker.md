@@ -2,7 +2,7 @@
 layout: page
 title: "Menneskeperspektivet i ledelse — Tillit, relasjoner og vekst"
 description: "Lær hvordan menneskeperspektivet kan hjelpe ledergruppen å bygge tillit, motivere medarbeidere og skape en kultur der mennesker trives og vokser."
-permalink: /ledelse-60-2/mennesker/
+permalink: /mennesker/
 json_ld:
   type: "Article"
   name: "Menneskeperspektivet i ledelse"
@@ -24,7 +24,7 @@ json_ld:
         <img src="{{ '/assets/images/banners/frame-mennesker.png' | relative_url }}" alt="Menneskeperspektivet i ledelse">
     </div>
     <div class="frame-hero-content">
-        <p class="frame-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
+        <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
         <h1>Menneskeperspektivet</h1>
         <p class="frame-intro">Handler om å se organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. Når mennesker og organisasjon passer sammen, tjener begge på det.</p>
     </div>
@@ -109,7 +109,7 @@ json_ld:
     <p>Ledelse 60:2 inneholder spørsmål som handler om tillit, motivasjon og relasjoner. Gjennomfør en uforpliktende samtale for å lære mer.</p>
     <div class="frame-cta-buttons">
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill uforpliktende samtale</a>
-        <a href="{{ '/ledelse-60-2/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
 
@@ -117,7 +117,7 @@ json_ld:
     <h2>Det vitenskapelige grunnlaget</h2>
     <p>Menneskeperspektivet i Ledelse 60:2 bygger på Bolman & Deals HR-ramme, kombinert med Ken Blanchards og Colleen Barretts forskning på tjenerledelse fra «Lead with LUV».</p>
     <p>Blanchard og Barrett viser gjennom Southwest Airlines at tjenerledelse ikke er idealisme — det er en forretningsstrategi som gir målbare resultater.</p>
-    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="frame-link">Les det vitenskapelige grunnlaget for Ledelse 60:2 →</a>
+    <a href="{{ '/forskning/' | relative_url }}" class="frame-link">Les det vitenskapelige grunnlaget for Ledelse 60:2 →</a>
 </section>
 
 <style>

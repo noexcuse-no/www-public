@@ -2,7 +2,7 @@
 layout: page
 title: "Påvirkningsperspektivet i ledelse — Makt, interesser og konflikt"
 description: "Lær hvordan påvirkningsperspektivet kan hjelpe ledergruppen å forstå maktbalanse, interessekonflikter og hvordan beslutninger faktisk tas."
-permalink: /ledelse-60-2/påvirkning/
+permalink: /påvirkning/
 json_ld:
   type: "Article"
   name: "Påvirkningsperspektivet i ledelse"
@@ -24,7 +24,7 @@ json_ld:
         <img src="{{ '/assets/images/banners/frame-påvirkning.png' | relative_url }}" alt="Påvirkningsperspektivet i ledelse">
     </div>
     <div class="frame-hero-content">
-        <p class="frame-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
+        <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
         <h1>Påvirkningsperspektivet</h1>
         <p class="frame-intro">Handler om å forstå at organisasjoner er arenaer der ulike interesser møtes. Makt og påvirkning er ikke skitne triks — de er en del av hvordan beslutninger tas og ting blir gjort.</p>
     </div>
@@ -109,7 +109,7 @@ json_ld:
     <p>Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonflikter og konflikhåndtering. Bestill en uforpliktende samtale for å lære mer.</p>
     <div class="frame-cta-buttons">
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill uforpliktende samtale</a>
-        <a href="{{ '/ledelse-60-2/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
 
@@ -117,7 +117,7 @@ json_ld:
     <h2>Det vitenskapelige grunnlaget</h2>
     <p>Påvirkningsperspektivet i Ledelse 60:2 bygger på Bolman & Deals politiske ramme, kombinert med Jeffrey Pfeffers forskning på makt og organisasjonspolitikk fra «Power».</p>
     <p>Pfeffer validerer at ledere som forstår maktens spilleregler, er mer effektive — ikke fordi de «spiller spill», men fordi de kan navigere organisasjonens politiske virkelighet uten å la seg overraske.</p>
-    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="frame-link">Les det vitenskapelige grunnlaget for Ledelse 60:2 →</a>
+    <a href="{{ '/forskning/' | relative_url }}" class="frame-link">Les det vitenskapelige grunnlaget for Ledelse 60:2 →</a>
 </section>
 
 <style>

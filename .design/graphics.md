@@ -19,68 +19,172 @@
 | Background dark | `#121212` | Dark mode canvases |
 | Text/muted | `#37474f` / `#ffffff` | Abstract shapes |
 
-## Image Types
+## Image Types & Style Guidelines
 
-## Hero Images (16:9)
+There are **4 distinct illustration styles** in the No Excuse image library. Each has a specific template and use case.
 
-- **Aspect ratio**: 1920×1080 or proportional
-- **Usage**: Page tops, banner sections
-- **Style**: Abstract Scandinavian landscape or structural metaphor
-- **Content**: No text, no faces, no logos
+---
 
-**Style signature (confirmed working):**
-- Bright white/light gray background (not dark)
-- Abstract human silhouettes seen from behind
-- Forest/nature or architectural motifs
-- Azure (#F0FFFF) as accent in light
-- Minimalist Nordic style — keep prompts short and descriptive
+### Style 1: Hero Illustrations (Landscape)
+
+**Use for:** Hero banners on landing pages, page tops
+
+**Style signature:**
+- "minimalist Nordic style" (explicit style anchor)
+- Abstract human silhouettes
+- Clean white/light gray background
+- Azure (#F0FFFF) accent
 
 **Prompt template:**
 ```
-Three abstract human silhouettes seen from behind standing in a forest,
-looking toward a distant horizon, bright white/light gray background,
-cool Nordic color palette with azure (#F0FFFF) accent in the light,
-minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible
+Three abstract human silhouettes seen from behind [setting],
+bright white/light gray background, cool Nordic color palette with
+azure (#F0FFFF) accent in the light, minimalist Nordic style,
+16:9 aspect ratio, no text, no faces visible
 ```
 
-**Style modifiers to use:**
-- `bright white/light gray background`
-- `minimalist Nordic style`
-- `cool Nordic color palette`
-- `azure (#F0FFFF) accent`
+**Documented prompts:**
 
-**Style modifiers to avoid:**
-- `architectural photography style`
-- `soft diffused natural light`
-- `Minimal Scandinavian forest landscape` (too specific)
-- `light birch or pine trees` (too specific)
+| File | Prompt |
+|------|--------|
+| `hero-illustration.png` | "A professional hero illustration for a Norwegian management consulting company. Scandinavian minimal style, clean white background, subtle azure/blue accent color. An abstract representation of leadership maturity — a compass or map guiding a team upward. Simple shapes, clean lines, professional. No text. Suitable for a landing page hero section." |
+| `banner-om-oss.png` | "Three abstract human silhouettes seen from behind standing in a forest, looking toward a distant horizon, bright white/light gray background, cool Nordic color palette with azure (#F0FFFF) accent in the light, minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible" |
+| `science-foundation.png` | "Three abstract human silhouettes seen from behind in a forest, one figure kneeling and tending to a young slender tree with four distinct branches, the other two figures standing and observing, bright white/light gray background, cool Nordic color palette with azure (#F0FFFF) accent in the light, minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible" |
 
-### Frame Illustrations (16:9)
+---
 
-- **Aspect ratio**: 1920×1080
-- **Usage**: Ledelse 60:2 frame articles (struktur, mennesker, påvirkning, identitet)
-- **Style**: Abstract conceptual, symbolic representation
-- **Content**: No text, no faces, no branding
+### Style 2: Professional Abstract (Landscape)
 
-**Visual metaphors per frame:**
-| Frame | Visual Direction |
-|-------|------------------|
-| Struktur | Interconnected nodes, org chart abstraction, blueprint geometry |
-| Mennesker | Circles of trust, overlapping hands, collaborative growth |
-| Påvirknng | Power dynamics, influence vectors, stakeholder web |
-| Identitet | Cultural artifacts, ritual symbols, tribal markers |
+**Use for:** Benefit banners, frame hero banners, process step illustrations
 
-### Banner Images (16:9)
+**Style signature:**
+- "clean minimal Scandinavian style" (explicit style anchor)
+- Geometric shapes
+- "simple shapes, clean lines"
+- Frame color + neutral tones
+- "symbolic imagery only" / "abstract representation"
+- 16:9 horizontal format
 
-- **Aspect ratio**: 1600×900 or 800×450 minimum
-- **Usage**: Benefit cards, process step illustrations
-- **Style**: Abstract concept representation, matches hero style
-- **Content**: No text
+**Prompt template:**
+```
+Professional abstract illustration for [type], clean minimal Scandinavian style,
+showing [subject], simple shapes, clean lines, geometric shapes, [color] and
+neutral tones, clean white background, symbolic imagery only, no text,
+16:9 horizontal format
+```
 
-### Thumbnail/Portrait (4:3 or 1:1)
+**Documented prompts:**
 
-- **Usage**: Profile images, product thumbnails
-- **Style**: Clean portrait, single subject, minimal background
+| File | Prompt |
+|------|--------|
+| `benefit-control.png` | "Professional abstract illustration for leadership banner, clean minimal Scandinavian style, showing abstract representation of trust-based leadership vs rigid bureaucracy, featuring geometric shapes in azure blue and neutral grays, no text, symbolic imagery only, 16:9 horizontal format" |
+| `benefit-ai.png` | "Professional abstract illustration for leadership banner, clean minimal Scandinavian style, showing abstract representation of human and AI collaboration in leadership, geometric shapes representing synergy between human creativity and machine precision, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
+| `benefit-future.png` | "Professional abstract illustration for leadership banner, clean minimal Scandinavian style, showing abstract representation of forward-looking leadership prepared for an uncertain future, geometric shapes suggesting vision, planning and foresight, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
+| `benefit-anchoring.png` | "Professional abstract illustration for leadership banner, clean minimal Scandinavian style, showing abstract representation of leadership group alignment and collaborative initiative, geometric shapes suggesting unity and shared direction, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
+| `step-talk.png` | "Professional abstract illustration for process step banner, clean minimal Scandinavian style, showing abstract representation of initial consultation dialogue, two geometric shapes in conversation representing discussion and exploration, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
+| `step-interview.png` | "Professional abstract illustration for process step banner, clean minimal Scandinavian style, showing abstract representation of structured two-hour diagnostic interview, geometric shapes arranged in organized pattern suggesting systematic questioning and focused dialogue, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
+| `step-report.png` | "Professional abstract illustration for process step banner, clean minimal Scandinavian style, showing abstract representation of insights delivery and actionable recommendations, geometric shapes suggesting transformation from data to clarity, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
+
+---
+
+### Style 3: Section Illustrations (Landscape)
+
+**Use for:** Frame article section images (hovedelementer, utfordringer), inline content illustrations
+
+**Style signature:**
+- "Clean minimal infographic" (different opener)
+- "Scandinavian design [style]" — "style" is optional
+- Frame color with "palette" or just "tones"
+- "modern corporate illustration" or "professional illustration"
+
+**Prompt template:**
+```
+Clean minimal infographic showing [subject], Scandinavian design [style],
+[color] [palette/tones], [modern corporate/professional] illustration, no text
+```
+
+**Documented prompts:**
+
+| File | Prompt |
+|------|--------|
+| `illustrasjon-mennesker-hovedelementer.png` | "Clean minimal infographic showing human connections, trust and collaboration in organizations, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text" |
+| `illustrasjon-påvirkning-utfordringer.png` | "Clean minimal infographic showing political challenges in organizations - hidden agendas, conflicts, power struggles, Scandinavian design, hunter green tones, professional illustration, no text" |
+| `illustrasjon-påvirking-hovedelementer.png` | "Clean minimal infographic showing power dynamics and influence in organizations, connected networks, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text" |
+| `illustrasjon-mennesker-utfordringer.png` | "Clean minimal infographic showing human challenges in workplace - communication barriers, silos, burnout, Scandinavian design, golden yellow tones, professional illustration, no text" |
+| `illustrasjon-identitet-utfordringer.png` | "Clean minimal infographic showing cultural challenges in organizations - misaligned values, weak rituals, identity conflicts, Scandinavian design, deep wine tones, professional illustration, no text" |
+| `illustrasjon-identitet-elementer.png` | "Clean minimal infographic showing cultural elements in organizations - symbols, rituals, shared values, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text" |
+
+**Frame color assignments:**
+
+| Frame | Color terms |
+|-------|-------------|
+| Struktur | "navy blue and white" |
+| Mennesker | "golden yellow and white" / "golden yellow tones" |
+| Påvirknng | "hunter green and white" / "hunter green tones" |
+| Identitet | "deep wine and white" / "deep wine tones" |
+
+---
+
+### Style 4: CTA Illustrations (Landscape)
+
+**Use for:** Call-to-action sections at bottom of frame articles
+
+**Style signature:**
+- "Clean minimal infographic"
+- "clipboard with checkmarks" (specific imagery)
+- "professional Scandinavian style"
+- Multi-color: "blue green amber purple tones"
+- "corporate illustration"
+
+**Prompt template:**
+```
+Clean minimal infographic showing leadership assessment and mapping process,
+clipboard with checkmarks, professional Scandinavian style,
+blue green amber purple tones, corporate illustration, no text
+```
+
+**Documented prompt:**
+
+| File | Prompt |
+|------|--------|
+| `illustrasjon-*.cta.png` | "Clean minimal infographic showing leadership assessment and mapping process, clipboard with checkmarks, professional Scandinavian style, blue green amber purple tones, corporate illustration, no text" |
+
+---
+
+## Frame Metaphor Framework
+
+Each frame maps to a discipline and a workplace metaphor. All scenarios place the metaphor inside an office setting.
+
+| Frame | Discipline | Workplace Metaphor | Color Accent |
+|-------|-----------|-------------------|--------------|
+| **Structure** | Economy | Office is A FACTORY | Blue |
+| **Humans** | Psychology | Office is A FAMILY | Green |
+| **Influence** | Politics | Office is A JUNGLE | Yellow (amber) |
+| **Identity** | Cultural Anthropology | Office is A THEATER | Purple |
+
+---
+
+## Frame Hero Banners
+
+**Files:**
+| Frame | File | Usage |
+|-------|------|-------|
+| Struktur | `frame-struktur.png` | Frame article hero + vitenskapelig grunnlag card |
+| Mennesker | `frame-mennesker.png` | Frame article hero + vitenskapelig grunnlag card |
+| Påvirknng | `frame-påvirkning.png` | Frame article hero + vitenskapelig grunnlag card |
+| Identitet | `frame-identitet.png` | Frame article hero + vitenskapelig grunnlag card |
+
+**Style:** Professional abstract illustration (Style 2)
+
+**Frame accent colors (color-blind accessible):**
+| Frame | Color Name | Hex |
+|-------|-----------|-----|
+| Struktur | Navy Blue | #2A4D6E |
+| Mennesker | Golden Yellow | #D4A836 |
+| Påvirknng | Hunter Green | #355E3B |
+| Identitet | Deep Wine | #8E0D3C |
+
+---
 
 ## Prompt Engineering
 
@@ -88,55 +192,60 @@ minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible
 
 - [ ] No Norwegian or English words in prompt
 - [ ] No specific brand names or logos
-- [ ] Aspect ratio specified
-- [ ] Style descriptors: "minimal", "Scandinavian", "abstract"
-- [ ] Color palette referenced (azure, cool grays)
-- [ ] No faces or identifiable people
+- [ ] Aspect ratio specified (16:9 for landscape)
+- [ ] Style descriptor matches illustration type (see Style guidelines above)
+- [ ] Color palette referenced correctly
+- [ ] "no text" included
 
-### Prompt Structure
+### Style Selection Guide
 
-```
-[Subject] + [Style] + [Color palette] + [Composition] + [Technical]
-```
+| If image is... | Use style... |
+|----------------|--------------|
+| Landing page hero with forest/nature | Style 1: Hero Illustrations |
+| Benefit banner, frame hero, process step | Style 2: Professional Abstract |
+| Frame section (hovedelementer/utfordringer) | Style 3: Section Illustrations |
+| CTA section at bottom of frame page | Style 4: CTA Illustrations |
 
-**Example:**
-```
-Abstract geometric architecture, Scandinavian minimal style,
-cool gray (#37474f) and azure (#F0FFFF) palette,
-dynamic triangular composition, soft directional light,
-wide angle, 16:9, editorial photography
-```
-
-### Style Modifiers
-
-| Effect | Modifier |
-|--------|----------|
-| Architectural | `clean geometric forms, blueprint precision` |
-| Editorial | `magazine-quality, high contrast` |
-| Abstract | `fragmented forms, overlapping planes` |
-| Kinetic | `motion blur, dynamic tension` |
+---
 
 ## Dark Mode
 
 All images must work on both light and dark backgrounds. Use transparency where appropriate. Avoid pure black or white elements that may clash with theme backgrounds.
+
+---
 
 ## File Naming
 
 ```
 assets/images/
 ├── banners/
-│   ├── frame-struktur.png
-│   ├── frame-mennesker.png
-│   ├── frame-påvirkning.png
-│   ├── frame-identitet.png
+│   ├── benefit-*.png
+│   ├── frame-*.png
+│   ├── illustrasjon-*.png
+│   ├── step-*.png
 │   └── banner-om-oss.png
 ├── hero-illustration.png
-└── ...
+└── science-foundation.png
 ```
 
 - Use Norwegian descriptive names
 - kebab-case
 - No spaces or special characters beyond ASCII letters/numbers and Norwegian åæø
+
+---
+
+## Prompt Documentation Rule
+
+**All generated images must have their prompts documented in this file before the task is considered complete.**
+
+Required fields:
+- **File**: Relative path from `assets/images/`
+- **Prompt**: Full prompt used (copy-paste, no summarization)
+- **Reference**: Optional reference image URL if used
+
+This enables future agents to reproduce styles and iterate consistently.
+
+---
 
 ## Alt Text
 

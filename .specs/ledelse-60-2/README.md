@@ -94,10 +94,10 @@ Four frame articles implement Bolman & Deals rammeverk for leadership. Each is a
 
 | File | Permalink | Topic |
 |------|-----------|-------|
-| `_pages/ledelse_struktur.md` | `/ledelse-60-2/struktur/` | Strukturperspektivet |
-| `_pages/ledelse_mennesker.md` | `/ledelse-60-2/mennesker/` | Menneskeperspektivet |
-| `_pages/ledelse_påvirkning.md` | `/ledelse-60-2/påvirkning/` | Påvirkningsperspektivet |
-| `_pages/ledelse_identitet.md` | `/ledelse-60-2/identitet/` | Identitetsperspektivet |
+| `_pages/ledelse_struktur.md` | `/struktur/` | Strukturperspektivet |
+| `_pages/ledelse_mennesker.md` | `/mennesker/` | Menneskeperspektivet |
+| `_pages/ledelse_påvirkning.md` | `/påvirkning/` | Påvirkningsperspektivet |
+| `_pages/ledelse_identitet.md` | `/identitet/` | Identitetsperspektivet |
 
 ### Content Guidelines
 
