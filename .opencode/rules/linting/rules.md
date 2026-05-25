@@ -27,3 +27,12 @@ npm test           # Unit tests (Vitest)
 | `stylelint.config.mjs` | CSS linting config |
 | `eslint.config.mjs` | JS linting config |
 | `vitest.config.mjs` | Test runner config |
+
+## Testing Rules
+
+When adding new JavaScript:
+1. Create unit tests in `tests/` directory
+2. Follow existing test patterns
+3. Run `npm test` before marking task complete
+
+Test patterns use Vitest + happy-dom for DOM simulation.

@@ -7,5 +7,10 @@
   "opencode-zen": false,
   "zai-coding-plan": false,
   "kimi-for-coding": false,
-  "vercel-ai-gateway": false
+  "vercel-ai-gateway": false,
+  "team_mode": {
+    "enabled": true,
+    "max_parallel_members": 4,
+    "tmux_visualization": false
+  }
 }
