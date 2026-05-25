@@ -21,7 +21,7 @@
 
 ## Image Types
 
-## Hero Images (16:9)
+### Hero Images (16:9)
 
 - **Aspect ratio**: 1920×1080 or proportional
 - **Usage**: Page tops, banner sections
@@ -62,13 +62,27 @@ minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible
 - **Style**: Abstract conceptual, symbolic representation
 - **Content**: No text, no faces, no branding
 
+**Frame Metaphor Framework**
+
+| Frame | Discipline | Workplace Metaphor | Color Accent |
+|-------|-----------|-------------------|--------------|
+| **Structure** | Economy | Office is A FACTORY | Blue |
+| **Humans** | Psychology | Office is A FAMILY | Green |
+| **Influence** | Politics | Office is A JUNGLE | Yellow |
+| **Identity** | Cultural Anthropology | Office is A THEATER | Purple |
+
 **Visual metaphors per frame:**
-| Frame | Visual Direction |
-|-------|------------------|
-| Struktur | Interconnected nodes, org chart abstraction, blueprint geometry |
-| Mennesker | Circles of trust, overlapping hands, collaborative growth |
-| Påvirknng | Power dynamics, influence vectors, stakeholder web |
-| Identitet | Cultural artifacts, ritual symbols, tribal markers |
+| Frame | Central Element | Three Surrounding | Four Challenges |
+|-------|-----------------|-------------------|-----------------|
+| Struktur | Balanced structure | Roles, Goals, Processes | Unclear roles, Goal conflicts, Coordination problems, Bureaucratic burden |
+| Mennesker | Servant leadership | Trust, Motivation, Growth | Lack of safety, Empty values, Silos, Too much volume |
+| Påvirknng | Constructive power | Power, Interests, Conflict | Unconscious power, Coalitions, Escalation, Power loss |
+| Identitet | Tribal Stage Four | Culture, Meaning, Rituals | Individual dominance, Meaningless rituals, Historylessness, Change fatigue |
+
+**Figure group for all frame illustrations:**
+2 tall males with dark hair (1 in suit, 1 casual), 2 females with dark hair (1 with long hair in bun, 1 in white blouse, 1 in light blouse), 1 shorter male with dark hair — all with dark pants.
+
+**Style:** Minimalist Nordic, abstract people, light WHITE background, 16:9 aspect ratio, no text.
 
 ### Banner Images (16:9)
 
@@ -137,6 +151,31 @@ assets/images/
 - Use Norwegian descriptive names
 - kebab-case
 - No spaces or special characters beyond ASCII letters/numbers and Norwegian åæø
+
+## Documented Prompts
+
+When an image is generated and approved, document the prompt here. This ensures future agents can reproduce or iterate on the style.
+
+### Hero Illustrations
+
+| File | Prompt | Reference |
+|------|--------|----------|
+| `hero-illustration.png` | "A professional hero illustration for a Norwegian management consulting company. Scandinavian minimal style, clean white background, subtle azure/blue accent color. An abstract representation of leadership maturity — a compass or map guiding a team upward. Simple shapes, clean lines, professional. No text. Suitable for a landing page hero section." | — |
+| `banner-om-oss.png` | "Three abstract human silhouettes seen from behind standing in a forest, looking toward a distant horizon, bright white/light gray background, cool Nordic color palette with azure (#F0FFFF) accent in the light, minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible" | `hero-illustration.png` |
+| `science-foundation.png` | "Three abstract human silhouettes seen from behind in a forest, one figure kneeling and tending to a young slender tree with four distinct branches, the other two figures standing and observing, bright white/light gray background, cool Nordic color palette with azure (#F0FFFF) accent in the light, minimalist Nordic style, 16:9 aspect ratio, no text, no faces visible" | `hero-illustration.png` |
+
+### Prompt Documentation Rule
+
+**All generated images must have their prompts documented in this section before the task is considered complete.**
+
+Required fields:
+- **File**: Relative path from `assets/images/`
+- **Prompt**: Full prompt used (copy-paste, no summarization)
+- **Reference**: Optional reference image URL if used
+
+This enables future agents to reproduce styles and iterate consistently.
+
+---
 
 ## Alt Text
 

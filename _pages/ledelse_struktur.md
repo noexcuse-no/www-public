@@ -2,7 +2,7 @@
 layout: page
 title: "Strukturperspektivet i ledelse — Roller, prosesser og mål"
 description: "Lær hvordan strukturperspektivet kan hjelpe ledergruppen å få oversikt over roller, ansvar og koordinering. Struktur handler om å skape et system der oppgaver og mål henger sammen."
-permalink: /ledelse-60-2/struktur/
+permalink: /struktur/
 json_ld:
   type: "Article"
   name: "Strukturperspektivet i ledelse"
@@ -24,7 +24,7 @@ json_ld:
         <img src="{{ '/assets/images/banners/frame-struktur.png' | relative_url }}" alt="Strukturperspektivet i ledelse">
     </div>
     <div class="frame-hero-content">
-        <p class="frame-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
+        <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
         <h1>Strukturperspektivet</h1>
         <p class="frame-intro">Handler om å skape et system der oppgaver, roller og mål henger sammen. Når strukturen fungerer, merkes det ikke. Når den ikke fungerer, merkes det umiddelbart.</p>
     </div>
@@ -109,7 +109,7 @@ json_ld:
     <p>Ledelse 60:2 inneholder 15 spørsmål som handler om strukturperspektivet. Gjennomfør en uforpliktende samtale for å lære mer om hvordan metoden kan hjelpe ledergruppen din.</p>
     <div class="frame-cta-buttons">
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill uforpliktende samtale</a>
-        <a href="{{ '/ledelse-60-2/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
 
@@ -117,7 +117,7 @@ json_ld:
     <h2>Det vitenskapelige grunnlaget</h2>
     <p>Strukturperspektivet i Ledelse 60:2 bygger på Lee Bolman og Terrence Deals fire perspektiver-modell fra «Reframing Organizations», kombinert med Douglas Hubbards metoder for måling av immaterielle størrelser fra «How to Measure Anything».</p>
     <p>Hubbard argumenterer for at «umulige» målinger ofte bare er dårlig definerte. Ved å operasjonalisere ledelseskvalitet kan man måle den — selv når den virker flytende og subjektiv.</p>
-    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="frame-link">Les det vitenskapelige grunnlaget for Ledelse 60:2 →</a>
+    <a href="{{ '/forskning/' | relative_url }}" class="frame-link">Les det vitenskapelige grunnlaget for Ledelse 60:2 →</a>
 </section>
 
 <style>

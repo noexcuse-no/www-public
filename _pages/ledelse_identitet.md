@@ -2,7 +2,7 @@
 layout: page
 title: "Identitetsperspektivet i ledelse — Kultur, mening og verdier"
 description: "Lær hvordan identitetsperspektivet kan hjelpe ledergruppen å forstå organisasjonskultur, meningsskaping og hvordan verdier faktisk lever — eller bare henger på veggen."
-permalink: /ledelse-60-2/identitet/
+permalink: /identitet/
 json_ld:
   type: "Article"
   name: "Identitetsperspektivet i ledelse"
@@ -24,7 +24,7 @@ json_ld:
         <img src="{{ '/assets/images/banners/frame-identitet.png' | relative_url }}" alt="Identitetsperspektivet i ledelse">
     </div>
     <div class="frame-hero-content">
-        <p class="frame-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
+        <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
         <h1>Identitetsperspektivet</h1>
         <p class="frame-intro">Handler om å se organisasjonen som en kultur — med sine ritualer, historier og verdier. Det som betyr noe, er ikke bare hva som skjer, men hva det betyr.</p>
     </div>
@@ -109,7 +109,7 @@ json_ld:
     <p>Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gjennomfør en uforpliktende samtale for å lære mer om metoden.</p>
     <div class="frame-cta-buttons">
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill uforpliktende samtale</a>
-        <a href="{{ '/ledelse-60-2/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
 
@@ -117,7 +117,7 @@ json_ld:
     <h2>Det vitenskapelige grunnlaget</h2>
     <p>Identitetsperspektivet i Ledelse 60:2 bygger på Bolman & Deals symbolske ramme, kombinert med Dave Logans forskning på tribal ledelse fra «Tribal Leadership».</p>
     <p>Logans fem stadier for kulturutvikling gir et konkret verktøy for å forstå hvor en organisasjon befinner seg kulturmessig — og hva som kreves for å løfte den.</p>
-    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="frame-link">Les det vitenskapelige grunnlaget for Ledelse 60:2 →</a>
+    <a href="{{ '/forskning/' | relative_url }}" class="frame-link">Les det vitenskapelige grunnlaget for Ledelse 60:2 →</a>
 </section>
 
 <style>

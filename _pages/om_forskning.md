@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Vitenskapelig grunnlag for Ledelse 60:2"
-permalink: /ledelse-60-2/vitenskapelig-grunnlag/
+title: "Forskningsbasert ledelsesforbedring"
+permalink: /forskning/
 json_ld:
   type: "TechArticle"
-  name: "Vitenskapelig grunnlag for Ledelse 60:2"
+  name: "Forskningsbasert ledelsesforbedring"
   description: "Det teoretiske grunnlaget for Ledelse 60:2 metoden — organisasjonsteori, maktanalyse, kulturforskning og beslutningsvitenskap."
   author:
     type: "Organization"
@@ -32,7 +32,7 @@ json_ld:
         <img src="{{ '/assets/images/banners/science-foundation.png' | relative_url }}" alt="Vitenskapelig fundament">
     </div>
     <div class="science-hero-content">
-        <p class="science-breadcrumb"><a href="{{ '/ledelse-60-2/' | relative_url }}">← Ledelse 60:2</a></p>
+        <p class="science-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
         <h1>Vitenskapelig grunnlag</h1>
         <p class="science-intro">«Ledelse 60:2» er en metode som bruker intervjubasert kartlegging av kulturelle faktorer i en ledergruppe som metodikk for datafangst. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kulturforskning og beslutningsvitenskap - som gir den høy fleksibel anvendelighet for kunden på tvers av domener og problemstillinger. Ut over den vitenskapelig funderte metodikken for datafangst, så innebærer "Ledelse 60:2" at de strukturerte intervjuene er en del av en langsiktig metode for å produsere kunnskap fra innsamlede data.</p>
     </div>
@@ -52,7 +52,7 @@ json_ld:
                     <h3>Strukturperspektivet</h3>
                     <p class="frame-desc">Roller, mål, prosesser, koordinering, ansvar</p>
                     <p class="frame-detail-text">Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig.</p>
-                    <a href="{{ '/ledelse-60-2/struktur/' | relative_url }}" class="frame-link">Les artikkelen →</a>
+                    <a href="{{ '/struktur/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
             <div class="frame-item frame-human">
@@ -61,7 +61,7 @@ json_ld:
                     <h3>Menneskeperspektivet</h3>
                     <p class="frame-desc">Tillit, motivasjon, relasjoner, utvikling, medvirkning</p>
                     <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at "servant leadership" er et konkurransefortrinn.</p>
-                    <a href="{{ '/ledelse-60-2/mennesker/' | relative_url }}" class="frame-link">Les artikkelen →</a>
+                    <a href="{{ '/mennesker/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@ json_ld:
                     <h3>Påvirkningsperspektivet</h3>
                     <p class="frame-desc">Makt, interesser, konflikt, ressurser, politikk</p>
                     <p class="frame-detail-text">Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet.</p>
-                    <a href="{{ '/ledelse-60-2/påvirkning/' | relative_url }}" class="frame-link">Les artikkelen →</a>
+                    <a href="{{ '/påvirkning/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
             <div class="frame-item frame-symbol">
@@ -81,7 +81,7 @@ json_ld:
                     <h3>Identitetsperspektivet</h3>
                     <p class="frame-desc">Kultur, mening, symboler, verdier, historier</p>
                     <p class="frame-detail-text">Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier.</p>
-                    <a href="{{ '/ledelse-60-2/identitet/' | relative_url }}" class="frame-link">Les artikkelen →</a>
+                    <a href="{{ '/identitet/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
         </div>
@@ -284,10 +284,10 @@ json_ld:
     border-left: 4px solid var(--primary-accent);
 }
 
-.frame-struct { border-color: #4A90D9; }
-.frame-human { border-color: #50C878; }
-.frame-political { border-color: #E6A817; }
-.frame-symbol { border-color: #9B59B6; }
+.frame-struct { border-color: #2A4D6E; }
+.frame-human { border-color: #D4A836; }
+.frame-political { border-color: #355E3B; }
+.frame-symbol { border-color: #8E0D3C; }
 
 .frame-image {
     width: 80px;

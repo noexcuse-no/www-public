@@ -2,7 +2,7 @@
 layout: page
 title: "Tillit i ledelse — Slik bygger du psykologisk trygghet"
 description: "Lær hvordan tillit og psykologisk trygghet i ledelse faktisk fungerer. Forskning fra Greenleaf, Edmondson og andre viser hvordan du kan skape en organisasjon der folk tør si ifra."
-permalink: /tillit-i-ledelse/
+permalink: /tillit/
 json_ld:
   type: "Article"
   name: "Tillit i ledelse"
@@ -106,7 +106,7 @@ json_ld:
     <p>Ledelse 60:2 inneholder spørsmål som kartlegger psykologisk trygghet, tillitsbasert kommunikasjon og hvordan ledere faktisk oppfattes. Bestill en uforpliktende samtale for å lære mer.</p>
     <div class="frame-cta-buttons">
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill uforpliktende samtale</a>
-        <a href="{{ '/ledelse-60-2/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
 

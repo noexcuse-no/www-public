@@ -2,7 +2,7 @@
 layout: page
 title: "Målstyring i praksis — Hvordan sette mål som faktisk fungere"
 description: "Lær hvordan målstyring faktisk fungerer i praksis. OKR, KPI, balansert målstyring — forskning på hva som virker og hva som ikke virker."
-permalink: /mastyring/
+permalink: /generativ-ki/
 json_ld:
   type: "Article"
   name: "Målstyring i praksis"
@@ -100,7 +100,7 @@ json_ld:
     <p>Ledelse 60:2 inneholder spørsmål som kartlegger hvordan mål settes, følges opp og brukes i beslutninger. Bestill en uforpliktende samtale for å lære mer.</p>
     <div class="frame-cta-buttons">
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill uforpliktende samtale</a>
-        <a href="{{ '/ledelse-60-2/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
 

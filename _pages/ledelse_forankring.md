@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Beslutningstaking i ledelse — Hvordan ledere faktisk tar avgjørelser"
+title: "Hvordan avgjørelser egentlig oppnår forankring i ledergrupper"
 description: "Lær hvordan beslutninger faktisk tas i organisasjoner — og hvorfor rasjonelle ledere ofte tar irrasjonelle valg. Forskning på makt, bias og beslutningsprosesser."
-permalink: /beslutningstaking/
+permalink: /forankring/
 json_ld:
   type: "Article"
-  name: "Beslutningstaking i ledelse"
-  description: "Hvordan beslutninger faktisk tas i organisasjoner. Forskning på makt, politikk, kognitiv bias og hvordan ledere kan ta bedre beslutninger."
+  name: "Hvordan avgjørelser egentlig oppnår forankring i ledergrupper"
+  description: "Lær hvordan beslutninger faktisk tas i organisasjoner — og hvorfor rasjonelle ledere ofte tar irrasjonelle valg. Forskning på makt, bias og beslutningsprosesser."
   author:
     type: "Organization"
     name: "No Excuse AS"
@@ -107,7 +107,7 @@ json_ld:
     <p>Ledelse 60:2 inneholder spørsmål som kartlegger hvordan makt, interesser og kognitiv bias påvirker beslutninger i ledergruppen. Bestill en uforpliktende samtale.</p>
     <div class="frame-cta-buttons">
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill uforpliktende samtale</a>
-        <a href="{{ '/ledelse-60-2/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
 

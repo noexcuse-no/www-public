@@ -108,7 +108,7 @@ json_ld:
 <section class="landing-story">
     <h2>Historien bak metoden</h2>
     <p>«Ledelse 60:2» er vår tilnærming til å bruke en enkel vitenskapelig metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet.</p>
-    <a href="{{ '/ledelse-60-2/vitenskapelig-grunnlag/' | relative_url }}" class="product-cta product-cta--secondary">Vitenskapelig metode →</a>
+    <a href="{{ '/forskning/' | relative_url }}" class="product-cta product-cta--secondary">Vitenskapelig metode →</a>
 </section>
 
 {% if site.cases.size > 0 %}
