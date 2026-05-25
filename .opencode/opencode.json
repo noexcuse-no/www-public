@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "ansvar": {
+      "type": "remote",
+      "url": "https://gateway.ansvar.eu/mcp",
+      "enabled": true
+    }
+  }
+}

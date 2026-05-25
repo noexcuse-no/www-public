@@ -48,6 +48,9 @@ See `layouts.md` for page wireframes.
 ## Components
 See `components.md` for reusable UI components.
 
+## Animation
+See `ui-upgrade.md` for scroll animations, hero overlays, and micro-interactions.
+
 ## Technical Requirements
 - **Hosting:** GitHub Pages
 - **Booking:** Microsoft Bookings
