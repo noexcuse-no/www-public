@@ -259,3 +259,100 @@ Every image requires descriptive alt text. Pattern:
 - Describe what is shown, not the concept (unless concept is abstract)
 - No "Image of" or "Picture of" prefixes
 - Be specific: "geometrisk abstraksjon med blå nyanser" not "abstrakt bilde"
+
+---
+
+## Image Resize Guidelines
+
+When optimizing images for web delivery, follow these dimensions and quality settings.
+
+### Resize Dimensions by Category
+
+| Category | Path Pattern | Max Dimensions | Quality | Notes |
+|----------|--------------|-----------------|---------|-------|
+| Hero banners | `assets/images/hero-*.png` | 1920×1080 | 85 | Large landing page hero images |
+| Frame/benefit/step banners | `assets/images/banners/*.png` | 1920×1080 | 85 | 16:9 landscape format |
+| Icons | `assets/images/icons/*.png` | 512×512 | 85 | Small UI elements |
+| Logos | `assets/images/*logo*.png` | 400×400 | 85 | Fixed display size 100×100px |
+| Profile photos | `assets/images/*.png` (profile) | 400×400 | 85 | Displayed at 100×100px |
+| OG images | `assets/images/og-image.png` | 1920×1080 | 85 | Social sharing cards |
+
+### Conversion: PNG → WebP
+
+**Tool:** ImageMagick (`magick` command)
+
+**Command pattern:**
+```bash
+magick mogrify -resize {max_dims}> -quality 85 -format webp {path}
+```
+
+The `>` modifier ensures images **smaller** than target remain unchanged (no upscaling).
+
+**Quality 85 rationale:** Good balance between file size (~70% reduction vs PNG) and visual quality for illustrations and photos.
+
+### Original File Preservation
+
+All original PNG files must be copied to `.design/graphics/originals/` before conversion:
+
+```
+.design/graphics/
+└── originals/
+    ├── banners/          (32 files)
+    ├── icons/            (9 files)
+    ├── noexcuse-logo-horizontal.png
+    ├── noexcuse-logo-azure.png
+    ├── dagfinn.png
+    ├── hero-illustration.png
+    └── og-image.png
+```
+
+**Why preserve originals:**
+- Future format migrations (AVIF, WebP v2)
+- Regeneration at higher resolution if needed
+- Audit trail of source assets
+- Recovery from conversion errors
+
+### Rollback Procedure
+
+If conversion issues occur:
+
+```bash
+# Restore from originals
+cp .design/graphics/originals/banners/*.png assets/images/banners/
+cp .design/graphics/originals/icons/*.png assets/images/icons/
+cp .design/graphics/originals/*.png assets/images/
+rm assets/images/*.webp
+```
+
+### Post-Conversion HTML Updates
+
+After conversion, update any hardcoded `.png` references in HTML:
+
+| File | Reference | Change Required |
+|------|-----------|-----------------|
+| `_includes/header.html` | `noexcuse-logo-azure.png` | → `.webp` |
+
+Search for remaining references:
+```bash
+grep -r "\.png" _includes/ _layouts/ *.html --include="*.html"
+```
+
+### Verification Checklist
+
+- [ ] All 44 PNG files converted to WebP
+- [ ] Originals preserved in `.design/graphics/originals/`
+- [ ] No PNG files remain in `assets/images/` (except backup)
+- [ ] All HTML references updated to `.webp`
+- [ ] Site passes `npm run lint`
+- [ ] Tested locally with `jekyll serve`
+
+### CSS Display Considerations
+
+No CSS changes needed for WebP — browser handles format automatically when `src` points to `.webp` file. Original CSS dimensions are preserved:
+
+```css
+/* These work with WebP without changes */
+width: 100px;    /* logo display */
+height: 40px;    /* icon display */
+max-width: 1100px; /* banner container */
+```
