@@ -232,14 +232,14 @@ Scandinavian design style, [frame color] and white color palette,
 modern corporate illustration, no text
 ```
 
-**NEW RECOMMENDED prompts:**
+**NEW RECOMMENDED prompts (used for generation 2026-05-25):**
 
 | File | Prompt |
 |------|--------|
-| `illustrasjon-struktur-hovedelementer.png` | "Clean minimal infographic showing an office meeting room styled as an efficient factory floor with assembly line workstations, structured roles and coordinated workflow, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text" |
-| `illustrasjon-mennesker-hovedelementer.png` | "Clean minimal infographic showing a team discussion in a cozy living room setting representing family warmth, trust and supportive collaboration, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text" |
-| `illustrasjon-påvirkning-hovedelementer.png` | "Clean minimal infographic showing workplace debate in an open jungle clearing setting with connected networks of influence, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text" |
-| `illustrasjon-identitet-hovedelementer.png` | "Clean minimal infographic showing a cultural ceremony on a theater stage with shared symbols and rituals, representing meaning and identity, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text" |
+| `illustrasjon-struktur-hovedelementer.png` | "Clean minimal infographic showing harmonized operational flow in organizations - clear roles, coordinated goals and efficient processes working in sync, Scandinavian design style, navy blue and white color palette, professional illustration, no text" |
+| `illustrasjon-mennesker-hovedelementer.png` | "Clean minimal infographic showing human connections in organizations - trust, collaboration and growth, Scandinavian design style, golden yellow and white color palette, professional illustration, no text" |
+| `illustrasjon-påvirkning-hovedelementer.png` | "Clean minimal infographic showing power dynamics in organizations - constructive influence, alliance-building and negotiation, Scandinavian design style, hunter green and white color palette, professional illustration, no text" |
+| `illustrasjon-identitet-hovedelementer.png` | "Clean minimal infographic showing cultural elements in organizations - shared symbols, rituals, meaning and identity, Scandinavian design style, deep wine and white color palette, professional illustration, no text" |
 
 ---
 
@@ -255,7 +255,7 @@ modern corporate illustration, no text
 
 **Style:** Section Illustrations (Style 3)
 
-**Documented prompts:**
+**Documented prompts (archived - see above):**
 
 | File | Prompt |
 |------|--------|
@@ -263,6 +263,15 @@ modern corporate illustration, no text
 | `illustrasjon-mennesker-utfordringer.png` | "Clean minimal infographic showing human challenges in workplace - communication barriers, silos, burnout, Scandinavian design, green tones, professional illustration, no text" |
 | `illustrasjon-påvirkning-utfordringer.png` | "Clean minimal infographic showing political challenges in organizations - hidden agendas, conflicts, power struggles, Scandinavian design, hunter green tones, professional illustration, no text" |
 | `illustrasjon-identitet-utfordringer.png` | "Clean minimal infographic showing cultural challenges in organizations - misaligned values, weak rituals, identity conflicts, Scandinavian design, deep wine tones, professional illustration, no text" |
+
+**NEW RECOMMENDED prompts (used for generation 2026-05-25):**
+
+| File | Prompt |
+|------|--------|
+| `illustrasjon-struktur-utfordringer.png` | "Clean minimal infographic showing organizational challenges in organizations - role confusion, conflicting goals, coordination problems, bureaucratic burden, Scandinavian design style, navy blue and white color palette, professional illustration, no text" |
+| `illustrasjon-mennesker-utfordringer.png` | "Clean minimal infographic showing human challenges in organizations - safety deficit, empty values, silos, volume without meaning, Scandinavian design style, golden yellow and white color palette, professional illustration, no text" |
+| `illustrasjon-påvirkning-utfordringer.png` | "Clean minimal infographic showing political challenges in organizations - unconscious power, coalitions, escalation and power loss, Scandinavian design style, hunter green and white color palette, professional illustration, no text" |
+| `illustrasjon-identitet-utfordringer.png` | "Clean minimal infographic showing cultural challenges in organizations - individual dominance, meaningless rituals, historylessness, change fatigue, Scandinavian design style, deep wine and white color palette, professional illustration, no text" |
 
 ---
 
