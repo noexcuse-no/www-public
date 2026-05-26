@@ -55,7 +55,7 @@ json_ld:
 
     <div class="frame-element">
         <h3>3. Tillit som system</h3>
-        <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.^[dirks2009]</p>
+        <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.^[dirks2009] God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor.</p>
         <p><strong>Tegn på tillit som system:</strong> Løfter holdes. Forventninger er tydelige. Folk tar ansvar for egne handlinger.</p>
         <p><strong>Tegn på tillitsbrist:</strong> Løfter brytes uten forklaring. Folk dekker seg bak prosedyrer. «Det var ikke min avdeling» blir unnskyldningen.</p>
     </div>

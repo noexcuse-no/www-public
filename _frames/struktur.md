@@ -47,6 +47,8 @@ elements:
   - title: "Prosesser og regler"
     body: |
       Prosesser er hvordan arbeid faktisk utføres. Regler er de formelle og uformelle normene som styrer atferd. En god struktur har balanse: nok regler til å gi trygghet, få nok til å stimulere vekst.
+
+      Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen glitter og prakt som fører til at viktige oppgaver faller mellom stoler.
     signs:
       positive: "Folk vet hvordan de skal få ting gjort. Unntak håndteres på en standardisert måte. Nye folk læres opp raskt fordi prosessene er tydelige."
       negative: "Unødvendig byråkrati. Prosesser som ble laget for å løse et problem som ikke lenger eksisterer. Unntak som tar mer tid enn normalen."

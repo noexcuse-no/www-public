@@ -85,6 +85,107 @@ json_ld:
         <li>Undervurdering av motstand og historisk baggage</li>
         <li>Kortsiktig tenkning — endring tar tid, de fleste gir opp for tidlig</li>
     </ul>
+    <p>En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i året — det er en daglig holdning. Organisasjoner som leser signalene tidlig, justerer kurs før krisen er et faktum. Muligheter og risikoer hører sammen. De som bare ser risiko, misser mulighetene. De som bare ser muligheter, ender i brann.</p>
+</section>
+
+<section class="frame-section">
+    <h2>Kotters 8-stegs modell for endring</h2>
+    <p>John Kotter har kartlagt hvorfor endringsinitiativer feiler — og hvordan de faktisk kan lykkes. Hans forskning viser at de fleste endringsforsøk mislykkes fordi de gjør én eller flere av åtte kritiske feil. Her er hans åtte steg, fra akutt til forankret.^[kotter2012]</p>
+    
+    <div class="kotter-flow">
+        <div class="kotter-step">
+            <div class="kotter-number">1</div>
+            <div class="kotter-content">
+                <h3>Skap nødvendighet</h3>
+                <p>Hjelp folk å se hvorfor endring er nødvendig nå — ikke til slutt. Hva koster det å ikke endre? Konkurransetrykk, regulatoriske endringer, arbeidsmarkedsskifter. Nødvendighet er ikke panikk — det er klarhet.</p>
+            </div>
+        </div>
+        
+        <div class="kotter-arrow">↓</div>
+        
+        <div class="kotter-step">
+            <div class="kotter-number">2</div>
+            <div class="kotter-content">
+                <h3>Bygg en sterk koalisjon</h3>
+                <p>Samle en gruppe med nok makt til å lede endringen. Inkluder formelle ledere og uformelle opinionsledere. Ikke alle trenger å være overbevist — men nøkkelaktører må være med.</p>
+            </div>
+        </div>
+        
+        <div class="kotter-arrow">↓</div>
+        
+        <div class="kotter-step">
+            <div class="kotter-number">3</div>
+            <div class="kotter-content">
+                <h3>Formuler en visjon</h3>
+                <p>Beskriv hvordan fremtiden ser ut etter endringen. Enkel, klar, inspirerende — ikke en prosjektplan. Visjonen skal styre beslutninger, ikke bare kommunikasjon.</p>
+            </div>
+        </div>
+        
+        <div class="kotter-arrow">↓</div>
+        
+        <div class="kotter-step">
+            <div class="kotter-number">4</div>
+            <div class="kotter-content">
+                <h3>Kommuniser visjonen</h3>
+                <p>Gjør visjonen til en pågående tilstedeværelse, ikke en engangsannonsering. Led med eksempel — handlinger taler høyere enn presentasjoner. Addresser angst og motstand direkte, ikke ignorer dem.</p>
+            </div>
+        </div>
+        
+        <div class="kotter-arrow">↓</div>
+        
+        <div class="kotter-step">
+            <div class="kotter-number">5</div>
+            <div class="kotter-content">
+                <h3>Fjern hindringer</h3>
+                <p>Identifiser barrierer: strukturer, systemer, ferdigheter, vaner. Myndiggjør folk til å fjerne hindringer eller finne veier rundt dem. Feir tidlige seiere som fjerner en barriere.</p>
+            </div>
+        </div>
+        
+        <div class="kotter-arrow">↓</div>
+        
+        <div class="kotter-step">
+            <div class="kotter-number">6</div>
+            <div class="kotter-content">
+                <h3>Skap kortsiktige seiere</h3>
+                <p>Planlegg synlige forbedringer innen 3-6 måneder. Ikke vent på den store transformasjonen — tidlige seiere bygger momentum. Analyser resultater ærlig — juster hvis seieren ikke var så stor som forventet.</p>
+            </div>
+        </div>
+        
+        <div class="kotter-arrow">↓</div>
+        
+        <div class="kotter-step">
+            <div class="kotter-number">7</div>
+            <div class="kotter-content">
+                <h3>Bygg videre på endringen</h3>
+                <p>Bruk troverdigheten fra tidlige seiere til å angripe større endringer. Fremhev folk som gjennomførte tidlige endringer. Ikke erklær seier for tidlig — konsolidering tar tid.</p>
+            </div>
+        </div>
+        
+        <div class="kotter-arrow">↓</div>
+        
+        <div class="kotter-step">
+            <div class="kotter-number">8</div>
+            <div class="kotter-content">
+                <h3>Forankre i kulturen</h3>
+                <p>Koble nye atferdsmønstre til organisatorisk suksess. Sikre at lederutvikling inkluderer endringsledelse. Dokumenter hva som endret seg — la ikke gammel kultur gjenoppstå.</p>
+            </div>
+        </div>
+    </div>
+    
+    <h3>Hvorfor 70% feiler</h3>
+    <p>Kotter identifiserer åtte spesifikke feil — én per steg — som fører til at endringsinitiativer feiler:^[kotter2012]</p>
+    <ul>
+        <li><strong>For mye selvtilfredshet</strong> — «det går jo bra nok»</li>
+        <li><strong>For svak koalisjon</strong> — ikke nok makt bak endringen</li>
+        <li><strong>Manglende visjon</strong> — folk vet ikke hva de jobber mot</li>
+        <li><strong>Underkommunisering</strong> — visjonen sies ti ganger for sjelden</li>
+        <li><strong>Ikke fjerne hindringer</strong> — strukturer som motarbeider endringen får stå</li>
+        <li><strong>Manglende kortsiktige seiere</strong> — ingen bevis på at det fungerer</li>
+        <li><strong>Erklære seier for tidlig</strong> — endringen har ikke satt seg</li>
+        <li><strong>Ikke forankre i kulturen</strong> — gamle vaner vender tilbake</li>
+    </ul>
+    
+    <p>Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av kommunikasjon (Steg 4) og hindringsfjerning (Steg 5); erklærte verdier påvirkes av nødvendighet (Steg 1) og kulturell forankring (Steg 8); grunnleggende antakelser endres gjennom langsiktig bygging (Steg 7) og kulturell forankring (Steg 8).^[schein2010] Logans stadier forteller <em>hvor</em> organisasjonen er — Kotter forklarer <em>hvordan</em> den beveger seg videre.^[logan2009]</p>
 </section>
 
 <section class="frame-section">
@@ -321,6 +422,57 @@ json_ld:
     border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Kotter Flowchart */
+.kotter-flow {
+    margin: 32px 0;
+}
+
+.kotter-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--box-background-light);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 8px 0;
+}
+
+.kotter-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.kotter-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1em;
+}
+
+.kotter-content p {
+    margin: 0;
+    font-size: 0.95em;
+    opacity: 0.85;
+}
+
+.kotter-arrow {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--primary-accent);
+    margin: 4px 0;
+    opacity: 0.6;
+}
+
+.dark-mode .kotter-step {
+    background: var(--box-background-dark);
+}
+
 @media (max-width: 768px) {
     .frame-hero-content {
         padding: 24px;
@@ -333,6 +485,16 @@ json_ld:
     .frame-cta-buttons {
         flex-direction: column;
         align-items: center;
+    }
+
+    .kotter-step {
+        padding: 16px;
+    }
+
+    .kotter-number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9em;
     }
 }
 </style>

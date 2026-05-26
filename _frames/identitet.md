@@ -58,6 +58,8 @@ leader_value:
 
     For ledergruppen er spørsmålene: Sier vi «vi» når vi snakker om organisasjonen? Har vi verdier som faktisk styrer beslutninger? Har vi en kultur der folk vil bidra, eller der de bare leverer output?
 
+    En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i året — det er en daglig holdning. Organisasjoner som leser signalene tidlig, justerer kurs før krisen er et faktum.
+
 challenges:
   - title: "Tomme verdier"
     body: "Verdier som ikke reflekterer faktisk atferd. Konsulentlede verdiprogrammer som aldri ble forankret."
