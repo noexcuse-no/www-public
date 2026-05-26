@@ -4,7 +4,7 @@ layout: page
 
 <link rel="stylesheet" href="{{ '/assets/css/perspektiv-styles.css' | relative_url }}">
 
-{% assign frame_id = page.url | remove_first: '/' | split: '/' | first %}
+{% assign frame_id = page.frame_id %}
 {% assign frame = site.frames | where: "id", frame_id | first %}
 
 <!-- Hero Section -->
