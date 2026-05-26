@@ -1,0 +1,284 @@
+{
+  "$schema": "./rules-schema.json",
+  "version": "1.0.0",
+  "description": "Rule activation tree for noexcuse.no website. Read AGENTS.md for context.",
+  "triggers": {
+    "css_changes": {
+      "description": "When modifying CSS files, visual styles, or creating pages with styling",
+      "actions": [
+        {"verb": "READ", "target": ".opencode/rules/css/rules.md", "priority": "required"},
+        {"verb": "READ", "target": ".opencode/rules/accessibility/rules.md", "priority": "required", "context": "contrast, touch targets"},
+        {"verb": "CHECK", "target": "dark_mode_support", "priority": "required"},
+        {"verb": "CHECK", "target": "mobile_viewport", "priority": "required"}
+      ]
+    },
+    "js_changes": {
+      "description": "When modifying JavaScript files or adding interactivity",
+      "actions": [
+        {"verb": "READ", "target": ".opencode/rules/js/rules.md", "priority": "required"},
+        {"verb": "RUN", "target": "npm test", "priority": "conditional", "condition": "if tests exist"},
+        {"verb": "CHECK", "target": "no_inline_scripts", "priority": "required"}
+      ]
+    },
+    "html_changes": {
+      "description": "When modifying HTML files, layouts, or includes",
+      "actions": [
+        {"verb": "READ", "target": ".opencode/rules/html/rules.md", "priority": "required"},
+        {"verb": "READ", "target": ".opencode/rules/accessibility/rules.md", "priority": "required", "context": "semantic HTML, alt text"},
+        {"verb": "CHECK", "target": "lang_attribute", "priority": "required"},
+        {"verb": "CHECK", "target": "mobile_viewport", "priority": "required"}
+      ]
+    },
+    "new_page": {
+      "description": "When creating new pages or articles",
+      "actions": [
+        {"verb": "READ", "target": ".opencode/rules/frontmatter/rules.md", "priority": "required"},
+        {"verb": "READ", "target": ".opencode/rules/naming/rules.md", "priority": "required"},
+        {"verb": "READ", "target": ".opencode/rules/architecture/rules.md", "priority": "required", "context": "collections, permalinks"},
+        {"verb": "READ", "target": ".opencode/rules/task-management/rules.md", "priority": "required", "context": "BACKLOG/CHANGELOG updates"},
+        {"verb": "CHECK", "target": ".specs/", "priority": "required", "context": "existing specifications"},
+        {"verb": "CHECK", "target": ".design/", "priority": "required", "context": "design rules"}
+      ]
+    },
+    "commit": {
+      "description": "When committing changes",
+      "actions": [
+        {"verb": "READ", "target": ".opencode/rules/task-management/rules.md", "priority": "required"},
+        {"verb": "READ", "target": ".opencode/rules/linting/rules.md", "priority": "required"},
+        {"verb": "RUN", "target": "npm run lint", "priority": "required"},
+        {"verb": "UPDATE", "target": "CHANGELOG.md", "priority": "conditional", "condition": "if relevant changes"},
+        {"verb": "UPDATE", "target": "BACKLOG.md", "priority": "conditional", "condition": "remove completed items"}
+      ]
+    },
+    "visual_changes": {
+      "description": "When making visual changes (CSS, images, layout)",
+      "actions": [
+        {"verb": "READ", "target": ".opencode/rules/css/rules.md", "priority": "required"},
+        {"verb": "READ", "target": ".opencode/rules/accessibility/rules.md", "priority": "required"},
+        {"verb": "READ", "target": ".design/graphics.md", "priority": "required", "context": "image rules"},
+        {"verb": "CHECK", "target": "both_themes", "priority": "required", "context": "light and dark"},
+        {"verb": "CHECK", "target": "mobile_viewport", "priority": "required", "context": "max-width 375px"}
+      ]
+    },
+    "image_changes": {
+      "description": "When generating or modifying images",
+      "actions": [
+        {"verb": "READ", "target": ".design/graphics.md", "priority": "required"},
+        {"verb": "CHECK", "target": "aspect_ratio", "priority": "required", "context": "16:9 or 4:3"},
+        {"verb": "CHECK", "target": "no_text_in_images", "priority": "required"},
+        {"verb": "CHECK", "target": "norwegian_alt_text", "priority": "required"}
+      ]
+    },
+    "tracking_changes": {
+      "description": "When adding tracking, user data, or external services",
+      "actions": [
+        {"verb": "READ", "target": ".opencode/rules/privacy/rules.md", "priority": "required"},
+        {"verb": "CHECK", "target": "consent_placeholders", "priority": "required"},
+        {"verb": "CHECK", "target": "no_personal_data", "priority": "required"}
+      ]
+    }
+  },
+  "verbs": {
+    "READ": {
+      "description": "Read and understand the referenced file",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "file exists", "fail_action": "CREATE if needed"},
+          {"assert": "file is text", "fail_action": "skip"}
+        ],
+        "constraints": {
+          "max_lines": 200,
+          "skip_binary": true
+        }
+      }
+    },
+    "CHECK": {
+      "description": "Verify condition or state",
+      "lifecycle": {
+        "constraints": {
+          "require_actual_verification": true,
+          "fail_on_false": true
+        },
+        "post_verify": [
+          {"assert": "result documented"}
+        ]
+      }
+    },
+    "RUN": {
+      "description": "Execute command or script",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "command exists", "check": "which {command}"},
+          {"assert": "working tree clean", "fail_action": "git stash"}
+        ],
+        "constraints": {
+          "max_execution_time": 120000,
+          "allowed_exit_codes": [0],
+          "require_confirmation": false,
+          "capture_output": true
+        },
+        "post_verify": [
+          {"assert": "exit_code == 0", "fail_action": "abort"},
+          {"assert": "no errors in stderr"}
+        ]
+      }
+    },
+    "UPDATE": {
+      "description": "Modify existing file",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "file exists", "fail_action": "CREATE instead"},
+          {"assert": "on feature branch", "check": "git branch --show-current", "fail_action": "BRANCH first"},
+          {"assert": "file read before edit", "fail_action": "abort"}
+        ],
+        "constraints": {
+          "require_branch": true,
+          "forbid_branches": ["main"],
+          "max_lines_changed": 200,
+          "require_test": true,
+          "no_as_any": true,
+          "no_ts_ignore": true
+        },
+        "post_verify": [
+          {"assert": "file parses correctly"},
+          {"assert": "git diff reviewed"},
+          {"assert": "no secrets committed"}
+        ]
+      }
+    },
+    "CREATE": {
+      "description": "Create new file",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "path valid", "check": "parent directory exists"},
+          {"assert": "naming convention followed", "check": ".opencode/rules/naming.md"}
+        ],
+        "constraints": {
+          "require_spec": true,
+          "check_naming": true,
+          "min_content": 10
+        },
+        "post_verify": [
+          {"assert": "file committed", "fail_action": "git add"},
+          {"assert": "referenced from elsewhere"}
+        ]
+      }
+    },
+    "DELETE": {
+      "description": "Remove file or code",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "file not referenced", "check": "grep -r filename", "fail_action": "UPDATE references first"},
+          {"assert": "backup exists", "fail_action": "BACKUP first"}
+        ],
+        "constraints": {
+          "require_confirmation": true,
+          "min_references": 0,
+          "forbid_deletions": ["AGENTS.md", "README.md", "_config.yml"]
+        },
+        "post_verify": [
+          {"assert": "build still passes"},
+          {"assert": "no broken links"},
+          {"assert": "no orphaned includes"}
+        ]
+      }
+    },
+    "EXTRACT": {
+      "description": "Move inline code to external file",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "inline code identified", "check": "grep for <style> or <script>"},
+          {"assert": "external file does not duplicate", "check": "compare with existing"}
+        ],
+        "constraints": {
+          "min_lines": 5,
+          "require_unique": true
+        },
+        "post_verify": [
+          {"assert": "original inline removed"},
+          {"assert": "external file referenced"}
+        ]
+      }
+    },
+    "VERIFY": {
+      "description": "Confirm functionality works",
+      "lifecycle": {
+        "constraints": {
+          "must_run_actual_test": true,
+          "no_assumptions": true
+        },
+        "post_verify": [
+          {"assert": "tool output proves claim"},
+          {"assert": "not 'should pass' or 'probably works'"}
+        ]
+      }
+    },
+    "BRANCH": {
+      "description": "Create git branch",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "on main", "check": "git branch", "fail_action": "git checkout main"},
+          {"assert": "main is current", "check": "git pull origin main"}
+        ],
+        "constraints": {
+          "naming_pattern": "{type}/{description}",
+          "valid_types": ["feat", "fix", "docs", "style", "refactor", "test", "chore"]
+        }
+      }
+    },
+    "PR": {
+      "description": "Open pull request",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "branch pushed", "check": "git push origin branch"},
+          {"assert": "tests pass", "check": "npm run lint && npm test"},
+          {"assert": "self-review done", "check": "review checklist"}
+        ],
+        "constraints": {
+          "require_description": true,
+          "reference_backlog": true,
+          "how_to_test_section": true
+        }
+      }
+    },
+    "MERGE": {
+      "description": "Squash merge to main",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "all CI passes"},
+          {"assert": "review approved"}
+        ],
+        "constraints": {
+          "use_squash": true,
+          "delete_branch_after": true
+        },
+        "post_verify": [
+          {"assert": "build deployed"},
+          {"assert": "branch deleted"}
+        ]
+      }
+    },
+    "DEPLOY": {
+      "description": "Push to production",
+      "lifecycle": {
+        "pre_check": [
+          {"assert": "PR merged"},
+          {"assert": "CHANGELOG updated"}
+        ],
+        "constraints": {
+          "host": "GitHub Pages",
+          "auto_deploy": true
+        }
+      }
+    },
+    "BACKUP": {
+      "description": "Preserve original files",
+      "lifecycle": {
+        "constraints": {
+          "location": ".design/graphics/originals/",
+          "keep_structure": true
+        }
+      }
+    }
+  }
+}
