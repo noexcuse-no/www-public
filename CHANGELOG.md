@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-05-26
+
+### Added
+
+- E1-E6 article expansions: Hubbard AIE process, Idiosyncrasy Credits, Core Values + Noble Cause, "No scoring" backing, softened garbage can theory
+- S1-S7 SEO foundation: dynamic sitemap.xml, canonical URLs, page-specific meta descriptions, BreadcrumbList JSON-LD, FAQPage schema, robots.txt sitemap ref, PWA manifest
+- WebP image optimization: all 43 PNG images converted to WebP (avg 70% size reduction)
+
+### Changed
+
+- Updated all image references from .png to .webp across 16 files
+- Updated metadata.html with dynamic og:title, og:description, og:url per page
+
+### Fixed
+
+- apple-touch-icon converted to WebP
+
 ## [1.5.0] - 2026-05-26
 
 ### Added
