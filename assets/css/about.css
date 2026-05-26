@@ -1,4 +1,5 @@
 .about-hero {
+    position: relative;
     text-align: center;
     padding: 0;
     max-width: 1100px;
@@ -7,27 +8,38 @@
 
 .about-hero-image {
     width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
 }
 
 .about-hero-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
 .about-hero-content {
-    padding: 40px 40px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 80px 40px 40px;
     text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+    color: white;
 }
 
 .about-hero h1 {
     font-size: 2.5em;
     margin-bottom: 16px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .about-tagline {
     font-size: 1.2em;
-    opacity: 0.85;
+    color: rgba(255,255,255,0.9);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -91,14 +103,33 @@
     border-radius: 8px;
     font-weight: 600;
     font-size: 1.05em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.2s;
 }
 
 .about-cta-button:hover {
-    opacity: 0.85;
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.dark-mode .about-hero-content {
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
 }
 
 @media (max-width: 768px) {
+    .about-hero-image {
+        aspect-ratio: 4 / 3;
+    }
+
+    .about-hero-content {
+        padding: 40px 20px 20px;
+    }
+
     .about-hero h1 {
         font-size: 1.8em;
+    }
+
+    .about-tagline {
+        font-size: 1em;
     }
 }

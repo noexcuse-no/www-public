@@ -54,7 +54,9 @@
 }
 
 .product-cta:hover {
-    opacity: 0.85;
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .product-cta--spaced {
@@ -70,6 +72,8 @@
 .product-cta--secondary:hover {
     background-color: var(--primary-accent);
     color: var(--primary-accent-contrast);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .product-link {
@@ -96,7 +100,8 @@
 }
 
 .benefit-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
 .benefit-banner {
@@ -126,6 +131,7 @@
 /* Landing page styles */
 
 .landing-hero {
+    position: relative;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0;
@@ -133,31 +139,42 @@
 
 .landing-hero-image {
     width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
 }
 
 .landing-hero-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
     border-radius: 0;
 }
 
 .landing-hero-content {
-    padding: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 80px 40px 40px;
     text-align: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+    color: white;
 }
 
 .landing-hero-content h1 {
     font-size: 2.5em;
     line-height: 1.15;
     margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .landing-hero-description {
     font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 32px;
-    opacity: 0.85;
+    color: rgba(255,255,255,0.9);
 }
 
 .landing-hero-buttons {
@@ -243,6 +260,12 @@
     margin-bottom: 12px;
 }
 
+.process-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .process-step h3 {
     font-size: 1.1em;
     margin-bottom: 8px;
@@ -277,6 +300,12 @@
     border-radius: 12px;
     box-shadow: var(--box-shadow-light);
     background-color: var(--box-background-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
 .case-card h3 {
@@ -311,6 +340,22 @@
     font-size: 1.2em;
 }
 
+.dark-mode .landing-hero-content {
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+}
+
+.dark-mode .benefit-card:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.dark-mode .process-step:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.dark-mode .case-card:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
 @media (max-width: 768px) {
     .product-hero {
         flex-direction: column;
@@ -332,8 +377,20 @@
         text-align: center;
     }
 
+    .landing-hero-image {
+        aspect-ratio: 4 / 3;
+    }
+
+    .landing-hero-content {
+        padding: 40px 20px 20px;
+    }
+
     .landing-hero-content h1 {
         font-size: 1.8em;
+    }
+
+    .landing-hero-description {
+        font-size: 1em;
     }
 
     .product-cta--spaced {
