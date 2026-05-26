@@ -33,7 +33,7 @@ json_ld:
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hvorfor tillit er ledelsens valuta</h2>
     <p>Tenk på de beste teamene du har jobbet med. Hva var annerledes der? Sannsynligvis ikke at de hadde bedre verktøy eller flere møter. Det var sannsynligvis måten folk snakket til hverandre — ærlig, direkte, uten frykt for konsekvensene.</p>
-    <p>Robert Greenleaf introduserte begrepet «servant leadership» i 1970.^[greenleaf1970] Han argumenterte for at ledere først og fremst bør tjene sine medarbeidere, ikke omvendt. Dette er ikke bare en idealistisk idé — forskning viser at det fungerer. En meta-analyse fra 2019 konkluderer med at servant leadership har «positive effects on employee outcomes including organizational commitment, job satisfaction, performance, and citizenship behavior.»^[eva2019]</p>
+    <p>Robert Greenleaf introduserte begrepet «servant leadership» i 1970.<sup class="citation">[greenleaf1970] Han argumenterte for at ledere først og fremst bør tjene sine medarbeidere, ikke omvendt. Dette er ikke bare en idealistisk idé — forskning viser at det fungerer. En meta-analyse fra 2019 konkluderer med at servant leadership har «positive effects on employee outcomes including organizational commitment, job satisfaction, performance, and citizenship behavior.»<sup class="citation">[eva2019]</p>
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
@@ -41,21 +41,21 @@ json_ld:
     
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>1. Psykologisk trygghet</h3>
-        <p>Amy Edmondson fra Harvard definerer psykologisk trygghet som «a shared belief held by members of a team that the team is safe for interpersonal risk taking.»^[edmondson2019] I praksis betyr det: folk tør si ifra når noe er galt, tør komme med nye ideer, tør innrømme feil.</p>
+        <p>Amy Edmondson fra Harvard definerer psykologisk trygghet som «a shared belief held by members of a team that the team is safe for interpersonal risk taking.»<sup class="citation">[edmondson2019] I praksis betyr det: folk tør si ifra når noe er galt, tør komme med nye ideer, tør innrømme feil.</p>
         <p><strong>Tegn på høy psykologisk trygghet:</strong> Feil diskuteres som læringsmuligheter. Uenighet er forventet og velkomment. Ledere spør «hvordan kan jeg hjelpe?» heller enn «hvem har skylden?»</p>
         <p><strong>Tegn på lav psykologisk trygghet:</strong> Informasjon holdes tilbake. Kritikk gis aldri direkte. Folk sier «det er bare å vente og se» heller enn å utfordre.</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>2. Tjenende lederskap</h3>
-        <p>Greenleaf mente at en leder først og fremst bør spørre seg: «Hvordan kan jeg hjelpe andre til å vokse og yte sitt beste?» ^[greenleaf1970] Dette krever en annen type ydmykhet enn tradisjonelt topplederideal.</p>
+        <p>Greenleaf mente at en leder først og fremst bør spørre seg: «Hvordan kan jeg hjelpe andre til å vokse og yte sitt beste?» <sup class="citation">[greenleaf1970] Dette krever en annen type ydmykhet enn tradisjonelt topplederideal.</p>
         <p><strong>Tegn på tjenende lederskap:</strong> Ledere lytter før de snakker. De anerkjenner andres bidrag. De setter teamets suksess over egen ære.</p>
         <p><strong>Tegn på selv-opptatt lederskap:</strong> Beslutninger tas for å styrke egen posisjon. Suksesser tillegges egen innsats. Feedback gis sjelden eller aldri.</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>3. Tillit som system</h3>
-        <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.^[dirks2009] God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor.</p>
+        <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.<sup class="citation">[dirks2009] God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor.</p>
         <p><strong>Tegn på tillit som system:</strong> Løfter holdes. Forventninger er tydelige. Folk tar ansvar for egne handlinger.</p>
         <p><strong>Tegn på tillitsbrist:</strong> Løfter brytes uten forklaring. Folk dekker seg bak prosedyrer. «Det var ikke min avdeling» blir unnskyldningen.</p>
     </div>
@@ -63,7 +63,7 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hvorfor de fleste ledere feiler på tillit</h2>
-    <p>De fleste ledere tror de er mer tilgjengelige enn de faktisk er. En undersøkelse viser at 94% av ledere mener de gir constructive feedback, men bare 65% av medarbeidere er enige.^[zenger2022] Denne gapen — mellom lederes intensjon og medarbeideres opplevelse — er tillitsproblemet.</p>
+    <p>De fleste ledere tror de er mer tilgjengelige enn de faktisk er. En undersøkelse viser at 94% av ledere mener de gir constructive feedback, men bare 65% av medarbeidere er enige.<sup class="citation">[zenger2022] Denne gapen — mellom lederes intensjon og medarbeideres opplevelse — er tillitsproblemet.</p>
     <p>Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid. En leder som en gang svikter, kan miste tillit som tar år å bygge opp igjen.</p>
 </section>
 
@@ -112,7 +112,7 @@ json_ld:
 
 <section class="frame-section frame-about animate-on-scroll fade-in-up">
     <h2>Referanser</h2>
-    <p>Artikkelen bygger på forskning fra blant andre Robert Greenleaf (servant leadership), Amy Edmondson (psychological safety), og en omfattende metastudie av servant leadership-effekter fra 2019.^[greenleaf1970]^[eva2019]^[edmondson2019]^[dirks2009]^[zenger2022]</p>
+    <p>Artikkelen bygger på forskning fra blant andre Robert Greenleaf (servant leadership), Amy Edmondson (psychological safety), og en omfattende metastudie av servant leadership-effekter fra 2019.<sup class="citation">[greenleaf1970]<sup class="citation">[eva2019]<sup class="citation">[edmondson2019]<sup class="citation">[dirks2009]<sup class="citation">[zenger2022]</p>
 </section>
 
 <script type="application/ld+json">

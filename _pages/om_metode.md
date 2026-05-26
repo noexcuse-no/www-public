@@ -5,7 +5,7 @@ permalink: /metode/
 json_ld:
   type: "TechArticle"
   name: "En metode for kunnskapsbasertbasert ledelsesforbedring"
-  description: "Den kunnskapsbaserte metoden for No Excuse Ledelse 60:2
+  description: "Den kunnskapsbaserte metoden for No Excuse Ledelse 60:2."
   author:
     type: "Organization"
     name: "No Excuse AS"
