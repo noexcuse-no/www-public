@@ -12,7 +12,7 @@ layout: page
   <div class="perspektiv-hero-image">
     <img src="{{ frame.hero.banner_image | relative_url }}" alt="{{ frame.hero.alt }}">
   </div>
-  <div class="perspektiv-hero-content">
+  <div class="perspektiv-hero-content animate-on-scroll fade-in">
     <p class="perspektiv-breadcrumb"><a href="{{ '/' | relative_url }}">{{ frame.hero.breadcrumb }}</a></p>
     <h1>{{ frame.title }}</h1>
     <p class="perspektiv-intro">{{ frame.hero.intro }}</p>
@@ -20,18 +20,18 @@ layout: page
 </section>
 
 <!-- Intro Section -->
-<section class="perspektiv-section">
+<section class="perspektiv-section animate-on-scroll fade-in-up">
   <h2>{{ frame.intro.heading }}</h2>
   {{ frame.intro.body | markdownify }}
 </section>
 
 <!-- Three Elements with illustration -->
-<section class="perspektiv-section">
+<section class="perspektiv-section animate-on-scroll fade-in-up">
   <h2>De tre hovedelementene</h2>
   <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i {{ frame.title | downcase }}" class="section-illustration">
   
   {% for element in frame.elements %}
-  <div class="perspektiv-element">
+  <div class="perspektiv-element animate-on-scroll fade-in-up">
     <h3>{{ element.title }}</h3>
     {{ element.body | markdownify }}
     <p><strong>Tegn på god {{ element.title | downcase }}:</strong> {{ element.signs.positive }}</p>
@@ -41,19 +41,19 @@ layout: page
 </section>
 
 <!-- Leader Value Section -->
-<section class="perspektiv-section">
+<section class="perspektiv-section animate-on-scroll fade-in-up">
   <h2>{{ frame.leader_value.heading }}</h2>
   {{ frame.leader_value.body | markdownify }}
 </section>
 
 <!-- Challenges Section -->
-<section class="perspektiv-section">
+<section class="perspektiv-section animate-on-scroll fade-in-up">
   <h2>Vanlige {{ frame.id }}lige utfordringer</h2>
   <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige {{ frame.id }}lige utfordringer" class="section-illustration">
   
-  <div class="perspektiv-challenges">
+  <div class="perspektiv-challenges stagger-parent">
     {% for challenge in frame.challenges %}
-    <div class="perspektiv-challenge">
+    <div class="perspektiv-challenge animate-on-scroll fade-in-up stagger">
       <h4>{{ challenge.title }}</h4>
       <p>{{ challenge.body }}</p>
     </div>
@@ -62,17 +62,17 @@ layout: page
 </section>
 
 <!-- Questions Section -->
-<section class="perspektiv-section">
+<section class="perspektiv-section animate-on-scroll fade-in-up">
   <h2>Spørsmål {{ frame.id }}perspektivet kan hjelpe dere å besvare</h2>
-  <ul class="perspektiv-questions">
+  <ul class="perspektiv-questions stagger-parent" style="--stagger-delay: 80ms;">
     {% for question in frame.questions %}
-    <li>{{ question }}</li>
+    <li class="animate-on-scroll slide-in-left stagger">{{ question }}</li>
     {% endfor %}
   </ul>
 </section>
 
 <!-- CTA Section -->
-<section class="perspektiv-cta">
+<section class="perspektiv-cta animate-on-scroll fade-in-up">
   <img src="{{ frame.cta.image | relative_url }}" alt="{{ frame.cta.alt }}" class="section-illustration">
   <h2>{{ frame.cta.heading }}</h2>
   {{ frame.cta.body | markdownify }}
@@ -83,7 +83,7 @@ layout: page
 </section>
 
 <!-- About / Scientific Basis Section -->
-<section class="perspektiv-section perspektiv-about">
+<section class="perspektiv-section perspektiv-about animate-on-scroll fade-in-up">
   <h2>{{ frame.about.heading }}</h2>
   {{ frame.about.body | markdownify }}
   <a href="{{ frame.about.link_url | relative_url }}" class="perspektiv-link">{{ frame.about.link_text }}</a>
