@@ -20,14 +20,9 @@ On task completion:
 ## Branch Creation
 
 Before making any modifications:
-1. Ensure local `main` is current with remote:
-   ```bash
-   git checkout main
-   git pull origin main
-   ```
-2. Create a new git branch from updated main: `git checkout -b feature/description`
-3. Make all changes within this branch
-4. Never commit directly to main branch
+- Create a new git branch: `git checkout -b feature/description`
+- Make all changes within this branch
+- Never commit directly to main branch
 
 ## Branch Naming Convention
 
@@ -126,75 +121,10 @@ When doing research:
 
 Example: Instead of searching Google/Wikipedia web, search Kaggle for "Wikipedia" dataset and query locally.
 
-## CHANGELOG Release Flow
-
-CHANGELOG entries follow a strict two-phase lifecycle:
-
-1. **During development / while PR is open:**
-   - ALL entries go under `[Unreleased]`
-   - NEVER create a numbered version section (e.g., `[1.5.0]`) before merge
-   - Example commit message: `docs(changelog): add entry under [Unreleased]`
-
-2. **After PR is merged to main:**
-   - Move entries from `[Unreleased]` to the new numbered version section
-   - Add release date: `[1.5.0] - 2026-05-26`
-   - This is done as the FINAL step after user confirms merge
-
-ANTI-PATTERN (do NOT do this):
-- Creating `[1.5.0]` section while PR is still open
-- Moving entries out of `[Unreleased]` before `main` is updated
-
-## Post-Merge Workflow
-
-When user confirms "PR accepted/merged":
-
-1. **Verify merge:**
-   ```bash
-   git fetch origin main
-   git log --oneline origin/main | head -5
-   # Confirm merge commit is present
-   ```
-
-2. **Switch to main (MANDATORY):**
-   ```bash
-   git checkout main
-   ```
-
-3. **Update main without losing local work:**
-   ```bash
-   git stash          # if there are uncommitted local changes
-   git merge origin/main --no-edit
-   git stash pop      # restore local changes if any
-   ```
-
-4. **Delete feature branch:**
-   ```bash
-   git branch -d feat/branch-name          # local
-   git push origin --delete feat/branch-name   # remote
-   ```
-
-5. **Confirm clean state:**
-   ```bash
-   git status      # should show "nothing to commit, working tree clean"
-   git branch      # should NOT show the deleted feature branch
-   ```
-
-WARNING: Never use `git reset --hard` to update main — user may have local work.
-
 ## Version Bumping
 
 - **Major** (X.0.0): Breaking changes
 - **Minor** (1.X.0): New features
 - **Patch** (1.0.X): Bug fixes
-
-**Timing:** Bump version AFTER PR is merged, before creating next branch.
-
-Correct sequence:
-1. Complete all work on feature branch
-2. Create PR
-3. PR gets merged
-4. Switch to main, pull
-5. Bump VERSION and metadata.yml
-6. Commit directly to main: `chore(release): bump version to X.Y.Z`
 
 When updating `VERSION`, also update `_data/metadata.yml` `version` field to match.
