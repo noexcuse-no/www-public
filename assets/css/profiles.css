@@ -1,160 +1,285 @@
-.profiles {
+#profiles {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
-    margin: 20px;
 }
 
-.profile h3 {
-    font-size: 1.5em;
+.profile {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.profile-compact {
+    border-radius: 16px;
+    box-shadow: var(--box-shadow-light);
+    padding: 24px;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--box-background-light);
     text-align: center;
 }
 
-.profile img {
-    border-radius: 50%; 
+.profile-compact:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--box-shadow-light-hover);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     object-fit: cover;
-    align-items: center;
+    margin-bottom: 16px;
 }
 
-.booking-icon a {
-    position: absolute;
-    top: 20px;
-    left: -40px;
-    padding: 10px;
-    opacity: 0.5;
-    font-size: 2em;
-    text-transform: uppercase;
-    rotate: z -41deg;
-    border-radius: 5px;
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
+.profile-name {
+    font-size: 1.25em;
+    margin: 0 0 12px 0;
 }
 
-.booking-icon a:hover {
-    opacity: 1.0;
-    color: var(--primary-accent-contrast);
+.profile-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+    font-size: 0.9em;
 }
 
-.booking-expanded-icon a {
-    padding: 10px;
-    opacity: 0.5;
-    font-size: 2em;
-    text-transform: uppercase;
-    border-radius: 5px;
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
+.profile-expand-btn {
+    background: none;
+    border: none;
+    color: var(--link-color-light);
+    cursor: pointer;
+    font-size: 0.95em;
+    padding: 8px 16px;
+    text-decoration: underline;
 }
 
-.booking-expanded-icon a:hover {
-    opacity: 1.0;
-    color: var(--primary-accent-contrast);
+.profile-expand-btn:hover {
+    opacity: 0.7;
 }
 
 .profile-expanded {
     display: none;
-}
-
-.profile-expanded-picture {
-    margin: 15px;
-    width: 3em;
-}
-
-
-.profile-compact.inactive {
-    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .profile-expanded.active {
     display: flex;
-    flex-direction: column;
-    margin: 15px;
 }
 
- .profile-expanded-heading  {
+.profile-modal-content {
+    background: var(--box-background-light);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 560px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.profile-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
     display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    margin: 15px;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-profile-expanded-name {
-    margin: 15px;
-}
-
-.profile-expanded-tags {
-    width: 100%;
-    margin: 15px;
-}
-
-.profile-expanded-contact {
-    width: 100%;
-    margin: 15px;
-}
-
-.profile-expanded-content {
-    width: 100%;
-    margin: 15px;
-}
-
-.profile-contact {
-    font-size: 1em;
-    text-align: center;
+.profile-close:hover {
+    background: white;
 }
 
 .profile-header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    gap: 20px;
+    padding: 32px 32px 24px;
+    background: linear-gradient(135deg, rgba(58,78,88,0.06) 0%, rgba(58,78,88,0.02) 100%);
 }
 
-.profile-header img {
-    height: 100px;
-    width: 100px;
-    margin-bottom: 10px;
-    border-radius: 50%; 
+.profile-image-large {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid rgba(58,78,88,0.12);
 }
 
-.profile-header h3 {
+.profile-header-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-header-info .profile-name {
+    font-size: 1.4em;
+    margin: 0 0 8px 0;
+}
+
+.profile-tags {
+    font-size: 0.85em;
+    opacity: 0.7;
     margin: 0;
+    word-wrap: break-word;
+}
+
+.profile-bio {
+    padding: 0 32px 24px;
+    font-size: 1em;
+    line-height: 1.7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.profile-contact-grid {
+    padding: 24px 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.profile-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95em;
+    color: var(--link-color-light);
+    word-wrap: break-word;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.03);
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.profile-contact-item:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.profile-actions {
+    padding: 24px 32px;
     text-align: center;
 }
 
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 2em;
-    cursor: pointer;
-    z-index: 1100;
+.profile-booking-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background-color: var(--primary-accent);
+    color: var(--primary-accent-contrast);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.05em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-booking-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.profile-details {
+    padding: 0 30px 30px;
+    font-size: 0.95em;
+    line-height: 1.6;
 }
 
 @media (max-width: 599px) {
     .profile {
-        width: 100%; 
-        margin-bottom: 20px;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
+    .profile-expanded {
+        padding: 0;
+        align-items: flex-end;
+    }
 
+    .profile-modal-content {
+        border-radius: 16px 16px 0 0;
+        max-height: 90vh;
+        width: 100%;
+    }
 
-.profile-expanded-heading  {
-    display: flex;
-    padding: 5px;
-    margin: 5px;
-    flex-direction: column;
+    .profile-header {
+        padding: 60px 20px 16px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-bio {
+        padding: 0 20px 16px;
+    }
+
+    .profile-contact-grid {
+        padding: 16px 20px;
+    }
+
+    .profile-actions {
+        padding: 16px 20px;
+        text-align: center;
+    }
+
+    .profile-details {
+        padding: 0 20px 24px;
+    }
+
+    .profile-close {
+        top: 8px;
+        right: 8px;
+    }
 }
-    
-    .profile-header h3 {
-        font-size: 1em;
-    }
-    
-    .profile-contact {    
-    font-size: 1em;
-    text-align: center;
-    }
+
+.dark-mode .profile-modal-content {
+    background: var(--box-background-dark);
+}
+
+.dark-mode .profile-header {
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+}
+
+.dark-mode .profile-image-large {
+    border-color: rgba(255,255,255,0.1);
+}
+
+.dark-mode .profile-bio,
+.dark-mode .profile-contact-grid {
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.dark-mode .profile-contact-item {
+    background: rgba(255,255,255,0.05);
+    color: var(--link-color-dark);
+}
+
+.dark-mode .profile-contact-item:hover {
+    background: rgba(255,255,255,0.1);
 }
