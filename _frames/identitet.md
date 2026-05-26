@@ -90,7 +90,7 @@ about:
   body: |
     Identitetsperspektivet i Ledelse 60:2 bygger på Bolman & Deals symbolske ramme, kombinert med Dave Logans forskning på tribal ledelse fra «Tribal Leadership».
 
-    Logans fem stadier for kulturutvikling gir et konkret verktøy for å forstå hvor en organisasjon befinner seg kulturmessig — og hva som kreves for å løfte den.
+    Logan beskriver kulturstadier som beskrivende — ikke normative. Ledelse 60:2 identifiserer hvor organisasjonen er, ikke hvor den bør være. Det handler om innsikt, ikke evaluering.
   link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
   link_url: "/forskning/"
 

@@ -33,6 +33,8 @@ intro:
 
     Jeffrey Pfeffer viser i «Power: Why Some People Have It — and Others Don't» at prestasjon alene sjelden er nok. De som forstår maktens spilleregler, lykkes — de som tror på rettferdighetens seier alene, ender ofte frustrert.
 
+    I komplekse beslutningsmiljøer — der problemer, løsninger, deltakere og valgmuligheter flyter sammen — er det ikke alltid den «beste» ideen som vinner. Det er den som blir fremmet av de som har bygget tillit og innflytelse over tid. Forståelse av dette landskapet er en forutsetning for god styring.
+
 elements:
   - title: "Makt og innflytelse"
     body: |
@@ -62,7 +64,7 @@ leader_value:
 
 challenges:
   - title: "Usynlig beslutningsmakt"
-    body: "De som formelt har makt, har ikke reell makt. Eller omvendt. Beslutninger tas «der» men av dem som «ikke skal ha noe med det å gjøre»."
+    body: "De som formelt har makt, har ikke reell makt. Eller omvendt. Beslutninger tas «der» men av dem som «ikke skal ha noe med det å gjøre». Senior ledere kan ofte bryte uformelle regler — de har bygget opp «idiosynkratiske kreditter» gjennom tidligere bidrag som gir dem retten til å avvike fra normene."
   - title: "Skjulte agendaer"
     body: "Aktører som ikke er transparent om sine interesser. Medarbeidere som jobber forbi offisielle kanaler for å påvirke beslutninger."
   - title: "Ressurskamper som maskeres"
@@ -90,7 +92,7 @@ about:
   body: |
     Påvirkningsperspektivet i Ledelse 60:2 bygger på Bolman & Deals politiske ramme, kombinert med Jeffrey Pfeffers forskning på makt og organisasjonspolitikk fra «Power».
 
-    Pfeffer validerer at ledere som forstår maktens spilleregler, er mer effektive — ikke fordi de «spiller spill», men fordi de kan navigere organisasjonens politiske virkelighet uten å la seg overraske.
+    Pfeffer dokumenterer at makt er kontekstavhengig. Ledelse 60:2 kartlegger maktfordeling, ikke rettferdighet. Det handler om å forstå hvem som faktisk har innflytelse — ikke å dømme om det er «riktig».
   link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
   link_url: "/forskning/"
 

@@ -50,6 +50,14 @@ elements:
     signs:
       positive: "Feil sees på som læringsmuligheter. Folk setter av tid til å utvikle seg. Suksesser og feil analyseres for å lære."
       negative: "«Vi har alltid gjort det sånn.» Innføring av nye systemer uten opplæring. Ingen karriereutvikling utover interne promojsonger."
+  - title: "Verdier og mening"
+    body: |
+      Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
+
+      Dave Logan skiller mellom kjerneverdier og edle formål (noble cause): Kjerneverdier beskriver eksisterende atferd — «slik gjør vi ting her». De er ikke aspirerende plakater, men observerbare mønstre. Det edle formålet svarer på hvorfor organisasjonen eksisterer utover profitt — det inspirerer ny atferd. No Excuse AS' kjerneverdier er ansvarlighet, tillit og ærlighet. Vårt edle formål er å styrke det unikt menneskelige i organisasjoner — å bygge tillitsgrunnlaget som gjør at folk trives, lærer og bidrar.
+    signs:
+      positive: "Folk kan fortelle om situasjoner der verdiene ble levd ut i praksis. Nye folk læres opp i «hvordan vi gjør ting her» med konkrete eksempler."
+      negative: "Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert."
 
 leader_value:
   heading: "Hvorfor menneskeperspektivet betyr noe for ledergruppen"
@@ -90,7 +98,7 @@ about:
   body: |
     Menneskeperspektivet i Ledelse 60:2 bygger på Bolman & Deals HR-ramme, kombinert med Ken Blanchards og Colleen Barretts forskning på tjenerledelse fra «Lead with LUV».
 
-    Blanchard og Barrett viser gjennom Southwest Airlines at tjenerledelse ikke er idealisme — det er en forretningsstrategi som gir målbare resultater.
+    Blanchard og Barrett viser at det ikke finnes én fasit på god ledelse — kontekst bestemmer hva som fungerer. Ledelse 60:2 diagnostiserer orientering, ikke korrekthet. Det handler om å forstå hvor organisasjonen er, ikke å dømme den.
   link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
   link_url: "/forskning/"
 
