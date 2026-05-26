@@ -5,13 +5,64 @@ Design for all tasks shall always follow the .design rules.
 Details shall be described under .spec before work initiation.
 Completed tasks are tracked in CHANGELOG.md and should not appear here.
 
-## To Do
+---
 
-### Part I — Critical Content Rewrites
+## Execution Order (Refined 2026-05-25)
+
+Following the design interview and health survey, tasks are grouped into phases that respect dependencies and maximize visible progress.
+
+### Phase 0 — Health & Quality Sprint
+
+*Prerequisite for all other work. Fixes broken tooling and immediate quality issues.*
+
+- [ ] **H1:** Restore missing lint/test tooling (`npm install`)
+- [ ] **H2:** Fix eslint error (add newline to `dark-mode-toggle.js`)
+- [ ] **H3:** Add `<meta name="description">` to `_layouts/default.html` with page-specific fallback
+- [ ] **H4:** Create `/avtale/` landing page or redirect (currently links to raw PDF)
+- [ ] **H5:** Run full lint suite after H1 to catch any hidden issues
+
+### Phase 1 — Quick Wins (Language & Quality)
+
+*Immediate gratification. No specs needed, low risk, high polish.*
+
+- [ ] **Q1:** Fiks "høy fleksibel" → "høye fleksible"
+  - **File:** `_pages/om_metode.md:37`
+- [ ] **Q2:** Fiks "stimulus" → "stimulere"
+  - **File:** `_pages/ledelse_struktur.md:59`
+- [ ] **Q3:** Erstatt "maser" med "proklamerer"
+  - **Files:** `_pages/ledelse-60-2.md:66`, `_pages/ledelse_60-2.md:66`
+- [ ] **Q4:** Fjern duplikat JSON-LD description
+  - **File:** `_pages/om_oss.md`
+  - **Keep:** Line 8. **Remove:** Line 15.
+- [ ] **Q5:** Legg til sitering for Logan-prosentandelene
+  - **File:** `_pages/ledelse_usikkerhet.md:56-71`
+- [ ] **Q6:** Myk opp "forskning" → "kunnskapsproduksjon"
+  - **File:** `_pages/om_metode.md`
+
+### Phase 2 — Foundation (Architecture)
+
+*Must happen before new articles to avoid double work.*
+
+**PA1 — Perspektiv Articles Architecture**
+
+See `.specs/ledelse-60-2/perspektiv-articles.md` for full specification.
+
+- [ ] **PA1.1:** Create `_frames/` collection with frontmatter for all 4 perspektiv articles
+- [ ] **PA1.2:** Create `_layouts/perspektiv.html` layout rendering all sections from frontmatter
+- [ ] **PA1.3:** Extract embedded CSS → `_includes/perspektiv-styles.css`
+- [ ] **PA1.4:** Rewrite 4 article pages as lightweight content files using new layout
+- [ ] **PA1.5:** Rename images `frame-X.png` → `perspektiv-X.png`
+- [ ] **PA1.6:** Update CSS class names `.frame-*` → `.perspektiv-*`
+- [ ] **PA1.7:** Update all internal cross-references (links, image paths, class names)
+- [ ] **PA1.8:** Update `.specs/ledelse-60-2/README.md` Frame Articles section to reflect new architecture
+
+---
+
+### Phase 3 — Content Core (Critical Rewrites)
+
+*Specs exist, ready for implementation.*
 
 See `.specs/grc/README.md`, `.specs/generativ-ki/README.md`, `.specs/organisasjonskultur/README.md` for full specifications.
-
-**Phase A — Critical**
 
 - [ ] **C1:** Veve GRC inn i eksisterende artikler
   - **Spec:** `.specs/grc/README.md`
@@ -33,34 +84,11 @@ See `.specs/grc/README.md`, `.specs/generativ-ki/README.md`, `.specs/organisasjo
   - **File:** `_pages/ledelse_usikkerhet.md`
   - **Start:** Detailed (shorten later)
 
-**Phase B — Language & Quality Patches**
-
-- [ ] **Q1:** Fiks "høy fleksibel" → "høye fleksible"
-  - **File:** `_pages/om_metode.md:37`
-
-- [ ] **Q2:** Fiks "stimulus" → "stimulere"
-  - **File:** `_pages/ledelse_struktur.md:59`
-
-- [ ] **Q3:** Erstatt "maser" med "proklamerer"
-  - **Files:** `_pages/ledelse-60-2.md:66`, `_pages/ledelse_60-2.md:66`
-
-- [ ] **Q4:** Fjern duplikat JSON-LD description
-  - **File:** `_pages/om_oss.md`
-  - **Keep:** Line 8. **Remove:** Line 15.
-
-- [ ] **Q5:** Legg til sitering for Logan-prosentandelene
-  - **File:** `_pages/ledelse_usikkerhet.md:56-71`
-
-- [ ] **Q6:** Myk opp "forskning" → "kunnskapsproduksjon"
-  - **File:** `_pages/om_metode.md`
-
-- [ ] **Q7:** Katalysator — behold som planlagt funksjon
-  - **Status:** Ingen handling nå (blocked)
-  - **Reference:** `.specs/shared/product-katalysator.txt`
-
 ---
 
-### Part II — New Articles
+### Phase 4 — New Articles
+
+*Specs to be created tomorrow (2026-05-26). Implementation after spec review.*
 
 See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md` (to be created).
 
@@ -99,7 +127,9 @@ See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/READ
 
 ---
 
-### Part III — Existing Article Expansions
+### Phase 5 — Existing Article Expansions
+
+*Depends on N1-N3 existing. Order: E1 → E2/E3 → E4 → E5 → E6.*
 
 See relevant spec files for each expansion.
 
@@ -165,138 +195,9 @@ See relevant spec files for each expansion.
 
 ---
 
-### Part IV — Architecture Improvements (from previous BACKLOG)
+### Phase 6 — UI Upgrade
 
-**Perspektiv Articles Architecture — PA1**
-
-See `.specs/ledelse-60-2/perspektiv-articles.md` for full specification.
-
-- [ ] **PA1.1:** Create `_frames/` collection with frontmatter for all 4 perspektiv articles
-- [ ] **PA1.2:** Create `_layouts/perspektiv.html` layout rendering all sections from frontmatter
-- [ ] **PA1.3:** Extract embedded CSS → `_includes/perspektiv-styles.css`
-- [ ] **PA1.4:** Rewrite 4 article pages as lightweight content files using new layout
-- [ ] **PA1.5:** Rename images `frame-X.png` → `perspektiv-X.png`
-- [ ] **PA1.6:** Update CSS class names `.frame-*` → `.perspektiv-*`
-- [ ] **PA1.7:** Update all internal cross-references (links, image paths, class names)
-- [ ] **PA1.8:** Update `.specs/ledelse-60-2/README.md` Frame Articles section to reflect new architecture
-
----
-
-### P1 — Phase 1: Cleanup & Foundation
-
-- [ ] P1.1: Dead code removal
-- [ ] P1.2: CSS variable unification
-- [ ] P1.3: Frontmatter defaults
-
-### P2 — Phase 2: Component Extraction
-
-- [ ] P2.1: Navigation from data
-- [ ] P2.2: Extract inline CSS/JS
-- [ ] P2.3: Image include adoption
-
-### P3 — Phase 3: Architecture Improvements
-
-- [ ] P3.1: Plugin integration
-- [ ] P3.2: Layout conditional includes
-- [ ] P3.3: Reusable CTA component
-- [ ] P3.4: Profile JS consolidation
-
-### P4 — Phase 4: Future-Proofing
-
-- [ ] P4.1: Multi-product support
-- [ ] P4.2: JSON Schema validation
-
-### Katalysator Full Development
-
-- [ ] Iterative research + brainstorming session
-- [ ] Create product frontmatter schema
-- [ ] Create landing page
-- [ ] Generate hero illustration
-- [ ] Define benefits and process steps
-- [ ] Add to products include
-- **blocked:** awaiting user input — iterative research + brainstorming
-
-## Image Optimization
-
-**Spec:** `.specs/image-optimization/README.md`
-**Design:** `.design/graphics.md` §Image Resize Guidelines
-
-Convert all PNG images to WebP format with appropriate resizing for web performance.
-
-- [ ] **IMG1:** Create `.design/graphics/originals/` directory structure
-- [ ] **IMG2:** Copy all 44 PNG files to `.design/graphics/originals/` preserving folder structure
-- [ ] **IMG3:** Convert banners (32 files) — 1920×1080 max, quality 85
-- [ ] **IMG4:** Convert icons (9 files) — 512×512 max, quality 85
-- [ ] **IMG5:** Convert hero/illustration images — 1920×1080 max, quality 85
-- [ ] **IMG6:** Convert logo files (2 files) — 400×400 max, quality 85
-- [ ] **IMG7:** Convert profile photos (1 file) — 400×400 max, quality 85
-- [ ] **IMG8:** Delete original PNG files from `assets/images/`
-- [ ] **IMG9:** Update `.design/graphics.md` with resize guidelines section
-
----
-
-## SEO Foundation
-
-See `.specs/seo/README.md` for full specification.
-
-- [ ] S1: Generate comprehensive sitemap.xml with all pages, products, profiles
-- [ ] S2: Add canonical URLs to metadata.html
-- [ ] S3: Implement page-specific meta description fallback
-- [ ] S4: Update robots.txt with sitemap reference
-- [ ] S5: Create site.webmanifest (PWA manifest)
-- [ ] S6: Add BreadcrumbList JSON-LD to all pages
-- [ ] S7: Add FAQPage schema to /tillit/ and relevant content pages
-
----
-
-## Spec Files to Create/Update
-
-| Spec file | Action | Purpose |
-|-----------|--------|---------|
-| `.specs/triader/README.md` | **Create** | Triader article: concept, mechanics, formation, cross-links |
-| `.specs/makt/README.md` | **Create** | Makt article: Pfeffer vs. Blanchard tension, Price of Power full |
-| `.specs/perspektiv/README.md` | **Create** | Perspektiv article: multiframe thinking, "no scoring" backing |
-| `.specs/organisasjonskultur/README.md` | **Update** | Add Kotter 8-step + "organisert anarki" integration |
-| `.specs/grc/README.md` | **Update** | Confirm E1-E6 integration points |
-| `.specs/ledelse-60-2/README.md` | **Update** | Reflect N1-N3 additions, E1-E6 expansions |
-
----
-
-## Image Assets Required
-
-| New article | Image | Style | Notes |
-|-------------|-------|-------|-------|
-| `/triader/` | Hero banner | Style 2 | Triad concept illustration |
-| `/triader/` | Section illustration | Style 3 | Dyad vs. triad stability |
-| `/makt/` | Hero banner | Style 2 | Power vs. service tension |
-| `/makt/` | Section illustration | Style 3 | Servant vs. self-serving leader |
-| `/makt/` | Section illustration | Style 3 | Price of Power continuum |
-| `/perspektiv/` | Hero banner | Style 2 | Multiframe thinking |
-| `/perspektiv/` | Section illustration | Style 3 | Four frames in use |
-
-All new images must follow `.design/graphics.md` prompt rules:
-- No text
-- 16:9 aspect ratio
-- Scandinavian minimal style
-- Norwegian descriptive alt text
-- Document prompts in `.design/graphics.md`
-
----
-
-## Cross-Link Map
-
-| From | To | Text | Context |
-|------|----|------|---------|
-| `/påvirkning/` → "Maktens kostnader" | `/makt/` | "Les om maktens kostnader →" | Brief paragraph in /påvirkning/ |
-| `/struktur/` → "Det vitenskapelige grunnlaget" | `/perspektiv/` | "Les om multiframe-tenkning →" | "No scoring" backing |
-| `/mennesker/` → "Verdier og mening" | `/makt/` | Noble cause connects to servant leadership | Core Values expansion |
-| `/identitet/` → tribal stages | `/triader/` | "Hvordan bygge triader →" | After Logan's stages |
-| `/usikkerhet/` → Kotter | `/triader/` | "Verktøy for kulturendring: triader →" | After Kotter section |
-| All 4 frame articles → "Det vitenskapelige grunnlaget" | `/perspektiv/` | "Les om hvorfor vi ikke scorer →" | Per-frame "no scoring" sentence |
-
----
-
-### Part V — UI Upgrade
+*Specs and design docs already exist. Implementation after content is stable.*
 
 See `.specs/ui-upgrade/README.md` (functional), `.design/ui-upgrade.md` (visual).
 
@@ -344,9 +245,146 @@ See `.specs/ui-upgrade/README.md` (functional), `.design/ui-upgrade.md` (visual)
 
 ---
 
-## In Progress
+### Phase 7 — Assets & Performance
+
+*Batch operations after all content and UI work is done.*
+
+**Image Optimization**
+
+See `.specs/image-optimization/README.md` and `.design/graphics.md` §Image Resize Guidelines.
+
+Convert all PNG images to WebP format with appropriate resizing for web performance.
+
+- [ ] **IMG1:** Create `.design/graphics/originals/` directory structure
+- [ ] **IMG2:** Copy all 44 PNG files to `.design/graphics/originals/` preserving folder structure
+- [ ] **IMG3:** Convert banners (32 files) — 1920×1080 max, quality 85
+- [ ] **IMG4:** Convert icons (9 files) — 512×512 max, quality 85
+- [ ] **IMG5:** Convert hero/illustration images — 1920×1080 max, quality 85
+- [ ] **IMG6:** Convert logo files (2 files) — 400×400 max, quality 85
+- [ ] **IMG7:** Convert profile photos (1 file) — 400×400 max, quality 85
+- [ ] **IMG8:** Delete original PNG files from `assets/images/`
+- [ ] **IMG9:** Update `.design/graphics.md` with resize guidelines section
+
+**SEO Foundation**
+
+See `.specs/seo/README.md` for full specification.
+
+- [ ] **S1:** Generate comprehensive sitemap.xml with all pages, products, profiles
+- [ ] **S2:** Add canonical URLs to metadata.html
+- [ ] **S3:** Implement page-specific meta description fallback
+- [ ] **S4:** Update robots.txt with sitemap reference
+- [ ] **S5:** Create site.webmanifest (PWA manifest)
+- [ ] **S6:** Add BreadcrumbList JSON-LD to all pages
+- [ ] **S7:** Add FAQPage schema to /tillit/ and relevant content pages
+
+---
+
+### Phase 8 — Architecture Debt
+
+*Cleanup and component extraction. Lower priority than visible content.*
+
+**P1 — Phase 1: Cleanup & Foundation**
+- [ ] P1.1: Dead code removal
+- [ ] P1.2: CSS variable unification
+- [ ] P1.3: Frontmatter defaults
+
+**P2 — Phase 2: Component Extraction**
+- [ ] P2.1: Navigation from data
+- [ ] P2.2: Extract inline CSS/JS
+- [ ] P2.3: Image include adoption
+
+**P3 — Phase 3: Architecture Improvements**
+- [ ] P3.1: Plugin integration
+- [ ] P3.2: Layout conditional includes
+- [ ] P3.3: Reusable CTA component
+- [ ] P3.4: Profile JS consolidation
+
+**P4 — Phase 4: Future-Proofing**
+- [ ] P4.1: Multi-product support
+- [ ] P4.2: JSON Schema validation
+
+---
 
 ## Blocked
+
+- **Q7 — Katalysator:** Behold som planlagt funksjon. **blocked:** Deferred to June 2026. Iterative research + brainstorming session required before any implementation.
+  - **Reference:** `.specs/shared/product-katalysator.txt`
+  - **Dependencies:** User availability for brainstorming, product positioning decision
+
+- **N1-N3 Specs:** `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md` creation **blocked:** Deferred to tomorrow (2026-05-26). Requires focused spec-writing session before implementation can begin.
+
+---
+
+## Design Decisions (2026-05-25)
+
+Results from design interview for future reference:
+
+- **Brand Personality:** Rebellious, Clear, Nordic
+- **Visual Reference:** Apple.com (premium minimal, confident whitespace)
+- **Scandinavian Minimal:** Democratic design — accessible to everyone, clear and open, no elitism
+- **Media Mix:** Mostly illustrations + real photos for team/cases
+- **Animation:** Expressive and memorable (page transitions, bold micro-interactions)
+- **Color Usage:** Sparingly — accent color for buttons, links, small highlights only
+
+## Image Generation Context Requirements
+
+When generating images for N1-N3 and future content, ensure maximum context is known:
+- Article content is drafted and approved
+- Cross-links and CTAs are finalized
+- Design references (`.design/graphics.md`) are current
+- Norwegian descriptive alt text is prepared in advance
+- Prompts documented in `.design/graphics.md`
+
+---
+
+## Cross-Link Map
+
+| From | To | Text | Context |
+|------|----|------|---------|
+| `/påvirkning/` → "Maktens kostnader" | `/makt/` | "Les om maktens kostnader →" | Brief paragraph in /påvirkning/ |
+| `/struktur/` → "Det vitenskapelige grunnlaget" | `/perspektiv/` | "Les om multiframe-tenkning →" | "No scoring" backing |
+| `/mennesker/` → "Verdier og mening" | `/makt/` | Noble cause connects to servant leadership | Core Values expansion |
+| `/identitet/` → tribal stages | `/triader/` | "Hvordan bygge triader →" | After Logan's stages |
+| `/usikkerhet/` → Kotter | `/triader/` | "Verktøy for kulturendring: triader →" | After Kotter section |
+| All 4 frame articles → "Det vitenskapelige grunnlaget" | `/perspektiv/` | "Les om hvorfor vi ikke scorer →" | Per-frame "no scoring" sentence |
+
+---
+
+## Spec Files to Create/Update
+
+| Spec file | Action | Purpose | Status |
+|-----------|--------|---------|--------|
+| `.specs/triader/README.md` | **Create** | Triader article: concept, mechanics, formation, cross-links | **Blocked: tomorrow** |
+| `.specs/makt/README.md` | **Create** | Makt article: Pfeffer vs. Blanchard tension, Price of Power full | **Blocked: tomorrow** |
+| `.specs/perspektiv/README.md` | **Create** | Perspektiv article: multiframe thinking, "no scoring" backing | **Blocked: tomorrow** |
+| `.specs/organisasjonskultur/README.md` | **Update** | Add Kotter 8-step + "organisert anarki" integration | Ready |
+| `.specs/grc/README.md` | **Update** | Confirm E1-E6 integration points | Ready |
+| `.specs/ledelse-60-2/README.md` | **Update** | Reflect N1-N3 additions, E1-E6 expansions | Ready |
+
+---
+
+## Image Assets Required
+
+| New article | Image | Style | Notes |
+|-------------|-------|-------|-------|
+| `/triader/` | Hero banner | Style 2 | Triad concept illustration |
+| `/triader/` | Section illustration | Style 3 | Dyad vs. triad stability |
+| `/makt/` | Hero banner | Style 2 | Power vs. service tension |
+| `/makt/` | Section illustration | Style 3 | Servant vs. self-serving leader |
+| `/makt/` | Section illustration | Style 3 | Price of Power continuum |
+| `/perspektiv/` | Hero banner | Style 2 | Multiframe thinking |
+| `/perspektiv/` | Section illustration | Style 3 | Four frames in use |
+
+All new images must follow `.design/graphics.md` prompt rules:
+- No text
+- 16:9 aspect ratio
+- Scandinavian minimal style
+- Norwegian descriptive alt text
+- Document prompts in `.design/graphics.md`
+
+---
+
+## In Progress
 
 ## Completed
 
