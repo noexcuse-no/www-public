@@ -72,15 +72,10 @@ layout: page
 </section>
 
 <!-- CTA Section -->
-<section class="perspektiv-cta animate-on-scroll fade-in-up">
-  <img src="{{ frame.cta.image | relative_url }}" alt="{{ frame.cta.alt }}" class="section-illustration">
-  <h2>{{ frame.cta.heading }}</h2>
-  {{ frame.cta.body | markdownify }}
-  <div class="perspektiv-cta-buttons">
-    <a href="{{ frame.cta.booking_url }}" class="product-cta" onclick="openBookingModal('{{ frame.cta.booking_url }}'); return false;">Bestill uforpliktende samtale</a>
-    <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
-  </div>
-</section>
+{% include cta.html 
+   heading=frame.cta.heading 
+   body=frame.cta.body 
+   booking_url=frame.cta.booking_url %}
 
 <!-- About / Scientific Basis Section -->
 <section class="perspektiv-section perspektiv-about animate-on-scroll fade-in-up">
