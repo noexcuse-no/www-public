@@ -24,14 +24,10 @@
 }
 
 .perspektiv-hero-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 60px 40px 40px;
+    padding: 32px 40px;
     text-align: center;
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
-    color: white;
+    background: var(--background-color-light);
+    color: var(--text-color-light);
 }
 
 .perspektiv-breadcrumb {
@@ -40,23 +36,23 @@
 }
 
 .perspektiv-breadcrumb a {
-    color: rgba(255,255,255,0.85);
+    color: var(--link-color-light);
 }
 
 .perspektiv-hero h1 {
     font-size: 2.5em;
     margin-bottom: 16px;
-    color: white;
+    color: var(--text-color-light);
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .perspektiv-intro {
     font-size: 1.15em;
     line-height: 1.7;
-    opacity: 0.9;
     max-width: 700px;
     margin: 0 auto;
-    color: rgba(255,255,255,0.9);
+    color: var(--text-color-light);
+    opacity: 0.85;
 }
 
 /* Content Sections */
@@ -169,6 +165,74 @@
     flex-wrap: wrap;
 }
 
+.perspektiv-challenge {
+    position: relative;
+    padding-top: 48px;
+    border-top: 3px solid var(--primary-accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.perspektiv-challenge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.perspektiv-challenge h4 {
+    position: relative;
+    padding-left: 28px;
+}
+
+.perspektiv-challenge h4:before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    color: var(--primary-accent);
+    font-size: 0.9em;
+}
+
+.perspektiv-element {
+    position: relative;
+    padding-left: 56px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.perspektiv-element:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.perspektiv-element:before {
+    content: "●";
+    position: absolute;
+    left: 20px;
+    top: 26px;
+    color: var(--primary-accent);
+    font-size: 1.2em;
+}
+
+.perspektiv-questions li {
+    padding: 16px 0 16px 32px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    transition: background-color 0.2s ease;
+}
+
+.perspektiv-questions li:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.perspektiv-questions li:before {
+    content: "→";
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.perspektiv-cta {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
 /* About / Scientific Basis */
 .perspektiv-about {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -197,7 +261,20 @@
 }
 
 .dark-mode .perspektiv-hero-content {
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+    background: var(--banner-background-dark);
+    color: var(--banner-text-dark);
+}
+
+.dark-mode .perspektiv-hero h1 {
+    color: var(--banner-text-dark);
+}
+
+.dark-mode .perspektiv-intro {
+    color: var(--banner-text-dark);
+}
+
+.dark-mode .perspektiv-breadcrumb a {
+    color: var(--link-color-dark);
 }
 
 /* Mobile */

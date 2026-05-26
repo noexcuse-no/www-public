@@ -20,14 +20,19 @@
 }
 
 .frame-hero-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 60px 40px 40px;
+    padding: 32px 40px;
     text-align: center;
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
-    color: white;
+    background: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+.frame-breadcrumb {
+    font-size: 0.9em;
+    margin-bottom: 16px;
+}
+
+.frame-breadcrumb a {
+    color: var(--link-color-light);
 }
 
 .frame-breadcrumb {
@@ -41,9 +46,17 @@
 
 .frame-hero h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 16px;
+    color: var(--text-color-light);
+}
+
+.frame-intro {
+    font-size: 1.15em;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-color-light);
+    opacity: 0.85;
 }
 
 .frame-intro {
@@ -199,22 +212,20 @@
 }
 
 .dark-mode .frame-hero-content {
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+    background: var(--banner-background-dark);
+    color: var(--banner-text-dark);
 }
 
-.dark-mode .frame-element,
-.dark-mode .frame-challenge,
-.dark-mode .frame-cta {
-    background: var(--box-background-dark);
+.dark-mode .frame-hero h1 {
+    color: var(--banner-text-dark);
 }
 
-.dark-mode .frame-element:hover,
-.dark-mode .frame-challenge:hover {
-    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+.dark-mode .frame-intro {
+    color: var(--banner-text-dark);
 }
 
-.dark-mode .frame-questions li {
-    border-bottom-color: rgba(255, 255, 255, 0.1);
+.dark-mode .frame-breadcrumb a {
+    color: var(--link-color-dark);
 }
 
 @media (max-width: 768px) {
@@ -238,4 +249,12 @@
         flex-direction: column;
         align-items: center;
     }
+}
+
+.citation {
+    font-size: 0.75em;
+    vertical-align: super;
+    line-height: 0;
+    opacity: 0.7;
+    margin-left: 2px;
 }

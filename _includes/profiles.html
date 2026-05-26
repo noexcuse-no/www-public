@@ -125,12 +125,12 @@
 
 .profile-modal-content {
     background: var(--box-background-light);
-    border-radius: 16px;
+    border-radius: 20px;
     width: 100%;
-    max-width: 600px;
-    max-height: 95vh;
+    max-width: 560px;
+    max-height: 90vh;
     overflow-y: auto;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     position: relative;
     box-sizing: border-box;
 }
@@ -162,15 +162,17 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 30px 30px 20px;
+    padding: 32px 32px 24px;
+    background: linear-gradient(135deg, rgba(58,78,88,0.06) 0%, rgba(58,78,88,0.02) 100%);
 }
 
 .profile-image-large {
-    width: 80px;
-    height: 80px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+    border: 3px solid rgba(58,78,88,0.12);
 }
 
 .profile-header-info {
@@ -191,43 +193,60 @@
 }
 
 .profile-bio {
-    padding: 0 30px 20px;
+    padding: 0 32px 24px;
     font-size: 1em;
-    line-height: 1.6;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 1.7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .profile-contact-grid {
-    padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .profile-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 0.95em;
     color: var(--link-color-light);
     word-wrap: break-word;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.03);
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.profile-contact-item:hover {
+    background: rgba(0, 0, 0, 0.06);
 }
 
 .profile-actions {
-    padding: 20px 30px;
+    padding: 24px 32px;
+    text-align: center;
 }
 
 .profile-booking-btn {
-    display: inline-block;
-    padding: 12px 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
     background-color: var(--primary-accent);
     color: var(--primary-accent-contrast);
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: 600;
-    transition: opacity 0.2s ease;
+    font-size: 1.05em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .profile-booking-btn:hover {
-    opacity: 0.85;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .profile-details {
@@ -280,6 +299,32 @@
         top: 8px;
         right: 8px;
     }
+}
+
+.dark-mode .profile-modal-content {
+    background: var(--box-background-dark);
+}
+
+.dark-mode .profile-header {
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+}
+
+.dark-mode .profile-image-large {
+    border-color: rgba(255,255,255,0.1);
+}
+
+.dark-mode .profile-bio,
+.dark-mode .profile-contact-grid {
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.dark-mode .profile-contact-item {
+    background: rgba(255,255,255,0.05);
+    color: var(--link-color-dark);
+}
+
+.dark-mode .profile-contact-item:hover {
+    background: rgba(255,255,255,0.1);
 }
 </style>
 

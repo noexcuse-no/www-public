@@ -87,7 +87,7 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>OKR og KPI for KI-assistert arbeid</h2>
-    <p>KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må måles. Douglas Hubbard skriver i «How to Measure Anything» at det meste faktisk kan måles — bare vi er villige til å definere hva vi egentlig trenger å vite.^[hubbard2014]</p>
+    <p>KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må måles. Douglas Hubbard skriver i «How to Measure Anything» at det meste faktisk kan måles — bare vi er villige til å definere hva vi egentlig trenger å vite.<sup class="citation">[hubbard2014]</p>
     
     <p><strong>KPI-er for KI-assisterte prosesser:</strong></p>
     <ul>
