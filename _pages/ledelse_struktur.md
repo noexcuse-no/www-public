@@ -56,7 +56,7 @@ json_ld:
 
     <div class="frame-element">
         <h3>Prosesser og regler</h3>
-        <p>Prosesser er hvordan arbeid faktisk utføres. Regler er de formelle og uformelle normene som styrer atferd. En god struktur har balanse: nok regler til å gi trygghet, få nok til å stimulus vekst.</p>
+        <p>Prosesser er hvordan arbeid faktisk utføres. Regler er de formelle og uformelle normene som styrer atferd. En god struktur har balanse: nok regler til å gi trygghet, få nok til å stimulere vekst.</p>
         <p><strong>Tegn på velfungerende prosesser:</strong> Folk vet hvordan de skal få ting gjort. Unntak håndteres på en standardisert måte. Nye folk læres opp raskt fordi prosessene er tydelige.</p>
         <p><strong>Tegn på prosessproblemer:</strong> Unødvendig byråkrati. Prosesser som ble laget for å løse et problem som ikke lenger eksisterer. Unntak som tar mer tid enn normalen.</p>
     </div>

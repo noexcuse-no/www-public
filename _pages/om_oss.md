@@ -12,7 +12,6 @@ json_ld:
   foundingDate: "2025-06"
   foundingLocation: "Norge"
   areaServed: "Norge"
-  description: "No Excuse AS ble grunnlagt i juni 2025. Vi bistår virksomheter med å forbedre ledelsesfunksjonen."
   contactPoint:
     type: "ContactPoint"
     contactType: "customer service"

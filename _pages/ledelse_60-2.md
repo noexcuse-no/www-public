@@ -63,7 +63,7 @@ json_ld:
         <div class="benefit-card">
             <img src="{{ '/assets/images/banners/benefit-ai.png' | relative_url }}" alt="Oppnå målbare gevinster med KI" class="benefit-banner">
             <h3>Målbare gevinster med GenKI</h3>
-            <p>Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle maser om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
+            <p>Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle proklamerer om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
             <a href="{{ '/generativ-ki/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card">
