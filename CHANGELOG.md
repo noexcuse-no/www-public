@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Scroll-triggered animation system (`assets/css/animations.css`, `assets/scripts/animations.js`) with fadeInUp, slideInLeft, and stagger patterns via Intersection Observer
+- Article hero overlay treatment with gradient overlay on banner images for all article and perspektiv pages
+- Landing page hero gradient overlays (`products.css`, `about.css`)
+- Button and card micro-interactions: translateY lift + shadow on hover for CTAs and cards
+- Dark mode variants for all new overlay and card hover components
+- Mobile responsive breakpoints for hero overlays
+- Reduced motion support (`prefers-reduced-motion: reduce`) for all animations
+
+### Changed
+
+- Extracted inline article styles from 4 article pages into shared `assets/css/article.css`
+- Unified typography scale: h2 2em, h3 1.4em, body line-height 1.7, reading width 65ch
+- Updated perspektiv layout with scroll animation classes
+- Updated landing page (`ledelse-60-2`) with staggered card and process step animations
+- Updated about page (`om-oss`) with scroll animation classes
+
+### Fixed
+
+- Removed 1000+ lines of duplicated inline CSS from article markdown files
+- Consistent dark mode hover shadows for all interactive cards
+
 ## [1.4.0] - 2026-05-23
 
 ### Added

@@ -195,56 +195,6 @@ See relevant spec files for each expansion.
 
 ---
 
-### Phase 6 — UI Upgrade
-
-*Specs and design docs already exist. Implementation after content is stable.*
-
-See `.specs/ui-upgrade/README.md` (functional), `.design/ui-upgrade.md` (visual).
-
-**U1 — CSS Animation Architecture**
-- **Spec:** `.specs/ui-upgrade/README.md` §1
-- **Design:** `.design/ui-upgrade.md` §1
-- **Files:** `assets/css/animations.css`, `assets/scripts/animations.js`
-- **Content:** Scroll-triggered fadeInUp/slideInLeft via Intersection Observer, stagger pattern, reduced-motion support
-
-**U2 — Article Hero Overlay**
-- **Spec:** `.specs/ui-upgrade/README.md` §2
-- **Design:** `.design/ui-upgrade.md` §2
-- **Files:** `assets/css/article.css`
-- **Content:** Title text overlaid on banner image with gradient overlay, breadcrumb above gradient
-- **Target pages:** `/ledelse-60-2/`, `/om-oss/`, `/tillit/`, `/usikkerhet/`, `/struktur/`, `/mennesker/`, `/påvirkning/`, `/identitet/`, `/forankring/`
-
-**U3 — Typography Unification**
-- **Spec:** `.specs/ui-upgrade/README.md` §3
-- **Design:** `.design/ui-upgrade.md` §3
-- **Files:** `assets/css/typography.css`
-- **Content:** Complete h2/h3 sizes, body line-height 1.7, reading width 65ch, consistent heading margins
-
-**U4 — Landing Page Hero Gradient**
-- **Spec:** `.specs/ui-upgrade/README.md` §4
-- **Design:** `.design/ui-upgrade.md` §4
-- **Files:** `assets/css/products.css`, `assets/css/about.css`
-- **Content:** Bottom gradient on hero images transitioning to background color
-
-**U5 — Button & Card Micro-interactions**
-- **Spec:** `.specs/ui-upgrade/README.md` §5
-- **Design:** `.design/ui-upgrade.md` §5
-- **Files:** `assets/css/products.css`, `assets/css/article.css`
-- **Content:** translateY(-2px) lift + shadow on hover for CTAs, translateY(-4px) for cards
-
-**U6 — Scroll-Triggered Content Animations**
-- **Spec:** `.specs/ui-upgrade/README.md` §6
-- **Design:** `.design/ui-upgrade.md` §6
-- **Content:** Staggered entrance for .frame-section, .frame-challenges, .frame-questions, landing grids
-
-**U7 — Dark Mode Finalization**
-- **Spec:** `.specs/ui-upgrade/README.md` §7
-- **Design:** `.design/ui-upgrade.md` §8
-- **Files:** `assets/css/styles-dark.css`
-- **Content:** Dark variants for all new overlay and card components
-
----
-
 ### Phase 7 — Assets & Performance
 
 *Batch operations after all content and UI work is done.*
