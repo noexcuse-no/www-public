@@ -1,5 +1,9 @@
 # CSS Architecture
 
+**Activate when:** Changing CSS files, making visual changes, or creating pages with styling
+
+---
+
 ## Module Structure (13 files)
 
 | Category | Files |

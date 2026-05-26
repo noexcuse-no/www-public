@@ -1,5 +1,9 @@
 # Frontmatter Schema
 
+**Activate when:** Creating new pages/articles
+
+---
+
 ## Profile (`_profiles/*.md`)
 
 ```yaml

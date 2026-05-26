@@ -1,5 +1,11 @@
 # JavaScript Patterns
 
+**Activate when:** Changing JavaScript files or adding interactivity
+
+---
+
+## General Guidelines
+
 - Vanilla JS (no frameworks)
 - Scripts are DOM-centric with inline event handlers
 

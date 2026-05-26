@@ -1,5 +1,9 @@
 # Naming Conventions
 
+**Activate when:** Creating new pages/articles
+
+---
+
 | Type | Convention | Example |
 |------|-----------|---------|
 | HTML includes | snake_case.html | `profiles.html` |
