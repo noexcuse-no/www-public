@@ -19,7 +19,7 @@ json_ld:
       name: "Organisasjonskultur"
 
 hero:
-  banner_image: "assets/images/banners/perspektiv-identitet.png"
+  banner_image: "assets/images/banners/perspektiv-identitet.webp"
   alt: "Identitetsperspektivet i ledelse"
   breadcrumb: "← Ledelse 60:2"
   intro: "Handler om å se organisasjonen som en kultur — med sine ritualer, historier og verdier. Det som betyr noe, er ikke bare hva som skjer, men hva det betyr."
@@ -78,7 +78,7 @@ questions:
   - "Har vi en felles forståelse av hva slags organisasjon vi vil være?"
 
 cta:
-  image: "assets/images/banners/illustrasjon-identitet-cta.png"
+  image: "assets/images/banners/illustrasjon-identitet-cta.webp"
   alt: "Illustrasjon for kartlegging av kultur"
   heading: "Få kartlagt ledergruppens kulturelle modenhet"
   body: |

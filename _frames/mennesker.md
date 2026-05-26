@@ -19,7 +19,7 @@ json_ld:
       name: "Tjenerledelse"
 
 hero:
-  banner_image: "assets/images/banners/perspektiv-mennesker.png"
+  banner_image: "assets/images/banners/perspektiv-mennesker.webp"
   alt: "Menneskeperspektivet i ledelse"
   breadcrumb: "← Ledelse 60:2"
   intro: "Handler om å se organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. Når mennesker og organisasjon passer sammen, tjener begge på det."
@@ -86,7 +86,7 @@ questions:
   - "Tilbyr vi muligheter for læring og karriereutvikling?"
 
 cta:
-  image: "assets/images/banners/illustrasjon-mennesker-cta.png"
+  image: "assets/images/banners/illustrasjon-mennesker-cta.webp"
   alt: "Illustrasjon for kartlegging av mennesker"
   heading: "Få kartlagt ledergruppens menneskedimensjon"
   body: |

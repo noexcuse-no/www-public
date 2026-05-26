@@ -6,7 +6,7 @@ avtale: true
 ---
 
 <section class="avtale-page">
-    <img src="{{ '/assets/images/noexcuse-logo-horizontal.png' | relative_url }}" alt="No Excuse AS" class="avtale-logo">
+    <img src="{{ '/assets/images/noexcuse-logo-horizontal.webp' | relative_url }}" alt="No Excuse AS" class="avtale-logo">
 
     <h1>Standard Avtalevilkår for Oppdrag</h1>
     <p class="avtale-meta">Sist oppdatert: 2026.03.02</p>

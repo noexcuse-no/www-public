@@ -19,7 +19,7 @@ json_ld:
       name: "Organisasjonsstruktur"
 
 hero:
-  banner_image: "assets/images/banners/perspektiv-struktur.png"
+  banner_image: "assets/images/banners/perspektiv-struktur.webp"
   alt: "Strukturperspektivet i ledelse"
   breadcrumb: "← Ledelse 60:2"
   intro: "Handler om å skape et system der oppgaver, roller og mål henger sammen. Når strukturen fungerer, merkes det ikke. Når den ikke fungerer, merkes det umiddelbart."
@@ -78,7 +78,7 @@ questions:
   - "Er det regler og prosesser som ble laget for et problem som ikke lenger eksisterer?"
 
 cta:
-  image: "assets/images/banners/illustrasjon-struktur-cta.png"
+  image: "assets/images/banners/illustrasjon-struktur-cta.webp"
   alt: "Illustrasjon for kartlegging av struktur"
   heading: "Få kartlagt ledergruppens strukturelle modenhet"
   body: |

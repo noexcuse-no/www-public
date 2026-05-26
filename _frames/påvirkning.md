@@ -19,7 +19,7 @@ json_ld:
       name: "Organisasjonspolitikk"
 
 hero:
-  banner_image: "assets/images/banners/perspektiv-påvirkning.png"
+  banner_image: "assets/images/banners/perspektiv-påvirkning.webp"
   alt: "Påvirkningsperspektivet i ledelse"
   breadcrumb: "← Ledelse 60:2"
   intro: "Handler om å forstå at organisasjoner er arenaer der ulike interesser møtes. Makt og påvirkning er ikke skitne triks — de er en del av hvordan beslutninger tas og ting blir gjort."
@@ -80,7 +80,7 @@ questions:
   - "Er det balanse i makt — eller er noen stemmer for dominerende?"
 
 cta:
-  image: "assets/images/banners/illustrasjon-påvirkning-cta.png"
+  image: "assets/images/banners/illustrasjon-påvirkning-cta.webp"
   alt: "Illustrasjon for kartlegging av påvirkning"
   heading: "Få kartlagt ledergruppens påvirkning og maktbalanse"
   body: |

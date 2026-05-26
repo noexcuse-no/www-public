@@ -1,11 +1,11 @@
 {
-  "name": "Your Application Name",
-  "short_name": "App",
-  "description": "Application description",
+  "name": "No Excuse AS",
+  "short_name": "No Excuse",
+  "description": "Forbedrer internkultur og kommunikasjon i bedrifter.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "theme_color": "#2A4D6E",
   "orientation": "portrait-primary",
   "icons": [
     {
@@ -15,21 +15,15 @@
       "purpose": "any"
     },
     {
-      "src": "/icon-192.png",
+      "src": "/apple-touch-icon.webp",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "any maskable"
     }
   ],
   "categories": [
-    "productivity"
+    "business"
   ],
-  "lang": "en",
+  "lang": "no",
   "dir": "ltr"
 }

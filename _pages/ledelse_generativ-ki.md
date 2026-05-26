@@ -21,7 +21,7 @@ json_ld:
 
 <section class="frame-hero">
     <div class="frame-hero-image">
-        <img src="{{ '/assets/images/banners/benefit-ai.png' | relative_url }}" alt="KI-ledelse i praksis">
+        <img src="{{ '/assets/images/banners/benefit-ai.webp' | relative_url }}" alt="KI-ledelse i praksis">
     </div>
     <div class="frame-hero-content animate-on-scroll fade-in">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
