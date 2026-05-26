@@ -58,6 +58,8 @@ leader_value:
 
     For ledergruppen er spørsmålene: Bruker vi tid på å bygge relasjoner og tillit? Har vi en kultur der folk tørr å si ifra? Tiltrekker og beholder vi talent? Eller er vi en organisasjon der folk bare overlever, ikke for å trives?
 
+    Gode rutiner og klare roller er ikke det motsatte av tillitsbasert ledelse — de er forutsetningen for at den skal fungere. Ansvar uten autoritet er en teoretisk øvelse.
+
 challenges:
   - title: "Manglende psykologisk trygghet"
     body: "Folk tørr ikke si ifra om problemer. Feil skjules. Kritikk leveres bak lukkede dører. Innovation dør før den får luft."

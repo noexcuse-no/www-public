@@ -29,6 +29,8 @@ intro:
   body: |
     Tenk på en organisasjon som en politisk arena — ikke i valgkamp-forstand, men i betydningen: ulike interesser, agendaer og aktører som jakter på innflytelse og ressurser. Påvirkningsperspektivet ser ledelse som navigering i dette landskapet.
 
+    God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. I norske organisasjoner er avstanden mellom formell og reell beslutningsmakt ofte undervurdert.
+
     Jeffrey Pfeffer viser i «Power: Why Some People Have It — and Others Don't» at prestasjon alene sjelden er nok. De som forstår maktens spilleregler, lykkes — de som tror på rettferdighetens seier alene, ender ofte frustrert.
 
 elements:
