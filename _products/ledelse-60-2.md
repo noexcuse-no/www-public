@@ -29,7 +29,7 @@ benefits:
   - title: "Bli forberedt på en usikker fremtid"
     description: "Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen."
     banner: "assets/images/banners/benefit-future.webp"
-    article_url: "/usikkerhet/"
+    article_url: "/organisasjonskultur/"
   - title: "Forankre initiativer i ledergruppen"
     description: "Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft."
     banner: "assets/images/banners/benefit-anchoring.webp"

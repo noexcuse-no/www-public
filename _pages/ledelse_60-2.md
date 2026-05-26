@@ -70,7 +70,7 @@ json_ld:
             <img src="{{ '/assets/images/banners/benefit-future.webp' | relative_url }}" alt="Bli forberedt på en usikker fremtid" class="benefit-banner">
             <h3>Bli forberedt på en usikker fremtid</h3>
             <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.</p>
-            <a href="{{ '/usikkerhet/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            <a href="{{ '/organisasjonskultur/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card animate-on-scroll fade-in-up stagger">
             <img src="{{ '/assets/images/banners/benefit-anchoring.webp' | relative_url }}" alt="Forankre initiativer i ledergruppen" class="benefit-banner">
