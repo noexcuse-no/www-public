@@ -344,6 +344,18 @@
     background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
 }
 
+.dark-mode .benefit-card:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.dark-mode .process-step:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.dark-mode .case-card:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
 @media (max-width: 768px) {
     .product-hero {
         flex-direction: column;
