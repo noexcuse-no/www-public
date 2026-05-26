@@ -192,15 +192,24 @@
 }
 
 .benefit-link {
-    display: inline-block;
-    margin-top: 12px;
-    font-size: 0.9em;
-    color: var(--link-color-light);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: var(--primary-accent-contrast);
+    background-color: var(--primary-accent);
     text-decoration: none;
+    border-radius: 8px;
+    min-height: 44px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .benefit-link:hover {
-    text-decoration: underline;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .section-illustration {
@@ -226,6 +235,11 @@
 
 .dark-mode .frame-breadcrumb a {
     color: var(--link-color-dark);
+}
+
+.dark-mode .benefit-link {
+    color: var(--primary-accent-contrast);
+    background-color: var(--primary-accent);
 }
 
 @media (max-width: 768px) {

@@ -56,27 +56,35 @@ json_ld:
     <div class="landing-benefits-grid stagger-parent" style="--stagger-delay: 100ms;">
         <div class="benefit-card animate-on-scroll fade-in-up stagger">
             <img src="{{ '/assets/images/banners/benefit-control.webp' | relative_url }}" alt="Få kontroll uten byråkrati" class="benefit-banner">
-            <h3>Bedre ledelse uten byråkrati</h3>
-            <p>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema. Dyrk engasjement og eierskap blant ansatte, ikke regler og regimer. Ikke fall for fristelsen å møte økt kompleksitet med micromanagement og mistenksomhet - ha tro på at ansatte kan bruke sunn fornuft!</p>
-            <a href="{{ '/tillit/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            <div class="benefit-card-content">
+                <h3>Bedre ledelse uten byråkrati</h3>
+                <p>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema. Dyrk engasjement og eierskap blant ansatte, ikke regler og regimer.</p>
+                <a href="{{ '/tillit/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            </div>
         </div>
         <div class="benefit-card animate-on-scroll fade-in-up stagger">
             <img src="{{ '/assets/images/banners/benefit-ai.webp' | relative_url }}" alt="Oppnå målbare gevinster med KI" class="benefit-banner">
-            <h3>Målbare gevinster med GenKI</h3>
-            <p>Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle proklamerer om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
-            <a href="{{ '/generativ-ki/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            <div class="benefit-card-content">
+                <h3>Målbare gevinster med GenKI</h3>
+                <p>Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
+                <a href="{{ '/generativ-ki/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            </div>
         </div>
         <div class="benefit-card animate-on-scroll fade-in-up stagger">
             <img src="{{ '/assets/images/banners/benefit-future.webp' | relative_url }}" alt="Bli forberedt på en usikker fremtid" class="benefit-banner">
-            <h3>Bli forberedt på en usikker fremtid</h3>
-            <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.</p>
-            <a href="{{ '/organisasjonskultur/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            <div class="benefit-card-content">
+                <h3>Bli forberedt på en usikker fremtid</h3>
+                <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer.</p>
+                <a href="{{ '/organisasjonskultur/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            </div>
         </div>
         <div class="benefit-card animate-on-scroll fade-in-up stagger">
             <img src="{{ '/assets/images/banners/benefit-anchoring.webp' | relative_url }}" alt="Forankre initiativer i ledergruppen" class="benefit-banner">
-            <h3>Forankre initiativer i ledergruppen</h3>
-            <p>Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft.</p>
-            <a href="{{ '/forankring/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            <div class="benefit-card-content">
+                <h3>Forankre initiativer i ledergruppen</h3>
+                <p>Skap en bedre felles forståelse av grunnlaget for nye initiativer. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft.</p>
+                <a href="{{ '/forankring/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+            </div>
         </div>
     </div>
 </section>

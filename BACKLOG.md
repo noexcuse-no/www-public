@@ -7,7 +7,7 @@ Completed tasks are tracked in CHANGELOG.md and should not appear here.
 
 ---
 
-## Execution Order (Refined 2026-05-25)
+## Execution Order (Refined 2026-05-26)
 
 Following the design interview and health survey, tasks are grouped into phases that respect dependencies and maximize visible progress.
 
@@ -19,9 +19,45 @@ Phase 0 (Health Sprint), Phase 1 (Quick Wins), Phase 2 (Perspektiv Architecture)
 
 ### Phase 4 — New Articles
 
-*Specs to be created tomorrow (2026-05-26). Implementation after spec review.*
+*Specs created 2026-05-26. Implementation after spec review.*
 
-See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md` (to be created).
+See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`.
+
+**N1 — Triader** ✅ Spec complete
+- **New file:** `_pages/ledelse_triader.md`
+- **URL:** `/triader/`
+- **Source:** Logan, King & Fischer-Wright — *Tribal Leadership* (2011)
+- **Spec:** ✅ `.specs/triader/README.md` created
+- **Content:** Triads as structural tool, dyad vs. triad stability, formation steps, warning signs
+- **Design:** Style 3 (Section Illustration) for inline illustrations, Style 2 for hero
+- **Cross-links:** From `/identitet/` and `/usikkerhet/`
+- **Images needed:** 1 hero banner (Style 2), 2 section illustrations (Style 3)
+- **CTA:** Links to Ledelse 60:2
+- **Status:** Spec complete. **Blocked:** Images + content draft needed.
+
+**N2 — Makt eller tjeneste** ✅ Spec complete
+- **New file:** `_pages/ledelse_makt.md`
+- **URL:** `/makt/`
+- **Source:** Pfeffer (*Power*, 2010) ↔ Blanchard & Barrett (*Lead with LUV*, 2011) — tension pair from synthesis.md
+- **Spec:** ✅ `.specs/makt/README.md` created
+- **Content:** The central diagnostic tension: power acquisition vs. servant leadership. Pfeffer side + Blanchard side + spectrum. Includes full "The Price of Power" subsection.
+- **Design:** Style 2 for hero, Style 3 for section illustrations
+- **Cross-links:** To `/påvirkning/` (brief Price of Power there), to `/mennesker/` (servant leadership)
+- **Images needed:** 1 hero banner (Style 2), 2-3 section illustrations (Style 3)
+- **CTA:** Links to Ledelse 60:2
+- **Status:** Spec complete. **Blocked:** Images + content draft needed.
+
+**N3 — Fire perspektiver** ✅ Spec complete
+- **New file:** `_pages/ledelse_perspektiv.md`
+- **URL:** `/perspektiv/`
+- **Source:** Bolman & Deal Ch.16 — "Integrating the Frames"
+- **Spec:** ✅ `.specs/perspektiv/README.md` created
+- **Content:** Multiframe thinking as the actual leadership skill. Why single-frame thinking fails. "No scoring" philosophical backing grounded in Bolman + Hubbard + Logan.
+- **Design:** Style 2 for hero, Style 3 for section illustrations
+- **Cross-links:** To all four perspektiv articles ("no scoring" backing in each frame's reference section)
+- **Images needed:** 1 hero banner (Style 2), 1-2 section illustrations (Style 3)
+- **CTA:** Links to Ledelse 60:2
+- **Status:** Spec complete. **Blocked:** Images + content draft needed.
 
 **N1 — Triader**
 - **New file:** `_pages/ledelse_triader.md`
@@ -58,9 +94,9 @@ See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/READ
 
 ---
 
-### Phase 5 — Existing Article Expansions
+### Phase 5 — Existing Article Expansions ✅ COMPLETE
 
-*Depends on N1-N3 existing. Order: E1 → E2/E3 → E4 → E5 → E6.*
+*Completed 2026-05-26. See CHANGELOG.md [1.6.0].*
 
 See relevant spec files for each expansion.
 
@@ -126,37 +162,13 @@ See relevant spec files for each expansion.
 
 ---
 
-### Phase 7 — Assets & Performance
+### Phase 7 — Assets & Performance ✅ COMPLETE
 
-*Batch operations after all content and UI work is done.*
+*Completed 2026-05-26. See CHANGELOG.md [1.6.0].*
 
-**Image Optimization**
+**Image Optimization** ✅ All tasks complete
 
-See `.specs/image-optimization/README.md` and `.design/graphics.md` §Image Resize Guidelines.
-
-Convert all PNG images to WebP format with appropriate resizing for web performance.
-
-- [ ] **IMG1:** Create `.design/graphics/originals/` directory structure
-- [ ] **IMG2:** Copy all 44 PNG files to `.design/graphics/originals/` preserving folder structure
-- [ ] **IMG3:** Convert banners (32 files) — 1920×1080 max, quality 85
-- [ ] **IMG4:** Convert icons (9 files) — 512×512 max, quality 85
-- [ ] **IMG5:** Convert hero/illustration images — 1920×1080 max, quality 85
-- [ ] **IMG6:** Convert logo files (2 files) — 400×400 max, quality 85
-- [ ] **IMG7:** Convert profile photos (1 file) — 400×400 max, quality 85
-- [ ] **IMG8:** Delete original PNG files from `assets/images/`
-- [ ] **IMG9:** Update `.design/graphics.md` with resize guidelines section
-
-**SEO Foundation**
-
-See `.specs/seo/README.md` for full specification.
-
-- [ ] **S1:** Generate comprehensive sitemap.xml with all pages, products, profiles
-- [ ] **S2:** Add canonical URLs to metadata.html
-- [ ] **S3:** Implement page-specific meta description fallback
-- [ ] **S4:** Update robots.txt with sitemap reference
-- [ ] **S5:** Create site.webmanifest (PWA manifest)
-- [ ] **S6:** Add BreadcrumbList JSON-LD to all pages
-- [ ] **S7:** Add FAQPage schema to /tillit/ and relevant content pages
+**SEO Foundation** ✅ All tasks complete
 
 ---
 
@@ -225,9 +237,9 @@ When generating images for N1-N3 and future content, ensure maximum context is k
 
 | Spec file | Action | Purpose | Status |
 |-----------|--------|---------|--------|
-| `.specs/triader/README.md` | **Create** | Triader article: concept, mechanics, formation, cross-links | **Blocked: tomorrow** |
-| `.specs/makt/README.md` | **Create** | Makt article: Pfeffer vs. Blanchard tension, Price of Power full | **Blocked: tomorrow** |
-| `.specs/perspektiv/README.md` | **Create** | Perspektiv article: multiframe thinking, "no scoring" backing | **Blocked: tomorrow** |
+| `.specs/triader/README.md` | ✅ **Created** | Triader article: concept, mechanics, formation, cross-links | **Ready for review** |
+| `.specs/makt/README.md` | ✅ **Created** | Makt article: Pfeffer vs. Blanchard tension, Price of Power full | **Ready for review** |
+| `.specs/perspektiv/README.md` | ✅ **Created** | Perspektiv article: multiframe thinking, "no scoring" backing | **Ready for review** |
 | `.specs/organisasjonskultur/README.md` | **Update** | Add Kotter 8-step + "organisert anarki" integration | Ready |
 | `.specs/grc/README.md` | **Update** | Confirm E1-E6 integration points | Ready |
 | `.specs/ledelse-60-2/README.md` | **Update** | Reflect N1-N3 additions, E1-E6 expansions | Ready |

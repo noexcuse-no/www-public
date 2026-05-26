@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Specifications for N1-N3 new articles: `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`
+
+### Changed
+
+- "Les mer →" benefit card links restyled as pill buttons with accent color, hover lift effect, and 44px minimum touch target
+- Benefit cards redesigned with image + content separation, flexbox layout, and enhanced shadows
+- Navbar links increased to 44px touch targets with hover background and dark mode support
+- Header stacks vertically on mobile (<600px) for better logo + navigation fit
+
 ## [1.6.0] - 2026-05-26
 
 ### Added
