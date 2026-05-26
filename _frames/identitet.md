@@ -19,7 +19,7 @@ json_ld:
       name: "Organisasjonskultur"
 
 hero:
-  banner_image: "assets/images/banners/perspektiv-identitet.png"
+  banner_image: "assets/images/banners/perspektiv-identitet.webp"
   alt: "Identitetsperspektivet i ledelse"
   breadcrumb: "← Ledelse 60:2"
   intro: "Handler om å se organisasjonen som en kultur — med sine ritualer, historier og verdier. Det som betyr noe, er ikke bare hva som skjer, men hva det betyr."
@@ -78,7 +78,7 @@ questions:
   - "Har vi en felles forståelse av hva slags organisasjon vi vil være?"
 
 cta:
-  image: "assets/images/banners/illustrasjon-identitet-cta.png"
+  image: "assets/images/banners/illustrasjon-identitet-cta.webp"
   alt: "Illustrasjon for kartlegging av kultur"
   heading: "Få kartlagt ledergruppens kulturelle modenhet"
   body: |
@@ -90,7 +90,7 @@ about:
   body: |
     Identitetsperspektivet i Ledelse 60:2 bygger på Bolman & Deals symbolske ramme, kombinert med Dave Logans forskning på tribal ledelse fra «Tribal Leadership».
 
-    Logans fem stadier for kulturutvikling gir et konkret verktøy for å forstå hvor en organisasjon befinner seg kulturmessig — og hva som kreves for å løfte den.
+    Logan beskriver kulturstadier som beskrivende — ikke normative. Ledelse 60:2 identifiserer hvor organisasjonen er, ikke hvor den bør være. Det handler om innsikt, ikke evaluering.
   link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
   link_url: "/forskning/"
 

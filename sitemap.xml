@@ -1,16 +1,39 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://noexcuse.no/</loc>
-  <lastmod>2025-07-25T01:00:53+00:00</lastmod>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://noexcuse.no/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  {% for page in site.pages %}
+  {% if page.permalink and page.permalink != "/sitemap.xml" %}
+  <url>
+    <loc>https://noexcuse.no{{ page.permalink }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% endif %}
+  {% endfor %}
+  {% for product in site.products %}
+  {% if product.url %}
+  <url>
+    <loc>https://noexcuse.no{{ product.url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% endif %}
+  {% endfor %}
+  {% for profile in site.profiles %}
+  {% if profile.permalink %}
+  <url>
+    <loc>https://noexcuse.no{{ profile.permalink }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endif %}
+  {% endfor %}
 </urlset>

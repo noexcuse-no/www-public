@@ -21,7 +21,7 @@ json_ld:
 
 <section class="frame-hero">
     <div class="frame-hero-image">
-        <img src="{{ '/assets/images/banners/benefit-anchoring.png' | relative_url }}" alt="Beslutningstaking i ledelse">
+        <img src="{{ '/assets/images/banners/benefit-anchoring.webp' | relative_url }}" alt="Beslutningstaking i ledelse">
     </div>
     <div class="frame-hero-content animate-on-scroll fade-in">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
@@ -34,6 +34,7 @@ json_ld:
     <h2>Hvorfor ledere ofte tar dårlige beslutninger</h2>
     <p>Jeffrey Pfeffer har brukt karrieren sin på å dokumentere gapet mellom hvordan organisasjoner hevder beslutninger tas, og hvordan de faktisk tas. I «Power: Why Some People Have It — and Others Don't» viser han at makt og politikk spiller en langt større rolle enn de fleste er villige til å innrømme.^[pfeffer2010]</p>
     <p>God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. I norske organisasjoner er avstanden mellom formell og reell beslutningsmakt ofte undervurdert. Ansvar uten autoritet er en teoretisk øvelse.</p>
+    <p>I komplekse beslutningsmiljøer — der problemer, løsninger, deltakere og valgmuligheter flyter sammen — er det ikke alltid den «beste» ideen som vinner. Beslutninger tas av de som har bygget tillit og innflytelse over tid, ikke nødvendigvis av de med den mest rasjonelle analysen.</p>
     <p>Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning systematisk avviker fra rasjonalitet — ikke fordi folk er dumme, men fordi hjernen bruker heuristikker som ofte feiler.^[kahneman2011]</p>
 </section>
 

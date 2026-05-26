@@ -19,7 +19,7 @@ json_ld:
       name: "Organisasjonsstruktur"
 
 hero:
-  banner_image: "assets/images/banners/perspektiv-struktur.png"
+  banner_image: "assets/images/banners/perspektiv-struktur.webp"
   alt: "Strukturperspektivet i ledelse"
   breadcrumb: "← Ledelse 60:2"
   intro: "Handler om å skape et system der oppgaver, roller og mål henger sammen. Når strukturen fungerer, merkes det ikke. Når den ikke fungerer, merkes det umiddelbart."
@@ -78,7 +78,7 @@ questions:
   - "Er det regler og prosesser som ble laget for et problem som ikke lenger eksisterer?"
 
 cta:
-  image: "assets/images/banners/illustrasjon-struktur-cta.png"
+  image: "assets/images/banners/illustrasjon-struktur-cta.webp"
   alt: "Illustrasjon for kartlegging av struktur"
   heading: "Få kartlagt ledergruppens strukturelle modenhet"
   body: |
@@ -90,7 +90,9 @@ about:
   body: |
     Strukturperspektivet i Ledelse 60:2 bygger på Lee Bolman og Terrence Deals fire perspektiver-modell fra «Reframing Organizations», kombinert med Douglas Hubbards metoder for måling av immaterielle størrelser fra «How to Measure Anything».
 
-    Hubbard argumenterer for at «umulige» målinger ofte bare er dårlig definerte. Ved å operasjonalisere ledelseskvalitet kan man måle den — selv når den virker flytende og subjektiv.
+    Hubbard argumenterer for at all måling reduserer usikkerhet — ikke eliminerer den. Ledelse 60:2 hevder ikke presise scorer, bare perspektiver. Når vi kartlegger roller, mål og prosesser, gir vi ledergruppen et felles utgangspunkt — ikke en endelig dom.
+
+    Hubbarts «Applied Information Economics» (AIE) er en strukturert tilnærming til måling av det som virker umålelig. De sju stegene er: (1) Definer beslutningen, (2) Bestem hva som er ukjent, (3) Verdsett informasjonen, (4) Design måleinstrumentet, (5) Samle data, (6) Analyser, og (7) Gjør den informerte beslutningen. Ledelse 60:2 anvender prinsippet — ikke hele metoden — ved å gi ledergruppen strukturerte spørsmål som reduserer usikkerhet om egen modenhet.
   link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
   link_url: "/forskning/"
 

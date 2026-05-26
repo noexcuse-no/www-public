@@ -29,7 +29,7 @@ json_ld:
 
 <section class="science-hero">
     <div class="science-hero-image">
-        <img src="{{ '/assets/images/banners/science-foundation.png' | relative_url }}" alt="Vitenskapelig fundament">
+        <img src="{{ '/assets/images/banners/science-foundation.webp' | relative_url }}" alt="Vitenskapelig fundament">
     </div>
     <div class="science-hero-content">
         <p class="science-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
@@ -47,7 +47,7 @@ json_ld:
     <div class="frames-horizontal">
         <div class="frames-row">
             <div class="frame-item frame-struct">
-                <img src="{{ '/assets/images/banners/perspektiv-struktur.png' | relative_url }}" alt="Struktur" class="frame-image">
+                <img src="{{ '/assets/images/banners/perspektiv-struktur.webp' | relative_url }}" alt="Struktur" class="frame-image">
                 <div class="frame-content">
                     <h3>Strukturperspektivet</h3>
                     <p class="frame-desc">Roller, mål, prosesser, koordinering, ansvar</p>
@@ -56,7 +56,7 @@ json_ld:
                 </div>
             </div>
             <div class="frame-item frame-human">
-                <img src="{{ '/assets/images/banners/perspektiv-mennesker.png' | relative_url }}" alt="Menneske" class="frame-image">
+                <img src="{{ '/assets/images/banners/perspektiv-mennesker.webp' | relative_url }}" alt="Menneske" class="frame-image">
                 <div class="frame-content">
                     <h3>Menneskeperspektivet</h3>
                     <p class="frame-desc">Tillit, motivasjon, relasjoner, utvikling, medvirkning</p>
@@ -67,7 +67,7 @@ json_ld:
         </div>
         <div class="frames-row">
             <div class="frame-item frame-political">
-                <img src="{{ '/assets/images/banners/perspektiv-påvirkning.png' | relative_url }}" alt="Påvirkning" class="frame-image">
+                <img src="{{ '/assets/images/banners/perspektiv-påvirkning.webp' | relative_url }}" alt="Påvirkning" class="frame-image">
                 <div class="frame-content">
                     <h3>Påvirkningsperspektivet</h3>
                     <p class="frame-desc">Makt, interesser, konflikt, ressurser, politikk</p>
@@ -76,7 +76,7 @@ json_ld:
                 </div>
             </div>
             <div class="frame-item frame-symbol">
-                <img src="{{ '/assets/images/banners/perspektiv-identitet.png' | relative_url }}" alt="Identitet" class="frame-image">
+                <img src="{{ '/assets/images/banners/perspektiv-identitet.webp' | relative_url }}" alt="Identitet" class="frame-image">
                 <div class="frame-content">
                     <h3>Identitetsperspektivet</h3>
                     <p class="frame-desc">Kultur, mening, symboler, verdier, historier</p>
@@ -104,7 +104,7 @@ json_ld:
 
     <div class="science-divider">
         <div class="science-divider-image">
-            <img src="{{ '/assets/images/banners/science-research.png' | relative_url }}" alt="">
+            <img src="{{ '/assets/images/banners/science-research.webp' | relative_url }}" alt="">
         </div>
         <div class="science-divider-content">
             <h3>Norske forskningsetiske standarder</h3>

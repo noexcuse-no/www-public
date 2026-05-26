@@ -7,8 +7,8 @@ json_ld:
   name: "No Excuse AS"
   description: "Vi hjelper ledergrupper med å bli bedre — uten byråkrati. Forbedrer internkultur og kommunikasjon i bedrifter."
   url: "https://noexcuse.no"
-  logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.png"
-  image: "https://noexcuse.no/assets/images/og-image.png"
+  logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.webp"
+  image: "https://noexcuse.no/assets/images/og-image.webp"
   foundingDate: "2025-06"
   foundingLocation: "Norge"
   areaServed: "Norge"
@@ -23,7 +23,7 @@ json_ld:
 
 <section class="about-hero">
     <div class="about-hero-image">
-        <img src="{{ '/assets/images/banners/banner-om-oss.png' | relative_url }}" alt="No Excuse AS - Vi hjelper ledergrupper">
+        <img src="{{ '/assets/images/banners/banner-om-oss.webp' | relative_url }}" alt="No Excuse AS - Vi hjelper ledergrupper">
     </div>
     <div class="about-hero-content animate-on-scroll fade-in">
         <h1>Om oss</h1>

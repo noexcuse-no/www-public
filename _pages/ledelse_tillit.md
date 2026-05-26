@@ -21,7 +21,7 @@ json_ld:
 
 <section class="frame-hero">
     <div class="frame-hero-image">
-        <img src="{{ '/assets/images/banners/benefit-control.png' | relative_url }}" alt="Tillit i ledelse">
+        <img src="{{ '/assets/images/banners/benefit-control.webp' | relative_url }}" alt="Tillit i ledelse">
     </div>
     <div class="frame-hero-content animate-on-scroll fade-in">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
@@ -114,3 +114,36 @@ json_ld:
     <h2>Referanser</h2>
     <p>Artikkelen bygger på forskning fra blant andre Robert Greenleaf (servant leadership), Amy Edmondson (psychological safety), og en omfattende metastudie av servant leadership-effekter fra 2019.^[greenleaf1970]^[eva2019]^[edmondson2019]^[dirks2009]^[zenger2022]</p>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hva er psykologisk trygghet i ledelse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Psykologisk trygghet er en felles tro i teamet på at det er trygt å ta interpersonelle risikoer. Med høy psykologisk trygghet tør folk si ifra når noe er galt, komme med nye ideer, og innrømme feil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hva er servant leadership (tjenerledelse)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tjenerledelse er en ledelsesfilosofi der lederen primært tjener medarbeiderne, ikke omvendt. Robert Greenleaf introduserte begrepet i 1970. Forskning viser at det gir positive effekter på organisatorisk forpliktelse, jobbtilfredshet og prestasjon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvorfor feiler de fleste ledere på tillit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De fleste ledere tror de er mer tilgjengelige og gir mer konstruktiv feedback enn de faktisk er. Det er gapet mellom intensjon og opplevelse som er tillitsproblemet. Tillit bygges av konsekvent atferd over tid, ikke av gode intensjoner."
+      }
+    }
+  ]
+}
+</script>

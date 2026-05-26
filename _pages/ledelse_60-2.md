@@ -10,7 +10,7 @@ json_ld:
     type: "Organization"
     name: "No Excuse AS"
     url: "https://noexcuse.no"
-    logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.png"
+    logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.webp"
     contactPoint:
       contactType: "booking"
       url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
@@ -39,7 +39,7 @@ json_ld:
 
 <section class="landing-hero">
     <div class="landing-hero-image">
-        <img src="{{ '/assets/images/hero-illustration.png' | relative_url }}" alt="Ledelse 60:2">
+        <img src="{{ '/assets/images/hero-illustration.webp' | relative_url }}" alt="Ledelse 60:2">
     </div>
     <div class="landing-hero-content animate-on-scroll fade-in">
         <h1>Ledelse 60:2</h1>
@@ -55,25 +55,25 @@ json_ld:
     <h2>Fire gode grunner</h2>
     <div class="landing-benefits-grid stagger-parent" style="--stagger-delay: 100ms;">
         <div class="benefit-card animate-on-scroll fade-in-up stagger">
-            <img src="{{ '/assets/images/banners/benefit-control.png' | relative_url }}" alt="Få kontroll uten byråkrati" class="benefit-banner">
+            <img src="{{ '/assets/images/banners/benefit-control.webp' | relative_url }}" alt="Få kontroll uten byråkrati" class="benefit-banner">
             <h3>Bedre ledelse uten byråkrati</h3>
             <p>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema. Dyrk engasjement og eierskap blant ansatte, ikke regler og regimer. Ikke fall for fristelsen å møte økt kompleksitet med micromanagement og mistenksomhet - ha tro på at ansatte kan bruke sunn fornuft!</p>
             <a href="{{ '/tillit/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card animate-on-scroll fade-in-up stagger">
-            <img src="{{ '/assets/images/banners/benefit-ai.png' | relative_url }}" alt="Oppnå målbare gevinster med KI" class="benefit-banner">
+            <img src="{{ '/assets/images/banners/benefit-ai.webp' | relative_url }}" alt="Oppnå målbare gevinster med KI" class="benefit-banner">
             <h3>Målbare gevinster med GenKI</h3>
             <p>Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle proklamerer om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
             <a href="{{ '/generativ-ki/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card animate-on-scroll fade-in-up stagger">
-            <img src="{{ '/assets/images/banners/benefit-future.png' | relative_url }}" alt="Bli forberedt på en usikker fremtid" class="benefit-banner">
+            <img src="{{ '/assets/images/banners/benefit-future.webp' | relative_url }}" alt="Bli forberedt på en usikker fremtid" class="benefit-banner">
             <h3>Bli forberedt på en usikker fremtid</h3>
             <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.</p>
             <a href="{{ '/usikkerhet/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
         </div>
         <div class="benefit-card animate-on-scroll fade-in-up stagger">
-            <img src="{{ '/assets/images/banners/benefit-anchoring.png' | relative_url }}" alt="Forankre initiativer i ledergruppen" class="benefit-banner">
+            <img src="{{ '/assets/images/banners/benefit-anchoring.webp' | relative_url }}" alt="Forankre initiativer i ledergruppen" class="benefit-banner">
             <h3>Forankre initiativer i ledergruppen</h3>
             <p>Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft.</p>
             <a href="{{ '/forankring/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
@@ -86,19 +86,19 @@ json_ld:
     <div class="landing-process-steps stagger-parent" style="--stagger-delay: 100ms;">
         <div class="process-step animate-on-scroll fade-in-up stagger">
             <div class="process-step-number">1</div>
-            <img src="{{ '/assets/images/banners/step-talk.png' | relative_url }}" alt="Uforpliktende samtale" class="process-banner">
+            <img src="{{ '/assets/images/banners/step-talk.webp' | relative_url }}" alt="Uforpliktende samtale" class="process-banner">
             <h3>Uforpliktende samtale</h3>
             <p>Vi konkretiserer hva dere vil oppnå med modenhetsanalysen.</p>
         </div>
         <div class="process-step animate-on-scroll fade-in-up stagger">
             <div class="process-step-number">2</div>
-            <img src="{{ '/assets/images/banners/step-interview.png' | relative_url }}" alt="To timers strukturert intervju" class="process-banner">
+            <img src="{{ '/assets/images/banners/step-interview.webp' | relative_url }}" alt="To timers strukturert intervju" class="process-banner">
             <h3>To timers strukturert intervju</h3>
             <p>60 diagnostiske spørsmål med inntil fem ledere.</p>
         </div>
         <div class="process-step animate-on-scroll fade-in-up stagger">
             <div class="process-step-number">3</div>
-            <img src="{{ '/assets/images/banners/step-report.png' | relative_url }}" alt="Rapport og anbefalinger" class="process-banner">
+            <img src="{{ '/assets/images/banners/step-report.webp' | relative_url }}" alt="Rapport og anbefalinger" class="process-banner">
             <h3>Rapport og anbefalinger</h3>
             <p>Sammenlikning med best practice og konkrete tiltak.</p>
         </div>

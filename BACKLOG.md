@@ -11,78 +11,9 @@ Completed tasks are tracked in CHANGELOG.md and should not appear here.
 
 Following the design interview and health survey, tasks are grouped into phases that respect dependencies and maximize visible progress.
 
-### Phase 0 — Health & Quality Sprint
+### Phase 0-3 — Completed
 
-*Prerequisite for all other work. Fixes broken tooling and immediate quality issues.*
-
-- [ ] **H1:** Restore missing lint/test tooling (`npm install`)
-- [ ] **H2:** Fix eslint error (add newline to `dark-mode-toggle.js`)
-- [ ] **H3:** Add `<meta name="description">` to `_layouts/default.html` with page-specific fallback
-- [ ] **H4:** Create `/avtale/` landing page or redirect (currently links to raw PDF)
-- [ ] **H5:** Run full lint suite after H1 to catch any hidden issues
-
-### Phase 1 — Quick Wins (Language & Quality)
-
-*Immediate gratification. No specs needed, low risk, high polish.*
-
-- [ ] **Q1:** Fiks "høy fleksibel" → "høye fleksible"
-  - **File:** `_pages/om_metode.md:37`
-- [ ] **Q2:** Fiks "stimulus" → "stimulere"
-  - **File:** `_pages/ledelse_struktur.md:59`
-- [ ] **Q3:** Erstatt "maser" med "proklamerer"
-  - **Files:** `_pages/ledelse-60-2.md:66`, `_pages/ledelse_60-2.md:66`
-- [ ] **Q4:** Fjern duplikat JSON-LD description
-  - **File:** `_pages/om_oss.md`
-  - **Keep:** Line 8. **Remove:** Line 15.
-- [ ] **Q5:** Legg til sitering for Logan-prosentandelene
-  - **File:** `_pages/ledelse_usikkerhet.md:56-71`
-- [ ] **Q6:** Myk opp "forskning" → "kunnskapsproduksjon"
-  - **File:** `_pages/om_metode.md`
-
-### Phase 2 — Foundation (Architecture)
-
-*Must happen before new articles to avoid double work.*
-
-**PA1 — Perspektiv Articles Architecture**
-
-See `.specs/ledelse-60-2/perspektiv-articles.md` for full specification.
-
-- [ ] **PA1.1:** Create `_frames/` collection with frontmatter for all 4 perspektiv articles
-- [ ] **PA1.2:** Create `_layouts/perspektiv.html` layout rendering all sections from frontmatter
-- [ ] **PA1.3:** Extract embedded CSS → `_includes/perspektiv-styles.css`
-- [ ] **PA1.4:** Rewrite 4 article pages as lightweight content files using new layout
-- [ ] **PA1.5:** Rename images `frame-X.png` → `perspektiv-X.png`
-- [ ] **PA1.6:** Update CSS class names `.frame-*` → `.perspektiv-*`
-- [ ] **PA1.7:** Update all internal cross-references (links, image paths, class names)
-- [ ] **PA1.8:** Update `.specs/ledelse-60-2/README.md` Frame Articles section to reflect new architecture
-
----
-
-### Phase 3 — Content Core (Critical Rewrites)
-
-*Specs exist, ready for implementation.*
-
-See `.specs/grc/README.md`, `.specs/generativ-ki/README.md`, `.specs/organisasjonskultur/README.md` for full specifications.
-
-- [ ] **C1:** Veve GRC inn i eksisterende artikler
-  - **Spec:** `.specs/grc/README.md`
-  - **Approach:** Extend, don't replace. 1-2 sentences per article.
-  - **Target:** `/struktur/`, `/mennesker/`, `/påvirkning/`, `/identitet/`, `/tillit/`, `/forankring/`
-  - **GRC mapping:**
-    - Governance → Påvirkningsperspektivet (maktfordeling, beslutningsautoritet)
-    - Risk → `/usikkerhet/` + benefit-future
-    - Compliance → Strukturperspektivet (roller, ansvar, regler, ISO-erfaring)
-
-- [ ] **C2:** Skriv om `/generativ-ki/` til AI-ledelse + OKR/KPI
-  - **Spec:** `.specs/generativ-ki/README.md`
-  - **File:** `_pages/ledelse_generativ-ki.md`
-  - **Keep URL:** `/generativ-ki/`
-  - **Direction:** AI leadership skills + OKR/KPI for measuring AI-assisted work
-
-- [ ] **C3:** Legg til Kotter 8-stegs endringsmodell i `/usikkerhet/`
-  - **Spec:** `.specs/organisasjonskultur/README.md`
-  - **File:** `_pages/ledelse_usikkerhet.md`
-  - **Start:** Detailed (shorten later)
+Phase 0 (Health Sprint), Phase 1 (Quick Wins), Phase 2 (Perspektiv Architecture), and Phase 3 (Content Core) are complete. See CHANGELOG.md [1.3.0]–[1.5.0].
 
 ---
 
