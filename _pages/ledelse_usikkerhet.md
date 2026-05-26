@@ -57,17 +57,17 @@ json_ld:
 
     <div class="frame-element">
         <h3>Trinn 2: «Mitt liv suger»</h3>
-        <p>Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.</p>
+        <p>Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.^[logan2009]</p>
     </div>
 
     <div class="frame-element">
         <h3>Trinn 3: «Jeg er great, du er det ikke»</h3>
-        <p>Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.</p>
+        <p>Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.^[logan2009]</p>
     </div>
 
     <div class="frame-element">
         <h3>Trinn 4: «Vi er great, andre er ikke»</h3>
-        <p>Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.</p>
+        <p>Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.^[logan2009]</p>
     </div>
 
     <div class="frame-element">
@@ -129,6 +129,10 @@ json_ld:
         <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
+
+[^logan2009]: Logan, D., King, J., & Fischer-Wright, H. (2009). *Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization*. Harper Business. Data on cultural stage distribution: 25% Stage 2, 48% Stage 3, 22% Stage 4, 3% Stage 5 (pp. 38–41).
+
+[^kotter2012]: Kotter, J. P. (2012). "Leading Change: Why Transformation Efforts Fail". *Harvard Business Review*, 90(3), 59–67. Original statistic: 70% of change initiatives fail.
 
 <style>
 .frame-hero {
