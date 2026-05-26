@@ -10,3 +10,5 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  frames:
+    output: false

@@ -1,0 +1,93 @@
+---
+layout: page
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/perspektiv-styles.css' | relative_url }}">
+
+{% assign frame_id = page.url | split: '/' | last %}
+{% assign frame = site.frames | where: "id", frame_id | first %}
+
+<!-- Hero Section -->
+<section class="perspektiv-hero">
+  <div class="perspektiv-hero-image">
+    <img src="{{ frame.hero.banner_image | relative_url }}" alt="{{ frame.hero.alt }}">
+  </div>
+  <div class="perspektiv-hero-content">
+    <p class="perspektiv-breadcrumb"><a href="{{ '/' | relative_url }}">{{ frame.hero.breadcrumb }}</a></p>
+    <h1>{{ frame.title }}</h1>
+    <p class="perspektiv-intro">{{ frame.hero.intro }}</p>
+  </div>
+</section>
+
+<!-- Intro Section -->
+<section class="perspektiv-section">
+  <h2>{{ frame.intro.heading }}</h2>
+  {{ frame.intro.body | markdownify }}
+</section>
+
+<!-- Three Elements with illustration -->
+<section class="perspektiv-section">
+  <h2>De tre hovedelementene</h2>
+  <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i {{ frame.title | downcase }}" class="section-illustration">
+  
+  {% for element in frame.elements %}
+  <div class="perspektiv-element">
+    <h3>{{ element.title }}</h3>
+    {{ element.body | markdownify }}
+    <p><strong>Tegn på god {{ element.title | downcase }}:</strong> {{ element.signs.positive }}</p>
+    <p><strong>Tegn på {{ element.title | downcase }}-problemer:</strong> {{ element.signs.negative }}</p>
+  </div>
+  {% endfor %}
+</section>
+
+<!-- Leader Value Section -->
+<section class="perspektiv-section">
+  <h2>{{ frame.leader_value.heading }}</h2>
+  {{ frame.leader_value.body | markdownify }}
+</section>
+
+<!-- Challenges Section -->
+<section class="perspektiv-section">
+  <h2>Vanlige {{ frame.id }}lige utfordringer</h2>
+  <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige {{ frame.id }}lige utfordringer" class="section-illustration">
+  
+  <div class="perspektiv-challenges">
+    {% for challenge in frame.challenges %}
+    <div class="perspektiv-challenge">
+      <h4>{{ challenge.title }}</h4>
+      <p>{{ challenge.body }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Questions Section -->
+<section class="perspektiv-section">
+  <h2>Spørsmål {{ frame.id }}perspektivet kan hjelpe dere å besvare</h2>
+  <ul class="perspektiv-questions">
+    {% for question in frame.questions %}
+    <li>{{ question }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- CTA Section -->
+<section class="perspektiv-cta">
+  <img src="{{ frame.cta.image | relative_url }}" alt="{{ frame.cta.alt }}" class="section-illustration">
+  <h2>{{ frame.cta.heading }}</h2>
+  {{ frame.cta.body | markdownify }}
+  <div class="perspektiv-cta-buttons">
+    <a href="{{ frame.cta.booking_url }}" class="product-cta" onclick="openBookingModal('{{ frame.cta.booking_url }}'); return false;">Bestill uforpliktende samtale</a>
+    <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+  </div>
+</section>
+
+<!-- About / Scientific Basis Section -->
+<section class="perspektiv-section perspektiv-about">
+  <h2>{{ frame.about.heading }}</h2>
+  {{ frame.about.body | markdownify }}
+  <a href="{{ frame.about.link_url | relative_url }}" class="perspektiv-link">{{ frame.about.link_text }}</a>
+</section>
+
+<!-- Custom content from page body -->
+{{ content }}
