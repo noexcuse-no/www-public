@@ -305,16 +305,6 @@ See `.specs/seo/README.md` for full specification.
 
 ---
 
-## Blocked
-
-- **Q7 — Katalysator:** Behold som planlagt funksjon. **blocked:** Deferred to June 2026. Iterative research + brainstorming session required before any implementation.
-  - **Reference:** `.specs/shared/product-katalysator.txt`
-  - **Dependencies:** User availability for brainstorming, product positioning decision
-
-- **N1-N3 Specs:** `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md` creation **blocked:** Deferred to tomorrow (2026-05-26). Requires focused spec-writing session before implementation can begin.
-
----
-
 ## Design Decisions (2026-05-25)
 
 Results from design interview for future reference:
@@ -389,3 +379,13 @@ All new images must follow `.design/graphics.md` prompt rules:
 ## Completed
 
 Do not add completed work here, add them to CHANGELOG.md
+
+---
+
+## Blocked
+
+- **Q7 — Katalysator:** Behold som planlagt funksjon. **blocked:** Deferred to June 2026. Iterative research + brainstorming session required before any implementation.
+  - **Reference:** `.specs/shared/product-katalysator.txt`
+  - **Dependencies:** User availability for brainstorming, product positioning decision
+
+- **N1-N3 Specs:** `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md` creation **blocked:** Deferred to tomorrow (2026-05-26). Requires focused spec-writing session before implementation can begin.
