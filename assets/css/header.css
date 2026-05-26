@@ -1,9 +1,45 @@
 .header {
-    background-color: var(--banner-background-light);
-    color: var(--banner-text-light);
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
     text-align: center;
     padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
+
 .banner {
-    padding-top: 1em;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo-link {
+    display: block;
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    height: 50px;
+    width: auto;
+}
+
+.logo-dark {
+    display: none;
+}
+
+.dark-mode .header {
+    background-color: var(--banner-background-dark);
+    color: var(--banner-text-dark);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .logo-light {
+    display: none;
+}
+
+.dark-mode .logo-dark {
+    display: block;
 }
