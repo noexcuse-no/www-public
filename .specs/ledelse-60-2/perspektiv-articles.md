@@ -261,8 +261,8 @@ After rename, update all references:
 
 ## Dependencies
 
-- `_config.yml` — add `frames` collection with `output: true`
-- `_includes/perspektiv-styles.css` — extracted and renamed CSS
+- `_config.yml` — add `frames` collection with `output: false`
+- `assets/css/perspektiv-styles.css` — extracted and renamed CSS
 - `_layouts/perspektiv.html` — new layout file
 - `_frames/` — 4 new frontmatter files
 - Image renames in `assets/images/banners/`
@@ -278,3 +278,24 @@ After rename, update all references:
 5. Internal links work correctly
 6. Layout renders all 8 sections from frontmatter
 7. Custom content in page body renders after standard sections
+
+---
+
+## Implementation Status
+
+**Completed 2026-05-26.** All acceptance criteria met:
+
+- ✅ `_frames/` collection created with structured frontmatter for all 4 articles
+- ✅ `_layouts/perspektiv.html` renders all sections from `site.frames`
+- ✅ CSS extracted to `assets/css/perspektiv-styles.css` with `.perspektiv-*` classes
+- ✅ 4 article pages rewritten as lightweight files using `layout: perspektiv`
+- ✅ Images renamed: `frame-X.png` → `perspektiv-X.png`
+- ✅ Cross-references updated in `om_metode.md`
+- ✅ `article.css` updated with `.perspektiv-*` classes for future reuse
+- ✅ Dark mode variants included in extracted stylesheet
+
+### Deviation from Original Spec
+
+1. **CSS location**: Moved from `_includes/perspektiv-styles.css` to `assets/css/perspektiv-styles.css` for proper static asset serving
+2. **Collection output**: Set `output: false` instead of `output: true` for `frames` collection — these files are data sources, not standalone pages
+3. **Color accent**: Added `var(--perspektiv-accent)` support in `.perspektiv-element` border-left for per-frame theming
