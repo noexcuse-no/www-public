@@ -1,0 +1,14 @@
+{% assign cta_heading = include.heading | default: "Få kartlagt organisasjonen" %}
+{% assign cta_body = include.body | default: "Ledelse 60:2 inneholder spørsmål som kartlegger ledergruppens styrker og utfordringer. Bestill en uforpliktende samtale for å lære mer." %}
+{% assign cta_booking_url = include.booking_url | default: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" %}
+{% assign cta_secondary_url = include.secondary_url | default: "/" %}
+{% assign cta_secondary_text = include.secondary_text | default: "Les mer om Ledelse 60:2 →" %}
+
+<section class="frame-cta animate-on-scroll fade-in-up">
+    <h2>{{ cta_heading }}</h2>
+    <p>{{ cta_body }}</p>
+    <div class="frame-cta-buttons">
+        <a href="{{ cta_booking_url }}" class="product-cta" onclick="openBookingModal('{{ cta_booking_url }}'); return false;">Bestill uforpliktende samtale</a>
+        <a href="{{ cta_secondary_url | relative_url }}" class="product-cta product-cta--secondary">{{ cta_secondary_text }}</a>
+    </div>
+</section>

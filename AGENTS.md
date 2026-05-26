@@ -24,6 +24,56 @@ Reference individual rule files via `opencode.json` instructions field.
 
 ---
 
+## Rule Activation Tree
+
+Bruk dette treet til å bestemme hvilke regler som skal leses FØR enhver handling. Les KUN de reglene som er relevante for din nåværende oppgave.
+
+```
+IF endrer CSS-filer
+→ LES: .opencode/rules/css/rules.md
+→ LES: .opencode/rules/accessibility/rules.md (kontrast)
+→ SJEKK: Mørk modus støtte
+→ SJEKK: 44px touch targets
+
+IF endrer JavaScript-filer
+→ LES: .opencode/rules/js/rules.md
+→ KJØR: npm test (hvis testbar)
+→ SJEKK: Ingen inline scripts
+
+IF endrer HTML/layout/includes
+→ LES: .opencode/rules/html/rules.md
+→ LES: .opencode/rules/accessibility/rules.md (semantic HTML, alt text)
+→ SJEKK: lang="no"
+→ SJEKK: Mobil viewport
+
+IF oppretter ny side/artikkel
+→ LES: .opencode/rules/frontmatter/rules.md
+→ LES: .opencode/rules/naming/rules.md
+→ LES: .opencode/rules/architecture/rules.md (collections, permalinks)
+→ LES: .opencode/rules/task-management/rules.md (BACKLOG/CHANGELOG)
+→ SJEKK: .specs/ for eksisterende spec
+→ SJEKK: .design/ for design-regler
+
+IF commit
+→ LES: .opencode/rules/task-management/rules.md
+→ KJØR: npm run lint
+→ OPPDATER: CHANGELOG.md (hvis relevant)
+→ OPPDATER: BACKLOG.md (fjern ferdige items)
+
+IF visuell endring (CSS, bilder, layout)
+→ LES: .opencode/rules/css/rules.md
+→ LES: .opencode/rules/accessibility/rules.md
+→ SJEKK: .design/graphics.md (bilderegler)
+→ SJEKK: Begge temaer (lys/mørk)
+→ SJEKK: Mobil viewport (max-width 375px)
+
+IF genererer/endrer bilder
+→ LES: .design/graphics.md
+→ SJEKK: 16:9 eller 4:3 aspect ratio
+→ SJEKK: Ingen tekst i bilder
+→ SJEKK: Norsk alt text klargjort
+```
+
 ## Quick Reference
 
 ### On Task Initiation

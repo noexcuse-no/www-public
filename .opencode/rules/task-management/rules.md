@@ -1,5 +1,7 @@
 # Task Management
 
+> **Activation:** Read this file if you are going to committe endringer, opprette ny side/artikkel, or administrere oppgaver.
+
 ## Files
 
 - `VERSION` - Semver version (e.g., `1.0.0`)

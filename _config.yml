@@ -12,3 +12,29 @@ collections:
     permalink: /:path/
   frames:
     output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      lang: no
+  - scope:
+      path: ""
+      type: profiles
+    values:
+      layout: page
+      lang: no
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: page
+      lang: no
+  - scope:
+      path: ""
+      type: frames
+    values:
+      layout: perspektiv
+      lang: no

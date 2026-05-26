@@ -1,13 +1,15 @@
 # Linting and Testing
 
+> **Activation:** Read this file if you are going to committe endringer, endre JavaScript, or endre CSS/HTML.
+
 ## Available Commands
 
 ```bash
 npm run lint        # All linters + tests
 npm run lint:html   # HTML validation
-npm run lint:css   # CSS linting
-npm run lint:js   # JS linting
-npm test           # Unit tests (Vitest)
+npm run lint:css    # CSS linting
+npm run lint:js     # JS linting
+npm test            # Unit tests (Vitest)
 ```
 
 ## Tooling

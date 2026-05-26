@@ -1,5 +1,9 @@
 # HTML Templates
 
+**Activate when:** Changing HTML files, layouts, or includes
+
+---
+
 ## Include Usage
 
 ```liquid
