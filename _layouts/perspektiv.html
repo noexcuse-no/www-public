@@ -64,7 +64,7 @@ layout: page
 <!-- Questions Section -->
 <section class="perspektiv-section animate-on-scroll fade-in-up">
   <h2>Spørsmål {{ frame.id }}perspektivet kan hjelpe dere å besvare</h2>
-  <ul class="perspektiv-questions stagger-parent" style="--stagger-delay: 80ms;">
+  <ul class="perspektiv-questions stagger-parent">
     {% for question in frame.questions %}
     <li class="animate-on-scroll slide-in-left stagger">{{ question }}</li>
     {% endfor %}

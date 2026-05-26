@@ -1,6 +1,6 @@
 # Task Management
 
-> **Activation:** Les denne filen hvis du skal committe endringer, opprette ny side/artikkel, eller administrere oppgaver.
+> **Activation:** Read this file if you are going to committe endringer, opprette ny side/artikkel, or administrere oppgaver.
 
 ## Files
 

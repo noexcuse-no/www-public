@@ -1,6 +1,6 @@
 # Architecture
 
-> **Activation:** Les denne filen hvis du skal opprette ny side/artikkel, endre konfigurasjon, eller modifisere collections/permalinks.
+> **Activation:** Read this file if you are going to opprette ny side/artikkel, endre konfigurasjon, or modifisere collections/permalinks.
 
 - Project type: Jekyll static site for No Excuse AS (Norwegian management consulting company)
 - Directory structure: See AGENTS.md for full tree

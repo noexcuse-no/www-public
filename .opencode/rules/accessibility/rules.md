@@ -1,6 +1,6 @@
 # Accessibility Requirements (Norway/WCAG)
 
-> **Activation:** Les denne filen hvis du skal endre CSS-filer (kontrast), HTML/layout (semantic HTML, alt text), eller gjøre visuelle endringer.
+> **Activation:** Read this file if you are going to endre CSS-filer (kontrast), HTML/layout (semantic HTML, alt text), or gjøre visuelle endringer.
 
 ---
 

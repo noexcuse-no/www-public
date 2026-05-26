@@ -115,6 +115,7 @@
 .perspektiv-questions {
     list-style: none;
     padding: 0;
+    --stagger-delay: 80ms;
 }
 
 .perspektiv-questions li {

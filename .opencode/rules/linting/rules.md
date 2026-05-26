@@ -1,6 +1,6 @@
 # Linting and Testing
 
-> **Activation:** Les denne filen hvis du skal committe endringer, endre JavaScript, eller endre CSS/HTML.
+> **Activation:** Read this file if you are going to committe endringer, endre JavaScript, or endre CSS/HTML.
 
 ## Available Commands
 
