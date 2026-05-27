@@ -4,26 +4,79 @@
     --primary-accent-contrast: #000a14;
 
     /* Light Mode Colors */
-    --background-color-light: #e2e8f0; /* Lys bakgrunnsfarge */
-    --text-color-light: #37474f; /* Lys tekstfarge */
-    --banner-background-light: #3a4e58; /* Banner bakgrunn i lys modus */
-    --banner-text-light: azure; /* Banner tekst i lys modus */
-    --box-background-light: #ffffff; /* Bakgrunn for kort og bokser i lys modus */
-    --link-color-light: #000a14; /* Lenkefarge i lys modus */
-    --link-hover-light: #000a1f; /* Lenkefarge ved hover i lys modus */
-    --footer-background-light: #ffffff; /* Footer bakgrunn i lys modus */
-    --footer-text-light: #000a14; /* Footer tekst i lys modus */
-    --box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.08); /* Box shadow i lys modus */
+    --background-color-light: #e2e8f0;
+    --text-color-light: #37474f;
+    --banner-background-light: #3a4e58;
+    --banner-text-light: azure;
+    --box-background-light: #ffffff;
+    --link-color-light: #000a14;
+    --link-hover-light: #000a1f;
+    --footer-background-light: #ffffff;
+    --footer-text-light: #000a14;
 
     /* Dark Mode Colors */
-    --background-color-dark: #121212; /* Mørk bakgrunnsfarge */
-    --text-color-dark: #ffffff; /* Mørk tekstfarge */
-    --banner-background-dark: #222222; /* Banner bakgrunn i mørk modus */
-    --banner-text-dark: azure; /* Banner tekst i mørk modus */
-    --box-background-dark: #333333; /* Bakgrunn for kort og bokser i mørk modus */
-    --link-color-dark: azure; /* Lenkefarge i mørk modus */
-    --link-hover-dark: #8ab4f8; /* Lenkefarge ved hover i mørk modus */
-    --footer-background-dark: #222222; /* Footer bakgrunn i mørk modus */
-    --footer-text-dark: azure; /* Footer tekst i mørk modus */
-    --box-shadow-dark: 0 2px 8px rgba(0, 0, 0, 0.3); /* Box shadow i mørk modus */
+    --background-color-dark: #121212;
+    --text-color-dark: #ffffff;
+    --banner-background-dark: #222222;
+    --banner-text-dark: azure;
+    --box-background-dark: #333333;
+    --link-color-dark: azure;
+    --link-hover-dark: #8ab4f8;
+    --footer-background-dark: #222222;
+    --footer-text-dark: azure;
+
+    /* Elevation / Shadows */
+    --shadow-xs: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-xs-dark: 0 2px 4px rgba(0, 0, 0, 0.25);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+    /* Dark Mode Shadows */
+    --shadow-sm-dark: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md-dark: 0 8px 20px rgba(0, 0, 0, 0.35);
+    --shadow-lg-dark: 0 12px 24px rgba(0, 0, 0, 0.35);
+    --shadow-xl-dark: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+    /* Spacing Scale (4px base) */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 40px;
+    --space-3xl: 48px;
+    --space-4xl: 64px;
+    --space-5xl: 80px;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+
+    /* Borders */
+    --border-light: 1px solid rgba(0, 0, 0, 0.08);
+    --border-medium: 1px solid rgba(0, 0, 0, 0.1);
+    --border-dark: 1px solid rgba(255, 255, 255, 0.1);
+
+    /* Content Widths */
+    --content-max: 1100px;
+    --content-narrow: 65ch;
+    --content-wide: 800px;
+
+    /* Legacy aliases (keep for backward compat) */
+    --box-shadow-light: var(--shadow-sm);
+    --box-shadow-hover-light: var(--shadow-md);
+    --box-shadow-dark: var(--shadow-sm-dark);
+    --box-shadow-hover-dark: var(--shadow-md-dark);
 }
+
+    /* Missing aliases (were referenced but never defined) */
+    --navbar-background-light: var(--box-background-light);
+    --navbar-background-dark: var(--box-background-dark);
+    --button-background-light: var(--primary-accent);
+    --button-background-dark: var(--box-background-dark);
+    --button-text-color-light: var(--primary-accent-contrast);
+    --button-text-color-dark: var(--text-color-light); /* For dark bg buttons in light mode */

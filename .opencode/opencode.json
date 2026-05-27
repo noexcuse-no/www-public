@@ -3,7 +3,8 @@
   "instructions": [
     "Public repository: NEVER commit secrets, API keys, personal data, or confidential/proprietary content.",
     "Before any implementation work and before any git operation (commit, branch, push, PR): Read BACKLOG.md, CHANGELOG.md, and VERSION.",
-    "On task completion: Read BACKLOG.md and CHANGELOG.md to verify tracking is updated."
+    "On task completion: Read BACKLOG.md and CHANGELOG.md to verify tracking is updated.",
+    "Before implementation: Read .design/SPEC.md to discover which feature tag, design docs, and functional specs apply to the feature. Read those design docs and specs before writing any code. After implementation: Update .design/ if visual/UX decisions changed; update .specs/ if requirements or data structures changed. Never modify .design/ or .specs/ without user confirmation for proposed changes."
   ],
   "mcp": {
     "ansvar": {

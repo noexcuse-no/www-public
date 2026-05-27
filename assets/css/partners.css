@@ -1,7 +1,7 @@
 .partners {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: var(--space-2xl) var(--space-md);
     text-align: center;
 }
 

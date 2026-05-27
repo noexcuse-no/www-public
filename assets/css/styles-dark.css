@@ -78,7 +78,7 @@ a:hover {
 
 .booking-close {
     background: rgba(255, 255, 255, 0.9);
-    color: #333;
+    color: var(--text-color-dark);
 }
 
 .profile-compact {
@@ -93,7 +93,7 @@ a:hover {
 
 .profile-close {
     background: rgba(255, 255, 255, 0.9);
-    color: #333;
+    color: var(--text-color-dark);
 }
 
 .profile-expand-btn {
@@ -161,4 +161,155 @@ a:hover {
 
 .product-cta-footer {
     background-color: var(--background-color-dark);
+}
+/* Header dark mode */
+.header {
+    background-color: var(--banner-background-dark);
+    color: var(--banner-text-dark);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo-light {
+    display: none;
+}
+
+.logo-dark {
+    display: block;
+}
+
+
+/* About page dark mode */
+.about-hero-content {
+    background: var(--banner-background-dark);
+    color: var(--banner-text-dark);
+}
+
+.about-hero h1 {
+    color: var(--banner-text-dark);
+}
+
+.about-tagline {
+    color: var(--banner-text-dark);
+}
+
+/* Navbar dark mode */
+.navbar a {
+    color: var(--link-color-dark);
+}
+
+.navbar a:hover {
+    color: var(--link-hover-dark);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Article/Frame page dark mode */
+.frame-hero-content {
+    background: var(--banner-background-dark);
+    color: var(--banner-text-dark);
+}
+
+.frame-hero h1 {
+    color: var(--banner-text-dark);
+}
+
+.frame-intro {
+    color: var(--banner-text-dark);
+}
+
+.frame-breadcrumb a {
+    color: var(--link-color-dark);
+}
+
+.benefit-link {
+    color: var(--primary-accent-contrast);
+    background-color: var(--primary-accent);
+}
+
+/* Profiles dark mode */
+.profile-modal-content {
+    background: var(--box-background-dark);
+}
+
+.profile-header {
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+}
+
+.profile-image-large {
+    border-color: rgba(255,255,255,0.1);
+}
+
+.profile-bio,
+.profile-contact-grid {
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.profile-contact-item {
+    background: rgba(255,255,255,0.05);
+    color: var(--link-color-dark);
+}
+
+.profile-contact-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Products dark mode */
+.landing-hero-content {
+    background: var(--banner-background-dark);
+    color: var(--banner-text-dark);
+}
+
+.landing-hero-content h1 {
+    color: var(--banner-text-dark);
+}
+
+.landing-hero-description {
+    color: var(--banner-text-dark);
+}
+
+.benefit-card {
+    background-color: var(--box-background-dark);
+}
+
+.benefit-card:hover {
+    box-shadow: var(--shadow-md-dark);
+}
+
+.process-step:hover {
+    box-shadow: var(--shadow-md-dark);
+}
+
+.case-card:hover {
+    box-shadow: var(--shadow-md-dark);
+}
+
+/* Perspektiv page dark mode */
+.perspektiv-element,
+.perspektiv-challenge,
+.perspektiv-cta {
+    background: var(--box-background-dark);
+}
+
+.perspektiv-questions li {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.perspektiv-about {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.perspektiv-hero-content {
+    background: var(--banner-background-dark);
+    color: var(--banner-text-dark);
+}
+
+.perspektiv-hero h1 {
+    color: var(--banner-text-dark);
+}
+
+.perspektiv-intro {
+    color: var(--banner-text-dark);
+}
+
+.perspektiv-breadcrumb a {
+    color: var(--link-color-dark);
 }

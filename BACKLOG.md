@@ -265,10 +265,11 @@ All new images must follow `.design/graphics.md` prompt rules:
 |----|--------|--------|------|
 | [#42](https://github.com/noexcuse-no/www-public/pull/42) | `fix/perspektiv-frame-lookup` | ✅ **Merged** | Explicit `frame_id` frontmatter for perspektiv pages (fixes empty H1, broken images) |
 | [#43](https://github.com/noexcuse-no/www-public/pull/43) | `refactor/architecture-debt` | ✅ **Merged** | Phase 8 P1-P3 + Phase 9 rules restructuring |
+| [#44](https://github.com/noexcuse-no/www-public/pull/44) | `refactor/architecture-debt` | ✅ **Merged** | Layout refactor (default.html), testing/deploy rules, design docs |
 
 ## In Progress
 
-*(none)*
+*(none — all current work merged)*
 
 ## Completed
 

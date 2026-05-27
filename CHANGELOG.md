@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `assets/css/profiles.css` — extracted inline `<style>` from `_includes/profiles.html` (287 lines)
 - Frontmatter defaults for all collections in `_config.yml`
 - SVG logo assets: `assets/images/noexcuse-logo-dark.svg` (dark logo for light header), `assets/images/noexcuse-logo-light.svg` (light logo for dark header), horizontal variants in `.design/graphics/`
+- `tests/setup.js` — injected CSS custom properties from colors.css for happy-dom test environment (22 CSS variable tests fixed, 31/31 bestått)
 
 ### Changed
 
@@ -43,10 +44,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - All 10 `.opencode/rules/*/rules.md` — activation headers rewritten in English with standard format (pre-JSON migration)
 - `_includes/navbar.html` — reads navigation from `site.data.navigation` instead of hardcoded links
 - `_includes/profiles.html` — inline `<style>` removed, now references external `assets/css/profiles.css`
+- `colors.css` — full design token system: shadow elevation scale (xs→xl), spacing scale (4px-base), border-radius scale, border tokens, content width variables
+- Dark mode consolidated: all `.dark-mode` selectors moved from 7 component files → `styles-dark.css` (0 remaining)
+- `article.css` + `perspektiv-styles.css` consolidated: `.perspektiv-*` aliasert som comma-separated selectors alongside `.frame-*`; perspektiv-styles.css slanket fra 303→79 linjer (kun unike overrides)
+- Alle hardcodede box-shadows, border-radius og spacing-verdier erstattet med CSS-variabler (`var(--shadow-*)`, `var(--radius-*)`, `var(--space-*)`)
+- `.design/css-architecture.md` — updated with complete token system, dark mode consolidation pattern, and component alias conventions
 
 ### Fixed
 
 - Perspektiv frame lookup changed from URL parsing (`split: '/' | last`) to explicit `page.frame_id` frontmatter — fixes empty H1 and broken images on trailing-slash URLs
+- `profiles.css`: `var(--box-shadow-light-hover)` → `var(--box-shadow-hover-light)` (hover shadow på profile-compact fungerte ikke)
+- Manglende CSS-variabler `--navbar-background-*`, `--button-background-*` definert i colors.css
 
 ### Removed
 

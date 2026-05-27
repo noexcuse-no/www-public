@@ -1,7 +1,7 @@
 .avtale-page {
     max-width: 700px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: var(--space-2xl) var(--space-md);
 }
 
 .avtale-logo {
@@ -35,7 +35,7 @@
     margin-bottom: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 599px) {
     .avtale-page h1 {
         font-size: 1.5em;
     }

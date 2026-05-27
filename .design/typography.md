@@ -5,15 +5,16 @@
 - **Fallback:** System sans-serif
 
 ## Hierarchy
-| Element | Desktop | Mobile (≤599px) |
+| Element | Desktop | Mobile (<=599px) |
 |---------|---------|-----------------|
-| h1 | 4em | 2em |
-| h2 | TBD | TBD |
-| h3 | TBD | TBD |
+| h1 | 3.5em | 2em |
+| h2 | 2em | 1.5em |
+| h3 | 1.4em | 1.2em |
 | Body | 1em (16px base) | 1em |
 
 ## Line Height
-- Body: 1.6
+- Body: 1.7
+- h1: 1.15, h2: 1.25, h3: 1.3
 
 ## Style Rules
 - Headings: No margin

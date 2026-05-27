@@ -4,7 +4,7 @@
   "claude": false,
   "gemini": false,
   "copilot": false,
-  "opencode-zen": false,
+  "opencode-zen": true,
   "zai-coding-plan": false,
   "kimi-for-coding": false,
   "vercel-ai-gateway": false,

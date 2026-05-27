@@ -20,7 +20,7 @@
 }
 
 .about-hero-content {
-    padding: 32px 40px;
+    padding: var(--space-xl) var(--space-2xl);
     text-align: center;
     background: var(--background-color-light);
     color: var(--text-color-light);
@@ -47,7 +47,7 @@
 .about-cta {
     max-width: 700px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: var(--space-2xl) var(--space-md);
 }
 
 .about-story h2,
@@ -82,7 +82,7 @@
 
 .about-cta {
     text-align: center;
-    padding: 60px 20px;
+    padding: var(--space-4xl) var(--space-md);
 }
 
 .about-cta p {
@@ -97,7 +97,7 @@
     background-color: var(--primary-accent);
     color: var(--primary-accent-contrast);
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     font-weight: 600;
     font-size: 1.05em;
     transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.2s;
@@ -106,29 +106,17 @@
 .about-cta-button:hover {
     opacity: 0.9;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: var(--box-shadow-hover-light);
 }
 
-.dark-mode .about-hero-content {
-    background: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-}
 
-.dark-mode .about-hero h1 {
-    color: var(--banner-text-dark);
-}
-
-.dark-mode .about-tagline {
-    color: var(--banner-text-dark);
-}
-
-@media (max-width: 768px) {
+@media (max-width: 599px) {
     .about-hero-image {
         aspect-ratio: 4 / 3;
     }
 
     .about-hero-content {
-        padding: 40px 20px 20px;
+        padding: var(--space-2xl) var(--space-md) var(--space-md);
     }
 
     .about-hero h1 {
