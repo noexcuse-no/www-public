@@ -3,6 +3,7 @@
   "instructions": [
     "Public repository: NEVER commit secrets, API keys, personal data, or confidential/proprietary content.",
     "Before any implementation work and before any git operation (commit, branch, push, PR): Read BACKLOG.md, CHANGELOG.md, and VERSION.",
+    "Work discipline: Before writing any code or editing any production file, verify (1) the task is listed as an active item in BACKLOG.md under \"In Progress\" or in a section explicitly marked as current phase, and (2) the current git branch name matches that backlog item or its parent phase. If no backlog item matches, do NOT start work \u2014 ask the user to create one. If the branch doesn't match, switch or create the correct branch first. This prevents unplanned work and branch drift.",
     "On task completion: Read BACKLOG.md and CHANGELOG.md to verify tracking is updated.",
     "Before implementation: Read .design/SPEC.md to discover which feature tag, design docs, and functional specs apply to the feature. Read those design docs and specs before writing any code. After implementation: Update .design/ if visual/UX decisions changed; update .specs/ if requirements or data structures changed. Never modify .design/ or .specs/ without user confirmation for proposed changes."
   ],

@@ -116,7 +116,7 @@ json_ld:
 <section class="landing-story animate-on-scroll fade-in-up">
     <h2>Historien bak metoden</h2>
     <p>«Ledelse 60:2» er vår tilnærming til å bruke en enkel kunnskapsbasert metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet.</p>
-    <a href="{{ '/metode/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om metoden →</a>
+    <a href="{{ '/metode/' | relative_url }}" class="product-cta">Les mer om metoden →</a>
 </section>
 
 {% if site.cases.size > 0 %}

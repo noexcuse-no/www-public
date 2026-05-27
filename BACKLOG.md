@@ -101,7 +101,7 @@ See relevant spec files for each expansion.
     - Corrupting effect (narcissism, overconfidence)
     - Psychological toll (loneliness, distrust)
     - Why awareness matters for leadership culture
-- **Design:** Split as specified; no new images for /påvirkning/ expansion
+- **Design:** Split as specified; no new images for /pávirkning/ expansion
 
 **E5 — Core Values + Noble Cause (deep expansion)**
 - **File:** `_pages/ledelse_mennesker.md`
@@ -125,7 +125,7 @@ See relevant spec files for each expansion.
 | `/struktur/` | Hubbard | "Hubbard argumenterer for at all måling reduserer usikkerhet — ikke eliminerer den. Ledelse 60:2 hevder ikke presise scorer, bare perspektiver." |
 | `/mennesker/` | Blanchard & Barrett | "Blanchard og Barrett viser at det ikke finnes én fasit på god ledelse — kontekst bestemmer hva som fungerer. Ledelse 60:2 диагностицирует orientering, ikke korrekthet." |
 | `/påvirkning/` | Pfeffer | "Pfeffer dokumenterer at makt er kontekstavhengig. Ledelse 60:2 kartlegger maktfordeling, ikke rettferdighet." |
-| `/identitet/` | Logan | "Logan beskriver kulturstadier som beskrivende — ikke normative. Ledelse 60:2 identifiserer где organisasjonen er, ikke hvor den bør være." |
+| `/identitet/` | Logan | "Logan beskriver kulturstadier som beskrivende — ikke normative. Ledelse 60:2 identifiserer hvor organisasjonen er, ikke hvor den bør være." |
 
 ---
 
@@ -163,6 +163,12 @@ See relevant spec files for each expansion.
 - [ ] P4.1: Multi-product support
 - [ ] P4.2: JSON Schema validation
 
+**P5 — Layout System** *(active on `feature/layout-system`)*
+- [x] P5.1: Design document — `.design/layouts.md` med content width system, section rhythm, grid, flex utilities, page template specs
+- [x] P5.2: CSS implementation — `.container`, `.section`, `.grid`, `.flex-*` klasser i `layout.css`
+- [x] P5.3: Template migration — oppdater `perspektiv.html`, `products.html`, `profiles.html` til nye klasser
+- [x] P5.4: Cleanup — fjern dupliserte `max-width`/`padding` fra komponent-CSS
+
 ---
 
 ### Phase 9 — Rules Restructuring ✅ Complete
@@ -179,6 +185,47 @@ See relevant spec files for each expansion.
 - [x] New `.design/*.md` files: naming.md, css-architecture.md, js-patterns.md, html-templates.md
 - [x] `.opencode/rules/architecture/`, `naming/`, `css/`, `js/`, `html/` — directories deleted (empty after migration)
 - [x] Remaining `.opencode/rules/`: frontmatter, accessibility, privacy, linting, task-management (5 concrete-constraint JSON files)
+
+---
+
+### Phase 10 — Site Review Fixes & Animations
+
+*Planned 2026-05-27. Discrete tasks from site review, no dependencies between them except where noted.*
+
+**10.1 — Rename `/organisasjonskultur/` → `/usikkerhet/`**
+- **Action:** Update permalink in `_pages/ledelse_usikkerhet.md`, cross-references in `_pages/ledelse_60-2.md` and `_products/ledelse-60-2.md`
+- **Scope:** Content fix — URL change + cross-link updates
+- **No blockers**
+
+**10.2 — Header background color for azure WCAG AA**
+- **Action:** Change light mode header background to enable WCAG AA contrast with azure accent color
+- **Scope:** CSS — new variable + color update
+- **No blockers**
+
+**10.3 — Hero animation system (frontmatter-driven)**
+- **Action:** Build framework where hero effects (parallax-fade, ken-burns, etc.) are selected per page via frontmatter; create `hero-effects.js` dispatcher
+- **Scope:** JS architecture + CSS
+- **Dependency:** None, but 10.4 uses this system
+
+**10.4 — Parallax-fade hero effect**
+- **Action:** Implement parallax-fade as first effect in the new animation system
+- **Scope:** CSS + JS — fade to `var(--background-color)`
+- **Depends on:** 10.3 (needs the dispatcher)
+
+**10.5 — Profile card redesign**
+- **Action:** Redesign profile cards with better image sizing/proportions
+- **Scope:** CSS — `profiles.css`
+- **No blockers**
+
+**10.6 — Frontpage profile filter**
+- **Action:** Show relevant profiles on frontpage based on page context with Liquid filter
+- **Scope:** Liquid + includes
+- **No blockers**
+
+**10.7 — Full-width hero**
+- **Action:** Remove max-width constraint on hero sections for full-bleed layout
+- **Scope:** CSS — hero section width adjustments
+- **No blockers**
 
 ---
 
@@ -269,7 +316,11 @@ All new images must follow `.design/graphics.md` prompt rules:
 
 ## In Progress
 
-*(none — all current work merged)*
+### P5 — Layout System (`feature/layout-system`)
+- [x] P5.1: Design document — `.design/layouts.md` med content width system, section rhythm, grid, flex utilities, page template specs
+- [x] P5.2: CSS implementation — `.container`, `.section`, `.grid`, `.flex-*` klasser i `layout.css`
+- [x] P5.3: Template migration — oppdater `perspektiv.html`, `products.html`, `profiles.html` til nye klasser
+- [x] P5.4: Cleanup — fjern dupliserte `max-width`/`padding` fra komponent-CSS
 
 ## Completed
 
@@ -282,5 +333,3 @@ Do not add completed work here, add them to CHANGELOG.md
 - **Q7 — Katalysator:** Behold som planlagt funksjon. **blocked:** Deferred to June 2026. Iterative research + brainstorming session required before any implementation.
   - **Reference:** `.specs/shared/product-katalysator.txt`
   - **Dependencies:** User availability for brainstorming, product positioning decision
-
-

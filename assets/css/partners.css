@@ -1,8 +1,6 @@
 .partners {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: var(--space-2xl) var(--space-md);
     text-align: center;
+    /* Width/spacing via .section--compact.container--wide */
 }
 
 .partners h2 {
@@ -40,5 +38,8 @@
 }
 
 .partner-name {
+    font-size: 0.85em;
+}
+{
     font-size: 0.85em;
 }

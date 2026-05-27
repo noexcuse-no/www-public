@@ -1,4 +1,4 @@
-<section id="products" class="products">
+<section id="products" class="products section container">
     {% for product in site.products %}
     <div class="product-hero">
         <div class="product-hero-content">
@@ -15,7 +15,7 @@
             <img src="{{ product.image | relative_url }}" alt="{{ product.name }} — illustrasjon">
         </div>
     </div>
-    <div class="product-benefits">
+    <div class="product-benefits grid grid--2">
         {% for benefit in product.benefits %}
         <div class="benefit-card">
             <img src="{{ benefit.banner | relative_url }}" alt="{{ benefit.title }}" class="benefit-banner">

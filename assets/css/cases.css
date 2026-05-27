@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
-    margin: 20px;
+    /* Padding/margin via .section.container */
 }
 
 .case {

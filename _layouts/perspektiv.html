@@ -20,13 +20,13 @@ layout: page
 </section>
 
 <!-- Intro Section -->
-<section class="perspektiv-section animate-on-scroll fade-in-up">
+<section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
   <h2>{{ frame.intro.heading }}</h2>
   {{ frame.intro.body | markdownify }}
 </section>
 
 <!-- Three Elements with illustration -->
-<section class="perspektiv-section animate-on-scroll fade-in-up">
+<section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
   <h2>De tre hovedelementene</h2>
   <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i {{ frame.title | downcase }}" class="section-illustration">
   
@@ -41,13 +41,13 @@ layout: page
 </section>
 
 <!-- Leader Value Section -->
-<section class="perspektiv-section animate-on-scroll fade-in-up">
+<section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
   <h2>{{ frame.leader_value.heading }}</h2>
   {{ frame.leader_value.body | markdownify }}
 </section>
 
 <!-- Challenges Section -->
-<section class="perspektiv-section animate-on-scroll fade-in-up">
+<section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
   <h2>Vanlige {{ frame.id }}lige utfordringer</h2>
   <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige {{ frame.id }}lige utfordringer" class="section-illustration">
   
@@ -62,7 +62,7 @@ layout: page
 </section>
 
 <!-- Questions Section -->
-<section class="perspektiv-section animate-on-scroll fade-in-up">
+<section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
   <h2>Spørsmål {{ frame.id }}perspektivet kan hjelpe dere å besvare</h2>
   <ul class="perspektiv-questions stagger-parent">
     {% for question in frame.questions %}
@@ -78,7 +78,7 @@ layout: page
    booking_url=frame.cta.booking_url %}
 
 <!-- About / Scientific Basis Section -->
-<section class="perspektiv-section perspektiv-about animate-on-scroll fade-in-up">
+<section class="perspektiv-section perspektiv-about section container--wide animate-on-scroll fade-in-up">
   <h2>{{ frame.about.heading }}</h2>
   {{ frame.about.body | markdownify }}
   <a href="{{ frame.about.link_url | relative_url }}" class="perspektiv-link">{{ frame.about.link_text }}</a>

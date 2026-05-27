@@ -55,6 +55,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Perspektiv frame lookup changed from URL parsing (`split: '/' | last`) to explicit `page.frame_id` frontmatter — fixes empty H1 and broken images on trailing-slash URLs
 - `profiles.css`: `var(--box-shadow-light-hover)` → `var(--box-shadow-hover-light)` (hover shadow på profile-compact fungerte ikke)
 - Manglende CSS-variabler `--navbar-background-*`, `--button-background-*` definert i colors.css
+- "Les mer om metoden" CTA endret fra `product-cta--secondary` til primary `product-cta` i `_pages/ledelse_60-2.md`
+- Fjernet referanse til `science-research.webp` i `_pages/om_metode.md` og slettet filen
+- Benefit-kort margins forbedret i `assets/css/products.css` — min-height 100% på kort, CSS-variabler for padding, margin-regel for `.product-cta`
 
 ### Removed
 
