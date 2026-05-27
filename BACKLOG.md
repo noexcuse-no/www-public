@@ -59,39 +59,6 @@ See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/READ
 - **CTA:** Links to Ledelse 60:2
 - **Status:** Spec complete. **Blocked:** Images + content draft needed.
 
-**N1 — Triader**
-- **New file:** `_pages/ledelse_triader.md`
-- **URL:** `/triader/`
-- **Source:** Logan, King & Fischer-Wright — *Tribal Leadership* (2011)
-- **Spec:** Create `.specs/triader/README.md`
-- **Content:** Triads as structural tool, dyad vs. triad stability, formation steps, warning signs
-- **Design:** Style 3 (Section Illustration) for inline illustrations, Style 2 for hero
-- **Cross-links:** From `/identitet/` and `/usikkerhet/`
-- **Images needed:** 1 hero banner (Style 2), 2 section illustrations (Style 3)
-- **CTA:** Links to Ledelse 60:2
-
-**N2 — Makt eller tjeneste**
-- **New file:** `_pages/ledelse_makt.md`
-- **URL:** `/makt/`
-- **Source:** Pfeffer (*Power*, 2010) ↔ Blanchard & Barrett (*Lead with LUV*, 2011) — tension pair from synthesis.md
-- **Spec:** Create `.specs/makt/README.md`
-- **Content:** The central diagnostic tension: power acquisition vs. servant leadership. Pfeffer side + Blanchard side + spectrum. Includes full "The Price of Power" subsection.
-- **Design:** Style 2 for hero, Style 3 for section illustrations
-- **Cross-links:** To `/påvirkning/` (brief Price of Power there), to `/mennesker/` (servant leadership)
-- **Images needed:** 1 hero banner (Style 2), 2-3 section illustrations (Style 3)
-- **CTA:** Links to Ledelse 60:2
-
-**N3 — Fired perspektiver**
-- **New file:** `_pages/ledelse_perspektiv.md`
-- **URL:** `/perspektiv/`
-- **Source:** Bolman & Deal Ch.16 — "Integrating the Frames"
-- **Spec:** Create `.specs/perspektiv/README.md`
-- **Content:** Multiframe thinking as the actual leadership skill. Why single-frame thinking fails. "No scoring" philosophical backing grounded in Bolman + Hubbard + Logan.
-- **Design:** Style 2 for hero, Style 3 for section illustrations
-- **Cross-links:** To all four perspektiv articles ("no scoring" backing in each frame's reference section)
-- **Images needed:** 1 hero banner (Style 2), 1-2 section illustrations (Style 3)
-- **CTA:** Links to Ledelse 60:2
-
 ---
 
 ### Phase 5 — Existing Article Expansions ✅ COMPLETE
@@ -174,23 +141,23 @@ See relevant spec files for each expansion.
 
 ### Phase 8 — Architecture Debt
 
-*Cleanup and component extraction. Lower priority than visible content.*
+*Cleanup and component extraction. All work on `refactor/architecture-debt` branch (PR #43).*
 
-**P1 — Phase 1: Cleanup & Foundation**
-- [ ] P1.1: Dead code removal
-- [ ] P1.2: CSS variable unification
-- [ ] P1.3: Frontmatter defaults
+**P1 — Phase 1: Cleanup & Foundation** ✅ Complete
+- [x] P1.1: Dead code removal — `styles.css.old`, `profile-card.js`, `_includes/image.html` deleted
+- [x] P1.2: CSS variable unification
+- [x] P1.3: Frontmatter defaults — added to `_config.yml` for all collections
 
 **P2 — Phase 2: Component Extraction**
-- [ ] P2.1: Navigation from data
-- [ ] P2.2: Extract inline CSS/JS
-- [ ] P2.3: Image include adoption
+- [x] P2.1: Navigation from data — `_data/navigation.yml` created, navbar reads from `site.data.navigation`
+- [x] P2.2: Extract inline CSS/JS — 287 lines from `profiles.html` → `assets/css/profiles.css`
+- [x] P2.3: Image include adoption — Cancelled. `_includes/image.html` was dead code; project convention is direct `<img>` with `relative_url`. No dedicated include needed.
 
 **P3 — Phase 3: Architecture Improvements**
-- [ ] P3.1: Plugin integration
-- [ ] P3.2: Layout conditional includes
-- [ ] P3.3: Reusable CTA component
-- [ ] P3.4: Profile JS consolidation
+- [x] P3.1: Plugin integration — Cancelled. GitHub Pages restricts plugins; custom SEO/sitemap implementations already serve the purpose.
+- [x] P3.2: Layout conditional includes — `_layouts/default.html` created as base template, `page.html` and `home.html` inherit from it
+- [x] P3.3: Reusable CTA component — `_includes/cta.html` with configurable heading, body, booking URL
+- [x] P3.4: Profile JS consolidation — `profile-card.js` deleted (functionality consolidated)
 
 **P4 — Phase 4: Future-Proofing**
 - [ ] P4.1: Multi-product support
@@ -198,9 +165,26 @@ See relevant spec files for each expansion.
 
 ---
 
-## Design Decisions (2026-05-25)
+### Phase 9 — Rules Restructuring ✅ Complete
 
-Results from design interview for future reference:
+*All work on `refactor/architecture-debt` branch (PR #43).*
+
+- [x] AGENTS.md — replaced prose activation tree with REQUIRED directive to parse `opencode.json` before every decision
+- [x] All 10 `.opencode/rules/*/rules.md` — English activation headers added to all rule files
+- [x] `.opencode/rules/triggers.json` — created with 8 trigger definitions, 14 operation lifecycle hooks, then deleted and inlined as `instructions[0]`
+- [x] Root `opencode.json` — now delegates to `.opencode/opencode.json` as single instruction source
+- [x] `.opencode/rules.json` — deleted (content integrated into triggers, now inline)
+- [x] `.opencode/opencode.json` → `instructions` array: `instructions[0]` = inline triggers/operations, `instructions[1..5]` = `$ref` to concrete-constraint JSON files (frontmatter, accessibility, privacy, linting, task-management)
+- [x] 6 architecture/design JSON rule files (architecture, naming, css, js, html, frontmatter) — architecture content migrated from JSON to `.design/*.md`; frontmatter kept as JSON (concrete schema constraint)
+- [x] New `.design/*.md` files: naming.md, css-architecture.md, js-patterns.md, html-templates.md
+- [x] `.opencode/rules/architecture/`, `naming/`, `css/`, `js/`, `html/` — directories deleted (empty after migration)
+- [x] Remaining `.opencode/rules/`: frontmatter, accessibility, privacy, linting, task-management (5 concrete-constraint JSON files)
+
+---
+
+## Design Decisions
+
+### Brand & Visual (2026-05-25)
 
 - **Brand Personality:** Rebellious, Clear, Nordic
 - **Visual Reference:** Apple.com (premium minimal, confident whitespace)
@@ -208,6 +192,14 @@ Results from design interview for future reference:
 - **Media Mix:** Mostly illustrations + real photos for team/cases
 - **Animation:** Expressive and memorable (page transitions, bold micro-interactions)
 - **Color Usage:** Sparingly — accent color for buttons, links, small highlights only
+
+### Technical & Documentation (2026-05-26)
+
+- **Design documentation format:** Hybrid JSON + Markdown. Structure (triggers, operations, references) in JSON, prose/templates in Markdown referenced via `$ref`.
+- **JSON include mechanism:** `$ref` standard (JSON Reference spec) — e.g. `"$ref": ".design/graphics.json#/prompts"`.
+- **opencode.json structure:** `instructions` array with `instructions[0]` = inline triggers/operations (the activation tree), `instructions[1..N]` = `$ref` objects to domain rule files.
+- **Trigger location:** Triggers live inline in `instructions[0]` of `.opencode/opencode.json`, not in a separate file. Removes one level of indirection — agents immediately see the activation tree without resolving a `$ref`.
+- **GitHub Pages build status:** Was experiencing "Partially Degraded Service" (45min+ build queue). Now recovered — builds complete in ~50s.
 
 ## Image Generation Context Requirements
 
@@ -267,7 +259,16 @@ All new images must follow `.design/graphics.md` prompt rules:
 
 ---
 
+## Open PRs
+
+| PR | Branch | Status | What |
+|----|--------|--------|------|
+| [#42](https://github.com/noexcuse-no/www-public/pull/42) | `fix/perspektiv-frame-lookup` | ✅ **Merged** | Explicit `frame_id` frontmatter for perspektiv pages (fixes empty H1, broken images) |
+| [#43](https://github.com/noexcuse-no/www-public/pull/43) | `refactor/architecture-debt` | ✅ **Merged** | Phase 8 P1-P3 + Phase 9 rules restructuring |
+
 ## In Progress
+
+*(none)*
 
 ## Completed
 
@@ -281,4 +282,4 @@ Do not add completed work here, add them to CHANGELOG.md
   - **Reference:** `.specs/shared/product-katalysator.txt`
   - **Dependencies:** User availability for brainstorming, product positioning decision
 
-- **N1-N3 Specs:** `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md` creation **blocked:** Deferred to tomorrow (2026-05-26). Requires focused spec-writing session before implementation can begin.
+

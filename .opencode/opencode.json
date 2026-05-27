@@ -1,5 +1,10 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "Public repository: NEVER commit secrets, API keys, personal data, or confidential/proprietary content.",
+    "Before any implementation work and before any git operation (commit, branch, push, PR): Read BACKLOG.md, CHANGELOG.md, and VERSION.",
+    "On task completion: Read BACKLOG.md and CHANGELOG.md to verify tracking is updated."
+  ],
   "mcp": {
     "ansvar": {
       "type": "remote",

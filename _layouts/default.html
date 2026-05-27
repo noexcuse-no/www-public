@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    {% include metadata.html %}
+    {% include styles.html %}
+    {% if page.breadcrumb != false %}
+        {% include breadcrumb-schema.html %}
+    {% endif %}
+</head>
+<body>
+    {% include header.html %}
+    <main>
+        {{ content }}
+    </main>
+    {% include footer.html %}
+    {% include booking-modal.html %}
+    {% include scripts.html %}
+</body>
+</html>

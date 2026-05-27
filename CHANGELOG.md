@@ -9,14 +9,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- `_layouts/default.html` — base template with shared boilerplate (metadata, styles, conditional breadcrumb-schema, header, footer, booking-modal, scripts)
+- `page.html` and `home.html` now inherit from `default` — eliminates boilerplate duplication
+- Breadcrumb-schema include is conditional via `page.breadcrumb` frontmatter (default: true, opt-out: false)
+- `.omo/rules/testing.md` — Vitest + happy-dom test patterns, conventions, and coverage expectations
+- `.omo/rules/deploy.md` — pre-build/deploy checks, deployment workflow, and troubleshooting for GitHub Pages
+- `.design/testing-architecture.md` — testing stack rationale (Vitest vs jsdom vs Playwright), patterns, anti-patterns
+- `.design/deployment.md` — deployment architecture: Jekyll → GitHub Pages → noexcuse.no, domain setup, constraints
 - Specifications for N1-N3 new articles: `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`
+- Rule activation tree in AGENTS.md — conditional branching table for 7 scenarios (CSS, JS, HTML, new page, commit, visual, image changes)
+- `.opencode/opencode.json` → `rules` key — 8 triggers, 14 operation lifecycle hooks (pre_check, constraints, post_verify) inlined from former `rules.json`
+- `_includes/cta.html` — reusable CTA component with configurable heading, body text, booking URL, and secondary link
+- `_data/navigation.yml` — data-driven navigation source-of-truth
+- `assets/css/profiles.css` — extracted inline `<style>` from `_includes/profiles.html` (287 lines)
+- Frontmatter defaults for all collections in `_config.yml`
+- SVG logo assets: `assets/images/noexcuse-logo-dark.svg` (dark logo for light header), `assets/images/noexcuse-logo-light.svg` (light logo for dark header), horizontal variants in `.design/graphics/`
 
 ### Changed
 
-- "Les mer →" benefit card links restyled as pill buttons with accent color, hover lift effect, and 44px minimum touch target
+- P2.3 Image include adoption — cancelled; project convention is direct `<img>` with `relative_url` (old `_includes/image.html` was dead code)
+- P3.1 Plugin integration — cancelled; GitHub Pages restricts plugins, custom SEO/sitemap implementations suffice
+- AGENTS.md — rules architecture documentation updated with accurate rule file table and mechanism descriptions
+- `"Les mer →"` benefit card links restyled as pill buttons with accent color, hover lift effect, and 44px minimum touch target
 - Benefit cards redesigned with image + content separation, flexbox layout, and enhanced shadows
 - Navbar links increased to 44px touch targets with hover background and dark mode support
 - Header stacks vertically on mobile (<600px) for better logo + navigation fit
+- `.opencode/rules/triggers.json` created then inlined as `instructions[0]` in `.opencode/opencode.json` — triggers + operations now live directly in the instructions array
+- `.opencode/rules/triggers.json` — deleted (content inline in `instructions[0]`)
+- All 10 `.opencode/rules/*/rules.md` — converted to `rules.json` format, `.md` files deleted
+- `.opencode/opencode.json` `rules` key — replaced by `instructions` array: `instructions[0]` = inline triggers/operations, `instructions[1..5]` = `$ref` objects to concrete-constraint rule files (frontmatter, accessibility, privacy, linting, task-management)
+- 6 architecture/design JSON rule files — migrated from `.opencode/rules/*/rules.json` to `.design/*.md`: naming.md, css-architecture.md, js-patterns.md, html-templates.md (architecture.md already existed)
+- `.opencode/rules/architecture/`, `naming/`, `css/`, `js/`, `html/` — directories deleted
+- All 10 `.opencode/rules/*/rules.md` — activation headers rewritten in English with standard format (pre-JSON migration)
+- `_includes/navbar.html` — reads navigation from `site.data.navigation` instead of hardcoded links
+- `_includes/profiles.html` — inline `<style>` removed, now references external `assets/css/profiles.css`
+
+### Fixed
+
+- Perspektiv frame lookup changed from URL parsing (`split: '/' | last`) to explicit `page.frame_id` frontmatter — fixes empty H1 and broken images on trailing-slash URLs
+
+### Removed
+
+- Dead code: `styles.css.old`, `profile-card.js`, `_includes/image.html`
 
 ## [1.6.0] - 2026-05-26
 
