@@ -26,10 +26,16 @@ main {
 
 
 /* Content Width System */
-.container {
-    max-width: var(--content-max);
+.container,
+.container--wide,
+.container--narrow,
+.container--full {
     margin-inline: auto;
     padding-inline: var(--space-md);
+}
+
+.container {
+    max-width: var(--content-max);
 }
 
 .container--wide {
@@ -44,7 +50,6 @@ main {
     max-width: 100%;
     padding-inline: 0;
 }
-
 /* Section Vertical Rhythm */
 .section {
     padding-block: var(--space-2xl);

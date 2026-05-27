@@ -1,7 +1,5 @@
 .products {
-    padding: var(--space-2xl) var(--space-md);
-    max-width: 1100px;
-    margin: 0 auto;
+    /* Width/spacing via .section.container */
 }
 
 .product-hero {
@@ -85,10 +83,8 @@
 }
 
 .product-benefits {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
     margin-bottom: 40px;
+    /* Grid via .grid.grid--2 */
 }
 
 .benefit-card {
