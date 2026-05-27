@@ -166,8 +166,8 @@ See relevant spec files for each expansion.
 **P5 — Layout System** *(active on `feature/layout-system`)*
 - [x] P5.1: Design document — `.design/layouts.md` med content width system, section rhythm, grid, flex utilities, page template specs
 - [x] P5.2: CSS implementation — `.container`, `.section`, `.grid`, `.flex-*` klasser i `layout.css`
-- [ ] P5.3: Template migration — oppdater `perspektiv.html`, `products.html`, `profiles.html` til nye klasser
-- [ ] P5.4: Cleanup — fjern dupliserte `max-width`/`padding` fra komponent-CSS
+- [x] P5.3: Template migration — oppdater `perspektiv.html`, `products.html`, `profiles.html` til nye klasser
+- [x] P5.4: Cleanup — fjern dupliserte `max-width`/`padding` fra komponent-CSS
 
 ---
 
@@ -278,8 +278,8 @@ All new images must follow `.design/graphics.md` prompt rules:
 ### P5 — Layout System (`feature/layout-system`)
 - [x] P5.1: Design document — `.design/layouts.md` med content width system, section rhythm, grid, flex utilities, page template specs
 - [x] P5.2: CSS implementation — `.container`, `.section`, `.grid`, `.flex-*` klasser i `layout.css`
-- [ ] P5.3: Template migration — oppdater `perspektiv.html`, `products.html`, `profiles.html` til nye klasser
-- [ ] P5.4: Cleanup — fjern dupliserte `max-width`/`padding` fra komponent-CSS
+- [x] P5.3: Template migration — oppdater `perspektiv.html`, `products.html`, `profiles.html` til nye klasser
+- [x] P5.4: Cleanup — fjern dupliserte `max-width`/`padding` fra komponent-CSS
 
 ## Completed
 
