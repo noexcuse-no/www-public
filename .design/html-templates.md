@@ -1,8 +1,4 @@
-# HTML Templates
-
-**Activate when:** Changing HTML files, layouts, or includes
-
----
+# HTML Templates — No Excuse AS
 
 ## Include Usage
 
@@ -17,5 +13,4 @@
 
 ## Metadata
 
-- All SEO/social meta tags in `_includes/metadata.html`
-- Populated from `_data/metadata.yml`
+All SEO/social meta tags in `_includes/metadata.html`, populated from `_data/metadata.yml`.

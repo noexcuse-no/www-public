@@ -1,10 +1,6 @@
-# CSS Architecture
+# CSS Architecture — No Excuse AS
 
-**Activate when:** Changing CSS files, making visual changes, or creating pages with styling
-
----
-
-## Module Structure (13 files)
+## Module Structure
 
 | Category | Files |
 |----------|-------|
@@ -17,6 +13,7 @@
 ## CSS Custom Properties
 
 Defined in `colors.css`:
+
 - Light mode: `--background-color-light`, `--text-color-light`, etc.
 - Dark mode: `--background-color-dark`, `--text-color-dark`, etc.
 - Accent: `--primary-accent`, `--primary-accent-contrast`

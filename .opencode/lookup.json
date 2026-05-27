@@ -1,0 +1,44 @@
+{
+  "shared": {
+    "checks": ["dark mode", "mobile 375px", "WCAG AA both themes"]
+  },
+  "scenarios": {
+    "css": {},
+    "js": {
+      "reads": [".design/js-patterns.md"],
+      "runs": ["npm test if tests exist"],
+      "checks": ["no inline scripts", "no frameworks"]
+    },
+    "html": {
+      "reads": [".design/html-templates.md"],
+      "checks": ["lang=\"no\"", "alt text", "semantic HTML"]
+    },
+    "new_page": {
+      "reads": [".design/naming.md", ".design/architecture.md"],
+      "checks": [".specs/", ".design/"],
+      "updates": ["BACKLOG.md", "CHANGELOG.md [Unreleased]"]
+    },
+    "commit": {
+      "runs": ["npm run lint"],
+      "updates": ["CHANGELOG.md", "BACKLOG.md"]
+    },
+    "visual": {
+      "reads": [".design/graphics.md"],
+      "checks": ["light + dark themes"]
+    },
+    "image": {
+      "reads": [".design/graphics.md"],
+      "checks": ["16:9", "no text in image", "Norwegian alt text"]
+    },
+    "tracking": {
+      "checks": ["consent placeholders", "no personal data"]
+    }
+  },
+  "always": [
+    "feature branch",
+    "touch targets 44×44px",
+    "no inline styles or scripts",
+    "alt text in Norwegian on all images",
+    "npm run lint + npm test before done"
+  ]
+}

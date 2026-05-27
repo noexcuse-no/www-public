@@ -4,75 +4,61 @@ This file documents the architecture, patterns, and rules for the `noexcuse.no` 
 
 ---
 
-## Rules Structure
+## Rules Architecture
 
-Rules are organized in `.opencode/rules/` for modular reusability.
-Reference individual rule files via `opencode.json` instructions field.
+Two mechanisms deliver rules into context, designed for different purposes:
 
-| Category | Rules File |
-|----------|------------|
-| Architecture | `.opencode/rules/architecture/rules.md` |
-| Naming | `.opencode/rules/naming/rules.md` |
-| Frontmatter | `.opencode/rules/frontmatter/rules.md` |
-| CSS | `.opencode/rules/css/rules.md` |
-| JavaScript | `.opencode/rules/js/rules.md` |
-| HTML | `.opencode/rules/html/rules.md` |
-| Accessibility | `.opencode/rules/accessibility/rules.md` |
-| Privacy | `.opencode/rules/privacy/rules.md` |
-| Linting | `.opencode/rules/linting/rules.md` |
-| Task Management | `.opencode/rules/task-management/rules.md` |
+### 1. Standing Directives — `opencode.json > instructions` (always in context)
 
----
+The `instructions` array in `.opencode/opencode.json` contains **plain-string directives** that are always loaded into the system prompt. They cover only what cannot be delegated to contextual rules:
 
-## Rule Activation Tree
+- **Public repo security** (no secrets, no personal data) — catastrophic if missed, no natural Read trigger
+- **Read triggers** for task management — `Read BACKLOG.md, CHANGELOG.md, VERSION` on git ops and task completion — without these, `.omo/rules/task-management.md` would never fire
 
-Bruk dette treet til å bestemme hvilke regler som skal leses FØR enhver handling. Les KUN de reglene som er relevante for din nåværende oppgave.
+Everything else (accessibility, linting, brand voice, etc.) is delegated to `.omo/rules/*.md` — fired automatically when you Read the relevant file type.
 
-```
-IF endrer CSS-filer
-→ LES: .opencode/rules/css/rules.md
-→ LES: .opencode/rules/accessibility/rules.md (kontrast)
-→ SJEKK: Mørk modus støtte
-→ SJEKK: 44px touch targets
+### 2. Contextual Rules — `.omo/rules/*.md` (fire on Read events)
 
-IF endrer JavaScript-filer
-→ LES: .opencode/rules/js/rules.md
-→ KJØR: npm test (hvis testbar)
-→ SJEKK: Ingen inline scripts
+The `rules-injector` plugin scans `.omo/rules/` (and other standard directories) for `.md` files with YAML frontmatter. When you `Read` a file, matching rules are appended as `[Rule: path]` blocks to the Read output.
 
-IF endrer HTML/layout/includes
-→ LES: .opencode/rules/html/rules.md
-→ LES: .opencode/rules/accessibility/rules.md (semantic HTML, alt text)
-→ SJEKK: lang="no"
-→ SJEKK: Mobil viewport
+Matching is controlled by frontmatter — only 4 keys are recognized:
 
-IF oppretter ny side/artikkel
-→ LES: .opencode/rules/frontmatter/rules.md
-→ LES: .opencode/rules/naming/rules.md
-→ LES: .opencode/rules/architecture/rules.md (collections, permalinks)
-→ LES: .opencode/rules/task-management/rules.md (BACKLOG/CHANGELOG)
-→ SJEKK: .specs/ for eksisterende spec
-→ SJEKK: .design/ for design-regler
+| Key | Effect |
+|-----|--------|
+| `alwaysApply: true` | Rule fires on every Read |
+| `globs: [...]` | Picomatch globs against file's relative path or basename |
+| `paths: [...]` | Same as globs (merged) |
+| `applyTo: [...]` | Same as globs (merged) |
 
-IF commit
-→ LES: .opencode/rules/task-management/rules.md
-→ KJØR: npm run lint
-→ OPPDATER: CHANGELOG.md (hvis relevant)
-→ OPPDATER: BACKLOG.md (fjern ferdige items)
+Available rule files:
 
-IF visuell endring (CSS, bilder, layout)
-→ LES: .opencode/rules/css/rules.md
-→ LES: .opencode/rules/accessibility/rules.md
-→ SJEKK: .design/graphics.md (bilderegler)
-→ SJEKK: Begge temaer (lys/mørk)
-→ SJEKK: Mobil viewport (max-width 375px)
+| File | Trigger | Scope |
+|------|---------|-------|
+| `.omo/rules/accessibility.md` | `**/*.html`, `**/*.md` | WCAG AA, Norwegian language, alt text, dark mode, touch targets |
+| `.omo/rules/brand-voice.md` | `**/*.html`, `**/*.md`, `_includes/*`, `_profiles/*`, `_products/*` | Tone, style, anti-patterns for content |
+| `.omo/rules/css-conventions.md` | `assets/css/*.css` | CSS variable naming, theme patterns, file organization |
+| `.omo/rules/frames.md` | `_frames/*` | Frame page frontmatter, JSON-LD Article schema |
+| `.omo/rules/frontmatter.md` | `_profiles/*`, `_products/*` | Profile and product frontmatter schemas |
+| `.omo/rules/jekyll.md` | `_config.yml` | Jekyll collection registration, defaults, build checks |
+| `.omo/rules/linting.md` | `**/*.js`, `**/*.css`, `**/*.html`, `tests/*` | Lint/test commands, tools, config, prohibited patterns |
+| `.omo/rules/pages.md` | `_pages/*` | Page frontmatter, permalink, JSON-LD structured data |
+| `.omo/rules/linting.md` | `**/*.js`, `**/*.css`, `**/*.html`, `tests/*` | Lint/test commands, tools, config, prohibited patterns |
+| `.omo/rules/privacy.md` | `_data/*`, `_includes/*`, `_config*`, `**/*.html`, `**/*.js`, `**/*.yml` | Public repo data handling, tracking consent |
+| `.omo/rules/task-management.md` | `BACKLOG.md`, `CHANGELOG.md`, `VERSION` | Branch naming, commits, PR workflow, versioning |
+| `.omo/rules/rules-authoring.md` | `.omo/rules/*` | Meta-guide for writing effective rule files |
 
-IF genererer/endrer bilder
-→ LES: .design/graphics.md
-→ SJEKK: 16:9 eller 4:3 aspect ratio
-→ SJEKK: Ingen tekst i bilder
-→ SJEKK: Norsk alt text klargjort
-```
+Design/architecture documents live in `.design/*.md` — loaded on demand via READ from scenarios.
+
+### Workflow
+
+1. Standing directives from `instructions` are always in context (system prompt)
+2. When you Read a file, rules-injector appends matching `.omo/rules/*.md` content
+3. Scenario-specific action mapping uses `.opencode/lookup.json`
+4. Design/architecture documents live in `.design/*.md` — loaded on demand
+
+### Lookup — `.opencode/lookup.json`
+
+Maps action types to reads/checks/runs/updates. Reference this file directly (not via instructions) when determining what to verify for a given task type (css, js, html, commit, etc.).
 
 ## Quick Reference
 
