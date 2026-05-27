@@ -104,7 +104,6 @@ json_ld:
 
     <div class="science-divider">
         <div class="science-divider-image">
-            <img src="{{ '/assets/images/banners/science-research.webp' | relative_url }}" alt="">
         </div>
         <div class="science-divider-content">
             <h3>Norske forskningsetiske standarder</h3>
@@ -545,6 +544,13 @@ json_ld:
     .ethics-column {
         border-right: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .ethics-column:last-child {
+        border-bottom: none;
+    }
+}
+</style>0, 0, 0, 0.1);
     }
 
     .ethics-column:last-child {
