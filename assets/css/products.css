@@ -40,21 +40,20 @@
 .product-cta {
     display: inline-block;
     padding: 14px 32px;
-    background-color: var(--primary-accent);
-    color: var(--primary-accent-contrast);
+    background-color: var(--cta-primary-bg);
+    color: var(--cta-primary-text);
     text-decoration: none;
     border-radius: var(--radius-md);
     font-weight: 600;
     font-size: 1.05em;
-    transition: opacity 0.2s;
-    border: none;
+    border: 2px solid var(--cta-primary-border);
     cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
 }
 
 .product-cta:hover {
     opacity: 0.9;
     transform: translateY(-2px);
-    box-shadow: var(--box-shadow-hover-light);
 }
 
 .product-cta--spaced {
@@ -62,16 +61,14 @@
 }
 
 .product-cta--secondary {
-    background-color: transparent;
-    color: var(--primary-accent);
-    border: 2px solid var(--primary-accent);
+    background-color: var(--cta-secondary-bg);
+    color: var(--cta-secondary-text);
+    border: 2px solid var(--cta-secondary-border);
 }
 
 .product-cta--secondary:hover {
-    background-color: var(--primary-accent);
-    color: var(--primary-accent-contrast);
+    opacity: 0.9;
     transform: translateY(-2px);
-    box-shadow: var(--box-shadow-hover-light);
 }
 
 .product-link {
@@ -423,6 +420,10 @@
 }
 
 .benefit-card .product-cta {
+    margin: 0 var(--space-lg) var(--space-lg);
+    align-self: flex-start;
+}
+efit-card .product-cta {
     margin: 0 var(--space-lg) var(--space-lg);
     align-self: flex-start;
 }
