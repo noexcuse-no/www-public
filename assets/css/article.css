@@ -1,3 +1,4 @@
+.perspektiv-hero,
 .frame-hero {
     position: relative;
     max-width: 1100px;
@@ -5,12 +6,14 @@
     padding: 0;
 }
 
+.perspektiv-hero-image,
 .frame-hero-image {
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
 }
 
+.perspektiv-hero-image img,
 .frame-hero-image img {
     width: 100%;
     height: 100%;
@@ -19,37 +22,44 @@
     border-radius: 0;
 }
 
+.perspektiv-hero-content,
 .frame-hero-content {
-    padding: 32px 40px;
+    padding: var(--space-xl) var(--space-2xl);
     text-align: center;
     background: var(--background-color-light);
     color: var(--text-color-light);
 }
 
+.perspektiv-breadcrumb,
 .frame-breadcrumb {
     font-size: 0.9em;
     margin-bottom: 16px;
 }
 
+.perspektiv-breadcrumb a,
 .frame-breadcrumb a {
     color: var(--link-color-light);
 }
 
+.perspektiv-breadcrumb,
 .frame-breadcrumb {
     font-size: 0.9em;
     margin-bottom: 16px;
 }
 
+.perspektiv-breadcrumb a,
 .frame-breadcrumb a {
     color: rgba(255,255,255,0.85);
 }
 
+.perspektiv-hero h1,
 .frame-hero h1 {
     font-size: 2.5em;
     margin-bottom: 16px;
     color: var(--text-color-light);
 }
 
+.perspektiv-intro,
 .frame-intro {
     font-size: 1.15em;
     line-height: 1.7;
@@ -59,6 +69,7 @@
     opacity: 0.85;
 }
 
+.perspektiv-intro,
 .frame-intro {
     font-size: 1.15em;
     line-height: 1.7;
@@ -67,41 +78,48 @@
     margin: 0 auto;
 }
 
+.perspektiv-section,
 .frame-section {
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: var(--space-2xl) var(--space-md);
 }
 
+.perspektiv-section h2,
 .frame-section h2 {
     font-size: 1.6em;
     margin-bottom: 20px;
 }
 
+.perspektiv-section h3,
 .frame-section h3 {
     font-size: 1.2em;
     margin-bottom: 12px;
 }
 
+.perspektiv-section p,
 .frame-section p {
     line-height: 1.7;
     margin-bottom: 16px;
 }
 
+.perspektiv-element,
 .frame-element {
     background: var(--box-background-light);
-    padding: 24px;
-    border-radius: 12px;
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
     margin: 24px 0;
     border-left: 4px solid var(--primary-accent);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.perspektiv-element:hover,
 .frame-element:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-md);
 }
 
+.perspektiv-challenges,
 .frame-challenges {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -109,34 +127,40 @@
     margin: 24px 0;
 }
 
+.perspektiv-challenge,
 .frame-challenge {
     background: var(--box-background-light);
     padding: 20px;
-    border-radius: 12px;
+    border-radius: var(--radius-lg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.perspektiv-challenge:hover,
 .frame-challenge:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-lg);
 }
 
+.perspektiv-challenge h4,
 .frame-challenge h4 {
     margin: 0 0 8px 0;
     font-size: 1em;
 }
 
+.perspektiv-challenge p,
 .frame-challenge p {
     margin: 0;
     font-size: 0.95em;
     opacity: 0.85;
 }
 
+.perspektiv-questions,
 .frame-questions {
     list-style: none;
     padding: 0;
 }
 
+.perspektiv-questions li,
 .frame-questions li {
     padding: 12px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -144,6 +168,7 @@
     position: relative;
 }
 
+.perspektiv-questions li:before,
 .frame-questions li:before {
     content: "→";
     position: absolute;
@@ -151,21 +176,24 @@
     color: var(--primary-accent);
 }
 
+.perspektiv-cta,
 .frame-cta {
     max-width: 800px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: var(--space-4xl) var(--space-md);
     text-align: center;
     background: var(--box-background-light);
-    border-radius: 16px;
+    border-radius: var(--radius-xl);
     margin-bottom: 40px;
 }
 
+.perspektiv-cta h2,
 .frame-cta h2 {
     font-size: 1.6em;
     margin-bottom: 16px;
 }
 
+.perspektiv-cta p,
 .frame-cta p {
     font-size: 1.05em;
     line-height: 1.6;
@@ -173,6 +201,7 @@
     opacity: 0.85;
 }
 
+.perspektiv-cta-buttons,
 .frame-cta-buttons {
     display: flex;
     gap: 16px;
@@ -180,10 +209,12 @@
     flex-wrap: wrap;
 }
 
+.perspektiv-about,
 .frame-about {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.perspektiv-link,
 .frame-link {
     display: inline-block;
     margin-top: 16px;
@@ -202,14 +233,14 @@
     color: var(--primary-accent-contrast);
     background-color: var(--primary-accent);
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     min-height: 44px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .benefit-link:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: var(--shadow-sm);
 }
 
 .section-illustration {
@@ -217,53 +248,38 @@
     max-width: 600px;
     display: block;
     margin: 0 auto 24px;
-    border-radius: 12px;
-}
-
-.dark-mode .frame-hero-content {
-    background: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-}
-
-.dark-mode .frame-hero h1 {
-    color: var(--banner-text-dark);
-}
-
-.dark-mode .frame-intro {
-    color: var(--banner-text-dark);
-}
-
-.dark-mode .frame-breadcrumb a {
-    color: var(--link-color-dark);
-}
-
-.dark-mode .benefit-link {
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
-}
-
-@media (max-width: 768px) {
+    border-radius: var(--radius-lg);
+@media (max-width: 599px) {
+    .perspektiv-hero-content,
     .frame-hero-content {
-        padding: 30px 20px 20px;
+        padding: var(--space-xl) var(--space-md) var(--space-md);
     }
 
+    .perspektiv-hero h1,
     .frame-hero h1 {
         font-size: 1.8em;
     }
 
+    .perspektiv-intro,
     .frame-intro {
         font-size: 1em;
     }
 
+    .perspektiv-challenges,
     .frame-challenges {
         grid-template-columns: 1fr;
     }
 
+    .perspektiv-cta-buttons,
     .frame-cta-buttons {
         flex-direction: column;
         align-items: center;
     }
 }
+
+}
+
+
 
 .citation {
     font-size: 0.75em;

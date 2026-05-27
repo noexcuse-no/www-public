@@ -1,5 +1,5 @@
 .products {
-    padding: 40px 20px;
+    padding: var(--space-2xl) var(--space-md);
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -36,7 +36,7 @@
 .product-hero-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 16px;
+    border-radius: var(--radius-xl);
 }
 
 .product-cta {
@@ -45,7 +45,7 @@
     background-color: var(--primary-accent);
     color: var(--primary-accent-contrast);
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     font-weight: 600;
     font-size: 1.05em;
     transition: opacity 0.2s;
@@ -56,7 +56,7 @@
 .product-cta:hover {
     opacity: 0.9;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: var(--box-shadow-hover-light);
 }
 
 .product-cta--spaced {
@@ -73,7 +73,7 @@
     background-color: var(--primary-accent);
     color: var(--primary-accent-contrast);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: var(--box-shadow-hover-light);
 }
 
 .product-link {
@@ -93,7 +93,7 @@
 
 .benefit-card {
     padding: 0;
-    border-radius: 16px;
+    border-radius: var(--radius-xl);
     box-shadow: var(--box-shadow-light);
     background-color: var(--box-background-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -104,7 +104,7 @@
 
 .benefit-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+    box-shadow: var(--shadow-xl);
 }
 
 .benefit-banner {
@@ -115,7 +115,7 @@
 }
 
 .benefit-card-content {
-    padding: 24px;
+    padding: var(--space-lg);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -164,7 +164,7 @@
 }
 
 .landing-hero-content {
-    padding: 32px 40px;
+    padding: var(--space-xl) var(--space-2xl);
     text-align: center;
     background: var(--background-color-light);
 }
@@ -210,7 +210,7 @@
 .landing-cta {
     max-width: 900px;
     margin: 0 auto;
-    padding: 60px 40px;
+    padding: var(--space-4xl) var(--space-2xl);
 }
 
 .landing-benefits h2,
@@ -238,8 +238,8 @@
 .process-step {
     flex: 1;
     text-align: center;
-    padding: 32px 20px;
-    border-radius: 12px;
+    padding: var(--space-xl) var(--space-md);
+    border-radius: var(--radius-lg);
     box-shadow: var(--box-shadow-light);
     background-color: var(--box-background-light);
     position: relative;
@@ -263,13 +263,13 @@
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     margin-bottom: 12px;
 }
 
 .process-step:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-lg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -303,8 +303,8 @@
 }
 
 .case-card {
-    padding: 24px;
-    border-radius: 12px;
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
     box-shadow: var(--box-shadow-light);
     background-color: var(--box-background-light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -312,7 +312,7 @@
 
 .case-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-lg);
 }
 
 .case-card h3 {
@@ -333,7 +333,7 @@
 
 .landing-cta {
     text-align: center;
-    padding: 80px 40px;
+    padding: var(--space-5xl) var(--space-2xl);
 }
 
 .landing-cta p {
@@ -347,36 +347,8 @@
     font-size: 1.2em;
 }
 
-.dark-mode .landing-hero-content {
-    background: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-}
 
-.dark-mode .landing-hero-content h1 {
-    color: var(--banner-text-dark);
-}
-
-.dark-mode .landing-hero-description {
-    color: var(--banner-text-dark);
-}
-
-.dark-mode .benefit-card {
-    background-color: var(--box-background-dark);
-}
-
-.dark-mode .benefit-card:hover {
-    box-shadow: 0 16px 32px rgba(0,0,0,0.4);
-}
-
-.dark-mode .process-step:hover {
-    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-}
-
-.dark-mode .case-card:hover {
-    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-}
-
-@media (max-width: 768px) {
+@media (max-width: 599px) {
     .product-hero {
         flex-direction: column;
         text-align: center;
@@ -402,7 +374,7 @@
     }
 
     .landing-hero-content {
-        padding: 40px 20px 20px;
+        padding: var(--space-2xl) var(--space-md) var(--space-md);
     }
 
     .landing-hero-content h1 {
@@ -444,7 +416,7 @@
     .landing-story,
     .landing-cases,
     .landing-cta {
-        padding: 40px 20px;
+        padding: var(--space-2xl) var(--space-md);
     }
 
     .landing-hero-buttons {

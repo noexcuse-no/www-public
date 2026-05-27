@@ -11,7 +11,7 @@
     color: var(--text-color-light);
     width: 40%;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-xs);
     padding: 15px;
     margin-bottom: 10px;
 }

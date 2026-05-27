@@ -30,20 +30,6 @@
     display: none;
 }
 
-.dark-mode .header {
-    background-color: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-    border-bottom-color: rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode .logo-light {
-    display: none;
-}
-
-.dark-mode .logo-dark {
-    display: block;
-}
-
 @media (max-width: 599px) {
     .banner {
         flex-direction: column;
