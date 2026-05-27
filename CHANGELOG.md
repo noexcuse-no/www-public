@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Twin-primary color system: Navy #003060 / Azure #F0FFFF
+  - Header bg swaps per mode (navy light, azure dark)
+  - Page bg light changed to #c0d4e8, old #e2e8f0 stashed as --bg-neutral-light
+  - Inline SVG logo with fill controlled by --logo-fill CSS variable
+  - CTAs: 2px solid borders of the opposite twin primary for guaranteed contrast
+  - Nav links use inverted twin primary to contrast with header bg
+- Logo SVGs moved from assets/images/ → .design/graphics/originals/
 
 - `_layouts/default.html` — base template with shared boilerplate (metadata, styles, conditional breadcrumb-schema, header, footer, booking-modal, scripts)
 - `page.html` and `home.html` now inherit from `default` — eliminates boilerplate duplication

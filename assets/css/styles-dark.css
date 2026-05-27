@@ -12,11 +12,14 @@ a:hover {
 }
 
 .header {
-    background-color: var(--box-background-dark);
+    background-color: var(--banner-background-dark);
+    color: var(--banner-text-dark);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    --logo-fill: var(--primary-navy);
 }
 
 .header-margin {
-    background-color: var(--box-background-dark);
+    background-color: var(--banner-background-dark);
 }
 
 .navbar {
@@ -162,21 +165,16 @@ a:hover {
 .product-cta-footer {
     background-color: var(--background-color-dark);
 }
-/* Header dark mode */
-.header {
-    background-color: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-    border-bottom-color: rgba(255, 255, 255, 0.1);
+
+/* Navbar dark mode */
+.navbar a {
+    color: var(--nav-link-color-dark);
 }
 
-.logo-light {
-    display: none;
+.navbar a:hover {
+    color: var(--nav-link-color-dark);
+    background-color: rgba(0, 0, 0, 0.1);
 }
-
-.logo-dark {
-    display: block;
-}
-
 
 /* About page dark mode */
 .about-hero-content {
@@ -190,16 +188,6 @@ a:hover {
 
 .about-tagline {
     color: var(--banner-text-dark);
-}
-
-/* Navbar dark mode */
-.navbar a {
-    color: var(--link-color-dark);
-}
-
-.navbar a:hover {
-    color: var(--link-hover-dark);
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Article/Frame page dark mode */
@@ -307,6 +295,13 @@ a:hover {
 }
 
 .perspektiv-intro {
+    color: var(--banner-text-dark);
+}
+
+.perspektiv-breadcrumb a {
+    color: var(--link-color-dark);
+}
+erspektiv-intro {
     color: var(--banner-text-dark);
 }
 

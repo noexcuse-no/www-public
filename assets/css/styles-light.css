@@ -12,11 +12,12 @@ a:hover {
 }
 
 .header {
-    background-color: var(--box-background-light);
+    background-color: var(--banner-background-light);
+    color: var(--banner-text-light);
 }
 
 .header-margin {
-    background-color: var(--box-background-light);
+    background-color: var(--banner-background-light);
 }
 
 .navbar {

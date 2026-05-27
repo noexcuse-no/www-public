@@ -1,31 +1,61 @@
 :root {
 
-    --primary-accent: azure;
-    --primary-accent-contrast: #000a14;
+    /* ========================================
+       Twin Primary Colors
+       ======================================== */
+    --primary-navy: #003060;
+    --primary-azure: #F0FFFF;
 
-    /* Light Mode Colors */
-    --background-color-light: #e2e8f0;
+    /* Legacy aliases (backward compat) */
+    --primary-accent: var(--primary-azure);
+    --primary-accent-contrast: var(--primary-navy);
+
+    /* Logo fill (inverted per mode) */
+    --logo-fill: var(--primary-azure);
+
+    /* CTA System */
+    --cta-primary-bg: var(--primary-azure);
+    --cta-primary-text: var(--primary-navy);
+    --cta-primary-border: var(--primary-navy);
+
+    --cta-secondary-bg: var(--primary-navy);
+    --cta-secondary-text: var(--primary-azure);
+    --cta-secondary-border: var(--primary-azure);
+
+    /* Nav link colors */
+    --nav-link-color-light: var(--primary-azure);
+    --nav-link-color-dark: var(--primary-navy);
+
+    /* ========================================
+       Light Mode Colors
+       ======================================== */
+    --background-color-light: #c0d4e8;
+    --bg-neutral-light: #e2e8f0;
     --text-color-light: #37474f;
-    --banner-background-light: #3a4e58;
-    --banner-text-light: azure;
+    --banner-background-light: var(--primary-navy);
+    --banner-text-light: var(--primary-azure);
     --box-background-light: #ffffff;
     --link-color-light: #000a14;
     --link-hover-light: #000a1f;
     --footer-background-light: #ffffff;
     --footer-text-light: #000a14;
 
-    /* Dark Mode Colors */
+    /* ========================================
+       Dark Mode Colors
+       ======================================== */
     --background-color-dark: #121212;
     --text-color-dark: #ffffff;
-    --banner-background-dark: #222222;
-    --banner-text-dark: azure;
+    --banner-background-dark: var(--primary-azure);
+    --banner-text-dark: var(--primary-navy);
     --box-background-dark: #333333;
-    --link-color-dark: azure;
+    --link-color-dark: var(--primary-azure);
     --link-hover-dark: #8ab4f8;
     --footer-background-dark: #222222;
-    --footer-text-dark: azure;
+    --footer-text-dark: var(--primary-azure);
 
-    /* Elevation / Shadows */
+    /* ========================================
+       Elevation / Shadows
+       ======================================== */
     --shadow-xs: 0 2px 4px rgba(0, 0, 0, 0.08);
     --shadow-xs-dark: 0 2px 4px rgba(0, 0, 0, 0.25);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -33,13 +63,14 @@
     --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
     --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
 
-    /* Dark Mode Shadows */
     --shadow-sm-dark: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md-dark: 0 8px 20px rgba(0, 0, 0, 0.35);
     --shadow-lg-dark: 0 12px 24px rgba(0, 0, 0, 0.35);
     --shadow-xl-dark: 0 20px 60px rgba(0, 0, 0, 0.4);
 
-    /* Spacing Scale (4px base) */
+    /* ========================================
+       Spacing Scale (4px base)
+       ======================================== */
     --space-xs: 4px;
     --space-sm: 8px;
     --space-md: 16px;
@@ -50,18 +81,24 @@
     --space-4xl: 64px;
     --space-5xl: 80px;
 
-    /* Border Radius */
+    /* ========================================
+       Border Radius
+       ======================================== */
     --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 12px;
     --radius-xl: 16px;
 
-    /* Borders */
+    /* ========================================
+       Borders
+       ======================================== */
     --border-light: 1px solid rgba(0, 0, 0, 0.08);
     --border-medium: 1px solid rgba(0, 0, 0, 0.1);
     --border-dark: 1px solid rgba(255, 255, 255, 0.1);
 
-    /* Content Widths */
+    /* ========================================
+       Content Widths
+       ======================================== */
     --content-max: 1100px;
     --content-narrow: 65ch;
     --content-wide: 800px;
@@ -79,4 +116,4 @@
     --button-background-light: var(--primary-accent);
     --button-background-dark: var(--box-background-dark);
     --button-text-color-light: var(--primary-accent-contrast);
-    --button-text-color-dark: var(--text-color-light); /* For dark bg buttons in light mode */
+    --button-text-color-dark: var(--text-color-light);
