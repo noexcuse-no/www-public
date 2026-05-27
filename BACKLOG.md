@@ -188,19 +188,19 @@ See relevant spec files for each expansion.
 
 ---
 
-### Phase 10 — Site Review Fixes & Animations
+### Phase 10 — Site Review Fixes & Animations ✅
 
-*Planned 2026-05-27. Discrete tasks from site review, no dependencies between them except where noted.*
+*Color system (superseding 10.2) committed in PR #47. Remaining items still pending.*
 
 **10.1 — Rename `/organisasjonskultur/` → `/usikkerhet/`**
 - **Action:** Update permalink in `_pages/ledelse_usikkerhet.md`, cross-references in `_pages/ledelse_60-2.md` and `_products/ledelse-60-2.md`
 - **Scope:** Content fix — URL change + cross-link updates
 - **No blockers**
 
-**10.2 — Header background color for azure WCAG AA**
-- **Action:** Change light mode header background to enable WCAG AA contrast with azure accent color
-- **Scope:** CSS — new variable + color update
-- **No blockers**
+**[10.2] — ✅ COMPLETE (PR #47)**
+- Superseded by full twin-primary color system: Navy #003060 / Azure #F0FFFF
+- Header bg swaps per mode, inline SVG logo, CTA borders, nav link colors
+- See `.design/colors.md` for full spec
 
 **10.3 — Hero animation system (frontmatter-driven)**
 - **Action:** Build framework where hero effects (parallax-fade, ken-burns, etc.) are selected per page via frontmatter; create `hero-effects.js` dispatcher
@@ -225,9 +225,7 @@ See relevant spec files for each expansion.
 **10.7 — Full-width hero**
 - **Action:** Remove max-width constraint on hero sections for full-bleed layout
 - **Scope:** CSS — hero section width adjustments
-- **No blockers**
-
----
+- **No blockers**---
 
 ## Design Decisions
 
@@ -310,9 +308,11 @@ All new images must follow `.design/graphics.md` prompt rules:
 
 | PR | Branch | Status | What |
 |----|--------|--------|------|
-| [#42](https://github.com/noexcuse-no/www-public/pull/42) | `fix/perspektiv-frame-lookup` | ✅ **Merged** | Explicit `frame_id` frontmatter for perspektiv pages (fixes empty H1, broken images) |
+| [#42](https://github.com/noexcuse-no/www-public/pull/42) | `fix/perspektiv-frame-lookup` | ✅ **Merged** | Explicit `frame_id` frontmatter for perspektiv pages |
 | [#43](https://github.com/noexcuse-no/www-public/pull/43) | `refactor/architecture-debt` | ✅ **Merged** | Phase 8 P1-P3 + Phase 9 rules restructuring |
-| [#44](https://github.com/noexcuse-no/www-public/pull/44) | `refactor/architecture-debt` | ✅ **Merged** | Layout refactor (default.html), testing/deploy rules, design docs |
+| [#44](https://github.com/noexcuse-no/www-public/pull/44) | `refactor/architecture-debt` | ✅ **Merged** | Layout refactor, testing/deploy rules, design docs |
+| [#46](https://github.com/noexcuse-no/www-public/pull/46) | `feature/layout-system` | 🟡 **Open** | P5 layout system, Fix 7/8/13, logo dark mode |
+| [#47](https://github.com/noexcuse-no/www-public/pull/47) | `feature/layout-system` | 🟡 **Open** | Twin-primary color system, inline SVG logo |
 
 ## In Progress
 
