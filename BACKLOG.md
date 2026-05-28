@@ -61,6 +61,8 @@ See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/READ
 
 ---
 
+---
+
 ### Phase 5 — Existing Article Expansions ✅ COMPLETE
 
 *Completed 2026-05-26. See CHANGELOG.md [1.6.0].*
@@ -126,6 +128,39 @@ See relevant spec files for each expansion.
 | `/mennesker/` | Blanchard & Barrett | "Blanchard og Barrett viser at det ikke finnes én fasit på god ledelse — kontekst bestemmer hva som fungerer. Ledelse 60:2 диагностицирует orientering, ikke korrekthet." |
 | `/påvirkning/` | Pfeffer | "Pfeffer dokumenterer at makt er kontekstavhengig. Ledelse 60:2 kartlegger maktfordeling, ikke rettferdighet." |
 | `/identitet/` | Logan | "Logan beskriver kulturstadier som beskrivende — ikke normative. Ledelse 60:2 identifiserer hvor organisasjonen er, ikke hvor den bør være." |
+
+---
+
+### Phase 6 — Regression Fixes
+
+*Content regressions introduced during Phase 7 scroll-animation and SEO work.*
+
+**R1 — `_pages/ledelse_forankring.md` trunkert**
+- **Problem:** CTA-seksjonen er kuttet midt i `<h2>` — mangler brødtekst, to CTA-knapper, avsluttende `</section>`, og 4 fotnotereferanser
+- **Årsak:** Commit `d1d6ac5` — filen gikk fra 315 → 106 linjer
+- **Fix:** Gjenopprett CTA-innhold fra historisk commit, legg til fotnoter, lukk åpne `<sup>`-tagger
+
+**R2 — `_pages/ledelse_usikkerhet.md` feil permalink og navn**
+- **Problem:** `permalink: /organisasjonskultur/` skal være `/usikkerhet/`
+- **Scope:** Permalink, frontmatter, JSON-LD, 12 åpne `<sup>`-tagger
+- **Kryssreferanser:** `_products/ledelse-60-2.md:32`, `_pages/ledelse_60-2.md:78`
+
+**R3 — `_pages/ledelse_tillit.md` nestede `<sup>`-tagger**
+- **Problem:** Linje 115: 5 `<sup>` nestet uten `</sup>`
+- **Årsak:** Commit `90f39cc`
+- **Fix:** Separer til korrekt `<sup>...</sup>` per sitat, lukk alle 11 åpne `<sup>`
+
+**R4 — `_pages/ledelse_generativ-ki.md` mangler `</sup>`**
+- **Problem:** Én åpen `<sup>` på linje 90 (Hubbard-sitat)
+- **Fix:** Legg til `</sup>`
+
+**R5 — Alle `<sup class="citation">` mangler `</sup>`**
+- **Gjennomgående problem:** Ingen `</sup>` finnes — etterfølgende tekst blir hevet skrift
+- **Scope:** Alle `_pages/ledelse_*.md`-filer
+
+**R6 — Kryssreferanser til `/organisasjonskultur/`**
+- **Scope:** `_pages/ledelse_60-2.md`, `_products/ledelse-60-2.md`
+- **Fix:** Oppdater til `/usikkerhet/`
 
 ---
 
@@ -225,7 +260,42 @@ See relevant spec files for each expansion.
 **10.7 — Full-width hero**
 - **Action:** Remove max-width constraint on hero sections for full-bleed layout
 - **Scope:** CSS — hero section width adjustments
-- **No blockers**---
+- **No blockers**
+
+---
+
+### Phase 11 — Design Polish (P5 User Testing Findings)
+
+*Brukertestfunn fra P5 som ble dokumentert i forrige sesjon. Krever ingen nye designbeslutninger — avklaringene er allerede gjort.*
+
+**D1 — Header-bakgrunn skal være konstant**
+- **Problem:** Header-bakgrunn endrer seg med tema. I dark mode blir logoen usynlig
+- **Vedtak:** Header alltid `#003060` (mørk marine) i begge tema. Logo alltid `#F0FFFF` (azur)
+- **Scope:** `assets/css/colors.css`, `assets/css/styles-light.css`, `assets/css/styles-dark.css`, `assets/css/header.css`
+
+**D2 — CTA hover-effekter: opacity → fargeoverganger**
+- **Problem:** CTA-knapper bruker `opacity` + `translateY` for hover — skal bruke fargeoverganger (type A/B)
+- **Vedtak:** Type A (azur på marine + azur outline), Type B (marine på azur + marine outline). Hover: bytt bakgrunns- og tekstfarge
+- **Scope:** `assets/css/products.css`, `assets/css/article.css`, `_includes/cta.html`
+
+**D3 — Hero text overlay på bannerbilder**
+- **Problem:** Site title + description mangler CSS text overlay med bakgrunnsstyling for lesbarhet på bannerbilder
+- **Scope:** CSS i layout-systemet + eventuell template-endring
+
+**D4 — Profil-tagger formatering**
+- **Problem:** `{{ profile.tags }}` rendres som rå tekst uten spacing
+- **Fix:** Bruk Liquid `| split` + `| join` eller loop med proper spacing
+- **Scope:** `_includes/profiles.html`
+
+**D5 — Dagfinn mangler `title`-felt**
+- **Problem:** `_profiles/dagfinn.md` mangler `title: "Daglig leder"`, vises ikke på profil-kort
+- **Scope:** `_profiles/dagfinn.md`, `_includes/profiles.html`
+
+**D6 — Profildetaljer: unødvendig scrollbar**
+- **Problem:** Scrollbar vises ved første lass i profildetalj-visning
+- **Scope:** `assets/css/profiles.css`
+
+---
 
 ## Design Decisions
 
@@ -265,7 +335,7 @@ When generating images for N1-N3 and future content, ensure maximum context is k
 | `/struktur/` → "Det vitenskapelige grunnlaget" | `/perspektiv/` | "Les om multiframe-tenkning →" | "No scoring" backing |
 | `/mennesker/` → "Verdier og mening" | `/makt/` | Noble cause connects to servant leadership | Core Values expansion |
 | `/identitet/` → tribal stages | `/triader/` | "Hvordan bygge triader →" | After Logan's stages |
-| `/usikkerhet/` → Kotter | `/triader/` | "Verktøy for kulturendring: triader →" | After Kotter section |
+| `/usikkerhet/` (fremtidig) → Kotter | `/triader/` | "Verktøy for kulturendring: triader →" | After Kotter section |
 | All 4 frame articles → "Det vitenskapelige grunnlaget" | `/perspektiv/` | "Les om hvorfor vi ikke scorer →" | Per-frame "no scoring" sentence |
 
 ---
@@ -274,12 +344,14 @@ When generating images for N1-N3 and future content, ensure maximum context is k
 
 | Spec file | Action | Purpose | Status |
 |-----------|--------|---------|--------|
-| `.specs/triader/README.md` | ✅ **Created** | Triader article: concept, mechanics, formation, cross-links | **Ready for review** |
-| `.specs/makt/README.md` | ✅ **Created** | Makt article: Pfeffer vs. Blanchard tension, Price of Power full | **Ready for review** |
-| `.specs/perspektiv/README.md` | ✅ **Created** | Perspektiv article: multiframe thinking, "no scoring" backing | **Ready for review** |
-| `.specs/organisasjonskultur/README.md` | **Update** | Add Kotter 8-step + "organisert anarki" integration | Ready |
+| `.specs/triader/README.md` | ✅ **Created** | Triader article | **Ready for review** |
+| `.specs/makt/README.md` | ✅ **Created** | Makt article | **Ready for review** |
+| `.specs/perspektiv/README.md` | ✅ **Created** | Perspektiv article | **Ready for review** |
+| `.specs/organisasjonskultur/README.md` | **Rename to usikkerhet** | Organisasjonskultur → Usikkerhet. Add Kotter 8-step + "organisert anarki" | Ready |
 | `.specs/grc/README.md` | **Update** | Confirm E1-E6 integration points | Ready |
 | `.specs/ledelse-60-2/README.md` | **Update** | Reflect N1-N3 additions, E1-E6 expansions | Ready |
+| `.specs/emne/README.md` | **Create** | Tag lookup page `/emne/` — purpose, scope, requirements | Future feature |
+| `.specs/i18n/README.md` | **Create** | i18n multilingual support — approach, scope, constraints | Future feature |
 
 ---
 
@@ -317,16 +389,35 @@ All new images must follow `.design/graphics.md` prompt rules:
 ## In Progress
 
 ### P5 — Layout System (`feature/layout-system`)
-- [x] P5.1: Design document — `.design/layouts.md` med content width system, section rhythm, grid, flex utilities, page template specs
-- [x] P5.2: CSS implementation — `.container`, `.section`, `.grid`, `.flex-*` klasser i `layout.css`
-- [x] P5.3: Template migration — oppdater `perspektiv.html`, `products.html`, `profiles.html` til nye klasser
+- [x] P5.1: Design document — `.design/layouts.md`
+- [x] P5.2: CSS implementation — `.container`, `.section`, `.grid`, `.flex-*` i `layout.css`
+- [x] P5.3: Template migration — perspektiv.html, products.html, profiles.html
 - [x] P5.4: Cleanup — fjern dupliserte `max-width`/`padding` fra komponent-CSS
+- [ ] **Outstanding:** Migrer `_pages/ledelse_*.md` artiklene fra `frame-`-klasser til layout-systemet (Phase 6 R1-R5, Phase 11 D1-D6 må løses først)
 
 ## Completed
 
 Do not add completed work here, add them to CHANGELOG.md
 
 ---
+
+## Future Features (Deferred)
+
+*Features that are acknowledged but not yet scheduled. Requires specification sprint before implementation.*
+
+**FF1 — Tag lookup side `/emne/`**
+- **Purpose:** Filtering/search across articles by tag
+- **Status:** Future feature, not yet spec'd
+- **Dependencies:** None
+
+**FF2 — i18n flerspråklig støtte**
+- **Status:** Future feature, not yet spec'd
+- **Approach:** Language selection by browser `Accept-Language`, fallback Norwegian, handled in code (not webserver), per Jekyll best practices
+- **Dependencies:** None
+
+**FF3 — Nye artikler (Triader, Makt, Perspektiv)**
+- **Status:** Specs complete. **Blocked on:** images + content draft needed
+- **Reference:** `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`
 
 ## Blocked
 
