@@ -346,6 +346,16 @@ grep -r "\.png" _includes/ _layouts/ *.html --include="*.html"
 - [ ] Site passes `npm run lint`
 - [ ] Tested locally with `jekyll serve`
 
+## Design Evolution
+
+### Pivot: Line-art icons → Mini-hero banners (16:9)
+
+**Planlagt (originalt):** 7 line-art icons i azure, 1:1 format, plassert i `assets/images/icons/`.
+
+**Valgt (implementert):** Mini-hero-bannere i 16:9-format, abstrakte illustrasjoner som matcher hero-stilen. Plassert i `assets/images/banners/`.
+
+**Bakgrunn:** Under innholdsarbeidet viste det seg at 1:1-ikoner ga for lite visuelt uttrykk per benefit/step. Bannere i 16:9 gir mer kontekst og matcher den skandinavisk minimale illustrasjonsstilen bedre. Ikonene eksisterer fortsatt som `.webp` i `assets/images/icons/` for eldre referanser.
+
 ### CSS Display Considerations
 
 No CSS changes needed for WebP — browser handles format automatically when `src` points to `.webp` file. Original CSS dimensions are preserved:

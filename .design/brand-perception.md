@@ -1,10 +1,16 @@
 # Brand Perception & Tone Guide - No Excuse AS
 
-## Brand Personality
-- **Direct:** Say what we mean, no consultant-speak
-- **Competent:** Proven results, real experience
-- **Scandinavian minimal:** Clean, functional, no fluff
-- **Anti-establishment:** Question the obvious, challenge conventions
+## Brand Personality (5 traits)
+
+| Trait | Norwegian | Description |
+|-------|-----------|-------------|
+| **Rebellious** | Opprørsk | Utfordrer etablerte sannheter, tar upopulære standpunkt. Sier det andre tenker men ikke tør å si. |
+| **Clear** | Tydelig | Komplekse ideer gjort enkle. Null konsulentspråk. Skjærer gjennom støyen. |
+| **Nordic** | Nordisk | Demokratisk design, ærlig, intim, jordnær. Ikke pompøs eller ekskluderende. |
+| **Trustworthy** | Troverdig | Faglig tyngde, forskningsbasert, transparent. Ikke buzzwords — faktisk kunnskap. |
+| **Bold** | Modig | Tydelige standpunkt, visuelt mot, upretensiøs selvsikkerhet. Tør å være annerledes. |
+
+**Opprinnelig 4-traits-modell (erstattet):** De opprinnelige trekkene *Direct, Competent, Scandinavian minimal, Anti-establishment* er videreutviklet til 5-traits-modellen ovenfor under design-intervjuet (2026-05-27). *Rebellious* arver fra *Anti-establishment* og *Direct*, *Clear* arver fra *Direct*, *Nordic* arver fra *Scandinavian minimal*, *Trustworthy* arver fra *Competent*, *Bold* arver fra *Direct* og *Anti-establishment*.
 
 ## Target Perception
 - "We say what others think but don't say out loud" - slightly rebellious
