@@ -2,13 +2,18 @@
 
 ## Brand Aesthetic
 
-**Scandinavian minimal** — clean lines, generous whitespace, restrained color palette. Think IKEA meets Kinfolk magazine.
+**Scandinavian minimal / Nordic** — clean lines, generous whitespace, restrained color palette. Think IKEA meets Kinfolk magazine with Apple.com's confident minimalism.
+
+**Democratic design** — accessible to everyone, clear and open, no elitism. The minimalism serves *clarity and function*, not just aesthetics. If a visual choice makes something harder to understand, it's wrong regardless of how good it looks.
 
 **Core principles:**
 - Abstract over literal
 - Structural over decorative
 - Monochromatic with single accent (azure)
 - No text in any image (multilingual site)
+- Premium, not pretentious — confidence through restraint
+
+**Visual reference:** Apple.com (see `brand-perception.md` for details). Borrow the confidence in whitespace and typography-driven hierarchy, not the layout or interaction patterns.
 
 ## Color Palette for Generated Images
 
@@ -148,6 +153,47 @@ blue green amber purple tones, corporate illustration, no text
 | File | Prompt |
 |------|--------|
 | `illustrasjon-*.cta.png` | "Clean minimal infographic showing leadership assessment and mapping process, clipboard with checkmarks, professional Scandinavian style, blue green amber purple tones, corporate illustration, no text" |
+
+---
+
+## Photography Guidelines
+
+While illustrations form the primary visual language, real photography is used selectively to add human warmth and credibility.
+
+### Where to Use Photos
+
+| Context | Use Photography | Why |
+|---------|----------------|-----|
+| Team profiles (`_profiles/*.md`) | ✅ Always | Real faces build trust |
+| Case studies (`_cases/*.md`) | ✅ Recommended | Real clients / settings ground the stories |
+| Hero sections | ❌ Use illustrations | Abstract illustrations support the brand better |
+| Benefit banners | ❌ Use illustrations | Illustrations communicate concepts cleaner |
+
+### Photo Style
+
+- **Natural light, not studio** — authentic, not corporate
+- **Candid over posed** — real moments, not stiff handshakes
+- **Environmental portraits** — show the person in their context (office, meeting room, not a white backdrop)
+- **Desaturated color palette** — tone down saturation to ~70% to harmonize with the muted illustration palette
+- **No staged business photos** — no fake phone calls, no whiteboard pointing, no crossed-arms-in-suit
+
+### Technical Requirements
+
+- Minimum resolution: 1200×1200px for full-width use
+- Format: WebP (converted from original PNG/JPEG)
+- Aspect ratio 1:1 for profile cards (displayed 100×100px)
+- Aspect ratio 16:9 for case study hero images
+- All photos must have descriptive `alt` text in Norwegian (see Alt Text section)
+
+### Examples
+
+✅ Good:
+
+> A person in a sweater sits at a wooden meeting table, mid-laugh, natural window light from the side. Desaturated colors, muted background.
+
+❌ Avoid:
+
+> A person in a suit shakes hands with another person in a suit in front of a gradient backdrop. Over-lit, over-saturated, corporate stock photo energy.
 
 ---
 

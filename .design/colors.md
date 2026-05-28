@@ -102,3 +102,14 @@ These aliases ensure components using the old variable names still work.
 - Nav links use the inverted twin primary to contrast with the header background
 - Logo fill swaps via `--logo-fill` CSS variable — controlled by mode stylesheets on `.header`
 - Page link colors (`--link-color-light`/`--link-color-dark`) are for content links only; nav links use `--nav-link-*` variables
+
+### Color Intensity Levels
+
+Color is used sparingly — the brand is primarily typography and whitespace. There are two levels of color application:
+
+| Level | Application | Examples |
+|-------|-------------|---------|
+| **Full background** | Key navigational and structural elements only | Header, CTA buttons |
+| **Accent** (sparingly) | Interactive and highlight elements | Links on hover, small decorative accents, icons |
+
+Rule of thumb: if an element isn't structural (navigation) or a primary action (CTA), it should not use a full background color. Accent-level usage (text color, small highlights) is preferred for everything else.
