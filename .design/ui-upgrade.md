@@ -10,18 +10,28 @@ Visual design upgrade for No Excuse AS article pages. This document describes th
 
 ### Motion Philosophy
 
-Animations are **purposeful and restrained** — they guide attention and communicate state, never distract. They reinforce the Scandinavian minimal brand: clean, functional, no excess.
+Animations follow a **layered approach** — expressive on brand surfaces, restrained on UI:
+
+| Layer | Treatment | When |
+|-------|-----------|------|
+| **Brand surfaces** (hero, page transitions, logo) | Expressive, memorable, bold | First impressions, brand moments |
+| **UI interactions** (cards, buttons, lists, micro-interactions) | Purposeful and restrained, never distracting | User interactions, scroll-triggered entries |
+
+This maps to the brand personality: rebellious confidence on brand surfaces, Scandinavian minimalism on UI. Both layers must feel like the same brand — the difference is volume, not character.
 
 ### Animation Types
 
-| Animation | Trigger | Duration | Easing | Use Case |
-|-----------|---------|----------|--------|----------|
-| `fadeIn` | viewport entry | 600ms | ease-out | Section containers |
-| `fadeInUp` | viewport entry | 600ms | ease-out | Cards, content blocks |
-| `slideInLeft` | viewport entry | 500ms | ease-out | Question list items |
-| `slideInRight` | viewport entry | 500ms | ease-out | (reserved) |
-| Micro-interaction | hover | 200ms | ease | Buttons, links |
-| Card lift | hover | 300ms | ease | Benefit cards, case cards |
+| Animation | Trigger | Duration | Easing | Use Case | Layer |
+|-----------|---------|----------|--------|----------|-------|
+| `heroReveal` | page load | 800ms | ease-out | Hero title, intro text | **Brand** |
+| `heroImageReveal` | page load | 1200ms | ease-out | Hero image scale-in | **Brand** |
+| `pageTransition` | page enter | 400ms | ease-out | Page-level entrance | **Brand** |
+| `fadeIn` | viewport entry | 600ms | ease-out | Section containers | UI |
+| `fadeInUp` | viewport entry | 600ms | ease-out | Cards, content blocks | UI |
+| `slideInLeft` | viewport entry | 500ms | ease-out | Question list items | UI |
+| `slideInRight` | viewport entry | 500ms | ease-out | (reserved) | UI |
+| Micro-interaction | hover | 200ms | ease | Buttons, links | UI |
+| Card lift | hover | 300ms | ease | Benefit cards, case cards | UI |
 
 ### Intersection Observer Configuration
 
@@ -37,6 +47,45 @@ Animations are **purposeful and restrained** — they guide attention and commun
 ### Keyframe Definitions
 
 ```css
+/* --- Brand Surface Animations (Expressive) --- */
+
+@keyframes heroReveal {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroImageReveal {
+    from {
+        opacity: 0;
+        transform: scale(1.05);
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes pageTransition {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- UI Animations (Restrained) --- */
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -100,7 +149,7 @@ Children animate sequentially with CSS variable `--stagger-delay`:
 
 ### Reduced Motion
 
-For users with `prefers-reduced-motion: reduce`:
+For users with `prefers-reduced-motion: reduce` — all animations (brand and UI) are disabled:
 ```css
 @media (prefers-reduced-motion: reduce) {
     .animate-on-scroll {
@@ -110,6 +159,17 @@ For users with `prefers-reduced-motion: reduce`:
     .animate-on-scroll.is-visible {
         opacity: 1;
         transform: none;
+    }
+
+    /* Brand surface animations */
+    .hero-title,
+    .hero-intro,
+    .hero-image,
+    .page-transition {
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+        filter: none;
     }
 }
 ```
@@ -186,12 +246,12 @@ background: linear-gradient(
 
 ### Animation Sequence (Hero Load)
 
-| Time | Action |
-|------|--------|
-| 0ms | Page loads, image visible |
-| 0ms | Title begins fadeInUp (0.8s duration) |
-| 150ms | Intro begins fadeInUp (0.8s duration, 150ms delay) |
-| 200ms | Breadcrumb fades in |
+| Time | Action | Animation |
+|------|--------|-----------|
+| 0ms | Page loads | Hero image begins `heroImageReveal` (1.2s) |
+| 200ms | Title begins entrance | `heroReveal` (0.8s) |
+| 350ms | Intro begins entrance | `heroReveal` (0.8s, added delay) |
+| 400ms | Breadcrumb fades in | `fadeIn` (0.6s) |
 
 ---
 
@@ -442,8 +502,10 @@ assets/
 
 ## 13. Animation Performance
 
-- Use `transform` and `opacity` only (GPU-accelerated)
+- Use `transform` and `opacity` for UI animations (GPU-accelerated, cheap)
+- `filter: blur()` is GPU-accelerated but more expensive — reserve for hero/brand animations only (one-shot)
 - No layout-triggering properties (width, height, margin, padding)
 - `will-change: transform, opacity` on `.animate-on-scroll` elements
+- `will-change: transform, opacity, filter` on hero elements (removed after animation completes)
 - Intersection Observer for efficient scroll detection
 - One-shot animations (no `animation-iteration-count` looping)

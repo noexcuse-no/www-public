@@ -1,23 +1,29 @@
 # Brand Perception & Tone Guide - No Excuse AS
 
-## Brand Personality (5 traits)
-
-| Trait | Norwegian | Description |
-|-------|-----------|-------------|
-| **Rebellious** | Opprørsk | Utfordrer etablerte sannheter, tar upopulære standpunkt. Sier det andre tenker men ikke tør å si. |
-| **Clear** | Tydelig | Komplekse ideer gjort enkle. Null konsulentspråk. Skjærer gjennom støyen. |
-| **Nordic** | Nordisk | Demokratisk design, ærlig, intim, jordnær. Ikke pompøs eller ekskluderende. |
-| **Trustworthy** | Troverdig | Faglig tyngde, forskningsbasert, transparent. Ikke buzzwords — faktisk kunnskap. |
-| **Bold** | Modig | Tydelige standpunkt, visuelt mot, upretensiøs selvsikkerhet. Tør å være annerledes. |
-
-**Opprinnelig 4-traits-modell (erstattet):** De opprinnelige trekkene *Direct, Competent, Scandinavian minimal, Anti-establishment* er videreutviklet til 5-traits-modellen ovenfor under design-intervjuet (2026-05-27). *Rebellious* arver fra *Anti-establishment* og *Direct*, *Clear* arver fra *Direct*, *Nordic* arver fra *Scandinavian minimal*, *Trustworthy* arver fra *Competent*, *Bold* arver fra *Direct* og *Anti-establishment*.
+## Brand Personality
+- **Direct & Clear:** Say what we mean, no consultant-speak. Easy to understand, impossible to misinterpret.
+- **Competent:** Proven results, real experience
+- **Nordic (Scandinavian minimal):** Clean, functional, no fluff. Democratic design — accessible to everyone, not exclusive.
+- **Rebellious / Anti-establishment:** Question the obvious, challenge conventions. We say what others think.
+- **Practical:** «Folk som synes latte er pretensiøst» — down-to-earth, no bullshit
 
 ## Target Perception
-- "We say what others think but don't say out loud" - slightly rebellious
+- "We say what others think but don't say out loud" — slightly rebellious
 - "These guys actually get it done"
 - "Not another consultancy with fancy words"
 - "Practical, not pretentious"
 - "They sound like real people"
+- "Premium, not pretentious" — like Apple, not like luxury
+
+## Visual Reference: Apple.com
+The primary visual reference for premium minimalism is **Apple.com**. Key qualities to borrow:
+- Confident whitespace — content breathes, nothing feels cramped
+- Typography-driven hierarchy — words do the heavy lifting
+- Restrained color — one accent color used sparingly (buttons, links, small highlights)
+- Photography as human element — real people in real settings breaks the minimal sterility
+- Everything has a reason — no decorative elements, no visual noise
+
+This is about the *visual tone* of Apple (premium, confident, effortless), not about mimicking their product layout or interaction patterns.
 
 ## Voice Guidelines
 

@@ -19,45 +19,7 @@ Phase 0 (Health Sprint), Phase 1 (Quick Wins), Phase 2 (Perspektiv Architecture)
 
 ### Phase 4 — New Articles
 
-*Specs created 2026-05-26. Implementation after spec review.*
-
-See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`.
-
-**N1 — Triader** ✅ Spec complete
-- **New file:** `_pages/ledelse_triader.md`
-- **URL:** `/triader/`
-- **Source:** Logan, King & Fischer-Wright — *Tribal Leadership* (2011)
-- **Spec:** ✅ `.specs/triader/README.md` created
-- **Content:** Triads as structural tool, dyad vs. triad stability, formation steps, warning signs
-- **Design:** Style 3 (Section Illustration) for inline illustrations, Style 2 for hero
-- **Cross-links:** From `/identitet/` and `/usikkerhet/`
-- **Images needed:** 1 hero banner (Style 2), 2 section illustrations (Style 3)
-- **CTA:** Links to Ledelse 60:2
-- **Status:** Spec complete. **Blocked:** Images + content draft needed.
-
-**N2 — Makt eller tjeneste** ✅ Spec complete
-- **New file:** `_pages/ledelse_makt.md`
-- **URL:** `/makt/`
-- **Source:** Pfeffer (*Power*, 2010) ↔ Blanchard & Barrett (*Lead with LUV*, 2011) — tension pair from synthesis.md
-- **Spec:** ✅ `.specs/makt/README.md` created
-- **Content:** The central diagnostic tension: power acquisition vs. servant leadership. Pfeffer side + Blanchard side + spectrum. Includes full "The Price of Power" subsection.
-- **Design:** Style 2 for hero, Style 3 for section illustrations
-- **Cross-links:** To `/påvirkning/` (brief Price of Power there), to `/mennesker/` (servant leadership)
-- **Images needed:** 1 hero banner (Style 2), 2-3 section illustrations (Style 3)
-- **CTA:** Links to Ledelse 60:2
-- **Status:** Spec complete. **Blocked:** Images + content draft needed.
-
-**N3 — Fire perspektiver** ✅ Spec complete
-- **New file:** `_pages/ledelse_perspektiv.md`
-- **URL:** `/perspektiv/`
-- **Source:** Bolman & Deal Ch.16 — "Integrating the Frames"
-- **Spec:** ✅ `.specs/perspektiv/README.md` created
-- **Content:** Multiframe thinking as the actual leadership skill. Why single-frame thinking fails. "No scoring" philosophical backing grounded in Bolman + Hubbard + Logan.
-- **Design:** Style 2 for hero, Style 3 for section illustrations
-- **Cross-links:** To all four perspektiv articles ("no scoring" backing in each frame's reference section)
-- **Images needed:** 1 hero banner (Style 2), 1-2 section illustrations (Style 3)
-- **CTA:** Links to Ledelse 60:2
-- **Status:** Spec complete. **Blocked:** Images + content draft needed.
+*Specs created 2026-05-26. N1 (Triader), N2 (Makt), N3 (Perspektiv) moved to **Blocked** section — waiting on article content from user. See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md` for specs.*
 
 ---
 
@@ -262,26 +224,25 @@ See relevant spec files for each expansion.
 - **Scope:** CSS — hero section width adjustments
 - **No blockers**
 
-**10.8 — Booking modal iframe-fikser**
-- **Action:** Rydd opp i iframe-basert booking-modal — sørg for responsiv høyde, lukkeknapp, og konsistent dark mode
-- **Scope:** `_includes/booking-modal.html`, tilhørende CSS
-- **Depends on:** 10.9 (kan gjøres i samme gren)
-
-**10.9 — Mobile CTA-knappbredder**
-- **Action:** Sørg for at CTA-knapper har minst 44px touch targets og full bredde på mobil (<600px)
-- **Scope:** CSS — `products.css`, `cta.html`
+**10.8 — "Velg et tidspunkt" — ikke i iframe**
+- **Problem:** Booking-modal åpnes i iframe, bør være direkte lenke
+- **Scope:** Booking modal / CTA-knapper
 - **No blockers**
 
-**10.10 — Booking-lenker: konsistent åpning i ny fane**
-- **Action:** Gjør alle booking-lenker konsistente — `target="_blank"` + `rel="noopener"` på tvers av alle includes og produkt-sider
-- **Scope:** `_includes/cta.html`, `_includes/products.html`, `_includes/profiles.html`
+**10.9 — "Book en uforpliktende samtale" — ikke i iframe**
+- **Problem:** Samme som 10.8 — CTA åpnes i iframe
+- **Scope:** CTA-knapper
 - **No blockers**
+
+**10.10 — Mobil: konsistente CTA-bredder**
+- **Problem:** "Bestill Ledelse 60:2" og "Book en uforpliktende samtale" har ulik bredde på mobil
+- **Scope:** CSS for CTA-knapper på mobilbreakpoint
 
 ---
 
-### Phase 11 — Design Polish (P5 User Testing Findings) + /metode/ Overhaul
+### Phase 11 — Design Polish & /metode/ Overhaul
 
-*Brukertestfunn fra P5 som ble dokumentert i forrige sesjon. Krever ingen nye designbeslutninger — avklaringene er allerede gjort.*
+*Brukertestfunn fra P5 + nye endringer på `_pages/om_metode.md`. D7–D11 berører alle samme fil og bør gjøres samlet for å unngå merge-konflikter.*
 
 **D1 — Header-bakgrunn skal være konstant**
 - **Problem:** Header-bakgrunn endrer seg med tema. I dark mode blir logoen usynlig
@@ -311,30 +272,30 @@ See relevant spec files for each expansion.
 - **Problem:** Scrollbar vises ved første lass i profildetalj-visning
 - **Scope:** `assets/css/profiles.css`
 
-**D7 — `_pages/om_metode.md` struktur-opprydding**
-- **Problem:** Siden har vokst organiskt — mangler klar seksjonering og konsistent heading-hierarki
-- **Fix:** Implementér layout-systemets `.container`/`.section`-klasser, rydd opp i heading-nivåer (h2 → h3 der nødvendig)
-- **Scope:** `_pages/om_metode.md`, eventuelt CSS
-
-**D8 — `_pages/om_metode.md` innholdsoppdatering**
-- **Problem:** Noen avsnitt er utdaterte eller mangler referanser til nye artikler (N1-N3)
-- **Fix:** Oppdater kryssreferanser, legg til seksjon for "Slik fungerer ledelseskartleggingen" med oppdatert beskrivelse
+**D7 — `/metode/` ny tittel, beskrivelse og innledning**
 - **Scope:** `_pages/om_metode.md`
+- **Tittel:** Endre til "Om metodikk" (`title:` i frontmatter + `<h1>`)
+- **Beskrivelse:** Kort ny page description fra eksisterende tekst
+- **Innhold:** Flytt dagens beskrivende tekst til nytt avsnitt først på siden
 
-**D9 — `_pages/om_metode.md` JSON-LD / SEO**
-- **Problem:** Siden mangler strukturert data (JSON-LD TechArticle/AboutPage) og meta description
-- **Fix:** Legg til frontmatter JSON-LD, `description`, canonical URL
-- **Scope:** `_pages/om_metode.md`, eventuell layout-endring
+**D8 — Fjern "Vi fremhever fire prinsipper:"**
+- **Problem:** Linjen er overflødig — bildene viser prinsippene allerede
+- **Scope:** `_pages/om_metode.md` — linje 113
+- **Fix:** Slett linjen "Vi fremhever fire prinsipper:"
 
-**D10 — `_pages/om_metode.md` FAQ-seksjon**
-- **Action:** Legg til FAQ-seksjon med 3-5 vanlige spørsmål om Ledelse 60:2-prosessen, med FAQPage JSON-LD
-- **Scope:** `_pages/om_metode.md`, ev. `_includes/faq.json` for strukturert data
-- **Depends on:** D9 (JSON-LD mønster etablert)
+**D9 — Fjern "utvikling"-tagg fra Mennesker frame-kort**
+- **Scope:** `_pages/om_metode.md` — linje 62 (`.frame-desc` for Menneskeperspektivet)
+- **Fix:** Fjern ", utvikling" fra tag-listen
 
-**D11 — `_pages/om_metode.md` visuell oppgradering**
-- **Action:** Legg til illustrasjoner/ikoner for metodeskrittene (kartlegging → analyse → tilbakemelding)
-- **Scope:** `_pages/om_metode.md`, nye bilder i `assets/images/`
-- **Depends on:** D7 (struktur på plass), GPT Image 2 API key
+**D10 — Fjern "Symbolsk"-setning fra frame-kortbeskrivelser** *(flyttet fra R7)*
+- **Problem:** Setning som starter med "Symbolsk" er for lang for frame-kortene — samme fil som D7-D9
+- **Scope:** `_pages/om_metode.md` — linje 54, 63, 74, 83
+- **Fix:** Kutt setningen som starter med "Symbolsk" fra hver `.frame-detail-text`
+
+**D11 — Fiks syntaksfeil på `/metode/`** *(flyttet fra R8)*
+- **Problem:** Syntaksfeil i `_pages/om_metode.md` — samme fil som D7-D10
+- **Scope:** `_pages/om_metode.md`
+- **Fix:** Gjennomgå og rett syntaksfeil
 
 **R7 — `_pages/om_metode.md` regresjon: manglende fotnoter**
 - **Problem:** Commit `d1d6ac5` kuttet også fotnotereferanser i om_metode.md — flere `<sup>` mangler `</sup>`
@@ -368,22 +329,50 @@ See relevant spec files for each expansion.
 
 ---
 
-## Phase 12 — Infographic & Dark Mode Consistency
+### Phase 12 — Broader Improvements
 
-*Design enhancements that build on completed UI work from Phases 10-11. No content dependencies.*
+*Items that don't fit existing phases — cross-cutting design and asset work.*
 
-**X1 — Tre nøkkelverdier infographic**
-- **Action:** Lag en infographic som viser "Trygghet, Tydelighet, Tillit" (eller tilsvarende kjerneverdier) for bruk på forsiden eller om_metode-siden
-- **Scope:** Nytt bilde i `assets/images/`, eventuelt CSS for plassering
-- **Design:** Følg `.design/graphics.md` stil-retningslinjer — 16:9, ingen tekst, skandinavisk minimal
-- **Images needed:** 1 infographic via GPT Image 2
+**X1 — Infografikk: tre kjerneverdier under "Oppdrag og verdier"**
+- **Problem:** Trenger en enkel infografisk illustrasjon av de tre kjerneverdiene
+- **Scope:** Ny banner/illustrasjon på `/om-oss/` eller aktuell side
+- **Design:** Følg `.design/graphics.md` retningslinjer — ingen tekst, skandinavisk minimal
 - **No blockers**
 
-**X2 — Dark mode konsistens-gjennomgang**
-- **Problem:** Enkelte komponenter mangler dark mode-varianter eller har inkonsekvente farger på tvers av tema
-- **Scope:** Gjennomgang av alle CSS-filer for manglende `var(--tekst-farge)` eller hardkodede lyse farger
-- **Fix:** Oppdater manglende dark mode-regler, test på alle maler
-- **Depends on:** X1 (kan gjøres uavhengig, men samme gren bør holde begge)
+**X2 — Dark mode consistency pass**
+- **Scope:** Alle sider — cards, frames, seksjoner, bakgrunner
+- **Problem:** Dark mode har harde hvite bakgrunner enkelte steder. Ser dårlig ut i nattmodus.
+- **Prosess:** (1) Oppdater `.design/` med definitive dark mode-regler → (2) Oppdater `.specs/` → (3) Gjennomgå implementering for regresjoner
+- **Avhengighet:** Bør gjøres etter at andre designoppdateringer er ferdige
+
+---
+
+### Phase 12 — Design Alignment (Post-Interview)
+
+*Tasks identified from design interview conflict resolution and documentation harmonization.*
+
+**F5 — Bildegenerering (oppdatert design) → moved to Blocked**
+- *F5 is blocked waiting on N1-N3 article content (must be drafted and approved before image generation, per Image Generation Context Requirements). See Blocked section.*
+
+**F6 — Animasjonsimplementering (layered approach)**
+- **Scope:** Implement the layered animation system from updated `.design/ui-upgrade.md`
+- **Brand layer:** `heroReveal`, `heroImageReveal`, `pageTransition` keyframes + CSS classes + JS trigger
+- **UI layer:** Existing scroll-triggered animations stay (fadeInUp, slideInLeft, etc.)
+- **Reduced motion:** Extended to cover brand animation classes
+- **Spec:** `.design/ui-upgrade.md` + `.specs/ui-upgrade/README.md`
+- **Status:** Ready for implementation
+
+**F7 — Fotograf-retningslinjer (profilbilder)**
+- **Scope:** Write a human-readable, concrete photographer brief based on the new photography guidelines in `.design/graphics.md` (Photography Guidelines section)
+- **Deliverable:** Separate document (`.design/photography-brief.md`) written in Norwegian, targeted at a professional portrait photographer
+- **Content must include:** Light style (natural, desaturated), composition (environmental portraits, candid), technical specs (WebP, 1:1 aspect ratio), mood references, examples of good/bad, and the brand personality context (rebellious/nordic/democratic)
+- **Status:** Spec complete, deliverable pending
+
+---
+
+### Phase 13 — Customer Cases (Inbound Sales)
+
+*C1-C4 moved to **Blocked** section — all require user input or dependency completion before work can start.*
 
 ---
 
@@ -452,6 +441,7 @@ When generating images for N1-N3 and future content, ensure maximum context is k
 | `.specs/emne/README.md` | **Create** | Tag lookup page `/emne/` — purpose, scope, requirements | Future feature |
 | `.specs/i18n/README.md` | **Create** | i18n multilingual support — approach, scope, constraints | Future feature |
 | `.specs/inbound-sales/README.md` | ✅ **Created** | Visitor flow mapping, UTM conventions, funnel definitions, event structure | **Ready for review** |
+| `.specs/citation-enhancement/README.md` | ✅ **Created** | kramdown footnotes + JSON-LD citations + JS enhancer | Future feature (FF4) |
 
 ---
 
@@ -528,8 +518,13 @@ Do not add completed work here, add them to CHANGELOG.md
 - **Dependencies:** None
 
 **FF3 — Nye artikler (Triader, Makt, Perspektiv)**
-- **Status:** Specs complete. **Blocked on:** images + content draft needed
-- **Reference:** `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`
+- **Status:** Moved to **Blocked** section — N1/N2/N3 waiting on article content from user.
+- **Reference:** See N1, N2, N3 under Blocked section.
+
+**FF4 — Citation Enhancement (kramdown footnotes + JSON-LD + JS enhancer)**
+- **Status:** Spec'd in `.specs/citation-enhancement/README.md`. Design in `.design/citation-enhancement.md`. Not yet scheduled.
+- **Dependencies:** Must be implemented across all existing article pages. Best done as part of a content pass.
+- **Reference:** `.specs/citation-enhancement/README.md`, `.design/citation-enhancement.md`
 
 **FF4 — Sitatshenvisning / Citation Enhancement**
 - **Purpose:** Kramdown native footnotes (`[^ref]`) med JSON-LD `citation`-array i frontmatter, JS-enhancer som injiserer `itemprop`/`itemscope` i kramdowns genererte DOM
@@ -544,25 +539,57 @@ Do not add completed work here, add them to CHANGELOG.md
 
 ## Blocked
 
-- **Q7 — Katalysator:** Behold som planlagt funksjon. **blocked:** Deferred to June 2026. Iterative research + brainstorming session required before any implementation.
-  - **Reference:** `.specs/shared/product-katalysator.txt`
-  - **Dependencies:** User availability for brainstorming, product positioning decision
+*Items that cannot proceed without user input or dependency completion. Each entry defines its unblock condition.*
 
-- **C1 — Case Planning:** Planlegg case-studier for Ledelse 60:2. **blocked:** Needs brainstorming session with user for case selection and anonymization approach.
-  - **Dependencies:** User availability for case brainstorm
+### N1 — Triader (article content)
+- **Goal:** Write `_pages/ledelse_triader.md` — triads as structural tool for resilient teams
+- **Spec:** ✅ `.specs/triader/README.md` complete
+- **Images needed:** 1 hero banner (Style 2), 2 section illustrations (Style 3)
+- **Unblock condition:** User provides/dictates article content. Images (F5) are downstream of content.
+- **Reference:** `.specs/triader/README.md`
 
-- **C2 — Case Intake Form:** Design et system for å samle inn case-data fra kunder. **blocked:** Avhenger av C1 (case-planlegging må være klar før intake-form kan designes).
-  - **Dependencies:** C1
+### N2 — Makt eller tjeneste (article content)
+- **Goal:** Write `_pages/ledelse_makt.md` — power vs. servant leadership spectrum
+- **Spec:** ✅ `.specs/makt/README.md` complete
+- **Images needed:** 1 hero banner (Style 2), 2-3 section illustrations (Style 3)
+- **Unblock condition:** User provides/dictates article content. Images (F5) are downstream of content.
+- **Reference:** `.specs/makt/README.md`
 
-- **C3 — Case Presentation Design:** Design mal for case-presentasjon (resultater, sitater, metrics). **blocked:** Avhenger av C1 + C2.
-  - **Dependencies:** C1, C2
+### N3 — Fire perspektiver (article content)
+- **Goal:** Write `_pages/ledelse_perspektiv.md` — multiframe thinking as leadership skill
+- **Spec:** ✅ `.specs/perspektiv/README.md` complete
+- **Images needed:** 1 hero banner (Style 2), 1-2 section illustrations (Style 3)
+- **Unblock condition:** User provides/dictates article content. Images (F5) are downstream of content.
+- **Reference:** `.specs/perspektiv/README.md`
 
-- **C4 — Visitor Flow / Inbound Sales Journey + CTA-designsystem:** Kartlegg besøksstrømmen fra første sidevisning til booket samtale, og til slutt faktura. Inkluderer CTA Type A/B-designregler (A=primær venstre, B=sekundær høyre, maks 2 per rad, fargeoverganger på hover — aldri opacity alene). **blocked:** Avhenger av C1 (case-innhold som bakgrunn for traktanalyse).
-  - **Reference:** `.specs/inbound-sales/README.md`, `.specs/cta-design/README.md`
-  - **Scope utvidet:** Opprinnelig F2 (CTA-designsystem) er innlemmet her
-  - **Dependencies:** C1
+### F5 — Bildegenerering (image generation)
+- **Goal:** Generate N1-N3 images using updated `.design/graphics.md` guidelines
+- **Dependency:** N1, N2, N3 article content must be drafted and approved first (per Image Generation Context Requirements: «Article content is drafted and approved»)
+- **Unblock condition:** N1, N2, N3 content complete and approved.
+- **Reference:** `.design/graphics.md` (Style 2/3 guidelines, prompt templates)
 
-- **F5 — Image generation for N1-N3:** Generer hero-bannere og seksjonsillustrasjoner for Triader, Makt og Perspektiv-artiklene. **blocked:** Avhenger av at artikkelinnhold er utkastet og godkjent (maksimal kontekst for presise promptes).
-  - **Images needed:** 3 hero-bannere (Style 2), 5-6 seksjonsillustrasjoner (Style 3)
-  - **Reference:** `.design/graphics.md`, Image Assets Required-tabellen ovenfor
-  - **Dependencies:** N1-N3 content drafted and approved
+### C1 — Customer Case Planning & Discovery
+- **Goal:** Define what makes a compelling case for target audience. Update `.specs/cases/README.md`
+- **Unblock condition:** Brainstorm session with user — what questions must a case answer? What objections must it overcome?
+- **Blocks:** C2, C3, C4 downstream.
+
+### C2 — Customer Case Intake Form
+- **Goal:** Write `.design/case-intake-form.md` — human-facing form for consultants to gather case data
+- **Dependency:** C1 must complete first to define case structure and required data fields
+- **Unblock condition:** C1 completed (case structure defined), then spec work can proceed.
+
+### C3 — Case Presentation Design
+- **Goal:** Design case layout, typography, photo placement, quote treatment. Update `.design/components.md`
+- **Dependency:** C1 (content structure) + C2 (what data exists)
+- **Unblock condition:** C1 and C2 completed.
+
+### C4 — Visitor Flow / Inbound Sales Journey
+- **Goal:** Map entry points → case exposure → CTA progression.
+- **Dependency:** Cases are placed at specific journey stages — needs C1-C3 foundations first.
+- **Unblock condition:** C1, C2, C3 completed.
+- **Reference:** `.specs/inbound-sales/README.md`, `.specs/cta-design/README.md`
+
+### Q7 — Katalysator (product)
+- **Goal:** Define and build Katalysator product positioning
+- **Unblock condition:** Deferred to June 2026. User availability for iterative research + brainstorming session. Product positioning decision.
+- **Reference:** `.specs/shared/product-katalysator.txt`
