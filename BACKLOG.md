@@ -292,6 +292,7 @@ See relevant spec files for each expansion.
 - **Problem:** CTA-knapper bruker `opacity` + `translateY` for hover — skal bruke fargeoverganger (type A/B)
 - **Vedtak:** Type A (azur på marine + azur outline), Type B (marine på azur + marine outline). Hover: bytt bakgrunns- og tekstfarge
 - **Scope:** `assets/css/products.css`, `assets/css/article.css`, `_includes/cta.html`
+- **Spec:** `.specs/cta-design/README.md`
 
 **D3 — Hero text overlay på bannerbilder**
 - **Problem:** Site title + description mangler CSS text overlay med bakgrunnsstyling for lesbarhet på bannerbilder
@@ -557,7 +558,7 @@ Do not add completed work here, add them to CHANGELOG.md
   - **Dependencies:** C1, C2
 
 - **C4 — Visitor Flow / Inbound Sales Journey + CTA-designsystem:** Kartlegg besøksstrømmen fra første sidevisning til booket samtale, og til slutt faktura. Inkluderer CTA Type A/B-designregler (A=primær venstre, B=sekundær høyre, maks 2 per rad, fargeoverganger på hover — aldri opacity alene). **blocked:** Avhenger av C1 (case-innhold som bakgrunn for traktanalyse).
-  - **Reference:** `.specs/inbound-sales/README.md`
+  - **Reference:** `.specs/inbound-sales/README.md`, `.specs/cta-design/README.md`
   - **Scope utvidet:** Opprinnelig F2 (CTA-designsystem) er innlemmet her
   - **Dependencies:** C1
 

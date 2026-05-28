@@ -13,6 +13,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - BACKLOG.md: CTA Type A/B design system merged into C4 scope
 - BACKLOG.md: page_d.id-002 bug (duplicate `<article>` in profiles.html) tracked
 - BACKLOG.md: Design Decisions expanded — 5 brand traits, layered animation framework, GPT Image 2 guidelines
+- `.design/brand-perception.md`: Updated from 4 to 5 brand traits (synced with BACKLOG.md)
+- `.specs/cta-design/README.md`: Created — Type A/B CTA design system with color specs, placement rules, forbidden patterns
+- `.design/typography.md`: Completed with h4-h6, small/caption, font weight map, reading width specs
+- `.design/graphics.md`: Added Design Evolution section documenting icon→banner pivot
+- `.design/SPEC.md`: Added `[cta-design]` feature entry referencing new spec
+
+### Changed
+- PLAN.md archived → `.design/archive/plan-v0.md` (outdated v0 plan, replaced by BACKLOG.md execution phases)
 
 ### Changed
 - BACKLOG.md: Open PRs section cleaned — all PRs #42–#52 now marked merged, none open
