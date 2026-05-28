@@ -262,11 +262,26 @@ See relevant spec files for each expansion.
 - **Scope:** CSS — hero section width adjustments
 - **No blockers**
 
+**10.8 — "Velg et tidspunkt" — ikke i iframe**
+- **Problem:** Booking-modal åpnes i iframe, bør være direkte lenke
+- **Scope:** Booking modal / CTA-knapper
+- **No blockers**
+
+**10.9 — "Book en uforpliktende samtale" — ikke i iframe**
+- **Problem:** Samme som 10.8 — CTA åpnes i iframe
+- **Scope:** CTA-knapper
+- **No blockers**
+
+**10.10 — Mobil: konsistente CTA-bredder**
+- **Problem:** "Bestill Ledelse 60:2" og "Book en uforpliktende samtale" har ulik bredde på mobil
+- **Scope:** CSS for CTA-knapper på mobilbreakpoint
+- **No blockers**
+
 ---
 
-### Phase 11 — Design Polish (P5 User Testing Findings)
+### Phase 11 — Design Polish & /metode/ Overhaul
 
-*Brukertestfunn fra P5 som ble dokumentert i forrige sesjon. Krever ingen nye designbeslutninger — avklaringene er allerede gjort.*
+*Brukertestfunn fra P5 + nye endringer på `_pages/om_metode.md`. D7–D11 berører alle samme fil og bør gjøres samlet for å unngå merge-konflikter.*
 
 **D1 — Header-bakgrunn skal være konstant**
 - **Problem:** Header-bakgrunn endrer seg med tema. I dark mode blir logoen usynlig
@@ -294,6 +309,49 @@ See relevant spec files for each expansion.
 **D6 — Profildetaljer: unødvendig scrollbar**
 - **Problem:** Scrollbar vises ved første lass i profildetalj-visning
 - **Scope:** `assets/css/profiles.css`
+
+**D7 — `/metode/` ny tittel, beskrivelse og innledning**
+- **Scope:** `_pages/om_metode.md`
+- **Tittel:** Endre til "Om metodikk" (`title:` i frontmatter + `<h1>`)
+- **Beskrivelse:** Kort ny page description fra eksisterende tekst
+- **Innhold:** Flytt dagens beskrivende tekst til nytt avsnitt først på siden
+
+**D8 — Fjern "Vi fremhever fire prinsipper:"**
+- **Problem:** Linjen er overflødig — bildene viser prinsippene allerede
+- **Scope:** `_pages/om_metode.md` — linje 113
+- **Fix:** Slett linjen "Vi fremhever fire prinsipper:"
+
+**D9 — Fjern "utvikling"-tagg fra Mennesker frame-kort**
+- **Scope:** `_pages/om_metode.md` — linje 62 (`.frame-desc` for Menneskeperspektivet)
+- **Fix:** Fjern ", utvikling" fra tag-listen
+
+**D10 — Fjern "Symbolsk"-setning fra frame-kortbeskrivelser** *(flyttet fra R7)*
+- **Problem:** Setning som starter med "Symbolsk" er for lang for frame-kortene — samme fil som D7-D9
+- **Scope:** `_pages/om_metode.md` — linje 54, 63, 74, 83
+- **Fix:** Kutt setningen som starter med "Symbolsk" fra hver `.frame-detail-text`
+
+**D11 — Fiks syntaksfeil på `/metode/`** *(flyttet fra R8)*
+- **Problem:** Syntaksfeil i `_pages/om_metode.md` — samme fil som D7-D10
+- **Scope:** `_pages/om_metode.md`
+- **Fix:** Gjennomgå og rett syntaksfeil
+
+---
+
+### Phase 12 — Broader Improvements
+
+*Items that don't fit existing phases — cross-cutting design and asset work.*
+
+**X1 — Infografikk: tre kjerneverdier under "Oppdrag og verdier"**
+- **Problem:** Trenger en enkel infografisk illustrasjon av de tre kjerneverdiene
+- **Scope:** Ny banner/illustrasjon på `/om-oss/` eller aktuell side
+- **Design:** Følg `.design/graphics.md` retningslinjer — ingen tekst, skandinavisk minimal
+- **No blockers**
+
+**X2 — Dark mode consistency pass**
+- **Scope:** Alle sider — cards, frames, seksjoner, bakgrunner
+- **Problem:** Dark mode har harde hvite bakgrunner enkelte steder. Ser dårlig ut i nattmodus.
+- **Prosess:** (1) Oppdater `.design/` med definitive dark mode-regler → (2) Oppdater `.specs/` → (3) Gjennomgå implementering for regresjoner
+- **Avhengighet:** Bør gjøres etter at andre designoppdateringer er ferdige
 
 ---
 
@@ -352,6 +410,7 @@ When generating images for N1-N3 and future content, ensure maximum context is k
 | `.specs/ledelse-60-2/README.md` | **Update** | Reflect N1-N3 additions, E1-E6 expansions | Ready |
 | `.specs/emne/README.md` | **Create** | Tag lookup page `/emne/` — purpose, scope, requirements | Future feature |
 | `.specs/i18n/README.md` | **Create** | i18n multilingual support — approach, scope, constraints | Future feature |
+| `.specs/citation-enhancement/README.md` | ✅ **Created** | kramdown footnotes + JSON-LD citations + JS enhancer | Future feature (FF4) |
 
 ---
 
@@ -418,6 +477,11 @@ Do not add completed work here, add them to CHANGELOG.md
 **FF3 — Nye artikler (Triader, Makt, Perspektiv)**
 - **Status:** Specs complete. **Blocked on:** images + content draft needed
 - **Reference:** `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`
+
+**FF4 — Citation Enhancement (kramdown footnotes + JSON-LD + JS enhancer)**
+- **Status:** Spec'd in `.specs/citation-enhancement/README.md`. Design in `.design/citation-enhancement.md`. Not yet scheduled.
+- **Dependencies:** Must be implemented across all existing article pages. Best done as part of a content pass.
+- **Reference:** `.specs/citation-enhancement/README.md`, `.design/citation-enhancement.md`
 
 ## Blocked
 
