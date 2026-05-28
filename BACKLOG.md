@@ -19,45 +19,7 @@ Phase 0 (Health Sprint), Phase 1 (Quick Wins), Phase 2 (Perspektiv Architecture)
 
 ### Phase 4 — New Articles
 
-*Specs created 2026-05-26. Implementation after spec review.*
-
-See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`.
-
-**N1 — Triader** ✅ Spec complete
-- **New file:** `_pages/ledelse_triader.md`
-- **URL:** `/triader/`
-- **Source:** Logan, King & Fischer-Wright — *Tribal Leadership* (2011)
-- **Spec:** ✅ `.specs/triader/README.md` created
-- **Content:** Triads as structural tool, dyad vs. triad stability, formation steps, warning signs
-- **Design:** Style 3 (Section Illustration) for inline illustrations, Style 2 for hero
-- **Cross-links:** From `/identitet/` and `/usikkerhet/`
-- **Images needed:** 1 hero banner (Style 2), 2 section illustrations (Style 3)
-- **CTA:** Links to Ledelse 60:2
-- **Status:** Spec complete. **Blocked:** Images + content draft needed.
-
-**N2 — Makt eller tjeneste** ✅ Spec complete
-- **New file:** `_pages/ledelse_makt.md`
-- **URL:** `/makt/`
-- **Source:** Pfeffer (*Power*, 2010) ↔ Blanchard & Barrett (*Lead with LUV*, 2011) — tension pair from synthesis.md
-- **Spec:** ✅ `.specs/makt/README.md` created
-- **Content:** The central diagnostic tension: power acquisition vs. servant leadership. Pfeffer side + Blanchard side + spectrum. Includes full "The Price of Power" subsection.
-- **Design:** Style 2 for hero, Style 3 for section illustrations
-- **Cross-links:** To `/påvirkning/` (brief Price of Power there), to `/mennesker/` (servant leadership)
-- **Images needed:** 1 hero banner (Style 2), 2-3 section illustrations (Style 3)
-- **CTA:** Links to Ledelse 60:2
-- **Status:** Spec complete. **Blocked:** Images + content draft needed.
-
-**N3 — Fire perspektiver** ✅ Spec complete
-- **New file:** `_pages/ledelse_perspektiv.md`
-- **URL:** `/perspektiv/`
-- **Source:** Bolman & Deal Ch.16 — "Integrating the Frames"
-- **Spec:** ✅ `.specs/perspektiv/README.md` created
-- **Content:** Multiframe thinking as the actual leadership skill. Why single-frame thinking fails. "No scoring" philosophical backing grounded in Bolman + Hubbard + Logan.
-- **Design:** Style 2 for hero, Style 3 for section illustrations
-- **Cross-links:** To all four perspektiv articles ("no scoring" backing in each frame's reference section)
-- **Images needed:** 1 hero banner (Style 2), 1-2 section illustrations (Style 3)
-- **CTA:** Links to Ledelse 60:2
-- **Status:** Spec complete. **Blocked:** Images + content draft needed.
+*Specs created 2026-05-26. N1 (Triader), N2 (Makt), N3 (Perspektiv) moved to **Blocked** section — waiting on article content from user. See `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md` for specs.*
 
 ---
 
@@ -297,6 +259,35 @@ See relevant spec files for each expansion.
 
 ---
 
+### Phase 12 — Design Alignment (Post-Interview)
+
+*Tasks identified from design interview conflict resolution and documentation harmonization.*
+
+**F5 — Bildegenerering (oppdatert design) → moved to Blocked**
+- *F5 is blocked waiting on N1-N3 article content (must be drafted and approved before image generation, per Image Generation Context Requirements). See Blocked section.*
+
+**F6 — Animasjonsimplementering (layered approach)**
+- **Scope:** Implement the layered animation system from updated `.design/ui-upgrade.md`
+- **Brand layer:** `heroReveal`, `heroImageReveal`, `pageTransition` keyframes + CSS classes + JS trigger
+- **UI layer:** Existing scroll-triggered animations stay (fadeInUp, slideInLeft, etc.)
+- **Reduced motion:** Extended to cover brand animation classes
+- **Spec:** `.design/ui-upgrade.md` + `.specs/ui-upgrade/README.md`
+- **Status:** Ready for implementation
+
+**F7 — Fotograf-retningslinjer (profilbilder)**
+- **Scope:** Write a human-readable, concrete photographer brief based on the new photography guidelines in `.design/graphics.md` (Photography Guidelines section)
+- **Deliverable:** Separate document (`.design/photography-brief.md`) written in Norwegian, targeted at a professional portrait photographer
+- **Content must include:** Light style (natural, desaturated), composition (environmental portraits, candid), technical specs (WebP, 1:1 aspect ratio), mood references, examples of good/bad, and the brand personality context (rebellious/nordic/democratic)
+- **Status:** Spec complete, deliverable pending
+
+---
+
+### Phase 13 — Customer Cases (Inbound Sales)
+
+*C1-C4 moved to **Blocked** section — all require user input or dependency completion before work can start.*
+
+---
+
 ## Design Decisions
 
 ### Brand & Visual (2026-05-25)
@@ -416,11 +407,61 @@ Do not add completed work here, add them to CHANGELOG.md
 - **Dependencies:** None
 
 **FF3 — Nye artikler (Triader, Makt, Perspektiv)**
-- **Status:** Specs complete. **Blocked on:** images + content draft needed
-- **Reference:** `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`
+- **Status:** Moved to **Blocked** section — N1/N2/N3 waiting on article content from user.
+- **Reference:** See N1, N2, N3 under Blocked section.
 
 ## Blocked
 
-- **Q7 — Katalysator:** Behold som planlagt funksjon. **blocked:** Deferred to June 2026. Iterative research + brainstorming session required before any implementation.
-  - **Reference:** `.specs/shared/product-katalysator.txt`
-  - **Dependencies:** User availability for brainstorming, product positioning decision
+*Items that cannot proceed without user input or dependency completion. Each entry defines its unblock condition.*
+
+### N1 — Triader (article content)
+- **Goal:** Write `_pages/ledelse_triader.md` — triads as structural tool for resilient teams
+- **Spec:** ✅ `.specs/triader/README.md` complete
+- **Images needed:** 1 hero banner (Style 2), 2 section illustrations (Style 3)
+- **Unblock condition:** User provides/dictates article content. Images (F5) are downstream of content.
+- **Reference:** `.specs/triader/README.md`
+
+### N2 — Makt eller tjeneste (article content)
+- **Goal:** Write `_pages/ledelse_makt.md` — power vs. servant leadership spectrum
+- **Spec:** ✅ `.specs/makt/README.md` complete
+- **Images needed:** 1 hero banner (Style 2), 2-3 section illustrations (Style 3)
+- **Unblock condition:** User provides/dictates article content. Images (F5) are downstream of content.
+- **Reference:** `.specs/makt/README.md`
+
+### N3 — Fire perspektiver (article content)
+- **Goal:** Write `_pages/ledelse_perspektiv.md` — multiframe thinking as leadership skill
+- **Spec:** ✅ `.specs/perspektiv/README.md` complete
+- **Images needed:** 1 hero banner (Style 2), 1-2 section illustrations (Style 3)
+- **Unblock condition:** User provides/dictates article content. Images (F5) are downstream of content.
+- **Reference:** `.specs/perspektiv/README.md`
+
+### F5 — Bildegenerering (image generation)
+- **Goal:** Generate N1-N3 images using updated `.design/graphics.md` guidelines
+- **Dependency:** N1, N2, N3 article content must be drafted and approved first (per Image Generation Context Requirements: «Article content is drafted and approved»)
+- **Unblock condition:** N1, N2, N3 content complete and approved.
+- **Reference:** `.design/graphics.md` (Style 2/3 guidelines, prompt templates)
+
+### C1 — Customer Case Planning & Discovery
+- **Goal:** Define what makes a compelling case for target audience. Update `.specs/cases/README.md`
+- **Unblock condition:** Brainstorm session with user — what questions must a case answer? What objections must it overcome?
+- **Blocks:** C2, C3, C4 downstream.
+
+### C2 — Customer Case Intake Form
+- **Goal:** Write `.design/case-intake-form.md` — human-facing form for consultants to gather case data
+- **Dependency:** C1 must complete first to define case structure and required data fields
+- **Unblock condition:** C1 completed (case structure defined), then spec work can proceed.
+
+### C3 — Case Presentation Design
+- **Goal:** Design case layout, typography, photo placement, quote treatment. Update `.design/components.md`
+- **Dependency:** C1 (content structure) + C2 (what data exists)
+- **Unblock condition:** C1 and C2 completed.
+
+### C4 — Visitor Flow / Inbound Sales Journey
+- **Goal:** Map entry points → case exposure → CTA progression. Write `.design/visitor-flow.md`
+- **Dependency:** Cases are placed at specific journey stages — needs C1-C3 foundations first.
+- **Unblock condition:** C1, C2, C3 completed.
+
+### Q7 — Katalysator (product)
+- **Goal:** Define and build Katalysator product positioning
+- **Unblock condition:** Deferred to June 2026. User availability for iterative research + brainstorming session. Product positioning decision.
+- **Reference:** `.specs/shared/product-katalysator.txt`

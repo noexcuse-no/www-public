@@ -28,9 +28,19 @@ This is a pure visual/styling upgrade — no content changes, no structural chan
 
 ### 1. CSS Animation Module (`animations.css`)
 
-New module providing scroll-triggered animations via Intersection Observer.
+New module providing scroll-triggered and page-load animations via Intersection Observer.
 
-**Classes:**
+**Motion Philosophy:** Animations follow a layered approach — expressive on brand surfaces, restrained on UI:
+- **Brand surfaces** (hero, page transitions): Expressive, memorable — `heroReveal`, `heroImageReveal`, `pageTransition`
+- **UI interactions** (cards, buttons, scroll-triggered): Purposeful, restrained — `fadeIn`, `fadeInUp`, `slideInLeft`, `slideInRight`
+
+**Classes (Brand):**
+- `.hero-title` — page-load entrance via `heroReveal` (0.8s ease-out)
+- `.hero-intro` — page-load entrance via `heroReveal` (0.8s ease-out, delayed)
+- `.hero-image` — page-load scale-in via `heroImageReveal` (1.2s ease-out)
+- `.page-transition` — page-level entrance (0.4s ease-out)
+
+**Classes (UI):**
 - `.animate-on-scroll` — base class that triggers animation when element enters viewport
 - `.fade-in` — opacity 0 → 1, duration 0.6s
 - `.fade-in-up` — opacity 0 + translateY(30px) → opacity 1 + translateY(0), duration 0.6s
@@ -43,7 +53,14 @@ New module providing scroll-triggered animations via Intersection Observer.
 --stagger-delay: 0ms; /* Set per parent to stagger children */
 ```
 
-**Keyframes:**
+**Keyframes (Brand):**
+```css
+@keyframes heroReveal { ... }
+@keyframes heroImageReveal { ... }
+@keyframes pageTransition { ... }
+```
+
+**Keyframes (UI):**
 ```css
 @keyframes fadeInUp { ... }
 @keyframes fadeIn { ... }
@@ -55,11 +72,19 @@ New module providing scroll-triggered animations via Intersection Observer.
 ```css
 @media (prefers-reduced-motion: reduce) {
     .animate-on-scroll { animation: none; transition: none; }
+    .animate-on-scroll.is-visible { opacity: 1; transform: none; }
+    .hero-title, .hero-intro, .hero-image, .page-transition {
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
 }
 ```
 
 **JavaScript:**
-- Intersection Observer in `assets/scripts/animations.js`
+- Page-load: Hero elements animate on DOMContentLoaded (one-shot)
+- Intersection Observer in `assets/scripts/animations.js` for scroll-triggered elements
 - Adds `.is-visible` class when element enters viewport (threshold: 0.15)
 - Disconnect after first trigger (one-shot animations)
 
@@ -96,9 +121,11 @@ Changes the article hero from separate image + content sections to a single imag
 - `.dark-mode .article-hero-overlay` — background gradient adjusts for dark theme
 - Text color remains `var(--banner-text-dark)` which is azure (#F0FFFF)
 
-**Animation:**
-- Title fades in with `fadeInUp` (0.8s ease-out)
-- Intro paragraph fades in with `fadeInUp` (0.8s ease-out, 0.15s delay)
+**Animation (Brand layer — expressive):**
+- Hero image scale-in with `heroImageReveal` (1.2s ease-out, starts at 0ms)
+- Title entrance with `heroReveal` (0.8s ease-out, starts at 200ms)
+- Intro paragraph entrance with `heroReveal` (0.8s ease-out, starts at 350ms)
+- Breadcrumb fades in with `fadeIn` (0.6s, starts at 400ms)
 
 **Mobile:**
 - Overlay padding reduces to 20px
@@ -210,7 +237,7 @@ Same treatment for `/om-oss/` hero.
 | `assets/css/products.css` | **Update** | Hero gradient overlay, hover interactions |
 | `assets/css/about.css` | **Update** | Hero gradient overlay |
 | `assets/css/styles-dark.css` | **Update** | Dark mode for overlay elements |
-| `assets/scripts/animations.js` | **Create** | Scroll animation controller |
+| `assets/scripts/animations.js` | **Create** | Page-load brand animations + scroll animation controller |
 | `_includes/scripts.html` | **Update** | Include animations.js |
 
 ## CSS Architecture Compliance
@@ -231,6 +258,7 @@ Per `.opencode/rules/css/rules.md`:
 
 ## Testing Checklist
 
+- [ ] Brand animations (heroReveal, heroImageReveal) trigger correctly on page load
 - [ ] Scroll animations trigger correctly on all article pages
 - [ ] Hero overlay renders correctly with banner images
 - [ ] Typography scale consistent across all pages

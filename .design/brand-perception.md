@@ -1,17 +1,29 @@
 # Brand Perception & Tone Guide - No Excuse AS
 
 ## Brand Personality
-- **Direct:** Say what we mean, no consultant-speak
+- **Direct & Clear:** Say what we mean, no consultant-speak. Easy to understand, impossible to misinterpret.
 - **Competent:** Proven results, real experience
-- **Scandinavian minimal:** Clean, functional, no fluff
-- **Anti-establishment:** Question the obvious, challenge conventions
+- **Nordic (Scandinavian minimal):** Clean, functional, no fluff. Democratic design — accessible to everyone, not exclusive.
+- **Rebellious / Anti-establishment:** Question the obvious, challenge conventions. We say what others think.
+- **Practical:** «Folk som synes latte er pretensiøst» — down-to-earth, no bullshit
 
 ## Target Perception
-- "We say what others think but don't say out loud" - slightly rebellious
+- "We say what others think but don't say out loud" — slightly rebellious
 - "These guys actually get it done"
 - "Not another consultancy with fancy words"
 - "Practical, not pretentious"
 - "They sound like real people"
+- "Premium, not pretentious" — like Apple, not like luxury
+
+## Visual Reference: Apple.com
+The primary visual reference for premium minimalism is **Apple.com**. Key qualities to borrow:
+- Confident whitespace — content breathes, nothing feels cramped
+- Typography-driven hierarchy — words do the heavy lifting
+- Restrained color — one accent color used sparingly (buttons, links, small highlights)
+- Photography as human element — real people in real settings breaks the minimal sterility
+- Everything has a reason — no decorative elements, no visual noise
+
+This is about the *visual tone* of Apple (premium, confident, effortless), not about mimicking their product layout or interaction patterns.
 
 ## Voice Guidelines
 
