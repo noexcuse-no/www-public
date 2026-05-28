@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Design interview harmonization: brand personality expanded to 5 traits (Direct & Clear, Competent, Nordic, Rebellious, Practical)
+- Apple.com visual reference added to brand guidelines
+- Democratic design value and photography guidelines added to `.design/graphics.md`
+- Color Intensity Levels (full background vs accent) added to `.design/colors.md`
+- Layered animation design: expressive brand keyframes (heroReveal, heroImageReveal, pageTransition) + restrained UI scroll-triggered animations — documented in `.design/ui-upgrade.md` and `.specs/ui-upgrade/README.md`
+- BACKLOG.md restructured: N1-N3, F5, C1-C4 moved to dedicated Blocked section with explicit unblock conditions
 - Twin-primary color system: Navy #003060 / Azure #F0FFFF
   - Header bg swaps per mode (navy light, azure dark)
   - Page bg light changed to #c0d4e8, old #e2e8f0 stashed as --bg-neutral-light
