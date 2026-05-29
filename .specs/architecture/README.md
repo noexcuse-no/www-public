@@ -258,3 +258,61 @@ All pages must meet WCAG AA standards:
 - **Hosting**: GitHub Pages (automatic build on commit)
 - **CMS**: Jekyll (static site generator)
 - **Testing**: Vitest, htmlhint, stylelint, eslint
+
+## Profile Frontmatter
+
+Members of `_profiles/*.md` require all fields:
+
+```yaml
+---
+name: "Full Name"
+image: "assets/images/profile.png"
+phone: "+4799999999"
+email: "name@noexcuse.no"
+linkedin: "https://linkedin.com/in/..."
+booking_url: "https://..."
+tags: "#tag1 #tag2"
+bio: "Biography text..."
+---
+```
+
+## Page JSON-LD
+
+Pages in `_pages/*.md` should include structured data:
+
+```yaml
+json_ld:
+  type: "Article"         # or "Organization", "WebPage", etc.
+  name: "Page Title"
+  description: "SEO description"
+```
+
+For organization pages (`om_oss`):
+
+```yaml
+json_ld:
+  type: "Organization"
+  name: "No Excuse AS"
+  url: "https://noexcuse.no"
+  logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.webp"
+```
+
+## Permalink Convention
+
+- Use kebab-case: `/page-slug/` not `/page_slug/` or `/pageSlug/`
+- Trailing slash required
+- Must match the filename convention (underscore → hyphen mapping is handled by Jekyll)
+
+## Build Checks
+
+Before pushing, run locally:
+
+```bash
+bundle exec jekyll build
+```
+
+Check for:
+- Liquid syntax errors
+- Missing `{% include %}` references
+- New collections render at expected URLs
+- All `_config.yml` entries are valid

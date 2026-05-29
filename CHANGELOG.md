@@ -7,8 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- `.specs/accessibility/README.md` — full WCAG spec (language, alt text, semantic HTML, contrast, touch targets, dark mode)
+- `.specs/privacy/README.md` — privacy policy spec (tracking consent, data handling, public repo rules)
+- `.specs/frames/README.md` — frame page schema (frontmatter, JSON-LD Article, layout)
+- `.omo/rules/` — contextual rule injection system with 18 rule files
+
 ### Changed
 - opencode.json: Consolidated 12 standing directives → 6. Merged SECURITY, PREREAD, GITIGNORE, COMMITS → GIT; DEPENDENCIES → CODE; SECURITY-UPDATE, CROSS-LINKS → DESIGN; TODOS → WORK. Added rebase prohibition, fetch-before-PR rule, todo gate. Rewrote in caveman RFC 2119 phrasing. 3,669 chars → 1,971 chars (~46% reduction).
+- `.specs/architecture/README.md` — extended with profile frontmatter schema, page JSON-LD details, permalink convention, and Jekyll build check commands
+- `.design/html-templates.md` — added prohibited patterns table (no inline styles, event handlers, or embedded `<script>` tags)
+- `AGENTS.md` — trimmed from 367 to 110 lines; removed duplicate sections; Documentation Map updated to point to new `.specs/` homes
+- 10 `.omo/rules/*.md` files condensed to stubs: accessibility, brand-voice, css-conventions, frames, frontmatter, jekyll, pages, privacy, linting, testing — body replaced by pointer to authoritative `.specs/` or `.design/` file
+- BACKLOG.md: "Unblock condition" → "Depends on" in Blocked table
 
 ### Added
 - Design interview harmonization: brand personality expanded to 5 traits (Direct & Clear, Competent, Nordic, Rebellious, Practical)
