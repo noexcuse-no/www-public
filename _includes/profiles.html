@@ -17,7 +17,7 @@
                     <img class="profile-image-large" src="{{ profile.image | relative_url }}" alt="{{ profile.name }}s profilbilde">
                     <div class="profile-header-info">
                         <h3 class="profile-name">{{ profile.name }}</h3>
-                        <p class="profile-tags">{{ profile.tags }}</p>
+                        <p class="profile-tags">{% assign tags = profile.tags | split: ' ' %}{% for tag in tags %}<span class="profile-tag">{{ tag }}</span> {% endfor %}</p>
                     </div>
                 </div>
                 <div class="profile-bio">
