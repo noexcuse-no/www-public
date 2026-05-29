@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- BACKLOG.md: D12–D15 (profile image size, bump fix, contact link styling, hero rounded corners)
+- BACKLOG.md: FF5 — Three step detail pages for Ledelse 60:2
+- BACKLOG.md: CTA Type A/B design system merged into C4 scope
+- BACKLOG.md: page_d.id-002 bug (duplicate `<article>` in profiles.html) tracked
+- BACKLOG.md: Design Decisions expanded — 5 brand traits, layered animation framework, GPT Image 2 guidelines
+
+### Changed
+- BACKLOG.md: Open PRs section cleaned — all PRs #42–#52 now marked merged, none open
+- BACKLOG.md: In Progress section updated with Phase 10-12 work areas
 - Twin-primary color system: Navy #003060 / Azure #F0FFFF
   - Header bg swaps per mode (navy light, azure dark)
   - Page bg light changed to #c0d4e8, old #e2e8f0 stashed as --bg-neutral-light

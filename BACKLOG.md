@@ -262,9 +262,24 @@ See relevant spec files for each expansion.
 - **Scope:** CSS — hero section width adjustments
 - **No blockers**
 
+**10.8 — Booking modal iframe-fikser**
+- **Action:** Rydd opp i iframe-basert booking-modal — sørg for responsiv høyde, lukkeknapp, og konsistent dark mode
+- **Scope:** `_includes/booking-modal.html`, tilhørende CSS
+- **Depends on:** 10.9 (kan gjøres i samme gren)
+
+**10.9 — Mobile CTA-knappbredder**
+- **Action:** Sørg for at CTA-knapper har minst 44px touch targets og full bredde på mobil (<600px)
+- **Scope:** CSS — `products.css`, `cta.html`
+- **No blockers**
+
+**10.10 — Booking-lenker: konsistent åpning i ny fane**
+- **Action:** Gjør alle booking-lenker konsistente — `target="_blank"` + `rel="noopener"` på tvers av alle includes og produkt-sider
+- **Scope:** `_includes/cta.html`, `_includes/products.html`, `_includes/profiles.html`
+- **No blockers**
+
 ---
 
-### Phase 11 — Design Polish (P5 User Testing Findings)
+### Phase 11 — Design Polish (P5 User Testing Findings) + /metode/ Overhaul
 
 *Brukertestfunn fra P5 som ble dokumentert i forrige sesjon. Krever ingen nye designbeslutninger — avklaringene er allerede gjort.*
 
@@ -295,18 +310,101 @@ See relevant spec files for each expansion.
 - **Problem:** Scrollbar vises ved første lass i profildetalj-visning
 - **Scope:** `assets/css/profiles.css`
 
+**D7 — `_pages/om_metode.md` struktur-opprydding**
+- **Problem:** Siden har vokst organiskt — mangler klar seksjonering og konsistent heading-hierarki
+- **Fix:** Implementér layout-systemets `.container`/`.section`-klasser, rydd opp i heading-nivåer (h2 → h3 der nødvendig)
+- **Scope:** `_pages/om_metode.md`, eventuelt CSS
+
+**D8 — `_pages/om_metode.md` innholdsoppdatering**
+- **Problem:** Noen avsnitt er utdaterte eller mangler referanser til nye artikler (N1-N3)
+- **Fix:** Oppdater kryssreferanser, legg til seksjon for "Slik fungerer ledelseskartleggingen" med oppdatert beskrivelse
+- **Scope:** `_pages/om_metode.md`
+
+**D9 — `_pages/om_metode.md` JSON-LD / SEO**
+- **Problem:** Siden mangler strukturert data (JSON-LD TechArticle/AboutPage) og meta description
+- **Fix:** Legg til frontmatter JSON-LD, `description`, canonical URL
+- **Scope:** `_pages/om_metode.md`, eventuell layout-endring
+
+**D10 — `_pages/om_metode.md` FAQ-seksjon**
+- **Action:** Legg til FAQ-seksjon med 3-5 vanlige spørsmål om Ledelse 60:2-prosessen, med FAQPage JSON-LD
+- **Scope:** `_pages/om_metode.md`, ev. `_includes/faq.json` for strukturert data
+- **Depends on:** D9 (JSON-LD mønster etablert)
+
+**D11 — `_pages/om_metode.md` visuell oppgradering**
+- **Action:** Legg til illustrasjoner/ikoner for metodeskrittene (kartlegging → analyse → tilbakemelding)
+- **Scope:** `_pages/om_metode.md`, nye bilder i `assets/images/`
+- **Depends on:** D7 (struktur på plass), GPT Image 2 API key
+
+**R7 — `_pages/om_metode.md` regresjon: manglende fotnoter**
+- **Problem:** Commit `d1d6ac5` kuttet også fotnotereferanser i om_metode.md — flere `<sup>` mangler `</sup>`
+- **Scope:** `_pages/om_metode.md`
+- **Fix:** Gjenopprett manglende `</sup>` og eventuelle tapte fotnoter
+
+**R8 — `_pages/om_metode.md` regresjon: CTA-seksjon trunkert**
+- **Problem:** Samme commit kuttet CTA-seksjonen — mangler avsluttende `</section>` og booking-lenker
+- **Scope:** `_pages/om_metode.md`
+- **Fix:** Gjenopprett CTA-innhold, lukk åpne tagger
+
+**D12 — Profile image for liten i kompakt-visning**
+- **Problem:** Brukertest (funn #4) — profilbilder er for små i kompakt kort-visning; vanskelig å kjenne igjen personer
+- **Scope:** `assets/css/profiles.css`
+- **Fix:** Øk bildestørrelsen i `.profile-compact` (minst 80×80px), justér layout for å unngå overlapping
+
+**D13 — Profile image "hopp" ved ekspandering**
+- **Problem:** Brukertest (funn #5) — profilbildet hopper/endrer posisjon når kortet ekspanderes
+- **Scope:** `assets/css/profiles.css`, `assets/scripts/profile-card.js`
+- **Fix:** Bruk én fast bildeplassering uavhengig av expanded/compact state; unngå layout shift
+
+**D14 — Kontaktlenker i profil: inkonsistent styling**
+- **Problem:** Brukertest (funn #8) — telefon/e-post/linkedin-lenker i profil-detaljer har ulik styling, mangler visuell hierarki
+- **Scope:** `assets/css/profiles.css`
+- **Fix:** Definer én lenke-stil for alle kontaktpunkter (ikon + tekst, samme farge, samme hover-effekt)
+
+**D15 — Hero-seksjon mangler avrundede hjørner i bunn**
+- **Problem:** Brukertest (funn #13) — hero-banner har skarpe kanter nederst; bryter med avrundet design-språk ellers på siden
+- **Scope:** CSS — `layout.css` eller aktuell hero-komponent
+- **Fix:** Legg til `border-radius: 0 0 <verdi> <verdi>` på hero-banner for konsistent visuelt språk
+
+---
+
+## Phase 12 — Infographic & Dark Mode Consistency
+
+*Design enhancements that build on completed UI work from Phases 10-11. No content dependencies.*
+
+**X1 — Tre nøkkelverdier infographic**
+- **Action:** Lag en infographic som viser "Trygghet, Tydelighet, Tillit" (eller tilsvarende kjerneverdier) for bruk på forsiden eller om_metode-siden
+- **Scope:** Nytt bilde i `assets/images/`, eventuelt CSS for plassering
+- **Design:** Følg `.design/graphics.md` stil-retningslinjer — 16:9, ingen tekst, skandinavisk minimal
+- **Images needed:** 1 infographic via GPT Image 2
+- **No blockers**
+
+**X2 — Dark mode konsistens-gjennomgang**
+- **Problem:** Enkelte komponenter mangler dark mode-varianter eller har inkonsekvente farger på tvers av tema
+- **Scope:** Gjennomgang av alle CSS-filer for manglende `var(--tekst-farge)` eller hardkodede lyse farger
+- **Fix:** Oppdater manglende dark mode-regler, test på alle maler
+- **Depends on:** X1 (kan gjøres uavhengig, men samme gren bør holde begge)
+
 ---
 
 ## Design Decisions
 
-### Brand & Visual (2026-05-25)
+### Brand & Visual (2026-05-25, expanded 2026-05-28)
 
-- **Brand Personality:** Rebellious, Clear, Nordic
+- **Brand Personality (5 traits):** Rebellious — Clear — Nordic — Trustworthy — Bold
+  - *Rebellious:* Utfordrer etablerte sannheter, tar upopulære standpunkt
+  - *Clear:* Komplekse ideer gjort enkle, null konsulentspråk
+  - *Nordic:* Demokratisk design, ærlig, intim, jordnær
+  - *Trustworthy:* Faglig tyngde, forskningsbasert, transparent
+  - *Bold:* Tydelige standpunkt, visuelt mot, uprettensiøs selvsikkerhet
 - **Visual Reference:** Apple.com (premium minimal, confident whitespace)
 - **Scandinavian Minimal:** Democratic design — accessible to everyone, clear and open, no elitism
-- **Media Mix:** Mostly illustrations + real photos for team/cases
-- **Animation:** Expressive and memorable (page transitions, bold micro-interactions)
-- **Color Usage:** Sparingly — accent color for buttons, links, small highlights only
+- **Media Mix:** Mostly illustrations (GPT Image 2 — Style 2 hero, Style 3 section, Style 1 abstract) + real photos for team/cases
+- **Animation (layered framework):**
+  - *Layer 1 — Page transitions:* View transitions API for seamless sidebytte (eksisterende)
+  - *Layer 2 — Scroll-triggered reveals:* Intersection Observer for fade-in/glide-in ved scrolling
+  - *Layer 3 — Micro-interactions:* Hover, focus, active states med `transition` — aldri `opacity` alene for CTA
+- **Color Usage:** Sparingly — twin-primary system (hovedakcent + sekundærakcent). Farge for knapper, linker, små highlights kun. Dark mode med egne variabler.
+- **GPT Image 2 guidelines:** 16:9, ingen tekst i bildet, skandinavisk minimal, Style 1-3 per bruksområde (`.design/graphics.md`)
 
 ### Technical & Documentation (2026-05-26)
 
@@ -352,6 +450,7 @@ When generating images for N1-N3 and future content, ensure maximum context is k
 | `.specs/ledelse-60-2/README.md` | **Update** | Reflect N1-N3 additions, E1-E6 expansions | Ready |
 | `.specs/emne/README.md` | **Create** | Tag lookup page `/emne/` — purpose, scope, requirements | Future feature |
 | `.specs/i18n/README.md` | **Create** | i18n multilingual support — approach, scope, constraints | Future feature |
+| `.specs/inbound-sales/README.md` | ✅ **Created** | Visitor flow mapping, UTM conventions, funnel definitions, event structure | **Ready for review** |
 
 ---
 
@@ -378,13 +477,19 @@ All new images must follow `.design/graphics.md` prompt rules:
 
 ## Open PRs
 
-| PR | Branch | Status | What |
-|----|--------|--------|------|
-| [#42](https://github.com/noexcuse-no/www-public/pull/42) | `fix/perspektiv-frame-lookup` | ✅ **Merged** | Explicit `frame_id` frontmatter for perspektiv pages |
-| [#43](https://github.com/noexcuse-no/www-public/pull/43) | `refactor/architecture-debt` | ✅ **Merged** | Phase 8 P1-P3 + Phase 9 rules restructuring |
-| [#44](https://github.com/noexcuse-no/www-public/pull/44) | `refactor/architecture-debt` | ✅ **Merged** | Layout refactor, testing/deploy rules, design docs |
-| [#46](https://github.com/noexcuse-no/www-public/pull/46) | `feature/layout-system` | 🟡 **Open** | P5 layout system, Fix 7/8/13, logo dark mode |
-| [#47](https://github.com/noexcuse-no/www-public/pull/47) | `feature/layout-system` | 🟡 **Open** | Twin-primary color system, inline SVG logo |
+No open pull requests. All work to date has been merged.
+
+**Recent merged PRs (most recent first):**
+
+| PR | Branch | What |
+|----|--------|------|
+| [#52](https://github.com/noexcuse-no/www-public/pull/52) | `feature/backlog-dependency-refinement` | Reorganize backlog by dependency + citation enhancement docs |
+| [#51](https://github.com/noexcuse-no/www-public/pull/51) | `feature/design-interview-harmonization` | Design docs: brand personality, twin-primary color, GPT Image 2, layered animation, graphics guide |
+| [#50](https://github.com/noexcuse-no/www-public/pull/50) | `feature/layout-system` | Backlog refinement: Phase 6 regressions, Phase 11 design polish, Phase 12, future features |
+| [#49](https://github.com/noexcuse-no/www-public/pull/49) | `feature/layout-system` | Fix clanker bug, layout system merge |
+| [#48](https://github.com/noexcuse-no/www-public/pull/48) | `main` | Cleanup on all five |
+| [#47](https://github.com/noexcuse-no/www-public/pull/47) | `feature/layout-system` | Twin-primary color system, inline SVG logo |
+| [#46](https://github.com/noexcuse-no/www-public/pull/46) | `feature/layout-system` | P5 Layout System + Site Review Fixes |
 
 ## In Progress
 
@@ -393,7 +498,13 @@ All new images must follow `.design/graphics.md` prompt rules:
 - [x] P5.2: CSS implementation — `.container`, `.section`, `.grid`, `.flex-*` i `layout.css`
 - [x] P5.3: Template migration — perspektiv.html, products.html, profiles.html
 - [x] P5.4: Cleanup — fjern dupliserte `max-width`/`padding` fra komponent-CSS
-- [ ] **Outstanding:** Migrer `_pages/ledelse_*.md` artiklene fra `frame-`-klasser til layout-systemet (Phase 6 R1-R5, Phase 11 D1-D6 må løses først)
+- [ ] **Outstanding:** Migrer `_pages/ledelse_*.md` artiklene fra `frame-`-klasser til layout-systemet (Phase 6 R1-R5 unblocked — Phase 11 D1-D6 skal være løst i gjeldende BL, men må verifiseres i kode)
+
+### Phase 10-12 — Neste arbeidsområder
+- Phase 10: Site Review Fixes (10.1-10.10) — **BL-dokumentert, ikke implementert**
+- Phase 11: Design Polish (D1-D15, R7-R8) — **BL-dokumentert, ikke implementert**
+- Phase 12: Infographic & Dark Mode (X1-X2) — **BL-dokumentert, ikke implementert**
+- page_d.id-002: `profiles.html` har to `<article>`-elementer uten `data-order` på ett av dem — **funnet, ikke fikset**
 
 ## Completed
 
@@ -419,8 +530,38 @@ Do not add completed work here, add them to CHANGELOG.md
 - **Status:** Specs complete. **Blocked on:** images + content draft needed
 - **Reference:** `.specs/triader/README.md`, `.specs/makt/README.md`, `.specs/perspektiv/README.md`
 
+**FF4 — Sitatshenvisning / Citation Enhancement**
+- **Purpose:** Kramdown native footnotes (`[^ref]`) med JSON-LD `citation`-array i frontmatter, JS-enhancer som injiserer `itemprop`/`itemscope` i kramdowns genererte DOM
+- **Status:** Spec + design complete. **Ready for implementation** when prioritized.
+- **Dependencies:** Ingen — frittstående arkitektonisk forbedring
+- **Reference:** `.specs/citation-enhancement/README.md`, `.design/citation-enhancement.md`
+
+**FF5 — Tre steg-sider for Ledelse 60:2**
+- **Purpose:** Separate detail pages for hvert av de tre stegene i Ledelse 60:2 (kartlegging → analyse → tilbakemelding) med egen URL, innhold og CTA. Kan erstatte eller supplere dagens én-side-visning.
+- **Status:** Concept only — ikke spec'd. Avventer prioritering.
+- **Dependencies:** Ingen, men bør koordineres med CTA-designsystem (se C4)
+
 ## Blocked
 
 - **Q7 — Katalysator:** Behold som planlagt funksjon. **blocked:** Deferred to June 2026. Iterative research + brainstorming session required before any implementation.
   - **Reference:** `.specs/shared/product-katalysator.txt`
   - **Dependencies:** User availability for brainstorming, product positioning decision
+
+- **C1 — Case Planning:** Planlegg case-studier for Ledelse 60:2. **blocked:** Needs brainstorming session with user for case selection and anonymization approach.
+  - **Dependencies:** User availability for case brainstorm
+
+- **C2 — Case Intake Form:** Design et system for å samle inn case-data fra kunder. **blocked:** Avhenger av C1 (case-planlegging må være klar før intake-form kan designes).
+  - **Dependencies:** C1
+
+- **C3 — Case Presentation Design:** Design mal for case-presentasjon (resultater, sitater, metrics). **blocked:** Avhenger av C1 + C2.
+  - **Dependencies:** C1, C2
+
+- **C4 — Visitor Flow / Inbound Sales Journey + CTA-designsystem:** Kartlegg besøksstrømmen fra første sidevisning til booket samtale, og til slutt faktura. Inkluderer CTA Type A/B-designregler (A=primær venstre, B=sekundær høyre, maks 2 per rad, fargeoverganger på hover — aldri opacity alene). **blocked:** Avhenger av C1 (case-innhold som bakgrunn for traktanalyse).
+  - **Reference:** `.specs/inbound-sales/README.md`
+  - **Scope utvidet:** Opprinnelig F2 (CTA-designsystem) er innlemmet her
+  - **Dependencies:** C1
+
+- **F5 — Image generation for N1-N3:** Generer hero-bannere og seksjonsillustrasjoner for Triader, Makt og Perspektiv-artiklene. **blocked:** Avhenger av at artikkelinnhold er utkastet og godkjent (maksimal kontekst for presise promptes).
+  - **Images needed:** 3 hero-bannere (Style 2), 5-6 seksjonsillustrasjoner (Style 3)
+  - **Reference:** `.design/graphics.md`, Image Assets Required-tabellen ovenfor
+  - **Dependencies:** N1-N3 content drafted and approved
