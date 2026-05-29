@@ -14,4 +14,6 @@ build/
 *.swo
 *~
 assets/bibliography/extracts/.omo/
-.omo/
+.omo/*
+!.omo/rules/
+!.omo/rules/*
