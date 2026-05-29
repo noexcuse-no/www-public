@@ -53,6 +53,7 @@ When starting work on a feature: read the listed design docs and specs first.
 | `[dark-mode]` | Dark mode theme toggle | `assets/css/styles-dark.css`, `assets/css/styles-light.css`, `assets/scripts/dark-mode-toggle.js` | `colors.md`, `components.md`, `css-architecture.md` | — |
 | `[animations]` | Scroll-triggered animations | `assets/css/animations.css`, `assets/scripts/animations.js` | `ui-upgrade.md`, `css-architecture.md` | `.specs/ui-upgrade/README.md` |
 | `[cta]` | Reusable CTA component | `_includes/cta.html` | `components.md`, `colors.md`, `ui-upgrade.md` | — |
+| `[cta-design]` | CTA Type A/B design system | `assets/css/products.css`, `assets/css/article.css`, `_includes/cta.html` | `colors.md`, `components.md` | `.specs/cta-design/README.md` |
 | `[booking]` | Microsoft Bookings modal | `_includes/booking-modal.html` | `components.md` | — |
 | `[logo]` | Logos/branding assets | `assets/images/noexcuse-logo-*.webp` | `graphics.md`, `colors.md` | — |
 | `[seo]` | SEO foundation | `_includes/metadata.html`, `sitemap.xml`, `robots.txt`, `manifest.json` | — | — |

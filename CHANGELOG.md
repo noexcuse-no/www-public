@@ -14,6 +14,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Color Intensity Levels (full background vs accent) added to `.design/colors.md`
 - Layered animation design: expressive brand keyframes (heroReveal, heroImageReveal, pageTransition) + restrained UI scroll-triggered animations — documented in `.design/ui-upgrade.md` and `.specs/ui-upgrade/README.md`
 - BACKLOG.md restructured: N1-N3, F5, C1-C4 moved to dedicated Blocked section with explicit unblock conditions
+- BACKLOG.md: D12–D15 (profile image size, bump fix, contact link styling, hero rounded corners)
+- BACKLOG.md: FF5 — Three step detail pages for Ledelse 60:2
+- BACKLOG.md: CTA Type A/B design system merged into C4 scope
+- BACKLOG.md: page_d.id-002 bug (duplicate `<article>` in profiles.html) tracked
+- `.specs/cta-design/README.md`: Created — Type A/B CTA design system with color specs, placement rules, forbidden patterns
+- `.design/typography.md`: Completed with h4-h6, small/caption, font weight map, reading width specs
+- `.design/graphics.md`: Added Design Evolution section documenting icon→banner pivot
+- `.design/SPEC.md`: Added `[cta-design]` feature entry referencing new spec
+
+### Changed
+- PLAN.md archived → `.design/archive/plan-v0.md` (outdated v0 plan, replaced by BACKLOG.md execution phases)
+- BACKLOG.md: Open PRs section cleaned — all PRs #42–#52 now marked merged, none open
+- BACKLOG.md: In Progress section updated with Phase 10-12 work areas
 - Twin-primary color system: Navy #003060 / Azure #F0FFFF
   - Header bg swaps per mode (navy light, azure dark)
   - Page bg light changed to #c0d4e8, old #e2e8f0 stashed as --bg-neutral-light
