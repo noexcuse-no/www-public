@@ -1,32 +1,32 @@
 ---
 layout: page
-title: "Bli forberedt på en usikker fremtid, jobb med organisasjonskultur og endring"
-description: "Lær hvorfor organisasjonskultur er så vanskelig å endre — og hva forskningen sier om hvordan det faktisk kan lade seg gjøre. Fra Schein til Kotter."
-permalink: /organisasjonskultur/
+title: "Usikkerhet og endring — bli forberedt på en usikker fremtid"
+description: "Lær hvordan modne ledergrupper navigerer usikkerhet og endring — fra Scheins kulturnivåer til Kotters endringsmodell."
+permalink: /usikkerhet/
 json_ld:
   type: "Article"
-  name: "Bli forberedt på en usikker fremtid, jobb med organisasjonskultur og endring"
-  description: "Hvorfor er organisasjonskultur så vanskelig å endre? Forskning på kulturnivåer, endringsledelse og hvordan logan, kotter og schein beskriver fenomenet."
+  name: "Usikkerhet og endring — bli forberedt på en usikker fremtid"
+  description: "Hvordan navigere usikkerhet og endring i ledergruppen. Forskning på kulturnivåer, endringsledelse og hvordan Logan, Kotter og Schein beskriver fenomenet."
   author:
     type: "Organization"
     name: "No Excuse AS"
   about:
     - type: "Thing"
-      name: "Organisasjonskultur"
+      name: "Usikkerhet"
     - type: "Thing"
       name: "Endringsledelse"
     - type: "Thing"
-      name: "Kulturendring"
+      name: "Organisasjonskultur"
 ---
 
 <section class="frame-hero">
     <div class="frame-hero-image">
-        <img src="{{ '/assets/images/banners/benefit-future.webp' | relative_url }}" alt="Organisasjonskultur og endring">
+        <img src="{{ '/assets/images/banners/benefit-future.webp' | relative_url }}" alt="Usikkerhet og endring">
     </div>
     <div class="frame-hero-content animate-on-scroll fade-in">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1>Bli forberedt på en usikker fremtid, jobb med organisasjonskultur og endring</h1>
-        <p class="frame-intro">Kultur spiser strategi til frokost, het det. Men hva er kultur egentlig — og hvordan kan den endres? Forskningen gir noen overraskende svar.</p>
+        <h1>Usikkerhet og endring — bli forberedt</h1>
+        <p class="frame-intro">Kultur spiser strategi til frokost, het det. Men hva er kultur egentlig — og hvordan navigerer ledergrupper usikkerhet og endring? Forskningen gir noen overraskende svar.</p>
     </div>
 </section>
 
@@ -36,8 +36,8 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hva er organisasjonskultur egentlig?</h2>
-    <p>Edgar Schein definerer kultur som «a pattern of shared basic assumptions learned by an organization as it solved its problems of external adaptation and internal integration.»<sup class="citation">[schein2010] Kort sagt: det er måten vi faktisk gjør ting på, ikke bare det vi sier vi gjør.</p>
-    <p>Schein identifiserer tre nivåer av kultur:<sup class="citation">[schein2010]</p>
+    <p>Edgar Schein definerer kultur som «a pattern of shared basic assumptions learned by an organization as it solved its problems of external adaptation and internal integration.»<sup class="citation">[schein2010]</sup> Kort sagt: det er måten vi faktisk gjør ting på, ikke bare det vi sier vi gjør.</p>
+    <p>Schein identifiserer tre nivåer av kultur:<sup class="citation">[schein2010]</sup></p>
     <ul>
         <li class="animate-on-scroll slide-in-left stagger"><strong>Artefakter:</strong> Det vi kan se — bygninger, språk, ritualer, kleskode</li>
         <li class="animate-on-scroll slide-in-left stagger"><strong>Verdier:</strong> Det vi sier er viktig — strategi, visjon, erklærte prinsipper</li>
@@ -48,7 +48,7 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>De fem kulturstadiene — fra Logan</h2>
-    <p>David Logan deler organisasjoner inn i fem kulturstadier, basert på hvordan medlemmene ser på seg selv og andre:<sup class="citation">[logan2009]</p>
+    <p>David Logan deler organisasjoner inn i fem kulturstadier, basert på hvordan medlemmene ser på seg selv og andre:<sup class="citation">[logan2009]</sup></p>
     
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 1: «Livet suger»</h3>
@@ -57,28 +57,28 @@ json_ld:
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 2: «Mitt liv suger»</h3>
-        <p>Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.<sup class="citation">[logan2009]</p>
+        <p>Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.<sup class="citation">[logan2009]</sup></p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 3: «Jeg er great, du er det ikke»</h3>
-        <p>Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.<sup class="citation">[logan2009]</p>
+        <p>Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.<sup class="citation">[logan2009]</sup></p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 4: «Vi er great, andre er ikke»</h3>
-        <p>Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.<sup class="citation">[logan2009]</p>
+        <p>Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.<sup class="citation">[logan2009]</sup></p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 5: «Livet er great»</h3>
-        <p>Ektepisentret. «Vi lykkes sammen.» Organisasjonen feirer suksess eksternt og internt. Kun 3% av organisasjoner når dette stadiet, ifølge Logan.<sup class="citation">[logan2009]</p>
+        <p>Ektepisentret. «Vi lykkes sammen.» Organisasjonen feirer suksess eksternt og internt. Kun 3% av organisasjoner når dette stadiet, ifølge Logan.<sup class="citation">[logan2009]</sup></p>
     </div>
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hvorfor endring er så vanskelig</h2>
-    <p>John Kotter dokumenterte at rundt 70% av alle endringsinitiativer feiler.<sup class="citation">[kotter2012] Årsakene er systematiske:</p>
+    <p>John Kotter dokumenterte at rundt 70% av alle endringsinitiativer feiler.<sup class="citation">[kotter2012]</sup> Årsakene er systematiske:</p>
     <ul>
         <li class="animate-on-scroll slide-in-left stagger">For mye fokus på planlegging, for lite på implementering</li>
         <li class="animate-on-scroll slide-in-left stagger">Mangel på bred forankring blant nøkkelpersoner</li>
@@ -90,7 +90,7 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Kotters 8-stegs modell for endring</h2>
-    <p>John Kotter har kartlagt hvorfor endringsinitiativer feiler — og hvordan de faktisk kan lykkes. Hans forskning viser at de fleste endringsforsøk mislykkes fordi de gjør én eller flere av åtte kritiske feil. Her er hans åtte steg, fra akutt til forankret.<sup class="citation">[kotter2012]</p>
+    <p>John Kotter har kartlagt hvorfor endringsinitiativer feiler — og hvordan de faktisk kan lykkes. Hans forskning viser at de fleste endringsforsøk mislykkes fordi de gjør én eller flere av åtte kritiske feil. Her er hans åtte steg, fra akutt til forankret.<sup class="citation">[kotter2012]</sup></p>
     
     <div class="kotter-flow">
         <div class="kotter-step">
@@ -173,7 +173,7 @@ json_ld:
     </div>
     
     <h3>Hvorfor 70% feiler</h3>
-    <p>Kotter identifiserer åtte spesifikke feil — én per steg — som fører til at endringsinitiativer feiler:<sup class="citation">[kotter2012]</p>
+    <p>Kotter identifiserer åtte spesifikke feil — én per steg — som fører til at endringsinitiativer feiler:<sup class="citation">[kotter2012]</sup></p>
     <ul>
         <li class="animate-on-scroll slide-in-left stagger"><strong>For mye selvtilfredshet</strong> — «det går jo bra nok»</li>
         <li class="animate-on-scroll slide-in-left stagger"><strong>For svak koalisjon</strong> — ikke nok makt bak endringen</li>
@@ -185,7 +185,7 @@ json_ld:
         <li class="animate-on-scroll slide-in-left stagger"><strong>Ikke forankre i kulturen</strong> — gamle vaner vender tilbake</li>
     </ul>
     
-    <p>Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av kommunikasjon (Steg 4) og hindringsfjerning (Steg 5); erklærte verdier påvirkes av nødvendighet (Steg 1) og kulturell forankring (Steg 8); grunnleggende antakelser endres gjennom langsiktig bygging (Steg 7) og kulturell forankring (Steg 8).<sup class="citation">[schein2010] Logans stadier forteller <em>hvor</em> organisasjonen er — Kotter forklarer <em>hvordan</em> den beveger seg videre.<sup class="citation">[logan2009]</p>
+    <p>Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av kommunikasjon (Steg 4) og hindringsfjerning (Steg 5); erklærte verdier påvirkes av nødvendighet (Steg 1) og kulturell forankring (Steg 8); grunnleggende antakelser endres gjennom langsiktig bygging (Steg 7) og kulturell forankring (Steg 8).<sup class="citation">[schein2010]</sup> Logans stadier forteller <em>hvor</em> organisasjonen er — Kotter forklarer <em>hvordan</em> den beveger seg videre.<sup class="citation">[logan2009]</sup></p>
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
@@ -223,8 +223,8 @@ json_ld:
 </section>
 
 <section class="frame-cta animate-on-scroll fade-in-up">
-    <h2>Få kartlagt organisasjonskulturen</h2>
-    <p>Ledelse 60:2 inneholder spørsmål som kartlegger kultur, verdier og hvordan beslutninger faktisk tas. Bestill en uforpliktende samtale for å lære mer.</p>
+    <h2>Få kartlagt ledergruppens håndtering av usikkerhet</h2>
+    <p>Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen håndterer usikkerhet, kultur og endring. Bestill en uforpliktende samtale for å lære mer.</p>
     <div class="frame-cta-buttons">
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill uforpliktende samtale</a>
         <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
