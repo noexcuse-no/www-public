@@ -1,4 +1,5 @@
 ---
+title: "Daglig leder"
 name: "Dagfinn Bang-Johansen"
 image: "assets/images/dagfinn.webp"
 phone: "+4790820258"

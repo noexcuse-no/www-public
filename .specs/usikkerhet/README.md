@@ -9,7 +9,7 @@ The `_pages/ledelse_usikkerhet.md` article covers how to lead through uncertaint
 - **File:** `_pages/ledelse_usikkerhet.md`
 - **URL:** `/usikkerhet/`
 - **Content:** Schein's three culture levels, Logan's five tribal stages, Kotter's 8-step model (implemented), organizational challenges, diagnostic questions
-- **Status:** Content complete. Minor HTML fixes remaining (`<sup>` tag closure across all citation tags)
+- **Status:** ✅ **Complete.** All Phase 6 regression fixes, usikkerhet rename, cross-ref updates, and sup tag closures applied 2026-05-29.
 
 ## Rename History
 
@@ -18,7 +18,8 @@ This article was originally named `organisasjonskultur`. It was renamed to `usik
 - `permalink` changed from `/organisasjonskultur/` to `/usikkerhet/`
 - Cross-references updated in `_products/ledelse-60-2.md` and `_pages/ledelse_60-2.md`
 - All references to "organisasjonskultur" in title/description/JSON-LD updated to reflect "usikkerhet" focus
+- All 12 unclosed `<sup>` tags closed
 
 ## HTML Issues
 
-All `<sup class="citation">` tags across the article need `</sup>` closure. This is a codebase-wide pattern issue.
+✅ **Resolved.** All 12 unclosed `<sup class="citation">` tags closed. Systematic audit across all `_pages/ledelse_*.md` files confirmed zero remaining issues (Phase 6 R5).

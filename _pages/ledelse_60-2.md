@@ -75,7 +75,7 @@ json_ld:
             <div class="benefit-card-content">
                 <h3>Bli forberedt på en usikker fremtid</h3>
                 <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer.</p>
-                <a href="{{ '/organisasjonskultur/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
+                <a href="{{ '/usikkerhet/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
             </div>
         </div>
         <div class="benefit-card animate-on-scroll fade-in-up stagger">

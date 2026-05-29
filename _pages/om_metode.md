@@ -1,11 +1,12 @@
 ---
 layout: page
-title: "En metode for kunnskapsbasert ledelsesforbedring"
+title: "Om metodikk"
+description: "«Ledelse 60:2» er en intervjubasert kartleggingsmetode for ledergrupper. Les om det teoretiske grunnlaget, kunnskapsproduksjon og hvorfor vi gjør dette."
 permalink: /metode/
 json_ld:
   type: "TechArticle"
-  name: "En metode for kunnskapsbasertbasert ledelsesforbedring"
-  description: "Den kunnskapsbaserte metoden for No Excuse Ledelse 60:2."
+  name: "Om metodikk"
+  description: "«Ledelse 60:2» er en intervjubasert kartleggingsmetode for ledergrupper. Metodikken bygger på et tverrfaglig teoretisk fundament."
   author:
     type: "Organization"
     name: "No Excuse AS"
@@ -33,7 +34,7 @@ json_ld:
     </div>
     <div class="science-hero-content">
         <p class="science-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
-        <h1>En metode for kunnskapsbasert ledelsesforbedring</h1>
+        <h1>Om metodikk</h1>
         <p class="science-intro">«Ledelse 60:2» anvender strukturert intervjuer for kartlegging av kulturelle faktorer i en ledergruppe som metodikk for datafangst. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kunnskapsproduksjon om kultur og beslutningsvitenskap - som gir den høye fleksible anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.</p>
     </div>
 </section>
@@ -51,7 +52,7 @@ json_ld:
                 <div class="frame-content">
                     <h3>Strukturperspektivet</h3>
                     <p class="frame-desc">Roller, mål, prosesser, koordinering, ansvar</p>
-                    <p class="frame-detail-text">Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig. Symbolsk representerer dette kunnskapsdomenet for resepsjonen og anvendelse av det som på universitetet struktureres under <strong>Økonomi</strong>.</p>
+                    <p class="frame-detail-text">Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig. </p>
                     <a href="{{ '/struktur/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
@@ -59,8 +60,8 @@ json_ld:
                 <img src="{{ '/assets/images/banners/perspektiv-mennesker.webp' | relative_url }}" alt="Menneske" class="frame-image">
                 <div class="frame-content">
                     <h3>Menneskeperspektivet</h3>
-                    <p class="frame-desc">Tillit, motivasjon, relasjoner, utvikling, medvirkning</p>
-                    <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at "servant leadership" er et konkurransefortrinn. Symbolsk representerer dette kunnskapsdomenet for resepsjonen og anvendelse av det som på universitetet struktureres under <strong>Psykologi</strong>.</p>
+                    <p class="frame-desc">Tillit, motivasjon, relasjoner, medvirkning</p>
+                    <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at "servant leadership" er et konkurransefortrinn. </p>
                     <a href="{{ '/mennesker/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
@@ -71,7 +72,7 @@ json_ld:
                 <div class="frame-content">
                     <h3>Påvirkningsperspektivet</h3>
                     <p class="frame-desc">Makt, interesser, konflikt, ressurser, politikk</p>
-                    <p class="frame-detail-text">Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet. Symbolsk representerer dette kunnskapsdomenet for resepsjonen og anvendelse av det som på universitetet struktureres under <strong>Statsvitenskap & Sosiologi</strong>.</p>
+                    <p class="frame-detail-text">Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet. </p>
                     <a href="{{ '/påvirkning/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
@@ -80,7 +81,7 @@ json_ld:
                 <div class="frame-content">
                     <h3>Identitetsperspektivet</h3>
                     <p class="frame-desc">Kultur, mening, symboler, verdier, historier</p>
-                    <p class="frame-detail-text">Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier. Symbolsk representerer dette kunnskapsdomenet for resepsjonen og anvendelse av det som på universitetet struktureres under <strong>Sosialantropologi</strong>.</p>
+                    <p class="frame-detail-text">Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier. </p>
                     <a href="{{ '/identitet/' | relative_url }}" class="frame-link">Les artikkelen →</a>
                 </div>
             </div>
@@ -110,7 +111,7 @@ json_ld:
         </div>
     </div>
 
-    <p>Databehandlingen følger <strong>De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer</strong> (2014). Vi fremhever fire prinsipper:</p>
+    <p>Databehandlingen følger <strong>De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer</strong> (2014).</p>
 
     <div class="ethics-columns">
         <div class="ethics-column">
@@ -544,13 +545,6 @@ json_ld:
     .ethics-column {
         border-right: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .ethics-column:last-child {
-        border-bottom: none;
-    }
-}
-</style>0, 0, 0, 0.1);
     }
 
     .ethics-column:last-child {
