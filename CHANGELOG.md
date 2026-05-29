@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- opencode.json: Consolidated 12 standing directives → 6. Merged SECURITY, PREREAD, GITIGNORE, COMMITS → GIT; DEPENDENCIES → CODE; SECURITY-UPDATE, CROSS-LINKS → DESIGN; TODOS → WORK. Added rebase prohibition, fetch-before-PR rule, todo gate. Rewrote in caveman RFC 2119 phrasing. 3,669 chars → 1,971 chars (~46% reduction).
+
 ### Added
 - Design interview harmonization: brand personality expanded to 5 traits (Direct & Clear, Competent, Nordic, Rebellious, Practical)
 - Apple.com visual reference added to brand guidelines

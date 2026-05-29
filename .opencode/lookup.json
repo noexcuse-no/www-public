@@ -3,6 +3,12 @@
     "checks": ["dark mode", "mobile 375px", "WCAG AA both themes"]
   },
   "scenarios": {
+    "backlog": {
+      "reads": [".omo/rules/task-management.md"],
+      "checks": ["every new BL item has a matching .specs/ file", "spec path is recorded in BL row"],
+      "runs": ["ls .specs/<item-path> to verify file exists"],
+      "updates": ["BACKLOG.md", ".specs/<item-name>/README.md or .specs/<feature>/issue-YYMMDD-NN.md"]
+    },
     "css": {},
     "js": {
       "reads": [".design/js-patterns.md"],
