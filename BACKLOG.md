@@ -93,36 +93,21 @@ See relevant spec files for each expansion.
 
 ---
 
-### Phase 6 — Regression Fixes
+### Phase 6 — Regression Fixes ✅ COMPLETE
 
-*Content regressions introduced during Phase 7 scroll-animation and SEO work.*
+*All items completed 2026-05-29. See commit history on `fix/phase6-regressions-usikkerhet-rename` branch.*
 
-**R1 — `_pages/ledelse_forankring.md` trunkert**
-- **Problem:** CTA-seksjonen er kuttet midt i `<h2>` — mangler brødtekst, to CTA-knapper, avsluttende `</section>`, og 4 fotnotereferanser
-- **Årsak:** Commit `d1d6ac5` — filen gikk fra 315 → 106 linjer
-- **Fix:** Gjenopprett CTA-innhold fra historisk commit, legg til fotnoter, lukk åpne `<sup>`-tagger
+**R1** — Gjenopprettet CTA-seksjon i `_pages/ledelse_forankring.md` (fra commit `d1d6ac5^`). Alle 6 `<sup>` lukket.
 
-**R2 — `_pages/ledelse_usikkerhet.md` feil permalink og navn**
-- **Problem:** `permalink: /organisasjonskultur/` skal være `/usikkerhet/`
-- **Scope:** Permalink, frontmatter, JSON-LD, 12 åpne `<sup>`-tagger
-- **Kryssreferanser:** `_products/ledelse-60-2.md:32`, `_pages/ledelse_60-2.md:78`
+**R2** — Utført som del av 10.1 (usikkerhet-rename). Alle 12 `<sup>` lukket.
 
-**R3 — `_pages/ledelse_tillit.md` nestede `<sup>`-tagger**
-- **Problem:** Linje 115: 5 `<sup>` nestet uten `</sup>`
-- **Årsak:** Commit `90f39cc`
-- **Fix:** Separer til korrekt `<sup>...</sup>` per sitat, lukk alle 11 åpne `<sup>`
+**R3** — `_pages/ledelse_tillit.md`: 5 nestede `<sup>` separert, alle 11 lukket.
 
-**R4 — `_pages/ledelse_generativ-ki.md` mangler `</sup>`**
-- **Problem:** Én åpen `<sup>` på linje 90 (Hubbard-sitat)
-- **Fix:** Legg til `</sup>`
+**R4** — `_pages/ledelse_generativ-ki.md`: `</sup>` lagt til på linje 90.
 
-**R5 — Alle `<sup class="citation">` mangler `</sup>`**
-- **Gjennomgående problem:** Ingen `</sup>` finnes — etterfølgende tekst blir hevet skrift
-- **Scope:** Alle `_pages/ledelse_*.md`-filer
+**R5** — Systematisk gjennomgang: 0 uavsluttede `<sup>` i noen `_pages/ledelse_*.md`-fil.
 
-**R6 — Kryssreferanser til `/organisasjonskultur/`**
-- **Scope:** `_pages/ledelse_60-2.md`, `_products/ledelse-60-2.md`
-- **Fix:** Oppdater til `/usikkerhet/`
+**R6** — Kryssreferanser oppdatert i `_pages/ledelse_60-2.md` og `_products/ledelse-60-2.md`.
 
 ---
 
@@ -156,9 +141,9 @@ See relevant spec files for each expansion.
 - [x] P3.3: Reusable CTA component — `_includes/cta.html` with configurable heading, body, booking URL
 - [x] P3.4: Profile JS consolidation — `profile-card.js` deleted (functionality consolidated)
 
-**P4 — Phase 4: Future-Proofing**
-- [ ] P4.1: Multi-product support
-- [ ] P4.2: JSON Schema validation
+**P4 — Phase 4: Future-Proofing** *(moved to Future Features — too vague, no spec)*
+- [ ] P4.1 → FF6: Multi-product support
+- [ ] P4.2 → FF7: JSON Schema validation
 
 **P5 — Layout System** *(active on `feature/layout-system`)*
 - [x] P5.1: Design document — `.design/layouts.md` med content width system, section rhythm, grid, flex utilities, page template specs
@@ -189,10 +174,11 @@ See relevant spec files for each expansion.
 
 *Color system (superseding 10.2) committed in PR #47. Remaining items still pending.*
 
-**10.1 — Rename `/organisasjonskultur/` → `/usikkerhet/`**
-- **Action:** Update permalink in `_pages/ledelse_usikkerhet.md`, cross-references in `_pages/ledelse_60-2.md` and `_products/ledelse-60-2.md`
-- **Scope:** Content fix — URL change + cross-link updates
-- **No blockers**
+**10.1 — Rename `/organisasjonskultur/` → `/usikkerhet/` ✅ COMPLETE**
+- Completed 2026-05-29 on `fix/phase6-regressions-usikkerhet-rename` branch
+- Permalink endret, frontmatter/JSON-LD oppdatert, alle 12 `<sup>` lukket
+- Kryssreferanser i `_pages/ledelse_60-2.md` og `_products/ledelse-60-2.md` oppdatert
+- Informatikkarkitektur `.design/information-architecture.md` var allerede korrekt
 
 **[10.2] — ✅ COMPLETE (PR #47)**
 - Superseded by full twin-primary color system: Navy #003060 / Azure #F0FFFF
@@ -242,90 +228,37 @@ See relevant spec files for each expansion.
 
 ### Phase 11 — Design Polish & /metode/ Overhaul
 
-*Brukertestfunn fra P5 + nye endringer på `_pages/om_metode.md`. D7–D11 berører alle samme fil og bør gjøres samlet for å unngå merge-konflikter.*
+*D4, D5, D7–D11, R7, R8 completed 2026-05-29 on `fix/phase6-regressions-usikkerhet-rename` branch. Remaining items not yet started.*
 
-**D1 — Header-bakgrunn skal være konstant**
-- **Problem:** Header-bakgrunn endrer seg med tema. I dark mode blir logoen usynlig
-- **Vedtak:** Header alltid `#003060` (mørk marine) i begge tema. Logo alltid `#F0FFFF` (azur)
-- **Scope:** `assets/css/colors.css`, `assets/css/styles-light.css`, `assets/css/styles-dark.css`, `assets/css/header.css`
+**✅ Completed on this branch:**
 
-**D2 — CTA hover-effekter: opacity → fargeoverganger**
-- **Problem:** CTA-knapper bruker `opacity` + `translateY` for hover — skal bruke fargeoverganger (type A/B)
-- **Vedtak:** Type A (azur på marine + azur outline), Type B (marine på azur + marine outline). Hover: bytt bakgrunns- og tekstfarge
-- **Scope:** `assets/css/products.css`, `assets/css/article.css`, `_includes/cta.html`
-- **Spec:** `.specs/cta-design/README.md`
+**D4** — Profil-tagger: `_includes/profiles.html` — bruker Liquid split/loop med `<span class="profile-tag">`
 
-**D3 — Hero text overlay på bannerbilder**
-- **Problem:** Site title + description mangler CSS text overlay med bakgrunnsstyling for lesbarhet på bannerbilder
-- **Scope:** CSS i layout-systemet + eventuell template-endring
+**D5** — `_profiles/dagfinn.md`: lagt til `title: "Daglig leder"`
 
-**D4 — Profil-tagger formatering**
-- **Problem:** `{{ profile.tags }}` rendres som rå tekst uten spacing
-- **Fix:** Bruk Liquid `| split` + `| join` eller loop med proper spacing
-- **Scope:** `_includes/profiles.html`
+**D7–D11** — `/metode/` overhaul: tittel endret til "Om metodikk", frontmatter/JSON-LD oppdatert, "Vi fremhever fire prinsipper:" slettet, "utvikling" fjernet fra Mennesker frame-desc, 4 "Symbolsk"-setninger kuttet, korrupt CSS på slutten ryddet, syntaksfeil fikset
 
-**D5 — Dagfinn mangler `title`-felt**
-- **Problem:** `_profiles/dagfinn.md` mangler `title: "Daglig leder"`, vises ikke på profil-kort
-- **Scope:** `_profiles/dagfinn.md`, `_includes/profiles.html`
+**R7** — `/metode/`: ingen `<sup>`-feil fant — R7 var falsk alarm (filen hadde aldri fotnoter)
 
-**D6 — Profildetaljer: unødvendig scrollbar**
-- **Problem:** Scrollbar vises ved første lass i profildetalj-visning
-- **Scope:** `assets/css/profiles.css`
+**R8** — `/metode/`: korrupsjonen var duplisert `</style>`-blokk, ikke trunkert CTA — filen har aldri hatt CTA-seksjon. Fikset.
 
-**D7 — `/metode/` ny tittel, beskrivelse og innledning**
-- **Scope:** `_pages/om_metode.md`
-- **Tittel:** Endre til "Om metodikk" (`title:` i frontmatter + `<h1>`)
-- **Beskrivelse:** Kort ny page description fra eksisterende tekst
-- **Innhold:** Flytt dagens beskrivende tekst til nytt avsnitt først på siden
+**⏳ Remaining (not started):**
 
-**D8 — Fjern "Vi fremhever fire prinsipper:"**
-- **Problem:** Linjen er overflødig — bildene viser prinsippene allerede
-- **Scope:** `_pages/om_metode.md` — linje 113
-- **Fix:** Slett linjen "Vi fremhever fire prinsipper:"
+**D1** — Header alltid `#003060` uavhengig av tema (CSS: colors.css, header.css, styles-light.css, styles-dark.css)
 
-**D9 — Fjern "utvikling"-tagg fra Mennesker frame-kort**
-- **Scope:** `_pages/om_metode.md` — linje 62 (`.frame-desc` for Menneskeperspektivet)
-- **Fix:** Fjern ", utvikling" fra tag-listen
+**D2** — CTA hover: opacity → fargeoverganger type A/B (CSS: products.css, article.css; spec: `.specs/cta-design/README.md`)
 
-**D10 — Fjern "Symbolsk"-setning fra frame-kortbeskrivelser** *(flyttet fra R7)*
-- **Problem:** Setning som starter med "Symbolsk" er for lang for frame-kortene — samme fil som D7-D9
-- **Scope:** `_pages/om_metode.md` — linje 54, 63, 74, 83
-- **Fix:** Kutt setningen som starter med "Symbolsk" fra hver `.frame-detail-text`
+**D3** — Hero text overlay for lesbarhet på bannerbilder (layout-systemet)
 
-**D11 — Fiks syntaksfeil på `/metode/`** *(flyttet fra R8)*
-- **Problem:** Syntaksfeil i `_pages/om_metode.md` — samme fil som D7-D10
-- **Scope:** `_pages/om_metode.md`
-- **Fix:** Gjennomgå og rett syntaksfeil
+**D6** — Profil scrollbar vises ved første lass (profiles.css)
 
-**R7 — `_pages/om_metode.md` regresjon: manglende fotnoter**
-- **Problem:** Commit `d1d6ac5` kuttet også fotnotereferanser i om_metode.md — flere `<sup>` mangler `</sup>`
-- **Scope:** `_pages/om_metode.md`
-- **Fix:** Gjenopprett manglende `</sup>` og eventuelle tapte fotnoter
+**D12** — Profile image for liten i kompakt-visning — 80×80px minimum (profiles.css)
 
-**R8 — `_pages/om_metode.md` regresjon: CTA-seksjon trunkert**
-- **Problem:** Samme commit kuttet CTA-seksjonen — mangler avsluttende `</section>` og booking-lenker
-- **Scope:** `_pages/om_metode.md`
-- **Fix:** Gjenopprett CTA-innhold, lukk åpne tagger
+**D13** — Profile image "hopp" ved ekspandering (profiles.css + profile-card.js)
 
-**D12 — Profile image for liten i kompakt-visning**
-- **Problem:** Brukertest (funn #4) — profilbilder er for små i kompakt kort-visning; vanskelig å kjenne igjen personer
-- **Scope:** `assets/css/profiles.css`
-- **Fix:** Øk bildestørrelsen i `.profile-compact` (minst 80×80px), justér layout for å unngå overlapping
+**D14** — Kontaktlenker inkonsistent styling (profiles.css)
 
-**D13 — Profile image "hopp" ved ekspandering**
-- **Problem:** Brukertest (funn #5) — profilbildet hopper/endrer posisjon når kortet ekspanderes
-- **Scope:** `assets/css/profiles.css`, `assets/scripts/profile-card.js`
-- **Fix:** Bruk én fast bildeplassering uavhengig av expanded/compact state; unngå layout shift
-
-**D14 — Kontaktlenker i profil: inkonsistent styling**
-- **Problem:** Brukertest (funn #8) — telefon/e-post/linkedin-lenker i profil-detaljer har ulik styling, mangler visuell hierarki
-- **Scope:** `assets/css/profiles.css`
-- **Fix:** Definer én lenke-stil for alle kontaktpunkter (ikon + tekst, samme farge, samme hover-effekt)
-
-**D15 — Hero-seksjon mangler avrundede hjørner i bunn**
-- **Problem:** Brukertest (funn #13) — hero-banner har skarpe kanter nederst; bryter med avrundet design-språk ellers på siden
-- **Scope:** CSS — `layout.css` eller aktuell hero-komponent
-- **Fix:** Legg til `border-radius: 0 0 <verdi> <verdi>` på hero-banner for konsistent visuelt språk
+**D15** — Hero mangler `border-radius` i bunn (layout.css)
 
 ---
 
@@ -435,7 +368,7 @@ When generating images for N1-N3 and future content, ensure maximum context is k
 | `.specs/triader/README.md` | ✅ **Created** | Triader article | **Ready for review** |
 | `.specs/makt/README.md` | ✅ **Created** | Makt article | **Ready for review** |
 | `.specs/perspektiv/README.md` | ✅ **Created** | Perspektiv article | **Ready for review** |
-| `.specs/organisasjonskultur/README.md` | **Rename to usikkerhet** | Organisasjonskultur → Usikkerhet. Add Kotter 8-step + "organisert anarki" | Ready |
+| `.specs/usikkerhet/README.md` | ✅ **Renamed + implemented** | Organisasjonskultur → Usikkerhet. Permalink, frontmatter, cross-refs updated | **Complete** |
 | `.specs/grc/README.md` | **Update** | Confirm E1-E6 integration points | Ready |
 | `.specs/ledelse-60-2/README.md` | **Update** | Reflect N1-N3 additions, E1-E6 expansions | Ready |
 | `.specs/emne/README.md` | **Create** | Tag lookup page `/emne/` — purpose, scope, requirements | Future feature |
@@ -484,18 +417,29 @@ No open pull requests. All work to date has been merged.
 
 ## In Progress
 
-### P5 — Layout System (`feature/layout-system`)
-- [x] P5.1: Design document — `.design/layouts.md`
-- [x] P5.2: CSS implementation — `.container`, `.section`, `.grid`, `.flex-*` i `layout.css`
-- [x] P5.3: Template migration — perspektiv.html, products.html, profiles.html
-- [x] P5.4: Cleanup — fjern dupliserte `max-width`/`padding` fra komponent-CSS
-- [ ] **Outstanding:** Migrer `_pages/ledelse_*.md` artiklene fra `frame-`-klasser til layout-systemet (Phase 6 R1-R5 unblocked — Phase 11 D1-D6 skal være løst i gjeldende BL, men må verifiseres i kode)
+**Current work:** `fix/phase6-regressions-usikkerhet-rename` branch — Phase 6 regressions (✅), 10.1 (✅), Phase 11 D4-D5 (✅), D7-D11+R7-R8 (✅). Uncommitted changes pending PR.
 
-### Phase 10-12 — Neste arbeidsområder
-- Phase 10: Site Review Fixes (10.1-10.10) — **BL-dokumentert, ikke implementert**
-- Phase 11: Design Polish (D1-D15, R7-R8) — **BL-dokumentert, ikke implementert**
-- Phase 12: Infographic & Dark Mode (X1-X2) — **BL-dokumentert, ikke implementert**
-- page_d.id-002: `profiles.html` har to `<article>`-elementer uten `data-order` på ett av dem — **funnet, ikke fikset**
+### Phase 11 Remaining (not started)
+- **D1, D2, D3** — CSS fixes (header, CTA hover, hero overlay)
+- **D6** — Profile scrollbar CSS fix
+- **D12-D15** — Profile card redesign (brukertestfunn)
+- **page_d.id-002:** `profiles.html` har to `<article>`-elementer uten `data-order`
+
+### Phase 10 Remaining (not started)
+- **10.3-10.4** — Hero animation system + parallax-fade
+- **10.5** — Profile card redesign (overlapper D12-D15)
+- **10.6** — Frontpage profile filter
+- **10.7** — Full-width hero
+- **10.8-10.10** — Booking direct links, mobil CTA-bredder
+
+### Phase 8 Outstanding
+- **P5 Outstanding** — Migrer `_pages/ledelse_*.md` til layout-systemet (avhengig av arkitekturbeslutning)
+
+### Phase 12
+- **F6** — Animasjonsimplementering
+- **F7** — Fotograf-retningslinjer
+- **X1** — Infografikk
+- **X2** — Dark mode consistency pass
 
 ## Completed
 
@@ -536,6 +480,16 @@ Do not add completed work here, add them to CHANGELOG.md
 - **Purpose:** Separate detail pages for hvert av de tre stegene i Ledelse 60:2 (kartlegging → analyse → tilbakemelding) med egen URL, innhold og CTA. Kan erstatte eller supplere dagens én-side-visning.
 - **Status:** Concept only — ikke spec'd. Avventer prioritering.
 - **Dependencies:** Ingen, men bør koordineres med CTA-designsystem (se C4)
+
+**FF6 — Multi-product support (moved from Phase 8 P4.1)**
+- **Purpose:** Support multiple products beyond Ledelse 60:2
+- **Status:** Too vague to spec — needs product positioning decisions first. Avventer Q7 (Katalysator) avklaring.
+- **Dependencies:** Q7 Katalysator product positioning
+
+**FF7 — JSON Schema validation (moved from Phase 8 P4.2)**
+- **Purpose:** Validate frontmatter/data YAML against JSON Schema
+- **Status:** Too vague to spec — needs concrete validation requirements and tooling decisions
+- **Dependencies:** None explicit, but needs spec sprint
 
 ## Blocked
 
