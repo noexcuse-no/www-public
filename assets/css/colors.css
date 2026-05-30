@@ -35,10 +35,10 @@
     --banner-background-light: var(--primary-navy);
     --banner-text-light: var(--primary-azure);
     --box-background-light: #ffffff;
-    --link-color-light: #000a14;
+    --link-color-light: var(--primary-navy);
     --link-hover-light: #000a1f;
-    --footer-background-light: #ffffff;
-    --footer-text-light: #000a14;
+    --footer-background-light: var(--primary-azure);
+    --footer-text-light: var(--primary-navy);
 
     /* ========================================
        Dark Mode Colors
@@ -50,7 +50,7 @@
     --box-background-dark: #333333;
     --link-color-dark: var(--primary-azure);
     --link-hover-dark: #8ab4f8;
-    --footer-background-dark: #222222;
+    --footer-background-dark: var(--primary-navy);
     --footer-text-dark: var(--primary-azure);
 
     /* ========================================
