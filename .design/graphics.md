@@ -82,6 +82,7 @@ neutral tones, clean white background, symbolic imagery only, no text,
 
 | File | Prompt |
 |------|--------|
+| `banner-verdier.webp` | "Professional abstract illustration for core values infographic, clean minimal Scandinavian style, showing three geometric shapes — ansvarlighet, tillit and ærlighet — interlocking forms suggesting stability and trust, azure (#F0FFFF) and navy (#003060) color palette, neutral off-white background, symbolic imagery only, no text, 16:9 horizontal format" |
 | `benefit-control.png` | "Professional abstract illustration for leadership banner, clean minimal Scandinavian style, showing abstract representation of trust-based leadership vs rigid bureaucracy, featuring geometric shapes in azure blue and neutral grays, no text, symbolic imagery only, 16:9 horizontal format" |
 | `benefit-ai.png` | "Professional abstract illustration for leadership banner, clean minimal Scandinavian style, showing abstract representation of human and AI collaboration in leadership, geometric shapes representing synergy between human creativity and machine precision, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
 | `benefit-future.png` | "Professional abstract illustration for leadership banner, clean minimal Scandinavian style, showing abstract representation of forward-looking leadership prepared for an uncertain future, geometric shapes suggesting vision, planning and foresight, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
@@ -269,7 +270,8 @@ assets/images/
 │   ├── frame-*.png
 │   ├── illustrasjon-*.png
 │   ├── step-*.png
-│   └── banner-om-oss.png
+│   ├── banner-om-oss.png
+│   └── banner-verdier.webp
 ├── hero-illustration.png
 └── science-foundation.png
 ```

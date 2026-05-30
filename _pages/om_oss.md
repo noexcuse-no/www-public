@@ -38,12 +38,26 @@ json_ld:
 </section>
 
 <section class="about-values animate-on-scroll fade-in-up">
-    <h2>Oppdrag og verdier</h2>
-    <ul>
-        <li>Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse</li>
-        <li>Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget</li>
-        <li>Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater</li>
-    </ul>
+    <div class="about-values-visual">
+        <img src="{{ '/assets/images/banners/banner-verdier.webp' | relative_url }}" alt="Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet" class="about-values-banner">
+        <div class="about-values-cards">
+            <div class="value-card">
+                <span class="value-icon" aria-hidden="true">●</span>
+                <h3>Ansvarlighet</h3>
+                <p>Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse</p>
+            </div>
+            <div class="value-card">
+                <span class="value-icon" aria-hidden="true">●</span>
+                <h3>Tillit</h3>
+                <p>Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget</p>
+            </div>
+            <div class="value-card">
+                <span class="value-icon" aria-hidden="true">●</span>
+                <h3>Ærlighet</h3>
+                <p>Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="about-legal animate-on-scroll fade-in-up">

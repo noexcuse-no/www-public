@@ -184,6 +184,14 @@ a:hover {
 }
 
 
+.value-card {
+    background: var(--box-background-dark);
+    box-shadow: var(--box-shadow-dark);
+}
+
+.value-card:hover {
+    box-shadow: var(--box-shadow-hover-dark);
+}
 
 .benefit-link {
     color: var(--primary-accent-contrast);
