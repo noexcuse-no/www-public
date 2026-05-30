@@ -51,10 +51,6 @@ a:hover {
     color: var(--text-color-dark);
 }
 
-.landing-hero {
-    background-color: var(--background-color-dark);
-}
-
 .landing-benefits,
 .landing-process,
 .landing-story,
@@ -176,37 +172,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* About page dark mode */
-.about-hero-content {
-    background: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-}
 
-.about-hero h1 {
-    color: var(--banner-text-dark);
-}
-
-.about-tagline {
-    color: var(--banner-text-dark);
-}
-
-/* Article/Frame page dark mode */
-.frame-hero-content {
-    background: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-}
-
-.frame-hero h1 {
-    color: var(--banner-text-dark);
-}
-
-.frame-intro {
-    color: var(--banner-text-dark);
-}
-
-.frame-breadcrumb a {
-    color: var(--link-color-dark);
-}
 
 .benefit-link {
     color: var(--primary-accent-contrast);
@@ -240,19 +206,7 @@ a:hover {
     background: rgba(255,255,255,0.1);
 }
 
-/* Products dark mode */
-.landing-hero-content {
-    background: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-}
 
-.landing-hero-content h1 {
-    color: var(--banner-text-dark);
-}
-
-.landing-hero-description {
-    color: var(--banner-text-dark);
-}
 
 .benefit-card {
     background-color: var(--box-background-dark);
