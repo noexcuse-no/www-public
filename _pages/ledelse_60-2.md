@@ -44,7 +44,7 @@ json_ld:
     </div>
     <div class="landing-hero-content">
         <h1 class="hero-title">Ledelse 60:2</h1>
-        <p class="landing-hero-description hero-intro">Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen.</p>
+        <p class="landing-hero-description hero-intro">Enkel, kunnskapsbasert orientering for ledergruppen. 60 spørsmål på 2 timer.</p>
         <div class="landing-hero-buttons">
             <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill Ledelse 60:2</a>
             <a href="#hvordan" class="product-cta">Hvordan fungerer det? ↓</a>
