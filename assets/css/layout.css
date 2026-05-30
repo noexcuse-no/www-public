@@ -1,4 +1,8 @@
 /* Layout.css */
+html {
+    scrollbar-gutter: stable;
+}
+
 html, body {
     display: flex;
     flex-direction: column;

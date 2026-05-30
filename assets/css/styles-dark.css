@@ -129,6 +129,17 @@ a:hover {
     color: var(--text-color-dark);
 }
 
+.profile-phone,
+.profile-email {
+    color: var(--link-color-dark);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.profile-phone:hover,
+.profile-email:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
 .profile-expanded {
     background: rgba(0, 0, 0, 0.8);
 }

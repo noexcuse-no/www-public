@@ -28,11 +28,11 @@
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .profile-name {
@@ -43,9 +43,28 @@
 .profile-contact {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
     margin-bottom: 16px;
     font-size: 0.9em;
+}
+
+.profile-phone,
+.profile-email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border-radius: var(--radius-md);
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--link-color-light);
+    text-decoration: none;
+    transition: background 0.2s ease;
+    word-break: break-all;
+}
+
+.profile-phone:hover,
+.profile-email:hover {
+    background: rgba(0, 0, 0, 0.06);
 }
 
 .profile-expand-btn {
