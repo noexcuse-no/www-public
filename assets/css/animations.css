@@ -53,6 +53,25 @@
 .stagger-parent .animate-on-scroll:nth-child(7) { transition-delay: calc(var(--stagger-delay) * 6); }
 .stagger-parent .animate-on-scroll:nth-child(8) { transition-delay: calc(var(--stagger-delay) * 7); }
 
+/* ===== Hero Effects ===== */
+
+/* Parallax-fade — scroll-driven hero effect */
+[data-hero-effect="parallax-fade"] {
+    will-change: opacity;
+    transition: opacity 0.3s ease-out;
+}
+
+[data-hero-effect="parallax-fade"] .hero-image {
+    will-change: transform;
+    transition: transform 0.1s linear;
+}
+
+[data-hero-effect="parallax-fade"] .hero-title,
+[data-hero-effect="parallax-fade"] .hero-intro {
+    will-change: opacity, transform;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
     .animate-on-scroll {
@@ -60,5 +79,14 @@
         transform: none;
         transition: none;
         animation: none;
+    }
+
+    [data-hero-effect="parallax-fade"],
+    [data-hero-effect="parallax-fade"] .hero-image,
+    [data-hero-effect="parallax-fade"] .hero-title,
+    [data-hero-effect="parallax-fade"] .hero-intro {
+        transition: none !important;
+        transform: none !important;
+        opacity: 1 !important;
     }
 }

@@ -2,6 +2,7 @@
 layout: page
 title: "Om oss"
 permalink: /om-oss/
+hero_effect: parallax-fade
 json_ld:
   type: "Organization"
   name: "No Excuse AS"
@@ -21,7 +22,7 @@ json_ld:
     - "https://www.linkedin.com/company/noexcuse"
 ---
 
-<section class="about-hero">
+<section class="about-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
     <div class="about-hero-image">
         <img src="{{ '/assets/images/banners/banner-om-oss.webp' | relative_url }}" alt="No Excuse AS - Vi hjelper ledergrupper">
     </div>

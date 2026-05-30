@@ -19,7 +19,7 @@ json_ld:
       name: "Målstyring"
 ---
 
-<section class="frame-hero">
+<section class="frame-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
     <div class="frame-hero-image">
         <img src="{{ '/assets/images/banners/benefit-ai.webp' | relative_url }}" alt="KI-ledelse i praksis">
     </div>

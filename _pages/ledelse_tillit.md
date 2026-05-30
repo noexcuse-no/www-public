@@ -19,7 +19,7 @@ json_ld:
       name: "Servant leadership"
 ---
 
-<section class="frame-hero">
+<section class="frame-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
     <div class="frame-hero-image">
         <img src="{{ '/assets/images/banners/benefit-control.webp' | relative_url }}" alt="Tillit i ledelse">
     </div>

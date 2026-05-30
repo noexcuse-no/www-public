@@ -1,6 +1,6 @@
 <section id="products" class="products section container">
     {% for product in site.products %}
-    <div class="product-hero">
+    <div class="product-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
         <div class="product-hero-content">
             <h2>{{ product.name }}</h2>
             <p class="product-short-description">{{ product.short_description }}</p>

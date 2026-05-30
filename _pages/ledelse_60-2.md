@@ -2,6 +2,7 @@
 layout: page
 title: "Ledelse 60:2 — Orientering for ledergruppen"
 permalink: /ledelse-60-2/
+hero_effect: parallax-fade
 json_ld:
   type: "Service"
   name: "Ledelse 60:2"
@@ -37,7 +38,7 @@ json_ld:
           description: "Kontinuerlig oppfølging og coaching for organisasjonsvekst"
 ---
 
-<section class="landing-hero">
+<section class="landing-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
     <div class="landing-hero-image">
         <img src="{{ '/assets/images/hero-illustration.webp' | relative_url }}" alt="Ledelse 60:2">
     </div>

@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- **10.3-10.4 — Hero animation system + parallax-fade**: Frontmatter-driven hero effect framework with `HeroEffects` dispatcher in `animations.js`. First effect: parallax-fade — image translates up 40px on scroll (0–300px), title/intro fade out with translateY. Enabled on `/ledelse-60-2/`, `/om-oss/`, `/metode/` via `hero_effect: parallax-fade` frontmatter. `.specs/hero-animation-system/README.md` spec created
+
 ## [1.7.0] — 2026-05-30
 
 ### Added
