@@ -12,14 +12,14 @@ a:hover {
 }
 
 .header {
-    background-color: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-    border-bottom-color: rgba(0, 0, 0, 0.1);
-    --logo-fill: var(--primary-navy);
+    background-color: var(--primary-navy);
+    color: var(--primary-azure);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    --logo-fill: var(--primary-azure);
 }
 
 .header-margin {
-    background-color: var(--banner-background-dark);
+    background-color: var(--primary-navy);
 }
 
 .navbar {
