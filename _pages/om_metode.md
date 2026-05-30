@@ -35,7 +35,7 @@ json_ld:
     </div>
     <div class="science-hero-content">
         <h1 class="hero-title">Om metodikk</h1>
-        <p class="science-intro hero-intro">«Ledelse 60:2» anvender strukturert intervjuer for kartlegging av ledergrupper.</p>
+        <p class="science-intro hero-intro">Strukturerte intervjuer for kartlegging av ledergrupper.</p>
     </div>
 </section>
 
