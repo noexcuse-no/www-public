@@ -1,5 +1,18 @@
 <section id="profiles" class="profiles section container">
     {% for profile in site.profiles %}
+    {% if include.tags %}
+        {% assign filter_tags = include.tags | split: "," %}
+        {% assign matches = false %}
+        {% for filter_tag in filter_tags %}
+            {% assign ft = filter_tag | strip | downcase %}
+            {% assign pt = profile.tags | downcase %}
+            {% if pt contains ft %}
+                {% assign matches = true %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        {% unless matches %}{% continue %}{% endunless %}
+    {% endif %}
     <div class="profile">
         <div class="profile-compact">
             <img class="profile-image" src="{{ profile.image | relative_url }}" alt="{{ profile.name }}s profilbilde">
