@@ -143,8 +143,6 @@
 
 .landing-hero {
     display: grid;
-    max-width: 1100px;
-    margin: 0 auto;
     padding: 0;
 }
 
@@ -205,8 +203,6 @@
 
 .science-hero {
     display: grid;
-    max-width: 1100px;
-    margin: 0 auto;
     padding: 0;
 }
 
