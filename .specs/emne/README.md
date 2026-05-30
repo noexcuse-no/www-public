@@ -1,20 +1,40 @@
-# Emne/Tag — Specification (Future Feature)
+# Emne/Tag — Feature Specification
 
-## Purpose and Scope
+> Created: 2026-05-30
+> Status: Ready
 
-A tag lookup page at `/emne/` that allows visitors to browse and filter content by topic/tag across all articles and profiles.
+## Purpose / Problem
 
-## Status
+Visitors need a way to browse content by topic. Currently articles have frontmatter tags but there's no `/emne/` page to discover them — tags are invisible to users and offer no navigation value.
 
-**Future feature — not yet spec'd or scheduled.** This document is a placeholder for when the feature is prioritized.
+## Decision
 
-## Requirements (TBD)
+- **Generation:** Server-generated Jekyll pages (one page per tag)
+- **Tag source:** Free-form — any string in an article's `tags` frontmatter array automatically becomes a page
+- **Scope:** Articles only (not profiles, products, or frame pages)
 
-- URL: `/emne/` with individual tag pages at `/emne/<tag>/`
-- Filter/search across all articles, frames, and products by frontmatter tags
-- Tag cloud or listing view with article counts
-- Clean URL structure compatible with Jekyll collections
+## Scope
+
+Files to create/modify:
+
+- `.specs/emne/README.md` — this spec
+- `_pages/emne.md` — the `/emne/` landing page (list of tags with counts)
+- `_layouts/tag.html` — layout for individual `/emne/<tag>/` pages
+- `_config.yml` — register the tag collection or generator plugin
+
+## Acceptance Criteria
+
+- [ ] `/emne/` shows all unique tags across articles, each with a count of matching articles
+- [ ] Each tag name links to `/emne/<tag>/` showing a list of articles with that tag
+- [ ] Tags with zero articles never appear
+- [ ] Tag pages use the standard site layout (header/footer)
+- [ ] Dark mode tested on both `/emme/` and `/emne/<tag>/` pages
+- [ ] Mobile layout tested — tag cloud and article lists are readable on small screens
+
+## Backlog References
+
+FF1
 
 ## Dependencies
 
-- None. Independent of other features.
+None. Independent of other features.

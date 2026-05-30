@@ -20,11 +20,10 @@ Completed items belong in `CHANGELOG.md` only.
 | FF4 | Citation Enhancement (kramdown footnotes + JSON-LD + JS enhancer) | Planned | — |
 | FF1 | Tag lookup page `/emne/` | Planned | — |
 | FF2 | i18n multilingual support | Planned | — |
-| FF5 | Three-step pages for Ledelse 60:2 | Planned | — |
+| FF5 | Three-step pages for Ledelse 60:2 | Planned | FF6 |
 | FF6 | Multi-product support | Planned | Q7 |
-| FF7 | JSON Schema validation | Planned | — |
-| P5 | Migrate `_pages/ledelse_*.md` to layout system | Blocked | Architecture decision |
-| X2 | Dark mode consistency pass | Blocked | Spec refinement |
+| P5 | Migrate `_pages/ledelse_*.md` to layout system | Planned | — |
+| X2 | Dark mode consistency pass | Planned | — |
 | N1 | Triader article | Blocked | User content |
 | N2 | Makt article | Blocked | User content |
 | N3 | Perspektiv article | Blocked | User content |
