@@ -172,7 +172,7 @@ See relevant spec files for each expansion.
 
 ### Phase 10 — Site Review Fixes & Animations ✅
 
-*Color system (superseding 10.2) committed in PR #47. Remaining items still pending.*
+*Color system (superseding 10.2) committed in PR #47. Remaining items completed 2026-05-30.*
 
 **10.1 — Rename `/organisasjonskultur/` → `/usikkerhet/` ✅ COMPLETE**
 - Completed 2026-05-29 on `fix/phase6-regressions-usikkerhet-rename` branch
@@ -185,98 +185,66 @@ See relevant spec files for each expansion.
 - Header bg swaps per mode, inline SVG logo, CTA borders, nav link colors
 - See `.design/colors.md` for full spec
 
-**10.3 — Hero animation system (frontmatter-driven)**
-- **Action:** Build framework where hero effects (parallax-fade, ken-burns, etc.) are selected per page via frontmatter; create `hero-effects.js` dispatcher
-- **Scope:** JS architecture + CSS
-- **Dependency:** None, but 10.4 uses this system
+**10.3-10.4 — Hero animation system + parallax-fade → ❌ Blocked**
+- *No spec — unclear scope and architecture. Needs spec refinement before implementation.*
 
-**10.4 — Parallax-fade hero effect**
-- **Action:** Implement parallax-fade as first effect in the new animation system
-- **Scope:** CSS + JS — fade to `var(--background-color)`
-- **Depends on:** 10.3 (needs the dispatcher)
+**10.5 — Profile card redesign ✅ COMPLETE**
+- *Overlaps D12-D15 — completed in PR #65.*
 
-**10.5 — Profile card redesign**
-- **Action:** Redesign profile cards with better image sizing/proportions
-- **Scope:** CSS — `profiles.css`
-- **No blockers**
+**10.6 — Frontpage profile filter ✅ COMPLETE (PR #69)**
+- `_includes/profiles.html`: optional Liquid tag filter (`include.tags`)
+- `_layouts/home.html`: filters frontpage profiles by "ledelse"
+- Fallback: no parameter = show all profiles
 
-**10.6 — Frontpage profile filter**
-- **Action:** Show relevant profiles on frontpage based on page context with Liquid filter
-- **Scope:** Liquid + includes
-- **No blockers**
+**10.7 — Full-width hero ✅ COMPLETE (PR #68)**
+- Removed `max-width: 1100px; margin: 0 auto;` from all hero containers
+- Affected: `.landing-hero`, `.science-hero`, `.perspektiv-hero`/`.frame-hero`, `.about-hero`
 
-**10.7 — Full-width hero**
-- **Action:** Remove max-width constraint on hero sections for full-bleed layout
-- **Scope:** CSS — hero section width adjustments
-- **No blockers**
+**10.8 — "Velg et tidspunkt" — ikke i iframe ✅ COMPLETE (PR #63)**
+- Booking-modal fjernet, direkte bookinglenker
 
-**10.8 — "Velg et tidspunkt" — ikke i iframe**
-- **Problem:** Booking-modal åpnes i iframe, bør være direkte lenke
-- **Scope:** Booking modal / CTA-knapper
-- **No blockers**
+**10.9 — "Book en uforpliktende samtale" — ikke i iframe ✅ COMPLETE (PR #63)**
+- Samme som 10.8
 
-**10.9 — "Book en uforpliktende samtale" — ikke i iframe**
-- **Problem:** Samme som 10.8 — CTA åpnes i iframe
-- **Scope:** CTA-knapper
-- **No blockers**
-
-**10.10 — Mobil: konsistente CTA-bredder**
-- **Problem:** "Bestill Ledelse 60:2" og "Book en uforpliktende samtale" har ulik bredde på mobil
-- **Scope:** CSS for CTA-knapper på mobilbreakpoint
+**10.10 — Mobil: konsistente CTA-bredder ✅ COMPLETE (PR #61)**
+- `width: 100%` + `box-sizing: border-box` på `.product-cta` i mobilbreakpoint
 
 ---
 
-### Phase 11 — Design Polish & /metode/ Overhaul
+### Phase 11 — Design Polish & /metode/ Overhaul ✅
 
-*D4, D5, D7–D11, R7, R8 completed 2026-05-29 on `fix/phase6-regressions-usikkerhet-rename` branch. Remaining items not yet started.*
+*All items completed 2026-05-30. See PRs #61, #62, #64, #65.*
 
-**✅ Completed on this branch:**
+**✅ Completed:**
 
-**D4** — Profil-tagger: `_includes/profiles.html` — bruker Liquid split/loop med `<span class="profile-tag">`
-
+**D1** — Header alltid `#003060` uavhengig av tema (PR #61)
+**D2** — CTA hover: opacity → fargeoverganger type A/B (PR #62)
+**D3** — Hero text overlay for lesbarhet på bannerbilder (PR #64)
+**D4** — Profil-tagger (PR on `fix/phase6-regressions-usikkerhet-rename` branch)
 **D5** — `_profiles/dagfinn.md`: lagt til `title: "Daglig leder"`
-
-**D7–D11** — `/metode/` overhaul: tittel endret til "Om metodikk", frontmatter/JSON-LD oppdatert, "Vi fremhever fire prinsipper:" slettet, "utvikling" fjernet fra Mennesker frame-desc, 4 "Symbolsk"-setninger kuttet, korrupt CSS på slutten ryddet, syntaksfeil fikset
-
-**R7** — `/metode/`: ingen `<sup>`-feil fant — R7 var falsk alarm (filen hadde aldri fotnoter)
-
-**R8** — `/metode/`: korrupsjonen var duplisert `</style>`-blokk, ikke trunkert CTA — filen har aldri hatt CTA-seksjon. Fikset.
-
-**⏳ Remaining (not started):**
-
-**D1** — Header alltid `#003060` uavhengig av tema (CSS: colors.css, header.css, styles-light.css, styles-dark.css)
-
-**D2** — CTA hover: opacity → fargeoverganger type A/B (CSS: products.css, article.css; spec: `.specs/cta-design/README.md`)
-
-**D3** — Hero text overlay for lesbarhet på bannerbilder (layout-systemet)
-
-**D6** — Profil scrollbar vises ved første lass (profiles.css)
-
-**D12** — Profile image for liten i kompakt-visning — 80×80px minimum (profiles.css)
-
-**D13** — Profile image "hopp" ved ekspandering (profiles.css + profile-card.js)
-
-**D14** — Kontaktlenker inkonsistent styling (profiles.css)
-
-**D15** — Hero mangler `border-radius` i bunn (layout.css)
+**D6** — Profil scrollbar vises ved første lass (PR #61)
+**D7–D11** — `/metode/` overhaul
+**D12** — Profile image 80×80px → 120px (PR #65)
+**D13** — Profile image "hopp" ved ekspandering — `scrollbar-gutter: stable` (PR #65)
+**D14** — Kontaktlenker konsistent pill-styling (PR #65)
+**D15** — Hero `border-radius: 0 0 var(--radius-lg) var(--radius-lg)` (PR #65)
+**R7** — `/metode/`: ingen `<sup>`-feil — falsk alarm
+**R8** — `/metode/`: duplisert `</style>`-blokk fjernet
 
 ---
 
-### Phase 12 — Broader Improvements
+### Phase 12 — Broader Improvements ✅
 
-*Items that don't fit existing phases — cross-cutting design and asset work.*
+*All items completed or moved to Blocked 2026-05-30.*
 
-**X1 — Infografikk: tre kjerneverdier under "Oppdrag og verdier"**
-- **Problem:** Trenger en enkel infografisk illustrasjon av de tre kjerneverdiene
-- **Scope:** Ny banner/illustrasjon på `/om-oss/` eller aktuell side
-- **Design:** Følg `.design/graphics.md` retningslinjer — ingen tekst, skandinavisk minimal
-- **No blockers**
+**X1 — Infografikk: tre kjerneverdier ✅ COMPLETE (PR #67)**
+- GPT Image 2: geometriske former for ansvarlighet, tillit, ærlighet
+- `assets/images/banners/banner-verdier.webp` + original i `.design/graphics/originals/banners/`
+- `/om-oss/`: banner + 3 value cards med ikoner
+- Prompt dokumentert i `.design/graphics.md`
 
-**X2 — Dark mode consistency pass**
-- **Scope:** Alle sider — cards, frames, seksjoner, bakgrunner
-- **Problem:** Dark mode har harde hvite bakgrunner enkelte steder. Ser dårlig ut i nattmodus.
-- **Prosess:** (1) Oppdater `.design/` med definitive dark mode-regler → (2) Oppdater `.specs/` → (3) Gjennomgå implementering for regresjoner
-- **Avhengighet:** Bør gjøres etter at andre designoppdateringer er ferdige
+**X2 — Dark mode consistency pass → ❌ Blocked**
+- *Moved to Blocked — needs spec refinement. "Alle sider — cards, frames, seksjoner, bakgrunner" is too broad for implementation without a concrete scope document.*
 
 ---
 
@@ -284,22 +252,15 @@ See relevant spec files for each expansion.
 
 *Tasks identified from design interview conflict resolution and documentation harmonization.*
 
-**F5 — Bildegenerering (oppdatert design) → moved to Blocked**
-- *F5 is blocked waiting on N1-N3 article content (must be drafted and approved before image generation, per Image Generation Context Requirements). See Blocked section.*
+**F5 — Bildegenerering (oppdatert design) → ❌ Blocked**
+- *F5 is blocked waiting on N1-N3 article content. See Blocked section.*
 
-**F6 — Animasjonsimplementering (layered approach)**
-- **Scope:** Implement the layered animation system from updated `.design/ui-upgrade.md`
-- **Brand layer:** `heroReveal`, `heroImageReveal`, `pageTransition` keyframes + CSS classes + JS trigger
-- **UI layer:** Existing scroll-triggered animations stay (fadeInUp, slideInLeft, etc.)
-- **Reduced motion:** Extended to cover brand animation classes
-- **Spec:** `.design/ui-upgrade.md` + `.specs/ui-upgrade/README.md`
-- **Status:** Ready for implementation
+**F6 — Animasjonsimplementering (layered approach) → ❌ Blocked**
+- *Scroll-triggered animations (UI layer) already implemented. Brand layer (`heroReveal`, `heroImageReveal`, `pageTransition`) needs spec refinement — the `.specs/ui-upgrade/` describes a different HTML structure (`.article-hero-overlay` absolute positioning) than the current implementation (CSS Grid from D3). Requires alignment before implementation.*
 
-**F7 — Fotograf-retningslinjer (profilbilder)**
-- **Scope:** Write a human-readable, concrete photographer brief based on the new photography guidelines in `.design/graphics.md` (Photography Guidelines section)
-- **Deliverable:** Separate document (`.design/photography-brief.md`) written in Norwegian, targeted at a professional portrait photographer
-- **Content must include:** Light style (natural, desaturated), composition (environmental portraits, candid), technical specs (WebP, 1:1 aspect ratio), mood references, examples of good/bad, and the brand personality context (rebellious/nordic/democratic)
-- **Status:** Spec complete, deliverable pending
+**F7 — Fotograf-retningslinjer ✅ COMPLETE (PR #70)**
+- `.design/photography-brief.md` — full photographer brief in Norwegian
+- Covers: brand context, photo style, technical specs, mood references, profile/case requirements
 
 ---
 
@@ -407,39 +368,39 @@ No open pull requests. All work to date has been merged.
 
 | PR | Branch | What |
 |----|--------|------|
-| [#52](https://github.com/noexcuse-no/www-public/pull/52) | `feature/backlog-dependency-refinement` | Reorganize backlog by dependency + citation enhancement docs |
-| [#51](https://github.com/noexcuse-no/www-public/pull/51) | `feature/design-interview-harmonization` | Design docs: brand personality, twin-primary color, GPT Image 2, layered animation, graphics guide |
-| [#50](https://github.com/noexcuse-no/www-public/pull/50) | `feature/layout-system` | Backlog refinement: Phase 6 regressions, Phase 11 design polish, Phase 12, future features |
-| [#49](https://github.com/noexcuse-no/www-public/pull/49) | `feature/layout-system` | Fix clanker bug, layout system merge |
-| [#48](https://github.com/noexcuse-no/www-public/pull/48) | `main` | Cleanup on all five |
-| [#47](https://github.com/noexcuse-no/www-public/pull/47) | `feature/layout-system` | Twin-primary color system, inline SVG logo |
-| [#46](https://github.com/noexcuse-no/www-public/pull/46) | `feature/layout-system` | P5 Layout System + Site Review Fixes |
+| [#70](https://github.com/noexcuse-no/www-public/pull/70) | `docs/fotograf-brief-f7` | F7: Photographer brief for profile and case photography |
+| [#69](https://github.com/noexcuse-no/www-public/pull/69) | `fix/profile-filter-10-6` | 10.6: Frontpage profile filter |
+| [#68](https://github.com/noexcuse-no/www-public/pull/68) | `fix/full-width-hero-10-7` | 10.7: Full-width hero sections |
+| [#67](https://github.com/noexcuse-no/www-public/pull/67) | `feature/x1-verdier-infografikk` | X1: Core values infographic for /om-oss/ |
+| [#66](https://github.com/noexcuse-no/www-public/pull/66) | `feature/spec-extraction` | Spec extraction from BACKLOG |
+| [#65](https://github.com/noexcuse-no/www-public/pull/65) | `fix/profile-card-d12-d14` | D12-D15: Profile card redesign + hero border-radius |
+| [#64](https://github.com/noexcuse-no/www-public/pull/64) | `fix/hero-overlay-d3` | D3: Hero text overlay |
+| [#63](https://github.com/noexcuse-no/www-public/pull/63) | `fix/booking-direct-links-10-8` | 10.8/10.9: Booking direct links |
+| [#62](https://github.com/noexcuse-no/www-public/pull/62) | `fix/cta-hover-d2` | D2: CTA hover color-swap |
+| [#61](https://github.com/noexcuse-no/www-public/pull/61) | `fix/d1-d6-d10-header-cta-flex` | D1/D6/10.10 CSS fixes |
+| [#60](https://github.com/noexcuse-no/www-public/pull/60) | `feature/spec-files-bonus` | Bonus spec files |
+| [#59](https://github.com/noexcuse-no/www-public/pull/59) | `fix/phase6-regressions-usikkerhet-rename` | Phase 6 + metode overhaul |
 
 ## In Progress
 
-**Current work:** `fix/phase6-regressions-usikkerhet-rename` branch — Phase 6 regressions (✅), 10.1 (✅), Phase 11 D4-D5 (✅), D7-D11+R7-R8 (✅). Uncommitted changes pending PR.
+**Phase 10-12 design polish cycle completed 2026-05-30.** No active implementation work.
 
-### Phase 11 Remaining (not started)
-- **D1, D2, D3** — CSS fixes (header, CTA hover, hero overlay)
-- **D6** — Profile scrollbar CSS fix
-- **D12-D15** — Profile card redesign (brukertestfunn)
-- **page_d.id-002:** `profiles.html` har to `<article>`-elementer uten `data-order`
-
-### Phase 10 Remaining (not started)
-- **10.3-10.4** — Hero animation system + parallax-fade
-- **10.5** — Profile card redesign (overlapper D12-D15)
-- **10.6** — Frontpage profile filter
-- **10.7** — Full-width hero
-- **10.8-10.10** — Booking direct links, mobil CTA-bredder
+### Remaining (moved to Blocked)
+- **10.3-10.4** — Hero animation system — needs spec
+- **F6** — Brand animation keyframes — needs spec alignment with D3 implementation
+- **X2** — Dark mode consistency pass — needs spec
 
 ### Phase 8 Outstanding
 - **P5 Outstanding** — Migrer `_pages/ledelse_*.md` til layout-systemet (avhengig av arkitekturbeslutning)
 
-### Phase 12
-- **F6** — Animasjonsimplementering
-- **F7** — Fotograf-retningslinjer
-- **X1** — Infografikk
-- **X2** — Dark mode consistency pass
+### Blocked Items (need user input or spec refinement)
+- **N1-N3** — Article content (triader, makt, perspektiv) — waiting on user
+- **C1-C4** — Customer cases — waiting on brainstorming session
+- **F5** — Image generation for N1-N3 — waiting on article content
+- **10.3-10.4** — Hero animation system — no spec
+- **F6** — Brand animation keyframes — needs spec alignment
+- **X2** — Dark mode consistency pass — needs spec
+- **Q7** — Katalysator product — deferred to June 2026
 
 ## Completed
 
