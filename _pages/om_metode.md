@@ -34,7 +34,6 @@ json_ld:
         <img src="{{ '/assets/images/banners/science-foundation.webp' | relative_url }}" alt="Vitenskapelig fundament">
     </div>
     <div class="science-hero-content">
-        <p class="science-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
         <h1 class="hero-title">Om metodikk</h1>
         <p class="science-intro hero-intro">«Ledelse 60:2» anvender strukturert intervjuer for kartlegging av ledergrupper.</p>
     </div>
