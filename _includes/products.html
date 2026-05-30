@@ -2,8 +2,8 @@
     {% for product in site.products %}
     <div class="product-hero">
         <div class="product-hero-content">
-            <h2>{{ product.name }}</h2>
-            <p class="product-short-description">{{ product.short_description }}</p>
+            <h2 class="hero-title">{{ product.name }}</h2>
+            <p class="product-short-description hero-intro">{{ product.short_description }}</p>
             {% if product.cta_a %}
             <a href="{{ product.cta_a.url }}" class="product-cta" title="{{ product.cta_a.title }}">{{ product.cta_a.text }}</a>
             {% endif %}
@@ -11,7 +11,7 @@
             <a href="{{ product.cta_b.url }}" class="product-cta product-cta--spaced" title="{{ product.cta_b.title }}">{{ product.cta_b.text }}</a>
             {% endif %}
         </div>
-        <div class="product-hero-image">
+        <div class="product-hero-image hero-image">
             <img src="{{ product.image | relative_url }}" alt="{{ product.name }} — illustrasjon">
         </div>
     </div>
