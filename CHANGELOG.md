@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **F6 — Brand animation keyframes**: `heroReveal`, `heroImageReveal`, `pageTransition` keyframes in `animations.css` with `.hero-title`, `.hero-intro`, `.hero-image`, `.page-transition` classes. Page-load hero entrance handler in `animations.js`. All 8 hero sections across the site updated with brand animation classes
+- **10.3-10.4 — Hero animation system + parallax-fade**: Frontmatter-driven hero effect framework with `HeroEffects` dispatcher in `animations.js`. First effect: parallax-fade — image translates up 40px on scroll (0–300px), title/intro fade out with translateY. Enabled on `/ledelse-60-2/`, `/om-oss/`, `/metode/` via `hero_effect: parallax-fade` frontmatter. `.specs/hero-animation-system/README.md` spec created
 
 ## [1.7.0] — 2026-05-30
 

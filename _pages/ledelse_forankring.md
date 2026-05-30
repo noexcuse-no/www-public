@@ -19,7 +19,7 @@ json_ld:
       name: "Kognitiv bias"
 ---
 
-<section class="frame-hero">
+<section class="frame-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
     <div class="frame-hero-image hero-image">
         <img src="{{ '/assets/images/banners/benefit-anchoring.webp' | relative_url }}" alt="Beslutningstaking i ledelse">
     </div>

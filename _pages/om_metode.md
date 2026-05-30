@@ -3,6 +3,7 @@ layout: page
 title: "Om metodikk"
 description: "«Ledelse 60:2» er en intervjubasert kartleggingsmetode for ledergrupper. Les om det teoretiske grunnlaget, kunnskapsproduksjon og hvorfor vi gjør dette."
 permalink: /metode/
+hero_effect: parallax-fade
 json_ld:
   type: "TechArticle"
   name: "Om metodikk"
@@ -28,7 +29,7 @@ json_ld:
     - "https://noexcuse.no"
 ---
 
-<section class="science-hero">
+<section class="science-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
     <div class="science-hero-image hero-image">
         <img src="{{ '/assets/images/banners/science-foundation.webp' | relative_url }}" alt="Vitenskapelig fundament">
     </div>

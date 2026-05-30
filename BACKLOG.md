@@ -185,8 +185,12 @@ See relevant spec files for each expansion.
 - Header bg swaps per mode, inline SVG logo, CTA borders, nav link colors
 - See `.design/colors.md` for full spec
 
-**10.3-10.4 — Hero animation system + parallax-fade → ❌ Blocked**
-- *No spec — unclear scope and architecture. Needs spec refinement before implementation.*
+**10.3-10.4 — Hero animation system + parallax-fade ✅ COMPLETE**
+- `.specs/hero-animation-system/README.md`: Spec for frontmatter-driven hero effect system
+- `animations.css`: Parallax-fade CSS with `[data-hero-effect="parallax-fade"]` selector, reduces-motion fallback
+- `animations.js`: `HeroEffects` dispatcher (`register()` + `init()`) with `parallax-fade` handler — image parallax (translateY), title/intro fade on scroll (0→300px), rAF-throttled, respects reduced motion
+- Frontmatter: `hero_effect: parallax-fade` added to `/ledelse-60-2/`, `/om-oss/`, `/metode/`
+- HTML: All 9 hero sections carry `data-hero-effect="{{ page.hero_effect }}"` (conditional on frontmatter existence)
 
 **10.5 — Profile card redesign ✅ COMPLETE**
 - *Overlaps D12-D15 — completed in PR #65.*
@@ -385,10 +389,7 @@ No open pull requests. All work to date has been merged.
 
 ## In Progress
 
-**F6 — Brand animation keyframes** — CSS keyframes + classes implemented, all 8 hero sections updated. Pending PR.
-
-### Remaining (moved to Blocked)
-- **10.3-10.4** — Hero animation system — needs spec
+<!-- No items currently in progress. All recent work completed. -->
 - **X2** — Dark mode consistency pass — needs spec
 
 ### Phase 8 Outstanding
@@ -398,7 +399,6 @@ No open pull requests. All work to date has been merged.
 - **N1-N3** — Article content (triader, makt, perspektiv) — waiting on user
 - **C1-C4** — Customer cases — waiting on brainstorming session
 - **F5** — Image generation for N1-N3 — waiting on article content
-- **10.3-10.4** — Hero animation system — no spec
 - **X2** — Dark mode consistency pass — needs spec
 - **Q7** — Katalysator product — deferred to June 2026
 

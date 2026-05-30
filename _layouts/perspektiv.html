@@ -8,7 +8,7 @@ layout: page
 {% assign frame = site.frames | where: "id", frame_id | first %}
 
 <!-- Hero Section -->
-<section class="perspektiv-hero">
+<section class="perspektiv-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
   <div class="perspektiv-hero-image hero-image">
     <img src="{{ frame.hero.banner_image | relative_url }}" alt="{{ frame.hero.alt }}">
   </div>
