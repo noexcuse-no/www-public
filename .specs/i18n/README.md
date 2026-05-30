@@ -1,26 +1,47 @@
-# i18n Multilingual Support — Specification (Future Feature)
+# i18n Multilingual Support — Feature Specification
 
-## Purpose and Scope
+> Created: 2026-05-30
+> Status: Ready
 
-Add multilingual support to the site, allowing visitors to view content in their preferred language.
+## Purpose / Problem
 
-## Status
+The site is currently Norwegian-only. To reach non-Norwegian-speaking visitors (international clients, partners), we need multilingual support with a clear, maintainable content structure.
 
-**Future feature — not yet spec'd or scheduled.** This document is a placeholder for when the feature is prioritized.
+## Decision
 
-## Approach (Decided)
+- **Content structure:** Separate files per language — e.g. `_pages/en/ledelse-60-2.md`, `_pages/no/ledelse-60-2.md`
+- **Language detection:** Browser `Accept-Language` header
+- **Fallback:** Norwegian Bokmål
+- **Language switcher:** UI component for manual override
 
-- Language selection by browser `Accept-Language` header
-- Fallback language: Norwegian Bokmål
-- Logic handled in code (not webserver), per Jekyll best practices
-- Content structure TBD (separate files per language vs. frontmatter-based)
+## Scope
 
-## Requirements (TBD)
+Files to create/modify:
 
-- Language switcher UI component
-- SEO handling (hreflang tags)
-- Content management strategy for translations
+- Language-specific page directories (e.g. `_pages/no/`, `_pages/en/`)
+- `_data/languages.yml` — language configuration
+- Language detector logic (Jekyll plugin or include)
+- Language switcher component (`_includes/language-switcher.html`)
+- SEO hreflang tags in `<head>`
+- Existing `_pages/*.md` files — migrate to language subdirectories
+
+Open questions:
+
+- Which pages get translation first? (TBD — likely landing pages and product pages)
+- Who provides translations? (TBD — client, partner, or AI-assisted)
+
+## Acceptance Criteria
+
+- [ ] Visitors are redirected to their preferred language based on `Accept-Language`
+- [ ] All pages have a fallback to Norwegian Bokmål when translation is missing
+- [ ] Language switcher allows manual override and persists the choice
+- [ ] hreflang tags are present on every page
+- [ ] SEO impact is neutral or positive (no duplicate content penalties)
+
+## Backlog References
+
+FF2
 
 ## Dependencies
 
-- None. Independent of other features.
+None. Independent of other features.
