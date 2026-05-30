@@ -417,6 +417,12 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .product-cta {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
 }
 
 .benefit-card .product-cta {
