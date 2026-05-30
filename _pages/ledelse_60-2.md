@@ -38,12 +38,12 @@ json_ld:
 ---
 
 <section class="landing-hero">
-    <div class="landing-hero-image">
+    <div class="landing-hero-image hero-image">
         <img src="{{ '/assets/images/hero-illustration.webp' | relative_url }}" alt="Ledelse 60:2">
     </div>
-    <div class="landing-hero-content animate-on-scroll fade-in">
-        <h1>Ledelse 60:2</h1>
-        <p class="landing-hero-description">Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen.</p>
+    <div class="landing-hero-content">
+        <h1 class="hero-title">Ledelse 60:2</h1>
+        <p class="landing-hero-description hero-intro">Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen.</p>
         <div class="landing-hero-buttons">
             <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill Ledelse 60:2</a>
             <a href="#hvordan" class="product-cta">Hvordan fungerer det? ↓</a>

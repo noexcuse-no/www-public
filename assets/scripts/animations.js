@@ -1,30 +1,38 @@
-/**
- * Scroll Animation Controller
- * Uses Intersection Observer to trigger animations when elements enter viewport
- */
-
 (function() {
     'use strict';
 
-    // Configuration
-    const CONFIG = {
+    var CONFIG = {
         threshold: 0.15,
         rootMargin: '0px 0px -50px 0px'
     };
 
-    // Initialize when DOM is ready
-    function init() {
-        const animatedElements = document.querySelectorAll('.animate-on-scroll');
-        
-        if (animatedElements.length === 0) {
-            return;
-        }
+    // Brand entrance animations — run on page load
+    function initBrandAnimations() {
+        // Remove animate-on-scroll from hero-branded elements so parent
+        // opacity:0 doesn't hide them during brand animation sequence
+        var brandSelectors = '.hero-image, .hero-title, .hero-intro';
+        var branded = document.querySelectorAll(brandSelectors);
+        branded.forEach(function(el) {
+            el.classList.remove('animate-on-scroll');
+        });
 
-        const observer = new IntersectionObserver(function(entries) {
+        // Fade in <main> after hero entrance
+        var main = document.querySelector('main');
+        if (main) {
+            main.classList.add('page-transition');
+        }
+    }
+
+    // Scroll-triggered animations via Intersection Observer
+    function initScrollAnimations() {
+        var animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+        if (animatedElements.length === 0) return;
+
+        var observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
-                    // One-shot: disconnect after first trigger
                     observer.unobserve(entry.target);
                 }
             });
@@ -38,7 +46,11 @@
         });
     }
 
-    // Run immediately if DOM is already loaded
+    function init() {
+        initBrandAnimations();
+        initScrollAnimations();
+    }
+
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {

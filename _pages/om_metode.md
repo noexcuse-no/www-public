@@ -29,13 +29,13 @@ json_ld:
 ---
 
 <section class="science-hero">
-    <div class="science-hero-image">
+    <div class="science-hero-image hero-image">
         <img src="{{ '/assets/images/banners/science-foundation.webp' | relative_url }}" alt="Vitenskapelig fundament">
     </div>
     <div class="science-hero-content">
         <p class="science-breadcrumb"><a href="{{ '/' | relative_url }}">← Ledelse 60:2</a></p>
-        <h1>Om metodikk</h1>
-        <p class="science-intro">«Ledelse 60:2» anvender strukturert intervjuer for kartlegging av kulturelle faktorer i en ledergruppe som metodikk for datafangst. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kunnskapsproduksjon om kultur og beslutningsvitenskap - som gir den høye fleksible anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.</p>
+        <h1 class="hero-title">Om metodikk</h1>
+        <p class="science-intro hero-intro">«Ledelse 60:2» anvender strukturert intervjuer for kartlegging av kulturelle faktorer i en ledergruppe som metodikk for datafangst. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kunnskapsproduksjon om kultur og beslutningsvitenskap - som gir den høye fleksible anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.</p>
     </div>
 </section>
 

@@ -255,8 +255,10 @@ See relevant spec files for each expansion.
 **F5 — Bildegenerering (oppdatert design) → ❌ Blocked**
 - *F5 is blocked waiting on N1-N3 article content. See Blocked section.*
 
-**F6 — Animasjonsimplementering (layered approach) → ❌ Blocked**
-- *Scroll-triggered animations (UI layer) already implemented. Brand layer (`heroReveal`, `heroImageReveal`, `pageTransition`) needs spec refinement — the `.specs/ui-upgrade/` describes a different HTML structure (`.article-hero-overlay` absolute positioning) than the current implementation (CSS Grid from D3). Requires alignment before implementation.*
+**F6 — Animasjonsimplementering (layered approach) ✅ COMPLETE**
+- `animations.css`: 3 brand animation keyframes (heroReveal, heroImageReveal, pageTransition) + classes (`.hero-title`, `.hero-intro`, `.hero-image`, `.page-transition`)
+- `animations.js`: Page-load brand animation handler, removes `animate-on-scroll` conflict from hero-branded elements, adds page-transition to `<main>`
+- All 8 hero sections across site updated with brand animation classes
 
 **F7 — Fotograf-retningslinjer ✅ COMPLETE (PR #70)**
 - `.design/photography-brief.md` — full photographer brief in Norwegian
@@ -383,11 +385,10 @@ No open pull requests. All work to date has been merged.
 
 ## In Progress
 
-**Phase 10-12 design polish cycle completed 2026-05-30.** No active implementation work.
+**F6 — Brand animation keyframes** — CSS keyframes + classes implemented, all 8 hero sections updated. Pending PR.
 
 ### Remaining (moved to Blocked)
 - **10.3-10.4** — Hero animation system — needs spec
-- **F6** — Brand animation keyframes — needs spec alignment with D3 implementation
 - **X2** — Dark mode consistency pass — needs spec
 
 ### Phase 8 Outstanding
@@ -398,7 +399,6 @@ No open pull requests. All work to date has been merged.
 - **C1-C4** — Customer cases — waiting on brainstorming session
 - **F5** — Image generation for N1-N3 — waiting on article content
 - **10.3-10.4** — Hero animation system — no spec
-- **F6** — Brand animation keyframes — needs spec alignment
 - **X2** — Dark mode consistency pass — needs spec
 - **Q7** — Katalysator product — deferred to June 2026
 

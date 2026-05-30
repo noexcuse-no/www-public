@@ -20,13 +20,13 @@ json_ld:
 ---
 
 <section class="frame-hero">
-    <div class="frame-hero-image">
+    <div class="frame-hero-image hero-image">
         <img src="{{ '/assets/images/banners/benefit-control.webp' | relative_url }}" alt="Tillit i ledelse">
     </div>
-    <div class="frame-hero-content animate-on-scroll fade-in">
+    <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema.</h1>
-        <p class="frame-intro">Den viktigste faktoren for en velfungerende organisasjon er ikke strategi, struktur eller prosesser. Det er tillit. Lær hvordan du bygger den.</p>
+        <h1 class="hero-title">Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema.</h1>
+        <p class="frame-intro hero-intro">Den viktigste faktoren for en velfungerende organisasjon er ikke strategi, struktur eller prosesser. Det er tillit. Lær hvordan du bygger den.</p>
     </div>
 </section>
 

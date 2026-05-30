@@ -20,13 +20,13 @@ json_ld:
 ---
 
 <section class="frame-hero">
-    <div class="frame-hero-image">
+    <div class="frame-hero-image hero-image">
         <img src="{{ '/assets/images/banners/benefit-ai.webp' | relative_url }}" alt="KI-ledelse i praksis">
     </div>
-    <div class="frame-hero-content animate-on-scroll fade-in">
+    <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1>KI-ledelse i praksis</h1>
-        <p class="frame-intro">Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle proklamerer om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
+        <h1 class="hero-title">KI-ledelse i praksis</h1>
+        <p class="frame-intro hero-intro">Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle proklamerer om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
     </div>
 </section>
 
