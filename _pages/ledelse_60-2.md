@@ -45,11 +45,14 @@ json_ld:
     <div class="landing-hero-content">
         <h1 class="hero-title">Ledelse 60:2</h1>
         <p class="landing-hero-description hero-intro">Enkel, kunnskapsbasert orientering for ledergruppen. 60 spørsmål på 2 timer.</p>
+    </div>
+</section>
+
+<section>
         <div class="landing-hero-buttons">
             <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill Ledelse 60:2</a>
             <a href="#hvordan" class="product-cta">Hvordan fungerer det? ↓</a>
         </div>
-    </div>
 </section>
 
 <section class="landing-benefits animate-on-scroll fade-in-up">
