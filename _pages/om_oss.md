@@ -28,7 +28,7 @@ json_ld:
     </div>
     <div class="about-hero-content">
         <h1 class="hero-title">Om oss</h1>
-        <p class="about-tagline hero-intro">Vi hjelper ledergrupper med å bli bedre, ved å ha blikk for mennesker, identitet, struktur og påvirkning.</p>
+        <p class="about-tagline hero-intro">Vi hjelper ledergrupper å få bedre blikk for mennesker, identitet, struktur og påvirkning.</p>
     </div>
 </section>
 
