@@ -147,6 +147,7 @@
     aspect-ratio: 16 / 9;
     overflow: hidden;
     position: relative;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 
 .landing-hero-image img {
