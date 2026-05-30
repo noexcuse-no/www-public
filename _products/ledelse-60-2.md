@@ -6,17 +6,14 @@ cta_a:
   text: "Bestill Ledelse 60:2"
   title: "Bestill Ledelse 60:2"
   url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  modal: true
 cta_b:
   text: "Les mer →"
   title: "Les mer →"
   url: "/ledelse-60-2/"
-  modal: false
 cta_c:
   text: "Book en uforpliktende samtale"
   title: "Book en uforpliktende samtale"
   url: "https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no"
-  modal: true
 benefits:
   - title: "Bedre ledelse uten byråkrati"
     description: "Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema. Dyrk engasjement og eierskap blant ansatte, ikke regler og regimer. Ikke fall for fristelsen å møte økt kompleksitet med micromanagement og mistenksomhet - ha tro på at ansatte kan bruke sunn fornuft!"

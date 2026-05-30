@@ -108,7 +108,7 @@ json_ld:
     <h2>Få kartlagt ledergruppens beslutningsprosesser</h2>
     <p>Ledelse 60:2 inneholder spørsmål som kartlegger hvordan makt, interesser og kognitiv bias påvirker beslutninger i ledergruppen. Bestill en uforpliktende samtale.</p>
     <div class="frame-cta-buttons">
-        <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill uforpliktende samtale</a>
+        <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill uforpliktende samtale</a>
         <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>

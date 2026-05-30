@@ -45,7 +45,7 @@ json_ld:
         <h1>Ledelse 60:2</h1>
         <p class="landing-hero-description">Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen.</p>
         <div class="landing-hero-buttons">
-            <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta" onclick="openBookingModal('https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled'); return false;">Bestill Ledelse 60:2</a>
+            <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill Ledelse 60:2</a>
             <a href="#hvordan" class="product-cta">Hvordan fungerer det? ↓</a>
         </div>
     </div>
@@ -143,6 +143,6 @@ json_ld:
     <h2>Hvordan jobber dere med bedre ledelse?</h2>
     <p>Ta en uforpliktende samtale med oss, så finner vi ut om Ledelse 60:2 er rett for dere.</p>
     <div class="landing-hero-content">
-        <a href="https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no" class="product-cta product-cta--large" onclick="openBookingModal('https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no'); return false;">Velg et tidspunkt</a>
+        <a href="https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no" class="product-cta product-cta--large">Velg et tidspunkt</a>
     </div>
 </section>
