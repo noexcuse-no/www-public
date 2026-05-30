@@ -259,8 +259,10 @@ See relevant spec files for each expansion.
 **F5 — Bildegenerering (oppdatert design) → ❌ Blocked**
 - *F5 is blocked waiting on N1-N3 article content. See Blocked section.*
 
-**F6 — Animasjonsimplementering (layered approach) → ❌ Blocked**
-- *Scroll-triggered animations (UI layer) already implemented. Brand layer (`heroReveal`, `heroImageReveal`, `pageTransition`) needs spec refinement — the `.specs/ui-upgrade/` describes a different HTML structure (`.article-hero-overlay` absolute positioning) than the current implementation (CSS Grid from D3). Requires alignment before implementation.*
+**F6 — Animasjonsimplementering (layered approach) ✅ COMPLETE**
+- `animations.css`: 3 brand animation keyframes (heroReveal, heroImageReveal, pageTransition) + classes (`.hero-title`, `.hero-intro`, `.hero-image`, `.page-transition`)
+- `animations.js`: Page-load brand animation handler, removes `animate-on-scroll` conflict from hero-branded elements, adds page-transition to `<main>`
+- All 8 hero sections across site updated with brand animation classes
 
 **F7 — Fotograf-retningslinjer ✅ COMPLETE (PR #70)**
 - `.design/photography-brief.md` — full photographer brief in Norwegian
@@ -387,9 +389,7 @@ No open pull requests. All work to date has been merged.
 
 ## In Progress
 
-**10.3-10.4 — Hero animation system** — parallax-fade implemented on 3 main pages. Pending PR.
-
-### Remaining (moved to Blocked)
+<!-- No items currently in progress. All recent work completed. -->
 - **X2** — Dark mode consistency pass — needs spec
 
 ### Phase 8 Outstanding

@@ -20,13 +20,13 @@ json_ld:
 ---
 
 <section class="frame-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="frame-hero-image">
+    <div class="frame-hero-image hero-image">
         <img src="{{ '/assets/images/banners/benefit-future.webp' | relative_url }}" alt="Usikkerhet og endring">
     </div>
-    <div class="frame-hero-content animate-on-scroll fade-in">
+    <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1>Usikkerhet og endring — bli forberedt</h1>
-        <p class="frame-intro">Kultur spiser strategi til frokost, het det. Men hva er kultur egentlig — og hvordan navigerer ledergrupper usikkerhet og endring? Forskningen gir noen overraskende svar.</p>
+        <h1 class="hero-title">Usikkerhet og endring — bli forberedt</h1>
+        <p class="frame-intro hero-intro">Kultur spiser strategi til frokost, het det. Men hva er kultur egentlig — og hvordan navigerer ledergrupper usikkerhet og endring? Forskningen gir noen overraskende svar.</p>
     </div>
 </section>
 

@@ -53,9 +53,62 @@
 .stagger-parent .animate-on-scroll:nth-child(7) { transition-delay: calc(var(--stagger-delay) * 6); }
 .stagger-parent .animate-on-scroll:nth-child(8) { transition-delay: calc(var(--stagger-delay) * 7); }
 
-/* ===== Hero Effects ===== */
+/* ===== Brand Animation Keyframes ===== */
 
-/* Parallax-fade — scroll-driven hero effect */
+@keyframes heroReveal {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroImageReveal {
+    from {
+        opacity: 0;
+        transform: scale(1.06);
+        filter: blur(6px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes pageTransition {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Brand Animation Classes */
+.hero-title {
+    animation: heroReveal 0.8s ease-out both;
+}
+
+.hero-intro {
+    animation: heroReveal 0.8s ease-out 0.2s both;
+}
+
+.hero-image {
+    animation: heroImageReveal 1.2s ease-out both;
+}
+
+.page-transition {
+    animation: pageTransition 0.4s ease-out both;
+}
+
+/* ===== Hero Effects (parallax-fade, scroll-driven) ===== */
+
 [data-hero-effect="parallax-fade"] {
     will-change: opacity;
     transition: opacity 0.3s ease-out;
@@ -81,12 +134,18 @@
         animation: none;
     }
 
+    .hero-title,
+    .hero-intro,
+    .hero-image,
+    .page-transition,
     [data-hero-effect="parallax-fade"],
     [data-hero-effect="parallax-fade"] .hero-image,
     [data-hero-effect="parallax-fade"] .hero-title,
     [data-hero-effect="parallax-fade"] .hero-intro {
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+        filter: none;
         transition: none !important;
-        transform: none !important;
-        opacity: 1 !important;
     }
 }

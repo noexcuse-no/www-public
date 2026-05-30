@@ -9,13 +9,13 @@ layout: page
 
 <!-- Hero Section -->
 <section class="perspektiv-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-  <div class="perspektiv-hero-image">
+  <div class="perspektiv-hero-image hero-image">
     <img src="{{ frame.hero.banner_image | relative_url }}" alt="{{ frame.hero.alt }}">
   </div>
-  <div class="perspektiv-hero-content animate-on-scroll fade-in">
+  <div class="perspektiv-hero-content">
     <p class="perspektiv-breadcrumb"><a href="{{ '/' | relative_url }}">{{ frame.hero.breadcrumb }}</a></p>
-    <h1>{{ frame.title }}</h1>
-    <p class="perspektiv-intro">{{ frame.hero.intro }}</p>
+    <h1 class="hero-title">{{ frame.title }}</h1>
+    <p class="perspektiv-intro hero-intro">{{ frame.hero.intro }}</p>
   </div>
 </section>
 

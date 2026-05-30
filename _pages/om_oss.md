@@ -23,12 +23,12 @@ json_ld:
 ---
 
 <section class="about-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="about-hero-image">
+    <div class="about-hero-image hero-image">
         <img src="{{ '/assets/images/banners/banner-om-oss.webp' | relative_url }}" alt="No Excuse AS - Vi hjelper ledergrupper">
     </div>
-    <div class="about-hero-content animate-on-scroll fade-in">
-        <h1>Om oss</h1>
-        <p class="about-tagline">Vi hjelper ledergrupper med å bli bedre — uten byråkrati.</p>
+    <div class="about-hero-content">
+        <h1 class="hero-title">Om oss</h1>
+        <p class="about-tagline hero-intro">Vi hjelper ledergrupper med å bli bedre — uten byråkrati.</p>
     </div>
 </section>
 

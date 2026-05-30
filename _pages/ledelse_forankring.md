@@ -20,13 +20,13 @@ json_ld:
 ---
 
 <section class="frame-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="frame-hero-image">
+    <div class="frame-hero-image hero-image">
         <img src="{{ '/assets/images/banners/benefit-anchoring.webp' | relative_url }}" alt="Beslutningstaking i ledelse">
     </div>
-    <div class="frame-hero-content animate-on-scroll fade-in">
+    <div class="frame-hero-content">
         <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1>Beslutningstaking i ledelse</h1>
-        <p class="frame-intro">Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft. De fleste ledere tror de tar rasjonelle beslutninger. Virkeligheten er mer komplisert. Lær hva forskningen sier om hvordan beslutninger faktisk tas.</p>
+        <h1 class="hero-title">Beslutningstaking i ledelse</h1>
+        <p class="frame-intro hero-intro">Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft. De fleste ledere tror de tar rasjonelle beslutninger. Virkeligheten er mer komplisert. Lær hva forskningen sier om hvordan beslutninger faktisk tas.</p>
     </div>
 </section>
 
