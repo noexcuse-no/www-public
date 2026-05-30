@@ -374,6 +374,8 @@ No open pull requests. All work to date has been merged.
 
 | PR | Branch | What |
 |----|--------|------|
+| [#72](https://github.com/noexcuse-no/www-public/pull/72) | `feat/hero-animation-system-10-3` | 10.3-10.4: Hero animation system with parallax-fade effect |
+| [#71](https://github.com/noexcuse-no/www-public/pull/71) | `feat/f6-brand-animation-keyframes` | F6: Brand animation keyframes (heroReveal, heroImageReveal, pageTransition) |
 | [#70](https://github.com/noexcuse-no/www-public/pull/70) | `docs/fotograf-brief-f7` | F7: Photographer brief for profile and case photography |
 | [#69](https://github.com/noexcuse-no/www-public/pull/69) | `fix/profile-filter-10-6` | 10.6: Frontpage profile filter |
 | [#68](https://github.com/noexcuse-no/www-public/pull/68) | `fix/full-width-hero-10-7` | 10.7: Full-width hero sections |
