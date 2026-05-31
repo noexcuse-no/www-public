@@ -32,11 +32,11 @@ Completed items belong in `CHANGELOG.md` only.
 | B3 | Usikkerhet: add theater metaphor + power vacuum (from Identitet/Påvirkning frames) | Planned | — |
 | B4 | Forankring: add interests + trust + ownership (from Påvirkning/Mennesker/Struktur frames) | Planned | — |
 | A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
+| N2 | Makt article (order: 1st) | Planned | — |
+| N1 | Triader article (order: 2nd) | Planned | N2 |
+| N3 | Perspektiv article (order: 3rd) | Planned | N1, N2 |
 | P5 | Migrate `_pages/ledelse_*.md` to layout system | Planned | A1 |
 | X2 | Dark mode consistency pass | Planned | — |
-| N1 | Triader article (order: 2nd) | Planned | N2 |
-| N2 | Makt article (order: 1st) | Planned | — |
-| N3 | Perspektiv article (order: 3rd) | Planned | N1, N2 |
 | F5 | Image generation for N1-N3 | Blocked | N1, N2, N3 |
 | C1 | Customer case planning & discovery | Blocked | Brainstorming session |
 | C2 | Customer case intake form | Blocked | C1 |
