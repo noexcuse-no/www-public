@@ -86,15 +86,15 @@ cta:
   booking_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
 
 about:
-  heading: "Det vitenskapelige grunnlaget"
+  heading: "Det teoretiske grunnlaget"
   body: |
     Strukturperspektivet i Ledelse 60:2 bygger på Lee Bolman og Terrence Deals fire perspektiver-modell fra «Reframing Organizations», kombinert med Douglas Hubbards metoder for måling av immaterielle størrelser fra «How to Measure Anything».
 
     Hubbard argumenterer for at all måling reduserer usikkerhet — ikke eliminerer den. Ledelse 60:2 hevder ikke presise scorer, bare perspektiver. Når vi kartlegger roller, mål og prosesser, gir vi ledergruppen et felles utgangspunkt — ikke en endelig dom.
 
     Hubbarts «Applied Information Economics» (AIE) er en strukturert tilnærming til måling av det som virker umålelig. De sju stegene er: (1) Definer beslutningen, (2) Bestem hva som er ukjent, (3) Verdsett informasjonen, (4) Design måleinstrumentet, (5) Samle data, (6) Analyser, og (7) Gjør den informerte beslutningen. Ledelse 60:2 anvender prinsippet — ikke hele metoden — ved å gi ledergruppen strukturerte spørsmål som reduserer usikkerhet om egen modenhet.
-  link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
-  link_url: "/forskning/"
+  link_text: "Les det teoretiske grunnlaget for Ledelse 60:2 →"
+  link_url: "/metode/"
 
-color_accent: "#4A90D9"
+color_accent: "#2A4D6E"
 ---

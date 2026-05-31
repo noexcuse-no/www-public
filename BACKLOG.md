@@ -22,6 +22,10 @@ Completed items belong in `CHANGELOG.md` only.
 | FF2 | i18n multilingual support | Planned | — |
 | FF5 | Three-step pages for Ledelse 60:2 | Planned | FF6 |
 | FF6 | Multi-product support | Planned | Q7 |
+| N4 | Identitet: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (verdier, ritualer, fortelling, lederverdi) | Planned | — |
+| N5 | Struktur: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (roller, mål, prosesser, lederverdi) | Planned | — |
+| N6 | Mennesker: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (tilhørighet, mestring, autonomi, lederverdi) | Planned | — |
+| N7 | Påvirkning: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (makt, nettverk, interesser, lederverdi) | Planned | — |
 | A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
 | P5 | Migrate `_pages/ledelse_*.md` to layout system | Planned | A1 |
 | X2 | Dark mode consistency pass | Planned | — |
