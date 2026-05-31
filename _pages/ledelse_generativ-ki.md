@@ -3,6 +3,7 @@ layout: page
 title: "Generativ KI-ledelse — Hvordan lede ansatte som styrer AI-modeller"
 description: "Lær hvordan å utvikle ledelseskompetanse for AI-æraen. KI endrer arbeidsmarkedet — de som lærer å lede ansatte som styrer KI-modeller, vinner."
 permalink: /generativ-ki/
+tags: ["kunstig intelligens", "digital transformasjon", "ledelse"]
 json_ld:
   type: "Article"
   name: "Generativ KI-ledelse"
