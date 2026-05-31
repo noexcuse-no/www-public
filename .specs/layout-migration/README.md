@@ -35,4 +35,9 @@ P5
 
 ## Dependencies
 
-None. Independent of other features.
+- **A1 (Architecture cleanup) — prerequisite**: A1 stabilizes the CSS class system (hero unification, card extraction, color variables, file reorganization). P5 converts article pages to use these classes — doing P5 before A1 would target a moving class system.
+- **N1–N3, N4–N7, B0–B4 — recommended sequencing**: P5 rewrites markup in all `_pages/ledelse_*.md` files. N1–N3 create new articles, N4–N7 add new perspective pages, B0–B4 edit existing benefit articles. Running P5 after all content changes are settled means one migration pass across the complete file set rather than returning for stragglers.
+
+## Implementation Order
+
+After A1 completes. Prefer running after N1–N7 content and B0–B4 edits are finalized.
