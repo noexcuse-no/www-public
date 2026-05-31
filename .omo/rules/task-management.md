@@ -1,6 +1,6 @@
 ---
 description: Branch naming, commits, PR workflow, changelog management, and version bumping
-globs: ["BACKLOG.md", "CHANGELOG.md", "VERSION"]
+globs: ["BACKLOG.md", "CHANGELOG.md", "VERSION", ".omo/plans/**", ".omo/todos/**"]
 ---
 
 # Task Management & Development Workflow
