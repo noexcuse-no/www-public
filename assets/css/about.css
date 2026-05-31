@@ -168,7 +168,8 @@
     }
 
     .about-hero-content {
-        padding: var(--space-2xl) var(--space-md) var(--space-md);
+        align-self: center;
+        padding: var(--space-lg) var(--space-md);
     }
 
     .about-hero h1 {

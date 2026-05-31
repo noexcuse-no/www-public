@@ -446,11 +446,17 @@
     }
 
     .landing-hero-content {
-        padding: var(--space-2xl) var(--space-md) var(--space-md);
+        align-self: center;
+        padding: var(--space-lg) var(--space-md);
     }
 
     .landing-hero-content h1 {
         font-size: 1.8em;
+    }
+
+    .science-hero-content {
+        align-self: center;
+        padding: var(--space-lg) var(--space-md);
     }
 
     .landing-hero-description {
