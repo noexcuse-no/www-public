@@ -238,7 +238,8 @@
 @media (max-width: 599px) {
     .perspektiv-hero-content,
     .frame-hero-content {
-        padding: var(--space-xl) var(--space-md) var(--space-md);
+        align-self: center;
+        padding: var(--space-lg) var(--space-md);
     }
 
     .perspektiv-hero h1,
