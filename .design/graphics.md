@@ -129,6 +129,37 @@ Clean minimal infographic showing [subject], Scandinavian design [style],
 | Påvirknng | "hunter green and white" / "hunter green tones" |
 | Identitet | "deep wine and white" / "deep wine tones" |
 
+### Spot Illustrations (Square — Style 3 variant)
+
+**Use for:** Floating paragraph-level spot illustrations in frame perspective articles
+
+**Style signature:**
+- Same Style 3 template (Clean minimal infographic)
+- Per-frame color palette
+- Square 1:1 format
+- No text
+
+**Documented prompts:**
+
+| File | Prompt |
+|------|--------|
+| `spot-struktur-0.webp` | "Clean minimal infographic showing roles and responsibilities in an organization, clear boxes with connecting lines, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text" |
+| `spot-struktur-1.webp` | "Clean minimal infographic showing goal alignment and coordination across departments, arrows pointing in same direction, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text" |
+| `spot-struktur-2.webp` | "Clean minimal infographic showing process flows and rules, structured workflow diagram, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text" |
+| `spot-struktur-3.webp` | "Clean minimal infographic showing structural measurement and clarity, organized framework with metrics, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text" |
+| `spot-mennesker-0.webp` | "Clean minimal infographic showing belonging and connection in a team, circle of figures, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text" |
+| `spot-mennesker-1.webp` | "Clean minimal infographic showing mastery and growth, upward trajectory, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text" |
+| `spot-mennesker-2.webp` | "Clean minimal infographic showing autonomy and independence, person standing free, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text" |
+| `spot-mennesker-3.webp` | "Clean minimal infographic showing people-centric leadership, heart and team symbols, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text" |
+| `spot-pavirkning-0.webp` | "Clean minimal infographic showing power and influence dynamics, network connections, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text" |
+| `spot-pavirkning-1.webp` | "Clean minimal infographic showing organizational networks and relationships, connected nodes, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text" |
+| `spot-pavirkning-2.webp` | "Clean minimal infographic showing competing interests and agendas, opposing forces in balance, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text" |
+| `spot-pavirkning-3.webp` | "Clean minimal infographic showing leadership influence and political landscape awareness, map with highlighted paths, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text" |
+| `spot-identitet-0.webp` | "Clean minimal infographic showing organizational values, layered shapes building upward, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text" |
+| `spot-identitet-1.webp` | "Clean minimal infographic showing workplace rituals and traditions, repeating circular patterns, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text" |
+| `spot-identitet-2.webp` | "Clean minimal infographic showing storytelling and organizational narrative, flowing connected shapes, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text" |
+| `spot-identitet-3.webp` | "Clean minimal infographic showing cultural maturity and identity development, ascending levels, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text" |
+
 ---
 
 ### Style 4: CTA Illustrations (Landscape)

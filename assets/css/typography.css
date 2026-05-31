@@ -50,6 +50,7 @@ small {
 .frame-section,
 .perspektiv-section {
     max-width: 65ch;
+    margin-inline: auto;
 }
 
 /* Mobile Scale */
