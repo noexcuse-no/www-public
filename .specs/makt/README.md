@@ -167,6 +167,10 @@ json_ld:
 ---
 ```
 
+## Implementation Order
+
+**1st** in the N1–N3 sequence (strongest hook — opens with the central leadership tension). Written first to provide referenceable context for triader and perspektiv.
+
 ## Dependencies
 
 - 4 images (1 hero, 3 section illustrations)

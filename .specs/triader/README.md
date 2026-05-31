@@ -162,10 +162,15 @@ json_ld:
 ---
 ```
 
+## Implementation Order
+
+**2nd** in the N1–N3 sequence (after makt, before perspektiv). Should be written after `/makt/` is complete so cross-links to power-service tension are accurate.
+
 ## Dependencies
 
 - 3 images (1 hero, 2 section illustrations)
 - Cross-links from existing articles
+- Cross-link from `/makt/` (power-service tension as context for triad formation)
 
 ## Acceptance Criteria
 

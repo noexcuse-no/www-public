@@ -34,9 +34,9 @@ Completed items belong in `CHANGELOG.md` only.
 | A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
 | P5 | Migrate `_pages/ledelse_*.md` to layout system | Planned | A1 |
 | X2 | Dark mode consistency pass | Planned | — |
-| N1 | Triader article | Blocked | User content |
-| N2 | Makt article | Blocked | User content |
-| N3 | Perspektiv article | Blocked | User content |
+| N1 | Triader article (order: 2nd) | Planned | N2 |
+| N2 | Makt article (order: 1st) | Planned | — |
+| N3 | Perspektiv article (order: 3rd) | Planned | N1, N2 |
 | F5 | Image generation for N1-N3 | Blocked | N1, N2, N3 |
 | C1 | Customer case planning & discovery | Blocked | Brainstorming session |
 | C2 | Customer case intake form | Blocked | C1 |

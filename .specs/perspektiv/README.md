@@ -174,11 +174,17 @@ json_ld:
 ---
 ```
 
+## Implementation Order
+
+**3rd** in the N1–N3 sequence (capstone — synthesized after makt and triader are written). Must be written last as it references both `/makt/` and `/triader/` as supporting articles.
+
 ## Dependencies
 
 - 2-3 images (1 hero, 1-2 section illustrations)
 - Cross-links from all four perspektiv articles
-- Link from `/makt/` and potentially `/triader/`
+- Link from `/makt/` (multiframe thinking as resolution of power-service tension)
+- Link from `/triader/` (structural tool that serves multiple frames)
+- Both `/makt/` and `/triader/` must exist before cross-links are valid
 
 ## Acceptance Criteria
 
