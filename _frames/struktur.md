@@ -34,13 +34,13 @@ intro:
 elements:
   - title: "Roller og ansvar"
     body: |
-      Hvem gjør hva? Roller er de minste meningsfulle enhetene i en organisasjon. Når roller er utydelige, oppstår det ansvarsskyvning. Når de er klare, vet folk hva som forventes av dem — og hva de kan forvente av andre.
+      Hvem gjør hva? Roller er de minste meningsfulle enhetene i en organisasjon. Når roller er utydelige, oppstår det ansvarsskyvning. Når de er klare, vet folk hva som forventes av dem — og hva de kan forvente av andre. Uten en strukturert måte å kartlegge roller på, risikerer ledergruppen å overse uklarheter inntil de skaper konflikter.
     signs:
       positive: "Ledere kan beskrive sine ansvarsområder presist. De vet hvem som signerer hva. Beslutninger tas på riktig nivå."
       negative: "«Det er ikke min jobb» eller «Hvem skal jeg egentlig spørre?» Dominans av e-post og møter for å koordinere arbeid som burde gå av seg selv."
   - title: "Mål og koordinering"
     body: |
-      Organisasjoner eksisterer for å oppnå noe. Mål er det som gir retning. Koordinering er det som får ulike deler til å trekke i samme retning.
+      Organisasjoner eksisterer for å oppnå noe. Mål er det som gir retning. Koordinering er det som får ulike deler til å trekke i samme retning. Strukturerte spørsmål om måljustering avdekker silotenking før den koster resultater — uten dem forblir konkurrerende prioriteringer usynlige for ledelsen.
     signs:
       positive: "Mål i ulike avdelinger forsterker hverandre. Det er enkelt å spores hvordan delmål bidrar til hovedmål. Prioriteringer er relativt entydige."
       negative: "Silotenking. Mål som konkurrerer med hverandre. Avdelinger som driver egne initiativ uten å kjenne til hverandre. Mye tid brukt på «å samordne» arbeid som burde ha vært koordinert fra start."
@@ -48,7 +48,7 @@ elements:
     body: |
       Prosesser er hvordan arbeid faktisk utføres. Regler er de formelle og uformelle normene som styrer atferd. En god struktur har balanse: nok regler til å gi trygghet, få nok til å stimulere vekst.
 
-      Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen glitter og prakt som fører til at viktige oppgaver faller mellom stoler.
+      Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen glitter og prakt som fører til at viktige oppgaver faller mellom stoler. Kartlegging av prosessbyrde avdekker hvorvidt reglene faktisk tjener formålet — eller har blitt mål i seg selv.
     signs:
       positive: "Folk vet hvordan de skal få ting gjort. Unntak håndteres på en standardisert måte. Nye folk læres opp raskt fordi prosessene er tydelige."
       negative: "Unødvendig byråkrati. Prosesser som ble laget for å løse et problem som ikke lenger eksisterer. Unntak som tar mer tid enn normalen."
@@ -58,7 +58,7 @@ leader_value:
   body: |
     Strukturperspektivet er kanskje det minst «sexy» av de fire perspektivene, men det er ofte der problemene starter. Mange ledelsesproblemer — lav gjennomføringskraft, uklare ansvarsforhold, ineffektive møter — handler i bunn om strukturelle utfordringer, ikke kultur- eller relasjonsproblemer.
 
-    Douglas Hubbard, forfatteren av «How to Measure Anything», påpeker at mye som ledere anser som «umålelig» faktisk lar seg måle — hvis man bare definerer det presist nok. Struktur er et område der denne tilnærmingen fungerer godt: du kan kartlegge roller, mål og prosesser, og identifisere konkrete gap.
+    Douglas Hubbard, forfatteren av «How to Measure Anything», påpeker at mye som ledere anser som «umålelig» faktisk lar seg måle — hvis man bare definerer det presist nok. Struktur er et område der denne tilnærmingen fungerer godt: du kan kartlegge roller, mål og prosesser, og identifisere konkrete gap. Ledelse 60:2 anvender dette prinsippet gjennom 15 strukturerte spørsmål som reduserer usikkerhet om hvor strukturen svikter — uten å påstå en endelig fasit.
 
 challenges:
   - title: "Uklar rolleavklaring"
