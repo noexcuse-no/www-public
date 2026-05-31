@@ -88,12 +88,12 @@ cta:
   booking_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
 
 about:
-  heading: "Det vitenskapelige grunnlaget"
+  heading: "Det teoretiske grunnlaget"
   body: |
     Påvirkningsperspektivet i Ledelse 60:2 bygger på Bolman & Deals politiske ramme, kombinert med Jeffrey Pfeffers forskning på makt og organisasjonspolitikk fra «Power».
 
     Pfeffer dokumenterer at makt er kontekstavhengig. Ledelse 60:2 kartlegger maktfordeling, ikke rettferdighet. Det handler om å forstå hvem som faktisk har innflytelse — ikke å dømme om det er «riktig».
-  link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
+  link_text: "Les det teoretiske grunnlaget for Ledelse 60:2 →"
   link_url: "/metode/"
 
 color_accent: "#355E3B"

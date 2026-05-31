@@ -94,12 +94,12 @@ cta:
   booking_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
 
 about:
-  heading: "Det vitenskapelige grunnlaget"
+  heading: "Det teoretiske grunnlaget"
   body: |
     Menneskeperspektivet i Ledelse 60:2 bygger på Bolman & Deals HR-ramme, kombinert med Ken Blanchards og Colleen Barretts forskning på tjenerledelse fra «Lead with LUV».
 
     Blanchard og Barrett viser at det ikke finnes én fasit på god ledelse — kontekst bestemmer hva som fungerer. Ledelse 60:2 diagnostiserer orientering, ikke korrekthet. Det handler om å forstå hvor organisasjonen er, ikke å dømme den.
-  link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
+  link_text: "Les det teoretiske grunnlaget for Ledelse 60:2 →"
   link_url: "/metode/"
 
 color_accent: "#D4A836"
