@@ -28,7 +28,6 @@ Completed items belong in `CHANGELOG.md` only.
 
 | A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
 | N2 | Makt article (order: 1st) | Planned | — |
-| N1 | Triader article (order: 2nd) | Planned | N2 |
 | N3 | Perspektiv article (order: 3rd) | Planned | N1, N2 |
 | A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
 | P5 | Migrate `_pages/ledelse_*.md` to layout system | Planned | A1 |
