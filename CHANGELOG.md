@@ -8,7 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- **B0–B4 — Benefit article improvements + frame argument integration**: `.specs/benefit-frame-integration/README.md` — spec for weaving frame perspective arguments into the four benefit articles (tillit, GenKI, usikkerhet, forankring) plus CSS layout fix for left-aligned content. BACKLOG updated with B0–B4 as Planned.
+- **B0–B4 — Benefit article improvements + frame argument integration**:
+  - B0: `.frame-section` centered with `margin-inline: auto` in `typography.css`
+  - B1: Tillit — autonomy added as fourth pillar, compliance≠byråkrati in system pillar
+  - B2: GenKI — cultural maturity (Logan stages) and power dynamics sections added
+  - B3: Usikkerhet — theater metaphor, power vacuum paragraph, structural uncertainty challenge
+  - B4: Forankring — interests mapping as new dimension, psychological safety in intro, ownership in dimension 1
 - **10.3-10.4 — Hero animation system + parallax-fade**: Frontmatter-driven hero effect framework with `HeroEffects` dispatcher in `animations.js`. First effect: parallax-fade — image translates up 40px on scroll (0–300px), title/intro fade out with translateY. Enabled on `/ledelse-60-2/`, `/om-oss/`, `/metode/` via `hero_effect: parallax-fade` frontmatter. `.specs/hero-animation-system/README.md` spec created
 - **A1 — Architecture cleanup spec**: `.specs/architecture-cleanup/README.md` — full spec for CSS reorganization, topic consolidation, hero/card unification, color hygiene, inline CSS removal, and file restructuring across all layers
 - **N4–N7 — Frame perspective article content spec**: `.specs/frame-article-content/README.md` — spec for writing body content on the four empty perspective pages (identitet, struktur, mennesker, påvirkning). BACKLOG updated with N4–N7 as Planned

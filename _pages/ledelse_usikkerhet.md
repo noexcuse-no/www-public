@@ -44,6 +44,10 @@ json_ld:
         <li class="animate-on-scroll slide-in-left stagger"><strong>Grunnleggende antakelser:</strong> Det vi tar for gitt — ubevisste, tatt-for-gitt sannheter</li>
     </ul>
     <p>Problemet: de fleste prøver å endre kultur ved å endre artefakter og verdier, mens de grunnleggende antakelsene forblir uendret. Det er som å behandle symptomene i stedet for årsaken.</p>
+
+    <h3>Teateret i usikkerhet</h3>
+    <p>En organisasjonskultur er ikke bare noe man <em>har</em> — det er noe man <em>fremfører</em>. I usikre tider sprekker fasaden: det som var «hvordan vi gjør ting her» avsløres som overflate når presset kommer. Ritualer og historier som fungerte i stabile perioder, mister sin kraft når ingen lenger tror på dem.</p>
+    <p>Spørsmålet ledergrupper bør stille seg i usikre tider er ikke «hva er kulturen vår?» — det er «hvilken kultur kommer til syne når vi ikke lenger har kontroll?»</p>
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
@@ -86,6 +90,9 @@ json_ld:
         <li class="animate-on-scroll slide-in-left stagger">Kortsiktig tenkning — endring tar tid, de fleste gir opp for tidlig</li>
     </ul>
     <p>En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i året — det er en daglig holdning. Organisasjoner som leser signalene tidlig, justerer kurs før krisen er et faktum. Muligheter og risikoer hører sammen. De som bare ser risiko, misser mulighetene. De som bare ser muligheter, ender i brann.</p>
+
+    <h3>Usikkerhet skaper maktvakuum</h3>
+    <p>Når usikkerhet oppstår, oppstår også maktkamper. De som griper muligheten i uklare situasjoner, former retningen — uavhengig av om de har formell autoritet. Ledergrupper som ikke er bevisst på dette, oppdager for sent at veivalg er tatt av dem som handlet raskest, ikke av dem som hadde best innsikt.</p>
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
@@ -207,6 +214,10 @@ json_ld:
         <div class="frame-challenge animate-on-scroll fade-in-up stagger">
             <h4>«Alltid sånn her»-mentalitet</h4>
             <p>Historisk suksess blir institusjonlisert. «Vi har alltid gjort det sånn» blir argumentet mot fornyelse.</p>
+        </div>
+        <div class="frame-challenge animate-on-scroll fade-in-up stagger">
+            <h4>Strukturell usikkerhet</h4>
+            <p>Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen.</p>
         </div>
     </div>
 </section>
