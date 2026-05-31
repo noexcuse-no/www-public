@@ -12,6 +12,9 @@ collections:
     permalink: /:path/
   frames:
     output: false
+  tags:
+    output: true
+    permalink: /emne/:path/
 
 defaults:
   - scope:
@@ -37,4 +40,10 @@ defaults:
       type: frames
     values:
       layout: perspektiv
+      lang: no
+  - scope:
+      path: ""
+      type: tags
+    values:
+      layout: tag
       lang: no

@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<section class="frame-hero">
+    <div class="frame-hero-content">
+        <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse</a> / <a href="{{ '/emne/' | relative_url }}">Emne</a></p>
+        <h1 class="hero-title">{{ page.tag }}</h1>
+        <p class="frame-intro hero-intro">
+            Artikler merket med «{{ page.tag }}»:
+        </p>
+    </div>
+</section>
+
+{% assign tagged_articles = site.pages | where_exp: "p", "p.tags contains page.tag" %}
+
+<section class="frame-section animate-on-scroll fade-in-up">
+    {% if tagged_articles.size == 0 %}
+        <p>Ingen artikler funnet for dette emnet.</p>
+    {% else %}
+        <p class="result-count">{{ tagged_articles.size }} artikkel{% if tagged_articles.size > 1 %}er{% endif %}:</p>
+        <div class="article-list">
+            {% for article in tagged_articles %}
+            <article class="frame-element animate-on-scroll fade-in-up">
+                <h2><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h2>
+                <p>{{ article.description }}</p>
+                {% if article.tags %}
+                <p class="tag-links">
+                    {% for tag in article.tags %}
+                    <a href="{{ '/emne/' | append: tag | slugify | relative_url }}" class="tag-badge">{{ tag }}</a>
+                    {% endfor %}
+                </p>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
+    {% endif %}
+</section>
+
+<section class="frame-cta animate-on-scroll fade-in-up">
+    <h2>Fant du ikke det du lette etter?</h2>
+    <p>Utforsk alle emner på vår <a href="{{ '/emne/' | relative_url }}">emneoversikt</a>, eller <a href="https://outlook.office.com/book/ledelse@noexcuse.no/">bestill en uforpliktende samtale</a> for å diskutere dine utfordringer.</p>
+    <div class="frame-cta-buttons">
+        <a href="{{ '/emne/' | relative_url }}" class="product-cta">Alle emner →</a>
+        <a href="https://outlook.office.com/book/ledelse@noexcuse.no/" class="product-cta product-cta--secondary">Bestill samtale</a>
+    </div>
+</section>

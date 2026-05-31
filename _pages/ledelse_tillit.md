@@ -3,6 +3,7 @@ layout: page
 title: "Bedre ledelse uten byråkrati"
 description: "Lær hvordan tillit og psykologisk trygghet i ledelse faktisk fungerer. Forskning fra Greenleaf, Edmondson og andre viser hvordan du kan skape en organisasjon der folk tør si ifra."
 permalink: /tillit/
+tags: ["tillit", "psykologisk trygghet", "servant leadership"]
 json_ld:
   type: "Article"
   name: "Bedre ledelse uten byråkrati"
@@ -37,7 +38,7 @@ json_ld:
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
-    <h2>De tre pilarene for tillitsbasert ledelse</h2>
+    <h2>De fire pilarene for tillitsbasert ledelse</h2>
     
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>1. Psykologisk trygghet</h3>
@@ -55,9 +56,17 @@ json_ld:
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>3. Tillit som system</h3>
-        <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.<sup class="citation">[dirks2009]</sup> God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor.</p>
+        <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.<sup class="citation">[dirks2009]</sup> God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor. Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen uklarhet som fører til at oppgaver faller mellom stoler og tillit blir satt på prøve.</p>
         <p><strong>Tegn på tillit som system:</strong> Løfter holdes. Forventninger er tydelige. Folk tar ansvar for egne handlinger.</p>
         <p><strong>Tegn på tillitsbrist:</strong> Løfter brytes uten forklaring. Folk dekker seg bak prosedyrer. «Det var ikke min avdeling» blir unnskyldningen.</p>
+    </div>
+
+    <div class="frame-element animate-on-scroll fade-in-up">
+        <h3>4. Autonomi som tillitsdriver</h3>
+        <p>Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre motivatorer (bonus, straff) kan drive kortvarig atferd, men varig engasjement krever indre motivasjon: autonomi, mestring og tilhørighet. Når ledere stoler på at ansatte kan bruke sunn fornuft, blir kontroll unødvendig — og byråkratiet mister sin begrunnelse.</p>
+        <p>Autonomi er ikke frihet fra struktur — det er frihet <em>innenfor</em> struktur. Tydelige roller og forventninger muliggjør tillit, de svekker den ikke.</p>
+        <p><strong>Tegn på autonomi som tillitsdriver:</strong> Ansatte tar initiativ uten å vente på godkjenning. Ledere delegerer både ansvar og autoritet. Feil analyseres for læring, ikke for straff.</p>
+        <p><strong>Tegn på kontrollkultur:</strong> Alle beslutninger må oppover i systemet. Detaljerte prosedyrer erstatter skjønn. Ledere sjekker opp på detaljer heller enn å stole på fagfolk.</p>
     </div>
 </section>
 
