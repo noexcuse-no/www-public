@@ -172,6 +172,58 @@ These remain as full-width section break images (`.section-illustration` pattern
 
 ---
 
+## Method-Benefit Integration
+
+Every frame perspective page is simultaneously (a) a leadership concept article and (b) a description of what Ledelse 60:2's diagnostic questions cover in that area. The visitor should finish the article understanding both the frame *and* how structured reflection on that frame creates value — without feeling sold to.
+
+### Principle
+
+The method connection is **earned** by the article content, not announced. The article explains the leadership challenge in concrete, relatable terms. The reader naturally thinks "this resonates — how would we assess where we are?" At that point the diagnostic questions, about section, and CTA answer the question. The body text never needs to say "buy our product."
+
+### Mapping
+
+| Frame | Method angle | Benefit match | Where it belongs in the article |
+|-------|-------------|---------------|----------------------------------|
+| **Struktur** | 15 questions on role clarity, goal alignment, coordination, and process burden — structured measurement reduces uncertainty (Hubbard) | Benefit 1 (clear structure beats bureaucracy), Benefit 4 (anchored decisions) | `elements[].body`: after describing role/goal/process challenges, note that structured questions reveal where the design breaks down. `leader_value.body`: already mentions Hubbard + measurement — keep, ensure it lands on "dette kan kartlegges" rather than "dette er vanskelig." `challenges[].body`: ensure the byråkrati challenge explicitly connects to Benefit 1 framing (tydelighet ≠ byråkrati), currently does this well. |
+| **Mennesker** | Anonymous, structured reflection creates psychological safety — the diagnostic *process* models trust-based leadership | Benefit 1 (trust-based, not compliance-based), Benefit 2 (developing people as leaders) | `elements[].body`: after describing trust/autonomy challenges, mention that structured reflection surfaces patterns individuals miss. Current text describes the ideals well but doesn't connect to "how do we know where we are." Strengthen with: "Uten en strukturert måte å speile disse mønstrene på, risikerer ledergruppen å overse egne blindsoner." `leader_value.body`: currently describes why the frame matters in general — include a sentence about how 60:2's reflection process itself builds the trust it measures. |
+| **Påvirkning** | Anonymous data collection reveals hidden power dynamics — the neutral framing makes the undiscussable discussable | Benefit 4 (forankring through understanding stakeholders), Benefit 3 (risk awareness) | `elements[].body`: "Makt og innflytelse" could note that anonymous mapping surfaces dynamics people won't name in a room. Current text is strong on *describing* power but doesn't address the diagnostic challenge. Add: "Men få ledergrupper snakker åpent om dette — strukturerte, anonyme verktøy kan avdekke mønstre som ellers forblir usynlige." `challenges[]`: the "usynlig beslutningsmakt" challenge is already excellent — keep. |
+| **Identitet** | Multi-perspective approach models the insight: identity is shaped by which lens you view through — culture is descriptive, not normative (Logan) | Benefit 3 (cultural maturity for uncertainty), Benefit 2 (adaptability through shared identity) | `elements[].body`: "Kultur og språk" can reference Logans stadier as a diagnostic frame — what's your dominant stage? The `about.body` already nails "identifiserer hvor organisasjonen er, ikke hvor den bør være." `leader_value.body`: the risk awareness angle ("risiko er ikke noe man setter på lista en gang i året") already connects to Benefit 3 — strengthen by tying it to the four-perspective method: "Når ledergruppen ser organisasjonen gjennom flere perspektiver, ser den også risikoer som ellers forbli usett." |
+
+### Content tone rules for integration
+
+1. **Method as evidence, not subject** — the frame challenge is the subject; the method is context that proves the author has practical experience with this challenge
+2. **Specific beats general** — "15 spørsmål om roller og mål" beats "vi kan hjelpe deg med struktur"
+3. **Invitation, not prescription** — "dette er hvordan du kan få innsikt," not "du bør kjøpe vår tjeneste"
+4. **The structure is the funnel** — elements → questions → about → CTA already forms a natural progression from understanding to action. Adding explicit sales language in the body breaks it.
+
+### Fields to update
+
+The following `_frames/*.md` fields should be revised for each frame to strengthen the method-benefit connection without changing the frame's core description:
+
+| Field | Current assessment | Action |
+|-------|-------------------|--------|
+| `elements[].body` | Describes the concept well; rarely connects to diagnostic value | Add 1 sentence per element linking to structured assessment — specific per element |
+| `leader_value.body` | Some reference the method (struktur, identitet); others don't (mennesker, påvirkning) | Add or strengthen the method connection — frame as practical diagnostic, not theory |
+| `challenges[].body` | Generally strong; some already connect implicitly | Minor tweaks where a challenge directly maps to a benefit (e.g., "byråkratisk byrde" → Benefit 1) |
+| `about.body` | Already excellent — all 4 frames reference Ledelse 60:2 naturally | No changes needed |
+| `cta.body` | Already correct — mentions "Ledelse 60:2 inneholder spørsmål om..." | No changes needed |
+| `questions[]` | The most natural lead-in to the method | No changes needed — this list is the implicit bridge |
+
+### Accepted patterns (do use)
+
+- "Strukturerte spørsmål avdekker mønstre som ellers forblir usette" — method, not product
+- "Når ledergrupper reflekterer systematisk over [emne], ser de..." — process benefit, not feature
+- "[Forskning] viser at [innsikt]. Ledelse 60:2 anvender denne innsikten ved å..." — academic credibility
+- "Uten en strukturert måte å [kartlegge/reflektere over] dette på, risikerer man..." — problem framing
+
+### Rejected patterns (don't use)
+
+- "Vår unike metode løser dette problemet" — too salesy
+- "Bestall Ledelse 60:2 i dag for å..." — belongs in CTA only, never in body
+- "Vi i No Excuse mener..." — brand voice: the article is about the concept, not the company
+
+---
+
 ## Implementation Plan by File
 
 | File | Change |
@@ -179,7 +231,7 @@ These remain as full-width section break images (`.section-illustration` pattern
 | `_layouts/perspektiv.html` | Rewrite to read `frame_id` from page frontmatter and render `_frames/<frame_id>.md` data. Insert spot illustrations at element and leader_value positions. Include existing section images. |
 | `_pages/ledelse_{frame}.md` | Minimal — keep `layout: perspektiv` + `frame_id`. Body comes from layout. |
 | `assets/css/perspektiv-styles.css` | Add `.argument-illustration` + `--right` variant + mobile reset. |
-| `_frames/*.md` | No changes needed. |
+| `_frames/*.md` | Revise `elements[].body`, `leader_value.body`, and select `challenges[].body` per Method-Benefit Integration section above. No changes to about, cta, or questions fields. |
 | `assets/images/banners/spot-*.webp` | 16 new files from GPT Image 2. |
 | `.design/graphics.md` | Log all 16 prompts under Style 3. |
 
@@ -199,6 +251,10 @@ These remain as full-width section break images (`.section-illustration` pattern
 - [ ] Each page shows 4 spot illustrations at correct paragraph positions
 - [ ] Each page shows existing hovedelementer, utfordringer, and cta section images
 - [ ] All text in Norwegian Bokmål with correct brand voice
+- [ ] Each page's `elements[].body` includes at least one sentence connecting the element to structured assessment/diagnosis (per Method-Benefit Integration guidance)
+- [ ] Each page's `leader_value.body` references how Ledelse 60:2's method addresses that frame's challenges (method as evidence, not subject)
+- [ ] No sales language ("vår unike metode", "kjøp", "bestill") appears outside the CTA section
+- [ ] About and questions sections unchanged (already correct)
 
 ### Spot illustrations (16 images)
 - [ ] 16 new files in `assets/images/banners/spot-{frame}-{concept}.webp`
