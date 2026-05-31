@@ -102,5 +102,5 @@ about:
   link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
   link_url: "/forskning/"
 
-color_accent: "#50C878"
+color_accent: "#D4A836"
 ---

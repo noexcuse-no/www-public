@@ -204,10 +204,10 @@ Each frame maps to a discipline and a workplace metaphor. All scenarios place th
 
 | Frame | Discipline | Workplace Metaphor | Color Accent |
 |-------|-----------|-------------------|--------------|
-| **Structure** | Economy | Office is A FACTORY | Blue |
-| **Humans** | Psychology | Office is A FAMILY | Green |
-| **Influence** | Politics | Office is A JUNGLE | Yellow (amber) |
-| **Identity** | Cultural Anthropology | Office is A THEATER | Purple |
+| **Structure** | Economy | Office is a Factory | Navy |
+| **Humans** | Psychology | Office is a Family | Golden Yellow |
+| **Influence** | Politics | Office is a Jungle | Hunter Green |
+| **Identity** | Cultural Anthropology | Office is a Theater | Deep Wine |
 
 ---
 

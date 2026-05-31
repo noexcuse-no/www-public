@@ -78,12 +78,12 @@ On ≤599px, images collapse to full-width 1:1, stacked between text sections. N
 
 Each frame gets 4 spot illustrations, one per element/argument section.
 
-| BL ID | Frame | Color | Spot 1 | Spot 2 | Spot 3 | Spot 4 |
-|-------|-------|-------|--------|--------|--------|--------|
-| N4 | Identitet | Deep wine (#8E0D3C) | Verdier | Ritualer | Fortelling | Lederverdi |
-| N5 | Struktur | Navy (#2A4D6E) | Roller og ansvar | Mål og koordinering | Prosesser og regler | Hvorfor struktur betyr noe |
-| N6 | Mennesker | Golden yellow (#D4A836) | Tilhørighet | Mestring | Autonomi | Hvorfor mennesker betyr noe |
-| N7 | Påvirkning | Hunter green (#355E3B) | Makt | Nettverk | Interesser | Hvorfor påvirkning betyr noe |
+| BL ID | Frame | Metaphor | Color | Spot 1 | Spot 2 | Spot 3 | Spot 4 |
+|-------|-------|----------|-------|--------|--------|--------|--------|
+| N5 | Struktur | Office is a Factory | Navy (#2A4D6E) | Roller og ansvar | Mål og koordinering | Prosesser og regler | Hvorfor struktur betyr noe |
+| N6 | Mennesker | Office is a Family | Golden yellow (#D4A836) | Tilhørighet | Mestring | Autonomi | Hvorfor mennesker betyr noe |
+| N7 | Påvirkning | Office is a Jungle | Hunter green (#355E3B) | Makt | Nettverk | Interesser | Hvorfor påvirkning betyr noe |
+| N4 | Identitet | Office is a Theater | Deep wine (#8E0D3C) | Verdier | Ritualer | Fortelling | Lederverdi |
 
 ### Style reference
 
