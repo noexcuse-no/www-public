@@ -92,7 +92,7 @@ about:
 
     Logan beskriver kulturstadier som beskrivende — ikke normative. Ledelse 60:2 identifiserer hvor organisasjonen er, ikke hvor den bør være. Det handler om innsikt, ikke evaluering.
   link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
-  link_url: "/forskning/"
+  link_url: "/metode/"
 
 color_accent: "#8E0D3C"
 ---

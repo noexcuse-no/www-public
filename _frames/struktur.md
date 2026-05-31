@@ -94,7 +94,7 @@ about:
 
     Hubbarts «Applied Information Economics» (AIE) er en strukturert tilnærming til måling av det som virker umålelig. De sju stegene er: (1) Definer beslutningen, (2) Bestem hva som er ukjent, (3) Verdsett informasjonen, (4) Design måleinstrumentet, (5) Samle data, (6) Analyser, og (7) Gjør den informerte beslutningen. Ledelse 60:2 anvender prinsippet — ikke hele metoden — ved å gi ledergruppen strukturerte spørsmål som reduserer usikkerhet om egen modenhet.
   link_text: "Les det vitenskapelige grunnlaget for Ledelse 60:2 →"
-  link_url: "/forskning/"
+  link_url: "/metode/"
 
 color_accent: "#2A4D6E"
 ---
