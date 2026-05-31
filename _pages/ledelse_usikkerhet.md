@@ -3,6 +3,7 @@ layout: page
 title: "Usikkerhet og endring — bli forberedt på en usikker fremtid"
 description: "Lær hvordan modne ledergrupper navigerer usikkerhet og endring — fra Scheins kulturnivåer til Kotters endringsmodell."
 permalink: /usikkerhet/
+tags: ["usikkerhet", "endringsledelse", "organisasjonskultur"]
 json_ld:
   type: "Article"
   name: "Usikkerhet og endring — bli forberedt på en usikker fremtid"

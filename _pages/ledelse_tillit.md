@@ -3,6 +3,7 @@ layout: page
 title: "Bedre ledelse uten byråkrati"
 description: "Lær hvordan tillit og psykologisk trygghet i ledelse faktisk fungerer. Forskning fra Greenleaf, Edmondson og andre viser hvordan du kan skape en organisasjon der folk tør si ifra."
 permalink: /tillit/
+tags: ["tillit", "psykologisk trygghet", "servant leadership"]
 json_ld:
   type: "Article"
   name: "Bedre ledelse uten byråkrati"

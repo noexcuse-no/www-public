@@ -18,23 +18,12 @@ Completed items belong in `CHANGELOG.md` only.
 | ID | Title | Status | Depends On |
 |----|-------|--------|------------|
 | FF4 | Citation Enhancement (kramdown footnotes + JSON-LD + JS enhancer) | Planned | — |
-| FF1 | Tag lookup page `/emne/` | Planned | — |
 | FF2 | i18n multilingual support | Planned | — |
 | FF5 | Three-step pages for Ledelse 60:2 | Planned | FF6 |
 | FF6 | Multi-product support | Planned | Q7 |
-| N4 | Identitet: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (verdier, ritualer, fortelling, lederverdi) | Planned | — |
-| N5 | Struktur: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (roller, mål, prosesser, lederverdi) | Planned | — |
-| N6 | Mennesker: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (tilhørighet, mestring, autonomi, lederverdi) | Planned | — |
-| N7 | Påvirkning: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (makt, nettverk, interesser, lederverdi) | Planned | — |
-| B0 | Benefit layout fix: center `.frame-section` content | Planned | — |
-| B1 | Tillit: add autonomy pillar + compliance clarity (from Mennesker/Struktur frames) | Planned | — |
-| B2 | GenKI: add cultural maturity + power dynamics (from Identitet/Påvirkning frames) | Planned | — |
-| B3 | Usikkerhet: add theater metaphor + power vacuum (from Identitet/Påvirkning frames) | Planned | — |
-| B4 | Forankring: add interests + trust + ownership (from Påvirkning/Mennesker/Struktur frames) | Planned | — |
-| A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
-| N2 | Makt article (order: 1st) | Planned | — |
 | N1 | Triader article (order: 2nd) | Planned | N2 |
 | N3 | Perspektiv article (order: 3rd) | Planned | N1, N2 |
+| A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
 | P5 | Migrate `_pages/ledelse_*.md` to layout system | Planned | A1 |
 | X2 | Dark mode consistency pass | Planned | — |
 | F5 | Image generation for N1-N3 | Blocked | N1, N2, N3 |
