@@ -22,7 +22,8 @@ Completed items belong in `CHANGELOG.md` only.
 | FF2 | i18n multilingual support | Planned | — |
 | FF5 | Three-step pages for Ledelse 60:2 | Planned | FF6 |
 | FF6 | Multi-product support | Planned | Q7 |
-| P5 | Migrate `_pages/ledelse_*.md` to layout system | Planned | — |
+| A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
+| P5 | Migrate `_pages/ledelse_*.md` to layout system | Planned | A1 |
 | X2 | Dark mode consistency pass | Planned | — |
 | N1 | Triader article | Blocked | User content |
 | N2 | Makt article | Blocked | User content |
