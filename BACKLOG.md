@@ -26,11 +26,7 @@ Completed items belong in `CHANGELOG.md` only.
 | N5 | Struktur: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (roller, mål, prosesser, lederverdi) | Planned | — |
 | N6 | Mennesker: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (tilhørighet, mestring, autonomi, lederverdi) | Planned | — |
 | N7 | Påvirkning: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (makt, nettverk, interesser, lederverdi) | Planned | — |
-| B0 | Benefit layout fix: center `.frame-section` content | Planned | — |
-| B1 | Tillit: add autonomy pillar + compliance clarity (from Mennesker/Struktur frames) | Planned | — |
-| B2 | GenKI: add cultural maturity + power dynamics (from Identitet/Påvirkning frames) | Planned | — |
-| B3 | Usikkerhet: add theater metaphor + power vacuum (from Identitet/Påvirkning frames) | Planned | — |
-| B4 | Forankring: add interests + trust + ownership (from Påvirkning/Mennesker/Struktur frames) | Planned | — |
+
 | A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
 | N2 | Makt article (order: 1st) | Planned | — |
 | N1 | Triader article (order: 2nd) | Planned | N2 |
