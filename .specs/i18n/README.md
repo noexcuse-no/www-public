@@ -13,6 +13,8 @@ The site is currently Norwegian-only. To reach non-Norwegian-speaking visitors (
 - **Language detection:** Browser `Accept-Language` header
 - **Fallback:** Norwegian Bokmål
 - **Language switcher:** UI component for manual override
+- **Translation scope:** All articles — full site content translation in one pass
+- **Translation method:** AI-assisted — drafts produced by AI, reviewed and approved by domain expert (Rasmus)
 
 ## Scope
 
@@ -25,10 +27,19 @@ Files to create/modify:
 - SEO hreflang tags in `<head>`
 - Existing `_pages/*.md` files — migrate to language subdirectories
 
-Open questions:
+## Implementation Notes
 
-- Which pages get translation first? (TBD — likely landing pages and product pages)
-- Who provides translations? (TBD — client, partner, or AI-assisted)
+### Translation workflow
+
+1. Infrastructure first: language detector, switcher, hreflang tags, directory structure
+2. Content migration: move existing Norwegian pages to `_pages/no/`
+3. Translation pass (AI-assisted): one article at a time, starting with landing/product pages, then articles
+4. Review pass: domain expert (Rasmus) reviews each translated article
+5. Polish: language switcher UX, edge cases (partial translations, fallback behavior)
+
+### First target language
+
+Default assumption is English (en). Additional languages can be added per the same pattern.
 
 ## Acceptance Criteria
 
