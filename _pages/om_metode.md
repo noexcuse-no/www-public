@@ -172,29 +172,6 @@ json_ld:
 </section>
 
 <style>
-.science-hero {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.science-hero-image {
-    width: 100%;
-}
-
-.science-hero-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 0;
-    margin-bottom: 0;
-}
-
-.science-hero-content {
-    padding: 40px 40px 0;
-    text-align: center;
-}
-
 .science-breadcrumb {
     font-size: 0.9em;
     margin-bottom: 16px;
@@ -204,17 +181,8 @@ json_ld:
     color: var(--link-color-light);
 }
 
-.science-hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
 .science-intro {
-    font-size: 1.15em;
-    line-height: 1.7;
     opacity: 0.9;
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 .science-section {
