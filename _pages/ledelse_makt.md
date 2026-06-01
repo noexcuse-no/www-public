@@ -54,14 +54,14 @@ json_ld:
 
 {% include hero.html %}
 
-<section class="frame-section animate-on-scroll fade-in-up">
+<section class="section container--wide animate-on-scroll fade-in-up">
     <p>To sitater, to verdenssyn. Jeffrey Pfeffer, en av forskningen mest siterte stemmer på maktdynamikk, slår fast: «Power is the ability to get things done.» Uten makt — ingenting skjer. På den andre siden står Ken Blanchard og Colleen Barrett: «Leadership is not about you; it's about the people you serve.» Ledelse som tjeneste.</p>
     <p>Begge har rett. Og begge tar feil — hvis de står alene.</p>
     <p>Makt uten tjeneste blir utvinning. Tjeneste uten makt blir martyrdom. Effektive ledelseskulturer vet hvor de sitter på dette spekteret — og hvorfor.</p>
     <p>Denne artikkelen kartlegger spenningen mellom makt og tjeneste i ledergrupper, med utgangspunkt i Pfeffers forskning på maktens dynamikk og Blanchard & Barretts arbeid med servant leadership. Målet er ikke å kåre en vinner, men å gi deg et verktøy for å diagnostisere din egen ledelseskultur.</p>
 </section>
 
-<section class="frame-section animate-on-scroll fade-in-up">
+<section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Den diagnostiske spenningen</h2>
     <p>Pfeffer og Blanchard representerer ikke personlighetstyper eller ledelsesfilosofier du velger mellom som et par sko. De representerer en strukturell spenning som lever i enhver organisasjon — enten du anerkjenner den eller ikke.</p>
     <p>På den ene siden: Makt som kapasitet. Evnen til å mobilisere ressurser, ta beslutninger og få ting gjort. Uten denne kapasiteten forblir visjoner drømmer, og organisasjoner mister retning. Pfeffer dokumenterer at makt korrelerer med karrierefremgang, beskyttelse mot organisatorisk kaos, og evnen til å gjennomføre endring.[^pfeffer2010]</p>
@@ -69,7 +69,7 @@ json_ld:
     <p>Problemet oppstår når organisasjoner uten bevissthet driver mot den ene polen. Ledergrupper som ikke aktivt reflekterer over denne spenningen, ender ofte opp med en ubalanse som koster mer enn de sparer.</p>
 </section>
 
-<section class="frame-section animate-on-scroll fade-in-up">
+<section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Maktsiden — når det å få ting gjort blir alt</h2>
     <p>La oss starte med makt — ikke fordi den er viktigst, men fordi den ofte er mest usynlig. Makt er infrastrukturen i organisasjonslivet. Den finnes i stillingsbeskrivelser, budsjetter, beslutningsmyndighet og tilgang til informasjon.</p>
     <p>Pfeffers forskning viser at makt er en forutsetning for organisatorisk effektivitet på flere måter:</p>
@@ -83,7 +83,7 @@ json_ld:
     <p>Risikoen er tydelig: En ledergruppe som optimerer for makt, uten korrigerende mekanismer, utvikler seg mot transaksjonelle relasjoner, høy turnover og en kultur der kortsiktige gevinster trumfer langsiktig verdiskaping.</p>
 </section>
 
-<section class="frame-section animate-on-scroll fade-in-up">
+<section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Tjenestesiden — når det å tjene andre blir alt</h2>
     <p>Servant leadership er ikke det samme som å være snill. Blanchard og Barrett er tydelige på at tjenende ledelse er en strategisk posisjonering, ikke en personlighetstype.</p>
     <p>Servant leadership handler om å bygge organisatorisk kapasitet gjennom å sette medarbeiderne først. Forskningen viser flere konkrete effekter:</p>
@@ -96,7 +96,7 @@ json_ld:
     <p>Risikoen er speilbildet av maktsiden: En ledergruppe som optimerer for tjeneste, uten makt til å gjennomføre, utvikler seg mot en kultur der beslutningsvegring er normen, de flinkeste brenner seg ut på å kompensere for de svakeste, og organisasjonen mister retning og tempo.</p>
 </section>
 
-<section class="frame-section animate-on-scroll fade-in-up">
+<section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Prisen du betaler for makt</h2>
     <p>Det er fristende å konkludere med at svaret er «litt av begge deler». Men det er for enkelt. For å forstå hva en balansert ledelseskultur krever, må vi først se prisene — for begge ytterpunkter.</p>
     <p>La oss starte med prisen for makt, fordi den oftest er usynlig for dem som sitter i den:</p>
@@ -114,7 +114,7 @@ json_ld:
     </ul>
 </section>
 
-<section class="frame-section animate-on-scroll fade-in-up">
+<section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Spekteret — fra utvinning til balanse</h2>
     <p>Hvis både ren makt og ren tjeneste har kostbare bivirkninger, hva er løsningen? Svaret ligger ikke i et kompromiss på midten, men i å forstå hvor din organisasjon befinner seg på spekteret — og hvorfor.</p>
     <p>Vi kan grovt sett plassere ledelseskulturer langs et spekter:</p>
@@ -129,7 +129,7 @@ json_ld:
     <p>Dette er ikke naiv optimisme. Det er en empirisk observasjon av hva som faktisk fungerer i organisasjoner som presterer over tid. Når makt distribueres og samtidig forankres i et felles oppdrag, reduseres både risikoen for maktmisbruk og risikoen for beslutningsvegring.</p>
 </section>
 
-<section class="frame-section animate-on-scroll fade-in-up">
+<section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Spørsmål for selvdiagnose</h2>
     <p>Hvor sitter din ledergruppe på spekteret? Følgende spørsmål kan hjelpe dere å finne ut:</p>
     <ul>
@@ -141,10 +141,10 @@ json_ld:
     </ul>
 </section>
 
-<section class="frame-cta animate-on-scroll fade-in-up">
+<section class="section section--spacious container--narrow cta-section animate-on-scroll fade-in-up">
     <h2>Få kartlagt ledergruppens makt- og tjenestebalanse</h2>
     <p>Ledelse 60:2 inneholder spørsmål som kartlegger hvor ledergruppen din sitter på spekteret mellom makt og tjeneste, og gir dere et felles språk for å snakke om dynamikken. Bestill en uforpliktende samtale for å lære mer.</p>
-    <div class="frame-cta-buttons">
+    <div class="cta-buttons">
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill uforpliktende samtale</a>
         <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
