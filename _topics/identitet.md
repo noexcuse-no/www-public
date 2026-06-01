@@ -1,5 +1,6 @@
 ---
 id: "identitet"
+category: "frame"
 title: "Identitetsperspektivet i ledelse"
 description: "Lær hvordan identitetsperspektivet kan hjelpe ledergruppen å forstå organisasjonskultur, meningsskaping og hvordan verdier faktisk lever — eller bare henger på veggen."
 
@@ -40,7 +41,7 @@ elements:
       negative: "«Jeg»-dominerende språk. Klaging på møter, kunder, ledelse. Historiefortelling preget av «de» vs. «vi»."
   - title: "Verdier og mening"
     body: |
-      Verdier er ikke noe som bestemmes som henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
+      Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
     signs:
       positive: "Folk kan fortelle om situasjoner der verdiene ble levd ut i praksis. Nye folk læres opp i «hvordan vi gjør ting her» med konkrete eksempler."
       negative: "Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert."
@@ -95,4 +96,7 @@ about:
   link_url: "/metode/"
 
 color_accent: "#8E0D3C"
+card_description: "Kultur, mening, symboler, verdier, historier"
+detail: "Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier."
+weight: 4
 ---

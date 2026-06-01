@@ -1,5 +1,6 @@
 ---
 id: "påvirkning"
+category: "frame"
 title: "Påvirkningsperspektivet i ledelse"
 description: "Lær hvordan påvirkningsperspektivet kan hjelpe ledergruppen å forstå maktbalanse, interessekonflikter og hvordan beslutninger faktisk tas."
 
@@ -97,4 +98,7 @@ about:
   link_url: "/metode/"
 
 color_accent: "#355E3B"
+card_description: "Makt, interesser, konflikt, ressurser, politikk"
+detail: "Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet."
+weight: 3
 ---

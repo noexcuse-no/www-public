@@ -10,7 +10,7 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  frames:
+  topics:
     output: false
   tags:
     output: true
@@ -37,9 +37,9 @@ defaults:
       lang: no
   - scope:
       path: ""
-      type: frames
+      type: topics
     values:
-      layout: perspektiv
+      layout: page
       lang: no
   - scope:
       path: ""

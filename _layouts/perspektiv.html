@@ -5,7 +5,7 @@ layout: page
 <link rel="stylesheet" href="{{ '/assets/css/perspektiv-styles.css' | relative_url }}">
 
 {% assign frame_id = page.frame_id %}
-{% assign frame = site.frames | where: "id", frame_id | first %}
+{% assign frame = site.topics | where: "category", "frame" | where: "id", frame_id | first %}
 
 {% assign all_frames = site.frames | sort: "id" %}
 {% assign current_index = nil %}
@@ -20,16 +20,14 @@ layout: page
 {% assign next_frame = all_frames[next_index] %}
 
 <!-- Hero Section -->
-<section class="perspektiv-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-  <div class="perspektiv-hero-image hero-image">
-    <img src="{{ frame.hero.banner_image | relative_url }}" alt="{{ frame.hero.alt }}">
-  </div>
-  <div class="perspektiv-hero-content">
-    <p class="perspektiv-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-    <h1 class="hero-title">{{ frame.title }}</h1>
-    <p class="perspektiv-intro hero-intro">{{ frame.hero.intro }}</p>
-  </div>
-</section>
+{% include hero.html
+   image=frame.hero.banner_image
+   alt=frame.hero.alt
+   title=frame.title
+   intro=frame.hero.intro
+   breadcrumb=frame.hero.breadcrumb
+   hero_effect=page.hero_effect
+%}
 
 <!-- Intro Section -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">

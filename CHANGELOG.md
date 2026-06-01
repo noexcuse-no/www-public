@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **A1.1 — Topic consolidation**: `_config.yml` registers `_topics/` collection (output:false); 11 topic files created (4 frames, 4 benefits, 3 steps); `_frames/` directory deleted; `_includes/card.html` created for 3 card variants; `_products/ledelse-60-2.md` frontmatter cleaned; `_pages/om_metode.md` and `_pages/ledelse_60-2.md` migrated to card include
+- **A1.2 — Hero unification**: `_includes/hero.html` created with dual-source support (page frontmatter + include params); `assets/css/components/hero.css` created with unified `.hero` class; all 8 hardcoded hero pages migrated to `{% include hero.html %}`; `_layouts/perspektiv.html` updated to use hero include; old hero CSS removed from `article.css`, `about.css`, `products.css`, `styles-dark.css`
 - **B0–B4 — Benefit article improvements + frame argument integration**:
   - B0: `.frame-section` centered with `margin-inline: auto` in `typography.css`
   - B1: Tillit — autonomy added as fourth pillar, compliance≠byråkrati in system pillar

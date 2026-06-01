@@ -1,55 +1,3 @@
-.about-hero {
-    display: grid;
-    padding: 0;
-}
-
-.about-hero-image {
-    grid-area: 1 / 1;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    position: relative;
-}
-
-.about-hero-image::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, var(--primary-navy) 0%, transparent 60%);
-    opacity: 0.85;
-    pointer-events: none;
-}
-
-.about-hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.about-hero-content {
-    grid-area: 1 / 1;
-    align-self: end;
-    padding: var(--space-xl) var(--space-2xl);
-    text-align: center;
-    background: transparent;
-    color: #fff;
-    z-index: 1;
-}
-
-.about-hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 16px;
-    color: var(--primary-navy);
-}
-
-.about-tagline {
-    font-size: 1.2em;
-    color: #fff;
-    max-width: 600px;
-    margin: 0 auto;
-    opacity: 0.9;
-}
 
 .about-story,
 .about-values,
@@ -163,23 +111,6 @@
 
 
 @media (max-width: 599px) {
-    .about-hero-image {
-        aspect-ratio: 4 / 3;
-    }
-
-    .about-hero-content {
-        align-self: center;
-        padding: var(--space-lg) var(--space-md);
-    }
-
-    .about-hero h1 {
-        font-size: 1.8em;
-    }
-
-    .about-tagline {
-        font-size: 1em;
-    }
-
     .about-values-cards {
         grid-template-columns: 1fr;
         gap: 12px;

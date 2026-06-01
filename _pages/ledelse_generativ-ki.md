@@ -3,7 +3,13 @@ layout: page
 title: "Generativ KI-ledelse — Hvordan lede ansatte som styrer AI-modeller"
 description: "Lær hvordan å utvikle ledelseskompetanse for AI-æraen. KI endrer arbeidsmarkedet — de som lærer å lede ansatte som styrer KI-modeller, vinner."
 permalink: /generativ-ki/
-tags: ["kunstig intelligens", "digital transformasjon", "ledelse"]
+hero:
+  image: /assets/images/banners/benefit-ai.webp
+  alt: "KI-ledelse i praksis"
+  breadcrumb: "← No Excuse AS"
+  title: "KI-ledelse i praksis"
+  intro: "Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle proklamerer om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere."
+tags: ["generativ-ki", "ai", "kunstig-intelligens", "endringsledelse"]
 json_ld:
   type: "Article"
   name: "Generativ KI-ledelse"
@@ -20,16 +26,7 @@ json_ld:
       name: "Målstyring"
 ---
 
-<section class="frame-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="frame-hero-image hero-image">
-        <img src="{{ '/assets/images/banners/benefit-ai.webp' | relative_url }}" alt="KI-ledelse i praksis">
-    </div>
-    <div class="frame-hero-content">
-        <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1 class="hero-title">KI-ledelse i praksis</h1>
-        <p class="frame-intro hero-intro">Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle proklamerer om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
-    </div>
-</section>
+{% include hero.html %}
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Lederbristen i KI-æraen</h2>

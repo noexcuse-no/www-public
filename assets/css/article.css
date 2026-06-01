@@ -1,74 +1,3 @@
-.perspektiv-hero,
-.frame-hero {
-    display: grid;
-    padding: 0;
-}
-
-.perspektiv-hero-image,
-.frame-hero-image {
-    grid-area: 1 / 1;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    position: relative;
-}
-
-.perspektiv-hero-image::after,
-.frame-hero-image::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, var(--primary-navy) 0%, transparent 60%);
-    opacity: 0.85;
-    pointer-events: none;
-}
-
-.perspektiv-hero-image img,
-.frame-hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.perspektiv-hero-content,
-.frame-hero-content {
-    grid-area: 1 / 1;
-    align-self: end;
-    padding: var(--space-xl) var(--space-2xl);
-    text-align: center;
-    background: transparent;
-    color: #fff;
-    z-index: 1;
-}
-
-.perspektiv-breadcrumb,
-.frame-breadcrumb {
-    font-size: 0.9em;
-    margin-bottom: 16px;
-}
-
-.perspektiv-breadcrumb a,
-.frame-breadcrumb a {
-    color: rgba(255,255,255,0.85);
-}
-
-.perspektiv-hero h1,
-.frame-hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 16px;
-    color: #fff;
-}
-
-.perspektiv-intro,
-.frame-intro {
-    font-size: 1.15em;
-    line-height: 1.7;
-    color: rgba(255,255,255,0.9);
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 .perspektiv-section,
 .frame-section {
     /* Width/spacing via .section.container--wide */
@@ -235,23 +164,9 @@
     display: block;
     margin: 0 auto 24px;
     border-radius: var(--radius-lg);
+}
+
 @media (max-width: 599px) {
-    .perspektiv-hero-content,
-    .frame-hero-content {
-        align-self: center;
-        padding: var(--space-lg) var(--space-md);
-    }
-
-    .perspektiv-hero h1,
-    .frame-hero h1 {
-        font-size: 1.8em;
-    }
-
-    .perspektiv-intro,
-    .frame-intro {
-        font-size: 1em;
-    }
-
     .perspektiv-challenges,
     .frame-challenges {
         grid-template-columns: 1fr;
@@ -263,10 +178,6 @@
         align-items: center;
     }
 }
-
-}
-
-
 
 .citation {
     font-size: 0.75em;

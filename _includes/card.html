@@ -1,0 +1,30 @@
+{% assign topic = include.topic %}
+{% assign card_class = "card card--" | append: topic.category %}
+{% if topic.step_number %}
+  {% assign card_class = card_class | append: " card--numbered" %}
+{% endif %}
+
+<article class="{{ card_class }}"{% if topic.id %} data-topic-id="{{ topic.id }}"{% endif %} style="{% if topic.color_accent %}--card-accent: {{ topic.color_accent }};{% endif %}">
+  {% if topic.banner %}
+  <img src="{{ topic.banner | relative_url }}" alt="{{ topic.title }}" class="card-image">
+  {% endif %}
+  <div class="card-content">
+    {% if topic.step_number %}
+    <div class="card-step-number">{{ topic.step_number }}</div>
+    {% endif %}
+    <h3>{{ topic.title }}</h3>
+    {% if topic.card_description %}
+    <p class="card-subtitle">{{ topic.card_description }}</p>
+    {% endif %}
+    <p>{{ topic.description }}</p>
+    {% if topic.detail %}
+    <p class="card-detail">{{ topic.detail }}</p>
+    {% endif %}
+    {% if topic.url %}
+    <a href="{{ topic.url | relative_url }}" class="card-link">Les artikkelen →</a>
+    {% endif %}
+    {% if topic.cta.booking_url %}
+    <a href="{{ topic.cta.booking_url }}" class="card-link card-link--cta">Bestill uforpliktende samtale →</a>
+    {% endif %}
+  </div>
+</article>

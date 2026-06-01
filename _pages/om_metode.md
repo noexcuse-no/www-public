@@ -3,6 +3,11 @@ layout: page
 title: "Om metodikk"
 description: "«Ledelse 60:2» er en intervjubasert kartleggingsmetode for ledergrupper. Les om det teoretiske grunnlaget, kunnskapsproduksjon og hvorfor vi gjør dette."
 permalink: /metode/
+hero:
+  image: /assets/images/banners/science-foundation.webp
+  alt: "Vitenskapelig fundament"
+  title: "Om metodikk"
+  intro: "Strukturerte intervjuer for kartlegging av ledergrupper."
 hero_effect: parallax-fade
 json_ld:
   type: "TechArticle"
@@ -29,15 +34,7 @@ json_ld:
     - "https://noexcuse.no"
 ---
 
-<section class="science-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="science-hero-image hero-image">
-        <img src="{{ '/assets/images/banners/science-foundation.webp' | relative_url }}" alt="Vitenskapelig fundament">
-    </div>
-    <div class="science-hero-content">
-        <h1 class="hero-title">Om metodikk</h1>
-        <p class="science-intro hero-intro">Strukturerte intervjuer for kartlegging av ledergrupper.</p>
-    </div>
-</section>
+{% include hero.html %}
 
 <section id="teoretisk" class="science-section">
     <h2><span class="section-number">1</span> Teoretisk grunnlag for tilnærmingen</h2>
@@ -46,47 +43,11 @@ json_ld:
 
     <p>De fire perspektivene — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — er den analytiske strukturen for de 60 spørsmålene. Med Bolman & Deal legger vi til grunn antakelsen at hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold. De fire valgte perspektivene er ikke nødvendigvis de eneste, de mest riktige, uttømmende eller uten overlapp; først og fremst har vi valgt å anvende disse fire perspektivene som ordnende prinsipp fordi (a) de er relativt ukontroversielle og godt innarbeidet i domenet, og (b) perspektivene gjenspeiler en gjenkjennbarn og legitim kunnskapsontologi fra samtidens vestlige samfunn. De instrumentaliseres i moderne nyprofesjons- og fagstudier slik som <strong>Ledelse</strong> og <strong>HR</strong></p>
 
-    <div class="frames-horizontal">
-        <div class="frames-row">
-            <div class="frame-item frame-struct">
-                <img src="{{ '/assets/images/banners/perspektiv-struktur.webp' | relative_url }}" alt="Struktur" class="frame-image">
-                <div class="frame-content">
-                    <h3>Strukturperspektivet</h3>
-                    <p class="frame-desc">Roller, mål, prosesser, koordinering, ansvar</p>
-                    <p class="frame-detail-text">Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig. </p>
-                    <a href="{{ '/struktur/' | relative_url }}" class="frame-link">Les artikkelen →</a>
-                </div>
-            </div>
-            <div class="frame-item frame-human">
-                <img src="{{ '/assets/images/banners/perspektiv-mennesker.webp' | relative_url }}" alt="Menneske" class="frame-image">
-                <div class="frame-content">
-                    <h3>Menneskeperspektivet</h3>
-                    <p class="frame-desc">Tillit, motivasjon, relasjoner, medvirkning</p>
-                    <p class="frame-detail-text">Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at "servant leadership" er et konkurransefortrinn. </p>
-                    <a href="{{ '/mennesker/' | relative_url }}" class="frame-link">Les artikkelen →</a>
-                </div>
-            </div>
-        </div>
-        <div class="frames-row">
-            <div class="frame-item frame-political">
-                <img src="{{ '/assets/images/banners/perspektiv-påvirkning.webp' | relative_url }}" alt="Påvirkning" class="frame-image">
-                <div class="frame-content">
-                    <h3>Påvirkningsperspektivet</h3>
-                    <p class="frame-desc">Makt, interesser, konflikt, ressurser, politikk</p>
-                    <p class="frame-detail-text">Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet. </p>
-                    <a href="{{ '/påvirkning/' | relative_url }}" class="frame-link">Les artikkelen →</a>
-                </div>
-            </div>
-            <div class="frame-item frame-symbol">
-                <img src="{{ '/assets/images/banners/perspektiv-identitet.webp' | relative_url }}" alt="Identitet" class="frame-image">
-                <div class="frame-content">
-                    <h3>Identitetsperspektivet</h3>
-                    <p class="frame-desc">Kultur, mening, symboler, verdier, historier</p>
-                    <p class="frame-detail-text">Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier. </p>
-                    <a href="{{ '/identitet/' | relative_url }}" class="frame-link">Les artikkelen →</a>
-                </div>
-            </div>
-        </div>
+    <div class="card-grid card-grid--frames">
+        {% assign frames = site.topics | where: "category", "frame" | sort: "weight" %}
+        {% for topic in frames %}
+            {% include card.html topic=topic %}
+        {% endfor %}
     </div>
 </section>
 

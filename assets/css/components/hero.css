@@ -1,0 +1,91 @@
+/* Unified Hero Component
+   Replaces: .landing-hero, .science-hero, .about-hero, .frame-hero, .perspektiv-hero
+   Usage: {% include hero.html %} — reads from page.hero frontmatter or parameters
+*/
+
+.hero {
+    display: grid;
+    padding: 0;
+}
+
+.hero-image {
+    grid-area: 1 / 1;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--primary-navy) 0%, transparent 60%);
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    grid-area: 1 / 1;
+    align-self: end;
+    padding: var(--space-xl) var(--space-2xl);
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-breadcrumb {
+    font-size: 0.9em;
+    margin-bottom: 16px;
+}
+
+.hero-breadcrumb a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-title {
+    font-size: 2.5em;
+    margin-bottom: 16px;
+    color: #fff;
+    line-height: 1.15;
+}
+
+.hero-intro {
+    font-size: 1.15em;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Dark mode — use CSS variable flips */
+.dark-mode .hero-image::after {
+    opacity: 0.75;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-image {
+        aspect-ratio: 4 / 3;
+    }
+
+    .hero-content {
+        padding: 24px;
+    }
+
+    .hero-title {
+        font-size: 2em;
+    }
+
+    .hero-intro {
+        font-size: 1em;
+    }
+}
