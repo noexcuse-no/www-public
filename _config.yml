@@ -14,7 +14,7 @@ collections:
     output: true
     permalink: /:path/
   topics:
-    output: false
+    output: true
   tags:
     output: true
     permalink: /emne/:path/
