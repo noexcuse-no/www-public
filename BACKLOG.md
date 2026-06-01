@@ -20,7 +20,7 @@ Completed items belong in `CHANGELOG.md` only.
 | FF4 | Citation Enhancement (kramdown footnotes + JSON-LD + JS enhancer + APA formatting) | Done | — |
 | FF2 | i18n multilingual support | Blocked | Waiting on user manual unblock — infrastructure ready, content translation deferred |
 | R3 | Profile card modal redesign — on-brand compact → expanded flow | Planned | — |
-| R4 | Benefit article illustrations — 52 images across 4 articles (T2 framework + T3 section + T4 micro tiers) | Planned | — |
+| R4 | Benefit article illustrations — 52 images across 4 articles (T2 framework + T3 section + T4 micro tiers) | Doing | — |
 | R15 | Values illustrations — 3 T3 spot illustrations for Om Oss value cards | Done | — |
 | FF5 | Three-step pages for Ledelse 60:2 | Planned | FF6 |
 | FF6 | Multi-product support | Planned | Q7 |
