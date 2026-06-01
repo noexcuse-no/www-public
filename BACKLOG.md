@@ -24,17 +24,18 @@ Completed items belong in `CHANGELOG.md` only.
 | R15 | Values illustrations — 3 original value card illustrations for Om Oss | Planned | — |
 | FF5 | Three-step pages for Ledelse 60:2 | Planned | FF6 |
 | FF6 | Multi-product support | Planned | Q7 |
-| N4 | Identitet: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (verdier, ritualer, fortelling, lederverdi) | Planned | — |
-| N5 | Struktur: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (roller, mål, prosesser, lederverdi) | Planned | — |
-| N6 | Mennesker: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (tilhørighet, mestring, autonomi, lederverdi) | Planned | — |
-| N7 | Påvirkning: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (makt, nettverk, interesser, lederverdi) | Planned | — |
+| N4 | Identitet: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Planned | — |
+| N5 | Struktur: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Planned | — |
+| N6 | Mennesker: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Planned | — |
+| N7 | Påvirkning: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Planned | — |
 | N1 | Triader article (order: 2nd) | Done | — |
 | A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Done | — |
 | N2 | Makt article (order: 1st) | Done | — |
 | N3 | Perspektiv article (order: 3rd) | Done | N1, N2 |
 | P5 | Migrate `_pages/ledelse_*.md` to layout system | Done | A1 |
 | X2 | Dark mode consistency pass | Done | — |
-| F5 | Image generation for N1-N3 | Doing | — |
+| F5 | Image generation for N1-N3 | Done | — |
+| F6 | Spot illustration naming cleanup — rename index-based spot images to concept-based names, move to banners/ | Doing | — |
 | C1 | Customer case planning & discovery | Blocked | Brainstorming session |
 | C2 | Customer case intake form | Blocked | C1 |
 | C3 | Case presentation design | Blocked | C1, C2 |

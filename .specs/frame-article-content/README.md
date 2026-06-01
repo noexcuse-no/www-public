@@ -101,7 +101,16 @@ square format, no text
 assets/images/banners/spot-{frame}-{concept}.webp
 ```
 
-Examples: `spot-struktur-roller.webp`, `spot-identitet-verdier.webp`
+Naming convention uses kebab-case concepts from the Spot Illustration Inventory table above:
+
+| Frame | Spot 1 | Spot 2 | Spot 3 | Spot 4 |
+|-------|--------|--------|--------|--------|
+| Struktur | `spot-struktur-roller.webp` | `spot-struktur-mal-og-koordinering.webp` | `spot-struktur-prosesser-og-regler.webp` | `spot-struktur-hvorfor-struktur-betyr-noe.webp` |
+| Mennesker | `spot-mennesker-tilhorighet.webp` | `spot-mennesker-mestring.webp` | `spot-mennesker-autonomi.webp` | `spot-mennesker-hvorfor-mennesker-betyr-noe.webp` |
+| Påvirkning | `spot-pavirkning-makt.webp` | `spot-pavirkning-nettverk.webp` | `spot-pavirkning-interesser.webp` | `spot-pavirkning-hvorfor-pavirkning-betyr-noe.webp` |
+| Identitet | `spot-identitet-verdier.webp` | `spot-identitet-ritualer.webp` | `spot-identitet-fortelling.webp` | `spot-identitet-lederverdi.webp` |
+
+Note: Påvirkning uses ASCII-safe `pavirkning` (without å) in filenames to match existing asset conventions.
 
 ### Prompting rules
 
