@@ -26,6 +26,29 @@
 
 ## Image Types & Style Guidelines
 
+## Illustration Tier System
+
+All pages use a **uniform 4-tier taxonomy** for inline images. This applies to articles, frames, benefits, products, steps, and future page types.
+
+| Tier | Size | Purpose | Style | File Size Target |
+|------|------|---------|-------|-----------------|
+| **T1** | 3840×2160 (4K) | Hero banners, page entry | Style 1 or 2 (atmospheric) | ≤500KB |
+| **T2** | ~800px wide | Framework overviews, multi-element models | Style 3 (infographic, relational) | ≤150KB |
+| **T3** | ~400px wide | Section spots, individual elements | Style 3 (single concept) | ≤80KB |
+| **T4** | ~80px square | Challenge cards, list items, micro concepts | Style 3 iconic variant | ≤30KB |
+
+**Naming convention:** `{page-id}-{tier}-{concept}.webp`
+
+Example: `tillit-t2-four-pillars.webp`, `usikkerhet-t4-silo-thinking.webp`
+
+**File placement:** All images in `assets/images/banners/`
+
+See `.specs/illustration-system/README.md` for per-page inventory and CSS treatment.
+
+---
+
+## Image Types & Style Guidelines
+
 There are **4 distinct illustration styles** in the No Excuse image library. Each has a specific template and use case.
 
 ---

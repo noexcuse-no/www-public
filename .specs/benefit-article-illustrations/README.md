@@ -1,13 +1,21 @@
 # Benefit Article Illustrations — Feature Specification
 
 > Created: 2026-06-01
-> Status: Draft
+> Status: Ready
+> Scope: Expanded from 4 to 52 images via uniform 4-tier system
 
 ## Problem / Goal
 
 The four benefit articles (`/tillit/`, `/generativ-ki/`, `/usikkerhet/`, `/forankring/`) currently have hero banner images but **no spot illustrations in the article body**. The content is text-only after the hero, making long articles harder to scan and less visually engaging. The four frame articles (`/struktur/`, `/mennesker/`, `/påvirkning/`, `/identitet/`) already use section illustrations for hovedelementer and utfordringer — the benefit articles should have equivalent visual support.
 
-Goal: Create 1 original spot illustration per benefit article (4 total) placed at a key transition point in the body to break up text, aid comprehension, and reinforce the article's core argument.
+Goal: Apply the **Uniform Illustration System** (see `.specs/illustration-system/README.md`) to create 52 images across all four benefit articles: T2 framework overviews, T3 section spots for individual elements, and T4 micro icons for challenge cards.
+
+## System Reference
+
+This spec follows the **4-tier taxonomy** defined in `.specs/illustration-system/README.md`:
+- **T2 (Framework)**: ~800px, multi-element models
+- **T3 (Section)**: ~400px, individual concepts
+- **T4 (Micro)**: ~80px, challenge card icons
 
 ---
 
@@ -15,17 +23,76 @@ Goal: Create 1 original spot illustration per benefit article (4 total) placed a
 
 ### Files to create/modify
 
+**Tillit (9 images)**
+| File | Tier | Change |
+|------|------|--------|
+| `assets/images/banners/tillit-t2-four-pillars.webp` | T2 | Framework overview of 4 pillars |
+| `assets/images/banners/tillit-t3-psychological-safety.webp` | T3 | Psychological safety spot |
+| `assets/images/banners/tillit-t3-servant-leadership.webp` | T3 | Servant leadership spot |
+| `assets/images/banners/tillit-t3-trust-system.webp` | T3 | Trust as system spot |
+| `assets/images/banners/tillit-t3-autonomy.webp` | T3 | Autonomy as driver spot |
+| `assets/images/banners/tillit-t4-hierarchical-blindness.webp` | T4 | Challenge: hierarchical blindness |
+| `assets/images/banners/tillit-t4-info-asymmetry.webp` | T4 | Challenge: information asymmetry |
+| `assets/images/banners/tillit-t4-historical-baggage.webp` | T4 | Challenge: historical baggage |
+| `assets/images/banners/tillit-t4-inconsistent-followup.webp` | T4 | Challenge: inconsistent follow-up |
+| `_pages/ledelse_tillit.md` | — | Add T2 after intro, T3 in each info-box, T4 in challenge cards |
+
+**GenKI (13 images)**
+| File | Tier | Change |
+|------|------|--------|
+| `assets/images/banners/genki-t2-four-competencies.webp` | T2 | Framework overview |
+| `assets/images/banners/genki-t3-question-formulation.webp` | T3 | Formulate questions |
+| `assets/images/banners/genki-t3-critical-evaluation.webp` | T3 | Evaluate output critically |
+| `assets/images/banners/genki-t3-human-integration.webp` | T3 | Integrate in human processes |
+| `assets/images/banners/genki-t3-accountability.webp` | T3 | Maintain accountability |
+| `assets/images/banners/genki-t3-epistemic-humility.webp` | T3 | Epistemic humility |
+| `assets/images/banners/genki-t3-precision.webp` | T3 | Precision of intention |
+| `assets/images/banners/genki-t3-iteration.webp` | T3 | Iterative improvement |
+| `assets/images/banners/genki-t3-calibration.webp` | T3 | Calibration |
+| `assets/images/banners/genki-t4-no-human-review.webp` | T4 | Red flag: no human review |
+| `assets/images/banners/genki-t4-ki-said-it.webp` | T4 | Red flag: "KI said it" |
+| `assets/images/banners/genki-t4-quantity-over-quality.webp` | T4 | Red flag: quantity over quality |
+| `assets/images/banners/genki-t4-faster-less-accurate.webp` | T4 | Red flag: faster but less accurate |
+| `_pages/ledelse_generativ-ki.md` | — | Add T2 after intro, T3 in each info-box, T4 in red flag cards |
+
+**Usikkerhet (20 images)**
+| File | Tier | Change |
+|------|------|--------|
+| `assets/images/banners/usikkerhet-t2-logan-stages.webp` | T2 | Logan 5 stages as ladder |
+| `assets/images/banners/usikkerhet-t2-kotter-steps.webp` | T2 | Kotter 8 steps as flow |
+| `assets/images/banners/usikkerhet-t3-stage-1.webp` | T3 | Stage 1: "Livet suger" |
+| `assets/images/banners/usikkerhet-t3-stage-2.webp` | T3 | Stage 2: "Mitt liv suger" |
+| `assets/images/banners/usikkerhet-t3-stage-3.webp` | T3 | Stage 3: "Jeg er great" |
+| `assets/images/banners/usikkerhet-t3-stage-4.webp` | T3 | Stage 4: "Vi er great" |
+| `assets/images/banners/usikkerhet-t3-stage-5.webp` | T3 | Stage 5: "Livet er great" |
+| `assets/images/banners/usikkerhet-t3-kotter-1.webp` | T3 | Kotter step 1 |
+| ... | ... | ... (steps 2–8 follow same pattern) |
+| `assets/images/banners/usikkerhet-t4-values-practice-mismatch.webp` | T4 | Challenge: values/practice mismatch |
+| `assets/images/banners/usikkerhet-t4-tacit-knowledge.webp` | T4 | Challenge: tacit knowledge |
+| `assets/images/banners/usikkerhet-t4-silo-thinking.webp` | T4 | Challenge: silo thinking |
+| `assets/images/banners/usikkerhet-t4-always-done-this-way.webp` | T4 | Challenge: "always done this way" |
+| `assets/images/banners/usikkerhet-t4-structural-uncertainty.webp` | T4 | Challenge: structural uncertainty |
+| `_pages/ledelse_usikkerhet.md` | — | Add T2 frameworks, T3 in each stage/step, T4 in challenge cards |
+
+**Forankring (10 images)**
+| File | Tier | Change |
+|------|------|--------|
+| `assets/images/banners/forankring-t2-five-dimensions.webp` | T2 | Framework overview |
+| `assets/images/banners/forankring-t3-formal-vs-real-power.webp` | T3 | Dimension 1 |
+| `assets/images/banners/forankring-t3-interests.webp` | T3 | Dimension 2 |
+| `assets/images/banners/forankring-t3-bias.webp` | T3 | Dimension 3 |
+| `assets/images/banners/forankring-t3-conflict.webp` | T3 | Dimension 4 |
+| `assets/images/banners/forankring-t3-culture.webp` | T3 | Dimension 5 |
+| `assets/images/banners/forankring-t4-confirmation.webp` | T4 | Fallacy: confirmation bias |
+| `assets/images/banners/forankring-t4-anchoring.webp` | T4 | Fallacy: anchoring |
+| `assets/images/banners/forankring-t4-sunk-cost.webp` | T4 | Fallacy: sunk cost |
+| `assets/images/banners/forankring-t4-overconfidence.webp` | T4 | Fallacy: overconfidence |
+| `_pages/ledelse_forankring.md` | — | Add T2 after intro, T3 in each info-box, T4 in fallacy cards |
+
+**CSS**
 | File | Change |
 |------|--------|
-| `assets/images/banners/benefit-tillit-spot.webp` | New spot illustration for Tillit article |
-| `assets/images/banners/benefit-genki-spot.webp` | New spot illustration for GenKI article |
-| `assets/images/banners/benefit-usikkerhet-spot.webp` | New spot illustration for Usikkerhet article |
-| `assets/images/banners/benefit-forankring-spot.webp` | New spot illustration for Forankring article |
-| `_pages/ledelse_tillit.md` | Add spot illustration after the "Hvorfor tillit er ledelsens valuta" section |
-| `_pages/ledelse_generativ-ki.md` | Add spot illustration after the "Organisasjonens rolle" section |
-| `_pages/ledelse_usikkerhet.md` | Add spot illustration after the "Teateret i usikkerhet" section |
-| `_pages/ledelse_forankring.md` | Add spot illustration after the introduction paragraph |
-| `assets/css/benefit-illustrations.css` | New CSS module for benefit spot illustration styling (or add to existing module) |
+| `assets/css/illustrations.css` | New CSS module for T2/T3/T4 styling (follows `.specs/illustration-system`) |
 
 ### Files unchanged
 
