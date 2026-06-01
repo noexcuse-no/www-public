@@ -24,10 +24,10 @@ Completed items belong in `CHANGELOG.md` only.
 | R15 | Values illustrations — 3 original value card illustrations for Om Oss | Planned | — |
 | FF5 | Three-step pages for Ledelse 60:2 | Planned | FF6 |
 | FF6 | Multi-product support | Planned | Q7 |
-| N4 | Identitet: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Planned | — |
-| N5 | Struktur: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Planned | — |
-| N6 | Mennesker: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Planned | — |
-| N7 | Påvirkning: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Planned | — |
+| N4 | Identitet: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Done | — |
+| N5 | Struktur: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Done | — |
+| N6 | Mennesker: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Done | — |
+| N7 | Påvirkning: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Done | — |
 | N1 | Triader article (order: 2nd) | Done | — |
 | A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Done | — |
 | N2 | Makt article (order: 1st) | Done | — |

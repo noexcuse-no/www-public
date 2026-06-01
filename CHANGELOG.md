@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **S0 — Perspektiv layout null sort error**: `_layouts/perspektiv.html` referenced `site.frames` (defunct collection, removed during A1 topic consolidation). Changed to `site.topics | where: "category", "frame" | sort: "id"` — fixes GitHub Pages build failure with `Cannot sort a null object`
 
 ### Added
+- **N4-N7 — Frame spot illustration wiring**: Added `show_spots: true` and explicit `spot_image` fields to all four frame pages (`_pages/struktur.md`, `_pages/mennesker.md`, `_pages/påvirkning.md`, `_pages/identitet.md`). Each frame now references 4 concept-named spot illustrations (3 elements + 1 leader_value) from `assets/images/banners/spot-{frame}-{concept}.webp`. Layout `_layouts/perspektiv.html` reads these directly — no computed filenames.
+
+### Added
 - **A1.1 — Topic consolidation**: `_config.yml` registers `_topics/` collection (output:false); 11 topic files created (4 frames, 4 benefits, 3 steps); `_frames/` directory deleted; `_includes/card.html` created for 3 card variants; `_products/ledelse-60-2.md` frontmatter cleaned; `_pages/om_metode.md` and `_pages/ledelse_60-2.md` migrated to card include
 - **A1.2 — Hero unification**: `_includes/hero.html` created with dual-source support (page frontmatter + include params); `assets/css/components/hero.css` created with unified `.hero` class; all 8 hardcoded hero pages migrated to `{% include hero.html %}`; `_layouts/perspektiv.html` updated to use hero include; old hero CSS removed from `article.css`, `about.css`, `products.css`, `styles-dark.css`
 - **A1.3 — Card CSS**: `assets/css/components/card.css` created with `.card-grid`, `.card` base component, category variants (`.card--frame`, `.card--benefit`, `.card--numbered`), image/content/badge/link styling, `--card-accent` custom property, dark mode, responsive; linked from `_includes/styles.html`
