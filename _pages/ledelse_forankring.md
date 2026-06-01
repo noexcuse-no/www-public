@@ -129,18 +129,22 @@ json_ld:
     
     <div class="grid grid--2 challenges-grid stagger-parent">
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/forankring-t4-confirmation.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Bekreftelsesbias</h4>
             <p>Vi søker informasjon som støtter det vi allerede tror, og ignorerer det som utfordrer det. Beslutninger tas basert på ønsketenkning.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/forankring-t4-anchoring.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Ankerfeste</h4>
             <p>Det første tallet eller forslaget som presenteres får uforholdsmessig stor innflytelse. «Vi har alltid gjort det sånn» blir argumentet.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/forankring-t4-sunk-cost.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Sunk cost-fallacy</h4>
             <p>Vi fortsetter med feil investeringer fordi vi allerede har brukt så mye. Å kutte tap oppfattes som å innrømme feil.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/forankring-t4-overconfidence.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Overdreven selvtillit</h4>
             <p>Vi tror vi forstår mer enn vi faktisk gjør. «This time is different» blir gjentatt til tross for klare bevis på motsatt.</p>
         </div>
