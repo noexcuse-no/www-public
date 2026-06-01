@@ -39,9 +39,7 @@ layout: page
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
   <h2>De tre hovedelementene</h2>
 
-  {% assign spot_names = "0,1,2" | split: "," %}
   {% for element in frame.elements %}
-  {% assign spot_index = spot_names[forloop.index0] %}
   <div class="perspektiv-element animate-on-scroll fade-in-up">
     {% assign spot_num = forloop.index0 | modulo: 2 %}
     {% assign float_class = "" %}
@@ -51,9 +49,8 @@ layout: page
       {% assign float_class = "argument-illustration argument-illustration--right" %}
     {% endif %}
 
-    {% assign img_name = 'spot-' | append: frame.id | append: '-' | append: spot_index %}
-    {% if page.show_spots %}
-    <img src="{{ '/assets/images/banners/' | append: img_name | append: '.webp' | relative_url }}"
+    {% if page.show_spots and element.spot_image %}
+    <img src="{{ element.spot_image | relative_url }}"
          alt="Illustrasjon: {{ element.title }}"
          class="{{ float_class }}"
          loading="lazy">
@@ -76,9 +73,8 @@ layout: page
 
 <!-- Leader Value with spot illustration -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
-  {% if page.show_spots %}
-  {% assign leader_img = 'spot-' | append: frame.id | append: '-3' %}
-  <img src="{{ '/assets/images/banners/' | append: leader_img | append: '.webp' | relative_url }}"
+  {% if page.show_spots and frame.leader_value.spot_image %}
+  <img src="{{ frame.leader_value.spot_image | relative_url }}"
        alt="Illustrasjon: {{ frame.leader_value.heading }}"
        class="argument-illustration argument-illustration--right"
        loading="lazy">
