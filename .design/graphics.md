@@ -45,7 +45,7 @@ There are **4 distinct illustration styles** in the No Excuse image library. Eac
 Three abstract human silhouettes seen from behind [setting],
 bright white/light gray background, cool Nordic color palette with
 azure (#F0FFFF) accent in the light, minimalist Nordic style,
-16:9 aspect ratio, no text, no faces visible
+16:9 aspect ratio, high resolution 4K, no text, no faces visible
 ```
 
 **Documented prompts:**
@@ -75,7 +75,7 @@ azure (#F0FFFF) accent in the light, minimalist Nordic style,
 Professional abstract illustration for [type], clean minimal Scandinavian style,
 showing [subject], simple shapes, clean lines, geometric shapes, [color] and
 neutral tones, clean white background, symbolic imagery only, no text,
-16:9 horizontal format
+16:9 horizontal format, high resolution 4K
 ```
 
 **Documented prompts:**
@@ -90,6 +90,9 @@ neutral tones, clean white background, symbolic imagery only, no text,
 | `step-talk.png` | "Professional abstract illustration for process step banner, clean minimal Scandinavian style, showing abstract representation of initial consultation dialogue, two geometric shapes in conversation representing discussion and exploration, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
 | `step-interview.png` | "Professional abstract illustration for process step banner, clean minimal Scandinavian style, showing abstract representation of structured two-hour diagnostic interview, geometric shapes arranged in organized pattern suggesting systematic questioning and focused dialogue, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
 | `step-report.png` | "Professional abstract illustration for process step banner, clean minimal Scandinavian style, showing abstract representation of insights delivery and actionable recommendations, geometric shapes suggesting transformation from data to clarity, azure blue and neutral tones, no text, symbolic imagery only, 16:9 horizontal format" |
+| `hero-triade.webp` | "Professional abstract illustration for leadership article about triangular relationships and team dynamics, clean minimal Scandinavian style, showing three interlocking geometric nodes connected by flowing lines suggesting resilience and structural stability, azure blue (#F0FFFF) and neutral gray tones, clean white background, symbolic imagery only, no text, 16:9 horizontal format, high resolution 4K" |
+| `hero-makt.webp` | "Professional abstract illustration for leadership article about power and service balance, clean minimal Scandinavian style, showing two opposing forces in dynamic equilibrium, a structured geometric form and an open welcoming form balanced on a central axis, azure blue (#F0FFFF) and neutral gray tones, clean white background, symbolic imagery only, no text, 16:9 horizontal format, high resolution 4K" |
+| `hero-perspektiv.webp` | "Professional abstract illustration for leadership article about multiframe thinking and multiple perspectives, clean minimal Scandinavian style, showing four overlapping transparent geometric lenses or prisms splitting a single beam of light into multiple paths, azure blue (#F0FFFF) and neutral gray tones, clean white background, symbolic imagery only, no text, 16:9 horizontal format, high resolution 4K" |
 
 ---
 
@@ -106,7 +109,8 @@ neutral tones, clean white background, symbolic imagery only, no text,
 **Prompt template:**
 ```
 Clean minimal infographic showing [subject], Scandinavian design [style],
-[color] [palette/tones], [modern corporate/professional] illustration, no text
+[color] [palette/tones], [modern corporate/professional] illustration, no text,
+high resolution
 ```
 
 **Documented prompts:**
@@ -349,8 +353,8 @@ When optimizing images for web delivery, follow these dimensions and quality set
 
 | Category | Path Pattern | Max Dimensions | Quality | Notes |
 |----------|--------------|-----------------|---------|-------|
-| Hero banners | `assets/images/hero-*.png` | 1920×1080 | 85 | Large landing page hero images |
-| Frame/benefit/step banners | `assets/images/banners/*.png` | 1920×1080 | 85 | 16:9 landscape format |
+| Hero banners | `assets/images/hero-*.png` | 3840×2160 | 85 | Viewport-filling heroes, 4K for retina/ultrawide |
+| Frame/benefit/step banners | `assets/images/banners/*.png` | 1920×1080 | 85 | 16:9 landscape format, non-viewport-filling |
 | Icons | `assets/images/icons/*.png` | 512×512 | 85 | Small UI elements |
 | Logos | `assets/images/*logo*.png` | 400×400 | 85 | Fixed display size 100×100px |
 | Profile photos | `assets/images/*.png` (profile) | 400×400 | 85 | Displayed at 100×100px |
