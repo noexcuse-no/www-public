@@ -54,6 +54,12 @@
     --footer-text-dark: var(--primary-azure);
 
     /* ========================================
+       Heading Colors
+       ======================================== */
+    --heading-color-light: var(--text-color-light);
+    --heading-color-dark: var(--text-color-dark);
+
+    /* ========================================
        Elevation / Shadows
        ======================================== */
     --shadow-xs: 0 2px 4px rgba(0, 0, 0, 0.08);

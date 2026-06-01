@@ -266,20 +266,20 @@
 }
 
 /* Dark mode overrides */
-[data-theme="dark"] .tag-cloud-item {
+.dark-mode .tag-cloud-item {
     background: var(--box-background-dark);
     border-color: var(--surface-tag-bg-dark);
 }
 
-[data-theme="dark"] .tag-name {
+.dark-mode .tag-name {
     color: var(--text-color-dark);
 }
 
-[data-theme="dark"] .tag-badge {
+.dark-mode .tag-badge {
     background: var(--surface-tag-bg-dark);
     color: var(--primary-accent);
 }
 
-[data-theme="dark"] .tag-badge:hover {
+.dark-mode .tag-badge:hover {
     background: var(--surface-hover-dark);
 }

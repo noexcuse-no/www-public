@@ -187,6 +187,12 @@ a:hover {
     box-shadow: var(--box-shadow-dark);
 }
 
+/* Cases dark mode */
+.case {
+    background-color: var(--box-background-dark);
+    color: var(--text-color-dark);
+}
+
 .value-card:hover {
     box-shadow: var(--box-shadow-hover-dark);
 }
