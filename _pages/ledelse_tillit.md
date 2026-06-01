@@ -91,6 +91,9 @@ json_ld:
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>1. Psykologisk trygghet</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/tillit-t3-psychological-safety.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en støttende sirkel som symboliserer psykologisk trygghet">
+        </div>
         <p>Amy Edmondson fra Harvard definerer psykologisk trygghet som «a shared belief held by members of a team that the team is safe for interpersonal risk taking.»[^edmondson2019] I praksis betyr det: folk tør si ifra når noe er galt, tør komme med nye ideer, tør innrømme feil.</p>
         <p><strong>Tegn på høy psykologisk trygghet:</strong> Feil diskuteres som læringsmuligheter. Uenighet er forventet og velkomment. Ledere spør «hvordan kan jeg hjelpe?» heller enn «hvem har skylden?»</p>
         <p><strong>Tegn på lav psykologisk trygghet:</strong> Informasjon holdes tilbake. Kritikk gis aldri direkte. Folk sier «det er bare å vente og se» heller enn å utfordre.</p>
@@ -98,6 +101,9 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>2. Tjenende lederskap</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/tillit-t3-servant-leadership.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en hjelpende hånd som symboliserer tjenende lederskap">
+        </div>
         <p>Greenleaf mente at en leder først og fremst bør spørre seg: «Hvordan kan jeg hjelpe andre til å vokse og yte sitt beste?» [^greenleaf1970] Dette krever en annen type ydmykhet enn tradisjonelt topplederideal.</p>
         <p><strong>Tegn på tjenende lederskap:</strong> Ledere lytter før de snakker. De anerkjenner andres bidrag. De setter teamets suksess over egen ære.</p>
         <p><strong>Tegn på selv-opptatt lederskap:</strong> Beslutninger tas for å styrke egen posisjon. Suksesser tillegges egen innsats. Feedback gis sjelden eller aldri.</p>
@@ -105,6 +111,9 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>3. Tillit som system</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/tillit-t3-trust-system.webp' | relative_url }}" alt="Abstrakt figurativ skisse av sammenkoblede noder som symboliserer tillit som system">
+        </div>
         <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.[^dirks2009] God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor. Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen uklarhet som fører til at oppgaver faller mellom stoler og tillit blir satt på prøve.</p>
         <p><strong>Tegn på tillit som system:</strong> Løfter holdes. Forventninger er tydelige. Folk tar ansvar for egne handlinger.</p>
         <p><strong>Tegn på tillitsbrist:</strong> Løfter brytes uten forklaring. Folk dekker seg bak prosedyrer. «Det var ikke min avdeling» blir unnskyldningen.</p>
@@ -112,6 +121,9 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>4. Autonomi som tillitsdriver</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/tillit-t3-autonomy.webp' | relative_url }}" alt="Abstrakt figurativ skisse av autonomi innenfor struktur som symboliserer tillitsbasert frihet">
+        </div>
         <p>Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre motivatorer (bonus, straff) kan drive kortvarig atferd, men varig engasjement krever indre motivasjon: autonomi, mestring og tilhørighet. Når ledere stoler på at ansatte kan bruke sunn fornuft, blir kontroll unødvendig — og byråkratiet mister sin begrunnelse.</p>
         <p>Autonomi er ikke frihet fra struktur — det er frihet <em>innenfor</em> struktur. Tydelige roller og forventninger muliggjør tillit, de svekker den ikke.</p>
         <p><strong>Tegn på autonomi som tillitsdriver:</strong> Ansatte tar initiativ uten å vente på godkjenning. Ledere delegerer både ansvar og autoritet. Feil analyseres for læring, ikke for straff.</p>
