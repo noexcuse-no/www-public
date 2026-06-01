@@ -155,18 +155,22 @@ json_ld:
     
     <div class="grid grid--2 challenges-grid stagger-parent">
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/genki-t4-no-human-review.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>KI-implementert uten menneskelig review</h4>
             <p>Output fra modellen går direkte til kunde eller beslutning uten at et menneske har sett på det.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/genki-t4-ki-said-it.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>«KI sa det»</h4>
             <p>Brukt som begrunnelse for beslutninger. Modellen blir autoritet, ikke verktøy.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/genki-t4-quantity-over-quality.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Kvantitet over kvalitet</h4>
             <p>Organisasjonen måler hvor mye KI som brukes, ikke om det faktisk fungerer. Høyere volum maskerer lavere verdi.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/genki-t4-faster-less-accurate.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Raskere, men mindre nøyaktig</h4>
             <p>Team produserer mer output med KI, men feilraten øker. Ingen har lagt merke til det fordi ingen måler det.</p>
         </div>
