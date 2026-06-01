@@ -1,5 +1,8 @@
 ---
-id: "mennesker"
+class: frame
+layout: perspektiv
+permalink: /mennesker/
+frame_id: "mennesker"
 category: "frame"
 title: "Menneskeperspektivet i ledelse"
 description: "Lær hvordan menneskeperspektivet kan hjelpe ledergruppen å bygge tillit, motivere medarbeidere og skape en kultur der mennesker trives og vokser."

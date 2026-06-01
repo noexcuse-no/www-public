@@ -1,5 +1,8 @@
 ---
-id: "identitet"
+class: frame
+layout: perspektiv
+permalink: /identitet/
+frame_id: "identitet"
 category: "frame"
 title: "Identitetsperspektivet i ledelse"
 description: "Lær hvordan identitetsperspektivet kan hjelpe ledergruppen å forstå organisasjonskultur, meningsskaping og hvordan verdier faktisk lever — eller bare henger på veggen."
@@ -86,7 +89,7 @@ cta:
   heading: "Få kartlagt ledergruppens kulturelle modenhet"
   body: |
     Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gjennomfør en uforpliktende samtale for å lære mer om metoden.
-  booking_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  booking_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthensted"
 
 about:
   heading: "Det teoretiske grunnlaget"

@@ -12,7 +12,8 @@ layout: default
     </div>
 </section>
 
-{% assign tagged_articles = site.pages | where_exp: "p", "p.tags contains page.tag" %}
+{% assign articles = site.pages | where: "class", "article" %}
+{% assign tagged_articles = articles | where_exp: "p", "p.tags contains page.tag" %}
 
 <section class="frame-section animate-on-scroll fade-in-up">
     {% if tagged_articles.size == 0 %}

@@ -1,8 +1,9 @@
-{% if site.partners.size > 0 %}
+{% assign partners = site.pages | where: "class", "partner" | where: "published", true %}
+{% if partners.size > 0 %}
 <section id="partners" class="partners section--compact container--wide">
     <h2>Våre samarbeidspartnere</h2>
     <div class="partners-grid">
-        {% for partner in site.partners %}
+        {% for partner in partners %}
         <a href="{{ partner.url }}" class="partner-card" target="_blank" rel="noopener">
             <img src="{{ partner.image | relative_url }}" alt="{{ partner.name }}">
             <span class="partner-name">{{ partner.name }}</span>

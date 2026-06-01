@@ -4,10 +4,10 @@ layout: page
 
 <link rel="stylesheet" href="{{ '/assets/css/perspektiv-styles.css' | relative_url }}">
 
+{% assign frame = page %}
 {% assign frame_id = page.frame_id %}
-{% assign frame = site.topics | where: "category", "frame" | where: "id", frame_id | first %}
 
-{% assign all_frames = site.topics | where: "category", "frame" | sort: "id" %}
+{% assign all_frames = site.pages | where: "class", "frame" | sort: "id" %}
 {% assign current_index = nil %}
 {% for f in all_frames %}
   {% if f.id == frame_id %}

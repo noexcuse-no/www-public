@@ -1,4 +1,5 @@
 ---
+class: article
 layout: page
 title: "Makt eller tjeneste — Hvor sitter din ledergruppe på spekteret?"
 description: "Organisasjoner trenger både makt og tjeneste. Lær hvorfor effektive ledelseskulturer bevisst balanserer begge."

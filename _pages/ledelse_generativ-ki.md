@@ -1,8 +1,12 @@
 ---
+class: benefit
 layout: page
+category: benefit
 title: "Generativ KI-ledelse — Hvordan lede ansatte som styrer AI-modeller"
 description: "Lær hvordan å utvikle ledelseskompetanse for AI-æraen. KI endrer arbeidsmarkedet — de som lærer å lede ansatte som styrer KI-modeller, vinner."
 permalink: /generativ-ki/
+banner: "assets/images/banners/benefit-ai.webp"
+url: "/generativ-ki/"
 hero:
   image: /assets/images/banners/benefit-ai.webp
   alt: "KI-ledelse i praksis"

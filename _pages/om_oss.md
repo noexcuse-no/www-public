@@ -1,4 +1,5 @@
 ---
+class: article
 layout: page
 title: "Om oss"
 permalink: /om-oss/

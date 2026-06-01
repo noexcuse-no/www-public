@@ -2,18 +2,12 @@ kramdown:
   footnote_backlink: "↩"
 
 collections:
-  profiles:
-    output: true
-  products:
-    output: true
-  cases:
-    output: true
-  partners:
-    output: true
   pages:
     output: true
     permalink: /:path/
-  topics:
+  cases:
+    output: true
+  partners:
     output: true
   tags:
     output: true
@@ -26,24 +20,7 @@ defaults:
     values:
       layout: page
       lang: no
-  - scope:
-      path: ""
-      type: profiles
-    values:
-      layout: page
-      lang: no
-  - scope:
-      path: ""
-      type: products
-    values:
-      layout: page
-      lang: no
-  - scope:
-      path: ""
-      type: topics
-    values:
-      layout: page
-      lang: no
+      published: true
   - scope:
       path: ""
       type: tags

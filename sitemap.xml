@@ -10,29 +10,11 @@ permalink: /sitemap.xml
     <priority>1.0</priority>
   </url>
   {% for page in site.pages %}
-  {% if page.permalink and page.permalink != "/sitemap.xml" %}
+  {% if page.permalink and page.permalink != "/sitemap.xml" and page.published != false %}
   <url>
     <loc>https://noexcuse.no{{ page.permalink }}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  {% endif %}
-  {% endfor %}
-  {% for product in site.products %}
-  {% if product.url %}
-  <url>
-    <loc>https://noexcuse.no{{ product.url }}</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  {% endif %}
-  {% endfor %}
-  {% for profile in site.profiles %}
-  {% if profile.permalink %}
-  <url>
-    <loc>https://noexcuse.no{{ profile.permalink }}</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   {% endif %}
   {% endfor %}

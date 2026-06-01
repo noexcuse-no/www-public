@@ -1,5 +1,8 @@
 ---
+class: profile
+layout: page
 title: "Daglig leder"
+permalink: /dagfinn/
 name: "Dagfinn Bang-Johansen"
 image: "assets/images/dagfinn.webp"
 phone: "+4790820258"

@@ -1,5 +1,6 @@
 <section id="profiles" class="profiles section container">
-    {% for profile in site.profiles %}
+    {% assign profiles = site.pages | where: "class", "profile" | where: "published", true %}
+    {% for profile in profiles %}
     {% if include.tags %}
         {% assign filter_tags = include.tags | split: "," %}
         {% assign matches = false %}

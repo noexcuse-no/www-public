@@ -1,5 +1,6 @@
 <section id="cases" class="cases section container">
-    {% for case in site.cases %}
+    {% assign cases = site.pages | where: "class", "case" | where: "published", true %}
+    {% for case in cases %}
     <div class="case">
         {% if case.image %}
         <img src="{{ site.baseurl }}{{ case.image }}" alt="" class="case-image" aria-hidden="true">
