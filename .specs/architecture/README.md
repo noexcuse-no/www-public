@@ -11,18 +11,20 @@ This document describes the architectural patterns, site structure, and developm
 
 ```
 www-public/
-├── _pages/                    # Page content collection
-│   ├── ledelse-60-2.md       # Product landing page
-│   ├── om-oss.md             # Company page
-│   └── vitenskapelig-grunnlag.md  # Methodology page
+├── _pages/                    # All content pages (unified collection)
+│   ├── ledelse-60-2.md       # Product page (class: product)
+│   ├── dagfinn.md            # Profile page (class: profile)
+│   ├── struktur.md           # Frame page (class: frame)
+│   ├── generativ-ki.md       # Article page (class: benefit)
+│   ├── om-oss.md             # Article page (class: article)
+│   └── step-talk.md          # Process step (class: step)
 ├── _layouts/                  # Layout templates
 │   ├── default.html          # Standard page layout
-│   └── landing.html          # Generic landing page layout
+│   └── perspektiv.html       # Frame perspective layout
 ├── _includes/                 # Reusable HTML partials
-├── _products/                 # Product data (frontmatter)
-├── _profiles/                 # Team member profiles
-├── _cases/                    # Case studies
-├── _partners/                 # Partner organizations
+├── _cases/                    # Case studies (future: migrate to _pages/)
+├── _partners/                 # Partner organizations (future: migrate to _pages/)
+├── _tags/                     # Tag index pages
 ├── _data/                     # Site-wide data (metadata.yml)
 ├── assets/                    # Static assets
 │   ├── css/                  # Stylesheets
@@ -39,32 +41,35 @@ www-public/
 
 ### Collections
 
-Collections are defined in `_config.yml` and output as static pages:
+All content lives in the unified `_pages/` collection with a `class` frontmatter property that declares the entity type:
 
 ```yaml
 collections:
-  profiles:
+  pages:
     output: true
-  products:
-    output: true
+    permalink: /:path/
   cases:
     output: true
   partners:
     output: true
-  pages:                      # Pages collection (custom)
+  tags:
     output: true
-    permalink: /:path/
+    permalink: /emne/:path/
 ```
 
 ### URL Patterns
 
-| Collection | URL Pattern | Example |
-|------------|-------------|---------|
-| `_pages/` | `/:filename/` | `/ledelse-60-2/` |
-| `_products/` | `/products/:name/` | `/products/ledelse-60-2/` |
-| `_profiles/` | `/profiles/:name/` | `/profiles/dagfinn/` |
-| `_cases/` | `/cases/:title/` | `/cases/teknologiselskap/` |
-| `_partners/` | `/partners/:name/` | `/partners/egene/` |
+All URLs are flat and explicit, set via `permalink` in each file:
+
+| Page Type | File | URL | Class |
+|-----------|------|-----|-------|
+| Product | `_pages/ledelse-60-2.md` | `/ledelse-60-2/` | `product` |
+| Profile | `_pages/dagfinn.md` | `/dagfinn/` | `profile` |
+| Frame | `_pages/struktur.md` | `/struktur/` | `frame` |
+| Article | `_pages/om-oss.md` | `/om-oss/` | `article` |
+| Benefit | `_pages/generativ-ki.md` | `/generativ-ki/` | `benefit` |
+| Step | `_pages/step-talk.md` | `/samtale/` | `step` |
+| Tag | `_tags/ledelse.md` | `/emne/ledelse/` | `tag` |
 
 ## Path Handling Rules
 
@@ -130,33 +135,75 @@ Generic landing page layout for product/company pages:
 
 **Note:** Landing layout should NOT hard-code product names or specific content. All content must come from page frontmatter or collections.
 
-## Collections
+## Content Types (Class-Based)
 
-### _pages/ Collection
+All content lives in `_pages/*.md` with a `class` frontmatter property. Use `site.pages | where: "class", "..."` to filter.
 
-Pages are standalone content pages (not tied to a data collection).
+### `class: product`
 
-| File | Purpose | Layout |
-|------|---------|--------|
-| `ledelse-60-2.md` | Product landing page | landing |
-| `om-oss.md` | Company page | default |
-| `vitenskapelig-grunnlag.md` | Scientific methodology page | default |
+Product landing pages with hero, benefits, process steps, and CTAs.
 
-### _products/ Collection
+| Required | Optional |
+|----------|----------|
+| `name` | `benefits`, `process_steps` |
+| `short_description` | `cta_a/b/c`, `story` |
+| `permalink` | `image`, `tags` |
 
-Product data files with structured frontmatter for use in both inline sections and landing pages.
+### `class: profile`
 
-### _profiles/ Collection
+Team member profiles with contact information and bio.
 
-Team member profiles with contact information.
+| Required | Optional |
+|----------|----------|
+| `name` | `linkedin`, `booking_url` |
+| `image` | `tags`, `bio` |
+| `phone`, `email` | |
+| `permalink` | |
 
-### _cases/ Collection
+### `class: frame`
 
-Case studies with results and customer attribution.
+Frame perspective pages (struktur, mennesker, påvirkning, identitet).
 
-### _partners/ Collection
+| Required | Optional |
+|----------|----------|
+| `frame_id` | `challenges`, `questions` |
+| `hero`, `intro` | `about`, `cta` |
+| `elements` | `color_accent` |
+| `permalink` | |
 
-Partner organizations with logos and links.
+### `class: article`
+
+Standard article pages (om-oss, om-metode, makt, triader, perspektiv, etc.).
+
+| Required | Optional |
+|----------|----------|
+| `title` | `tags`, `json_ld` |
+| `permalink` | `citation`, `hero_effect` |
+
+### `class: benefit`
+
+Benefit article pages that also appear as cards on the product page.
+
+| Required | Optional |
+|----------|----------|
+| `category: benefit` | `title`, `description` |
+| `banner` | |
+| `url` | |
+
+### `class: step`
+
+Process step pages that appear as cards on the product page.
+
+| Required | Optional |
+|----------|----------|
+| `category: step` | `title`, `description` |
+| `step_number` | |
+| `banner` | |
+| `url` | |
+
+### `class: case` / `class: partner`
+
+Future content types. When content is added, place in `_pages/` with the appropriate class. Empty `_cases/` and `_partners/` collections remain in `_config.yml` for backward compatibility. See `.specs/a2-unified-pages-architecture/README.md` for migration plan.
 
 ## Modules
 
@@ -202,35 +249,83 @@ box-shadow: var(--box-shadow-light);
 
 ## Frontmatter Schemas
 
-### Product (`_products/*.md`)
+All schemas are for `_pages/*.md` files. Use `class` to declare the entity type.
+
+### Product (`class: product`)
 
 ```yaml
 ---
-name: "Product Name"
-short_description: "Brief description"
-description: "<p>HTML description...</p>"
-booking_url: "https://..."
+class: product
+name: "Ledelse 60:2"
+short_description: "..."
+permalink: /ledelse-60-2/
 image: "assets/images/hero.png"
 tags: "#tag1 #tag2"
+cta_a: { text: "...", title: "...", url: "..." }
 benefits:
   - title: "Benefit title"
-    description: "Benefit description"
-    icon: "assets/images/banners/benefit.png"
+    description: "..."
+    banner: "assets/images/banners/benefit.png"
+    article_url: "/article/"
 process_steps:
   - title: "1. Step title"
-    description: "Step description"
-    icon: "assets/images/banners/step.png"
+    description: "..."
+    banner: "assets/images/banners/step.png"
 story: "Product story..."
 ---
 ```
 
 See `.specs/ledelse-60-2/README.md` for full product schema.
 
-### Page (`_pages/*.md`)
+### Profile (`class: profile`)
 
 ```yaml
 ---
-layout: landing
+class: profile
+name: "Full Name"
+permalink: /profile-name/
+image: "assets/images/profile.png"
+phone: "+4799999999"
+email: "name@noexcuse.no"
+linkedin: "https://..."
+booking_url: "https://..."
+tags: "#tag1 #tag2"
+bio: "Biography text..."
+---
+```
+
+### Frame (`class: frame`)
+
+```yaml
+---
+class: frame
+frame_id: "struktur"
+permalink: /struktur/
+title: "Strukturperspektivet i ledelse"
+hero:
+  banner_image: "assets/images/banners/frame.webp"
+  alt: "..."
+  breadcrumb: "← No Excuse"
+  intro: "..."
+intro:
+  heading: "..."
+  body: "..."
+elements:
+  - title: "..."
+    body: "..."
+    signs:
+      positive: "..."
+      negative: "..."
+color_accent: "#2A4D6E"
+---
+```
+
+### Article (`class: article`)
+
+```yaml
+---
+class: article
+layout: page
 title: "Page Title"
 permalink: /path/
 ---
@@ -261,11 +356,13 @@ All pages must meet WCAG AA standards:
 
 ## Profile Frontmatter
 
-Members of `_profiles/*.md` require all fields:
+Members of `_pages/*.md` with `class: profile`:
 
 ```yaml
 ---
+class: profile
 name: "Full Name"
+permalink: /profile-name/
 image: "assets/images/profile.png"
 phone: "+4799999999"
 email: "name@noexcuse.no"
