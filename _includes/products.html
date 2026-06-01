@@ -11,7 +11,7 @@
             <a href="{{ product.cta_b.url }}" class="product-cta product-cta--spaced" title="{{ product.cta_b.title }}">{{ product.cta_b.text }}</a>
             {% endif %}
         </div>
-        <div class="product-hero-image hero-image">
+        <div class="product-hero-image">
             <img src="{{ product.image | relative_url }}" alt="{{ product.name }} — illustrasjon">
         </div>
     </div>
@@ -21,7 +21,16 @@
             <img src="{{ benefit.banner | relative_url }}" alt="{{ benefit.title }}" class="benefit-banner">
             <h4>{{ benefit.title }}</h4>
             <p>{{ benefit.description }}</p>
-            <a href="{{ benefit.article_url }}" class="product-cta" title="{{ benefit.title }}">Les mer →</a>
+            <a href="{{ benefit.article_url | relative_url }}" class="product-cta" title="{{ benefit.title }}">Les mer →</a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="landing-process-steps">
+        {% for step in product.process_steps %}
+        <div class="process-step">
+            <img src="{{ step.banner | relative_url }}" alt="{{ step.title }}" class="process-banner">
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.description }}</p>
         </div>
         {% endfor %}
     </div>
