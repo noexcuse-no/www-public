@@ -35,7 +35,7 @@ Completed items belong in `CHANGELOG.md` only.
 | P5 | Migrate `_pages/ledelse_*.md` to layout system | Done | A1 |
 | X2 | Dark mode consistency pass | Done | — |
 | F5 | Image generation for N1-N3 | Done | — |
-| F6 | Spot illustration naming cleanup — rename index-based spot images to concept-based names, move to banners/ | Doing | — |
+| F6 | Spot illustration naming cleanup — rename index-based spot images to concept-based names, move to banners/ | Done | — |
 | C1 | Customer case planning & discovery | Blocked | Brainstorming session |
 | C2 | Customer case intake form | Blocked | C1 |
 | C3 | Case presentation design | Blocked | C1, C2 |
