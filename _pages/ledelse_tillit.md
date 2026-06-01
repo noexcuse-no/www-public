@@ -17,6 +17,50 @@ json_ld:
   author:
     type: "Organization"
     name: "No Excuse AS"
+  citation:
+    - "@type": "Book"
+      name: "The Servant as Leader"
+      author: "Robert K. Greenleaf"
+      datePublished: "1970"
+      publisher: "Robert K. Greenleaf Center for Servant Leadership"
+    - "@type": "Article"
+      name: "Servant Leadership: A Meta-analytic Review"
+      author:
+        - "Nathan Eva"
+        - "Mulyadi Robin"
+        - "Sen Sendjaya"
+        - "Dirk van Dierendonck"
+        - "Robert C. Liden"
+      datePublished: "2019"
+      publisher: "Journal of Management"
+      volume: "45"
+      issue: "7"
+      pages: "2818–2853"
+    - "@type": "Book"
+      name: "The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth"
+      author: "Amy C. Edmondson"
+      datePublished: "2019"
+      publisher: "Wiley"
+    - "@type": "Article"
+      name: "Trust in Leadership: Meta-Analytic Findings"
+      author:
+        - "Kurt T. Dirks"
+        - "Donald L. Ferrin"
+      datePublished: "2009"
+      publisher: "Personnel Psychology"
+      volume: "55"
+      issue: "3"
+      pages: "659–689"
+    - "@type": "Article"
+      name: "Why Do So Many Managers Avoid Giving Constructive Feedback?"
+      author:
+        - "Jack Zenger"
+        - "Joseph Folkman"
+      datePublished: "2022"
+      publisher: "Harvard Business Review"
+      volume: "100"
+      issue: "4"
+      pages: "76–83"
   about:
     - type: "Thing"
       name: "Tillit i ledelse"
@@ -31,7 +75,7 @@ json_ld:
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hvorfor tillit er ledelsens valuta</h2>
     <p>Tenk på de beste teamene du har jobbet med. Hva var annerledes der? Sannsynligvis ikke at de hadde bedre verktøy eller flere møter. Det var sannsynligvis måten folk snakket til hverandre — ærlig, direkte, uten frykt for konsekvensene.</p>
-    <p>Robert Greenleaf introduserte begrepet «servant leadership» i 1970.<sup class="citation">[greenleaf1970]</sup> Han argumenterte for at ledere først og fremst bør tjene sine medarbeidere, ikke omvendt. Dette er ikke bare en idealistisk idé — forskning viser at det fungerer. En meta-analyse fra 2019 konkluderer med at servant leadership har «positive effects on employee outcomes including organizational commitment, job satisfaction, performance, and citizenship behavior.»<sup class="citation">[eva2019]</sup></p>
+    <p>Robert Greenleaf introduserte begrepet «servant leadership» i 1970.[^greenleaf1970] Han argumenterte for at ledere først og fremst bør tjene sine medarbeidere, ikke omvendt. Dette er ikke bare en idealistisk idé — forskning viser at det fungerer. En meta-analyse fra 2019 konkluderer med at servant leadership har «positive effects on employee outcomes including organizational commitment, job satisfaction, performance, and citizenship behavior.»[^eva2019]</p>
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
@@ -39,21 +83,21 @@ json_ld:
     
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>1. Psykologisk trygghet</h3>
-        <p>Amy Edmondson fra Harvard definerer psykologisk trygghet som «a shared belief held by members of a team that the team is safe for interpersonal risk taking.»<sup class="citation">[edmondson2019]</sup> I praksis betyr det: folk tør si ifra når noe er galt, tør komme med nye ideer, tør innrømme feil.</p>
+        <p>Amy Edmondson fra Harvard definerer psykologisk trygghet som «a shared belief held by members of a team that the team is safe for interpersonal risk taking.»[^edmondson2019] I praksis betyr det: folk tør si ifra når noe er galt, tør komme med nye ideer, tør innrømme feil.</p>
         <p><strong>Tegn på høy psykologisk trygghet:</strong> Feil diskuteres som læringsmuligheter. Uenighet er forventet og velkomment. Ledere spør «hvordan kan jeg hjelpe?» heller enn «hvem har skylden?»</p>
         <p><strong>Tegn på lav psykologisk trygghet:</strong> Informasjon holdes tilbake. Kritikk gis aldri direkte. Folk sier «det er bare å vente og se» heller enn å utfordre.</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>2. Tjenende lederskap</h3>
-        <p>Greenleaf mente at en leder først og fremst bør spørre seg: «Hvordan kan jeg hjelpe andre til å vokse og yte sitt beste?» <sup class="citation">[greenleaf1970]</sup> Dette krever en annen type ydmykhet enn tradisjonelt topplederideal.</p>
+        <p>Greenleaf mente at en leder først og fremst bør spørre seg: «Hvordan kan jeg hjelpe andre til å vokse og yte sitt beste?» [^greenleaf1970] Dette krever en annen type ydmykhet enn tradisjonelt topplederideal.</p>
         <p><strong>Tegn på tjenende lederskap:</strong> Ledere lytter før de snakker. De anerkjenner andres bidrag. De setter teamets suksess over egen ære.</p>
         <p><strong>Tegn på selv-opptatt lederskap:</strong> Beslutninger tas for å styrke egen posisjon. Suksesser tillegges egen innsats. Feedback gis sjelden eller aldri.</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>3. Tillit som system</h3>
-        <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.<sup class="citation">[dirks2009]</sup> God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor. Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen uklarhet som fører til at oppgaver faller mellom stoler og tillit blir satt på prøve.</p>
+        <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.[^dirks2009] God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor. Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen uklarhet som fører til at oppgaver faller mellom stoler og tillit blir satt på prøve.</p>
         <p><strong>Tegn på tillit som system:</strong> Løfter holdes. Forventninger er tydelige. Folk tar ansvar for egne handlinger.</p>
         <p><strong>Tegn på tillitsbrist:</strong> Løfter brytes uten forklaring. Folk dekker seg bak prosedyrer. «Det var ikke min avdeling» blir unnskyldningen.</p>
     </div>
@@ -69,7 +113,7 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hvorfor de fleste ledere feiler på tillit</h2>
-    <p>De fleste ledere tror de er mer tilgjengelige enn de faktisk er. En undersøkelse viser at 94% av ledere mener de gir constructive feedback, men bare 65% av medarbeidere er enige.<sup class="citation">[zenger2022]</sup> Denne gapen — mellom lederes intensjon og medarbeideres opplevelse — er tillitsproblemet.</p>
+    <p>De fleste ledere tror de er mer tilgjengelige enn de faktisk er. En undersøkelse viser at 94% av ledere mener de gir constructive feedback, men bare 65% av medarbeidere er enige.[^zenger2022] Denne gapen — mellom lederes intensjon og medarbeideres opplevelse — er tillitsproblemet.</p>
     <p>Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid. En leder som en gang svikter, kan miste tillit som tar år å bygge opp igjen.</p>
 </section>
 
@@ -118,7 +162,7 @@ json_ld:
 
 <section class="frame-section frame-about animate-on-scroll fade-in-up">
     <h2>Referanser</h2>
-    <p>Artikkelen bygger på forskning fra blant andre Robert Greenleaf (servant leadership), Amy Edmondson (psychological safety), og en omfattende metastudie av servant leadership-effekter fra 2019.<sup class="citation">[greenleaf1970]</sup><sup class="citation">[eva2019]</sup><sup class="citation">[edmondson2019]</sup><sup class="citation">[dirks2009]</sup><sup class="citation">[zenger2022]</sup></p>
+    <p>Artikkelen bygger på forskning fra blant andre Robert Greenleaf (servant leadership), Amy Edmondson (psychological safety), og en omfattende metastudie av servant leadership-effekter fra 2019.[^greenleaf1970][^eva2019][^edmondson2019][^dirks2009][^zenger2022]</p>
 </section>
 
 <script type="application/ld+json">
@@ -153,3 +197,13 @@ json_ld:
   ]
 }
 </script>
+
+[^greenleaf1970]: Greenleaf, R. K. (1970). *The Servant as Leader*. Robert K. Greenleaf Center for Servant Leadership. Introduksjon av servant leadership-begrepet.
+
+[^eva2019]: Eva, N., Robin, M., Sendjaya, S., van Dierendonck, D., & Liden, R. C. (2019). "Servant Leadership: A Meta-analytic Review". *Journal of Management*, 45(7), 2818–2853. Meta-analyse med positive effekter på organisatorisk forpliktelse, jobbtilfredshet, prestasjon og medborgeratferd.
+
+[^edmondson2019]: Edmondson, A. C. (2019). *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth*. Wiley. Psykologisk trygghet definert som «a shared belief held by members of a team that the team is safe for interpersonal risk taking.»
+
+[^dirks2009]: Dirks, K. T., & Ferrin, D. L. (2009). "Trust in Leadership: Meta-Analytic Findings". *Personnel Psychology*, 55(3), 659–689. Tillit som system — effekter på samarbeid, jobbprestasjon og organisasjonsengasjement.
+
+[^zenger2022]: Zenger, J., & Folkman, J. (2022). "Why Do So Many Managers Avoid Giving Constructive Feedback?". *Harvard Business Review*, 100(4), 76–83. Undersøkelse: 94% av ledere mener de gir constructive feedback, men bare 65% av medarbeidere er enige.

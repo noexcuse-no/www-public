@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **FF4 — Citation Enhancement (kramdown footnotes + JSON-LD + JS enhancer)**: Replaced ad-hoc `<sup class="citation">` HTML across 7 article pages with kramdown native `[^ref]` footnotes. Added JSON-LD `citation:` arrays to page frontmatter with full bibliographic metadata. Created `assets/scripts/citation-enhancer.js` for JS microdata injection into kramdown footnote DOM. Updated `_config.yml` with `kramdown.footnote_backlink: "↩"`. Added footnote list CSS to `assets/css/article.css`. Pages converted: usikkerhet, tillit, forankring, generativ-ki, makt, perspektiv, triader.
+
 ### Fixed
 - **S0 — Perspektiv layout null sort error**: `_layouts/perspektiv.html` referenced `site.frames` (defunct collection, removed during A1 topic consolidation). Changed to `site.topics | where: "category", "frame" | sort: "id"` — fixes GitHub Pages build failure with `Cannot sort a null object`
 

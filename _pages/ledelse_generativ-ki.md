@@ -17,6 +17,12 @@ json_ld:
   author:
     type: "Organization"
     name: "No Excuse AS"
+  citation:
+    - "@type": "Book"
+      name: "How to Measure Anything: Finding the Value of Intangibles in Business"
+      author: "Douglas W. Hubbard"
+      datePublished: "2014"
+      publisher: "Wiley"
   about:
     - type: "Thing"
       name: "Generativ KI"
@@ -85,7 +91,7 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>OKR og KPI for KI-assistert arbeid</h2>
-    <p>KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må måles. Douglas Hubbard skriver i «How to Measure Anything» at det meste faktisk kan måles — bare vi er villige til å definere hva vi egentlig trenger å vite.<sup class="citation">[hubbard2014]</sup> Hubbard viser at all måling reduserer usikkerhet — den eliminerer den ikke. Formålet med å måle KI-output er ikke perfeksjon, men å vite om man beveger seg i riktig retning.</p>
+    <p>KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må måles. Douglas Hubbard skriver i «How to Measure Anything» at det meste faktisk kan måles — bare vi er villige til å definere hva vi egentlig trenger å vite.[^hubbard2014] Hubbard viser at all måling reduserer usikkerhet — den eliminerer den ikke. Formålet med å måle KI-output er ikke perfeksjon, men å vite om man beveger seg i riktig retning.</p>
     
     <p><strong>KPI-er for KI-assisterte prosesser:</strong></p>
     <ul>
@@ -155,4 +161,5 @@ json_ld:
     </div>
 </section>
 
+[^hubbard2014]: Hubbard, D. W. (2014). *How to Measure Anything: Finding the Value of Intangibles in Business* (3. utg.). Wiley. All måling reduserer usikkerhet — den eliminerer den ikke. Formålet med å måle er å vite om man beveger seg i riktig retning.
 

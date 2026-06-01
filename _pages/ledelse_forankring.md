@@ -17,6 +17,30 @@ json_ld:
   author:
     type: "Organization"
     name: "No Excuse AS"
+  citation:
+    - "@type": "Book"
+      name: "Power: Why Some People Have It — and Others Don't"
+      author: "Jeffrey Pfeffer"
+      datePublished: "2010"
+      publisher: "Harper Business"
+    - "@type": "Book"
+      name: "Thinking, Fast and Slow"
+      author: "Daniel Kahneman"
+      datePublished: "2011"
+      publisher: "Farrar, Straus and Giroux"
+    - "@type": "Book"
+      name: "Getting to Yes: Negotiating Agreement Without Giving In"
+      author:
+        - "Roger Fisher"
+        - "William Ury"
+        - "Bruce Patton"
+      datePublished: "1991"
+      publisher: "Penguin Books"
+    - "@type": "Book"
+      name: "Groupthink: Psychological Studies of Policy Decisions and Fiascoes"
+      author: "Irving L. Janis"
+      datePublished: "1982"
+      publisher: "Houghton Mifflin"
   about:
     - type: "Thing"
       name: "Beslutningstaking"
@@ -30,11 +54,11 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hvorfor ledere ofte tar dårlige beslutninger</h2>
-    <p>Jeffrey Pfeffer har brukt karrieren sin på å dokumentere gapet mellom hvordan organisasjoner hevder beslutninger tas, og hvordan de faktisk tas. I «Power: Why Some People Have It — and Others Don't» viser han at makt og politikk spiller en langt større rolle enn de fleste er villige til å innrømme.<sup class="citation">[pfeffer2010]</sup></p>
+    <p>Jeffrey Pfeffer har brukt karrieren sin på å dokumentere gapet mellom hvordan organisasjoner hevder beslutninger tas, og hvordan de faktisk tas. I «Power: Why Some People Have It — and Others Don't» viser han at makt og politikk spiller en langt større rolle enn de fleste er villige til å innrømme.[^pfeffer2010]</p>
     <p>God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. I norske organisasjoner er avstanden mellom formell og reell beslutningsmakt ofte undervurdert. Ansvar uten autoritet er en teoretisk øvelse.</p>
     <p>I komplekse beslutningsmiljøer — der problemer, løsninger, deltakere og valgmuligheter flyter sammen — er det ikke alltid den «beste» ideen som vinner. Beslutninger tas av de som har bygget tillit og innflytelse over tid, ikke nødvendigvis av de med den mest rasjonelle analysen.</p>
     <p>Forankring uten relasjonell tillit er seremoniell. Folk nikker i møter og gjør noe annet etterpå. Grunnmuren i all forankring er psykologisk trygghet — tilliten til at man kan si hva man faktisk mener uten negative konsekvenser.</p>
-    <p>Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning systematisk avviker fra rasjonalitet — ikke fordi folk er dumme, men fordi hjernen bruker heuristikker som ofte feiler.<sup class="citation">[kahneman2011]</sup></p>
+    <p>Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning systematisk avviker fra rasjonalitet — ikke fordi folk er dumme, men fordi hjernen bruker heuristikker som ofte feiler.[^kahneman2011]</p>
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
@@ -42,7 +66,7 @@ json_ld:
     
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>1. Formell vs. reell beslutningsmakt</h3>
-        <p>I de fleste organisasjoner er det stor forskjell på hvem som formelt har autoritet til å beslutte, og hvem som faktisk har innflytelse. Pfeffer viser at «the most powerful people in organizations are often not those with the formal authority.»<sup class="citation">[pfeffer2010]</sup> Et initiativ uten tydelig eierskap er ikke forankret — det er bare kommunisert. Når roller er uklare, oppstår ansvarsskyvning, og forankringen blir illusorisk.</p>
+        <p>I de fleste organisasjoner er det stor forskjell på hvem som formelt har autoritet til å beslutte, og hvem som faktisk har innflytelse. Pfeffer viser at «the most powerful people in organizations are often not those with the formal authority.»[^pfeffer2010] Et initiativ uten tydelig eierskap er ikke forankret — det er bare kommunisert. Når roller er uklare, oppstår ansvarsskyvning, og forankringen blir illusorisk.</p>
         <p><strong>Tegn på klar maktbalanse:</strong> Beslutninger tas av dem med relevant ekspertise. Uenighet løses gjennom dialog, ikke posisjon. Autoritet følger ansvar.</p>
         <p><strong>Tegn på skjev makt:</strong> De med formell autoritet dominerer. Ekspertise ignoreres når den kommer fra feil person. Beslutninger tas bak lukkede dører.</p>
     </div>
@@ -57,21 +81,21 @@ json_ld:
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>3. Kognitiv bias som påvirker valg</h3>
-        <p>Kahneman identifiserte to systemer for tenkning: System 1 (rask, intuitiv, emosjonell) og System 2 (langsom, analytisk, rasjonell).<sup class="citation">[kahneman2011]</sup> De fleste viktige beslutninger tas med System 1, selv om vi tror vi bruker System 2.</p>
+        <p>Kahneman identifiserte to systemer for tenkning: System 1 (rask, intuitiv, emosjonell) og System 2 (langsom, analytisk, rasjonell).[^kahneman2011] De fleste viktige beslutninger tas med System 1, selv om vi tror vi bruker System 2.</p>
         <p><strong>Tegn på bias-bevissthet:</strong> Viktige beslutninger diskuteres med folk som tenker annerledes. Beslutninger revideres når ny informasjon kommer til. «Hva kan jeg ha oversett?» er et vanlig spørsmål.</p>
         <p><strong>Tegn på bias-blindhet:</strong> Beslutninger tas av enkeltpersoner. Ingen utfordrer premissene. Suksess tillegges egen dyktighet, feil tillegges eksterne forhold.</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>4. Konflikt og forhandling</h3>
-        <p>De fleste viktige beslutninger innebærer interessekonflikter. Å ignorere dette er å overse virkeligheten. Effektive ledere forstår hvordan å forhandle og bygge konsensus.<sup class="citation">[fisher1991]</sup></p>
+        <p>De fleste viktige beslutninger innebærer interessekonflikter. Å ignorere dette er å overse virkeligheten. Effektive ledere forstår hvordan å forhandle og bygge konsensus.[^fisher1991]</p>
         <p><strong>Tegn på konstruktiv konflikt:</strong> Uenighet diskuteres åpent. Beslutninger tas etter at ulike perspektiver er vurdert. Kompromisser eies av alle parter.</p>
         <p><strong>Tegn på dysfunksjonell konflikt:</strong> Konflikter begraves til de eskalerer. Beslutninger omgjøres etter møter. «Enighet» maskerer undertrykt uenighet.</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>5. Beslutningskultur</h3>
-        <p>Irving Janis dokumenterte fenomenet «groupthink» — når jakten på enighet overrides behovet for kritisk vurdering.<sup class="citation">[janis1982]</sup> Dette er spesielt farlig i organisasjoner med sterke kulturer eller karismatiske ledere.</p>
+        <p>Irving Janis dokumenterte fenomenet «groupthink» — når jakten på enighet overrides behovet for kritisk vurdering.[^janis1982] Dette er spesielt farlig i organisasjoner med sterke kulturer eller karismatiske ledere.</p>
         <p><strong>Tegn på sunn beslutningskultur:</strong> Kritikk er forventet og verdsatt. Beslutninger kan omgjøres hvis premisser endres. Læring fra feil er systematisk.</p>
         <p><strong>Tegn på groupthink:</strong> Ingen utfordrer ledelsen. Kritikk avvises som illojalitet. Beslutninger tas for å unngå konflikt, ikke for å finne den beste løsningen.</p>
     </div>
@@ -119,3 +143,11 @@ json_ld:
         <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
+
+[^pfeffer2010]: Pfeffer, J. (2010). *Power: Why Some People Have It — and Others Don't*. Harper Business. Dokumenterer gapet mellom formell og reell beslutningsmakt i organisasjoner.
+
+[^kahneman2011]: Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. To systemer for tenkning: System 1 (rask, intuitiv) og System 2 (langsom, analytisk).
+
+[^fisher1991]: Fisher, R., Ury, W., & Patton, B. (1991). *Getting to Yes: Negotiating Agreement Without Giving In* (2. utg.). Penguin Books. Forhandling og konsensusbygging i beslutningsprosesser.
+
+[^janis1982]: Janis, I. L. (1982). *Groupthink: Psychological Studies of Policy Decisions and Fiascoes* (2. utg.). Houghton Mifflin. Dokumentasjon av groupthink — når jakten på enighet overstyrer kritisk vurdering.

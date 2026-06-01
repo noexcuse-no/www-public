@@ -17,6 +17,29 @@ json_ld:
   author:
     type: "Organization"
     name: "No Excuse AS"
+  citation:
+    - "@id": "https://doi.org/10.1002/9781119208404"
+      "@type": "Book"
+      name: "Organizational Culture and Leadership"
+      author: "Edgar H. Schein"
+      datePublished: "2010"
+      publisher: "Jossey-Bass"
+    - "@type": "Book"
+      name: "Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization"
+      author:
+        - "Dave Logan"
+        - "John King"
+        - "Halee Fischer-Wright"
+      datePublished: "2009"
+      publisher: "Harper Business"
+    - "@type": "Article"
+      name: "Leading Change: Why Transformation Efforts Fail"
+      author: "John P. Kotter"
+      datePublished: "2012"
+      publisher: "Harvard Business Review"
+      volume: "90"
+      issue: "3"
+      pages: "59–67"
   about:
     - type: "Thing"
       name: "Usikkerhet"
@@ -34,8 +57,8 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hva er organisasjonskultur egentlig?</h2>
-    <p>Edgar Schein definerer kultur som «a pattern of shared basic assumptions learned by an organization as it solved its problems of external adaptation and internal integration.»<sup class="citation">[schein2010]</sup> Kort sagt: det er måten vi faktisk gjør ting på, ikke bare det vi sier vi gjør.</p>
-    <p>Schein identifiserer tre nivåer av kultur:<sup class="citation">[schein2010]</sup></p>
+    <p>Edgar Schein definerer kultur som «a pattern of shared basic assumptions learned by an organization as it solved its problems of external adaptation and internal integration.»[^schein2010] Kort sagt: det er måten vi faktisk gjør ting på, ikke bare det vi sier vi gjør.</p>
+    <p>Schein identifiserer tre nivåer av kultur:[^schein2010]</p>
     <ul>
         <li class="animate-on-scroll slide-in-left stagger"><strong>Artefakter:</strong> Det vi kan se — bygninger, språk, ritualer, kleskode</li>
         <li class="animate-on-scroll slide-in-left stagger"><strong>Verdier:</strong> Det vi sier er viktig — strategi, visjon, erklærte prinsipper</li>
@@ -50,7 +73,7 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>De fem kulturstadiene — fra Logan</h2>
-    <p>David Logan deler organisasjoner inn i fem kulturstadier, basert på hvordan medlemmene ser på seg selv og andre:<sup class="citation">[logan2009]</sup></p>
+    <p>David Logan deler organisasjoner inn i fem kulturstadier, basert på hvordan medlemmene ser på seg selv og andre:[^logan2009]</p>
     
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 1: «Livet suger»</h3>
@@ -59,28 +82,28 @@ json_ld:
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 2: «Mitt liv suger»</h3>
-        <p>Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.<sup class="citation">[logan2009]</sup></p>
+        <p>Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.[^logan2009]</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 3: «Jeg er great, du er det ikke»</h3>
-        <p>Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.<sup class="citation">[logan2009]</sup></p>
+        <p>Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.[^logan2009]</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 4: «Vi er great, andre er ikke»</h3>
-        <p>Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.<sup class="citation">[logan2009]</sup></p>
+        <p>Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.[^logan2009]</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Trinn 5: «Livet er great»</h3>
-        <p>Ektepisentret. «Vi lykkes sammen.» Organisasjonen feirer suksess eksternt og internt. Kun 3% av organisasjoner når dette stadiet, ifølge Logan.<sup class="citation">[logan2009]</sup></p>
+        <p>Ektepisentret. «Vi lykkes sammen.» Organisasjonen feirer suksess eksternt og internt. Kun 3% av organisasjoner når dette stadiet, ifølge Logan.[^logan2009]</p>
     </div>
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hvorfor endring er så vanskelig</h2>
-    <p>John Kotter dokumenterte at rundt 70% av alle endringsinitiativer feiler.<sup class="citation">[kotter2012]</sup> Årsakene er systematiske:</p>
+    <p>John Kotter dokumenterte at rundt 70% av alle endringsinitiativer feiler.[^kotter2012] Årsakene er systematiske:</p>
     <ul>
         <li class="animate-on-scroll slide-in-left stagger">For mye fokus på planlegging, for lite på implementering</li>
         <li class="animate-on-scroll slide-in-left stagger">Mangel på bred forankring blant nøkkelpersoner</li>
@@ -95,7 +118,7 @@ json_ld:
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Kotters 8-stegs modell for endring</h2>
-    <p>John Kotter har kartlagt hvorfor endringsinitiativer feiler — og hvordan de faktisk kan lykkes. Hans forskning viser at de fleste endringsforsøk mislykkes fordi de gjør én eller flere av åtte kritiske feil. Her er hans åtte steg, fra akutt til forankret.<sup class="citation">[kotter2012]</sup></p>
+    <p>John Kotter har kartlagt hvorfor endringsinitiativer feiler — og hvordan de faktisk kan lykkes. Hans forskning viser at de fleste endringsforsøk mislykkes fordi de gjør én eller flere av åtte kritiske feil. Her er hans åtte steg, fra akutt til forankret.[^kotter2012]</p>
     
     <div class="kotter-flow">
         <div class="kotter-step">
@@ -178,7 +201,7 @@ json_ld:
     </div>
     
     <h3>Hvorfor 70% feiler</h3>
-    <p>Kotter identifiserer åtte spesifikke feil — én per steg — som fører til at endringsinitiativer feiler:<sup class="citation">[kotter2012]</sup></p>
+    <p>Kotter identifiserer åtte spesifikke feil — én per steg — som fører til at endringsinitiativer feiler:[^kotter2012]</p>
     <ul>
         <li class="animate-on-scroll slide-in-left stagger"><strong>For mye selvtilfredshet</strong> — «det går jo bra nok»</li>
         <li class="animate-on-scroll slide-in-left stagger"><strong>For svak koalisjon</strong> — ikke nok makt bak endringen</li>
@@ -190,7 +213,7 @@ json_ld:
         <li class="animate-on-scroll slide-in-left stagger"><strong>Ikke forankre i kulturen</strong> — gamle vaner vender tilbake</li>
     </ul>
     
-    <p>Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av kommunikasjon (Steg 4) og hindringsfjerning (Steg 5); erklærte verdier påvirkes av nødvendighet (Steg 1) og kulturell forankring (Steg 8); grunnleggende antakelser endres gjennom langsiktig bygging (Steg 7) og kulturell forankring (Steg 8).<sup class="citation">[schein2010]</sup> Logans stadier forteller <em>hvor</em> organisasjonen er — Kotter forklarer <em>hvordan</em> den beveger seg videre.<sup class="citation">[logan2009]</sup></p>
+    <p>Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av kommunikasjon (Steg 4) og hindringsfjerning (Steg 5); erklærte verdier påvirkes av nødvendighet (Steg 1) og kulturell forankring (Steg 8); grunnleggende antakelser endres gjennom langsiktig bygging (Steg 7) og kulturell forankring (Steg 8).[^schein2010] Logans stadier forteller <em>hvor</em> organisasjonen er — Kotter forklarer <em>hvordan</em> den beveger seg videre.[^logan2009]</p>
 </section>
 
 <section class="frame-section animate-on-scroll fade-in-up">
@@ -239,6 +262,8 @@ json_ld:
         <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
     </div>
 </section>
+
+[^schein2010]: Schein, E. H. (2010). *Organizational Culture and Leadership* (4. utg.). Jossey-Bass. Kultur definert som «a pattern of shared basic assumptions» — de tre nivåene: artifacts, espoused values, basic underlying assumptions.
 
 [^logan2009]: Logan, D., King, J., & Fischer-Wright, H. (2009). *Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization*. Harper Business. Data on cultural stage distribution: 25% Stage 2, 48% Stage 3, 22% Stage 4, 3% Stage 5 (pp. 38–41).
 

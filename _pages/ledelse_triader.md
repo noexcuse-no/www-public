@@ -11,6 +11,22 @@ json_ld:
   author:
     type: "Organization"
     name: "No Excuse AS"
+  citation:
+    - "@type": "Book"
+      name: "Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization"
+      author:
+        - "Dave Logan"
+        - "John King"
+        - "Halee Fischer-Wright"
+      datePublished: "2011"
+      publisher: "Harper Business"
+    - "@type": "Book"
+      name: "Reframing Organizations: Artistry, Choice, and Leadership"
+      author:
+        - "Lee G. Bolman"
+        - "Terrence E. Deal"
+      datePublished: "2017"
+      publisher: "Jossey-Bass"
   about:
     - type: "Thing"
       name: "Tribal Leadership"
@@ -34,7 +50,7 @@ json_ld:
 <section class="frame-section animate-on-scroll fade-in-up">
     <p>Tenk på teamet ditt. Hvem snakker med hvem? Hvilke relasjoner er avhengige av at én bestemt person er til stede? Hva skjer med informasjonsflyten når den personen er borte?</p>
     <p>De fleste ledergrupper er bygget på dyader — to-person-relasjoner. Sjefen og nestlederen. Prosjektlederen og kunden. Mentoren og mentee. Disse relasjonene føles effektive, men de har en strukturell svakhet: Når én person faller ut, brytes forbindelsen.</p>
-    <p>Dave Logan, John King og Halee Fischer-Wright forsket i over et tiår på hva som kjennetegner høytytende organisasjonskulturer. Deres konklusjon, publisert i <em>Tribal Leadership</em> (2011), peker på triader — tre-person-relasjoner — som den kritiske byggesteinen i kulturer som presterer over tid.<sup class="citation">[logan2011]</sup></p>
+    <p>Dave Logan, John King og Halee Fischer-Wright forsket i over et tiår på hva som kjennetegner høytytende organisasjonskulturer. Deres konklusjon, publisert i <em>Tribal Leadership</em> (2011), peker på triader — tre-person-relasjoner — som den kritiske byggesteinen i kulturer som presterer over tid.[^logan2011]</p>
     <p>Denne artikkelen forklarer hvorfor triader fungerer, hvordan de oppstår, og hva som ødelegger dem. Det er ikke et teambuildings-verktøy. Det er en strukturell innsikt om hvordan informasjon, tillit og makt faktisk beveger seg i organisasjoner.</p>
 </section>
 
@@ -60,7 +76,7 @@ json_ld:
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>4. Kulturell modenhet</h3>
-        <p>I Logans stadiummodell er dyader kjennetegnende for Stage 2 («livet suger, min spesielt») og Stage 3 («jeg er best»). I Stage 2 er relasjonene preget av avmakt og isolasjon. I Stage 3 bygges relasjonene rundt individuelle prestasjoner — «jeg og min allierte» — ikke rundt felles mål.<sup class="citation">[logan2011]</sup> Dette er ikke onde mennesker, det er folk som opererer i en kultur som belønner individet fremfor teamet.</p>
+        <p>I Logans stadiummodell er dyader kjennetegnende for Stage 2 («livet suger, min spesielt») og Stage 3 («jeg er best»). I Stage 2 er relasjonene preget av avmakt og isolasjon. I Stage 3 bygges relasjonene rundt individuelle prestasjoner — «jeg og min allierte» — ikke rundt felles mål.[^logan2011] Dette er ikke onde mennesker, det er folk som opererer i en kultur som belønner individet fremfor teamet.</p>
     </div>
 
     <p>Problemet er ikke at dyader er onde. Problemet er at de er utilstrekkelige som eneste byggestein. Ethvert team har dyader. Spørsmålet er om dere også har triader.</p>
@@ -94,17 +110,17 @@ json_ld:
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hvordan triader oppstår — tre betingelser</h2>
     <p>Triader oppstår ikke av seg selv. I organisasjoner som er dominert av Stage 3-kultur («jeg er best») aktivt motvirkes de, fordi kunnskapsdeling og relasjonsbygging på tvers oppleves som en trussel mot individuell posisjon.</p>
-    <p>Logan identifiserer tre betingelser som må være til stede for at triader skal dannes:<sup class="citation">[logan2011]</sup></p>
+    <p>Logan identifiserer tre betingelser som må være til stede for at triader skal dannes:[^logan2011]</p>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>1. Felles verdier eller formål</h3>
         <p>Triader trenger et tredje element som binder dem sammen utover personlig kjemi. Det kan være et felles prosjekt, en delt overbevisning om hvordan arbeid bør gjøres, eller en forpliktelse til en større sak. Uten dette blir triaden personavhengig og faller tilbake til dyade når relasjonen blir utfordret.</p>
-        <p>Dette er hvorfor det <a href="{{ '/identitet/' | relative_url }}">symbolske perspektivet</a> er viktig: kultur, verdier og felles mening er limet som gjør triader holdbare. Bolman og Deal kaller dette det symbolske rammeverket — organisasjoner som kulturer båret av felles fortellinger og ritualer.<sup class="citation">[bolman2017]</sup></p>
+        <p>Dette er hvorfor det <a href="{{ '/identitet/' | relative_url }}">symbolske perspektivet</a> er viktig: kultur, verdier og felles mening er limet som gjør triader holdbare. Bolman og Deal kaller dette det symbolske rammeverket — organisasjoner som kulturer båret av felles fortellinger og ritualer.[^bolman2017]</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>2. Komplementære evner</h3>
-        <p>Triader fungerer best når de tre personene bidrar med noe forskjellig. Ikke fordi forskjellighet i seg selv er bra, men fordi komplementære evner skaper gjensidig avhengighet. A trenger B for noe B kan, B trenger C, og C trenger A. Strukturelt perspektiv (Bolman & Deal) handler om å designe roller som utfyller hverandre — triader er den mest effektive enheten for slik rolledesign.<sup class="citation">[bolman2017]</sup></p>
+        <p>Triader fungerer best når de tre personene bidrar med noe forskjellig. Ikke fordi forskjellighet i seg selv er bra, men fordi komplementære evner skaper gjensidig avhengighet. A trenger B for noe B kan, B trenger C, og C trenger A. Strukturelt perspektiv (Bolman & Deal) handler om å designe roller som utfyller hverandre — triader er den mest effektive enheten for slik rolledesign.[^bolman2017]</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
@@ -224,3 +240,7 @@ json_ld:
   ]
 }
 </script>
+
+[^logan2011]: Logan, D., King, J., & Fischer-Wright, H. (2011). *Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization* (2. utg.). Harper Business. Triader som kritisk byggestein i høytytende organisasjonskulturer.
+
+[^bolman2017]: Bolman, L. G. & Deal, T. E. (2017). *Reframing Organizations: Artistry, Choice, and Leadership* (6. utg.). Jossey-Bass. Symbolske og strukturelle rammeverk for organisasjonsanalyse.

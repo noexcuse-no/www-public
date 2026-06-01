@@ -1,3 +1,6 @@
+kramdown:
+  footnote_backlink: "↩"
+
 collections:
   profiles:
     output: true
