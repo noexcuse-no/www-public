@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **R15 — Values illustrations for Om Oss**: Replaced placeholder `●` circles in `_pages/om_oss.md` value cards with 3 generated spot illustrations (`verdi-ansvarlighet.webp`, `verdi-tillit.webp`, `verdi-aerlighet.webp`). Images are 400×400px WebP, ≤15KB each, square 1:1, Scandinavian minimal style with distinct color palettes per value. Updated `assets/css/about.css` `.value-icon` to render `<img>` elements at 60×60px with `object-fit: cover` and `border-radius: var(--radius-md)`. Images use `aria-hidden="true"` and empty `alt` (decorative, per WCAG).
+
+### Added
 - **FF4 — Citation Enhancement (kramdown footnotes + JSON-LD + JS enhancer)**: Replaced ad-hoc `<sup class="citation">` HTML across 7 article pages with kramdown native `[^ref]` footnotes. Added JSON-LD `citation:` arrays to page frontmatter with full bibliographic metadata. Created `assets/scripts/citation-enhancer.js` for JS microdata injection into kramdown footnote DOM. Updated `_config.yml` with `kramdown.footnote_backlink: "↩"`. Added footnote list CSS to `assets/css/article.css`. Pages converted: usikkerhet, tillit, forankring, generativ-ki, makt, perspektiv, triader.
 
 ### Fixed
