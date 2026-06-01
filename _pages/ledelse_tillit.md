@@ -1,8 +1,12 @@
 ---
+class: benefit
 layout: page
+category: benefit
 title: "Bedre ledelse uten byråkrati"
 description: "Lær hvordan tillit og psykologisk trygghet i ledelse faktisk fungerer. Forskning fra Greenleaf, Edmondson og andre viser hvordan du kan skape en organisasjon der folk tør si ifra."
 permalink: /tillit/
+banner: "assets/images/banners/benefit-control.webp"
+url: "/tillit/"
 hero:
   image: /assets/images/banners/benefit-control.webp
   alt: "Tillit i ledelse"

@@ -1,4 +1,5 @@
 ---
+class: article
 layout: page
 title: "Fire perspektiver — Multiframe thinking som lederferdighet"
 description: "Hvorfor en-rame-tenkning feiler, og hvordan multiframe thinking gir bedre diagnostikk. Det egentlige argumentet for 'no scoring'."

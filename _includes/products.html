@@ -1,5 +1,6 @@
 <section id="products" class="products section container">
-    {% for product in site.products %}
+    {% assign products = site.pages | where: "class", "product" | where: "published", true %}
+    {% for product in products %}
     <div class="product-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
         <div class="product-hero-content">
             <h2 class="hero-title">{{ product.name }}</h2>

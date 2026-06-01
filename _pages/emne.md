@@ -1,4 +1,5 @@
 ---
+class: article
 layout: page
 title: "Emneoversikt — Artikler om ledelse"
 description: "Utforsk artikler om ledelse, organisasjonskultur, endringsledelse og mer. Sortert etter emne."
@@ -14,7 +15,8 @@ permalink: /emne/
 </section>
 
 {% assign all_tags = "" | split: "," %}
-{% for p in site.pages %}
+{% assign articles = site.pages | where: "class", "article" %}
+{% for p in articles %}
     {% if p.tags and p.tags.size > 0 %}
         {% assign all_tags = all_tags | concat: p.tags %}
     {% endif %}
@@ -25,7 +27,7 @@ permalink: /emne/
     <div class="tag-cloud">
         {% for tag in unique_tags %}
             {% assign count = 0 %}
-            {% for p in site.pages %}
+            {% for p in articles %}
                 {% if p.tags contains tag %}
                     {% assign count = count | plus: 1 %}
                 {% endif %}

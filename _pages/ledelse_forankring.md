@@ -1,8 +1,12 @@
 ---
+class: benefit
 layout: page
+category: benefit
 title: "Forankre initiativer i ledergruppen"
 description: "Lær hvordan beslutninger faktisk tas i organisasjoner — og hvorfor rasjonelle ledere ofte tar irrasjonelle valg. Forskning på makt, bias og beslutningsprosesser."
 permalink: /forankring/
+banner: "assets/images/banners/benefit-anchoring.webp"
+url: "/forankring/"
 hero:
   image: /assets/images/banners/benefit-anchoring.webp
   alt: "Beslutningstaking i ledelse"

@@ -1,4 +1,5 @@
 ---
+class: article
 layout: page
 title: "Triader — Bygg robuste team med trekantede relasjoner"
 description: "Lær hvorfor trekantede relasjoner er sterkere enn to-og-to. Fra dyader til triader — strukturelle verktøy for en resilient organisasjon."

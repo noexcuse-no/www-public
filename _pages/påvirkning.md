@@ -1,5 +1,8 @@
 ---
-id: "påvirkning"
+class: frame
+layout: perspektiv
+permalink: /påvirkning/
+frame_id: "påvirkning"
 category: "frame"
 title: "Påvirkningsperspektivet i ledelse"
 description: "Lær hvordan påvirkningsperspektivet kan hjelpe ledergruppen å forstå maktbalanse, interessekonflikter og hvordan beslutninger faktisk tas."
@@ -87,8 +90,8 @@ cta:
   alt: "Illustrasjon for kartlegging av påvirkning"
   heading: "Få kartlagt ledergruppens påvirkning og maktbalanse"
   body: |
-    Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonflikter og konflikhåndtering. Bestill en uforpliktende samtale for å lære mer.
-  booking_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+    Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonflikter og konflikthåndtering. Bestill en uforpliktende samtale for å lære mer.
+  booking_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthensted"
 
 about:
   heading: "Det teoretiske grunnlaget"

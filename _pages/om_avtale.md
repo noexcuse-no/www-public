@@ -1,4 +1,5 @@
 ---
+class: article
 layout: page
 title: "Standard Avtalevilkår for Oppdrag"
 permalink: /avtale/

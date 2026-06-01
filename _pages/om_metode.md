@@ -1,4 +1,5 @@
 ---
+class: article
 layout: page
 title: "Om metodikk"
 description: "«Ledelse 60:2» er en intervjubasert kartleggingsmetode for ledergrupper. Les om det teoretiske grunnlaget, kunnskapsproduksjon og hvorfor vi gjør dette."
@@ -44,7 +45,7 @@ json_ld:
     <p>De fire perspektivene — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — er den analytiske strukturen for de 60 spørsmålene. Med Bolman & Deal legger vi til grunn antakelsen at hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold. De fire valgte perspektivene er ikke nødvendigvis de eneste, de mest riktige, uttømmende eller uten overlapp; først og fremst har vi valgt å anvende disse fire perspektivene som ordnende prinsipp fordi (a) de er relativt ukontroversielle og godt innarbeidet i domenet, og (b) perspektivene gjenspeiler en gjenkjennbarn og legitim kunnskapsontologi fra samtidens vestlige samfunn. De instrumentaliseres i moderne nyprofesjons- og fagstudier slik som <strong>Ledelse</strong> og <strong>HR</strong></p>
 
     <div class="card-grid card-grid--frames">
-        {% assign frames = site.topics | where: "category", "frame" | sort: "weight" %}
+        {% assign frames = site.pages | where: "class", "frame" | sort: "weight" %}
         {% for topic in frames %}
             {% include card.html topic=topic %}
         {% endfor %}
