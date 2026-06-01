@@ -58,12 +58,12 @@
 
 .perspektiv-questions li {
     padding: 16px 0 16px 32px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid var(--border-color-subtle-light);
     transition: background-color 0.2s ease;
 }
 
 .perspektiv-questions li:hover {
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: var(--surface-raised-light);
 }
 
 .perspektiv-questions li:before {
@@ -75,7 +75,7 @@
 /* CTA — extended styles */
 .perspektiv-cta {
     box-shadow: var(--shadow-md);
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--border-color-subtle-light);
 }
 
 /* Spot illustrations — floating, alternating left/right */

@@ -108,12 +108,59 @@
     --box-shadow-hover-light: var(--shadow-md);
     --box-shadow-dark: var(--shadow-sm-dark);
     --box-shadow-hover-dark: var(--shadow-md-dark);
-}
 
-    /* Missing aliases (were referenced but never defined) */
+    /* ========================================
+       Surface Colors (subtle backgrounds)
+       ======================================== */
+    --surface-subtle-light: rgba(0, 0, 0, 0.04);
+    --surface-raised-light: rgba(0, 0, 0, 0.03);
+    --surface-raised-hover-light: rgba(0, 0, 0, 0.06);
+    --surface-hover-light: rgba(0, 0, 0, 0.08);
+    --surface-subtle-dark: rgba(255, 255, 255, 0.06);
+    --surface-hover-dark: rgba(255, 255, 255, 0.12);
+    --surface-raised-dark: rgba(255, 255, 255, 0.05);
+    --surface-raised-hover-dark: rgba(255, 255, 255, 0.10);
+    --surface-tag-bg-dark: rgba(255, 255, 255, 0.08);
+
+    /* ========================================
+       Border Colors (color-only, not shorthand)
+       ======================================== */
+    --border-color-light: rgba(0, 0, 0, 0.1);
+    --border-color-subtle-light: rgba(0, 0, 0, 0.08);
+    --border-color-dark: rgba(255, 255, 255, 0.1);
+
+    /* ========================================
+       Overlays & Modals
+       ======================================== */
+    --overlay-light: rgba(0, 0, 0, 0.6);
+    --overlay-dark: rgba(0, 0, 0, 0.8);
+    --close-bg-light: rgba(255, 255, 255, 0.95);
+    --close-bg-hover-light: #ffffff;
+    --close-bg-dark: rgba(255, 255, 255, 0.9);
+
+    /* ========================================
+       Profile Card Components
+       ======================================== */
+    --profile-gradient-start-light: rgba(58, 78, 88, 0.06);
+    --profile-gradient-end-light: rgba(58, 78, 88, 0.02);
+    --profile-image-border-light: rgba(58, 78, 88, 0.12);
+    --profile-gradient-start-dark: rgba(255, 255, 255, 0.05);
+    --profile-gradient-end-dark: rgba(255, 255, 255, 0.02);
+    --profile-image-border-dark: rgba(255, 255, 255, 0.1);
+
+    /* ========================================
+       Nav Hover
+       ======================================== */
+    --nav-hover-bg-light: rgba(255, 255, 255, 0.15);
+    --nav-hover-bg-dark: rgba(0, 0, 0, 0.1);
+
+    /* ========================================
+       Component Aliases (referenced by other files)
+       ======================================== */
     --navbar-background-light: var(--box-background-light);
     --navbar-background-dark: var(--box-background-dark);
     --button-background-light: var(--primary-accent);
     --button-background-dark: var(--box-background-dark);
     --button-text-color-light: var(--primary-accent-contrast);
     --button-text-color-dark: var(--text-color-light);
+}
