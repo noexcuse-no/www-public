@@ -25,6 +25,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **A1 — Architecture cleanup spec**: `.specs/architecture-cleanup/README.md` — full spec for CSS reorganization, topic consolidation, hero/card unification, color hygiene, inline CSS removal, and file restructuring across all layers
 - **N4–N7 — Frame perspective article content spec**: `.specs/frame-article-content/README.md` — spec for writing body content on the four empty perspective pages (identitet, struktur, mennesker, påvirkning). BACKLOG updated with N4–N7 as Planned
 
+### Removed
+- **_pages/avtale.md** (stub): removed duplicate contract page. Both `avtale.md` and `om_avtale.md` had `permalink: /avtale/` causing a Jekyll build conflict. Kept `om_avtale.md` (full legal text)
+
 ## [1.7.0] — 2026-05-30
 
 ### Added
