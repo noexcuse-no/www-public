@@ -66,6 +66,10 @@
     background-color: var(--surface-raised-light);
 }
 
+.dark-mode .perspektiv-questions li:hover {
+    background-color: var(--surface-raised-dark);
+}
+
 .perspektiv-questions li:before {
     content: "→";
     font-weight: bold;
@@ -76,6 +80,10 @@
 .perspektiv-cta {
     box-shadow: var(--shadow-md);
     border: 1px solid var(--border-color-subtle-light);
+}
+
+.dark-mode .perspektiv-cta {
+    border-color: var(--border-color-dark);
 }
 
 /* Spot illustrations — floating, alternating left/right */

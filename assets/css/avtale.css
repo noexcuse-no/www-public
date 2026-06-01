@@ -29,6 +29,10 @@
     border-bottom: 1px solid var(--border-color-light);
 }
 
+.dark-mode .avtale-page h2 {
+    border-bottom-color: var(--border-color-dark);
+}
+
 .avtale-page p {
     font-size: 1em;
     line-height: 1.6;
