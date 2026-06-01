@@ -91,24 +91,15 @@
     opacity: 0.85;
 }
 
-.about-cta-button {
-    display: inline-block;
-    padding: 14px 32px;
-    background-color: var(--primary-accent);
-    color: var(--primary-accent-contrast);
-    text-decoration: none;
-    border-radius: var(--radius-md);
-    font-weight: 600;
-    font-size: 1.05em;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.2s;
+/* Dark mode overrides */
+.dark-mode .value-card {
+    background: var(--box-background-dark);
+    box-shadow: var(--box-shadow-dark);
 }
 
-.about-cta-button:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-    box-shadow: var(--box-shadow-hover-light);
+.dark-mode .value-card:hover {
+    box-shadow: var(--box-shadow-hover-dark);
 }
-
 
 @media (max-width: 599px) {
     .about-values-cards {

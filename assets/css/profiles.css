@@ -232,6 +232,103 @@
     line-height: 1.6;
 }
 
+/* Dark mode overrides */
+.dark-mode #profiles {
+    background-color: var(--background-color-dark);
+}
+
+.dark-mode .profile {
+    background-color: var(--background-color-dark);
+}
+
+.dark-mode .profile-compact {
+    background: var(--box-background-dark);
+    box-shadow: var(--box-shadow-dark);
+}
+
+.dark-mode .profile-compact:hover {
+    box-shadow: var(--box-shadow-dark);
+}
+
+.dark-mode .profile-image {
+    border-color: var(--box-background-dark);
+}
+
+.dark-mode .profile-name {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .profile-contact {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .profile-phone,
+.dark-mode .profile-email {
+    color: var(--link-color-dark);
+    background: var(--surface-subtle-dark);
+}
+
+.dark-mode .profile-phone:hover,
+.dark-mode .profile-email:hover {
+    background: var(--surface-hover-dark);
+}
+
+.dark-mode .profile-expand-btn {
+    color: var(--link-color-dark);
+}
+
+.dark-mode .profile-expanded {
+    background: var(--overlay-dark);
+}
+
+.dark-mode .profile-modal-content {
+    background: var(--box-background-dark);
+    color: var(--text-color-dark);
+}
+
+.dark-mode .profile-close {
+    background: var(--close-bg-dark);
+    color: var(--text-color-dark);
+}
+
+.dark-mode .profile-header {
+    background: linear-gradient(135deg, var(--profile-gradient-start-dark) 0%, var(--profile-gradient-end-dark) 100%);
+}
+
+.dark-mode .profile-header-info .profile-name {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .profile-image-large {
+    border-color: var(--border-color-dark);
+}
+
+.dark-mode .profile-tags {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .profile-bio {
+    color: var(--text-color-dark);
+    border-color: var(--border-color-dark);
+}
+
+.dark-mode .profile-contact-grid {
+    border-color: var(--border-color-dark);
+}
+
+.dark-mode .profile-contact-item {
+    color: var(--link-color-dark);
+    background: var(--surface-raised-dark);
+}
+
+.dark-mode .profile-contact-item:hover {
+    background: var(--surface-raised-hover-dark);
+}
+
+.dark-mode .profile-details {
+    color: var(--text-color-dark);
+}
+
 @media (max-width: 599px) {
     .profile {
         flex: 1 1 100%;

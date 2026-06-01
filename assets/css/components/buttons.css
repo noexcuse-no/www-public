@@ -1,0 +1,108 @@
+/* Button and CTA styles — extracted from products, about, article */
+
+/* Product CTA buttons */
+.product-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 14px 32px;
+    background-color: var(--cta-primary-bg);
+    color: var(--cta-primary-text);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.05em;
+    border: 2px solid var(--cta-primary-border);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.product-cta:hover {
+    background-color: var(--cta-primary-text);
+    color: var(--cta-primary-bg);
+    border-color: var(--cta-primary-bg);
+}
+
+.product-cta--spaced {
+    margin-left: 16px;
+}
+
+.product-cta--secondary {
+    background-color: var(--cta-secondary-bg);
+    color: var(--cta-secondary-text);
+    border: 2px solid var(--cta-secondary-border);
+}
+
+.product-cta--secondary:hover {
+    background-color: var(--cta-secondary-text);
+    color: var(--cta-secondary-bg);
+    border-color: var(--cta-secondary-bg);
+}
+
+.product-cta--large {
+    padding: 18px 48px;
+    font-size: 1.2em;
+}
+
+/* About CTA button */
+.about-cta-button {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: var(--primary-accent);
+    color: var(--primary-accent-contrast);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 1.05em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.2s;
+}
+
+.about-cta-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow-hover-light);
+}
+
+/* Benefit link (article pages) */
+.benefit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: var(--primary-accent-contrast);
+    background-color: var(--primary-accent);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    min-height: 44px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefit-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Responsive */
+@media (max-width: 599px) {
+    .product-cta {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .product-cta--spaced {
+        margin-left: 0;
+        margin-top: 12px;
+        display: block;
+    }
+}
+
+/* Dark mode overrides */
+.dark-mode .benefit-link {
+    color: var(--primary-accent-contrast);
+    background-color: var(--primary-accent);
+}

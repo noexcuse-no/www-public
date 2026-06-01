@@ -14,3 +14,9 @@
     padding: 15px;
     margin-bottom: 10px;
 }
+
+/* Dark mode overrides */
+.dark-mode .case {
+    background-color: var(--box-background-dark);
+    color: var(--text-color-dark);
+}

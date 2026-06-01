@@ -137,27 +137,6 @@
     text-decoration: underline;
 }
 
-.benefit-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 16px;
-    padding: 10px 20px;
-    font-size: 0.95em;
-    font-weight: 500;
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
-    text-decoration: none;
-    border-radius: var(--radius-md);
-    min-height: 44px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.benefit-link:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
-}
-
 .section-illustration {
     width: 100%;
     max-width: 600px;
@@ -324,4 +303,23 @@
 
 .dark-mode .tag-badge:hover {
     background: var(--surface-hover-dark);
+}
+
+/* Perspektiv dark mode overrides */
+.dark-mode .perspektiv-element,
+.dark-mode .perspektiv-challenge,
+.dark-mode .perspektiv-cta {
+    background: var(--box-background-dark);
+}
+
+.dark-mode .perspektiv-questions li {
+    border-bottom-color: var(--border-color-dark);
+}
+
+.dark-mode .perspektiv-about {
+    border-top-color: var(--border-color-dark);
+}
+
+.dark-mode .perspektiv-breadcrumb a {
+    color: var(--link-color-dark);
 }
