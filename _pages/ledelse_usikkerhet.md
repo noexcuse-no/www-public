@@ -85,26 +85,41 @@ json_ld:
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Trinn 1: «Livet suger»</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-1.webp' | relative_url }}" alt="Abstrakt figurativ skisse av apati som symboliserer Logan sitt første kulturstadium">
+        </div>
         <p>En subkultur preget av apati og offermentalitet. Folk tror ingenting kan endres. Dette finnes sjelden i fungerende organisasjoner, men kan oppstå i nedlagte avdelinger eller under kriser.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Trinn 2: «Mitt liv suger»</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-2.webp' | relative_url }}" alt="Abstrakt figurativ skisse av individuell apati som symboliserer Logan sitt andre kulturstadium">
+        </div>
         <p>Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.[^logan2009]</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Trinn 3: «Jeg er great, du er det ikke»</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-3.webp' | relative_url }}" alt="Abstrakt figurativ skisse av individualisme som symboliserer Logan sitt tredje kulturstadium">
+        </div>
         <p>Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.[^logan2009]</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Trinn 4: «Vi er great, andre er ikke»</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-4.webp' | relative_url }}" alt="Abstrakt figurativ skisse av tribal tenkning som symboliserer Logan sitt fjerde kulturstadium">
+        </div>
         <p>Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.[^logan2009]</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Trinn 5: «Livet er great»</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-5.webp' | relative_url }}" alt="Abstrakt figurativ skisse av felles suksess som symboliserer Logan sitt femte kulturstadium">
+        </div>
         <p>Ektepisentret. «Vi lykkes sammen.» Organisasjonen feirer suksess eksternt og internt. Kun 3% av organisasjoner når dette stadiet, ifølge Logan.[^logan2009]</p>
     </div>
 </section>
@@ -137,6 +152,9 @@ json_ld:
             <div class="kotter-number">1</div>
             <div class="kotter-content">
                 <h3>Skap nødvendighet</h3>
+                <div class="section-illustration animate-on-scroll fade-in-up">
+                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-1.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en varselklokke som symboliserer å skape nødvendighet for endring">
+                </div>
                 <p>Hjelp folk å se hvorfor endring er nødvendig nå — ikke til slutt. Hva koster det å ikke endre? Konkurransetrykk, regulatoriske endringer, arbeidsmarkedsskifter. Nødvendighet er ikke panikk — det er klarhet.</p>
             </div>
         </div>
@@ -147,6 +165,9 @@ json_ld:
             <div class="kotter-number">2</div>
             <div class="kotter-content">
                 <h3>Bygg en sterk koalisjon</h3>
+                <div class="section-illustration animate-on-scroll fade-in-up">
+                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-2.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en sirkel av figurer som symboliserer å bygge en sterk koalisjon">
+                </div>
                 <p>Samle en gruppe med nok makt til å lede endringen. Inkluder formelle ledere og uformelle opinionsledere. Ikke alle trenger å være overbevist — men nøkkelaktører må være med.</p>
             </div>
         </div>
@@ -157,6 +178,9 @@ json_ld:
             <div class="kotter-number">3</div>
             <div class="kotter-content">
                 <h3>Formuler en visjon</h3>
+                <div class="section-illustration animate-on-scroll fade-in-up">
+                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-3.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et malerier som symboliserer å formulere en visjon for fremtiden">
+                </div>
                 <p>Beskriv hvordan fremtiden ser ut etter endringen. Enkel, klar, inspirerende — ikke en prosjektplan. Visjonen skal styre beslutninger, ikke bare kommunikasjon.</p>
             </div>
         </div>
@@ -167,6 +191,9 @@ json_ld:
             <div class="kotter-number">4</div>
             <div class="kotter-content">
                 <h3>Kommuniser visjonen</h3>
+                <div class="section-illustration animate-on-scroll fade-in-up">
+                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-4.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en taler med lydbolger som symboliserer kommunikasjon av visjonen">
+                </div>
                 <p>Gjør visjonen til en pågående tilstedeværelse, ikke en engangsannonsering. Led med eksempel — handlinger taler høyere enn presentasjoner. Addresser angst og motstand direkte, ikke ignorer dem.</p>
             </div>
         </div>
@@ -177,6 +204,9 @@ json_ld:
             <div class="kotter-number">5</div>
             <div class="kotter-content">
                 <h3>Fjern hindringer</h3>
+                <div class="section-illustration animate-on-scroll fade-in-up">
+                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-5.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en mur som brytes ned som symboliserer fjerning av hindringer">
+                </div>
                 <p>Identifiser barrierer: strukturer, systemer, ferdigheter, vaner. Myndiggjør folk til å fjerne hindringer eller finne veier rundt dem. Feir tidlige seiere som fjerner en barriere.</p>
             </div>
         </div>
@@ -187,6 +217,9 @@ json_ld:
             <div class="kotter-number">6</div>
             <div class="kotter-content">
                 <h3>Skap kortsiktige seiere</h3>
+                <div class="section-illustration animate-on-scroll fade-in-up">
+                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-6.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et flagg på en ås som symboliserer kortsiktige seiere">
+                </div>
                 <p>Planlegg synlige forbedringer innen 3-6 måneder. Ikke vent på den store transformasjonen — tidlige seiere bygger momentum. Analyser resultater ærlig — juster hvis seieren ikke var så stor som forventet.</p>
             </div>
         </div>
@@ -197,6 +230,9 @@ json_ld:
             <div class="kotter-number">7</div>
             <div class="kotter-content">
                 <h3>Bygg videre på endringen</h3>
+                <div class="section-illustration animate-on-scroll fade-in-up">
+                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-7.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et fundament som styrkes som symboliserer å bygge videre på endring">
+                </div>
                 <p>Bruk troverdigheten fra tidlige seiere til å angripe større endringer. Fremhev folk som gjennomførte tidlige endringer. Ikke erklær seier for tidlig — konsolidering tar tid.</p>
             </div>
         </div>
@@ -207,6 +243,9 @@ json_ld:
             <div class="kotter-number">8</div>
             <div class="kotter-content">
                 <h3>Forankre i kulturen</h3>
+                <div class="section-illustration animate-on-scroll fade-in-up">
+                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-8.webp' | relative_url }}" alt="Abstrakt figurativ skisse av røtter som gror dypt som symboliserer forankring i kulturen">
+                </div>
                 <p>Koble nye atferdsmønstre til organisatorisk suksess. Sikre at lederutvikling inkluderer endringsledelse. Dokumenter hva som endret seg — la ikke gammel kultur gjenoppstå.</p>
             </div>
         </div>
@@ -233,22 +272,27 @@ json_ld:
     
     <div class="grid grid--2 challenges-grid stagger-parent">
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-values-practice.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Uoverensstemmelse mellom verdier og praksis</h4>
             <p>«Vi er innovative» står på veggen, men ideer drepes i møter. Kulturen sier noe annet enn det ledelsen tror.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-tacit-knowledge.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Tacite kunnskap som ikke deles</h4>
             <p>Kunnskapen sitter i hodene til enkelte, ikke i systemer. Når folk slutter, forsvinner kunnskapen.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-silo-thinking.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Silo-tenkning</h4>
             <p>Avdelinger som jobber for seg selv. «Det der er ikke mitt problem»-mentalitet. Koordinering på tvers av avdelinger er tilfeldig.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-always-done.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>«Alltid sånn her»-mentalitet</h4>
             <p>Historisk suksess blir institusjonlisert. «Vi har alltid gjort det sånn» blir argumentet mot fornyelse.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-structural-uncertainty.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Strukturell usikkerhet</h4>
             <p>Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen.</p>
         </div>

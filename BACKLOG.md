@@ -41,6 +41,10 @@ Completed items belong in `CHANGELOG.md` only.
 | C3 | Case presentation design | Blocked | C1, C2 |
 | C4 | Visitor flow / inbound sales journey | Blocked | C1, C2, C3 |
 | Q7 | Katalysator product | Blocked | User availability (deferred to June 2026) |
+| R19 | Add "Perspektiv" menu link between "Ledelse 60:2" and "Om oss" | Planned | — |
+| R20 | Generate and add illustrations to /perspektiv per page design rules | Planned | — |
+| R21 | Add four CTA buttons (Identitet, Struktur, Mennesker, Påvirkning) as CSS overlay on /perspektiv header banner | Planned | R20 |
+| R22 | Add inline CTA buttons on relevant pages linking to topic sections | Planned | — |
 | R16 | Article illustrations — 25 images for Makt, Perspektiv, Triader (T2 framework + T3 section + T4 micro) | Planned | — |
 | R17 | Frame micro illustrations — 16 T4 micro spots for challenge cards on Struktur, Mennesker, Identitet, Påvirkning | Planned | — |
 | R18 | Product & process illustrations — 20 images for Ledelse 60:2, Metode, Avtale, Step pages | Planned | — |
