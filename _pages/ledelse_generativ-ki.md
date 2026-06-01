@@ -54,21 +54,33 @@ json_ld:
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>1. Formulere gode spørsmål</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/genki-t3-question-formulation.webp' | relative_url }}" alt="Abstrakt figurativ skisse av presise spørsmål som symboliserer formulering av intensjon">
+        </div>
         <p>Vage spørsmål gir vage svar. En leder som mestrer KI, lærer seg å presisere intensjon — ikke bare skrive «skriv en e-post». Den som kan definere hva som faktisk trengs, får resultater den andre ikke engang ser.</p>
     </div>
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>2. Vurdere utdata kritisk</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/genki-t3-critical-evaluation.webp' | relative_url }}" alt="Abstrakt figurativ skisse av kritisk evaluering som symboliserer vurdering av KI-output">
+        </div>
         <p>KI hallusinerer, kopierer bias, og opererer uten kontekst. En god KI-leder antar aldri at svaret er riktig — den tester det mot virkeligheten. Kalibrering er kontinuerlig: stemmer modellens selvtillit med faktisk kvalitet?</p>
     </div>
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>3. Integrere KI i menneskelige prosesser</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/genki-t3-human-integration.webp' | relative_url }}" alt="Abstrakt figurativ skisse av broen mellom menneske og maskin som symboliserer integrering av KI">
+        </div>
         <p>KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må lukkes med menneskelig dømmekraft. Ledere må bygge arbeidsflyter der KI-assistert arbeid alltid passerer gjennom menneskelig evaluering før det når kunden.</p>
     </div>
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>4. Opprettholde ansvarlighet</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/genki-t3-accountability.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et signert dokument som symboliserer menneskelig ansvarlighet for KI-beslutninger">
+        </div>
         <p>Når KI er involvert i en beslutning, blir ansvarlighet uklar. God KI-ledelse betyr at det alltid er et menneske som signerer under — ikke en modell. «KI sa det» er aldri en gyldig begrunnelse.</p>
     </div>
 </section>
@@ -78,21 +90,33 @@ json_ld:
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Epistemisk ydmykhet</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/genki-t3-epistemic-humility.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et spørsmålstegn over en åpen bok som symboliserer epistemisk ydmykhet">
+        </div>
         <p>Vite hva du ikke vet. KI kan få deg til å føle deg smartere enn du er. Den som tror modellen vet mer enn den faktisk gjør, tar dårlige beslutninger.</p>
     </div>
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Presisjon av intensjon</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/genki-t3-precision.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et skarpt fokus som symboliserer presisjon av intensjon">
+        </div>
         <p>Vage spørsmål gir vage svar. KI-ledere må lære seg å presisere hva de faktisk trenger, ikke bare beskrive det de tror de vil ha.</p>
     </div>
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Iterativ forbedring</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/genki-t3-iteration.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en spiral som symboliserer iterativ forbedring">
+        </div>
         <p>KI-interaksjon er dialog, ikke én-klikk. De beste resultatene kommer fra å stille oppfølgingsspørsmål, utfordre premisser, og gradvis presisere fram mot det som faktisk trengs.</p>
     </div>
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Kalibrering</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/genki-t3-calibration.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en kalibrert skala som symboliserer balanse mellom selvtillit og nøyaktighet">
+        </div>
         <p>Konstant teste om modellens selvtillit stemmer med virkeligheten. Når KI er sikker — er den faktisk riktig? Når den er usikker — er den faktisk feil?</p>
     </div>
 </section>
