@@ -41,17 +41,17 @@ json_ld:
         <img src="{{ '/assets/images/banners/banner-verdier.webp' | relative_url }}" alt="Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet" class="about-values-banner">
         <div class="about-values-cards">
             <div class="value-card">
-                <span class="value-icon" aria-hidden="true">●</span>
+                <img class="value-icon" src="{{ '/assets/images/banners/verdi-ansvarlighet.webp' | relative_url }}" alt="" aria-hidden="true" width="60" height="60">
                 <h3>Ansvarlighet</h3>
                 <p>Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse</p>
             </div>
             <div class="value-card">
-                <span class="value-icon" aria-hidden="true">●</span>
+                <img class="value-icon" src="{{ '/assets/images/banners/verdi-tillit.webp' | relative_url }}" alt="" aria-hidden="true" width="60" height="60">
                 <h3>Tillit</h3>
                 <p>Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget</p>
             </div>
             <div class="value-card">
-                <span class="value-icon" aria-hidden="true">●</span>
+                <img class="value-icon" src="{{ '/assets/images/banners/verdi-aerlighet.webp' | relative_url }}" alt="" aria-hidden="true" width="60" height="60">
                 <h3>Ærlighet</h3>
                 <p>Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater</p>
             </div>
