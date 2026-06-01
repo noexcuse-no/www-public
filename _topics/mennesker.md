@@ -35,19 +35,19 @@ intro:
 elements:
   - title: "Tillit og trygghet"
     body: |
-      Grunnmuren i alle relasjoner er psykologisk trygghet. Med tillit kan mennesker ta risiko, si ifra om problemer, og våge å være ærlige. Uten tillit blir organisasjonen et sted der folk ser etter nummer to.
+      Grunnmuren i alle relasjoner er psykologisk trygghet. Med tillit kan mennesker ta risiko, si ifra om problemer, og våge å være ærlige. Uten tillit blir organisasjonen et sted der folk ser etter nummer to. Uten en strukturert måte å speile tillitsnivået på, risikerer ledergruppen å forveksle stillhet med trygghet.
     signs:
       positive: "Folk sier ifra når ting er feil. Problemer løftes opp før de eskalerer. Folk innrømmer feil og lærer av dem."
       negative: "Informasjon holdes tilbake. Kritikk leveres bak ryggen på folk. Folk søker dekning hos ledere heller enn å løse problemer selv."
   - title: "Motivasjon og engasjement"
     body: |
-      Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre motivatorer (bonus, straff) kan drive kortvarig atferd, men varig engasjement krever indre motivasjon: autonomi, mestring og tilhørighet.
+      Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre motivatorer (bonus, straff) kan drive kortvarig atferd, men varig engasjement krever indre motivasjon: autonomi, mestring og tilhørighet. Når ledergrupper reflekterer systematisk over motivasjonsmønstre, ser de hvor engasjementet faktisk er — ikke hvor de tror det er.
     signs:
       positive: "Folk tar initiativ uten å bli bedt om det. De snakker om «vi» når de forteller om arbeidet. De ser seg selv som en del av noe større."
       negative: "Passivitet. Kømentalitet. Folk som bare gjør nok til å komme seg gjennom dagen. Maskinell gjennomføring uten engasjement."
   - title: "Utvikling og vekst"
     body: |
-      Mennesker vil vokse. Organisasjoner som legger til rette for utvikling, tiltrekker og beholder talent. Læring blir en konkurransefordel, ikke en kostnad.
+      Mennesker vil vokse. Organisasjoner som legger til rette for utvikling, tiltrekker og beholder talent. Læring blir en konkurransefordel, ikke en kostnad. Men uten systematisk innsikt i hva ansatte faktisk opplever som utviklende, risikerer investeringene å bomme på målet.
     signs:
       positive: "Feil sees på som læringsmuligheter. Folk setter av tid til å utvikle seg. Suksesser og feil analyseres for å lære."
       negative: "«Vi har alltid gjort det sånn.» Innføring av nye systemer uten opplæring. Ingen karriereutvikling utover interne promojsonger."
@@ -66,6 +66,8 @@ leader_value:
     Menneskeperspektivet ser ut til å være «mykt» og vanskelig å handle på, men det har målbare konsekvenser. Southwest Airlines' langvarige lønnsomhet handlet ikke om strategi eller struktur — det handlet om en kultur der ledere tjente de ansatte, som igjen tjente kundene.
 
     For ledergruppen er spørsmålene: Bruker vi tid på å bygge relasjoner og tillit? Har vi en kultur der folk tørr å si ifra? Tiltrekker og beholder vi talent? Eller er vi en organisasjon der folk bare overlever, ikke for å trives?
+
+    Ledelse 60:2 adresserer dette gjennom anonyme, strukturerte refleksjoner — selve prosessen modellerer den tillitsbaserte ledelsen den måler. Når ledergruppen ser egne blindsoner i møte med tilbakemeldingene, bygges bevisstheten som trengs for å handle.
 
     Gode rutiner og klare roller er ikke det motsatte av tillitsbasert ledelse — de er forutsetningen for at den skal fungere. Ansvar uten autoritet er en teoretisk øvelse.
 

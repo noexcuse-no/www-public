@@ -7,6 +7,18 @@ layout: page
 {% assign frame_id = page.frame_id %}
 {% assign frame = site.topics | where: "category", "frame" | where: "id", frame_id | first %}
 
+{% assign all_frames = site.frames | sort: "id" %}
+{% assign current_index = nil %}
+{% for f in all_frames %}
+  {% if f.id == frame_id %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+{% assign prev_index = current_index | minus: 1 %}
+{% assign next_index = current_index | plus: 1 %}
+{% assign prev_frame = all_frames[prev_index] %}
+{% assign next_frame = all_frames[next_index] %}
+
 <!-- Hero Section -->
 {% include hero.html
    image=frame.hero.banner_image
@@ -23,13 +35,28 @@ layout: page
   {{ frame.intro.body | markdownify }}
 </section>
 
-<!-- Three Elements with illustration -->
+<!-- Three Elements with spot illustrations -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
   <h2>De tre hovedelementene</h2>
-  <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-hovedelementer.png' | relative_url }}" alt="Illustrasjon av de tre hovedelementene i {{ frame.title | downcase }}" class="section-illustration">
-  
+
+  {% assign spot_names = "0,1,2" | split: "," %}
   {% for element in frame.elements %}
+  {% assign spot_index = spot_names[forloop.index0] %}
   <div class="perspektiv-element animate-on-scroll fade-in-up">
+    {% assign spot_num = forloop.index0 | modulo: 2 %}
+    {% assign float_class = "" %}
+    {% if spot_num == 0 %}
+      {% assign float_class = "argument-illustration" %}
+    {% else %}
+      {% assign float_class = "argument-illustration argument-illustration--right" %}
+    {% endif %}
+
+    {% assign img_name = 'spot-' | append: frame.id | append: '-' | append: spot_index %}
+    <img src="{{ '/assets/images/banners/' | append: img_name | append: '.webp' | relative_url }}"
+         alt="Illustrasjon: {{ element.title }}"
+         class="{{ float_class }}"
+         loading="lazy">
+
     <h3>{{ element.title }}</h3>
     {{ element.body | markdownify }}
     <p><strong>Tegn på god {{ element.title | downcase }}:</strong> {{ element.signs.positive }}</p>
@@ -38,8 +65,21 @@ layout: page
   {% endfor %}
 </section>
 
-<!-- Leader Value Section -->
+<!-- Section break image: hovedelementer -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
+  <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-hovedelementer.webp' | relative_url }}"
+       alt="Illustrasjon av de tre hovedelementene i {{ frame.title | downcase }}"
+       class="section-illustration">
+</section>
+
+<!-- Leader Value with spot illustration -->
+<section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
+  {% assign leader_img = 'spot-' | append: frame.id | append: '-3' %}
+  <img src="{{ '/assets/images/banners/' | append: leader_img | append: '.webp' | relative_url }}"
+       alt="Illustrasjon: {{ frame.leader_value.heading }}"
+       class="argument-illustration argument-illustration--right"
+       loading="lazy">
+
   <h2>{{ frame.leader_value.heading }}</h2>
   {{ frame.leader_value.body | markdownify }}
 </section>
@@ -47,8 +87,10 @@ layout: page
 <!-- Challenges Section -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
   <h2>Vanlige {{ frame.id }}lige utfordringer</h2>
-  <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-utfordringer.png' | relative_url }}" alt="Illustrasjon av vanlige {{ frame.id }}lige utfordringer" class="section-illustration">
-  
+  <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-utfordringer.webp' | relative_url }}"
+       alt="Illustrasjon av vanlige {{ frame.id }}lige utfordringer"
+       class="section-illustration">
+
   <div class="perspektiv-challenges stagger-parent">
     {% for challenge in frame.challenges %}
     <div class="perspektiv-challenge animate-on-scroll fade-in-up stagger">
@@ -69,17 +111,38 @@ layout: page
   </ul>
 </section>
 
-<!-- CTA Section -->
-{% include cta.html 
-   heading=frame.cta.heading 
-   body=frame.cta.body 
-   booking_url=frame.cta.booking_url %}
+<!-- CTA Section — three-path funnel -->
+<section class="perspektiv-cta section container--wide animate-on-scroll fade-in-up">
+  <img src="{{ frame.cta.image | relative_url }}" alt="{{ frame.cta.alt }}" class="section-illustration">
+
+  <h2>{{ frame.cta.heading }}</h2>
+  {{ frame.cta.body | markdownify }}
+
+  <div class="frame-cta-buttons">
+    <a href="{{ frame.cta.booking_url }}" class="product-cta">Bestill uforpliktende samtale</a>
+    <a href="{{ '/ledelse-60-2/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+  </div>
+</section>
 
 <!-- About / Scientific Basis Section -->
 <section class="perspektiv-section perspektiv-about section container--wide animate-on-scroll fade-in-up">
   <h2>{{ frame.about.heading }}</h2>
   {{ frame.about.body | markdownify }}
   <a href="{{ frame.about.link_url | relative_url }}" class="perspektiv-link">{{ frame.about.link_text }}</a>
+</section>
+
+<!-- Cross-navigation: other frames + methodology -->
+<section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
+  <h2>Utforsk andre perspektiver</h2>
+  <div class="perspektiv-cross-nav">
+    {% if prev_frame %}
+    <a href="{{ '/' | append: prev_frame.id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">← {{ prev_frame.title }}</a>
+    {% endif %}
+    <a href="{{ '/metode/' | relative_url }}" class="product-cta product-cta--secondary">↑ Om metode</a>
+    {% if next_frame %}
+    <a href="{{ '/' | append: next_frame.id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">{{ next_frame.title }} →</a>
+    {% endif %}
+  </div>
 </section>
 
 <!-- Custom content from page body -->

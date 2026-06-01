@@ -77,3 +77,42 @@
     box-shadow: var(--shadow-md);
     border: 1px solid rgba(0, 0, 0, 0.06);
 }
+
+/* Spot illustrations — floating, alternating left/right */
+.argument-illustration {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--radius-lg);
+    margin: 0.5em 1em 0.5em 0;
+    float: left;
+    object-fit: cover;
+}
+
+.argument-illustration--right {
+    float: right;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+@media (max-width: 599px) {
+    .argument-illustration,
+    .argument-illustration--right {
+        float: none;
+        width: 100%;
+        aspect-ratio: 1;
+        height: auto;
+        margin: var(--space-lg) 0;
+    }
+}
+
+/* Cross-navigation between frames */
+.perspektiv-cross-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    justify-content: center;
+    margin-top: var(--space-lg);
+}
+
+.perspektiv-cross-nav .product-cta {
+    flex: 0 1 auto;
+}

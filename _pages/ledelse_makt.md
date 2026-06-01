@@ -9,6 +9,7 @@ hero:
   breadcrumb: "← No Excuse AS"
   title: "Makt eller tjeneste?"
   intro: "Organisasjoner trenger både makt og tjeneste. Spørsmålet er ikke hvilken du skal velge — det er om ledergruppen din har en bevisst kultur som balanserer dem."
+tags: ["makt", "servant-leadership", "tillitsbasert-ledelse"]
 json_ld:
   type: "Article"
   name: "Makt eller tjeneste"

@@ -35,7 +35,7 @@ intro:
 elements:
   - title: "Kultur og språk"
     body: |
-      Kultur lever i språket. Hvordan folk snakker om arbeidet, om lederne, om kundene — det avslører hvilket stadium kulturen befinner seg på. Ledergrupper kan analysere sin egen kommunikasjon for å forstå kulturen.
+      Kultur lever i språket. Hvordan folk snakker om arbeidet, om lederne, om kundene — det avslører hvilket stadium kulturen befinner seg på. Ledergrupper kan analysere sin egen kommunikasjon for å forstå kulturen — Logans stadier fungerer som et diagnostisk kart: hva er det dominerende kulturstadiet i deres organisasjon?
     signs:
       positive: "Ledere snakker i «vi»-form. Det finnes historier som fortelles om hvordan ting ble gjort. Feiring av suksess er synlig og inkluderende."
       negative: "«Jeg»-dominerende språk. Klaging på møter, kunder, ledelse. Historiefortelling preget av «de» vs. «vi»."
@@ -59,7 +59,7 @@ leader_value:
 
     For ledergruppen er spørsmålene: Sier vi «vi» når vi snakker om organisasjonen? Har vi verdier som faktisk styrer beslutninger? Har vi en kultur der folk vil bidra, eller der de bare leverer output?
 
-    En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i året — det er en daglig holdning. Organisasjoner som leser signalene tidlig, justerer kurs før krisen er et faktum.
+    En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i året — det er en daglig holdning. Organisasjoner som leser signalene tidlig, justerer kurs før krisen er et faktum. Når ledergruppen ser organisasjonen gjennom flere perspektiver, avdekker den risikoer som ellers forblir usett — kulturanalyse blir et risikostyringsverktøy, ikke en HR-øvelse.
 
 challenges:
   - title: "Tomme verdier"
