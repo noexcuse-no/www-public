@@ -80,6 +80,10 @@ json_ld:
     <h2>Hvorfor tillit er ledelsens valuta</h2>
     <p>Tenk på de beste teamene du har jobbet med. Hva var annerledes der? Sannsynligvis ikke at de hadde bedre verktøy eller flere møter. Det var sannsynligvis måten folk snakket til hverandre — ærlig, direkte, uten frykt for konsekvensene.</p>
     <p>Robert Greenleaf introduserte begrepet «servant leadership» i 1970.[^greenleaf1970] Han argumenterte for at ledere først og fremst bør tjene sine medarbeidere, ikke omvendt. Dette er ikke bare en idealistisk idé — forskning viser at det fungerer. En meta-analyse fra 2019 konkluderer med at servant leadership har «positive effects on employee outcomes including organizational commitment, job satisfaction, performance, and citizenship behavior.»[^eva2019]</p>
+    
+    <div class="framework-illustration animate-on-scroll fade-in-up">
+        <img src="{{ '/assets/images/banners/tillit-t2-four-pillars.webp' | relative_url }}" alt="Diagram av fire sammenkoblede pillarer som symboliserer tillitsbasert ledelse">
+    </div>
 </section>
 
 <section class="section container--wide animate-on-scroll fade-in-up">

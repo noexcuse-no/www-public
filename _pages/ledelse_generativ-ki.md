@@ -42,6 +42,10 @@ json_ld:
     <h2>Lederbristen i KI-æraen</h2>
     <p>KI-adopsjonen går raskere enn KI-ledelseskompetansen. Overalt hører vi om nye verktøy — ChatGPT, Midjourney, Claude — men nesten ingen snakker om hvordan lede menneskene som bruker dem. Spørsmålet er ikke lenger «skal vi bruke KI?» — det er «hvordan leder vi folk som styrer KI-modeller?»</p>
     <p>Den som kan formulere gode spørsmål, vurdere svar kritisk, og integrere KI i menneskelige arbeidsprosesser, vil erstatte den som ikke kan. Ferdigheten er ikke prompting — det er dømmekraft.</p>
+    
+    <div class="framework-illustration animate-on-scroll fade-in-up">
+        <img src="{{ '/assets/images/banners/genki-t2-four-competencies.webp' | relative_url }}" alt="Diagram av fire KI-ledelseskompetanser i en sammenkoblet modell">
+    </div>
 </section>
 
 <section class="section container--wide animate-on-scroll fade-in-up">

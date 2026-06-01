@@ -1,0 +1,60 @@
+/* Illustration System — T2/T3/T4 tier styling */
+
+/* T2: Framework illustrations (multi-element models) */
+.framework-illustration {
+    text-align: center;
+    margin: var(--space-xl) auto;
+    max-width: 800px;
+}
+
+.framework-illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--box-shadow-light);
+}
+
+/* T3: Section illustrations (individual elements) */
+.section-illustration {
+    text-align: center;
+    margin: var(--space-lg) auto;
+    max-width: 400px;
+}
+
+.section-illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--box-shadow-light);
+}
+
+/* T4: Micro illustrations (challenge cards, list items) */
+.micro-illustration {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    display: inline-block;
+    margin-right: var(--space-sm);
+    vertical-align: middle;
+}
+
+/* Dark mode overrides */
+.dark-mode .framework-illustration img,
+.dark-mode .section-illustration img {
+    box-shadow: var(--box-shadow-dark);
+}
+
+/* Responsive */
+@media (max-width: 599px) {
+    .framework-illustration,
+    .section-illustration {
+        max-width: 100%;
+        padding: 0 var(--space-md);
+    }
+
+    .micro-illustration {
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -63,6 +63,10 @@ json_ld:
     <p>I komplekse beslutningsmiljøer — der problemer, løsninger, deltakere og valgmuligheter flyter sammen — er det ikke alltid den «beste» ideen som vinner. Beslutninger tas av de som har bygget tillit og innflytelse over tid, ikke nødvendigvis av de med den mest rasjonelle analysen.</p>
     <p>Forankring uten relasjonell tillit er seremoniell. Folk nikker i møter og gjør noe annet etterpå. Grunnmuren i all forankring er psykologisk trygghet — tilliten til at man kan si hva man faktisk mener uten negative konsekvenser.</p>
     <p>Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning systematisk avviker fra rasjonalitet — ikke fordi folk er dumme, men fordi hjernen bruker heuristikker som ofte feiler.[^kahneman2011]</p>
+    
+    <div class="framework-illustration animate-on-scroll fade-in-up">
+        <img src="{{ '/assets/images/banners/forankring-t2-five-dimensions.webp' | relative_url }}" alt="Diagram av fem dimensjoner i beslutningstaking: makt, interesser, bias, konflikt og kultur">
+    </div>
 </section>
 
 <section class="section container--wide animate-on-scroll fade-in-up">

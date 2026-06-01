@@ -73,6 +73,10 @@ json_ld:
     <h3>Teateret i usikkerhet</h3>
     <p>En organisasjonskultur er ikke bare noe man <em>har</em> — det er noe man <em>fremfører</em>. I usikre tider sprekker fasaden: det som var «hvordan vi gjør ting her» avsløres som overflate når presset kommer. Ritualer og historier som fungerte i stabile perioder, mister sin kraft når ingen lenger tror på dem.</p>
     <p>Spørsmålet ledergrupper bør stille seg i usikre tider er ikke «hva er kulturen vår?» — det er «hvilken kultur kommer til syne når vi ikke lenger har kontroll?»</p>
+    
+    <div class="framework-illustration animate-on-scroll fade-in-up">
+        <img src="{{ '/assets/images/banners/usikkerhet-t2-logan-stages.webp' | relative_url }}" alt="Diagram av Logans fem kulturstadier som en stige fra apati til felles suksess">
+    </div>
 </section>
 
 <section class="section container--wide animate-on-scroll fade-in-up">
@@ -115,6 +119,10 @@ json_ld:
         <li class="animate-on-scroll slide-in-left stagger">Kortsiktig tenkning — endring tar tid, de fleste gir opp for tidlig</li>
     </ul>
     <p>En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i året — det er en daglig holdning. Organisasjoner som leser signalene tidlig, justerer kurs før krisen er et faktum. Muligheter og risikoer hører sammen. De som bare ser risiko, misser mulighetene. De som bare ser muligheter, ender i brann.</p>
+    
+    <div class="framework-illustration animate-on-scroll fade-in-up">
+        <img src="{{ '/assets/images/banners/usikkerhet-t2-kotter-steps.webp' | relative_url }}" alt="Diagram av Kotters åtte steg for endringsledelse i en sekvensiell flyt">
+    </div>
 
     <h3>Usikkerhet skaper maktvakuum</h3>
     <p>Når usikkerhet oppstår, oppstår også maktkamper. De som griper muligheten i uklare situasjoner, former retningen — uavhengig av om de har formell autoritet. Ledergrupper som ikke er bevisst på dette, oppdager for sent at veivalg er tatt av dem som handlet raskest, ikke av dem som hadde best innsikt.</p>
