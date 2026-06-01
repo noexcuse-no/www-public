@@ -3,6 +3,7 @@ class: frame
 layout: perspektiv
 permalink: /struktur/
 frame_id: "struktur"
+show_spots: true
 category: "frame"
 title: "Strukturperspektivet i ledelse"
 description: "Lær hvordan strukturperspektivet kan hjelpe ledergruppen å få oversikt over roller, ansvar og koordinering. Struktur handler om å skape et system der oppgaver og mål henger sammen."
@@ -39,18 +40,21 @@ intro:
 
 elements:
   - title: "Roller og ansvar"
+    spot_image: "assets/images/banners/spot-struktur-roller.webp"
     body: |
       Hvem gjør hva? Roller er de minste meningsfulle enhetene i en organisasjon. Når roller er utydelige, oppstår det ansvarsskyvning. Når de er klare, vet folk hva som forventes av dem — og hva de kan forvente av andre. Uten en strukturert måte å kartlegge roller på, risikerer ledergruppen å overse uklarheter inntil de skaper konflikter.
     signs:
       positive: "Ledere kan beskrive sine ansvarsområder presist. De vet hvem som signerer hva. Beslutninger tas på riktig nivå."
       negative: "«Det er ikke min jobb» eller «Hvem skal jeg egentlig spørre?» Dominans av e-post og møter for å koordinere arbeid som burde gå av seg selv."
   - title: "Mål og koordinering"
+    spot_image: "assets/images/banners/spot-struktur-mal-og-koordinering.webp"
     body: |
       Organisasjoner eksisterer for å oppnå noe. Mål er det som gir retning. Koordinering er det som får ulike deler til å trekke i samme retning. Strukturerte spørsmål om måljustering avdekker silotenking før den koster resultater — uten dem forblir konkurrerende prioriteringer usynlige for ledelsen.
     signs:
       positive: "Mål i ulike avdelinger forsterker hverandre. Det er enkelt å spores hvordan delmål bidrar til hovedmål. Prioriteringer er relativt entydige."
       negative: "Silotenking. Mål som konkurrerer med hverandre. Avdelinger som driver egne initiativ uten å kjenne til hverandre. Mye tid brukt på «å samordne» arbeid som burde ha vært koordinert fra start."
   - title: "Prosesser og regler"
+    spot_image: "assets/images/banners/spot-struktur-prosesser-og-regler.webp"
     body: |
       Prosesser er hvordan arbeid faktisk utføres. Regler er de formelle og uformelle normene som styrer atferd. En god struktur har balanse: nok regler til å gi trygghet, få nok til å stimulere vekst.
 
@@ -61,6 +65,7 @@ elements:
 
 leader_value:
   heading: "Hvorfor struktur betyr noe for ledergruppen"
+  spot_image: "assets/images/banners/spot-struktur-hvorfor-struktur-betyr-noe.webp"
   body: |
     Strukturperspektivet er kanskje det minst «sexy» av de fire perspektivene, men det er ofte der problemene starter. Mange ledelsesproblemer — lav gjennomføringskraft, uklare ansvarsforhold, ineffektive møter — handler i bunn om strukturelle utfordringer, ikke kultur- eller relasjonsproblemer.
 
