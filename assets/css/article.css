@@ -1,28 +1,35 @@
+/* Section — content sections */
 .perspektiv-section,
-.frame-section {
+.frame-section,
+.section.container--wide {
     /* Width/spacing via .section.container--wide */
 }
 
 .perspektiv-section h2,
-.frame-section h2 {
+.frame-section h2,
+.section.container--wide h2 {
     font-size: 1.6em;
     margin-bottom: 20px;
 }
 
 .perspektiv-section h3,
-.frame-section h3 {
+.frame-section h3,
+.section.container--wide h3 {
     font-size: 1.2em;
     margin-bottom: 12px;
 }
 
 .perspektiv-section p,
-.frame-section p {
+.frame-section p,
+.section.container--wide p {
     line-height: 1.7;
     margin-bottom: 16px;
 }
 
+/* Info box — highlighted content blocks */
 .perspektiv-element,
-.frame-element {
+.frame-element,
+.info-box {
     background: var(--box-background-light);
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
@@ -32,21 +39,26 @@
 }
 
 .perspektiv-element:hover,
-.frame-element:hover {
+.frame-element:hover,
+.info-box:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
+/* Challenge grid — 2-column card layout */
 .perspektiv-challenges,
-.frame-challenges {
+.frame-challenges,
+.grid.grid--2.challenges-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin: 24px 0;
 }
 
+/* Challenge card — individual challenge */
 .perspektiv-challenge,
-.frame-challenge {
+.frame-challenge,
+.challenge-card {
     background: var(--box-background-light);
     padding: 20px;
     border-radius: var(--radius-lg);
@@ -54,32 +66,38 @@
 }
 
 .perspektiv-challenge:hover,
-.frame-challenge:hover {
+.frame-challenge:hover,
+.challenge-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
 
 .perspektiv-challenge h4,
-.frame-challenge h4 {
+.frame-challenge h4,
+.challenge-card h4 {
     margin: 0 0 8px 0;
     font-size: 1em;
 }
 
 .perspektiv-challenge p,
-.frame-challenge p {
+.frame-challenge p,
+.challenge-card p {
     margin: 0;
     font-size: 0.95em;
     opacity: 0.85;
 }
 
+/* Question list — diagnostic questions */
 .perspektiv-questions,
-.frame-questions {
+.frame-questions,
+.question-list {
     list-style: none;
     padding: 0;
 }
 
 .perspektiv-questions li,
-.frame-questions li {
+.frame-questions li,
+.question-list li {
     padding: 12px 0;
     border-bottom: 1px solid var(--border-color-light);
     padding-left: 24px;
@@ -87,15 +105,18 @@
 }
 
 .perspektiv-questions li:before,
-.frame-questions li:before {
+.frame-questions li:before,
+.question-list li:before {
     content: "→";
     position: absolute;
     left: 0;
     color: var(--primary-accent);
 }
 
+/* CTA section — call to action */
 .perspektiv-cta,
-.frame-cta {
+.frame-cta,
+.cta-section {
     text-align: center;
     background: var(--box-background-light);
     border-radius: var(--radius-xl);
@@ -103,34 +124,42 @@
 }
 
 .perspektiv-cta h2,
-.frame-cta h2 {
+.frame-cta h2,
+.cta-section h2 {
     font-size: 1.6em;
     margin-bottom: 16px;
 }
 
 .perspektiv-cta p,
-.frame-cta p {
+.frame-cta p,
+.cta-section p {
     font-size: 1.05em;
     line-height: 1.6;
     margin-bottom: 24px;
     opacity: 0.85;
 }
 
+/* CTA buttons — flex container */
 .perspektiv-cta-buttons,
-.frame-cta-buttons {
+.frame-cta-buttons,
+.cta-buttons {
     display: flex;
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/* About section — references */
 .perspektiv-about,
-.frame-about {
+.frame-about,
+.about-section {
     border-top: 1px solid var(--border-color-light);
 }
 
+/* About link */
 .perspektiv-link,
-.frame-link {
+.frame-link,
+.about-link {
     display: inline-block;
     margin-top: 16px;
     color: var(--link-color-light);
@@ -147,12 +176,14 @@
 
 @media (max-width: 599px) {
     .perspektiv-challenges,
-    .frame-challenges {
+    .frame-challenges,
+    .grid.grid--2.challenges-grid {
         grid-template-columns: 1fr;
     }
 
     .perspektiv-cta-buttons,
-    .frame-cta-buttons {
+    .frame-cta-buttons,
+    .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
@@ -305,21 +336,35 @@
     background: var(--surface-hover-dark);
 }
 
-/* Perspektiv dark mode overrides */
+/* Dark mode overrides */
 .dark-mode .perspektiv-element,
+.dark-mode .frame-element,
+.dark-mode .info-box,
 .dark-mode .perspektiv-challenge,
-.dark-mode .perspektiv-cta {
+.dark-mode .frame-challenge,
+.dark-mode .challenge-card,
+.dark-mode .perspektiv-cta,
+.dark-mode .frame-cta,
+.dark-mode .cta-section {
     background: var(--box-background-dark);
 }
 
-.dark-mode .perspektiv-questions li {
+.dark-mode .perspektiv-questions li,
+.dark-mode .frame-questions li,
+.dark-mode .question-list li {
     border-bottom-color: var(--border-color-dark);
 }
 
-.dark-mode .perspektiv-about {
+.dark-mode .perspektiv-about,
+.dark-mode .frame-about,
+.dark-mode .about-section {
     border-top-color: var(--border-color-dark);
 }
 
 .dark-mode .perspektiv-breadcrumb a {
+    color: var(--link-color-dark);
+}
+
+.dark-mode .about-link {
     color: var(--link-color-dark);
 }
