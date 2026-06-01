@@ -11,6 +11,32 @@ json_ld:
   author:
     type: "Organization"
     name: "No Excuse AS"
+  citation:
+    - "@type": "Book"
+      name: "Reframing Organizations: Artistry, Choice, and Leadership"
+      author:
+        - "Lee G. Bolman"
+        - "Terrence E. Deal"
+      datePublished: "2017"
+      publisher: "Jossey-Bass"
+    - "@type": "Book"
+      name: "How to Measure Anything: Finding the Value of Intangibles in Business"
+      author: "Douglas W. Hubbard"
+      datePublished: "2014"
+      publisher: "Wiley"
+    - "@type": "Book"
+      name: "Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization"
+      author:
+        - "Dave Logan"
+        - "John King"
+        - "Halee Fischer-Wright"
+      datePublished: "2011"
+      publisher: "Harper Business"
+    - "@type": "Book"
+      name: "Power: Why Some People Have It — and Others Don't"
+      author: "Jeffrey Pfeffer"
+      datePublished: "2010"
+      publisher: "Harper Business"
   about:
     - type: "Thing"
       name: "Bolman og Deals fire rammeverk"
@@ -34,7 +60,7 @@ json_ld:
 <section class="frame-section animate-on-scroll fade-in-up">
     <p>En ingeniør som blir leder ser strukturelle problemer: uklare roller, manglende prosesser, feil rapporteringslinjer. En HR-sjef ser menneskelige problemer: motivasjon, trivsel, relasjoner. En politisk aktør ser maktdynamikk: allianser, agendaer, budsjettkamper. En markedsfører ser symboler: historier, identitet, mening.</p>
     <p>Alle har rett. Og alle tar feil — fordi de ser bare én side.</p>
-    <p>Bolman og Deal (2017) kaller dette for enrammetenking — «the tendency to see only what our training and experience have taught us to see.»<sup class="citation">[bolman2017]</sup> De fleste ledere har ett dominerende perspektiv, ett filter de bruker på alle situasjoner. Problemet er at organisasjonslivet ikke er enkelt nok til å forstås gjennom ett filter.</p>
+    <p>Bolman og Deal (2017) kaller dette for enrammetenking — «the tendency to see only what our training and experience have taught us to see.»[^bolman2017] De fleste ledere har ett dominerende perspektiv, ett filter de bruker på alle situasjoner. Problemet er at organisasjonslivet ikke er enkelt nok til å forstås gjennom ett filter.</p>
     <p>Denne artikkelen handler ikke om de fire rammeverkene — hvert av dem har sin egen artikkel (<a href="{{ '/struktur/' | relative_url }}">struktur</a>, <a href="{{ '/mennesker/' | relative_url }}">mennesker</a>, <a href="{{ '/påvirkning/' | relative_url }}">påvirkning</a>, <a href="{{ '/identitet/' | relative_url }}">identitet</a>). Den handler om ferdigheten å bevege seg mellom dem — multiframe thinking — og hvorfor dette er den faktiske kjernekompetansen i ledelse.</p>
 </section>
 
@@ -71,7 +97,7 @@ json_ld:
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Samtidighet, ikke sekvens</h3>
-        <p>Multiframe thinking handler ikke om å analysere ett perspektiv av gangen. Det handler om å holde alle fire i hodet samtidig og spørre: «Hvilket perspektiv forklarer mest av det jeg ser akkurat nå?» Bolman og Deal sammenligner det med en jazzmusiker som må holde melodi, harmoni, rytme og samspill i hodet samtidig — ikke sekvensielt.<sup class="citation">[bolman2017]</sup></p>
+        <p>Multiframe thinking handler ikke om å analysere ett perspektiv av gangen. Det handler om å holde alle fire i hodet samtidig og spørre: «Hvilket perspektiv forklarer mest av det jeg ser akkurat nå?» Bolman og Deal sammenligner det med en jazzmusiker som må holde melodi, harmoni, rytme og samspill i hodet samtidig — ikke sekvensielt.[^bolman2017]</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
@@ -94,19 +120,19 @@ json_ld:
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Hubbard: Det viktigste er å vite hva du ikke vet</h3>
-        <p>Douglas Hubbard, forfatteren av <em>How to Measure Anything</em>, argumenterer for at den største feilen i måling er å tro at du måler presist når du ikke gjør det. «The most important measurement is knowing what you don't know — and quantifying that uncertainty.»<sup class="citation">[hubbard2014]</sup></p>
+        <p>Douglas Hubbard, forfatteren av <em>How to Measure Anything</em>, argumenterer for at den største feilen i måling er å tro at du måler presist når du ikke gjør det. «The most important measurement is knowing what you don't know — and quantifying that uncertainty.»[^hubbard2014]</p>
         <p>En poengsum på 67 av 100 på «tillit» er presis i tall, upresis i mening. Betyr det at 67% av ansatte stoler på lederen? At lederen skårer 67% av maksimal tillit? At organisasjonen er 67% av veien til en tillitskultur? Uten kontekst og uten å vite hva 67 faktisk innebærer, er talltrygghet en illusjon.</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Logan: Beskrivende, ikke evaluerende</h3>
-        <p>Logans kulturstadier i <em>Tribal Leadership</em> er et beskrivende rammeverk. «Kulturen din viser Stage 3-mønstre» er en observasjon, ikke en karakter. Poenget er ikke å fastslå at Stage 3 er dårlig — det er å gi ledergruppen et språk for å gjenkjenne hvor de er og hvor de kan gå.<sup class="citation">[logan2011]</sup></p>
+        <p>Logans kulturstadier i <em>Tribal Leadership</em> er et beskrivende rammeverk. «Kulturen din viser Stage 3-mønstre» er en observasjon, ikke en karakter. Poenget er ikke å fastslå at Stage 3 er dårlig — det er å gi ledergruppen et språk for å gjenkjenne hvor de er og hvor de kan gå.[^logan2011]</p>
         <p>Ledelse 60:2 følger samme logikk. Intervjuet avdekker mønstre i hvordan ledergruppen tenker om makt, struktur, mennesker og identitet. Det gir gjenkjennelse, ikke poeng. <a href="{{ '/triader/' | relative_url }}">Triader-artikkelen</a> viser for eksempel hvordan beskrivende analyse av relasjonsmønstre gir mer handlingsrom enn en poengsum på «teamsamhold.»</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
         <h3>Pfeffer: Tall er politiske</h3>
-        <p>Jeffrey Pfeffer, forskeren bak mye av forståelsen av <a href="{{ '/makt/' | relative_url }}">makt i organisasjoner</a>, advarer: «Numbers are political. They are used to persuade, to claim credit, and to deflect blame.»<sup class="citation">[pfeffer2010]</sup></p>
+        <p>Jeffrey Pfeffer, forskeren bak mye av forståelsen av <a href="{{ '/makt/' | relative_url }}">makt i organisasjoner</a>, advarer: «Numbers are political. They are used to persuade, to claim credit, and to deflect blame.»[^pfeffer2010]</p>
         <p>En poengsum på tillit blir umiddelbart et politisk verktøy. Lederen med lav skår må forsvare seg. Lederen med høy skår får makt. Samtalen handler ikke lenger om utvikling — den handler om posisjonering. Ved å ikke score, holder Ledelse 60:2 samtalen der den hører hjemme: i diagnostikk og utvikling.</p>
     </div>
 
@@ -125,7 +151,7 @@ json_ld:
         <h3>Case 1: Omorganisering</h3>
         <p>En mellomstor teknologibedrift vokste fra 30 til 120 ansatte på to år. Strukturen som fungerte i oppstartsfasen, bremset nå beslutningstaking. En enrammet leder ville startet med ny organisasjonskart.</p>
         <p>Multiframe-tilnærmingen starter med fire spørsmål: Hvilken struktur tjener strategien (struktur)? Hvem har uformell makt som må hensyntas (politikk)? Hvordan oppleves endringen for de ansatte (mennesker)? Hvilken historie forteller vi om hvorfor vi endrer oss (symboler)?</p>
-        <p>Rekkefølgen betyr noe: Struktur først, deretter politikk (hvem vinner/hvem taper), deretter mennesker (støtte og utvikling), til slutt symboler (mening og identitet).<sup class="citation">[bolman2017]</sup></p>
+        <p>Rekkefølgen betyr noe: Struktur først, deretter politikk (hvem vinner/hvem taper), deretter mennesker (støtte og utvikling), til slutt symboler (mening og identitet).[^bolman2017]</p>
     </div>
 
     <div class="frame-element animate-on-scroll fade-in-up">
@@ -225,3 +251,11 @@ json_ld:
   ]
 }
 </script>
+
+[^bolman2017]: Bolman, L. G. & Deal, T. E. (2017). *Reframing Organizations: Artistry, Choice, and Leadership* (6. utg.). Jossey-Bass. Fire rammeverk for organisasjonsanalyse: strukturelt, menneskelig, politisk og symbolsk.
+
+[^hubbard2014]: Hubbard, D. W. (2014). *How to Measure Anything: Finding the Value of Intangibles in Business* (3. utg.). Wiley. «The most important measurement is knowing what you don't know — and quantifying that uncertainty.»
+
+[^logan2011]: Logan, D., King, J., & Fischer-Wright, H. (2011). *Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization* (2. utg.). Harper Business. Kulturstadier som beskrivende rammeverk for ledergrupper.
+
+[^pfeffer2010]: Pfeffer, J. (2010). *Power: Why Some People Have It — and Others Don't*. Harper Business. «Numbers are political. They are used to persuade, to claim credit, and to deflect blame.»

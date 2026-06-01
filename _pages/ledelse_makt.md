@@ -17,6 +17,32 @@ json_ld:
   author:
     type: "Organization"
     name: "No Excuse AS"
+  citation:
+    - "@type": "Book"
+      name: "Power: Why Some People Have It — and Others Don't"
+      author: "Jeffrey Pfeffer"
+      datePublished: "2010"
+      publisher: "Harper Business"
+    - "@type": "Book"
+      name: "Lead with LUV: A Different Way to Create Real Success"
+      author:
+        - "Ken Blanchard"
+        - "Colleen Barrett"
+      datePublished: "2011"
+      publisher: "FT Press"
+    - "@type": "Article"
+      name: "The Power Paradox"
+      author: "Dacher Keltner"
+      datePublished: "2007"
+      publisher: "UC Berkeley Greater Good Science Center"
+    - "@type": "Book"
+      name: "Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization"
+      author:
+        - "Dave Logan"
+        - "John King"
+        - "Halee Fischer-Wright"
+      datePublished: "2009"
+      publisher: "Harper Business"
   about:
     - type: "Thing"
       name: "Maktdynamikk"
@@ -38,8 +64,8 @@ json_ld:
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Den diagnostiske spenningen</h2>
     <p>Pfeffer og Blanchard representerer ikke personlighetstyper eller ledelsesfilosofier du velger mellom som et par sko. De representerer en strukturell spenning som lever i enhver organisasjon — enten du anerkjenner den eller ikke.</p>
-    <p>På den ene siden: Makt som kapasitet. Evnen til å mobilisere ressurser, ta beslutninger og få ting gjort. Uten denne kapasiteten forblir visjoner drømmer, og organisasjoner mister retning. Pfeffer dokumenterer at makt korrelerer med karrierefremgang, beskyttelse mot organisatorisk kaos, og evnen til å gjennomføre endring.<sup class="citation">[pfeffer2010]</sup></p>
-    <p>På den andre siden: Tjeneste som kulturbygger. Evnen til å sette andre først, bygge tillit og skape psykologisk trygghet. Blanchard og Barrett viser at servant leadership korrelerer med medarbeiderengasjement, lavere turnover og høyere ytelse over tid.<sup class="citation">[blanchard2011]</sup></p>
+    <p>På den ene siden: Makt som kapasitet. Evnen til å mobilisere ressurser, ta beslutninger og få ting gjort. Uten denne kapasiteten forblir visjoner drømmer, og organisasjoner mister retning. Pfeffer dokumenterer at makt korrelerer med karrierefremgang, beskyttelse mot organisatorisk kaos, og evnen til å gjennomføre endring.[^pfeffer2010]</p>
+    <p>På den andre siden: Tjeneste som kulturbygger. Evnen til å sette andre først, bygge tillit og skape psykologisk trygghet. Blanchard og Barrett viser at servant leadership korrelerer med medarbeiderengasjement, lavere turnover og høyere ytelse over tid.[^blanchard2011]</p>
     <p>Problemet oppstår når organisasjoner uten bevissthet driver mot den ene polen. Ledergrupper som ikke aktivt reflekterer over denne spenningen, ender ofte opp med en ubalanse som koster mer enn de sparer.</p>
 </section>
 
@@ -52,7 +78,7 @@ json_ld:
         <li><strong>Makt beskytter mot kaos.</strong> I krisesituasjoner er det ledere med makt som kan gjennomføre nødvendige endringer — demokratiske prosesser tar for lang tid.</li>
         <li><strong>Makt muliggjør strategisk retning.</strong> Uten makt til å prioritere og nedprioritere, blir strategi en ønskeliste uten gjennomføringskraft.</li>
     </ul>
-    <p>Makt har også en mørk side — og den er ikke bare etisk, den er praktisk. Forskning fra Dacher Keltner ved UC Berkeley viser at makt har en korrumperende effekt på dømmekraften. Personer som får makt, blir mer impulsive, mindre risikovillige på andres vegne, og overvurderer egen kompetanse. De lytter dårligere til råd, og de undervurderer andres bidrag.<sup class="citation">[keltner2007]</sup></p>
+    <p>Makt har også en mørk side — og den er ikke bare etisk, den er praktisk. Forskning fra Dacher Keltner ved UC Berkeley viser at makt har en korrumperende effekt på dømmekraften. Personer som får makt, blir mer impulsive, mindre risikovillige på andres vegne, og overvurderer egen kompetanse. De lytter dårligere til råd, og de undervurderer andres bidrag.[^keltner2007]</p>
     <p>Pfeffer selv advarer: Makt blir lett selvrettferdiggjørende, der «jeg har makt fordi jeg har rett» forvandles til «jeg har rett fordi jeg har makt.» Dette er mekanismen som gjør at dyktige ledere kan bli isolerte, miste kontakt med virkeligheten og ta stadig dårligere beslutninger.</p>
     <p>Risikoen er tydelig: En ledergruppe som optimerer for makt, uten korrigerende mekanismer, utvikler seg mot transaksjonelle relasjoner, høy turnover og en kultur der kortsiktige gevinster trumfer langsiktig verdiskaping.</p>
 </section>
@@ -76,7 +102,7 @@ json_ld:
     <p>La oss starte med prisen for makt, fordi den oftest er usynlig for dem som sitter i den:</p>
     <ul>
         <li><strong>Tid brukt på makt er tid ikke brukt på substans.</strong> Å bygge allianser, sikre budsjetter og posisjonere seg politisk er tid som kunne vært brukt på å forstå markedet, utvikle medarbeidere eller forbedre produktet. Dette er en reell alternativkostnad.</li>
-        <li><strong>Makt korrumperer dømmekraften.</strong> Keltners forskning viser at makthavere systematisk overvurderer egen kompetanse og undervurderer andres. De blir dårligere til å ta imot råd, og mer tilbøyelige til å ta risiko på andres vegne. Effekten er målt både i laboratoriestudier og i reelle organisasjoner.<sup class="citation">[keltner2007]</sup></li>
+        <li><strong>Makt korrumperer dømmekraften.</strong> Keltners forskning viser at makthavere systematisk overvurderer egen kompetanse og undervurderer andres. De blir dårligere til å ta imot råd, og mer tilbøyelige til å ta risiko på andres vegne. Effekten er målt både i laboratoriestudier og i reelle organisasjoner.[^keltner2007]</li>
         <li><strong>Psykologisk toll.</strong> Makt er ensomt. Når du har makt, endrer andres relasjon til deg seg — selv når du ikke ønsker det. Tillit blir vanskeligere, ærlig tilbakemelding forsvinner, og paranoia kan vokse. «Er de enige med meg fordi jeg har rett, eller fordi jeg er sjefen?»</li>
         <li><strong>Relasjonskostnader.</strong> Makt endrer hvordan andre forholder seg til deg. Folk sier det du vil høre, holder tilbake dårlige nyheter, og posisjonerer seg heller enn å samarbeide. Dette er ikke vond vilje — det er rasjonell tilpasning til en maktstruktur.</li>
     </ul>
@@ -99,7 +125,7 @@ json_ld:
         <li><strong>Tjeneste-tungt med makt-elementer:</strong> Tjenestekulturen dominerer, men det finnes ledere med reell beslutningsmyndighet. Utfordringen er at beslutninger ofte tar for lang tid fordi kulturen idealiserer konsensus.</li>
         <li><strong>Rent tjenesteorientert:</strong> Samarbeidende, men beslutningsvegrende. Potensial for utnyttelse av de mest lojale. Endringstakten er lav fordi alle skal være enige.</li>
     </ul>
-    <p>Logans forskning på kulturstadier (Stage 4–5) peker på en interessant syntese: De mest effektive kulturene er «vi»-orienterte kulturer som samtidig distribuerer makt bredt. I Stage 4-kulturer er makt ikke noe enkeltpersoner har — det er noe teamet har sammen. Makt brukes til å tjene felles mål, ikke til å posisjonere seg internt.<sup class="citation">[logan2009]</sup></p>
+    <p>Logans forskning på kulturstadier (Stage 4–5) peker på en interessant syntese: De mest effektive kulturene er «vi»-orienterte kulturer som samtidig distribuerer makt bredt. I Stage 4-kulturer er makt ikke noe enkeltpersoner har — det er noe teamet har sammen. Makt brukes til å tjene felles mål, ikke til å posisjonere seg internt.[^logan2009]</p>
     <p>Dette er ikke naiv optimisme. Det er en empirisk observasjon av hva som faktisk fungerer i organisasjoner som presterer over tid. Når makt distribueres og samtidig forankres i et felles oppdrag, reduseres både risikoen for maktmisbruk og risikoen for beslutningsvegring.</p>
 </section>
 
