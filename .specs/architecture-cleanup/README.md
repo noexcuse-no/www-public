@@ -24,44 +24,44 @@ Consolidate all five layers — CSS, HTML templates, content model (Markdown col
 
 ## Acceptance Criteria (Checklist)
 
-### A1.1 — Topic consolidation (`_topics/` collection)
+### A1.1 — Topic consolidation (`_topics/` collection) ✅
 
-- [ ] `_config.yml` registers `_topics/` collection with `output: false`
-- [ ] All `_frames/*.md` files are copied to `_topics/` with frontmatter amended to include `category: frame`
-- [ ] `_topics/` items in `_config.yml` defaults have `category` field, image path, and layout reference
-- [ ] Benefit cards and process step data from `_products/ledelse-60-2.md` frontmatter are migrated to `_topics/` with appropriate categories (`benefit`, `step`)
-- [ ] `_frames/` directory is removed after migration
-- [ ] Frame article pages (`_pages/struktur.md` etc.) continue to render correctly — their topic content is sourced from `site.topics` where `category == "frame"`, and the article page links remain `/struktur/` etc. (unchanged permalinks)
-- [ ] Every card on `om_metode.md` (frame grid) and `ledelse_60-2.md` (benefit grid, process steps) is rendered via `_includes/card.html` iterating `site.topics`, not hardcoded HTML
+- [x] `_config.yml` registers `_topics/` collection with `output: false`
+- [x] All `_frames/*.md` files are copied to `_topics/` with frontmatter amended to include `category: frame`
+- [x] `_topics/` items in `_config.yml` defaults have `category` field, image path, and layout reference
+- [x] Benefit cards and process step data from `_products/ledelse-60-2.md` frontmatter are migrated to `_topics/` with appropriate categories (`benefit`, `step`)
+- [x] `_frames/` directory is removed after migration
+- [x] Frame article pages (`_pages/struktur.md` etc.) continue to render correctly — their topic content is sourced from `site.topics` where `category == "frame"`, and the article page links remain `/struktur/` etc. (unchanged permalinks)
+- [x] Every card on `om_metode.md` (frame grid) and `ledelse_60-2.md` (benefit grid, process steps) is rendered via `_includes/card.html` iterating `site.topics`, not hardcoded HTML
 
-### A1.2 — Hero unification
+### A1.2 — Hero unification ✅
 
-- [ ] `_includes/hero.html` is created — renders from page frontmatter fields: `hero.image`, `hero.title`, `hero.breadcrumb`, `hero_effect`
-- [ ] `assets/css/components/hero.css` contains a single `.hero` class set that handles all hero variants (landing, science, about, frame/perspektiv)
-- [ ] The 4 existing hero implementations (`.frame-hero` in `article.css`, `.about-hero` in `about.css`, `.landing-hero`/`.science-hero` in `products.css`) are removed — replaced by the shared `.hero` component
-- [ ] All 12 pages with heroes (`ledelse_60-2.md`, `om_oss.md`, `om_metode.md`, `struktur.md`, `identitet.md`, `mennesker.md`, `pavirkning.md`, `forankring.md`, `generativ-ki.md`, `tillit.md`, `usikkerhet.md`, `vitenskapelig-grunnlag.md`) use the same `_includes/hero.html` include
-- [ ] Hero frontmatter is added to pages missing it; redundant frontmatter is removed
+- [x] `_includes/hero.html` is created — renders from page frontmatter fields: `hero.image`, `hero.title`, `hero.breadcrumb`, `hero_effect`
+- [x] `assets/css/components/hero.css` contains a single `.hero` class set that handles all hero variants (landing, science, about, frame/perspektiv)
+- [x] The 4 existing hero implementations (`.frame-hero` in `article.css`, `.about-hero` in `about.css`, `.landing-hero`/`.science-hero` in `products.css`) are removed — replaced by the shared `.hero` component
+- [x] All 12 pages with heroes (`ledelse_60-2.md`, `om_oss.md`, `om_metode.md`, `struktur.md`, `identitet.md`, `mennesker.md`, `pavirkning.md`, `forankring.md`, `generativ-ki.md`, `tillit.md`, `usikkerhet.md`, `vitenskapelig-grunnlag.md`) use the same `_includes/hero.html` include
+- [x] Hero frontmatter is added to pages missing it; redundant frontmatter is removed
 
-### A1.3 — Card partial
+### A1.3 — Card partial ✅
 
-- [ ] `_includes/card.html` renders one topic item from a given category — uses `topic.image`, `topic.title`, `topic.description`, `topic.cta` where applicable
-- [ ] Card styling lives entirely in `assets/css/components/card.css`
-- [ ] Pages pass `include.category` to iterate and render the relevant subset of topics
-- [ ] Cards respect dark mode via CSS variables only (same as A1.4)
-- [ ] Card layout variants (grid vs. row, icon vs. banner image) are controlled by CSS classes, not separate HTML includes
+- [x] `_includes/card.html` renders one topic item from a given category — uses `topic.image`, `topic.title`, `topic.description`, `topic.cta` where applicable
+- [x] Card styling lives entirely in `assets/css/components/card.css`
+- [x] Pages pass `include.category` to iterate and render the relevant subset of topics
+- [x] Cards respect dark mode via CSS variables only (same as A1.4)
+- [x] Card layout variants (grid vs. row, icon vs. banner image) are controlled by CSS classes, not separate HTML includes
 
-### A1.4 — CSS color hygiene
+### A1.4 — CSS color hygiene ✅
 
-- [ ] `grep -n '#fff\|#ffffff\|#000\|#000000\|color: rgba\|background: rgba\|background-color: rgba' assets/css/*.css` returns zero matches in `article.css`, `about.css`, `products.css`, `header.css`, `navbar.css`, `footer.css`, `profiles.css`
-- [ ] All visual color values use `var(--variable)` referencing `colors.css`
-- [ ] `colors.css` has sufficient variable coverage for every component — no component falls back to a hardcoded color
-- [ ] `styles-dark.css` is reduced from 283 lines to approximately 30 lines — only variable flips and aesthetic tweaks (gradient intensity, shadow depth) that cannot be expressed as pure variable swaps
+- [x] `grep -n '#fff\|#ffffff\|#000\|#000000\|color: rgba\|background: rgba\|background-color: rgba' assets/css/*.css` returns zero matches in `article.css`, `about.css`, `products.css`, `header.css`, `navbar.css`, `footer.css`, `profiles.css`
+- [x] All visual color values use `var(--variable)` referencing `colors.css`
+- [x] `colors.css` has sufficient variable coverage for every component — no component falls back to a hardcoded color
+- [ ] `styles-dark.css` is reduced from 283 lines to approximately 30 lines — only variable flips and aesthetic tweaks (gradient intensity, shadow depth) that cannot be expressed as pure variable swaps (A1.7)
 
 ### A1.5 — CSS file reorganization
 
 - [ ] `assets/css/components/` directory exists with files:
-  - `hero.css` — all hero layout, overlay, responsive styles
-  - `card.css` — all card layout, hover, responsive styles
+  - `hero.css` — all hero layout, overlay, responsive styles ⚡ exists
+  - `card.css` — all card layout, hover, responsive styles ⚡ exists
   - `buttons.css` — all button / CTA styles (extracted from `products.css`)
   - `header.css` — stays as-is
   - `navbar.css` — stays as-is
@@ -84,7 +84,11 @@ Consolidate all five layers — CSS, HTML templates, content model (Markdown col
 - [ ] `_pages/om_metode.md` has no `<style>` block — any remaining inline styles are moved to appropriate CSS files
 - [ ] No page carries page-specific CSS in a `<style>` tag — page-specific overrides go to a dedicated CSS file or use existing utility classes
 
-### A1.7 — No regressions
+### A1.7 — `styles-dark.css` shrink
+
+- [ ] `styles-dark.css` is reduced from 263 lines to approximately 30 lines — only variable flips and aesthetic tweaks that cannot be expressed as pure variable swaps
+
+### A1.8 — No regressions
 
 - [ ] `bundle exec jekyll build` exits 0
 - [ ] All pages render heroes correctly (check top 3 pages: `/ledelse-60-2/`, `/om-oss/`, `/om-metode/`)
@@ -95,16 +99,16 @@ Consolidate all five layers — CSS, HTML templates, content model (Markdown col
 
 ## Implementation Order
 
-| Step | What | Why |
-|------|------|-----|
-| 1 | Topic content migration | Foundation — everything depends on the unified collection |
-| 2 | Hero include + CSS | Next — every page uses it, so it's a big diff to review early |
-| 3 | Card include + CSS | Needs topic collection in place (step 1) |
-| 4 | CSS color purge | Low risk, mechanical — can be done after structural changes settle |
-| 5 | CSS file split + cleanup | Reorganize after all CSS changes are done |
-| 6 | Inline CSS removal | Final cleanup |
-| 7 | `styles-dark.css` shrink | Last — depends on all other CSS being clean |
-| 8 | Full regression pass | Verify build, render, animations, dark mode |
+| Step | Status | What | Why |
+|------|--------|------|-----|
+| 1 | ✅ Merged | Topic content migration | Foundation — everything depends on the unified collection |
+| 2 | ✅ Merged | Hero include + CSS | Next — every page uses it, so it's a big diff to review early |
+| 3 | ✅ Merged | Card include + CSS | Needs topic collection in place (step 1) |
+| 4 | ✅ Merged | CSS color purge | Low risk, mechanical — can be done after structural changes settle |
+| 5 | ⬜ Pending | CSS file split + cleanup | Reorganize after all CSS changes are done |
+| 6 | ⬜ Pending | Inline CSS removal | Final cleanup |
+| 7 | ⬜ Pending | `styles-dark.css` shrink | Last — depends on all other CSS being clean |
+| 8 | ⬜ Pending | Full regression pass | Verify build, render, animations, dark mode |
 
 ## Design References
 
