@@ -2,266 +2,38 @@ body {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
 }
-
 a {
     color: var(--link-color-dark);
 }
-
 a:hover {
     color: var(--link-hover-dark);
 }
-
 .header {
     background-color: var(--primary-navy);
     color: var(--primary-azure);
     border-bottom-color: var(--border-color-dark);
     --logo-fill: var(--primary-azure);
 }
-
 .header-margin {
     background-color: var(--primary-navy);
 }
-
-/* .navbar intentionally inherits .header background (--primary-navy) */
-
 .footer {
     background-color: var(--footer-background-dark);
     color: var(--footer-text-dark);
 }
-
 .button, .close-button {
     background-color: var(--button-background-dark);
     color: var(--button-text-color-light);
 }
-
 .banner {
     background-color: var(--banner-background-dark);
     color: var(--banner-text-dark);
 }
-
 .profile-detail-content {
     background-color: var(--box-background-dark);
     color: var(--text-color-dark);
 }
-
 .product {
     background-color: var(--box-background-dark);
     color: var(--text-color-dark);
-}
-
-.landing-benefits,
-.landing-process,
-.landing-story,
-.landing-cases,
-.landing-cta {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
-}
-
-.benefit-card,
-.process-step,
-.case-card {
-    background-color: var(--box-background-dark);
-    box-shadow: var(--box-shadow-dark);
-}
-
-.booking-overlay {
-    background: var(--overlay-dark);
-}
-
-.booking-container {
-    background: var(--box-background-dark);
-}
-
-.booking-close {
-    background: var(--close-bg-dark);
-    color: var(--text-color-dark);
-}
-
-.profile-compact {
-    background: var(--box-background-dark);
-    box-shadow: var(--box-shadow-dark);
-}
-
-.profile-modal-content {
-    background: var(--box-background-dark);
-    color: var(--text-color-dark);
-}
-
-.profile-close {
-    background: var(--close-bg-dark);
-    color: var(--text-color-dark);
-}
-
-.profile-expand-btn {
-    color: var(--link-color-dark);
-}
-
-.landing-benefits-grid .benefit-card,
-.landing-process-steps .process-step {
-    background-color: var(--box-background-dark);
-    box-shadow: var(--box-shadow-dark);
-}
-
-#profiles {
-    background-color: var(--background-color-dark);
-}
-
-.profile {
-    background-color: var(--background-color-dark);
-}
-
-.profile-compact:hover {
-    box-shadow: var(--box-shadow-dark);
-}
-
-.profile-image {
-    border-color: var(--box-background-dark);
-}
-
-.profile-name {
-    color: var(--text-color-dark);
-}
-
-.profile-contact {
-    color: var(--text-color-dark);
-}
-
-.profile-phone,
-.profile-email {
-    color: var(--link-color-dark);
-    background: var(--surface-subtle-dark);
-}
-
-.profile-phone:hover,
-.profile-email:hover {
-    background: var(--surface-hover-dark);
-}
-
-.profile-expanded {
-    background: var(--overlay-dark);
-}
-
-.profile-header-info .profile-name {
-    color: var(--text-color-dark);
-}
-
-.profile-tags {
-    color: var(--text-color-dark);
-}
-
-.profile-bio {
-    color: var(--text-color-dark);
-    border-color: var(--border-color-dark);
-}
-
-.profile-contact-grid {
-    border-color: var(--border-color-dark);
-}
-
-.profile-contact-item {
-    color: var(--link-color-dark);
-}
-
-.profile-details {
-    color: var(--text-color-dark);
-}
-
-.product-cta-footer {
-    background-color: var(--background-color-dark);
-}
-
-/* Navbar dark mode */
-.navbar a {
-    color: var(--nav-link-color-dark);
-}
-
-.navbar a:hover {
-    color: var(--nav-link-color-dark);
-    background-color: var(--nav-hover-bg-dark);
-}
-
-
-.value-card {
-    background: var(--box-background-dark);
-    box-shadow: var(--box-shadow-dark);
-}
-
-/* Cases dark mode */
-.case {
-    background-color: var(--box-background-dark);
-    color: var(--text-color-dark);
-}
-
-.value-card:hover {
-    box-shadow: var(--box-shadow-hover-dark);
-}
-
-.benefit-link {
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
-}
-
-/* Profiles dark mode */
-.profile-modal-content {
-    background: var(--box-background-dark);
-}
-
-.profile-header {
-    background: linear-gradient(135deg, var(--profile-gradient-start-dark) 0%, var(--profile-gradient-end-dark) 100%);
-}
-
-.profile-image-large {
-    border-color: var(--border-color-dark);
-}
-
-.profile-bio,
-.profile-contact-grid {
-    border-bottom-color: var(--border-color-dark);
-}
-
-.profile-contact-item {
-    background: var(--surface-raised-dark);
-    color: var(--link-color-dark);
-}
-
-.profile-contact-item:hover {
-    background: var(--surface-raised-hover-dark);
-}
-
-
-
-.benefit-card {
-    background-color: var(--box-background-dark);
-}
-
-.benefit-card:hover {
-    box-shadow: var(--shadow-md-dark);
-}
-
-.process-step:hover {
-    box-shadow: var(--shadow-md-dark);
-}
-
-.case-card:hover {
-    box-shadow: var(--shadow-md-dark);
-}
-
-/* Perspektiv page dark mode */
-.perspektiv-element,
-.perspektiv-challenge,
-.perspektiv-cta {
-    background: var(--box-background-dark);
-}
-
-.perspektiv-questions li {
-    border-bottom-color: var(--border-color-dark);
-}
-
-.perspektiv-about {
-    border-top-color: var(--border-color-dark);
-}
-
-.perspektiv-breadcrumb a {
-    color: var(--link-color-dark);
 }

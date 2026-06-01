@@ -25,6 +25,16 @@
 }
 
 
+/* Dark mode overrides */
+.dark-mode .navbar a {
+    color: var(--nav-link-color-dark);
+}
+
+.dark-mode .navbar a:hover {
+    color: var(--nav-link-color-dark);
+    background-color: var(--nav-hover-bg-dark);
+}
+
 @media (max-width: 599px) {
     .navbar {
         gap: 4px;
