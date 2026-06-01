@@ -52,10 +52,12 @@ layout: page
     {% endif %}
 
     {% assign img_name = 'spot-' | append: frame.id | append: '-' | append: spot_index %}
+    {% if page.show_spots %}
     <img src="{{ '/assets/images/banners/' | append: img_name | append: '.webp' | relative_url }}"
          alt="Illustrasjon: {{ element.title }}"
          class="{{ float_class }}"
          loading="lazy">
+    {% endif %}
 
     <h3>{{ element.title }}</h3>
     {{ element.body | markdownify }}
@@ -74,11 +76,13 @@ layout: page
 
 <!-- Leader Value with spot illustration -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
+  {% if page.show_spots %}
   {% assign leader_img = 'spot-' | append: frame.id | append: '-3' %}
   <img src="{{ '/assets/images/banners/' | append: leader_img | append: '.webp' | relative_url }}"
        alt="Illustrasjon: {{ frame.leader_value.heading }}"
        class="argument-illustration argument-illustration--right"
        loading="lazy">
+  {% endif %}
 
   <h2>{{ frame.leader_value.heading }}</h2>
   {{ frame.leader_value.body | markdownify }}
