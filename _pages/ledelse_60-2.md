@@ -2,6 +2,11 @@
 layout: page
 title: "Ledelse 60:2 — Orientering for ledergruppen"
 permalink: /ledelse-60-2/
+hero:
+  image: /assets/images/hero-illustration.webp
+  alt: "Ledelse 60:2"
+  title: "Ledelse 60:2"
+  intro: "Enkel, kunnskapsbasert orientering for ledergruppen. 60 spørsmål på 2 timer."
 hero_effect: parallax-fade
 json_ld:
   type: "Service"
@@ -38,15 +43,7 @@ json_ld:
           description: "Kontinuerlig oppfølging og coaching for organisasjonsvekst"
 ---
 
-<section class="landing-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="landing-hero-image hero-image">
-        <img src="{{ '/assets/images/hero-illustration.webp' | relative_url }}" alt="Ledelse 60:2">
-    </div>
-    <div class="landing-hero-content">
-        <h1 class="hero-title">Ledelse 60:2</h1>
-        <p class="landing-hero-description hero-intro">Enkel, kunnskapsbasert orientering for ledergruppen. 60 spørsmål på 2 timer.</p>
-    </div>
-</section>
+{% include hero.html %}
 
 <section>
         <div class="landing-hero-buttons">
@@ -57,63 +54,21 @@ json_ld:
 
 <section class="landing-benefits animate-on-scroll fade-in-up">
     <h2>Fire gode grunner</h2>
-    <div class="landing-benefits-grid stagger-parent" style="--stagger-delay: 100ms;">
-        <div class="benefit-card animate-on-scroll fade-in-up stagger">
-            <img src="{{ '/assets/images/banners/benefit-control.webp' | relative_url }}" alt="Få kontroll uten byråkrati" class="benefit-banner">
-            <div class="benefit-card-content">
-                <h3>Bedre ledelse uten byråkrati</h3>
-                <p>Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema. Dyrk engasjement og eierskap blant ansatte, ikke regler og regimer.</p>
-                <a href="{{ '/tillit/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
-            </div>
-        </div>
-        <div class="benefit-card animate-on-scroll fade-in-up stagger">
-            <img src="{{ '/assets/images/banners/benefit-ai.webp' | relative_url }}" alt="Oppnå målbare gevinster med KI" class="benefit-banner">
-            <div class="benefit-card-content">
-                <h3>Målbare gevinster med GenKI</h3>
-                <p>Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Få snakker om hvordan å utvikle de ansatte som KI-ledere.</p>
-                <a href="{{ '/generativ-ki/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
-            </div>
-        </div>
-        <div class="benefit-card animate-on-scroll fade-in-up stagger">
-            <img src="{{ '/assets/images/banners/benefit-future.webp' | relative_url }}" alt="Bli forberedt på en usikker fremtid" class="benefit-banner">
-            <div class="benefit-card-content">
-                <h3>Bli forberedt på en usikker fremtid</h3>
-                <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer.</p>
-                <a href="{{ '/usikkerhet/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
-            </div>
-        </div>
-        <div class="benefit-card animate-on-scroll fade-in-up stagger">
-            <img src="{{ '/assets/images/banners/benefit-anchoring.webp' | relative_url }}" alt="Forankre initiativer i ledergruppen" class="benefit-banner">
-            <div class="benefit-card-content">
-                <h3>Forankre initiativer i ledergruppen</h3>
-                <p>Skap en bedre felles forståelse av grunnlaget for nye initiativer. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft.</p>
-                <a href="{{ '/forankring/' | relative_url }}" class="benefit-link">Les artikkelen →</a>
-            </div>
-        </div>
+    <div class="card-grid card-grid--benefits">
+        {% assign benefits = site.topics | where: "category", "benefit" %}
+        {% for topic in benefits %}
+            {% include card.html topic=topic %}
+        {% endfor %}
     </div>
 </section>
 
 <section id="hvordan" class="landing-process animate-on-scroll fade-in-up">
     <h2>Hvordan gjør vi det?</h2>
-    <div class="landing-process-steps stagger-parent" style="--stagger-delay: 100ms;">
-        <div class="process-step animate-on-scroll fade-in-up stagger">
-            <div class="process-step-number">1</div>
-            <img src="{{ '/assets/images/banners/step-talk.webp' | relative_url }}" alt="Uforpliktende samtale" class="process-banner">
-            <h3>Uforpliktende samtale</h3>
-            <p>Vi konkretiserer hva dere vil oppnå med modenhetsanalysen.</p>
-        </div>
-        <div class="process-step animate-on-scroll fade-in-up stagger">
-            <div class="process-step-number">2</div>
-            <img src="{{ '/assets/images/banners/step-interview.webp' | relative_url }}" alt="To timers strukturert intervju" class="process-banner">
-            <h3>To timers strukturert intervju</h3>
-            <p>60 diagnostiske spørsmål med inntil fem ledere.</p>
-        </div>
-        <div class="process-step animate-on-scroll fade-in-up stagger">
-            <div class="process-step-number">3</div>
-            <img src="{{ '/assets/images/banners/step-report.webp' | relative_url }}" alt="Rapport og anbefalinger" class="process-banner">
-            <h3>Rapport og anbefalinger</h3>
-            <p>Sammenlikning med best practice og konkrete tiltak.</p>
-        </div>
+    <div class="card-grid card-grid--steps">
+        {% assign steps = site.topics | where: "category", "step" | sort: "step_number" %}
+        {% for topic in steps %}
+            {% include card.html topic=topic %}
+        {% endfor %}
     </div>
 </section>
 

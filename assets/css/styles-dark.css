@@ -258,26 +258,6 @@ a:hover {
     border-top-color: rgba(255, 255, 255, 0.1);
 }
 
-.perspektiv-hero-content {
-    background: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-}
-
-.perspektiv-hero h1 {
-    color: var(--banner-text-dark);
-}
-
-.perspektiv-intro {
-    color: var(--banner-text-dark);
-}
-
-.perspektiv-breadcrumb a {
-    color: var(--link-color-dark);
-}
-erspektiv-intro {
-    color: var(--banner-text-dark);
-}
-
 .perspektiv-breadcrumb a {
     color: var(--link-color-dark);
 }

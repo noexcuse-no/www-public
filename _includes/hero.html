@@ -1,0 +1,36 @@
+{% comment %}
+  Hero include — unified hero component for all page types.
+  
+  Supports two data sources:
+  1. Include parameters (used by layouts like perspektiv)
+  2. Page frontmatter (page.hero.image, page.hero.title, etc.)
+  
+  Parameters (each falls back to page.hero.*):
+    image   — hero background image path
+    alt     — image alt text
+    title   — hero heading (h1)
+    intro   — hero subtitle/description
+    breadcrumb — breadcrumb text (optional)
+{% endcomment %}
+
+{% assign hero_image = include.image | default: page.hero.image %}
+{% assign hero_alt = include.alt | default: page.hero.alt %}
+{% assign hero_title = include.title | default: page.hero.title %}
+{% assign hero_intro = include.intro | default: page.hero.intro %}
+{% assign hero_breadcrumb = include.breadcrumb | default: page.hero.breadcrumb %}
+{% assign hero_effect = include.hero_effect | default: page.hero_effect %}
+
+<section class="hero"{% if hero_effect %} data-hero-effect="{{ hero_effect }}"{% endif %}>
+  <div class="hero-image">
+    <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}">
+  </div>
+  <div class="hero-content">
+    {% if hero_breadcrumb %}
+    <p class="hero-breadcrumb"><a href="{{ '/' | relative_url }}">{{ hero_breadcrumb }}</a></p>
+    {% endif %}
+    <h1 class="hero-title">{{ hero_title }}</h1>
+    {% if hero_intro %}
+    <p class="hero-intro">{{ hero_intro }}</p>
+    {% endif %}
+  </div>
+</section>

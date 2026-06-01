@@ -1,5 +1,6 @@
 ---
 id: "struktur"
+category: "frame"
 title: "Strukturperspektivet i ledelse"
 description: "Lær hvordan strukturperspektivet kan hjelpe ledergruppen å få oversikt over roller, ansvar og koordinering. Struktur handler om å skape et system der oppgaver og mål henger sammen."
 
@@ -97,4 +98,7 @@ about:
   link_url: "/metode/"
 
 color_accent: "#2A4D6E"
+card_description: "Roller, mål, prosesser, koordinering, ansvar"
+detail: "Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig."
+weight: 1
 ---

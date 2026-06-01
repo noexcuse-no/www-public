@@ -3,6 +3,12 @@ layout: page
 title: "Makt eller tjeneste — Hvor sitter din ledergruppe på spekteret?"
 description: "Organisasjoner trenger både makt og tjeneste. Lær hvorfor effektive ledelseskulturer bevisst balanserer begge."
 permalink: /makt/
+hero:
+  image: /assets/images/banners/hero-makt.webp
+  alt: "Makt eller tjeneste — balansen i ledergruppen"
+  breadcrumb: "← No Excuse AS"
+  title: "Makt eller tjeneste?"
+  intro: "Organisasjoner trenger både makt og tjeneste. Spørsmålet er ikke hvilken du skal velge — det er om ledergruppen din har en bevisst kultur som balanserer dem."
 json_ld:
   type: "Article"
   name: "Makt eller tjeneste"
@@ -19,16 +25,7 @@ json_ld:
       name: "Organisasjonskultur"
 ---
 
-<section class="frame-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="frame-hero-image hero-image">
-        <img src="{{ '/assets/images/banners/hero-makt.webp' | relative_url }}" alt="Makt eller tjeneste — balansen i ledergruppen">
-    </div>
-    <div class="frame-hero-content">
-        <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1 class="hero-title">Makt eller tjeneste?</h1>
-        <p class="frame-intro hero-intro">Organisasjoner trenger både makt og tjeneste. Spørsmålet er ikke hvilken du skal velge — det er om ledergruppen din har en bevisst kultur som balanserer dem.</p>
-    </div>
-</section>
+{% include hero.html %}
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <p>To sitater, to verdenssyn. Jeffrey Pfeffer, en av forskningen mest siterte stemmer på maktdynamikk, slår fast: «Power is the ability to get things done.» Uten makt — ingenting skjer. På den andre siden står Ken Blanchard og Colleen Barrett: «Leadership is not about you; it's about the people you serve.» Ledelse som tjeneste.</p>

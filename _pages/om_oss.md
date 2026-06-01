@@ -2,6 +2,11 @@
 layout: page
 title: "Om oss"
 permalink: /om-oss/
+hero:
+  image: /assets/images/banners/banner-om-oss.webp
+  alt: "No Excuse AS - Vi hjelper ledergrupper"
+  title: "Om oss"
+  intro: "Vi hjelper ledergrupper å få bedre blikk for mennesker, identitet, struktur og påvirkning."
 hero_effect: parallax-fade
 json_ld:
   type: "Organization"
@@ -22,15 +27,7 @@ json_ld:
     - "https://www.linkedin.com/company/noexcuse"
 ---
 
-<section class="about-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="about-hero-image hero-image">
-        <img src="{{ '/assets/images/banners/banner-om-oss.webp' | relative_url }}" alt="No Excuse AS - Vi hjelper ledergrupper">
-    </div>
-    <div class="about-hero-content">
-        <h1 class="hero-title">Om oss</h1>
-        <p class="about-tagline hero-intro">Vi hjelper ledergrupper å få bedre blikk for mennesker, identitet, struktur og påvirkning.</p>
-    </div>
-</section>
+{% include hero.html %}
 
 <section class="about-story animate-on-scroll fade-in-up">
     <h2>Hvorfor No Excuse?</h2>

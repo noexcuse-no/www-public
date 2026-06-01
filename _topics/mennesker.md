@@ -1,5 +1,6 @@
 ---
 id: "mennesker"
+category: "frame"
 title: "Menneskeperspektivet i ledelse"
 description: "Lær hvordan menneskeperspektivet kan hjelpe ledergruppen å bygge tillit, motivere medarbeidere og skape en kultur der mennesker trives og vokser."
 
@@ -103,4 +104,7 @@ about:
   link_url: "/metode/"
 
 color_accent: "#D4A836"
+card_description: "Tillit, motivasjon, relasjoner, medvirkning"
+detail: "Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at «servant leadership» er et konkurransefortrinn."
+weight: 2
 ---

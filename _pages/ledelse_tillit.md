@@ -3,6 +3,12 @@ layout: page
 title: "Bedre ledelse uten byråkrati"
 description: "Lær hvordan tillit og psykologisk trygghet i ledelse faktisk fungerer. Forskning fra Greenleaf, Edmondson og andre viser hvordan du kan skape en organisasjon der folk tør si ifra."
 permalink: /tillit/
+hero:
+  image: /assets/images/banners/benefit-control.webp
+  alt: "Tillit i ledelse"
+  breadcrumb: "← No Excuse AS"
+  title: "Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema."
+  intro: "Den viktigste faktoren for en velfungerende organisasjon er ikke strategi, struktur eller prosesser. Det er tillit. Lær hvordan du bygger den."
 json_ld:
   type: "Article"
   name: "Bedre ledelse uten byråkrati"
@@ -19,16 +25,7 @@ json_ld:
       name: "Servant leadership"
 ---
 
-<section class="frame-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="frame-hero-image hero-image">
-        <img src="{{ '/assets/images/banners/benefit-control.webp' | relative_url }}" alt="Tillit i ledelse">
-    </div>
-    <div class="frame-hero-content">
-        <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1 class="hero-title">Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema.</h1>
-        <p class="frame-intro hero-intro">Den viktigste faktoren for en velfungerende organisasjon er ikke strategi, struktur eller prosesser. Det er tillit. Lær hvordan du bygger den.</p>
-    </div>
-</section>
+{% include hero.html %}
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <h2>Hvorfor tillit er ledelsens valuta</h2>

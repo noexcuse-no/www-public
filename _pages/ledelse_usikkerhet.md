@@ -3,6 +3,12 @@ layout: page
 title: "Usikkerhet og endring — bli forberedt på en usikker fremtid"
 description: "Lær hvordan modne ledergrupper navigerer usikkerhet og endring — fra Scheins kulturnivåer til Kotters endringsmodell."
 permalink: /usikkerhet/
+hero:
+  image: /assets/images/banners/benefit-future.webp
+  alt: "Usikkerhet og endring"
+  breadcrumb: "← No Excuse AS"
+  title: "Usikkerhet og endring — bli forberedt"
+  intro: "Kultur spiser strategi til frokost, het det. Men hva er kultur egentlig — og hvordan navigerer ledergrupper usikkerhet og endring? Forskningen gir noen overraskende svar."
 json_ld:
   type: "Article"
   name: "Usikkerhet og endring — bli forberedt på en usikker fremtid"
@@ -19,16 +25,7 @@ json_ld:
       name: "Organisasjonskultur"
 ---
 
-<section class="frame-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
-    <div class="frame-hero-image hero-image">
-        <img src="{{ '/assets/images/banners/benefit-future.webp' | relative_url }}" alt="Usikkerhet og endring">
-    </div>
-    <div class="frame-hero-content">
-        <p class="frame-breadcrumb"><a href="{{ '/' | relative_url }}">← No Excuse AS</a></p>
-        <h1 class="hero-title">Usikkerhet og endring — bli forberedt</h1>
-        <p class="frame-intro hero-intro">Kultur spiser strategi til frokost, het det. Men hva er kultur egentlig — og hvordan navigerer ledergrupper usikkerhet og endring? Forskningen gir noen overraskende svar.</p>
-    </div>
-</section>
+{% include hero.html %}
 
 <section class="frame-section animate-on-scroll fade-in-up">
     <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.</p>

@@ -31,7 +31,7 @@ Completed items belong in `CHANGELOG.md` only.
 | B2 | GenKI: add cultural maturity + power dynamics (from Identitet/Påvirkning frames) | Planned | — |
 | B3 | Usikkerhet: add theater metaphor + power vacuum (from Identitet/Påvirkning frames) | Planned | — |
 | B4 | Forankring: add interests + trust + ownership (from Påvirkning/Mennesker/Struktur frames) | Planned | — |
-| A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Planned | — |
+| A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Doing | — |
 | N2 | Makt article (order: 1st) | Planned | — |
 | N1 | Triader article (order: 2nd) | Planned | N2 |
 | N3 | Perspektiv article (order: 3rd) | Planned | N1, N2 |
