@@ -142,18 +142,22 @@ json_ld:
     
     <div class="grid grid--2 challenges-grid stagger-parent">
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/tillit-t4-hierarchical-blindness.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Hierarkisk blindhet</h4>
             <p>Ledere som ikke ser at deres atferd oppfattes annerledes avhengig av posisjon. Det som føles som «direkte» oppfattes som «domsnutt» av underordnede.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/tillit-t4-info-asymmetry.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Informerings asymmetri</h4>
             <p>Ledere vet mer enn de deler. Medarbeidere tolker dette som mistillit. Kommunikasjonen blir formell og overfladisk.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/tillit-t4-historical-baggage.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Historisk baggage</h4>
             <p>Tidligere svik sitter i kulturen. Nye ledere møtes med «vi har hørt dette før»-holdning. Initiativ blir møtt med skepsis.</p>
         </div>
         <div class="challenge-card animate-on-scroll fade-in-up stagger">
+            <img class="micro-illustration" src="{{ '/assets/images/banners/tillit-t4-inconsistent-followup.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
             <h4>Inkonsekvent oppfølging</h4>
             <p>Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring. Prioriteringer som stadig endres.</p>
         </div>
