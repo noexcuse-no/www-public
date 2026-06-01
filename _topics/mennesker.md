@@ -3,6 +3,8 @@ id: "mennesker"
 category: "frame"
 title: "Menneskeperspektivet i ledelse"
 description: "Lær hvordan menneskeperspektivet kan hjelpe ledergruppen å bygge tillit, motivere medarbeidere og skape en kultur der mennesker trives og vokser."
+banner: "assets/images/banners/perspektiv-mennesker.webp"
+url: "/mennesker/"
 
 json_ld:
   type: "Article"

@@ -92,15 +92,15 @@
 
 /* Brand Animation Classes */
 .hero-title {
-    animation: heroReveal 0.8s ease-out both;
+    animation: heroReveal 0.4s ease-out both;
 }
 
 .hero-intro {
-    animation: heroReveal 0.8s ease-out 0.2s both;
+    animation: heroReveal 0.4s ease-out 0.15s both;
 }
 
 .hero-image {
-    animation: heroImageReveal 1.2s ease-out both;
+    animation: heroImageReveal 0.6s ease-out both;
 }
 
 .page-transition {

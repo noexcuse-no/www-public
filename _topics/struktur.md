@@ -3,6 +3,8 @@ id: "struktur"
 category: "frame"
 title: "Strukturperspektivet i ledelse"
 description: "Lær hvordan strukturperspektivet kan hjelpe ledergruppen å få oversikt over roller, ansvar og koordinering. Struktur handler om å skape et system der oppgaver og mål henger sammen."
+banner: "assets/images/banners/perspektiv-struktur.webp"
+url: "/struktur/"
 
 json_ld:
   type: "Article"

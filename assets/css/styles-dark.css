@@ -22,9 +22,7 @@ a:hover {
     background-color: var(--primary-navy);
 }
 
-.navbar {
-    background-color: var(--navbar-background-dark);
-}
+/* .navbar intentionally inherits .header background (--primary-navy) */
 
 .footer {
     background-color: var(--footer-background-dark);

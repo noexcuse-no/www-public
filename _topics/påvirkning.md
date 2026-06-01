@@ -3,6 +3,8 @@ id: "påvirkning"
 category: "frame"
 title: "Påvirkningsperspektivet i ledelse"
 description: "Lær hvordan påvirkningsperspektivet kan hjelpe ledergruppen å forstå maktbalanse, interessekonflikter og hvordan beslutninger faktisk tas."
+banner: "assets/images/banners/perspektiv-påvirkning.webp"
+url: "/påvirkning/"
 
 json_ld:
   type: "Article"
