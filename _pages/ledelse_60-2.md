@@ -43,16 +43,11 @@ json_ld:
           description: "Kontinuerlig oppfølging og coaching for organisasjonsvekst"
 ---
 
-<div class="product-hero">
-    <div class="product-hero-content">
-        <h2>Ledelse 60:2</h2>
-        <p class="product-short-description">Enkel, kunnskapsbasert orientering for ledergruppen. 60 spørsmål på 2 timer.</p>
-        <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill Ledelse 60:2</a>
-        <a href="#hvordan" class="product-cta product-cta--spaced">Hvordan fungerer det? ↓</a>
-    </div>
-    <div class="product-hero-image">
-        <img src="{{ '/assets/images/hero-illustration.webp' | relative_url }}" alt="Ledelse 60:2">
-    </div>
+{% include hero.html %}
+
+<div class="section container--narrow" style="text-align: center; padding-top: var(--space-xl);">
+    <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill Ledelse 60:2</a>
+    <a href="#hvordan" class="product-cta product-cta--spaced">Hvordan fungerer det? ↓</a>
 </div>
 
 <section class="landing-benefits animate-on-scroll fade-in-up">
