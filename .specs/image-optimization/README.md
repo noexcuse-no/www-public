@@ -11,9 +11,10 @@ Convert all PNG images in `assets/images/` to WebP format with appropriate resiz
 | Category | Path | Count | Max Dimensions | Rationale |
 |----------|------|-------|----------------|-----------|
 | Banners | `assets/images/banners/` | 32 | 1920×1080 | 16:9 landscape illustrations, CSS max-width 1100px + 2x for retina |
+| Article heroes | `assets/images/banners/hero-*.webp` | 3 | 3840×2160 | Viewport-filling heroes (100vh), 4K for retina/ultrawide |
 | Icons | `assets/images/icons/` | 9 | 512×512 | Small UI icons, displayed at 40×40px in CSS |
 | Logos | `assets/images/` (noexcuse-logo-*.png) | 2 | 400×400 | Fixed display at 100×100px |
-| Hero | `assets/images/hero-illustration.png` | 1 | 1920×1080 | Large hero banner |
+| Hero | `assets/images/hero-illustration.png` | 1 | 3840×2160 | Large hero banner, 4K for viewport-filling display |
 | Profile | `assets/images/dagfinn.png` | 1 | 400×400 | Profile photo, displayed at 100×100px |
 
 ## Image Inventory
@@ -96,8 +97,8 @@ magick mogrify -resize 1920x1080 -quality 85 -format webp assets/images/banners/
 # Step 2: Icons — 512px max, quality 85
 magick mogrify -resize 512x512 -quality 85 -format webp assets/images/icons/*.png
 
-# Step 3: Hero illustration — 1920px max width
-magick mogrify -resize 1920x1080 -quality 85 -format webp assets/images/hero-illustration.png
+# Step 3: Hero illustration — 3840px max width (4K for viewport-filling heroes)
+magick mogrify -resize 3840x2160 -quality 85 -format webp assets/images/hero-illustration.png
 
 # Step 4: Logos — 400px max, quality 85
 magick mogrify -resize 400x400 -quality 85 -format webp assets/images/noexcuse-logo-*.png
@@ -228,19 +229,36 @@ If issues occur:
 1. All 44 PNG files converted to WebP format
 2. Original PNG files preserved in `.design/graphics/originals/`
 3. Banners resized to max 1920×1080 (only if larger)
-4. Icons resized to max 512×512 (only if larger)
-5. Logos resized to max 400×400 (only if larger)
-6. Profile photo resized to max 400×400 (only if larger)
-7. Quality setting: 85 for all conversions
-8. No PNG files remain in `assets/images/` (except in backup)
-9. Direct `.png` references in HTML updated to `.webp`
-10. Site passes `npm run lint` after conversion
-11. `.design/graphics.md` updated with resize guidelines
+4. Article hero images generated at 3840×2160 (4K) for viewport-filling display
+5. Icons resized to max 512×512 (only if larger)
+6. Logos resized to max 400×400 (only if larger)
+7. Profile photo resized to max 400×400 (only if larger)
+8. Quality setting: 85 for all conversions
+9. No PNG files remain in `assets/images/` (except in backup)
+10. Direct `.png` references in HTML updated to `.webp`
+11. Site passes `npm run lint` after conversion
+12. `.design/graphics.md` updated with resize guidelines
 
 ## Dependencies
 
 - ImageMagick (magick command)
 - Jekyll for local testing
+
+## 4K Resolution Requirement for Viewport-Filling Heroes
+
+Article hero images (e.g., `hero-triade.webp`, `hero-makt.webp`, `hero-perspektiv.webp`) are displayed at **full viewport height** (`100vh`) via `assets/css/components/hero.css`. The old 1920×1080 specification is insufficient for:
+- 4K displays (3840px wide)
+- Ultrawide monitors (3440px, 5120px)
+- Retina/HiDPI screens (e.g., 27" 5K = 5120px)
+
+**Rule:** All viewport-filling hero images must be generated at **minimum 3840×2160px** (4K UHD) before WebP conversion. This applies to:
+- `assets/images/banners/hero-*.webp`
+- `assets/images/hero-illustration.webp`
+
+**Generation workflow:**
+1. Generate original at 3840×2160 (PNG or source format)
+2. Copy to `.design/graphics/originals/`
+3. Convert to WebP with `magick mogrify -resize 3840x2160> -quality 85 -format webp`
 
 ## Related Documents
 

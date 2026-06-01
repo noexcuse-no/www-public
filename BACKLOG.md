@@ -34,7 +34,7 @@ Completed items belong in `CHANGELOG.md` only.
 | N3 | Perspektiv article (order: 3rd) | Done | N1, N2 |
 | P5 | Migrate `_pages/ledelse_*.md` to layout system | Done | A1 |
 | X2 | Dark mode consistency pass | Done | — |
-| F5 | Image generation for N1-N3 | Blocked | N1, N2, N3 |
+| F5 | Image generation for N1-N3 | Doing | — |
 | C1 | Customer case planning & discovery | Blocked | Brainstorming session |
 | C2 | Customer case intake form | Blocked | C1 |
 | C3 | Case presentation design | Blocked | C1, C2 |
