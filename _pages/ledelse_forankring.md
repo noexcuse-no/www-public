@@ -74,6 +74,9 @@ json_ld:
     
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>1. Formell vs. reell beslutningsmakt</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/forankring-t3-formal-vs-real-power.webp' | relative_url }}" alt="Abstrakt figurativ skisse av formell og reell makt som symboliserer beslutningsmakt i organisasjoner">
+        </div>
         <p>I de fleste organisasjoner er det stor forskjell på hvem som formelt har autoritet til å beslutte, og hvem som faktisk har innflytelse. Pfeffer viser at «the most powerful people in organizations are often not those with the formal authority.»[^pfeffer2010] Et initiativ uten tydelig eierskap er ikke forankret — det er bare kommunisert. Når roller er uklare, oppstår ansvarsskyvning, og forankringen blir illusorisk.</p>
         <p><strong>Tegn på klar maktbalanse:</strong> Beslutninger tas av dem med relevant ekspertise. Uenighet løses gjennom dialog, ikke posisjon. Autoritet følger ansvar.</p>
         <p><strong>Tegn på skjev makt:</strong> De med formell autoritet dominerer. Ekspertise ignoreres når den kommer fra feil person. Beslutninger tas bak lukkede dører.</p>
@@ -81,6 +84,9 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>2. Interesser som forankringens byggesteiner</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/forankring-t3-interests.webp' | relative_url }}" alt="Abstrakt figurativ skisse av sammenkoblede interesser som symboliserer interessekartlegging">
+        </div>
         <p>Hver leder og hver avdeling har sine interesser. Ikke nødvendigvis egoistiske — de kan være faglige, strategiske eller personlige. Forankring handler først og fremst om å forstå disse interessene og hvordan de samhandler.</p>
         <p>En initiativtaker som kartlegger interesser før hun presenterer løsningen, har langt større gjennomføringskraft enn den som antar at alle ser saken fra samme ståsted.</p>
         <p><strong>Tegn på god interessekartlegging:</strong> Ulike standpunkter er kjent og anerkjent. Forhandling handler om å forene interesser, ikke om å vinne en argumentasjon.</p>
@@ -89,6 +95,9 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>3. Kognitiv bias som påvirker valg</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/forankring-t3-bias.webp' | relative_url }}" alt="Abstrakt figurativ skisse av to tankeganger som symboliserer kognitiv bias og beslutningsprosesser">
+        </div>
         <p>Kahneman identifiserte to systemer for tenkning: System 1 (rask, intuitiv, emosjonell) og System 2 (langsom, analytisk, rasjonell).[^kahneman2011] De fleste viktige beslutninger tas med System 1, selv om vi tror vi bruker System 2.</p>
         <p><strong>Tegn på bias-bevissthet:</strong> Viktige beslutninger diskuteres med folk som tenker annerledes. Beslutninger revideres når ny informasjon kommer til. «Hva kan jeg ha oversett?» er et vanlig spørsmål.</p>
         <p><strong>Tegn på bias-blindhet:</strong> Beslutninger tas av enkeltpersoner. Ingen utfordrer premissene. Suksess tillegges egen dyktighet, feil tillegges eksterne forhold.</p>
@@ -96,6 +105,9 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>4. Konflikt og forhandling</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/forankring-t3-conflict.webp' | relative_url }}" alt="Abstrakt figurativ skisse av håndtrykk over en delt kart som symboliserer konstruktiv konfliktløsning">
+        </div>
         <p>De fleste viktige beslutninger innebærer interessekonflikter. Å ignorere dette er å overse virkeligheten. Effektive ledere forstår hvordan å forhandle og bygge konsensus.[^fisher1991]</p>
         <p><strong>Tegn på konstruktiv konflikt:</strong> Uenighet diskuteres åpent. Beslutninger tas etter at ulike perspektiver er vurdert. Kompromisser eies av alle parter.</p>
         <p><strong>Tegn på dysfunksjonell konflikt:</strong> Konflikter begraves til de eskalerer. Beslutninger omgjøres etter møter. «Enighet» maskerer undertrykt uenighet.</p>
@@ -103,6 +115,9 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>5. Beslutningskultur</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+            <img src="{{ '/assets/images/banners/forankring-t3-culture.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en gruppe i sirkel som symboliserer sunn beslutningskultur">
+        </div>
         <p>Irving Janis dokumenterte fenomenet «groupthink» — når jakten på enighet overrides behovet for kritisk vurdering.[^janis1982] Dette er spesielt farlig i organisasjoner med sterke kulturer eller karismatiske ledere.</p>
         <p><strong>Tegn på sunn beslutningskultur:</strong> Kritikk er forventet og verdsatt. Beslutninger kan omgjøres hvis premisser endres. Læring fra feil er systematisk.</p>
         <p><strong>Tegn på groupthink:</strong> Ingen utfordrer ledelsen. Kritikk avvises som illojalitet. Beslutninger tas for å unngå konflikt, ikke for å finne den beste løsningen.</p>
