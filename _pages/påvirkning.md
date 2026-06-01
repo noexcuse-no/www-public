@@ -3,6 +3,7 @@ class: frame
 layout: perspektiv
 permalink: /påvirkning/
 frame_id: "påvirkning"
+show_spots: true
 category: "frame"
 title: "Påvirkningsperspektivet i ledelse"
 description: "Lær hvordan påvirkningsperspektivet kan hjelpe ledergruppen å forstå maktbalanse, interessekonflikter og hvordan beslutninger faktisk tas."
@@ -43,18 +44,21 @@ intro:
 
 elements:
   - title: "Makt og innflytelse"
+    spot_image: "assets/images/banners/spot-pavirkning-makt.webp"
     body: |
       Makt i organisasjoner er ikke noe mystisk — det er evnen til å få ting gjort. Den kan komme fra formell autoritet, fra ekspertise, fra relasjoner, eller fra det å befinne seg i sentrale posisjoner. Men få ledergrupper snakker åpent om makt — strukturerte, anonyme verktøy kan avdekke mønstre som ellers forblir usynlige i møterommet.
     signs:
       positive: "Ledere vet hvem som har innflytelse på viktige beslutninger. De bygger allianser før de trenger dem. De er synlige der beslutninger tas."
       negative: "Ledere som tror «godt arbeid snakker for seg selv» ender sjelden øverst. De som unngår «politikk» ender opp med å bli utkonkurrert av de som omfavner det."
   - title: "Interesser og agendaer"
+    spot_image: "assets/images/banners/spot-pavirkning-nettverk.webp"
     body: |
       Hver leder og hver avdeling har sine interesser. Ikke nødvendigvis egoistiske — de kan være faglige, strategiske, eller personlige. Påvirkningsperspektivet handler om å forstå disse interessene og hvordan de samhandler. Når interessekartlegging gjøres systematisk, blir det mulig å diskutere prioriteringer ærlig — i stedet for å la dem forbli usagte driver for beslutninger.
     signs:
       positive: "Det diskuteres åpent om ulike avdelingers agendaer og hvordan de kan bringes på line. Prioriteringsdiskusjoner er ærlige om hva som står på spill."
       negative: "Beslutninger tas bak-lukkede dører. Enighet i møter maskerer uenighet utenfor. Viktige hensyn dukker opp sent i prosessen."
   - title: "Konflikt og forhandling"
+    spot_image: "assets/images/banners/spot-pavirkning-interesser.webp"
     body: |
       Konflikt er ikke noe galt i seg selv — det er et tegn på at ulike perspektiver kommer til syne. Vekst skjer ofte nettopp der motsetninger møtes. Problemet er ikke konflikt, men mangel på arenaer for å håndtere den. Strukturerte spørsmål om konflikthåndtering gir ledergruppen et felles språk for å adressere uenighet før den eskalerer.
     signs:
@@ -63,6 +67,7 @@ elements:
 
 leader_value:
   heading: "Hvorfor påvirkningsperspektivet betyr noe for ledergruppen"
+  spot_image: "assets/images/banners/spot-pavirkning-hvorfor-pavirkning-betyr-noe.webp"
   body: |
     Mange ledere har sjelden trives godt med en «politisk» tilnærming. De ser på makt og innflytelse som noe forkastelig som helst unngås. Men det er nettopp denne blindheten som gjør dem sårbare — de som forstår spillereglene, lykkes.
 

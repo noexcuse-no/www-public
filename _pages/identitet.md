@@ -3,6 +3,7 @@ class: frame
 layout: perspektiv
 permalink: /identitet/
 frame_id: "identitet"
+show_spots: true
 category: "frame"
 title: "Identitetsperspektivet i ledelse"
 description: "Lær hvordan identitetsperspektivet kan hjelpe ledergruppen å forstå organisasjonskultur, meningsskaping og hvordan verdier faktisk lever — eller bare henger på veggen."
@@ -39,18 +40,21 @@ intro:
 
 elements:
   - title: "Kultur og språk"
+    spot_image: "assets/images/banners/spot-identitet-verdier.webp"
     body: |
       Kultur lever i språket. Hvordan folk snakker om arbeidet, om lederne, om kundene — det avslører hvilket stadium kulturen befinner seg på. Ledergrupper kan analysere sin egen kommunikasjon for å forstå kulturen — Logans stadier fungerer som et diagnostisk kart: hva er det dominerende kulturstadiet i deres organisasjon?
     signs:
       positive: "Ledere snakker i «vi»-form. Det finnes historier som fortelles om hvordan ting ble gjort. Feiring av suksess er synlig og inkluderende."
       negative: "«Jeg»-dominerende språk. Klaging på møter, kunder, ledelse. Historiefortelling preget av «de» vs. «vi»."
   - title: "Verdier og mening"
+    spot_image: "assets/images/banners/spot-identitet-ritualer.webp"
     body: |
       Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
     signs:
       positive: "Folk kan fortelle om situasjoner der verdiene ble levd ut i praksis. Nye folk læres opp i «hvordan vi gjør ting her» med konkrete eksempler."
       negative: "Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert."
   - title: "Ritualer og identitet"
+    spot_image: "assets/images/banners/spot-identitet-fortelling.webp"
     body: |
       Ritualer er de gjentatte handlingene som holder kulturen i live: møter, feiringer, seremonier. Identitet er følelsen av tilhørighet til noe større enn seg selv.
     signs:
@@ -59,6 +63,7 @@ elements:
 
 leader_value:
   heading: "Hvorfor identitetsperspektivet betyr noe for ledergruppen"
+  spot_image: "assets/images/banners/spot-identitet-lederverdi.webp"
   body: |
     Logan og medarbeidere fant at organisasjoner på stadium fire («Vi er flinke») presterer bedre økonomisk, har lavere turnover, og sterkere kunde lojalitet. Stadium tre («Jeg er flink») er vanlig — men individualisme har en ceilings-effekt.
 

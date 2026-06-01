@@ -3,6 +3,7 @@ class: frame
 layout: perspektiv
 permalink: /mennesker/
 frame_id: "mennesker"
+show_spots: true
 category: "frame"
 title: "Menneskeperspektivet i ledelse"
 description: "Lær hvordan menneskeperspektivet kan hjelpe ledergruppen å bygge tillit, motivere medarbeidere og skape en kultur der mennesker trives og vokser."
@@ -39,18 +40,21 @@ intro:
 
 elements:
   - title: "Tillit og trygghet"
+    spot_image: "assets/images/banners/spot-mennesker-tilhorighet.webp"
     body: |
       Grunnmuren i alle relasjoner er psykologisk trygghet. Med tillit kan mennesker ta risiko, si ifra om problemer, og våge å være ærlige. Uten tillit blir organisasjonen et sted der folk ser etter nummer to. Uten en strukturert måte å speile tillitsnivået på, risikerer ledergruppen å forveksle stillhet med trygghet.
     signs:
       positive: "Folk sier ifra når ting er feil. Problemer løftes opp før de eskalerer. Folk innrømmer feil og lærer av dem."
       negative: "Informasjon holdes tilbake. Kritikk leveres bak ryggen på folk. Folk søker dekning hos ledere heller enn å løse problemer selv."
   - title: "Motivasjon og engasjement"
+    spot_image: "assets/images/banners/spot-mennesker-mestring.webp"
     body: |
       Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre motivatorer (bonus, straff) kan drive kortvarig atferd, men varig engasjement krever indre motivasjon: autonomi, mestring og tilhørighet. Når ledergrupper reflekterer systematisk over motivasjonsmønstre, ser de hvor engasjementet faktisk er — ikke hvor de tror det er.
     signs:
       positive: "Folk tar initiativ uten å bli bedt om det. De snakker om «vi» når de forteller om arbeidet. De ser seg selv som en del av noe større."
       negative: "Passivitet. Kømentalitet. Folk som bare gjør nok til å komme seg gjennom dagen. Maskinell gjennomføring uten engasjement."
   - title: "Utvikling og vekst"
+    spot_image: "assets/images/banners/spot-mennesker-autonomi.webp"
     body: |
       Mennesker vil vokse. Organisasjoner som legger til rette for utvikling, tiltrekker og beholder talent. Læring blir en konkurransefordel, ikke en kostnad. Men uten systematisk innsikt i hva ansatte faktisk opplever som utviklende, risikerer investeringene å bomme på målet.
     signs:
@@ -67,6 +71,7 @@ elements:
 
 leader_value:
   heading: "Hvorfor menneskeperspektivet betyr noe for ledergruppen"
+  spot_image: "assets/images/banners/spot-mennesker-hvorfor-mennesker-betyr-noe.webp"
   body: |
     Menneskeperspektivet ser ut til å være «mykt» og vanskelig å handle på, men det har målbare konsekvenser. Southwest Airlines' langvarige lønnsomhet handlet ikke om strategi eller struktur — det handlet om en kultur der ledere tjente de ansatte, som igjen tjente kundene.
 
