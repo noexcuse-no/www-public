@@ -30,8 +30,8 @@ Completed items belong in `CHANGELOG.md` only.
 | N7 | Påvirkning: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (makt, nettverk, interesser, lederverdi) | Planned | — |
 | N1 | Triader article (order: 2nd) | Done | — |
 | A1 | Architecture cleanup: CSS reorganization, topic consolidation, hero/card unification | Done | — |
-| N2 | Makt article (order: 1st) | Planned | — |
-| N3 | Perspektiv article (order: 3rd) | Planned | N1, N2 |
+| N2 | Makt article (order: 1st) | Done | — |
+| N3 | Perspektiv article (order: 3rd) | Done | N1, N2 |
 | P5 | Migrate `_pages/ledelse_*.md` to layout system | Planned | A1 |
 | X2 | Dark mode consistency pass | Planned | — |
 | F5 | Image generation for N1-N3 | Blocked | N1, N2, N3 |
