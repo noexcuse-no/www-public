@@ -157,6 +157,8 @@
     /* ========================================
        Component Aliases (referenced by other files)
        ======================================== */
+    --heading-color-light: var(--text-color-light);
+    --heading-color-dark: var(--text-color-dark);
     --navbar-background-light: var(--box-background-light);
     --navbar-background-dark: var(--box-background-dark);
     --button-background-light: var(--primary-accent);

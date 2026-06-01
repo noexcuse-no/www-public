@@ -20,9 +20,7 @@ a:hover {
     background-color: var(--banner-background-light);
 }
 
-.navbar {
-    background-color: var(--navbar-background-light);
-}
+/* .navbar intentionally inherits .header background (--banner-background-light) */
 
 .footer {
     background-color: var(--footer-background-light);

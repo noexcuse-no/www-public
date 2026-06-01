@@ -3,6 +3,8 @@ id: "identitet"
 category: "frame"
 title: "Identitetsperspektivet i ledelse"
 description: "Lær hvordan identitetsperspektivet kan hjelpe ledergruppen å forstå organisasjonskultur, meningsskaping og hvordan verdier faktisk lever — eller bare henger på veggen."
+banner: "assets/images/banners/perspektiv-identitet.webp"
+url: "/identitet/"
 
 json_ld:
   type: "Article"

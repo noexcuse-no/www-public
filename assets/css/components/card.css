@@ -15,7 +15,7 @@
 }
 
 .card-grid--benefits {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .card-grid--steps {
@@ -35,7 +35,7 @@
 }
 
 .card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
@@ -109,31 +109,34 @@
     margin-top: auto;
     padding: 10px 20px;
     font-size: 0.95em;
-    font-weight: 500;
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
+    font-weight: 600;
     text-decoration: none;
-    border-radius: var(--radius-md);
+    border-radius: 4px;
     min-height: 44px;
     align-self: flex-start;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    border: 2px solid var(--cta-primary-border);
+    background-color: var(--cta-primary-bg);
+    color: var(--cta-primary-text);
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .card-link:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
-}
-
-.card-link--cta {
-    background-color: var(--cta-primary-bg);
-    color: var(--cta-primary-text);
-    border: 2px solid var(--cta-primary-border);
-}
-
-.card-link--cta:hover {
     background-color: var(--cta-primary-text);
     color: var(--cta-primary-bg);
     border-color: var(--cta-primary-bg);
+}
+
+.card-link--cta {
+    background-color: var(--cta-secondary-bg);
+    color: var(--cta-secondary-text);
+    border: 2px solid var(--cta-secondary-border);
+}
+
+.card-link--cta:hover {
+    background-color: var(--cta-secondary-text);
+    color: var(--cta-secondary-bg);
+    border-color: var(--cta-secondary-bg);
 }
 
 /* Frame Card Accent Border */

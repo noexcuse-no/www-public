@@ -17,8 +17,11 @@ Completed items belong in `CHANGELOG.md` only.
 
 | ID | Title | Status | Depends On |
 |----|-------|--------|------------|
-| FF4 | Citation Enhancement (kramdown footnotes + JSON-LD + JS enhancer) | Planned | — |
+| FF4 | Citation Enhancement (kramdown footnotes + JSON-LD + JS enhancer + APA formatting) | Planned | — |
 | FF2 | i18n multilingual support | Planned | — |
+| R3 | Profile card modal redesign — on-brand compact → expanded flow | Planned | — |
+| R4 | Benefit article illustrations — 4 original infographic spot illustrations | Planned | — |
+| R15 | Values illustrations — 3 original value card illustrations for Om Oss | Planned | — |
 | FF5 | Three-step pages for Ledelse 60:2 | Planned | FF6 |
 | FF6 | Multi-product support | Planned | Q7 |
 | N4 | Identitet: layout wiring + content refinement (method-benefit integration) + 4 spot illustrations (verdier, ritualer, fortelling, lederverdi) | Planned | — |
