@@ -19,10 +19,21 @@
             <img class="profile-image" src="{{ profile.image | relative_url }}" alt="{{ profile.name }}s profilbilde">
             <h3 class="profile-name">{{ profile.name }}</h3>
             <div class="profile-contact">
-                <a href="tel:{{ profile.phone }}" class="profile-phone">{{ profile.phone }}</a>
-                <a href="mailto:{{ profile.email }}" class="profile-email">{{ profile.email }}</a>
+                <a href="tel:{{ profile.phone }}" class="profile-contact-btn" aria-label="Ring {{ profile.name }}">
+                    <svg class="contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>{{ profile.phone }}</span>
+                </a>
+                <a href="mailto:{{ profile.email }}" class="profile-contact-btn" aria-label="Send epost til {{ profile.name }}">
+                    <svg class="contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span>{{ profile.email }}</span>
+                </a>
             </div>
-            <button class="profile-expand-btn" aria-label="Vis detaljer">Les mer →</button>
+            <button class="profile-expand-btn" aria-label="Vis detaljer om {{ profile.name }}">Les mer →</button>
         </div>
         <div class="profile-expanded" id="profile-expanded-{{ forloop.index }}">
             <div class="profile-modal-content">
@@ -31,16 +42,48 @@
                     <img class="profile-image-large" src="{{ profile.image | relative_url }}" alt="{{ profile.name }}s profilbilde">
                     <div class="profile-header-info">
                         <h3 class="profile-name">{{ profile.name }}</h3>
-                        <p class="profile-tags">{% assign tags = profile.tags | split: ' ' %}{% for tag in tags %}<span class="profile-tag">{{ tag }}</span> {% endfor %}</p>
+                        {% assign raw_tags = profile.tags %}
+                        {% assign tag_list = raw_tags %}
+                        {% if raw_tags.first.size == 1 %}
+                            {% assign tag_list = raw_tags | split: " " %}
+                        {% endif %}
+                        {% if tag_list.size > 0 %}
+                        <p class="profile-tags">
+                            {% for tag in tag_list %}
+                            <a href="{{ '/emne/' | append: tag | slugify | relative_url }}" class="profile-tag">{{ tag }}</a>
+                            {% endfor %}
+                        </p>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="profile-bio">
                     {{ profile.bio }}
                 </div>
                 <div class="profile-contact-grid">
-                    <a href="tel:{{ profile.phone }}" class="profile-contact-item">{{ profile.phone }}</a>
-                    <a href="mailto:{{ profile.email }}" class="profile-contact-item">{{ profile.email }}</a>
-                    <a href="{{ profile.linkedin }}" target="_blank" class="profile-contact-item">{{ profile.linkedin }}</a>
+                    <a href="tel:{{ profile.phone }}" class="profile-contact-item">
+                        <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span class="contact-label">Telefon</span>
+                        <span class="contact-value">{{ profile.phone }}</span>
+                    </a>
+                    <a href="mailto:{{ profile.email }}" class="profile-contact-item">
+                        <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span class="contact-label">Epost</span>
+                        <span class="contact-value">{{ profile.email }}</span>
+                    </a>
+                    <a href="{{ profile.linkedin }}" target="_blank" rel="noopener" class="profile-contact-item profile-contact-item--linkedin">
+                        <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">Profil på LinkedIn</span>
+                    </a>
                 </div>
                 <div class="profile-actions">
                     <a href="{{ profile.booking_url }}" class="profile-booking-btn">Avtal møte</a>
