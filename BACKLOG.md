@@ -43,6 +43,5 @@ Completed items belong in `CHANGELOG.md` only.
 | Q7 | Katalysator product | Blocked | User availability (deferred to June 2026) |
 | R20 | Generate and add illustrations to /perspektiv per page design rules | Done | PR #116 |
 | R16 | Article illustrations — 25 images for Makt, Perspektiv, Triader (T2 framework + T3 section + T4 micro) | Done | PR #117 |
-| R17 | Frame micro illustrations — 16 T4 micro spots for challenge cards on Struktur, Mennesker, Identitet, Påvirkning | Doing | — |
-| R18 | Product & process illustrations — 20 images for Ledelse 60:2, Metode, Avtale, Step pages | Planned | — |
+| R17 | Frame micro illustrations — 16 T4 micro spots for challenge cards on Struktur, Mennesker, Identitet, Påvirkning | Done | PR #118 |
 | F7 | Uniform illustration system — 4-tier taxonomy (T1-T4), naming convention, CSS classes, future page template | Planned | — |
