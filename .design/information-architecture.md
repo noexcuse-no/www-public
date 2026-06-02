@@ -23,6 +23,7 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/makt/` | `_pages/ledelse_makt.md` | Benefit: Power dynamics |
 | `/generativ-ki/` | `_pages/ledelse_generativ-ki.md` | Benefit: Generative AI |
 | `/usikkerhet/` | `_pages/ledelse_usikkerhet.md` | Benefit: Uncertainty |
+| `/grc/` | `_pages/grc.md` | GRC — Governance, Risk, Compliance |
 
 ## Tag Pages
 
@@ -40,6 +41,12 @@ Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningst
 | All 4 frame articles → "Det vitenskapelige grunnlaget" | `/perspektiv/` | "Les om hvorfor vi ikke scorer →" |
 | `/om-metode/` → frame/benefit/step cards | Each content page | Card CTAs link to respective pages |
 | Tag cloud on `/emne/:tag/` | Tagged articles | Article links from tag landing |
+| `/grc/` → Cybersecurity section | `/usikkerhet/` | "Les om usikkerhetshåndtering →" |
+| `/grc/` → Environment section | `/identitet/` | "Les om identitetsperspektivet →" |
+| `/grc/` → Quality section | `/struktur/` | "Les om strukturperspektivet →" |
+| `/grc/` → Governance section | `/forankring/` | "Les om beslutningsforankring →" |
+| `/grc/` → Ledelse 60:2 overview | `/ledelse-60-2/` | "Les mer om Ledelse 60:2 →" |
+| `/grc/` → Four perspectives | `/perspektiv/` | "Forstå de fire perspektivene →" |
 
 ## Rules
 
