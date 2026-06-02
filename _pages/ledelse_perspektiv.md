@@ -56,6 +56,12 @@ json_ld:
         <h1 class="hero-title">Fire perspektiver — se mer enn du ser</h1>
         <p class="hero-intro">De fleste ledere ser verden gjennom ett filter. De beste ser gjennom fire — og vet hvilket som passer når. Multiframe thinking er ikke teori, det er en ferdighet.</p>
     </div>
+    <div class="hero-frame-nav">
+        <a href="{{ '/struktur/' | relative_url }}" class="hero-frame-link">Struktur</a>
+        <a href="{{ '/mennesker/' | relative_url }}" class="hero-frame-link">Mennesker</a>
+        <a href="{{ '/påvirkning/' | relative_url }}" class="hero-frame-link">Påvirkning</a>
+        <a href="{{ '/identitet/' | relative_url }}" class="hero-frame-link">Identitet</a>
+    </div>
 </section>
 
 <section class="section container--wide animate-on-scroll fade-in-up">
