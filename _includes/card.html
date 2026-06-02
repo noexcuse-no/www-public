@@ -10,7 +10,12 @@
   {% endif %}
   <div class="card-content">
     {% if topic.step_number %}
-    <div class="card-step-number">{{ topic.step_number }}</div>
+    <div class="card-step-number">
+      {% if topic.micro_image %}
+      <img src="{{ topic.micro_image | relative_url }}" alt="" class="micro-illustration" loading="lazy" aria-hidden="true">
+      {% endif %}
+      {{ topic.step_number }}
+    </div>
     {% endif %}
     <h3>{{ topic.title }}</h3>
     {% if topic.card_description %}

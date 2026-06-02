@@ -255,6 +255,44 @@ high resolution
 
 ---
 
+### Product & Process Illustrations (Style 3 — R18)
+
+**Use for:** T2/T3/T4 images across product, methodology, contract, and step pages.
+
+**Style signature:**
+- "Clean minimal infographic"
+- "Scandinavian design style"
+- "modern corporate illustration"
+- Product pages: "azure blue and white color palette" / "navy blue and white color palette"
+- "no text"
+
+**Documented prompts:**
+
+| File | Prompt |
+|------|--------|
+| `banners/ledelse-60-2-t2-prosessflyt.webp` | "Clean minimal infographic showing a three-step leadership assessment process, three connected stages arranged in a horizontal flow from left to right, each stage represented by a distinct geometric shape with flowing arrows between them, representing initial conversation, structured interview, and final report, Scandinavian design style, azure blue and navy blue color palette, modern corporate illustration, no text, high resolution" |
+| `banners/ledelse-60-2-t4-samtale.webp` | "Clean minimal infographic showing an initial consultation conversation, two abstract shapes facing each other in dialogue, speech bubble shapes suggesting open discussion, Scandinavian design style, azure blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/ledelse-60-2-t4-intervju.webp` | "Clean minimal infographic showing a structured diagnostic interview, organized geometric pattern suggesting systematic questioning, clock face integrated with checklist pattern, Nordic design elements, Scandinavian design style, azure blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/ledelse-60-2-t4-rapport.webp` | "Clean minimal infographic showing a final report with recommendations, document shape emerging from data points into clear insights, arrow pointing upward suggesting improvement, Scandinavian design style, azure blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/metode-t3-teori.webp` | "Clean minimal infographic showing theoretical foundation with four interconnected perspectives, four lens-like shapes arranged in a diamond pattern with overlapping centers, representing Bolman and Deal's four-frame model, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/metode-t3-forskning.webp` | "Clean minimal infographic showing research and knowledge production, data points flowing into a central analytical node, branching outputs suggesting published insights, cyclical knowledge development process, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/metode-t3-hvorfor.webp` | "Clean minimal infographic showing purpose and motivation behind the methodology, a compass shape with Nordic design elements pointing toward true north, surrounded by abstract human figures suggesting leadership development, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/metode-t4-respekt.webp` | "Clean minimal infographic showing respect and dignity in research, a shield shape protecting a small figure, surrounded by a circle of care, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/metode-t4-konsekvenser.webp` | "Clean minimal infographic showing positive impact and beneficial outcomes, a radiating growth pattern with small flourishing shapes emerging outward, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/metode-t4-rettferdighet.webp` | "Clean minimal infographic showing fairness and justice, balanced scales with two equal weights, symmetry and equilibrium in design, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/metode-t4-integritet.webp` | "Clean minimal infographic showing integrity and ethical conduct, a straight unbroken path with a checkpoint marker, suggesting consistent principled behavior, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/avtale-t4-paragraf-1.webp` | "Clean minimal infographic showing contract modification and amendment, two document shapes with an arrow suggesting revision, a pen nib icon next to legal text symbol, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/avtale-t4-paragraf-2.webp` | "Clean minimal infographic showing invoicing and billing, an invoice document with currency symbol and calendar date, clean minimal financial iconography, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/avtale-t4-paragraf-3.webp` | "Clean minimal infographic showing intellectual property and ownership rights, a lightbulb with a copyright symbol, protected creative work, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/avtale-t4-paragraf-4.webp` | "Clean minimal infographic showing confidentiality and security, a locked padlock with a document, protective barrier around sensitive information, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/avtale-t4-paragraf-5.webp` | "Clean minimal infographic showing contract breach and force majeure, a broken chain link with a shield on one side, legal protection against unforeseen events, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/avtale-t4-paragraf-6.webp` | "Clean minimal infographic showing dispute resolution and legal venue, two abstract figures with a mediator between them, a handshake suggesting resolution, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/samtale-t3-samtale.webp` | "Clean minimal infographic showing an initial exploratory conversation between two parties, two abstract human silhouettes in open dialogue with space between them suggesting openness and no commitment, Scandinavian design style, azure blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/intervju-t3-intervju.webp` | "Clean minimal infographic showing a structured diagnostic interview process, an organized grid pattern with a central questioning node, systematic approach suggesting sixty questions in two hours, Scandinavian design style, azure blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/rapport-t3-rapport.webp` | "Clean minimal infographic showing a professional report delivery, document with findings and recommendations emerging from analytical process, a clear insight path from data to actionable advice, Scandinavian design style, azure blue and white color palette, modern corporate illustration, no text, high resolution" |
+
+---
+
 ### Style 4: CTA Illustrations (Landscape)
 
 **Use for:** Call-to-action sections at bottom of frame articles

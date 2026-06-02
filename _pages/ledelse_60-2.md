@@ -120,6 +120,9 @@ json_ld:
 <section class="landing-story animate-on-scroll fade-in-up">
     <h2>Historien bak metoden</h2>
     <p>«Ledelse 60:2» er vår tilnærming til å bruke en enkel kunnskapsbasert metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet.</p>
+    <div class="framework-illustration">
+        <img src="{{ '/assets/images/banners/ledelse-60-2-t2-prosessflyt.webp' | relative_url }}" alt="Tretrinns prosess for ledelseskartlegging" loading="lazy">
+    </div>
     <a href="{{ '/metode/' | relative_url }}" class="product-cta">Les mer om metoden →</a>
 </section>
 
