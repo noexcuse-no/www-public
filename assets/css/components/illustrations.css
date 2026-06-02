@@ -28,6 +28,21 @@
     box-shadow: var(--box-shadow-light);
 }
 
+/* T3 float variants for inline placement in info-boxes */
+.section-illustration--float-left {
+    float: left;
+    margin: 0.5em 1em 0.5em 0;
+    max-width: 200px;
+    border-radius: var(--radius-lg);
+}
+
+.section-illustration--float-right {
+    float: right;
+    margin: 0.5em 0 0.5em 1em;
+    max-width: 200px;
+    border-radius: var(--radius-lg);
+}
+
 /* T4: Micro illustrations (challenge cards, list items) */
 .micro-illustration {
     width: 80px;
@@ -41,7 +56,9 @@
 
 /* Dark mode overrides */
 .dark-mode .framework-illustration img,
-.dark-mode .section-illustration img {
+.dark-mode .section-illustration img,
+.dark-mode .section-illustration--float-left,
+.dark-mode .section-illustration--float-right {
     box-shadow: var(--box-shadow-dark);
 }
 
@@ -51,6 +68,14 @@
     .section-illustration {
         max-width: 100%;
         padding: 0 var(--space-md);
+    }
+
+    .section-illustration--float-left,
+    .section-illustration--float-right {
+        float: none;
+        display: block;
+        margin: var(--space-md) auto;
+        max-width: 100%;
     }
 
     .micro-illustration {

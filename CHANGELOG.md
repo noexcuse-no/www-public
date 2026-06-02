@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **R20 — Perspektiv article illustrations**: Generated 5 illustrations for `/perspektiv/` per 4-tier system — 1 T2 framework (perspektiv-t2-fire-perspektiver.webp, 800px, four frames as overlapping lenses) and 4 T3 section images (perspektiv-t3-{strukturfellen,menneskefellen,politisk-felle,symbolfellen}.webp, 400px, one per frame trap). Wired into `_pages/ledelse_perspektiv.md` with alternating float layout in the Enrammefellen section. Added `section-illustration--float-left`/`--float-right` CSS variants to `illustrations.css` with dark mode and mobile responsive support
 - **R19 — Perspektiv menu link**: Added "Perspektiv" to `_data/navigation.yml` between "Ledelse 60:2" and "Om oss", linking to `/perspektiv/`
 - **R21 — Hero CTA overlay on /perspektiv**: Four frame-perspective buttons (Struktur, Mennesker, Påvirkning, Identitet) as CSS grid overlay at bottom of hero banner. Uses `hero-frame-nav`/`hero-frame-link` classes in `perspektiv-styles.css` with dark mode support and mobile wrap layout
 - **R22 — Frame page back-navigation**: Added "↑ Fire perspektiver" cross-navigation link in `_layouts/perspektiv.html`, linking all four frame pages back to `/perspektiv/` overview
