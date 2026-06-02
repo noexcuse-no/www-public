@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **R19 — Perspektiv menu link**: Added "Perspektiv" to `_data/navigation.yml` between "Ledelse 60:2" and "Om oss", linking to `/perspektiv/`
+- **R21 — Hero CTA overlay on /perspektiv**: Four frame-perspective buttons (Struktur, Mennesker, Påvirkning, Identitet) as CSS grid overlay at bottom of hero banner. Uses `hero-frame-nav`/`hero-frame-link` classes in `perspektiv-styles.css` with dark mode support and mobile wrap layout
+- **R22 — Frame page back-navigation**: Added "↑ Fire perspektiver" cross-navigation link in `_layouts/perspektiv.html`, linking all four frame pages back to `/perspektiv/` overview
 - **R15 — Values illustrations for Om Oss**: Replaced placeholder `●` circles in `_pages/om_oss.md` value cards with 3 generated spot illustrations (`verdi-ansvarlighet.webp`, `verdi-tillit.webp`, `verdi-aerlighet.webp`). Images are 400×400px WebP, ≤15KB each, square 1:1, Scandinavian minimal style with distinct color palettes per value. Updated `assets/css/about.css` `.value-icon` to render `<img>` elements at 60×60px with `object-fit: cover` and `border-radius: var(--radius-md)`. Images use `aria-hidden="true"` and empty `alt` (decorative, per WCAG).
 
 ### Added

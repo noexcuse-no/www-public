@@ -138,7 +138,8 @@ layout: page
     {% if prev_frame %}
     <a href="{{ '/' | append: prev_frame.id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">← {{ prev_frame.title }}</a>
     {% endif %}
-    <a href="{{ '/metode/' | relative_url }}" class="product-cta product-cta--secondary">↑ Om metode</a>
+    <a href="{{ '/perspektiv/' | relative_url }}" class="product-cta product-cta--secondary">↑ Fire perspektiver</a>
+    <a href="{{ '/metode/' | relative_url }}" class="product-cta product-cta--secondary">Om metode →</a>
     {% if next_frame %}
     <a href="{{ '/' | append: next_frame.id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">{{ next_frame.title }} →</a>
     {% endif %}
