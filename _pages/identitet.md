@@ -73,12 +73,16 @@ leader_value:
 
 challenges:
   - title: "Tomme verdier"
+    image: "assets/images/banners/identitet-t4-empty-values.webp"
     body: "Verdier som ikke reflekterer faktisk atferd. Konsulentlede verdiprogrammer som aldri ble forankret."
   - title: "Individuell dominans"
+    image: "assets/images/banners/identitet-t4-individual-dominance.webp"
     body: "En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Individualistisk tankegang som demper kollektiv vekst."
   - title: "Historieløshet"
+    image: "assets/images/banners/identitet-t4-storylessness.webp"
     body: "En organisasjon uten fortellinger — nye folk får ingen kontekst. Kulturen er usynlig fordi den aldri er blitt eksplisitt."
   - title: "Forandringstretthet"
+    image: "assets/images/banners/identitet-t4-change-fatigue.webp"
     body: "Alle endringsinitiativer har feilet før. Folk har sluttet å tro på «nye initiativer». Kynisme som dominerer tone."
 
 questions:

@@ -83,12 +83,16 @@ leader_value:
 
 challenges:
   - title: "Manglende psykologisk trygghet"
+    image: "assets/images/banners/mennesker-t4-psychological-safety.webp"
     body: "Folk tørr ikke si ifra om problemer. Feil skjules. Kritikk leveres bak lukkede dører. Innovation dør før den får luft."
   - title: "Tomme verdier"
+    image: "assets/images/banners/mennesker-t4-empty-values.webp"
     body: "Organisasjonen har verdier på veggen, men de stemmer ikke med hvordan folk faktisk oppfører seg. Verdiene er blitt flosler, ikke veiledning."
   - title: "Sil og silo"
+    image: "assets/images/banners/mennesker-t4-silos.webp"
     body: "Avdelinger og individer jobber i siloer. Folk kjenner ikke til hva naboen driver med. Kunden matcher med én person som blir en flaskehals."
   - title: "For mye volum, for lite mening"
+    image: "assets/images/banners/mennesker-t4-meaninglessness.webp"
     body: "Folk oversvømmes med oppgaver men gidder ikke lenger å engasjere seg i hvorfor de gjør jobben. Arbeidet er blitt en check-in, ikke en bidrag."
 
 questions:

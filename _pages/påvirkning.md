@@ -75,12 +75,16 @@ leader_value:
 
 challenges:
   - title: "Usynlig beslutningsmakt"
+    image: "assets/images/banners/pavirkning-t4-invisible-power.webp"
     body: "De som formelt har makt, har ikke reell makt. Eller omvendt. Beslutninger tas «der» men av dem som «ikke skal ha noe med det å gjøre». Senior ledere kan ofte bryte uformelle regler — de har bygget opp «idiosynkratiske kreditter» gjennom tidligere bidrag som gir dem retten til å avvike fra normene."
   - title: "Skjulte agendaer"
+    image: "assets/images/banners/pavirkning-t4-hidden-agendas.webp"
     body: "Aktører som ikke er transparent om sine interesser. Medarbeidere som jobber forbi offisielle kanaler for å påvirke beslutninger."
   - title: "Ressurskamper som maskeres"
+    image: "assets/images/banners/pavirkning-t4-resource-struggles.webp"
     body: "Budsjettkonflikter, GIS-struktureringer og andre strukturelle endringer som egentlig handler om makt og innflytelse, men fremstilles som rasjonelle."
   - title: "For mye enighet"
+    image: "assets/images/banners/pavirkning-t4-too-much-agreement.webp"
     body: "En ledelsesgruppe som altfor sjelden er uenig, klarer heller ikke å utfordre hverandre. Uenighet er et sundhetstegn — likegyldighet er problemet."
 
 questions:
