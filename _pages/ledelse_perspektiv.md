@@ -72,26 +72,50 @@ json_ld:
 </section>
 
 <section class="section container--wide animate-on-scroll fade-in-up">
+    <div class="framework-illustration">
+        <img src="{{ '/assets/images/banners/perspektiv-t2-fire-perspektiver.webp' | relative_url }}"
+             alt="Fire overlappende linser som representerer de fire perspektivene i multiframe thinking"
+             loading="lazy">
+    </div>
+</section>
+
+<section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Enrammefellen — når ett filter blir hele bildet</h2>
     <p>Enrammefellen er ikke at du har et favorittperspektiv. Det har alle. Fellen er at du bruker det samme perspektivet på alle problemer, uavhengig av hva situasjonen krever.</p>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Når struktur blir tvangstrøye</h3>
+        <img src="{{ '/assets/images/banners/perspektiv-t3-strukturfellen.webp' | relative_url }}"
+             alt="Illustrasjon av strukturfellen — et system av regler og prosesser uten fleksibilitet"
+             class="section-illustration--float-left"
+             loading="lazy">
         <p>En leder som alltid starter med omorganisering, nye prosesser og rapporteringslinjer, kan skape kaos i en organisasjon som egentlig trenger kulturell trygghet. Strukturelle løsninger på menneskelige problemer skaper mer byråkrati uten å løse grunnårsaken.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Når mennesker blir overfladisk</h3>
+        <img src="{{ '/assets/images/banners/perspektiv-t3-menneskefellen.webp' | relative_url }}"
+             alt="Illustrasjon av menneskefellen — harmoni uten retning"
+             class="section-illustration--float-right"
+             loading="lazy">
         <p>En leder som alltid spør «hvordan har du det?» og aldri tar upopulære beslutninger, kan skape en hyggelig kultur som ikke presterer. Menneskerettede løsninger på strukturelle problemer gir gode samtaler, men ingen endring.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Når politikk blir kynisme</h3>
+        <img src="{{ '/assets/images/banners/perspektiv-t3-politisk-felle.webp' | relative_url }}"
+             alt="Illustrasjon av politisk felle — maktspill uten handling"
+             class="section-illustration--float-left"
+             loading="lazy">
         <p>En leder som alltid analyserer maktforhold og aldri handler, kan lamme organisasjonen. Politisk analyse uten strukturell gjennomføring blir spill og posisjonering — ikke ledelse.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Når symbolikk blir tom</h3>
+        <img src="{{ '/assets/images/banners/perspektiv-t3-symbolfellen.webp' | relative_url }}"
+             alt="Illustrasjon av symbolfellen — verdier uten substans"
+             class="section-illustration--float-right"
+             loading="lazy">
         <p>En leder som alltid snakker om verdier og kultur og aldri tar strukturelle grep, mister troverdighet. Symbolsk ledelse uten innhold blir PR — ikke ledelse.</p>
     </div>
 
