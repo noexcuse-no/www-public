@@ -73,12 +73,16 @@ leader_value:
 
 challenges:
   - title: "Uklar rolleavklaring"
+    image: "assets/images/banners/struktur-t4-role-clarification.webp"
     body: "To personer som tror de eier samme område. Eller ingen som eier det i det hele tatt. Ofte avslørt først når noe går galt."
   - title: "Målkonflikter"
+    image: "assets/images/banners/struktur-t4-goal-conflict.webp"
     body: "Avdeling A optimaliserer for sin målsetting som bremser avdeling B. Motivert av insentiver som ikke er koordinert."
   - title: "Koordineringsproblemer"
+    image: "assets/images/banners/struktur-t4-coordination.webp"
     body: "Mye tid brukes på å samordne arbeid som burde vært koordinert fra start. Fokus på «å skape buy-in» i stedet for å bygge struktur som sikrer involvering."
   - title: "Byråkratisk byrde"
+    image: "assets/images/banners/struktur-t4-bureaucracy.webp"
     body: "Prosesser som ble laget for å løse et reelt problem, men nå lever sitt eget liv. Ledere som bruker mest tid på å administrere systemet heller enn å lede."
 
 questions:

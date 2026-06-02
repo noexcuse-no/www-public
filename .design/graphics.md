@@ -221,6 +221,38 @@ high resolution
 | `banners/triader-t4-power-hoarding.webp` | "Clean minimal infographic showing power concentration in a triad, central hub figure controlling all connections with two spokes kept separate from each other, hub and spoke structure, Scandinavian design style, warm gray and white color palette, modern corporate illustration, no text, square format" |
 | `banners/triader-t4-no-reciprocity.webp` | "Clean minimal infographic showing imbalanced triad where one person only receives without giving back, two nodes giving energy to third that gives nothing, one-way arrows only, unequal exchange, Scandinavian design style, warm gray and white color palette, modern corporate illustration, no text, square format" |
 
+### Frame Challenge Micros (Style 3 — R17)
+
+**Use for:** T4 (80×80px) micro images for each challenge card on the four frame pages.
+
+**Style signature:**
+- "Clean minimal infographic"
+- "Scandinavian design style"
+- "modern corporate illustration"
+- Frame-specific accent color (navy blue / golden yellow / deep wine / hunter green)
+- "no text, square format"
+
+**Documented prompts:**
+
+| File | Prompt |
+|------|--------|
+| `banners/struktur-t4-role-clarification.webp` | "Clean minimal infographic showing role ambiguity in a leadership team, two overlapping circles each with a question mark, organizational structure context, unclear boundaries, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/struktur-t4-goal-conflict.webp` | "Clean minimal infographic showing goal conflict between two departments, two arrows pulling in opposite directions connected to the same central target, misalignment, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/struktur-t4-coordination.webp` | "Clean minimal infographic showing coordination breakdown between teams, three separate gears that don't mesh together, misaligned cogs, organizational friction, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/struktur-t4-bureaucracy.webp` | "Clean minimal infographic showing bureaucratic overhead, stack of paper forms with red tape wrapped around, process burden, administrative weight, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, square format" |
+| `banners/mennesker-t4-psychological-safety.webp` | "Clean minimal infographic showing psychological safety in teams, a shield with a small plant growing next to it, protected space for vulnerability, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text, square format" |
+| `banners/mennesker-t4-empty-values.webp` | "Clean minimal infographic showing hollow corporate values, a framed poster on a wall that is blank inside, values that have no real meaning, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text, square format" |
+| `banners/mennesker-t4-silos.webp` | "Clean minimal infographic showing organizational silos, three vertical columns separated by thick walls, people in each column unable to see each other, isolation, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text, square format" |
+| `banners/mennesker-t4-meaninglessness.webp` | "Clean minimal infographic showing meaningless work, a conveyor belt with identical gray boxes moving along, worker looking away with disinterest, lack of purpose, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text, square format" |
+| `banners/identitet-t4-empty-values.webp` | "Clean minimal infographic showing hollow identity, an empty theater stage with a single spotlight on an empty podium, performance without substance, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text, square format" |
+| `banners/identitet-t4-individual-dominance.webp` | "Clean minimal infographic showing individual dominance in a team, one oversized star figure towering over smaller identical figures, hero culture, individualism over collaboration, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text, square format" |
+| `banners/identitet-t4-storylessness.webp` | "Clean minimal infographic showing absence of organizational stories, an empty bookshelf with no books, blank pages, lack of narrative heritage, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text, square format" |
+| `banners/identitet-t4-change-fatigue.webp` | "Clean minimal infographic showing change fatigue, a stack of identical new initiative logos piling up with the most recent one partially torn, exhaustion from repeated change, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text, square format" |
+| `banners/pavirkning-t4-invisible-power.webp` | "Clean minimal infographic showing invisible power in organizations, a decision-making board room table with hands visible under the table pulling strings, unspoken influence, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text, square format" |
+| `banners/pavirkning-t4-hidden-agendas.webp` | "Clean minimal infographic showing hidden agendas, overlapping circles with a concealed corner in gray, one agenda hidden behind the official one, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text, square format" |
+| `banners/pavirkning-t4-resource-struggles.webp` | "Clean minimal infographic showing resource struggles in an organization, two teams pulling on opposite ends of a budget pie chart, tug of war over limited resources, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text, square format" |
+| `banners/pavirkning-t4-too-much-agreement.webp` | "Clean minimal infographic showing excessive agreement in a leadership team, row of identical nodding heads all in sync, groupthink, lack of healthy disagreement, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text, square format" |
+
 ---
 
 ### Style 4: CTA Illustrations (Landscape)

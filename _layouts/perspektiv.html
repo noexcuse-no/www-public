@@ -94,6 +94,10 @@ layout: page
   <div class="perspektiv-challenges stagger-parent">
     {% for challenge in frame.challenges %}
     <div class="perspektiv-challenge animate-on-scroll fade-in-up stagger">
+      {% if challenge.image %}
+      <img src="{{ challenge.image | relative_url }}"
+           alt="" class="micro-illustration" loading="lazy" aria-hidden="true">
+      {% endif %}
       <h4>{{ challenge.title }}</h4>
       <p>{{ challenge.body }}</p>
     </div>
