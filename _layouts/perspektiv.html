@@ -7,6 +7,38 @@ layout: page
 {% assign frame = page %}
 {% assign frame_id = page.frame_id %}
 
+{% assign illo_section = "" %}
+{% assign heading_challenges = "" %}
+{% assign heading_questions = "" %}
+{% assign alt_hoved = "" %}
+{% assign alt_utfordringer = "" %}
+
+{% if frame_id == "struktur" %}
+  {% assign illo_section = "illustrasjon-struktur" %}
+  {% assign heading_challenges = "Vanlige strukturspesifikke utfordringer" %}
+  {% assign heading_questions = "Spørsmål strukturperspektivet kan hjelpe dere å besvare" %}
+  {% assign alt_hoved = "Illustrasjon av de tre hovedelementene i strukturperspektivet" %}
+  {% assign alt_utfordringer = "Illustrasjon av vanlige strukturspesifikke utfordringer" %}
+{% elsif frame_id == "mennesker" %}
+  {% assign illo_section = "illustrasjon-mennesker" %}
+  {% assign heading_challenges = "Vanlige menneskerelaterte utfordringer" %}
+  {% assign heading_questions = "Spørsmål menneskeperspektivet kan hjelpe dere å besvare" %}
+  {% assign alt_hoved = "Illustrasjon av de tre hovedelementene i menneskeperspektivet" %}
+  {% assign alt_utfordringer = "Illustrasjon av vanlige menneskerelaterte utfordringer" %}
+{% elsif frame_id == "påvirkning" %}
+  {% assign illo_section = "illustrasjon-påvirkning" %}
+  {% assign heading_challenges = "Vanlige påvirkningsrelaterte utfordringer" %}
+  {% assign heading_questions = "Spørsmål påvirkningsperspektivet kan hjelpe dere å besvare" %}
+  {% assign alt_hoved = "Illustrasjon av de tre hovedelementene i påvirkningsperspektivet" %}
+  {% assign alt_utfordringer = "Illustrasjon av vanlige påvirkningsrelaterte utfordringer" %}
+{% elsif frame_id == "identitet" %}
+  {% assign illo_section = "illustrasjon-identitet" %}
+  {% assign heading_challenges = "Vanlige identitetsrelaterte utfordringer" %}
+  {% assign heading_questions = "Spørsmål identitetsperspektivet kan hjelpe dere å besvare" %}
+  {% assign alt_hoved = "Illustrasjon av de tre hovedelementene i identitetsperspektivet" %}
+  {% assign alt_utfordringer = "Illustrasjon av vanlige identitetsrelaterte utfordringer" %}
+{% endif %}
+
 {% assign all_frames = site.pages | where: "class", "frame" | sort: "id" %}
 {% assign current_index = nil %}
 {% for f in all_frames %}
@@ -66,8 +98,8 @@ layout: page
 
 <!-- Section break image: hovedelementer -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
-  <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-hovedelementer.webp' | relative_url }}"
-       alt="Illustrasjon av de tre hovedelementene i {{ frame.title | downcase }}"
+  <img src="{{ '/assets/images/banners/' | append: illo_section | append: '-hovedelementer.webp' | relative_url }}"
+       alt="{{ alt_hoved }}"
        class="section-illustration">
 </section>
 
@@ -86,9 +118,9 @@ layout: page
 
 <!-- Challenges Section -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
-  <h2>Vanlige {{ frame.id }}lige utfordringer</h2>
-  <img src="{{ '/assets/images/banners/illustrasjon-' | append: frame.id | append: '-utfordringer.webp' | relative_url }}"
-       alt="Illustrasjon av vanlige {{ frame.id }}lige utfordringer"
+  <h2>{{ heading_challenges }}</h2>
+  <img src="{{ '/assets/images/banners/' | append: illo_section | append: '-utfordringer.webp' | relative_url }}"
+       alt="{{ alt_utfordringer }}"
        class="section-illustration">
 
   <div class="perspektiv-challenges stagger-parent">
@@ -107,7 +139,7 @@ layout: page
 
 <!-- Questions Section -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
-  <h2>Spørsmål {{ frame.id }}perspektivet kan hjelpe dere å besvare</h2>
+  <h2>{{ heading_questions }}</h2>
   <ul class="perspektiv-questions stagger-parent">
     {% for question in frame.questions %}
     <li class="animate-on-scroll slide-in-left stagger">{{ question }}</li>
@@ -140,12 +172,12 @@ layout: page
   <h2>Utforsk andre perspektiver</h2>
   <div class="perspektiv-cross-nav">
     {% if prev_frame %}
-    <a href="{{ '/' | append: prev_frame.id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">← {{ prev_frame.title }}</a>
+    <a href="{{ '/' | append: prev_frame.frame_id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">← {{ prev_frame.title }}</a>
     {% endif %}
     <a href="{{ '/perspektiv/' | relative_url }}" class="product-cta product-cta--secondary">↑ Fire perspektiver</a>
     <a href="{{ '/metode/' | relative_url }}" class="product-cta product-cta--secondary">Om metode →</a>
     {% if next_frame %}
-    <a href="{{ '/' | append: next_frame.id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">{{ next_frame.title }} →</a>
+    <a href="{{ '/' | append: next_frame.frame_id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">{{ next_frame.title }} →</a>
     {% endif %}
   </div>
 </section>
