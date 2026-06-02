@@ -56,6 +56,14 @@ json_ld:
 </section>
 
 <section class="section container--wide animate-on-scroll fade-in-up">
+    <div class="framework-illustration">
+        <img src="{{ '/assets/images/banners/triader-t2-dyad-vs-triad.webp' | relative_url }}"
+             alt="Abstrakt sammenligning av dyade og triade som relasjonsstrukturer"
+             loading="lazy">
+    </div>
+</section>
+
+<section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Dyadeproblemet — hvorfor to er en sårbar relasjon</h2>
     <p>Dyader er den mest grunnleggende sosiale enheten. To mennesker som har en relasjon. Det høres enkelt ut, og det er nettopp problemet.</p>
     <p>Logan og kolleger identifiserer flere strukturelle svakheter ved dyader som gjør dem til en risikabel byggestein for organisasjonskultur:</p>
@@ -89,21 +97,37 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Ingen enkeltperson kontrollerer forbindelsen</h3>
+        <img src="{{ '/assets/images/banners/triader-t3-no-control.webp' | relative_url }}"
+             alt="Illustrasjon av tre likeverdige noder i en stabil trekant"
+             class="section-illustration--float-left"
+             loading="lazy">
         <p>I en dyade kan én person bryte relasjonen ved å trekke seg unna. I en triade holder de to gjenværende forbindelsen i live. Triaden kan repareres. Dyaden må gjenoppbygges fra bunnen av. Dette er ikke psykologi — det er matematikk. Tre forbindelser (A–B, B–C, A–C) gir redundans som to forbindelser (A–B) ikke har.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Informasjon flyter i flere baner</h3>
+        <img src="{{ '/assets/images/banners/triader-t3-information-flow.webp' | relative_url }}"
+             alt="Illustrasjon av informasjon som flyter i tre retninger mellom noder"
+             class="section-illustration--float-right"
+             loading="lazy">
         <p>I en triade har informasjon tre veier å gå. Det betyr at kunnskap sjelden blir fanget i én relasjon. Hvis A forteller B noe, og B ikke videreformidler det til C, kan C fortsatt få informasjonen fra A direkte. Systemet selvkorrigerer.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Konflikt blir triangulert, ikke polarisert</h3>
+        <img src="{{ '/assets/images/banners/triader-t3-conflict-resolution.webp' | relative_url }}"
+             alt="Illustrasjon av konfliktløsning gjennom en tredjeparts perspektiv"
+             class="section-illustration--float-left"
+             loading="lazy">
         <p>Når uenighet oppstår i en triade, finnes det en tredjepart som kan bidra med perspektiv. Dette reduserer sannsynligheten for at konflikt blir personlig. C kan si: «Jeg ser at dere ser dette forskjellig — la oss finne ut hva vi er enige om.» En dyade har ingen slik mekanisme.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Resilient mot utskifting</h3>
+        <img src="{{ '/assets/images/banners/triader-t3-resilience.webp' | relative_url }}"
+             alt="Illustrasjon av triaderesiliens — to noder forblir forbundet når én forsvinner"
+             class="section-illustration--float-right"
+             loading="lazy">
         <p>Når én person i en triade forsvinner, gjenstår en dyade. Relasjonskapitalen er ikke tapt — den kan bygges ut til en ny triade. Overgangen er mykere, kunnskapen bevares hos den gjenværende dyaden, og organisasjonen mister mindre.</p>
     </div>
 </section>
@@ -138,21 +162,37 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Prosjekttriaden: sponsor, leder, ekspert</h3>
+        <img src="{{ '/assets/images/banners/triader-t3-project-triad.webp' | relative_url }}"
+             alt="Illustrasjon av prosjekttriade med sponsor, leder og ekspert"
+             class="section-illustration--float-left"
+             loading="lazy">
         <p>Den mest utbredte triaden i organisasjonslivet. Sponsoren eier mandat og budsjett. Lederen koordinerer gjennomføring. Eksperten sikrer faglig kvalitet. Ingen av de tre kan alene drive prosjektet fremover. Hvis sponsoren faller fra, kan leder og ekspert sammen opprettholde fremdriften mens en ny sponsor finnes.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Mentortriaden: mentor, mentee, kollega</h3>
+        <img src="{{ '/assets/images/banners/triader-t3-mentor-triad.webp' | relative_url }}"
+             alt="Illustrasjon av mentortriade med mentor, mentee og kollega i læringssirkel"
+             class="section-illustration--float-right"
+             loading="lazy">
         <p>Tradisjonell mentoring er en dyade — mentor og mentee. Problemet er at mentoren blir en allmektig kilde til sannhet, og mentee utvikler ikke et selvstendig nettverk. I en mentortriade inkluderes en kollega på samme nivå som mentee, slik at læring blir en delt aktivitet og mentoren får perspektiv på hvordan kunnskapen faktisk tas i bruk.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Ledertriaden: operativ, strategisk, kulturell</h3>
+        <img src="{{ '/assets/images/banners/triader-t3-leadership-triad.webp' | relative_url }}"
+             alt="Illustrasjon av ledertriade med operative, strategiske og kulturelle roller"
+             class="section-illustration--float-left"
+             loading="lazy">
         <p>I en ledergruppe på tre dekker man ofte tre roller: den som holder driften i gang, den som tenker fremover, og den som passer på kulturen. Når disse tre jobber som en triade, ikke som tre dyader til CEO, skapes en robust ledelsesstruktur som overlever utskifting av enkeltpersoner.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Overbroende triader: brobygging mellom siloer</h3>
+        <img src="{{ '/assets/images/banners/triader-t3-bridge-triad.webp' | relative_url }}"
+             alt="Illustrasjon av brobyggende triade som forbinder to avdelinger"
+             class="section-illustration--float-right"
+             loading="lazy">
         <p>Den mest strategiske bruken av triader er å bygge bro mellom avdelinger som ikke snakker sammen. En triade som består av én person fra avdeling A, én fra avdeling B, og én som fungerer som brobygger, kan overkomme silotenkning på en måte som hierarkiske styringsgrupper sjelden klarer.</p>
     </div>
 </section>
@@ -163,21 +203,29 @@ json_ld:
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Triangulering — å snakke om, ikke med</h3>
+        <img src="{{ '/assets/images/banners/triader-t4-triangulation.webp' | relative_url }}"
+             alt="" class="micro-illustration" loading="lazy" aria-hidden="true">
         <p>Det vanligste problemet. I stedet for at A og B løser konflikten direkte, snakker A med C om B. Triaden blir en kanal for baksnakking i stedet for en styrkende struktur. Dette er ikke en triade — det er en dyade (A og C) som ekskluderer den tredje (B). Ekte triader krever at alle tre relasjonene er likeverdige og direkte.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Kollektiv mot en</h3>
+        <img src="{{ '/assets/images/banners/triader-t4-ganging-up.webp' | relative_url }}"
+             alt="" class="micro-illustration" loading="lazy" aria-hidden="true">
         <p>To personer som allierer seg mot den tredje. Dette er en triade i navnet, men i praksis en dyade med en utestengt deltaker. Skjer ofte når to personer har en historie som den tredje ikke deler, eller når én person oppleves som en trussel mot de to andres posisjon.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Maktkonsentrasjon — én som nekter å dele</h3>
+        <img src="{{ '/assets/images/banners/triader-t4-power-hoarding.webp' | relative_url }}"
+             alt="" class="micro-illustration" loading="lazy" aria-hidden="true">
         <p>Logans tredje betingelse er den som oftest brytes. Én person i triaden nekter å dele nettverket sitt og holder de to andre adskilt. Resultatet er en «hub and spoke»-struktur der den ene eier all informasjon og alle relasjoner. Dette er maktdynamikk i praksis — les mer i vår artikkel om <a href="{{ '/makt/' | relative_url }}">makt og tjeneste i ledergruppen</a>.</p>
     </div>
 
     <div class="info-box animate-on-scroll fade-in-up">
         <h3>Manglende gjensidig verdi</h3>
+        <img src="{{ '/assets/images/banners/triader-t4-no-reciprocity.webp' | relative_url }}"
+             alt="" class="micro-illustration" loading="lazy" aria-hidden="true">
         <p>Hvis én person i triaden bare mottar uten å gi, blir relasjonen utvinnende. Triaden opprettholdes av to personers generøsitet, men når den ene av dem trekker seg, kollapser strukturen. Bærekraftige triader krever at alle tre får noe verdifullt ut av relasjonen.</p>
     </div>
 

@@ -187,6 +187,40 @@ high resolution
 | `banners/spot-identitet-fortelling.webp` | "Clean minimal infographic showing storytelling and organizational narrative, flowing connected shapes, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text" |
 | `banners/spot-identitet-lederverdi.webp` | "Clean minimal infographic showing cultural maturity and identity development, ascending levels, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text" |
 
+### Article Illustrations (Style 3 variant — R16)
+
+**Use for:** Article inline images for Makt and Triader pages, generated as part of R16.
+
+**Documented prompts — Makt (7 images):**
+
+| File | Prompt |
+|------|--------|
+| `banners/makt-t2-power-service-spectrum.webp` | "Clean minimal infographic showing a horizontal spectrum from power to service in leadership, structured geometric forms on left side transitioning to open welcoming organic forms on right side, balanced central axis, abstract representation of leadership culture spectrum, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/makt-t3-power-side.webp` | "Clean minimal infographic showing power and decision-making capacity in organizations, strong geometric shapes radiating outward suggesting influence and action, centralized authority figure, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/makt-t3-service-side.webp` | "Clean minimal infographic showing servant leadership and service-oriented culture, open hands and supporting shapes suggesting trust and growth, people-centric organizational design, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/makt-t4-time-cost.webp` | "Clean minimal infographic showing time and opportunity cost in organizations, clock face with arrows pointing outward in different directions, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution, square format" |
+| `banners/makt-t4-judgment.webp` | "Clean minimal infographic showing corrupted judgment and cognitive bias in leadership, brain shape with distortion lines radiating outward, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution, square format" |
+| `banners/makt-t4-psychological.webp` | "Clean minimal infographic showing psychological toll and isolation of leadership, single human figure separated from others by a gap, loneliness metaphor, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution, square format" |
+| `banners/makt-t4-relationship.webp` | "Clean minimal infographic showing relationship costs and broken trust in organizations, broken connection line between two abstract shapes, severed relationship, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution, square format" |
+
+**Documented prompts — Triader (13 images):**
+
+| File | Prompt |
+|------|--------|
+| `banners/triader-t2-dyad-vs-triad.webp` | "Clean minimal infographic comparing dyad versus triad relationship structures in organizations, left side showing two connected nodes with a vulnerability symbol, right side showing three interconnected nodes forming a stable triangle with redundancy arrows, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/triader-t3-no-control.webp` | "Clean minimal infographic showing three interconnected nodes in a stable triangle, each node equally connected to the other two, no single point of control, distributed network, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/triader-t3-information-flow.webp` | "Clean minimal infographic showing information flowing through three different pathways between three connected nodes, arrows moving in multiple directions suggesting redundancy and resilience, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/triader-t3-conflict-resolution.webp` | "Clean minimal infographic showing conflict resolution through third-party perspective in a triad, two opposing arrow shapes with a third balancing circle in center mediating between them, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/triader-t3-resilience.webp` | "Clean minimal infographic showing organizational resilience against employee turnover in a triad, three connected nodes with one fading out while the other two remain solidly connected, stability through redundancy, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/triader-t3-project-triad.webp` | "Clean minimal infographic showing project triad with three distinct organizational roles, sponsor as money node, project leader as coordination node, expert as quality node, all three interconnected in an equilateral triangle, Scandinavian design style, navy blue and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/triader-t3-mentor-triad.webp` | "Clean minimal infographic showing mentor triad in organizations, mentor figure guiding both mentee and colleague in a shared learning circle, triangular knowledge-sharing relationship, Scandinavian design style, golden yellow and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/triader-t3-leadership-triad.webp` | "Clean minimal infographic showing leadership triad with three complementary roles, operational gear symbol, strategic compass symbol, cultural heart symbol, all three connected in a balanced triangle, Scandinavian design style, deep wine and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/triader-t3-bridge-triad.webp` | "Clean minimal infographic showing bridge-building triad connecting two separate organizational departments, bridge shape spanning between two silos with a third person acting as connector, breaking down silos, Scandinavian design style, hunter green and white color palette, modern corporate illustration, no text, high resolution" |
+| `banners/triader-t4-triangulation.webp` | "Clean minimal infographic showing toxic triangulation in organizations, two connected nodes with a third node excluded outside the connection, broken incomplete triangle, Scandinavian design style, warm gray and white color palette, modern corporate illustration, no text, square format" |
+| `banners/triader-t4-ganging-up.webp` | "Clean minimal infographic showing two people aligned against a third in an organization, two solid arrows pointing together at an isolated single figure, exclusion dynamics, Scandinavian design style, warm gray and white color palette, modern corporate illustration, no text, square format" |
+| `banners/triader-t4-power-hoarding.webp` | "Clean minimal infographic showing power concentration in a triad, central hub figure controlling all connections with two spokes kept separate from each other, hub and spoke structure, Scandinavian design style, warm gray and white color palette, modern corporate illustration, no text, square format" |
+| `banners/triader-t4-no-reciprocity.webp` | "Clean minimal infographic showing imbalanced triad where one person only receives without giving back, two nodes giving energy to third that gives nothing, one-way arrows only, unequal exchange, Scandinavian design style, warm gray and white color palette, modern corporate illustration, no text, square format" |
+
 ---
 
 ### Style 4: CTA Illustrations (Landscape)
