@@ -63,6 +63,14 @@ json_ld:
 </section>
 
 <section class="section container--wide animate-on-scroll fade-in-up">
+    <div class="framework-illustration">
+        <img src="{{ '/assets/images/banners/makt-t2-power-service-spectrum.webp' | relative_url }}"
+             alt="Abstrakt framstilling av spekteret mellom makt og tjeneste i ledelse"
+             loading="lazy">
+    </div>
+</section>
+
+<section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Den diagnostiske spenningen</h2>
     <p>Pfeffer og Blanchard representerer ikke personlighetstyper eller ledelsesfilosofier du velger mellom som et par sko. De representerer en strukturell spenning som lever i enhver organisasjon — enten du anerkjenner den eller ikke.</p>
     <p>På den ene siden: Makt som kapasitet. Evnen til å mobilisere ressurser, ta beslutninger og få ting gjort. Uten denne kapasiteten forblir visjoner drømmer, og organisasjoner mister retning. Pfeffer dokumenterer at makt korrelerer med karrierefremgang, beskyttelse mot organisatorisk kaos, og evnen til å gjennomføre endring.[^pfeffer2010]</p>
@@ -72,6 +80,10 @@ json_ld:
 
 <section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Maktsiden — når det å få ting gjort blir alt</h2>
+    <img src="{{ '/assets/images/banners/makt-t3-power-side.webp' | relative_url }}"
+         alt="Abstrakt illustrasjon av makt og beslutningskraft i organisasjoner"
+         class="section-illustration--float-right"
+         loading="lazy">
     <p>La oss starte med makt — ikke fordi den er viktigst, men fordi den ofte er mest usynlig. Makt er infrastrukturen i organisasjonslivet. Den finnes i stillingsbeskrivelser, budsjetter, beslutningsmyndighet og tilgang til informasjon.</p>
     <p>Pfeffers forskning viser at makt er en forutsetning for organisatorisk effektivitet på flere måter:</p>
     <ul>
@@ -86,6 +98,10 @@ json_ld:
 
 <section class="section container--wide animate-on-scroll fade-in-up">
     <h2>Tjenestesiden — når det å tjene andre blir alt</h2>
+    <img src="{{ '/assets/images/banners/makt-t3-service-side.webp' | relative_url }}"
+         alt="Abstrakt illustrasjon av tjenende ledelse og tillitsbasert kultur"
+         class="section-illustration--float-left"
+         loading="lazy">
     <p>Servant leadership er ikke det samme som å være snill. Blanchard og Barrett er tydelige på at tjenende ledelse er en strategisk posisjonering, ikke en personlighetstype.</p>
     <p>Servant leadership handler om å bygge organisatorisk kapasitet gjennom å sette medarbeiderne først. Forskningen viser flere konkrete effekter:</p>
     <ul>
@@ -102,10 +118,10 @@ json_ld:
     <p>Det er fristende å konkludere med at svaret er «litt av begge deler». Men det er for enkelt. For å forstå hva en balansert ledelseskultur krever, må vi først se prisene — for begge ytterpunkter.</p>
     <p>La oss starte med prisen for makt, fordi den oftest er usynlig for dem som sitter i den:</p>
     <ul>
-        <li><strong>Tid brukt på makt er tid ikke brukt på substans.</strong> Å bygge allianser, sikre budsjetter og posisjonere seg politisk er tid som kunne vært brukt på å forstå markedet, utvikle medarbeidere eller forbedre produktet. Dette er en reell alternativkostnad.</li>
-        <li><strong>Makt korrumperer dømmekraften.</strong> Keltners forskning viser at makthavere systematisk overvurderer egen kompetanse og undervurderer andres. De blir dårligere til å ta imot råd, og mer tilbøyelige til å ta risiko på andres vegne. Effekten er målt både i laboratoriestudier og i reelle organisasjoner.[^keltner2007]</li>
-        <li><strong>Psykologisk toll.</strong> Makt er ensomt. Når du har makt, endrer andres relasjon til deg seg — selv når du ikke ønsker det. Tillit blir vanskeligere, ærlig tilbakemelding forsvinner, og paranoia kan vokse. «Er de enige med meg fordi jeg har rett, eller fordi jeg er sjefen?»</li>
-        <li><strong>Relasjonskostnader.</strong> Makt endrer hvordan andre forholder seg til deg. Folk sier det du vil høre, holder tilbake dårlige nyheter, og posisjonerer seg heller enn å samarbeide. Dette er ikke vond vilje — det er rasjonell tilpasning til en maktstruktur.</li>
+        <li><img src="{{ '/assets/images/banners/makt-t4-time-cost.webp' | relative_url }}" alt="" class="micro-illustration" loading="lazy" aria-hidden="true"><strong>Tid brukt på makt er tid ikke brukt på substans.</strong> Å bygge allianser, sikre budsjetter og posisjonere seg politisk er tid som kunne vært brukt på å forstå markedet, utvikle medarbeidere eller forbedre produktet. Dette er en reell alternativkostnad.</li>
+        <li><img src="{{ '/assets/images/banners/makt-t4-judgment.webp' | relative_url }}" alt="" class="micro-illustration" loading="lazy" aria-hidden="true"><strong>Makt korrumperer dømmekraften.</strong> Keltners forskning viser at makthavere systematisk overvurderer egen kompetanse og undervurderer andres. De blir dårligere til å ta imot råd, og mer tilbøyelige til å ta risiko på andres vegne. Effekten er målt både i laboratoriestudier og i reelle organisasjoner.[^keltner2007]</li>
+        <li><img src="{{ '/assets/images/banners/makt-t4-psychological.webp' | relative_url }}" alt="" class="micro-illustration" loading="lazy" aria-hidden="true"><strong>Psykologisk toll.</strong> Makt er ensomt. Når du har makt, endrer andres relasjon til deg seg — selv når du ikke ønsker det. Tillit blir vanskeligere, ærlig tilbakemelding forsvinner, og paranoia kan vokse. «Er de enige med meg fordi jeg har rett, eller fordi jeg er sjefen?»</li>
+        <li><img src="{{ '/assets/images/banners/makt-t4-relationship.webp' | relative_url }}" alt="" class="micro-illustration" loading="lazy" aria-hidden="true"><strong>Relasjonskostnader.</strong> Makt endrer hvordan andre forholder seg til deg. Folk sier det du vil høre, holder tilbake dårlige nyheter, og posisjonerer seg heller enn å samarbeide. Dette er ikke vond vilje — det er rasjonell tilpasning til en maktstruktur.</li>
     </ul>
     <p>Prisen for ren tjeneste er annerledes, men ikke mindre reell:</p>
     <ul>
