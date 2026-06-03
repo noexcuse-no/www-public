@@ -17,25 +17,25 @@ layout: page
   {% assign illo_section = "illustrasjon-struktur" %}
   {% assign heading_challenges = "Vanlige strukturspesifikke utfordringer" %}
   {% assign heading_questions = "Spørsmål strukturperspektivet kan hjelpe dere å besvare" %}
-  {% assign alt_hoved = "Illustrasjon av de tre hovedelementene i strukturperspektivet" %}
+  {% assign alt_hoved = "Illustrasjon av de " | append: frame.elements | size | append: " hovedelementene i strukturperspektivet" %}
   {% assign alt_utfordringer = "Illustrasjon av vanlige strukturspesifikke utfordringer" %}
 {% elsif frame_id == "mennesker" %}
   {% assign illo_section = "illustrasjon-mennesker" %}
   {% assign heading_challenges = "Vanlige menneskerelaterte utfordringer" %}
   {% assign heading_questions = "Spørsmål menneskeperspektivet kan hjelpe dere å besvare" %}
-  {% assign alt_hoved = "Illustrasjon av de tre hovedelementene i menneskeperspektivet" %}
+  {% assign alt_hoved = "Illustrasjon av de " | append: frame.elements | size | append: " hovedelementene i menneskeperspektivet" %}
   {% assign alt_utfordringer = "Illustrasjon av vanlige menneskerelaterte utfordringer" %}
 {% elsif frame_id == "påvirkning" %}
   {% assign illo_section = "illustrasjon-påvirkning" %}
   {% assign heading_challenges = "Vanlige påvirkningsrelaterte utfordringer" %}
   {% assign heading_questions = "Spørsmål påvirkningsperspektivet kan hjelpe dere å besvare" %}
-  {% assign alt_hoved = "Illustrasjon av de tre hovedelementene i påvirkningsperspektivet" %}
+  {% assign alt_hoved = "Illustrasjon av de " | append: frame.elements | size | append: " hovedelementene i påvirkningsperspektivet" %}
   {% assign alt_utfordringer = "Illustrasjon av vanlige påvirkningsrelaterte utfordringer" %}
 {% elsif frame_id == "identitet" %}
   {% assign illo_section = "illustrasjon-identitet" %}
   {% assign heading_challenges = "Vanlige identitetsrelaterte utfordringer" %}
   {% assign heading_questions = "Spørsmål identitetsperspektivet kan hjelpe dere å besvare" %}
-  {% assign alt_hoved = "Illustrasjon av de tre hovedelementene i identitetsperspektivet" %}
+  {% assign alt_hoved = "Illustrasjon av de " | append: frame.elements | size | append: " hovedelementene i identitetsperspektivet" %}
   {% assign alt_utfordringer = "Illustrasjon av vanlige identitetsrelaterte utfordringer" %}
 {% endif %}
 
@@ -69,7 +69,7 @@ layout: page
 
 <!-- Three Elements with spot illustrations -->
 <section class="perspektiv-section section container--wide animate-on-scroll fade-in-up">
-  <h2>De tre hovedelementene</h2>
+  <h2>De {{ frame.elements | size }} hovedelementene</h2>
 
   {% for element in frame.elements %}
   <div class="perspektiv-element animate-on-scroll fade-in-up">

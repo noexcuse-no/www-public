@@ -61,6 +61,7 @@ elements:
       positive: "Feil sees på som læringsmuligheter. Folk setter av tid til å utvikle seg. Suksesser og feil analyseres for å lære."
       negative: "«Vi har alltid gjort det sånn.» Innføring av nye systemer uten opplæring. Ingen karriereutvikling utover interne promojsonger."
   - title: "Verdier og mening"
+    spot_image: "assets/images/banners/spot-mennesker-verdier-og-mening.webp"
     body: |
       Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
 
