@@ -11,7 +11,6 @@
 }
 
 .perspektiv-element:hover {
-    transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
@@ -34,7 +33,6 @@
 }
 
 .perspektiv-challenge:hover {
-    transform: translateY(-3px);
     box-shadow: var(--shadow-md);
 }
 

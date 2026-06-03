@@ -36,12 +36,12 @@
     margin: 24px 0;
     border-left: 4px solid var(--primary-accent);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flow-root;
 }
 
 .perspektiv-element:hover,
 .frame-element:hover,
 .info-box:hover {
-    transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
@@ -68,7 +68,6 @@
 .perspektiv-challenge:hover,
 .frame-challenge:hover,
 .challenge-card:hover {
-    transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
 
@@ -220,7 +219,6 @@
 }
 
 .tag-cloud-item:hover {
-    transform: translateY(-2px);
     box-shadow: var(--shadow-md);
     text-decoration: none;
 }
