@@ -554,12 +554,30 @@ Search for remaining references:
 grep -r "\.png" _includes/ _layouts/ *.html --include="*.html"
 ```
 
+### Post-Conversion: exiftool Metadata
+
+After WebP conversion, apply IPTC Digital Source Type and CC0 XMP metadata to all AI-generated images:
+
+```bash
+bash scripts/apply-provenance.sh
+```
+
+**Triggers:**
+
+| Scenario | Run command | Når |
+|---|---|---|
+| First-time setup | `bash scripts/apply-provenance.sh` | Én gang — metadata-merker alle 186 eksisterende bilder |
+| Per batch at generation | `bash scripts/apply-provenance.sh` | Hver gang nye bilder genereres — etter sharp-konvertering, før git commit |
+
+Scriptet er idempotent (`-if 'not $DigitalSourceType'` guard) — trygt å kjøre flere ganger.
+
 ### Verification Checklist
 
 - [ ] All 44 PNG files converted to WebP
 - [ ] Originals preserved in `.design/graphics/originals/`
 - [ ] No PNG files remain in `assets/images/` (except backup)
 - [ ] All HTML references updated to `.webp`
+- [ ] All images have IPTC DigitalSourceType + CC0 XMP (verify: `exiftool -DigitalSourceType -cc:License assets/images/banners/example.webp`)
 - [ ] Site passes `npm run lint`
 - [ ] Tested locally with `jekyll serve`
 
