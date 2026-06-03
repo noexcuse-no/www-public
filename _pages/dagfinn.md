@@ -4,6 +4,7 @@ layout: page
 title: "Daglig leder"
 permalink: /dagfinn/
 name: "Dagfinn Bang-Johansen"
+person_title: "Daglig leder"
 image: "assets/images/dagfinn.webp"
 phone: "+4790820258"
 email: "dagfinn@noexcuse.no"

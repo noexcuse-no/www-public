@@ -23,7 +23,6 @@
 }
 
 .profile-compact:hover {
-    transform: translateY(-4px);
     box-shadow: var(--box-shadow-hover-light);
 }
 
@@ -37,6 +36,7 @@
     border: 3px solid var(--primary-navy);
     box-shadow: 0 4px 20px rgba(0, 48, 96, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
 }
 
 .profile-image:hover {
@@ -47,6 +47,12 @@
 .profile-name {
     font-size: 1.25em;
     margin: 0 0 12px 0;
+}
+
+.profile-person-title {
+    font-size: 0.9em;
+    opacity: 0.7;
+    margin: -8px 0 16px 0;
 }
 
 /* --- Compact card contact buttons --- */
@@ -165,6 +171,7 @@
     flex-shrink: 0;
     border: 3px solid var(--primary-navy);
     box-shadow: 0 4px 16px rgba(0, 48, 96, 0.15);
+    background: #fff;
 }
 
 .profile-header-info {

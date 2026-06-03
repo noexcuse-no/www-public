@@ -18,6 +18,7 @@
         <div class="profile-compact">
             <img class="profile-image" src="{{ profile.image | relative_url }}" alt="{{ profile.name }}s profilbilde">
             <h3 class="profile-name">{{ profile.name }}</h3>
+            {% if profile.person_title %}<p class="profile-person-title">{{ profile.person_title }}</p>{% endif %}
             <div class="profile-contact">
                 <a href="tel:{{ profile.phone }}" class="profile-contact-btn" aria-label="Ring {{ profile.name }}">
                     <svg class="contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

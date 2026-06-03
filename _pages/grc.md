@@ -60,24 +60,28 @@ json_ld:
         <img src="{{ '/assets/images/banners/grc-t2-four-perspectives-grc.webp' | relative_url }}" alt="Fire perspektiver på ledelse og deres tilhørende GRC-dimensjoner">
     </div>
 
-    <div class="info-box animate-on-scroll fade-in-up">
+    <div class="info-box animate-on-scroll fade-in-up" style="--card-accent: #2A4D6E; border-left-color: var(--card-accent);">
         <h3>Struktur — samsvar og kontroll</h3>
-        <p>Roller, prosesser, dokumentert ansvar, revisjonsspor. Strukturperspektivet svarer på spørsmålet: «Gjør vi det vi har sagt vi skal gjøre?» Uten tydelige roller og prosesser blir compliance tilfeldig. Les mer i <a href="{{ '/struktur/' | relative_url }}">strukturperspektivet →</a></p>
+        <p>Roller, prosesser, dokumentert ansvar, revisjonsspor. Strukturperspektivet svarer på spørsmålet: «Gjør vi det vi har sagt vi skal gjøre?» Uten tydelige roller og prosesser blir compliance tilfeldig.</p>
+        <p><a href="{{ '/struktur/' | relative_url }}" class="card-link">Les mer i strukturperspektivet →</a></p>
     </div>
 
-    <div class="info-box animate-on-scroll fade-in-up">
+    <div class="info-box animate-on-scroll fade-in-up" style="--card-accent: #D4A836; border-left-color: var(--card-accent);">
         <h3>Mennesker — kultur og etikk</h3>
         <p>Psykologisk trygghet, varsling, verdier i praksis. GRC feiler oftest ikke på prosjektnivå, men på menneskelig nivå — fordi ansatte ikke tør å si ifra, eller fordi ledelsen ikke hører etter. Uten psykologisk trygghet blir risikostyring en illusion.</p>
+        <p><a href="{{ '/mennesker/' | relative_url }}" class="card-link">Les mer i menneskeperspektivet →</a></p>
     </div>
 
-    <div class="info-box animate-on-scroll fade-in-up">
+    <div class="info-box animate-on-scroll fade-in-up" style="--card-accent: #355E3B; border-left-color: var(--card-accent);">
         <h3>Påvirkning — styring og makt</h3>
-        <p>Beslutningsmyndighet, eierstyring, interessenter. Governance handler om hvem som faktisk tar beslutninger — ikke hvem som formelt har ansvaret. De fleste organisasjoner har et gap mellom formell og reell makt, og det gapet er der de fleste GRC-feilene oppstår. Les mer i <a href="{{ '/pavirkning/' | relative_url }}">påvirkningsperspektivet →</a></p>
+        <p>Beslutningsmyndighet, eierstyring, interessenter. Governance handler om hvem som faktisk tar beslutninger — ikke hvem som formelt har ansvaret. De fleste organisasjoner har et gap mellom formell og reell makt, og det gapet er der de fleste GRC-feilene oppstår.</p>
+        <p><a href="{{ '/pavirkning/' | relative_url }}" class="card-link">Les mer i påvirkningsperspektivet →</a></p>
     </div>
 
-    <div class="info-box animate-on-scroll fade-in-up">
+    <div class="info-box animate-on-scroll fade-in-up" style="--card-accent: #8E0D3C; border-left-color: var(--card-accent);">
         <h3>Identitet — formål og integritet</h3>
-        <p>Organisasjonens identitet, verdibasert etterlevelse, langsiktighet. GRC som kun er regler uten identitetsforankring, blir overfladisk. En organisasjon som ikke har «integritet» i sin identitet, vil alltid finne en snarvei. Les mer i <a href="{{ '/identitet/' | relative_url }}">identitetsperspektivet →</a></p>
+        <p>Organisasjonens identitet, verdibasert etterlevelse, langsiktighet. GRC som kun er regler uten identitetsforankring, blir overfladisk. En organisasjon som ikke har «integritet» i sin identitet, vil alltid finne en snarvei.</p>
+        <p><a href="{{ '/identitet/' | relative_url }}" class="card-link">Les mer i identitetsperspektivet →</a></p>
     </div>
 </section>
 
@@ -204,58 +208,3 @@ json_ld:
     </div>
 </section>
 
-<style>
-.grc-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.95em;
-}
-.grc-table th,
-.grc-table td {
-    padding: 12px 16px;
-    text-align: left;
-    border-bottom: 1px solid var(--border-color-subtle-light);
-    vertical-align: top;
-}
-.grc-table th {
-    font-weight: 600;
-    background: var(--surface-subtle-light);
-}
-.grc-table tr:last-child td {
-    border-bottom: none;
-}
-.dark-mode .grc-table th {
-    background: var(--surface-subtle-dark);
-}
-.dark-mode .grc-table th,
-.dark-mode .grc-table td {
-    border-color: var(--border-color-dark);
-}
-
-.cta-box {
-    background: var(--surface-subtle-light);
-    border-radius: var(--radius-lg);
-    padding: var(--space-xl);
-    text-align: center;
-}
-.dark-mode .cta-box {
-    background: var(--surface-subtle-dark);
-}
-.cta-box h3 {
-    margin-top: 0;
-}
-.cta-box .cta-buttons {
-    margin-top: var(--space-md);
-}
-
-@media (max-width: 599px) {
-    .grc-table th,
-    .grc-table td {
-        padding: 8px 10px;
-        font-size: 0.85em;
-    }
-    .grc-table td:last-child {
-        white-space: nowrap;
-    }
-}
-</style>

@@ -36,12 +36,12 @@
     margin: 24px 0;
     border-left: 4px solid var(--primary-accent);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flow-root;
 }
 
 .perspektiv-element:hover,
 .frame-element:hover,
 .info-box:hover {
-    transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
@@ -68,7 +68,6 @@
 .perspektiv-challenge:hover,
 .frame-challenge:hover,
 .challenge-card:hover {
-    transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
 }
 
@@ -220,7 +219,6 @@
 }
 
 .tag-cloud-item:hover {
-    transform: translateY(-2px);
     box-shadow: var(--shadow-md);
     text-decoration: none;
 }
@@ -367,4 +365,61 @@
 
 .dark-mode .about-link {
     color: var(--link-color-dark);
+}
+
+/* ========================================
+   GRC page — table styles
+   ======================================== */
+.grc-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+.grc-table th,
+.grc-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color-subtle-light);
+    vertical-align: top;
+}
+.grc-table th {
+    font-weight: 600;
+    background: var(--surface-subtle-light);
+}
+.grc-table tr:last-child td {
+    border-bottom: none;
+}
+.dark-mode .grc-table th {
+    background: var(--surface-subtle-dark);
+}
+.dark-mode .grc-table th,
+.dark-mode .grc-table td {
+    border-color: var(--border-color-dark);
+}
+
+.cta-box {
+    background: var(--surface-subtle-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: center;
+}
+.dark-mode .cta-box {
+    background: var(--surface-subtle-dark);
+}
+.cta-box h3 {
+    margin-top: 0;
+}
+.cta-box .cta-buttons {
+    margin-top: var(--space-md);
+}
+
+@media (max-width: 599px) {
+    .grc-table th,
+    .grc-table td {
+        padding: 8px 10px;
+        font-size: 0.85em;
+    }
+    .grc-table td:last-child {
+        white-space: nowrap;
+    }
 }
