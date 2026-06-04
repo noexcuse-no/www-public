@@ -5,10 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.7.1] - 2026-06-04
 
 ### Changed
 - **HTML→MD refactor — Page content migration**: Extracted all inline HTML from 22 `_pages/*.md` files into includes and markdown body. Created 20 new `_includes/` components (benefit-cards, step-cards, cases-cards, frame-cards, grc-perspective-cards, science-section, ethics-columns, science-highlight, science-quote, science-divider, section-illustration, framework-illustration, section-wrapper, section-container, info-box, challenge-card, challenge-grid, question-list, cta-section, tag-cloud, avtate-section, about-values, about-section, about-team, kotter-flow). Consolidated CTA, Hero, Section patterns (Phase 3). Inline styling tags (`<a class="product-cta">`, `<p class="lead">`) converted to kramdown IAL syntax in captures with `markdownify_body` support.
+
+## [Unreleased]
 - **R23.4 — Mennesker dynamic element count**: The "tre hovedelementene" heading now renders dynamically via `{{ frame.elements | size }}`. All 4 frame alt texts updated similarly. 4th Mennesker element "Verdier og mening" now has a `spot_image` (compass/north star icon, 80×80px). Image generated via EvoLink GPT Image 2, original PNG preserved in `.design/graphics/originals/banners/`
 - **R23.1 — Card hover shift removal**: Removed `transform: translateY()` from 7 hover selectors across `profiles.css`, `article.css`, `perspektiv-styles.css`, `card.css`. Hover now only deepens shadow — no lift. CTAs retain their existing hover transform (they're actions, not containers)
 - **R23.2 — Profile person title**: Added `if profile.person_title` block in `_includes/profiles.html` rendering job title below name. Styled as `.profile-person-title` (0.9em, opacity 0.7, negative top margin). Applied to `/dagfinn/` with `person_title: "Daglig leder"`
