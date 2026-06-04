@@ -53,12 +53,15 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin: 24px 0;
+    list-style: none;
+    padding: 0;
 }
 
 /* Challenge card — individual challenge */
 .perspektiv-challenge,
 .frame-challenge,
-.challenge-card {
+.challenge-card,
+.perspektiv-challenges > li {
     background: var(--box-background-light);
     padding: 20px;
     border-radius: var(--radius-lg);
@@ -67,20 +70,23 @@
 
 .perspektiv-challenge:hover,
 .frame-challenge:hover,
-.challenge-card:hover {
+.challenge-card:hover,
+.perspektiv-challenges > li:hover {
     box-shadow: var(--shadow-lg);
 }
 
 .perspektiv-challenge h4,
 .frame-challenge h4,
-.challenge-card h4 {
+.challenge-card h4,
+.perspektiv-challenges > li h4 {
     margin: 0 0 8px 0;
     font-size: 1em;
 }
 
 .perspektiv-challenge p,
 .frame-challenge p,
-.challenge-card p {
+.challenge-card p,
+.perspektiv-challenges > li p {
     margin: 0;
     font-size: 0.95em;
     opacity: 0.85;
