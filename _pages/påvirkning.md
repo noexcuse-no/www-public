@@ -1,14 +1,13 @@
 ---
 class: frame
 layout: perspektiv
-permalink: /påvirkning/
+permalink: /pavirkning/
 frame_id: "påvirkning"
-show_spots: true
 category: "frame"
 title: "Påvirkningsperspektivet i ledelse"
 description: "Lær hvordan påvirkningsperspektivet kan hjelpe ledergruppen å forstå maktbalanse, interessekonflikter og hvordan beslutninger faktisk tas."
 banner: "assets/images/banners/perspektiv-påvirkning.webp"
-url: "/påvirkning/"
+url: "/pavirkning/"
 
 json_ld:
   type: "Article"
@@ -31,89 +30,112 @@ hero:
   breadcrumb: "← Ledelse 60:2"
   intro: "Handler om å forstå at organisasjoner er arenaer der ulike interesser møtes. Makt og påvirkning er ikke skitne triks — de er en del av hvordan beslutninger tas og ting blir gjort."
 
-intro:
-  heading: "Hva er påvirkningsperspektivet?"
-  body: |
-    Tenk på en organisasjon som en politisk arena — ikke i valgkamp-forstand, men i betydningen: ulike interesser, agendaer og aktører som jakter på innflytelse og ressurser. Påvirkningsperspektivet ser ledelse som navigering i dette landskapet.
-
-    God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. I norske organisasjoner er avstanden mellom formell og reell beslutningsmakt ofte undervurdert.
-
-    Jeffrey Pfeffer viser i «Power: Why Some People Have It — and Others Don't» at prestasjon alene sjelden er nok. De som forstår maktens spilleregler, lykkes — de som tror på rettferdighetens seier alene, ender ofte frustrert.
-
-    I komplekse beslutningsmiljøer — der problemer, løsninger, deltakere og valgmuligheter flyter sammen — er det ikke alltid den «beste» ideen som vinner. Det er den som blir fremmet av de som har bygget tillit og innflytelse over tid. Forståelse av dette landskapet er en forutsetning for god styring.
-
-elements:
-  - title: "Makt og innflytelse"
-    spot_image: "assets/images/banners/spot-pavirkning-makt.webp"
-    body: |
-      Makt i organisasjoner er ikke noe mystisk — det er evnen til å få ting gjort. Den kan komme fra formell autoritet, fra ekspertise, fra relasjoner, eller fra det å befinne seg i sentrale posisjoner. Men få ledergrupper snakker åpent om makt — strukturerte, anonyme verktøy kan avdekke mønstre som ellers forblir usynlige i møterommet.
-    signs:
-      positive: "Ledere vet hvem som har innflytelse på viktige beslutninger. De bygger allianser før de trenger dem. De er synlige der beslutninger tas."
-      negative: "Ledere som tror «godt arbeid snakker for seg selv» ender sjelden øverst. De som unngår «politikk» ender opp med å bli utkonkurrert av de som omfavner det."
-  - title: "Interesser og agendaer"
-    spot_image: "assets/images/banners/spot-pavirkning-nettverk.webp"
-    body: |
-      Hver leder og hver avdeling har sine interesser. Ikke nødvendigvis egoistiske — de kan være faglige, strategiske, eller personlige. Påvirkningsperspektivet handler om å forstå disse interessene og hvordan de samhandler. Når interessekartlegging gjøres systematisk, blir det mulig å diskutere prioriteringer ærlig — i stedet for å la dem forbli usagte driver for beslutninger.
-    signs:
-      positive: "Det diskuteres åpent om ulike avdelingers agendaer og hvordan de kan bringes på line. Prioriteringsdiskusjoner er ærlige om hva som står på spill."
-      negative: "Beslutninger tas bak-lukkede dører. Enighet i møter maskerer uenighet utenfor. Viktige hensyn dukker opp sent i prosessen."
-  - title: "Konflikt og forhandling"
-    spot_image: "assets/images/banners/spot-pavirkning-interesser.webp"
-    body: |
-      Konflikt er ikke noe galt i seg selv — det er et tegn på at ulike perspektiver kommer til syne. Vekst skjer ofte nettopp der motsetninger møtes. Problemet er ikke konflikt, men mangel på arenaer for å håndtere den. Strukturerte spørsmål om konflikthåndtering gir ledergruppen et felles språk for å adressere uenighet før den eskalerer.
-    signs:
-      positive: "Uenighet diskuteres åpent og med respekt. Beslutninger tas etter at ulike synspunkter er vurdert. Kompromisser er «eide» av begge parter."
-      negative: "Konflikter begraves til de eskalerer. «Vi er enig» betyr «jeg våger ikke si ifra». Passive-aggressive kommunikasjon. Koalisjoner som jobber mot hverandre."
-
-leader_value:
-  heading: "Hvorfor påvirkningsperspektivet betyr noe for ledergruppen"
-  spot_image: "assets/images/banners/spot-pavirkning-hvorfor-pavirkning-betyr-noe.webp"
-  body: |
-    Mange ledere har sjelden trives godt med en «politisk» tilnærming. De ser på makt og innflytelse som noe forkastelig som helst unngås. Men det er nettopp denne blindheten som gjør dem sårbare — de som forstår spillereglene, lykkes.
-
-    Pfeffers research viser at politisk dyktighet korrelerer sterkt med ledereffektivitet. Ikke fordi makt er målet, men fordi evnen til å navigere organisasjonens politiske landskap er en forutsetning for å få gjennomført endringer.
-
-challenges:
-  - title: "Usynlig beslutningsmakt"
-    image: "assets/images/banners/pavirkning-t4-invisible-power.webp"
-    body: "De som formelt har makt, har ikke reell makt. Eller omvendt. Beslutninger tas «der» men av dem som «ikke skal ha noe med det å gjøre». Senior ledere kan ofte bryte uformelle regler — de har bygget opp «idiosynkratiske kreditter» gjennom tidligere bidrag som gir dem retten til å avvike fra normene."
-  - title: "Skjulte agendaer"
-    image: "assets/images/banners/pavirkning-t4-hidden-agendas.webp"
-    body: "Aktører som ikke er transparent om sine interesser. Medarbeidere som jobber forbi offisielle kanaler for å påvirke beslutninger."
-  - title: "Ressurskamper som maskeres"
-    image: "assets/images/banners/pavirkning-t4-resource-struggles.webp"
-    body: "Budsjettkonflikter, GIS-struktureringer og andre strukturelle endringer som egentlig handler om makt og innflytelse, men fremstilles som rasjonelle."
-  - title: "For mye enighet"
-    image: "assets/images/banners/pavirkning-t4-too-much-agreement.webp"
-    body: "En ledelsesgruppe som altfor sjelden er uenig, klarer heller ikke å utfordre hverandre. Uenighet er et sundhetstegn — likegyldighet er problemet."
-
-questions:
-  - "Hvem har reell innflytelse på viktige beslutninger — og er det de som bør ha det?"
-  - "Hvor transparente er agendaer og interesser i ledergruppen?"
-  - "Finnes det «uskrevne regler» som nye ledere må anstrenge seg for å forstå?"
-  - "Hvordan håndterer ledergruppen uenighet — åpent eller bak lukkede dører?"
-  - "Er det balanse i makt — eller er noen stemmer for dominerende?"
-
-cta:
-  image: "assets/images/banners/illustrasjon-påvirkning-cta.webp"
-  alt: "Illustrasjon for kartlegging av påvirkning"
-  heading: "Få kartlagt ledergruppens påvirkning og maktbalanse"
-  body: |
-    Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonflikter og konflikthåndtering. Bestill en uforpliktende samtale for å lære mer.
-  booking_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthensted"
-
-about:
-  heading: "Det teoretiske grunnlaget"
-  body: |
-    Påvirkningsperspektivet i Ledelse 60:2 bygger på Bolman & Deals politiske ramme, kombinert med Jeffrey Pfeffers forskning på makt og organisasjonspolitikk fra «Power».
-
-    Pfeffer dokumenterer at makt er kontekstavhengig. Ledelse 60:2 kartlegger maktfordeling, ikke rettferdighet. Det handler om å forstå hvem som faktisk har innflytelse — ikke å dømme om det er «riktig».
-  link_text: "Les det teoretiske grunnlaget for Ledelse 60:2 →"
-  link_url: "/metode/"
-
 grc_description: "Beslutningsmyndighet, eierstyring, interessenter. Governance handler om hvem som faktisk tar beslutninger — ikke hvem som formelt har ansvaret. De fleste organisasjoner har et gap mellom formell og reell makt, og det gapet er der de fleste GRC-feilene oppstår."
 color_accent: "#355E3B"
 card_description: "Makt, interesser, konflikt, ressurser, politikk"
 detail: "Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet."
 weight: 3
 ---
+
+## Hva er påvirkningsperspektivet?
+
+Tenk på en organisasjon som en politisk arena — ikke i valgkamp-forstand, men i betydningen: ulike interesser, agendaer og aktører som jakter på innflytelse og ressurser. Påvirkningsperspektivet ser ledelse som navigering i dette landskapet.
+
+God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. I norske organisasjoner er avstanden mellom formell og reell beslutningsmakt ofte undervurdert.
+
+Jeffrey Pfeffer viser i «Power: Why Some People Have It — and Others Don't» at prestasjon alene sjelden er nok. De som forstår maktens spilleregler, lykkes — de som tror på rettferdighetens seier alene, ender ofte frustrert.
+
+I komplekse beslutningsmiljøer — der problemer, løsninger, deltakere og valgmuligheter flyter sammen — er det ikke alltid den «beste» ideen som vinner. Det er den som blir fremmet av de som har bygget tillit og innflytelse over tid. Forståelse av dette landskapet er en forutsetning for god styring.
+
+## De 3 hovedelementene
+
+![Illustrasjon: Makt og innflytelse](/assets/images/banners/spot-pavirkning-makt.webp){: .argument-illustration}
+
+### Makt og innflytelse
+
+Makt i organisasjoner er ikke noe mystisk — det er evnen til å få ting gjort. Den kan komme fra formell autoritet, fra ekspertise, fra relasjoner, eller fra det å befinne seg i sentrale posisjoner. Men få ledergrupper snakker åpent om makt — strukturerte, anonyme verktøy kan avdekke mønstre som ellers forblir usynlige i møterommet.
+
+**Tegn på god makt og innflytelse:** Ledere vet hvem som har innflytelse på viktige beslutninger. De bygger allianser før de trenger dem. De er synlige der beslutninger tas.
+
+**Tegn på makt og innflytelse-problemer:** Ledere som tror «godt arbeid snakker for seg selv» ender sjelden øverst. De som unngår «politikk» ender opp med å bli utkonkurrert av de som omfavner det.
+
+![Illustrasjon: Interesser og agendaer](/assets/images/banners/spot-pavirkning-nettverk.webp){: .argument-illustration .argument-illustration--right}
+
+### Interesser og agendaer
+
+Hver leder og hver avdeling har sine interesser. Ikke nødvendigvis egoistiske — de kan være faglige, strategiske, eller personlige. Påvirkningsperspektivet handler om å forstå disse interessene og hvordan de samhandler. Når interessekartlegging gjøres systematisk, blir det mulig å diskutere prioriteringer ærlig — i stedet for å la dem forbli usagte driver for beslutninger.
+
+**Tegn på gode interesser og agendaer:** Det diskuteres åpent om ulike avdelingers agendaer og hvordan de kan bringes på line. Prioriteringsdiskusjoner er ærlige om hva som står på spill.
+
+**Tegn på interesser og agendaer-problemer:** Beslutninger tas bak lukkede dører. Enighet i møter maskerer uenighet utenfor. Viktige hensyn dukker opp sent i prosessen.
+
+![Illustrasjon: Konflikt og forhandling](/assets/images/banners/spot-pavirkning-interesser.webp){: .argument-illustration}
+
+### Konflikt og forhandling
+
+Konflikt er ikke noe galt i seg selv — det er et tegn på at ulike perspektiver kommer til syne. Vekst skjer ofte nettopp der motsetninger møtes. Problemet er ikke konflikt, men mangel på arenaer for å håndtere den. Strukturerte spørsmål om konflikthåndtering gir ledergruppen et felles språk for å adressere uenighet før den eskalerer.
+
+**Tegn på god konflikt og forhandling:** Uenighet diskuteres åpent og med respekt. Beslutninger tas etter at ulike synspunkter er vurdert. Kompromisser er «eide» av begge parter.
+
+**Tegn på konflikt og forhandling-problemer:** Konflikter begraves til de eskalerer. «Vi er enig» betyr «jeg våger ikke si ifra». Passiv-aggressiv kommunikasjon. Koalisjoner som jobber mot hverandre.
+
+![Illustrasjon av de 3 hovedelementene i påvirkningsperspektivet](/assets/images/banners/illustrasjon-påvirkning-hovedelementer.webp){: .section-illustration}
+
+![Illustrasjon: Hvorfor påvirkningsperspektivet betyr noe for ledergruppen](/assets/images/banners/spot-pavirkning-hvorfor-pavirkning-betyr-noe.webp){: .argument-illustration .argument-illustration--right}
+
+## Hvorfor påvirkningsperspektivet betyr noe for ledergruppen
+
+Mange ledere har sjelden trivdes godt med en «politisk» tilnærming. De ser på makt og innflytelse som noe forkastelig som helst unngås. Men det er nettopp denne blindheten som gjør dem sårbare — de som forstår spillereglene, lykkes.
+
+Pfeffers research viser at politisk dyktighet korrelerer sterkt med ledereffektivitet. Ikke fordi makt er målet, men fordi evnen til å navigere organisasjonens politiske landskap er en forutsetning for å få gjennomført endringer.
+
+## Vanlige påvirkningsrelaterte utfordringer
+
+![Illustrasjon av vanlige påvirkningsrelaterte utfordringer](/assets/images/banners/illustrasjon-påvirkning-utfordringer.webp){: .section-illustration}
+
+*   ![](/assets/images/banners/pavirkning-t4-invisible-power.webp){: .micro-illustration aria-hidden="true"}
+    
+    #### Usynlig beslutningsmakt
+    
+    De som formelt har makt, har ikke reell makt. Eller omvendt. Beslutninger tas «der» men av dem som «ikke skal ha noe med det å gjøre». Senior ledere kan ofte bryte uformelle regler — de har bygget opp «idiosynkratiske kreditter» gjennom tidligere bidrag som gir dem retten til å avvike fra normene.
+*   ![](/assets/images/banners/pavirkning-t4-hidden-agendas.webp){: .micro-illustration aria-hidden="true"}
+    
+    #### Skjulte agendaer
+    
+    Aktører som ikke er transparente om sine interesser. Medarbeidere som jobber forbi offisielle kanaler for å påvirke beslutninger.
+*   ![](/assets/images/banners/pavirkning-t4-resource-struggles.webp){: .micro-illustration aria-hidden="true"}
+    
+    #### Ressurskamper som maskeres
+    
+    Budsjettkonflikter, GIS-struktureringer og andre strukturelle endringer som egentlig handler om makt og innflytelse, men fremstilles som rasjonelle.
+*   ![](/assets/images/banners/pavirkning-t4-too-much-agreement.webp){: .micro-illustration aria-hidden="true"}
+    
+    #### For mye enighet
+    
+    En ledelsesgruppe som altfor sjelden er uenig, klarer heller ikke å utfordre hverandre. Uenighet er et sunnhetstegn — likegyldighet er problemet.
+{: .perspektiv-challenges}
+
+## Spørsmål påvirkningsperspektivet kan hjelpe dere å besvare
+
+- Hvem har reell innflytelse på viktige beslutninger — og er det de som bør ha det?
+- Hvor transparente er agendaer og interesser i ledergruppen?
+- Finnes det «uskrevne regler» som nye ledere må anstrenge seg for å forstå?
+- Hvordan håndterer ledergruppen uenighet — åpent eller bak lukkede dører?
+- Er det balanse i makt — eller er noen stemmer for dominerende?
+
+![Illustrasjon for kartlegging av påvirkning](/assets/images/banners/illustrasjon-påvirkning-cta.webp){: .section-illustration}
+
+## Få kartlagt ledergruppens påvirkning og maktbalanse
+
+Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonflikter og konflikthåndtering. Bestill en uforpliktende samtale for å lære mer.
+
+[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthensted){: .product-cta}
+[Les mer om Ledelse 60:2 →](/ledelse-60-2/){: .product-cta .product-cta--secondary}
+
+## Det teoretiske grunnlaget
+
+Påvirkningsperspektivet i Ledelse 60:2 bygger på Bolman & Deals politiske ramme, kombinert med Jeffrey Pfeffers forskning på makt og organisasjonspolitikk fra «Power».
+
+Pfeffer dokumenterer at makt er kontekstavhengig. Ledelse 60:2 kartlegger maktfordeling, ikke rettferdighet. Det handler om å forstå hvem som faktisk har innflytelse — ikke å dømme om det er «riktig».
+
+[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .perspektiv-link}
