@@ -1,0 +1,10 @@
+{% assign grc_frames = site.pages | where: "class", "frame" | sort: "weight" %}
+
+{% for frame in grc_frames %}
+  {% assign accent = frame.color_accent | default: "#2A4D6E" %}
+  <div class="info-box animate-on-scroll fade-in-up" style="--card-accent: {{ accent }}; border-left-color: var(--card-accent);">
+    <h3>{{ frame.title }}</h3>
+    {{ frame.grc_description | markdownify }}
+    <p><a href="{{ frame.url | relative_url }}" class="card-link">Les mer i {{ frame.title | downcase }} →</a></p>
+  </div>
+{% endfor %}

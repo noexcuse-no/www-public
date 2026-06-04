@@ -10,8 +10,4 @@ micro_image: "assets/images/banners/ledelse-60-2-t4-intervju.webp"
 url: "/intervju/"
 ---
 
-<section class="section container--narrow" style="padding-top: var(--space-2xl);">
-    <div class="section-illustration">
-        <img src="{{ '/assets/images/banners/intervju-t3-intervju.webp' | relative_url }}" alt="Strukturert intervju" class="section-illustration-img" loading="lazy">
-    </div>
-</section>
+{% include section-wrapper.html class="container--narrow" style="padding-top: var(--space-2xl);" illustration="/assets/images/banners/intervju-t3-intervju.webp" illustration_alt="Strukturert intervju" %}

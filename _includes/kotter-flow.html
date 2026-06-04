@@ -1,0 +1,30 @@
+{% comment %}
+  Kotter flow — 8-step change management flow diagram.
+
+  Expects include.kotter_steps (array of objects with:
+    number  — step number (string)
+    title   — h3 heading
+    image   — section-illustration image path
+    image_alt — alt text for image
+    body    — description text
+{% endcomment %}
+
+{% assign steps = include.kotter_steps %}
+
+<div class="kotter-flow">
+  {% for step in steps %}
+    <div class="kotter-step">
+      <div class="kotter-number">{{ step.number }}</div>
+      <div class="kotter-content">
+        <h3>{{ step.title }}</h3>
+        <div class="section-illustration animate-on-scroll fade-in-up">
+          <img src="{{ step.image | relative_url }}" alt="{{ step.image_alt }}" loading="lazy">
+        </div>
+        <p>{{ step.body }}</p>
+      </div>
+    </div>
+    {% unless forloop.last %}
+      <div class="kotter-arrow">↓</div>
+    {% endunless %}
+  {% endfor %}
+</div>

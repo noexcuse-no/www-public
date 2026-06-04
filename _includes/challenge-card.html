@@ -1,0 +1,20 @@
+{% comment %}
+  Challenge card — single card in a challenge grid.
+
+  Expects a `challenge` object with:
+    .title — heading text
+    .body  — description
+    .image — micro-illustration path
+{% endcomment %}
+
+<div class="challenge-card animate-on-scroll fade-in-up stagger">
+  {% if include.challenge.image %}
+    <img class="micro-illustration"
+         src="{{ include.challenge.image | relative_url }}"
+         alt="" aria-hidden="true"
+         width="80" height="80"
+         loading="lazy">
+  {% endif %}
+  <h4>{{ include.challenge.title }}</h4>
+  <p>{{ include.challenge.body }}</p>
+</div>

@@ -51,273 +51,165 @@ json_ld:
       name: "Endringsledelse"
     - type: "Thing"
       name: "Organisasjonskultur"
+challenges:
+  - title: "Uoverensstemmelse mellom verdier og praksis"
+    body: "«Vi er innovative» står på veggen, men ideer drepes i møter. Kulturen sier noe annet enn det ledelsen tror."
+    image: "/assets/images/banners/usikkerhet-t4-values-practice.webp"
+  - title: "Tacite kunnskap som ikke deles"
+    body: "Kunnskapen sitter i hodene til enkelte, ikke i systemer. Når folk slutter, forsvinner kunnskapen."
+    image: "/assets/images/banners/usikkerhet-t4-tacit-knowledge.webp"
+  - title: "Silo-tenkning"
+    body: "Avdelinger som jobber for seg selv. «Det der er ikke mitt problem»-mentalitet. Koordinering på tvers av avdelinger er tilfeldig."
+    image: "/assets/images/banners/usikkerhet-t4-silo-thinking.webp"
+  - title: "«Alltid sånn her»-mentalitet"
+    body: "Historisk suksess blir institusjonlisert. «Vi har alltid gjort det sånn» blir argumentet mot fornyelse."
+    image: "/assets/images/banners/usikkerhet-t4-always-done.webp"
+  - title: "Strukturell usikkerhet"
+    body: "Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen."
+    image: "/assets/images/banners/usikkerhet-t4-structural-uncertainty.webp"
+questions:
+  - "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
+  - "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"
+  - "Hva skjer hvis noen bryter med «hvordan vi gjør ting her»?"
+  - "Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?"
+  - "Hvilket kulturstadie ville du plassere organisasjonen på i dag?"
+kotter_steps:
+  - number: "1"
+    title: "Skap nødvendighet"
+    image: "/assets/images/banners/usikkerhet-t3-kotter-1.webp"
+    image_alt: "Abstrakt figurativ skisse av en varselklokke som symboliserer å skape nødvendighet for endring"
+    body: "Hjelp folk å se hvorfor endring er nødvendig nå — ikke til slutt. Hva koster det å ikke endre? Konkurransetrykk, regulatoriske endringer, arbeidsmarkedsskifter. Nødvendighet er ikke panikk — det er klarhet."
+  - number: "2"
+    title: "Bygg en sterk koalisjon"
+    image: "/assets/images/banners/usikkerhet-t3-kotter-2.webp"
+    image_alt: "Abstrakt figurativ skisse av en sirkel av figurer som symboliserer å bygge en sterk koalisjon"
+    body: "Samle en gruppe med nok makt til å lede endringen. Inkluder formelle ledere og uformelle opinionsledere. Ikke alle trenger å være overbevist — men nøkkelaktører må være med."
+  - number: "3"
+    title: "Formuler en visjon"
+    image: "/assets/images/banners/usikkerhet-t3-kotter-3.webp"
+    image_alt: "Abstrakt figurativ skisse av et malerier som symboliserer å formulere en visjon for fremtiden"
+    body: "Beskriv hvordan fremtiden ser ut etter endringen. Enkel, klar, inspirerende — ikke en prosjektplan. Visjonen skal styre beslutninger, ikke bare kommunikasjon."
+  - number: "4"
+    title: "Kommuniser visjonen"
+    image: "/assets/images/banners/usikkerhet-t3-kotter-4.webp"
+    image_alt: "Abstrakt figurativ skisse av en taler med lydbolger som symboliserer kommunikasjon av visjonen"
+    body: "Gjør visjonen til en pågående tilstedeværelse, ikke en engangsannonsering. Led med eksempel — handlinger taler høyere enn presentasjoner. Addresser angst og motstand direkte, ikke ignorer dem."
+  - number: "5"
+    title: "Fjern hindringer"
+    image: "/assets/images/banners/usikkerhet-t3-kotter-5.webp"
+    image_alt: "Abstrakt figurativ skisse av en mur som brytes ned som symboliserer fjerning av hindringer"
+    body: "Identifiser barrierer: strukturer, systemer, ferdigheter, vaner. Myndiggjør folk til å fjerne hindringer eller finne veier rundt dem. Feir tidlige seiere som fjerner en barriere."
+  - number: "6"
+    title: "Skap kortsiktige seiere"
+    image: "/assets/images/banners/usikkerhet-t3-kotter-6.webp"
+    image_alt: "Abstrakt figurativ skisse av et flagg på en ås som symboliserer kortsiktige seiere"
+    body: "Planlegg synlige forbedringer innen 3-6 måneder. Ikke vent på den store transformasjonen — tidlige seiere bygger momentum. Analyser resultater ærlig — juster hvis seieren ikke var så stor som forventet."
+  - number: "7"
+    title: "Bygg videre på endringen"
+    image: "/assets/images/banners/usikkerhet-t3-kotter-7.webp"
+    image_alt: "Abstrakt figurativ skisse av et fundament som styrkes som symboliserer å bygge videre på endring"
+    body: "Bruk troverdigheten fra tidlige seiere til å angripe større endringer. Fremhev folk som gjennomførte tidlige endringer. Ikke erklær seier for tidlig — konsolidering tar tid."
+  - number: "8"
+    title: "Forankre i kulturen"
+    image: "/assets/images/banners/usikkerhet-t3-kotter-8.webp"
+    image_alt: "Abstrakt figurativ skisse av røtter som gror dypt som symboliserer forankring i kulturen"
+    body: "Koble nye atferdsmønstre til organisatorisk suksess. Sikre at lederutvikling inkluderer endringsledelse. Dokumenter hva som endret seg — la ikke gammel kultur gjenoppstå."
 ---
 
 {% include hero.html %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <p>Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.</p>
-</section>
+{% capture section_1_body %}
+Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.
+{% endcapture %}
+{% include section-wrapper.html body=section_1_body %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Hva er organisasjonskultur egentlig?</h2>
-    <p>Edgar Schein definerer kultur som «a pattern of shared basic assumptions learned by an organization as it solved its problems of external adaptation and internal integration.»[^schein2010] Kort sagt: det er måten vi faktisk gjør ting på, ikke bare det vi sier vi gjør.</p>
-    <p>Schein identifiserer tre nivåer av kultur:[^schein2010]</p>
-    <ul>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>Artefakter:</strong> Det vi kan se — bygninger, språk, ritualer, kleskode</li>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>Verdier:</strong> Det vi sier er viktig — strategi, visjon, erklærte prinsipper</li>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>Grunnleggende antakelser:</strong> Det vi tar for gitt — ubevisste, tatt-for-gitt sannheter</li>
-    </ul>
-    <p>Problemet: de fleste prøver å endre kultur ved å endre artefakter og verdier, mens de grunnleggende antakelsene forblir uendret. Det er som å behandle symptomene i stedet for årsaken.</p>
+{% capture section_2_body %}
+Edgar Schein definerer kultur som «a pattern of shared basic assumptions learned by an organization as it solved its problems of external adaptation and internal integration.»[^schein2010] Kort sagt: det er måten vi faktisk gjør ting på, ikke bare det vi sier vi gjør.
 
-    <h3>Teateret i usikkerhet</h3>
-    <p>En organisasjonskultur er ikke bare noe man <em>har</em> — det er noe man <em>fremfører</em>. I usikre tider sprekker fasaden: det som var «hvordan vi gjør ting her» avsløres som overflate når presset kommer. Ritualer og historier som fungerte i stabile perioder, mister sin kraft når ingen lenger tror på dem.</p>
-    <p>Spørsmålet ledergrupper bør stille seg i usikre tider er ikke «hva er kulturen vår?» — det er «hvilken kultur kommer til syne når vi ikke lenger har kontroll?»</p>
-    
-    <div class="framework-illustration animate-on-scroll fade-in-up">
-        <img src="{{ '/assets/images/banners/usikkerhet-t2-logan-stages.webp' | relative_url }}" alt="Diagram av Logans fem kulturstadier som en stige fra apati til felles suksess">
-    </div>
-</section>
+Schein identifiserer tre nivåer av kultur:[^schein2010]
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>De fem kulturstadiene — fra Logan</h2>
-    <p>David Logan deler organisasjoner inn i fem kulturstadier, basert på hvordan medlemmene ser på seg selv og andre:[^logan2009]</p>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>Trinn 1: «Livet suger»</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-1.webp' | relative_url }}" alt="Abstrakt figurativ skisse av apati som symboliserer Logan sitt første kulturstadium">
-        </div>
-        <p>En subkultur preget av apati og offermentalitet. Folk tror ingenting kan endres. Dette finnes sjelden i fungerende organisasjoner, men kan oppstå i nedlagte avdelinger eller under kriser.</p>
-    </div>
+- **Artefakter:** Det vi kan se — bygninger, språk, ritualer, kleskode
+- **Verdier:** Det vi sier er viktig — strategi, visjon, erklærte prinsipper
+- **Grunnleggende antakelser:** Det vi tar for gitt — ubevisste, tatt-for-gitt sannheter
 
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>Trinn 2: «Mitt liv suger»</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-2.webp' | relative_url }}" alt="Abstrakt figurativ skisse av individuell apati som symboliserer Logan sitt andre kulturstadium">
-        </div>
-        <p>Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.[^logan2009]</p>
-    </div>
+Problemet: de fleste prøver å endre kultur ved å endre artefakter og verdier, mens de grunnleggende antakelsene forblir uendret. Det er som å behandle symptomene i stedet for årsaken.
 
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>Trinn 3: «Jeg er great, du er det ikke»</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-3.webp' | relative_url }}" alt="Abstrakt figurativ skisse av individualisme som symboliserer Logan sitt tredje kulturstadium">
-        </div>
-        <p>Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.[^logan2009]</p>
-    </div>
+### Teateret i usikkerhet
 
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>Trinn 4: «Vi er great, andre er ikke»</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-4.webp' | relative_url }}" alt="Abstrakt figurativ skisse av tribal tenkning som symboliserer Logan sitt fjerde kulturstadium">
-        </div>
-        <p>Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.[^logan2009]</p>
-    </div>
+En organisasjonskultur er ikke bare noe man *har* — det er noe man *fremfører*. I usikre tider sprekker fasaden: det som var «hvordan vi gjør ting her» avsløres som overflate når presset kommer. Ritualer og historier som fungerte i stabile perioder, mister sin kraft når ingen lenger tror på dem.
 
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>Trinn 5: «Livet er great»</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/usikkerhet-t3-stage-5.webp' | relative_url }}" alt="Abstrakt figurativ skisse av felles suksess som symboliserer Logan sitt femte kulturstadium">
-        </div>
-        <p>Ektepisentret. «Vi lykkes sammen.» Organisasjonen feirer suksess eksternt og internt. Kun 3% av organisasjoner når dette stadiet, ifølge Logan.[^logan2009]</p>
-    </div>
-</section>
+Spørsmålet ledergrupper bør stille seg i usikre tider er ikke «hva er kulturen vår?» — det er «hvilken kultur kommer til syne når vi ikke lenger har kontroll?»
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Hvorfor endring er så vanskelig</h2>
-    <p>John Kotter dokumenterte at rundt 70% av alle endringsinitiativer feiler.[^kotter2012] Årsakene er systematiske:</p>
-    <ul>
-        <li class="animate-on-scroll slide-in-left stagger">For mye fokus på planlegging, for lite på implementering</li>
-        <li class="animate-on-scroll slide-in-left stagger">Mangel på bred forankring blant nøkkelpersoner</li>
-        <li class="animate-on-scroll slide-in-left stagger">Undervurdering av motstand og historisk baggage</li>
-        <li class="animate-on-scroll slide-in-left stagger">Kortsiktig tenkning — endring tar tid, de fleste gir opp for tidlig</li>
-    </ul>
-    <p>En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i året — det er en daglig holdning. Organisasjoner som leser signalene tidlig, justerer kurs før krisen er et faktum. Muligheter og risikoer hører sammen. De som bare ser risiko, misser mulighetene. De som bare ser muligheter, ender i brann.</p>
-    
-    <div class="framework-illustration animate-on-scroll fade-in-up">
-        <img src="{{ '/assets/images/banners/usikkerhet-t2-kotter-steps.webp' | relative_url }}" alt="Diagram av Kotters åtte steg for endringsledelse i en sekvensiell flyt">
-    </div>
+{% include framework-illustration.html image="/assets/images/banners/usikkerhet-t2-logan-stages.webp" alt="Diagram av Logans fem kulturstadier som en stige fra apati til felles suksess" %}
+{% endcapture %}
+{% include section-wrapper.html heading="Hva er organisasjonskultur egentlig?" body=section_2_body %}
 
-    <h3>Usikkerhet skaper maktvakuum</h3>
-    <p>Når usikkerhet oppstår, oppstår også maktkamper. De som griper muligheten i uklare situasjoner, former retningen — uavhengig av om de har formell autoritet. Ledergrupper som ikke er bevisst på dette, oppdager for sent at veivalg er tatt av dem som handlet raskest, ikke av dem som hadde best innsikt.</p>
-</section>
+{% capture section_3_body %}
+David Logan deler organisasjoner inn i fem kulturstadier, basert på hvordan medlemmene ser på seg selv og andre:[^logan2009]
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Kotters 8-stegs modell for endring</h2>
-    <p>John Kotter har kartlagt hvorfor endringsinitiativer feiler — og hvordan de faktisk kan lykkes. Hans forskning viser at de fleste endringsforsøk mislykkes fordi de gjør én eller flere av åtte kritiske feil. Her er hans åtte steg, fra akutt til forankret.[^kotter2012]</p>
-    
-    <div class="kotter-flow">
-        <div class="kotter-step">
-            <div class="kotter-number">1</div>
-            <div class="kotter-content">
-                <h3>Skap nødvendighet</h3>
-                <div class="section-illustration animate-on-scroll fade-in-up">
-                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-1.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en varselklokke som symboliserer å skape nødvendighet for endring">
-                </div>
-                <p>Hjelp folk å se hvorfor endring er nødvendig nå — ikke til slutt. Hva koster det å ikke endre? Konkurransetrykk, regulatoriske endringer, arbeidsmarkedsskifter. Nødvendighet er ikke panikk — det er klarhet.</p>
-            </div>
-        </div>
-        
-        <div class="kotter-arrow">↓</div>
-        
-        <div class="kotter-step">
-            <div class="kotter-number">2</div>
-            <div class="kotter-content">
-                <h3>Bygg en sterk koalisjon</h3>
-                <div class="section-illustration animate-on-scroll fade-in-up">
-                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-2.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en sirkel av figurer som symboliserer å bygge en sterk koalisjon">
-                </div>
-                <p>Samle en gruppe med nok makt til å lede endringen. Inkluder formelle ledere og uformelle opinionsledere. Ikke alle trenger å være overbevist — men nøkkelaktører må være med.</p>
-            </div>
-        </div>
-        
-        <div class="kotter-arrow">↓</div>
-        
-        <div class="kotter-step">
-            <div class="kotter-number">3</div>
-            <div class="kotter-content">
-                <h3>Formuler en visjon</h3>
-                <div class="section-illustration animate-on-scroll fade-in-up">
-                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-3.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et malerier som symboliserer å formulere en visjon for fremtiden">
-                </div>
-                <p>Beskriv hvordan fremtiden ser ut etter endringen. Enkel, klar, inspirerende — ikke en prosjektplan. Visjonen skal styre beslutninger, ikke bare kommunikasjon.</p>
-            </div>
-        </div>
-        
-        <div class="kotter-arrow">↓</div>
-        
-        <div class="kotter-step">
-            <div class="kotter-number">4</div>
-            <div class="kotter-content">
-                <h3>Kommuniser visjonen</h3>
-                <div class="section-illustration animate-on-scroll fade-in-up">
-                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-4.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en taler med lydbolger som symboliserer kommunikasjon av visjonen">
-                </div>
-                <p>Gjør visjonen til en pågående tilstedeværelse, ikke en engangsannonsering. Led med eksempel — handlinger taler høyere enn presentasjoner. Addresser angst og motstand direkte, ikke ignorer dem.</p>
-            </div>
-        </div>
-        
-        <div class="kotter-arrow">↓</div>
-        
-        <div class="kotter-step">
-            <div class="kotter-number">5</div>
-            <div class="kotter-content">
-                <h3>Fjern hindringer</h3>
-                <div class="section-illustration animate-on-scroll fade-in-up">
-                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-5.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en mur som brytes ned som symboliserer fjerning av hindringer">
-                </div>
-                <p>Identifiser barrierer: strukturer, systemer, ferdigheter, vaner. Myndiggjør folk til å fjerne hindringer eller finne veier rundt dem. Feir tidlige seiere som fjerner en barriere.</p>
-            </div>
-        </div>
-        
-        <div class="kotter-arrow">↓</div>
-        
-        <div class="kotter-step">
-            <div class="kotter-number">6</div>
-            <div class="kotter-content">
-                <h3>Skap kortsiktige seiere</h3>
-                <div class="section-illustration animate-on-scroll fade-in-up">
-                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-6.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et flagg på en ås som symboliserer kortsiktige seiere">
-                </div>
-                <p>Planlegg synlige forbedringer innen 3-6 måneder. Ikke vent på den store transformasjonen — tidlige seiere bygger momentum. Analyser resultater ærlig — juster hvis seieren ikke var så stor som forventet.</p>
-            </div>
-        </div>
-        
-        <div class="kotter-arrow">↓</div>
-        
-        <div class="kotter-step">
-            <div class="kotter-number">7</div>
-            <div class="kotter-content">
-                <h3>Bygg videre på endringen</h3>
-                <div class="section-illustration animate-on-scroll fade-in-up">
-                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-7.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et fundament som styrkes som symboliserer å bygge videre på endring">
-                </div>
-                <p>Bruk troverdigheten fra tidlige seiere til å angripe større endringer. Fremhev folk som gjennomførte tidlige endringer. Ikke erklær seier for tidlig — konsolidering tar tid.</p>
-            </div>
-        </div>
-        
-        <div class="kotter-arrow">↓</div>
-        
-        <div class="kotter-step">
-            <div class="kotter-number">8</div>
-            <div class="kotter-content">
-                <h3>Forankre i kulturen</h3>
-                <div class="section-illustration animate-on-scroll fade-in-up">
-                    <img src="{{ '/assets/images/banners/usikkerhet-t3-kotter-8.webp' | relative_url }}" alt="Abstrakt figurativ skisse av røtter som gror dypt som symboliserer forankring i kulturen">
-                </div>
-                <p>Koble nye atferdsmønstre til organisatorisk suksess. Sikre at lederutvikling inkluderer endringsledelse. Dokumenter hva som endret seg — la ikke gammel kultur gjenoppstå.</p>
-            </div>
-        </div>
-    </div>
-    
-    <h3>Hvorfor 70% feiler</h3>
-    <p>Kotter identifiserer åtte spesifikke feil — én per steg — som fører til at endringsinitiativer feiler:[^kotter2012]</p>
-    <ul>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>For mye selvtilfredshet</strong> — «det går jo bra nok»</li>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>For svak koalisjon</strong> — ikke nok makt bak endringen</li>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>Manglende visjon</strong> — folk vet ikke hva de jobber mot</li>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>Underkommunisering</strong> — visjonen sies ti ganger for sjelden</li>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>Ikke fjerne hindringer</strong> — strukturer som motarbeider endringen får stå</li>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>Manglende kortsiktige seiere</strong> — ingen bevis på at det fungerer</li>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>Erklære seier for tidlig</strong> — endringen har ikke satt seg</li>
-        <li class="animate-on-scroll slide-in-left stagger"><strong>Ikke forankre i kulturen</strong> — gamle vaner vender tilbake</li>
-    </ul>
-    
-    <p>Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av kommunikasjon (Steg 4) og hindringsfjerning (Steg 5); erklærte verdier påvirkes av nødvendighet (Steg 1) og kulturell forankring (Steg 8); grunnleggende antakelser endres gjennom langsiktig bygging (Steg 7) og kulturell forankring (Steg 8).[^schein2010] Logans stadier forteller <em>hvor</em> organisasjonen er — Kotter forklarer <em>hvordan</em> den beveger seg videre.[^logan2009]</p>
-</section>
+{% include info-box.html heading="Trinn 1: «Livet suger»" illustration="/assets/images/banners/usikkerhet-t3-stage-1.webp" illustration_alt="Abstrakt figurativ skisse av apati som symboliserer Logan sitt første kulturstadium" body="En subkultur preget av apati og offermentalitet. Folk tror ingenting kan endres. Dette finnes sjelden i fungerende organisasjoner, men kan oppstå i nedlagte avdelinger eller under kriser." %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Vanlige kulturutfordringer</h2>
-    
-    <div class="grid grid--2 challenges-grid stagger-parent">
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-values-practice.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Uoverensstemmelse mellom verdier og praksis</h4>
-            <p>«Vi er innovative» står på veggen, men ideer drepes i møter. Kulturen sier noe annet enn det ledelsen tror.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-tacit-knowledge.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Tacite kunnskap som ikke deles</h4>
-            <p>Kunnskapen sitter i hodene til enkelte, ikke i systemer. Når folk slutter, forsvinner kunnskapen.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-silo-thinking.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Silo-tenkning</h4>
-            <p>Avdelinger som jobber for seg selv. «Det der er ikke mitt problem»-mentalitet. Koordinering på tvers av avdelinger er tilfeldig.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-always-done.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>«Alltid sånn her»-mentalitet</h4>
-            <p>Historisk suksess blir institusjonlisert. «Vi har alltid gjort det sånn» blir argumentet mot fornyelse.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/usikkerhet-t4-structural-uncertainty.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Strukturell usikkerhet</h4>
-            <p>Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen.</p>
-        </div>
-    </div>
-</section>
+{% include info-box.html heading="Trinn 2: «Mitt liv suger»" illustration="/assets/images/banners/usikkerhet-t3-stage-2.webp" illustration_alt="Abstrakt figurativ skisse av individuell apati som symboliserer Logan sitt andre kulturstadium" body="Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.[^logan2009]" %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Spørsmål for å kartlegge kulturen</h2>
-    <ul class="question-list stagger-parent" style="--stagger-delay: 80ms;">
-        <li class="animate-on-scroll slide-in-left stagger">Hvordan ville en nyansatt beskrive kulturen etter tre måneder?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Hva skjer hvis noen bryter med «hvordan vi gjør ting her»?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Hvilket kulturstadie ville du plassere organisasjonen på i dag?</li>
-    </ul>
-</section>
+{% include info-box.html heading="Trinn 3: «Jeg er great, du er det ikke»" illustration="/assets/images/banners/usikkerhet-t3-stage-3.webp" illustration_alt="Abstrakt figurativ skisse av individualisme som symboliserer Logan sitt tredje kulturstadium" body="Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.[^logan2009]" %}
 
-<section class="section section--spacious container--narrow cta-section animate-on-scroll fade-in-up">
-    <h2>Få kartlagt ledergruppens håndtering av usikkerhet</h2>
-    <p>Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen håndterer usikkerhet, kultur og endring. Bestill en uforpliktende samtale for å lære mer.</p>
-    <div class="cta-buttons">
-        <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill uforpliktende samtale</a>
-        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
-    </div>
-</section>
+{% include info-box.html heading="Trinn 4: «Vi er great, andre er ikke»" illustration="/assets/images/banners/usikkerhet-t3-stage-4.webp" illustration_alt="Abstrakt figurativ skisse av tribal tenkning som symboliserer Logan sitt fjerde kulturstadium" body="Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.[^logan2009]" %}
+
+{% include info-box.html heading="Trinn 5: «Livet er great»" illustration="/assets/images/banners/usikkerhet-t3-stage-5.webp" illustration_alt="Abstrakt figurativ skisse av felles suksess som symboliserer Logan sitt femte kulturstadium" body="Ektepisentret. «Vi lykkes sammen.» Organisasjonen feirer suksess eksternt og internt. Kun 3% av organisasjoner når dette stadiet, ifølge Logan.[^logan2009]" %}
+{% endcapture %}
+{% include section-wrapper.html heading="De fem kulturstadiene — fra Logan" body=section_3_body %}
+
+{% capture section_4_body %}
+John Kotter dokumenterte at rundt 70% av alle endringsinitiativer feiler.[^kotter2012] Årsakene er systematiske:
+
+- For mye fokus på planlegging, for lite på implementering
+- Mangel på bred forankring blant nøkkelpersoner
+- Undervurdering av motstand og historisk baggage
+- Kortsiktig tenkning — endring tar tid, de fleste gir opp for tidlig
+
+En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i året — det er en daglig holdning. Organisasjoner som leser signalene tidlig, justerer kurs før krisen er et faktum. Muligheter og risikoer hører sammen. De som bare ser risiko, misser mulighetene. De som bare ser muligheter, ender i brann.
+
+{% include framework-illustration.html image="/assets/images/banners/usikkerhet-t2-kotter-steps.webp" alt="Diagram av Kotters åtte steg for endringsledelse i en sekvensiell flyt" %}
+
+### Usikkerhet skaper maktvakuum
+
+Når usikkerhet oppstår, oppstår også maktkamper. De som griper muligheten i uklare situasjoner, former retningen — uavhengig av om de har formell autoritet. Ledergrupper som ikke er bevisst på dette, oppdager for sent at veivalg er tatt av dem som handlet raskest, ikke av dem som hadde best innsikt.
+{% endcapture %}
+{% include section-wrapper.html heading="Hvorfor endring er så vanskelig" body=section_4_body %}
+
+{% capture section_5_body %}
+John Kotter har kartlagt hvorfor endringsinitiativer feiler — og hvordan de faktisk kan lykkes. Hans forskning viser at de fleste endringsforsøk mislykkes fordi de gjør én eller flere av åtte kritiske feil. Her er hans åtte steg, fra akutt til forankret.[^kotter2012]
+
+{% include kotter-flow.html kotter_steps=page.kotter_steps %}
+
+### Hvorfor 70% feiler
+
+Kotter identifiserer åtte spesifikke feil — én per steg — som fører til at endringsinitiativer feiler:[^kotter2012]
+
+- **For mye selvtilfredshet** — «det går jo bra nok»
+- **For svak koalisjon** — ikke nok makt bak endringen
+- **Manglende visjon** — folk vet ikke hva de jobber mot
+- **Underkommunisering** — visjonen sies ti ganger for sjelden
+- **Ikke fjerne hindringer** — strukturer som motarbeider endringen får stå
+- **Manglende kortsiktige seiere** — ingen bevis på at det fungerer
+- **Erklære seier for tidlig** — endringen har ikke satt seg
+- **Ikke forankre i kulturen** — gamle vaner vender tilbake
+
+Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av kommunikasjon (Steg 4) og hindringsfjerning (Steg 5); erklærte verdier påvirkes av nødvendighet (Steg 1) og kulturell forankring (Steg 8); grunnleggende antakelser endres gjennom langsiktig bygging (Steg 7) og kulturell forankring (Steg 8).[^schein2010] Logans stadier forteller *hvor* organisasjonen er — Kotter forklarer *hvordan* den beveger seg videre.[^logan2009]
+{% endcapture %}
+{% include section-wrapper.html heading="Kotters 8-stegs modell for endring" body=section_5_body %}
+
+{% capture section_6_body %}
+{% include challenge-grid.html %}
+{% endcapture %}
+{% include section-wrapper.html heading="Vanlige kulturutfordringer" body=section_6_body %}
+
+{% capture section_7_body %}
+{% include question-list.html %}
+{% endcapture %}
+{% include section-wrapper.html heading="Spørsmål for å kartlegge kulturen" body=section_7_body %}
+
+{% include cta-section.html heading="Få kartlagt ledergruppens håndtering av usikkerhet" body="Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen håndterer usikkerhet, kultur og endring. Bestill en uforpliktende samtale for å lære mer." secondary_url="/" %}
 
 [^schein2010]: Schein, E. H. (2010). *Organizational Culture and Leadership* (4. utg.). Jossey-Bass. Kultur definert som «a pattern of shared basic assumptions» — de tre nivåene: artifacts, espoused values, basic underlying assumptions.
 

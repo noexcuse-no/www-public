@@ -1,0 +1,12 @@
+{% comment %}
+  Science quote — styled quote block for om_metode.
+
+  Parameters:
+    quote  — quoted text (required)
+    source — citation source (optional)
+{% endcomment %}
+
+<div class="science-quote">
+  <p>«{{ include.quote }}»</p>
+  {% if include.source %}<cite>— {{ include.source }}</cite>{% endif %}
+</div>

@@ -1,36 +1,75 @@
 {% comment %}
   Hero include — unified hero component for all page types.
-  
+
   Supports two data sources:
-  1. Include parameters (used by layouts like perspektiv)
-  2. Page frontmatter (page.hero.image, page.hero.title, etc.)
-  
+  1. Include parameters (take priority)
+  2. Page frontmatter (page.hero.*, page.hero_effect)
+
+  Modes:
+  - Default: Full hero with background image (CSS class "hero")
+  - Simple (simple=true): Minimal hero without image (CSS class "frame-hero")
+  - Frame nav (show_frame_nav=true): Adds frame navigation links below hero content
+
   Parameters (each falls back to page.hero.*):
-    image   — hero background image path
-    alt     — image alt text
-    title   — hero heading (h1)
-    intro   — hero subtitle/description
-    breadcrumb — breadcrumb text (optional)
+    image           — hero background image path
+    alt             — image alt text
+    image_alt       — alias for alt (backward compatibility)
+    title           — hero heading (h1)
+    intro           — hero subtitle/description
+    breadcrumb      — breadcrumb text (optional)
+    breadcrumb_url  — breadcrumb link URL (optional, defaults to /)
+    hero_effect     — data-hero-effect attribute (optional, from page.hero_effect)
+    simple          — render minimal hero without image (default: false)
+    show_frame_nav  — show frame navigation links (default: false)
 {% endcomment %}
 
 {% assign hero_image = include.image | default: page.hero.image %}
-{% assign hero_alt = include.alt | default: page.hero.alt %}
+{% assign hero_alt = include.alt | default: include.image_alt | default: page.hero.alt %}
 {% assign hero_title = include.title | default: page.hero.title %}
 {% assign hero_intro = include.intro | default: page.hero.intro %}
 {% assign hero_breadcrumb = include.breadcrumb | default: page.hero.breadcrumb %}
+{% assign hero_breadcrumb_url = include.breadcrumb_url | default: page.hero.breadcrumb_url | default: '/' %}
 {% assign hero_effect = include.hero_effect | default: page.hero_effect %}
+{% assign hero_simple = include.simple | default: false %}
+{% assign hero_show_frame_nav = include.show_frame_nav | default: page.hero.show_frame_nav | default: false %}
 
+{% if hero_simple %}
+<section class="frame-hero">
+  <div class="frame-hero-content">
+    {% if hero_breadcrumb %}
+      <p class="frame-breadcrumb">
+        <a href="{{ hero_breadcrumb_url | relative_url }}">{{ hero_breadcrumb }}</a>
+      </p>
+    {% endif %}
+    <h1 class="hero-title">{{ hero_title }}</h1>
+    {% if hero_intro %}
+      <p class="frame-intro hero-intro">{{ hero_intro }}</p>
+    {% endif %}
+  </div>
+</section>
+{% else %}
 <section class="hero"{% if hero_effect %} data-hero-effect="{{ hero_effect }}"{% endif %}>
+  {% if hero_image %}
   <div class="hero-image">
     <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}">
   </div>
+  {% endif %}
   <div class="hero-content">
     {% if hero_breadcrumb %}
-    <p class="hero-breadcrumb"><a href="{{ '/' | relative_url }}">{{ hero_breadcrumb }}</a></p>
+    <p class="hero-breadcrumb"><a href="{{ hero_breadcrumb_url | relative_url }}">{{ hero_breadcrumb }}</a></p>
     {% endif %}
     <h1 class="hero-title">{{ hero_title }}</h1>
     {% if hero_intro %}
     <p class="hero-intro">{{ hero_intro }}</p>
     {% endif %}
   </div>
+  {% if hero_show_frame_nav %}
+  <div class="hero-frame-nav">
+    <a href="{{ '/struktur/' | relative_url }}" class="hero-frame-link">Struktur</a>
+    <a href="{{ '/mennesker/' | relative_url }}" class="hero-frame-link">Mennesker</a>
+    <a href="{{ '/påvirkning/' | relative_url }}" class="hero-frame-link">Påvirkning</a>
+    <a href="{{ '/identitet/' | relative_url }}" class="hero-frame-link">Identitet</a>
+  </div>
+  {% endif %}
 </section>
+{% endif %}

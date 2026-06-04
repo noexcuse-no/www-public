@@ -1,0 +1,32 @@
+{% comment %}
+  Tag cloud — displays all article tags as clickable links with counts.
+
+  Derives tags from all pages with class: article.
+  Uses site.pages — works on any page within the site context.
+{% endcomment %}
+
+{% assign articles = site.pages | where: "class", "article" %}
+{% assign all_tags = "" | split: "," %}
+
+{% for p in articles %}
+  {% if p.tags and p.tags.size > 0 %}
+    {% assign all_tags = all_tags | concat: p.tags %}
+  {% endif %}
+{% endfor %}
+
+{% assign unique_tags = all_tags | uniq | sort_natural %}
+
+<div class="tag-cloud">
+  {% for tag in unique_tags %}
+    {% assign count = 0 %}
+    {% for p in articles %}
+      {% if p.tags contains tag %}
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    <a href="{{ '/emne/' | append: tag | slugify | relative_url }}" class="tag-cloud-item">
+      <span class="tag-name">{{ tag }}</span>
+      <span class="tag-count">{{ count }}</span>
+    </a>
+  {% endfor %}
+</div>

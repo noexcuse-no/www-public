@@ -109,6 +109,7 @@ about:
   link_text: "Les det teoretiske grunnlaget for Ledelse 60:2 →"
   link_url: "/metode/"
 
+grc_description: "Organisasjonens identitet, verdibasert etterlevelse, langsiktighet. GRC som kun er regler uten identitetsforankring, blir overfladisk. En organisasjon som ikke har «integritet» i sin identitet, vil alltid finne en snarvei."
 color_accent: "#8E0D3C"
 card_description: "Kultur, mening, symboler, verdier, historier"
 detail: "Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier."

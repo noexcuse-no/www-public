@@ -1,0 +1,11 @@
+{% comment %}
+  Framework illustration — centered full-width diagram in a section.
+
+  Parameters:
+    image — image path (required)
+    alt   — alt text (required)
+{% endcomment %}
+
+<div class="framework-illustration animate-on-scroll fade-in-up">
+  <img src="{{ include.image | relative_url }}" alt="{{ include.alt }}" loading="lazy">
+</div>

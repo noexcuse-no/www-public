@@ -1,0 +1,11 @@
+{% comment %}
+  Challenge grid — 2-column grid of challenge cards.
+
+  Expects page.challenges (array of {title, body, image} objects).
+{% endcomment %}
+
+<div class="grid grid--2 challenges-grid stagger-parent">
+  {% for c in page.challenges %}
+    {% include challenge-card.html challenge=c %}
+  {% endfor %}
+</div>

@@ -72,122 +72,102 @@ json_ld:
       name: "Psykologisk trygghet"
     - type: "Thing"
       name: "Servant leadership"
+challenges:
+  - title: "Hierarkisk blindhet"
+    body: "Ledere som ikke ser at deres atferd oppfattes annerledes avhengig av posisjon. Det som føles som «direkte» oppfattes som «domsnutt» av underordnede."
+    image: "/assets/images/banners/tillit-t4-hierarchical-blindness.webp"
+  - title: "Informerings asymmetri"
+    body: "Ledere vet mer enn de deler. Medarbeidere tolker dette som mistillit. Kommunikasjonen blir formell og overfladisk."
+    image: "/assets/images/banners/tillit-t4-info-asymmetry.webp"
+  - title: "Historisk baggage"
+    body: "Tidligere svik sitter i kulturen. Nye ledere møtes med «vi har hørt dette før»-holdning. Initiativ blir møtt med skepsis."
+    image: "/assets/images/banners/tillit-t4-historical-baggage.webp"
+  - title: "Inkonsekvent oppfølging"
+    body: "Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring. Prioriteringer som stadig endres."
+    image: "/assets/images/banners/tillit-t4-inconsistent-followup.webp"
+questions:
+  - "Hvor ofte gir du feedback som folk faktisk husker — og bruker?"
+  - "Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?"
+  - "Når ble siste gang du omgjorde en beslutning uten å forklare hvorfor?"
+  - "Finnes det informasjon du har som du bevisst holder tilbake fra teamet?"
+  - "Hvordan håndterer du folk som sier ifra mot strømmen?"
 ---
 
 {% include hero.html %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Hvorfor tillit er ledelsens valuta</h2>
-    <p>Tenk på de beste teamene du har jobbet med. Hva var annerledes der? Sannsynligvis ikke at de hadde bedre verktøy eller flere møter. Det var sannsynligvis måten folk snakket til hverandre — ærlig, direkte, uten frykt for konsekvensene.</p>
-    <p>Robert Greenleaf introduserte begrepet «servant leadership» i 1970.[^greenleaf1970] Han argumenterte for at ledere først og fremst bør tjene sine medarbeidere, ikke omvendt. Dette er ikke bare en idealistisk idé — forskning viser at det fungerer. En meta-analyse fra 2019 konkluderer med at servant leadership har «positive effects on employee outcomes including organizational commitment, job satisfaction, performance, and citizenship behavior.»[^eva2019]</p>
-    
-    <div class="framework-illustration animate-on-scroll fade-in-up">
-        <img src="{{ '/assets/images/banners/tillit-t2-four-pillars.webp' | relative_url }}" alt="Diagram av fire sammenkoblede pillarer som symboliserer tillitsbasert ledelse">
-    </div>
-</section>
+{% capture section_1_body %}
+Tenk på de beste teamene du har jobbet med. Hva var annerledes der? Sannsynligvis ikke at de hadde bedre verktøy eller flere møter. Det var sannsynligvis måten folk snakket til hverandre — ærlig, direkte, uten frykt for konsekvensene.
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>De fire pilarene for tillitsbasert ledelse</h2>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>1. Psykologisk trygghet</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/tillit-t3-psychological-safety.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en støttende sirkel som symboliserer psykologisk trygghet">
-        </div>
-        <p>Amy Edmondson fra Harvard definerer psykologisk trygghet som «a shared belief held by members of a team that the team is safe for interpersonal risk taking.»[^edmondson2019] I praksis betyr det: folk tør si ifra når noe er galt, tør komme med nye ideer, tør innrømme feil.</p>
-        <p><strong>Tegn på høy psykologisk trygghet:</strong> Feil diskuteres som læringsmuligheter. Uenighet er forventet og velkomment. Ledere spør «hvordan kan jeg hjelpe?» heller enn «hvem har skylden?»</p>
-        <p><strong>Tegn på lav psykologisk trygghet:</strong> Informasjon holdes tilbake. Kritikk gis aldri direkte. Folk sier «det er bare å vente og se» heller enn å utfordre.</p>
-    </div>
+Robert Greenleaf introduserte begrepet «servant leadership» i 1970.[^greenleaf1970] Han argumenterte for at ledere først og fremst bør tjene sine medarbeidere, ikke omvendt. Dette er ikke bare en idealistisk idé — forskning viser at det fungerer. En meta-analyse fra 2019 konkluderer med at servant leadership har «positive effects on employee outcomes including organizational commitment, job satisfaction, performance, and citizenship behavior.»[^eva2019]
 
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>2. Tjenende lederskap</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/tillit-t3-servant-leadership.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en hjelpende hånd som symboliserer tjenende lederskap">
-        </div>
-        <p>Greenleaf mente at en leder først og fremst bør spørre seg: «Hvordan kan jeg hjelpe andre til å vokse og yte sitt beste?» [^greenleaf1970] Dette krever en annen type ydmykhet enn tradisjonelt topplederideal.</p>
-        <p><strong>Tegn på tjenende lederskap:</strong> Ledere lytter før de snakker. De anerkjenner andres bidrag. De setter teamets suksess over egen ære.</p>
-        <p><strong>Tegn på selv-opptatt lederskap:</strong> Beslutninger tas for å styrke egen posisjon. Suksesser tillegges egen innsats. Feedback gis sjelden eller aldri.</p>
-    </div>
+{% include framework-illustration.html image="/assets/images/banners/tillit-t2-four-pillars.webp" alt="Diagram av fire sammenkoblede pillarer som symboliserer tillitsbasert ledelse" %}
+{% endcapture %}
+{% include section-wrapper.html heading="Hvorfor tillit er ledelsens valuta" body=section_1_body %}
 
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>3. Tillit som system</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/tillit-t3-trust-system.webp' | relative_url }}" alt="Abstrakt figurativ skisse av sammenkoblede noder som symboliserer tillit som system">
-        </div>
-        <p>Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.[^dirks2009] God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor. Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen uklarhet som fører til at oppgaver faller mellom stoler og tillit blir satt på prøve.</p>
-        <p><strong>Tegn på tillit som system:</strong> Løfter holdes. Forventninger er tydelige. Folk tar ansvar for egne handlinger.</p>
-        <p><strong>Tegn på tillitsbrist:</strong> Løfter brytes uten forklaring. Folk dekker seg bak prosedyrer. «Det var ikke min avdeling» blir unnskyldningen.</p>
-    </div>
+{% capture section_2_body %}
+{% capture ib1_body %}
+Amy Edmondson fra Harvard definerer psykologisk trygghet som «a shared belief held by members of a team that the team is safe for interpersonal risk taking.»[^edmondson2019] I praksis betyr det: folk tør si ifra når noe er galt, tør komme med nye ideer, tør innrømme feil.
 
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>4. Autonomi som tillitsdriver</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/tillit-t3-autonomy.webp' | relative_url }}" alt="Abstrakt figurativ skisse av autonomi innenfor struktur som symboliserer tillitsbasert frihet">
-        </div>
-        <p>Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre motivatorer (bonus, straff) kan drive kortvarig atferd, men varig engasjement krever indre motivasjon: autonomi, mestring og tilhørighet. Når ledere stoler på at ansatte kan bruke sunn fornuft, blir kontroll unødvendig — og byråkratiet mister sin begrunnelse.</p>
-        <p>Autonomi er ikke frihet fra struktur — det er frihet <em>innenfor</em> struktur. Tydelige roller og forventninger muliggjør tillit, de svekker den ikke.</p>
-        <p><strong>Tegn på autonomi som tillitsdriver:</strong> Ansatte tar initiativ uten å vente på godkjenning. Ledere delegerer både ansvar og autoritet. Feil analyseres for læring, ikke for straff.</p>
-        <p><strong>Tegn på kontrollkultur:</strong> Alle beslutninger må oppover i systemet. Detaljerte prosedyrer erstatter skjønn. Ledere sjekker opp på detaljer heller enn å stole på fagfolk.</p>
-    </div>
-</section>
+**Tegn på høy psykologisk trygghet:** Feil diskuteres som læringsmuligheter. Uenighet er forventet og velkomment. Ledere spør «hvordan kan jeg hjelpe?» heller enn «hvem har skylden?»
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Hvorfor de fleste ledere feiler på tillit</h2>
-    <p>De fleste ledere tror de er mer tilgjengelige enn de faktisk er. En undersøkelse viser at 94% av ledere mener de gir constructive feedback, men bare 65% av medarbeidere er enige.[^zenger2022] Denne gapen — mellom lederes intensjon og medarbeideres opplevelse — er tillitsproblemet.</p>
-    <p>Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid. En leder som en gang svikter, kan miste tillit som tar år å bygge opp igjen.</p>
-</section>
+**Tegn på lav psykologisk trygghet:** Informasjon holdes tilbake. Kritikk gis aldri direkte. Folk sier «det er bare å vente og se» heller enn å utfordre.
+{% endcapture %}
+{% include info-box.html heading="1. Psykologisk trygghet" illustration="/assets/images/banners/tillit-t3-psychological-safety.webp" illustration_alt="Abstrakt figurativ skisse av en støttende sirkel som symboliserer psykologisk trygghet" body=ib1_body %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Vanlige tillitsutfordringer i norske organisasjoner</h2>
-    
-    <div class="grid grid--2 challenges-grid stagger-parent">
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/tillit-t4-hierarchical-blindness.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Hierarkisk blindhet</h4>
-            <p>Ledere som ikke ser at deres atferd oppfattes annerledes avhengig av posisjon. Det som føles som «direkte» oppfattes som «domsnutt» av underordnede.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/tillit-t4-info-asymmetry.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Informerings asymmetri</h4>
-            <p>Ledere vet mer enn de deler. Medarbeidere tolker dette som mistillit. Kommunikasjonen blir formell og overfladisk.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/tillit-t4-historical-baggage.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Historisk baggage</h4>
-            <p>Tidligere svik sitter i kulturen. Nye ledere møtes med «vi har hørt dette før»-holdning. Initiativ blir møtt med skepsis.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/tillit-t4-inconsistent-followup.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Inkonsekvent oppfølging</h4>
-            <p>Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring. Prioriteringer som stadig endres.</p>
-        </div>
-    </div>
-</section>
+{% capture ib2_body %}
+Greenleaf mente at en leder først og fremst bør spørre seg: «Hvordan kan jeg hjelpe andre til å vokse og yte sitt beste?» [^greenleaf1970] Dette krever en annen type ydmykhet enn tradisjonelt topplederideal.
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Spørsmål for å kartlegge tillitsnivået</h2>
-    <ul class="question-list stagger-parent" style="--stagger-delay: 80ms;">
-        <li class="animate-on-scroll slide-in-left stagger">Hvor ofte gir du feedback som folk faktisk husker — og bruker?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Når ble siste gang du omgjorde en beslutning uten å forklare hvorfor?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Finnes det informasjon du har som du bevisst holder tilbake fra teamet?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Hvordan håndterer du folk som sier ifra mot strømmen?</li>
-    </ul>
-</section>
+**Tegn på tjenende lederskap:** Ledere lytter før de snakker. De anerkjenner andres bidrag. De setter teamets suksess over egen ære.
 
-<section class="section section--spacious container--narrow cta-section animate-on-scroll fade-in-up">
-    <h2>Få kartlagt ledergruppens tillitsnivå</h2>
-    <p>Ledelse 60:2 inneholder spørsmål som kartlegger psykologisk trygghet, tillitsbasert kommunikasjon og hvordan ledere faktisk oppfattes. Bestill en uforpliktende samtale for å lære mer.</p>
-    <div class="cta-buttons">
-        <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill uforpliktende samtale</a>
-        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
-    </div>
-</section>
+**Tegn på selv-opptatt lederskap:** Beslutninger tas for å styrke egen posisjon. Suksesser tillegges egen innsats. Feedback gis sjelden eller aldri.
+{% endcapture %}
+{% include info-box.html heading="2. Tjenende lederskap" illustration="/assets/images/banners/tillit-t3-servant-leadership.webp" illustration_alt="Abstrakt figurativ skisse av en hjelpende hånd som symboliserer tjenende lederskap" body=ib2_body %}
 
-<section class="section container--wide about-section animate-on-scroll fade-in-up">
-    <h2>Referanser</h2>
-    <p>Artikkelen bygger på forskning fra blant andre Robert Greenleaf (servant leadership), Amy Edmondson (psychological safety), og en omfattende metastudie av servant leadership-effekter fra 2019.[^greenleaf1970][^eva2019][^edmondson2019][^dirks2009][^zenger2022]</p>
-</section>
+{% capture ib3_body %}
+Tillit er ikke bare en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid.[^dirks2009] God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. Autoritet uten ansvar er en risikofaktor. Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen uklarhet som fører til at oppgaver faller mellom stoler og tillit blir satt på prøve.
+
+**Tegn på tillit som system:** Løfter holdes. Forventninger er tydelige. Folk tar ansvar for egne handlinger.
+
+**Tegn på tillitsbrist:** Løfter brytes uten forklaring. Folk dekker seg bak prosedyrer. «Det var ikke min avdeling» blir unnskyldningen.
+{% endcapture %}
+{% include info-box.html heading="3. Tillit som system" illustration="/assets/images/banners/tillit-t3-trust-system.webp" illustration_alt="Abstrakt figurativ skisse av sammenkoblede noder som symboliserer tillit som system" body=ib3_body %}
+
+{% capture ib4_body %}
+Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre motivatorer (bonus, straff) kan drive kortvarig atferd, men varig engasjement krever indre motivasjon: autonomi, mestring og tilhørighet. Når ledere stoler på at ansatte kan bruke sunn fornuft, blir kontroll unødvendig — og byråkratiet mister sin begrunnelse.
+
+Autonomi er ikke frihet fra struktur — det er frihet *innenfor* struktur. Tydelige roller og forventninger muliggjør tillit, de svekker den ikke.
+
+**Tegn på autonomi som tillitsdriver:** Ansatte tar initiativ uten å vente på godkjenning. Ledere delegerer både ansvar og autoritet. Feil analyseres for læring, ikke for straff.
+
+**Tegn på kontrollkultur:** Alle beslutninger må oppover i systemet. Detaljerte prosedyrer erstatter skjønn. Ledere sjekker opp på detaljer heller enn å stole på fagfolk.
+{% endcapture %}
+{% include info-box.html heading="4. Autonomi som tillitsdriver" illustration="/assets/images/banners/tillit-t3-autonomy.webp" illustration_alt="Abstrakt figurativ skisse av autonomi innenfor struktur som symboliserer tillitsbasert frihet" body=ib4_body %}
+{% endcapture %}
+{% include section-wrapper.html heading="De fire pilarene for tillitsbasert ledelse" body=section_2_body %}
+
+{% capture section_3_body %}
+De fleste ledere tror de er mer tilgjengelige enn de faktisk er. En undersøkelse viser at 94% av ledere mener de gir constructive feedback, men bare 65% av medarbeidere er enige.[^zenger2022] Denne gapen — mellom lederes intensjon og medarbeideres opplevelse — er tillitsproblemet.
+
+Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid. En leder som en gang svikter, kan miste tillit som tar år å bygge opp igjen.
+{% endcapture %}
+{% include section-wrapper.html heading="Hvorfor de fleste ledere feiler på tillit" body=section_3_body %}
+
+{% capture section_4_body %}
+{% include challenge-grid.html %}
+{% endcapture %}
+{% include section-wrapper.html heading="Vanlige tillitsutfordringer i norske organisasjoner" body=section_4_body %}
+
+{% capture section_5_body %}
+{% include question-list.html %}
+{% endcapture %}
+{% include section-wrapper.html heading="Spørsmål for å kartlegge tillitsnivået" body=section_5_body %}
+
+{% include cta-section.html heading="Få kartlagt ledergruppens tillitsnivå" body="Ledelse 60:2 inneholder spørsmål som kartlegger psykologisk trygghet, tillitsbasert kommunikasjon og hvordan ledere faktisk oppfattes. Bestill en uforpliktende samtale for å lære mer." secondary_url="/" %}
+
+{% capture section_7_body %}
+Artikkelen bygger på forskning fra blant andre Robert Greenleaf (servant leadership), Amy Edmondson (psychological safety), og en omfattende metastudie av servant leadership-effekter fra 2019.[^greenleaf1970][^eva2019][^edmondson2019][^dirks2009][^zenger2022]
+{% endcapture %}
+{% include section-wrapper.html heading="Referanser" body=section_7_body class="about-section" %}
 
 <script type="application/ld+json">
 {
