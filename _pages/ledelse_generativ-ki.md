@@ -34,168 +34,103 @@ json_ld:
       name: "AI-ledelse"
     - type: "Thing"
       name: "Målstyring"
+challenges:
+  - title: "KI-implementert uten menneskelig review"
+    body: "Output fra modellen går direkte til kunde eller beslutning uten at et menneske har sett på det."
+    image: "/assets/images/banners/genki-t4-no-human-review.webp"
+  - title: "«KI sa det»"
+    body: "Brukt som begrunnelse for beslutninger. Modellen blir autoritet, ikke verktøy."
+    image: "/assets/images/banners/genki-t4-ki-said-it.webp"
+  - title: "Kvantitet over kvalitet"
+    body: "Organisasjonen måler hvor mye KI som brukes, ikke om det faktisk fungerer. Høyere volum maskerer lavere verdi."
+    image: "/assets/images/banners/genki-t4-quantity-over-quality.webp"
+  - title: "Raskere, men mindre nøyaktig"
+    body: "Team produserer mer output med KI, men feilraten øker. Ingen har lagt merke til det fordi ingen måler det."
+    image: "/assets/images/banners/genki-t4-faster-less-accurate.webp"
+questions:
+  - "Hvem i organisasjonen har ansvaret for kvaliteten på KI-output — og vet de det?"
+  - "Hvordan vet du at KI-svar faktisk er riktige, ikke bare overbevisende?"
+  - "Finnes det beslutninger som nå tas av KI uten at et menneske ser på dem?"
+  - "Måler du effektivitet med KI, eller bare aktivitet?"
+  - "Hva skjer når KI gir feil svar — hvem bærer konsekvensen?"
 ---
 
 {% include hero.html %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Lederbristen i KI-æraen</h2>
-    <p>KI-adopsjonen går raskere enn KI-ledelseskompetansen. Overalt hører vi om nye verktøy — ChatGPT, Midjourney, Claude — men nesten ingen snakker om hvordan lede menneskene som bruker dem. Spørsmålet er ikke lenger «skal vi bruke KI?» — det er «hvordan leder vi folk som styrer KI-modeller?»</p>
-    <p>Den som kan formulere gode spørsmål, vurdere svar kritisk, og integrere KI i menneskelige arbeidsprosesser, vil erstatte den som ikke kan. Ferdigheten er ikke prompting — det er dømmekraft.</p>
-    
-    <div class="framework-illustration animate-on-scroll fade-in-up">
-        <img src="{{ '/assets/images/banners/genki-t2-four-competencies.webp' | relative_url }}" alt="Diagram av fire KI-ledelseskompetanser i en sammenkoblet modell">
-    </div>
-</section>
+{% capture section_1_body %}
+KI-adopsjonen går raskere enn KI-ledelseskompetansen. Overalt hører vi om nye verktøy — ChatGPT, Midjourney, Claude — men nesten ingen snakker om hvordan lede menneskene som bruker dem. Spørsmålet er ikke lenger «skal vi bruke KI?» — det er «hvordan leder vi folk som styrer KI-modeller?»
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Hva KI-ledelse faktisk betyr</h2>
-    <p>Å lede noen som bruker KI handler ikke om teknisk kompetanse. Det handler om å sikre at mennesket forblir i kontroll når modellen produserer.</p>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>1. Formulere gode spørsmål</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/genki-t3-question-formulation.webp' | relative_url }}" alt="Abstrakt figurativ skisse av presise spørsmål som symboliserer formulering av intensjon">
-        </div>
-        <p>Vage spørsmål gir vage svar. En leder som mestrer KI, lærer seg å presisere intensjon — ikke bare skrive «skriv en e-post». Den som kan definere hva som faktisk trengs, får resultater den andre ikke engang ser.</p>
-    </div>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>2. Vurdere utdata kritisk</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/genki-t3-critical-evaluation.webp' | relative_url }}" alt="Abstrakt figurativ skisse av kritisk evaluering som symboliserer vurdering av KI-output">
-        </div>
-        <p>KI hallusinerer, kopierer bias, og opererer uten kontekst. En god KI-leder antar aldri at svaret er riktig — den tester det mot virkeligheten. Kalibrering er kontinuerlig: stemmer modellens selvtillit med faktisk kvalitet?</p>
-    </div>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>3. Integrere KI i menneskelige prosesser</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/genki-t3-human-integration.webp' | relative_url }}" alt="Abstrakt figurativ skisse av broen mellom menneske og maskin som symboliserer integrering av KI">
-        </div>
-        <p>KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må lukkes med menneskelig dømmekraft. Ledere må bygge arbeidsflyter der KI-assistert arbeid alltid passerer gjennom menneskelig evaluering før det når kunden.</p>
-    </div>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>4. Opprettholde ansvarlighet</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/genki-t3-accountability.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et signert dokument som symboliserer menneskelig ansvarlighet for KI-beslutninger">
-        </div>
-        <p>Når KI er involvert i en beslutning, blir ansvarlighet uklar. God KI-ledelse betyr at det alltid er et menneske som signerer under — ikke en modell. «KI sa det» er aldri en gyldig begrunnelse.</p>
-    </div>
-</section>
+Den som kan formulere gode spørsmål, vurdere svar kritisk, og integrere KI i menneskelige arbeidsprosesser, vil erstatte den som ikke kan. Ferdigheten er ikke prompting — det er dømmekraft.
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Tenkeevner som skiller effektive KI-brukere fra passive</h2>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>Epistemisk ydmykhet</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/genki-t3-epistemic-humility.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et spørsmålstegn over en åpen bok som symboliserer epistemisk ydmykhet">
-        </div>
-        <p>Vite hva du ikke vet. KI kan få deg til å føle deg smartere enn du er. Den som tror modellen vet mer enn den faktisk gjør, tar dårlige beslutninger.</p>
-    </div>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>Presisjon av intensjon</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/genki-t3-precision.webp' | relative_url }}" alt="Abstrakt figurativ skisse av et skarpt fokus som symboliserer presisjon av intensjon">
-        </div>
-        <p>Vage spørsmål gir vage svar. KI-ledere må lære seg å presisere hva de faktisk trenger, ikke bare beskrive det de tror de vil ha.</p>
-    </div>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>Iterativ forbedring</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/genki-t3-iteration.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en spiral som symboliserer iterativ forbedring">
-        </div>
-        <p>KI-interaksjon er dialog, ikke én-klikk. De beste resultatene kommer fra å stille oppfølgingsspørsmål, utfordre premisser, og gradvis presisere fram mot det som faktisk trengs.</p>
-    </div>
-    
-    <div class="info-box animate-on-scroll fade-in-up">
-        <h3>Kalibrering</h3>
-        <div class="section-illustration animate-on-scroll fade-in-up">
-            <img src="{{ '/assets/images/banners/genki-t3-calibration.webp' | relative_url }}" alt="Abstrakt figurativ skisse av en kalibrert skala som symboliserer balanse mellom selvtillit og nøyaktighet">
-        </div>
-        <p>Konstant teste om modellens selvtillit stemmer med virkeligheten. Når KI er sikker — er den faktisk riktig? Når den er usikker — er den faktisk feil?</p>
-    </div>
-</section>
+{% include framework-illustration.html image="/assets/images/banners/genki-t2-four-competencies.webp" alt="Diagram av fire KI-ledelseskompetanser i en sammenkoblet modell" %}
+{% endcapture %}
+{% include section-wrapper.html heading="Lederbristen i KI-æraen" body=section_1_body %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>OKR og KPI for KI-assistert arbeid</h2>
-    <p>KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må måles. Douglas Hubbard skriver i «How to Measure Anything» at det meste faktisk kan måles — bare vi er villige til å definere hva vi egentlig trenger å vite.[^hubbard2014] Hubbard viser at all måling reduserer usikkerhet — den eliminerer den ikke. Formålet med å måle KI-output er ikke perfeksjon, men å vite om man beveger seg i riktig retning.</p>
-    
-    <p><strong>KPI-er for KI-assisterte prosesser:</strong></p>
-    <ul>
-        <li><strong>Kvalitet:</strong> Feilrate i KI-generert innhold før menneskelig review</li>
-        <li><strong>Konsistens:</strong> Variasjon i output ved samme prompt over tid</li>
-        <li><strong>Nøyaktighet:</strong> Hvor ofte stemmer fakta i KI-svar med virkelige data</li>
-        <li><strong>Effektivitetsgevinster:</strong> Tid spart vs. kvalitet opprettholdt</li>
-    </ul>
-    
-    <p>Målstyring holder mennesker ansvarlige for KI-output — ikke KI-input. Det handler ikke om å evaluere modellen, men om å sikre at mennesket som bruker den, leverer verdi.</p>
-</section>
+{% capture section_2_body %}
+{% include info-box.html heading="1. Formulere gode spørsmål" illustration="/assets/images/banners/genki-t3-question-formulation.webp" illustration_alt="Abstrakt figurativ skisse av presise spørsmål som symboliserer formulering av intensjon" body="Vage spørsmål gir vage svar. En leder som mestrer KI, lærer seg å presisere intensjon — ikke bare skrive «skriv en e-post». Den som kan definere hva som faktisk trengs, får resultater den andre ikke engang ser." %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Organisasjonens rolle</h2>
-    <p>Å trene ansatte i prompting er ikke nok — man må utvikle dømmekraft. Ledelsens oppgave er å skape forutsetninger for effektiv KI-bruk, ikke å bestemme hvilke verktøy som skal brukes.</p>
-    <p>Risikoen er at KI blir en unnskyldning for å fjerne menneskelig dømmekraft fra beslutninger. Når «effektivitet» overstyres av «automasjon», taper organisasjonen på kvalitet.</p>
+{% include info-box.html heading="2. Vurdere utdata kritisk" illustration="/assets/images/banners/genki-t3-critical-evaluation.webp" illustration_alt="Abstrakt figurativ skisse av kritisk evaluering som symboliserer vurdering av KI-output" body="KI hallusinerer, kopierer bias, og opererer uten kontekst. En god KI-leder antar aldri at svaret er riktig — den tester det mot virkeligheten. Kalibrering er kontinuerlig: stemmer modellens selvtillit med faktisk kvalitet?" %}
 
-    <h3>Kultur som forutsetning for KI-adopsjon</h3>
-    <p>Dave Logan beskriver fem kulturstadier — fra «livet suger» til «livet er fantastisk.» De fleste organisasjoner befinner seg på stadium 3: «Jeg er flink» (individualisme). På dette stadiet hamstres kunnskap i stedet for å deles. KI-adopsjon som krever samarbeid på tvers, forutsetter minimum stadium 4: «Vi er flinke.»</p>
-    <p>Spørsmålet er ikke om organisasjonen har KI-verktøy — det er om kulturen er moden for å bruke dem.</p>
+{% include info-box.html heading="3. Integrere KI i menneskelige prosesser" illustration="/assets/images/banners/genki-t3-human-integration.webp" illustration_alt="Abstrakt figurativ skisse av broen mellom menneske og maskin som symboliserer integrering av KI" body="KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må lukkes med menneskelig dømmekraft. Ledere må bygge arbeidsflyter der KI-assistert arbeid alltid passerer gjennom menneskelig evaluering før det når kunden." %}
 
-    <h3>KI som maktspørsmål</h3>
-    <p>KI-verktøy kontrolleres sjelden av alle. Én avdeling eller enkeltpersoner kan få uforholdsmessig innflytelse ved å eie KI-budsjettet eller KI-kompetansen. Uten åpen diskusjon om hvem som styrer KI, risikerer organisasjonen at teknologiens gevinster konsentreres hos få.</p>
-    <p>Den som kontrollerer KI, former retningen. Det er et spørsmål om makt, ikke bare om teknologi.</p>
-</section>
+{% include info-box.html heading="4. Opprettholde ansvarlighet" illustration="/assets/images/banners/genki-t3-accountability.webp" illustration_alt="Abstrakt figurativ skisse av et signert dokument som symboliserer menneskelig ansvarlighet for KI-beslutninger" body="Når KI er involvert i en beslutning, blir ansvarlighet uklar. God KI-ledelse betyr at det alltid er et menneske som signerer under — ikke en modell. «KI sa det» er aldri en gyldig begrunnelse." %}
+{% endcapture %}
+{% include section-wrapper.html heading="Hva KI-ledelse faktisk betyr" body=section_2_body %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Røde flagg</h2>
-    
-    <div class="grid grid--2 challenges-grid stagger-parent">
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/genki-t4-no-human-review.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>KI-implementert uten menneskelig review</h4>
-            <p>Output fra modellen går direkte til kunde eller beslutning uten at et menneske har sett på det.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/genki-t4-ki-said-it.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>«KI sa det»</h4>
-            <p>Brukt som begrunnelse for beslutninger. Modellen blir autoritet, ikke verktøy.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/genki-t4-quantity-over-quality.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Kvantitet over kvalitet</h4>
-            <p>Organisasjonen måler hvor mye KI som brukes, ikke om det faktisk fungerer. Høyere volum maskerer lavere verdi.</p>
-        </div>
-        <div class="challenge-card animate-on-scroll fade-in-up stagger">
-            <img class="micro-illustration" src="{{ '/assets/images/banners/genki-t4-faster-less-accurate.webp' | relative_url }}" alt="" aria-hidden="true" width="80" height="80">
-            <h4>Raskere, men mindre nøyaktig</h4>
-            <p>Team produserer mer output med KI, men feilraten øker. Ingen har lagt merke til det fordi ingen måler det.</p>
-        </div>
-    </div>
-</section>
+{% capture section_3_body %}
+{% include info-box.html heading="Epistemisk ydmykhet" illustration="/assets/images/banners/genki-t3-epistemic-humility.webp" illustration_alt="Abstrakt figurativ skisse av et spørsmålstegn over en åpen bok som symboliserer epistemisk ydmykhet" body="Vite hva du ikke vet. KI kan få deg til å føle deg smartere enn du er. Den som tror modellen vet mer enn den faktisk gjør, tar dårlige beslutninger." %}
 
-<section class="section container--wide animate-on-scroll fade-in-up">
-    <h2>Spørsmål for å evaluere KI-ledelsen</h2>
-    <ul class="question-list stagger-parent" style="--stagger-delay: 80ms;">
-        <li class="animate-on-scroll slide-in-left stagger">Hvem i organisasjonen har ansvaret for kvaliteten på KI-output — og vet de det?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Hvordan vet du at KI-svar faktisk er riktige, ikke bare overbevisende?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Finnes det beslutninger som nå tas av KI uten at et menneske ser på dem?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Måler du effektivitet med KI, eller bare aktivitet?</li>
-        <li class="animate-on-scroll slide-in-left stagger">Hva skjer når KI gir feil svar — hvem bærer konsekvensen?</li>
-    </ul>
-</section>
+{% include info-box.html heading="Presisjon av intensjon" illustration="/assets/images/banners/genki-t3-precision.webp" illustration_alt="Abstrakt figurativ skisse av et skarpt fokus som symboliserer presisjon av intensjon" body="Vage spørsmål gir vage svar. KI-ledere må lære seg å presisere hva de faktisk trenger, ikke bare beskrive det de tror de vil ha." %}
 
-<section class="section section--spacious container--narrow cta-section animate-on-scroll fade-in-up">
-    <h2>Få kartlagt ledergruppens KI-modenhet</h2>
-    <p>Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen forholder seg til teknologi, endring og menneskelig dømmekraft. Bestill en uforpliktende samtale for å lære mer.</p>
-    <div class="cta-buttons">
-        <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill uforpliktende samtale</a>
-        <a href="{{ '/' | relative_url }}" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
-    </div>
-</section>
+{% include info-box.html heading="Iterativ forbedring" illustration="/assets/images/banners/genki-t3-iteration.webp" illustration_alt="Abstrakt figurativ skisse av en spiral som symboliserer iterativ forbedring" body="KI-interaksjon er dialog, ikke én-klikk. De beste resultatene kommer fra å stille oppfølgingsspørsmål, utfordre premisser, og gradvis presisere fram mot det som faktisk trengs." %}
+
+{% include info-box.html heading="Kalibrering" illustration="/assets/images/banners/genki-t3-calibration.webp" illustration_alt="Abstrakt figurativ skisse av en kalibrert skala som symboliserer balanse mellom selvtillit og nøyaktighet" body="Konstant teste om modellens selvtillit stemmer med virkeligheten. Når KI er sikker — er den faktisk riktig? Når den er usikker — er den faktisk feil?" %}
+{% endcapture %}
+{% include section-wrapper.html heading="Tenkeevner som skiller effektive KI-brukere fra passive" body=section_3_body %}
+
+{% capture section_4_body %}
+KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må måles. Douglas Hubbard skriver i «How to Measure Anything» at det meste faktisk kan måles — bare vi er villige til å definere hva vi egentlig trenger å vite.[^hubbard2014] Hubbard viser at all måling reduserer usikkerhet — den eliminerer den ikke. Formålet med å måle KI-output er ikke perfeksjon, men å vite om man beveger seg i riktig retning.
+
+**KPI-er for KI-assisterte prosesser:**
+
+- **Kvalitet:** Feilrate i KI-generert innhold før menneskelig review
+- **Konsistens:** Variasjon i output ved samme prompt over tid
+- **Nøyaktighet:** Hvor ofte stemmer fakta i KI-svar med virkelige data
+- **Effektivitetsgevinster:** Tid spart vs. kvalitet opprettholdt
+
+Målstyring holder mennesker ansvarlige for KI-output — ikke KI-input. Det handler ikke om å evaluere modellen, men om å sikre at mennesket som bruker den, leverer verdi.
+{% endcapture %}
+{% include section-wrapper.html heading="OKR og KPI for KI-assistert arbeid" body=section_4_body %}
+
+{% capture section_5_body %}
+Å trene ansatte i prompting er ikke nok — man må utvikle dømmekraft. Ledelsens oppgave er å skape forutsetninger for effektiv KI-bruk, ikke å bestemme hvilke verktøy som skal brukes.
+
+Risikoen er at KI blir en unnskyldning for å fjerne menneskelig dømmekraft fra beslutninger. Når «effektivitet» overstyres av «automasjon», taper organisasjonen på kvalitet.
+
+### Kultur som forutsetning for KI-adopsjon
+
+Dave Logan beskriver fem kulturstadier — fra «livet suger» til «livet er fantastisk.» De fleste organisasjoner befinner seg på stadium 3: «Jeg er flink» (individualisme). På dette stadiet hamstres kunnskap i stedet for å deles. KI-adopsjon som krever samarbeid på tvers, forutsetter minimum stadium 4: «Vi er flinke.»
+
+Spørsmålet er ikke om organisasjonen har KI-verktøy — det er om kulturen er moden for å bruke dem.
+
+### KI som maktspørsmål
+
+KI-verktøy kontrolleres sjelden av alle. Én avdeling eller enkeltpersoner kan få uforholdsmessig innflytelse ved å eie KI-budsjettet eller KI-kompetansen. Uten åpen diskusjon om hvem som styrer KI, risikerer organisasjonen at teknologiens gevinster konsentreres hos få.
+
+Den som kontrollerer KI, former retningen. Det er et spørsmål om makt, ikke bare om teknologi.
+{% endcapture %}
+{% include section-wrapper.html heading="Organisasjonens rolle" body=section_5_body %}
+
+{% capture section_6_body %}
+{% include challenge-grid.html %}
+{% endcapture %}
+{% include section-wrapper.html heading="Røde flagg" body=section_6_body %}
+
+{% capture section_7_body %}
+{% include question-list.html %}
+{% endcapture %}
+{% include section-wrapper.html heading="Spørsmål for å evaluere KI-ledelsen" body=section_7_body %}
+
+{% include cta-section.html heading="Få kartlagt ledergruppens KI-modenhet" body="Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen forholder seg til teknologi, endring og menneskelig dømmekraft. Bestill en uforpliktende samtale for å lære mer." secondary_url="/" %}
 
 [^hubbard2014]: Hubbard, D. W. (2014). *How to Measure Anything: Finding the Value of Intangibles in Business* (3. utg.). Wiley. All måling reduserer usikkerhet — den eliminerer den ikke. Formålet med å måle er å vite om man beveger seg i riktig retning.
-

@@ -1,0 +1,11 @@
+{% comment %}
+  Step cards grid — renders cards for all pages with class: step, sorted by step_number.
+  No parameters. Used on the Ledelse 60:2 landing page.
+{% endcomment %}
+
+<div class="card-grid card-grid--steps">
+  {% assign steps = site.pages | where: "class", "step" | sort: "step_number" %}
+  {% for topic in steps %}
+    {% include card.html topic=topic %}
+  {% endfor %}
+</div>

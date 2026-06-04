@@ -1,0 +1,34 @@
+{% comment %}
+  About values — value cards section for om_oss page.
+
+  Expects page.values (array of {icon, heading, body} objects)
+  and page.values_banner (image path for the banner).
+
+  Parameters can override:
+    banner — page.values_banner fallback
+    values — page.values fallback
+{% endcomment %}
+
+{% assign vb = include.banner | default: page.values_banner %}
+{% assign vals = include.values | default: page.values %}
+
+<section class="about-values animate-on-scroll fade-in-up">
+  <div class="about-values-visual">
+    {% if vb %}
+      <img src="{{ vb | relative_url }}"
+           alt="Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet"
+           class="about-values-banner">
+    {% endif %}
+    <div class="about-values-cards">
+      {% for v in vals %}
+        <div class="value-card">
+          {% if v.icon %}
+            <img class="value-icon" src="{{ v.icon | relative_url }}" alt="" aria-hidden="true" width="60" height="60">
+          {% endif %}
+          <h3>{{ v.heading }}</h3>
+          <p>{{ v.body }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

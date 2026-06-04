@@ -1,0 +1,24 @@
+{% comment %}
+  Section container — simple section wrapper.
+  By default outputs body raw (for pre-rendered HTML). Pass markdownify_body=true
+  to pipe body through the Markdown converter (e.g. for kramdown IAL links).
+
+  Parameters:
+    class            — CSS classes for the section (optional)
+    id               — anchor id (optional)
+    style            — inline style attribute (optional)
+    heading          — h2 heading text (optional)
+    body             — body content (optional, raw HTML unless markdownified)
+    markdownify_body — if true, pipe body through markdownify (optional)
+{% endcomment %}
+
+<section{% if include.class %} class="{{ include.class }}"{% endif %}{% if include.id %} id="{{ include.id }}"{% endif %}{% if include.style %} style="{{ include.style }}"{% endif %}>
+  {% if include.heading %}<h2>{{ include.heading }}</h2>{% endif %}
+  {% if include.body %}
+    {% if include.markdownify_body %}
+      {{ include.body | markdownify }}
+    {% else %}
+      {{ include.body }}
+    {% endif %}
+  {% endif %}
+</section>

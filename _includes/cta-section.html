@@ -1,0 +1,32 @@
+{% comment %}
+  CTA section — call-to-action block with heading, body, and action links.
+  Use for article-bottom CTAs (uses .cta-section / .cta-buttons classes).
+
+  Parameters:
+    heading        — h2 heading text (required)
+    body           — markdown body rendered via markdownify (optional)
+    booking_url    — primary booking link URL (optional, has default)
+    booking_text   — primary link text (optional, has default)
+    secondary_url  — secondary link URL (optional)
+    secondary_text — secondary link text (optional)
+{% endcomment %}
+
+{% assign ctas_heading = include.heading | default: "Få kartlagt ledergruppen" %}
+{% assign ctas_body = include.body %}
+{% assign ctas_booking_url = include.booking_url | default: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" %}
+{% assign ctas_booking_text = include.booking_text | default: "Bestill uforpliktende samtale" %}
+{% assign ctas_secondary_url = include.secondary_url %}
+{% assign ctas_secondary_text = include.secondary_text | default: "Les mer om Ledelse 60:2 →" %}
+
+<section class="section section--spacious container--narrow cta-section animate-on-scroll fade-in-up">
+  <h2>{{ ctas_heading }}</h2>
+  {% if ctas_body %}
+    {{ ctas_body | markdownify }}
+  {% endif %}
+  <div class="cta-buttons">
+    <a href="{{ ctas_booking_url }}" class="product-cta">{{ ctas_booking_text }}</a>
+    {% if ctas_secondary_url %}
+      <a href="{{ ctas_secondary_url | relative_url }}" class="product-cta product-cta--secondary">{{ ctas_secondary_text }}</a>
+    {% endif %}
+  </div>
+</section>

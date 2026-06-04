@@ -111,6 +111,7 @@ about:
   link_text: "Les det teoretiske grunnlaget for Ledelse 60:2 →"
   link_url: "/metode/"
 
+grc_description: "Roller, prosesser, dokumentert ansvar, revisjonsspor. Strukturperspektivet svarer på spørsmålet: «Gjør vi det vi har sagt vi skal gjøre?» Uten tydelige roller og prosesser blir compliance tilfeldig."
 color_accent: "#2A4D6E"
 card_description: "Roller, mål, prosesser, koordinering, ansvar"
 detail: "Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig."

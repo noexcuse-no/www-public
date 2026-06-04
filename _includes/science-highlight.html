@@ -1,0 +1,12 @@
+{% comment %}
+  Science highlight — highlighted callout box for om_metode.
+
+  Parameters:
+    heading — h3 heading (required)
+    body    — markdown body (required)
+{% endcomment %}
+
+<div class="science-highlight">
+  <h3>{{ include.heading }}</h3>
+  {% if include.body %}{{ include.body | markdownify }}{% endif %}
+</div>

@@ -1,0 +1,11 @@
+{% comment %}
+  Frame cards grid — renders cards for all pages with class: frame, sorted by weight.
+  No parameters. Used on the metode page.
+{% endcomment %}
+
+<div class="card-grid card-grid--frames">
+  {% assign frames = site.pages | where: "class", "frame" | sort: "weight" %}
+  {% for topic in frames %}
+    {% include card.html topic=topic %}
+  {% endfor %}
+</div>

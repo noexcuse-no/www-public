@@ -111,6 +111,7 @@ about:
   link_text: "Les det teoretiske grunnlaget for Ledelse 60:2 →"
   link_url: "/metode/"
 
+grc_description: "Beslutningsmyndighet, eierstyring, interessenter. Governance handler om hvem som faktisk tar beslutninger — ikke hvem som formelt har ansvaret. De fleste organisasjoner har et gap mellom formell og reell makt, og det gapet er der de fleste GRC-feilene oppstår."
 color_accent: "#355E3B"
 card_description: "Makt, interesser, konflikt, ressurser, politikk"
 detail: "Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet."

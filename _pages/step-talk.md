@@ -10,8 +10,4 @@ micro_image: "assets/images/banners/ledelse-60-2-t4-samtale.webp"
 url: "/samtale/"
 ---
 
-<section class="section container--narrow" style="padding-top: var(--space-2xl);">
-    <div class="section-illustration">
-        <img src="{{ '/assets/images/banners/samtale-t3-samtale.webp' | relative_url }}" alt="Uforpliktende samtale" class="section-illustration-img" loading="lazy">
-    </div>
-</section>
+{% include section-wrapper.html class="container--narrow" style="padding-top: var(--space-2xl);" illustration="/assets/images/banners/samtale-t3-samtale.webp" illustration_alt="Uforpliktende samtale" %}

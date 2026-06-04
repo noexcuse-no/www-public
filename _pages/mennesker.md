@@ -120,6 +120,7 @@ about:
   link_text: "Les det teoretiske grunnlaget for Ledelse 60:2 →"
   link_url: "/metode/"
 
+grc_description: "Psykologisk trygghet, varsling, verdier i praksis. GRC feiler oftest ikke på prosjektnivå, men på menneskelig nivå — fordi ansatte ikke tør å si ifra, eller fordi ledelsen ikke hører etter. Uten psykologisk trygghet blir risikostyring en illusion."
 color_accent: "#D4A836"
 card_description: "Tillit, motivasjon, relasjoner, medvirkning"
 detail: "Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at «servant leadership» er et konkurransefortrinn."

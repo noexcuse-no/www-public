@@ -1,0 +1,17 @@
+{% comment %}
+  Ethics columns — 4-column grid of ethical principles for om_metode.
+
+  Expects page.ethics (array of {image, heading, body} objects).
+{% endcomment %}
+
+<div class="ethics-columns">
+  {% for item in include.ethics %}
+    <div class="ethics-column">
+      {% if item.image %}
+        <img src="{{ item.image | relative_url }}" alt="" class="micro-illustration" loading="lazy" aria-hidden="true">
+      {% endif %}
+      <h4>{{ item.heading }}</h4>
+      <p>{{ item.body }}</p>
+    </div>
+  {% endfor %}
+</div>

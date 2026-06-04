@@ -1,0 +1,23 @@
+{% comment %}
+  Cases cards grid — renders case cards for published pages with class: case.
+  Only renders if at least one case page exists.
+  No parameters.
+{% endcomment %}
+
+{% assign cases = site.pages | where: "class", "case" | where: "published", true %}
+{% if cases.size > 0 %}
+<div class="landing-cases-grid stagger-parent" style="--stagger-delay: 100ms;">
+  {% for case in cases %}
+    <div class="case-card animate-on-scroll fade-in-up stagger">
+      <h3>{{ case.title }}</h3>
+      <p>{{ case.description }}</p>
+      {% if case.result %}
+        <p class="case-result"><strong>Resultat:</strong> {{ case.result }}</p>
+      {% endif %}
+      {% if case.customer %}
+        <p class="case-customer">— {{ case.customer }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+{% endif %}
