@@ -6,14 +6,12 @@
       body: "Ledelse 60:2 inneholder spørsmål som kartlegger ..."
 {% endcomment %}
 {% if page.cta %}
-<div class="cta-section animate-on-scroll fade-in-up section--spacious container--narrow" markdown="1">
-
-## {{ page.cta.heading }}
-
-{{ page.cta.body }}
-
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled){: .product-cta}
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/){: .product-cta .product-cta--secondary}
-{: .cta-buttons}
+<div class="cta-section animate-on-scroll fade-in-up section--spacious container--narrow">
+  <h2>{{ page.cta.heading }}</h2>
+  <p>{{ page.cta.body }}</p>
+  <div class="cta-buttons">
+    <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill uforpliktende samtale</a>
+    <a href="/ledelse-60-2/" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+  </div>
 </div>
 {% endif %}

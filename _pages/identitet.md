@@ -27,7 +27,7 @@ json_ld:
 hero:
   banner_image: "assets/images/banners/perspektiv-identitet.webp"
   alt: "Identitetsperspektivet i ledelse"
-  breadcrumb: "← Ledelse 60:2"
+
   intro: "Handler om å se organisasjonen som en kultur — med sine ritualer, historier og verdier. Det som betyr noe, er ikke bare hva som skjer, men hva det betyr."
 
 grc_description: "Organisasjonens identitet, verdibasert etterlevelse, langsiktighet. GRC som kun er regler uten identitetsforankring, blir overfladisk. En organisasjon som ikke har «integritet» i sin identitet, vil alltid finne en snarvei."

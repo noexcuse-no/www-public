@@ -85,21 +85,6 @@
     margin-bottom: 12px;
 }
 
-/* Step Number Badge */
-.card-step-number {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--primary-accent);
-    color: var(--primary-accent-contrast);
-    font-weight: 700;
-    font-size: 1.1em;
-    margin-bottom: 12px;
-}
-
 /* Card Links */
 .card-link {
     display: inline-flex;

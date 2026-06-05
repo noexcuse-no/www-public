@@ -16,8 +16,6 @@
     image_alt       — alias for alt (backward compatibility)
     title           — hero heading (h1)
     intro           — hero subtitle/description
-    breadcrumb      — breadcrumb text (optional)
-    breadcrumb_url  — breadcrumb link URL (optional, defaults to /)
     hero_effect     — data-hero-effect attribute (optional, from page.hero_effect)
     simple          — render minimal hero without image (default: false)
     show_frame_nav  — show frame navigation links (default: false)
@@ -27,8 +25,6 @@
 {% assign hero_alt = include.alt | default: include.image_alt | default: page.hero.alt %}
 {% assign hero_title = include.title | default: page.hero.title %}
 {% assign hero_intro = include.intro | default: page.hero.intro %}
-{% assign hero_breadcrumb = include.breadcrumb | default: page.hero.breadcrumb %}
-{% assign hero_breadcrumb_url = include.breadcrumb_url | default: page.hero.breadcrumb_url | default: '/' %}
 {% assign hero_effect = include.hero_effect | default: page.hero_effect %}
 {% assign hero_simple = include.simple | default: page.hero.simple | default: false %}
 {% assign hero_show_frame_nav = include.show_frame_nav | default: page.hero.show_frame_nav | default: false %}
@@ -36,11 +32,6 @@
 {% if hero_simple %}
 <section class="frame-hero">
   <div class="frame-hero-content">
-    {% if hero_breadcrumb %}
-      <p class="frame-breadcrumb">
-        <a href="{{ hero_breadcrumb_url | relative_url }}">{{ hero_breadcrumb }}</a>
-      </p>
-    {% endif %}
     <h1 class="hero-title">{{ hero_title }}</h1>
     {% if hero_intro %}
       <p class="frame-intro hero-intro">{{ hero_intro }}</p>
@@ -55,9 +46,6 @@
   </div>
   {% endif %}
   <div class="hero-content">
-    {% if hero_breadcrumb %}
-    <p class="hero-breadcrumb"><a href="{{ hero_breadcrumb_url | relative_url }}">{{ hero_breadcrumb }}</a></p>
-    {% endif %}
     <h1 class="hero-title">{{ hero_title }}</h1>
     {% if hero_intro %}
     <p class="hero-intro">{{ hero_intro }}</p>

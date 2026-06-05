@@ -6,7 +6,6 @@ description: "Utforsk artikler om ledelse, organisasjonskultur, endringsledelse 
 permalink: /emne/
 hero:
   simple: true
-  breadcrumb: "← No Excuse"
   title: "Emneoversikt"
   intro: "Utforsk våre artikler sortert etter emne. Klikk på et emne for å se alle tilhørende artikler."
 ---

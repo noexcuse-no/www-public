@@ -27,7 +27,7 @@ json_ld:
 hero:
   banner_image: "assets/images/banners/perspektiv-struktur.webp"
   alt: "Strukturperspektivet i ledelse"
-  breadcrumb: "← Ledelse 60:2"
+
   intro: "Handler om å skape et system der oppgaver, roller og mål henger sammen. Når strukturen fungerer, merkes det ikke. Når den ikke fungerer, merkes det umiddelbart."
 
 grc_description: "Roller, prosesser, dokumentert ansvar, revisjonsspor. Strukturperspektivet svarer på spørsmålet: «Gjør vi det vi har sagt vi skal gjøre?» Uten tydelige roller og prosesser blir compliance tilfeldig."

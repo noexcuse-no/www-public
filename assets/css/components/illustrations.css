@@ -3,7 +3,6 @@
 /* T4: Micro illustrations (challenge cards, list items) */
 .ethics-columns img,
 .challenge-card > img:first-child,
-.card-step-number img,
 .challenge-grid > li > img:first-child {
     width: 80px;
     height: 80px;
@@ -18,7 +17,6 @@
 @media (max-width: 599px) {
     .ethics-columns img,
     .challenge-card > img:first-child,
-    .card-step-number img,
     .challenge-grid > li > img:first-child {
         width: 60px;
         height: 60px;

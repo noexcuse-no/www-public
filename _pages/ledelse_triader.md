@@ -56,7 +56,7 @@ json_ld:
 hero:
   image: /assets/images/banners/hero-triade.webp
   alt: "Abstrakt geometrisk illustrasjon av tre sammenkoblede noder"
-  breadcrumb: "← No Excuse AS"
+
   title: "Triader — styrken i trekantrelasjoner"
   intro: "To personer er en samtale. Tre personer er et system. Lær hvorfor triader er den mest undervurderte byggesteinen i velfungerende organisasjoner."
 cta:

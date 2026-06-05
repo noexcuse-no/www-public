@@ -9,14 +9,6 @@
   <img src="{{ topic.banner | relative_url }}" alt="{{ topic.title }}" class="card-image">
   {% endif %}
   <div class="card-content">
-    {% if topic.step_number %}
-    <div class="card-step-number">
-      {% if topic.micro_image %}
-      <img src="{{ topic.micro_image | relative_url }}" alt="" loading="lazy" aria-hidden="true">
-      {% endif %}
-      {{ topic.step_number }}
-    </div>
-    {% endif %}
     <h3>{{ topic.title }}</h3>
     {% if topic.card_description %}
     <p class="card-subtitle">{{ topic.card_description }}</p>

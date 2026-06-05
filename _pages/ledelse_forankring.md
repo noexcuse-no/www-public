@@ -10,7 +10,7 @@ url: "/forankring/"
 hero:
   image: /assets/images/banners/benefit-anchoring.webp
   alt: "Beslutningstaking i ledelse"
-  breadcrumb: "← No Excuse AS"
+
   title: "Beslutningstaking i ledelse"
   intro: "Skap en bedre felles forståelse av grunnlaget for nye initiativer så ressursene kan brukes for å håndtere de viktigste mulighetene og risikoene. Ledere som ser saken fra ulike perspektiver har større gjennomføringskraft. De fleste ledere tror de tar rasjonelle beslutninger. Virkeligheten er mer komplisert. Lær hva forskningen sier om hvordan beslutninger faktisk tas."
 tags: ["forankring", "beslutningstaking", "organisasjonskultur"]
