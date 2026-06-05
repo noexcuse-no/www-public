@@ -27,7 +27,7 @@ json_ld:
 hero:
   banner_image: "assets/images/banners/perspektiv-påvirkning.webp"
   alt: "Påvirkningsperspektivet i ledelse"
-  breadcrumb: "← Ledelse 60:2"
+
   intro: "Handler om å forstå at organisasjoner er arenaer der ulike interesser møtes. Makt og påvirkning er ikke skitne triks — de er en del av hvordan beslutninger tas og ting blir gjort."
 
 grc_description: "Beslutningsmyndighet, eierstyring, interessenter. Governance handler om hvem som faktisk tar beslutninger — ikke hvem som formelt har ansvaret. De fleste organisasjoner har et gap mellom formell og reell makt, og det gapet er der de fleste GRC-feilene oppstår."

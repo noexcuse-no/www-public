@@ -3,8 +3,12 @@ layout: default
 ---
 {% if page.hero %}
   {% include hero.html %}
+  <div class="section container--wide article-body animate-on-scroll fade-in-up">
 {% endif %}
 {{ content }}
+{% if page.hero %}
+  </div>
+{% endif %}
 {% include cta-section.html %}
 {% include cases-cards.html %}
 {% include references.html %}

@@ -1,3 +1,27 @@
+/* Article body — section vertical rhythm */
+.article-body > h2 {
+    margin-top: var(--space-4xl);
+}
+
+.article-body > h2:first-child {
+    margin-top: 0;
+}
+
+.article-body > h3 {
+    margin-top: var(--space-2xl);
+}
+
+.article-body > p,
+.article-body > ul,
+.article-body > ol {
+    margin-bottom: var(--space-lg);
+}
+
+.article-body > p:has(> img:only-child) {
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
 /* Info card list — UL containing h3 subheadings (structural selector) */
 ul:has(> li > h3) {
     list-style: none;

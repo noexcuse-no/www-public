@@ -10,7 +10,7 @@ url: "/tillit/"
 hero:
   image: /assets/images/banners/benefit-control.webp
   alt: "Tillit i ledelse"
-  breadcrumb: "← No Excuse AS"
+
   title: "Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema."
   intro: "Den viktigste faktoren for en velfungerende organisasjon er ikke strategi, struktur eller prosesser. Det er tillit. Lær hvordan du bygger den."
 tags: ["tillit", "psykologisk-trygghet", "servant-leadership"]

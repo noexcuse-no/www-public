@@ -1,6 +1,65 @@
 /* Layout.css */
 html {
     scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+}
+
+@supports (scroll-behavior: smooth) {
+    html:focus-within {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Back-to-top anchor — shows after scrolling past viewport */
+.back-to-top {
+    position: fixed;
+    bottom: var(--space-lg, 1.5rem);
+    right: var(--space-lg, 1.5rem);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-navy);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.25em;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 100;
+}
+
+.back-to-top:hover {
+    background: var(--primary-azure);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Use :target to trigger via JS-less approach — relies on IntersectionObserver in existing animation.js to toggle a visible class */
+.back-to-top.is-visible {
+    opacity: 0.85;
+    pointer-events: auto;
+}
+
+.dark-mode .back-to-top {
+    background: var(--primary-azure);
+}
+
+.dark-mode .back-to-top:hover {
+    background: var(--primary-navy);
+}
+
+/* Focus indicators — visible keyboard focus only */
+:focus-visible {
+    outline: 2px solid var(--primary-azure);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm, 2px);
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
 }
 
 html, body {

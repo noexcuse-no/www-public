@@ -10,7 +10,7 @@ url: "/usikkerhet/"
 hero:
   image: /assets/images/banners/benefit-future.webp
   alt: "Usikkerhet og endring"
-  breadcrumb: "← No Excuse AS"
+
   title: "Usikkerhet og endring — bli forberedt"
   intro: "Kultur spiser strategi til frokost, het det. Men hva er kultur egentlig — og hvordan navigerer ledergrupper usikkerhet og endring? Forskningen gir noen overraskende svar."
 tags: ["usikkerhet", "endringsledelse", "organisasjonskultur"]

@@ -71,7 +71,7 @@ json_ld:
 hero:
   image: /assets/images/banners/hero-perspektiv.webp
   alt: "Abstrakt illustrasjon av fire overlappende linser — et prisme som splitter lys"
-  breadcrumb: "← No Excuse AS"
+
   title: "Fire perspektiver — se mer enn du ser"
   intro: "De fleste ledere ser verden gjennom ett filter. De beste ser gjennom fire — og vet hvilket som passer når. Multiframe thinking er ikke teori, det er en ferdighet."
   show_frame_nav: true

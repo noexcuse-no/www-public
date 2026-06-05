@@ -27,7 +27,7 @@ json_ld:
 hero:
   banner_image: "assets/images/banners/perspektiv-mennesker.webp"
   alt: "Menneskeperspektivet i ledelse"
-  breadcrumb: "← Ledelse 60:2"
+
   intro: "Handler om å se organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. Når mennesker og organisasjon passer sammen, tjener begge på det."
 
 grc_description: "Psykologisk trygghet, varsling, verdier i praksis. GRC feiler oftest ikke på prosjektnivå, men på menneskelig nivå — fordi ansatte ikke tør å si ifra, eller fordi ledelsen ikke hører etter. Uten psykologisk trygghet blir risikostyring en illusion."

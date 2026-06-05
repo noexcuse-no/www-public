@@ -10,7 +10,7 @@ url: "/generativ-ki/"
 hero:
   image: /assets/images/banners/benefit-ai.webp
   alt: "KI-ledelse i praksis"
-  breadcrumb: "← No Excuse AS"
+
   title: "KI-ledelse i praksis"
   intro: "Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. Alle proklamerer om hvor bra KI er som teknologi og skal selge programvare, men få snakker om hvordan å utvikle de ansatte som KI-ledere."
 tags: ["generativ-ki", "ai", "kunstig-intelligens", "endringsledelse"]

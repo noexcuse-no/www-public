@@ -4,9 +4,7 @@
     {% include metadata.html %}
     {% include styles.html %}
     {% include json-ld.html %}
-    {% if page.breadcrumb != false %}
-        {% include breadcrumb-schema.html %}
-    {% endif %}
+    {% include breadcrumb-schema.html %}
 </head>
 <body>
     {% include header.html %}
@@ -14,6 +12,7 @@
         {{ content }}
     </main>
     {% include footer.html %}
+    <a href="#" class="back-to-top" aria-label="Til toppen">↑</a>
     {% include scripts.html %}
 </body>
 </html>
