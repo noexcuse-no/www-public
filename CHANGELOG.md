@@ -17,13 +17,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - **Hero component**: Dark mode overlay switched from navy gradient to black-based gradient (`#000 → rgba(0,0,0,0.3)`) with `opacity: 0.8` for stronger image darkening — no dark image variants needed. Hero text (title, intro, content) set to `#fff` in dark mode. Removed `.hero-breadcrumb` and `.frame-breadcrumb` from all templates and CSS. Deleted `breadcrumb:` frontmatter from 13 pages (article, frame, and emne pages). Removed breadcrumb parameter from `_layouts/perspektiv.html` hero include call.
-- **Homepage**: Empty sections (`products`, `profiles`) now guarded with `{% if size > 0 %}` Liquid checks. Welcome intro section added to `index.md` with direct brand voice.
+- **Homepage**: Empty sections (`products`, `profiles`) now guarded with Liquid size checks (`{% raw %}{% if size > 0 %}{% endraw %}`). Welcome intro section added to `index.md` with direct brand voice.
 - **CTA fix (`_includes/cta-section.html`)**: Converted from kramdown markdown links (with `markdown="1"` and IAL syntax) to pure HTML `<a>` tags with inline `<h2>` and `<p>`.
 
 ### Removed
 - **Card-step-number**: Removed entire `.card-step-number` div (micro_image + step_number) from `_includes/card.html` and all associated CSS in `card.css` and `illustrations.css`.
 - **Breadcrumbs**: Removed breadcrumb rendering from `_includes/hero.html` (both default and simple/frame-hero modes), breadcrumb parameter from `_layouts/perspektiv.html`, and `breadcrumb:` frontmatter from all 13 `_pages/*.md` files.
-- **R23.4 — Mennesker dynamic element count**: The "tre hovedelementene" heading now renders dynamically via `{{ frame.elements | size }}`. All 4 frame alt texts updated similarly. 4th Mennesker element "Verdier og mening" now has a `spot_image` (compass/north star icon, 80×80px). Image generated via EvoLink GPT Image 2, original PNG preserved in `.design/graphics/originals/banners/`
+- **R23.4 — Mennesker dynamic element count**: The "tre hovedelementene" heading now renders dynamically via `{% raw %}{{ frame.elements | size }}{% endraw %}`. All 4 frame alt texts updated similarly. 4th Mennesker element "Verdier og mening" now has a `spot_image` (compass/north star icon, 80×80px). Image generated via EvoLink GPT Image 2, original PNG preserved in `.design/graphics/originals/banners/`
 - **R23.1 — Card hover shift removal**: Removed `transform: translateY()` from 7 hover selectors across `profiles.css`, `article.css`, `perspektiv-styles.css`, `card.css`. Hover now only deepens shadow — no lift. CTAs retain their existing hover transform (they're actions, not containers)
 - **R23.2 — Profile person title**: Added `if profile.person_title` block in `_includes/profiles.html` rendering job title below name. Styled as `.profile-person-title` (0.9em, opacity 0.7, negative top margin). Applied to `/dagfinn/` with `person_title: "Daglig leder"`
 - **R23.3 — Profile image white background**: Added `background: #fff` to both `.profile-image` (compact card) and `.profile-image-large` (header) in `profiles.css` for consistent white circle behind photos regardless of theme
