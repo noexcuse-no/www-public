@@ -10,7 +10,7 @@
 <meta property="og:description" content="{{ meta_desc | default: site.data.metadata.og_description }}">
 <meta property="og:image" content="{{ site.data.metadata.og_image }}">
 <meta property="og:url" content="https://noexcuse.no{{ page.url }}">
-<meta property="og:type" content="{{ page.json_ld.type | default: site.data.metadata.og_type }}">
+<meta property="og:type" content="{{ page.json_ld[0].type | default: site.data.metadata.og_type }}">
 <meta property="og:locale" content="{{ site.data.metadata.og_locale }}" />
 <meta property="og:site_name" content="{{ site.data.metadata.title }}" />
 <meta name="twitter:card" content="{{ site.data.metadata.twitter_card }}">

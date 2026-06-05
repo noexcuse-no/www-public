@@ -10,19 +10,19 @@ banner: "assets/images/banners/perspektiv-struktur.webp"
 url: "/struktur/"
 
 json_ld:
-  type: "Article"
-  name: "Strukturperspektivet i ledelse"
-  description: "Hvordan ledere bruker strukturperspektivet til å skape klarhet i roller, prosesser og mål. Fra Bolman & Deals rammeverk til Hubbards målemetodikk."
-  author:
-    type: "Organization"
-    name: "No Excuse AS"
-  about:
-    - type: "Thing"
-      name: "Ledelse 60:2"
-    - type: "Thing"
-      name: "Strukturperspektivet"
-    - type: "Thing"
-      name: "Organisasjonsstruktur"
+  - type: "Article"
+    name: "Strukturperspektivet i ledelse"
+    description: "Hvordan ledere bruker strukturperspektivet til å skape klarhet i roller, prosesser og mål. Fra Bolman & Deals rammeverk til Hubbards målemetodikk."
+    author:
+      type: "Organization"
+      name: "No Excuse AS"
+    about:
+      - type: "Thing"
+        name: "Ledelse 60:2"
+      - type: "Thing"
+        name: "Strukturperspektivet"
+      - type: "Thing"
+        name: "Organisasjonsstruktur"
 
 hero:
   banner_image: "assets/images/banners/perspektiv-struktur.webp"
@@ -77,7 +77,7 @@ Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og
 
 **Tegn på prosesser og regler-problemer:** Unødvendig byråkrati. Prosesser som ble laget for å løse et problem som ikke lenger eksisterer. Unntak som tar mer tid enn normalen.
 
-![Illustrasjon av de 3 hovedelementene i strukturperspektivet](/assets/images/banners/illustrasjon-struktur-hovedelementer.webp){: .section-illustration}
+![Illustrasjon av de 3 hovedelementene i strukturperspektivet](/assets/images/banners/illustrasjon-struktur-hovedelementer.webp)
 
 ![Illustrasjon: Hvorfor struktur betyr noe for ledergruppen](/assets/images/banners/spot-struktur-hvorfor-struktur-betyr-noe.webp){: .argument-illustration .argument-illustration--right}
 
@@ -89,29 +89,28 @@ Douglas Hubbard, forfatteren av «How to Measure Anything», påpeker at mye som
 
 ## Vanlige strukturspesifikke utfordringer
 
-![Illustrasjon av vanlige strukturspesifikke utfordringer](/assets/images/banners/illustrasjon-struktur-utfordringer.webp){: .section-illustration}
+![Illustrasjon av vanlige strukturspesifikke utfordringer](/assets/images/banners/illustrasjon-struktur-utfordringer.webp)
 
-*   ![](/assets/images/banners/struktur-t4-role-clarification.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/struktur-t4-role-clarification.webp){: aria-hidden="true"}
     
     #### Uklar rolleavklaring
     
     To personer som tror de eier samme område. Eller ingen som eier det i det hele tatt. Ofte avslørt først når noe går galt.
-*   ![](/assets/images/banners/struktur-t4-goal-conflict.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/struktur-t4-goal-conflict.webp){: aria-hidden="true"}
     
     #### Målkonflikter
     
     Avdeling A optimaliserer for sin målsetting som bremser avdeling B. Motivert av insentiver som ikke er koordinert.
-*   ![](/assets/images/banners/struktur-t4-coordination.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/struktur-t4-coordination.webp){: aria-hidden="true"}
     
     #### Koordineringsproblemer
     
     Mye tid brukes på å samordne arbeid som burde vært koordinert fra start. Fokus på «å skape buy-in» i stedet for å bygge struktur som sikrer involvering.
-*   ![](/assets/images/banners/struktur-t4-bureaucracy.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/struktur-t4-bureaucracy.webp){: aria-hidden="true"}
     
     #### Byråkratisk byrde
     
     Prosesser som ble laget for å løse et reelt problem, men nå lever sitt eget liv. Ledere som bruker mest tid på å administrere systemet heller enn å lede.
-{: .perspektiv-challenges}
 
 ## Spørsmål strukturperspektivet kan hjelpe dere å besvare
 
@@ -121,7 +120,7 @@ Douglas Hubbard, forfatteren av «How to Measure Anything», påpeker at mye som
 - Har vi bygd strukturer som støtter vekst — eller strukturer som begrenser den?
 - Er det regler og prosesser som ble laget for et problem som ikke lenger eksisterer?
 
-![Illustrasjon for kartlegging av struktur](/assets/images/banners/illustrasjon-struktur-cta.webp){: .section-illustration}
+![Illustrasjon for kartlegging av struktur](/assets/images/banners/illustrasjon-struktur-cta.webp)
 
 ## Få kartlagt ledergruppens strukturelle modenhet
 
@@ -138,4 +137,4 @@ Hubbard argumenterer for at all måling reduserer usikkerhet — ikke eliminerer
 
 Hubbarts «Applied Information Economics» (AIE) er en strukturert tilnærming til måling av det som virker umålelig. De sju stegene er: (1) Definer beslutningen, (2) Bestem hva som er ukjent, (3) Verdsett informasjonen, (4) Design måleinstrumentet, (5) Samle data, (6) Analyser, og (7) Gjør den informerte beslutningen. Ledelse 60:2 anvender prinsippet — ikke hele metoden — ved å gi ledergruppen strukturerte spørsmål som reduserer usikkerhet om egen modenhet.
 
-[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .perspektiv-link}
+[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .about-link}

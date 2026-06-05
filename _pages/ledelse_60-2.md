@@ -17,76 +17,66 @@ story: "«Ledelse 60:2» er vår tilnærming til å bruke en enkel vitenskapelig
 image: "assets/images/hero-illustration.webp"
 tags: "#ledelse #orientering #analyse #ledelse60-2"
 json_ld:
-  type: "Service"
-  name: "Ledelse 60:2"
-  description: "Tidseffektiv orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
-  provider:
-    type: "Organization"
-    name: "No Excuse AS"
-    url: "https://noexcuse.no"
-    logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.webp"
-    contactPoint:
-      contactType: "booking"
-      url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  url: "https://noexcuse.no/ledelse-60-2/"
-  areaServed: "NO"
-  serviceType: "Leadership Assessment"
-  offers:
-    type: "Offer"
-    priceCurrency: "NOK"
-    description: "Orientering for ledergruppen"
-  hasOfferCatalog:
-    type: "OfferCatalog"
-    name: "Ledelse 60:2 Tjenester"
-    itemListElement:
-      - type: "Offer"
-        itemOffered:
-          type: "Service"
-          name: "Ledelse 60:2 Grunnpakke"
-          description: "60 diagnostiske spørsmål, 2 timers intervju, rapport og anbefalinger"
-      - type: "Offer"
-        itemOffered:
-          type: "Service"
-          name: "Katalysator"
-          description: "Kontinuerlig oppfølging og coaching for organisasjonsvekst"
+  - type: "Service"
+    name: "Ledelse 60:2"
+    description: "Tidseffektiv orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
+    provider:
+      type: "Organization"
+      name: "No Excuse AS"
+      url: "https://noexcuse.no"
+      logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.webp"
+      contactPoint:
+        contactType: "booking"
+        url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+    url: "https://noexcuse.no/ledelse-60-2/"
+    areaServed: "NO"
+    serviceType: "Leadership Assessment"
+    offers:
+      type: "Offer"
+      priceCurrency: "NOK"
+      description: "Orientering for ledergruppen"
+    hasOfferCatalog:
+      type: "OfferCatalog"
+      name: "Ledelse 60:2 Tjenester"
+      itemListElement:
+        - type: "Offer"
+          itemOffered:
+            type: "Service"
+            name: "Ledelse 60:2 Grunnpakke"
+            description: "60 diagnostiske spørsmål, 2 timers intervju, rapport og anbefalinger"
+        - type: "Offer"
+          itemOffered:
+            type: "Service"
+            name: "Katalysator"
+            description: "Kontinuerlig oppfølging og coaching for organisasjonsvekst"
 ---
 
-{% include hero.html %}
-
-{% capture cta_buttons_body %}
 [Bestill Ledelse 60:2](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled){: .product-cta}
 [Hvordan fungerer det? ↓](#hvordan){: .product-cta .product-cta--spaced}
-{% endcapture %}
-{% include section-container.html class="section container--narrow" style="text-align: center; padding-top: var(--space-xl);" body=cta_buttons_body markdownify_body=true %}
+{: style="text-align: center; padding-top: var(--space-xl);"}
 
-{% capture benefits_body %}
+## Fire gode grunner
+{: .landing-benefits}
+
 {% include benefit-cards.html %}
-{% endcapture %}
-{% include section-container.html class="landing-benefits animate-on-scroll fade-in-up" heading="Fire gode grunner" body=benefits_body %}
 
-{% capture process_body %}
+## Hvordan gjør vi det?
+{: #hvordan .landing-process}
+
 {% include step-cards.html %}
-{% endcapture %}
-{% include section-container.html class="landing-process animate-on-scroll fade-in-up" id="hvordan" heading="Hvordan gjør vi det?" body=process_body %}
 
-{% capture story_body %}
+## Historien bak metoden
+{: .landing-story}
+
 {{ page.story }}
 
-{% include framework-illustration.html image="/assets/images/banners/ledelse-60-2-t2-prosessflyt.webp" alt="Tretrinns prosess for ledelseskartlegging" %}
-[Les mer om metoden →]({{ '/metode/' | relative_url }}){: .product-cta}
-{% endcapture %}
-{% include section-container.html class="landing-story animate-on-scroll fade-in-up" heading="Historien bak metoden" body=story_body markdownify_body=true %}
+![Tretrinns prosess for ledelseskartlegging](/assets/images/banners/ledelse-60-2-t2-prosessflyt.webp)
 
-{% assign cases = site.pages | where: "class", "case" | where: "published", true %}
-{% if cases.size > 0 %}
-{% capture cases_body %}
-{% include cases-cards.html %}
-{% endcapture %}
-{% include section-container.html class="landing-cases animate-on-scroll fade-in-up" heading="Kundecaser" body=cases_body %}
-{% endif %}
+[Les mer om metoden →](/metode/){: .product-cta}
 
-{% capture final_cta_body %}
+## Hvordan jobber dere med bedre ledelse?
+{: .landing-cta}
+
 Ta en uforpliktende samtale med oss, så finner vi ut om Ledelse 60:2 er rett for dere.
+
 [Velg et tidspunkt](https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no){: .product-cta .product-cta--large}
-{% endcapture %}
-{% include section-container.html class="landing-cta animate-on-scroll fade-in-up" heading="Hvordan jobber dere med bedre ledelse?" body=final_cta_body markdownify_body=true %}

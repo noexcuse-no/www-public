@@ -6,6 +6,7 @@
 
 {% assign cases = site.pages | where: "class", "case" | where: "published", true %}
 {% if cases.size > 0 %}
+<h2 class="landing-cases">Kundecaser</h2>
 <div class="landing-cases-grid stagger-parent" style="--stagger-delay: 100ms;">
   {% for case in cases %}
     <div class="case-card animate-on-scroll fade-in-up stagger">

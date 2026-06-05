@@ -47,8 +47,6 @@ small {
 
 /* Reading width for articles */
 .article-body,
-.frame-section,
-.perspektiv-section,
 .section.container--wide {
     max-width: 65ch;
     margin-inline: auto;

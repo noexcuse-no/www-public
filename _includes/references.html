@@ -1,0 +1,16 @@
+{% if page.json_ld[0].citation %}
+<section class="references">
+  <h2 id="referanser">Referanser</h2>
+  <ul>
+    {% for entry in page.json_ld[0].citation %}
+    <li>
+      {%- for author in entry.author -%}{{ author }}{% unless forloop.last %}, {% endunless %}{%- endfor -%}
+      ({{ entry.datePublished }}).
+      {%- if entry["@type"] == "Article" %} "{{ entry.name }}." <em>{{ entry.publisher }}</em>{% if entry.volume %}, {{ entry.volume }}{% if entry.issue %}({{ entry.issue }}){% endif %}{% endif %}{% if entry.pages %}, {{ entry.pages }}{% endif %}.
+      {%- else %} <em>{{ entry.name }}</em>{% if entry.edition %} ({{ entry.edition }}. utg.){% endif %}. {{ entry.publisher }}.
+      {%- endif -%}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

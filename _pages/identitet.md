@@ -10,19 +10,19 @@ banner: "assets/images/banners/perspektiv-identitet.webp"
 url: "/identitet/"
 
 json_ld:
-  type: "Article"
-  name: "Identitetsperspektivet i ledelse"
-  description: "Hvordan ledere bruker identitetsperspektivet til å forstå kultur, mening og verdier. Fra Bolman & Deals symbolske ramme til Logans stadier for tribal ledelse."
-  author:
-    type: "Organization"
-    name: "No Excuse AS"
-  about:
-    - type: "Thing"
-      name: "Ledelse 60:2"
-    - type: "Thing"
-      name: "Identitetsperspektivet"
-    - type: "Thing"
-      name: "Organisasjonskultur"
+  - type: "Article"
+    name: "Identitetsperspektivet i ledelse"
+    description: "Hvordan ledere bruker identitetsperspektivet til å forstå kultur, mening og verdier. Fra Bolman & Deals symbolske ramme til Logans stadier for tribal ledelse."
+    author:
+      type: "Organization"
+      name: "No Excuse AS"
+    about:
+      - type: "Thing"
+        name: "Ledelse 60:2"
+      - type: "Thing"
+        name: "Identitetsperspektivet"
+      - type: "Thing"
+        name: "Organisasjonskultur"
 
 hero:
   banner_image: "assets/images/banners/perspektiv-identitet.webp"
@@ -75,7 +75,7 @@ Ritualer er de gjentatte handlingene som holder kulturen i live: møter, feiring
 
 **Tegn på ritualer og identitet-problemer:** Møter er blitt rutine uten innhold. Feiringer er pålagt og føles falske. Nyansatte opplever silo raskt.
 
-![Illustrasjon av de 3 hovedelementene i identitetsperspektivet](/assets/images/banners/illustrasjon-identitet-hovedelementer.webp){: .section-illustration}
+![Illustrasjon av de 3 hovedelementene i identitetsperspektivet](/assets/images/banners/illustrasjon-identitet-hovedelementer.webp)
 
 ![Illustrasjon: Hvorfor identitetsperspektivet betyr noe for ledergruppen](/assets/images/banners/spot-identitet-lederverdi.webp){: .argument-illustration .argument-illustration--right}
 
@@ -89,29 +89,28 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
 
 ## Vanlige identitetsrelaterte utfordringer
 
-![Illustrasjon av vanlige identitetsrelaterte utfordringer](/assets/images/banners/illustrasjon-identitet-utfordringer.webp){: .section-illustration}
+![Illustrasjon av vanlige identitetsrelaterte utfordringer](/assets/images/banners/illustrasjon-identitet-utfordringer.webp)
 
-*   ![](/assets/images/banners/identitet-t4-empty-values.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/identitet-t4-empty-values.webp){: aria-hidden="true"}
     
     #### Tomme verdier
     
     Verdier som ikke reflekterer faktisk atferd. Konsulentlede verdiprogrammer som aldri ble forankret.
-*   ![](/assets/images/banners/identitet-t4-individual-dominance.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/identitet-t4-individual-dominance.webp){: aria-hidden="true"}
     
     #### Individuell dominans
     
     En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Individualistisk tankegang som demper kollektiv vekst.
-*   ![](/assets/images/banners/identitet-t4-storylessness.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/identitet-t4-storylessness.webp){: aria-hidden="true"}
     
     #### Historieløshet
     
     En organisasjon uten fortellinger — nye folk får ingen kontekst. Kulturen er usynlig fordi den aldri er blitt eksplisitt.
-*   ![](/assets/images/banners/identitet-t4-change-fatigue.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/identitet-t4-change-fatigue.webp){: aria-hidden="true"}
     
     #### Forandringstretthet
     
     Alle endringsinitiativer har feilet før. Folk har sluttet å tro på «nye initiativer». Kynisme som dominerer tone.
-{: .perspektiv-challenges}
 
 ## Spørsmål identitetsperspektivet kan hjelpe dere å besvare
 
@@ -121,7 +120,7 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
 - Hvordan feirer vi suksess — og gjør vi det i det hele tatt?
 - Har vi en felles forståelse av hva slags organisasjon vi vil være?
 
-![Illustrasjon for kartlegging av kultur](/assets/images/banners/illustrasjon-identitet-cta.webp){: .section-illustration}
+![Illustrasjon for kartlegging av kultur](/assets/images/banners/illustrasjon-identitet-cta.webp)
 
 ## Få kartlagt ledergruppens kulturelle modenhet
 
@@ -136,4 +135,4 @@ Identitetsperspektivet i Ledelse 60:2 bygger på Bolman & Deals symbolske ramme,
 
 Logan beskriver kulturstadier som beskrivende — ikke normative. Ledelse 60:2 identifiserer hvor organisasjonen er, ikke hvor den bør være. Det handler om innsikt, ikke evaluering.
 
-[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .perspektiv-link}
+[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .about-link}

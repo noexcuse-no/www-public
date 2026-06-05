@@ -10,4 +10,4 @@ micro_image: "assets/images/banners/ledelse-60-2-t4-rapport.webp"
 url: "/rapport/"
 ---
 
-{% include section-wrapper.html class="container--narrow" style="padding-top: var(--space-2xl);" illustration="/assets/images/banners/rapport-t3-rapport.webp" illustration_alt="Rapport og anbefalinger" %}
+![Rapport og anbefalinger](/assets/images/banners/rapport-t3-rapport.webp)

@@ -10,19 +10,19 @@ banner: "assets/images/banners/perspektiv-mennesker.webp"
 url: "/mennesker/"
 
 json_ld:
-  type: "Article"
-  name: "Menneskeperspektivet i ledelse"
-  description: "Hvordan ledere bruker menneskeperspektivet til å bygge tillit, relasjoner og medvirkning. Fra Bolman & Deals HR-ramme til Blanchards tjenerledelse."
-  author:
-    type: "Organization"
-    name: "No Excuse AS"
-  about:
-    - type: "Thing"
-      name: "Ledelse 60:2"
-    - type: "Thing"
-      name: "Menneskeperspektivet"
-    - type: "Thing"
-      name: "Tjenerledelse"
+  - type: "Article"
+    name: "Menneskeperspektivet i ledelse"
+    description: "Hvordan ledere bruker menneskeperspektivet til å bygge tillit, relasjoner og medvirkning. Fra Bolman & Deals HR-ramme til Blanchards tjenerledelse."
+    author:
+      type: "Organization"
+      name: "No Excuse AS"
+    about:
+      - type: "Thing"
+        name: "Ledelse 60:2"
+      - type: "Thing"
+        name: "Menneskeperspektivet"
+      - type: "Thing"
+        name: "Tjenerledelse"
 
 hero:
   banner_image: "assets/images/banners/perspektiv-mennesker.webp"
@@ -87,7 +87,7 @@ Dave Logan skiller mellom kjerneverdier og edle formål (noble cause): Kjernever
 
 **Tegn på verdier og mening-problemer:** Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert.
 
-![Illustrasjon av de 4 hovedelementene i menneskeperspektivet](/assets/images/banners/illustrasjon-mennesker-hovedelementer.webp){: .section-illustration}
+![Illustrasjon av de 4 hovedelementene i menneskeperspektivet](/assets/images/banners/illustrasjon-mennesker-hovedelementer.webp)
 
 ![Illustrasjon: Hvorfor menneskeperspektivet betyr noe for ledergruppen](/assets/images/banners/spot-mennesker-hvorfor-mennesker-betyr-noe.webp){: .argument-illustration .argument-illustration--right}
 
@@ -103,29 +103,28 @@ Gode rutiner og klare roller er ikke det motsatte av tillitsbasert ledelse — d
 
 ## Vanlige menneskerelaterte utfordringer
 
-![Illustrasjon av vanlige menneskerelaterte utfordringer](/assets/images/banners/illustrasjon-mennesker-utfordringer.webp){: .section-illustration}
+![Illustrasjon av vanlige menneskerelaterte utfordringer](/assets/images/banners/illustrasjon-mennesker-utfordringer.webp)
 
-*   ![](/assets/images/banners/mennesker-t4-psychological-safety.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/mennesker-t4-psychological-safety.webp){: aria-hidden="true"}
     
     #### Manglende psykologisk trygghet
     
     Folk tørr ikke si ifra om problemer. Feil skjules. Kritikk leveres bak lukkede dører. Innovasjon dør før den får luft.
-*   ![](/assets/images/banners/mennesker-t4-empty-values.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/mennesker-t4-empty-values.webp){: aria-hidden="true"}
     
     #### Tomme verdier
     
     Organisasjonen har verdier på veggen, men de stemmer ikke med hvordan folk faktisk oppfører seg. Verdiene er blitt flosler, ikke veiledning.
-*   ![](/assets/images/banners/mennesker-t4-silos.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/mennesker-t4-silos.webp){: aria-hidden="true"}
     
     #### Sil og silo
     
     Avdelinger og individer jobber i siloer. Folk kjenner ikke til hva naboen driver med. Kunden matcher med én person som blir en flaskehals.
-*   ![](/assets/images/banners/mennesker-t4-meaninglessness.webp){: .micro-illustration aria-hidden="true"}
+*   ![](/assets/images/banners/mennesker-t4-meaninglessness.webp){: aria-hidden="true"}
     
     #### For mye volum, for lite mening
     
     Folk oversvømmes med oppgaver men gidder ikke lenger å engasjere seg i hvorfor de gjør jobben. Arbeidet er blitt en check-in, ikke en bidrag.
-{: .perspektiv-challenges}
 
 ## Spørsmål menneskeperspektivet kan hjelpe dere å besvare
 
@@ -135,7 +134,7 @@ Gode rutiner og klare roller er ikke det motsatte av tillitsbasert ledelse — d
 - Finnes det historier som fortelles om hvordan vi behandler hverandre?
 - Tilbyr vi muligheter for læring og karriereutvikling?
 
-![Illustrasjon for kartlegging av mennesker](/assets/images/banners/illustrasjon-mennesker-cta.webp){: .section-illustration}
+![Illustrasjon for kartlegging av mennesker](/assets/images/banners/illustrasjon-mennesker-cta.webp)
 
 ## Få kartlagt ledergruppens menneskedimensjon
 
@@ -150,4 +149,4 @@ Menneskeperspektivet i Ledelse 60:2 bygger på Bolman & Deals HR-ramme, kombiner
 
 Blanchard og Barrett viser at det ikke finnes én fasit på god ledelse — kontekst bestemmer hva som fungerer. Ledelse 60:2 diagnostiserer orientering, ikke korrekthet. Det handler om å forstå hvor organisasjonen er, ikke å dømme den.
 
-[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .perspektiv-link}
+[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .about-link}

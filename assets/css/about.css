@@ -1,23 +1,20 @@
 
-.about-story,
+.about-section,
 .about-values,
-.about-legal,
-.about-team,
 .about-cta {
     max-width: 700px;
     margin: 0 auto;
     padding: var(--space-2xl) var(--space-md);
 }
 
-.about-story h2,
+.about-section h2,
 .about-values h2,
-.about-team h2,
 .about-cta h2 {
     font-size: 1.6em;
     margin-bottom: 20px;
 }
 
-.about-story p {
+.about-section p {
     font-size: 1.05em;
     line-height: 1.7;
     margin-bottom: 16px;
@@ -55,7 +52,7 @@
     box-shadow: var(--box-shadow-hover-light);
 }
 
-.value-icon {
+.value-card > img:first-child {
     width: 60px;
     height: 60px;
     border-radius: var(--radius-md);

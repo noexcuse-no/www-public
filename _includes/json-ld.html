@@ -1,0 +1,9 @@
+{% comment %}
+  JSON-LD structured data — renders page.json_ld frontmatter as <script> tags.
+  Expects page.json_ld to be an array of schema objects.
+{% endcomment %}
+{% if page.json_ld %}
+  {% for schema in page.json_ld %}
+<script type="application/ld+json">{{ schema | jsonify }}</script>
+  {% endfor %}
+{% endif %}

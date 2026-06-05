@@ -15,7 +15,7 @@ layout: default
 {% assign articles = site.pages | where: "class", "article" %}
 {% assign tagged_articles = articles | where_exp: "p", "p.tags contains page.tag" %}
 
-<section class="frame-section animate-on-scroll fade-in-up">
+<section class="section container--wide animate-on-scroll fade-in-up">
     {% if tagged_articles.size == 0 %}
         <p>Ingen artikler funnet for dette emnet.</p>
     {% else %}
@@ -38,10 +38,10 @@ layout: default
     {% endif %}
 </section>
 
-<section class="frame-cta animate-on-scroll fade-in-up">
+<section class="cta-section animate-on-scroll fade-in-up">
     <h2>Fant du ikke det du lette etter?</h2>
     <p>Utforsk alle emner på vår <a href="{{ '/emne/' | relative_url }}">emneoversikt</a>, eller <a href="https://outlook.office.com/book/ledelse@noexcuse.no/">bestill en uforpliktende samtale</a> for å diskutere dine utfordringer.</p>
-    <div class="frame-cta-buttons">
+    <div class="cta-buttons">
         <a href="{{ '/emne/' | relative_url }}" class="product-cta">Alle emner →</a>
         <a href="https://outlook.office.com/book/ledelse@noexcuse.no/" class="product-cta product-cta--secondary">Bestill samtale</a>
     </div>
