@@ -10,4 +10,4 @@ micro_image: "assets/images/banners/ledelse-60-2-t4-samtale.webp"
 url: "/samtale/"
 ---
 
-{% include section-wrapper.html class="container--narrow" style="padding-top: var(--space-2xl);" illustration="/assets/images/banners/samtale-t3-samtale.webp" illustration_alt="Uforpliktende samtale" %}
+![Uforpliktende samtale](/assets/images/banners/samtale-t3-samtale.webp)

@@ -30,7 +30,7 @@
 {% assign hero_breadcrumb = include.breadcrumb | default: page.hero.breadcrumb %}
 {% assign hero_breadcrumb_url = include.breadcrumb_url | default: page.hero.breadcrumb_url | default: '/' %}
 {% assign hero_effect = include.hero_effect | default: page.hero_effect %}
-{% assign hero_simple = include.simple | default: false %}
+{% assign hero_simple = include.simple | default: page.hero.simple | default: false %}
 {% assign hero_show_frame_nav = include.show_frame_nav | default: page.hero.show_frame_nav | default: false %}
 
 {% if hero_simple %}

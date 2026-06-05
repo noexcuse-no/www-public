@@ -10,4 +10,4 @@ micro_image: "assets/images/banners/ledelse-60-2-t4-intervju.webp"
 url: "/intervju/"
 ---
 
-{% include section-wrapper.html class="container--narrow" style="padding-top: var(--space-2xl);" illustration="/assets/images/banners/intervju-t3-intervju.webp" illustration_alt="Strukturert intervju" %}
+![Strukturert intervju](/assets/images/banners/intervju-t3-intervju.webp)

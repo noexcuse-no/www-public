@@ -13,18 +13,26 @@
     opacity: 0.9;
 }
 
-.science-section {
+.science-section,
+.science-section-body {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
 }
 
-.science-section h2 {
+.science-section {
+    padding: 40px 20px 0;
+}
+
+h2.science-section {
     font-size: 1.8em;
     margin-bottom: 24px;
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.science-section-body {
+    padding: 0 20px 40px;
 }
 
 .section-number {
@@ -105,18 +113,6 @@
     font-size: 0.8em;
     font-style: italic;
     opacity: 0.7;
-}
-
-.frame-link {
-    display: inline-block;
-    font-size: 0.85em;
-    color: var(--link-color-light);
-    text-decoration: none;
-    margin-top: 8px;
-}
-
-.frame-link:hover {
-    text-decoration: underline;
 }
 
 .science-highlight {

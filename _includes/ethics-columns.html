@@ -8,7 +8,7 @@
   {% for item in include.ethics %}
     <div class="ethics-column">
       {% if item.image %}
-        <img src="{{ item.image | relative_url }}" alt="" class="micro-illustration" loading="lazy" aria-hidden="true">
+        <img src="{{ item.image | relative_url }}" alt="" loading="lazy" aria-hidden="true">
       {% endif %}
       <h4>{{ item.heading }}</h4>
       <p>{{ item.body }}</p>

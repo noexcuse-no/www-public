@@ -23,67 +23,6 @@
     font-size: 1.2em;
 }
 
-/* Challenge cards — extended styles */
-.perspektiv-challenge {
-    position: relative;
-    padding-top: 48px;
-    border-top: 3px solid var(--primary-accent);
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.perspektiv-challenge:hover {
-    box-shadow: var(--shadow-md);
-}
-
-.perspektiv-challenge h4 {
-    position: relative;
-    padding-left: 28px;
-}
-
-.perspektiv-challenge h4:before {
-    content: "◆";
-    position: absolute;
-    left: 0;
-    color: var(--primary-accent);
-    font-size: 0.9em;
-}
-
-/* Questions — extended styles */
-.perspektiv-questions {
-    --stagger-delay: 80ms;
-}
-
-.perspektiv-questions li {
-    padding: 16px 0 16px 32px;
-    border-bottom: 1px solid var(--border-color-subtle-light);
-    transition: background-color 0.2s ease;
-}
-
-.perspektiv-questions li:hover {
-    background-color: var(--surface-raised-light);
-}
-
-.dark-mode .perspektiv-questions li:hover {
-    background-color: var(--surface-raised-dark);
-}
-
-.perspektiv-questions li:before {
-    content: "→";
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-/* CTA — extended styles */
-.perspektiv-cta {
-    box-shadow: var(--shadow-md);
-    border: 1px solid var(--border-color-subtle-light);
-}
-
-.dark-mode .perspektiv-cta {
-    border-color: var(--border-color-dark);
-}
-
 /* Spot illustrations — floating, alternating left/right */
 .argument-illustration {
     width: 200px;

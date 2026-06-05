@@ -1,35 +1,10 @@
-/* Section — content sections */
-.perspektiv-section,
-.frame-section,
-.section.container--wide {
-    /* Width/spacing via .section.container--wide */
+/* Info card list — UL containing h3 subheadings (structural selector) */
+ul:has(> li > h3) {
+    list-style: none;
+    padding: 0;
 }
 
-.perspektiv-section h2,
-.frame-section h2,
-.section.container--wide h2 {
-    font-size: 1.6em;
-    margin-bottom: 20px;
-}
-
-.perspektiv-section h3,
-.frame-section h3,
-.section.container--wide h3 {
-    font-size: 1.2em;
-    margin-bottom: 12px;
-}
-
-.perspektiv-section p,
-.frame-section p,
-.section.container--wide p {
-    line-height: 1.7;
-    margin-bottom: 16px;
-}
-
-/* Info box — highlighted content blocks */
-.perspektiv-element,
-.frame-element,
-.info-box {
+ul:has(> li > h3) > li {
     background: var(--box-background-light);
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
@@ -39,16 +14,49 @@
     display: flow-root;
 }
 
-.perspektiv-element:hover,
-.frame-element:hover,
-.info-box:hover {
+ul:has(> li > h3) > li:hover {
     box-shadow: var(--shadow-md);
 }
 
-/* Challenge grid — 2-column card layout */
-.perspektiv-challenges,
-.frame-challenges,
-.grid.grid--2.challenges-grid {
+ul:has(> li > h3) > li h3 {
+    margin-top: 0;
+}
+
+ul:has(> li > h3) > li > p:first-of-type img,
+ul:has(> li > h3) > li img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
+}
+
+.dark-mode ul:has(> li > h3) > li {
+    background: var(--box-background-dark);
+}
+
+/* Section — content sections */
+.section.container--wide {
+    /* Width/spacing via .section.container--wide */
+}
+
+.section.container--wide h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.section.container--wide h3 {
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+
+.section.container--wide p {
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Challenge grid — UL containing h4 subheadings (structural selector, 2-column grid) */
+ul:has(> li > h4) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -57,51 +65,34 @@
     padding: 0;
 }
 
-/* Challenge card — individual challenge */
-.perspektiv-challenge,
-.frame-challenge,
-.challenge-card,
-.perspektiv-challenges > li {
+ul:has(> li > h4) > li {
     background: var(--box-background-light);
     padding: 20px;
     border-radius: var(--radius-lg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.perspektiv-challenge:hover,
-.frame-challenge:hover,
-.challenge-card:hover,
-.perspektiv-challenges > li:hover {
+ul:has(> li > h4) > li:hover {
     box-shadow: var(--shadow-lg);
 }
 
-.perspektiv-challenge h4,
-.frame-challenge h4,
-.challenge-card h4,
-.perspektiv-challenges > li h4 {
+ul:has(> li > h4) > li h4 {
     margin: 0 0 8px 0;
     font-size: 1em;
 }
 
-.perspektiv-challenge p,
-.frame-challenge p,
-.challenge-card p,
-.perspektiv-challenges > li p {
+ul:has(> li > h4) > li p {
     margin: 0;
     font-size: 0.95em;
     opacity: 0.85;
 }
 
 /* Question list — diagnostic questions */
-.perspektiv-questions,
-.frame-questions,
 .question-list {
     list-style: none;
     padding: 0;
 }
 
-.perspektiv-questions li,
-.frame-questions li,
 .question-list li {
     padding: 12px 0;
     border-bottom: 1px solid var(--border-color-light);
@@ -109,8 +100,6 @@
     position: relative;
 }
 
-.perspektiv-questions li:before,
-.frame-questions li:before,
 .question-list li:before {
     content: "→";
     position: absolute;
@@ -119,8 +108,6 @@
 }
 
 /* CTA section — call to action */
-.perspektiv-cta,
-.frame-cta,
 .cta-section {
     text-align: center;
     background: var(--box-background-light);
@@ -128,15 +115,11 @@
     margin-bottom: 40px;
 }
 
-.perspektiv-cta h2,
-.frame-cta h2,
 .cta-section h2 {
     font-size: 1.6em;
     margin-bottom: 16px;
 }
 
-.perspektiv-cta p,
-.frame-cta p,
 .cta-section p {
     font-size: 1.05em;
     line-height: 1.6;
@@ -145,8 +128,6 @@
 }
 
 /* CTA buttons — flex container */
-.perspektiv-cta-buttons,
-.frame-cta-buttons,
 .cta-buttons {
     display: flex;
     gap: 16px;
@@ -155,39 +136,36 @@
 }
 
 /* About section — references */
-.perspektiv-about,
-.frame-about,
 .about-section {
     border-top: 1px solid var(--border-color-light);
 }
 
 /* About link */
-.perspektiv-link,
-.frame-link,
 .about-link {
     display: inline-block;
     margin-top: 16px;
     color: var(--link-color-light);
     text-decoration: underline;
 }
-
-.section-illustration {
+/* Standalone section images — paragraph images whose parent is not a list item */
+:not(li) > p:has(> img:only-child) > img:not([class]) {
     width: 100%;
     max-width: 600px;
     display: block;
     margin: 0 auto 24px;
     border-radius: var(--radius-lg);
+    box-shadow: var(--box-shadow-light);
+}
+
+.dark-mode :not(li) > p:has(> img:only-child) > img:not([class]) {
+    box-shadow: var(--box-shadow-dark);
 }
 
 @media (max-width: 599px) {
-    .perspektiv-challenges,
-    .frame-challenges,
-    .grid.grid--2.challenges-grid {
+    ul:has(> li > h4) {
         grid-template-columns: 1fr;
     }
 
-    .perspektiv-cta-buttons,
-    .frame-cta-buttons,
     .cta-buttons {
         flex-direction: column;
         align-items: center;
@@ -341,32 +319,17 @@
 }
 
 /* Dark mode overrides */
-.dark-mode .perspektiv-element,
-.dark-mode .frame-element,
 .dark-mode .info-box,
-.dark-mode .perspektiv-challenge,
-.dark-mode .frame-challenge,
-.dark-mode .challenge-card,
-.dark-mode .perspektiv-cta,
-.dark-mode .frame-cta,
 .dark-mode .cta-section {
     background: var(--box-background-dark);
 }
 
-.dark-mode .perspektiv-questions li,
-.dark-mode .frame-questions li,
 .dark-mode .question-list li {
     border-bottom-color: var(--border-color-dark);
 }
 
-.dark-mode .perspektiv-about,
-.dark-mode .frame-about,
 .dark-mode .about-section {
     border-top-color: var(--border-color-dark);
-}
-
-.dark-mode .perspektiv-breadcrumb a {
-    color: var(--link-color-dark);
 }
 
 .dark-mode .about-link {
@@ -417,6 +380,62 @@
 }
 .cta-box .cta-buttons {
     margin-top: var(--space-md);
+}
+
+/* Kotter flow — ordered list (UL alternative to include) */
+.kotter-flow-ol {
+    list-style: none;
+    padding: 0;
+    counter-reset: kotter-step;
+}
+
+.kotter-flow-ol > li {
+    counter-increment: kotter-step;
+    position: relative;
+    background: var(--box-background-light);
+    padding: var(--space-lg) var(--space-lg) var(--space-lg) 56px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 8px;
+    display: flow-root;
+    border-left: 4px solid var(--primary-accent);
+}
+
+.kotter-flow-ol > li:not(:last-child)::after {
+    content: "↓";
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--primary-accent);
+    margin-top: var(--space-md);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kotter-flow-ol > li h3 {
+    margin: 0 0 12px 0;
+}
+
+.kotter-flow-ol > li::before {
+    content: counter(kotter-step);
+    position: absolute;
+    left: 12px;
+    top: var(--space-lg);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-accent);
+    color: var(--primary-accent-contrast);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.dark-mode .kotter-flow-ol > li {
+    background: var(--box-background-dark);
 }
 
 @media (max-width: 599px) {
