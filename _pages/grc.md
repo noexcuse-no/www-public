@@ -6,7 +6,7 @@ description: "Hvordan fire perspektiver på ledelse hjelper deg å implementere 
 permalink: /grc/
 hero:
   image: /assets/images/banners/grc-t1-hero.webp
-  alt: "Fire perspektiver som samles i GRC"
+  alt: "Tre abstrakte menneskesilhuetter sett bakfra ved et strukturert veikryss i et nordisk landskap — samarbeid om styring, risiko og samsvar"
 
   title: "GRC"
   intro: "Governance, Risk and Compliance — virksomhets- og risikostyring og samsvarshåndtering. GRC handler om å styre virksomheten med integritet, oversikt og kontroll. Men bare hvis ledelsen forstår at det ikke er et skjema — det er en kulturell egenskap."

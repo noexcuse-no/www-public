@@ -70,7 +70,7 @@ json_ld:
           text: "Gjennom fire praksiser: eksplisitt reframing i møter (stopp opp og velg et nytt perspektiv), rullerende perspektiver i teamet (tilordn rammeverk til ulike personer), tverrfaglig lesing (utfordre eget dominerende perspektiv), og bruk av verktøy som Ledelse 60:2 som tvinger perspektivbytte."
 hero:
   image: /assets/images/banners/hero-perspektiv.webp
-  alt: "Abstrakt illustrasjon av fire overlappende linser — et prisme som splitter lys"
+  alt: "Fire silhuetter i et nordisk landskap — én holder en stein med fire fargesprut mot himmelen, de tre andre samler seg rundt, alle med fargede briller"
 
   title: "Fire perspektiver — se mer enn du ser"
   intro: "De fleste ledere ser verden gjennom ett filter. De beste ser gjennom fire — og vet hvilket som passer når. Multiframe thinking er ikke teori, det er en ferdighet."
