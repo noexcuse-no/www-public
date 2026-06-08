@@ -39,6 +39,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Hero overflow**: `height: 100vh` caused hero to extend below the first viewport by the header's height (~85px). Now using `calc(100vh - var(--header-height))` so next page content starts at the top of the viewport on first scroll.
 - **Header.css**: Removed stale orphaned CSS (flex-direction/gap/padding declarations outside any media query) that broke the cascade.
 
+### Changed
+- **Article body visual rhythm**: Added `background`, `border-radius`, and `box-shadow` to `.article-body` — whole article content now sits as a white card on the blue-gray page background, reducing the contrast jump between page background and in-article cards.
+- **In-article card backgrounds**: Changed info cards, challenge grid items, flow steps, and blockquotes from `var(--box-background-light)` to `var(--surface-subtle-light)` (light mode) and `var(--surface-subtle-dark)` (dark mode) — creates subtle visual hierarchy within the now-white article body container.
+- **Normalized vertical rhythm**: Reduced h2 margin-top from `var(--space-4xl)` (64px) to `var(--space-3xl)` (48px); tightened p/ul/ol margins from `var(--space-lg)` to `var(--space-md)` for more consistent spacing.
+- **Standalone image sizing**: Increased `max-width` from 600px to 680px for better use of the 800px article container.
+
 ## [1.8.0] - 2026-06-05
 
 ### Added

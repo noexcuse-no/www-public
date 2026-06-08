@@ -1,6 +1,18 @@
-/* Article body — section vertical rhythm */
+/* ========================================
+   Article body — content card on page background
+   ======================================== */
+.article-body {
+    background: var(--box-background-light);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-2xl) var(--space-xl);
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+/* Section vertical rhythm inside article body */
 .article-body > h2 {
-    margin-top: var(--space-4xl);
+    margin-top: var(--space-3xl);
 }
 
 .article-body > h2:first-child {
@@ -11,15 +23,25 @@
     margin-top: var(--space-2xl);
 }
 
+.article-body > h3:first-child {
+    margin-top: 0;
+}
+
 .article-body > p,
 .article-body > ul,
 .article-body > ol {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
 }
 
 .article-body > p:has(> img:only-child) {
     margin-top: var(--space-xl);
     margin-bottom: var(--space-xl);
+}
+
+/* Dark mode — article body */
+.dark-mode .article-body {
+    background: var(--box-background-dark);
+    box-shadow: var(--shadow-sm-dark);
 }
 
 /* Info card list — UL containing h3 subheadings (structural selector) */
@@ -29,7 +51,7 @@ ul:has(> li > h3) {
 }
 
 ul:has(> li > h3) > li {
-    background: var(--box-background-light);
+    background: var(--surface-subtle-light);
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
     margin: 24px 0;
@@ -56,7 +78,7 @@ ul:has(> li > h3) > li img {
 }
 
 .dark-mode ul:has(> li > h3) > li {
-    background: var(--box-background-dark);
+    background: var(--surface-subtle-dark);
 }
 
 /* Section — content sections */
@@ -90,7 +112,7 @@ ul:has(> li > h4) {
 }
 
 ul:has(> li > h4) > li {
-    background: var(--box-background-light);
+    background: var(--surface-subtle-light);
     padding: 20px;
     border-radius: var(--radius-lg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -141,7 +163,7 @@ ul:has(> li > h4) > li p {
 /* Standalone section images — paragraph images whose parent is not a list item */
 :not(li) > p:has(> img:only-child) > img:not([class]) {
     width: 100%;
-    max-width: 600px;
+    max-width: 680px;
     display: block;
     margin: 0 auto 24px;
     border-radius: var(--radius-lg);
@@ -327,7 +349,9 @@ ul:has(> li > h4) > li p {
 }
 
 /* Dark mode overrides */
-.dark-mode .info-box,
+.dark-mode .info-box {
+    background: var(--surface-subtle-dark);
+}
 .dark-mode .cta-section {
     background: var(--box-background-dark);
 }
@@ -385,7 +409,7 @@ ul:has(> li > h4) > li p {
 .article-body > ol:has(> li > h3) > li {
     counter-increment: flow-step;
     position: relative;
-    background: var(--box-background-light);
+    background: var(--surface-subtle-light);
     padding: var(--space-lg) var(--space-lg) var(--space-lg) 56px;
     border-radius: var(--radius-lg);
     margin-bottom: 8px;
@@ -428,7 +452,7 @@ ul:has(> li > h4) > li p {
 }
 
 .dark-mode .article-body > ol:has(> li > h3) > li {
-    background: var(--box-background-dark);
+    background: var(--surface-subtle-dark);
 }
 
 /* ========================================
@@ -437,7 +461,7 @@ ul:has(> li > h4) > li p {
 .article-body > blockquote {
     margin: var(--space-xl) 0;
     padding: var(--space-lg) var(--space-xl);
-    background: var(--box-background-light);
+    background: var(--surface-subtle-light);
     border-radius: var(--radius-lg);
     border-left: 4px solid var(--primary-accent);
 }
@@ -454,7 +478,7 @@ ul:has(> li > h4) > li p {
 }
 
 .dark-mode .article-body > blockquote {
-    background: var(--box-background-dark);
+    background: var(--surface-subtle-dark);
 }
 
 /* ========================================
