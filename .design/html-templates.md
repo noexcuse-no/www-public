@@ -100,3 +100,9 @@ Populated from `_data/metadata.yml`. Includes:
 | `onclick="..."`, `onsubmit="..."`, etc. | Inline event handlers are CSP violations, hard to debug | External JS files in `assets/scripts/` with `addEventListener` |
 | `<script>...</script>` inside HTML bodies | Blocks rendering, mixes concerns, no caching | External JS files loaded via `_includes/scripts.html` |
 | `<style>...</style>` in pages | Same as inline styles — CSP + maintainability | Page-specific CSS goes in a dedicated file or utility classes |
+| `{: .class-name }` IAL in Markdown | Inline Attribute Lists couple presentation to content; fragile when content moves | CSS structural selectors targeting element position/content patterns in `.article-body` |
+| `<div>`, `<span>`, `<p>` or any HTML tags in `_pages/*.md` | Mixes markup into content layer; prevents clean previews; difficult to maintain | Pure kramdown markdown. Complex patterns (cards, grids, hero) rendered via `_includes/` in templates, not in page content. |
+
+**Critical rule: Zero IAL, zero HTML tags in `_pages/*.md` files.** All styling must come from CSS structural selectors in `.article-body`. The only exceptions are:
+- `{% include ... %}` tags for component injection (frame-cards.html, profiles.html, cta-section.html)
+- Heading anchor IDs where necessary for intra-page links (minimize)

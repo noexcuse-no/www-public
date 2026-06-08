@@ -1,6 +1,8 @@
 ---
 class: product
-layout: page
+layout: product
+show_benefit_cards: true
+show_step_cards: true
 title: "Ledelse 60:2 — Orientering for ledergruppen"
 description: "Tidseffektiv orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
 permalink: /ledelse-60-2/
@@ -51,32 +53,19 @@ json_ld:
             description: "Kontinuerlig oppfølging og coaching for organisasjonsvekst"
 ---
 
-[Bestill Ledelse 60:2](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled){: .product-cta}
-[Hvordan fungerer det? ↓](#hvordan){: .product-cta .product-cta--spaced}
-{: style="text-align: center; padding-top: var(--space-xl);"}
-
-## Fire gode grunner
-{: .landing-benefits}
-
-{% include benefit-cards.html %}
-
-## Hvordan gjør vi det?
-{: #hvordan .landing-process}
-
-{% include step-cards.html %}
+[Bestill Ledelse 60:2](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
+[Hvordan fungerer det? ↓](#hvordan)
 
 ## Historien bak metoden
-{: .landing-story}
 
 {{ page.story }}
 
 ![Tretrinns prosess for ledelseskartlegging](/assets/images/banners/ledelse-60-2-t2-prosessflyt.webp)
 
-[Les mer om metoden →](/metode/){: .product-cta}
+[Les mer om metoden →](/metode/)
 
 ## Hvordan jobber dere med bedre ledelse?
-{: .landing-cta}
 
 Ta en uforpliktende samtale med oss, så finner vi ut om Ledelse 60:2 er rett for dere.
 
-[Velg et tidspunkt](https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no){: .product-cta .product-cta--large}
+[Velg et tidspunkt](https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no)

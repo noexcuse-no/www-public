@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% include hero.html %}
+
+{% if page.show_benefit_cards %}
+  {% include benefit-cards.html %}
+{% endif %}
+
+{% if page.show_step_cards %}
+  {% include step-cards.html %}
+{% endif %}
+
+<div class="section container--wide article-body animate-on-scroll fade-in-up">
+{{ content }}
+</div>
+
+{% include cta-section.html %}

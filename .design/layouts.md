@@ -101,22 +101,25 @@ section.section--spacious
 
 ## Page Templates (Jekyll layouts)
 
-### `page.html` — Standard side
+### `article.html` — Standard side og perspektivartikler
 ```
-── main
+── hero (if page.hero)
+── .article-body
     └─ {{ content }}  ← Markdown eller includes
+── cta-section (if page.cta)
+── frame navigation (if page.frame_id)
+── cases-cards (if page.show_cases)
+── references (if page.show_references)
 ```
-*Denne endres ikke. Innholdet definerer sin egen struktur via HTML/markdown.*
+**Enhetlig layout for alle `class:article`- og `class:frame`-sider.** Håndterer hero-banner, innholdsbody, CTA, rammenavigasjon og referanser med betingede blokker. Støtter `hero.image`, `hero.title`, `hero.intro` fra frontmatter. For perspektivsider: `hero.show_frame_nav: true` aktiverer navigasjon mellom rammer.
 
-### `perspektiv.html` — Perspektivartikkel
-Gitt dagens struktur bør den kunne forenkles fra custom CSS til:
+### `product.html` — Produkt- og stegsider
 ```
-section.section--hero.container           → hero (breadcrumb, h1, intro)
-  for hver innholdsblokk:
-    section.section.container--wide       → brødtekst
-    section.section.container--wide .grid → elementer/utfordringer
-    section.section--spacious.container   → CTA
+── hero (if page.hero)
+── .article-body
+    └─ {{ content }}  ← Markdown med {% include products.html %}
 ```
+Produktlayout for `class:product`- og `class:step`-sider. Benytter `products.html`-include for å rendre produktkort, fordeler og steg basert på frontmatter-felt som `benefits`, `process_steps`, `cta_a/b/c`.
 
 ### `home.html` — Forside
 ```

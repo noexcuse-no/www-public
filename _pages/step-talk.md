@@ -1,6 +1,6 @@
 ---
 class: step
-layout: page
+layout: product
 category: step
 step_number: 1
 title: "1. Uforpliktende samtale"

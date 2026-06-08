@@ -23,32 +23,6 @@
     font-size: 1.2em;
 }
 
-/* Spot illustrations — floating, alternating left/right */
-.argument-illustration {
-    width: 200px;
-    height: 200px;
-    border-radius: var(--radius-lg);
-    margin: 0.5em 1em 0.5em 0;
-    float: left;
-    object-fit: cover;
-}
-
-.argument-illustration--right {
-    float: right;
-    margin: 0.5em 0 0.5em 1em;
-}
-
-@media (max-width: 599px) {
-    .argument-illustration,
-    .argument-illustration--right {
-        float: none;
-        width: 100%;
-        aspect-ratio: 1;
-        height: auto;
-        margin: var(--space-lg) 0;
-    }
-}
-
 /* Hero frame navigation — CTA overlay at bottom of hero banner */
 .hero-frame-nav {
     grid-area: 1 / 1;

@@ -1,6 +1,6 @@
 ---
 class: step
-layout: page
+layout: product
 category: step
 step_number: 3
 title: "3. Rapport og anbefalinger"

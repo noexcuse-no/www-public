@@ -111,27 +111,7 @@ ul:has(> li > h4) > li p {
     opacity: 0.85;
 }
 
-/* Question list — diagnostic questions */
-.question-list {
-    list-style: none;
-    padding: 0;
-}
-
-.question-list li {
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border-color-light);
-    padding-left: 24px;
-    position: relative;
-}
-
-.question-list li:before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: var(--primary-accent);
-}
-
-/* CTA section — call to action */
+/* CTA section — call to action (used by cta-section.html include) */
 .cta-section {
     text-align: center;
     background: var(--box-background-light);
@@ -151,25 +131,12 @@ ul:has(> li > h4) > li p {
     opacity: 0.85;
 }
 
-/* CTA buttons — flex container */
+/* CTA buttons — flex container (used by cta-section.html, tag.html) */
 .cta-buttons {
     display: flex;
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-/* About section — references */
-.about-section {
-    border-top: 1px solid var(--border-color-light);
-}
-
-/* About link */
-.about-link {
-    display: inline-block;
-    margin-top: 16px;
-    color: var(--link-color-light);
-    text-decoration: underline;
 }
 /* Standalone section images — paragraph images whose parent is not a list item */
 :not(li) > p:has(> img:only-child) > img:not([class]) {
@@ -348,73 +315,58 @@ ul:has(> li > h4) > li p {
     background: var(--box-background-dark);
 }
 
-.dark-mode .question-list li {
-    border-bottom-color: var(--border-color-dark);
-}
-
-.dark-mode .about-section {
-    border-top-color: var(--border-color-dark);
-}
-
-.dark-mode .about-link {
-    color: var(--link-color-dark);
-}
-
 /* ========================================
-   GRC page — table styles
+   Table styles — structural for article-body
    ======================================== */
-.grc-table {
+.article-body > table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.95em;
 }
-.grc-table th,
-.grc-table td {
+.article-body > table th,
+.article-body > table td {
     padding: 12px 16px;
     text-align: left;
     border-bottom: 1px solid var(--border-color-subtle-light);
     vertical-align: top;
 }
-.grc-table th {
+.article-body > table th {
     font-weight: 600;
     background: var(--surface-subtle-light);
 }
-.grc-table tr:last-child td {
+.article-body > table tr:last-child td {
     border-bottom: none;
 }
-.dark-mode .grc-table th {
+.dark-mode .article-body > table th {
     background: var(--surface-subtle-dark);
 }
-.dark-mode .grc-table th,
-.dark-mode .grc-table td {
+.dark-mode .article-body > table th,
+.dark-mode .article-body > table td {
     border-color: var(--border-color-dark);
 }
 
-.cta-box {
-    background: var(--surface-subtle-light);
-    border-radius: var(--radius-lg);
-    padding: var(--space-xl);
-    text-align: center;
-}
-.dark-mode .cta-box {
-    background: var(--surface-subtle-dark);
-}
-.cta-box h3 {
-    margin-top: 0;
-}
-.cta-box .cta-buttons {
-    margin-top: var(--space-md);
+@media (max-width: 599px) {
+    .article-body > table th,
+    .article-body > table td {
+        padding: 8px 10px;
+        font-size: 0.85em;
+    }
+    .article-body > table td:last-child {
+        white-space: nowrap;
+    }
 }
 
-/* Kotter flow — ordered list (UL alternative to include) */
-.kotter-flow-ol {
+/* ========================================
+   Ordered list with h3 headings — flow steps (structural)
+   ======================================== */
+.article-body > ol:has(> li > h3) {
     list-style: none;
     padding: 0;
-    counter-reset: kotter-step;
+    counter-reset: flow-step;
 }
 
-.kotter-flow-ol > li {
-    counter-increment: kotter-step;
+.article-body > ol:has(> li > h3) > li {
+    counter-increment: flow-step;
     position: relative;
     background: var(--box-background-light);
     padding: var(--space-lg) var(--space-lg) var(--space-lg) 56px;
@@ -424,7 +376,7 @@ ul:has(> li > h4) > li p {
     border-left: 4px solid var(--primary-accent);
 }
 
-.kotter-flow-ol > li:not(:last-child)::after {
+.article-body > ol:has(> li > h3) > li:not(:last-child)::after {
     content: "↓";
     display: block;
     text-align: center;
@@ -437,12 +389,12 @@ ul:has(> li > h4) > li p {
     transform: translateX(-50%);
 }
 
-.kotter-flow-ol > li h3 {
+.article-body > ol:has(> li > h3) > li h3 {
     margin: 0 0 12px 0;
 }
 
-.kotter-flow-ol > li::before {
-    content: counter(kotter-step);
+.article-body > ol:has(> li > h3) > li::before {
+    content: counter(flow-step);
     position: absolute;
     left: 12px;
     top: var(--space-lg);
@@ -458,17 +410,78 @@ ul:has(> li > h4) > li p {
     font-size: 0.9em;
 }
 
-.dark-mode .kotter-flow-ol > li {
+.dark-mode .article-body > ol:has(> li > h3) > li {
     background: var(--box-background-dark);
 }
 
-@media (max-width: 599px) {
-    .grc-table th,
-    .grc-table td {
-        padding: 8px 10px;
-        font-size: 0.85em;
-    }
-    .grc-table td:last-child {
-        white-space: nowrap;
-    }
+/* ========================================
+   Blockquote — structural styling for article-body
+   ======================================== */
+.article-body > blockquote {
+    margin: var(--space-xl) 0;
+    padding: var(--space-lg) var(--space-xl);
+    background: var(--box-background-light);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--primary-accent);
+}
+
+.article-body > blockquote p {
+    font-size: 1.05em;
+    font-style: italic;
+    margin: 0 0 8px;
+}
+
+.article-body > blockquote cite {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.dark-mode .article-body > blockquote {
+    background: var(--box-background-dark);
+}
+
+/* ========================================
+   Small icon images (value cards, ethics columns) — structural
+   Override the generic standalone image max-width for icon-sized images
+   ======================================== */
+:not(li) > p:has(> img:only-child) > img[src*="verdi-"],
+:not(li) > p:has(> img:only-child) > img[src*="metode-t4"] {
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    margin: 24px auto 12px;
+    border-radius: var(--radius-md);
+    box-shadow: none;
+    object-fit: cover;
+}
+
+/* Value card heading + text after icon image */
+.article-body > p:has(> img[src*="verdi-"]) + h3 {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0 auto 8px;
+}
+
+.article-body > p:has(> img[src*="verdi-"]) + h3 + p {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0 auto 24px;
+    max-width: 400px;
+    opacity: 0.8;
+}
+
+/* Ethics column heading + text after icon image */
+.article-body > p:has(> img[src*="metode-t4"]) + h4 {
+    text-align: center;
+    font-size: 1em;
+    margin: 0 auto 8px;
+}
+
+.article-body > p:has(> img[src*="metode-t4"]) + h4 + p {
+    text-align: center;
+    font-size: 0.85em;
+    line-height: 1.4;
+    margin: 0 auto 24px;
+    opacity: 0.8;
 }

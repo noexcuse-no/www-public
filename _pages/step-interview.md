@@ -1,6 +1,6 @@
 ---
 class: step
-layout: page
+layout: product
 category: step
 step_number: 2
 title: "2. To timers strukturert intervju"

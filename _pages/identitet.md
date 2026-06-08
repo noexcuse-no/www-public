@@ -1,6 +1,6 @@
 ---
 class: frame
-layout: perspektiv
+layout: article
 permalink: /identitet/
 frame_id: "identitet"
 category: "frame"
@@ -25,9 +25,9 @@ json_ld:
         name: "Organisasjonskultur"
 
 hero:
-  banner_image: "assets/images/banners/perspektiv-identitet.webp"
+  image: "assets/images/banners/perspektiv-identitet.webp"
   alt: "Identitetsperspektivet i ledelse"
-
+  title: "Identitetsperspektivet i ledelse"
   intro: "Handler om å se organisasjonen som en kultur — med sine ritualer, historier og verdier. Det som betyr noe, er ikke bare hva som skjer, men hva det betyr."
 
 grc_description: "Organisasjonens identitet, verdibasert etterlevelse, langsiktighet. GRC som kun er regler uten identitetsforankring, blir overfladisk. En organisasjon som ikke har «integritet» i sin identitet, vil alltid finne en snarvei."
@@ -45,7 +45,7 @@ Dave Logan og medforfattere beskriver i «Tribal Leadership» fem stadier organi
 
 ## De 3 hovedelementene
 
-![Illustrasjon: Kultur og språk](/assets/images/banners/spot-identitet-verdier.webp){: .argument-illustration}
+![Illustrasjon: Kultur og språk](/assets/images/banners/spot-identitet-verdier.webp)
 
 ### Kultur og språk
 
@@ -55,7 +55,7 @@ Kultur lever i språket. Hvordan folk snakker om arbeidet, om lederne, om kunden
 
 **Tegn på kultur og språk-problemer:** «Jeg»-dominerende språk. Klaging på møter, kunder, ledelse. Historiefortelling preget av «de» vs. «vi».
 
-![Illustrasjon: Verdier og mening](/assets/images/banners/spot-identitet-ritualer.webp){: .argument-illustration .argument-illustration--right}
+![Illustrasjon: Verdier og mening](/assets/images/banners/spot-identitet-ritualer.webp)
 
 ### Verdier og mening
 
@@ -65,7 +65,7 @@ Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som bel
 
 **Tegn på verdier og mening-problemer:** Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert.
 
-![Illustrasjon: Ritualer og identitet](/assets/images/banners/spot-identitet-fortelling.webp){: .argument-illustration}
+![Illustrasjon: Ritualer og identitet](/assets/images/banners/spot-identitet-fortelling.webp)
 
 ### Ritualer og identitet
 
@@ -77,7 +77,7 @@ Ritualer er de gjentatte handlingene som holder kulturen i live: møter, feiring
 
 ![Illustrasjon av de 3 hovedelementene i identitetsperspektivet](/assets/images/banners/illustrasjon-identitet-hovedelementer.webp)
 
-![Illustrasjon: Hvorfor identitetsperspektivet betyr noe for ledergruppen](/assets/images/banners/spot-identitet-lederverdi.webp){: .argument-illustration .argument-illustration--right}
+![Illustrasjon: Hvorfor identitetsperspektivet betyr noe for ledergruppen](/assets/images/banners/spot-identitet-lederverdi.webp)
 
 ## Hvorfor identitetsperspektivet betyr noe for ledergruppen
 
@@ -91,25 +91,25 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
 
 ![Illustrasjon av vanlige identitetsrelaterte utfordringer](/assets/images/banners/illustrasjon-identitet-utfordringer.webp)
 
-*   ![](/assets/images/banners/identitet-t4-empty-values.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/identitet-t4-empty-values.webp "")
+
     #### Tomme verdier
-    
+
     Verdier som ikke reflekterer faktisk atferd. Konsulentlede verdiprogrammer som aldri ble forankret.
-*   ![](/assets/images/banners/identitet-t4-individual-dominance.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/identitet-t4-individual-dominance.webp "")
+
     #### Individuell dominans
-    
+
     En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Individualistisk tankegang som demper kollektiv vekst.
-*   ![](/assets/images/banners/identitet-t4-storylessness.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/identitet-t4-storylessness.webp "")
+
     #### Historieløshet
-    
+
     En organisasjon uten fortellinger — nye folk får ingen kontekst. Kulturen er usynlig fordi den aldri er blitt eksplisitt.
-*   ![](/assets/images/banners/identitet-t4-change-fatigue.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/identitet-t4-change-fatigue.webp "")
+
     #### Forandringstretthet
-    
+
     Alle endringsinitiativer har feilet før. Folk har sluttet å tro på «nye initiativer». Kynisme som dominerer tone.
 
 ## Spørsmål identitetsperspektivet kan hjelpe dere å besvare
@@ -126,8 +126,8 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
 
 Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gjennomfør en uforpliktende samtale for å lære mer om metoden.
 
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthensted){: .product-cta}
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/){: .product-cta .product-cta--secondary}
+[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthensted)
+[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ## Det teoretiske grunnlaget
 
@@ -135,4 +135,4 @@ Identitetsperspektivet i Ledelse 60:2 bygger på Bolman & Deals symbolske ramme,
 
 Logan beskriver kulturstadier som beskrivende — ikke normative. Ledelse 60:2 identifiserer hvor organisasjonen er, ikke hvor den bør være. Det handler om innsikt, ikke evaluering.
 
-[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .about-link}
+[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/)

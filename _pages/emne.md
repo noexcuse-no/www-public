@@ -1,6 +1,6 @@
 ---
 class: article
-layout: page
+layout: article
 title: "Emneoversikt — Artikler om ledelse"
 description: "Utforsk artikler om ledelse, organisasjonskultur, endringsledelse og mer. Sortert etter emne."
 permalink: /emne/
@@ -13,9 +13,8 @@ hero:
 {% include tag-cloud.html %}
 
 ## Vil du vite mer?
-{: .cta-section}
 
 Vi hjelper ledergrupper med å navigere komplekse organisasjonsutfordringer. Bestill en uforpliktende samtale.
 
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/){: .product-cta}
-[Vår metodikk →](/metode/){: .product-cta .product-cta--secondary}
+[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/)
+[Vår metodikk →](/metode/)

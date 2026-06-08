@@ -1,6 +1,6 @@
 ---
 class: article
-layout: page
+layout: article
 title: "Om metodikk"
 description: "«Ledelse 60:2» er en intervjubasert kartleggingsmetode for ledergrupper. Les om det teoretiske grunnlaget, kunnskapsproduksjon og hvorfor vi gjør dette."
 permalink: /metode/
@@ -36,9 +36,6 @@ json_ld:
 ---
 
 ## 1 — Teoretisk grunnlag for tilnærmingen
-{: #teoretisk .science-section}
-
-<div class="science-section-body" markdown="1">
 
 Med intervjuer samler vi da om hvordan medlemmer av ledergrupper ser på sin egen funksjon. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kunnskapsproduksjon om kultur og beslutningsvitenskap - som gir den høye fleksible anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.
 
@@ -50,84 +47,49 @@ De fire perspektivene — eller "rammene" som det kalles på engelsk, derfor "ra
 
 {% include frame-cards.html %}
 
-</div>
-
 ## 2 — Kunnskapsproduksjon i praksis
-{: #forskning .science-section}
-
-<div class="science-section-body" markdown="1">
 
 «Ledelse 60:2» er ikke bare en tjeneste som vi tilbyr organisasjoner for å hjelpe med å forbedre ledelsesfunksjonen, det er en metode for å *utvikle ny kunnskap om nordisk ledelses- og styringspraksis*.
-{: .lead}
 
 ![Kunnskapsproduksjon i praksis](/assets/images/banners/metode-t3-forskning.webp)
 
 ### Hver gjennomføring styrker kunnskapsgrunnlaget
-{: .science-highlight}
 
 Hvert intervju produserer strukturerte, sammenliknbare data som anonymiseres og inngår i et voksende datasett. Dette er et viktig moment for oss, og former både salg og gjennomføring.
 
 > «NO EXCUSE AS har rett til å vederlagsfritt anvende anonymiserte data fra bistanden og arbeidsresultatet til forskning i tråd med generelle og fagspesifikke forskningsetiske retningslinjer som bestemt av De nasjonale forskningsetiske komiteene.»
-> {: .science-quote}
+>
 > — Standard avtalevilkår § 3.3
-{: .science-quote}
 
 ### Norske forskningsetiske standarder
-{: .science-divider}
 
 Databehandlingen følger **De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer** (2014).
-
-<div class="ethics-columns" markdown="1">
-
-<div class="ethics-column" markdown="1">
 
 ![](/assets/images/banners/metode-t4-respekt.webp)
 #### Respekt
 Informantene behandles med verdighet og integritet
 
-</div>
-
-<div class="ethics-column" markdown="1">
-
 ![](/assets/images/banners/metode-t4-konsekvenser.webp)
 #### Gode konsekvenser
 Forskningen skal ha positiv nytteverdi for deltakerne og samfunnet
-
-</div>
-
-<div class="ethics-column" markdown="1">
 
 ![](/assets/images/banners/metode-t4-rettferdighet.webp)
 #### Rettferdighet
 Prosjektet er rettferdig utformet og gjennomført
 
-</div>
-
-<div class="ethics-column" markdown="1">
-
 ![](/assets/images/banners/metode-t4-integritet.webp)
 #### Integritet
 Prosjektet følger anerkjente normer og opptrer ansvarlig
-
-</div>
-
-</div>
 
 **Forskningsetikkloven § 4** bestemmer at "Forskere skal opptre med aktsomhet for å sikre at all forskning skjer i henhold til anerkjente forskningsetiske normer. Dette gjelder også under forberedelser til forskning, rapportering av forskning og andre forskningsrelaterte aktiviteter."
 
 Vi følger **NESH-retningslinjene** (2021, 5. utg.) og anvender [et standardskjema (link)](https://noexcuse.no/assets/samtykke.pdf) for å sikre at samtykke fra personer er informert, frivillig, utvetydig og dokumentert. Det får ingen konsekvenser for den enkelte eller for virksomheten om enkeltpersoner ikke ønsker å bidra, det betyr bare at de ikke inngår som datakilde og kun eventuelt bidrar lokalt innenfor oppdraget hos virksomheten.
 
 ### Metoden blir bedre jo flere som bruker den
-{: .science-highlight}
 
 Standard avtalevilkår § 3.1 fastslår at kunden eier resultatene av bistanden, men at No Excuse AS «kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale». Dette er et prinsipp som kommer alle kunder til gode - slik blir vi ledere i stand til å sikkert sammenlikne seg selv med praksisen i andre organisasjoner. Metodegrunnlaget forbedres kontinuerlig — ikke gjennom teoretiske antakelser, men gjennom praktisk erfaring fra virkelige ledergrupper.
 
-</div>
-
 ## 3 — Hvorfor vi gjør dette
-{: #hvorfor .science-section}
-
-<div class="science-section-body" markdown="1">
 
 No Excuse AS ble stiftet i juni 2025. Forretningsidéen kom fra erfaring med å bistå virksomheter med etterlevelse av ISO-rammeverk, lov- og kundekrav. Innsikten var at god ledelse ofte blir erstattet av tungrodd administrasjon og byråkrati. Det er et kjerneproblem dersom virksomheten skal være i stand til å møte usikkerhet og nye muligheter. Det er intensjonen bak en regel som gjør den relevant og verdifull, det er liten vits i å "simulere" moden ledelse.
 
@@ -135,10 +97,7 @@ No Excuse AS ble stiftet i juni 2025. Forretningsidéen kom fra erfaring med å 
 
 Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspektiver — slik Bolman & Deal har argumentert for i over 40 år. De kvalitative metodene i «Ledelse 60:2» er vårt svar på en tid preget av KI, mistillit og helautomatiske løsninger. Ved å komme mennesker i møte og legge til rette for å lære av hverandre styrker vi det unikt menneskelige. Dette gjenspeiles også i hvordan vi har en skeptisk og kritisk innstilling til bruk av maskinlæring og maskingenerert innhold i det metodiske arbeidet. En statistisk algoritme kan ikke "tenke" eller "forstå".
 
-</div>
-
 ## Referanser
-{: #referanser .references}
 
 - Blanchard, K. & Barrett, C. (2011). *Lead with LUV: A Different Way to Create Real Success*. Pearson Education.
 - Bolman, L. G. & Deal, T. E. (2017). *Reframing Organizations: Artistry, Choice, and Leadership* (6. utg.). Wiley.
