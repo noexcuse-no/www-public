@@ -10,6 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **HTML→MD refactor — Page content migration**: Extracted all inline HTML from 22 `_pages/*.md` files into includes and markdown body. Created 20 new `_includes/` components (benefit-cards, step-cards, cases-cards, frame-cards, grc-perspective-cards, science-section, ethics-columns, science-highlight, science-quote, science-divider, section-illustration, framework-illustration, section-wrapper, section-container, info-box, challenge-card, challenge-grid, question-list, cta-section, tag-cloud, avtate-section, about-values, about-section, about-team, kotter-flow). Consolidated CTA, Hero, Section patterns (Phase 3). Inline styling tags (`<a class="product-cta">`, `<p class="lead">`) converted to kramdown IAL syntax in captures with `markdownify_body` support.
 
+## [Unreleased]
+
+### Fixed
+- **CTA buttons (R24.1)**: Added `cta:` frontmatter to home page and Ledelse 60:2; wired `cta-section.html` include into `home.html` layout
+- **Blank content below hero (R24.2)**: Removed `.animate-on-scroll` scroll-opacity system (IntersectionObserver failure left content at `opacity: 0` permanently). Preserved brand entrance animations and parallax hero effect.
+- **Avtale page images (R24.3)**: Fixed kramdown empty title syntax on 6 section dividers; added `.print-only` logo wrapper with screen/print CSS rules
+- **Card grid light mode (R24.4)**: Added `.info-box` light mode background, padding, border-radius in `article.css`
+- **Cross-linking scan (R24.5)**: 5 new internal links across makt, forankring, generativ-ki pages (+ earlier om_metode/om_oss → /perspektiv/)
+- **Illustration coverage audit (R24.6)**: Completed — all pages have adequate coverage (4–22 images per page); no high-impact gaps
+- **Mobile hamburger menu (R24.7)**: Revised to full-screen modal overlay with close button, body scroll lock, Escape-to-close; featured CTA stays visible outside overlay
+- **GRC hero image (R24.9)**: Replaced with user-provided 4K PNG → WebP (393 KB, 3840×2160); original preserved in `.design/graphics/originals/banners/`
+
 ## [1.8.1] - 2026-06-08
 
 ### Added
