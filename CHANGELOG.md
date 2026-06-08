@@ -22,6 +22,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Mobile hamburger menu (R24.7)**: Revised to full-screen modal overlay with close button, body scroll lock, Escape-to-close; featured CTA stays visible outside overlay
 - **GRC hero image (R24.9)**: Replaced with user-provided 4K PNG → WebP (393 KB, 3840×2160); original preserved in `.design/graphics/originals/banners/`
 
+## [1.9.0] - 2026-06-08
+
+### Added
+- **Questions review component**: Interactive question section with modal overlay, AI provider selection, clipboard copy, and cookie-based preference save. Created `_includes/questions.html` (Liquid include, stagger-animation list with click-to-open), `assets/css/components/questions.css` (modal, provider grid, dark mode, copy button, 44px touch targets), `assets/scripts/review-questions.js` (modal open/close, 7 AI providers with SVG icons, clipboard API + fallback, prompt builder with page context, cookie persistence 365d).
+- **Frontmatter-driven architecture**: Questions data now lives in page frontmatter (`questions_title:` + `questions:` YAML array) — the include is rendered exactly once in `_layouts/article.html` gated on `page.questions`. Eliminates per-page duplication.
+- **10 pages migrated**: All article pages with question content (struktur, mennesker, påvirkning, identitet, ledelse_tillit, ledelse_forankring, ledelse_usikkerhet, ledelse_generativ-ki, ledelse_triader, ledelse_makt) now load questions from frontmatter via layout — zero manual include calls.
+- **CSS/JS wiring**: `questions.css` in `_includes/styles.html` line 18; `review-questions.js` (defer) in `_includes/scripts.html` line 6.
+- **3 additional pages with questions**: `grc.md` (5 GRC-modning spørsmål), `ledelse_perspektiv.md` (5 multiframe-kapabilitet spørsmål), `om_metode.md` (5 diagnostisk praksis spørsmål). All rendered via the same frontmatter-driven layout include.
+
+### Changed
+- **Questions architecture pivot**: Moved from per-page `{% include questions.html %}` calls with inline pipe-separated params to frontmatter-driven YAML arrays rendered once in the article layout. All 9 stale per-page include calls removed. `ledelse_makt.md` hardcoded `<ul>` question section converted to frontmatter (section removed).
+
 ## [1.8.1] - 2026-06-08
 
 ### Added

@@ -50,6 +50,13 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens KI-modenhet"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen forholder seg til teknologi, endring og menneskelig dømmekraft. Bestill en uforpliktende samtale for å lære mer."
+questions_title: "Spørsmål for å evaluere KI-ledelsen"
+questions:
+  - "Hvem i organisasjonen har ansvaret for kvaliteten på KI-output — og vet de det?"
+  - "Hvordan vet du at KI-svar faktisk er riktige, ikke bare overbevisende?"
+  - "Finnes det beslutninger som nå tas av KI uten at et menneske ser på dem?"
+  - "Måler du effektivitet med KI, eller bare aktivitet?"
+  - "Hva skjer når KI gir feil svar — hvem bærer konsekvensen?"
 ---
 
 ## Lederbristen i KI-æraen
@@ -166,10 +173,3 @@ Den som kontrollerer KI, former retningen. Det er et spørsmål om [makt](/makt/
 
     Team produserer mer output med KI, men feilraten øker. Ingen har lagt merke til det fordi ingen måler det.
 
-## Spørsmål for å evaluere KI-ledelsen
-
-- Hvem i organisasjonen har ansvaret for kvaliteten på KI-output — og vet de det?
-- Hvordan vet du at KI-svar faktisk er riktige, ikke bare overbevisende?
-- Finnes det beslutninger som nå tas av KI uten at et menneske ser på dem?
-- Måler du effektivitet med KI, eller bare aktivitet?
-- Hva skjer når KI gir feil svar — hvem bærer konsekvensen?

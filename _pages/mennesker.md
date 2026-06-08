@@ -35,6 +35,13 @@ color_accent: "#D4A836"
 card_description: "Tillit, motivasjon, relasjoner, medvirkning"
 detail: "Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at «servant leadership» er et konkurransefortrinn."
 weight: 2
+questions_title: "Spørsmål menneskeperspektivet kan hjelpe dere å besvare"
+questions:
+  - "Ville de ansatte si at de blir sett og verdsatt på arbeidsplassen?"
+  - "Er det trygt å si ifra om problemer uten å bli straffet?"
+  - "Har vi en kultur preget av samarbeid — eller er hver for seg?"
+  - "Finnes det historier som fortelles om hvordan vi behandler hverandre?"
+  - "Tilbyr vi muligheter for læring og karriereutvikling?"
 ---
 
 ## Hva er menneskeperspektivet?
@@ -125,14 +132,6 @@ Gode rutiner og klare roller er ikke det motsatte av tillitsbasert ledelse — d
     #### For mye volum, for lite mening
 
     Folk oversvømmes med oppgaver men gidder ikke lenger å engasjere seg i hvorfor de gjør jobben. Arbeidet er blitt en check-in, ikke en bidrag.
-
-## Spørsmål menneskeperspektivet kan hjelpe dere å besvare
-
-- Ville de ansatte si at de blir sett og verdsatt på arbeidsplassen?
-- Er det trygt å si ifra om problemer uten å bli straffet?
-- Har vi en kultur preget av samarbeid — eller er hver for seg?
-- Finnes det historier som fortelles om hvordan vi behandler hverandre?
-- Tilbyr vi muligheter for læring og karriereutvikling?
 
 ![Illustrasjon for kartlegging av mennesker](/assets/images/banners/illustrasjon-mennesker-cta.webp)
 

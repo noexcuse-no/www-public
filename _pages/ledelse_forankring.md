@@ -58,6 +58,13 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens beslutningsprosesser"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan makt, interesser og kognitiv bias påvirker beslutninger i ledergruppen. Bestill en uforpliktende samtale."
+questions_title: "Spørsmål for å forbedre beslutningstaking"
+questions:
+  - "Hvem hadde reell innflytelse på de siste tre viktige beslutningene — og var det de som burde hatt det?"
+  - "Når ble en beslutning tatt mot bedre vitende — og hvorfor?"
+  - "Hvordan håndterer vi uenighet når den oppstår?"
+  - "Har vi noen som bevisst utfordrer premissene våre?"
+  - "Når ble siste gang en beslutning omgjort på grunn av nye facts?"
 ---
 
 ## Hvorfor ledere ofte tar dårlige beslutninger
@@ -151,10 +158,3 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
     Vi tror vi forstår mer enn vi faktisk gjør. «This time is different» blir gjentatt til tross for klare bevis på motsatt.
 
-## Spørsmål for å forbedre beslutningstaking
-
-- Hvem hadde reell innflytelse på de siste tre viktige beslutningene — og var det de som burde hatt det?
-- Når ble en beslutning tatt mot bedre vitende — og hvorfor?
-- Hvordan håndterer vi uenighet når den oppstår?
-- Har vi noen som bevisst utfordrer premissene våre?
-- Når ble siste gang en beslutning omgjort på grunn av nye facts?

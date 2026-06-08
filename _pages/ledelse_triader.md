@@ -13,6 +13,13 @@ json_ld:
       type: "Organization"
       name: "No Excuse AS"
     citation:
+questions_title: "Spørsmål for å kartlegge triader i din organisasjon"
+questions:
+  - "Hvem i teamet ditt ville fortsette å samarbeide effektivt hvis du forsvant i morgen?"
+  - "Er viktige relasjoner i organisasjonen din dyader eller triader? Hvordan vet du det?"
+  - "Hvem tjener på at to personer i organisasjonen ikke snakker sammen?"
+  - "Hvilken informasjon er fanget i par-relasjoner og når aldri frem til dem som trenger den?"
+  - "Når introduserte du sist to personer for hverandre og trakk deg tilbake?"
       - "@type": "Book"
         name: "Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization"
         author:
@@ -198,10 +205,3 @@ Triader er ikke en magisk løsning. De kan også gå galt, og når de gjør det,
 
 Felles for alle disse feilmodiene er at de oppstår når kulturen ikke er moden nok til å bære triaden. En organisasjon som fortsatt er preget av Stage 3-tenkning («jeg er best») vil ha store problemer med å opprettholde ekte triader. Triader er et symptom på kulturmodenhet, ikke en snarvei til den.
 
-## Spørsmål for å kartlegge triader i din organisasjon
-
-- Hvem i teamet ditt ville fortsette å samarbeide effektivt hvis du forsvant i morgen?
-- Er viktige relasjoner i organisasjonen din dyader eller triader? Hvordan vet du det?
-- Hvem tjener på at to personer i organisasjonen ikke snakker sammen?
-- Hvilken informasjon er fanget i par-relasjoner og når aldri frem til dem som trenger den?
-- Når introduserte du sist to personer for hverandre og trakk deg tilbake?

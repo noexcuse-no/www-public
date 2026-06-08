@@ -33,6 +33,13 @@ json_ld:
     dateModified: "2025-06-01"
     sameAs:
       - "https://noexcuse.no"
+questions_title: "Spørsmål for å vurdere deres diagnostiske praksis"
+questions:
+  - "Hvordan vet dere at dere har en korrekt forståelse av organisasjonens utfordringer — ikke bare en gjengs oppfatning?"
+  - "Hvilke antakelser om organisasjonen har dere ikke testet på lenge?"
+  - "Når ble siste gang en beslutning ble påvirket av systematisk innsamlet data, ikke bare magefølelse?"
+  - "Finnes det områder i organisasjonen der dere opererer med udokumenterte sannheter som ingen lenger utfordrer?"
+  - "Hvilket av de fire perspektivene (struktur, mennesker, påvirkning, identitet) er dere svakest på — og hva koster det?"
 ---
 
 ## 1 — Teoretisk grunnlag for tilnærmingen

@@ -1,0 +1,302 @@
+/* ========================================
+   Review Questions — interactive question list + modal
+   ======================================== */
+
+/* ── Question List ──────────────────────── */
+.review-questions ul.stagger-parent {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.review-questions li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--border-color-light);
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    border-radius: var(--radius-md);
+    min-height: 44px;
+}
+
+.review-questions li:hover {
+    background: var(--surface-hover-light);
+    box-shadow: var(--shadow-xs);
+}
+
+.review-questions li:last-child {
+    border-bottom: none;
+}
+
+.review-questions li .click-hint {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--primary-accent);
+    opacity: 0.6;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.review-questions li:hover .click-hint {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.review-questions li span {
+    font-size: 1em;
+    line-height: 1.5;
+    color: var(--text-color-light);
+}
+
+.dark-mode .review-questions li {
+    border-bottom-color: var(--border-color-dark);
+}
+
+.dark-mode .review-questions li:hover {
+    background: var(--surface-hover-dark);
+}
+
+.dark-mode .review-questions li span {
+    color: var(--text-color-dark);
+}
+
+/* ── Modal Overlay ──────────────────────── */
+.review-questions-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: var(--overlay-light);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md);
+}
+
+.review-questions-modal.is-open {
+    display: flex;
+}
+
+/* ── Modal Card ─────────────────────────── */
+.review-questions-modal .modal-card {
+    background: var(--box-background-light);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    max-width: 520px;
+    width: 100%;
+    padding: var(--space-xl);
+    position: relative;
+    animation: modal-in 0.25s ease-out;
+}
+
+@keyframes modal-in {
+    from {
+        opacity: 0;
+        transform: scale(0.92) translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.dark-mode .review-questions-modal .modal-card {
+    background: var(--box-background-dark);
+    box-shadow: var(--shadow-xl-dark);
+}
+
+/* ── Modal Close Button ─────────────────── */
+.review-questions-modal .modal-close {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--close-bg-light);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: var(--text-color-light);
+    transition: background 0.2s ease;
+    line-height: 1;
+}
+
+.review-questions-modal .modal-close:hover {
+    background: var(--close-bg-hover-light);
+}
+
+.dark-mode .review-questions-modal .modal-close {
+    background: var(--close-bg-dark);
+    color: var(--text-color-dark);
+}
+
+/* ── Modal Question Text ────────────────── */
+.review-questions-modal .modal-question {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0 0 var(--space-lg);
+    padding-right: var(--space-xl);
+    color: var(--text-color-light);
+}
+
+.dark-mode .review-questions-modal .modal-question {
+    color: var(--text-color-dark);
+}
+
+/* ── Provider Grid ───────────────────────── */
+.review-questions-modal .provider-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 600px) {
+    .review-questions-modal .provider-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .review-questions-modal .provider-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.review-questions-modal .provider-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 4px;
+    min-height: 56px;
+    min-width: 80px;
+    border: 1px solid var(--border-color-light);
+    border-radius: var(--radius-md);
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    font-family: inherit;
+    color: var(--text-color-light);
+}
+
+.review-questions-modal .provider-btn:hover {
+    background: var(--surface-hover-light);
+    border-color: var(--primary-accent);
+    box-shadow: var(--shadow-xs);
+}
+
+.review-questions-modal .provider-btn.is-selected {
+    border-color: var(--primary-accent);
+    background: var(--surface-subtle-light);
+    box-shadow: 0 0 0 1px var(--primary-accent);
+}
+
+.review-questions-modal .provider-btn svg {
+    width: 24px;
+    height: 24px;
+    color: var(--text-color-light);
+}
+
+.review-questions-modal .provider-btn span {
+    font-size: 0.75em;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--text-color-light);
+}
+
+.dark-mode .review-questions-modal .provider-btn {
+    border-color: var(--border-color-dark);
+    color: var(--text-color-dark);
+}
+
+.dark-mode .review-questions-modal .provider-btn:hover {
+    background: var(--surface-hover-dark);
+}
+
+.dark-mode .review-questions-modal .provider-btn.is-selected {
+    background: var(--surface-subtle-dark);
+}
+
+.dark-mode .review-questions-modal .provider-btn svg,
+.dark-mode .review-questions-modal .provider-btn span {
+    color: var(--text-color-dark);
+}
+
+/* ── Preference Checkbox ────────────────── */
+.review-questions-modal .preference-row {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    font-size: 0.85em;
+    line-height: 1.4;
+    color: var(--text-color-light);
+    opacity: 0.75;
+}
+
+.review-questions-modal .preference-row input[type="checkbox"] {
+    margin-top: 2px;
+    min-width: 16px;
+    min-height: 16px;
+    accent-color: var(--primary-accent);
+}
+
+.dark-mode .review-questions-modal .preference-row {
+    color: var(--text-color-dark);
+}
+
+/* ── Copy Button ────────────────────────── */
+.review-questions-modal .copy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    width: 100%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--radius-lg);
+    background: var(--primary-accent);
+    color: var(--primary-accent-contrast);
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.review-questions-modal .copy-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.review-questions-modal .copy-btn:active {
+    transform: translateY(0);
+}
+
+.review-questions-modal .copy-btn.is-copied {
+    background: var(--primary-navy);
+    color: var(--primary-azure);
+}
+
+.review-questions-modal .copy-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.dark-mode .review-questions-modal .copy-btn {
+    background: var(--button-background-dark);
+    color: var(--button-text-color-dark);
+}
+
+.dark-mode .review-questions-modal .copy-btn.is-copied {
+    background: var(--primary-azure);
+    color: var(--primary-navy);
+}

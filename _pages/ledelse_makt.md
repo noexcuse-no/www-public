@@ -56,6 +56,13 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens makt- og tjenestebalanse"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvor ledergruppen din sitter på spekteret mellom makt og tjeneste, og gir dere et felles språk for å snakke om dynamikken. Bestill en uforpliktende samtale for å lære mer."
+questions_title: "Spørsmål for selvdiagnose"
+questions:
+  - "Når du tar beslutninger — tenker du først på konsekvensene for oppdraget, eller på hvem som støtter deg?"
+  - "Hvor mange mennesker ville hjulpet deg hvis du mistet din formelle myndighet i morgen?"
+  - "Belønner organisasjonen din maktakvisisjon eller tjenesteleveranse? Vær ærlig — ikke svar hva du skulle ønske var sant."
+  - "Hva ville endret seg hvis teamet ditt visste dine private motivasjoner?"
+  - "Når ble siste gang en medarbeider ga deg en ærlig, ubehagelig tilbakemelding — og du tok den imot uten å forsvare deg?"
 ---
 
 To sitater, to verdenssyn. Jeffrey Pfeffer, en av forskningen mest siterte stemmer på maktdynamikk, slår fast: «Power is the ability to get things done.» Uten makt — ingenting skjer. På den andre siden står Ken Blanchard og Colleen Barrett: «Leadership is not about you; it's about the people you serve.» Ledelse som tjeneste.
@@ -135,12 +142,3 @@ Logans [forskning på kulturstadier](/usikkerhet/) (Stage 4–5) peker på en in
 
 Dette er ikke naiv optimisme. Det er en empirisk observasjon av hva som faktisk fungerer i organisasjoner som presterer over tid. Når makt distribueres og samtidig forankres i et felles oppdrag, reduseres både risikoen for maktmisbruk og risikoen for beslutningsvegring.
 
-## Spørsmål for selvdiagnose
-
-Hvor sitter din ledergruppe på spekteret? Følgende spørsmål kan hjelpe dere å finne ut:
-
-- Når du tar beslutninger — tenker du først på konsekvensene for oppdraget, eller på hvem som støtter deg?
-- Hvor mange mennesker ville hjulpet deg hvis du mistet din formelle myndighet i morgen?
-- Belønner organisasjonen din maktakvisisjon eller tjenesteleveranse? Vær ærlig — ikke svar hva du skulle ønske var sant.
-- Hva ville endret seg hvis teamet ditt visste dine private motivasjoner?
-- Når ble siste gang en medarbeider ga deg en ærlig, ubehagelig tilbakemelding — og du tok den imot uten å forsvare deg?
