@@ -1,6 +1,6 @@
 ---
 class: article
-layout: page
+layout: article
 title: "Makt eller tjeneste — Hvor sitter din ledergruppe på spekteret?"
 description: "Organisasjoner trenger både makt og tjeneste. Lær hvorfor effektive ledelseskulturer bevisst balanserer begge."
 permalink: /makt/
@@ -144,6 +144,3 @@ Hvor sitter din ledergruppe på spekteret? Følgende spørsmål kan hjelpe dere 
 - Belønner organisasjonen din maktakvisisjon eller tjenesteleveranse? Vær ærlig — ikke svar hva du skulle ønske var sant.
 - Hva ville endret seg hvis teamet ditt visste dine private motivasjoner?
 - Når ble siste gang en medarbeider ga deg en ærlig, ubehagelig tilbakemelding — og du tok den imot uten å forsvare deg?
-{: .question-list}
-
-

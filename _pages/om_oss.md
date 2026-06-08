@@ -1,6 +1,6 @@
 ---
 class: article
-layout: page
+layout: article
 title: "Om oss"
 permalink: /om-oss/
 hero:
@@ -29,55 +29,35 @@ json_ld:
 ---
 
 ## Hvorfor No Excuse?
-{: .about-section}
 
 No Excuse AS ble grunnlagt i juni 2025. Vi så et behov for å forbedre ledelsesfunksjonen i norske virksomheter uten dyre konsulentrapporter og unødvendig kompleksitet.
 
 Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals fire perspektiver) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse, refleksjon fremfor skjemaer, og at de beste svarene ofte finnes internt — om man stiller de riktige spørsmålene.
 
-![Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet](/assets/images/banners/banner-verdier.webp){: .about-values-banner}
-
-<div class="about-values-cards" markdown="1">
-
-<div class="value-card" markdown="1">
+![Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet](/assets/images/banners/banner-verdier.webp)
 
 ![](/assets/images/banners/verdi-ansvarlighet.webp)
 ### Ansvarlighet
 Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse
 
-</div>
-
-<div class="value-card" markdown="1">
-
 ![](/assets/images/banners/verdi-tillit.webp)
 ### Tillit
 Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget
-
-</div>
-
-<div class="value-card" markdown="1">
 
 ![](/assets/images/banners/verdi-aerlighet.webp)
 ### Ærlighet
 Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater
 
-</div>
-
-</div>
-
 ## Standard avtalevilkår
-{: .about-section}
 
 Du finner våre standard avtalevilkår [her](/avtale/).
 
 ## Kontaktinformasjon
-{: .about-section}
 
 {% include profiles.html %}
 
 ## Vil du vite mer?
-{: .about-cta}
 
 Ta en uforpliktende samtale med oss — vi snakker om ledelse, ikke salg.
 
-[Book en samtale](https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no){: .about-cta-button}
+[Book en samtale](https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no)

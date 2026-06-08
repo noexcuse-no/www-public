@@ -1,6 +1,6 @@
 ---
 class: article
-layout: page
+layout: article
 title: "GRC — Governance, Risk and Compliance"
 description: "Hvordan fire perspektiver på ledelse hjelper deg å implementere styring, risiko- og samsvarshåndtering som faktisk fungerer — ikke bare sertifisering på papiret."
 permalink: /grc/
@@ -45,7 +45,7 @@ Vår erfaring er at GRC først fungerer når ledergruppen har et felles språk f
 
 Ledelse 60:2 kartlegger akkurat dette — på to timer.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/){: .product-cta}
+[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ## Fire perspektiver — fire GRC-dimensjoner
 
@@ -108,7 +108,6 @@ Ledelse 60:2 er ikke et GRC-verktøy. Det er et verktøy for å forstå hvor led
 | Er roller og ansvar for compliance tydelige? | Rolledefinisjon og prosessdisiplin | Struktur |
 | Er kvalitetsforbedring forankret i kulturen? | Samsvar mellom organisasjonens identitet og uttalte verdier | Identitet |
 | Tar ledelsen risiko på alvor? | Endringsvilje og usikkerhetshåndtering | Alle fire |
-{: .grc-table}
 
 ![Hvordan Ledelse 60:2 styrker GRC gjennom fire perspektiver](/assets/images/banners/grc-t2-ledelse60-2-grc-enabler.webp)
 

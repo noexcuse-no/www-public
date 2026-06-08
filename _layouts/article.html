@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{% if page.frame_id %}
+  {% assign frame_mode = true %}
+  <link rel="stylesheet" href="{{ '/assets/css/perspektiv-styles.css' | relative_url }}">
+{% endif %}
+
+{% if page.hero or frame_mode %}
+  {% include hero.html %}
+  {% if frame_mode %}
+    <div class="frame-content frame-{{ page.frame_id }}">
+  {% else %}
+    <div class="section container--wide article-body animate-on-scroll fade-in-up">
+  {% endif %}
+{% endif %}
+
+{{ content }}
+
+{% if page.hero or frame_mode %}
+  </div>
+{% endif %}
+
+{% if frame_mode %}
+  {% comment %}Cross-navigation: other frames + methodology{% endcomment %}
+  {% assign all_frames = site.pages | where: "class", "frame" | sort: "id" %}
+  {% assign current_index = nil %}
+  {% for f in all_frames %}
+    {% if f.frame_id == page.frame_id %}
+      {% assign current_index = forloop.index0 %}
+    {% endif %}
+  {% endfor %}
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+  {% assign prev_frame = all_frames[prev_index] %}
+  {% assign next_frame = all_frames[next_index] %}
+  <section class="section container--wide animate-on-scroll fade-in-up">
+    <h2>Utforsk andre perspektiver</h2>
+    <div class="perspektiv-cross-nav">
+      {% if prev_frame %}
+      <a href="{{ '/' | append: prev_frame.frame_id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">← {{ prev_frame.title }}</a>
+      {% endif %}
+      <a href="{{ '/perspektiv/' | relative_url }}" class="product-cta product-cta--secondary">↑ Fire perspektiver</a>
+      <a href="{{ '/metode/' | relative_url }}" class="product-cta product-cta--secondary">Om metode →</a>
+      {% if next_frame %}
+      <a href="{{ '/' | append: next_frame.frame_id | append: '/' | relative_url }}" class="product-cta product-cta--secondary">{{ next_frame.title }} →</a>
+      {% endif %}
+    </div>
+  </section>
+{% endif %}
+
+{% include cta-section.html %}
+{% include cases-cards.html %}
+{% include references.html %}

@@ -45,25 +45,6 @@
     font-size: 1.2em;
 }
 
-/* About CTA button */
-.about-cta-button {
-    display: inline-block;
-    padding: 14px 32px;
-    background-color: var(--primary-accent);
-    color: var(--primary-accent-contrast);
-    text-decoration: none;
-    border-radius: var(--radius-md);
-    font-weight: 600;
-    font-size: 1.05em;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.2s;
-}
-
-.about-cta-button:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-    box-shadow: var(--box-shadow-hover-light);
-}
-
 /* Benefit link (article pages) */
 .benefit-link {
     display: inline-flex;

@@ -1,6 +1,6 @@
 ---
 class: profile
-layout: page
+layout: article
 title: "Daglig leder"
 permalink: /dagfinn/
 name: "Dagfinn Bang-Johansen"

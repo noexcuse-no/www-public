@@ -1,6 +1,6 @@
 ---
 class: frame
-layout: perspektiv
+layout: article
 permalink: /mennesker/
 frame_id: "mennesker"
 category: "frame"
@@ -25,9 +25,9 @@ json_ld:
         name: "Tjenerledelse"
 
 hero:
-  banner_image: "assets/images/banners/perspektiv-mennesker.webp"
+  image: "assets/images/banners/perspektiv-mennesker.webp"
   alt: "Menneskeperspektivet i ledelse"
-
+  title: "Menneskeperspektivet i ledelse"
   intro: "Handler om å se organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. Når mennesker og organisasjon passer sammen, tjener begge på det."
 
 grc_description: "Psykologisk trygghet, varsling, verdier i praksis. GRC feiler oftest ikke på prosjektnivå, men på menneskelig nivå — fordi ansatte ikke tør å si ifra, eller fordi ledelsen ikke hører etter. Uten psykologisk trygghet blir risikostyring en illusion."
@@ -45,7 +45,7 @@ Ken Blanchard og Colleen Barrett beskriver dette som «tjenerledelse» — en le
 
 ## De 4 hovedelementene
 
-![Illustrasjon: Tillit og trygghet](/assets/images/banners/spot-mennesker-tilhorighet.webp){: .argument-illustration}
+![Illustrasjon: Tillit og trygghet](/assets/images/banners/spot-mennesker-tilhorighet.webp)
 
 ### Tillit og trygghet
 
@@ -55,7 +55,7 @@ Grunnmuren i alle relasjoner er psykologisk trygghet. Med tillit kan mennesker t
 
 **Tegn på tillit og trygghet-problemer:** Informasjon holdes tilbake. Kritikk leveres bak ryggen på folk. Folk søker dekning hos ledere heller enn å løse problemer selv.
 
-![Illustrasjon: Motivasjon og engasjement](/assets/images/banners/spot-mennesker-mestring.webp){: .argument-illustration .argument-illustration--right}
+![Illustrasjon: Motivasjon og engasjement](/assets/images/banners/spot-mennesker-mestring.webp)
 
 ### Motivasjon og engasjement
 
@@ -65,7 +65,7 @@ Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre m
 
 **Tegn på motivasjon og engasjement-problemer:** Passivitet. Kømentalitet. Folk som bare gjør nok til å komme seg gjennom dagen. Maskinell gjennomføring uten engasjement.
 
-![Illustrasjon: Utvikling og vekst](/assets/images/banners/spot-mennesker-autonomi.webp){: .argument-illustration}
+![Illustrasjon: Utvikling og vekst](/assets/images/banners/spot-mennesker-autonomi.webp)
 
 ### Utvikling og vekst
 
@@ -75,7 +75,7 @@ Mennesker vil vokse. Organisasjoner som legger til rette for utvikling, tiltrekk
 
 **Tegn på utvikling og vekst-problemer:** «Vi har alltid gjort det sånn.» Innføring av nye systemer uten opplæring. Ingen karriereutvikling utover interne promojsonger.
 
-![Illustrasjon: Verdier og mening](/assets/images/banners/spot-mennesker-verdier-og-mening.webp){: .argument-illustration .argument-illustration--right}
+![Illustrasjon: Verdier og mening](/assets/images/banners/spot-mennesker-verdier-og-mening.webp)
 
 ### Verdier og mening
 
@@ -89,7 +89,7 @@ Dave Logan skiller mellom kjerneverdier og edle formål (noble cause): Kjernever
 
 ![Illustrasjon av de 4 hovedelementene i menneskeperspektivet](/assets/images/banners/illustrasjon-mennesker-hovedelementer.webp)
 
-![Illustrasjon: Hvorfor menneskeperspektivet betyr noe for ledergruppen](/assets/images/banners/spot-mennesker-hvorfor-mennesker-betyr-noe.webp){: .argument-illustration .argument-illustration--right}
+![Illustrasjon: Hvorfor menneskeperspektivet betyr noe for ledergruppen](/assets/images/banners/spot-mennesker-hvorfor-mennesker-betyr-noe.webp)
 
 ## Hvorfor menneskeperspektivet betyr noe for ledergruppen
 
@@ -105,25 +105,25 @@ Gode rutiner og klare roller er ikke det motsatte av tillitsbasert ledelse — d
 
 ![Illustrasjon av vanlige menneskerelaterte utfordringer](/assets/images/banners/illustrasjon-mennesker-utfordringer.webp)
 
-*   ![](/assets/images/banners/mennesker-t4-psychological-safety.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/mennesker-t4-psychological-safety.webp "")
+
     #### Manglende psykologisk trygghet
-    
+
     Folk tørr ikke si ifra om problemer. Feil skjules. Kritikk leveres bak lukkede dører. Innovasjon dør før den får luft.
-*   ![](/assets/images/banners/mennesker-t4-empty-values.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/mennesker-t4-empty-values.webp "")
+
     #### Tomme verdier
-    
+
     Organisasjonen har verdier på veggen, men de stemmer ikke med hvordan folk faktisk oppfører seg. Verdiene er blitt flosler, ikke veiledning.
-*   ![](/assets/images/banners/mennesker-t4-silos.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/mennesker-t4-silos.webp "")
+
     #### Sil og silo
-    
+
     Avdelinger og individer jobber i siloer. Folk kjenner ikke til hva naboen driver med. Kunden matcher med én person som blir en flaskehals.
-*   ![](/assets/images/banners/mennesker-t4-meaninglessness.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/mennesker-t4-meaninglessness.webp "")
+
     #### For mye volum, for lite mening
-    
+
     Folk oversvømmes med oppgaver men gidder ikke lenger å engasjere seg i hvorfor de gjør jobben. Arbeidet er blitt en check-in, ikke en bidrag.
 
 ## Spørsmål menneskeperspektivet kan hjelpe dere å besvare
@@ -140,8 +140,8 @@ Gode rutiner og klare roller er ikke det motsatte av tillitsbasert ledelse — d
 
 Ledelse 60:2 inneholder spørsmål som handler om tillit, motivasjon og relasjoner. Gjennomfør en uforpliktende samtale for å lære mer.
 
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled){: .product-cta}
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/){: .product-cta .product-cta--secondary}
+[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
+[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ## Det teoretiske grunnlaget
 
@@ -149,4 +149,4 @@ Menneskeperspektivet i Ledelse 60:2 bygger på Bolman & Deals HR-ramme, kombiner
 
 Blanchard og Barrett viser at det ikke finnes én fasit på god ledelse — kontekst bestemmer hva som fungerer. Ledelse 60:2 diagnostiserer orientering, ikke korrekthet. Det handler om å forstå hvor organisasjonen er, ikke å dømme den.
 
-[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .about-link}
+[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/)

@@ -1,6 +1,6 @@
 ---
 class: frame
-layout: perspektiv
+layout: article
 permalink: /struktur/
 frame_id: "struktur"
 category: "frame"
@@ -25,9 +25,9 @@ json_ld:
         name: "Organisasjonsstruktur"
 
 hero:
-  banner_image: "assets/images/banners/perspektiv-struktur.webp"
+  image: "assets/images/banners/perspektiv-struktur.webp"
   alt: "Strukturperspektivet i ledelse"
-
+  title: "Strukturperspektivet i ledelse"
   intro: "Handler om å skape et system der oppgaver, roller og mål henger sammen. Når strukturen fungerer, merkes det ikke. Når den ikke fungerer, merkes det umiddelbart."
 
 grc_description: "Roller, prosesser, dokumentert ansvar, revisjonsspor. Strukturperspektivet svarer på spørsmålet: «Gjør vi det vi har sagt vi skal gjøre?» Uten tydelige roller og prosesser blir compliance tilfeldig."
@@ -45,7 +45,7 @@ En leder som mestrer strukturperspektivet, stiller spørsmål som: Har vi klare 
 
 ## De 3 hovedelementene
 
-![Illustrasjon: Roller og ansvar](/assets/images/banners/spot-struktur-roller.webp){: .argument-illustration}
+![Illustrasjon: Roller og ansvar](/assets/images/banners/spot-struktur-roller.webp)
 
 ### Roller og ansvar
 
@@ -55,7 +55,7 @@ Hvem gjør hva? Roller er de minste meningsfulle enhetene i en organisasjon. Nå
 
 **Tegn på roller og ansvar-problemer:** «Det er ikke min jobb» eller «Hvem skal jeg egentlig spørre?» Dominans av e-post og møter for å koordinere arbeid som burde gå av seg selv.
 
-![Illustrasjon: Mål og koordinering](/assets/images/banners/spot-struktur-mal-og-koordinering.webp){: .argument-illustration .argument-illustration--right}
+![Illustrasjon: Mål og koordinering](/assets/images/banners/spot-struktur-mal-og-koordinering.webp)
 
 ### Mål og koordinering
 
@@ -65,7 +65,7 @@ Organisasjoner eksisterer for å oppnå noe. Mål er det som gir retning. Koordi
 
 **Tegn på mål og koordinering-problemer:** Silotenking. Mål som konkurrerer med hverandre. Avdelinger som driver egne initiativ uten å kjenne til hverandre. Mye tid brukt på «å samordne» arbeid som burde ha vært koordinert fra start.
 
-![Illustrasjon: Prosesser og regler](/assets/images/banners/spot-struktur-prosesser-og-regler.webp){: .argument-illustration}
+![Illustrasjon: Prosesser og regler](/assets/images/banners/spot-struktur-prosesser-og-regler.webp)
 
 ### Prosesser og regler
 
@@ -79,7 +79,7 @@ Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og
 
 ![Illustrasjon av de 3 hovedelementene i strukturperspektivet](/assets/images/banners/illustrasjon-struktur-hovedelementer.webp)
 
-![Illustrasjon: Hvorfor struktur betyr noe for ledergruppen](/assets/images/banners/spot-struktur-hvorfor-struktur-betyr-noe.webp){: .argument-illustration .argument-illustration--right}
+![Illustrasjon: Hvorfor struktur betyr noe for ledergruppen](/assets/images/banners/spot-struktur-hvorfor-struktur-betyr-noe.webp)
 
 ## Hvorfor struktur betyr noe for ledergruppen
 
@@ -91,25 +91,25 @@ Douglas Hubbard, forfatteren av «How to Measure Anything», påpeker at mye som
 
 ![Illustrasjon av vanlige strukturspesifikke utfordringer](/assets/images/banners/illustrasjon-struktur-utfordringer.webp)
 
-*   ![](/assets/images/banners/struktur-t4-role-clarification.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/struktur-t4-role-clarification.webp "")
+
     #### Uklar rolleavklaring
-    
+
     To personer som tror de eier samme område. Eller ingen som eier det i det hele tatt. Ofte avslørt først når noe går galt.
-*   ![](/assets/images/banners/struktur-t4-goal-conflict.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/struktur-t4-goal-conflict.webp "")
+
     #### Målkonflikter
-    
+
     Avdeling A optimaliserer for sin målsetting som bremser avdeling B. Motivert av insentiver som ikke er koordinert.
-*   ![](/assets/images/banners/struktur-t4-coordination.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/struktur-t4-coordination.webp "")
+
     #### Koordineringsproblemer
-    
+
     Mye tid brukes på å samordne arbeid som burde vært koordinert fra start. Fokus på «å skape buy-in» i stedet for å bygge struktur som sikrer involvering.
-*   ![](/assets/images/banners/struktur-t4-bureaucracy.webp){: aria-hidden="true"}
-    
+*   ![](/assets/images/banners/struktur-t4-bureaucracy.webp "")
+
     #### Byråkratisk byrde
-    
+
     Prosesser som ble laget for å løse et reelt problem, men nå lever sitt eget liv. Ledere som bruker mest tid på å administrere systemet heller enn å lede.
 
 ## Spørsmål strukturperspektivet kan hjelpe dere å besvare
@@ -126,8 +126,8 @@ Douglas Hubbard, forfatteren av «How to Measure Anything», påpeker at mye som
 
 Ledelse 60:2 inneholder 15 spørsmål som handler om strukturperspektivet. Gjennomfør en uforpliktende samtale for å lære mer om hvordan metoden kan hjelpe ledergruppen din.
 
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled){: .product-cta}
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/){: .product-cta .product-cta--secondary}
+[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
+[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ## Det teoretiske grunnlaget
 
@@ -137,4 +137,4 @@ Hubbard argumenterer for at all måling reduserer usikkerhet — ikke eliminerer
 
 Hubbarts «Applied Information Economics» (AIE) er en strukturert tilnærming til måling av det som virker umålelig. De sju stegene er: (1) Definer beslutningen, (2) Bestem hva som er ukjent, (3) Verdsett informasjonen, (4) Design måleinstrumentet, (5) Samle data, (6) Analyser, og (7) Gjør den informerte beslutningen. Ledelse 60:2 anvender prinsippet — ikke hele metoden — ved å gi ledergruppen strukturerte spørsmål som reduserer usikkerhet om egen modenhet.
 
-[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/){: .about-link}
+[Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/)

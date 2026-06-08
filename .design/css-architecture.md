@@ -161,3 +161,42 @@ Constants (no theme pair): omit the suffix.
 - **Touch targets**: Minimum 44×44px for interactive elements
 - **Font sizes**: Use heading elements (h1–h3) or the typography scale
 - **Dark mode**: Variables only — no `[data-theme="dark"]` selector overrides in component CSS; those belong in `styles-dark.css`
+
+## Article Content Styling — Structural Selectors
+
+Since IAL (Inline Attribute Lists) and raw HTML divs are **prohibited** in `_pages/*.md`, all article content styling uses CSS structural selectors targeting element position and relationships within `.article-body`.
+
+### Accepted patterns (use freely)
+
+| Pattern | Targets | Example |
+|---------|---------|---------|
+| `.article-body > h2` | Top-level section headings | All articles |
+| `.article-body > blockquote` | Blockquote callout boxes | `om_metode.md` (legal quote) |
+| `.article-body > table` | Data tables | `grc.md` (GRC matrix) |
+| `ul:has(> li > h3)` | Info card lists (UL with h3 children) | Multiple articles |
+| `ul:has(> li > h4)` | Challenge grid lists (UL with h4 children) | Frame perspective pages |
+| `.article-body > ol:has(> li > h3)` | Numbered flow steps (OL with h3 children) | `usikkerhet.md` (Kotter 8-step) |
+| `:not(li) > p:has(> img:only-child) > img` | Standalone section images | All articles |
+
+### Icon-sized image patterns (by filename)
+
+Small icon images that are part of card-like layouts use filename-based selectors to override the generic standalone image width:
+
+| Pattern | Selector | Example |
+|---------|----------|---------|
+| Value cards | `img[src*="verdi-"]` | `om_oss.md` (3 values) |
+| Ethics icons | `img[src*="metode-t4"]` | `om_metode.md` (4 ethics principles) |
+
+These override the default `max-width: 600px` from the standalone image rule to `60px × 60px` with centered layout, and adjacent heading/paragraph styling via sibling combinators (`img + h3`, `img + h4`).
+
+### Styling approach
+
+Instead of applying class names in markdown, target elements by:
+1. **Position**: first/last child, nth-of-type
+2. **Content pattern**: `:has()` pseudo-class (e.g., `ul:has(> li > h3)`)
+3. **Filename**: `[src*="pattern"]` for images
+4. **Adjacency**: `+` combinator for heading-after-icon
+
+### What to avoid
+
+Do NOT add class-based selectors for content-level elements in `.article-body`. Template-level components (CTAs, hero, navigation) in `_includes/` may still use classes.
