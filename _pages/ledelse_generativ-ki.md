@@ -140,7 +140,7 @@ Risikoen er at KI blir en unnskyldning for å fjerne menneskelig dømmekraft fra
 
 ### Kultur som forutsetning for KI-adopsjon
 
-Dave Logan beskriver fem kulturstadier — fra «livet suger» til «livet er fantastisk.» De fleste organisasjoner befinner seg på stadium 3: «Jeg er flink» (individualisme). På dette stadiet hamstres kunnskap i stedet for å deles. KI-adopsjon som krever samarbeid på tvers, forutsetter minimum stadium 4: «Vi er flinke.»
+Dave Logan [beskriver fem kulturstadier](/usikkerhet/) — fra «livet suger» til «livet er fantastisk.» De fleste organisasjoner befinner seg på stadium 3: «Jeg er flink» (individualisme). På dette stadiet hamstres kunnskap i stedet for å deles. KI-adopsjon som krever samarbeid på tvers, forutsetter minimum stadium 4: «Vi er flinke.»
 
 Spørsmålet er ikke om organisasjonen har KI-verktøy — det er om kulturen er moden for å bruke dem.
 
@@ -148,7 +148,7 @@ Spørsmålet er ikke om organisasjonen har KI-verktøy — det er om kulturen er
 
 KI-verktøy kontrolleres sjelden av alle. Én avdeling eller enkeltpersoner kan få uforholdsmessig innflytelse ved å eie KI-budsjettet eller KI-kompetansen. Uten åpen diskusjon om hvem som styrer KI, risikerer organisasjonen at teknologiens gevinster konsentreres hos få.
 
-Den som kontrollerer KI, former retningen. Det er et spørsmål om makt, ikke bare om teknologi.
+Den som kontrollerer KI, former retningen. Det er et spørsmål om [makt](/makt/), ikke bare om teknologi.
 
 ## Røde flagg
 

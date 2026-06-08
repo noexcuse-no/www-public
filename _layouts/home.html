@@ -6,4 +6,5 @@ layout: default
 {% if has_products > 0 %}{% include products.html %}{% endif %}
 {% assign has_profiles = site.pages | where: "class", "profile" | where: "published", true | size %}
 {% if has_profiles > 0 %}{% include profiles.html tags="ledelse" %}{% endif %}
+{% include cta-section.html %}
 {% include partners.html %}

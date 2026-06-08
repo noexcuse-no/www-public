@@ -10,6 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **HTML→MD refactor — Page content migration**: Extracted all inline HTML from 22 `_pages/*.md` files into includes and markdown body. Created 20 new `_includes/` components (benefit-cards, step-cards, cases-cards, frame-cards, grc-perspective-cards, science-section, ethics-columns, science-highlight, science-quote, science-divider, section-illustration, framework-illustration, section-wrapper, section-container, info-box, challenge-card, challenge-grid, question-list, cta-section, tag-cloud, avtate-section, about-values, about-section, about-team, kotter-flow). Consolidated CTA, Hero, Section patterns (Phase 3). Inline styling tags (`<a class="product-cta">`, `<p class="lead">`) converted to kramdown IAL syntax in captures with `markdownify_body` support.
 
+## [Unreleased]
+
+### Fixed
+- **CTA buttons (R24.1)**: Added `cta:` frontmatter to home page and Ledelse 60:2; wired `cta-section.html` include into `home.html` layout
+- **Blank content below hero (R24.2)**: Removed `.animate-on-scroll` scroll-opacity system (IntersectionObserver failure left content at `opacity: 0` permanently). Preserved brand entrance animations and parallax hero effect.
+- **Avtale page images (R24.3)**: Fixed kramdown empty title syntax on 6 section dividers; added `.print-only` logo wrapper with screen/print CSS rules
+- **Card grid light mode (R24.4)**: Added `.info-box` light mode background, padding, border-radius in `article.css`
+- **Cross-linking scan (R24.5)**: 5 new internal links across makt, forankring, generativ-ki pages (+ earlier om_metode/om_oss → /perspektiv/)
+- **Illustration coverage audit (R24.6)**: Completed — all pages have adequate coverage (4–22 images per page); no high-impact gaps
+- **Mobile hamburger menu (R24.7)**: Revised to full-screen modal overlay with close button, body scroll lock, Escape-to-close; featured CTA stays visible outside overlay
+- **GRC hero image (R24.9)**: Replaced with user-provided 4K PNG → WebP (393 KB, 3840×2160); original preserved in `.design/graphics/originals/banners/`
+
 ## [1.9.0] - 2026-06-08
 
 ### Added
@@ -38,6 +50,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - **Hero overflow**: `height: 100vh` caused hero to extend below the first viewport by the header's height (~85px). Now using `calc(100vh - var(--header-height))` so next page content starts at the top of the viewport on first scroll.
 - **Header.css**: Removed stale orphaned CSS (flex-direction/gap/padding declarations outside any media query) that broke the cascade.
+
+### Changed
+- **Article body visual rhythm**: Added `background`, `border-radius`, and `box-shadow` to `.article-body` — whole article content now sits as a white card on the blue-gray page background, reducing the contrast jump between page background and in-article cards.
+- **In-article card backgrounds**: Changed info cards, challenge grid items, flow steps, and blockquotes from `var(--box-background-light)` to `var(--surface-subtle-light)` (light mode) and `var(--surface-subtle-dark)` (dark mode) — creates subtle visual hierarchy within the now-white article body container.
+- **Normalized vertical rhythm**: Reduced h2 margin-top from `var(--space-4xl)` (64px) to `var(--space-3xl)` (48px); tightened p/ul/ol margins from `var(--space-lg)` to `var(--space-md)` for more consistent spacing.
+- **Standalone image sizing**: Increased `max-width` from 600px to 680px for better use of the 800px article container.
 
 ## [1.8.0] - 2026-06-05
 

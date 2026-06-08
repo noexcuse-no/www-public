@@ -60,13 +60,13 @@ Completed items belong in `CHANGELOG.md` only.
 | R16 | Article illustrations — 25 images for Makt, Perspektiv, Triader (T2 framework + T3 section + T4 micro) | Done | PR #117 |
 | R17 | Frame micro illustrations — 16 T4 micro spots for challenge cards on Struktur, Mennesker, Identitet, Påvirkning | Done | PR #118 |
 | F7 | Uniform illustration system — 4-tier taxonomy (T1-T4), naming convention, CSS classes, future page template | Planned | — |
-| R24.1 | **CTA buttons missing** — ledelse 60:2, grc, home page need `.product-cta` action buttons restored after IAL removal | Doing | — |
-| R24.2 | **Content below hero blank** — perspektiv and om-metode pages have invisible content sections below hero | Doing | — |
-| R24.3 | **Images broken on avtale page** — kramdown `![](url "")` syntax fails to render, logo visible on screen (should be print-only) | Doing | — |
-| R24.4 | **Card grid styling regression** — value/benefit/step cards lost background, spacing, grid layout after refactor; GRC perspective cards missing illustrations | Doing | — |
-| R24.5 | **Cross-linking scan** — scan pages for phrases that should link to other pages on the site | Doing | — |
-| R24.6 | **Illustration opportunity scan** — identify elements that could benefit from illustrations | Doing | — |
-| R24.7 | **Mobile hamburger menu** — navbar collapses into toggle button on screens ≤768px | Done | — |
+| R24.1 | **CTA buttons missing** — added CTA frontmatter to home page and ledelse 60:2; added cta-section include to home layout | Done | PR #131 |
+| R24.2 | **Content below hero blank** — root cause: `.animate-on-scroll` set `opacity: 0` on entire content wrapper; if IntersectionObserver failed to fire, content stayed hidden. Removed scroll-triggered opacity system entirely. | Done | — |
+| R24.3 | **Images broken on avtale page** — fixed kramdown empty title syntax, added print-only logo wrapper + CSS | Done | PR #131 |
+| R24.4 | **Card grid styling regression** — added `.info-box` light mode styling for GRC perspective cards | Done | PR #131 |
+| R24.5 | **Cross-linking scan** — added links from om_metode/om_oss to /perspektiv/, makt → /usikkerhet/ + /tillit/, forankring → /makt/, generativ-ki → /usikkerhet/ + /makt/ | Done | — |
+| R24.6 | **Illustration opportunity scan** — completed audit; all pages have good illustration coverage | Done | — |
+| R24.7 | **Mobile hamburger menu** — revised to full-screen modal overlay with close button, body scroll lock, Escape-to-close, featured CTA kept outside overlay | Done | — |
 | R24.8 | **Hero sizing fix** — `height: 100vh` → `calc(100vh - var(--header-height))` so hero doesn't extend below first viewport | Done | — |
 | R24.9 | **Hero image regeneration** — Perspektiv and GRC heroes regenerated as Style 1 (three silhouettes in Nordic landscape, 4K) to match Om Oss/Om Metode/Ledelse 60:2 | Done | — |
 | R24.10 | **Featured nav styling** — "Ledelse 60:2" emphasized in main menu with `.nav-featured` CTA pill | Done | — |
