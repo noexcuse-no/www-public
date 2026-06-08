@@ -58,6 +58,13 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens håndtering av usikkerhet"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen håndterer usikkerhet, kultur og endring. Bestill en uforpliktende samtale for å lære mer."
+questions_title: "Spørsmål for å kartlegge kulturen"
+questions:
+  - "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
+  - "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"
+  - "Hva skjer hvis noen bryter med «hvordan vi gjør ting her»?"
+  - "Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?"
+  - "Hvilket kulturstadie ville du plassere organisasjonen på i dag?"
 ---
 
 Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.
@@ -228,10 +235,3 @@ Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av k
 
     Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen.
 
-## Spørsmål for å kartlegge kulturen
-
-- Hvordan ville en nyansatt beskrive kulturen etter tre måneder?
-- Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?
-- Hva skjer hvis noen bryter med «hvordan vi gjør ting her»?
-- Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?
-- Hvilket kulturstadie ville du plassere organisasjonen på i dag?

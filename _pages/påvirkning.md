@@ -35,6 +35,13 @@ color_accent: "#355E3B"
 card_description: "Makt, interesser, konflikt, ressurser, politikk"
 detail: "Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet."
 weight: 3
+questions_title: "Spørsmål påvirkningsperspektivet kan hjelpe dere å besvare"
+questions:
+  - "Hvem har reell innflytelse på viktige beslutninger — og er det de som bør ha det?"
+  - "Hvor transparente er agendaer og interesser i ledergruppen?"
+  - "Finnes det «uskrevne regler» som nye ledere må anstrenge seg for å forstå?"
+  - "Hvordan håndterer ledergruppen uenighet — åpent eller bak lukkede dører?"
+  - "Er det balanse i makt — eller er noen stemmer for dominerende?"
 ---
 
 ## Hva er påvirkningsperspektivet?
@@ -113,14 +120,6 @@ Pfeffers research viser at politisk dyktighet korrelerer sterkt med ledereffekti
     #### For mye enighet
 
     En ledelsesgruppe som altfor sjelden er uenig, klarer heller ikke å utfordre hverandre. Uenighet er et sunnhetstegn — likegyldighet er problemet.
-
-## Spørsmål påvirkningsperspektivet kan hjelpe dere å besvare
-
-- Hvem har reell innflytelse på viktige beslutninger — og er det de som bør ha det?
-- Hvor transparente er agendaer og interesser i ledergruppen?
-- Finnes det «uskrevne regler» som nye ledere må anstrenge seg for å forstå?
-- Hvordan håndterer ledergruppen uenighet — åpent eller bak lukkede dører?
-- Er det balanse i makt — eller er noen stemmer for dominerende?
 
 ![Illustrasjon for kartlegging av påvirkning](/assets/images/banners/illustrasjon-påvirkning-cta.webp)
 

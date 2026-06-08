@@ -95,6 +95,13 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens tillitsnivå"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger psykologisk trygghet, tillitsbasert kommunikasjon og hvordan ledere faktisk oppfattes. Bestill en uforpliktende samtale for å lære mer."
+questions_title: "Spørsmål for å kartlegge tillitsnivået"
+questions:
+  - "Hvor ofte gir du feedback som folk faktisk husker — og bruker?"
+  - "Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?"
+  - "Når ble siste gang du omgjorde en beslutning uten å forklare hvorfor?"
+  - "Finnes det informasjon du har som du bevisst holder tilbake fra teamet?"
+  - "Hvordan håndterer du folk som sier ifra mot strømmen?"
 ---
 
 ## Hvorfor tillit er ledelsens valuta
@@ -178,10 +185,3 @@ Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid
 
     Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring. Prioriteringer som stadig endres.
 
-## Spørsmål for å kartlegge tillitsnivået
-
-- Hvor ofte gir du feedback som folk faktisk husker — og bruker?
-- Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?
-- Når ble siste gang du omgjorde en beslutning uten å forklare hvorfor?
-- Finnes det informasjon du har som du bevisst holder tilbake fra teamet?
-- Hvordan håndterer du folk som sier ifra mot strømmen?

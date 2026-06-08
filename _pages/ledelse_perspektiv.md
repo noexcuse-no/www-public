@@ -78,6 +78,13 @@ hero:
 cta:
   heading: "Få kartlagt ledergruppens perspektivbredde"
   body: "Ledelse 60:2 kartlegger ikke bare hva ledergruppen din mener — den avdekker hvilke perspektiver som dominerer og hvilke som mangler. Bestill en uforpliktende samtale for å lære mer."
+questions_title: "Spørsmål for å utvikle multiframe-kapabilitet"
+questions:
+  - "Hvilket rammeverk strekker du deg først etter når noe går galt — struktur, mennesker, politikk eller symboler?"
+  - "Når endret du sist mening fordi du så situasjonen fra et annet perspektiv?"
+  - "Har teamet ditt en «utpekt skeptiker» for hvert rammeverk — noen som aktivt utfordrer det dominerende perspektivet?"
+  - "Hva ville ditt største problem sett ut som gjennom linsen du bruker minst?"
+  - "Hvilket rammeverk mangler i ledergruppens naturlige samtale — og hva koster det dere å ikke ha det med?"
 ---
 
 En ingeniør som blir leder ser strukturelle problemer: uklare roller, manglende prosesser, feil rapporteringslinjer. En HR-sjef ser menneskelige problemer: motivasjon, trivsel, relasjoner. En politisk aktør ser maktdynamikk: allianser, agendaer, budsjettkamper. En markedsfører ser symboler: historier, identitet, mening.
@@ -212,10 +219,4 @@ Multiframe thinking er en ferdighet som kan trenes. Her er fire konkrete praksis
 
 *   ### 4. Ledelse 60:2 som multiframe-praksis
 
-    60:2-intervjuet er i seg selv en multiframe-øvelse. Spørsmålene tvinger ledergruppen til å skifte perspektiv — fra struktur til mennesker, fra politikk til symboler — i løpet av en times samtale. Ikke fordi poenget er å bli flink til å bytte rammeverk, men fordi det enkelte spørsmålet gir mening bare innenfor ett rammeverk av gangen.
-
-- Hvilket rammeverk strekker du deg først etter når noe går galt — struktur, mennesker, politikk eller symboler?
-- Når endret du sist mening fordi du så situasjonen fra et annet perspektiv?
-- Har teamet ditt en «utpekt skeptiker» for hvert rammeverk — noen som aktivt utfordrer det dominerende perspektivet?
-- Hva ville ditt største problem sett ut som gjennom linsen du bruker minst?
-- Hvilket rammeverk mangler i ledergruppens naturlige samtale — og hva koster det dere å ikke ha det med?
+     60:2-intervjuet er i seg selv en multiframe-øvelse. Spørsmålene tvinger ledergruppen til å skifte perspektiv — fra struktur til mennesker, fra politikk til symboler — i løpet av en times samtale. Ikke fordi poenget er å bli flink til å bytte rammeverk, men fordi det enkelte spørsmålet gir mening bare innenfor ett rammeverk av gangen.

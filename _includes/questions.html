@@ -1,0 +1,38 @@
+{% comment %}
+  Review Questions — reusable interactive question section.
+
+  Each question is clickable, opening a modal with AI provider selection
+  and a copy-to-clipboard prompt for guided reflection.
+
+  Parameters:
+    title     — h2 heading text (required)
+    questions — pipe-separated (||) list of question strings (required)
+    id        — optional anchor ID for the section
+{% endcomment %}
+
+{% assign q_title = include.title %}
+{% assign q_list  = include.questions | split: "||" %}
+{% assign q_id    = include.id %}
+
+<section class="review-questions section container--wide animate-on-scroll fade-in-up"{% if q_id %} id="{{ q_id }}"{% endif %}>
+  <h2>{{ q_title }}</h2>
+  <ul class="stagger-parent">
+    {% for q in q_list %}
+    {% assign q_trimmed = q | strip %}
+    <li class="animate-on-scroll slide-in-left stagger"
+        data-question="{{ q_trimmed | escape }}"
+        tabindex="0"
+        role="button"
+        aria-label="Åpne spørsmål i verktøy">
+      <svg class="click-hint" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M2 1h12a1 1 0 011 1v9a1 1 0 01-1 1H6l-3 3V12H2a1 1 0 01-1-1V2a1 1 0 011-1z"
+              stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        <circle cx="5.5" cy="6.5" r=".8" fill="currentColor"/>
+        <circle cx="8"   cy="6.5" r=".8" fill="currentColor"/>
+        <circle cx="10.5" cy="6.5" r=".8" fill="currentColor"/>
+      </svg>
+      <span>{{ q_trimmed }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

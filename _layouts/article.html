@@ -52,3 +52,8 @@ layout: default
 {% include cta-section.html %}
 {% include cases-cards.html %}
 {% include references.html %}
+
+{% if page.questions %}
+  {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
+  {% include questions.html title=page.questions_title questions=question_list %}
+{% endif %}

@@ -35,6 +35,13 @@ color_accent: "#8E0D3C"
 card_description: "Kultur, mening, symboler, verdier, historier"
 detail: "Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier."
 weight: 4
+questions_title: "Spørsmål identitetsperspektivet kan hjelpe dere å besvare"
+questions:
+  - "Hvordan snakker lederne om organisasjonen — i «jeg» eller «vi»?"
+  - "Kan dere gi konkrete eksempler på når verdiene ble levd ut i praksis?"
+  - "Finnes det historier om organisasjonens historie som nye folk læres opp i?"
+  - "Hvordan feirer vi suksess — og gjør vi det i det hele tatt?"
+  - "Har vi en felles forståelse av hva slags organisasjon vi vil være?"
 ---
 
 ## Hva er identitetsperspektivet?
@@ -111,14 +118,6 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
     #### Forandringstretthet
 
     Alle endringsinitiativer har feilet før. Folk har sluttet å tro på «nye initiativer». Kynisme som dominerer tone.
-
-## Spørsmål identitetsperspektivet kan hjelpe dere å besvare
-
-- Hvordan snakker lederne om organisasjonen — i «jeg» eller «vi»?
-- Kan dere gi konkrete eksempler på når verdiene ble levd ut i praksis?
-- Finnes det historier om organisasjonens historie som nye folk læres opp i?
-- Hvordan feirer vi suksess — og gjør vi det i det hele tatt?
-- Har vi en felles forståelse av hva slags organisasjon vi vil være?
 
 ![Illustrasjon for kartlegging av kultur](/assets/images/banners/illustrasjon-identitet-cta.webp)
 
