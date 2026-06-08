@@ -1,12 +1,18 @@
+/* Navbar — desktop horizontal layout */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    padding: 8px 0;
 }
 
-.navbar a {
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
     text-decoration: none;
     color: var(--nav-link-color-light);
     font-size: 1.05em;
@@ -19,30 +25,152 @@
     transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
     color: var(--nav-link-color-light);
     background-color: var(--nav-hover-bg-light);
 }
 
+/* Featured nav item — subtle CTA pill for Ledelse 60:2 */
+.nav-links a.nav-featured {
+    border: 2px solid var(--primary-accent);
+    color: var(--primary-accent);
+    padding: 8px 18px;
+}
+
+.nav-links a.nav-featured:hover {
+    background-color: var(--primary-accent);
+    color: var(--primary-accent-contrast);
+}
+
+/* Hamburger toggle — hidden on desktop */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    min-height: 44px;
+    min-width: 44px;
+    position: relative;
+}
+
+.nav-toggle-icon,
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--nav-link-color-light);
+    border-radius: 2px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle-icon {
+    position: relative;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle-icon::before {
+    top: -7px;
+}
+
+.nav-toggle-icon::after {
+    top: 7px;
+}
+
+/* Open state — hamburger → X */
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon {
+    background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon::before {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon::after {
+    transform: translateY(-7px) rotate(-45deg);
+}
 
 /* Dark mode overrides */
-.dark-mode .navbar a {
+.dark-mode .nav-links a {
     color: var(--nav-link-color-dark);
 }
 
-.dark-mode .navbar a:hover {
+.dark-mode .nav-links a:hover {
     color: var(--nav-link-color-dark);
     background-color: var(--nav-hover-bg-dark);
 }
 
-@media (max-width: 599px) {
+.dark-mode .nav-links a.nav-featured {
+    border-color: var(--primary-accent);
+    color: var(--primary-accent);
+}
+
+.dark-mode .nav-links a.nav-featured:hover {
+    background-color: var(--primary-accent);
+    color: var(--primary-accent-contrast);
+}
+
+.dark-mode .nav-toggle-icon,
+.dark-mode .nav-toggle-icon::before,
+.dark-mode .nav-toggle-icon::after {
+    background: var(--nav-link-color-dark);
+}
+
+/* Mobile — ≤768px for navbar collapse (more space than content breakpoint) */
+@media (max-width: 768px) {
     .navbar {
-        gap: 4px;
-        padding: 4px 0;
+        position: relative;
     }
 
-    .navbar a {
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--box-background-light);
+        border: 1px solid var(--border-color-subtle-light);
+        border-radius: var(--radius-lg);
+        padding: 8px;
+        gap: 4px;
+        min-width: 220px;
+        z-index: 100;
+        box-shadow: var(--shadow-lg);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px 20px;
+        font-size: 1em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .dark-mode .nav-links {
+        background: var(--box-background-dark);
+        border-color: var(--border-color-dark);
+    }
+}
+
+@media (max-width: 599px) {
+    .nav-links a {
         font-size: 0.95em;
-        padding: 8px 12px;
+        padding: 10px 16px;
     }
 }

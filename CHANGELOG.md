@@ -10,6 +10,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **HTML→MD refactor — Page content migration**: Extracted all inline HTML from 22 `_pages/*.md` files into includes and markdown body. Created 20 new `_includes/` components (benefit-cards, step-cards, cases-cards, frame-cards, grc-perspective-cards, science-section, ethics-columns, science-highlight, science-quote, science-divider, section-illustration, framework-illustration, section-wrapper, section-container, info-box, challenge-card, challenge-grid, question-list, cta-section, tag-cloud, avtate-section, about-values, about-section, about-team, kotter-flow). Consolidated CTA, Hero, Section patterns (Phase 3). Inline styling tags (`<a class="product-cta">`, `<p class="lead">`) converted to kramdown IAL syntax in captures with `markdownify_body` support.
 
+## [1.8.1] - 2026-06-08
+
+### Added
+- **Mobile hamburger menu**: `.nav-toggle` button with `aria-expanded`, collapsible `.nav-links` dropdown, click-outside and Escape close. Toggle JavaScript in `assets/scripts/navbar.js`. Collapse breakpoint at 768px. Featured nav item: `.nav-featured` CTA pill on "Ledelse 60:2" in navbar.
+- **Hero height variable**: `--header-height` CSS variable on `.header` (85px desktop, 130px mobile) so hero image uses `calc(100vh - var(--header-height))` instead of `100vh` — hero now fills exactly from under the menu to viewport bottom; content starts immediately on scroll
+- **Perspektiv hero image regeneration**: Style 1 with three abstract silhouettes on a hilltop, landscape splitting into four colored zones through transparent lens-frames. 3840×2160 WebP. Matches visual language of Om Oss, Om Metode, Ledelse 60:2.
+- **GRC hero image regeneration**: Style 1 with three abstract silhouettes at a structured junction, protective shield elements and converging paths. 3840×2160 WebP. Matches Style 1 hero language.
+
+### Changed
+- **Hero image language**: Perspektiv and GRC heroes migrated from Style 2 (abstract geometric) to Style 1 (human silhouettes in Nordic landscape). Prompts documented in `.design/graphics.md` under both Style 1 and Style 2 tables with migration note.
+- **Alt text**: Perspektiv and GRC hero alt text updated to describe new silhouette-based imagery in Norwegian.
+- **Header CSS**: Fixed orphaned CSS declarations (lines 38–46) left outside any selector from a previous edit — now properly wrapped.
+
+### Fixed
+- **Hero overflow**: `height: 100vh` caused hero to extend below the first viewport by the header's height (~85px). Now using `calc(100vh - var(--header-height))` so next page content starts at the top of the viewport on first scroll.
+- **Header.css**: Removed stale orphaned CSS (flex-direction/gap/padding declarations outside any media query) that broke the cascade.
+
 ## [1.8.0] - 2026-06-05
 
 ### Added
