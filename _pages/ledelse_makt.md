@@ -90,7 +90,7 @@ Risikoen er tydelig: En ledergruppe som optimerer for makt, uten korrigerende me
 
 ![Abstrakt illustrasjon av tjenende ledelse og tillitsbasert kultur](/assets/images/banners/makt-t3-service-side.webp)
 
-Servant leadership er ikke det samme som å være snill. Blanchard og Barrett er tydelige på at tjenende ledelse er en strategisk posisjonering, ikke en personlighetstype.
+Servant leadership er ikke det samme som å være snill. Blanchard og Barrett er tydelige på at [tjenende ledelse](/tillit/) er en strategisk posisjonering, ikke en personlighetstype.
 
 Servant leadership handler om å bygge organisatorisk kapasitet gjennom å sette medarbeiderne først. Forskningen viser flere konkrete effekter:
 
@@ -131,7 +131,7 @@ Vi kan grovt sett plassere ledelseskulturer langs et spekter:
 - **Tjeneste-tungt med makt-elementer:** Tjenestekulturen dominerer, men det finnes ledere med reell beslutningsmyndighet. Utfordringen er at beslutninger ofte tar for lang tid fordi kulturen idealiserer konsensus.
 - **Rent tjenesteorientert:** Samarbeidende, men beslutningsvegrende. Potensial for utnyttelse av de mest lojale. Endringstakten er lav fordi alle skal være enige.
 
-Logans forskning på kulturstadier (Stage 4–5) peker på en interessant syntese: De mest effektive kulturene er «vi»-orienterte kulturer som samtidig distribuerer makt bredt. I Stage 4-kulturer er makt ikke noe enkeltpersoner har — det er noe teamet har sammen. Makt brukes til å tjene felles mål, ikke til å posisjonere seg internt.
+Logans [forskning på kulturstadier](/usikkerhet/) (Stage 4–5) peker på en interessant syntese: De mest effektive kulturene er «vi»-orienterte kulturer som samtidig distribuerer makt bredt. I Stage 4-kulturer er makt ikke noe enkeltpersoner har — det er noe teamet har sammen. Makt brukes til å tjene felles mål, ikke til å posisjonere seg internt.
 
 Dette er ikke naiv optimisme. Det er en empirisk observasjon av hva som faktisk fungerer i organisasjoner som presterer over tid. Når makt distribueres og samtidig forankres i et felles oppdrag, reduseres både risikoen for maktmisbruk og risikoen for beslutningsvegring.
 

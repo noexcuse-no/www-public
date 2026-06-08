@@ -1,7 +1,16 @@
 /* Avtale page — print styles */
 /* Screen styling handled by article.css via article-body */
 
+/* Screen: hide print-only elements */
+.print-only {
+    display: none;
+}
+
 @media print {
+    .print-only {
+        display: block;
+    }
+
     body {
         background: white !important;
         color: black !important;
