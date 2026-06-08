@@ -51,6 +51,9 @@ json_ld:
             type: "Service"
             name: "Katalysator"
             description: "Kontinuerlig oppfølging og coaching for organisasjonsvekst"
+cta:
+  heading: "Bestill en uforpliktende samtale"
+  body: "Vi finner ut om Ledelse 60:2 er rett for dere. Ingen binding, ingen salgspitch — bare en ærlig vurdering."
 ---
 
 [Bestill Ledelse 60:2](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)

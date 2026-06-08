@@ -309,6 +309,23 @@ ul:has(> li > h4) > li p {
     background: var(--surface-hover-dark);
 }
 
+/* Info box — GRC perspective cards */
+.info-box {
+    background: var(--box-background-light);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    margin: 24px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.info-box h3 {
+    margin-top: 0;
+}
+
 /* Dark mode overrides */
 .dark-mode .info-box,
 .dark-mode .cta-section {

@@ -1,6 +1,9 @@
 ---
 layout: home
 title: "No Excuse AS"
+cta:
+  heading: "Er ledergruppen rustet for fremtiden?"
+  body: "En times samtale gir deg svaret. Ledelse 60:2 kartlegger hvordan ledergruppen fungerer — uten scoring, uten ranking, bare et felles bilde av virkeligheten."
 ---
 
 <section class="section container hero-intro animate-on-scroll fade-in-up">

@@ -32,7 +32,7 @@ json_ld:
 
 No Excuse AS ble grunnlagt i juni 2025. Vi så et behov for å forbedre ledelsesfunksjonen i norske virksomheter uten dyre konsulentrapporter og unødvendig kompleksitet.
 
-Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals fire perspektiver) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse, refleksjon fremfor skjemaer, og at de beste svarene ofte finnes internt — om man stiller de riktige spørsmålene.
+Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals [fire perspektiver](/perspektiv/)) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse, refleksjon fremfor skjemaer, og at de beste svarene ofte finnes internt — om man stiller de riktige spørsmålene.
 
 ![Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet](/assets/images/banners/banner-verdier.webp)
 

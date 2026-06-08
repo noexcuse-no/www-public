@@ -62,7 +62,7 @@ cta:
 
 ## Hvorfor ledere ofte tar dårlige beslutninger
 
-Jeffrey Pfeffer har brukt karrieren sin på å dokumentere gapet mellom hvordan organisasjoner hevder beslutninger tas, og hvordan de faktisk tas. I «Power: Why Some People Have It — and Others Don't» viser han at makt og politikk spiller en langt større rolle enn de fleste er villige til å innrømme.
+Jeffrey Pfeffer har brukt karrieren sin på å dokumentere gapet mellom hvordan organisasjoner hevder beslutninger tas, og hvordan de faktisk tas. I «Power: Why Some People Have It — and Others Don't» viser han at [makt og politikk](/makt/) spiller en langt større rolle enn de fleste er villige til å innrømme.
 
 God styring handler om å vite hvem som faktisk har makt til å beslutte — ikke hvem som formelt sitter i lederrollen. I norske organisasjoner er avstanden mellom formell og reell beslutningsmakt ofte undervurdert. Ansvar uten autoritet er en teoretisk øvelse.
 

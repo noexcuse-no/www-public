@@ -47,6 +47,11 @@ Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningst
 | `/grc/` → Governance section | `/forankring/` | "Les om beslutningsforankring →" |
 | `/grc/` → Ledelse 60:2 overview | `/ledelse-60-2/` | "Les mer om Ledelse 60:2 →" |
 | `/grc/` → Four perspectives | `/perspektiv/` | "Forstå de fire perspektivene →" |
+| `/makt/` → Logan's culture stages section | `/usikkerhet/` | "forskning på kulturstadier" |
+| `/makt/` → Servant leadership section | `/tillit/` | "tjenende ledelse" |
+| `/forankring/` → Power dynamics in decision-making | `/makt/` | "makt og politikk" |
+| `/generativ-ki/` → Logan's five stages | `/usikkerhet/` | "fem kulturstadier" |
+| `/generativ-ki/` → KI as a power question | `/makt/` | "et spørsmål om makt" |
 
 ## Rules
 
