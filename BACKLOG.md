@@ -22,7 +22,7 @@ Completed items belong in `CHANGELOG.md` only.
 | Z2.2 | CC0 declarations — `<link rel="license">`, `_data/metadata.yml`, `package.json`, `_config.yml` | Doing | — |
 | Z2.3 | Wire provenance-jsonld.html into page templates via `_includes/scripts.html` | Planned | Z2.1 |
 | Z2.4 | Image provenance script — create `scripts/apply-provenance.sh` with exiftool batch metadata (IPTC + CC0 XMP) on all 186 WebP files | Planned | — |
-| Z2.5 | AI transparency manifest — create `/.well-known/ai-transparency.json` | Planned | — |
+| Z2.5 | AI transparency manifest — create `/.well-known/ai-transparency.json` | Doing | — |
 | Z2.6 | Documentation — update `.design/graphics.md`, `.design/deployment.md`, CHANGELOG | Planned | Z2.1, Z2.2, Z2.3, Z2.4, Z2.5 |
 | Y1 | Questions include — create `_includes/questions.html` component | Done | — |
 | Y2 | Questions CSS — create `assets/css/components/questions.css` with modal styles | Done | Y1 |
