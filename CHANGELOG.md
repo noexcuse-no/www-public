@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Provenance JSON-LD include (Z2.1)**: Created `_includes/provenance-jsonld.html` — injects `digitalSourceType` `TrainedAlgorithmicMediaDigitalSource` and `license` `CC0-1.0` as standalone JSON-LD `WebPage` block on every page. Respects `page.provenance` frontmatter override (`ai`/`editorial`/`human`). Wired into `_layouts/default.html` after `json-ld.html` include.
+- **CC0 declarations (Z2.2)**: Added `<link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">` to `_includes/metadata.html`. Added `license: CC0-1.0` to `_data/metadata.yml`. Changed `package.json` license from `UNLICENSED` to `CC0-1.0`. Added `license` and `license_url` to `_config.yml`. Created `LICENSE` file (CC0 1.0 Universal full text) at project root.
+
 ### Fixed
 - **CTA buttons (R24.1)**: Added `cta:` frontmatter to home page and Ledelse 60:2; wired `cta-section.html` include into `home.html` layout
 - **Blank content below hero (R24.2)**: Removed `.animate-on-scroll` scroll-opacity system (IntersectionObserver failure left content at `opacity: 0` permanently). Preserved brand entrance animations and parallax hero effect.
