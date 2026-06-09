@@ -18,11 +18,11 @@ Completed items belong in `CHANGELOG.md` only.
 | ID | Title | Status | Depends On |
 |----|-------|--------|------------|
 | Z1 | Company description brand audit — fix consultant-speak in all design/spec/plan files | Done | — |
-| Z2.1 | Provenance JSON-LD include — create `_includes/provenance-jsonld.html` with `digitalSourceType` + `license` | Doing | — |
-| Z2.2 | CC0 declarations — `<link rel="license">`, `_data/metadata.yml`, `package.json`, `_config.yml` | Doing | — |
-| Z2.3 | Wire provenance-jsonld.html into page templates via `_includes/scripts.html` | Planned | Z2.1 |
-| Z2.4 | Image provenance script — create `scripts/apply-provenance.sh` with exiftool batch metadata (IPTC + CC0 XMP) on all 186 WebP files | Doing | — |
-| Z2.5 | AI transparency manifest — create `/.well-known/ai-transparency.json` | Planned | — |
+| Z2.1 | Provenance JSON-LD include — create `_includes/provenance-jsonld.html` with `digitalSourceType` + `license` | Done | PR #137 |
+| Z2.2 | CC0 declarations — `<link rel="license">`, `_data/metadata.yml`, `package.json`, `_config.yml` | Done | PR #137 |
+| Z2.3 | Wire provenance-jsonld.html into page templates via `_includes/scripts.html` or equivalent | Done | Z2.1 → wired in `_layouts/default.html` <head> (equivalent) |
+| Z2.4 | Image provenance script — create `scripts/apply-provenance.sh` with exiftool batch metadata (IPTC + CC0 XMP) on all 186 WebP files | Done | PR #139 |
+| Z2.5 | AI transparency manifest — create `/.well-known/ai-transparency.json` | Doing | PR #140 |
 | Z2.6 | Documentation — update `.design/graphics.md`, `.design/deployment.md`, CHANGELOG | Planned | Z2.1, Z2.2, Z2.3, Z2.4, Z2.5 |
 | Y1 | Questions include — create `_includes/questions.html` component | Done | — |
 | Y2 | Questions CSS — create `assets/css/components/questions.css` with modal styles | Done | Y1 |

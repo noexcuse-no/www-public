@@ -1,0 +1,75 @@
+{
+  "$schema": "https://ai-transparency.dev/schema/v1.json",
+  "version": "1.0.0",
+  "updated": "2026-06-09",
+  "publisher": {
+    "name": "No Excuse AS",
+    "orgnr": "935 794 420",
+    "contact": "mailto:firmapost@noexcuse.no",
+    "url": "https://noexcuse.no"
+  },
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "declarations": {
+    "text": {
+      "tool": "Anthropic Claude / OpenAI GPT-4",
+      "digitalSourceType": "https://schema.org/TrainedAlgorithmicMediaDigitalSource",
+      "editorialReview": {
+        "reviewer": "Rasmus S. Olsen",
+        "status": "human-reviewed",
+        "notes": "All AI-generated text undergoes human editorial review before publication. Content is fact-checked and adapted for tone and accuracy."
+      }
+    },
+    "images": {
+      "tool": "EvoLink GPT Image 2",
+      "digitalSourceType": "https://schema.org/TrainedAlgorithmicMediaDigitalSource",
+      "count": 186,
+      "format": "WebP",
+      "metadata": {
+        "iptcDigitalSourceType": "TrainedAlgorithmicMediaDigitalSource",
+        "xmpLicense": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "xmpRights": "No Excuse AS — CC0 1.0 Universal"
+      }
+    },
+    "code": {
+      "tool": "Anthropic Claude / OpenAI GPT-4",
+      "digitalSourceType": "https://schema.org/TrainedAlgorithmicMediaDigitalSource",
+      "editorialReview": {
+        "reviewer": "Rasmus S. Olsen",
+        "status": "human-reviewed",
+        "notes": "CSS, JavaScript, and HTML templates are AI-generated with human review and manual adjustments for correctness and consistency."
+      }
+    },
+    "styles": {
+      "tool": "Anthropic Claude",
+      "digitalSourceType": "https://schema.org/TrainedAlgorithmicMediaDigitalSource",
+      "editorialReview": {
+        "reviewer": "Rasmus S. Olsen",
+        "status": "human-reviewed"
+      }
+    }
+  },
+  "routes": [
+    { "path": "/", "content": ["text", "images", "code"], "description": "Landing page — Ledelse 60:2 product presentation" },
+    { "path": "/ledelse-60-2/", "content": ["text", "images", "code"], "description": "Product page — leadership assessment overview" },
+    { "path": "/perspektiv/", "content": ["text", "images", "code"], "description": "Four frames overview page" },
+    { "path": "/struktur/", "content": ["text", "images", "code"], "description": "Frame article — structural leadership" },
+    { "path": "/mennesker/", "content": ["text", "images", "code"], "description": "Frame article — human resources leadership" },
+    { "path": "/pavirkning/", "content": ["text", "images", "code"], "description": "Frame article — political leadership" },
+    { "path": "/identitet/", "content": ["text", "images", "code"], "description": "Frame article — symbolic leadership" },
+    { "path": "/om-oss/", "content": ["text", "images", "code"], "description": "About page — company info and values" },
+    { "path": "/metode/", "content": ["text", "images", "code"], "description": "Methodology page — diagnostic approach" },
+    { "path": "/avtale/", "content": ["text", "images", "code"], "description": "Contract terms page" },
+    { "path": "/tillit/", "content": ["text", "images", "code"], "description": "Benefit article — trust-based leadership" },
+    { "path": "/usikkerhet/", "content": ["text", "images", "code"], "description": "Benefit article — navigating uncertainty" },
+    { "path": "/forankring/", "content": ["text", "images", "code"], "description": "Benefit article — organizational anchoring" },
+    { "path": "/generativ-ki/", "content": ["text", "images", "code"], "description": "Benefit article — generative AI in leadership" },
+    { "path": "/makt/", "content": ["text", "images", "code"], "description": "Article — power and service in leadership" },
+    { "path": "/triader/", "content": ["text", "images", "code"], "description": "Article — triad dynamics in organizations" },
+    { "path": "/grc/", "content": ["text", "images", "code"], "description": "Article — GRC integration with four frames" },
+    { "path": "/step-talk/", "content": ["text", "images", "code"], "description": "Process step — initial consultation" },
+    { "path": "/step-interview/", "content": ["text", "images", "code"], "description": "Process step — diagnostic interview" },
+    { "path": "/step-report/", "content": ["text", "images", "code"], "description": "Process step — insights delivery" },
+    { "path": "/dagfinn/", "content": ["text", "images", "code"], "description": "Profile page — CEO presentation" },
+    { "path": "/emne/", "content": ["text", "images"], "description": "Tag archive pages — topic listings by tag" }
+  ]
+}
