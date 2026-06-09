@@ -1,0 +1,24 @@
+{% comment %}
+  Provenance JSON-LD structured data — injects digitalSourceType + license on every page.
+  Respects page-level frontmatter overrides via page.provenance:
+    - unset / "ai"       → TrainedAlgorithmicMediaDigitalSource (default)
+    - "editorial"        → CompositeWithTrainedAlgorithmicMediaDigitalSource
+    - "human"            → no digitalSourceType (omit)
+{% endcomment %}
+{% assign source = page.provenance | default: "ai" %}
+{% if source == "human" %}
+  {% assign digital_source = false %}
+{% elsif source == "editorial" %}
+  {% assign digital_source = "https://schema.org/CompositeWithTrainedAlgorithmicMediaDigitalSource" %}
+{% else %}
+  {% assign digital_source = "https://schema.org/TrainedAlgorithmicMediaDigitalSource" %}
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://noexcuse.no{{ page.url | default: '/' }}",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/"{% if digital_source %},
+  "digitalSourceType": "{{ digital_source }}"{% endif %}
+}
+</script>
