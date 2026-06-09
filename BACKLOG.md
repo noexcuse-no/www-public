@@ -18,12 +18,7 @@ Completed items belong in `CHANGELOG.md` only.
 | ID | Title | Status | Depends On |
 |----|-------|--------|------------|
 | Z1 | Company description brand audit — fix consultant-speak in all design/spec/plan files | Done | — |
-| Z2.1 | Provenance JSON-LD include — create `_includes/provenance-jsonld.html` with `digitalSourceType` + `license` | Done | PR #137 |
-| Z2.2 | CC0 declarations — `<link rel="license">`, `_data/metadata.yml`, `package.json`, `_config.yml` | Done | PR #137 |
-| Z2.3 | Wire provenance-jsonld.html into page templates via `_includes/scripts.html` or equivalent | Done | Z2.1 → wired in `_layouts/default.html` <head> (equivalent) |
-| Z2.4 | Image provenance script — create `scripts/apply-provenance.sh` with exiftool batch metadata (IPTC + CC0 XMP) on all 186 WebP files | Done | PR #139 |
-| Z2.5 | AI transparency manifest — create `/.well-known/ai-transparency.json` | Done | PR #140 |
-| Z2.6 | Documentation — update `.design/graphics.md`, `.design/deployment.md`, CHANGELOG | Doing | Z2.1, Z2.2, Z2.3, Z2.4, Z2.5 |
+| Z2.1–Z2.6 | Provenance & transparency pipeline — JSON-LD, CC0, exiftool script, AI transparency manifest, docs | Done | PR #137, PR #139, PR #140, PR #141 |
 | Y1 | Questions include — create `_includes/questions.html` component | Done | — |
 | Y2 | Questions CSS — create `assets/css/components/questions.css` with modal styles | Done | Y1 |
 | Y3 | Questions JS — create `assets/scripts/review-questions.js` with modal, providers, clipboard | Done | Y1 |
