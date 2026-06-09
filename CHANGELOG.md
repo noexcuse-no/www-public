@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Image provenance script (Z2.4)**: Created `scripts/apply-provenance.sh` — exiftool batch script that applies IPTC `DigitalSourceType` (`TrainedAlgorithmicMediaDigitalSource`) and CC0 XMP metadata (`Rights`, `License`, `AIIdentifier`) to all 186 WebP images. Idempotent (skips already-tagged files via `-if 'not $DigitalSourceType'` guard). Supports `--dry` dry-run mode.
+
 ### Fixed
 - **CTA buttons (R24.1)**: Added `cta:` frontmatter to home page and Ledelse 60:2; wired `cta-section.html` include into `home.html` layout
 - **Blank content below hero (R24.2)**: Removed `.animate-on-scroll` scroll-opacity system (IntersectionObserver failure left content at `opacity: 0` permanently). Preserved brand entrance animations and parallax hero effect.
