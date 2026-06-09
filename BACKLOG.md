@@ -18,8 +18,8 @@ Completed items belong in `CHANGELOG.md` only.
 | ID | Title | Status | Depends On |
 |----|-------|--------|------------|
 | Z1 | Company description brand audit — fix consultant-speak in all design/spec/plan files | Done | — |
-| Z2.1 | Provenance JSON-LD include — create `_includes/provenance-jsonld.html` with `digitalSourceType` + `license` | Planned | — |
-| Z2.2 | CC0 declarations — `<link rel="license">`, `_data/metadata.yml`, `package.json`, `_config.yml` | Planned | — |
+| Z2.1 | Provenance JSON-LD include — create `_includes/provenance-jsonld.html` with `digitalSourceType` + `license` | Doing | — |
+| Z2.2 | CC0 declarations — `<link rel="license">`, `_data/metadata.yml`, `package.json`, `_config.yml` | Doing | — |
 | Z2.3 | Wire provenance-jsonld.html into page templates via `_includes/scripts.html` | Planned | Z2.1 |
 | Z2.4 | Image provenance script — create `scripts/apply-provenance.sh` with exiftool batch metadata (IPTC + CC0 XMP) on all 186 WebP files | Planned | — |
 | Z2.5 | AI transparency manifest — create `/.well-known/ai-transparency.json` | Planned | — |
