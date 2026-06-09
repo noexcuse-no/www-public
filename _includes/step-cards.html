@@ -3,7 +3,7 @@
   No parameters. Used on the Ledelse 60:2 landing page.
 {% endcomment %}
 
-<div class="card-grid card-grid--steps">
+<div class="card-grid card-grid--steps stagger-parent">
   {% assign steps = site.pages | where: "class", "step" | sort: "step_number" %}
   {% for topic in steps %}
     {% include card.html topic=topic %}
