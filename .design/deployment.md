@@ -44,6 +44,36 @@ There is no GitHub Actions workflow, no manual build step, and no CI/CD configur
 | Source | Markdown frontmatter + Liquid templates |
 | Output | Static HTML in `_site/` (ephemeral, not committed) |
 
+## Static Assets
+
+### AI-generated Content Disclosure
+
+The site implements a three-layer AI content provenance system:
+
+| Layer | File | Purpose |
+|-------|------|---------|
+| JSON-LD metadata | `_includes/provenance-jsonld.html` | Per-page `digitalSourceType` declaration in `<head>` |
+| Image EXIF metadata | `scripts/apply-provenance.sh` | IPTC/XMP metadata on all 186 WebP images (run after image generation) |
+| Transparency manifest | `/.well-known/ai-transparency.json` | Per-route AI scope manifest at standard `.well-known` path |
+
+These files are static and served directly by GitHub Pages — no server-side processing required.
+
+### Image Generation & Metadata Pipeline
+
+1. Generate images via EvoLink GPT Image 2 (1024×1024 PNG)
+2. Convert to WebP at tier-specific resolutions via sharp/PIL
+3. **Run provenance script**: `bash scripts/apply-provenance.sh` (idempotent — safe to run multiple times)
+4. Commit and push
+
+### Post-Merge Cleanup
+
+After each PR merge, delete the feature branch both locally and on remote:
+
+```bash
+git branch -d feature/branch-name
+git push origin --delete feature/branch-name
+```
+
 ## References
 
 - [GitHub Pages documentation](https://docs.github.com/en/pages)
