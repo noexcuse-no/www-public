@@ -59,7 +59,7 @@ Completed items belong in `CHANGELOG.md` only.
 | R20 | Generate and add illustrations to /perspektiv per page design rules | Done | PR #116 |
 | R16 | Article illustrations — 25 images for Makt, Perspektiv, Triader (T2 framework + T3 section + T4 micro) | Done | PR #117 |
 | R17 | Frame micro illustrations — 16 T4 micro spots for challenge cards on Struktur, Mennesker, Identitet, Påvirkning | Done | PR #118 |
-| F7 | Uniform illustration system — 4-tier taxonomy (T1-T4), naming convention, CSS classes, future page template | Planned | — |
+| F7 | Uniform illustration system — 4-tier taxonomy (T1-T4), naming convention, CSS classes, future page template | Doing | — |
 | R24.1 | **CTA buttons missing** — added CTA frontmatter to home page and ledelse 60:2; added cta-section include to home layout | Done | PR #131 |
 | R24.2 | **Content below hero blank** — root cause: `.animate-on-scroll` set `opacity: 0` on entire content wrapper; if IntersectionObserver failed to fire, content stayed hidden. Removed scroll-triggered opacity system entirely. | Done | — |
 | R24.3 | **Images broken on avtale page** — fixed kramdown empty title syntax, added print-only logo wrapper + CSS | Done | PR #131 |

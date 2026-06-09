@@ -45,6 +45,19 @@ Example: `tillit-t2-four-pillars.webp`, `usikkerhet-t4-silo-thinking.webp`
 
 See `.specs/illustration-system/README.md` for per-page inventory and CSS treatment.
 
+### CSS Classes (F7)
+
+The 4-tier system is implemented via the following CSS classes in `assets/css/components/illustrations.css`:
+
+| Tier | CSS Class | Key Properties |
+|------|-----------|----------------|
+| T1 | `.hero-image img` | Full-width, `object-fit: cover`, `min-height: 60vh` |
+| T2 | `.framework-illustration` | `max-width: 800px`, centered (`margin-inline: auto`), `margin-block: 2rem` |
+| T3 | `.section-illustration` | `max-width: 400px`, centered; float variants `--float-left`/`--float-right` |
+| T4 | `.micro-illustration` | `width: 80px`, `height: 80px`, inline-block |
+
+The naming convention `{page-id}-{tier}-{concept}.webp` applies uniformly across all page types. All generated images are placed in `assets/images/banners/`.
+
 ---
 
 ## Image Types & Style Guidelines
