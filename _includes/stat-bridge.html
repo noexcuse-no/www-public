@@ -1,0 +1,10 @@
+{% comment %}
+  Stat bridge — single-line stat row between hero and benefit grid.
+  Activated per page via frontmatter:
+    stat_bridge: "4 perspektiver · 60 spørsmål · 2 timer"
+{% endcomment %}
+{% if page.stat_bridge %}
+<div class="stat-bridge animate-on-scroll fade-in-up">
+  <p class="stat-bridge-text">{{ page.stat_bridge }}</p>
+</div>
+{% endif %}

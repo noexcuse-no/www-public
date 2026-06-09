@@ -4,3 +4,41 @@
     text-align: center;
     padding: 20px;
 }
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: var(--footer-text-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    padding: 8px 4px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-legal {
+    font-size: 0.85em;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.dark-mode .footer {
+    background-color: var(--footer-background-dark);
+    color: var(--footer-text-dark);
+}
+
+.dark-mode .footer-nav a {
+    color: var(--footer-text-dark);
+}
