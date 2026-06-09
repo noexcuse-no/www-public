@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Ledelse 60:2 UI/UX improvements (U1–U13)**: 10-item backlog completion for `/ledelse-60-2/` product page — hero CTA button (U1), styled inline CTAs (U2), section headers above card grids (U3/U4), removed redundant CTA (U5), metodikk info-box callout (U6), footer nav links (U9), process image alt text (U10), sticky CTA bar with IntersectionObserver (U11), stat bridge row (U12), numbered timeline step cards (U13). New includes: `stat-bridge.html`, `cta-buttons.html`, `metodikk-callout.html`, `sticky-cta.html`. New script: `sticky-cta.js` with generic stagger-parent IntersectionObserver.
+
 ### Fixed
 - **CTA buttons (R24.1)**: Added `cta:` frontmatter to home page and Ledelse 60:2; wired `cta-section.html` include into `home.html` layout
 - **Blank content below hero (R24.2)**: Removed `.animate-on-scroll` scroll-opacity system (IntersectionObserver failure left content at `opacity: 0` permanently). Preserved brand entrance animations and parallax hero effect.
