@@ -17,6 +17,7 @@ twitter_image: "https://noexcuse.no/assets/images/og-image.png"
 twitter_card: "summary_large_image"
 twitter_url: "https://noexcuse.no/"
 version: "1.7.2"
+license: "CC0-1.0"
 impressum:
   copyright_year: 2025
   email: "firmapost@noexcuse.no"

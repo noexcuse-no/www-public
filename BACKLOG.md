@@ -18,8 +18,8 @@ Completed items belong in `CHANGELOG.md` only.
 | ID | Title | Status | Depends On |
 |----|-------|--------|------------|
 | Z1 | Company description brand audit — fix consultant-speak in all design/spec/plan files | Done | — |
-| Z2.1 | Provenance JSON-LD include — create `_includes/provenance-jsonld.html` with `digitalSourceType` + `license` | Planned | — |
-| Z2.2 | CC0 declarations — `<link rel="license">`, `_data/metadata.yml`, `package.json`, `_config.yml` | Planned | — |
+| Z2.1 | Provenance JSON-LD include — create `_includes/provenance-jsonld.html` with `digitalSourceType` + `license` | Doing | — |
+| Z2.2 | CC0 declarations — `<link rel="license">`, `_data/metadata.yml`, `package.json`, `_config.yml` | Doing | — |
 | Z2.3 | Wire provenance-jsonld.html into page templates via `_includes/scripts.html` | Planned | Z2.1 |
 | Z2.4 | Image provenance script — create `scripts/apply-provenance.sh` with exiftool batch metadata (IPTC + CC0 XMP) on all 186 WebP files | Doing | — |
 | Z2.5 | AI transparency manifest — create `/.well-known/ai-transparency.json` | Planned | — |
@@ -59,7 +59,7 @@ Completed items belong in `CHANGELOG.md` only.
 | R20 | Generate and add illustrations to /perspektiv per page design rules | Done | PR #116 |
 | R16 | Article illustrations — 25 images for Makt, Perspektiv, Triader (T2 framework + T3 section + T4 micro) | Done | PR #117 |
 | R17 | Frame micro illustrations — 16 T4 micro spots for challenge cards on Struktur, Mennesker, Identitet, Påvirkning | Done | PR #118 |
-| F7 | Uniform illustration system — 4-tier taxonomy (T1-T4), naming convention, CSS classes, future page template | Planned | — |
+| F7 | Uniform illustration system — 4-tier taxonomy (T1-T4), naming convention, CSS classes, future page template | Doing | — |
 | R24.1 | **CTA buttons missing** — added CTA frontmatter to home page and ledelse 60:2; added cta-section include to home layout | Done | PR #131 |
 | R24.2 | **Content below hero blank** — root cause: `.animate-on-scroll` set `opacity: 0` on entire content wrapper; if IntersectionObserver failed to fire, content stayed hidden. Removed scroll-triggered opacity system entirely. | Done | — |
 | R24.3 | **Images broken on avtale page** — fixed kramdown empty title syntax, added print-only logo wrapper + CSS | Done | PR #131 |
@@ -70,14 +70,14 @@ Completed items belong in `CHANGELOG.md` only.
 | R24.8 | **Hero sizing fix** — `height: 100vh` → `calc(100vh - var(--header-height))` so hero doesn't extend below first viewport | Done | — |
 | R24.9 | **Hero image regeneration** — Perspektiv and GRC heroes regenerated as Style 1 (three silhouettes in Nordic landscape, 4K) to match Om Oss/Om Metode/Ledelse 60:2 | Done | — |
 | R24.10 | **Featured nav styling** — "Ledelse 60:2" emphasized in main menu with `.nav-featured` CTA pill | Done | — |
-| U1 | **Hero primary CTA** — add `.product-cta` button in hero overlay linking to booking | Planned | — |
-| U2 | **Plain text CTAs to styled buttons** — convert inline links in article body to `.product-cta` buttons | Planned | U1 |
-| U3 | **Section headers between card grids** — add `<h2>` headings above benefit grid and step grid | Planned | — |
-| U4 | **Visual section separation** — subtle background on step grid section to distinguish from benefits | Planned | U3 |
-| U5 | **Redundant CTA consolidation** — remove duplicate inline CTA from article body bottom | Planned | — |
-| U6 | **Dedicated "Om metodikk" callout** — extract `/metode/` link into info-box callout after process image | Planned | — |
-| U9 | **Footer navigation links** — add site nav links (Perspektiv, GRC, Om oss) to footer | Planned | — |
-| U10 | **Process image alt text** — update T2 process flow alt text to describe the three steps | Planned | — |
-| U11 | **Sticky CTA bar on scroll** — persistent bottom bar with booking button, dismissible, hides on footer overlap | Planned | U1 |
-| U12 | **Hero → card bridge (stat row)** — "4 perspektiver · 60 spørsmål · 2 timer" between hero and benefit grid | Planned | — |
-| U13 | **Step cards as numbered timeline** — horizontal connector line between step cards, prominent numbered badges, mobile vertical timeline | Planned | U4 |
+| U1 | **Hero primary CTA** — add `.product-cta` button in hero overlay linking to booking | Done | — |
+| U2 | **Plain text CTAs to styled buttons** — convert inline links in article body to `.product-cta` buttons | Done | U1 |
+| U3 | **Section headers between card grids** — add `<h2>` headings above benefit grid and step grid | Done | — |
+| U4 | **Visual section separation** — subtle background on step grid section to distinguish from benefits | Done | U3 |
+| U5 | **Redundant CTA consolidation** — remove duplicate inline CTA from article body bottom | Done | — |
+| U6 | **Dedicated "Om metodikk" callout** — extract `/metode/` link into info-box callout after process image | Done | — |
+| U9 | **Footer navigation links** — add site nav links (Perspektiv, GRC, Om oss) to footer | Done | — |
+| U10 | **Process image alt text** — update T2 process flow alt text to describe the three steps | Done | — |
+| U11 | **Sticky CTA bar on scroll** — persistent bottom bar with booking button, dismissible, hides on footer overlap | Done | U1 |
+| U12 | **Hero → card bridge (stat row)** — "4 perspektiver · 60 spørsmål · 2 timer" between hero and benefit grid | Done | — |
+| U13 | **Step cards as numbered timeline** — horizontal connector line between step cards, prominent numbered badges, mobile vertical timeline | Done | U4 |

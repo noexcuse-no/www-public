@@ -25,6 +25,8 @@
 {% assign hero_alt = include.alt | default: include.image_alt | default: page.hero.alt %}
 {% assign hero_title = include.title | default: page.hero.title %}
 {% assign hero_intro = include.intro | default: page.hero.intro %}
+{% assign hero_cta_text = include.cta_text | default: page.hero.cta_text %}
+{% assign hero_cta_url = include.cta_url | default: page.hero.cta_url %}
 {% assign hero_effect = include.hero_effect | default: page.hero_effect %}
 {% assign hero_simple = include.simple | default: page.hero.simple | default: false %}
 {% assign hero_show_frame_nav = include.show_frame_nav | default: page.hero.show_frame_nav | default: false %}
@@ -49,6 +51,11 @@
     <h1 class="hero-title">{{ hero_title }}</h1>
     {% if hero_intro %}
     <p class="hero-intro">{{ hero_intro }}</p>
+    {% endif %}
+    {% if hero_cta_text and hero_cta_url %}
+    <div class="hero-cta">
+      <a href="{{ hero_cta_url }}" class="product-cta">{{ hero_cta_text }}</a>
+    </div>
     {% endif %}
   </div>
   {% if hero_show_frame_nav %}
