@@ -1,6 +1,43 @@
 /* Illustration System — T2/T3/T4 tier styling */
 
-/* T4: Micro illustrations (challenge cards, list items) */
+/* T2: Framework illustration — multi-element models, infographics */
+.framework-illustration {
+    max-width: 800px;
+    margin-inline: auto;
+    margin-block: var(--space-xl);
+    display: block;
+}
+
+/* T3: Section illustration — individual element, info-box spots */
+.section-illustration {
+    max-width: 400px;
+    margin-inline: auto;
+    margin-block: var(--space-lg);
+}
+
+.section-illustration--float-left {
+    float: left;
+    margin-right: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+.section-illustration--float-right {
+    float: right;
+    margin-left: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+/* T4: Micro illustration — challenge cards, list items, small concepts */
+.micro-illustration {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* T4: Challenge card micro image (specific context override) */
 .challenge-card > img:first-child {
     width: 80px;
     height: 80px;
@@ -16,5 +53,11 @@
     .challenge-card > img:first-child {
         width: 60px;
         height: 60px;
+    }
+
+    .section-illustration--float-left,
+    .section-illustration--float-right {
+        float: none;
+        margin-inline: auto;
     }
 }

@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Uniform illustration system (F7)**: Added `.framework-illustration` (T2, max-width 800px centered), `.section-illustration` (T3, max-width 400px with `--float-left`/`--float-right` variants), and `.micro-illustration` (T4, 80×80px inline-block) CSS classes in `assets/css/components/illustrations.css`. Updated `.design/graphics.md` with CSS classes table and naming convention documentation.
+
 ### Fixed
 - **CTA buttons (R24.1)**: Added `cta:` frontmatter to home page and Ledelse 60:2; wired `cta-section.html` include into `home.html` layout
 - **Blank content below hero (R24.2)**: Removed `.animate-on-scroll` scroll-opacity system (IntersectionObserver failure left content at `opacity: 0` permanently). Preserved brand entrance animations and parallax hero effect.
