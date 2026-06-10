@@ -8,7 +8,13 @@
 <link rel="canonical" href="https://noexcuse.no{{ page.url }}">
 <meta property="og:title" content="{{ page.title | default: site.data.metadata.og_title }}">
 <meta property="og:description" content="{{ meta_desc | default: site.data.metadata.og_description }}">
-<meta property="og:image" content="{{ site.data.metadata.og_image }}">
+{% assign og_img = page.hero.image | default: page.banner | default: page.image | default: site.data.metadata.og_image %}
+{% unless og_img contains "://" %}
+  {% assign og_img = site.url | append: '/' | append: og_img %}
+{% endunless %}
+<meta property="og:image" content="{{ og_img }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://noexcuse.no{{ page.url }}">
 <meta property="og:type" content="{{ page.json_ld[0].type | default: site.data.metadata.og_type }}">
 <meta property="og:locale" content="{{ site.data.metadata.og_locale }}" />
@@ -16,7 +22,7 @@
 <meta name="twitter:card" content="{{ site.data.metadata.twitter_card }}">
 <meta name="twitter:title" content="{{ page.title | default: site.data.metadata.twitter_title }}">
 <meta name="twitter:description" content="{{ meta_desc | default: site.data.metadata.twitter_description }}">
-<meta name="twitter:image" content="{{ site.data.metadata.twitter_image }}">
+<meta name="twitter:image" content="{{ og_img }}">
 <meta name="twitter:domain" content="{{ site.data.metadata.twitter_domain }}">
 <meta name="twitter:url" content="https://noexcuse.no{{ page.url }}">
 <meta name="version" content="{{ site.data.metadata.version }}">
