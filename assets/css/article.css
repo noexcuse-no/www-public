@@ -133,33 +133,7 @@ ul:has(> li > h4) > li p {
     opacity: 0.85;
 }
 
-/* CTA section — call to action (used by cta-section.html include) */
-.cta-section {
-    text-align: center;
-    background: var(--box-background-light);
-    border-radius: var(--radius-xl);
-    margin-bottom: 40px;
-}
 
-.cta-section h2 {
-    font-size: 1.6em;
-    margin-bottom: 16px;
-}
-
-.cta-section p {
-    font-size: 1.05em;
-    line-height: 1.6;
-    margin-bottom: 24px;
-    opacity: 0.85;
-}
-
-/* CTA buttons — flex container (used by cta-section.html, tag.html) */
-.cta-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 /* Standalone section images — paragraph images whose parent is not a list item */
 :not(li) > p:has(> img:only-child) > img:not([class]) {
     width: 100%;
@@ -179,10 +153,6 @@ ul:has(> li > h4) > li p {
         grid-template-columns: 1fr;
     }
 
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .citation {
@@ -193,143 +163,6 @@ ul:has(> li > h4) > li p {
     margin-left: 2px;
 }
 
-/* Tag cloud (emne landing page) */
-.tag-cloud {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.tag-cloud-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 18px;
-    background: var(--box-background-light);
-    border: 1px solid var(--border-color-subtle-light);
-    border-radius: var(--radius-lg);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-decoration: none;
-    min-height: 44px;
-}
-
-.tag-cloud-item:hover {
-    box-shadow: var(--shadow-md);
-    text-decoration: none;
-}
-
-.tag-name {
-    font-size: 1em;
-    font-weight: 500;
-    color: var(--text-color-light);
-}
-
-.tag-count {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 24px;
-    height: 24px;
-    padding: 0 6px;
-    font-size: 0.8em;
-    font-weight: 600;
-    color: var(--primary-accent-contrast);
-    background: var(--primary-accent);
-    border-radius: 12px;
-}
-
-/* Tag badges (inline on article lists) */
-.tag-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 12px;
-}
-
-.tag-badge {
-    display: inline-block;
-    padding: 4px 10px;
-    font-size: 0.8em;
-    color: var(--primary-accent);
-    background: var(--surface-subtle-light);
-    border-radius: var(--radius-sm);
-    text-decoration: none;
-    transition: background 0.2s ease;
-}
-
-.tag-badge:hover {
-    background: var(--surface-hover-light);
-    text-decoration: none;
-}
-
-.result-count {
-    font-size: 0.95em;
-    opacity: 0.7;
-    margin-bottom: 20px;
-}
-
-/* Footnotes — kramdown auto-generated */
-.footnotes {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color-light);
-    font-size: 0.875em;
-}
-
-.footnotes ol {
-    padding-left: 1.25rem;
-}
-
-.footnotes li {
-    margin-bottom: 0.75rem;
-    line-height: 1.5;
-}
-
-.footnotes li:target {
-    background: rgba(0, 48, 96, 0.05);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-}
-
-.footnote-backlink {
-    margin-left: 0.25rem;
-    text-decoration: none;
-    opacity: 0.5;
-    font-size: 0.85em;
-}
-
-.footnote-backlink:hover {
-    opacity: 1;
-}
-
-.dark-mode .footnotes {
-    border-top-color: var(--border-color-dark);
-}
-
-.dark-mode .footnotes li:target {
-    background: rgba(240, 255, 255, 0.08);
-}
-
-/* Dark mode overrides */
-.dark-mode .tag-cloud-item {
-    background: var(--box-background-dark);
-    border-color: var(--surface-tag-bg-dark);
-}
-
-.dark-mode .tag-name {
-    color: var(--text-color-dark);
-}
-
-.dark-mode .tag-badge {
-    background: var(--surface-tag-bg-dark);
-    color: var(--primary-accent);
-}
-
-.dark-mode .tag-badge:hover {
-    background: var(--surface-hover-dark);
-}
 
 /* Info box — GRC perspective cards */
 .info-box {
@@ -352,10 +185,6 @@ ul:has(> li > h4) > li p {
 .dark-mode .info-box {
     background: var(--surface-subtle-dark);
 }
-.dark-mode .cta-section {
-    background: var(--box-background-dark);
-}
-
 /* ========================================
    Table styles — structural for article-body
    ======================================== */

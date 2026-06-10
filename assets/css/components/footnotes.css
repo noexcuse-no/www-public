@@ -1,0 +1,44 @@
+/* ========================================
+   Footnotes — kramdown auto-generated
+   ======================================== */
+.footnotes {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color-light);
+    font-size: 0.875em;
+}
+
+.footnotes ol {
+    padding-left: 1.25rem;
+}
+
+.footnotes li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.footnotes li:target {
+    background: rgba(0, 48, 96, 0.05);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.footnote-backlink {
+    margin-left: 0.25rem;
+    text-decoration: none;
+    opacity: 0.5;
+    font-size: 0.85em;
+}
+
+.footnote-backlink:hover {
+    opacity: 1;
+}
+
+/* Dark mode overrides */
+.dark-mode .footnotes {
+    border-top-color: var(--border-color-dark);
+}
+
+.dark-mode .footnotes li:target {
+    background: rgba(240, 255, 255, 0.08);
+}
