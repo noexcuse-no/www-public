@@ -93,31 +93,31 @@ Spørsmålet ledergrupper bør stille seg i usikre tider er ikke «hva er kultur
 
 David Logan deler organisasjoner inn i fem kulturstadier, basert på hvordan medlemmene ser på seg selv og andre:
 
-*   ![](/assets/images/banners/usikkerhet-t3-stage-1.webp)
+*   ![Abstrakt illustrasjon av Logans kulturstadium 1: «Livet suger»](/assets/images/banners/usikkerhet-t3-stage-1.webp)
 
     ### Trinn 1: «Livet suger»
 
     En subkultur preget av apati og offermentalitet. Folk tror ingenting kan endres. Dette finnes sjelden i fungerende organisasjoner, men kan oppstå i nedlagte avdelinger eller under kriser.
 
-*   ![](/assets/images/banners/usikkerhet-t3-stage-2.webp)
+*   ![Abstrakt illustrasjon av Logans kulturstadium 2: «Mitt liv suger»](/assets/images/banners/usikkerhet-t3-stage-2.webp)
 
     ### Trinn 2: «Mitt liv suger»
 
     Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.
 
-*   ![](/assets/images/banners/usikkerhet-t3-stage-3.webp)
+*   ![Abstrakt illustrasjon av Logans kulturstadium 3: «Jeg er great»](/assets/images/banners/usikkerhet-t3-stage-3.webp)
 
     ### Trinn 3: «Jeg er great, du er det ikke»
 
     Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.
 
-*   ![](/assets/images/banners/usikkerhet-t3-stage-4.webp)
+*   ![Abstrakt illustrasjon av Logans kulturstadium 4: «Vi er great»](/assets/images/banners/usikkerhet-t3-stage-4.webp)
 
     ### Trinn 4: «Vi er great, andre er ikke»
 
     Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.
 
-*   ![](/assets/images/banners/usikkerhet-t3-stage-5.webp)
+*   ![Abstrakt illustrasjon av Logans kulturstadium 5: «Livet er great»](/assets/images/banners/usikkerhet-t3-stage-5.webp)
 
     ### Trinn 5: «Livet er great»
 
@@ -144,49 +144,49 @@ Når usikkerhet oppstår, oppstår også maktkamper. De som griper muligheten i 
 
 John Kotter har kartlagt hvorfor endringsinitiativer feiler — og hvordan de faktisk kan lykkes. Hans forskning viser at de fleste endringsforsøk mislykkes fordi de gjør én eller flere av åtte kritiske feil. Her er hans åtte steg, fra akutt til forankret.
 
-1.  ![](/assets/images/banners/usikkerhet-t3-kotter-1.webp "")
+1.  ![Abstrakt illustrasjon av Kotters steg 1: Skap nødvendighet](/assets/images/banners/usikkerhet-t3-kotter-1.webp "")
 
     ### Skap nødvendighet
 
     Hjelp folk å se hvorfor endring er nødvendig nå — ikke til slutt. Hva koster det å ikke endre? Konkurransetrykk, regulatoriske endringer, arbeidsmarkedsskifter. Nødvendighet er ikke panikk — det er klarhet.
 
-2.  ![](/assets/images/banners/usikkerhet-t3-kotter-2.webp "")
+2.  ![Abstrakt illustrasjon av Kotters steg 2: Bygg en sterk koalisjon](/assets/images/banners/usikkerhet-t3-kotter-2.webp "")
 
     ### Bygg en sterk koalisjon
 
     Samle en gruppe med nok makt til å lede endringen. Inkluder formelle ledere og uformelle opinionsledere. Ikke alle trenger å være overbevist — men nøkkelaktører må være med.
 
-3.  ![](/assets/images/banners/usikkerhet-t3-kotter-3.webp "")
+3.  ![Abstrakt illustrasjon av Kotters steg 3: Formuler en visjon](/assets/images/banners/usikkerhet-t3-kotter-3.webp "")
 
     ### Formuler en visjon
 
     Beskriv hvordan fremtiden ser ut etter endringen. Enkel, klar, inspirerende — ikke en prosjektplan. Visjonen skal styre beslutninger, ikke bare kommunikasjon.
 
-4.  ![](/assets/images/banners/usikkerhet-t3-kotter-4.webp "")
+4.  ![Abstrakt illustrasjon av Kotters steg 4: Kommuniser visjonen](/assets/images/banners/usikkerhet-t3-kotter-4.webp "")
 
     ### Kommuniser visjonen
 
     Gjør visjonen til en pågående tilstedeværelse, ikke en engangsannonsering. Led med eksempel — handlinger taler høyere enn presentasjoner. Addresser angst og motstand direkte, ikke ignorer dem.
 
-5.  ![](/assets/images/banners/usikkerhet-t3-kotter-5.webp "")
+5.  ![Abstrakt illustrasjon av Kotters steg 5: Fjern hindringer](/assets/images/banners/usikkerhet-t3-kotter-5.webp "")
 
     ### Fjern hindringer
 
     Identifiser barrierer: strukturer, systemer, ferdigheter, vaner. Myndiggjør folk til å fjerne hindringer eller finne veier rundt dem. Feir tidlige seiere som fjerner en barriere.
 
-6.  ![](/assets/images/banners/usikkerhet-t3-kotter-6.webp "")
+6.  ![Abstrakt illustrasjon av Kotters steg 6: Skap kortsiktige seiere](/assets/images/banners/usikkerhet-t3-kotter-6.webp "")
 
     ### Skap kortsiktige seiere
 
     Planlegg synlige forbedringer innen 3-6 måneder. Ikke vent på den store transformasjonen — tidlige seiere bygger momentum. Analyser resultater ærlig — juster hvis seieren ikke var så stor som forventet.
 
-7.  ![](/assets/images/banners/usikkerhet-t3-kotter-7.webp "")
+7.  ![Abstrakt illustrasjon av Kotters steg 7: Bygg videre på endringen](/assets/images/banners/usikkerhet-t3-kotter-7.webp "")
 
     ### Bygg videre på endringen
 
     Bruk troverdigheten fra tidlige seiere til å angripe større endringer. Fremhev folk som gjennomførte tidlige endringer. Ikke erklær seier for tidlig — konsolidering tar tid.
 
-8.  ![](/assets/images/banners/usikkerhet-t3-kotter-8.webp "")
+8.  ![Abstrakt illustrasjon av Kotters steg 8: Forankre i kulturen](/assets/images/banners/usikkerhet-t3-kotter-8.webp "")
 
     ### Forankre i kulturen
 
@@ -209,27 +209,27 @@ Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av k
 
 ## Vanlige kulturutfordringer
 
-*   ![](/assets/images/banners/usikkerhet-t4-values-practice.webp "")
+*   ![Abstrakt illustrasjon av uoverensstemmelse mellom verdier og praksis](/assets/images/banners/usikkerhet-t4-values-practice.webp "")
 
     #### Uoverensstemmelse mellom verdier og praksis
 
     «Vi er innovative» står på veggen, men ideer drepes i møter. Kulturen sier noe annet enn det ledelsen tror.
-*   ![](/assets/images/banners/usikkerhet-t4-tacit-knowledge.webp "")
+*   ![Abstrakt illustrasjon av taus kunnskap som ikke deles](/assets/images/banners/usikkerhet-t4-tacit-knowledge.webp "")
 
     #### Tacite kunnskap som ikke deles
 
     Kunnskapen sitter i hodene til enkelte, ikke i systemer. Når folk slutter, forsvinner kunnskapen.
-*   ![](/assets/images/banners/usikkerhet-t4-silo-thinking.webp "")
+*   ![Abstrakt illustrasjon av silotenkning i organisasjoner](/assets/images/banners/usikkerhet-t4-silo-thinking.webp "")
 
     #### Silo-tenkning
 
     Avdelinger som jobber for seg selv. «Det der er ikke mitt problem»-mentalitet. Koordinering på tvers av avdelinger er tilfeldig.
-*   ![](/assets/images/banners/usikkerhet-t4-always-done.webp "")
+*   ![Abstrakt illustrasjon av «alltid sånn her»-mentalitet](/assets/images/banners/usikkerhet-t4-always-done.webp "")
 
     #### «Alltid sånn her»-mentalitet
 
     Historisk suksess blir institusjonlisert. «Vi har alltid gjort det sånn» blir argumentet mot fornyelse.
-*   ![](/assets/images/banners/usikkerhet-t4-structural-uncertainty.webp "")
+*   ![Abstrakt illustrasjon av strukturell usikkerhet](/assets/images/banners/usikkerhet-t4-structural-uncertainty.webp "")
 
     #### Strukturell usikkerhet
 

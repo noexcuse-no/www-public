@@ -109,25 +109,25 @@ Problemet er ikke at dyader er onde. Problemet er at de er utilstrekkelige som e
 
 En triade er tre personer med gjensidige, ikke-eksklusive relasjoner. Det høres enkelt ut, men forskjellen fra en dyade er strukturell, ikke kvantitativ.
 
-*   ![](/assets/images/banners/triader-t3-no-control.webp)
+*   ![Abstrakt illustrasjon av triaderobusthet — tre sammenkoblede noder](/assets/images/banners/triader-t3-no-control.webp)
 
     ### Ingen enkeltperson kontrollerer forbindelsen
 
     I en dyade kan én person bryte relasjonen ved å trekke seg unna. I en triade holder de to gjenværende forbindelsen i live. Triaden kan repareres. Dyaden må gjenoppbygges fra bunnen av. Dette er ikke psykologi — det er matematikk. Tre forbindelser (A–B, B–C, A–C) gir redundans som to forbindelser (A–B) ikke har.
 
-*   ![](/assets/images/banners/triader-t3-information-flow.webp)
+*   ![Abstrakt illustrasjon av informasjonsflyt i tre baner i en triade](/assets/images/banners/triader-t3-information-flow.webp)
 
     ### Informasjon flyter i flere baner
 
     I en triade har informasjon tre veier å gå. Det betyr at kunnskap sjelden blir fanget i én relasjon. Hvis A forteller B noe, og B ikke videreformidler det til C, kan C fortsatt få informasjonen fra A direkte. Systemet selvkorrigerer.
 
-*   ![](/assets/images/banners/triader-t3-conflict-resolution.webp)
+*   ![Abstrakt illustrasjon av konfliktløsning gjennom triangulering i en triade](/assets/images/banners/triader-t3-conflict-resolution.webp)
 
     ### Konflikt blir triangulert, ikke polarisert
 
     Når uenighet oppstår i en triade, finnes det en tredjepart som kan bidra med perspektiv. Dette reduserer sannsynligheten for at konflikt blir personlig. C kan si: «Jeg ser at dere ser dette forskjellig — la oss finne ut hva vi er enige om.» En dyade har ingen slik mekanisme.
 
-*   ![](/assets/images/banners/triader-t3-resilience.webp)
+*   ![Abstrakt illustrasjon av triaderesiliens — relasjon overlever utskifting](/assets/images/banners/triader-t3-resilience.webp)
 
     ### Resilient mot utskifting
 
@@ -159,25 +159,25 @@ Det er verdt å merke seg at disse betingelsene speiler spenningen mellom [makt 
 
 Triader er ikke en teoretisk konstruksjon. De oppstår naturlig i velfungerende team, ofte uten at noen kaller dem det. Her er fire praktiske arketyper du kjenner igjen fra din egen organisasjon:
 
-*   ![](/assets/images/banners/triader-t3-project-triad.webp)
+*   ![Abstrakt illustrasjon av prosjekttriaden: sponsor, leder og ekspert](/assets/images/banners/triader-t3-project-triad.webp)
 
     ### Prosjekttriaden: sponsor, leder, ekspert
 
     Den mest utbredte triaden i organisasjonslivet. Sponsoren eier mandat og budsjett. Lederen koordinerer gjennomføring. Eksperten sikrer faglig kvalitet. Ingen av de tre kan alene drive prosjektet fremover. Hvis sponsoren faller fra, kan leder og ekspert sammen opprettholde fremdriften mens en ny sponsor finnes.
 
-*   ![](/assets/images/banners/triader-t3-mentor-triad.webp)
+*   ![Abstrakt illustrasjon av mentortriaden: mentor, mentee og kollega](/assets/images/banners/triader-t3-mentor-triad.webp)
 
     ### Mentortriaden: mentor, mentee, kollega
 
     Tradisjonell mentoring er en dyade — mentor og mentee. Problemet er at mentoren blir en allmektig kilde til sannhet, og mentee utvikler ikke et selvstendig nettverk. I en mentortriade inkluderes en kollega på samme nivå som mentee, slik at læring blir en delt aktivitet og mentoren får perspektiv på hvordan kunnskapen faktisk tas i bruk.
 
-*   ![](/assets/images/banners/triader-t3-leadership-triad.webp)
+*   ![Abstrakt illustrasjon av ledertriaden: operativ, strategisk og kulturell rolle](/assets/images/banners/triader-t3-leadership-triad.webp)
 
     ### Ledertriaden: operativ, strategisk, kulturell
 
     I en ledergruppe på tre dekker man ofte tre roller: den som holder driften i gang, den som tenker fremover, og den som passer på kulturen. Når disse tre jobber som en triade, ikke som tre dyader til CEO, skapes en robust ledelsesstruktur som overlever utskifting av enkeltpersoner.
 
-*   ![](/assets/images/banners/triader-t3-bridge-triad.webp)
+*   ![Abstrakt illustrasjon av overbroende triade som bygger bro mellom siloer](/assets/images/banners/triader-t3-bridge-triad.webp)
 
     ### Overbroende triader: brobygging mellom siloer
 

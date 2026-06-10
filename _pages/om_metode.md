@@ -72,19 +72,19 @@ Hvert intervju produserer strukturerte, sammenliknbare data som anonymiseres og 
 
 Databehandlingen følger **De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer** (2014).
 
-![](/assets/images/banners/metode-t4-respekt.webp)
+![Abstrakt illustrasjon av forskningsetisk prinsipp: respekt](/assets/images/banners/metode-t4-respekt.webp)
 #### Respekt
 Informantene behandles med verdighet og integritet
 
-![](/assets/images/banners/metode-t4-konsekvenser.webp)
+![Abstrakt illustrasjon av forskningsetisk prinsipp: gode konsekvenser](/assets/images/banners/metode-t4-konsekvenser.webp)
 #### Gode konsekvenser
 Forskningen skal ha positiv nytteverdi for deltakerne og samfunnet
 
-![](/assets/images/banners/metode-t4-rettferdighet.webp)
+![Abstrakt illustrasjon av forskningsetisk prinsipp: rettferdighet](/assets/images/banners/metode-t4-rettferdighet.webp)
 #### Rettferdighet
 Prosjektet er rettferdig utformet og gjennomført
 
-![](/assets/images/banners/metode-t4-integritet.webp)
+![Abstrakt illustrasjon av forskningsetisk prinsipp: integritet](/assets/images/banners/metode-t4-integritet.webp)
 #### Integritet
 Prosjektet følger anerkjente normer og opptrer ansvarlig
 
