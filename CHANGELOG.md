@@ -13,6 +13,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Step pages content (R25)**: Substantive body text for `/samtale/`, `/intervju/`, `/rapport/` step pages — expanded leads, what-happens sections, why-it-matters, prerequisites, CTAs. Uses uniform frontmatter schema (hero, intro_text, steps, prerequisites, cta, meta).
+- **Social preview infrastructure (S1)**: Fallback chain (`hero.image → banner → page.image → site default`) for `og:image` and `twitter:image` in `_includes/metadata.html`. Added `url` to `_config.yml` for absolute URLs. Fixed broken `.png` → `.webp` reference. Added `og:image:width/height`.
+- **Alt text accessibility audit (A4)**: Added/improved alt text across all articles and graphics for WCAG AA compliance. Persistent `alt`-per-grid pattern with element-level identifiers for card backgrounds.
+- **Dynamic crosslinking JS (R26)**: Vanilla JS utility (`assets/scripts/cross-links.js`) that injects contextual "Relaterte artikler" callouts at end of article body. URL-based topic detection with 4 cross-link mappings. No `.md` content files modified.
+- **GRC perspective cards refactor (R30)**: Replaced `.info-box` divs with `.card.card--frame` components using existing 16:9 frame banner images. 2×2 responsive grid with `.card-grid--grc`.
+- **LLM ask modal refactor (R32)**: Removed provider SVG icons, single-column list layout, auto-open provider URL on selection, collapse/expand for saved preference (cookie), copy button demoted to secondary. DOM built entirely by JS (`buildModal()`).
+- **Scroll affordances (W3)**: Animated SVG scroll-down chevron at bottom of full heroes (auto-hides via IntersectionObserver). Back-to-top button wired with sentinel + `rootMargin: '100vh'` IntersectionObserver. Respects `prefers-reduced-motion`.
+
+### Changed
+- **Step pages + `/om-metode/` redirect (R25+R31)**: Moved step pages from `_pages/` root to `_steps/` collection with permalinks under `/samtale/`, `/intervju/`, `/rapport/`. Created `/metode/` as canonical hub with `_layouts/metode.html` redirecting `/om-metode/` → `/metode/`. Frame navigation across step pages. Removed orphaned `_includes/step-navigation.html`, `usikkerhet-broken-link.html`.
+- **Mobile header reposition (R28)**: Moved `.nav-toggle` out of `<nav>` into `.banner` so burger and logo share a flex row on mobile. Removed `flex-wrap: wrap` and `flex-direction: column` on mobile header. Single-line header.
+
+### Removed
+- **Orphaned includes cleanup (R31)**: `_includes/step-navigation.html`, `_includes/usikkerhet-broken-link.html` — no longer referenced after step page restructure.
+
 - **Provenance pipeline (Z2.1–Z2.5)**: End-to-end AI-generated content disclosure system:
   - **Z2.1 — Provenance JSON-LD**: `_includes/provenance-jsonld.html` injects `digitalSourceType` `TrainedAlgorithmicMediaDigitalSource` and `license` `CC0-1.0` as standalone JSON-LD `WebPage` block on every page. Respects `page.provenance` frontmatter override (`ai`/`editorial`/`human`). Wired into `_layouts/default.html` after `json-ld.html`.
   - **Z2.2 — CC0 declarations**: `<link rel="license">` in `metadata.html`, `license: CC0-1.0` in `_data/metadata.yml`, `package.json` changed from `UNLICENSED` to `CC0-1.0`, `license`/`license_url` in `_config.yml`, `LICENSE` file (CC0 1.0 Universal full text) at project root.

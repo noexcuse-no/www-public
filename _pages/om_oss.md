@@ -36,15 +36,15 @@ Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals [fire p
 
 ![Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet](/assets/images/banners/banner-verdier.webp)
 
-![](/assets/images/banners/verdi-ansvarlighet.webp)
+![Abstrakt illustrasjon av kjerneverdien ansvarlighet](/assets/images/banners/verdi-ansvarlighet.webp)
 ### Ansvarlighet
 Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse
 
-![](/assets/images/banners/verdi-tillit.webp)
+![Abstrakt illustrasjon av kjerneverdien tillit](/assets/images/banners/verdi-tillit.webp)
 ### Tillit
 Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget
 
-![](/assets/images/banners/verdi-aerlighet.webp)
+![Abstrakt illustrasjon av kjerneverdien ærlighet](/assets/images/banners/verdi-aerlighet.webp)
 ### Ærlighet
 Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater
 

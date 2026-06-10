@@ -97,3 +97,54 @@
         init();
     }
 })();
+
+/* ===== Scroll Affordances ===== */
+(function() {
+    'use strict';
+
+    function init() {
+        var hero = document.querySelector('.hero');
+        var scrollCue = document.querySelector('.scroll-indicator');
+        var backToTop = document.querySelector('.back-to-top');
+
+        // Scroll cue: hide when hero scrolls out of view
+        if (hero && scrollCue) {
+            new IntersectionObserver(function(entries) {
+                if (!entries[0].isIntersecting) {
+                    scrollCue.classList.add('is-hidden');
+                }
+            }).observe(hero);
+        }
+
+        // Back-to-top: show after scrolling past one viewport height
+        if (backToTop) {
+            var sentinel = document.createElement('div');
+            sentinel.style.position = 'absolute';
+            sentinel.style.top = '0';
+            sentinel.style.left = '0';
+            sentinel.style.width = '1px';
+            sentinel.style.height = '1px';
+            document.body.appendChild(sentinel);
+
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+            // rootMargin extends viewport 100vh upward so the sentinel at
+            // document top stays "intersecting" for the first viewport of scroll
+            new IntersectionObserver(function(entries) {
+                var isPastViewport = !entries[0].isIntersecting;
+                backToTop.classList.toggle('is-visible', isPastViewport);
+                if (isPastViewport && reduceMotion.matches) {
+                    document.documentElement.style.scrollBehavior = 'auto';
+                } else if (isPastViewport) {
+                    document.documentElement.style.scrollBehavior = 'smooth';
+                }
+            }, { rootMargin: '100vh 0px 0px 0px' }).observe(sentinel);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();

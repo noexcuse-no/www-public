@@ -30,6 +30,8 @@
     .card-grid--articles {
         grid-template-columns: repeat(2, 1fr);
     }
+.card-grid--grc {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* Base Card */

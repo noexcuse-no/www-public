@@ -101,25 +101,25 @@ Denne artikkelen handler ikke om de fire rammeverkene — hvert av dem har sin e
 
 Enrammefellen er ikke at du har et favorittperspektiv. Det har alle. Fellen er at du bruker det samme perspektivet på alle problemer, uavhengig av hva situasjonen krever.
 
-*   ![](/assets/images/banners/perspektiv-t3-strukturfellen.webp)
+*   ![Abstrakt illustrasjon av strukturfellen — når struktur blir tvangstrøye](/assets/images/banners/perspektiv-t3-strukturfellen.webp)
 
     ### Når struktur blir tvangstrøye
 
     En leder som alltid starter med omorganisering, nye prosesser og rapporteringslinjer, kan skape kaos i en organisasjon som egentlig trenger kulturell trygghet. Strukturelle løsninger på menneskelige problemer skaper mer byråkrati uten å løse grunnårsaken.
 
-*   ![](/assets/images/banners/perspektiv-t3-menneskefellen.webp)
+*   ![Abstrakt illustrasjon av menneskefellen — når mennesker blir overfladisk](/assets/images/banners/perspektiv-t3-menneskefellen.webp)
 
     ### Når mennesker blir overfladisk
 
     En leder som alltid spør «hvordan har du det?» og aldri tar upopulære beslutninger, kan skape en hyggelig kultur som ikke presterer. Menneskerettede løsninger på strukturelle problemer gir gode samtaler, men ingen endring.
 
-*   ![](/assets/images/banners/perspektiv-t3-politisk-felle.webp)
+*   ![Abstrakt illustrasjon av politisk felle — når politikk blir kynisme](/assets/images/banners/perspektiv-t3-politisk-felle.webp)
 
     ### Når politikk blir kynisme
 
     En leder som alltid analyserer maktforhold og aldri handler, kan lamme organisasjonen. Politisk analyse uten strukturell gjennomføring blir spill og posisjonering — ikke ledelse.
 
-*   ![](/assets/images/banners/perspektiv-t3-symbolfellen.webp)
+*   ![Abstrakt illustrasjon av symbolfellen — når symbolikk blir tom](/assets/images/banners/perspektiv-t3-symbolfellen.webp)
 
     ### Når symbolikk blir tom
 

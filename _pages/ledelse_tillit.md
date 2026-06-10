@@ -114,7 +114,7 @@ Robert Greenleaf introduserte begrepet «servant leadership» i 1970. Han argume
 
 ## De fire pilarene for tillitsbasert ledelse
 
-*   ![](/assets/images/banners/tillit-t3-psychological-safety.webp)
+*   ![Abstrakt illustrasjon av psykologisk trygghet som tillitspilar](/assets/images/banners/tillit-t3-psychological-safety.webp)
 
     ### 1. Psykologisk trygghet
 
@@ -124,7 +124,7 @@ Robert Greenleaf introduserte begrepet «servant leadership» i 1970. Han argume
 
     **Tegn på lav psykologisk trygghet:** Informasjon holdes tilbake. Kritikk gis aldri direkte. Folk sier «det er bare å vente og se» heller enn å utfordre.
 
-*   ![](/assets/images/banners/tillit-t3-servant-leadership.webp)
+*   ![Abstrakt illustrasjon av tjenende lederskap som tillitspilar](/assets/images/banners/tillit-t3-servant-leadership.webp)
 
     ### 2. Tjenende lederskap
 
@@ -134,7 +134,7 @@ Robert Greenleaf introduserte begrepet «servant leadership» i 1970. Han argume
 
     **Tegn på selv-opptatt lederskap:** Beslutninger tas for å styrke egen posisjon. Suksesser tillegges egen innsats. Feedback gis sjelden eller aldri.
 
-*   ![](/assets/images/banners/tillit-t3-trust-system.webp)
+*   ![Abstrakt illustrasjon av tillit som system](/assets/images/banners/tillit-t3-trust-system.webp)
 
     ### 3. Tillit som system
 
@@ -144,7 +144,7 @@ Robert Greenleaf introduserte begrepet «servant leadership» i 1970. Han argume
 
     **Tegn på tillitsbrist:** Løfter brytes uten forklaring. Folk dekker seg bak prosedyrer. «Det var ikke min avdeling» blir unnskyldningen.
 
-*   ![](/assets/images/banners/tillit-t3-autonomy.webp)
+*   ![Abstrakt illustrasjon av autonomi som tillitsdriver](/assets/images/banners/tillit-t3-autonomy.webp)
 
     ### 4. Autonomi som tillitsdriver
 
@@ -164,22 +164,22 @@ Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid
 
 ## Vanlige tillitsutfordringer i norske organisasjoner
 
-*   ![](/assets/images/banners/tillit-t4-hierarchical-blindness.webp "")
+*   ![Abstrakt illustrasjon av hierarkisk blindhet som tillitsutfordring](/assets/images/banners/tillit-t4-hierarchical-blindness.webp "")
 
     #### Hierarkisk blindhet
 
     Ledere som ikke ser at deres atferd oppfattes annerledes avhengig av posisjon. Det som føles som «direkte» oppfattes som «domsnutt» av underordnede.
-*   ![](/assets/images/banners/tillit-t4-info-asymmetry.webp "")
+*   ![Abstrakt illustrasjon av informasjonsasymmetri som tillitsutfordring](/assets/images/banners/tillit-t4-info-asymmetry.webp "")
 
     #### Informerings asymmetri
 
     Ledere vet mer enn de deler. Medarbeidere tolker dette som mistillit. Kommunikasjonen blir formell og overfladisk.
-*   ![](/assets/images/banners/tillit-t4-historical-baggage.webp "")
+*   ![Abstrakt illustrasjon av historisk bagasje som tillitsutfordring](/assets/images/banners/tillit-t4-historical-baggage.webp "")
 
     #### Historisk baggage
 
     Tidligere svik sitter i kulturen. Nye ledere møtes med «vi har hørt dette før»-holdning. Initiativ blir møtt med skepsis.
-*   ![](/assets/images/banners/tillit-t4-inconsistent-followup.webp "")
+*   ![Abstrakt illustrasjon av inkonsekvent oppfølging som tillitsutfordring](/assets/images/banners/tillit-t4-inconsistent-followup.webp "")
 
     #### Inkonsekvent oppfølging
 

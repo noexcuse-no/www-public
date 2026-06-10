@@ -83,7 +83,7 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
 ## De fire dimensjonene av beslutningstaking
 
-*   ![](/assets/images/banners/forankring-t3-formal-vs-real-power.webp)
+*   ![Abstrakt illustrasjon av gapet mellom formell og reell beslutningsmakt](/assets/images/banners/forankring-t3-formal-vs-real-power.webp)
 
     ### 1. Formell vs. reell beslutningsmakt
 
@@ -93,7 +93,7 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
     **Tegn på skjev makt:** De med formell autoritet dominerer. Ekspertise ignoreres når den kommer fra feil person. Beslutninger tas bak lukkede dører.
 
-*   ![](/assets/images/banners/forankring-t3-interests.webp)
+*   ![Abstrakt illustrasjon av interesser som byggesteiner for forankring](/assets/images/banners/forankring-t3-interests.webp)
 
     ### 2. Interesser som forankringens byggesteiner
 
@@ -105,7 +105,7 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
     **Tegn på manglende interessekartlegging:** Initiativer presenteres som «åpenbart riktige» — og møtes med taus motstand.
 
-*   ![](/assets/images/banners/forankring-t3-bias.webp)
+*   ![Abstrakt illustrasjon av kognitiv bias som påvirker beslutningsvalg](/assets/images/banners/forankring-t3-bias.webp)
 
     ### 3. Kognitiv bias som påvirker valg
 
@@ -115,7 +115,7 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
     **Tegn på bias-blindhet:** Beslutninger tas av enkeltpersoner. Ingen utfordrer premissene. Suksess tillegges egen dyktighet, feil tillegges eksterne forhold.
 
-*   ![](/assets/images/banners/forankring-t3-conflict.webp)
+*   ![Abstrakt illustrasjon av konflikt og forhandling i beslutningsprosesser](/assets/images/banners/forankring-t3-conflict.webp)
 
     ### 4. Konflikt og forhandling
 
@@ -125,7 +125,7 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
     **Tegn på dysfunksjonell konflikt:** Konflikter begraves til de eskalerer. Beslutninger omgjøres etter møter. «Enighet» maskerer undertrykt uenighet.
 
-*   ![](/assets/images/banners/forankring-t3-culture.webp)
+*   ![Abstrakt illustrasjon av beslutningskultur og groupthink](/assets/images/banners/forankring-t3-culture.webp)
 
     ### 5. Beslutningskultur
 
@@ -137,22 +137,22 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
 ## Vanlige beslutningsfallgruber
 
-*   ![](/assets/images/banners/forankring-t4-confirmation.webp "")
+*   ![Abstrakt illustrasjon av bekreftelsesbias](/assets/images/banners/forankring-t4-confirmation.webp "")
 
     #### Bekreftelsesbias
 
     Vi søker informasjon som støtter det vi allerede tror, og ignorerer det som utfordrer det. Beslutninger tas basert på ønsketenkning.
-*   ![](/assets/images/banners/forankring-t4-anchoring.webp "")
+*   ![Abstrakt illustrasjon av ankerfeste som beslutningsfelle](/assets/images/banners/forankring-t4-anchoring.webp "")
 
     #### Ankerfeste
 
     Det første tallet eller forslaget som presenteres får uforholdsmessig stor innflytelse. «Vi har alltid gjort det sånn» blir argumentet.
-*   ![](/assets/images/banners/forankring-t4-sunk-cost.webp "")
+*   ![Abstrakt illustrasjon av sunk cost-fallacy](/assets/images/banners/forankring-t4-sunk-cost.webp "")
 
     #### Sunk cost-fallacy
 
     Vi fortsetter med feil investeringer fordi vi allerede har brukt så mye. Å kutte tap oppfattes som å innrømme feil.
-*   ![](/assets/images/banners/forankring-t4-overconfidence.webp "")
+*   ![Abstrakt illustrasjon av overdreven selvtillit som beslutningsfelle](/assets/images/banners/forankring-t4-overconfidence.webp "")
 
     #### Overdreven selvtillit
 
