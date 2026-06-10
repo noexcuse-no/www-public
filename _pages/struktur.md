@@ -98,22 +98,22 @@ Douglas Hubbard, forfatteren av «How to Measure Anything», påpeker at mye som
 
 ![Illustrasjon av vanlige strukturspesifikke utfordringer](/assets/images/banners/illustrasjon-struktur-utfordringer.webp)
 
-*   ![](/assets/images/banners/struktur-t4-role-clarification.webp "")
+*   ![Abstrakt illustrasjon av uklar rolleavklaring som strukturutfordring](/assets/images/banners/struktur-t4-role-clarification.webp "")
 
     #### Uklar rolleavklaring
 
     To personer som tror de eier samme område. Eller ingen som eier det i det hele tatt. Ofte avslørt først når noe går galt.
-*   ![](/assets/images/banners/struktur-t4-goal-conflict.webp "")
+*   ![Abstrakt illustrasjon av målkonflikter som strukturutfordring](/assets/images/banners/struktur-t4-goal-conflict.webp "")
 
     #### Målkonflikter
 
     Avdeling A optimaliserer for sin målsetting som bremser avdeling B. Motivert av insentiver som ikke er koordinert.
-*   ![](/assets/images/banners/struktur-t4-coordination.webp "")
+*   ![Abstrakt illustrasjon av koordineringsproblemer som strukturutfordring](/assets/images/banners/struktur-t4-coordination.webp "")
 
     #### Koordineringsproblemer
 
     Mye tid brukes på å samordne arbeid som burde vært koordinert fra start. Fokus på «å skape buy-in» i stedet for å bygge struktur som sikrer involvering.
-*   ![](/assets/images/banners/struktur-t4-bureaucracy.webp "")
+*   ![Abstrakt illustrasjon av byråkratisk byrde som strukturutfordring](/assets/images/banners/struktur-t4-bureaucracy.webp "")
 
     #### Byråkratisk byrde
 

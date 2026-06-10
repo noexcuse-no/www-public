@@ -69,25 +69,25 @@ Den som kan formulere gode spørsmål, vurdere svar kritisk, og integrere KI i m
 
 ## Hva KI-ledelse faktisk betyr
 
-*   ![](/assets/images/banners/genki-t3-question-formulation.webp)
+*   ![Abstrakt illustrasjon av kompetansen å formulere gode spørsmål til KI](/assets/images/banners/genki-t3-question-formulation.webp)
 
     ### 1. Formulere gode spørsmål
 
     Vage spørsmål gir vage svar. En leder som mestrer KI, lærer seg å presisere intensjon — ikke bare skrive «skriv en e-post». Den som kan definere hva som faktisk trengs, får resultater den andre ikke engang ser.
 
-*   ![](/assets/images/banners/genki-t3-critical-evaluation.webp)
+*   ![Abstrakt illustrasjon av kompetansen å vurdere KI-utdata kritisk](/assets/images/banners/genki-t3-critical-evaluation.webp)
 
     ### 2. Vurdere utdata kritisk
 
     KI hallusinerer, kopierer bias, og opererer uten kontekst. En god KI-leder antar aldri at svaret er riktig — den tester det mot virkeligheten. Kalibrering er kontinuerlig: stemmer modellens selvtillit med faktisk kvalitet?
 
-*   ![](/assets/images/banners/genki-t3-human-integration.webp)
+*   ![Abstrakt illustrasjon av å integrere KI i menneskelige arbeidsprosesser](/assets/images/banners/genki-t3-human-integration.webp)
 
     ### 3. Integrere KI i menneskelige prosesser
 
     KI produserer innhold; mennesker produserer verdi. Gapet mellom dem må lukkes med menneskelig dømmekraft. Ledere må bygge arbeidsflyter der KI-assistert arbeid alltid passerer gjennom menneskelig evaluering før det når kunden.
 
-*   ![](/assets/images/banners/genki-t3-accountability.webp)
+*   ![Abstrakt illustrasjon av ansvarlighet ved KI-bruk](/assets/images/banners/genki-t3-accountability.webp)
 
     ### 4. Opprettholde ansvarlighet
 
@@ -95,25 +95,25 @@ Den som kan formulere gode spørsmål, vurdere svar kritisk, og integrere KI i m
 
 ## Tenkeevner som skiller effektive KI-brukere fra passive
 
-*   ![](/assets/images/banners/genki-t3-epistemic-humility.webp)
+*   ![Abstrakt illustrasjon av epistemisk ydmykhet i KI-bruk](/assets/images/banners/genki-t3-epistemic-humility.webp)
 
     ### Epistemisk ydmykhet
 
     Vite hva du ikke vet. KI kan få deg til å føle deg smartere enn du er. Den som tror modellen vet mer enn den faktisk gjør, tar dårlige beslutninger.
 
-*   ![](/assets/images/banners/genki-t3-precision.webp)
+*   ![Abstrakt illustrasjon av presisjon av intensjon i KI-kommunikasjon](/assets/images/banners/genki-t3-precision.webp)
 
     ### Presisjon av intensjon
 
     Vage spørsmål gir vage svar. KI-ledere må lære seg å presisere hva de faktisk trenger, ikke bare beskrive det de tror de vil ha.
 
-*   ![](/assets/images/banners/genki-t3-iteration.webp)
+*   ![Abstrakt illustrasjon av iterativ forbedring i KI-dialog](/assets/images/banners/genki-t3-iteration.webp)
 
     ### Iterativ forbedring
 
     KI-interaksjon er dialog, ikke én-klikk. De beste resultatene kommer fra å stille oppfølgingsspørsmål, utfordre premisser, og gradvis presisere fram mot det som faktisk trengs.
 
-*   ![](/assets/images/banners/genki-t3-calibration.webp)
+*   ![Abstrakt illustrasjon av kalibrering — teste KI-selvtillit mot virkelighet](/assets/images/banners/genki-t3-calibration.webp)
 
     ### Kalibrering
 
@@ -152,22 +152,22 @@ Den som kontrollerer KI, former retningen. Det er et spørsmål om [makt](/makt/
 
 ## Røde flagg
 
-*   ![](/assets/images/banners/genki-t4-no-human-review.webp "")
+*   ![Abstrakt illustrasjon av rødt flagg: KI uten menneskelig review](/assets/images/banners/genki-t4-no-human-review.webp "")
 
     #### KI-implementert uten menneskelig review
 
     Output fra modellen går direkte til kunde eller beslutning uten at et menneske har sett på det.
-*   ![](/assets/images/banners/genki-t4-ki-said-it.webp "")
+*   ![Abstrakt illustrasjon av rødt flagg: «KI sa det» som begrunnelse](/assets/images/banners/genki-t4-ki-said-it.webp "")
 
     #### «KI sa det»
 
     Brukt som begrunnelse for beslutninger. Modellen blir autoritet, ikke verktøy.
-*   ![](/assets/images/banners/genki-t4-quantity-over-quality.webp "")
+*   ![Abstrakt illustrasjon av rødt flagg: kvantitet over kvalitet i KI-bruk](/assets/images/banners/genki-t4-quantity-over-quality.webp "")
 
     #### Kvantitet over kvalitet
 
     Organisasjonen måler hvor mye KI som brukes, ikke om det faktisk fungerer. Høyere volum maskerer lavere verdi.
-*   ![](/assets/images/banners/genki-t4-faster-less-accurate.webp "")
+*   ![Abstrakt illustrasjon av rødt flagg: raskere men mindre nøyaktig med KI](/assets/images/banners/genki-t4-faster-less-accurate.webp "")
 
     #### Raskere, men mindre nøyaktig
 
