@@ -31,6 +31,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Mobile hamburger menu (R24.7)**: Revised to full-screen modal overlay with close button, body scroll lock, Escape-to-close; featured CTA stays visible outside overlay
 - **GRC hero image (R24.9)**: Replaced with user-provided 4K PNG → WebP (393 KB, 3840×2160); original preserved in `.design/graphics/originals/banners/`
 
+### Removed
+- **Dead code cleanup (I2 Phase 1)**: Deleted 16 orphaned includes (about-section, about-values, avtale-page, avtale-section, cases, challenge-card, ethics-columns, framework-illustration, podcast, section-container, section-illustration, section-wrapper, science-divider, science-highlight, science-quote, science-section). Deleted 3 dead CSS files (about.css, podcast.css, cases.css). Removed their references from `_includes/styles.html`.
+
+### Changed
+- **Back-to-top fix (I2 Phase 2, via W3)**: Wired `.back-to-top` button with IntersectionObserver sentinel + rootMargin. Implemented in `animations.js` as part of the scroll affordances feature.
+
 ## [1.9.0] - 2026-06-08
 
 ### Added
