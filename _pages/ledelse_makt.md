@@ -109,6 +109,8 @@ Men også tjenestesiden har en skyggeside. Når «vi setter mennesker først» b
 
 Risikoen er speilbildet av maktsiden: En ledergruppe som optimerer for tjeneste, uten makt til å gjennomføre, utvikler seg mot en kultur der beslutningsvegring er normen, de flinkeste brenner seg ut på å kompensere for de svakeste, og organisasjonen mister retning og tempo.
 
+![Abstrakt illustrasjon av prisen for makt — en leder omgitt av skygger, en klokke som viser tid brukt på politikk, en brutt forbindelseslinje, en krone som tynger en figur](/assets/images/banners/makt-t3-prisen.webp)
+
 ## Prisen du betaler for makt
 
 Det er fristende å konkludere med at svaret er «litt av begge deler». Men det er for enkelt. For å forstå hva en balansert ledelseskultur krever, må vi først se prisene — for begge ytterpunkter.
@@ -125,6 +127,8 @@ Prisen for ren tjeneste er annerledes, men ikke mindre reell:
 - **Beslutningslammelse.** Når alle skal høres, tar alt lengre tid. I praksis betyr det at organisasjonen reagerer for sent på endringer i markedet.
 - **Utbrenthet hos de flinkeste.** Når ledelsen ikke prioriterer, må de ansatte gjøre det selv. De dyktigste ender opp med å bære hele organisasjonen på ryggen.
 - **Utnyttelse.** I en kultur som idealiserer tjeneste, er det lett for at de med minst makt blir utnyttet. «Hun stiller alltid opp» blir et tegn på lojalitet, ikke et varsel om overbelastning.
+
+![Abstrakt illustrasjon av spekteret fra makt til tjeneste — en horisontal gradient fra mørke takkete former til åpne organiske former, balanserte vektskåler i midten](/assets/images/banners/makt-t3-spekteret.webp)
 
 ## Spekteret — fra utvinning til balanse
 

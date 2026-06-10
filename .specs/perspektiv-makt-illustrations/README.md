@@ -2,7 +2,7 @@
 
 > **Backlog References:** R29
 > **Created:** 2026-06-09
-> **Status:** Draft
+> **Status:** In Progress
 > **Depends on:** F7 (Uniform Illustration System) — tier taxonomy, naming convention, CSS classes
 
 ## Problem / Goal
