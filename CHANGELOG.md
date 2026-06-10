@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **GRC perspective cards refactor (R30)**: Replaced `.info-box` divs with `.card.card--frame` components using existing 16:9 frame banner images. 2×2 responsive grid with `.card-grid--grc`.
 - **LLM ask modal refactor (R32)**: Removed provider SVG icons, single-column list layout, auto-open provider URL on selection, collapse/expand for saved preference (cookie), copy button demoted to secondary. DOM built entirely by JS (`buildModal()`).
 - **Scroll affordances (W3)**: Animated SVG scroll-down chevron at bottom of full heroes (auto-hides via IntersectionObserver). Back-to-top button wired with sentinel + `rootMargin: '100vh'` IntersectionObserver. Respects `prefers-reduced-motion`.
+- **Perspektiv & Makt section illustrations (R29)**: 14 T3 section images for Perspektiv and 2 T3 for Makt — generated via GPT Image 2 (EvoLink), 1360×768 WebP, ≤80KB each. Inserted at H3 sections in `_pages/ledelse_perspektiv.md` and H2 sections in `_pages/ledelse_makt.md`. All prompts documented in `.design/graphics.md`. T4 card images deferred (optional per spec).
 
 ### Changed
 - **Step pages + `/om-metode/` redirect (R25+R31)**: Moved step pages from `_pages/` root to `_steps/` collection with permalinks under `/samtale/`, `/intervju/`, `/rapport/`. Created `/metode/` as canonical hub with `_layouts/metode.html` redirecting `/om-metode/` → `/metode/`. Frame navigation across step pages. Removed orphaned `_includes/step-navigation.html`, `usikkerhet-broken-link.html`.
