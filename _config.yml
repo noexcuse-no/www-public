@@ -8,10 +8,6 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  cases:
-    output: true
-  partners:
-    output: true
   tags:
     output: true
     permalink: /emne/:path/
