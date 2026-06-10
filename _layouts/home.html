@@ -1,10 +1,13 @@
 ---
 layout: default
 ---
+{% include hero.html %}
+{% include stat-bridge.html %}
 {{ content }}
 {% assign has_products = site.pages | where: "class", "product" | where: "published", true | size %}
 {% if has_products > 0 %}{% include products.html %}{% endif %}
 {% assign has_profiles = site.pages | where: "class", "profile" | where: "published", true | size %}
 {% if has_profiles > 0 %}{% include profiles.html tags="ledelse" %}{% endif %}
+{% include article-feed.html %}
 {% include cta-section.html %}
 {% include partners.html %}
