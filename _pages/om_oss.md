@@ -24,6 +24,10 @@ json_ld:
       contactType: "customer service"
       email: "firmapost@noexcuse.no"
       availableLanguage: "Norwegian"
+    address:
+      type: "PostalAddress"
+      addressLocality: "Oslo"
+      addressCountry: "NO"
     sameAs:
       - "https://www.linkedin.com/company/noexcuse"
 ---
@@ -47,6 +51,12 @@ Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgr
 ![Abstrakt illustrasjon av kjerneverdien ærlighet](/assets/images/banners/verdi-aerlighet.webp)
 ### Ærlighet
 Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater
+
+## Slik jobber vi
+
+Vår metodikk bygger på Bolman & Deals fire perspektiver og er utviklet gjennom praktisk anvendelse i norske ledergrupper. Vi bruker strukturerte intervjuer og diagnostiske spørsmål for å skape et felles bilde av virkeligheten — uten scoring, uten ranking.
+
+Les mer om [hvordan vi jobber og det teoretiske grunnlaget](/metode/).
 
 ## Standard avtalevilkår
 
