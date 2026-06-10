@@ -79,6 +79,41 @@
     opacity: 0.85;
 }
 
+/* Scroll-down indicator — animated chevron at bottom of hero */
+.scroll-indicator {
+    position: absolute;
+    bottom: var(--space-lg);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-azure);
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.scroll-indicator svg {
+    animation: scroll-bounce 2s ease-in-out infinite;
+}
+
+@keyframes scroll-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+}
+
+.scroll-indicator.is-hidden {
+    opacity: 0;
+}
+
+.dark-mode .scroll-indicator {
+    color: var(--primary-azure);
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .hero-image {
