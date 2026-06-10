@@ -1,17 +1,17 @@
 # CSS Architecture — No Excuse AS
 
-## Module Structure (21 files, ~2572 total lines)
+## Module Structure (27 files, ~3746 total lines)
 
 | Category | Files |
 |----------|-------|
-| **Base** | `colors.css` (166), `typography.css` (73), `layout.css` (133) |
-| **Utilities** | `utilities.css` (49), `animations.css` (151) |
-| **Components** | `assets/css/components/hero.css` (91), `assets/css/components/card.css` (164) |
-| **Pages** | `article.css` (285), `about.css` (122), `products.css` (356), `profiles.css` (280), `avtale.css` (107), `perspektiv-styles.css` (118), `cases.css` (16), `partners.css` (45), `podcast.css` (13) |
-| **Layout** | `header.css` (46), `navbar.css` (38), `footer.css` (6) |
-| **Themes** | `styles-light.css` (50), `styles-dark.css` (263) |
+| **Base** | `colors.css` (174), `typography.css` (91), `layout.css` (192) |
+| **Utilities** | `utilities.css` (49), `animations.css` (89) |
+| **Components** | `assets/css/components/hero.css` (135), `assets/css/components/card.css` (163), `assets/css/components/buttons.css` (88), `assets/css/components/illustrations.css` (63), `assets/css/components/questions.css` (315), `assets/css/components/cta-section.css` (41), `assets/css/components/footnotes.css` (44), `assets/css/components/tag-cloud.css` (97), `assets/css/components/step-timeline.css` (111), `assets/css/components/stat-bridge.css` (23), `assets/css/components/sticky-cta.css` (109) |
+| **Pages** | `article.css` (357), `products.css` (375), `profiles.css` (496), `avtale.css` (69), `perspektiv-styles.css` (101), `metode.css` (126), `partners.css` (42) |
+| **Layout** | `header.css` (48), `navbar.css` (218), `footer.css` (44) |
+| **Themes** | `styles-light.css` (48), `styles-dark.css` (38) |
 
-Component-specific CSS lives in `assets/css/components/`. Page-level CSS lives in the root `assets/css/` directory. This separation prevents component styles from being mixed with page layout rules.
+Component-specific CSS lives in `assets/css/components/` (11 files). Page-level CSS lives in the root `assets/css/` directory. This separation prevents component styles from being mixed with page layout rules.
 
 ## Design Tokens
 

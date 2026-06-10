@@ -1,0 +1,23 @@
+/* ========================================
+   Stat bridge — hero → card grid connector
+   ======================================== */
+.stat-bridge {
+    text-align: center;
+    padding: var(--space-xl) var(--space-md);
+    max-width: var(--content-wide);
+    margin: 0 auto;
+}
+
+.stat-bridge-text {
+    font-size: 1.15em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--primary-accent-contrast);
+    opacity: 0.75;
+    margin: 0;
+}
+
+/* Dark mode overrides */
+.dark-mode .stat-bridge-text {
+    opacity: 0.6;
+}

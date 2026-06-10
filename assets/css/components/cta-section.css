@@ -1,0 +1,41 @@
+/* ========================================
+   CTA section — call to action (used by cta-section.html include)
+   ======================================== */
+.cta-section {
+    text-align: center;
+    background: var(--box-background-light);
+    border-radius: var(--radius-xl);
+    margin-bottom: 40px;
+}
+
+.cta-section h2 {
+    font-size: 1.6em;
+    margin-bottom: 16px;
+}
+
+.cta-section p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    opacity: 0.85;
+}
+
+/* CTA buttons — flex container (used by cta-section.html, tag.html) */
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 599px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Dark mode overrides */
+.dark-mode .cta-section {
+    background: var(--box-background-dark);
+}
