@@ -1,0 +1,29 @@
+{% comment %}
+  Article feed — grid of featured articles for the homepage.
+  Renders cards for all pages with class: article, limited to 6.
+{% endcomment %}
+
+{% assign articles = site.pages | where: "class", "article" %}
+{% if articles.size > 0 %}
+<section class="section container article-feed">
+  <h2 class="section-heading">Utforsk artiklene våre</h2>
+  <div class="card-grid card-grid--articles">
+    {% for article in articles limit:6 %}
+    <article class="card card--article">
+      {% if article.hero.image %}
+      <img src="{{ article.hero.image | relative_url }}" alt="{{ article.hero.alt | default: article.title }}" class="card-image" loading="lazy">
+      {% endif %}
+      <div class="card-content">
+        <h3>{{ article.title }}</h3>
+        {% if article.description %}
+        <p>{{ article.description }}</p>
+        {% endif %}
+        {% if article.url %}
+        <a href="{{ article.url | relative_url }}" class="card-link">Les mer →</a>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
