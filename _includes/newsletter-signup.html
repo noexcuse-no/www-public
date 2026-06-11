@@ -1,0 +1,28 @@
+{% comment %}
+  Newsletter signup form — email collection with GDPR consent.
+  Data stored in _data/newsletter-subscribers.json (MVP — local dev only).
+  For production: replace form action with API endpoint (Formspree, Mailchimp, etc.).
+{% endcomment %}
+<section class="newsletter-section section container--wide animate-on-scroll fade-in-up" aria-labelledby="newsletter-heading">
+  <h2 id="newsletter-heading">Hold deg oppdatert</h2>
+  <p>Få nyttige perspektiver på ledelse, organisasjonsutvikling og rammeverket vi bruker — rett i innboksen. Ingen spam, ingen salgspitch. Bare innsikt.</p>
+
+  <form class="conversion-form js-newsletter-form" action="#" method="post" novalidate>
+    <div class="form-group">
+      <label for="newsletter-email">E-postadresse</label>
+      <input type="email" id="newsletter-email" name="email" required autocomplete="email" placeholder="din@epost.no">
+      <span class="form-error js-email-error">Vennligst oppgi en gyldig e-postadresse.</span>
+    </div>
+
+    <div class="consent-group">
+      <input type="checkbox" id="newsletter-consent" name="consent" required>
+      <label for="newsletter-consent">Jeg samtykker til at No Excuse AS lagrer min e-postadresse for nyhetsbrev. <a href="{{ '/personvern/' | relative_url }}">Les om personvern</a>.</label>
+    </div>
+
+    <button type="submit" class="product-cta">Abonner på nyhetsbrev</button>
+  </form>
+
+  <div class="form-success js-newsletter-success" role="status" aria-live="polite">
+    Takk for din påmelding! Du vil høre fra oss når vi har noe nyttig å dele.
+  </div>
+</section>

@@ -70,3 +70,5 @@ layout: default
   {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
   {% include questions.html title=page.questions_title questions=question_list %}
 {% endif %}
+
+{% include newsletter-signup.html %}

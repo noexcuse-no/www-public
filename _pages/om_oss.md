@@ -71,3 +71,5 @@ Du finner våre standard avtalevilkår [her](/avtale/).
 Ta en uforpliktende samtale med oss — vi snakker om ledelse, ikke salg.
 
 [Book en samtale](https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no)
+
+Har du spørsmål? [Kontakt oss →](/kontakt/)
