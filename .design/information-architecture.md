@@ -28,6 +28,9 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/informasjonssikkerhet/` | `_pages/informasjonssikkerhet.md` | Topical: Informasjonssikkerhet |
 | `/risikostyring/` | `_pages/risikostyring.md` | Topical: Risikostyring |
 | `/endringsledelse/` | `_pages/endringsledelse.md` | Topical: Endringsledelse |
+| `/kvalitetsledelse/` | `_pages/kvalitetsledelse.md` | Topical: Kvalitetsledelse |
+| `/baerekraft/` | `_pages/baerekraft.md` | Topical: Bærekraft og samfunnsansvar |
+| `/compliance/` | `_pages/compliance.md` | Topical: Compliance |
 
 ## Tag Pages
 
@@ -70,6 +73,19 @@ Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningst
 | `/endringsledelse/` → Tribal stages (Logan) | `/identitet/` | "Les om de fem kulturstadiene →" |
 | `/endringsledelse/` → Power dynamics | `/makt/` | "Les om makt og tjeneste i ledelse →" |
 | `/endringsledelse/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om Ledelse 60:2 →" |
+| `/kvalitetsledelse/` → GRC overview | `/grc/` | "Les om GRC og helhetlig styring →" |
+| `/kvalitetsledelse/` → Psychological safety | `/tillit/` | "Les om psykologisk trygghet →" |
+| `/kvalitetsledelse/` → Structure perspective | `/perspektiv/` | "Les om strukturperspektivet →" |
+| `/kvalitetsledelse/` → Decision anchoring | `/forankring/` | "Les om beslutningsforankring →" |
+| `/kvalitetsledelse/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om Ledelse 60:2 →" |
+| `/baerekraft/` → GRC overview | `/grc/` | "Les om GRC og helhetlig styring →" |
+| `/baerekraft/` → Identity perspective | `/perspektiv/` | "Les om identitetsperspektivet →" |
+| `/baerekraft/` → Power and influence | `/makt/` | "Les om makt og påvirkning →" |
+| `/baerekraft/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om Ledelse 60:2 →" |
+| `/compliance/` → GRC overview | `/grc/` | "Les om GRC og helhetlig styring →" |
+| `/compliance/` → Psychological safety | `/tillit/` | "Les om psykologisk trygghet →" |
+| `/compliance/` → Power and ethics | `/makt/` | "Les om makt og etisk ledelse →" |
+| `/compliance/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om Ledelse 60:2 →" |
 
 ## Rules
 
