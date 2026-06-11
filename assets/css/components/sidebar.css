@@ -4,11 +4,11 @@
 
 /* --- Layout Grids --- */
 
-/* Article pages: centered content + 320px right sidebar */
+/* Article pages: left pager + centered content + 320px right sidebar */
 .article-layout {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 800px) 320px 1fr;
-    grid-template-areas: ". content sidebar .";
+    grid-template-columns: 1fr 240px minmax(auto, 800px) 320px 1fr;
+    grid-template-areas: ". pager content sidebar .";
 }
 
 /* Homepage: wider content + 300px right sidebar */
@@ -28,9 +28,96 @@
     grid-area: content;
 }
 
+.article-layout > .article-pager {
+    grid-area: pager;
+}
+
 .article-layout > .article-sidebar,
 .home-layout > .home-sidebar {
     grid-area: sidebar;
+}
+
+/* --- Left Pager Panel (cross-links) --- */
+
+.article-pager {
+    position: sticky;
+    top: calc(var(--header-height, 85px) + var(--space-md, 16px));
+    align-self: start;
+    max-height: calc(100vh - var(--header-height, 85px) - var(--space-2xl, 40px));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    background: var(--box-background-light);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-lg);
+    font-size: 0.9em;
+}
+
+.article-pager[hidden] {
+    display: none;
+}
+
+.dark-mode .article-pager {
+    background: var(--box-background-dark);
+    box-shadow: var(--shadow-sm-dark);
+}
+
+/* Cross-link list inside pager */
+.article-pager .cross-link-section {
+    margin: 0;
+    padding: 0;
+}
+
+.article-pager .cross-link-label {
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    margin: 0 0 var(--space-sm);
+}
+
+.article-pager .cross-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-pager .cross-link-list li {
+    margin-bottom: var(--space-sm);
+    line-height: 1.4;
+}
+
+.article-pager .cross-link-list li:last-child {
+    margin-bottom: 0;
+}
+
+.article-pager .cross-link {
+    color: var(--link-color-light);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.article-pager .cross-link:hover {
+    text-decoration: underline;
+    color: var(--link-hover-light);
+}
+
+.dark-mode .article-pager .cross-link {
+    color: var(--link-color-dark);
+}
+
+.dark-mode .article-pager .cross-link:hover {
+    color: var(--link-hover-dark);
+}
+
+.article-pager .cross-link-desc {
+    display: block;
+    font-size: 0.82em;
+    opacity: 0.7;
+    margin-top: 1px;
 }
 
 /* --- Sidebar Panel --- */
@@ -266,6 +353,65 @@
     display: none;
 }
 
+/* Questions rendered directly inside sidebar (from questions.html include) */
+.article-sidebar .review-questions {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+}
+
+.article-sidebar .review-questions.section {
+    padding-block: 0;
+}
+
+.article-sidebar .review-questions h2 {
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    margin: 0 0 var(--space-sm);
+    padding: 0;
+}
+
+.article-sidebar .review-questions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-sidebar .review-questions li {
+    font-size: 0.85em;
+    padding: var(--space-xs) 0;
+    cursor: pointer;
+    line-height: 1.4;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+    border: none;
+    border-radius: 0;
+    min-height: auto;
+    gap: var(--space-sm);
+}
+
+.article-sidebar .review-questions li:hover {
+    opacity: 1;
+    background: transparent;
+    box-shadow: none;
+}
+
+.article-sidebar .review-questions .click-hint {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--primary-accent);
+    opacity: 0.5;
+}
+
+.article-sidebar .review-questions li span {
+    font-size: 1em;
+}
+
 /* --- Homepage Sidebar Content --- */
 
 .sidebar-featured-articles {
@@ -333,6 +479,7 @@
         display: block;
     }
 
+    .article-pager,
     .article-sidebar,
     .home-sidebar {
         display: none;

@@ -7,7 +7,7 @@ permalink: /metode/
 og_image: /assets/images/banners/om-metode-og.webp
 hero:
   image: /assets/images/banners/science-foundation.webp
-  alt: "Vitenskapelig fundament"
+  alt: "Kunnskapsbasert fundament"
   title: "Om metodikk"
   intro: "Strukturerte intervjuer for kartlegging av ledergrupper."
 hero_effect: parallax-fade

@@ -24,7 +24,15 @@ layout: default
 {% endif %}
 
 <div class="section container--wide article-body animate-on-scroll fade-in-up">
+{% if page.show_cta_buttons %}
+  {% include cta-buttons.html %}
+{% endif %}
+
 {{ content }}
+
+{% if page.show_metodikk_callout %}
+  {% include metodikk-callout.html %}
+{% endif %}
 </div>
 
 {% include cta-section.html %}

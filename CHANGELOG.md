@@ -71,6 +71,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **Back-to-top fix (I2 Phase 2, via W3)**: Wired `.back-to-top` button with IntersectionObserver sentinel + rootMargin. Implemented in `animations.js` as part of the scroll affordances feature.
 
+### Added
+- **Page layout (no-id)**: New `_layouts/page.html` — minimal article-body wrapper for pure-markdown pages without sidebar, replacing `layout: default` + inline HTML pattern.
+
+### Changed
+- **Nav/layout reorganization**: Removed newsletter signup from `_layouts/article.html` and `_layouts/home.html`. Moved cross-link pager to dedicated left sidebar column in article grid. Repositioned questions include into right sidebar alongside TOC with compact styling. Removed hero include and hero frontmatter from `index.md`/home layout. Fixed `.nav-featured` selector in `navbar.css` to target direct child of `.navbar` (was only `.nav-links a.nav-featured`, never matched).
+- **Content → pure MD**: Converted `_pages/personvern.md` from `layout: default` + inline HTML to `layout: page` + pure markdown. Converted `_pages/ledelse_60-2.md` body to pure markdown — removed `{% include %}` and `{{ page.story }}` variable references, added `show_cta_buttons`/`show_metodikk_callout` frontmatter booleans for conditional gating in `_layouts/product.html`.
+- **Terminology: vitenskapelig → kunnskapsbasert**: Updated `_pages/om_metode.md` hero alt text, `_includes/metodikk-callout.html` heading, and `_pages/ledelse_60-2.md` body text. Historical entry in CHANGELOG.md left intact.
+
 ## [1.9.0] - 2026-06-08
 
 ### Added
