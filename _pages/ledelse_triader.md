@@ -14,13 +14,6 @@ json_ld:
       type: "Organization"
       name: "No Excuse AS"
     citation:
-questions_title: "Spørsmål for å kartlegge triader i din organisasjon"
-questions:
-  - "Hvem i teamet ditt ville fortsette å samarbeide effektivt hvis du forsvant i morgen?"
-  - "Er viktige relasjoner i organisasjonen din dyader eller triader? Hvordan vet du det?"
-  - "Hvem tjener på at to personer i organisasjonen ikke snakker sammen?"
-  - "Hvilken informasjon er fanget i par-relasjoner og når aldri frem til dem som trenger den?"
-  - "Når introduserte du sist to personer for hverandre og trakk deg tilbake?"
       - "@type": "Book"
         name: "Tribal Leadership: Leveraging Natural Groups to Build a Thriving Organization"
         author:
@@ -61,6 +54,13 @@ questions:
         acceptedAnswer:
           "@type": "Answer"
           text: "Ifølge Logan trengs tre betingelser: felles verdier eller formål, komplementære evner, og vilje til å dele nettverket. Den siste er vanskeligst fordi den krever en kultur der relasjonsbygging ikke oppleves som en trussel mot individuell posisjon."
+questions_title: "Spørsmål for å kartlegge triader i din organisasjon"
+questions:
+  - "Hvem i teamet ditt ville fortsette å samarbeide effektivt hvis du forsvant i morgen?"
+  - "Er viktige relasjoner i organisasjonen din dyader eller triader? Hvordan vet du det?"
+  - "Hvem tjener på at to personer i organisasjonen ikke snakker sammen?"
+  - "Hvilken informasjon er fanget i par-relasjoner og når aldri frem til dem som trenger den?"
+  - "Når introduserte du sist to personer for hverandre og trakk deg tilbake?"
 hero:
   image: /assets/images/banners/hero-triade.webp
   alt: "Abstrakt geometrisk illustrasjon av tre sammenkoblede noder"
