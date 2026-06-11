@@ -86,32 +86,49 @@
     }
 
     /**
-     * Inject cross-link callouts after <h2> headings in the article body.
-     * Each heading gets one callout containing all relevant links.
+     * Inject cross-link callouts into the left pager sidebar.
      */
     function injectCallouts(config) {
-        var articleBody = document.querySelector('.article-body');
-        if (!articleBody) return;
+        var pager = document.querySelector('.article-pager');
+        var pagerTarget = pager && pager.querySelector('.js-pager-list');
 
-        var headings = articleBody.querySelectorAll('h2');
-        if (headings.length === 0) return;
+        if (pagerTarget) {
+            // Inject into left pager sidebar
+            var list = buildLinkList(config);
+            pagerTarget.appendChild(list);
+            pager.removeAttribute('hidden');
+        } else {
+            // Fallback: inject after last h2 in article body (no pager layout)
+            var articleBody = document.querySelector('.article-body');
+            if (!articleBody) return;
 
-        // Build a single callout with all links
-        var callout = document.createElement('div');
-        callout.className = 'cross-link-section';
+            var headings = articleBody.querySelectorAll('h2');
+            if (headings.length === 0) return;
 
-        var label = document.createElement('p');
-        label.className = 'cross-link-label';
-        label.textContent = 'Relaterte artikler:';
-        callout.appendChild(label);
+            var callout = document.createElement('div');
+            callout.className = 'cross-link-section';
 
+            var label = document.createElement('p');
+            label.className = 'cross-link-label';
+            label.textContent = 'Relaterte artikler:';
+            callout.appendChild(label);
+
+            var list = buildLinkList(config);
+            callout.appendChild(list);
+
+            var lastHeading = headings[headings.length - 1];
+            lastHeading.parentNode.insertBefore(callout, lastHeading.nextSibling);
+        }
+    }
+
+    /** Build a <ul class="cross-link-list"> from config links */
+    function buildLinkList(config) {
         var list = document.createElement('ul');
         list.className = 'cross-link-list';
 
         for (var i = 0; i < config.links.length; i++) {
             var item = document.createElement('li');
             var link = createCallout(config.links[i]);
-            // Replace <aside> wrapper with direct link (already inside <li>)
             var anchor = link.querySelector('a');
             var descSpan = link.querySelector('.cross-link-desc');
 
@@ -134,11 +151,7 @@
             list.appendChild(item);
         }
 
-        callout.appendChild(list);
-
-        // Insert after the last h2
-        var lastHeading = headings[headings.length - 1];
-        lastHeading.parentNode.insertBefore(callout, lastHeading.nextSibling);
+        return list;
     }
 
     function init() {

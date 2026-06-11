@@ -12,6 +12,9 @@ layout: default
     <div class="frame-content frame-{{ page.frame_id }}">
   {% else %}
     <div class="article-layout">
+      <aside class="article-pager" aria-label="Relaterte artikler" hidden>
+        <div class="js-pager-list"></div>
+      </aside>
       <div class="section container--wide article-body animate-on-scroll fade-in-up">
         <details class="toc-collapsible">
           <summary>Innholdsfortegnelse</summary>
@@ -29,6 +32,10 @@ layout: default
       </div>
       <aside class="article-sidebar" aria-label="Sidemeny">
         {% include sidebar-toc.html %}
+        {% if page.questions %}
+          {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
+          {% include questions.html title=page.questions_title questions=question_list %}
+        {% endif %}
       </aside>
     </div>
   {% endif %}
@@ -66,9 +73,4 @@ layout: default
 {% include cases-cards.html %}
 {% include references.html %}
 
-{% if page.questions %}
-  {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
-  {% include questions.html title=page.questions_title questions=question_list %}
-{% endif %}
 
-{% include newsletter-signup.html %}

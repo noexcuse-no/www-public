@@ -2,13 +2,6 @@
 layout: home
 title: "No Excuse AS"
 description: "No Excuse AS hjelper ledergrupper med å bli bedre — uten byråkrati. 60 diagnostiske spørsmål på 2 timer."
-hero:
-  image: /assets/images/hero-illustration.webp
-  alt: "No Excuse AS — Ledergrupper fortjener bedre diagnoseverktøy"
-  title: "Ledergrupper fortjener bedre diagnoseverktøy"
-  intro: "De fleste ledelsesverktøy reduserer kompleksitet til en poengsum. Vi gjør det motsatte: 60 spørsmål på 2 timer som avdekker mønstre, ikke tall."
-  cta_text: "Bestill uforpliktende samtale"
-  cta_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
 stat_bridge: "4 perspektiver · 60 spørsmål · 2 timer"
 json_ld:
   - type: "Organization"
