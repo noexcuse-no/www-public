@@ -14,17 +14,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Newsletter signup form (F4a)**: Email collection with GDPR consent checkbox, shown on article pages and homepage. MVP: client-side localStorage with localStorage approach, ready for API backend replacement. New files: `_includes/newsletter-signup.html`, `assets/css/components/newsletter.css`, `assets/scripts/newsletter.js`, `_data/newsletter-subscribers.json`.
-- **Contact form (F4b)**: Name/email/message form with GDPR consent on dedicated `/kontakt/` page. Two-column layout with alternate contact methods sidebar. New files: `_pages/kontakt.md`, `_includes/contact-form.html`, `assets/scripts/contact.js`, `_data/contact-messages.json`.
 - **Privacy policy page**: `/personvern/` GDPR-compliant privacy declaration covering newsletter and contact form data processing, rights, and consent. New file: `_pages/personvern.md`.
-- **Cross-linking**: `/om-oss/` → `/kontakt/` cross-link added. `.design/information-architecture.md` updated with new URLs and cross-references.
 
 ### Changed
-- **S2 status fix**: BACKLOG.md updated to reflect S2 social preview image crops as Done (was incorrectly marked Planned).
-- **G4 status**: BACKLOG.md updated to Doing for active conversion infrastructure work.
-- **Topical landing pages — P2 (G3)**: Three new topical landing pages extracting content from `/grc/` and expanding with four-perspective analysis — `/kvalitetsledelse/` (ISO 9001, quality culture, continuous improvement), `/baerekraft/` (ESG, environmental responsibility, identity-anchored sustainability), `/compliance/` (regulatory compliance, integrity-based vs rule-based culture). All include hero banners (Style 1), OG crops, JSON-LD, CTAs, and reflection questions. 6 new image files.
-- **Wide-screen sidebar — articles (W1)**: Right-hand 320px panel with auto-generated TOC from h2/h3, scroll-spy heading highlighting via IntersectionObserver, hero visibility gating (hidden until hero scrolls past), sticky with internal scroll. Collapsible `<details>` TOC on mobile/tablet. CSS grid layout (`1fr minmax(auto,800px) 320px 1fr`) at ≥1200px breakpoint. New files: `assets/css/components/sidebar.css`, `assets/scripts/sidebar.js`, `_includes/sidebar-toc.html`.
-- **Wide-screen sidebar — homepage (W2)**: Right-hand 300px panel with about blurb, quick links (articles, perspektiv, metode), and compact Ledelse 60:2 CTA. Same hero-visibility gating and sticky behavior. New file: `_includes/sidebar-home.html`.
-- **Layout integration**: `_layouts/article.html` wraps content in `.article-layout` grid with mobile collapsible TOC; `_layouts/home.html` wraps main sections in `.home-layout` grid. Frame pages unaffected. Sidebar CSS/JS wired into `_includes/styles.html` and `_includes/scripts.html`.
+- **Article sidebar restructure — TOC left, questions right**: Moved auto-generated TOC from right sidebar into left `.article-pager` (alongside cross-links). Moved review-questions into new right `.article-questions` sidebar. Updated CSS grid layout and JS injection targets. Removed old `.article-sidebar` class entirely.
+- **Homepage cleanup — remove sidebar, stat-bridge, article-feed**: Stripped `.home-layout` grid, removed `.home-sidebar` and `sidebar-home.html` include. Removed `stat-bridge.html` and `article-feed.html` includes. Restored product section frontmatter (`cta_a`, `cta_b`, `cta_c`, `benefits`, `process_steps`) to `ledelse_60-2.md` to render CTA buttons, 2×2 benefits grid, and process steps on homepage. Added `frame-cards.html` for perspektiver card grid.
+- **Navbar mobile overlay — featured link inside burger menu**: Moved "Ledelse 60:2" featured CTA pill into `.nav-links` unconditionally so it renders inside the mobile burger menu overlay. Fixed overlay link text colors (was inheriting azure-on-white, now uses `--text-color-light`/`--text-color-dark`).
+- **CTA buttons — full-width on mobile**: Widened mobile breakpoint from 599px to 768px. `.cta-buttons-row` stacks vertically. Benefit card CTAs stretch full-width with `align-self: stretch`.
+
+### Removed
+- **/kontakt/ page and cross-links**: Deleted `_pages/kontakt.md`, removed `/om-oss/ → /kontakt/` cross-link from `om_oss.md`. The contact form feature (F4b) is removed in favor of direct booking via Outlook.
 
 ### Changed
 - **Step pages content (R25)**: Substantive body text for `/samtale/`, `/intervju/`, `/rapport/` step pages — expanded leads, what-happens sections, why-it-matters, prerequisites, CTAs. Uses uniform frontmatter schema (hero, intro_text, steps, prerequisites, cta, meta).
