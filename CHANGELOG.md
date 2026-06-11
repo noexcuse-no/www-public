@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Wide-screen sidebar — articles (W1)**: Right-hand 320px panel with auto-generated TOC from h2/h3, scroll-spy heading highlighting via IntersectionObserver, hero visibility gating (hidden until hero scrolls past), sticky with internal scroll. Collapsible `<details>` TOC on mobile/tablet. CSS grid layout (`1fr minmax(auto,800px) 320px 1fr`) at ≥1200px breakpoint. New files: `assets/css/components/sidebar.css`, `assets/scripts/sidebar.js`, `_includes/sidebar-toc.html`.
+- **Wide-screen sidebar — homepage (W2)**: Right-hand 300px panel with about blurb, quick links (articles, perspektiv, metode), and compact Ledelse 60:2 CTA. Same hero-visibility gating and sticky behavior. New file: `_includes/sidebar-home.html`.
+- **Layout integration**: `_layouts/article.html` wraps content in `.article-layout` grid with mobile collapsible TOC; `_layouts/home.html` wraps main sections in `.home-layout` grid. Frame pages unaffected. Sidebar CSS/JS wired into `_includes/styles.html` and `_includes/scripts.html`.
+
+### Changed
 - **Step pages content (R25)**: Substantive body text for `/samtale/`, `/intervju/`, `/rapport/` step pages — expanded leads, what-happens sections, why-it-matters, prerequisites, CTAs. Uses uniform frontmatter schema (hero, intro_text, steps, prerequisites, cta, meta).
 - **Social preview infrastructure (S1)**: Fallback chain (`hero.image → banner → page.image → site default`) for `og:image` and `twitter:image` in `_includes/metadata.html`. Added `url` to `_config.yml` for absolute URLs. Fixed broken `.png` → `.webp` reference. Added `og:image:width/height`.
 - **Alt text accessibility audit (A4)**: Added/improved alt text across all articles and graphics for WCAG AA compliance. Persistent `alt`-per-grid pattern with element-level identifiers for card backgrounds.
