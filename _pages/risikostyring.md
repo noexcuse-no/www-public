@@ -5,6 +5,7 @@ category: benefit
 title: "Risikostyring i ledelse — fra årlig øvelse til daglig vane"
 description: "Risikostyring handler om mer enn årlige risikokartlegginger. Lær hvordan modne ledergrupper gjør risikostyring til en integrert del av ledelsesdialogen."
 permalink: /risikostyring/
+og_image: /assets/images/banners/risikostyring-og.webp
 banner: "assets/images/banners/risikostyring-t1-hero.webp"
 url: "/risikostyring/"
 hero:

@@ -5,6 +5,7 @@ category: benefit
 title: "Informasjonssikkerhet og cyberresiliens — et ledelsesansvar"
 description: "Informasjonssikkerhet er ikke et IT-problem — det er et ledelsesproblem. Lær hvordan fire perspektiver på ledelse avdekker hvor sikkerhetskulturen svikter."
 permalink: /informasjonssikkerhet/
+og_image: /assets/images/banners/informasjonssikkerhet-og.webp
 banner: "assets/images/banners/informasjonssikkerhet-t1-hero.webp"
 url: "/informasjonssikkerhet/"
 hero:

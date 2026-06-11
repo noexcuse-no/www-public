@@ -5,6 +5,7 @@ category: benefit
 title: "Endringsledelse — fra intensjon til varig endring"
 description: "De fleste endringsinitiativ feiler. Lær hvorfor — og hva forskningen sier om hvordan ledere faktisk kan gjennomføre varig endring."
 permalink: /endringsledelse/
+og_image: /assets/images/banners/endringsledelse-og.webp
 banner: "assets/images/banners/endringsledelse-t1-hero.webp"
 url: "/endringsledelse/"
 hero:

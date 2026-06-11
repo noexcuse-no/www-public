@@ -2,6 +2,7 @@
 class: frame
 layout: article
 permalink: /pavirkning/
+og_image: /assets/images/banners/pavirkning-og.webp
 frame_id: "påvirkning"
 category: "frame"
 title: "Påvirkningsperspektivet i ledelse"

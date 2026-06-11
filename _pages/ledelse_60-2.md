@@ -6,6 +6,7 @@ show_step_cards: true
 title: "Ledelse 60:2 — Orientering for ledergruppen"
 description: "Tidseffektiv orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
 permalink: /ledelse-60-2/
+og_image: /assets/images/banners/ledelse-60-2-og.webp
 name: "Ledelse 60:2"
 short_description: "Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen."
 url: "/ledelse-60-2/"

@@ -4,6 +4,7 @@ layout: article
 title: "Makt eller tjeneste — Hvor sitter din ledergruppe på spekteret?"
 description: "Organisasjoner trenger både makt og tjeneste. Lær hvorfor effektive ledelseskulturer bevisst balanserer begge."
 permalink: /makt/
+og_image: /assets/images/banners/makt-og.webp
 hero:
   image: /assets/images/banners/hero-makt.webp
   alt: "Makt eller tjeneste — balansen i ledergruppen"

@@ -5,6 +5,7 @@ category: benefit
 title: "Organisasjonskultur — forstå kulturen som styrer atferden"
 description: "Hva er organisasjonskultur egentlig, og hvordan kan ledere forstå og påvirke den? Scheins kulturnivåer, Logans kulturstadier og praktisk kulturanalyse."
 permalink: /kultur/
+og_image: /assets/images/banners/kultur-og.webp
 banner: "assets/images/banners/kultur-t1-hero.webp"
 url: "/kultur/"
 hero:

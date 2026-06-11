@@ -4,6 +4,7 @@ layout: article
 title: "Fire perspektiver — Multiframe thinking som lederferdighet"
 description: "Hvorfor en-rame-tenkning feiler, og hvordan multiframe thinking gir bedre diagnostikk. Det egentlige argumentet for 'no scoring'."
 permalink: /perspektiv/
+og_image: /assets/images/banners/perspektiv-og.webp
 tags: ["multiframe thinking", "ledelsesdiagnostikk", "organisasjonskultur"]
 json_ld:
   - type: "Article"

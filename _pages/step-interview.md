@@ -8,6 +8,7 @@ description: "Vi gjennomfører et strukturert intervju med inntil fem ledere, hv
 banner: "assets/images/banners/step-interview.webp"
 micro_image: "assets/images/banners/ledelse-60-2-t4-intervju.webp"
 url: "/intervju/"
+og_image: /assets/images/banners/intervju-og.webp
 ---
 
 ![Strukturert intervju](/assets/images/banners/intervju-t3-intervju.webp)
