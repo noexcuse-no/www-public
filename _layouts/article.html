@@ -14,6 +14,7 @@ layout: default
     <div class="article-layout">
       <aside class="article-pager" aria-label="Relaterte artikler" hidden>
         <div class="js-pager-list"></div>
+        {% include sidebar-toc.html %}
       </aside>
       <div class="section container--wide article-body animate-on-scroll fade-in-up">
         <details class="toc-collapsible">
@@ -30,8 +31,7 @@ layout: default
     </div>
   {% else %}
       </div>
-      <aside class="article-sidebar" aria-label="Sidemeny">
-        {% include sidebar-toc.html %}
+      <aside class="article-questions" aria-label="Spørsmål">
         {% if page.questions %}
           {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
           {% include questions.html title=page.questions_title questions=question_list %}

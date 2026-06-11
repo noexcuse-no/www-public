@@ -4,14 +4,15 @@
     /* ===== W1 Article Sidebar ===== */
 
     function initArticleSidebar() {
-        var sidebar = document.querySelector('.article-sidebar');
+        var pager = document.querySelector('.article-pager');
+        var questions = document.querySelector('.article-questions');
         var hero = document.querySelector('.hero');
         var body = document.querySelector('.article-body');
 
-        if (!sidebar || !body) return;
+        if (!body) return;
 
         // --- 1. Build TOC from h2/h3 in article body ---
-        var tocContainer = sidebar.querySelector('.js-toc-list');
+        var tocContainer = pager ? pager.querySelector('.js-toc-list') : null;
         if (tocContainer) {
             var headings = body.querySelectorAll('h2, h3');
             var tocItems = [];
@@ -43,6 +44,11 @@
             });
 
             tocContainer.appendChild(fragment);
+
+            // Show the pager if we have TOC items
+            if (tocItems.length > 0 && pager) {
+                pager.removeAttribute('hidden');
+            }
 
             // Also populate collapsible mobile TOC if present
             var mobileToc = document.querySelector('.js-toc-collapsible-list');
@@ -97,23 +103,28 @@
             }
         }
 
-        // --- 3. Hero visibility observer: show sidebar after hero scrolls past ---
-        if (hero && 'IntersectionObserver' in window) {
-            var visibilityObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    sidebar.classList.toggle('sidebar-visible', !entry.isIntersecting);
-                });
-            }, { threshold: 0 });
+        // --- 3. Hero visibility observer: show questions sidebar after hero scrolls past ---
+        if (questions) {
+            if (hero && 'IntersectionObserver' in window) {
+                var visibilityObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        questions.classList.toggle('sidebar-visible', !entry.isIntersecting);
+                    });
+                }, { threshold: 0 });
 
-            visibilityObserver.observe(hero);
-        } else if (hero) {
-            // Fallback: show sidebar after scrolling past hero
-            var checkScroll = function() {
-                var heroBottom = hero.offsetTop + hero.offsetHeight;
-                sidebar.classList.toggle('sidebar-visible', window.scrollY > heroBottom - 100);
-            };
-            window.addEventListener('scroll', checkScroll, { passive: true });
-            checkScroll();
+                visibilityObserver.observe(hero);
+            } else if (hero) {
+                // Fallback: show after scrolling past hero
+                var checkScroll = function() {
+                    var heroBottom = hero.offsetTop + hero.offsetHeight;
+                    questions.classList.toggle('sidebar-visible', window.scrollY > heroBottom - 100);
+                };
+                window.addEventListener('scroll', checkScroll, { passive: true });
+                checkScroll();
+            } else {
+                // No hero — show immediately
+                questions.classList.add('sidebar-visible');
+            }
         }
     }
 
@@ -123,40 +134,10 @@
         });
     }
 
-    /* ===== W2 Homepage Sidebar ===== */
-
-    function initHomeSidebar() {
-        var sidebar = document.querySelector('.home-sidebar');
-        var hero = document.querySelector('.hero');
-
-        if (!sidebar) return;
-
-        if (hero && 'IntersectionObserver' in window) {
-            var visibilityObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    sidebar.classList.toggle('sidebar-visible', !entry.isIntersecting);
-                });
-            }, { threshold: 0 });
-
-            visibilityObserver.observe(hero);
-        } else if (hero) {
-            var checkScroll = function() {
-                var heroBottom = hero.offsetTop + hero.offsetHeight;
-                sidebar.classList.toggle('sidebar-visible', window.scrollY > heroBottom - 100);
-            };
-            window.addEventListener('scroll', checkScroll, { passive: true });
-            checkScroll();
-        } else {
-            // No hero — show immediately
-            sidebar.classList.add('sidebar-visible');
-        }
-    }
-
     /* ===== Init ===== */
 
     function init() {
         initArticleSidebar();
-        initHomeSidebar();
     }
 
     if (document.readyState === 'loading') {

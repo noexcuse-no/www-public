@@ -2,7 +2,7 @@
 layout: home
 title: "No Excuse AS"
 description: "No Excuse AS hjelper ledergrupper med å bli bedre — uten byråkrati. 60 diagnostiske spørsmål på 2 timer."
-stat_bridge: "4 perspektiver · 60 spørsmål · 2 timer"
+
 json_ld:
   - type: "Organization"
     name: "No Excuse AS"

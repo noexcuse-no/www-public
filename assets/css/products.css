@@ -308,6 +308,13 @@
         display: block;
     }
 
+    .benefit-card .product-cta {
+        margin: 0 var(--space-lg) var(--space-lg);
+        width: auto;
+        align-self: stretch;
+        text-align: center;
+    }
+
     .product-benefits,
     .landing-benefits-grid {
         grid-template-columns: 1fr;

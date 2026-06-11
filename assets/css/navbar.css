@@ -31,16 +31,13 @@
     background-color: var(--nav-hover-bg-light);
 }
 
-/* Featured nav item — subtle CTA pill for Ledelse 60:2
-   Link is a direct child of .navbar (not inside .nav-links) */
-a.nav-featured,
+/* Featured nav item — subtle CTA pill for Ledelse 60:2 */
 .nav-links a.nav-featured {
     border: 2px solid var(--primary-accent);
     color: var(--primary-accent);
     padding: 8px 18px;
 }
 
-a.nav-featured:hover,
 .nav-links a.nav-featured:hover {
     background-color: var(--primary-accent);
     color: var(--primary-accent-contrast);
@@ -127,13 +124,11 @@ body.no-scroll {
     background-color: var(--nav-hover-bg-dark);
 }
 
-.dark-mode a.nav-featured,
 .dark-mode .nav-links a.nav-featured {
     border-color: var(--primary-accent);
     color: var(--primary-accent);
 }
 
-.dark-mode a.nav-featured:hover,
 .dark-mode .nav-links a.nav-featured:hover {
     background-color: var(--primary-accent);
     color: var(--primary-accent-contrast);
@@ -206,11 +201,26 @@ body.no-scroll {
         padding: 16px 32px;
         width: auto;
         text-align: center;
+        color: var(--text-color-light);
+    }
+
+    .nav-overlay .nav-links a:hover {
+        color: var(--text-color-light);
+        background: var(--surface-hover-light);
     }
 
     /* Dark mode overrides for overlay */
     .dark-mode .nav-overlay {
         background: var(--box-background-dark);
+    }
+
+    .dark-mode .nav-overlay .nav-links a {
+        color: var(--text-color-dark);
+    }
+
+    .dark-mode .nav-overlay .nav-links a:hover {
+        color: var(--text-color-dark);
+        background: var(--surface-hover-dark);
     }
 
     .dark-mode .nav-overlay-close {

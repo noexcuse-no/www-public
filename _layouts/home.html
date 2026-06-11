@@ -1,19 +1,19 @@
 ---
 layout: default
 ---
-{% include stat-bridge.html %}
-<div class="home-layout">
-  <div class="home-content-area">
-    {{ content }}
-    {% assign has_products = site.pages | where: "class", "product" | where: "published", true | size %}
-    {% if has_products > 0 %}{% include products.html %}{% endif %}
-    {% assign has_profiles = site.pages | where: "class", "profile" | where: "published", true | size %}
-    {% if has_profiles > 0 %}{% include profiles.html tags="ledelse" %}{% endif %}
-    {% include article-feed.html %}
-  </div>
-  <aside class="home-sidebar" aria-label="Sidemeny">
-    {% include sidebar-home.html %}
-  </aside>
+<div class="home-content">
+  {{ content }}
+  {% assign has_products = site.pages | where: "class", "product" | where: "published", true | size %}
+  {% if has_products > 0 %}{% include products.html %}{% endif %}
+  {% assign has_frames = site.pages | where: "class", "frame" | size %}
+  {% if has_frames > 0 %}
+  <section id="perspektiver" class="section container">
+    <h2>Fire perspektiver på ledelse</h2>
+    {% include frame-cards.html %}
+  </section>
+  {% endif %}
+  {% assign has_profiles = site.pages | where: "class", "profile" | where: "published", true | size %}
+  {% if has_profiles > 0 %}{% include profiles.html tags="ledelse" %}{% endif %}
 </div>
 {% include cta-section.html %}
 {% include partners.html %}

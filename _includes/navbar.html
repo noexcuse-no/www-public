@@ -1,17 +1,9 @@
 <nav class="navbar">
-    {% for item in site.data.navigation %}
-        {% if item.class == "nav-featured" %}
-        <a href="{{ item.url | relative_url }}" class="{{ item.class }}">{{ item.title }}</a>
-        {% endif %}
-    {% endfor %}
-
     <div class="nav-overlay" id="navOverlay" aria-hidden="true">
         <button class="nav-overlay-close" aria-label="Lukk meny">&times;</button>
         <div class="nav-links">
         {% for item in site.data.navigation %}
-            {% unless item.class == "nav-featured" %}
-            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-            {% endunless %}
+            <a href="{{ item.url | relative_url }}"{% if item.class %} class="{{ item.class }}"{% endif %}>{{ item.title }}</a>
         {% endfor %}
         </div>
     </div>

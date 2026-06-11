@@ -68,7 +68,11 @@
 }
 
 /* Responsive */
-@media (max-width: 599px) {
+@media (max-width: 768px) {
+    .cta-buttons-row {
+        flex-direction: column;
+    }
+
     .product-cta {
         width: 100%;
         box-sizing: border-box;
