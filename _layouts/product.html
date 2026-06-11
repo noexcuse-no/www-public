@@ -5,24 +5,6 @@ layout: default
 
 {% include stat-bridge.html %}
 
-{% if page.show_benefit_cards %}
-<section class="section section--benefit-grid animate-on-scroll fade-in-up">
-  {% if page.benefit_heading %}
-  <h2 class="section-heading">{{ page.benefit_heading }}</h2>
-  {% endif %}
-  {% include benefit-cards.html %}
-</section>
-{% endif %}
-
-{% if page.show_step_cards %}
-<section class="section section--step-grid animate-on-scroll fade-in-up">
-  {% if page.step_heading %}
-  <h2 class="section-heading">{{ page.step_heading }}</h2>
-  {% endif %}
-  {% include step-cards.html %}
-</section>
-{% endif %}
-
 <div class="section container--wide article-body animate-on-scroll fade-in-up">
 {% if page.show_cta_buttons %}
   {% include cta-buttons.html %}
