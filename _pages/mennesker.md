@@ -2,6 +2,7 @@
 class: frame
 layout: article
 permalink: /mennesker/
+og_image: /assets/images/banners/mennesker-og.webp
 frame_id: "mennesker"
 category: "frame"
 title: "Menneskeperspektivet i ledelse"

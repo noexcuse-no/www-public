@@ -4,6 +4,7 @@ layout: article
 title: "GRC — Governance, Risk and Compliance"
 description: "Hvordan fire perspektiver på ledelse hjelper deg å implementere styring, risiko- og samsvarshåndtering som faktisk fungerer — ikke bare sertifisering på papiret."
 permalink: /grc/
+og_image: /assets/images/banners/grc-og.webp
 hero:
   image: /assets/images/banners/grc-t1-hero.webp
   alt: "Fire abstrakte menneskesilhuetter på en fjellrygg i et nordisk landskap — én med kompass og kart (styring), én speider mot mørke skyer med hånden for øynene (risiko), én åpner en oppslagsbok og sammenlikner med stien (samsvar), én står klar — flat vektorillustrasjon i minimalistisk nordisk stil"

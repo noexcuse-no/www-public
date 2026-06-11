@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://noexcuse.no{{ page.url }}">
 <meta property="og:title" content="{{ page.title | default: site.data.metadata.og_title }}">
 <meta property="og:description" content="{{ meta_desc | default: site.data.metadata.og_description }}">
-{% assign og_img = page.hero.image | default: page.banner | default: page.image | default: site.data.metadata.og_image %}
+{% assign og_img = page.og_image | default: page.hero.image | default: page.banner | default: page.image | default: site.data.metadata.og_image %}
 {% unless og_img contains "://" %}
   {% assign og_img = site.url | append: '/' | append: og_img %}
 {% endunless %}

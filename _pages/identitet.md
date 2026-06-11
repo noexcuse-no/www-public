@@ -2,6 +2,7 @@
 class: frame
 layout: article
 permalink: /identitet/
+og_image: /assets/images/banners/identitet-og.webp
 frame_id: "identitet"
 category: "frame"
 title: "Identitetsperspektivet i ledelse"

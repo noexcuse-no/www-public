@@ -4,6 +4,7 @@ layout: article
 title: "Om metodikk"
 description: "«Ledelse 60:2» er en intervjubasert kartleggingsmetode for ledergrupper. Les om det teoretiske grunnlaget, kunnskapsproduksjon og hvorfor vi gjør dette."
 permalink: /metode/
+og_image: /assets/images/banners/om-metode-og.webp
 hero:
   image: /assets/images/banners/science-foundation.webp
   alt: "Vitenskapelig fundament"

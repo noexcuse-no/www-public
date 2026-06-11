@@ -8,6 +8,7 @@ description: "Vi tar en prat for å raskt avklare om dette er en metode som kan 
 banner: "assets/images/banners/step-talk.webp"
 micro_image: "assets/images/banners/ledelse-60-2-t4-samtale.webp"
 url: "/samtale/"
+og_image: /assets/images/banners/samtale-og.webp
 ---
 
 ![Uforpliktende samtale](/assets/images/banners/samtale-t3-samtale.webp)

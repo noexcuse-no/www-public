@@ -4,6 +4,7 @@ layout: article
 title: "Triader — Bygg robuste team med trekantede relasjoner"
 description: "Lær hvorfor trekantede relasjoner er sterkere enn to-og-to. Fra dyader til triader — strukturelle verktøy for en resilient organisasjon."
 permalink: /triader/
+og_image: /assets/images/banners/triader-og.webp
 tags: ["triader", "teamdynamikk", "organisasjonsstruktur"]
 json_ld:
   - type: "Article"

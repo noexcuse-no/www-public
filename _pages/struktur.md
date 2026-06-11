@@ -2,6 +2,7 @@
 class: frame
 layout: article
 permalink: /struktur/
+og_image: /assets/images/banners/struktur-og.webp
 frame_id: "struktur"
 category: "frame"
 title: "Strukturperspektivet i ledelse"

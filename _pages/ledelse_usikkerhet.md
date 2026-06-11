@@ -5,6 +5,7 @@ category: benefit
 title: "Usikkerhet og endring — bli forberedt på en usikker fremtid"
 description: "Lær hvordan modne ledergrupper navigerer usikkerhet og endring — fra Scheins kulturnivåer til Kotters endringsmodell."
 permalink: /usikkerhet/
+og_image: /assets/images/banners/usikkerhet-og.webp
 banner: "assets/images/banners/benefit-future.webp"
 url: "/usikkerhet/"
 hero:
