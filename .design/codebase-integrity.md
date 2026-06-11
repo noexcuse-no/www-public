@@ -1,87 +1,82 @@
 # Codebase Integrity & Technical Debt Cleanup
 
-> **Status:** Planning | BL: I1 (spec/design integrity), I2 (technical debt cleanup)
+> **Status:** I1 — Done (PR #159), I2 — Done (PR #158)
 > 
 > Two workstreams: ensure specs match reality and code is cleanly modularized.
 
-## Part A — Spec/Design Integrity Audit (I1)
+## Part A — Spec/Design Integrity Audit (I1) — Completed
+
+### Changes Made
+
+| Action | Details |
+|--------|---------|
+| **Content research → `.research/`** | Moved `shared/`, `ledelse-60-2/`, `grc/`, `generativ-ki/`, `frames/` from `.specs/` to `.research/` |
+| **Archived completed specs** | 24 specs for Done BL items moved to `.specs/archive/` |
+| **Renamed gap-analysis specs** | `homepage-gaps` → `homepage-overhaul`, `om-oss-gaps` → `om-oss-forbedringer`, `conversion-gaps` → `conversion-infrastructure`, `missing-landing-pages` → `topical-landing-pages` |
+| **Fixed stale references** | `.specs/partners/README.md` and `.specs/cases/README.md` now match actual page-class implementation |
+| **Archived superseded design docs** | `review-questions.md`, `citation-enhancement.md`, `c2pa-cc0-licensing.md`, `visual-polish-r23.md` moved to `.design/archive/` |
 
 ### Current State
 
-**75 spec files** in `.specs/` across 7 subdirectories:
-- 53 flat spec files in `.specs/*/README.md`
-- 6 content research files in `.specs/shared/`
-- 3 article content specs (`.specs/ledelse-60-2/`, `.specs/grc/`, `.specs/generativ-ki/`)
-- Multiple legacy specs for features already completed
+**Active specs** in `.specs/`:
+- `.specs/accessibility/`
+- `.specs/architecture/`
+- `.specs/booking-direct-links/`
+- `.specs/brand-trait-reconciliation/`
+- `.specs/cases/` — updated (page-class model)
+- `.specs/codebase-integrity/`
+- `.specs/conversion-infrastructure/` (renamed from `conversion-gaps`)
+- `.specs/cta-design/`
+- `.specs/emne/`
+- `.specs/hero-layout-fixes/`
+- `.specs/homepage-overhaul/` (renamed from `homepage-gaps`)
+- `.specs/html-to-md-refactor/`
+- `.specs/i18n/`
+- `.specs/image-optimization/`
+- `.specs/inbound-sales/`
+- `.specs/ledelse-60-2-ui-ux/`
+- `.specs/makt/`
+- `.specs/metode-overhaul/`
+- `.specs/mobile-cta-widths/`
+- `.specs/multi-product/`
+- `.specs/navigation/`
+- `.specs/om-oss-forbedringer/` (renamed from `om-oss-gaps`)
+- `.specs/om-oss/`
+- `.specs/partners/` — updated (page-class model)
+- `.specs/perspektiv/`
+- `.specs/privacy/`
+- `.specs/production-ui-audit/`
+- `.specs/profile-card-redesign/`
+- `.specs/profile-card-test-fixes/`
+- `.specs/profile-filter/`
+- `.specs/profile-modal-redesign/`
+- `.specs/profile-tag-formatting/`
+- `.specs/regression-fixes-phase6/`
+- `.specs/regressions/`
+- `.specs/security/`
+- `.specs/semantic-metadata/`
+- `.specs/seo/`
+- `.specs/social-previews/`
+- `.specs/technical-debt/` — archived
+- `.specs/three-step-pages/`
+- `.specs/topical-landing-pages/` (renamed from `missing-landing-pages`)
+- `.specs/triader/`
+- `.specs/ui-upgrade/`
+- `.specs/usikkerhet-rename/`
+- `.specs/usikkerhet/`
 
-**30 design files** in `.design/`:
-- 1 archived design (`.design/archive/plan-v0.md`)
-- Mix of current, planned, and stale design documents
+**.specs/archive/** contains 24 archived specs from Done BL items.
 
-### Known Integrity Issues
+**.research/** contains 5 directories with content research/bibliography materials.
 
-#### Stale spec references
+**.design/archive/** now contains 5 files: `plan-v0.md`, `review-questions.md`, `citation-enhancement.md`, `c2pa-cc0-licensing.md`, `visual-polish-r23.md`.
 
-| Spec | Stale content |
-|---|---|
-| `.specs/partners/README.md` | Says "Needs template creation" + "Needs CSS creation" — but `_includes/partners.html` and `assets/css/partners.css` already exist. Says "Needs to be added to `_layouts/default.html`" — but it's included in `_layouts/home.html`, not default. |
-| `.specs/cases/README.md` | Describes collection-based model (`site.cases`) but actual implementation (`cases-cards.html`) queries `site.pages where class: "case"`. The frontmatter schema examples reference a different data model than what the include reads. |
-| `.specs/homepage-gaps/README.md` | Named "-gaps" but was rewritten as feature spec — name doesn't reflect current purpose. |
-| `.specs/om-oss-gaps/README.md` | Same naming issue. |
-| `.specs/conversion-gaps/README.md` | Same naming issue. |
-| `.specs/missing-landing-pages/README.md` | Named as gap analysis, not feature spec. |
+### Remaining Observations (not in I1 scope)
 
-#### Completed/obsolete specs (features already Done in BL)
-
-These specs describe features that are fully implemented. They should be marked as historical or archived:
-
-- `.specs/company-description-audit/README.md` — Z1 (Done)
-- `.specs/review-questions/README.md` — Y1-Y9 (Done)
-- `.specs/citation-enhancement/README.md` — FF4 (Done)
-- `.specs/illustration-system/README.md` — F7 (Done)
-- `.specs/benefit-article-illustrations/README.md` — R4 (Done)
-- `.specs/values-illustrations/README.md` — R15 (Done)
-- `.specs/alt-text-audit/README.md` — A4 (Planned, superseded)
-- `.specs/ai-agent-cheat-sheets/README.md` — A3 (Planned)
-- `.specs/seo/README.md` — overlaps with S1/S2 social previews
-- `.specs/dark-mode-audit/README.md` — X2 (Done)
-- `.specs/architecture-cleanup/README.md` — A1 (Done)
-- `.specs/layout-migration/README.md` — P5 (Done)
-- `.specs/hero-animation-system/README.md` — part of R24 (Done)
-- Plus ~20 more feature-specific specs from earlier sprints
-
-#### Design docs vs current implementation
-
-| Design doc | Status |
-|---|---|
-| `.design/review-questions.md` | Fully implemented (Y1-Y9) — historical |
-| `.design/semantic-metadata.md` | Mostly implemented | 
-| `.design/c2pa-cc0-licensing.md` | Fully implemented (Z2) — historical |
-| `.design/citation-enhancement.md` | Fully implemented (FF4) — historical |
-| `.design/ui-upgrade.md` | Largely implemented (U1-U13) |
-| `.design/visual-polish-r23.md` | Implemented (R24) — historical |
-| `.design/photography-brief.md` | Reference doc — no implementation expected |
-| `.design/SPEC.md` | Template/metaguide — not a design doc |
-| `.design/testing-architecture.md` | Reference — test patterns |
-
-#### Missing specs for existing implementations
-
-- `_includes/sticky-cta.html` + `sticky-cta.js` — has CSS and JS but no spec or design doc
+- `_includes/sticky-cta.html` + `sticky-cta.js` — has CSS and JS but no dedicated spec
 - `_includes/stat-bridge.html` — no dedicated spec
 - Responsive/mobile behavior — no comprehensive spec
-
-#### Content research specs vs implementation specs
-
-`.specs/shared/`, `.specs/ledelse-60-2/`, `.specs/grc/`, `.specs/generativ-ki/`, `.specs/frames/` contain research/outline content, not implementation specifications. They're mixed in with functional specs without clear delineation.
-
-### Proposed Actions (I1)
-
-1. **Archive completed specs** — Move all specs for Done BL items to `.specs/archive/` or add a `status: historical` header
-2. **Fix stale references** — Update `.specs/partners/README.md` and `.specs/cases/README.md` to match actual implementation
-3. **Rename gap-analysis specs** — The 4 specs named `-gaps` should reflect their current feature-spec framing (e.g., `homepage-gaps` → `homepage-overhaul`)
-4. **Separate content research from specs** — Move `.specs/shared/`, `.specs/ledelse-60-2/`, `.specs/grc/`, `.specs/generativ-ki/`, `.specs/frames/` to a `.research/` directory to avoid confusion
-5. **Document undocumented features** — Create specs for `sticky-cta`, `stat-bridge`, responsive breakpoint behavior
-6. **Cross-reference BL → specs** — Ensure every BL item references its spec file, and every spec references its BL item
+- `.specs/seo/README.md` overlaps with `.specs/social-previews/README.md` — consolidation deferred
 
 ---
 
