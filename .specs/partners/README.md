@@ -10,14 +10,15 @@ Design how partner organizations are presented on noexcuse.no and create human-f
 
 | Asset | Status |
 |---|---|
-| `_config.yml` — `partners:` collection | Registered with `output: true` |
-| `_includes/partners.html` | Renders partners as logo + name grid at bottom of homepage |
+| Data model | Page-class: `site.pages where: "class", "partner"` — no `_config.yml` collection (removed in I2 Phase 4) |
+| `_includes/partners.html` | Renders partners as logo + name grid; queries `site.pages where: "class", "partner"` |
 | `assets/css/partners.css` | Basic styling — centered flex grid, logo cards with opacity hover |
-| `_partners/` directory | Empty — no pages exist |
+| `_layouts/home.html` | Includes `partners.html` (line 13) — partners appear at bottom of homepage only |
+| `_partners/` directory | Empty — no pages exist; new partners are `_pages/*.md` with `class: partner` |
 | `.specs/partners/README.md` | Minimal stub — this rewrite supersedes it |
-| Partner frontmatter schema | Minimal: `name`, `url`, `image`, `tags` |
+| Partner frontmatter schema | Fields used: `class: "partner"`, `published: true`, `image`, `name`, `url` |
 
-The existing `partners.html` expects each partner page to have `class: "partner"`, `published: true`, `image`, `name`, and `url` fields. Partners appear at the bottom of the homepage only.
+The existing `partners.html` expects each partner page to have `class: "partner"`, `published: true`, `image`, `name`, and `url` fields. Partners appear at the bottom of the homepage only, via `{% include partners.html %}` in `_layouts/home.html`.
 
 ## ⛔ Blocking — Clarifying Questions
 

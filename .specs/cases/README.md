@@ -24,22 +24,23 @@ From the website gap analysis (April 2026):
 
 ### Phase 1: Schema & Infrastructure (existing — complete)
 
-- `_config.yml` registers `cases` collection with `output: true`
-- `_includes/cases.html` exists with a basic loop rendering `title`, `description`, `result`, `customer`
-- `_data/cases.css` has basic styling (part of product page CSS)
+- **Data model**: Page-class — `site.pages where: "class", "case"`. No `_config.yml` collection (removed in I2 Phase 4). New cases are `_pages/*.md` with `class: case`.
+- `_includes/cases-cards.html` exists with a loop rendering `title`, `description`, `result`, `customer` — included from `_layouts/article.html` (line 53)
+- CSS styling lives in `assets/css/products.css` (`.landing-cases`, `.landing-cases-grid`, `.case-card`, `.case-result`, `.case-customer` classes)
 
 ### Phase 2: Content Population (pending)
 
-Create 1–3 case entries in `_cases/`. Each entry should follow the frontmatter schema:
+Create 1–3 case pages in `_pages/` with `class: case`. Each entry should follow the frontmatter schema:
 
 ```yaml
 ---
+class: case
+published: true
 title: "Effektivisering av logistikkflyten"   # required
 description: "Kort beskrivelse av caset"       # required
 image: "assets/images/case-bilde.png"          # optional
 result: "30% reduksjon i sykefravær"           # optional
 customer: "Kundenavn AS"                       # optional
-product_tags: "#ledelse"                       # optional — tag matching product.tags
 ---
 ```
 
