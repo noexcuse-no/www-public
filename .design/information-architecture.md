@@ -31,6 +31,8 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/kvalitetsledelse/` | `_pages/kvalitetsledelse.md` | Topical: Kvalitetsledelse |
 | `/baerekraft/` | `_pages/baerekraft.md` | Topical: Bærekraft og samfunnsansvar |
 | `/compliance/` | `_pages/compliance.md` | Topical: Compliance |
+| `/kontakt/` | `_pages/kontakt.md` | Contact form |
+| `/personvern/` | `_pages/personvern.md` | Privacy policy |
 
 ## Tag Pages
 
@@ -86,6 +88,10 @@ Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningst
 | `/compliance/` → Psychological safety | `/tillit/` | "Les om psykologisk trygghet →" |
 | `/compliance/` → Power and ethics | `/makt/` | "Les om makt og etisk ledelse →" |
 | `/compliance/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om Ledelse 60:2 →" |
+| `/om-oss/` → Contact | `/kontakt/` | "Kontakt oss →" |
+| `/kontakt/` → Booking | External | "Bestill uforpliktende samtale" |
+| `/kontakt/` → Om oss | `/om-oss/` | "Les om No Excuse AS →" |
+| `/kontakt/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om produktet →" |
 
 ## Rules
 

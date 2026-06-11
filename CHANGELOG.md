@@ -13,6 +13,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Newsletter signup form (F4a)**: Email collection with GDPR consent checkbox, shown on article pages and homepage. MVP: client-side localStorage with localStorage approach, ready for API backend replacement. New files: `_includes/newsletter-signup.html`, `assets/css/components/newsletter.css`, `assets/scripts/newsletter.js`, `_data/newsletter-subscribers.json`.
+- **Contact form (F4b)**: Name/email/message form with GDPR consent on dedicated `/kontakt/` page. Two-column layout with alternate contact methods sidebar. New files: `_pages/kontakt.md`, `_includes/contact-form.html`, `assets/scripts/contact.js`, `_data/contact-messages.json`.
+- **Privacy policy page**: `/personvern/` GDPR-compliant privacy declaration covering newsletter and contact form data processing, rights, and consent. New file: `_pages/personvern.md`.
+- **Cross-linking**: `/om-oss/` → `/kontakt/` cross-link added. `.design/information-architecture.md` updated with new URLs and cross-references.
+
+### Changed
+- **S2 status fix**: BACKLOG.md updated to reflect S2 social preview image crops as Done (was incorrectly marked Planned).
+- **G4 status**: BACKLOG.md updated to Doing for active conversion infrastructure work.
 - **Topical landing pages — P2 (G3)**: Three new topical landing pages extracting content from `/grc/` and expanding with four-perspective analysis — `/kvalitetsledelse/` (ISO 9001, quality culture, continuous improvement), `/baerekraft/` (ESG, environmental responsibility, identity-anchored sustainability), `/compliance/` (regulatory compliance, integrity-based vs rule-based culture). All include hero banners (Style 1), OG crops, JSON-LD, CTAs, and reflection questions. 6 new image files.
 - **Wide-screen sidebar — articles (W1)**: Right-hand 320px panel with auto-generated TOC from h2/h3, scroll-spy heading highlighting via IntersectionObserver, hero visibility gating (hidden until hero scrolls past), sticky with internal scroll. Collapsible `<details>` TOC on mobile/tablet. CSS grid layout (`1fr minmax(auto,800px) 320px 1fr`) at ≥1200px breakpoint. New files: `assets/css/components/sidebar.css`, `assets/scripts/sidebar.js`, `_includes/sidebar-toc.html`.
 - **Wide-screen sidebar — homepage (W2)**: Right-hand 300px panel with about blurb, quick links (articles, perspektiv, metode), and compact Ledelse 60:2 CTA. Same hero-visibility gating and sticky behavior. New file: `_includes/sidebar-home.html`.
