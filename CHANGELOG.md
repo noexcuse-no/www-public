@@ -76,7 +76,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - **Nav/layout reorganization**: Removed newsletter signup from `_layouts/article.html` and `_layouts/home.html`. Moved cross-link pager to dedicated left sidebar column in article grid. Repositioned questions include into right sidebar alongside TOC with compact styling. Removed hero include and hero frontmatter from `index.md`/home layout. Fixed `.nav-featured` selector in `navbar.css` to target direct child of `.navbar` (was only `.nav-links a.nav-featured`, never matched).
-- **Content → pure MD**: Converted `_pages/personvern.md` from `layout: default` + inline HTML to `layout: page` + pure markdown. Converted `_pages/ledelse_60-2.md` body to pure markdown — removed `{% include %}` and `{{ page.story }}` variable references, added `show_cta_buttons`/`show_metodikk_callout` frontmatter booleans for conditional gating in `_layouts/product.html`.
+- **Content → pure MD**: Converted `_pages/personvern.md` from `layout: default` + inline HTML to `layout: page` + pure markdown. Converted `_pages/ledelse_60-2.md` body to pure markdown — removed `{% raw %}{% include %}{% endraw %}` and `{% raw %}{{ page.story }}{% endraw %}` variable references, added `show_cta_buttons`/`show_metodikk_callout` frontmatter booleans for conditional gating in `_layouts/product.html`.
 - **Terminology: vitenskapelig → kunnskapsbasert**: Updated `_pages/om_metode.md` hero alt text, `_includes/metodikk-callout.html` heading, and `_pages/ledelse_60-2.md` body text. Historical entry in CHANGELOG.md left intact.
 
 ## [1.9.0] - 2026-06-08
@@ -89,7 +89,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **3 additional pages with questions**: `grc.md` (5 GRC-modning spørsmål), `ledelse_perspektiv.md` (5 multiframe-kapabilitet spørsmål), `om_metode.md` (5 diagnostisk praksis spørsmål). All rendered via the same frontmatter-driven layout include.
 
 ### Changed
-- **Questions architecture pivot**: Moved from per-page `{% include questions.html %}` calls with inline pipe-separated params to frontmatter-driven YAML arrays rendered once in the article layout. All 9 stale per-page include calls removed. `ledelse_makt.md` hardcoded `<ul>` question section converted to frontmatter (section removed).
+- **Questions architecture pivot**: Moved from per-page `{% raw %}{% include questions.html %}{% endraw %}` calls with inline pipe-separated params to frontmatter-driven YAML arrays rendered once in the article layout. All 9 stale per-page include calls removed. `ledelse_makt.md` hardcoded `<ul>` question section converted to frontmatter (section removed).
 
 ## [1.8.1] - 2026-06-08
 
