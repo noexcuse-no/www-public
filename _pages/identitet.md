@@ -100,22 +100,22 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
 
 ![Illustrasjon av vanlige identitetsrelaterte utfordringer](/assets/images/banners/illustrasjon-identitet-utfordringer.webp)
 
-*   ![Abstrakt illustrasjon av tomme verdier som ikke er forankret](/assets/images/banners/identitet-t4-empty-values.webp "")
+*   ![Abstrakt illustrasjon av tomme verdier som ikke er forankret](/assets/images/banners/identitet-t4-empty-values.webp)
 
     #### Tomme verdier
 
     Verdier som ikke reflekterer faktisk atferd. Konsulentlede verdiprogrammer som aldri ble forankret.
-*   ![Abstrakt illustrasjon av individuell dominans i organisasjonskultur](/assets/images/banners/identitet-t4-individual-dominance.webp "")
+*   ![Abstrakt illustrasjon av individuell dominans i organisasjonskultur](/assets/images/banners/identitet-t4-individual-dominance.webp)
 
     #### Individuell dominans
 
     En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Individualistisk tankegang som demper kollektiv vekst.
-*   ![Abstrakt illustrasjon av historieløs organisasjon uten fortellinger](/assets/images/banners/identitet-t4-storylessness.webp "")
+*   ![Abstrakt illustrasjon av historieløs organisasjon uten fortellinger](/assets/images/banners/identitet-t4-storylessness.webp)
 
     #### Historieløshet
 
     En organisasjon uten fortellinger — nye folk får ingen kontekst. Kulturen er usynlig fordi den aldri er blitt eksplisitt.
-*   ![Abstrakt illustrasjon av forandringstretthet i organisasjonen](/assets/images/banners/identitet-t4-change-fatigue.webp "")
+*   ![Abstrakt illustrasjon av forandringstretthet i organisasjonen](/assets/images/banners/identitet-t4-change-fatigue.webp)
 
     #### Forandringstretthet
 

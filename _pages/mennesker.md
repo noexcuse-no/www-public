@@ -114,22 +114,22 @@ Gode rutiner og klare roller er ikke det motsatte av tillitsbasert ledelse — d
 
 ![Illustrasjon av vanlige menneskerelaterte utfordringer](/assets/images/banners/illustrasjon-mennesker-utfordringer.webp)
 
-*   ![Abstrakt illustrasjon av manglende psykologisk trygghet](/assets/images/banners/mennesker-t4-psychological-safety.webp "")
+*   ![Abstrakt illustrasjon av manglende psykologisk trygghet](/assets/images/banners/mennesker-t4-psychological-safety.webp)
 
     #### Manglende psykologisk trygghet
 
     Folk tørr ikke si ifra om problemer. Feil skjules. Kritikk leveres bak lukkede dører. Innovasjon dør før den får luft.
-*   ![Abstrakt illustrasjon av tomme verdier som ikke etterleves](/assets/images/banners/mennesker-t4-empty-values.webp "")
+*   ![Abstrakt illustrasjon av tomme verdier som ikke etterleves](/assets/images/banners/mennesker-t4-empty-values.webp)
 
     #### Tomme verdier
 
     Organisasjonen har verdier på veggen, men de stemmer ikke med hvordan folk faktisk oppfører seg. Verdiene er blitt flosler, ikke veiledning.
-*   ![Abstrakt illustrasjon av siloer og manglende samarbeid](/assets/images/banners/mennesker-t4-silos.webp "")
+*   ![Abstrakt illustrasjon av siloer og manglende samarbeid](/assets/images/banners/mennesker-t4-silos.webp)
 
     #### Sil og silo
 
     Avdelinger og individer jobber i siloer. Folk kjenner ikke til hva naboen driver med. Kunden matcher med én person som blir en flaskehals.
-*   ![Abstrakt illustrasjon av for mye volum og for lite mening](/assets/images/banners/mennesker-t4-meaninglessness.webp "")
+*   ![Abstrakt illustrasjon av for mye volum og for lite mening](/assets/images/banners/mennesker-t4-meaninglessness.webp)
 
     #### For mye volum, for lite mening
 

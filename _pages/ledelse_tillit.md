@@ -166,22 +166,22 @@ Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid
 
 ## Vanlige tillitsutfordringer i norske organisasjoner
 
-*   ![Abstrakt illustrasjon av hierarkisk blindhet som tillitsutfordring](/assets/images/banners/tillit-t4-hierarchical-blindness.webp "")
+*   ![Abstrakt illustrasjon av hierarkisk blindhet som tillitsutfordring](/assets/images/banners/tillit-t4-hierarchical-blindness.webp)
 
     #### Hierarkisk blindhet
 
     Ledere som ikke ser at deres atferd oppfattes annerledes avhengig av posisjon. Det som føles som «direkte» oppfattes som «domsnutt» av underordnede.
-*   ![Abstrakt illustrasjon av informasjonsasymmetri som tillitsutfordring](/assets/images/banners/tillit-t4-info-asymmetry.webp "")
+*   ![Abstrakt illustrasjon av informasjonsasymmetri som tillitsutfordring](/assets/images/banners/tillit-t4-info-asymmetry.webp)
 
     #### Informerings asymmetri
 
     Ledere vet mer enn de deler. Medarbeidere tolker dette som mistillit. Kommunikasjonen blir formell og overfladisk.
-*   ![Abstrakt illustrasjon av historisk bagasje som tillitsutfordring](/assets/images/banners/tillit-t4-historical-baggage.webp "")
+*   ![Abstrakt illustrasjon av historisk bagasje som tillitsutfordring](/assets/images/banners/tillit-t4-historical-baggage.webp)
 
     #### Historisk baggage
 
     Tidligere svik sitter i kulturen. Nye ledere møtes med «vi har hørt dette før»-holdning. Initiativ blir møtt med skepsis.
-*   ![Abstrakt illustrasjon av inkonsekvent oppfølging som tillitsutfordring](/assets/images/banners/tillit-t4-inconsistent-followup.webp "")
+*   ![Abstrakt illustrasjon av inkonsekvent oppfølging som tillitsutfordring](/assets/images/banners/tillit-t4-inconsistent-followup.webp)
 
     #### Inkonsekvent oppfølging
 

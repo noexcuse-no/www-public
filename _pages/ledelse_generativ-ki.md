@@ -154,22 +154,22 @@ Den som kontrollerer KI, former retningen. Det er et spørsmål om [makt](/makt/
 
 ## Røde flagg
 
-*   ![Abstrakt illustrasjon av rødt flagg: KI uten menneskelig review](/assets/images/banners/genki-t4-no-human-review.webp "")
+*   ![Abstrakt illustrasjon av rødt flagg: KI uten menneskelig review](/assets/images/banners/genki-t4-no-human-review.webp)
 
     #### KI-implementert uten menneskelig review
 
     Output fra modellen går direkte til kunde eller beslutning uten at et menneske har sett på det.
-*   ![Abstrakt illustrasjon av rødt flagg: «KI sa det» som begrunnelse](/assets/images/banners/genki-t4-ki-said-it.webp "")
+*   ![Abstrakt illustrasjon av rødt flagg: «KI sa det» som begrunnelse](/assets/images/banners/genki-t4-ki-said-it.webp)
 
     #### «KI sa det»
 
     Brukt som begrunnelse for beslutninger. Modellen blir autoritet, ikke verktøy.
-*   ![Abstrakt illustrasjon av rødt flagg: kvantitet over kvalitet i KI-bruk](/assets/images/banners/genki-t4-quantity-over-quality.webp "")
+*   ![Abstrakt illustrasjon av rødt flagg: kvantitet over kvalitet i KI-bruk](/assets/images/banners/genki-t4-quantity-over-quality.webp)
 
     #### Kvantitet over kvalitet
 
     Organisasjonen måler hvor mye KI som brukes, ikke om det faktisk fungerer. Høyere volum maskerer lavere verdi.
-*   ![Abstrakt illustrasjon av rødt flagg: raskere men mindre nøyaktig med KI](/assets/images/banners/genki-t4-faster-less-accurate.webp "")
+*   ![Abstrakt illustrasjon av rødt flagg: raskere men mindre nøyaktig med KI](/assets/images/banners/genki-t4-faster-less-accurate.webp)
 
     #### Raskere, men mindre nøyaktig
 
