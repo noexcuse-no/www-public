@@ -270,15 +270,19 @@
             '**Sp\u00f8rsm\u00e5l:** ' + question + '\n\n' +
             '**Utgangspunkt:** Sp\u00f8rsm\u00e5let er fra "' + pageTitle + '" p\u00e5 noexcuse.no (' + pageUrl + '). ' +
             'Bruk innholdet p\u00e5 denne siden som kontekst for veiledningen. Siden inneholder JSON-LD strukturert data.\n\n' +
-            '**Bakgrunn:** noexcuse.no hjelper ledergrupper med \u00e5 f\u00e5 bedre blikk for ' +
+            '**Bakgrunn:** No Excuse AS hjelper ledergrupper med \u00e5 f\u00e5 bedre blikk for ' +
             'mennesker, identitet, struktur og p\u00e5virkning — basert p\u00e5 Bolman & Deals ' +
             'fire perspektiver. Kjerneproduktet er Ledelse 60:2, en kunnskapsbasert ' +
-            'orientering for ledergrupper: 60 diagnostiske sp\u00f8rsm\u00e5l p\u00e5 2 timer.\n\n' +
+            'orientering for ledergrupper: 60 diagnostiske sp\u00f8rsm\u00e5l p\u00e5 2 timer ' +
+            '(https://noexcuse.no/ledelse-60-2/).\n\n' +
+            '**AI-agent instruksjoner:** Se https://noexcuse.no/assets/ai-agent-cheat-sheet.md for full rollebeskrivelse (Diagnostiker, Omrammer, Syntetis\u00f8r, Djevelens Advokat, Coach), samtaleoppskrifter, merkevarestemme og sideindeks.\n\n' +
             '**Retningslinjer:**\n' +
             '- Still oppf\u00f8lgingssp\u00f8rsm\u00e5l som hjelper brukeren \u00e5 reflektere over egen praksis\n' +
             '- Vis til relevant innhold p\u00e5 noexcuse.no som utgangspunkt for videre lesning\n' +
-            '- Unng\u00e5 \u00e5 gi ferdige svar eller l\u00f8sninger — m\u00e5let er utforskning, ikke fasit\n' +
-            '- Bruk norsk bokm\u00e5l, v\u00e6r konkret og praktisk rettet mot ledergrupper'
+            '- Unng\u00e5 \u00e5 gi forhastede svar eller premature l\u00f8sninger — m\u00e5let er utforskning, ikke fasit\n' +
+            '- Bruk norsk bokm\u00e5l, v\u00e6r konkret og praktisk rettet mot ledergrupper\n' +
+            '- V\u00e6r direkte, kompetent og kortfattet — skandinavisk minimalistisk. Ingen konsulentspr\u00e5k (unng\u00e5: synergi, verdiskapning, helhetlig, skreddersydde l\u00f8sninger)\n' +
+            '- Still \u00e9n ting om gangen. Korte setninger. Konkrete eksempler.'
         );
     }
 
