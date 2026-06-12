@@ -133,6 +133,14 @@ ul:has(> li > h4) > li p {
     opacity: 0.85;
 }
 
+ul:has(> li > h4) > li > p:first-of-type img,
+ul:has(> li > h4) > li img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
+}
 
 /* Standalone section images — paragraph images whose parent is not a list item */
 :not(li) > p:has(> img:only-child) > img:not([class]) {
@@ -282,6 +290,15 @@ ul:has(> li > h4) > li p {
 
 .dark-mode .article-body > ol:has(> li > h3) > li {
     background: var(--surface-subtle-dark);
+}
+
+.article-body > ol:has(> li > h3) > li > p:first-of-type img,
+.article-body > ol:has(> li > h3) > li img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
 }
 
 /* ========================================

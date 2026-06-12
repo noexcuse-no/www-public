@@ -1,0 +1,17 @@
+{% comment %}
+  Frame benefit cards — renders frame pages as benefit cards matching product card style.
+  Used on the homepage "Fire perspektiver på ledelse" section.
+  Uses the same .benefit-card pattern as product benefit cards.
+{% endcomment %}
+
+<div class="grid grid--2">
+  {% assign frames = site.pages | where: "class", "frame" | sort: "weight" %}
+  {% for topic in frames %}
+  <div class="benefit-card">
+    <img src="{{ topic.banner | relative_url }}" alt="{{ topic.title }}" class="benefit-banner">
+    <h4>{{ topic.title }}</h4>
+    <p>{{ topic.description }}</p>
+    <a href="{{ topic.url | relative_url }}" class="product-cta" title="{{ topic.title }}">Les mer →</a>
+  </div>
+  {% endfor %}
+</div>

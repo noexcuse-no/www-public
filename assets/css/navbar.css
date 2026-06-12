@@ -209,25 +209,5 @@ body.no-scroll {
         background: var(--surface-hover-light);
     }
 
-    /* Dark mode overrides for overlay */
-    .dark-mode .nav-overlay {
-        background: var(--box-background-dark);
-    }
 
-    .dark-mode .nav-overlay .nav-links a {
-        color: var(--text-color-dark);
-    }
-
-    .dark-mode .nav-overlay .nav-links a:hover {
-        color: var(--text-color-dark);
-        background: var(--surface-hover-dark);
-    }
-
-    .dark-mode .nav-overlay-close {
-        color: var(--text-color-dark);
-    }
-
-    .dark-mode .nav-overlay-close:hover {
-        background: var(--surface-hover-dark);
-    }
 }

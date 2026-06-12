@@ -98,36 +98,71 @@ cta:
   body: "Vi finner ut om Ledelse 60:2 er rett for dere. Ingen binding, ingen salgspitch — bare en ærlig vurdering."
 ---
 
-## Fordeler med Ledelse 60:2
+## Hva er Ledelse 60:2?
 
-Metoden gir deg et strukturert bilde av ledergruppens modenhet på tvers av fire rammer — struktur, mennesker, påvirkning og identitet. Her er områdene vi utforsker:
+Et strukturert intervju med ledergruppen — 60 spørsmål fordelt på fire perspektiver, gjennomført på to timer. Ikke en survey, ikke en scoreboard, men en samtale som gir et felles språk for hvor ledergruppen står og hva som trenger oppmerksomhet.
 
-- **[Tillitsbasert ledelse](/tillit/)** — Hvordan psykologisk trygghet og tillit fungerer i praksis, og hvorfor det er den viktigste faktoren for en velfungerende organisasjon.
-- **[Organisasjonskultur](/kultur/)** — Forstå kulturen som styrer atferden, fra Scheins tre nivåer til Logans kulturstadier.
-- **[Forankring og forpliktelse](/forankring/)** — Hvordan beslutninger faktisk tas i organisasjoner, og hvorfor rasjonelle ledere ofte tar irrasjonelle valg.
-- **[Ledelse under usikkerhet](/usikkerhet/)** — Naviger usikkerhet og endring med modne ledergrupper og forskningsbaserte verktøy.
-- **[Endringsledelse](/endringsledelse/)** — Hvorfor de fleste endringsinitiativ feiler, og hva forskningen sier om varig endring.
-- **[Generativ KI-ledelse](/generativ-ki/)** — Hvordan lede ansatte som styrer AI-modeller, og utvikle ledelseskompetanse for en ny æra.
-- **[Risikostyring](/risikostyring/)** — Gjør risikostyring til en integrert del av ledelsesdialogen, ikke bare en årlig øvelse.
-- **[Kvalitetsledelse](/kvalitetsledelse/)** — Fra kontrollbyråkrati til kontinuerlig forbedring, utover ISO 9001-sertifisering.
-- **[Compliance](/compliance/)** — Bygg en samsvarskultur som faktisk fungerer, ikke bare papir og prosedyrer.
-- **[Informasjonssikkerhet](/informasjonssikkerhet/)** — Informasjonssikkerhet er et ledelsesansvar, ikke et IT-problem.
-- **[Bærekraft og samfunnsansvar](/baerekraft/)** — Autentisk bærekraftsarbeid som er forankret i ledelsens identitet, ikke grønnvasking.
+Metoden er også relevant for [governance, risikostyring og compliance (GRC)](/grc/). De fire perspektivene — struktur, mennesker, påvirkning og identitet — speiler kjernedimensjonene i enhver styringsmodell. Ledelse 60:2 gir ledergruppen et felles språk for å identifisere hvor styringen fungerer og hvor den har blindsoner.
 
-## Slik fungerer det
+![Samtale](/assets/images/banners/step-talk.webp)
+### 1. Uforpliktende samtale
+Vi blir kjent og avklarer om metoden passer for dere. Ingen kontrakter, ingen binding. [Les mer →](/samtale/)
 
-Ledelse 60:2 er bygget opp i tre trinn. Hele prosessen tar to timer fordelt på strukturerte samtaler.
+![Intervju](/assets/images/banners/step-interview.webp)
+### 2. Strukturert intervju
+60 diagnostiske spørsmål med inntil fem ledere. Selve samtalen er like verdifull som analysen. [Les mer →](/intervju/)
 
-**Trinn 1: Uforpliktende samtale** — Vi tar en prat for å bli kjent med hverandre og raskt avklare om metoden passer for dere. Ingen kontrakter, ingen forpliktelser. Du beskriver situasjonen deres, og vi gir en umiddelbar vurdering. [Les mer om samtalen →](/samtale/)
+![Rapport](/assets/images/banners/step-report.webp)
+### 3. Rapport og anbefalinger
+Konkrete funn og anbefalinger basert på intervjuet — ikke generisk teoristoff. Leveres innen en uke. [Les mer →](/rapport/)
 
-**Trinn 2: Strukturert intervju** — Kjerneøvelsen i Ledelse 60:2. Vi gjennomfører et strukturert intervju med inntil fem ledere der vi sammen reflekterer over 60 diagnostiske spørsmål fordelt på fire rammer. Selve samtalen er like verdifull som analysen. [Les mer om intervjuet →](/intervju/)
+## Kjenner du deg igjen?
 
-**Trinn 3: Rapport og anbefalinger** — Du får en tydelig rapport som viser hvor dere står sammenliknet med typisk bestepraksis. Ikke generisk teoristoff, men konkrete funn fra intervjuet med ledergruppen deres. Rapporten leveres normalt innen en uke. [Les mer om rapporten →](/rapport/)
+![Stille rom](/assets/images/banners/ledelse-60-2-t4-signal-stille-rom.webp)
+#### Du får vite hva folk egentlig mener på vei ut av møtet.
 
-![Trinn 1: Uforpliktende samtale → Trinn 2: Strukturert intervju → Trinn 3: Rapport og anbefalinger](/assets/images/banners/ledelse-60-2-t2-prosessflyt.webp)
+I rommet var alle enige — på overflaten. Når [tillitsbasert ledelse](/tillit/) mangler, blir tause rom normen, og [organisasjonskulturen](/kultur/) svekkes uten at noen snakker om det.
 
-## Historien bak metoden
+![Risikokalender](/assets/images/banners/ledelse-60-2-t4-signal-risikokalender.webp)
+#### Dere oppdaterer risikobildet én gang i året.
 
-«Ledelse 60:2» er vår tilnærming til å bruke en enkel kunnskapsbasert metode for å sammenlikne etterprøvbare beskrivelser av ledelsesfunksjonen på et gitt nivå i en virksomhet. Virksomhetens utbytte er å få et bedre beslutningsgrunnlag for å prioritere forbedringer av hvordan ledelsen fungerer, og forbedring av administrative støttefunksjoner for styring og kontroll. Vår motivasjon er å bidra til utviklingen av ny kunnskap om nordisk ledelses- og styringspraksis, noe som vi tror vil være viktig for norske virksomheters konkurranseevne.
+Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert [risikostyring](/risikostyring/) og løpende [compliance](/compliance/) blir håndteringen reaktiv, og [informasjonssikkerhet](/informasjonssikkerhet/) reduseres til en årlig avkrysning.
 
-Metoden bygger på Bolman & Deals fire rammeverk for ledelse, kombinert med praktisk erfaring fra norsk arbeidsliv. Vi har utviklet 60 spørsmål som dekker de viktigste dimensjonene av ledelsesfunksjonen, og testet dem i en rekke ledergrupper på tvers av bransjer og organisasjonsstørrelser. Spørsmålene er designet for å skape refleksjon og innsikt, ikke for å gi enkle poengsummer eller rangeringer.
+![Endringsstabel](/assets/images/banners/ledelse-60-2-t4-signal-endringsstabel.webp)
+#### Du har mistet tellingen på endringsprosjektene.
+
+De du helst vil beholde, forsvinner stille. Vellykket [endringsledelse](/endringsledelse/) handler ikke om flere initiativer, men om å lede mennesker gjennom endring — og [generativ KI](/generativ-ki/) endrer premissene for hva som kreves av lederne.
+
+![Lukket presentasjon](/assets/images/banners/ledelse-60-2-t4-signal-lukket-presentasjon.webp)
+#### Bærekraftsmålene står i en PowerPoint ingen åpner.
+
+Strategien er på plass, men uten [forankring](/forankring/) i ledergruppen blir [bærekraft](/baerekraft/) og [kvalitetsledelse](/kvalitetsledelse/) til ord uten eierskap i hverdagen.
+
+![Samme diskusjon](/assets/images/banners/ledelse-60-2-t4-signal-samme-diskusjon.webp)
+#### Du har hatt den samme diskusjonen tre ganger denne måneden.
+
+Beslutninger tas i enighet, men ingenting endrer seg. Uforløst [makt](/makt/) og manglende [perspektivskifte](/perspektiv/) låser mønstre som [triader](/triader/) kan bryte.
+
+Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verktøyet som gir ledergruppen et felles språk for å bryte mønstrene. Les mer om [hvordan metoden er bygget opp](/metode/) og [hvorfor vi bruker Bolman & Deals fire perspektiver](/perspektiv/) som rammeverk.
+
+## Slik er metoden bygget opp
+
+Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert perspektiv avdekker en dimensjon av ledelsesfunksjonen som ellers lett overses. Poenget er ikke å skåre — men å få et felles språk for hva som fungerer og hva som trenger oppmerksomhet.
+
+[![Struktur](/assets/images/banners/frame-structure.webp)](/struktur/)
+### Struktur
+Rolleklarhet, prosesser og beslutningslinjer. Handler om å få organisasjonen til å fungere teknisk.
+
+[![Mennesker](/assets/images/banners/frame-human.webp)](/mennesker/)
+### Mennesker
+Psykologisk trygghet, tillit og kompetanseutnyttelse. Handler om å få folk til å fungere sammen.
+
+[![Påvirkning](/assets/images/banners/frame-political.webp)](/pavirkning/)
+### Påvirkning
+Maktforhold, interesser og allianser. Handler om å forstå hvem som egentlig bestemmer.
+
+[![Identitet](/assets/images/banners/frame-symbol.webp)](/identitet/)
+### Identitet
+Kultur, verdier og felles retning. Handler om hva organisasjonen står for.
+
+De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene er designet for å skape refleksjon og innsikt — ikke for å gi enkle poengsummer eller rangeringer.

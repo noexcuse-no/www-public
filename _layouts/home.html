@@ -9,7 +9,7 @@ layout: default
   {% if has_frames > 0 %}
   <section id="perspektiver" class="section container">
     <h2>Fire perspektiver på ledelse</h2>
-    {% include frame-cards.html %}
+    {% include frame-benefit-cards.html %}
   </section>
   {% endif %}
   {% assign has_profiles = site.pages | where: "class", "profile" | where: "published", true | size %}

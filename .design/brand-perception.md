@@ -47,6 +47,28 @@ This is about the *visual tone* of Apple (premium, confident, effortless), not a
 - **Direct** - "Vi hjelper deg" not "Vi tilbyr skreddersydde løsninger"
 - **Results-focused** - Focus on outcomes, not process
 
+## Tone Technique: Observational Signals
+
+The most effective way to describe a problem is to say *one concrete thing* and let the reader supply the implication.
+
+### How it works
+- State a single observation — something a leader might actually notice in their day
+- Don't explain why it matters. Don't state the consequence. Leave that gap for the reader to fill in themselves.
+- If they've seen it, they'll nod. If they haven't, it doesn't apply — no harm done.
+
+### Good
+- "Du får vite hva folk egentlig mener på vei ut av møtet." *(implies: no one speaks up in the room)*
+- "Dere oppdaterer risikobildet én gang i året." *(implies: it's stale the rest of the year)*
+- "Bærekraftsmålene står i en PowerPoint ingen åpner." *(implies: they're not anchored in daily work)*
+
+### Avoid
+- A-then-B structure that explains the consequence: "Alle sier ja i møtet, så hører du om uenigheten på gangen." — Let the first sentence stand alone.
+- Consultant framing: "Mange ledergrupper sliter med å få til psykologisk trygghet i praksis."
+- Diagnosis: "Dere har en forankringsutfordring."
+
+### When to use
+Product pages, pain-point sections, benefit cards — anywhere you want a visitor to think "det der kjenner vi oss igjen i" without feeling told what's wrong with them.
+
 ## Content Examples
 
 ### Good
