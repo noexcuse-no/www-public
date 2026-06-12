@@ -1,13 +1,16 @@
 (function () {
   "use strict";
 
-  var toggle = document.querySelector(".nav-toggle");
+  var toggles = document.querySelectorAll(".nav-toggle");
   var overlay = document.querySelector(".nav-overlay");
   var closeBtn = document.querySelector(".nav-overlay-close");
 
-  if (!toggle || !overlay) return;
+  if (!toggles.length || !overlay) return;
 
-  function open() {
+  var activeToggle = null;
+
+  function open(toggle) {
+    activeToggle = toggle;
     toggle.setAttribute("aria-expanded", "true");
     overlay.setAttribute("aria-hidden", "false");
     overlay.classList.add("active");
@@ -15,20 +18,24 @@
   }
 
   function close() {
-    toggle.setAttribute("aria-expanded", "false");
+    if (activeToggle) {
+      activeToggle.setAttribute("aria-expanded", "false");
+      activeToggle.focus();
+    }
     overlay.setAttribute("aria-hidden", "true");
     overlay.classList.remove("active");
     document.body.classList.remove("no-scroll");
-    toggle.focus();
   }
 
-  toggle.addEventListener("click", function () {
-    var expanded = toggle.getAttribute("aria-expanded") === "true";
-    if (expanded) {
-      close();
-    } else {
-      open();
-    }
+  Array.prototype.forEach.call(toggles, function (toggle) {
+    toggle.addEventListener("click", function () {
+      var expanded = toggle.getAttribute("aria-expanded") === "true";
+      if (expanded) {
+        close();
+      } else {
+        open(toggle);
+      }
+    });
   });
 
   if (closeBtn) {

@@ -10,7 +10,7 @@
     grid-template-columns: 1fr 240px minmax(auto, 800px) 320px 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
-        "g-left  .      .       .       g-right"
+        ".       g-left  .       g-right ."
         ".       pager  content questions .";
 }
 
@@ -77,15 +77,6 @@
 
 .dark-mode .article-questions .sidebar-cta {
     border-top-color: var(--border-color-dark);
-}
-
-/* On wide article pages, hide the header's native logo & burger
-   (the gutter versions take over) */
-@media (min-width: 1200px) {
-    body:has(.article-layout) .header .logo-link,
-    body:has(.article-layout) .header .nav-toggle {
-        display: none;
-    }
 }
 
 /* --- Left Pager Panel (cross-links) --- */
