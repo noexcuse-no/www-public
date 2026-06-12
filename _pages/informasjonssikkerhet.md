@@ -10,7 +10,7 @@ banner: "assets/images/banners/informasjonssikkerhet-t1-hero.webp"
 url: "/informasjonssikkerhet/"
 hero:
   image: /assets/images/banners/informasjonssikkerhet-t1-hero.webp
-  alt: "Tre abstrakte menneskesilhuetter på en nordisk fjellrygg — én holder et skjold med asurblå kjerne (informasjonsbeskyttelse), én speider horisonten med hånden for øynene (trusselbevissthet), én står i rolig årvåkenhet (resiliens)"
+  alt: "Tre abstrakte menneskesilhuetter på en nordisk fjellrygg i grålysningen — én strekker hånden mot et gjennomsiktig sekstant-skjold med asurblå glød som beskytter en strøm av data (informasjonssikkerhet), én hviler hånden på et svevende holografisk nettverkskart med pulserende noder (trusselovervåking), én står med digital-tråd-motiver som stiger som elektrisitet gjennom hendene opp mot himmelen (cyberresiliens)"
 
   title: "Informasjonssikkerhet"
   intro: "ISO 27001, DORA, NIS2, NSM Grunnprinsipper — listen over krav blir lengre. Men sikkerhet sitter ikke i systemene. Det sitter i kulturen."
@@ -32,7 +32,8 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens sikkerhetskultur"
   body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og avdekker hvor sikkerhetskulturen faktisk svikter. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å teste informasjonssikkerhetskulturen"
+topic: "informasjonssikkerhet"
+questions_title: "Spør din LLM om informasjonssikkerhet"
 questions:
   - "Hvem i organisasjonen har reelt ansvar for informasjonssikkerhet — og vet de at de har det?"
   - "Når ble siste gang noen meldte fra om et sikkerhetsavvik — og hva skjedde med den som meldte?"

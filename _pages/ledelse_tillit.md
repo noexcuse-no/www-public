@@ -96,7 +96,8 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens tillitsnivå"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger psykologisk trygghet, tillitsbasert kommunikasjon og hvordan ledere faktisk oppfattes. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å kartlegge tillitsnivået"
+topic: "tillit"
+questions_title: "Spør din LLM om tillit"
 questions:
   - "Hvor ofte gir du feedback som folk faktisk husker — og bruker?"
   - "Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?"

@@ -59,7 +59,8 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens håndtering av usikkerhet"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen håndterer usikkerhet, kultur og endring. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å kartlegge kulturen"
+topic: "usikkerhetshåndtering"
+questions_title: "Spør din LLM om usikkerhetshåndtering"
 questions:
   - "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
   - "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"

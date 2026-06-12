@@ -32,7 +32,8 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens GRC-modenhet"
   body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer. Resultatet er en tydelig baseline for styring, risikostyring og samsvarsarbeid — uten byråkrati."
-questions_title: "Spørsmål for å kartlegge GRC-modenhet"
+topic: "GRC-modenhet"
+questions_title: "Spør din LLM om GRC-modenhet"
 questions:
   - "Hvem i organisasjonen har reelt ansvar for styring, risiko og compliance — og vet de at de har det?"
   - "Når ble siste gang noen i ledergruppen stilte spørsmål ved om GRC-arbeidet faktisk fungerer, eller om det bare er papirarbeid?"

@@ -2,62 +2,76 @@
 layout: default
 ---
 {% if page.frame_id %}
-  {% assign frame_mode = true %}
   <link rel="stylesheet" href="{{ '/assets/css/perspektiv-styles.css' | relative_url }}">
 {% endif %}
 
-{% if page.hero or frame_mode %}
+{% if page.hero %}
   {% include hero.html %}
-  {% if frame_mode %}
-    <div class="section container--wide article-body animate-on-scroll fade-in-up frame-{{ page.frame_id }}">
-  {% else %}
-    <div class="article-layout">
-      <aside class="article-pager" aria-label="Relaterte artikler" hidden>
-        <div class="js-pager-list"></div>
-        {% include sidebar-toc.html %}
-      </aside>
-      <div class="section container--wide article-body animate-on-scroll fade-in-up">
-        <details class="toc-collapsible" hidden>
-          <summary>Innholdsfortegnelse</summary>
-          <div class="js-toc-collapsible-list"></div>
-        </details>
-  {% endif %}
-{% endif %}
-
-{{ content }}
-
-{% if page.hero or frame_mode %}
-  {% if frame_mode %}
-    </div>
-  {% else %}
+  <div class="article-layout">
+    {# Gutter logo — visible on wide screens #}
+    <div class="article-gutter-left">
+      <div class="gutter-sticky">
+        <a href="/" class="logo-link" aria-label="No Excuse — Hjem">{% include logo-svg.html %}</a>
       </div>
-      <aside class="article-questions" aria-label="Spørsmål">
-        {% if page.questions %}
-          {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
-          {% include questions.html title=page.questions_title questions=question_list %}
-        {% endif %}
-      </aside>
     </div>
-  {% endif %}
-{% endif %}
 
-{% if frame_mode %}
-  {% comment %}Cross-navigation: other frames + methodology{% endcomment %}
-  {% assign all_frames = site.pages | where: "class", "frame" | sort: "id" %}
-  {% assign current_index = nil %}
-  {% for f in all_frames %}
-    {% if f.frame_id == page.frame_id %}
-      {% assign current_index = forloop.index0 %}
+    {# Left sidebar — TOC #}
+    {% if page.show_toc != false %}
+    <aside class="article-pager" aria-label="Relaterte artikler" hidden>
+      <div class="js-pager-list"></div>
+      {% include sidebar-toc.html %}
+    </aside>
     {% endif %}
-  {% endfor %}
-  {% assign prev_index = current_index | minus: 1 %}
-  {% assign next_index = current_index | plus: 1 %}
-  {% assign prev_frame = all_frames[prev_index] %}
-  {% assign next_frame = all_frames[next_index] %}
+
+    {# Main content #}
+    <div class="section container--wide article-body animate-on-scroll fade-in-up">
+      <details class="toc-collapsible" hidden>
+        <summary>Innholdsfortegnelse</summary>
+        <div class="js-toc-collapsible-list"></div>
+      </details>
+      {{ content }}
+      {% if page.cta %}
+      <div class="cta-section animate-on-scroll fade-in-up section--spacious container--narrow">
+        <h2>{{ page.cta.heading }}</h2>
+        <p>{{ page.cta.body }}</p>
+        <div class="cta-buttons">
+          <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill uforpliktende samtale</a>
+          <a href="/ledelse-60-2/" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    {# Right sidebar — questions + CTA card #}
+    <aside class="article-questions" aria-label="Spørsmål">
+      {% if page.questions %}
+        {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
+        {% include questions.html title=page.questions_title questions=question_list %}
+      {% endif %}
+      {% if page.cta %}
+      <div class="sidebar-cta">
+        <h4>{{ page.cta.heading }}</h4>
+        <p>{{ page.cta.body }}</p>
+        <div class="cta-buttons">
+          <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="product-cta">Bestill uforpliktende samtale</a>
+          <a href="/ledelse-60-2/" class="product-cta product-cta--secondary">Les mer om Ledelse 60:2 →</a>
+        </div>
+      </div>
+      {% endif %}
+    </aside>
+
+    {# Gutter burger — visible on wide screens #}
+    <div class="article-gutter-right">
+      <div class="gutter-sticky">
+        <button class="nav-toggle" aria-label="Meny" aria-expanded="false">
+          <span class="nav-toggle-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+{% else %}
+  {{ content }}
 {% endif %}
 
-{% include cta-section.html %}
 {% include cases-cards.html %}
 {% include references.html %}
-
-

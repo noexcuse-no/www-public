@@ -101,17 +101,31 @@ section.section--spacious
 
 ## Page Templates (Jekyll layouts)
 
-### `article.html` — Standard side og perspektivartikler
+### `article.html` — Artikler og perspektivsider (unified)
 ```
 ── hero (if page.hero)
-── .article-body
-    └─ {{ content }}  ← Markdown eller includes
-── cta-section (if page.cta)
-── frame navigation (if page.frame_id)
+── .article-layout (CSS grid: 1fr 240px 800px 320px 1fr)
+    ├── .article-gutter-left (.gutter-sticky)   ← logo-link (wide screens only)
+    ├── .article-pager                          ← sidebar-toc (if show_toc != false)
+    ├── .article-body
+    │   ├── {{ content }}
+    │   └── cta-section (if page.cta, hidden on wide screens)
+    ├── .article-questions
+    │   ├── questions.html (if page.questions)
+    │   └── .sidebar-cta (if page.cta, compact card)
+    └── .article-gutter-right (.gutter-sticky)  ← nav-toggle (wide screens only)
 ── cases-cards (if page.show_cases)
 ── references (if page.show_references)
 ```
-**Enhetlig layout for alle `class:article`- og `class:frame`-sider.** Håndterer hero-banner, innholdsbody, CTA, rammenavigasjon og referanser med betingede blokker. Støtter `hero.image`, `hero.title`, `hero.intro` fra frontmatter. For perspektivsider: `hero.show_frame_nav: true` aktiverer navigasjon mellom rammer.
+**Unified layout for all `article`- and `frame`-class pages.** The 5-column CSS grid renders: logo in the left buffer gutter, TOC in the left sidebar, content centered, questions + CTA card in the right sidebar, burger button in the right buffer gutter. On narrow screens (<1200px) the grid collapses to block and sidebars hide.
+
+**Control knobs:**
+- `show_toc: false` — hides the left sidebar TOC (used by Emne page)
+- `hero:` — activates the full article layout (without `hero:`, content renders bare)
+- `frame_id:` — loads `perspektiv-styles.css` (no longer affects layout structure)
+- `questions:` / `cta:` — populate the right sidebar sections
+
+**Mobile:** Collapsible TOC inline at the top of `article-body`. The CTA section renders within `article-body` (hidden on wide, shown on narrow). The questions sidebar and gutter elements are hidden on narrow screens.
 
 ### `product.html` — Produkt- og stegsider
 ```

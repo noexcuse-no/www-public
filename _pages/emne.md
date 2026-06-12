@@ -1,6 +1,7 @@
 ---
 class: article
 layout: article
+show_toc: false
 title: "Emneoversikt — Artikler om ledelse"
 description: "Utforsk artikler om ledelse, organisasjonskultur, endringsledelse og mer. Sortert etter emne."
 permalink: /emne/

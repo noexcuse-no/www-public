@@ -53,7 +53,7 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens endringsevne"
   body: "Ledelse 60:2 kartlegger hvor ledergruppen din står i møte med endring — fra kulturmodenhet til beslutningsprosesser. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å vurdere endringsevnen"
+questions_title: "Spør din LLM om endringsevne"
 questions:
   - "Når ble siste gang dere gjennomførte en større endring — og hva gikk galt?"
   - "Hvem i organisasjonen bremser endring — og hvorfor?"

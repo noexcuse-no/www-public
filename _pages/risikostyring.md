@@ -45,7 +45,8 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens risikomodning"
   body: "Ledelse 60:2 kartlegger hvordan ledergruppen din håndterer risiko og usikkerhet — fra beslutningsprosesser til kultur for åpenhet om risiko. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å kartlegge risikostyring i ledelsen"
+topic: "risikostyring"
+questions_title: "Spør din LLM om risikostyring"
 questions:
   - "Hvem i ledergruppen har ansvar for å identifisere nye risikoer — og når ble siste gang noen gjorde det?"
   - "Hvordan håndterer dere risikoer som ikke kan tallfestes?"

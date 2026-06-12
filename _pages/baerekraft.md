@@ -33,7 +33,7 @@ json_ld:
 cta:
   heading: "Få kartlagt bærekraftsmodenheten i ledergruppen"
   body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og avdekker hvor bærekraftsarbeidet ditt har reell forankring. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å vurdere bærekraftsarbeidet"
+questions_title: "Spør din LLM om bærekraftsarbeid"
 questions:
   - "Hvem i ledergruppen har reelt ansvar for bærekraft — og er dette en del av den daglige ledelsen eller et sideprosjekt?"
   - "Hvordan prioriterer dere mellom bærekraft og lønnsomhet når det oppstår en konflikt?"

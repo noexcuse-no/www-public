@@ -4,11 +4,14 @@
 
 /* --- Layout Grids --- */
 
-/* Article pages: left pager + centered content + 320px right sidebar */
+/* Article pages: gutters + left pager + centered content + 320px right sidebar */
 .article-layout {
     display: grid;
     grid-template-columns: 1fr 240px minmax(auto, 800px) 320px 1fr;
-    grid-template-areas: ". pager content questions .";
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "g-left  .      .       .       g-right"
+        ".       pager  content questions .";
 }
 
 /* Place children into grid areas */
@@ -23,6 +26,66 @@
 
 .article-layout > .article-questions {
     grid-area: questions;
+}
+
+.article-layout > .article-gutter-left {
+    grid-area: g-left;
+}
+
+.article-layout > .article-gutter-right {
+    grid-area: g-right;
+}
+
+/* Gutter sticky containers — logo & burger at top of buffer columns */
+.article-gutter-left .gutter-sticky,
+.article-gutter-right .gutter-sticky {
+    position: sticky;
+    top: var(--space-md);
+}
+
+.article-gutter-left .logo-link {
+    display: block;
+    text-decoration: none;
+    padding: var(--space-sm);
+}
+
+.article-gutter-left .logo-link svg {
+    display: block;
+    height: 50px;
+    width: auto;
+}
+
+.article-gutter-right .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    min-height: 44px;
+    min-width: 44px;
+    margin-left: auto;
+}
+
+/* CTA card inside the questions sidebar — separated by a border */
+.article-questions .sidebar-cta {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--border-color-light);
+}
+
+.dark-mode .article-questions .sidebar-cta {
+    border-top-color: var(--border-color-dark);
+}
+
+/* On wide article pages, hide the header's native logo & burger
+   (the gutter versions take over) */
+@media (min-width: 1200px) {
+    body:has(.article-layout) .header .logo-link,
+    body:has(.article-layout) .header .nav-toggle {
+        display: none;
+    }
 }
 
 /* --- Left Pager Panel (cross-links) --- */
@@ -327,9 +390,6 @@
     opacity: 1;
 }
 
-.sidebar-questions .review-questions .click-hint {
-    display: none;
-}
 
 /* Questions rendered directly inside .article-questions sidebar (from questions.html include) */
 .article-questions .review-questions {
@@ -377,15 +437,6 @@
     box-shadow: none;
 }
 
-.article-questions .review-questions .click-hint {
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
-    margin-top: 2px;
-    color: var(--primary-accent);
-    opacity: 0.5;
-}
-
 .article-questions .review-questions li span {
     font-size: 1em;
 }
@@ -398,7 +449,9 @@
     }
 
     .article-pager,
-    .article-questions {
+    .article-questions,
+    .article-gutter-left,
+    .article-gutter-right {
         display: none;
     }
 

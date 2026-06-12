@@ -34,7 +34,8 @@ json_ld:
     dateModified: "2025-06-01"
     sameAs:
       - "https://noexcuse.no"
-questions_title: "Spørsmål for å vurdere deres diagnostiske praksis"
+topic: "diagnostisk praksis"
+questions_title: "Spør din LLM om diagnostisk praksis"
 questions:
   - "Hvordan vet dere at dere har en korrekt forståelse av organisasjonens utfordringer — ikke bare en gjengs oppfatning?"
   - "Hvilke antakelser om organisasjonen har dere ikke testet på lenge?"

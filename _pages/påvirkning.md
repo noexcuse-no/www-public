@@ -36,7 +36,8 @@ color_accent: "#355E3B"
 card_description: "Makt, interesser, konflikt, ressurser, politikk"
 detail: "Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet."
 weight: 3
-questions_title: "Spørsmål påvirkningsperspektivet kan hjelpe dere å besvare"
+topic: "påvirkningsperspektivet"
+questions_title: "Spør din LLM om påvirkningsperspektivet"
 questions:
   - "Hvem har reell innflytelse på viktige beslutninger — og er det de som bør ha det?"
   - "Hvor transparente er agendaer og interesser i ledergruppen?"

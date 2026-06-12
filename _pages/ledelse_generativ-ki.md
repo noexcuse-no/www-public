@@ -51,7 +51,8 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens KI-modenhet"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen forholder seg til teknologi, endring og menneskelig dømmekraft. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å evaluere KI-ledelsen"
+topic: "KI-ledelse"
+questions_title: "Spør din LLM om KI-ledelse"
 questions:
   - "Hvem i organisasjonen har ansvaret for kvaliteten på KI-output — og vet de det?"
   - "Hvordan vet du at KI-svar faktisk er riktige, ikke bare overbevisende?"

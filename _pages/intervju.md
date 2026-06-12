@@ -1,13 +1,19 @@
 ---
 class: step
-layout: product
+layout: article
 category: step
 step_number: 2
 title: "2. To timers strukturert intervju"
 description: "Vi gjennomfører et strukturert intervju med inntil fem ledere, hvor vi finner svar på 60 diagnostiske spørsmål. Refleksjonsprosessen er like viktig som rapporten."
 banner: "assets/images/banners/step-interview.webp"
 micro_image: "assets/images/banners/ledelse-60-2-t4-intervju.webp"
+permalink: /intervju/
 url: "/intervju/"
+hero:
+  image: assets/images/banners/step-interview.webp
+  alt: "To timers strukturert intervju med ledergruppen"
+  title: "2. To timers strukturert intervju"
+  intro: "Vi gjennomfører et strukturert intervju med inntil fem ledere, hvor vi finner svar på 60 diagnostiske spørsmål."
 og_image: /assets/images/banners/intervju-og.webp
 ---
 
