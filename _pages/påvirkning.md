@@ -102,22 +102,22 @@ Pfeffers research viser at politisk dyktighet korrelerer sterkt med ledereffekti
 
 ![Illustrasjon av vanlige påvirkningsrelaterte utfordringer](/assets/images/banners/illustrasjon-påvirkning-utfordringer.webp)
 
-*   ![Abstrakt illustrasjon av usynlig beslutningsmakt](/assets/images/banners/pavirkning-t4-invisible-power.webp "")
+*   ![Abstrakt illustrasjon av usynlig beslutningsmakt](/assets/images/banners/pavirkning-t4-invisible-power.webp)
 
     #### Usynlig beslutningsmakt
 
     De som formelt har makt, har ikke reell makt. Eller omvendt. Beslutninger tas «der» men av dem som «ikke skal ha noe med det å gjøre». Senior ledere kan ofte bryte uformelle regler — de har bygget opp «idiosynkratiske kreditter» gjennom tidligere bidrag som gir dem retten til å avvike fra normene.
-*   ![Abstrakt illustrasjon av skjulte agendaer](/assets/images/banners/pavirkning-t4-hidden-agendas.webp "")
+*   ![Abstrakt illustrasjon av skjulte agendaer](/assets/images/banners/pavirkning-t4-hidden-agendas.webp)
 
     #### Skjulte agendaer
 
     Aktører som ikke er transparente om sine interesser. Medarbeidere som jobber forbi offisielle kanaler for å påvirke beslutninger.
-*   ![Abstrakt illustrasjon av ressurskamper som maskeres som rasjonelle](/assets/images/banners/pavirkning-t4-resource-struggles.webp "")
+*   ![Abstrakt illustrasjon av ressurskamper som maskeres som rasjonelle](/assets/images/banners/pavirkning-t4-resource-struggles.webp)
 
     #### Ressurskamper som maskeres
 
     Budsjettkonflikter, GIS-struktureringer og andre strukturelle endringer som egentlig handler om makt og innflytelse, men fremstilles som rasjonelle.
-*   ![Abstrakt illustrasjon av for mye enighet i ledergruppen](/assets/images/banners/pavirkning-t4-too-much-agreement.webp "")
+*   ![Abstrakt illustrasjon av for mye enighet i ledergruppen](/assets/images/banners/pavirkning-t4-too-much-agreement.webp)
 
     #### For mye enighet
 
