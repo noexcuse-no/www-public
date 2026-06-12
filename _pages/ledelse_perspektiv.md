@@ -75,7 +75,7 @@ hero:
 
   title: "Fire perspektiver — se mer enn du ser"
   intro: "De fleste ledere ser verden gjennom ett filter. De beste ser gjennom fire — og vet hvilket som passer når. Multiframe thinking er ikke teori, det er en ferdighet."
-  show_frame_nav: true
+
 cta:
   heading: "Få kartlagt ledergruppens perspektivbredde"
   body: "Ledelse 60:2 kartlegger ikke bare hva ledergruppen din mener — den avdekker hvilke perspektiver som dominerer og hvilke som mangler. Bestill en uforpliktende samtale for å lære mer."

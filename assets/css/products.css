@@ -381,3 +381,134 @@
 .dark-mode .case-card:hover {
     box-shadow: var(--shadow-md-dark);
 }
+
+/* ========================================
+   Signal items — structural selectors
+   Pattern: img + h4 + p + p (repeated 5×)
+   Used on product pages (Ledelse 60:2)
+   ======================================== */
+
+/* Signal icon: float left */
+.article-body > p:has(> img[src*="t4-signal"]) {
+    float: left;
+    width: 80px;
+    margin: 4px var(--space-lg) var(--space-sm) 0;
+    clear: both;
+}
+
+.article-body > p:has(> img[src*="t4-signal"]) > img {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+    display: block;
+}
+
+/* Signal heading */
+.article-body > p:has(> img[src*="t4-signal"]) + h4 {
+    margin-top: 0;
+    font-size: 1.15em;
+    line-height: 1.3;
+}
+
+/* Signal body text — single paragraph with inline links */
+.article-body > p:has(> img[src*="t4-signal"]) + h4 + p {
+    opacity: 0.85;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--border-color-subtle-light);
+}
+
+.article-body > p:has(> img[src*="t4-signal"]) + h4 + p a {
+    color: var(--primary-accent);
+    text-decoration: underline;
+}
+
+.article-body > p:has(> img[src*="t4-signal"]) + h4 + p a:hover {
+    text-decoration: none;
+}
+
+/* Dark mode */
+.dark-mode .article-body > p:has(> img[src*="t4-signal"]) + h4 + p {
+    border-bottom-color: var(--border-color-dark);
+}
+
+/* Mobile: stack vertical */
+@media (max-width: 599px) {
+    .article-body > p:has(> img[src*="t4-signal"]) {
+        float: none;
+        width: 60px;
+        margin: 0 0 var(--space-sm);
+    }
+    .article-body > p:has(> img[src*="t4-signal"]) > img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* ========================================
+   Process steps — structural selectors
+   Pattern: img + h3 + p (repeated 3×)
+   ======================================== */
+
+.article-body > p:has(> img[src*="step-"]) {
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-xs);
+}
+
+.article-body > p:has(> img[src*="step-"]) > img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    display: block;
+}
+
+.article-body > p:has(> img[src*="step-"]) + h3 {
+    font-size: 1.15em;
+    margin-bottom: var(--space-xs);
+}
+
+.article-body > p:has(> img[src*="step-"]) + h3 + p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    opacity: 0.8;
+    margin-bottom: var(--space-lg);
+}
+
+/* ========================================
+   Perspective cards — structural selectors
+   Pattern: linked img + h3 + p (repeated 4×)
+   ======================================== */
+
+.article-body > p:has(> a > img[src*="frame-"]) {
+    margin-bottom: var(--space-xs);
+}
+
+.article-body > p:has(> a > img[src*="frame-"]) > a > img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-body > p:has(> a > img[src*="frame-"]) > a > img:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.article-body > p:has(> a > img[src*="frame-"]) + h3 {
+    font-size: 1.1em;
+    margin: var(--space-xs) 0;
+}
+
+.article-body > p:has(> a > img[src*="frame-"]) + h3 + p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    opacity: 0.8;
+    margin-bottom: var(--space-xl);
+}

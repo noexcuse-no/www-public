@@ -20,7 +20,7 @@
 
     header, footer, nav, .navbar, .banner,
     .product-cta, .product-link,
-    .hero-banner, .hero-overlay, .hero-frame-nav,
+    .hero-banner, .hero-overlay,
     .cta-section, .perspektiv-cross-nav,
     .article-body > *:not(.article-body > h1):not(.article-body > h2):not(.article-body > h3):not(.article-body > p):not(.article-body > ul):not(.article-body > li):not(.article-body > img):not(.article-body > blockquote):not(.article-body > ol) {
         display: none !important;

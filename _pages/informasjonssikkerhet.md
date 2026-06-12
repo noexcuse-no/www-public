@@ -58,7 +58,17 @@ Bolman & Deals fire perspektiver på ledelse utgjør rammeverket for alt vi gjø
 - **Påvirkning:** Ledere som overstyrer sikkerhetsråd. «Vi tar sjansen denne gangen» er en beslutning som tas av noen med makt, ikke nødvendigvis av noen med risikoansvar. Makt uten motvekt er en sikkerhetsrisiko.
 - **Identitet:** «Vi har aldri blitt hacket»-tenkning. En organisasjon som ser på seg selv som usårbar, investerer ikke i forebygging. Den våkner først når det er for sent.
 
-Les mer om [GRC og hvordan de fire perspektivene henger sammen →](/grc/)
+## Informasjonssikkerhet i GRC-rammeverket
+
+Informasjonssikkerhet er ikke et teknisk fagområde som kan isoleres fra resten av styringen — det er en grunnleggende del av GRC. Når informasjonssikkerhet behandles som en IT-øvelse, mister ledergruppen oversikten over en av de største risikoene virksomheten står overfor.
+
+Fra et **styringsperspektiv** handler informasjonssikkerhet om å etablere tydelige roller for informasjonseierskap, beslutningsmyndighet for sikkerhetstiltak og rapporteringslinjer til ledelsen. DORA og NIS2 krever at ledergruppen har reell forståelse for — og ansvar for — sikkerhetsarbeidet.
+
+Fra et **risikoperspektiv** er cybertrusler i toppskiktet av operasjonelle risikoer for de fleste virksomheter. Likevel behandles de ofte isolert i en egen risikomatrise, adskilt fra strategiske og finansielle risikoer. En ledergruppe som integrerer sikkerhetsrisiko i det helhetlige risikobildet, tar bedre beslutninger — ikke bare om sikkerhet, men om hele virksomheten.
+
+Og fra et **compliance-perspektiv** er etterlevelse av GDPR, DORA, NIS2, NSM Grunnprinsipper og bransjestandarder et stadig mer komplekst landskap. Uten systematisk styring blir det umulig å dokumentere at kravene er oppfylt — inntil noe går galt.
+
+<a href="/grc/" class="benefit-link">Les mer om GRC og helhetlig styring →</a>
 
 ## Cyberresiliens — mer enn forebygging
 

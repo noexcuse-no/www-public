@@ -84,6 +84,20 @@ En ledergruppe som ikke forstår disse dynamikkene, vil oppleve at bærekraftsin
 
 Les mer om [makt og påvirkning i ledelse →](/makt/)
 
+## Bærekraft som en del av GRC
+
+Bærekraft er ikke et isolert fagområde — det er en integrert del av virksomhetens styring (Governance), risikostyring og samsvarshåndtering (Compliance).
+
+Fra et **styringsperspektiv** handler bærekraft om å forankre miljø- og samfunnsansvar i beslutningsstrukturene — ikke som et sideprosjekt, men som en premiss for hvordan virksomheten ledes. CSRD og FNs Global Compact stiller krav til rapportering, men verdien ligger i hvordan rapporteringen brukes til å styre.
+
+Fra et **risikoperspektiv** er klimaendringer, omdømmetap og strengere regulering blant de største risikoene virksomheter står overfor. En ledergruppe som ikke integrerer bærekraftsrisiko i det ordinære risikobildet, tar beslutninger på ufullstendig grunnlag.
+
+Og fra et **compliance-perspektiv** handler bærekraft om å kunne dokumentere at kravene faktisk er oppfylt — ikke bare på sertifiseringsdagen, men i den daglige driften. Miljøfyrtårn og ISO-standardene setter rammene, men etterlevelse krever en kultur der ansatte forstår hvorfor kravene er der.
+
+Samlet handler GRC-perspektivet på bærekraft om å gå fra rapportering til reell styring. Det er forskjellen på å ha sertifikatet på veggen og å faktisk være en bærekraftig virksomhet.
+
+<a href="/grc/" class="benefit-link">Les mer om GRC og helhetlig styring →</a>
+
 ## Veien videre
 
 Bærekraftsarbeid som fungerer, starter med en ærlig vurdering: Er bærekraft en del av hvem vi er — eller noe vi gjør fordi vi må?

@@ -57,7 +57,17 @@ Bolman & Deals fire perspektiver på ledelse avslører hvor compliance ofte bryt
 - **Påvirkning:** Ledere som overstyrer compliance-råd. «Vi tar sjansen denne gangen» er en beslutning som ofte tas av noen med makt, ikke nødvendigvis av noen med compliance-ansvar. Uten maktbalanse blir compliance en rådgivningsfunksjon uten reell tyngde.
 - **Identitet:** «Vi har alltid gjort det sånn»-kultur eller «det har gått bra så langt»-tenkning. En organisasjon som ser på seg selv som «en av de gode», kan være blind for egne regelverksbrudd.
 
-Les mer om [GRC og helhetlig styring →](/grc/)
+## Compliance i et GRC-perspektiv
+
+Compliance er «C-en» i GRC — men den kan ikke stå alene. Uten integrasjon med styring (Governance) og risikostyring (Risk) blir compliance en isolert kontrollfunksjon som reagerer etter at skaden har skjedd.
+
+Fra et **styringsperspektiv** handler compliance om å sikre at regelverksetterlevelse er en premiss for beslutninger på alle nivåer — ikke en vurdering som gjøres i etterkant. Når ledergruppen har tydelige prinsipper for hvilke regler som ikke kan fravikes, og hvilke avvik som krever eskalering, blir compliance en styringsmekanisme i stedet for et kontrollpunkt.
+
+Fra et **risikoperspektiv** er compliance-trusler — korrupsjon, hvitvasking, personvernbrudd — risikoer som må vurderes på lik linje med finansielle og operasjonelle risikoer. En compliance-hendelse kan koste mer enn bøter: omdømmetap, tapte kontrakter og svekket tillit hos kunder og samarbeidspartnere.
+
+Når compliance integreres i GRC-rammeverket, handler det ikke lenger om å unngå straff — det handler om å bygge en virksomhet der integritet er en forutsetning for vekst, ikke en begrensning.
+
+<a href="/grc/" class="benefit-link">Les mer om GRC og helhetlig styring →</a>
 
 ## Regelverk er ikke nok — kultur er avgjørende
 

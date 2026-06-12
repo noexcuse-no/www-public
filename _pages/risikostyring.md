@@ -71,7 +71,17 @@ De fire perspektivene på ledelse gir et rammeverk for å forstå hvorfor risiko
 - **Påvirkning:** Hvem har makt til å definere hva som er en risiko? I mange organisasjoner er det den med sterkest stemme, ikke den med best innsikt, som setter dagsorden for risikobildet.
 - **Identitet:** Kulturens forhold til risiko. Noen organisasjoner ser risiko som noe som skal unngås for enhver pris. Andre ser det som noe som skal tas — uten å vurdere konsekvensene. Begge ytterpunkter er problematiske.
 
-Les mer om [GRC og helhetlig risikostyring →](/grc/)
+## Risikostyring som GRC-kjerne
+
+Risikostyring er «R-en» i GRC — men den fungerer bare når den er integrert med styring og compliance. Uten denne integrasjonen blir risikostyring en isolert øvelse som verken påvirker beslutninger eller skaper verdi.
+
+Fra et **styringsperspektiv** handler risikostyring om å sikre at risikoinformasjon når frem til de som tar beslutninger — og at den blir brukt. For mange organisasjoner produserer risikostyringen rapporter som ingen leser, og som ikke påvirker strategiske prioriteringer. Når risikostyring er en del av styringsstrukturen, blir risikobildet et aktivt beslutningsgrunnlag.
+
+Fra et **compliance-perspektiv** er risikostyring forutsetningen for troverdig etterlevelse. Uten å forstå hvilke risikoer virksomheten står overfor, er det umulig å designe compliance-tiltak som faktisk adresserer de reelle truslene. ISO-standardene krever risikobasert tilnærming — men standardene alene skaper den ikke.
+
+Når risikostyring integreres i GRC-rammeverket, blir det ikke lenger et spørsmål om å fylle ut risikomatriser for syns skyld. Det blir et verktøy for å ta bedre beslutninger — i en verden preget av usikkerhet.
+
+<a href="/grc/" class="benefit-link">Les mer om GRC og helhetlig styring →</a>
 
 ## Usikkerhet som mulighet
 
