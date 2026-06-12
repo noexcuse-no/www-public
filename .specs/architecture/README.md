@@ -17,7 +17,9 @@ www-public/
 │   ├── struktur.md           # Frame page (class: frame)
 │   ├── generativ-ki.md       # Article page (class: benefit)
 │   ├── om-oss.md             # Article page (class: article)
-│   └── step-talk.md          # Process step (class: step)
+│   ├── samtale.md            # Process step (class: step, layout: article)
+│   ├── intervju.md           # Process step (class: step, layout: article)
+│   └── rapport.md            # Process step (class: step, layout: article)
 ├── _layouts/                  # Layout templates
 │   ├── default.html          # Standard page layout
 │   └── perspektiv.html       # Frame perspective layout
@@ -68,7 +70,9 @@ All URLs are flat and explicit, set via `permalink` in each file:
 | Frame | `_pages/struktur.md` | `/struktur/` | `frame` |
 | Article | `_pages/om-oss.md` | `/om-oss/` | `article` |
 | Benefit | `_pages/generativ-ki.md` | `/generativ-ki/` | `benefit` |
-| Step | `_pages/step-talk.md` | `/samtale/` | `step` |
+| Step (samtale) | `_pages/samtale.md` | `/samtale/` | `step` |
+| Step (intervju) | `_pages/intervju.md` | `/intervju/` | `step` |
+| Step (rapport) | `_pages/rapport.md` | `/rapport/` | `step` |
 | Tag | `_tags/ledelse.md` | `/emne/ledelse/` | `tag` |
 
 ## Path Handling Rules
@@ -192,7 +196,9 @@ Benefit article pages that also appear as cards on the product page.
 
 ### `class: step`
 
-Process step pages that appear as cards on the product page.
+Process step pages that appear as cards on the product page. Uses `layout: article` for rendering (unified with other content pages).
+
+**Note:** Step pages use `layout: article` + `class: step`. The `class: step` is used for collection filtering (product page cards), while the `article` layout provides the full page chrome (hero, sidebar, CTA). This avoids maintaining a separate `product` layout.
 
 | Required | Optional |
 |----------|----------|

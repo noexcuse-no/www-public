@@ -54,7 +54,8 @@ json_ld:
         acceptedAnswer:
           "@type": "Answer"
           text: "Ifølge Logan trengs tre betingelser: felles verdier eller formål, komplementære evner, og vilje til å dele nettverket. Den siste er vanskeligst fordi den krever en kultur der relasjonsbygging ikke oppleves som en trussel mot individuell posisjon."
-questions_title: "Spørsmål for å kartlegge triader i din organisasjon"
+topic: "triader"
+questions_title: "Spør din LLM om triader"
 questions:
   - "Hvem i teamet ditt ville fortsette å samarbeide effektivt hvis du forsvant i morgen?"
   - "Er viktige relasjoner i organisasjonen din dyader eller triader? Hvordan vet du det?"

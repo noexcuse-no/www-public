@@ -79,7 +79,8 @@ hero:
 cta:
   heading: "Få kartlagt ledergruppens perspektivbredde"
   body: "Ledelse 60:2 kartlegger ikke bare hva ledergruppen din mener — den avdekker hvilke perspektiver som dominerer og hvilke som mangler. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å utvikle multiframe-kapabilitet"
+topic: "multiframe-kapabilitet"
+questions_title: "Spør din LLM om multiframe-kapabilitet"
 questions:
   - "Hvilket rammeverk strekker du deg først etter når noe går galt — struktur, mennesker, politikk eller symboler?"
   - "Når endret du sist mening fordi du så situasjonen fra et annet perspektiv?"

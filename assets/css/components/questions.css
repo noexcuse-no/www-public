@@ -30,19 +30,6 @@
     border-bottom: none;
 }
 
-.review-questions li .click-hint {
-    flex-shrink: 0;
-    margin-top: 3px;
-    color: var(--primary-accent);
-    opacity: 0.6;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.review-questions li:hover .click-hint {
-    opacity: 1;
-    transform: scale(1.15);
-}
-
 .review-questions li span {
     font-size: 1em;
     line-height: 1.5;

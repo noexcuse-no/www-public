@@ -33,7 +33,7 @@ json_ld:
 cta:
   heading: "Få kartlagt compliance-kulturen i ledergruppen"
   body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og avdekker hvor samsvarsarbeidet ditt har reelle gap. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å vurdere compliance-kulturen"
+questions_title: "Spør din LLM om compliance-kultur"
 questions:
   - "Hvem i organisasjonen har reelt ansvar for compliance — og har de faktisk myndighet til å stoppe aktiviteter som bryter med regelverket?"
   - "Når ble siste gang noen i ledergruppen stilte spørsmål ved om compliance-arbeidet faktisk fungerer, eller om det bare er papirarbeid?"

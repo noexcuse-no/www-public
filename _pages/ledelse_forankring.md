@@ -59,7 +59,8 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens beslutningsprosesser"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan makt, interesser og kognitiv bias påvirker beslutninger i ledergruppen. Bestill en uforpliktende samtale."
-questions_title: "Spørsmål for å forbedre beslutningstaking"
+topic: "beslutningstaking"
+questions_title: "Spør din LLM om beslutningstaking"
 questions:
   - "Hvem hadde reell innflytelse på de siste tre viktige beslutningene — og var det de som burde hatt det?"
   - "Når ble en beslutning tatt mot bedre vitende — og hvorfor?"

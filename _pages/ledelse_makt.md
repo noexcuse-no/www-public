@@ -57,7 +57,8 @@ json_ld:
 cta:
   heading: "Få kartlagt ledergruppens makt- og tjenestebalanse"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvor ledergruppen din sitter på spekteret mellom makt og tjeneste, og gir dere et felles språk for å snakke om dynamikken. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for selvdiagnose"
+topic: "makt og tjeneste"
+questions_title: "Spør din LLM om makt og tjeneste"
 questions:
   - "Når du tar beslutninger — tenker du først på konsekvensene for oppdraget, eller på hvem som støtter deg?"
   - "Hvor mange mennesker ville hjulpet deg hvis du mistet din formelle myndighet i morgen?"

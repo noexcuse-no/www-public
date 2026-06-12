@@ -59,7 +59,8 @@ json_ld:
 cta:
   heading: "Få kartlagt organisasjonskulturen i ledergruppen"
   body: "Ledelse 60:2 inneholder spørsmål som kartlegger kulturen fra flere perspektiver — inkludert Logans kulturstadier, psykologisk trygghet og gapet mellom formelle og reelle verdier. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å kartlegge kulturen"
+topic: "organisasjonskultur"
+questions_title: "Spør din LLM om organisasjonskultur"
 questions:
   - "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
   - "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"

@@ -36,7 +36,8 @@ color_accent: "#2A4D6E"
 card_description: "Roller, mål, prosesser, koordinering, ansvar"
 detail: "Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig."
 weight: 1
-questions_title: "Spørsmål strukturperspektivet kan hjelpe dere å besvare"
+topic: "strukturperspektivet"
+questions_title: "Spør din LLM om strukturperspektivet"
 questions:
   - "Er det områder der ansvar er uklart eller overlappende?"
   - "Finnes det mål i organisasjonen som motvirker hverandre?"

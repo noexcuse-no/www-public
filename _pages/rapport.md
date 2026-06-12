@@ -1,13 +1,19 @@
 ---
 class: step
-layout: product
+layout: article
 category: step
 step_number: 3
 title: "3. Rapport og anbefalinger"
 description: "Du får en rapport som sammenlikner ledelsen med typisk bestepraksis, og anbefalinger om enkle muligheter for forbedringer på områder dere er opptatt av."
 banner: "assets/images/banners/step-report.webp"
 micro_image: "assets/images/banners/ledelse-60-2-t4-rapport.webp"
+permalink: /rapport/
 url: "/rapport/"
+hero:
+  image: assets/images/banners/step-report.webp
+  alt: "Rapport og anbefalinger fra Ledelse 60:2"
+  title: "3. Rapport og anbefalinger"
+  intro: "Du får en rapport som sammenlikner ledelsen med typisk bestepraksis, og anbefalinger om enkle forbedringsmuligheter."
 og_image: /assets/images/banners/rapport-og.webp
 ---
 

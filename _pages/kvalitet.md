@@ -31,7 +31,8 @@ json_ld:
 cta:
   heading: "Få kartlagt kvalitetsmodenheten i ledergruppen"
   body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og avdekker hvor kvalitetsarbeidet ditt faktisk har gap. Bestill en uforpliktende samtale for å lære mer."
-questions_title: "Spørsmål for å vurdere kvalitetskulturen"
+topic: "kvalitetskultur"
+questions_title: "Spør din LLM om kvalitetskultur"
 questions:
   - "Hvem i organisasjonen har reelt ansvar for kvalitet — og har de myndighet til å stoppe produksjonen hvis kvaliteten svikter?"
   - "Når ble siste gang et kvalitetsavvik førte til en reell endring i prosessene, ikke bare en registrering i systemet?"

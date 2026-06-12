@@ -36,7 +36,8 @@ color_accent: "#D4A836"
 card_description: "Tillit, motivasjon, relasjoner, medvirkning"
 detail: "Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at «servant leadership» er et konkurransefortrinn."
 weight: 2
-questions_title: "Spørsmål menneskeperspektivet kan hjelpe dere å besvare"
+topic: "menneskeperspektivet"
+questions_title: "Spør din LLM om menneskeperspektivet"
 questions:
   - "Ville de ansatte si at de blir sett og verdsatt på arbeidsplassen?"
   - "Er det trygt å si ifra om problemer uten å bli straffet?"

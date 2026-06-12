@@ -308,7 +308,7 @@ Add FAQ structured data to content pages that have FAQ content, enabling rich sn
 
 ### Target Page
 
-`/tillit/` (ledelse_tillit.md) has a "Spørsmål for å kartlegge tillitsnivået" section that could be marked as FAQ.
+`/tillit/` (ledelse_tillit.md) has a "Spør din LLM om tillit" section that could be marked as FAQ.
 
 ### Requirements
 
