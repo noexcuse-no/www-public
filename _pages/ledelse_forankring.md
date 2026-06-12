@@ -139,22 +139,22 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
 ## Vanlige beslutningsfallgruber
 
-*   ![Abstrakt illustrasjon av bekreftelsesbias](/assets/images/banners/forankring-t4-confirmation.webp "")
+*   ![Abstrakt illustrasjon av bekreftelsesbias](/assets/images/banners/forankring-t4-confirmation.webp)
 
     #### Bekreftelsesbias
 
     Vi søker informasjon som støtter det vi allerede tror, og ignorerer det som utfordrer det. Beslutninger tas basert på ønsketenkning.
-*   ![Abstrakt illustrasjon av ankerfeste som beslutningsfelle](/assets/images/banners/forankring-t4-anchoring.webp "")
+*   ![Abstrakt illustrasjon av ankerfeste som beslutningsfelle](/assets/images/banners/forankring-t4-anchoring.webp)
 
     #### Ankerfeste
 
     Det første tallet eller forslaget som presenteres får uforholdsmessig stor innflytelse. «Vi har alltid gjort det sånn» blir argumentet.
-*   ![Abstrakt illustrasjon av sunk cost-fallacy](/assets/images/banners/forankring-t4-sunk-cost.webp "")
+*   ![Abstrakt illustrasjon av sunk cost-fallacy](/assets/images/banners/forankring-t4-sunk-cost.webp)
 
     #### Sunk cost-fallacy
 
     Vi fortsetter med feil investeringer fordi vi allerede har brukt så mye. Å kutte tap oppfattes som å innrømme feil.
-*   ![Abstrakt illustrasjon av overdreven selvtillit som beslutningsfelle](/assets/images/banners/forankring-t4-overconfidence.webp "")
+*   ![Abstrakt illustrasjon av overdreven selvtillit som beslutningsfelle](/assets/images/banners/forankring-t4-overconfidence.webp)
 
     #### Overdreven selvtillit
 
