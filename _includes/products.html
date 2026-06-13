@@ -38,10 +38,6 @@
         </div>
         {% endfor %}
     </div>
-    <div class="product-cta-footer">
-        {% if product.cta[2] %}
-        <a href="{{ product.cta[2].url }}" class="cta" title="{{ product.cta[2].text }}">{{ product.cta[2].text }}</a>
-        {% endif %}
-    </div>
+    {% include cta-inline.html cta=product.cta class="cta-inline--home-product" heading=product.name %}
     {% endfor %}
 </section>

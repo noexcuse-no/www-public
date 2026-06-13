@@ -49,6 +49,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- **Sticky CTA → inline CTA include**: Replaced the old sticky/fixed bottom CTA bar with `_includes/cta-inline.html` — a normal-flow full-width card that renders product CTAs from frontmatter at any point in page content. Supports `cta`, `heading`, `description`, and `class` parameters for cross-product targeting. Stagger-parent IntersectionObserver extracted to standalone `stagger-observer.js`. Removed `sticky-cta.html`, `sticky-cta.js`, `sticky-cta.css`. On the home page, the product CTA footer now uses the inline CTA card instead of a single button.
+- **Product sidebar banner compact treatment**: Replaced full-width 16:9 banner image with an 80px compact grid overlay — heading rendered on top of the image with gradient overlay, saving ~100px vertical space in the sidebar card.
+- **Questions collapse shows 1 instead of 3**: Changed collapse threshold from `n+4` to `n+2` so only the first question stays visible as preview on tight viewports.
+
 - **Provenance pipeline (Z2.1–Z2.5)**: End-to-end AI-generated content disclosure system:
   - **Z2.1 — Provenance JSON-LD**: `_includes/provenance-jsonld.html` injects `digitalSourceType` `TrainedAlgorithmicMediaDigitalSource` and `license` `CC0-1.0` as standalone JSON-LD `WebPage` block on every page. Respects `page.provenance` frontmatter override (`ai`/`editorial`/`human`). Wired into `_layouts/default.html` after `json-ld.html`.
   - **Z2.2 — CC0 declarations**: `<link rel="license">` in `metadata.html`, `license: CC0-1.0` in `_data/metadata.yml`, `package.json` changed from `UNLICENSED` to `CC0-1.0`, `license`/`license_url` in `_config.yml`, `LICENSE` file (CC0 1.0 Universal full text) at project root.
