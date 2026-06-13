@@ -37,13 +37,9 @@
             // Scroll back to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
-            // Scroll down past hero to article content
-            var target = articleBody || document.querySelector('.article-layout');
-            if (target) {
-                var rect = target.getBoundingClientRect();
-                var targetPos = rect.top + window.pageYOffset - headerHeight;
-                window.scrollTo({ top: targetPos, behavior: 'smooth' });
-            }
+            // Scroll down past hero entirely
+            var heroHeight = hero.offsetHeight;
+            window.scrollTo({ top: heroHeight, behavior: 'smooth' });
         }
     });
 
