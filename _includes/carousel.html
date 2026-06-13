@@ -1,0 +1,57 @@
+{% comment %}
+  Carousel navigation — three circular buttons at bottom of hero.
+  Finds the current page in _data/carousel.yml cycles and renders prev/scroll/next links.
+
+  Prev/Next are links to sibling pages in the cycle (wrapping).
+  The center button scrolls to article content; after hero passes, it becomes a
+  sticky scroll-to-top button handled by carousel.js.
+{% endcomment %}
+
+{% assign carousel_prev = false %}
+{% assign carousel_next = false %}
+
+{% for cycle in site.data.carousel %}
+  {% for url in cycle.pages %}
+    {% if url == page.url %}
+      {% assign carousel_size = cycle.pages.size %}
+      {% assign carousel_index = forloop.index0 %}
+      {% assign prev_i = carousel_index | minus: 1 %}
+      {% assign next_i = carousel_index | plus: 1 %}
+
+      {% if prev_i < 0 %}
+        {% assign prev_i = carousel_size | minus: 1 %}
+      {% endif %}
+      {% if next_i >= carousel_size %}
+        {% assign next_i = 0 %}
+      {% endif %}
+
+      {% assign carousel_prev = cycle.pages[prev_i] %}
+      {% assign carousel_next = cycle.pages[next_i] %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% if carousel_prev or carousel_next %}
+<nav class="carousel-nav" aria-label="Artikkelnavigasjon">
+  <a href="{{ carousel_prev | relative_url }}" class="carousel-btn carousel-btn--prev" aria-label="Forrige artikkel">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
+  </a>
+
+  <button class="carousel-btn carousel-btn--scroll" aria-label="Rull til innhold">
+    <svg class="carousel-icon-down" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 9l6 6 6-6"/>
+    </svg>
+    <svg class="carousel-icon-up" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <a href="{{ carousel_next | relative_url }}" class="carousel-btn carousel-btn--next" aria-label="Neste artikkel">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18l6-6-6-6"/>
+    </svg>
+  </a>
+</nav>
+{% endif %}

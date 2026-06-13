@@ -1,0 +1,46 @@
+# Carousel navigation cycles
+# Each cycle defines an ordered list of page URLs.
+# The carousel at the bottom of the hero links to prev/next in the cycle (wrapping around).
+
+- name: "Artikler"
+  pages:
+    - /tillit/
+    - /generativ-ki/
+    - /forankring/
+    - /usikkerhet/
+    - /triader/
+    - /makt/
+
+- name: "Perspektiver"
+  pages:
+    - /perspektiv/
+    - /identitet/
+    - /struktur/
+    - /mennesker/
+    - /pavirkning/
+
+- name: "GRC"
+  pages:
+    - /grc/
+    - /risikostyring/
+    - /compliance/
+    - /kvalitet/
+    - /informasjonssikkerhet/
+    - /baerekraft/
+    - /endringsledelse/
+
+- name: "Om"
+  pages:
+    - /metode/
+    - /om-oss/
+    - /kultur/
+
+- name: "Produkter"
+  pages:
+    - /ledelse-60-2/
+
+- name: "Steg"
+  pages:
+    - /samtale/
+    - /intervju/
+    - /rapport/
