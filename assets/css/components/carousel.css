@@ -83,7 +83,7 @@
     to   { opacity: 1; transform: scale(1); }
 }
 
-/* Carousel-nav sits above the scroll-indicator */
+/* Hide old scroll-indicator when carousel is present */
 .hero .scroll-indicator {
-    z-index: 1;
+    display: none;
 }

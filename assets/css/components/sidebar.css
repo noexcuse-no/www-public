@@ -52,58 +52,6 @@
     margin: 0 0 var(--space-sm);
 }
 
-/* --- TOC / Page Index --- */
-
-.toc-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.toc-item {
-    display: block;
-    padding: var(--space-xs) 0;
-    padding-left: var(--space-sm);
-    font-size: 0.9em;
-    line-height: 1.4;
-    color: var(--text-color-light);
-    text-decoration: none;
-    border-left: 2px solid transparent;
-    transition: color 0.2s ease, border-color 0.2s ease;
-    cursor: pointer;
-}
-
-.toc-item:hover {
-    color: var(--link-hover-light);
-    border-left-color: var(--border-color-light);
-}
-
-.toc-item--h3 {
-    padding-left: calc(var(--space-sm) + var(--space-md));
-    font-size: 0.82em;
-    opacity: 0.85;
-}
-
-/* Active heading — scroll-spy highlight */
-.toc-item--active {
-    color: var(--primary-navy);
-    border-left-color: var(--primary-accent);
-    font-weight: 600;
-}
-
-.dark-mode .toc-item {
-    color: var(--text-color-dark);
-}
-
-.dark-mode .toc-item:hover {
-    color: var(--link-hover-dark);
-}
-
-.dark-mode .toc-item--active {
-    color: var(--primary-azure);
-    border-left-color: var(--primary-azure);
-}
-
 /* --- Left Pager Panel --- */
 
 .article-pager,
