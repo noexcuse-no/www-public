@@ -133,10 +133,10 @@
     background: var(--overlay-light);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    align-items: center;
     justify-content: center;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .profile-expanded.active {
@@ -148,8 +148,7 @@
     border-radius: 20px;
     width: 100%;
     max-width: 560px;
-    max-height: 85vh;
-    overflow-y: auto;
+    margin: auto;
     box-shadow: var(--shadow-xl);
     position: relative;
     box-sizing: border-box;
