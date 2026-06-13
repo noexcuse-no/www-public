@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var toggles = document.querySelectorAll(".nav-toggle, .burger-pill");
+  var toggles = document.querySelectorAll(".nav-toggle");
   var overlay = document.querySelector(".nav-overlay");
   var closeBtn = document.querySelector(".nav-overlay-close");
 
