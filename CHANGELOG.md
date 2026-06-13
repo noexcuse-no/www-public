@@ -49,9 +49,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- **Sticky CTA → inline CTA include**: Replaced the old sticky/fixed bottom CTA bar with `_includes/cta-inline.html` — a normal-flow full-width card that renders product CTAs from frontmatter at any point in page content. Supports `cta`, `heading`, `description`, and `class` parameters for cross-product targeting. Stagger-parent IntersectionObserver extracted to standalone `stagger-observer.js`. Removed `sticky-cta.html`, `sticky-cta.js`, `sticky-cta.css`. On the home page, the product CTA footer now uses the inline CTA card instead of a single button.
-- **Product sidebar banner compact treatment**: Replaced full-width 16:9 banner image with an 80px compact grid overlay — heading rendered on top of the image with gradient overlay, saving ~100px vertical space in the sidebar card.
-- **Questions collapse shows 1 instead of 3**: Changed collapse threshold from `n+4` to `n+2` so only the first question stays visible as preview on tight viewports.
+- **Ledelse 60:2 — article layout migration**: Switched the product page from `product` layout to `article` layout. Added 5 diagnostic frontmatter questions with collapsible sidebar rendering. Added Dagfinn profile include at page bottom. Removed obsolete `show_cta_buttons`/`show_metodikk_callout` flags.
+- **Article layout — stat-bridge support**: Added conditional `stat-bridge.html` include between hero and article-layout div, gated on `page.stat_bridge`. The Ledelse 60:2 page uses this for its "4 perspektiver · 60 spørsmål · 2 timer" stat line.
+- **Homepage CTA heading fix**: Changed the inline CTA heading in `products.html` from `product.name` to `product.stat_bridge` for consistency with the stat line content.
 
 - **Provenance pipeline (Z2.1–Z2.5)**: End-to-end AI-generated content disclosure system:
   - **Z2.1 — Provenance JSON-LD**: `_includes/provenance-jsonld.html` injects `digitalSourceType` `TrainedAlgorithmicMediaDigitalSource` and `license` `CC0-1.0` as standalone JSON-LD `WebPage` block on every page. Respects `page.provenance` frontmatter override (`ai`/`editorial`/`human`). Wired into `_layouts/default.html` after `json-ld.html`.

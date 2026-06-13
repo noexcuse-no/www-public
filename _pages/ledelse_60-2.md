@@ -1,8 +1,13 @@
 ---
 class: product
-layout: product
-show_cta_buttons: true
-show_metodikk_callout: true
+layout: article
+questions_title: "Spør din LLM om ledelsesorientering"
+questions:
+  - "Hvilke av de fire perspektivene (struktur, mennesker, påvirkning, identitet) er sterkest i vår ledergruppe — og hvilket er mest fraværende?"
+  - "Hva vil skje om vi bare bruker ett perspektiv når vi vurderer organisasjonens utfordringer?"
+  - "Hvordan kan ledergruppen bruke 60 diagnostiske spørsmål til å finne felles retning uten å bli sittende fast i detaljer?"
+  - "Hvilke signaler tyder på at ledergruppen har blindsoner i styringen av organisasjonen?"
+  - "Hvordan kan en ekstern vurdering avdekke mønstre som ledergruppen selv ikke ser?"
 title: "Ledelse 60:2 — Orientering for ledergruppen"
 description: "Tidseffektiv orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
 permalink: /ledelse-60-2/
@@ -159,3 +164,5 @@ Maktforhold, interesser og allianser. Handler om å forstå hvem som egentlig be
 Kultur, verdier og felles retning. Handler om hva organisasjonen står for.
 
 De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene er designet for å skape refleksjon og innsikt — ikke for å gi enkle poengsummer eller rangeringer.
+
+{% include profiles.html tags="ledelse" %}
