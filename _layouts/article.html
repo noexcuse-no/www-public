@@ -12,6 +12,7 @@ layout: default
     <aside class="article-pager" aria-label="Relaterte artikler" hidden>
       <div class="pager-scroll">
         {% include sidebar-toc.html %}
+        {% include share-section.html %}
       </div>
     </aside>
     {% endif %}
@@ -36,9 +37,9 @@ layout: default
 
     <aside class="article-questions" aria-label="Spørsmål og tilbud">
       {% if page.questions %}
-      <div class="sidebar-card sidebar-card--questions">
+      <div class="sidebar-card sidebar-card--questions is-collapsible">
         {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
-        {% include questions.html title=page.questions_title questions=question_list %}
+        {% include questions.html title=page.questions_title questions=question_list collapsible="true" %}
       </div>
       {% endif %}
 
