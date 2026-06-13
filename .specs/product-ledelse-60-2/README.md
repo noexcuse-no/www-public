@@ -1,7 +1,7 @@
 # Product Page — Ledelse 60:2 Architecture
 
 > Created: 2026-06-12
-> Status: Ready
+> Status: Done (implementert, videreutviklet — se PR #181 for layout-migrering)
 
 ## Purpose / Problem
 
@@ -13,8 +13,8 @@ The page uses three visual patterns (signal items, process steps, perspective ca
 
 - `_pages/ledelse_60-2.md` — frontmatter + pure Markdown body
 - `assets/css/products.css` — structural CSS selectors for three content patterns
-- `_layouts/product.html` — page layout (hero, stat-bridge, article-body, cta-section, sticky-cta)
-- No changes to `_includes/` — all content stays in the `.md` file
+- `_layouts/article.html` — page layout (hero, stat-bridge, article-layout with pager + body + questions/sidebar)
+- `_includes/profiles.html` — profile card at page bottom (via `{% include profiles.html tags="ledelse" %}`)
 
 Files NOT in scope:
 - `_includes/products.html` — homepage rendering (data from frontmatter, unchanged)
@@ -22,21 +22,42 @@ Files NOT in scope:
 
 ## Architecture
 
-### Page Layout (`_layouts/product.html`)
+### Page Layout (`_layouts/article.html`)
 
 ```
 {% include hero.html %}              ← from frontmatter hero: block
-{% include stat-bridge.html %}       ← from frontmatter stat_bridge field
-<div class="article-body">
-  {% include cta-buttons.html %}     ← if show_cta_buttons: true
-  {{ content }}                      ← the .md body (pure Markdown)
-  {% include metodikk-callout.html %} ← if show_metodikk_callout: true
+{% if page.stat_bridge %}
+  {% include stat-bridge.html %}     ← "4 perspektiver · 60 spørsmål · 2 timer"
+{% endif %}
+<div class="article-layout">         ← CSS grid: pager | body | questions (3 columns)
+  <aside class="article-pager">
+    {% include sidebar-toc.html %}   ← auto-generated TOC (if show_toc != false)
+    {% include share-section.html %} ← share buttons
+  </aside>
+  <div class="article-body">
+    {{ content }}                    ← pure Markdown (signaler, steg, perspektivkort)
+    {% if page.cta %}
+    <div class="cta-section">        ← CTA-knapper synlige på smale skjermer
+      ...cta[0] og cta[1]...
+    </div>
+    {% endif %}
+  </div>
+  <aside class="article-questions">
+    {% if page.questions %}          ← collapsible question card
+      {% include questions.html %}
+    {% endif %}
+    {% if page.cta %}                ← compact product card with banner + CTA
+    <div class="sidebar-card sidebar-card--product">
+      product image, name, description, cta[0], cta[1]
+    </div>
+    {% endif %}
+  </aside>
 </div>
-{% include cta-section.html %}       ← from frontmatter cta: block
-{% include sticky-cta.html %}        ← persistent mobile CTA
+{% include cases-cards.html %}
+{% include references.html %}
 ```
 
-The body (`{{ content }}`) contains only the unique selling content — hero, CTAs, and calls-to-action are handled by the layout.
+The body (`{{ content }}`) contains only the unique selling content — hero, stat-bridge, questions, CTA, and profile are handled by the layout.
 
 ### Body Content Patterns (pure Markdown)
 
@@ -87,18 +108,16 @@ CSS selectors: `.article-body > p:has(> a > img[src*="frame-"]) + h3 + p`
 
 ### Frontmatter Schema
 
-The following frontmatter fields are REQUIRED for homepage integration (see `.specs/product-card-frontmatter/README.md`):
+The following frontmatter fields are used for the page and homepage integration (see `.specs/product-card-frontmatter/README.md`):
 
 | Field | Purpose | Used by |
 |-------|---------|---------|
 | `benefits` (array) | Benefit cards on homepage | `_includes/products.html` |
 | `process_steps` (array) | Process step cards on homepage | `_includes/products.html` |
-| `cta_a`, `cta_b`, `cta_c` | CTA buttons on homepage | `_includes/products.html` |
-| `cta` (heading + body) | CTA section | `_layouts/product.html` via `cta-section.html` |
-| `hero` (block) | Hero section | `_layouts/product.html` via `hero.html` |
-| `stat_bridge` | Stat line below hero | `_layouts/product.html` via `stat-bridge.html` |
-| `show_cta_buttons` | Toggle CTA buttons row | `_layouts/product.html` |
-| `show_metodikk_callout` | Toggle metodikk callout | `_layouts/product.html` |
+| `cta` (list of {text, url}) | CTA buttons (hero pager, sidebar, inline) | `_layouts/article.html`, `_includes/products.html` |
+| `hero` (block) | Hero section | `_layouts/article.html` via `hero.html` |
+| `stat_bridge` | Stat line below hero | `_layouts/article.html` via `stat-bridge.html` |
+| `questions` (array) + `questions_title` (string) | Diagnostic questions in sidebar | `_layouts/article.html` via `questions.html` |
 
 ### Key Principles
 
@@ -129,6 +148,7 @@ At ≤599px, signal items collapse from float layout to stacked vertical layout 
 - `.specs/product-card-frontmatter/README.md` — frontmatter schema for homepage integration
 - `assets/css/article.css` — base structural selectors for `.article-body`
 - `assets/css/products.css` — product-specific structural selectors
+- `_layouts/article.html` — the active page layout (replaced `_layouts/product.html`)
 
 ## Acceptance Criteria
 
@@ -140,3 +160,6 @@ At ≤599px, signal items collapse from float layout to stacked vertical layout 
 - [ ] Dark mode: all three patterns have dark mode styling
 - [ ] Mobile (≤599px): signal icons stack and shrink to 60×60
 - [ ] `benefits` and `process_steps` remain in frontmatter (homepage data source unchanged)
+- [ ] `stat_bridge` renders between hero and article-layout
+- [ ] 5 diagnostic questions render in the right sidebar (collapsible)
+- [ ] Dagfinn profile card renders at page bottom via `{% include profiles.html tags="ledelse" %}`
