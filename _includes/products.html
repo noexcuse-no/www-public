@@ -32,6 +32,9 @@
             <img src="{{ step.banner | relative_url }}" alt="{{ step.title }}" class="process-banner">
             <h3>{{ step.title }}</h3>
             <p>{{ step.description }}</p>
+            {% if step.url %}
+            <a href="{{ step.url | relative_url }}" class="cta">Les mer →</a>
+            {% endif %}
         </div>
         {% endfor %}
     </div>

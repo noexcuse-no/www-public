@@ -134,10 +134,52 @@
         });
     }
 
+    /* ===== 4. Collapsible Questions: auto-collapse on tight viewports ===== */
+
+    function initQuestionsCollapse() {
+        var card = document.querySelector('.sidebar-card--questions.is-collapsible');
+        if (!card) return;
+
+        var toggle = card.querySelector('.questions-toggle');
+        var list   = card.querySelector('.questions-list');
+        if (!toggle || !list) return;
+
+        toggle.addEventListener('click', function() {
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            var next = !expanded;
+            toggle.setAttribute('aria-expanded', next);
+            card.classList.toggle('is-expanded', next);
+            toggle.querySelector('.toggle-label').textContent = next ? 'Skjul spørsmål' : 'Vis alle spørsmål';
+            toggle.classList.toggle('is-collapsed', !next);
+        });
+
+        var checkCollapse = function() {
+            var cardRect = card.getBoundingClientRect();
+            var viewportHeight = window.innerHeight;
+            // If card bottom extends beyond viewport, default to collapsed
+            if (cardRect.bottom > viewportHeight && !card.classList.contains('is-expanded')) {
+                toggle.setAttribute('aria-expanded', 'false');
+                toggle.querySelector('.toggle-label').textContent = 'Vis alle spørsmål';
+                toggle.classList.add('is-collapsed');
+            } else {
+                // Default expanded
+                toggle.setAttribute('aria-expanded', 'true');
+                toggle.querySelector('.toggle-label').textContent = 'Skjul spørsmål';
+                toggle.classList.remove('is-collapsed');
+                card.classList.add('is-expanded');
+            }
+        };
+
+        // Run after sidebar visibility settles
+        setTimeout(checkCollapse, 300);
+        window.addEventListener('resize', checkCollapse);
+    }
+
     /* ===== Init ===== */
 
     function init() {
         initArticleSidebar();
+        initQuestionsCollapse();
     }
 
     if (document.readyState === 'loading') {

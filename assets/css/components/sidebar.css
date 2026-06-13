@@ -56,7 +56,7 @@
 
 .article-pager,
 .article-questions {
-    margin-top: var(--space-2xl);
+    margin-top: var(--space-lg);
 }
 
 .article-pager {
@@ -253,7 +253,120 @@
     opacity: 1;
 }
 
-/* --- Responsive: hide sidebars on narrow screens --- */
+/* --- Share Section --- */
+
+.sidebar-section--share {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+}
+
+.share-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border-radius: var(--radius-md);
+    font-size: 0.85em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+    min-height: 44px;
+}
+
+.share-btn:active {
+    transform: scale(0.97);
+}
+
+.share-btn--teams {
+    background: #6264A7;
+}
+
+.share-btn--teams:hover {
+    background: #5050A0;
+    color: #fff;
+}
+
+.share-btn--linkedin {
+    background: #0A66C2;
+}
+
+.share-btn--linkedin:hover {
+    background: #084d91;
+    color: #fff;
+}
+
+.share-btn svg {
+    flex-shrink: 0;
+}
+
+/* --- Collapsible Questions Toggle --- */
+
+.questions-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 8px var(--space-sm);
+    margin-top: var(--space-sm);
+    background: transparent;
+    border: 1px solid var(--border-color-light);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: 0.78em;
+    color: var(--text-color-light);
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    min-height: 44px;
+}
+
+.questions-toggle:hover {
+    background: var(--surface-hover-light);
+    border-color: var(--primary-accent);
+}
+
+.dark-mode .questions-toggle {
+    color: var(--text-color-dark);
+    border-color: var(--border-color-dark);
+}
+
+.dark-mode .questions-toggle:hover {
+    background: var(--surface-hover-dark);
+}
+
+.questions-toggle .toggle-icon {
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+.questions-toggle.is-collapsed .toggle-icon {
+    transform: rotate(180deg);
+}
+
+/* When collapsed, hide the question list items after the 3rd */
+.sidebar-card--questions.is-collapsible ul.questions-list {
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.sidebar-card--questions.is-collapsible ul.questions-list > li:nth-child(n+4) {
+    display: none;
+}
+
+.sidebar-card--questions.is-collapsible.is-expanded ul.questions-list > li:nth-child(n+4) {
+    display: flex;
+}
+
+/*--- Responsive: hide sidebars on narrow screens --- */
 
 @media (max-width: 1199px) {
     .article-layout {

@@ -5,18 +5,20 @@
   and a copy-to-clipboard prompt for guided reflection.
 
   Parameters:
-    title     — h2 heading text (required)
-    questions — pipe-separated (||) list of question strings (required)
-    id        — optional anchor ID for the section
+    title       — h2 heading text (required)
+    questions   — pipe-separated (||) list of question strings (required)
+    id          — optional anchor ID for the section
+    collapsible — if "true", renders a collapse/expand toggle for the question list
 {% endcomment %}
 
 {% assign q_title = include.title %}
 {% assign q_list  = include.questions | split: "||" %}
 {% assign q_id    = include.id %}
+{% assign is_collapsible = include.collapsible %}
 
 <section class="review-questions section container--wide animate-on-scroll fade-in-up"{% if q_id %} id="{{ q_id }}"{% endif %}>
   <h2>{{ q_title }}</h2>
-  <ul class="stagger-parent">
+  <ul class="stagger-parent questions-list">
     {% for q in q_list %}
     {% assign q_trimmed = q | strip %}
     <li class="animate-on-scroll slide-in-left stagger"
@@ -29,4 +31,10 @@
     </li>
     {% endfor %}
   </ul>
+  {% if is_collapsible == "true" %}
+  <button class="questions-toggle" type="button" aria-expanded="true">
+    <span class="toggle-icon" aria-hidden="true">&#9650;</span>
+    <span class="toggle-label">Skjul spørsmål</span>
+  </button>
+  {% endif %}
 </section>
