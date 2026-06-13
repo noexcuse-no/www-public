@@ -7,6 +7,9 @@ layout: default
 
 {% if page.hero %}
   {% include hero.html %}
+  {% if page.stat_bridge %}
+    {% include stat-bridge.html %}
+  {% endif %}
   <div class="article-layout">
     {% if page.show_toc != false %}
     <aside class="article-pager" aria-label="Relaterte artikler" hidden>
