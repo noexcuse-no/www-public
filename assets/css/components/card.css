@@ -160,4 +160,10 @@
         grid-template-columns: 1fr;
         gap: 16px;
     }
+
+    .card-link {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
 }
