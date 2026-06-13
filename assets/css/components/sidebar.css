@@ -114,32 +114,33 @@
 .article-pager {
     display: flex;
     flex-direction: column;
+    gap: var(--space-lg);
     position: sticky;
     top: var(--space-md);
     align-self: start;
     max-height: calc(100vh - var(--space-xl, 40px));
-
-    background: var(--box-background-light);
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-sm);
 }
 
 .article-pager[hidden] {
     display: none;
 }
 
-.dark-mode .article-pager {
-    background: var(--box-background-dark);
-    box-shadow: var(--shadow-sm-dark);
-}
-
-/* Pager scrollable content */
 .pager-scroll {
     flex: 1;
+    min-height: 0;
     overflow-y: auto;
     overscroll-behavior: contain;
     padding: var(--space-lg);
     font-size: 0.9em;
+
+    background: var(--box-background-light);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.dark-mode .pager-scroll {
+    background: var(--box-background-dark);
+    box-shadow: var(--shadow-sm-dark);
 }
 
 /* --- Questions Sidebar (Right Panel) --- */
@@ -220,7 +221,7 @@
 
 .sidebar-product-banner {
     display: grid;
-    min-height: 80px;
+    min-height: 52px;
     border-radius: var(--radius-xl) var(--radius-xl) 0 0;
     overflow: hidden;
     margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-md);
@@ -238,29 +239,16 @@
     z-index: 0;
 }
 
-.sidebar-product-banner::after {
-    content: '';
-    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 50%);
-    z-index: 1;
-}
-
 .sidebar-product-banner .sidebar-card-heading {
-    align-self: end;
+    align-self: center;
     padding: var(--space-sm) var(--space-md);
     margin: 0;
-    z-index: 2;
-    color: #fff;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+    z-index: 1;
+    color: var(--primary-navy);
 }
 
-/* When no image is available, fall back to normal heading color */
-.sidebar-product-banner:not(:has(.sidebar-product-banner-bg)) .sidebar-card-heading {
-    color: var(--heading-color-light);
-    text-shadow: none;
-}
-
-.dark-mode .sidebar-product-banner:not(:has(.sidebar-product-banner-bg)) .sidebar-card-heading {
-    color: var(--heading-color-dark);
+.dark-mode .sidebar-product-banner .sidebar-card-heading {
+    color: var(--primary-navy);
 }
 
 /* --- CTA Buttons in Sidebar --- */
@@ -344,7 +332,6 @@
 /* --- Share Section (visually distinct card) --- */
 
 .sidebar-section--share {
-    margin-top: var(--space-lg);
     padding: var(--space-lg);
     background: var(--box-background-light);
     border-radius: var(--radius-xl);
@@ -381,6 +368,7 @@
     cursor: pointer;
     transition: background 0.2s ease, transform 0.1s ease;
     min-height: 44px;
+    white-space: nowrap;
 }
 
 .share-btn:active {

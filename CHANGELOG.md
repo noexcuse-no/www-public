@@ -49,6 +49,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- **Hero carousel scroll button affix visibility**: `.carousel-btn--scroll` back-to-top state was invisible because `.carousel-nav` used `transform: translateX(-50%)` for centering, which (per CSS spec) makes it the containing block for `position: fixed` descendants. Changed centering to flexbox `justify-content: center` — no transform, no containing-block side effect. Affixed button centering changed from `transform: translateX(-50%)` to `left: calc(50% - 24px)`.
+- **Hero scroll-down offset**: `scrollTo({ top: hero.offsetHeight })` was 85px short — hero starts at `hero.offsetTop` (header height). Changed to `hero.offsetTop + hero.offsetHeight` to scroll past hero entirely.
+- **Sidebar product banner height**: Reduced `min-height` from 80px to 52px to conserve vertical space. Title color changed from `#fff` (with gradient overlay) to `var(--primary-navy)` for contrast against the light illustration.
+- **Share button SVG icons**: Removed `<rect fill="currentColor">` from Teams and LinkedIn SVGs — it rendered as solid white squares on the white text color, hiding the logo paths. White logo paths now display directly on the button's colored background.
+- **Share button text wrapping**: Added `white-space: nowrap` to prevent "Del på Teams"/"Del på LinkedIn" from breaking across lines in the narrow 240px left panel.
+
+### Changed
+- **Left sidebar: share buttons as separate card**: Moved share section (`share-section.html`) out of `.pager-scroll` to sit below the TOC as a visually distinct card with its own background, border-radius, and shadow — mirrors the right panel's card-separation pattern (questions card above product card). Card styling moved from `.article-pager` wrapper to `.pager-scroll` and `.sidebar-section--share` independently.
+
 - **Ledelse 60:2 — article layout migration**: Switched the product page from `product` layout to `article` layout. Added 5 diagnostic frontmatter questions with collapsible sidebar rendering. Added Dagfinn profile include at page bottom. Removed obsolete `show_cta_buttons`/`show_metodikk_callout` flags.
 - **Article layout — stat-bridge support**: Added conditional `stat-bridge.html` include between hero and article-layout div, gated on `page.stat_bridge`. The Ledelse 60:2 page uses this for its "4 perspektiver · 60 spørsmål · 2 timer" stat line.
 - **Homepage CTA heading fix**: Changed the inline CTA heading in `products.html` from `product.name` to `product.stat_bridge` for consistency with the stat line content.

@@ -8,9 +8,10 @@
 .carousel-nav {
     position: absolute;
     bottom: var(--space-lg);
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 12px;
     z-index: 3;
@@ -72,8 +73,7 @@
 .carousel-btn--scroll.is-affixed {
     position: fixed;
     bottom: var(--space-lg);
-    left: 50%;
-    transform: translateX(-50%);
+    left: calc(50% - 24px);
     z-index: 9999;
     animation: carousel-fade-in 0.3s ease;
 }

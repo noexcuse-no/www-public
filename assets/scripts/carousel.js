@@ -37,9 +37,7 @@
             // Scroll back to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
-            // Scroll down past hero entirely
-            var heroHeight = hero.offsetHeight;
-            window.scrollTo({ top: heroHeight, behavior: 'smooth' });
+            window.scrollTo({ top: hero.offsetTop + hero.offsetHeight, behavior: 'smooth' });
         }
     });
 
