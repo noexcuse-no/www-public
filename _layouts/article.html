@@ -8,20 +8,9 @@ layout: default
 {% if page.hero %}
   {% include hero.html %}
   <div class="article-layout">
-    <div class="logo-top">
-      <a href="/" class="logo-link" aria-label="No Excuse — Hjem">{% include logo-svg.html %}</a>
-    </div>
-
-    <div class="burger-top">
-      <button class="burger-pill" aria-label="Meny" aria-expanded="false">
-        <span class="burger-icon" aria-hidden="true">☰</span> Meny
-      </button>
-    </div>
-
     {% if page.show_toc != false %}
     <aside class="article-pager" aria-label="Relaterte artikler" hidden>
       <div class="pager-scroll">
-        <div class="js-pager-list"></div>
         {% include sidebar-toc.html %}
       </div>
     </aside>

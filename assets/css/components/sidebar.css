@@ -4,15 +4,12 @@
 
 /* --- Layout Grid --- */
 
-/* Article pages: left pager + centered content + 320px right sidebar
-   Two rows: logo/burger on row 1, sidepanels + content on row 2 */
+/* Article pages: left pager + centered content + 320px right sidebar */
 .article-layout {
     display: grid;
     grid-template-columns: 1fr 240px minmax(auto, 800px) 320px 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-        ". logo . burger ."
-        ". pager content questions .";
+    grid-template-rows: 1fr;
+    grid-template-areas: ". pager content questions .";
 }
 
 /* Place children into grid areas */
@@ -28,84 +25,39 @@
     grid-area: questions;
 }
 
-.article-layout > .logo-top {
-    grid-area: logo;
+/* --- Sidebar Sections (shared by left pager TOC & homepage sidebar) --- */
+
+.sidebar-section {
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--border-color-light);
 }
 
-.article-layout > .burger-top {
-    grid-area: burger;
+.sidebar-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
-/* --- Logo Above Left Panel (on page background) --- */
-
-.logo-top {
-    padding: var(--space-md) 0;
-    display: flex;
-    align-items: center;
+.dark-mode .sidebar-section {
+    border-bottom-color: var(--border-color-dark);
 }
 
-.logo-top .logo-link {
-    display: block;
-    text-decoration: none;
-}
-
-.logo-top .logo-link svg {
-    display: block;
-    height: 32px;
-    width: auto;
-}
-
-/* --- Burger Pill Above Right Panel (on page background) --- */
-
-.burger-top {
-    padding: var(--space-md) 0;
-    display: flex;
-    align-items: center;
-}
-
-.burger-pill {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    padding: 10px 20px;
-    min-height: 44px;
-    background: var(--box-background-light);
-    border: 2px solid var(--border-color-light);
-    border-radius: 999px;
-    cursor: pointer;
+.sidebar-section h3 {
+    font-size: 0.85em;
     font-weight: 600;
-    font-size: 0.95em;
-    color: var(--text-color-light);
-    transition: background-color 0.2s ease, color 0.2s ease;
-    box-shadow: var(--shadow-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    margin: 0 0 var(--space-sm);
 }
 
-.burger-pill:hover {
-    background: var(--surface-hover-light);
-    color: var(--link-hover-light);
-}
+/* --- Left Pager Panel --- */
 
-.dark-mode .burger-pill {
-    background: var(--box-background-dark);
-    border-color: var(--border-color-dark);
-    color: var(--text-color-dark);
-    box-shadow: var(--shadow-sm-dark);
+.article-pager,
+.article-questions {
+    margin-top: var(--space-2xl);
 }
-
-.dark-mode .burger-pill:hover {
-    background: var(--surface-hover-dark);
-    color: var(--link-hover-dark);
-}
-
-/* Burger icon */
-.burger-icon {
-    font-size: 1.15em;
-    line-height: 1;
-}
-
-/* --- Left Pager Panel (cross-links) --- */
 
 .article-pager {
     display: flex;
@@ -136,63 +88,6 @@
     overscroll-behavior: contain;
     padding: var(--space-lg);
     font-size: 0.9em;
-}
-
-/* Cross-link list inside pager */
-.article-pager .cross-link-section {
-    margin: 0;
-    padding: 0;
-}
-
-.article-pager .cross-link-label {
-    font-size: 0.85em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    opacity: 0.6;
-    margin: 0 0 var(--space-sm);
-}
-
-.article-pager .cross-link-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.article-pager .cross-link-list li {
-    margin-bottom: var(--space-sm);
-    line-height: 1.4;
-}
-
-.article-pager .cross-link-list li:last-child {
-    margin-bottom: 0;
-}
-
-.article-pager .cross-link {
-    color: var(--link-color-light);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9em;
-}
-
-.article-pager .cross-link:hover {
-    text-decoration: underline;
-    color: var(--link-hover-light);
-}
-
-.dark-mode .article-pager .cross-link {
-    color: var(--link-color-dark);
-}
-
-.dark-mode .article-pager .cross-link:hover {
-    color: var(--link-hover-dark);
-}
-
-.article-pager .cross-link-desc {
-    display: block;
-    font-size: 0.82em;
-    opacity: 0.7;
-    margin-top: 1px;
 }
 
 /* --- Questions Sidebar (Right Panel) --- */
@@ -366,9 +261,7 @@
     }
 
     .article-pager,
-    .article-questions,
-    .logo-top,
-    .burger-top {
+    .article-questions {
         display: none;
     }
 }
