@@ -46,11 +46,13 @@ layout: default
       {% if page.cta %}
       <div class="sidebar-card sidebar-card--product">
         {% assign product = site.pages | where: "class", "product" | first %}
-        {% if product and product.image %}
-        <img src="{{ product.image | relative_url }}" alt="{{ product.name }}" class="sidebar-cta-banner">
-        {% endif %}
         {% if product %}
-        <h4 class="sidebar-card-heading">{{ product.name }}</h4>
+        <div class="sidebar-product-banner">
+          {% if product.image %}
+          <img src="{{ product.image | relative_url }}" alt="" class="sidebar-product-banner-bg" aria-hidden="true">
+          {% endif %}
+          <h4 class="sidebar-card-heading">{{ product.name }}</h4>
+        </div>
           {% if product.short_description %}
         <p class="sidebar-card-desc">{{ product.short_description }}</p>
           {% endif %}

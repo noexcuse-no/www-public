@@ -68,13 +68,13 @@
     height: 48px;
 }
 
-/* Affixed state — fixed to bottom-right when hero is scrolled past */
+/* Affixed state — fixed center-bottom when hero is scrolled past */
 .carousel-btn--scroll.is-affixed {
     position: fixed;
     bottom: var(--space-lg);
-    right: var(--space-lg);
-    transform: none;
-    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
     animation: carousel-fade-in 0.3s ease;
 }
 

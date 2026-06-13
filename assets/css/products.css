@@ -310,8 +310,8 @@
 
     .benefit-card .cta {
         margin: 0 var(--space-lg) var(--space-lg);
-        width: auto;
-        align-self: stretch;
+        width: 100%;
+        box-sizing: border-box;
         text-align: center;
     }
 

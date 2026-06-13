@@ -1,0 +1,71 @@
+/* ========================================
+   Inline CTA card — full-width call-to-action
+   for use at transition points in page content.
+   Normal document flow, no sticky/fixed positioning.
+   ======================================== */
+
+.cta-inline {
+    background: var(--box-background-light);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl) var(--space-2xl);
+    margin: var(--space-2xl) 0;
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--primary-azure);
+    text-align: center;
+}
+
+.cta-inline-heading {
+    font-size: 1.4em;
+    margin: 0 0 var(--space-md);
+    color: var(--heading-color-light);
+}
+
+.cta-inline-desc {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin: 0 0 var(--space-lg);
+    opacity: 0.85;
+    color: var(--text-color-light);
+    max-width: 55ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-inline-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Dark mode */
+.dark-mode .cta-inline {
+    background: var(--box-background-dark);
+    border-top-color: var(--primary-navy);
+    box-shadow: var(--shadow-sm-dark);
+}
+
+.dark-mode .cta-inline-heading {
+    color: var(--heading-color-dark);
+}
+
+.dark-mode .cta-inline-desc {
+    color: var(--text-color-dark);
+}
+
+@media (max-width: 599px) {
+    .cta-inline {
+        padding: var(--space-lg) var(--space-md);
+        margin: var(--space-lg) 0;
+        border-radius: var(--radius-lg);
+    }
+
+    .cta-inline-heading {
+        font-size: 1.2em;
+    }
+
+    .cta-inline-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

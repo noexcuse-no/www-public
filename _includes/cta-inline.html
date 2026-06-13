@@ -1,0 +1,33 @@
+{% comment %}
+  Inline CTA section — full-width call-to-action card for use at transition points
+  in page content. Replaces the old sticky-cta with a normal-flow card that uses
+  the product CTA frontmatter.
+
+  Usage:
+    {% include cta-inline.html %}                        — uses page.cta
+    {% include cta-inline.html cta=page.cta %}           — explicit
+    {% include cta-inline.html cta=ledelse.cta %}        — cross-product
+
+  Parameters:
+    cta         — Array of {text, url} objects (default: page.cta)
+    heading     — Optional heading text shown above buttons
+    description — Optional description text below heading
+    class       — Additional CSS classes for the card wrapper
+{% endcomment %}
+
+{% assign cta_list = include.cta | default: page.cta %}
+{% if cta_list and cta_list.size > 0 %}
+<div class="cta-inline{% if include.class %} {{ include.class }}{% endif %}">
+  {% if include.heading %}
+  <h2 class="cta-inline-heading">{{ include.heading }}</h2>
+  {% endif %}
+  {% if include.description %}
+  <p class="cta-inline-desc">{{ include.description }}</p>
+  {% endif %}
+  <div class="cta-inline-buttons">
+    {% for cta in cta_list %}
+      <a href="{{ cta.url }}" class="cta{% unless forloop.first %} cta--secondary{% endunless %}">{{ cta.text }}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

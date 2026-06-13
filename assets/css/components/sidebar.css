@@ -216,15 +216,51 @@
     line-height: 1.4;
 }
 
-/* --- CTA Banner Image --- */
+/* --- Product Banner (compact background image + heading overlay) --- */
 
-.sidebar-cta-banner {
-    display: block;
+.sidebar-product-banner {
+    display: grid;
+    min-height: 80px;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    overflow: hidden;
+    margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-md);
+    position: relative;
+}
+
+.sidebar-product-banner > * {
+    grid-area: 1 / 1;
+}
+
+.sidebar-product-banner-bg {
     width: 100%;
-    aspect-ratio: 16/9;
+    height: 100%;
     object-fit: cover;
-    border-radius: var(--radius-md);
-    margin-bottom: var(--space-md);
+    z-index: 0;
+}
+
+.sidebar-product-banner::after {
+    content: '';
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.sidebar-product-banner .sidebar-card-heading {
+    align-self: end;
+    padding: var(--space-sm) var(--space-md);
+    margin: 0;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+}
+
+/* When no image is available, fall back to normal heading color */
+.sidebar-product-banner:not(:has(.sidebar-product-banner-bg)) .sidebar-card-heading {
+    color: var(--heading-color-light);
+    text-shadow: none;
+}
+
+.dark-mode .sidebar-product-banner:not(:has(.sidebar-product-banner-bg)) .sidebar-card-heading {
+    color: var(--heading-color-dark);
 }
 
 /* --- CTA Buttons in Sidebar --- */
@@ -423,11 +459,11 @@
     transition: max-height 0.35s ease;
 }
 
-.sidebar-card--questions.is-collapsible ul.questions-list > li:nth-child(n+4) {
+.sidebar-card--questions.is-collapsible ul.questions-list > li:nth-child(n+2) {
     display: none;
 }
 
-.sidebar-card--questions.is-collapsible.is-expanded ul.questions-list > li:nth-child(n+4) {
+.sidebar-card--questions.is-collapsible.is-expanded ul.questions-list > li:nth-child(n+2) {
     display: flex;
 }
 
