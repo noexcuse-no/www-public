@@ -63,9 +63,9 @@
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: calc(var(--header-height, 85px) + var(--space-md, 16px));
+    top: var(--space-md);
     align-self: start;
-    max-height: calc(100vh - var(--header-height, 85px) - var(--space-2xl, 40px));
+    max-height: calc(100vh - var(--space-xl, 40px));
 
     background: var(--box-background-light);
     border-radius: var(--radius-xl);
@@ -94,9 +94,9 @@
 
 .article-questions {
     position: sticky;
-    top: calc(var(--header-height, 85px) + var(--space-md, 16px));
+    top: var(--space-md);
     align-self: start;
-    max-height: calc(100vh - var(--header-height, 85px) - var(--space-2xl, 40px));
+    max-height: calc(100vh - var(--space-xl, 40px));
     overflow-y: auto;
     overscroll-behavior: contain;
 
