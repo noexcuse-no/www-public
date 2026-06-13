@@ -31,8 +31,10 @@ json_ld:
       - type: "Thing"
         name: "Miljøledelse"
 cta:
-  heading: "Få kartlagt bærekraftsmodenheten i ledergruppen"
-  body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og avdekker hvor bærekraftsarbeidet ditt har reell forankring. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 questions_title: "Spør din LLM om bærekraftsarbeid"
 questions:
   - "Hvem i ledergruppen har reelt ansvar for bærekraft — og er dette en del av den daglige ledelsen eller et sideprosjekt?"

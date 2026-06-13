@@ -51,8 +51,10 @@ json_ld:
       - type: "Thing"
         name: "Kultur"
 cta:
-  heading: "Få kartlagt ledergruppens endringsevne"
-  body: "Ledelse 60:2 kartlegger hvor ledergruppen din står i møte med endring — fra kulturmodenhet til beslutningsprosesser. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 questions_title: "Spør din LLM om endringsevne"
 questions:
   - "Når ble siste gang dere gjennomførte en større endring — og hva gikk galt?"

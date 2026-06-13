@@ -57,8 +57,10 @@ json_ld:
       - type: "Thing"
         name: "Organisasjonskultur"
 cta:
-  heading: "Få kartlagt ledergruppens håndtering av usikkerhet"
-  body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen håndterer usikkerhet, kultur og endring. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "usikkerhetshåndtering"
 questions_title: "Spør din LLM om usikkerhetshåndtering"
 questions:

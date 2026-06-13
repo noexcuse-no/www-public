@@ -57,8 +57,10 @@ json_ld:
       - type: "Thing"
         name: "Kognitiv bias"
 cta:
-  heading: "Få kartlagt ledergruppens beslutningsprosesser"
-  body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan makt, interesser og kognitiv bias påvirker beslutninger i ledergruppen. Bestill en uforpliktende samtale."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "beslutningstaking"
 questions_title: "Spør din LLM om beslutningstaking"
 questions:

@@ -5,11 +5,11 @@
         <div class="product-hero-content">
             <h2 class="hero-title">{{ product.name }}</h2>
             <p class="product-short-description hero-intro">{{ product.short_description }}</p>
-            {% if product.cta_a %}
-            <a href="{{ product.cta_a.url }}" class="product-cta" title="{{ product.cta_a.title }}">{{ product.cta_a.text }}</a>
+            {% if product.cta[0] %}
+            <a href="{{ product.cta[0].url }}" class="cta" title="{{ product.cta[0].text }}">{{ product.cta[0].text }}</a>
             {% endif %}
-            {% if product.cta_b %}
-            <a href="{{ product.cta_b.url }}" class="product-cta product-cta--spaced" title="{{ product.cta_b.title }}">{{ product.cta_b.text }}</a>
+            {% if product.cta[1] %}
+            <a href="{{ product.cta[1].url }}" class="cta cta--spaced" title="{{ product.cta[1].text }}">{{ product.cta[1].text }}</a>
             {% endif %}
         </div>
         <div class="product-hero-image">
@@ -22,7 +22,7 @@
             <img src="{{ benefit.banner | relative_url }}" alt="{{ benefit.title }}" class="benefit-banner">
             <h4>{{ benefit.title }}</h4>
             <p>{{ benefit.description }}</p>
-            <a href="{{ benefit.article_url | relative_url }}" class="product-cta" title="{{ benefit.title }}">Les mer →</a>
+            <a href="{{ benefit.article_url | relative_url }}" class="cta" title="{{ benefit.title }}">Les mer →</a>
         </div>
         {% endfor %}
     </div>
@@ -36,8 +36,8 @@
         {% endfor %}
     </div>
     <div class="product-cta-footer">
-        {% if product.cta_c %}
-        <a href="{{ product.cta_c.url }}" class="product-cta" title="{{ product.cta_c.title }}">{{ product.cta_c.text }}</a>
+        {% if product.cta[2] %}
+        <a href="{{ product.cta[2].url }}" class="cta" title="{{ product.cta[2].text }}">{{ product.cta[2].text }}</a>
         {% endif %}
     </div>
     {% endfor %}

@@ -26,8 +26,8 @@ CTAs always carry a 2px solid border of the opposite twin primary for guaranteed
 
 | Element | Background | Text | Border (2px solid) |
 |---------|------------|------|---------------------|
-| CTA-1 (primary) | `#F0FFFF` (azure) | `#003060` (navy) | `#003060` |
-| CTA-2 (secondary) | `#003060` (navy) | `#F0FFFF` (azure) | `#F0FFFF` |
+| `.cta` (primary) | `#F0FFFF` (azure) | `#003060` (navy) | `#003060` |
+| `.cta--secondary` | `#003060` (navy) | `#F0FFFF` (azure) | `#F0FFFF` |
 
 ### CTA Variables
 

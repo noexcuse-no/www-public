@@ -57,8 +57,10 @@ json_ld:
       - type: "Thing"
         name: "Kulturutvikling"
 cta:
-  heading: "Få kartlagt organisasjonskulturen i ledergruppen"
-  body: "Ledelse 60:2 inneholder spørsmål som kartlegger kulturen fra flere perspektiver — inkludert Logans kulturstadier, psykologisk trygghet og gapet mellom formelle og reelle verdier. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "organisasjonskultur"
 questions_title: "Spør din LLM om organisasjonskultur"
 questions:

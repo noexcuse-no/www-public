@@ -15,22 +15,8 @@ hero:
   alt: "Ledelse 60:2"
   title: "Ledelse 60:2"
   intro: "Enkel, kunnskapsbasert orientering for ledergruppen. 60 spørsmål på 2 timer."
-  cta_text: "Bestill uforpliktende samtale"
-  cta_url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
 hero_effect: parallax-fade
 stat_bridge: "4 perspektiver · 60 spørsmål · 2 timer"
-cta_a:
-  text: "Bestill Ledelse 60:2"
-  title: "Bestill Ledelse 60:2"
-  url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-cta_b:
-  text: "Les mer →"
-  title: "Les mer om Ledelse 60:2"
-  url: "/ledelse-60-2/"
-cta_c:
-  text: "Book en uforpliktende samtale"
-  title: "Book en uforpliktende samtale"
-  url: "https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no"
 benefits:
   - title: "Bedre ledelse uten byråkrati"
     description: "Styrk den tillitsbaserte ledelsen fremfor rutiner og skjema. Dyrk engasjement og eierskap blant ansatte, ikke regler og regimer."
@@ -94,8 +80,12 @@ json_ld:
             name: "Katalysator"
             description: "Kontinuerlig oppfølging og coaching for organisasjonsvekst"
 cta:
-  heading: "Bestill en uforpliktende samtale"
-  body: "Vi finner ut om Ledelse 60:2 er rett for dere. Ingen binding, ingen salgspitch — bare en ærlig vurdering."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer →"
+    url: "/ledelse-60-2/"
+  - text: "Book en uforpliktende samtale"
+    url: "https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no"
 ---
 
 ## Hva er Ledelse 60:2?

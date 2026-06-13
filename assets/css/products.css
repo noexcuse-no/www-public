@@ -308,7 +308,7 @@
         display: block;
     }
 
-    .benefit-card .product-cta {
+    .benefit-card .cta {
         margin: 0 var(--space-lg) var(--space-lg);
         width: auto;
         align-self: stretch;
@@ -338,7 +338,7 @@
     }
 }
 
-.benefit-card .product-cta {
+.benefit-card .cta {
     margin: 0 var(--space-lg) var(--space-lg);
     align-self: flex-start;
 }

@@ -91,12 +91,17 @@ section
 ```
 
 ### CTA-seksjon
+
+CTA-knapper defineres via `cta`-lista i frontmatter (se `.specs/cta-frontmatter/README.md`). Hver komponent rendrer et antall knapper basert på plass:
+
+- Hero: `cta[0]` som `.cta` (Type A)
+- Sidebar: `cta[0]` + `cta[1]` som `.cta` + `.cta--secondary`
+- Produktkort: Henter `cta` fra produktets frontmatter
+
 ```
-section.section--spacious
-  └─ container.container--narrow
-       ├─ h2 (stor)
-       ├─ p (intro)
-       └─ a (knapp)
+.cta-buttons
+  ├─ a.cta          (primary)
+  └─ a.cta--secondary (secondary)
 ```
 
 ## Page Templates (Jekyll layouts)
@@ -123,7 +128,8 @@ section.section--spacious
 - `show_toc: false` — hides the left sidebar TOC (used by Emne page)
 - `hero:` — activates the full article layout (without `hero:`, content renders bare)
 - `frame_id:` — loads `perspektiv-styles.css` (no longer affects layout structure)
-- `questions:` / `cta:` — populate the right sidebar sections
+- `questions:` — populate the right sidebar questions section
+- `cta:` — CTA button list (consumed by hero, sidebar, and mobile sections)
 
 **Mobile:** Collapsible TOC inline at the top of `article-body`. The CTA section renders within `article-body` (hidden on wide, shown on narrow). The questions sidebar and gutter elements are hidden on narrow screens.
 
@@ -133,7 +139,7 @@ section.section--spacious
 ── .article-body
     └─ {{ content }}  ← Markdown med {% include products.html %}
 ```
-Produktlayout for `class:product`- og `class:step`-sider. Benytter `products.html`-include for å rendre produktkort, fordeler og steg basert på frontmatter-felt som `benefits`, `process_steps`, `cta_a/b/c`.
+Produktlayout for `class:product`-sider. Benytter `products.html`-include for å rendre produktkort, fordeler og steg basert på frontmatter-felt som `benefits`, `process_steps`, `cta`. CTA-knappene konsumeres av produktets hero og footer.
 
 ### `home.html` — Forside
 ```

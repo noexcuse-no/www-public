@@ -77,8 +77,10 @@ hero:
   intro: "De fleste ledere ser verden gjennom ett filter. De beste ser gjennom fire — og vet hvilket som passer når. Multiframe thinking er ikke teori, det er en ferdighet."
 
 cta:
-  heading: "Få kartlagt ledergruppens perspektivbredde"
-  body: "Ledelse 60:2 kartlegger ikke bare hva ledergruppen din mener — den avdekker hvilke perspektiver som dominerer og hvilke som mangler. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "multiframe-kapabilitet"
 questions_title: "Spør din LLM om multiframe-kapabilitet"
 questions:

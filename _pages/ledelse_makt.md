@@ -55,8 +55,10 @@ json_ld:
       - type: "Thing"
         name: "Organisasjonskultur"
 cta:
-  heading: "Få kartlagt ledergruppens makt- og tjenestebalanse"
-  body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvor ledergruppen din sitter på spekteret mellom makt og tjeneste, og gir dere et felles språk for å snakke om dynamikken. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "makt og tjeneste"
 questions_title: "Spør din LLM om makt og tjeneste"
 questions:
