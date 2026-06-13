@@ -10,27 +10,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **HTML→MD refactor — Page content migration**: Extracted all inline HTML from 22 `_pages/*.md` files into includes and markdown body. Created 20 new `_includes/` components (benefit-cards, step-cards, cases-cards, frame-cards, grc-perspective-cards, science-section, ethics-columns, science-highlight, science-quote, science-divider, section-illustration, framework-illustration, section-wrapper, section-container, info-box, challenge-card, challenge-grid, question-list, cta-section, tag-cloud, avtate-section, about-values, about-section, about-team, kotter-flow). Consolidated CTA, Hero, Section patterns (Phase 3). Inline styling tags (`<a class="product-cta">`, `<p class="lead">`) converted to kramdown IAL syntax in captures with `markdownify_body` support.
 
-## [Unreleased]
+## [1.10.0] - 2026-06-13
 
 ### Added
 - **Newsletter signup form (F4a)**: Email collection with GDPR consent checkbox, shown on article pages and homepage. MVP: client-side localStorage with localStorage approach, ready for API backend replacement. New files: `_includes/newsletter-signup.html`, `assets/css/components/newsletter.css`, `assets/scripts/newsletter.js`, `_data/newsletter-subscribers.json`.
 - **Privacy policy page**: `/personvern/` GDPR-compliant privacy declaration covering newsletter and contact form data processing, rights, and consent. New file: `_pages/personvern.md`.
+- **Product banner image in sidebar CTA**: On article pages with CTAs, the `.sidebar-cta` now discovers the first product page via `site.pages | where: "class", "product" | first` and renders its image as a `.sidebar-cta-banner` above the CTA buttons.
 
 ### Changed
 - **Article sidebar restructure — TOC left, questions right**: Moved auto-generated TOC from right sidebar into left `.article-pager` (alongside cross-links). Moved review-questions into new right `.article-questions` sidebar. Updated CSS grid layout and JS injection targets. Removed old `.article-sidebar` class entirely.
 - **Homepage cleanup — remove sidebar, stat-bridge, article-feed**: Stripped `.home-layout` grid, removed `.home-sidebar` and `sidebar-home.html` include. Removed `stat-bridge.html` and `article-feed.html` includes. Restored product section frontmatter (`cta_a`, `cta_b`, `cta_c`, `benefits`, `process_steps`) to `ledelse_60-2.md` to render CTA buttons, 2×2 benefits grid, and process steps on homepage. Added `frame-cards.html` for perspektiver card grid.
 - **Navbar mobile overlay — featured link inside burger menu**: Moved "Ledelse 60:2" featured CTA pill into `.nav-links` unconditionally so it renders inside the mobile burger menu overlay. Fixed overlay link text colors (was inheriting azure-on-white, now uses `--text-color-light`/`--text-color-dark`).
 - **CTA buttons — full-width on mobile**: Widened mobile breakpoint from 599px to 768px. `.cta-buttons-row` stacks vertically. Benefit card CTAs stretch full-width with `align-self: stretch`.
-
-### Changed
 - **CTA frontmatter redesign — list format + `.cta` class rename**: Consolidated four legacy CTA conventions (`cta: {heading, body}`, `cta_a/b/c`, `hero.cta_text/url`) into a single `cta: [{text, url}]` list across 16 pages. Renamed CSS class `.product-cta` → `.cta` in 7 CSS files and 8 HTML includes (`.product-cta-footer` container class kept). Updated `hero.html` and `products.html` to read from list index. Deleted `_includes/cta-section.html` and removed its includes from `home.html`/`product.html`. Added `.cta--small`, `.cta--large`, `.cta--spaced`, `.cta--secondary` modifiers.
 - **Article sidebar restructure — logo in pager, burger as "Meny" pill, sparkle hover**: Moved site logo into left `.article-pager` header (sticky). Moved burger button into right `.article-questions` sidebar as full-width `.burger-pill` button. Removed `.article-gutter-left`/`.article-gutter-right` grid areas. Added `.pager-header`/`.pager-scroll` for independent logo/TOC scrolling. Removed `<details class="toc-collapsible">` and all associated CSS. Added product banner image to sidebar CTA. Sparkle emoji now only visible on hover/click via CSS opacity transition. Removed all Liquid comment lines from `article.html`.
 - **Nav overlay — global across all screen sizes**: Moved `.nav-overlay` styles outside mobile media query so clicking burger/Meny opens a full-screen modal on any screen size. Updated `navbar.js` to also select `.burger-pill` as a nav toggle. Fixed duplicate `.nav-toggle` rule in mobile media query.
 
-### Added
-- **Product banner image in sidebar CTA**: On article pages with CTAs, the `.sidebar-cta` now discovers the first product page via `site.pages | where: "class", "product" | first` and renders its image as a `.sidebar-cta-banner` above the CTA buttons.
-
 ### Removed
+- **/kontakt/ page and cross-links**: Deleted `_pages/kontakt.md`, removed `/om-oss/ → /kontakt/` cross-link from `om_oss.md`. The contact form feature (F4b) is removed in favor of direct booking via Outlook.
 - **`_includes/cta-section.html`**: No longer needed — replaced by inline list-based CTA rendering in `article.html` and the new sidebar CTA layout.
 
 ### Changed
@@ -44,13 +41,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Perspektiv & Makt section illustrations (R29)**: 14 T3 section images for Perspektiv and 2 T3 for Makt — generated via GPT Image 2 (EvoLink), 1360×768 WebP, ≤80KB each. Inserted at H3 sections in `_pages/ledelse_perspektiv.md` and H2 sections in `_pages/ledelse_makt.md`. All prompts documented in `.design/graphics.md`. T4 card images deferred (optional per spec).
 - **CSS modularization (I2 Phase 3+5)**: Extracted 6 distinct concerns from `article.css` and `products.css` into component files (`tag-cloud.css`, `footnotes.css`, `cta-section.css`, `sticky-cta.css`, `stat-bridge.css`, `step-timeline.css`). Updated `_includes/styles.html` with new component links in correct cascade order. Updated `.design/css-architecture.md` with current file structure (27 files, ~3746 lines). Pre-existing stylelint warning in `card.css` (unclosed `@media` block) noted.
 - **Spec/design integrity audit (I1)**: Reorganized `.specs/` — archived 24 completed specs to `.specs/archive/`, moved 5 content research dirs (`shared/`, `ledelse-60-2/`, `grc/`, `generativ-ki/`, `frames/`) to `.research/`, renamed 4 gap-analysis specs (`homepage-gaps`→`homepage-overhaul`, `om-oss-gaps`→`om-oss-forbedringer`, `conversion-gaps`→`conversion-infrastructure`, `missing-landing-pages`→`topical-landing-pages`). Fixed stale references in `.specs/partners/README.md` and `.specs/cases/README.md` (collection→page-class model). Archived 4 superseded design docs (`review-questions.md`, `citation-enhancement.md`, `c2pa-cc0-licensing.md`, `visual-polish-r23.md`) to `.design/archive/`. Updated `.design/codebase-integrity.md` with completion state.
-
-### Changed
 - **Step pages + `/om-metode/` redirect (R25+R31)**: Moved step pages from `_pages/` root to `_steps/` collection with permalinks under `/samtale/`, `/intervju/`, `/rapport/`. Created `/metode/` as canonical hub with `_layouts/metode.html` redirecting `/om-metode/` → `/metode/`. Frame navigation across step pages. Removed orphaned `_includes/step-navigation.html`, `usikkerhet-broken-link.html`.
 - **Mobile header reposition (R28)**: Moved `.nav-toggle` out of `<nav>` into `.banner` so burger and logo share a flex row on mobile. Removed `flex-wrap: wrap` and `flex-direction: column` on mobile header. Single-line header.
 
 ### Removed
 - **Orphaned includes cleanup (R31)**: `_includes/step-navigation.html`, `_includes/usikkerhet-broken-link.html` — no longer referenced after step page restructure.
+
+## [Unreleased]
 
 - **Provenance pipeline (Z2.1–Z2.5)**: End-to-end AI-generated content disclosure system:
   - **Z2.1 — Provenance JSON-LD**: `_includes/provenance-jsonld.html` injects `digitalSourceType` `TrainedAlgorithmicMediaDigitalSource` and `license` `CC0-1.0` as standalone JSON-LD `WebPage` block on every page. Respects `page.provenance` frontmatter override (`ai`/`editorial`/`human`). Wired into `_layouts/default.html` after `json-ld.html`.
