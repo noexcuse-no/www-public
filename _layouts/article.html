@@ -8,11 +8,18 @@ layout: default
 {% if page.hero %}
   {% include hero.html %}
   <div class="article-layout">
+    <div class="logo-top">
+      <a href="/" class="logo-link" aria-label="No Excuse — Hjem">{% include logo-svg.html %}</a>
+    </div>
+
+    <div class="burger-top">
+      <button class="burger-pill" aria-label="Meny" aria-expanded="false">
+        <span class="burger-icon" aria-hidden="true">☰</span> Meny
+      </button>
+    </div>
+
     {% if page.show_toc != false %}
     <aside class="article-pager" aria-label="Relaterte artikler" hidden>
-      <div class="pager-header">
-        <a href="/" class="logo-link" aria-label="No Excuse — Hjem">{% include logo-svg.html %}</a>
-      </div>
       <div class="pager-scroll">
         <div class="js-pager-list"></div>
         {% include sidebar-toc.html %}
@@ -38,17 +45,25 @@ layout: default
       {% endif %}
     </div>
 
-    <aside class="article-questions" aria-label="Spørsmål">
-      <button class="burger-pill" aria-label="Meny" aria-expanded="false">Meny</button>
+    <aside class="article-questions" aria-label="Spørsmål og tilbud">
       {% if page.questions %}
+      <div class="sidebar-card sidebar-card--questions">
         {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
         {% include questions.html title=page.questions_title questions=question_list %}
+      </div>
       {% endif %}
+
       {% if page.cta %}
-      <div class="sidebar-cta">
+      <div class="sidebar-card sidebar-card--product">
         {% assign product = site.pages | where: "class", "product" | first %}
         {% if product and product.image %}
         <img src="{{ product.image | relative_url }}" alt="{{ product.name }}" class="sidebar-cta-banner">
+        {% endif %}
+        {% if product %}
+        <h4 class="sidebar-card-heading">{{ product.name }}</h4>
+          {% if product.short_description %}
+        <p class="sidebar-card-desc">{{ product.short_description }}</p>
+          {% endif %}
         {% endif %}
         {% assign cta_primary = page.cta[0] %}
         {% assign cta_secondary = page.cta[1] %}
