@@ -42,7 +42,7 @@
     flex-shrink: 0;
 }
 
-.product-cta--small {
+.cta--small {
     padding: 10px 20px;
     font-size: 0.9em;
     min-height: 44px;

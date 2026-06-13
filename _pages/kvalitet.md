@@ -29,8 +29,10 @@ json_ld:
       - type: "Thing"
         name: "Kontinuerlig forbedring"
 cta:
-  heading: "Få kartlagt kvalitetsmodenheten i ledergruppen"
-  body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og avdekker hvor kvalitetsarbeidet ditt faktisk har gap. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "kvalitetskultur"
 questions_title: "Spør din LLM om kvalitetskultur"
 questions:

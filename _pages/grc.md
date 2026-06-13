@@ -30,8 +30,10 @@ json_ld:
       type: "Organization"
       name: "No Excuse AS"
 cta:
-  heading: "Få kartlagt ledergruppens GRC-modenhet"
-  body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer. Resultatet er en tydelig baseline for styring, risikostyring og samsvarsarbeid — uten byråkrati."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "GRC-modenhet"
 questions_title: "Spør din LLM om GRC-modenhet"
 questions:

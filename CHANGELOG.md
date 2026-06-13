@@ -22,8 +22,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Navbar mobile overlay — featured link inside burger menu**: Moved "Ledelse 60:2" featured CTA pill into `.nav-links` unconditionally so it renders inside the mobile burger menu overlay. Fixed overlay link text colors (was inheriting azure-on-white, now uses `--text-color-light`/`--text-color-dark`).
 - **CTA buttons — full-width on mobile**: Widened mobile breakpoint from 599px to 768px. `.cta-buttons-row` stacks vertically. Benefit card CTAs stretch full-width with `align-self: stretch`.
 
+### Changed
+- **CTA frontmatter redesign — list format + `.cta` class rename**: Consolidated four legacy CTA conventions (`cta: {heading, body}`, `cta_a/b/c`, `hero.cta_text/url`) into a single `cta: [{text, url}]` list across 16 pages. Renamed CSS class `.product-cta` → `.cta` in 7 CSS files and 8 HTML includes (`.product-cta-footer` container class kept). Updated `hero.html` and `products.html` to read from list index. Deleted `_includes/cta-section.html` and removed its includes from `home.html`/`product.html`. Added `.cta--small`, `.cta--large`, `.cta--spaced`, `.cta--secondary` modifiers.
+- **Article sidebar restructure — logo in pager, burger as "Meny" pill, sparkle hover**: Moved site logo into left `.article-pager` header (sticky). Moved burger button into right `.article-questions` sidebar as full-width `.burger-pill` button. Removed `.article-gutter-left`/`.article-gutter-right` grid areas. Added `.pager-header`/`.pager-scroll` for independent logo/TOC scrolling. Removed `<details class="toc-collapsible">` and all associated CSS. Added product banner image to sidebar CTA. Sparkle emoji now only visible on hover/click via CSS opacity transition. Removed all Liquid comment lines from `article.html`.
+- **Nav overlay — global across all screen sizes**: Moved `.nav-overlay` styles outside mobile media query so clicking burger/Meny opens a full-screen modal on any screen size. Updated `navbar.js` to also select `.burger-pill` as a nav toggle. Fixed duplicate `.nav-toggle` rule in mobile media query.
+
+### Added
+- **Product banner image in sidebar CTA**: On article pages with CTAs, the `.sidebar-cta` now discovers the first product page via `site.pages | where: "class", "product" | first` and renders its image as a `.sidebar-cta-banner` above the CTA buttons.
+
 ### Removed
-- **/kontakt/ page and cross-links**: Deleted `_pages/kontakt.md`, removed `/om-oss/ → /kontakt/` cross-link from `om_oss.md`. The contact form feature (F4b) is removed in favor of direct booking via Outlook.
+- **`_includes/cta-section.html`**: No longer needed — replaced by inline list-based CTA rendering in `article.html` and the new sidebar CTA layout.
 
 ### Changed
 - **Step pages content (R25)**: Substantive body text for `/samtale/`, `/intervju/`, `/rapport/` step pages — expanded leads, what-happens sections, why-it-matters, prerequisites, CTAs. Uses uniform frontmatter schema (hero, intro_text, steps, prerequisites, cta, meta).

@@ -6,6 +6,8 @@ Define the visual design rules for Call-to-Action buttons across the No Excuse w
 
 **Backlog references:** D2 (CTA hover effects), C4 (visitor flow / CTA-designsystem), .design/components.md, .design/colors.md
 
+> **Frontmatter schema:** See `.specs/cta-frontmatter/README.md` for how CTAs are defined in page frontmatter, consumed by templates, and discovered by product cards. This spec covers visual styling only.
+
 ---
 
 ## Type A / Type B System
@@ -59,7 +61,7 @@ Når to CTA-knapper vises sammen:
     venstre             høyre
 ```
 
-- **Maks 2 CTA-knapper per rad.** Ingen unntak.
+- **Maks 2 CTA-knapper per rad i sidepanel og hero.** Per komponent-grense, ikke dataschema-begrensning.
 - Type A er alltid til venstre (eller øverst på mobil).
 - Type B er alltid til høyre (eller nederst på mobil).
 - Hold avstand: minimum `--space-md` (16px) mellom knappene.
@@ -82,9 +84,11 @@ Når kun én CTA vises (f.eks. bunn av side):
 
 ## CSS-klasser
 
+**Note:** CSS classes are being renamed as part of the frontmatter unification (`.specs/cta-frontmatter/README.md`). The visual properties below remain unchanged — only the class names change.
+
 ```css
 /* Base CTA — shared by both types */
-.product-cta {
+.cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -99,24 +103,24 @@ Når kun én CTA vises (f.eks. bunn av side):
 }
 
 /* Type A — Primary */
-.product-cta {
+.cta {
     background-color: #F0FFFF;
     color: #003060;
     border-color: #003060;
 }
-.product-cta:hover {
+.cta:hover {
     background-color: #003060;
     color: #F0FFFF;
     border-color: #F0FFFF;
 }
 
 /* Type B — Secondary */
-.product-cta--secondary {
+.cta--secondary {
     background-color: #003060;
     color: #F0FFFF;
     border-color: #F0FFFF;
 }
-.product-cta--secondary:hover {
+.cta--secondary:hover {
     background-color: #F0FFFF;
     color: #003060;
     border-color: #003060;
@@ -129,7 +133,7 @@ Når kun én CTA vises (f.eks. bunn av side):
 
 - **`opacity` på hover.** Aldri bruk `opacity`-overganger på CTA-knapper. Bruk fargeoverganger (se Type A/B ovenfor).
 - **`translateY` på hover.** Ingen sveve-effekter som flytter knappen.
-- **Mere enn 2 CTA-knapper i samme rad.** Hvis en tredje handling trengs, plasser den i en egen seksjon nedenfor.
+- **Flere enn komponentens grense i samme rad.** Hver komponent bestemmer selv hvor mange CTA-er den viser. Hvis en tredje handling trengs der kun 2 vises, plasser den i en egen seksjon nedenfor.
 
 ---
 
@@ -137,9 +141,10 @@ Når kun én CTA vises (f.eks. bunn av side):
 
 | Komponent | CTA-bruk | Klasser |
 |-----------|----------|---------|
-| `_includes/cta.html` | To knapper: booking + les mer | `.product-cta` + `.product-cta--secondary` |
-| `_includes/products.html` | `cta_a` (Type A), `cta_b` (Type B), `cta_c` (Type A) | `.product-cta`, `.product-cta--spaced` |
-| Article CTA (perspektiv) | Enkeltstående booking | `.product-cta` (Type A) |
+| Hero CTA | `cta[0]` | `.cta` (Type A) |
+| Sidebar CTA | `cta[0]` + `cta[1]` | `.cta` + `.cta--secondary` |
+| Product card | product.`cta[0]` + `cta[1]` | `.cta` + `.cta--secondary` |
+| Product footer | `cta[2]` | `.cta` (Type A) |
 
 ---
 

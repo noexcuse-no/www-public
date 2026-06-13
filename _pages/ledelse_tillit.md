@@ -94,8 +94,10 @@ json_ld:
           "@type": "Answer"
           text: "De fleste ledere tror de er mer tilgjengelige og gir mer konstruktiv feedback enn de faktisk er. Det er gapet mellom intensjon og opplevelse som er tillitsproblemet. Tillit bygges av konsekvent atferd over tid, ikke av gode intensjoner."
 cta:
-  heading: "Få kartlagt ledergruppens tillitsnivå"
-  body: "Ledelse 60:2 inneholder spørsmål som kartlegger psykologisk trygghet, tillitsbasert kommunikasjon og hvordan ledere faktisk oppfattes. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "tillit"
 questions_title: "Spør din LLM om tillit"
 questions:

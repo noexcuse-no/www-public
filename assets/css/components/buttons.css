@@ -1,7 +1,7 @@
 /* Button and CTA styles — extracted from products, about, article */
 
-/* Product CTA buttons */
-.product-cta {
+/* CTA buttons */
+.cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -18,29 +18,29 @@
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.product-cta:hover {
+.cta:hover {
     background-color: var(--cta-primary-text);
     color: var(--cta-primary-bg);
     border-color: var(--cta-primary-bg);
 }
 
-.product-cta--spaced {
+.cta--spaced {
     margin-left: 16px;
 }
 
-.product-cta--secondary {
+.cta--secondary {
     background-color: var(--cta-secondary-bg);
     color: var(--cta-secondary-text);
     border: 2px solid var(--cta-secondary-border);
 }
 
-.product-cta--secondary:hover {
+.cta--secondary:hover {
     background-color: var(--cta-secondary-text);
     color: var(--cta-secondary-bg);
     border-color: var(--cta-secondary-bg);
 }
 
-.product-cta--large {
+.cta--large {
     padding: 18px 48px;
     font-size: 1.2em;
 }
@@ -73,13 +73,13 @@
         flex-direction: column;
     }
 
-    .product-cta {
+    .cta {
         width: 100%;
         box-sizing: border-box;
         text-align: center;
     }
 
-    .product-cta--spaced {
+    .cta--spaced {
         margin-left: 0;
         margin-top: 12px;
         display: block;

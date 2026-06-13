@@ -30,8 +30,10 @@ json_ld:
       - type: "Thing"
         name: "Ledelse"
 cta:
-  heading: "Få kartlagt ledergruppens sikkerhetskultur"
-  body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og avdekker hvor sikkerhetskulturen faktisk svikter. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "informasjonssikkerhet"
 questions_title: "Spør din LLM om informasjonssikkerhet"
 questions:

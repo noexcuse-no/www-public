@@ -118,12 +118,12 @@
 }
 
 /* Submit button */
-.conversion-form .product-cta {
+.conversion-form .cta {
     align-self: flex-start;
     min-width: 200px;
 }
 
-.conversion-form .product-cta:disabled {
+.conversion-form .cta:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
@@ -223,7 +223,7 @@
         grid-template-columns: 1fr;
     }
 
-    .conversion-form .product-cta {
+    .conversion-form .cta {
         width: 100%;
     }
 }

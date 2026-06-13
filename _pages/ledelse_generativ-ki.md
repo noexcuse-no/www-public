@@ -49,8 +49,10 @@ json_ld:
       - type: "Thing"
         name: "Målstyring"
 cta:
-  heading: "Få kartlagt ledergruppens KI-modenhet"
-  body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan ledergruppen forholder seg til teknologi, endring og menneskelig dømmekraft. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 topic: "KI-ledelse"
 questions_title: "Spør din LLM om KI-ledelse"
 questions:

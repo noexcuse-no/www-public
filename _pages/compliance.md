@@ -31,8 +31,10 @@ json_ld:
       - type: "Thing"
         name: "Integritet"
 cta:
-  heading: "Få kartlagt compliance-kulturen i ledergruppen"
-  body: "Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og avdekker hvor samsvarsarbeidet ditt har reelle gap. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 questions_title: "Spør din LLM om compliance-kultur"
 questions:
   - "Hvem i organisasjonen har reelt ansvar for compliance — og har de faktisk myndighet til å stoppe aktiviteter som bryter med regelverket?"

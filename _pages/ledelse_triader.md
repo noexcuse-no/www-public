@@ -69,8 +69,10 @@ hero:
   title: "Triader — styrken i trekantrelasjoner"
   intro: "To personer er en samtale. Tre personer er et system. Lær hvorfor triader er den mest undervurderte byggesteinen i velfungerende organisasjoner."
 cta:
-  heading: "Få kartlagt ledergruppens relasjonsstruktur"
-  body: "Ledelse 60:2 inneholder spørsmål som kartlegger hvordan relasjoner og informasjon flyter i ledergruppen din — og hvor moden kulturen er for triader. Bestill en uforpliktende samtale for å lære mer."
+  - text: "Bestill uforpliktende samtale"
+    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Les mer om Ledelse 60:2 →"
+    url: "/ledelse-60-2/"
 ---
 
 Tenk på teamet ditt. Hvem snakker med hvem? Hvilke relasjoner er avhengige av at én bestemt person er til stede? Hva skjer med informasjonsflyten når den personen er borte?

@@ -2,21 +2,19 @@
    Wide-Screen Sidebar — Article + Homepage (W1, W2)
    ======================================== */
 
-/* --- Layout Grids --- */
+/* --- Layout Grid --- */
 
-/* Article pages: gutters + left pager + centered content + 320px right sidebar */
+/* Article pages: left pager + centered content + 320px right sidebar */
 .article-layout {
     display: grid;
     grid-template-columns: 1fr 240px minmax(auto, 800px) 320px 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
-        ".       g-left  .       g-right ."
-        ".       pager  content questions .";
+        ". pager content questions .";
 }
 
 /* Place children into grid areas */
-.article-layout > .article-body,
-.article-layout > .article-content-area {
+.article-layout > .article-body {
     grid-area: content;
 }
 
@@ -26,46 +24,6 @@
 
 .article-layout > .article-questions {
     grid-area: questions;
-}
-
-.article-layout > .article-gutter-left {
-    grid-area: g-left;
-}
-
-.article-layout > .article-gutter-right {
-    grid-area: g-right;
-}
-
-/* Gutter sticky containers — logo & burger at top of buffer columns */
-.article-gutter-left .gutter-sticky,
-.article-gutter-right .gutter-sticky {
-    position: sticky;
-    top: var(--space-md);
-}
-
-.article-gutter-left .logo-link {
-    display: block;
-    text-decoration: none;
-    padding: var(--space-sm);
-}
-
-.article-gutter-left .logo-link svg {
-    display: block;
-    height: 50px;
-    width: auto;
-}
-
-.article-gutter-right .nav-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 12px;
-    min-height: 44px;
-    min-width: 44px;
-    margin-left: auto;
 }
 
 /* CTA card inside the questions sidebar — separated by a border */
@@ -82,18 +40,16 @@
 /* --- Left Pager Panel (cross-links) --- */
 
 .article-pager {
+    display: flex;
+    flex-direction: column;
     position: sticky;
     top: calc(var(--header-height, 85px) + var(--space-md, 16px));
     align-self: start;
     max-height: calc(100vh - var(--header-height, 85px) - var(--space-2xl, 40px));
-    overflow-y: auto;
-    overscroll-behavior: contain;
 
     background: var(--box-background-light);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-sm);
-    padding: var(--space-lg);
-    font-size: 0.9em;
 }
 
 .article-pager[hidden] {
@@ -103,6 +59,32 @@
 .dark-mode .article-pager {
     background: var(--box-background-dark);
     box-shadow: var(--shadow-sm-dark);
+}
+
+/* Pager header — logo stays visible at top while pager scrolls */
+.pager-header {
+    flex-shrink: 0;
+    padding: var(--space-lg) var(--space-lg) 0;
+}
+
+.pager-header .logo-link {
+    display: block;
+    text-decoration: none;
+}
+
+.pager-header .logo-link svg {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+/* Pager scrollable content */
+.pager-scroll {
+    flex: 1;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: var(--space-lg);
+    font-size: 0.9em;
 }
 
 /* Cross-link list inside pager */
@@ -288,40 +270,42 @@
     border-left-color: var(--primary-azure);
 }
 
-/* --- TOC Collapsible (Mobile) --- */
+/* --- Burger Pill (wide screens, inside right sidebar) --- */
 
-.toc-collapsible {
-    display: none;
-}
-
-.toc-collapsible summary {
-    font-size: 0.9em;
-    font-weight: 600;
+.burger-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    min-height: 44px;
+    background: var(--box-background-light);
+    border: 2px solid var(--border-color-light);
+    border-radius: 999px;
     cursor: pointer;
-    padding: var(--space-sm) var(--space-md);
-    background: var(--surface-subtle-light);
-    border-radius: var(--radius-md);
-    user-select: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    color: var(--text-color-light);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin-bottom: var(--space-md);
+    box-shadow: var(--shadow-sm);
 }
 
-.toc-collapsible summary:hover {
+.burger-pill:hover {
     background: var(--surface-hover-light);
+    color: var(--link-hover-light);
 }
 
-.dark-mode .toc-collapsible summary {
-    background: var(--surface-subtle-dark);
+.dark-mode .burger-pill {
+    background: var(--box-background-dark);
+    border-color: var(--border-color-dark);
+    color: var(--text-color-dark);
+    box-shadow: var(--shadow-sm-dark);
 }
 
-.dark-mode .toc-collapsible summary:hover {
+.dark-mode .burger-pill:hover {
     background: var(--surface-hover-dark);
-}
-
-.toc-collapsible[open] summary {
-    margin-bottom: var(--space-sm);
-}
-
-.toc-collapsible .toc-list {
-    padding-left: var(--space-md);
+    color: var(--link-hover-dark);
 }
 
 /* --- Sidebar CTA (Compact) --- */
@@ -345,7 +329,7 @@
     gap: var(--space-sm);
 }
 
-.sidebar-cta .cta-buttons .product-cta {
+.sidebar-cta .cta-buttons .cta {
     padding: var(--space-sm) var(--space-md);
     font-size: 0.85em;
     text-align: center;
@@ -432,6 +416,30 @@
     font-size: 1em;
 }
 
+/* --- Sidebar CTA banner image --- */
+
+.sidebar-cta-banner {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+}
+
+/* --- Sparkle: visible only on hover/focus/click --- */
+
+.review-questions li .sparkle-icon {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.review-questions li:hover .sparkle-icon,
+.review-questions li:focus .sparkle-icon,
+.review-questions li:active .sparkle-icon {
+    opacity: 1;
+}
+
 /* --- Responsive: hide sidebars on narrow screens --- */
 
 @media (max-width: 1199px) {
@@ -440,16 +448,8 @@
     }
 
     .article-pager,
-    .article-questions,
-    .article-gutter-left,
-    .article-gutter-right {
+    .article-questions {
         display: none;
-    }
-
-    /* Show collapsible TOC at top of article body */
-    .toc-collapsible {
-        display: block;
-        margin-bottom: var(--space-lg);
     }
 }
 
@@ -460,11 +460,6 @@
        (they render in sidebar instead) */
     .article-body .review-questions,
     .article-body > .cta-section {
-        display: none;
-    }
-
-    /* Hide collapsible TOC on wide screens */
-    .toc-collapsible {
         display: none;
     }
 }
