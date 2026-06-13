@@ -106,40 +106,38 @@ CTA-knapper defineres via `cta`-lista i frontmatter (se `.specs/cta-frontmatter/
 
 ## Page Templates (Jekyll layouts)
 
-### `article.html` — Artikler og perspektivsider (unified)
+### `article.html` — Artikler, perspektivsider og produktsider (unified)
 ```
 ── hero (if page.hero)
-── .article-layout (CSS grid: 1fr 240px 800px 320px 1fr)
-    ├── .article-gutter-left (.gutter-sticky)   ← logo-link (wide screens only)
-    ├── .article-pager                          ← sidebar-toc (if show_toc != false)
-    ├── .article-body
+── stat-bridge (if page.stat_bridge)         ← "4 perspektiver · 60 spørsmål · 2 timer"
+── .article-layout (CSS grid: pager | body | questions)
+    ├── .article-pager                       ← sidebar-toc + share-section (if show_toc != false)
+    ├── .article-body                        ← container--wide
     │   ├── {{ content }}
-    │   └── cta-section (if page.cta, hidden on wide screens)
-    ├── .article-questions
-    │   ├── questions.html (if page.questions)
-    │   └── .sidebar-cta (if page.cta, compact card)
-    └── .article-gutter-right (.gutter-sticky)  ← nav-toggle (wide screens only)
+    │   └── cta-buttons (if page.cta, shown on narrow screens)
+    └── .article-questions
+        ├── questions.html (if page.questions, collapsible sidebar card)
+        └── .sidebar-card--product (if page.cta, compact product card with banner + CTA)
 ── cases-cards (if page.show_cases)
 ── references (if page.show_references)
 ```
-**Unified layout for all `article`- and `frame`-class pages.** The 5-column CSS grid renders: logo in the left buffer gutter, TOC in the left sidebar, content centered, questions + CTA card in the right sidebar, burger button in the right buffer gutter. On narrow screens (<1200px) the grid collapses to block and sidebars hide.
+**Unified layout for `article`-class pages**, including the Ledelse 60:2 product page (class:product, layout:article). The 3-area CSS grid renders: TOC + share in the left pager, content centered, questions + product CTA card in the right sidebar. On narrow screens (<1200px) the grid collapses to block and sidebars hide.
 
 **Control knobs:**
+- `stat_bridge:` — renders a stat line (`stat-bridge.html`) between hero and article-layout
 - `show_toc: false` — hides the left sidebar TOC (used by Emne page)
 - `hero:` — activates the full article layout (without `hero:`, content renders bare)
-- `frame_id:` — loads `perspektiv-styles.css` (no longer affects layout structure)
-- `questions:` — populate the right sidebar questions section
-- `cta:` — CTA button list (consumed by hero, sidebar, and mobile sections)
+- `frame_id:` — loads `perspektiv-styles.css`
+- `questions:` + `questions_title:` — populate the right sidebar collapsible question section
+- `cta:` — CTA button list (consumed by hero, sidebar, and inline sections)
 
-**Mobile:** Collapsible TOC inline at the top of `article-body`. The CTA section renders within `article-body` (hidden on wide, shown on narrow). The questions sidebar and gutter elements are hidden on narrow screens.
+**Mobile:** The `.article-layout` grid collapses to single column. The `.article-pager` and `.article-questions` sidebars are hidden on narrow screens. CTA buttons render inline at the bottom of `.article-body`.
 
-### `product.html` — Produkt- og stegsider
+### `product.html` — Orphaned (erstattet av article.html)
 ```
-── hero (if page.hero)
-── .article-body
-    └─ {{ content }}  ← Markdown med {% include products.html %}
+── (ingen gjenværende sider bruker dette layoutet)
 ```
-Produktlayout for `class:product`-sider. Benytter `products.html`-include for å rendre produktkort, fordeler og steg basert på frontmatter-felt som `benefits`, `process_steps`, `cta`. CTA-knappene konsumeres av produktets hero og footer.
+Tidligere produktlayout for `class:product`-sider. Den eneste produktsiden (`_pages/ledelse_60-2.md`, `class: product`) bruker nå `layout: article`. `_layouts/product.html` kan fjernes ved neste opprydding.
 
 ### `home.html` — Forside
 ```

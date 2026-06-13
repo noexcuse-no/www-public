@@ -1,17 +1,17 @@
 # Ledelse 60:2 — UI/UX Improvements
 
 > Created: 2026-06-08
-> Status: Ready
-> Backlog References: U1–U10
+> Status: Done (all items implemented)
+> Backlog References: U1–U13
 
 ## Problem / Goal
 
 The `/ledelse-60-2/` product page has several structural and visual issues that hurt conversion and user experience: no primary CTA in the hero, unstyled CTAs in the body, missing section headers between card grids, redundant CTA sections, thin footer navigation, and weak visual hierarchy for the process steps. These 10 items address the full set of layout, interaction, and information hierarchy problems identified in an audit.
 
-## Scope
+## Scope (original)
 
 - `_pages/ledelse_60-2.md` — hero frontmatter, content sections, CTAs, image alt text
-- `_layouts/product.html` — layout-level changes for sticky CTA, hero CTA slot, section structure
+- `_layouts/product.html` → senere migrert til `_layouts/article.html` (PR #181)
 - `_includes/hero.html` — optional CTA slot in hero overlay
 - `assets/css/products.css` — hero CTA, stat bridge, sticky bar, step timeline styles
 - `assets/css/footer.css` — footer nav link styles
@@ -95,7 +95,10 @@ The `/ledelse-60-2/` product page has several structural and visual issues that 
 - U11 (sticky bar) is the most involved — needs JS for scroll detection, IntersectionObserver for footer overlap, and CSS for fixed positioning
 - U13 (timeline) involves the most layout restructuring for the card grid
 
-## Open Decisions
+## Post-Spec Evolution
 
-- U11: Should the sticky bar use a CSS-only approach (simple `position: sticky` on a wrapper) or JS with IntersectionObserver? JS gives more control over dismissal timing. Recommend JS.
-- U13: Should the step cards remain as a `<div class="card-grid">` with modified CSS, or should a separate `_includes/process-timeline.html` be created? Recommend modifying card grid CSS with a new variant class.
+This spec's items were implemented across multiple PRs. Two later changes superseded parts of the original spec:
+
+1. **U11 (sticky CTA) → replaced by inline CTA (PR #180).** The `sticky-cta.html` include, JS, and CSS were removed and replaced with `_includes/cta-inline.html` — a normal-flow card that renders product CTAs at transition points in page content. No fixed/sticky positioning.
+
+2. **`_layouts/product.html` → `_layouts/article.html` (PR #181).** The Ledelse 60:2 page migrated from the old product layout to the unified article layout. This gave the page access to the 3-column sidebar system (auto-TOC, questions in sidebar, product CTA card) via `_layouts/article.html`.
