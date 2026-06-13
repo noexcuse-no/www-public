@@ -34,7 +34,10 @@
                     <span>{{ profile.email }}</span>
                 </a>
             </div>
-            <button class="profile-expand-btn" aria-label="Vis detaljer om {{ profile.name }}">Les mer →</button>
+            <div class="profile-ctas">
+                <a href="{{ profile.booking_url }}" class="cta" target="_blank" rel="noopener">Book en samtale</a>
+                <button class="cta cta--secondary" type="button" aria-label="Vis detaljer om {{ profile.name }}">Les mer</button>
+            </div>
         </div>
         <div class="profile-expanded" id="profile-expanded-{{ forloop.index }}">
             <div class="profile-modal-content">

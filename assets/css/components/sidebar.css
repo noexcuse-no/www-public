@@ -305,11 +305,24 @@
     opacity: 1;
 }
 
-/* --- Share Section --- */
+/* --- Share Section (visually distinct card) --- */
 
 .sidebar-section--share {
     margin-top: var(--space-lg);
-    padding-top: var(--space-lg);
+    padding: var(--space-lg);
+    background: var(--box-background-light);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    border-bottom: none;
+}
+
+.dark-mode .sidebar-section--share {
+    background: var(--box-background-dark);
+    box-shadow: var(--shadow-sm-dark);
+}
+
+.sidebar-section--share h3 {
+    margin-bottom: var(--space-sm);
 }
 
 .share-buttons {
