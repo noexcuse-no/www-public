@@ -1,0 +1,89 @@
+/* ========================================
+   Hero Carousel Navigation
+   Three circle buttons at bottom of hero:
+   ◀ (prev)  ▼ (scroll)  ▶ (next)
+   ======================================== */
+
+/* --- Container --- */
+.carousel-nav {
+    position: absolute;
+    bottom: var(--space-lg);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 3;
+    pointer-events: none; /* let clicks pass through container */
+}
+
+.carousel-nav > * {
+    pointer-events: auto; /* restore clicks on buttons */
+}
+
+/* --- Circle Buttons --- */
+.carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-navy);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+.carousel-btn:hover {
+    background: #fff;
+    color: var(--primary-azure);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+}
+
+/* Dark mode */
+.dark-mode .carousel-btn {
+    background: rgba(30, 30, 40, 0.85);
+    color: var(--text-color-dark);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .carousel-btn:hover {
+    background: rgba(50, 50, 65, 0.95);
+    color: var(--link-hover-dark);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Scroll-up button: transitions to fixed/sticky --- */
+.carousel-btn--scroll {
+    /* Slightly larger center button */
+    width: 48px;
+    height: 48px;
+}
+
+/* Affixed state — fixed to bottom-right when hero is scrolled past */
+.carousel-btn--scroll.is-affixed {
+    position: fixed;
+    bottom: var(--space-lg);
+    right: var(--space-lg);
+    transform: none;
+    z-index: 100;
+    animation: carousel-fade-in 0.3s ease;
+}
+
+@keyframes carousel-fade-in {
+    from { opacity: 0; transform: scale(0.8); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* Hide old scroll-indicator when carousel is present */
+.hero .scroll-indicator {
+    display: none;
+}
