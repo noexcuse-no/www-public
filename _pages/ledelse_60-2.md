@@ -54,6 +54,7 @@ process_steps:
     url: "/rapport/"
 image: "assets/images/hero-illustration.webp"
 tags: "#ledelse #orientering #analyse #ledelse60-2"
+product_tag: ledelse-60-2
 json_ld:
   - type: "Service"
     name: "Ledelse 60:2"

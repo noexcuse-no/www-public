@@ -22,38 +22,39 @@ From the website gap analysis (April 2026):
 
 ## Implementation Plan
 
-### Phase 1: Case Intake Process Design
-### Phase 1: Case Intake Process Design (missing — this must be done first)
+### Phase 1: Case Intake Process Design (done)
 
-Before any content can be created, a process for gathering and writing customer cases must be designed. This covers:
+The intake toolkit lives at `.research/case-intake-toolkit.md` with:
+1. **Customer Scorecard** — rate prospects on impact, attribution, willingness, relatability (1-5, target ≥ 12)
+2. **Interview Script** — 12 structured questions with follow-ups, after-interview checklist
+3. **Writing Template** — Situation → Challenge → Solution → Result → Quote, 4 title formulas
+4. **Approval Workflow** — visual flow, sign-off email template, anonymization table
 
-**1. Customer identification**
-- Who to approach: current/former clients with measurable outcomes
-- Criteria for a good case: clear before/after, attributable to No Excuse's intervention, customer willing to speak on record
-- Priority order: biggest impact → most relatable → most recent
+Actual `_pages/*.md` case files come in Phase 3.
 
-**2. Interview template**
-- What questions to ask the customer (e.g.: What was the situation before? What specific challenge did you face? What changed after working with us? What would you say to another leader considering this?)
-- How to capture measurable results (metrics, time saved, revenue impact, team feedback)
-- Permission to publish — verbal + written consent flow
-- Anonymization options if customer prefers (remove company name, generalize industry, use pseudonym)
+### Phase 2: Schema & Infrastructure (done)
 
-**3. Case writing template**
-- Title formula: "[Verb] + [noun] hos [customer]" or "Slik [result] med [method]"
-- Structure: Situation → Challenge → Solution → Result → Quote
-- Length guideline: 200–400 words for a card case, 600–1000 for a full case page
-- Result field: always a single, specific, measurable outcome
-- Image: optional banner illustration or logo
+**Data model update:** Cases now support `product_tags` frontmatter for product-page filtering:
 
-**4. Approval workflow**
-- Draft → internal review → customer review → sign-off → publish
-- Who reviews: internal SME first, customer contact second
-- Turnaround target: 1 week per full cycle
+```yaml
+---
+class: case
+published: true
+title: "Tittel"                           # required
+description: "Kort beskrivelse"           # required
+image: "assets/images/case-bilde.webp"   # optional
+result: "30 % reduksjon i sykefravær"     # optional
+customer: "Kundenavn AS"                  # optional
+product_tags:                             # optional — for product-page filtering
+  - ledelse-60-2
+---
+```
 
-The output of this phase is a reusable process (documented as a checklist or SOP) that makes it easy to produce new cases consistently. The intake toolkit lives at `.research/case-intake-toolkit.md` with a ready-to-use scorecard, interview script, writing template, and sign-off form. The actual `_pages/*.md` files come in Phase 2.
-The output of this phase is a reusable process (documented as a checklist or SOP) that makes it easy to produce new cases consistently. The actual `_pages/*.md` files come in Phase 2.
+`_includes/cases-cards.html` accepts an optional `product_tag` parameter. When provided, only cases whose `product_tags` array contains the matching value are rendered. Used on product pages via `{% include cases-cards.html product_tag=page.product_tag %}`.
 
-### Phase 2: Schema & Infrastructure (existing — complete)
+CSS styling lives in `assets/css/products.css` (`.landing-cases`, `.landing-cases-grid`, `.case-card`, `.case-result`, `.case-customer` classes).
+
+### Phase 3: Content Population (pending)
 
 - **Data model**: Page-class — `site.pages where: "class", "case"`. No `_config.yml` collection (removed in I2 Phase 4). New cases are `_pages/*.md` with `class: case`.
 - `_includes/cases-cards.html` exists with a loop rendering `title`, `description`, `result`, `customer` — included from `_layouts/article.html` (line 53)
