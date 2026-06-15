@@ -82,7 +82,7 @@ Completed items belong in `CHANGELOG.md` only.
 | G2 | **Om Oss improvements (F2)** — methodology link to /metode/, PostalAddress in JSON-LD. See `.specs/om-oss-gaps/README.md`. | Done | PR #153 |
 | G3 | **Topical landing pages (F3)** — Organisasjonskultur (P0), Informasjonssikkerhet (P0), Endringsledelse (P1), Risikostyring (P1), Kvalitetsledelse (P2), Bærekraft/ESG (P2), Compliance (P2). See `.specs/topical-landing-pages/README.md`. | Done | PR #160 |
 | G4 | **Conversion infrastructure (F4)** — email capture (F4a), contact form (F4b), step page enrichment (F4c, done via R25), article recommendations (F4d, future). All via MVP JSON-file storage. See `.specs/conversion-infrastructure/README.md`. | Doing | G1, G2, G3 (all contribute to the funnel) |
-| C1 | **Customer case intake & planning** — Identify 1–3 real cases with customer sign-off. Create case entries in `_cases/`. | Planned | — |
+| C1 | **Customer case intake & planning** — Intake toolkit ready at `.research/case-intake-toolkit.md` (customer scorecard, interview script, writing template, approval workflow). Next: identify 1–3 real cases and conduct interviews with customer sign-off. | Doing | — |
 | C2 | **Case presentation design** — Wire `_includes/cases.html` with populated cases. Verify product-tag filtering. | Planned | C1 |
 | C3 | **Case content creation** — Write full case descriptions with measurable results (anonymized if needed). Norwegian Bokmål. | Planned | C1, C2 |
 | C4 | **Visitor flow / inbound sales journey** — Integrate cases into site nav (Om Oss cross-link, homepage section, product page filtering, article recommendations). See `.specs/cases/README.md` and `.specs/inbound-sales/README.md`. | Planned | C1, C2, C3 |

@@ -22,7 +22,36 @@ From the website gap analysis (April 2026):
 
 ## Implementation Plan
 
-### Phase 1: Schema & Infrastructure (existing — complete)
+### Phase 1: Case Intake Process Design
+
+Before any content can be created, a process for gathering and writing customer cases must be designed. This covers:
+
+**1. Customer identification**
+- Who to approach: current/former clients with measurable outcomes
+- Criteria for a good case: clear before/after, attributable to No Excuse's intervention, customer willing to speak on record
+- Priority order: biggest impact → most relatable → most recent
+
+**2. Interview template**
+- What questions to ask the customer (e.g.: What was the situation before? What specific challenge did you face? What changed after working with us? What would you say to another leader considering this?)
+- How to capture measurable results (metrics, time saved, revenue impact, team feedback)
+- Permission to publish — verbal + written consent flow
+- Anonymization options if customer prefers (remove company name, generalize industry, use pseudonym)
+
+**3. Case writing template**
+- Title formula: "[Verb] + [noun] hos [customer]" or "Slik [result] med [method]"
+- Structure: Situation → Challenge → Solution → Result → Quote
+- Length guideline: 200–400 words for a card case, 600–1000 for a full case page
+- Result field: always a single, specific, measurable outcome
+- Image: optional banner illustration or logo
+
+**4. Approval workflow**
+- Draft → internal review → customer review → sign-off → publish
+- Who reviews: internal SME first, customer contact second
+- Turnaround target: 1 week per full cycle
+
+The output of this phase is a reusable process (documented as a checklist or SOP) that makes it easy to produce new cases consistently. The intake toolkit lives at `.research/case-intake-toolkit.md` with a ready-to-use scorecard, interview script, writing template, and sign-off form. The actual `_pages/*.md` files come in Phase 2.
+
+### Phase 2: Schema & Infrastructure (existing — complete)
 
 - **Data model**: Page-class — `site.pages where: "class", "case"`. No `_config.yml` collection (removed in I2 Phase 4). New cases are `_pages/*.md` with `class: case`.
 - `_includes/cases-cards.html` exists with a loop rendering `title`, `description`, `result`, `customer` — included from `_layouts/article.html` (line 53)
