@@ -1,10 +1,14 @@
 {% comment %}
   Cases cards grid — renders case cards for published pages with class: case.
   Only renders if at least one case page exists.
-  No parameters.
+  Parameters:
+    product_tag: optional — when set, only shows cases that include this tag.
 {% endcomment %}
 
 {% assign cases = site.pages | where: "class", "case" | where: "published", true %}
+{% if include.product_tag %}
+  {% assign cases = cases | where_exp: "case", "case.product_tags contains include.product_tag" %}
+{% endif %}
 {% if cases.size > 0 %}
 <h2 class="landing-cases">Kundecaser</h2>
 <div class="landing-cases-grid stagger-parent" style="--stagger-delay: 100ms;">
