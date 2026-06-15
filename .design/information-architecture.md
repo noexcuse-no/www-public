@@ -18,6 +18,7 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/mennesker/` | `_pages/mennesker.md` | Frame: People (tilhørighet, mestring, autonomi) |
 | `/identitet/` | `_pages/identitet.md` | Frame: Identity (verdier, ritualer, fortelling) |
 | `/pavirkning/` | `_pages/pavirkning.md` | Frame: Influence (makt, nettverk, interesser) |
+| — | quiz modal (Q1-Q5) | No dedicated URL — modal overlay on existing pages. CTA on frontpage + frame articles. |
 | `/forankring/` | `_pages/ledelse_forankring.md` | Benefit: Anchoring |
 | `/tillit/` | `_pages/ledelse_tillit.md` | Benefit: Trust |
 | `/makt/` | `_pages/ledelse_makt.md` | Benefit: Power dynamics |
