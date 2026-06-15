@@ -1,6 +1,6 @@
 # Feature: Partner Presentation & Guidelines
 
-> Status: **Planned — decisions recorded** | BL: P6
+> Status: **Planned — guidelines ready** | BL: P6
 
 ## Purpose and Scope
 
@@ -42,15 +42,39 @@ Funnel role is per-partner configurable via frontmatter (e.g., `funnel_role: ["b
 Partner pages include `description`, `services`, `industries`, joint methodology section, and can reference co-branded cases (which live in `_pages/` with `class: case` + `partner: <partner_slug>`).
 
 ### Q4 — Conversation Flow (Human Guidelines)
-All five areas must be covered:
+All five areas covered in `.research/partner-guidelines.md`:
 1. Product & methodology pitch — what we tell partners about Ledelse 60:2
 2. Partner deliverables — what partners need to provide (text, images, logos, case data)
 3. Redirect mechanism — how partners send visitors back to noexcuse.no
 4. Commercial terms — commission, pricing, revenue share
-5. Legal/contractual requirements
+5. Legal/contractual requirements — partner agreement checklist, brand usage, approval workflow
 
 ### Q5 — Scale
 **1–3 partners** in the next 6–12 months. Handcrafted individual pages with custom content. No need for programmatic systems, tiered badges, or self-serve onboarding yet.
+
+## Partner Frontmatter Schema (Full Depth)
+
+For `_pages/<partner-slug>.md`:
+
+```yaml
+---
+class: partner
+published: true
+name: "Partnernavn AS"
+url: "https://partner.no"
+image: "assets/images/partners/partner-logo.webp"
+description: "Kort beskrivelse av partneren, maks 200 tegn"
+services: "Hva partneren tilbyr — konsulenttjenester, implementering, etc."
+industries: "Bransjer partneren jobber med"
+methodology: "Hvordan partneren bruker Ledelse 60:2 / fire perspektiver i sitt arbeid"
+partner_type: "implementation"     # one of: implementation, referral, technology, reseller, alliance
+funnel_roles:                      # which funnel approaches apply
+  - booking
+  - awareness
+  - landing
+  - referral
+---
+```
 
 ## Dependencies
 
