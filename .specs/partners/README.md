@@ -1,6 +1,6 @@
 # Feature: Partner Presentation & Guidelines
 
-> Status: **Blocked — needs user input** | BL: P6
+> Status: **Planned — decisions recorded** | BL: P6
 
 ## Purpose and Scope
 
@@ -20,59 +20,37 @@ Design how partner organizations are presented on noexcuse.no and create human-f
 
 The existing `partners.html` expects each partner page to have `class: "partner"`, `published: true`, `image`, `name`, and `url` fields. Partners appear at the bottom of the homepage only, via `{% include partners.html %}` in `_layouts/home.html`.
 
-## ⛔ Blocking — Clarifying Questions
-
-The following questions must be answered by the product owner before implementation can begin. They affect the data model, page depth, funnel design, and human guidelines structure.
+## Decisions (answered 2026-06-13)
 
 ### Q1 — Partner Types
+**All five types** — Implementation, Referral, Technology, Reseller, Alliance.
 
-What kinds of partners are we planning for? (Multiple can apply — this affects the data model)
-
-| Type | Description | Implication |
-|------|-------------|-------------|
-| Implementation | Consultancies that deliver Ledelse 60:2 to their clients | Need co-branded materials, methodology training |
-| Referral | Networks that refer clients to No Excuse | Need referral tracking, commission model |
-| Technology | Platform integrations (HR systems, LMS) | Need technical integration docs |
-| Reseller | Sell under their own brand | Need white-label materials, pricing model |
-| Alliance | Joint go-to-market with complementary services | Need co-branded landing pages |
+The data model must support all partner types with a `partner_type` taxonomy field. Each implementation has different content/tracking needs, but the page template should handle all via optional frontmatter fields (e.g., `referral_program: true`, `white_label: true`).
 
 ### Q2 — Funnel Role
+**Combination of all four approaches:**
+1. Direct booking links — bottom-of-funnel, send ready-to-buy leads
+2. Link to articles/landing pages — top/middle-of-funnel, partner creates awareness
+3. Dedicated co-branded landing pages on noexcuse.no per partner
+4. Current logo grid on homepage → partner's own site
 
-How should partners drive visitors through the funnel?
-
-- [ ] **Direct booking links** (bottom-of-funnel — send ready-to-buy leads)
-- [ ] **Link to articles/landing pages** (top/middle-of-funnel — partner creates awareness)
-- [ ] **Dedicated co-branded landing pages** on noexcuse.no per partner
-- [ ] **Current model only** (logo grid on homepage → partner's own site)
-- [ ] **Combination** — describe:
+Funnel role is per-partner configurable via frontmatter (e.g., `funnel_role: ["booking","awareness","landing","referral"]`).
 
 ### Q3 — Partner Page Depth
+**Full** — profile with description, services, industries covered + joint methodology description + co-branded cases.
 
-What should a partner page on noexcuse.no contain?
+Partner pages include `description`, `services`, `industries`, joint methodology section, and can reference co-branded cases (which live in `_pages/` with `class: case` + `partner: <partner_slug>`).
 
-- [ ] Just logo + name + external link (current minimal model)
-- [ ] Profile: description, services offered, industries covered
-- [ ] Full: profile + joint methodology description + co-branded cases
-- [ ] Extended: partners can contribute articles/cases published on noexcuse.no under their name
-
-### Q4 — Conversation Flow (for Human Guidelines)
-
-The guidelines document will be used by the No Excuse team when talking to potential partners. What should it cover?
-
-- [ ] What we tell partners about our product and methodology
-- [ ] What partners need to provide (text, images, logos, case data)
-- [ ] How partners redirect visitors back to noexcuse.no
-- [ ] Commercial terms overview (commission, pricing, revenue share)
-- [ ] Legal/contractual requirements
-- [ ] Other:
+### Q4 — Conversation Flow (Human Guidelines)
+All five areas must be covered:
+1. Product & methodology pitch — what we tell partners about Ledelse 60:2
+2. Partner deliverables — what partners need to provide (text, images, logos, case data)
+3. Redirect mechanism — how partners send visitors back to noexcuse.no
+4. Commercial terms — commission, pricing, revenue share
+5. Legal/contractual requirements
 
 ### Q5 — Scale
-
-How many partners are realistic in the next 6–12 months?
-
-- [ ] 1–3 — handcrafted individual pages, custom content
-- [ ] 3–10 — needs a programmatic system with tiered badges, partner portal
-- [ ] 10+ — needs self-serve onboarding, API-based logo import
+**1–3 partners** in the next 6–12 months. Handcrafted individual pages with custom content. No need for programmatic systems, tiered badges, or self-serve onboarding yet.
 
 ## Dependencies
 
