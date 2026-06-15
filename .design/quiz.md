@@ -106,16 +106,23 @@ These are result-screen-only colors — not added to the global palette.
 
 All animations respect `prefers-reduced-motion: reduce` — use `transition: none` / `animation: none` when detected.
 
-## Desktop vs Mobile Quiz CTA
+## Quiz CTA
 
-### Placement options (decide during spec review)
+CTA button placement is **deferred** (not in v1). The quiz is launched programmatically or via a minimal trigger for testing. CTA placement (homepage, article sidebars, etc.) will be decided in a future iteration.
 
-The quiz entrance button should be present on:
-- **Homepage** — as a hero-area CTA or dedicated section between benefits and profiles
-- **Individual frame pages** — as a sidebar card or inline CTA in the article body
-- **Perspektiv article** — contextually relevant, as a CTA in the sidebar
+## Result Sharing URL
 
-The button should be distinct but not competing with the primary product CTA.
+When sharing results, a URL parameter encodes the winning perspective:
+
+```
+https://noexcuse.no/?quiz=struktur
+```
+
+When someone opens this URL, the homepage detects the `?quiz=` parameter and renders the corresponding result infographic inline on the page (not in a modal) — making the result truly shareable. The infographic shows:
+- Perspective name and icon
+- Score breakdown bars
+- "Ta testen selv"-CTA to start the quiz
+- This rendering is subtle — it appears below the hero or as a banner, not hijacking the page
 
 ## Accessibility
 

@@ -17,16 +17,16 @@ The quiz is NOT a scientific diagnostic. It's a light-hearted self-reflection to
 
 - A 10-question quiz delivered as a modal overlay
 - Question pool of 15+ questions, each with 6+ answer options
-- Questions are situational scenarios, each mapping to one of the four frames
+- Questions are relatable situational scenarios, each mapping to one of the four frames
 - Each question has an entertaining spot illustration (to be generated)
 - Visual progress bar during the quiz
 - Results screen with:
-  - Dominant perspective assignment
+  - Dominant perspective assignment (always a single winner — scoring forces a result)
   - Score breakdown across all four frames (horizontal bar chart)
   - Perspective description with link to relevant article
-  - Social sharing (LinkedIn, Teams, copy-link)
+  - Social sharing (LinkedIn, Teams, copy-link) via result-specific URL
   - OG-friendly result illustration
-- Quiz entrance CTA(s) on selected pages (TBD — see Q1 below)
+- Quiz entrance: deferred (no CTA button in v1 until placement is decided)
 - `sessionStorage` persistence so result survives accidental refresh
 - Full keyboard accessibility and screen reader support
 - Mobile-first responsive design
@@ -38,6 +38,7 @@ The quiz is NOT a scientific diagnostic. It's a light-hearted self-reflection to
 - Comparison with peers / team quiz
 - Adaptive questioning (all questions are randomly selected from pool)
 - Multi-language support (Norwegian Bokmål only)
+- Quiz entrance CTA button placement — deferred until Q5 is activated
 
 ### Future considerations
 
@@ -104,11 +105,18 @@ Weights accumulate per frame across all 10 selected questions.
 
 ## Scoring Algorithm
 
+Scoring MUST always produce a single winner — no ties, no "balanced" results.
+
 1. Start with all four frame scores at 0
 2. For each of the 10 answered questions, add the selected answer's `weight` to each frame in `answer.frames`
 3. If `answer.frames` contains multiple frames (e.g., `["struktur", "mennesker"]`), split the weight evenly between them
 4. After all 10 questions, the frame with the highest total score is the winner
-5. Tie-breaking: if two frames are tied, the frame with the highest-weighted single answer wins. If still tied, pick randomly.
+5. Tie-breaking (iterative, applied until a single winner emerges):
+   - First: compare count of highest-weighted individual answers per tied frame
+   - Second: compare sum of all weights across all 10 answers per tied frame
+   - Third: pick the frame whose single answer had the highest `weight` value across all 10 questions
+   - Fourth: random selection (deterministic per session by seeding from `sessionStorage` quiz ID)
+6. The JSON result payload always includes exactly one `winner` — never `null` or `"balanced"`
 
 ### Score visualization
 
@@ -127,11 +135,19 @@ Bar width = `score / max_possible * 100%`. Bars are colored by frame accent colo
 
 | Property | Requirement |
 |----------|-------------|
-| Total questions | ≥15 (25 recommended for v1) |
+| Total questions | ≥15 (20 recommended for v1) |
 | Questions used per session | 10, randomly selected from pool |
 | Answers per question | 6–8 (minimum 6) each |
 | Frame coverage | Every question MUST have answers mapping to ≥3 of the 4 frames |
 | Illustration | First 10 questions in the pool get illustrations (rest can be text-only) |
+
+### Question content generation
+
+First version of the question pool is **LLM-generated** (by AI during implementation). Questions are written directly as a JS array in `quiz.js` — no separate JSON file needed for v1. The LLM is prompted with:
+- Brand voice (direct, uncomplicated, not corporate — see `.design/brand-perception.md`)
+- The four frames and their Norwegian descriptions
+- "Relatable scenarios" — everyday leadership situations
+- Each question must have ≥6 answer options, each mapping to 1–2 frames
 
 ### Question themes
 
@@ -177,11 +193,17 @@ This ensures no single frame can dominate purely by being overrepresented.
 
 | File | Change |
 |------|--------|
-| `_includes/scripts.html` | Add `quiz.js` script include |
-| `_includes/styles.html` | Add `quiz.css` stylesheet include |
-| Homepage / frame pages | Add quiz CTA button |
-| `.design/information-architecture.md` | Add quiz entry |
-| `assets/css/tokens.css` (if needed) | May add quiz-specific color tokens |
+| `.design/information-architecture.md` | Add quiz entry (done) |
+
+### Files deferred (Q5 — no CTA placement yet)
+
+The following files exist in the repo but are NOT wired into any page until Q5 is activated:
+
+| File | Purpose | Status |
+|------|---------|--------|
+| `_includes/scripts.html` | Add `quiz.js` script include | Deferred |
+| `_includes/styles.html` | Add `quiz.css` stylesheet include | Deferred |
+| Homepage / frame pages | Add quiz CTA button | Deferred |
 
 ## Technical Architecture
 
@@ -267,15 +289,25 @@ The quiz entrance button uses the existing `.cta` button class:
 
 ## Social Sharing
 
+Sharing includes the user's result via a URL parameter so recipients see the same perspective on open.
+
 ### Share targets
 
 | Platform | Method | Data |
 |----------|--------|------|
-| LinkedIn | URL share | `https://noexcuse.no` + pre-filled text |
+| LinkedIn | URL share | `https://noexcuse.no/?quiz=struktur` + pre-filled text |
 | Teams | URL share | Same as LinkedIn pattern |
-| Copy link | Clipboard | URL to quiz + result indicator (optional) |
+| Copy link | Clipboard | `https://noexcuse.no/?quiz=struktur` |
 
-### Share text template
+### URL parameter
+
+```
+https://noexcuse.no/?quiz={frame_id}
+```
+
+When the shared URL is opened, the page detects `?quiz=struktur` and renders the result infographic for that perspective inline on the homepage (not in a modal) — making it a shareable, embeddable result card. If no `?quiz=` param, show nothing extra.
+
+### Share text template (pre-filled)
 
 ```
 Jeg tok "Hvilket perspektiv leder du fra?"-testen hos No Excuse.
@@ -312,7 +344,7 @@ Pre-generated as 4 separate files (one per perspective), 1200×630px WebP.
 
 | Risk | Mitigation |
 |------|-----------|
-| 15+ questions with 6+ answers each = 90+ answer texts to write | Start with 15 questions, expand later; write in batches |
+| 15+ questions with 6+ answers each = 90+ answer texts to write | LLM generates first version; iterate from there |
 | Illustrations: 10 question + 4 result + 4 OG = 18 images needed | Prioritize first 10 question + 4 result; OG can use result art scaled |
-| Quiz feels too serious or corporate | Write questions in brand voice (direct, humorous scenarios), use entertaining illustrations |
-| Scoring feels random or unsatisfying | Design questions so most people get a clear winner; provide "you're balanced!" result for ties |
+| Quiz feels too serious or corporate | Write questions in brand voice (direct, relatable scenarios), use entertaining illustrations |
+| Scoring feels random or unsatisfying | Scoring always forces a winner — never "balanced" — gives clear, satisfying result |
