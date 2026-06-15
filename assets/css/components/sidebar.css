@@ -478,3 +478,144 @@
         display: none;
     }
 }
+
+/* ========================================
+   Mobile TOC Modal (R34)
+   ======================================== */
+
+/* Toggle button — only visible on screens < 1200px */
+.toc-mobile-toggle {
+    position: fixed;
+    top: calc(var(--header-height) + var(--space-sm));
+    right: var(--space-sm);
+    z-index: 100;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.8em;
+    line-height: 1;
+    min-height: 44px;
+    box-shadow: var(--shadow-md);
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.toc-mobile-toggle:hover {
+    transform: translateY(-1px);
+}
+
+.toc-mobile-toggle:active {
+    transform: translateY(0);
+}
+
+.toc-mobile-toggle-icon {
+    flex-shrink: 0;
+}
+
+/* Modal overlay backdrop */
+.toc-mobile-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--overlay-light);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.dark-mode .toc-mobile-overlay {
+    background: var(--overlay-dark);
+}
+
+/* Modal card */
+.toc-mobile-modal {
+    background: var(--box-background-light);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-lg);
+    max-width: 480px;
+    width: calc(100% - var(--space-lg) * 2);
+    max-height: calc(100vh - var(--space-xl) * 2);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.dark-mode .toc-mobile-modal {
+    background: var(--box-background-dark);
+    box-shadow: var(--shadow-lg-dark);
+}
+
+/* Modal header: title + close button */
+.toc-mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-md);
+}
+
+.toc-mobile-header h2 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.toc-mobile-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    color: var(--text-color-light);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.toc-mobile-close:hover {
+    background: var(--surface-hover-light);
+    color: var(--primary-navy);
+}
+
+.dark-mode .toc-mobile-close {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .toc-mobile-close:hover {
+    background: var(--surface-hover-dark);
+    color: var(--primary-azure);
+}
+
+/* Bottom close button inside modal */
+.toc-mobile-close-bottom {
+    width: 100%;
+    margin-top: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+}
+
+/* TOC items inside modal — slightly larger than sidebar version */
+.toc-mobile-modal .toc-item {
+    padding: var(--space-sm) 0 var(--space-sm) var(--space-sm);
+    font-size: 0.95em;
+}
+
+.toc-mobile-modal .toc-item--h3 {
+    padding-left: calc(var(--space-sm) + var(--space-lg));
+    font-size: 0.88em;
+}
+
+/* Only show mobile TOC button on narrow screens */
+@media (min-width: 1200px) {
+    .toc-mobile-toggle,
+    .toc-mobile-overlay {
+        display: none !important;
+    }
+}
