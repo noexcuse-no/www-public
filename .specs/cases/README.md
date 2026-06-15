@@ -22,6 +22,7 @@ From the website gap analysis (April 2026):
 
 ## Implementation Plan
 
+### Phase 1: Case Intake Process Design
 ### Phase 1: Case Intake Process Design (missing — this must be done first)
 
 Before any content can be created, a process for gathering and writing customer cases must be designed. This covers:
@@ -49,6 +50,7 @@ Before any content can be created, a process for gathering and writing customer 
 - Who reviews: internal SME first, customer contact second
 - Turnaround target: 1 week per full cycle
 
+The output of this phase is a reusable process (documented as a checklist or SOP) that makes it easy to produce new cases consistently. The intake toolkit lives at `.research/case-intake-toolkit.md` with a ready-to-use scorecard, interview script, writing template, and sign-off form. The actual `_pages/*.md` files come in Phase 2.
 The output of this phase is a reusable process (documented as a checklist or SOP) that makes it easy to produce new cases consistently. The actual `_pages/*.md` files come in Phase 2.
 
 ### Phase 2: Schema & Infrastructure (existing — complete)
