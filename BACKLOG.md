@@ -46,10 +46,6 @@ Completed items belong in `CHANGELOG.md` only.
 | X2 | Dark mode consistency pass | Done | — |
 | F5 | Image generation for N1-N3 | Done | — |
 | F6 | Spot illustration naming cleanup — rename index-based spot images to concept-based names, move to banners/ | Done | — |
-| C1 | Customer case planning & discovery | Blocked | Brainstorming session |
-| C2 | Customer case intake form | Blocked | C1 |
-| C3 | Case presentation design | Blocked | C1, C2 |
-| C4 | Visitor flow / inbound sales journey | Blocked | C1, C2, C3 |
 | Q7 | Katalysator product | Blocked | User availability (deferred to June 2026) |
 | R20 | Generate and add illustrations to /perspektiv per page design rules | Done | PR #116 |
 | R16 | Article illustrations — 25 images for Makt, Perspektiv, Triader (T2 framework + T3 section + T4 micro) | Done | PR #117 |
@@ -83,10 +79,11 @@ Completed items belong in `CHANGELOG.md` only.
 | G3 | **Topical landing pages (F3)** — Organisasjonskultur (P0), Informasjonssikkerhet (P0), Endringsledelse (P1), Risikostyring (P1), Kvalitetsledelse (P2), Bærekraft/ESG (P2), Compliance (P2). See `.specs/topical-landing-pages/README.md`. | Done | PR #160 |
 | G4 | **Conversion infrastructure (F4)** — email capture (F4a), contact form (F4b), step page enrichment (F4c, done via R25), article recommendations (F4d, future). All via MVP JSON-file storage. See `.specs/conversion-infrastructure/README.md`. | Doing | G1, G2, G3 (all contribute to the funnel) |
 | C1 | **Customer case intake & planning** — Intake toolkit ready at `.research/case-intake-toolkit.md` (customer scorecard, interview script, writing template, approval workflow). Next: identify 1–3 real cases and conduct interviews with customer sign-off. | Doing | — |
+| C1 | **Customer case intake & planning** — Use the intake process design in `.specs/cases/README.md#phase-1-case-intake-process-design-missing--this-must-be-done-first` (interview template, writing template, approval workflow). Identify 1–3 real cases with customer sign-off. | Planned | — |
 | C2 | **Case presentation design** — Wire `_includes/cases.html` with populated cases. Verify product-tag filtering. | Planned | C1 |
 | C3 | **Case content creation** — Write full case descriptions with measurable results (anonymized if needed). Norwegian Bokmål. | Planned | C1, C2 |
 | C4 | **Visitor flow / inbound sales journey** — Integrate cases into site nav (Om Oss cross-link, homepage section, product page filtering, article recommendations). See `.specs/cases/README.md` and `.specs/inbound-sales/README.md`. | Planned | C1, C2, C3 |
-| P6 | **Partner presentation design & guidelines** — Partner page layout, funnel integration, human guidelines for partner conversations. Contains 5 blocking questions (partner types, funnel role, page depth, conversation flow, scale) that must be answered by product owner. See `.specs/partners/README.md`. | Blocked | Needs user input — Q1-Q5 in `.specs/partners/README.md` |
+| P6 | **Partner presentation design & guidelines** — Partner page layout, funnel integration, human guidelines for partner conversations. All 5 blocking questions answered 2026-06-13. See `.specs/partners/README.md` for decisions. | Planned | — |
 | P7 | **Partner content creation** — Create partner pages in `_partners/` with content produced from partner conversations. | Blocked | P6 |
 | BR1 | **Norwegian origin brand positioning design doc** — Market-specific brand notes for FF2: all three strategies (quality signal / cultural context / humility) across Nordic markets and continental Europe. See `.design/norwegian-origin-branding.md`. | Planned | — |
 | BR2 | **Om Oss — Norwegian origin content update** — Expand founding story, anchor methodology in Norwegian management tradition, make cultural values explicit as Norwegian, add "beste praksis fra norsk arbeidsliv" section, add international framing for FF2. | Planned | BR1 |
@@ -106,7 +103,7 @@ Completed items belong in `CHANGELOG.md` only.
 | R32 | **LLM ask modal refactor** — Refactor the review questions modal: remove provider icons, display as list (not grid), quotation block styling for question, collapse/expand provider list based on saved preference, move copy prompt to bottom, open AI service URL on provider selection. See `.specs/llm-modal-refactor/README.md`. | Done | PR #150 |
 | R33 | **Benefit & process step frontmatter as data source** — Ensure `benefits` and `process_steps` frontmatter on product pages is the authoritative source for homepage benefit/process cards. Spec documents schema, rules, and rendering flow. See `.specs/product-card-frontmatter/README.md`. | Planned | — |
 | R35 | **Ledelse 60:2 — article layout migration** — Migrated product page from `product` to `article` layout. Added stat-bridge support to `article.html` layout. Added 5 diagnostic frontmatter questions with collapsible sidebar rendering. Added Dagfinn profile at page bottom. Fixed homepage CTA heading. See PR #181. | Done | PR #181 |
-| R34 | **Fix mobile TOC collapsible** — `details.toc-collapsible` in article layout is broken (missing JS wiring, breaks sidebar scroll-spy). Hidden for now; needs investigation and full fix. See `.design/wide-screen-sidebar.md` for reference. | Blocked | — |
+| R34 | **Mobile TOC as modal overlay** — Replace the removed `details.toc-collapsible` with a button that opens the TOC as a modal overlay on screens < 1200px. Spec at `.specs/mobile-toc-modal/README.md`. | Planned | — |
 | Q1 | **Quiz — question pool** — 15+ questions with 6+ answers each, mapped to Bolman & Deal's four frames. Generated by LLM with brand voice. Inline in `quiz.js` as JS array. See `.specs/quiz/README.md`. | Planned | Q3 |
 | Q2 | **Quiz — illustrations** — Generate 10 question illustrations (240×240px) + 4 result illustrations (320×240px) + 4 OG share images (1200×630px). WebP. See `.design/quiz.md`. | Planned | Q1 |
 | Q3 | **Quiz — JS engine** — Create `assets/scripts/quiz.js`: modal controller, question flow, scoring (always forces a single winner), results, sessionStorage, result URL sharing. No dependencies. See `.specs/quiz/README.md`. | Planned | — |

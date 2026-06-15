@@ -13,17 +13,16 @@
 
         // --- 1. Build TOC from h2/h3 in article body ---
         var tocContainer = pager ? pager.querySelector('.js-toc-list') : null;
-        if (tocContainer) {
+        var mobileTocContainer = document.querySelector('.toc-mobile-overlay .js-toc-list');
+        if (tocContainer || mobileTocContainer) {
             var headings = body.querySelectorAll('h2, h3');
             var tocItems = [];
-            var fragment = document.createDocumentFragment();
 
-            headings.forEach(function(h, i) {
-                // Ensure heading has an id for anchor linking
+            function createTocItem(h, i) {
                 var id = h.id || 'section-' + i;
                 if (!h.id) h.id = id;
 
-                var tag = h.tagName.toLowerCase(); // 'h2' or 'h3'
+                var tag = h.tagName.toLowerCase();
                 var text = h.textContent.trim();
 
                 var a = document.createElement('a');
@@ -38,38 +37,41 @@
                         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                 });
-
-                fragment.appendChild(a);
-                tocItems.push(a);
-            });
-
-            tocContainer.appendChild(fragment);
-
-            // Show the pager if we have TOC items
-            if (tocItems.length > 0 && pager) {
-                pager.removeAttribute('hidden');
+                return a;
             }
 
-            // Also populate collapsible mobile TOC if present
-            var mobileToc = document.querySelector('.js-toc-collapsible-list');
-            if (mobileToc) {
-                var cloneFragment = fragment.cloneNode(true);
-                // Re-wire click handlers for cloned items
-                var cloneLinks = cloneFragment.querySelectorAll('.toc-item');
-                cloneLinks.forEach(function(link) {
-                    var id = link.dataset.target;
-                    link.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        var target = document.getElementById(id);
-                        if (target) {
-                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                            // Close the details element
-                            var details = link.closest('details');
-                            if (details) details.removeAttribute('open');
+            if (tocContainer) {
+                var desktopFragment = document.createDocumentFragment();
+                headings.forEach(function(h, i) {
+                    var a = createTocItem(h, i);
+                    desktopFragment.appendChild(a);
+                    tocItems.push(a);
+                });
+                tocContainer.appendChild(desktopFragment);
+
+                if (tocItems.length > 0 && pager) {
+                    pager.removeAttribute('hidden');
+                }
+            }
+
+            if (mobileTocContainer) {
+                var mobileFragment = document.createDocumentFragment();
+                headings.forEach(function(h, i) {
+                    var a = createTocItem(h, i);
+                    a.addEventListener('click', function() {
+                        if (!document.querySelector('.toc-mobile-overlay').hidden) {
+                            closeMobileToc();
                         }
                     });
+                    mobileFragment.appendChild(a);
+                    tocItems.push(a);
                 });
-                mobileToc.appendChild(cloneFragment);
+                mobileTocContainer.appendChild(mobileFragment);
+
+                var toggle = document.querySelector('.toc-mobile-toggle');
+                if (toggle && tocItems.length > 0) {
+                    toggle.hidden = false;
+                }
             }
 
             // --- 2. Scroll-spy: highlight active TOC item ---
@@ -177,9 +179,105 @@
 
     /* ===== Init ===== */
 
+    /* ===== 5. Mobile TOC Modal (R34) ===== */
+
+    var activeMobileTocToggle = null;
+
+    function openMobileToc() {
+        var overlay = document.querySelector('.toc-mobile-overlay');
+        var toggle = document.querySelector('.toc-mobile-toggle');
+        if (!overlay) return;
+
+        activeMobileTocToggle = toggle;
+        overlay.hidden = false;
+        document.body.classList.add('no-scroll');
+
+        var modal = overlay.querySelector('.toc-mobile-modal');
+        if (modal) {
+            var firstFocusable = modal.querySelector('button, a, [tabindex]:not([tabindex="-1"])');
+            if (firstFocusable) firstFocusable.focus();
+        }
+
+        overlay.addEventListener('keydown', trapMobileTocFocus);
+    }
+
+    function closeMobileToc() {
+        var overlay = document.querySelector('.toc-mobile-overlay');
+        if (!overlay) return;
+
+        overlay.hidden = true;
+        document.body.classList.remove('no-scroll');
+        overlay.removeEventListener('keydown', trapMobileTocFocus);
+
+        if (activeMobileTocToggle) {
+            activeMobileTocToggle.focus();
+            activeMobileTocToggle = null;
+        }
+    }
+
+    function trapMobileTocFocus(e) {
+        if (e.key !== 'Tab' && e.key !== 'Escape') return;
+
+        var overlay = document.querySelector('.toc-mobile-overlay');
+        if (!overlay || overlay.hidden) return;
+
+        var modal = overlay.querySelector('.toc-mobile-modal');
+        if (!modal) return;
+
+        if (e.key === 'Escape') {
+            e.preventDefault();
+            closeMobileToc();
+            return;
+        }
+
+        var focusable = modal.querySelectorAll('button, a, [tabindex]:not([tabindex="-1"])');
+        if (focusable.length === 0) return;
+
+        var first = focusable[0];
+        var last = focusable[focusable.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
+    }
+
+    function initMobileTocModal() {
+        var toggle = document.querySelector('.toc-mobile-toggle');
+        var overlay = document.querySelector('.toc-mobile-overlay');
+        if (!toggle || !overlay) return;
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            openMobileToc();
+        });
+
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                closeMobileToc();
+            }
+        });
+
+        var closeBtn = overlay.querySelector('.toc-mobile-close');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeMobileToc);
+        }
+
+        var closeBottom = overlay.querySelector('.toc-mobile-close-bottom');
+        if (closeBottom) {
+            closeBottom.addEventListener('click', closeMobileToc);
+        }
+    }
+
+    /* ===== Init ===== */
+
     function init() {
         initArticleSidebar();
         initQuestionsCollapse();
+        initMobileTocModal();
     }
 
     if (document.readyState === 'loading') {
