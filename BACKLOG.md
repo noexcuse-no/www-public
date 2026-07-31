@@ -108,3 +108,4 @@ Completed items belong in `CHANGELOG.md` only.
 | Q3 | **Quiz — JS engine** — Create `assets/scripts/quiz.js`: modal controller, question flow, scoring (always forces a single winner), results, sessionStorage, result URL sharing. No dependencies. See `.specs/quiz/README.md`. | Planned | — |
 | Q4 | **Quiz — CSS** — Create `assets/css/components/quiz.css`: modal overlay, progress bar, answer cards, result infographic, score bars, shareable result card. Dark mode via CSS variables. See `.design/quiz.md`. | Planned | Q3 |
 | Q5 | **Quiz — page integration** — Deferred. No CTA placement until decided. | Deferred | — |
+| R36 | **LLM disclaimer banner restyle** — Replace inline-styled fixed/rotated yellow div in `_includes/header.html` with a clean, always-visible top bar themed with design tokens. Centered on desktop, left-aligned on mobile. New component CSS + theme color entries. See `.specs/ai-disclaimer/README.md`. | Doing | — |
