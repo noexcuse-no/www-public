@@ -29,6 +29,12 @@ a:hover {
     background-color: var(--banner-background-dark);
     color: var(--banner-text-dark);
 }
+
+.ai-disclaimer {
+    background-color: var(--banner-background-dark);
+    color: var(--banner-text-dark);
+    border-bottom: 1px solid var(--border-color-dark);
+}
 .profile-detail-content {
     background-color: var(--box-background-dark);
     color: var(--text-color-dark);
