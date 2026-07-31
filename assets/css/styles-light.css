@@ -37,6 +37,12 @@ a:hover {
     color: var(--banner-text-light);
 }
 
+.ai-disclaimer {
+    background-color: var(--banner-background-light);
+    color: var(--banner-text-light);
+    border-bottom: 1px solid var(--border-color-light);
+}
+
 .profile-detail-content {
     background-color: var(--box-background-light);
     color: var(--text-color-light);

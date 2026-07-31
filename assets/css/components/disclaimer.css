@@ -1,0 +1,18 @@
+.ai-disclaimer {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: var(--space-sm) var(--space-lg);
+}
+
+.ai-disclaimer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+@media (max-width: 599px) {
+    .ai-disclaimer {
+        text-align: left;
+        padding: var(--space-xs) var(--space-md);
+    }
+}
