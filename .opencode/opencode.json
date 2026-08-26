@@ -12,12 +12,39 @@
     "ansvar": {
       "type": "remote",
       "url": "https://gateway.ansvar.eu/mcp",
-      "enabled": true
+      "enabled": false
     },
     "github": {
       "type": "remote",
       "url": "https://api.githubcopilot.com/mcp/",
+      "enabled": false
+    },
+    "fal-ai": {
+      "type": "remote",
+      "url": "https://mcp.fal.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer $FAL_KEY"
+      }
+    },
+    "penpot": {
+      "type": "remote",
+      "url": "https://design.penpot.app/mcp/stream?userToken=$PENPOT_MCP_KEY",
+      "enabled": true
+    },
+    "playwright": {
+      "type": "local",
+      "command": [
+        "npx",
+        "@playwright/mcp@latest"
+      ],
       "enabled": true
     }
-  }
+  },
+  "team_mode": {
+    "enabled": true
+  },
+  "plugin": [
+    "list",
+    "opencode-worktree-plugin"
+  ]
 }
