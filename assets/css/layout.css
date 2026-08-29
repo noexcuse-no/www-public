@@ -4,6 +4,12 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Global [hidden] guard — explicit display values in component CSS
+   override the UA stylesheet's [hidden] { display: none } (R44, R45) */
+[hidden] {
+    display: none !important;
+}
+
 @supports (scroll-behavior: smooth) {
     html:focus-within {
         scroll-behavior: smooth;
