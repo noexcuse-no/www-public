@@ -2,7 +2,7 @@
     text-align: center;
     padding: 0;
     border-bottom: 1px solid var(--border-color-subtle-light);
-    --header-height: 85px;
+    --header-height: 97px;
 }
 
 .banner {

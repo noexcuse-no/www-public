@@ -12,7 +12,7 @@
 .hero-image {
     grid-area: 1 / 1;
     width: 100%;
-    height: calc(100vh - var(--header-height, 85px));
+    height: calc(100vh - var(--header-height, 97px) - var(--hero-gap, 39px));
     min-height: 400px;
     overflow: hidden;
     position: relative;
@@ -118,7 +118,7 @@
 /* Mobile */
 @media (max-width: 768px) {
     .hero-image {
-        height: calc(100vh - var(--header-height, 85px));
+        height: calc(100vh - var(--header-height, 97px) - var(--hero-gap, 39px));
         min-height: 350px;
     }
 

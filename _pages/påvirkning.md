@@ -7,7 +7,7 @@ frame_id: "påvirkning"
 category: "frame"
 title: "Påvirkningsperspektivet i ledelse"
 description: "Lær hvordan påvirkningsperspektivet kan hjelpe ledergruppen å forstå maktbalanse, interessekonflikter og hvordan beslutninger faktisk tas."
-banner: "assets/images/banners/perspektiv-påvirkning.webp"
+banner: "assets/images/banners/perspektiv-pavirkning.webp"
 url: "/pavirkning/"
 
 json_ld:
@@ -26,7 +26,7 @@ json_ld:
         name: "Organisasjonspolitikk"
 
 hero:
-  image: "assets/images/banners/perspektiv-påvirkning.webp"
+  image: "assets/images/banners/perspektiv-pavirkning.webp"
   alt: "Påvirkningsperspektivet i ledelse"
   title: "Påvirkningsperspektivet i ledelse"
   intro: "Handler om å forstå at organisasjoner er arenaer der ulike interesser møtes. Makt og påvirkning er ikke skitne triks — de er en del av hvordan beslutninger tas og ting blir gjort."
@@ -88,7 +88,7 @@ Konflikt er ikke noe galt i seg selv — det er et tegn på at ulike perspektive
 
 **Tegn på konflikt og forhandling-problemer:** Konflikter begraves til de eskalerer. «Vi er enig» betyr «jeg våger ikke si ifra». Passiv-aggressiv kommunikasjon. Koalisjoner som jobber mot hverandre.
 
-![Illustrasjon av de 3 hovedelementene i påvirkningsperspektivet](/assets/images/banners/illustrasjon-påvirkning-hovedelementer.webp)
+![Illustrasjon av de 3 hovedelementene i påvirkningsperspektivet](/assets/images/banners/illustrasjon-pavirkning-hovedelementer.webp)
 
 ![Illustrasjon: Hvorfor påvirkningsperspektivet betyr noe for ledergruppen](/assets/images/banners/spot-pavirkning-hvorfor-pavirkning-betyr-noe.webp)
 
@@ -100,7 +100,7 @@ Pfeffers research viser at politisk dyktighet korrelerer sterkt med ledereffekti
 
 ## Vanlige påvirkningsrelaterte utfordringer
 
-![Illustrasjon av vanlige påvirkningsrelaterte utfordringer](/assets/images/banners/illustrasjon-påvirkning-utfordringer.webp)
+![Illustrasjon av vanlige påvirkningsrelaterte utfordringer](/assets/images/banners/illustrasjon-pavirkning-utfordringer.webp)
 
 *   ![Abstrakt illustrasjon av usynlig beslutningsmakt](/assets/images/banners/pavirkning-t4-invisible-power.webp)
 
@@ -123,7 +123,7 @@ Pfeffers research viser at politisk dyktighet korrelerer sterkt med ledereffekti
 
     En ledelsesgruppe som altfor sjelden er uenig, klarer heller ikke å utfordre hverandre. Uenighet er et sunnhetstegn — likegyldighet er problemet.
 
-![Illustrasjon for kartlegging av påvirkning](/assets/images/banners/illustrasjon-påvirkning-cta.webp)
+![Illustrasjon for kartlegging av påvirkning](/assets/images/banners/illustrasjon-pavirkning-cta.webp)
 
 ## Få kartlagt ledergruppens påvirkning og maktbalanse
 
