@@ -24,7 +24,7 @@
         {% assign count = count | plus: 1 %}
       {% endif %}
     {% endfor %}
-    <a href="{{ '/emne/' | append: tag | slugify | relative_url }}" class="tag-cloud-item">
+    <a href="{{ '/emne/' | append: (tag | slugify) | relative_url }}" class="tag-cloud-item">
       <span class="tag-name">{{ tag }}</span>
       <span class="tag-count">{{ count }}</span>
     </a>
