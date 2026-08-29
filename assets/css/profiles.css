@@ -365,6 +365,10 @@
     color: var(--text-color-dark);
 }
 
+.dark-mode .profile-person-title {
+    color: var(--text-color-dark);
+}
+
 .dark-mode .profile-contact-btn {
     color: var(--link-color-dark);
     background: var(--surface-subtle-dark);
