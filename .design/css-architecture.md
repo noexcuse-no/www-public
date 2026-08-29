@@ -157,7 +157,7 @@ Constants (no theme pair): omit the suffix.
 - **Colors**: Always `var(--variable)` — never `#333` or raw hex or rgba
 - **Shadows**: Use `var(--shadow-*)` — never raw values
 - **Component CSS**: Lives in `assets/css/components/` — `hero.css`, `card.css`
-- **Breakpoints**: 599px (mobile), 1024px (tablet). Never `768px`.
+- **Breakpoints**: 599px (mobile), 768px (tablet), 900px (desktop), 1199px/1200px (wide). Never `1024px`.
 - **Touch targets**: Minimum 44×44px for interactive elements
 - **Font sizes**: Use heading elements (h1–h3) or the typography scale
 - **Dark mode**: Variables only — no `[data-theme="dark"]` selector overrides in component CSS; those belong in `styles-dark.css`

@@ -9,6 +9,11 @@
 </head>
 <body>
     {% include header.html %}
+    <noscript>
+      <div style="padding: 1rem; background: var(--background-secondary); text-align: center;">
+        <p><strong>No Excuse AS</strong> — <a href="/">Gå til startsiden</a></p>
+      </div>
+    </noscript>
     <main>
         {{ content }}
     </main>

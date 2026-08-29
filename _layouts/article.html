@@ -18,6 +18,11 @@ layout: default
       </div>
       {% include share-section.html %}
     </aside>
+    <noscript>
+      <div class="section container--wide" style="margin-top: 2rem;">
+        <p><em>Innholdsfortegnelse krever JavaScript.</em></p>
+      </div>
+    </noscript>
     {% endif %}
 
     <div class="section container--wide article-body animate-on-scroll fade-in-up">
@@ -44,6 +49,16 @@ layout: default
         {% capture question_list %}{{ page.questions | join: "||" }}{% endcapture %}
         {% include questions.html title=page.questions_title questions=question_list collapsible="true" %}
       </div>
+      <noscript>
+        <div class="section container--wide" style="margin-top: 2rem;">
+          <h2>{{ page.questions_title }}</h2>
+          <ul>
+            {% for q in page.questions %}
+            <li>{{ q }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </noscript>
       {% endif %}
 
       {% if page.cta %}

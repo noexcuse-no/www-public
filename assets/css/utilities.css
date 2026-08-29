@@ -16,34 +16,3 @@ img {
 .shadow {
     box-shadow: var(--shadow-xs);
 }
-
-#dark-mode-toggle {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--link-color-light);
-    z-index: 5;
-}
-
-@media (max-width: 599px) {
-    /* Mobil */
-    #dark-mode-toggle {
-        font-size: 1.8em; /* Øk font size litt på mobil */
-    }
-    #dark-mode-toggle:hover {
-        font-size: 2em;
-}
-}
-
-@media (min-width: 600px) {
-    /* Laptop og større skjermer */
-    #dark-mode-toggle {
-        font-size: 2.5em; /* Øk font size mye på laptop */
-    }
-    #dark-mode-toggle:hover {
-       font-size: 3em;
-}
-}
