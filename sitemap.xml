@@ -18,4 +18,13 @@ permalink: /sitemap.xml
   </url>
   {% endif %}
   {% endfor %}
+  {% for doc in site.documents %}
+  {% if doc.collection == 'tags' %}
+  <url>
+    <loc>https://noexcuse.no{{ doc.url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endif %}
+  {% endfor %}
 </urlset>
