@@ -10,7 +10,7 @@
     if (!scrollBtn || !hero) return;
 
     var isAffixed = false;
-    var headerHeight = 85; // matches --header-height
+    var headerHeight = 97; // matches --header-height (actual rendered header)
 
     function toggleAffix() {
         var heroBottom = hero.getBoundingClientRect().bottom;
