@@ -483,6 +483,12 @@
    Mobile TOC Modal (R34)
    ======================================== */
 
+/* Ensure [hidden] attribute is respected even with explicit display values (R45) */
+.toc-mobile-toggle[hidden],
+.toc-mobile-overlay[hidden] {
+    display: none !important;
+}
+
 /* Toggle button — only visible on screens < 1200px */
 .toc-mobile-toggle {
     position: fixed;
