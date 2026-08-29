@@ -11,7 +11,7 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/` | `index.md` | Frontpage |
 | `/ledelse-60-2/` | `_pages/ledelse_60-2.md` | Product landing — Ledelse 60:2 |
 | `/om-oss/` | `_pages/om_oss.md` | About the company |
-| `/om-metode/` | `_pages/om_metode.md` | Method overview with 4 frames, 4 benefits, 3 steps |
+| `/metode/` | `_pages/om_metode.md` | Method overview with 4 frames, 4 benefits, 3 steps |
 | `/perspektiv/` | `_pages/ledelse_perspektiv.md` | Scientific background: multiframe thinking |
 | `/triader/` | `_pages/ledelse_triader.md` | Triads concept |
 | `/struktur/` | `_pages/struktur.md` | Frame: Structure (roller, mål, prosesser) |
@@ -49,7 +49,7 @@ Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningst
 | `/identitet/` → tribal stages (Logan) | `/triader/` | "Hvordan bygge triader →" |
 | `/usikkerhet/` → Kotter section | `/triader/` | "Verktøy for kulturendring: triader →" |
 | All 4 frame articles → "Det vitenskapelige grunnlaget" | `/perspektiv/` | "Les om hvorfor vi ikke scorer →" |
-| `/om-metode/` → frame/benefit/step cards | Each content page | Card CTAs link to respective pages |
+| `/metode/` → frame/benefit/step cards | Each content page | Card CTAs link to respective pages |
 | Tag cloud on `/emne/:tag/` | Tagged articles | Article links from tag landing |
 | `/grc/` → Cybersecurity section | `/usikkerhet/` | "Les om usikkerhetshåndtering →" |
 | `/grc/` → Environment section | `/identitet/` | "Les om identitetsperspektivet →" |

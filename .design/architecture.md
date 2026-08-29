@@ -49,7 +49,7 @@ Created for the emne (topic/tag) landing system. Each file in `_tags/` generates
 | `/` | `index.md` | default | Frontpage |
 | `/ledelse-60-2/` | `_pages/ledelse_60-2.md` | default | Product landing |
 | `/om-oss/` | `_pages/om_oss.md` | default | About us |
-| `/om-metode/` | `_pages/om_metode.md` | default | Method overview with frame/benefit/step cards |
+| `/metode/` | `_pages/om_metode.md` | default | Method overview with frame/benefit/step cards |
 | `/perspektiv/` | `_pages/ledelse_perspektiv.md` | perspektiv | Scientific background |
 | `/triader/` | `_pages/ledelse_triader.md` | perspektiv | Triads concept article |
 | `/struktur/` | `_pages/struktur.md` | perspektiv | Frame: Structure |
