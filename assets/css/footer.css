@@ -34,6 +34,14 @@
     margin: 0;
 }
 
+.footer-legal a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 4px;
+    text-decoration: underline;
+}
+
 .dark-mode .footer {
     background-color: var(--footer-background-dark);
     color: var(--footer-text-dark);

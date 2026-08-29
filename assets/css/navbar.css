@@ -116,11 +116,11 @@ body.no-scroll {
 
 /* Dark mode overrides */
 .dark-mode .nav-links a {
-    color: var(--nav-link-color-dark);
+    color: var(--primary-azure);
 }
 
 .dark-mode .nav-links a:hover {
-    color: var(--nav-link-color-dark);
+    color: var(--primary-azure);
     background-color: var(--nav-hover-bg-dark);
 }
 
@@ -137,7 +137,7 @@ body.no-scroll {
 .dark-mode .nav-toggle-icon,
 .dark-mode .nav-toggle-icon::before,
 .dark-mode .nav-toggle-icon::after {
-    background: var(--nav-link-color-dark);
+    background: var(--primary-azure);
 }
 
 /* Mobile — ≤768px: full-screen burger menu overlay */

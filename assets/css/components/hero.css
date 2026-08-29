@@ -67,7 +67,8 @@
 }
 
 /* Dark mode — white text on dark overlay */
-.dark-mode .hero-content {
+.dark-mode .hero-content,
+.dark-mode .product-hero-content {
     color: #fff;
 }
 
