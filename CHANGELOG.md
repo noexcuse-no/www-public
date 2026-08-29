@@ -50,6 +50,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixed
+- **Dark mode profile text invisible (R37)**: Added `.dark-mode .profile-person-title { color: var(--text-color-dark); }` to `profiles.css`. The `.profile-person-title` element had no dark mode color override, causing it to inherit a light text color on a dark background.
+- **Horizontal scroll on mobile and desktop (R38, R39, R49)**: Added `display: block; overflow-x: auto; max-width: 100%;` to `.article-body > table` in `article.css` for responsive table scrolling. Added `max-width: 100%; height: auto;` for images inside list items, table cells, and paragraphs. Added `min-width: 0;` to `.article-body` and grid list items (`ul:has(> li > h3) > li`, `ul:has(> li > h4) > li`) to prevent CSS grid overflow from content with large intrinsic width. Fixes horizontal scroll on `/personvern/`, `/pavirkning/`, `/grc/` at ≤390px, `/identitet/` at 1920px/1440px, and 6 pages (`mennesker`, `pavirkning`, `baerekraft`, `samtale`, `intervju`, `grc`) at 1440px dark mode.
 - **Hero carousel scroll button affix visibility**: `.carousel-btn--scroll` back-to-top state was invisible because `.carousel-nav` used `transform: translateX(-50%)` for centering, which (per CSS spec) makes it the containing block for `position: fixed` descendants. Changed centering to flexbox `justify-content: center` — no transform, no containing-block side effect. Affixed button centering changed from `transform: translateX(-50%)` to `left: calc(50% - 24px)`.
 - **Hero scroll-down offset**: `scrollTo({ top: hero.offsetHeight })` was 85px short — hero starts at `hero.offsetTop` (header height). Changed to `hero.offsetTop + hero.offsetHeight` to scroll past hero entirely.
 - **Sidebar product banner height**: Reduced `min-height` from 80px to 52px to conserve vertical space. Title color changed from `#fff` (with gradient overlay) to `var(--primary-navy)` for contrast against the light illustration.
@@ -97,6 +99,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Nav/layout reorganization**: Removed newsletter signup from `_layouts/article.html` and `_layouts/home.html`. Moved cross-link pager to dedicated left sidebar column in article grid. Repositioned questions include into right sidebar alongside TOC with compact styling. Removed hero include and hero frontmatter from `index.md`/home layout. Fixed `.nav-featured` selector in `navbar.css` to target direct child of `.navbar` (was only `.nav-links a.nav-featured`, never matched).
 - **Content → pure MD**: Converted `_pages/personvern.md` from `layout: default` + inline HTML to `layout: page` + pure markdown. Converted `_pages/ledelse_60-2.md` body to pure markdown — removed `{% raw %}{% include %}{% endraw %}` and `{% raw %}{{ page.story }}{% endraw %}` variable references, added `show_cta_buttons`/`show_metodikk_callout` frontmatter booleans for conditional gating in `_layouts/product.html`.
 - **Terminology: vitenskapelig → kunnskapsbasert**: Updated `_pages/om_metode.md` hero alt text, `_includes/metodikk-callout.html` heading, and `_pages/ledelse_60-2.md` body text. Historical entry in CHANGELOG.md left intact.
+
+### Fixed
+- **R37 — Dark mode on profile pages**: Added `.dark-mode .profile-person-title { color: var(--text-color-dark) }` in `profiles.css`. The title text had no dark mode color, making it invisible on dark backgrounds.
+- **R38/R39/R49 — Horizontal scroll on mobile and desktop**: Added `overflow-x: auto` to `.article-body > table`, `max-width: 100%` to images in lists/tables/paragraphs, and `min-width: 0` on `.article-body` and grid list items in `article.css`. Fixes overflow on `/personvern/`, `/pavirkning/`, `/grc/`, `/identitet/`, and 6 pages at 1440px dark mode.
+- **R40 — Hero height regression at 1366×768**: Updated `--header-height` from 85px to 97px (actual rendered header height). Added `--hero-gap` (39px) to hero calc to account for `.ai-disclaimer` banner. Updated `carousel.js` `headerHeight` to match.
+- **R41 — Broken images on `/pavirkning/`**: Renamed 4 banner images and 5 markdown references from `å` to ASCII `a` (`perspektiv-pavirkning.webp`, `illustrasjon-pavirkning-{cta,hovedelementer,utfordringer}.webp`). Filesystem convention now consistently uses ASCII.
+- **R42 — Tag cloud slugify bug**: Fixed `_includes/tag-cloud.html:27` — changed `append: tag | slugify` to `append: (tag | slugify)` so only the tag name gets slugified, not the full path.
+- **R43 — Missing tag pages**: Created 10 `_tags/*.md` files for tags used in articles but lacking pages: `grc`, `styring`, `risikostyring`, `samsvar`, `triader`, `teamdynamikk`, `organisasjonsstruktur`, `tillitsbasert-ledelse`, `multiframe-thinking`, `ledelsesdiagnostikk`.
+- **R44 — `animations.js` robustness**: Added IntersectionObserver feature detection with scroll-listener fallbacks for back-to-top and scroll-indicator when IO is unavailable. `node --check` confirms no syntax errors.
+- **R45 — Mobile TOC modal visible at 1024px**: Added `[hidden] { display: none !important; }` guards for `.toc-mobile-toggle` and `.toc-mobile-overlay` in `sidebar.css`, and a global `[hidden]` guard in `layout.css`. Explicit `display: inline-flex`/`display: flex` were overriding the UA `[hidden]` rule.
+- **R46 — GRC card grid single-column bug**: `.card-grid--grc` was trapped inside `@media (max-width: 900px)` block (missing closing brace), so above 900px it defaulted to 1 column. Moved outside the media query.
+- **R47 — Touch targets below 44px**: Increased tag cloud item padding from `10px 18px` to `14px 18px` (44px total height). Added `.footer-legal a` rule with `min-height: 44px` for footer orgnr/email links.
+- **R48 — Homepage dark mode**: Navbar dark mode links used `--nav-link-color-dark` (= `--primary-navy` = #003060), identical to header background — invisible. Changed to `--primary-azure` (white). Added `.product-hero-content` to hero dark mode text override.
+- **R52 — Custom 404 page**: Created `_pages/404.md` with Norwegian content and navigation back to homepage.
+- **R53 — Personal data in public repo**: Removed `phone` and `email` from `_pages/dagfinn.md` frontmatter. Added conditional rendering (`{% if profile.phone %}` / `{% if profile.email %}`) in `_includes/profiles.html`.
+- **R54 — Tag pages missing from sitemap**: Added `{% for tag in site.tags %}` loop to `sitemap.xml` generating `/emne/{slug}/` entries with priority 0.6.
+- **R55 — URL mismatches**: Updated `/om-metode/` → `/metode/` in `.design/architecture.md` and `.design/information-architecture.md`.
+
+### Removed
+- **R51 — Stale dark mode test and dead toggle CSS**: Deleted `tests/dark-mode.test.js` (referenced non-existent `#dark-mode-toggle`). Removed `#dark-mode-toggle` rules from `assets/css/utilities.css` (31 lines of dead code). Deleted orphaned `_includes/newsletter-signup.html`.
 
 ## [1.9.0] - 2026-06-08
 

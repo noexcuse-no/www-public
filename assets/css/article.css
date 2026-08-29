@@ -8,6 +8,7 @@
     padding: var(--space-2xl) var(--space-xl);
     margin-top: var(--space-lg);
     margin-bottom: var(--space-lg);
+    min-width: 0;
 }
 
 /* Section vertical rhythm inside article body */
@@ -58,6 +59,7 @@ ul:has(> li > h3) > li {
     border-left: 4px solid var(--primary-accent);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flow-root;
+    min-width: 0;
 }
 
 ul:has(> li > h3) > li:hover {
@@ -116,6 +118,7 @@ ul:has(> li > h4) > li {
     padding: 20px;
     border-radius: var(--radius-lg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 0;
 }
 
 ul:has(> li > h4) > li:hover {
@@ -200,6 +203,9 @@ ul:has(> li > h4) > li img {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.95em;
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
 }
 .article-body > table th,
 .article-body > table td {
@@ -232,6 +238,14 @@ ul:has(> li > h4) > li img {
     .article-body > table td:last-child {
         white-space: nowrap;
     }
+}
+
+/* Prevent images in lists/tables/paragraphs from causing horizontal overflow */
+.article-body li img,
+.article-body td img,
+.article-body p img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* ========================================
