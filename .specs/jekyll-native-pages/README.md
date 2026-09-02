@@ -1,7 +1,7 @@
 # Jekyll Native Pages
 
 > Created: 2026-08-31
-> Status: In Progress
+> Status: Done
 
 ## Problem / Goal
 
