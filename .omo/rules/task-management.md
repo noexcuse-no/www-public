@@ -106,7 +106,7 @@ Co-authored-by: Rasmus S. Olsen <rasmus@noexcuse.no>
 Before opening a PR, verify locally:
 1. `npm run lint` — 0 errors, 0 warnings
 2. `npm test` — all tests pass (when test framework is operational)
-3. Jekyll build — `bundle exec jekyll build` — exit 0
+3. Jekyll build — `docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/srv/jekyll" -w /srv/jekyll -e JEKYLL_ENV=production jekyll/jekyll jekyll build` — exit 0
 
 If any step fails: fix before opening PR. Pre-existing failures outside your changes must be documented in the PR description under "Pre-merge notes".
 
