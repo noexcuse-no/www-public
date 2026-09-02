@@ -136,3 +136,24 @@ The existing `.specs/grc/README.md` defines GRC sentence inserts in existing art
 Primary title: "GRC — Governance, Risk and Compliance" (short, scannable)
 Subtitle/dek: "Virksomhets- og risikostyring og samsvarshåndtering" (full Norwegian expansion)
 Hero title: "GRC" with intro explaining the scope
+
+## Acceptance Criteria
+
+- [ ] `/grc/` page renders at `noexcuse.no/grc/`
+- [ ] Navigation: "GRC" appears between "Perspektiv" and "Om oss", "Forside" removed
+- [ ] Hero section renders with banner image, title, breadcrumb, intro
+- [ ] All four-perspective→GRC mappings present and accurate
+- [ ] Cybersecurity section covers ISO 27001, DORA, NIS2, NORMEN, NSM Grunnprinsipper, GDPR
+- [ ] Environmental section covers Miljøfyrtårn, ISO 45001, relevant legislation, UN Global Compact
+- [ ] Quality section covers ISO 9001, relevant legislation, contractual obligations, profitability connection
+- [ ] Ledelse 60:2 overview shows explicit GRC challenge→measurement mapping
+- [ ] At least 3 T3 spot images present (one per domain)
+- [ ] At least 1 T2 framework image present (four perspectives or Ledelse 60:2 enabler)
+- [ ] Primary CTA (booking link) present after Ledelse 60:2 section
+- [ ] Cross-links to at least 4 existing articles present and correct
+- [ ] Dark mode renders correctly (text, images, gradients)
+- [ ] Mobile layout tested at ≤599px
+- [ ] `.design/information-architecture.md` updated with `/grc/` entry
+- [ ] Brand voice compliant — no consultant-speak, direct language, specific frameworks named
+- [ ] No new CSS files created (all styles from existing patterns)
+- [ ] All images generated per 4-tier system, named per convention, placed in `assets/images/banners/`
