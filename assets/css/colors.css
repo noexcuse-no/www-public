@@ -191,4 +191,8 @@
     --success-color: #2e7d32;
     --success-ring: rgba(46, 125, 50, 0.15);
     --success-ring-dark: rgba(102, 187, 106, 0.2);
+    --carousel-btn-bg: rgba(255, 255, 255, 0.9);
+    --carousel-btn-bg-hover: #fff;
+    --carousel-btn-bg-dark: rgba(30, 30, 40, 0.85);
+    --carousel-btn-bg-hover-dark: rgba(50, 50, 65, 0.95);
 }
