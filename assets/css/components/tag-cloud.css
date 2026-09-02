@@ -14,8 +14,8 @@
     align-items: center;
     gap: 8px;
     padding: 14px 18px;
-    background: var(--box-background-light);
-    border: 1px solid var(--border-color-subtle-light);
+    background: var(--box-background);
+    border: 1px solid var(--border-color-subtle);
     border-radius: var(--radius-lg);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-decoration: none;
@@ -30,7 +30,7 @@
 .tag-name {
     font-size: 1em;
     font-weight: 500;
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 
 .tag-count {
@@ -42,8 +42,8 @@
     padding: 0 6px;
     font-size: 0.8em;
     font-weight: 600;
-    color: var(--primary-accent-contrast);
-    background: var(--primary-accent);
+    color: var(--primary-navy);
+    background: var(--primary-azure);
     border-radius: 12px;
 }
 
@@ -59,15 +59,15 @@
     display: inline-block;
     padding: 4px 10px;
     font-size: 0.8em;
-    color: var(--primary-accent);
-    background: var(--surface-subtle-light);
+    color: var(--primary-azure);
+    background: var(--surface-subtle);
     border-radius: var(--radius-sm);
     text-decoration: none;
     transition: background 0.2s ease;
 }
 
 .tag-badge:hover {
-    background: var(--surface-hover-light);
+    background: var(--surface-hover);
     text-decoration: none;
 }
 
@@ -75,23 +75,4 @@
     font-size: 0.95em;
     opacity: 0.7;
     margin-bottom: 20px;
-}
-
-/* Dark mode overrides */
-.dark-mode .tag-cloud-item {
-    background: var(--box-background-dark);
-    border-color: var(--surface-tag-bg-dark);
-}
-
-.dark-mode .tag-name {
-    color: var(--text-color-dark);
-}
-
-.dark-mode .tag-badge {
-    background: var(--surface-tag-bg-dark);
-    color: var(--primary-accent);
-}
-
-.dark-mode .tag-badge:hover {
-    background: var(--surface-hover-dark);
 }

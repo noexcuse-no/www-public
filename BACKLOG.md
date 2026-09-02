@@ -38,7 +38,8 @@ Completed items belong in `CHANGELOG.md` only.
 | V4 | Buying-situation pages | Planned | ai-private-reflection, analytics-events. 6 Tier-1 situations (gjentatte diskusjoner, svak gjennomføring, uklare roller, ny ledergruppe, ny leder, strategi ikke gjennomført). See `.specs/buying-situation-pages/README.md`. |
 | V5 | Article conversion rails | Planned | ai-private-reflection, analytics-events, navigation-ia-split. Two-CTA pattern, related-perspectives block, recognition hook, return sections. See `.specs/article-conversion-rails/README.md`. |
 | V6 | Founder credibility | Planned | bestill-booking-page, foredrag-media, product-signature. Practitioner module + reusable CTA panel (Dagfinn) on /bestill/ + /foredrag-og-media/. See `.specs/founder-credibility/README.md`. |
-| CS1 | Color system review | Pending | `.omo/plans/color-system-review.md` |
+| CS1 | Color system review | Done | `.omo/plans/color-system-review.md` |
+
 | AL1 | Article layout system | Pending | `.omo/plans/article-layout-system.md` |
 | BU1 | Button CTA URL uniformity | Pending | `.omo/plans/button-cta-url-uniformity.md` |
 | AI1 | AI Act alignment | Pending | `.omo/plans/ai-act-alignment.md` |
