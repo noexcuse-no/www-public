@@ -2,13 +2,14 @@ url: "https://noexcuse.no"
 license: "CC0-1.0"
 license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
 
+include:
+  - _pages
+  - .well-known
+
 kramdown:
   footnote_backlink: "↩"
 
 collections:
-  pages:
-    output: true
-    permalink: /:path/
   tags:
     output: true
     permalink: /emne/:path/
