@@ -16,9 +16,9 @@
     display: flex;
     gap: 20px;
     padding: 24px;
-    background: var(--box-background-light);
+    background: var(--box-background);
     border-radius: 12px;
-    border-left: 4px solid var(--primary-accent);
+    border-left: 4px solid var(--primary-azure);
 }
 
 .frame-struct { border-color: var(--frame-struct); }
@@ -56,7 +56,7 @@
 
 .founder-card {
     padding: 24px;
-    background: var(--box-background-light);
+    background: var(--box-background);
     border-radius: 12px;
     text-align: center;
 }
@@ -78,15 +78,6 @@
     margin: 0;
     font-size: 0.95em;
     line-height: 1.6;
-}
-
-/* Dark mode overrides */
-.dark-mode .frame-item {
-    background: var(--box-background-dark);
-}
-
-.dark-mode .founder-card {
-    background: var(--box-background-dark);
 }
 
 /* Responsive */

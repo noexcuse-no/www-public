@@ -19,12 +19,8 @@ html {
 /* Noscript fallback banner — shown when JS is disabled */
 .noscript-banner {
     padding: 1rem;
-    background: var(--box-background-light);
+    background: var(--box-background);
     text-align: center;
-}
-
-.dark-mode .noscript-banner {
-    background: var(--box-background-dark);
 }
 
 /* Back-to-top anchor — shows after scrolling past viewport */
@@ -60,25 +56,11 @@ html {
     pointer-events: auto;
 }
 
-.dark-mode .back-to-top {
-    background: var(--primary-azure);
-    color: var(--primary-navy);
-}
-
-.dark-mode .back-to-top:hover {
-    background: var(--primary-navy);
-    color: var(--primary-azure);
-}
-
 /* Focus indicators — visible keyboard focus only */
 :focus-visible {
-    outline: 2px solid var(--focus-color-light);
+    outline: 2px solid var(--focus-color);
     outline-offset: 2px;
     border-radius: var(--radius-sm, 2px);
-}
-
-.dark-mode :focus-visible {
-    outline-color: var(--focus-color-dark);
 }
 
 :focus:not(:focus-visible) {
