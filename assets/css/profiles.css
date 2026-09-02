@@ -13,17 +13,17 @@
 
 .profile-compact {
     border-radius: var(--radius-xl);
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--shadow-sm);
     padding: var(--space-lg);
     margin: 0;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: var(--box-background-light);
+    background: var(--box-background);
     text-align: center;
 }
 
 .profile-compact:hover {
-    box-shadow: var(--box-shadow-hover-light);
+    box-shadow: var(--shadow-md);
 }
 
 .profile-image {
@@ -33,15 +33,15 @@
     object-fit: cover;
     display: block;
     margin: -40px auto 20px;
-    border: 3px solid var(--primary-navy);
-    box-shadow: 0 4px 20px rgba(0, 48, 96, 0.15);
+    border: 3px solid var(--accent-color);
+    box-shadow: var(--shadow-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: #fff;
 }
 
 .profile-image:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 28px rgba(0, 48, 96, 0.2);
+    box-shadow: var(--shadow-md);
 }
 
 .profile-name {
@@ -70,8 +70,8 @@
     gap: 6px;
     padding: 8px 10px;
     border-radius: var(--radius-md);
-    background: var(--surface-raised-light);
-    color: var(--link-color-light);
+    background: var(--surface-subtle);
+    color: var(--link-color);
     text-decoration: none;
     font-size: 0.8em;
     word-break: break-all;
@@ -79,7 +79,7 @@
 }
 
 .profile-contact-btn:hover {
-    background: var(--surface-raised-hover-light);
+    background: var(--surface-hover);
     transform: translateY(-1px);
 }
 
@@ -105,23 +105,14 @@
 
 .profile-ctas .cta--secondary {
     background-color: transparent;
-    border-color: var(--border-color-light);
-    color: var(--text-color-light);
+    border-color: var(--border-color);
+    color: var(--text-color);
 }
 
 .profile-ctas .cta--secondary:hover {
-    background-color: var(--surface-hover-light);
-    color: var(--text-color-light);
-    border-color: var(--primary-accent);
-}
-
-.dark-mode .profile-ctas .cta--secondary {
-    border-color: var(--border-color-dark);
-    color: var(--text-color-dark);
-}
-
-.dark-mode .profile-ctas .cta--secondary:hover {
-    background-color: var(--surface-hover-dark);
+    background-color: var(--surface-hover);
+    color: var(--text-color);
+    border-color: var(--primary-azure);
 }
 
 /* --- Modal overlay --- */
@@ -130,7 +121,7 @@
     position: fixed;
     inset: 0;
     z-index: 9998;
-    background: var(--overlay-light);
+    background: var(--overlay-modal);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     justify-content: center;
@@ -144,7 +135,8 @@
 }
 
 .profile-modal-content {
-    background: var(--box-background-light);
+    background-color: var(--box-background);
+    color: var(--text-color);
     border-radius: 20px;
     width: 100%;
     max-width: 560px;
@@ -161,8 +153,8 @@
     width: 40px;
     height: 40px;
     border: none;
-    background: var(--close-bg-light);
-    color: var(--text-color-light);
+    background: var(--box-background);
+    color: var(--text-color);
     font-size: 24px;
     cursor: pointer;
     border-radius: 50%;
@@ -170,11 +162,11 @@
     align-items: center;
     justify-content: center;
     z-index: 10001;
-    box-shadow: var(--box-shadow-light);
+    box-shadow: var(--shadow-sm);
 }
 
 .profile-close:hover {
-    background: var(--close-bg-hover-light);
+    background: var(--box-background);
 }
 
 .profile-header {
@@ -182,7 +174,7 @@
     align-items: center;
     gap: 20px;
     padding: var(--space-xl) var(--space-xl) var(--space-lg);
-    background: linear-gradient(135deg, var(--profile-gradient-start-light) 0%, var(--profile-gradient-end-light) 100%);
+    background: linear-gradient(135deg, var(--profile-gradient-start) 0%, var(--profile-gradient-end) 100%);
 }
 
 .profile-image-large {
@@ -191,8 +183,8 @@
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    border: 3px solid var(--primary-navy);
-    box-shadow: 0 4px 16px rgba(0, 48, 96, 0.15);
+    border: 3px solid var(--accent-color);
+    box-shadow: var(--shadow-sm);
     background: #fff;
 }
 
@@ -219,14 +211,14 @@
     padding: 3px 10px;
     font-size: 0.78em;
     border-radius: 20px;
-    background: rgba(0, 48, 96, 0.08);
-    color: var(--link-color-light);
+    background: var(--surface-subtle);
+    color: var(--link-color);
     text-decoration: none;
     transition: background 0.2s ease;
 }
 
 .profile-tag:hover {
-    background: rgba(0, 48, 96, 0.16);
+    background: var(--surface-hover);
 }
 
 /* --- Modal bio --- */
@@ -234,7 +226,7 @@
     padding: 0 var(--space-xl) 20px;
     font-size: 0.95em;
     line-height: 1.7;
-    border-bottom: 1px solid var(--border-color-subtle-light);
+    border-bottom: 1px solid var(--border-color-subtle);
 }
 
 /* --- Modal contact grid --- */
@@ -243,7 +235,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 8px;
-    border-bottom: 1px solid var(--border-color-subtle-light);
+    border-bottom: 1px solid var(--border-color-subtle);
 }
 
 .profile-contact-item {
@@ -253,20 +245,20 @@
     font-size: 0.9em;
     padding: 10px 14px;
     border-radius: var(--radius-md);
-    background: var(--surface-raised-light);
+    background: var(--surface-subtle);
     text-decoration: none;
     transition: background 0.2s ease, transform 0.2s ease;
-    color: var(--link-color-light);
+    color: var(--link-color);
 }
 
 .profile-contact-item:hover {
-    background: var(--surface-raised-hover-light);
+    background: var(--surface-hover);
     transform: translateY(-1px);
 }
 
 .profile-contact-item .contact-icon {
     flex-shrink: 0;
-    color: var(--primary-navy);
+    color: var(--accent-color);
     opacity: 0.6;
 }
 
@@ -284,12 +276,12 @@
 }
 
 .profile-contact-item--linkedin .contact-icon {
-    color: #0a66c2;
+    color: var(--brand-linkedin);
     opacity: 1;
 }
 
 .profile-contact-item--linkedin:hover {
-    background: #0a66c2;
+    background: var(--brand-linkedin);
     color: #ffffff;
 }
 
@@ -312,8 +304,8 @@
     align-items: center;
     gap: 8px;
     padding: 14px 32px;
-    background-color: var(--primary-accent);
-    color: var(--primary-accent-contrast);
+    background-color: var(--primary-azure);
+    color: var(--primary-navy);
     text-decoration: none;
     border-radius: 10px;
     font-weight: 600;
@@ -323,140 +315,13 @@
 
 .profile-booking-btn:hover {
     transform: translateY(-2px);
-    box-shadow: var(--box-shadow-hover-light);
+    box-shadow: var(--shadow-md);
 }
 
 .profile-details {
     padding: 0 var(--space-xl) var(--space-xl);
     font-size: 0.9em;
     line-height: 1.6;
-}
-
-/* ========================================
-   Dark mode overrides
-   ======================================== */
-.dark-mode #profiles {
-    background-color: var(--background-color-dark);
-}
-
-.dark-mode .profile {
-    background-color: var(--background-color-dark);
-}
-
-.dark-mode .profile-compact {
-    background: var(--box-background-dark);
-    box-shadow: var(--box-shadow-dark);
-}
-
-.dark-mode .profile-compact:hover {
-    box-shadow: var(--box-shadow-dark);
-}
-
-.dark-mode .profile-image {
-    border-color: var(--primary-azure);
-    box-shadow: 0 4px 20px rgba(240, 255, 255, 0.1);
-}
-
-.dark-mode .profile-image:hover {
-    box-shadow: 0 6px 28px rgba(240, 255, 255, 0.15);
-}
-
-.dark-mode .profile-name {
-    color: var(--text-color-dark);
-}
-
-.dark-mode .profile-person-title {
-    color: var(--text-color-dark);
-}
-
-.dark-mode .profile-contact-btn {
-    color: var(--link-color-dark);
-    background: var(--surface-subtle-dark);
-}
-
-.dark-mode .profile-contact-btn:hover {
-    background: var(--surface-hover-dark);
-}
-
-.dark-mode .profile-expand-btn {
-    color: var(--link-color-dark);
-}
-
-.dark-mode .profile-expanded {
-    background: var(--overlay-dark);
-}
-
-.dark-mode .profile-modal-content {
-    background: var(--box-background-dark);
-    color: var(--text-color-dark);
-}
-
-.dark-mode .profile-close {
-    background: var(--close-bg-dark);
-    color: var(--text-color-dark);
-}
-
-.dark-mode .profile-header {
-    background: linear-gradient(135deg, var(--profile-gradient-start-dark) 0%, var(--profile-gradient-end-dark) 100%);
-}
-
-.dark-mode .profile-header-info .profile-name {
-    color: var(--text-color-dark);
-}
-
-.dark-mode .profile-image-large {
-    border-color: var(--primary-azure);
-    box-shadow: 0 4px 16px rgba(240, 255, 255, 0.1);
-}
-
-.dark-mode .profile-tag {
-    background: rgba(240, 255, 255, 0.1);
-    color: var(--link-color-dark);
-}
-
-.dark-mode .profile-tag:hover {
-    background: rgba(240, 255, 255, 0.2);
-}
-
-.dark-mode .profile-bio {
-    color: var(--text-color-dark);
-    border-color: var(--border-color-dark);
-}
-
-.dark-mode .profile-contact-grid {
-    border-color: var(--border-color-dark);
-}
-
-.dark-mode .profile-contact-item {
-    color: var(--link-color-dark);
-    background: var(--surface-raised-dark);
-}
-
-.dark-mode .profile-contact-item:hover {
-    background: var(--surface-raised-hover-dark);
-}
-
-.dark-mode .profile-contact-item .contact-icon {
-    color: var(--primary-azure);
-    opacity: 0.6;
-}
-
-.dark-mode .profile-contact-item--linkedin .contact-icon {
-    color: #0a66c2;
-    opacity: 1;
-}
-
-.dark-mode .profile-contact-item--linkedin:hover {
-    background: #0a66c2;
-    color: #ffffff;
-}
-
-.dark-mode .profile-contact-item--linkedin:hover .contact-icon {
-    color: #ffffff;
-}
-
-.dark-mode .profile-details {
-    color: var(--text-color-dark);
 }
 
 /* ========================================

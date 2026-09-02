@@ -1,5 +1,11 @@
 /* Button and CTA styles — extracted from products, about, article */
 
+/* Base button styling — azure bg, navy text (constant across modes) */
+.button, .close-button {
+    background-color: var(--primary-azure);
+    color: var(--primary-navy);
+}
+
 /* CTA buttons */
 .cta {
     display: inline-flex;
@@ -54,8 +60,8 @@
     padding: 10px 20px;
     font-size: 0.95em;
     font-weight: 500;
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
+    color: var(--primary-navy);
+    background-color: var(--primary-azure);
     text-decoration: none;
     border-radius: var(--radius-md);
     min-height: 44px;
@@ -84,10 +90,4 @@
         margin-top: 12px;
         display: block;
     }
-}
-
-/* Dark mode overrides */
-.dark-mode .benefit-link {
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
 }
