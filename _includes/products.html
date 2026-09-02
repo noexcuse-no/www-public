@@ -3,7 +3,7 @@
     {% for product in products %}
     <div class="product-hero"{% if page.hero_effect %} data-hero-effect="{{ page.hero_effect }}"{% endif %}>
         <div class="product-hero-content">
-            <h2 class="hero-title">{{ product.name }}</h2>
+            <h2 class="hero-title">{{ product.display_name }}</h2>
             <p class="product-short-description hero-intro">{{ product.short_description }}</p>
             {% if product.cta[0] %}
             <a href="{{ product.cta[0].url }}" class="cta" title="{{ product.cta[0].text }}">{{ product.cta[0].text }}</a>
@@ -13,7 +13,7 @@
             {% endif %}
         </div>
         <div class="product-hero-image">
-            <img src="{{ product.image | relative_url }}" alt="{{ product.name }} — illustrasjon">
+            <img src="{{ product.image | relative_url }}" alt="{{ product.display_name }} — illustrasjon">
         </div>
     </div>
     <div class="product-benefits grid grid--2">

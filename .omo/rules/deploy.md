@@ -16,6 +16,7 @@ globs: ["_config.yml", "Gemfile", "CNAME", ".github/**/*"]
 
 - `CNAME` must exist at project root with domain `noexcuse.no`
 - New collections must be registered in `_config.yml` under `collections:` AND have a matching `defaults:` entry
+- `_pages` is loaded via `include: ["_pages"]` (NOT a collection); only `_tags` is a collection
 - Collection defaults must set `layout:` and `lang: no`
 
 ## Deployment
