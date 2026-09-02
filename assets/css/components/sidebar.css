@@ -376,21 +376,21 @@
 }
 
 .share-btn--teams {
-    background: #6264A7;
+    background: var(--brand-teams);
 }
 
 .share-btn--teams:hover {
-    background: #5050A0;
-    color: #fff;
+    background: var(--brand-teams-hover);
+    color: #fff; /* brand-mandated: white text on brand-colored buttons */
 }
 
 .share-btn--linkedin {
-    background: #0A66C2;
+    background: var(--brand-linkedin);
 }
 
 .share-btn--linkedin:hover {
-    background: #084d91;
-    color: #fff;
+    background: var(--brand-linkedin-hover);
+    color: #fff; /* brand-mandated: white text on brand-colored buttons */
 }
 
 .share-btn svg {

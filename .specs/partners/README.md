@@ -36,6 +36,8 @@ The data model must support all partner types with a `partner_type` taxonomy fie
 
 Funnel role is per-partner configurable via frontmatter (e.g., `funnel_role: ["booking","awareness","landing","referral"]`).
 
+> **Updated 2026-08-30 (strategy alignment):** "Direct booking links" now route **via `/bestill/ledelse-60-2/`** (the site-owned booking decision page), not directly to the external MS Bookings scheduler. The site owns the commercial context (price, fit, privacy, reassurance); the scheduler is background time-selection. Partners send ready-to-buy leads to `/bestill/ledelse-60-2/` (Route A) or `/samtale/` (Route B, 20-min avklaring). **Consultant neutrality:** partners are positioned as independent channels that refer into No Excuse's bounded, transparent, no-lock-in diagnosis — not as resellers of a packaged product. See `.design/inbound-strategy.md` §2 (positioning) and §7 (/bestill/ architecture).
+
 ### Q3 — Partner Page Depth
 **Full** — profile with description, services, industries covered + joint methodology description + co-branded cases.
 

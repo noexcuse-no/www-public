@@ -73,10 +73,11 @@ Structured overview — could be a table, a stepped diagram, or a visual framewo
 
 ### 6. CTA Section(s)
 
-- CTA after the Ledelse 60:2 overview (booking link)
+- CTA after the Ledelse 60:2 overview → Route A: "Bestill Ledelse 60:2" → /bestill/ledelse-60-2/
 - Soft CTAs early in the page ("Vil du vite mer?") leading to Ledelse 60:2 product page
+- Route B: "Book 20 min avklaring" → /samtale/ (for uncertainty-reduction context)
 - Inline cross-links to relevant articles throughout
-- Bottom-of-page CTA with booking link
+- Bottom-of-page CTA with Route A/B booking links
 
 ## Visual Strategy
 
