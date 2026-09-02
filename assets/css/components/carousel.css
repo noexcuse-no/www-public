@@ -49,19 +49,6 @@
     transform: scale(0.95);
 }
 
-/* Dark mode */
-.dark-mode .carousel-btn {
-    background: var(--carousel-btn-bg-dark);
-    color: var(--text-color-dark);
-    box-shadow: var(--shadow-sm-dark);
-}
-
-.dark-mode .carousel-btn:hover {
-    background: var(--carousel-btn-bg-hover-dark);
-    color: var(--link-hover-dark);
-    box-shadow: var(--shadow-md-dark);
-}
-
 /* --- Scroll-up button: transitions to fixed/sticky --- */
 .carousel-btn--scroll {
     /* Slightly larger center button */

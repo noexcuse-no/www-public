@@ -60,8 +60,8 @@
     padding: 10px 20px;
     font-size: 0.95em;
     font-weight: 500;
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
+    color: var(--primary-navy);
+    background-color: var(--primary-azure);
     text-decoration: none;
     border-radius: var(--radius-md);
     min-height: 44px;
@@ -90,10 +90,4 @@
         margin-top: 12px;
         display: block;
     }
-}
-
-/* Dark mode overrides */
-.dark-mode .benefit-link {
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
 }
