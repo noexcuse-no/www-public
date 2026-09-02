@@ -50,11 +50,7 @@
                     <img class="profile-image-large" src="{{ profile.image | relative_url }}" alt="{{ profile.display_name }}s profilbilde">
                     <div class="profile-header-info">
                         <h3 class="profile-name">{{ profile.display_name }}</h3>
-                        {% assign raw_tags = profile.tags %}
-                        {% assign tag_list = raw_tags %}
-                        {% if raw_tags.first.size == 1 %}
-                            {% assign tag_list = raw_tags | split: " " %}
-                        {% endif %}
+                        {% assign tag_list = profile.tags | default: "" | join: " " | split: " " %}
                         {% if tag_list.size > 0 %}
                         <p class="profile-tags">
                             {% for tag in tag_list %}
