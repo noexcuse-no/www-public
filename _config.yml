@@ -4,6 +4,7 @@ license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
 
 include:
   - _pages
+  - .well-known
 
 kramdown:
   footnote_backlink: "↩"
