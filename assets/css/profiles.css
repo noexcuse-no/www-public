@@ -34,14 +34,14 @@
     display: block;
     margin: -40px auto 20px;
     border: 3px solid var(--primary-navy);
-    box-shadow: 0 4px 20px rgba(0, 48, 96, 0.15);
+    box-shadow: var(--shadow-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: #fff;
 }
 
 .profile-image:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 28px rgba(0, 48, 96, 0.2);
+    box-shadow: var(--shadow-md);
 }
 
 .profile-name {
@@ -192,7 +192,7 @@
     object-fit: cover;
     flex-shrink: 0;
     border: 3px solid var(--primary-navy);
-    box-shadow: 0 4px 16px rgba(0, 48, 96, 0.15);
+    box-shadow: var(--shadow-sm);
     background: #fff;
 }
 
@@ -219,14 +219,14 @@
     padding: 3px 10px;
     font-size: 0.78em;
     border-radius: 20px;
-    background: rgba(0, 48, 96, 0.08);
+    background: var(--surface-subtle-light);
     color: var(--link-color-light);
     text-decoration: none;
     transition: background 0.2s ease;
 }
 
 .profile-tag:hover {
-    background: rgba(0, 48, 96, 0.16);
+    background: var(--surface-hover-light);
 }
 
 /* --- Modal bio --- */
@@ -284,12 +284,12 @@
 }
 
 .profile-contact-item--linkedin .contact-icon {
-    color: #0a66c2;
+    color: var(--brand-linkedin);
     opacity: 1;
 }
 
 .profile-contact-item--linkedin:hover {
-    background: #0a66c2;
+    background: var(--brand-linkedin);
     color: #ffffff;
 }
 
@@ -354,11 +354,11 @@
 
 .dark-mode .profile-image {
     border-color: var(--primary-azure);
-    box-shadow: 0 4px 20px rgba(240, 255, 255, 0.1);
+    box-shadow: var(--shadow-sm-dark);
 }
 
 .dark-mode .profile-image:hover {
-    box-shadow: 0 6px 28px rgba(240, 255, 255, 0.15);
+    box-shadow: var(--shadow-md-dark);
 }
 
 .dark-mode .profile-name {
@@ -406,16 +406,16 @@
 
 .dark-mode .profile-image-large {
     border-color: var(--primary-azure);
-    box-shadow: 0 4px 16px rgba(240, 255, 255, 0.1);
+    box-shadow: var(--shadow-sm-dark);
 }
 
 .dark-mode .profile-tag {
-    background: rgba(240, 255, 255, 0.1);
+    background: var(--surface-subtle-dark);
     color: var(--link-color-dark);
 }
 
 .dark-mode .profile-tag:hover {
-    background: rgba(240, 255, 255, 0.2);
+    background: var(--surface-hover-dark);
 }
 
 .dark-mode .profile-bio {
@@ -442,12 +442,12 @@
 }
 
 .dark-mode .profile-contact-item--linkedin .contact-icon {
-    color: #0a66c2;
+    color: var(--brand-linkedin);
     opacity: 1;
 }
 
 .dark-mode .profile-contact-item--linkedin:hover {
-    background: #0a66c2;
+    background: var(--brand-linkedin);
     color: #ffffff;
 }
 
