@@ -32,8 +32,8 @@ Completed items belong in `CHANGELOG.md` only.
 | FF2 | i18n multilingual support | Blocked | Waiting on user manual unblock — infrastructure ready, content translation deferred |
 | R4 | Benefit article illustrations — 52 images across 4 articles (T2 framework + T3 section + T4 micro tiers) | Done | — |
 | R15 | Values illustrations — 3 T3 spot illustrations for Om Oss value cards | Done | — |
-| FF5 | Three-step pages for Ledelse 60:2 | Planned | FF6 |
-| FF6 | Multi-product support | Planned | Q7 |
+| FF5 | Three-step pages for Ledelse 60:2 | Blocked | FF6 — user decision 2026-08-31 |
+| FF6 | Multi-product support | Blocked | Q7 — user decision 2026-08-31 |
 | N4 | Identitet: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Done | — |
 | N5 | Struktur: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Done | — |
 | N6 | Mennesker: layout wiring + content refinement (method-benefit integration) — spot illustrations generated and named | Done | — |
@@ -79,13 +79,13 @@ Completed items belong in `CHANGELOG.md` only.
 | G2 | **Om Oss improvements (F2)** — methodology link to /metode/, PostalAddress in JSON-LD. See `.specs/om-oss-gaps/README.md`. | Done | PR #153 |
 | G3 | **Topical landing pages (F3)** — Organisasjonskultur (P0), Informasjonssikkerhet (P0), Endringsledelse (P1), Risikostyring (P1), Kvalitetsledelse (P2), Bærekraft/ESG (P2), Compliance (P2). See `.specs/topical-landing-pages/README.md`. | Done | PR #160 |
 | G4 | **Conversion infrastructure (F4)** — email capture (F4a), contact form (F4b), step page enrichment (F4c, done via R25), article recommendations (F4d, future). All via MVP JSON-file storage. See `.specs/conversion-infrastructure/README.md`. | Doing | G1, G2, G3 (all contribute to the funnel) |
-| C1 | **Customer case intake & planning** — Intake toolkit ready at `.research/case-intake-toolkit.md` (customer scorecard, interview script, writing template, approval workflow). Next: identify 1–3 real cases and conduct interviews with customer sign-off. | Doing | — |
+| C1 | **Customer case intake & planning** — Intake toolkit ready at `.research/case-intake-toolkit.md` (customer scorecard, interview script, writing template, approval workflow). Next: identify 1–3 real cases and conduct interviews with customer sign-off. | Blocked | User decision 2026-08-31 |
 | C2 | **Case presentation design** — Product-tag filtering infrastructure ready: `_includes/cases-cards.html` accepts `product_tag` param, product pages have `product_tag` frontmatter, `_layouts/product.html` includes filtered cases-cards. Rendering stays invisible until case content exists. See `.specs/cases/README.md`. | Done | C1 |
-| C3 | **Case content creation** — Write full case descriptions with measurable results (anonymized if needed). Norwegian Bokmål. | Planned | C1, C2 |
-| C4 | **Visitor flow / inbound sales journey** — Integrate cases into site nav (Om Oss cross-link, homepage section, product page filtering, article recommendations). See `.specs/cases/README.md` and `.specs/inbound-sales/README.md`. | Planned | C1, C2, C3 |
+| C3 | **Case content creation** — Write full case descriptions with measurable results (anonymized if needed). Norwegian Bokmål. | Blocked | C1, C2 — user decision 2026-08-31 |
+| C4 | **Visitor flow / inbound sales journey** — Integrate cases into site nav (Om Oss cross-link, homepage section, product page filtering, article recommendations). See `.specs/cases/README.md` and `.specs/inbound-sales/README.md`. | Blocked | C1, C2, C3 — user decision 2026-08-31 |
 | P6 | **Partner presentation design & guidelines** — All 5 decisions recorded in `.specs/partners/README.md`. Partner guidelines document ready at `.research/partner-guidelines.md` covering product pitch, partner deliverables, redirect mechanism, commercial terms, and legal requirements. Frontmatter schema expanded for Full depth (description, services, industries, methodology, partner_type, funnel_roles). | Done | — |
-| P7 | **Partner content creation** — Create partner pages in `_pages/` with content produced from partner conversations. Frontmatter schema, guidelines, and page infrastructure ready. Next: actual partner conversations. | Planned | P6 |
-| BR1 | **Norwegian origin brand positioning design doc** — Market-specific brand notes for FF2: all three strategies (quality signal / cultural context / humility) across Nordic markets and continental Europe. See `.design/norwegian-origin-branding.md`. | Planned | — |
+| P7 | **Partner content creation** — Create partner pages in `_pages/` with content produced from partner conversations. Frontmatter schema, guidelines, and page infrastructure ready. Next: actual partner conversations. | Blocked | P6 — user decision 2026-08-31 |
+| BR1 | **Norwegian origin brand positioning design doc** — Market-specific brand notes for FF2: all three strategies (quality signal / cultural context / humility) across Nordic markets and continental Europe. See `.design/norwegian-origin-branding.md`. | Done | design doc complete |
 | BR2 | **Om Oss — Norwegian origin content update** — Expand founding story, anchor methodology in Norwegian management tradition, make cultural values explicit as Norwegian, add "beste praksis fra norsk arbeidsliv" section, add international framing for FF2. | Planned | BR1 |
 | W1 | **Wide-screen sidebar — article pages** — Right-hand panel with auto-generated page index (scroll-spy, clickable), questions section (replaces bottom placement), and CTA. Fixed/sticky while scrolling, appears after hero scrolls past, matches article body background. See `.design/wide-screen-sidebar.md`. | Done | PR #160 |
 | W2 | **Wide-screen sidebar — homepage** — Separate implementation for homepage layout: right panel or bottom-of-page variant showing featured articles, newsletter signup, CTA. Appears after hero-intro scrolls past. | Done | PR #160 |
@@ -109,7 +109,7 @@ Completed items belong in `CHANGELOG.md` only.
 | Q3 | **Quiz — JS engine** — Create `assets/scripts/quiz.js`: modal controller, question flow, scoring (always forces a single winner), results, sessionStorage, result URL sharing. No dependencies. See `.specs/quiz/README.md`. | Planned | — |
 | Q4 | **Quiz — CSS** — Create `assets/css/components/quiz.css`: modal overlay, progress bar, answer cards, result infographic, score bars, shareable result card. Dark mode via CSS variables. See `.design/quiz.md`. | Planned | Q3 |
 | Q5 | **Quiz — page integration** — Deferred. No CTA placement until decided. | Deferred | — |
-| R36 | **LLM disclaimer banner restyle** — Replace inline-styled fixed/rotated yellow div in `_includes/header.html` with a clean, always-visible top bar themed with design tokens. Centered on desktop, left-aligned on mobile. New component CSS + theme color entries. See `.specs/ai-disclaimer/README.md`. | Doing | — |
+| R36 | **LLM disclaimer banner restyle** — Replace inline-styled fixed/rotated yellow div in `_includes/header.html` with a clean, always-visible top bar themed with design tokens. Centered on desktop, left-aligned on mobile. New component CSS + theme color entries. See `.specs/ai-disclaimer/README.md`. | Done | f62cb3d |
 | R37 | **Fix dark mode on profile pages** — Profile content invisible on `/dagfinn/` and unreadable on `/om-oss/` in dark mode. Add `.profile-person-title` dark override, add global table/image overflow CSS. See `.omo/plans/ui-ux-fixes-r27.md` Branch 1. | Done | — |
 | R38 | **Fix horizontal scroll on mobile** — `/personvern/`, `/pavirkning/`, `/grc/` overflow at ≤390px. Add `overflow-x: auto` to tables, `max-width: 100%` to images in lists. See `.omo/plans/ui-ux-fixes-r27.md` Branch 1. | Done | — |
 | R39 | **Fix `/identitet/` horizontal scroll at desktop** — 1920px/1440px dark mode overflow. Same table/image overflow root cause. See `.omo/plans/ui-ux-fixes-r27.md` Branch 1. | Done | — |
@@ -135,3 +135,9 @@ Completed items belong in `CHANGELOG.md` only.
 | V4 | **Buying-situation landing page system** — Create a dedicated page family for high-intent leadership situations that route visitors toward Ledelse 60:2 with clear commercial adjacency. See `.specs/buying-situation-pages/README.md`. | Planned | V2, V3 |
 | V5 | **Article conversion rails** — Add contextual next-step conversion components on article pages so insight traffic can reach the product proposition in one meaningful step. See `.specs/article-conversion-rails/README.md`. | Planned | G4, R33 |
 | V6 | **Founder credibility component** — Define a compact Dagfinn credibility module for commercial surfaces without interrupting the buying journey with a full biography block. See `.specs/founder-credibility/README.md`. | Planned | — |
+| CS1 | Color system review | Pending | `.omo/plans/color-system-review.md` |
+| AL1 | Article layout system | Pending | `.omo/plans/article-layout-system.md` |
+| BU1 | Button CTA URL uniformity | Pending | `.omo/plans/button-cta-url-uniformity.md` |
+| AI1 | AI Act alignment | Pending | `.omo/plans/ai-act-alignment.md` |
+| RI1 | Risk reduction cleanup | Pending | `.omo/plans/risk-reduction-cleanup.md` |
+| CI1 | CI reuse gating flip | Pending | mixed-rights:507 |
