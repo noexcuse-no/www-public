@@ -30,8 +30,8 @@ A single `cta` list on any page frontmatter. Zero or more items, each with `text
 
 ```yaml
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Bestill Ledelse 60:2"
+    url: "/bestill/ledelse-60-2/"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
 ```
