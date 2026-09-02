@@ -20,13 +20,9 @@ Nettstedet mangler mellomrommet i konverteringstrakten. Toppen (artikler) og bun
 
 ### F4b — Kontaktformular
 
-**Hva:** Opprett en `/kontakt/`-side med et enkelt skjema (navn, epost, melding). Krysslenkes fra Om Oss og artikkelfotnoter.
+**Status:** Superseded 2026-08-30 (strategy alignment). The contact form was removed in favor of direct booking via `/bestill/` (the site owns the commercial context; booking acts as the background scheduler). No contact form is planned; the feature is closed.
 
-**Hvorfor:** Booking er høy barriere. Et kontaktformular gir oss en lettere inngang for spørsmål, tilbudsforespørsler og generelle henvendelser.
-
-**Filer:** `_pages/kontakt.md` (ny), `_includes/contact-form.html` (ny).
-
-**Samtykke:** Samme som F4a.
+**Filer:** None (former `_pages/kontakt.md` and `_includes/contact-form.html` removed).
 
 ### F4c — Stegside-berikelse
 
@@ -51,15 +47,14 @@ Innsamlet data (epostadresser, kontakthenvendelser) må sendes til en godkjent e
 
 ## Dependencies
 
-- F4a og F4b deler datalagringsmekanisme — kan utvikles samtidig
+- F4a og F4b deler datalagringsmekanisme — kan utvikles samtidig (F4b er imidlertid superseded, se over)
 - F4c er uavhengig
 - F4d forutsetter F4a
 
 ## Acceptance Criteria
 
-- [ ] Nyhetsbrev-skjema vises på bunnen av hver artikkel og på forsiden
-- [ ] Samtykke-avkrysning er påkrevd før innsending
-- [ ] `/kontakt/`-side eksisterer med fungerende skjema
-- [ ] Stegsidene (Samtale/Intervju/Rapport) har brødtekst og CTA
+- [ ] Nyhetsbrev-skjema (F4a) vises på bunnen av hver artikkel og på forsiden, hvis/viss F4a bygges
+- [ ] Samtykke-avkrysning er påkrevd før innsending (F4a)
+- [ ] Stegsidene (Samtale/Intervju/Rapport) har brødtekst og CTA (F4c)
 - [ ] Innsamlet data sendes til ekstern tjeneste — ingen lagring i repo
 - [ ] Jekyll build exit 0
