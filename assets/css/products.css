@@ -1,3 +1,8 @@
+.product {
+    background-color: var(--box-background);
+    color: var(--text-color);
+}
+
 .products {
     /* Width/spacing via .section.container */
 }

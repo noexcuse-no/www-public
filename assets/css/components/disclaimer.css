@@ -3,6 +3,9 @@
     font-size: 0.9rem;
     line-height: 1.5;
     padding: var(--space-sm) var(--space-lg);
+    background-color: var(--disclaimer-bg);
+    color: var(--disclaimer-text);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .ai-disclaimer a {

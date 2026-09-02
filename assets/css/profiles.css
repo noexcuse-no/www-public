@@ -144,7 +144,8 @@
 }
 
 .profile-modal-content {
-    background: var(--box-background-light);
+    background-color: var(--box-background);
+    color: var(--text-color);
     border-radius: 20px;
     width: 100%;
     max-width: 560px;

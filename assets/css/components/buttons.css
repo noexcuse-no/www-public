@@ -1,5 +1,11 @@
 /* Button and CTA styles — extracted from products, about, article */
 
+/* Base button styling — azure bg, navy text (constant across modes) */
+.button, .close-button {
+    background-color: var(--primary-azure);
+    color: var(--primary-navy);
+}
+
 /* CTA buttons */
 .cta {
     display: inline-flex;
