@@ -53,7 +53,7 @@ small {
 blockquote {
     margin: var(--space-lg) 0;
     padding: var(--space-md) var(--space-lg);
-    border-left: 3px solid var(--primary-azure);
+    border-left: 3px solid var(--primary-navy);
     font-style: italic;
     color: var(--text-color-light);
     opacity: 0.9;
