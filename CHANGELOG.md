@@ -60,6 +60,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - **LLM disclaimer banner restyle (R36)**: Replaced the inline-styled, fixed/rotated semi-transparent yellow div in `_includes/header.html` with a clean, always-visible top bar above the site header. New `assets/css/components/disclaimer.css` (centered on desktop, left-aligned at ≤599px), themed colors added to `styles-light.css`/`styles-dark.css` via `--banner-background/text-*` tokens. Disclaimer text, GitHub link, and the guardrail comment are unchanged.
+- **Norwegian origin brand positioning (BR1)**: Added `.design/norwegian-origin-branding.md` — market-specific brand notes for FF2 covering all three strategies (quality signal / cultural context / humility) across Nordic markets and continental Europe (Germany/Benelux, UK).
 - **Left sidebar: share buttons as separate card**: Moved share section (`share-section.html`) out of `.pager-scroll` to sit below the TOC as a visually distinct card with its own background, border-radius, and shadow — mirrors the right panel's card-separation pattern (questions card above product card). Card styling moved from `.article-pager` wrapper to `.pager-scroll` and `.sidebar-section--share` independently.
 
 - **Ledelse 60:2 — article layout migration**: Switched the product page from `product` layout to `article` layout. Added 5 diagnostic frontmatter questions with collapsible sidebar rendering. Added Dagfinn profile include at page bottom. Removed obsolete `show_cta_buttons`/`show_metodikk_callout` flags.
