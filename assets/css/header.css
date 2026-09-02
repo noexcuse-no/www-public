@@ -7,6 +7,10 @@
     --header-height: 97px;
 }
 
+.header-margin {
+    background-color: var(--header-bg);
+}
+
 .banner {
     padding: 16px 20px;
     display: flex;
