@@ -175,4 +175,20 @@
     --button-background-dark: var(--box-background-dark);
     --button-text-color-light: var(--primary-accent-contrast);
     --button-text-color-dark: var(--text-color-light);
+
+    /* ========================================
+       Component Accent Colors
+       ======================================== */
+    --frame-struct: #2A4D6E;
+    --frame-human: #B8901E;
+    --frame-political: #355E3B;
+    --frame-symbol: #8E0D3C;
+    --brand-linkedin: #0a66c2;
+    --brand-linkedin-hover: #084d91;
+    --brand-teams: #6264A7;
+    --brand-teams-hover: #5050A0;
+    --error-color: #c62828;
+    --success-color: #2e7d32;
+    --success-ring: rgba(46, 125, 50, 0.15);
+    --success-ring-dark: rgba(102, 187, 106, 0.2);
 }
