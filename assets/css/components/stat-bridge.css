@@ -19,5 +19,6 @@
 
 /* Dark mode overrides */
 .dark-mode .stat-bridge-text {
+    color: var(--primary-azure);
     opacity: 0.6;
 }

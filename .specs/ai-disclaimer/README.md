@@ -2,6 +2,8 @@
 
 > Created: 2026-07-31
 > Status: In Progress
+>
+> **Updated 2026-08-30 (strategy alignment):** This banner is the **provenance layer** — it discloses that the site is AI-assisted. It is separate from the AI-reflection privacy layers (`.specs/privacy-communication/README.md`). The banner tells visitors the site content is AI-generated; the privacy layers tell visitors what happens to their AI-reflection conversation. Do not conflate the two. The banner's text, GitHub link, and guardrail comment stay verbatim (R36).
 
 ## Problem / Goal
 
