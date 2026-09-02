@@ -1,5 +1,9 @@
 # Booking Direct Links — Fix Specification
 
+> **Status: SUPERSEDED** — replaced by `.specs/bestill-booking-page/README.md` (2026-08-30).
+>
+> The strategy reverses this spec's premise: instead of linking booking CTAs directly to Microsoft Bookings, the site now owns the commercial context on `/bestill/ledelse-60-2/` and `/samtale/`, with MS Bookings demoted to a background time-selection scheduler. Direct external booking links are removed sitewide (see `.specs/cta-frontmatter/README.md` and the sitewide CTA migration). Do not follow this spec's acceptance criteria.
+
 ## Problem
 
 Booking CTAs open in an iframe modal instead of linking directly to Microsoft Bookings. This adds an unnecessary intermediary step, can cause mobile usability issues, and prevents users from directly bookmarking the booking page.
