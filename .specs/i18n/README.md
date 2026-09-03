@@ -2,6 +2,8 @@
 
 > Created: 2026-05-30
 > Status: Ready
+>
+> **Updated 2026-08-30 (strategy alignment):** Corrects the readiness claim. The `Status: Ready` line is **spec-status** (the spec is ready to implement), NOT a claim that infrastructure exists. **No i18n infrastructure is built** — there is no `_data/languages.yml`, no language switcher, no hreflang tags, no `Accept-Language` detection (no `languages.yml` exists; `language-switcher|hreflang|Accept-Language` in `_includes/ _layouts/ _data/ assets/` → 0 matches). Scope is **substrate + commercial-layer ownership** (see below). The false "infrastructure ready" note at `BACKLOG.md:32` (FF2) is corrected in todo 6.
 
 ## Purpose / Problem
 
@@ -26,6 +28,16 @@ Files to create/modify:
 - Language switcher component (`_includes/language-switcher.html`)
 - SEO hreflang tags in `<head>`
 - Existing `_pages/*.md` files — migrate to language subdirectories
+
+## Substrate + Commercial-Layer Ownership (2026-08-30 scope)
+
+The strategy narrows i18n to **substrate only** — no translations, no switcher, no detection logic in this work stream:
+
+1. **URL convention readiness** — document + implement the per-language directory convention (`_pages/no/`, `_pages/en/`); no code moves pages now.
+2. **Guarded hreflang block** in the metadata `<head>` include — emits `<link rel="alternate" hreflang>` tags ONLY when `site.languages` data exists. Today it emits nothing (prevents future retro-fitting; no hreflang for nonexistent alternates).
+3. **`_config.yml` comment** documenting the per-language dir convention + the **commercial-copy ownership rule**: the website owns commercial copy/pricing/VAT/privacy per language; the scheduler (MS Bookings) sits beneath and is never the commercial surface.
+
+The multilingual principle (`.design/inbound-strategy.md` §13) governs: the website owns the commercial story in each language; the scheduler is background infrastructure.
 
 ## Implementation Notes
 

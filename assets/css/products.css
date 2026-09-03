@@ -1,3 +1,8 @@
+.product {
+    background-color: var(--box-background);
+    color: var(--text-color);
+}
+
 .products {
     /* Width/spacing via .section.container */
 }
@@ -39,12 +44,8 @@
     max-width: var(--content-wide);
     margin: 0 auto;
     padding: var(--space-4xl) var(--space-md);
-    background: var(--surface-subtle-light);
+    background: var(--surface-subtle);
     border-radius: var(--radius-xl);
-}
-
-.dark-mode .section--step-grid {
-    background: var(--surface-subtle-dark);
 }
 
 .product-hero {
@@ -85,7 +86,7 @@
 .product-link {
     display: inline-block;
     margin-left: 16px;
-    color: var(--primary-accent);
+    color: var(--primary-azure);
     text-decoration: underline;
     font-size: 0.95em;
 }
@@ -98,8 +99,8 @@
 .benefit-card {
     padding: 0;
     border-radius: var(--radius-xl);
-    box-shadow: var(--box-shadow-light);
-    background-color: var(--box-background-light);
+    box-shadow: var(--shadow-sm);
+    background-color: var(--box-background);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     display: flex;
@@ -150,7 +151,7 @@
 .landing-scroll-link {
     display: inline-block;
     margin-left: 16px;
-    color: var(--primary-accent);
+    color: var(--primary-azure);
     text-decoration: none;
     font-size: 0.95em;
 }
@@ -196,8 +197,8 @@
     text-align: center;
     padding: var(--space-xl) var(--space-md);
     border-radius: var(--radius-lg);
-    box-shadow: var(--box-shadow-light);
-    background-color: var(--box-background-light);
+    box-shadow: var(--shadow-sm);
+    background-color: var(--box-background);
     position: relative;
 }
 
@@ -233,7 +234,7 @@
 }
 
 .landing-science-link {
-    color: var(--primary-accent);
+    color: var(--primary-azure);
     text-decoration: underline;
     font-weight: 600;
 }
@@ -247,8 +248,8 @@
 .case-card {
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
-    box-shadow: var(--box-shadow-light);
-    background-color: var(--box-background-light);
+    box-shadow: var(--shadow-sm);
+    background-color: var(--box-background);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -264,7 +265,7 @@
 
 .case-result {
     margin-top: 12px;
-    color: var(--primary-accent);
+    color: var(--primary-azure);
 }
 
 .case-customer {
@@ -343,45 +344,6 @@
     align-self: flex-start;
 }
 
-/* Dark mode overrides */
-.dark-mode .landing-benefits,
-.dark-mode .landing-process,
-.dark-mode .landing-story,
-.dark-mode .landing-cases,
-.dark-mode .landing-cta {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
-}
-
-.dark-mode .benefit-card,
-.dark-mode .process-step,
-.dark-mode .case-card {
-    background-color: var(--box-background-dark);
-    box-shadow: var(--box-shadow-dark);
-}
-
-.dark-mode .landing-benefits-grid .benefit-card,
-.dark-mode .landing-process-steps .process-step {
-    background-color: var(--box-background-dark);
-    box-shadow: var(--box-shadow-dark);
-}
-
-.dark-mode .product-cta-footer {
-    background-color: var(--background-color-dark);
-}
-
-.dark-mode .benefit-card:hover {
-    box-shadow: var(--shadow-md-dark);
-}
-
-.dark-mode .process-step:hover {
-    box-shadow: var(--shadow-md-dark);
-}
-
-.dark-mode .case-card:hover {
-    box-shadow: var(--shadow-md-dark);
-}
-
 /* ========================================
    Signal items — structural selectors
    Pattern: img + h4 + p + p (repeated 5×)
@@ -418,21 +380,16 @@
     line-height: 1.6;
     margin-bottom: var(--space-lg);
     padding-bottom: var(--space-lg);
-    border-bottom: 1px solid var(--border-color-subtle-light);
+    border-bottom: 1px solid var(--border-color-subtle);
 }
 
 .article-body > p:has(> img[src*="t4-signal"]) + h4 + p a {
-    color: var(--primary-accent);
+    color: var(--primary-azure);
     text-decoration: underline;
 }
 
 .article-body > p:has(> img[src*="t4-signal"]) + h4 + p a:hover {
     text-decoration: none;
-}
-
-/* Dark mode */
-.dark-mode .article-body > p:has(> img[src*="t4-signal"]) + h4 + p {
-    border-bottom-color: var(--border-color-dark);
 }
 
 /* Mobile: stack vertical */

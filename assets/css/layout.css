@@ -16,6 +16,13 @@ html {
     }
 }
 
+/* Noscript fallback banner — shown when JS is disabled */
+.noscript-banner {
+    padding: 1rem;
+    background: var(--box-background);
+    text-align: center;
+}
+
 /* Back-to-top anchor — shows after scrolling past viewport */
 .back-to-top {
     position: fixed;
@@ -27,7 +34,7 @@ html {
     align-items: center;
     justify-content: center;
     background: var(--primary-navy);
-    color: #fff;
+    color: var(--primary-azure);
     border-radius: 50%;
     font-size: 1.25em;
     text-decoration: none;
@@ -39,7 +46,7 @@ html {
 
 .back-to-top:hover {
     background: var(--primary-azure);
-    color: #fff;
+    color: var(--primary-navy);
     text-decoration: none;
 }
 
@@ -49,17 +56,9 @@ html {
     pointer-events: auto;
 }
 
-.dark-mode .back-to-top {
-    background: var(--primary-azure);
-}
-
-.dark-mode .back-to-top:hover {
-    background: var(--primary-navy);
-}
-
 /* Focus indicators — visible keyboard focus only */
 :focus-visible {
-    outline: 2px solid var(--primary-azure);
+    outline: 2px solid var(--focus-color);
     outline-offset: 2px;
     border-radius: var(--radius-sm, 2px);
 }
@@ -74,6 +73,8 @@ html, body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 main {
