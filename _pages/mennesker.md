@@ -54,47 +54,47 @@ Ken Blanchard og Colleen Barrett beskriver dette som «tjenerledelse» — en le
 
 ## De 4 hovedelementene
 
-![Illustrasjon: Tillit og trygghet](/assets/images/banners/spot-mennesker-tilhorighet.webp)
+*   ![Illustrasjon: Tillit og trygghet](/assets/images/banners/spot-mennesker-tilhorighet.webp)
 
-### Tillit og trygghet
+    ## Tillit og trygghet
 
-Grunnmuren i alle relasjoner er psykologisk trygghet. Med tillit kan mennesker ta risiko, si ifra om problemer, og våge å være ærlige. Uten tillit blir organisasjonen et sted der folk ser etter nummer to. Uten en strukturert måte å speile tillitsnivået på, risikerer ledergruppen å forveksle stillhet med trygghet.
+    Grunnmuren i alle relasjoner er psykologisk trygghet. Med tillit kan mennesker ta risiko, si ifra om problemer, og våge å være ærlige. Uten tillit blir organisasjonen et sted der folk ser etter nummer to. Uten en strukturert måte å speile tillitsnivået på, risikerer ledergruppen å forveksle stillhet med trygghet.
 
-**Tegn på god tillit og trygghet:** Folk sier ifra når ting er feil. Problemer løftes opp før de eskalerer. Folk innrømmer feil og lærer av dem.
+    **Tegn på god tillit og trygghet:** Folk sier ifra når ting er feil. Problemer løftes opp før de eskalerer. Folk innrømmer feil og lærer av dem.
 
-**Tegn på tillit og trygghet-problemer:** Informasjon holdes tilbake. Kritikk leveres bak ryggen på folk. Folk søker dekning hos ledere heller enn å løse problemer selv.
+    **Tegn på tillit og trygghet-problemer:** Informasjon holdes tilbake. Kritikk leveres bak ryggen på folk. Folk søker dekning hos ledere heller enn å løse problemer selv.
 
-![Illustrasjon: Motivasjon og engasjement](/assets/images/banners/spot-mennesker-mestring.webp)
+*   ![Illustrasjon: Motivasjon og engasjement](/assets/images/banners/spot-mennesker-mestring.webp)
 
-### Motivasjon og engasjement
+    ## Motivasjon og engasjement
 
-Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre motivatorer (bonus, straff) kan drive kortvarig atferd, men varig engasjement krever indre motivasjon: autonomi, mestring og tilhørighet. Når ledergrupper reflekterer systematisk over motivasjonsmønstre, ser de hvor engasjementet faktisk er — ikke hvor de tror det er.
+    Mennesker er motiverte når de opplever mestring, tilhørighet og mening. Ytre motivatorer (bonus, straff) kan drive kortvarig atferd, men varig engasjement krever indre motivasjon: autonomi, mestring og tilhørighet. Når ledergrupper reflekterer systematisk over motivasjonsmønstre, ser de hvor engasjementet faktisk er — ikke hvor de tror det er.
 
-**Tegn på god motivasjon og engasjement:** Folk tar initiativ uten å bli bedt om det. De snakker om «vi» når de forteller om arbeidet. De ser seg selv som en del av noe større.
+    **Tegn på god motivasjon og engasjement:** Folk tar initiativ uten å bli bedt om det. De snakker om «vi» når de forteller om arbeidet. De ser seg selv som en del av noe større.
 
-**Tegn på motivasjon og engasjement-problemer:** Passivitet. Kømentalitet. Folk som bare gjør nok til å komme seg gjennom dagen. Maskinell gjennomføring uten engasjement.
+    **Tegn på motivasjon og engasjement-problemer:** Passivitet. Kømentalitet. Folk som bare gjør nok til å komme seg gjennom dagen. Maskinell gjennomføring uten engasjement.
 
-![Illustrasjon: Utvikling og vekst](/assets/images/banners/spot-mennesker-autonomi.webp)
+*   ![Illustrasjon: Utvikling og vekst](/assets/images/banners/spot-mennesker-autonomi.webp)
 
-### Utvikling og vekst
+    ## Utvikling og vekst
 
-Mennesker vil vokse. Organisasjoner som legger til rette for utvikling, tiltrekker og beholder talent. Læring blir en konkurransefordel, ikke en kostnad. Men uten systematisk innsikt i hva ansatte faktisk opplever som utviklende, risikerer investeringene å bomme på målet.
+    Mennesker vil vokse. Organisasjoner som legger til rette for utvikling, tiltrekker og beholder talent. Læring blir en konkurransefordel, ikke en kostnad. Men uten systematisk innsikt i hva ansatte faktisk opplever som utviklende, risikerer investeringene å bomme på målet.
 
-**Tegn på god utvikling og vekst:** Feil sees på som læringsmuligheter. Folk setter av tid til å utvikle seg. Suksesser og feil analyseres for å lære.
+    **Tegn på god utvikling og vekst:** Feil sees på som læringsmuligheter. Folk setter av tid til å utvikle seg. Suksesser og feil analyseres for å lære.
 
-**Tegn på utvikling og vekst-problemer:** «Vi har alltid gjort det sånn.» Innføring av nye systemer uten opplæring. Ingen karriereutvikling utover interne promojsonger.
+    **Tegn på utvikling og vekst-problemer:** «Vi har alltid gjort det sånn.» Innføring av nye systemer uten opplæring. Ingen karriereutvikling utover interne promojsonger.
 
-![Illustrasjon: Verdier og mening](/assets/images/banners/spot-mennesker-verdier-og-mening.webp)
+*   ![Illustrasjon: Verdier og mening](/assets/images/banners/spot-mennesker-verdier-og-mening.webp)
 
-### Verdier og mening
+    ## Verdier og mening
 
-Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
+    Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
 
-Dave Logan skiller mellom kjerneverdier og edle formål (noble cause): Kjerneverdier beskriver eksisterende atferd — «slik gjør vi ting her». De er ikke aspirerende plakater, men observerbare mønstre. Det edle formålet svarer på hvorfor organisasjonen eksisterer utover profitt — det inspirerer ny atferd. No Excuse AS' kjerneverdier er ansvarlighet, tillit og ærlighet. Vårt edle formål er å styrke det unikt menneskelige i organisasjoner — å bygge tillitsgrunnlaget som gjør at folk trives, lærer og bidrar.
+    Dave Logan skiller mellom kjerneverdier og edle formål (noble cause): Kjerneverdier beskriver eksisterende atferd — «slik gjør vi ting her». De er ikke aspirerende plakater, men observerbare mønstre. Det edle formålet svarer på hvorfor organisasjonen eksisterer utover profitt — det inspirerer ny atferd. No Excuse AS' kjerneverdier er ansvarlighet, tillit og ærlighet. Vårt edle formål er å styrke det unikt menneskelige i organisasjoner — å bygge tillitsgrunnlaget som gjør at folk trives, lærer og bidrar.
 
-**Tegn på gode verdier og mening:** Folk kan fortelle om situasjoner der verdiene ble levd ut i praksis. Nye folk læres opp i «hvordan vi gjør ting her» med konkrete eksempler.
+    **Tegn på gode verdier og mening:** Folk kan fortelle om situasjoner der verdiene ble levd ut i praksis. Nye folk læres opp i «hvordan vi gjør ting her» med konkrete eksempler.
 
-**Tegn på verdier og mening-problemer:** Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert.
+    **Tegn på verdier og mening-problemer:** Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert.
 
 ![Illustrasjon av de 4 hovedelementene i menneskeperspektivet](/assets/images/banners/illustrasjon-mennesker-hovedelementer.webp)
 

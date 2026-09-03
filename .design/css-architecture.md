@@ -1,42 +1,139 @@
 # CSS Architecture — No Excuse AS
 
-## Module Structure (27 files, ~3746 total lines)
+## Module Structure (27 files, ~4027 total lines)
 
 | Category | Files |
 |----------|-------|
-| **Base** | `colors.css` (174), `typography.css` (91), `layout.css` (192) |
-| **Utilities** | `utilities.css` (49), `animations.css` (89) |
-| **Components** | `assets/css/components/hero.css` (135), `assets/css/components/card.css` (163), `assets/css/components/buttons.css` (88), `assets/css/components/illustrations.css` (63), `assets/css/components/questions.css` (315), `assets/css/components/cta-section.css` (41), `assets/css/components/footnotes.css` (44), `assets/css/components/tag-cloud.css` (97), `assets/css/components/step-timeline.css` (111), `assets/css/components/stat-bridge.css` (23), `assets/css/components/sticky-cta.css` (109) |
-| **Pages** | `article.css` (357), `products.css` (375), `profiles.css` (496), `avtale.css` (69), `perspektiv-styles.css` (101), `metode.css` (126), `partners.css` (42) |
-| **Layout** | `header.css` (48), `navbar.css` (218), `footer.css` (44) |
-| **Themes** | `styles-light.css` (48), `styles-dark.css` (38) |
+| **Base** | `colors.css` (183), `typography.css` (99), `layout.css` (199) |
+| **Utilities** | `utilities.css` (18), `animations.css` (89) |
+| **Components** | `assets/css/components/hero.css` (112), `assets/css/components/card.css` (157), `assets/css/components/buttons.css` (92), `assets/css/components/carousel.css` (76), `assets/css/components/cta-inline.css` (56), `assets/css/components/cta-section.css` (36), `assets/css/components/disclaimer.css` (21), `assets/css/components/footnotes.css` (35), `assets/css/components/illustrations.css` (63), `assets/css/components/questions.css` (236), `assets/css/components/sidebar.css` (560), `assets/css/components/stat-bridge.css` (18), `assets/css/components/step-timeline.css` (98), `assets/css/components/tag-cloud.css` (78) |
+| **Pages** | `article.css` (355), `products.css` (470), `profiles.css` (387), `avtale.css` (69), `perspektiv-styles.css` (39), `metode.css` (101), `partners.css` (42) |
+| **Layout** | `header.css` (54), `navbar.css` (189), `footer.css` (43) |
+| **Themes** | `styles-light.css` (26), `styles-dark.css` (26) |
 
-Component-specific CSS lives in `assets/css/components/` (11 files). Page-level CSS lives in the root `assets/css/` directory. This separation prevents component styles from being mixed with page layout rules.
+Component-specific CSS lives in `assets/css/components/` (14 files). Page-level CSS lives in the root `assets/css/` directory. This separation prevents component styles from being mixed with page layout rules.
 
 ## Design Tokens
 
 All design tokens defined in `colors.css`:
 
-### Core Colors
+### Core Colors (constants)
 
 ```
 --primary-navy:   #003060    Twin primary dark
 --primary-azure:  #F0FFFF    Twin primary light
+--logo-fill:      var(--primary-azure)
 ```
 
-### Background / Surface Colors
+### CTA System (constants)
+
+```
+--cta-primary-bg:      var(--primary-azure)
+--cta-primary-text:    var(--primary-navy)
+--cta-primary-border:  var(--primary-navy)
+--cta-secondary-bg:    var(--primary-navy)
+--cta-secondary-text:  var(--primary-azure)
+--cta-secondary-border: var(--primary-azure)
+```
+
+## Unified Button System
+
+All interactive elements (buttons, links-as-buttons, icon buttons, toggles, close buttons) share a **single unified button system** centralized in `assets/css/components/buttons.css`. Per-element transition/hover/active/focus rules have been **removed from component files** and consolidated here.
+
+### Three types
+
+| Type | Class | Alias(es) | Style |
+|------|-------|-----------|-------|
+| **Primary** | `.btn-primary` | `.cta`, `.cta--primary`, `.card-link--cta`, `.profile-booking-btn` | Azure bg, navy text, navy border |
+| **Secondary** | `.btn-secondary` | `.cta--secondary`, `.copy-btn` | Navy bg, azure text, azure border |
+| **Ghost** | `.btn-ghost` | `.card-link`, `.carousel-btn`, `.profile-contact-btn`, `.profile-close`, `.share-btn`, `.provider-btn`, `.modal-close`, `.nav-overlay-close`, `.questions-toggle`, `.toc-mobile-toggle`, `.toc-mobile-close`, `.change-provider-btn`, `.back-to-top`, `.landing-scroll-link`, `.tag-cloud-item` | Transparent bg, `--text-color`, no border; `--surface-hover` bg on hover |
+
+### Shared base (all types)
+
+All button classes share a common base: `inline-flex`, centered, `gap: 6px`, `min-height: 44px` (touch target), `padding: 14px 32px`, `font-weight: 600`, `font-size: 1.05em`, `border-radius: var(--radius-md)`, `box-shadow: var(--shadow-sm)`, `cursor: pointer`.
+
+### Unified interaction states
+
+| State | Effect |
+|-------|--------|
+| **Transition** | `transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease` |
+| **Hover** | `transform: translateY(-2px)`, `box-shadow: var(--shadow-md)` |
+| **Active** | `transform: translateY(0) scale(0.98)`, `box-shadow: var(--shadow-sm)` |
+| **Focus-visible** | `outline: 3px solid var(--focus-color)`, `outline-offset: 2px` |
+
+### Size variants
+
+| Variant | Class | Alias(es) | Padding / Font |
+|---------|-------|-----------|----------------|
+| **Large** | `.btn--large` | `.cta--large` | `18px 48px`, `1.2em` |
+| **Small** | `.btn--small` | `.profile-contact-btn`, `.provider-btn`, `.toc-mobile-toggle`, `.change-provider-btn`, `.tag-cloud-item` | `8px 16px`, `0.9em` |
+| **Icon** | `.btn--icon` | `.carousel-btn`, `.profile-close`, `.share-btn`, `.modal-close`, `.nav-overlay-close`, `.toc-mobile-close`, `.back-to-top` | `10px`, `1.1em` |
+
+### Spacing variants
+
+| Variant | Class | Effect |
+|---------|-------|--------|
+| **Spaced** | `.btn--spaced` | `margin-left: var(--space-md)` (resets to `margin-top: 12px` on mobile) |
+| **Block** | `.btn--block` | `width: 100%`, `box-sizing: border-box` |
+
+### Alias mapping
+
+Existing `.cta*` classes are kept as **aliases** — no HTML changes were required. `.cta` → `.btn-primary`, `.cta--secondary` → `.btn-secondary`, `.cta--large` → `.btn--large`, `.cta--spaced` → `.btn--spaced`. New code should prefer the `.btn*` canonical classes; legacy `.cta*` classes continue to work.
+
+### Brand-mandated exceptions
+
+- **Share buttons** (`.share-btn--teams`, `.share-btn--linkedin`): brand-colored backgrounds with white text — these override the ghost type's transparent bg.
+- **Provider selected state** (`.provider-btn.is-selected`): functional border/background highlight, not decorative.
+
+### Responsive
+
+At `max-width: 768px`, `.cta-buttons-row` stacks vertically; `.cta` and `.btn--block` go full-width; `.cta--spaced`/`.btn--spaced` reset margin to `margin-top: 12px`.
+
+### Header (constant across modes)
+
+```
+--header-bg:    var(--primary-navy)
+--header-text:  var(--primary-azure)
+--nav-hover-bg: rgba(255,255,255,0.15)
+```
+
+### Frame Accent Colors (constants)
+
+```
+--frame-struct:     #2A4D6E
+--frame-human:      #B8901E
+--frame-political:  #355E3B
+--frame-symbol:     #8E0D3C
+```
+
+### Brand Colors (constants)
+
+```
+--brand-linkedin:       #0a66c2
+--brand-linkedin-hover: #084d91
+--brand-teams:          #6264A7
+--brand-teams-hover:    #5050A0
+```
+
+### Semantic Colors (constants)
+
+```
+--error-color:       #c62828
+--success-color:     #2e7d32
+--success-ring:      rgba(46,125,50,0.15)
+--success-ring-dark: rgba(102,187,106,0.2)
+```
+
+### Background / Surface Colors (raw pairs)
 
 ```
 --background-color-light: #c0d4e8    Dark mode: --background-color-dark: #121212
---box-background-light:   #ffffff    Dark mode: --box-background-dark:   #333333
+--box-background-light:   #ffffff    Dark mode: --box-background-dark:   #1e2a3a
 --surface-subtle-light:   rgba(0,0,0,0.04)   Dark mode: --surface-subtle-dark:   rgba(255,255,255,0.06)
---surface-raised-light:   rgba(0,0,0,0.03)   Dark mode: --surface-raised-dark:   rgba(255,255,255,0.05)
---surface-raised-hover-light: rgba(0,0,0,0.06)  Dark mode: --surface-raised-hover-dark: rgba(255,255,255,0.10)
 --surface-hover-light:    rgba(0,0,0,0.08)   Dark mode: --surface-hover-dark:    rgba(255,255,255,0.12)
---surface-tag-bg-dark:    rgba(255,255,255,0.08)
 ```
 
-### Text Colors
+### Text Colors (raw pairs)
 
 ```
 --text-color-light: #37474f    Dark mode: --text-color-dark: #ffffff
@@ -44,19 +141,27 @@ All design tokens defined in `colors.css`:
 --link-hover-light: #000a1f     Dark mode: --link-hover-dark: #8ab4f8
 ```
 
+### Footer & Disclaimer (raw pairs)
+
+```
+--footer-bg-light:      var(--primary-azure)   Dark mode: --footer-bg-dark:      var(--primary-navy)
+--footer-text-light:    var(--primary-navy)    Dark mode: --footer-text-dark:    var(--primary-azure)
+--disclaimer-bg-light:  var(--primary-navy)    Dark mode: --disclaimer-bg-dark:  var(--primary-azure)
+--disclaimer-text-light: var(--primary-azure)  Dark mode: --disclaimer-text-dark: var(--primary-navy)
+```
+
+### Focus & Accent (raw pairs)
+
+```
+--focus-color-light:  var(--primary-navy)   Dark mode: --focus-color-dark:  var(--primary-azure)
+--accent-color-light: var(--primary-navy)   Dark mode: --accent-color-dark: var(--primary-azure)
+```
+
 ### Border Colors (color-only, not shorthand)
 
 ```
 --border-color-light:         rgba(0,0,0,0.1)    Dark mode: --border-color-dark: rgba(255,255,255,0.1)
---border-color-subtle-light:  rgba(0,0,0,0.08)
-```
-
-### Border Shorthand
-
-```
---border-light:   1px solid rgba(0,0,0,0.08)
---border-medium:  1px solid rgba(0,0,0,0.1)
---border-dark:    1px solid rgba(255,255,255,0.1)
+--border-color-subtle-light:  rgba(0,0,0,0.08)   Dark mode: --border-color-subtle-dark: rgba(255,255,255,0.08)
 ```
 
 ### Shadow Elevation Scale
@@ -68,6 +173,37 @@ All design tokens defined in `colors.css`:
 --shadow-lg      0 12px 24px rgba(0,0,0,0.12)   — modals, overlays
 --shadow-xl      0 20px 60px rgba(0,0,0,0.15)   — large overlays
 --shadow-*-dark                                   — dark variants (deeper opacity)
+```
+
+### Modal Overlay
+
+```
+--overlay-modal-light: rgba(0,0,0,0.6)   — modal backdrop
+--overlay-modal-dark:  rgba(0,0,0,0.8)   — booking overlay
+```
+
+### Profile Card Components
+
+```
+--profile-gradient-start-light: rgba(58,78,88,0.06)   Dark mode: ...-dark: rgba(255,255,255,0.05)
+--profile-gradient-end-light:   rgba(58,78,88,0.02)   Dark mode: ...-dark: rgba(255,255,255,0.02)
+--profile-image-border-light:   rgba(58,78,88,0.12)   Dark mode: ...-dark: rgba(255,255,255,0.1)
+```
+
+### Carousel Buttons
+
+```
+--carousel-btn-bg-light:        rgba(255,255,255,0.9)   Dark mode: ...-dark: rgba(30,30,40,0.85)
+--carousel-btn-bg-hover-light:  #ffffff                 Dark mode: ...-dark: rgba(50,50,65,0.95)
+```
+
+### Hero Text & Overlay
+
+```
+--hero-text-light:  var(--primary-navy)   Dark mode: --hero-text-dark: #ffffff
+--hero-overlay-light: linear-gradient(to top, var(--primary-navy) 0%, transparent 40%)
+--hero-overlay-dark:  linear-gradient(to top, #000 0%, rgba(0,0,0,0.3) 40%)
+--hero-overlay-opacity-light: 0.5   Dark mode: --hero-overlay-opacity-dark: 0.8
 ```
 
 ### Spacing Scale (4px base)
@@ -90,67 +226,62 @@ All design tokens defined in `colors.css`:
 --content-max: 1100px    --content-narrow: 65ch    --content-wide: 800px
 ```
 
-### Overlays & Modals
+### Active Defaults (Light mode)
+
+The unsuffixed active variables are set in `colors.css` `:root` to the light-mode raw pair by default. `styles-dark.css` re-assigns them to the dark-mode raw pair.
 
 ```
---overlay-light:      rgba(0,0,0,0.6)   — profile modal backdrop
---overlay-dark:       rgba(0,0,0,0.8)   — booking overlay
---close-bg-light:     rgba(255,255,255,0.95)   Dark mode: --close-bg-dark: rgba(255,255,255,0.9)
---close-bg-hover-light: #ffffff
-```
-
-### Profile Card Components
-
-```
---profile-gradient-start-light: rgba(58,78,88,0.06)   Dark mode: ...-dark: rgba(255,255,255,0.05)
---profile-gradient-end-light:   rgba(58,78,88,0.02)   Dark mode: ...-dark: rgba(255,255,255,0.02)
---profile-image-border-light:   rgba(58,78,88,0.12)   Dark mode: ...-dark: rgba(255,255,255,0.1)
-```
-
-### Component Aliases
-
-```
---navbar-background-light:  var(--box-background-light)   Dark mode: ...-dark
---button-background-light:  var(--primary-accent)          Dark mode: ...-dark
---button-text-color-light:  var(--primary-accent-contrast) Dark mode: ...-dark
---nav-hover-bg-light:       rgba(255,255,255,0.15)         Dark mode: --nav-hover-bg-dark: rgba(0,0,0,0.1)
-```
-
-### Legacy Aliases
-
-```
---primary-accent:             var(--primary-azure)
---primary-accent-contrast:    var(--primary-navy)
---box-shadow-light:           var(--shadow-sm)
---box-shadow-hover-light:     var(--shadow-md)
---box-shadow-dark:            var(--shadow-sm-dark)
---box-shadow-hover-dark:      var(--shadow-md-dark)
+--text-color:            var(--text-color-light)
+--background-color:      var(--background-color-light)
+--box-background:        var(--box-background-light)
+--link-color:            var(--link-color-light)
+--link-hover:            var(--link-hover-light)
+--footer-bg:             var(--footer-bg-light)
+--footer-text:           var(--footer-text-light)
+--disclaimer-bg:         var(--disclaimer-bg-light)
+--disclaimer-text:       var(--disclaimer-text-light)
+--focus-color:           var(--focus-color-light)
+--accent-color:          var(--accent-color-light)
+--surface-subtle:        var(--surface-subtle-light)
+--surface-hover:         var(--surface-hover-light)
+--border-color:          var(--border-color-light)
+--border-color-subtle:   var(--border-color-subtle-light)
+--overlay-modal:         var(--overlay-modal-light)
+--profile-gradient-start: var(--profile-gradient-start-light)
+--profile-gradient-end:   var(--profile-gradient-end-light)
+--profile-image-border:   var(--profile-image-border-light)
+--carousel-btn-bg:        var(--carousel-btn-bg-light)
+--carousel-btn-bg-hover:  var(--carousel-btn-bg-hover-light)
+--hero-text:              var(--hero-text-light)
+--hero-overlay:           var(--hero-overlay-light)
+--hero-overlay-opacity:   var(--hero-overlay-opacity-light)
 ```
 
 ## Theme Support (Dark Mode)
 
-Dark mode is implemented entirely through CSS variable overrides — no component re-selection.
+Dark mode is implemented entirely through CSS variable assignment — the mode stylesheets re-assign active variables; there is no theme attribute on the document root and no per-component dark-mode selector overrides.
 
-- Light mode variables use `--*-light` suffix
-- Dark mode variables use `--*-dark` suffix
-- JavaScript toggles `[data-theme="dark"]` on `<html>`
-- `styles-dark.css` contains dark mode overrides that are enabled/disabled via stylesheet `disabled` attribute
+- **Raw pairs** use `--{purpose}-light` / `--{purpose}-dark` suffixes (defined in `colors.css`)
+- **Active variables** are unsuffixed (`--text-color`, `--box-background`) and reference the light-mode raw pair by default in `colors.css`
+- **`styles-light.css`** is a pure `:root {}` block that re-assigns every active variable to its `-light` raw pair
+- **`styles-dark.css`** is a pure `:root {}` block that re-assigns every active variable to its `-dark` raw pair
+- **`dark-mode-toggle.js`** toggles the `disabled` attribute on the `#dark-style` / `#light-style` stylesheet links, and adds/removes the `.dark-mode` class on `<body>` (kept for JS feature detection in `animations.js` and `carousel.js`)
 
-New components must follow this pattern: define all themed values as `var(--property)` referencing `colors.css`, which already has both `-light` and `-dark` variants.
+New components must follow this pattern: define all themed values as `var(--property)` referencing the **unsuffixed active variables**, which are already set by the mode stylesheets.
 
 ## Variable Naming Convention
 
 ```
---{purpose}-{modifier}-{light|dark}
+--{purpose}              Constants (never change between modes)
+--{purpose}-light        Raw pair — light mode value
+--{purpose}-dark         Raw pair — dark mode value
+--{purpose}              Active — set by mode stylesheet (references the appropriate raw pair)
 ```
 
 Examples:
-- `--surface-subtle-light` / `--surface-subtle-dark`
-- `--border-color-light` / `--border-color-dark`
-- `--box-background-light` / `--box-background-dark`
-
-Constants (no theme pair): omit the suffix.
-- `--primary-navy`, `--space-md`, `--radius-lg`
+- Constants: `--primary-navy`, `--header-bg`, `--space-md`, `--radius-lg`
+- Raw pairs: `--surface-subtle-light` / `--surface-subtle-dark`, `--border-color-light` / `--border-color-dark`, `--box-background-light` / `--box-background-dark`
+- Active: `--text-color`, `--box-background`, `--border-color` (set by `styles-light.css` / `styles-dark.css`)
 
 ## Conventions
 
@@ -160,7 +291,7 @@ Constants (no theme pair): omit the suffix.
 - **Breakpoints**: 599px (mobile), 768px (tablet), 900px (desktop), 1199px/1200px (wide). Never `1024px`.
 - **Touch targets**: Minimum 44×44px for interactive elements
 - **Font sizes**: Use heading elements (h1–h3) or the typography scale
-- **Dark mode**: Variables only — no `[data-theme="dark"]` selector overrides in component CSS; those belong in `styles-dark.css`
+- **Dark mode**: Variables only — no per-component dark-mode selector overrides in component CSS; those belong in `styles-dark.css`
 
 ## Article Content Styling — Structural Selectors
 

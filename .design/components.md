@@ -1,5 +1,13 @@
 # Reusable Components — No Excuse AS
 
+## Design Principles
+
+- **Minimal text** — Short, punchy headlines only
+- **Visual-first** — Icons, graphics, clear hierarchy
+- **Direct CTAs** — One action per section
+- **Mobile-first** — Scannable content, large touch targets; 320px minimum breakpoint
+- **Touch targets** — 44px minimum
+
 ## Hero Component
 
 The hero is rendered via `_includes/hero.html` and styled by `assets/css/components/hero.css`.
@@ -162,8 +170,9 @@ Styled in `assets/css/article.css`.
 
 ## Form Elements
 - Input fields (44px height minimum)
-- Date picker (Microsoft Bookings)
 - Submit buttons
+
+> Note: No date picker form element exists on-site. Time selection happens on the external Microsoft Bookings page, reached from the site-owned /bestill/ wrapper.
 
 ---
 
