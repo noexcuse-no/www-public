@@ -92,6 +92,37 @@ Populated from `_data/metadata.yml`. Includes:
 </body>
 ```
 
+## Button Usage Patterns
+
+All interactive elements use the **unified button system** (see `.design/css-architecture.md` → Unified Button System). Three types, each with a canonical class and legacy aliases:
+
+| Type | Canonical class | Legacy alias | When to use |
+|------|-----------------|--------------|-------------|
+| **Primary** | `.btn-primary` | `.cta` | The main action on a page/section — the one thing you want the visitor to do (e.g. "Bestill", "Les mer") |
+| **Secondary** | `.btn-secondary` | `.cta--secondary` | A supporting action that complements the primary (e.g. "Se priser" next to "Bestill") |
+| **Ghost** | `.btn-ghost` | `.card-link`, `.carousel-btn`, etc. | Text-only links styled as buttons — navigation, icon buttons, toggles, close buttons, tag-cloud items |
+
+**Size variants:** `.btn--large` (hero CTAs), `.btn--small` (compact actions), `.btn--icon` (icon-only buttons). **Spacing variants:** `.btn--spaced` (margin-left), `.btn--block` (full-width).
+
+**Alias system:** Existing `.cta*` classes still work — `.cta` → `.btn-primary`, `.cta--secondary` → `.btn-secondary`, `.cta--large` → `.btn--large`, `.cta--spaced` → `.btn--spaced`. New code should prefer the canonical `.btn*` classes.
+
+**Example:**
+```html
+<a class="btn-primary" href="/bestill/">Bestill</a>
+<a class="btn-secondary" href="/priser/">Se priser</a>
+<a class="btn-ghost" href="/metodikk/">Les om metodikken</a>
+```
+
+## External Link Policy
+
+All external URLs (links leaving `noexcuse.no`) **must** include `rel="noopener" target="_blank"`:
+
+```html
+<a href="https://external.example.com" rel="noopener" target="_blank">External link</a>
+```
+
+This prevents tab-nabbing (the external page cannot access `window.opener`) and opens the link in a new tab so the visitor keeps the site open. Internal links (same-site permalinks) use plain `<a href="...">` without `target="_blank"`.
+
 ## Prohibited Patterns
 
 | Pattern | Why | Use instead |
