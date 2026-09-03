@@ -20,6 +20,11 @@
     margin-top: 0;
 }
 
+.article-body > h2:not(:first-of-type) {
+    border-top: 1px solid var(--border-color);
+    padding-top: var(--space-2xl);
+}
+
 .article-body > h3 {
     margin-top: var(--space-2xl);
 }
@@ -55,14 +60,15 @@ ol:has(> li > h3) > li {
     background: var(--box-background);
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-xs);
     display: flow-root;
     min-width: 0;
+    transition: box-shadow 0.2s ease;
 }
 
 ul:has(> li > h3) > li:hover,
 ol:has(> li > h3) > li:hover {
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
 }
 
 ul:has(> li > h3) > li h3,
@@ -116,15 +122,16 @@ ol:has(> li > h4) > li {
     background: var(--box-background);
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-xs);
     margin-bottom: var(--space-md);
     display: flow-root;
     min-width: 0;
+    transition: box-shadow 0.2s ease;
 }
 
 ul:has(> li > h4) > li:hover,
 ol:has(> li > h4) > li:hover {
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
 }
 
 ul:has(> li > h4) > li h4,
@@ -165,15 +172,16 @@ ol:has(> li > h2) > li {
     background: var(--box-background);
     padding: var(--space-xl);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-xs);
     margin-bottom: var(--space-lg);
     display: flow-root;
     min-width: 0;
+    transition: box-shadow 0.2s ease;
 }
 
 ul:has(> li > h2) > li:hover,
 ol:has(> li > h2) > li:hover {
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
 }
 
 ul:has(> li > h2) > li h2,
@@ -216,14 +224,15 @@ ol:has(> li > h5) > li {
     background: var(--box-background);
     padding: var(--space-md);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-xs);
     display: flow-root;
     min-width: 0;
+    transition: box-shadow 0.2s ease;
 }
 
 ul:has(> li > h5) > li:hover,
 ol:has(> li > h5) > li:hover {
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
 }
 
 ul:has(> li > h5) > li h5,
@@ -356,24 +365,6 @@ ul:has(> li > h4) > li::before {
     margin-left: 2px;
 }
 
-
-/* Info box — GRC perspective cards */
-.info-box {
-    background: var(--box-background);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    margin: 24px 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.info-box:hover {
-    box-shadow: var(--shadow-md);
-}
-
-.info-box h3 {
-    margin-top: 0;
-}
-
 /* ========================================
    Table styles — structural for article-body
    ======================================== */
@@ -396,8 +387,17 @@ ul:has(> li > h4) > li::before {
     font-weight: 600;
     background: var(--surface-subtle);
 }
+.article-body > table tbody tr:nth-child(even) td {
+    background: var(--surface-subtle);
+}
 .article-body > table tr:last-child td {
     border-bottom: none;
+}
+.article-body > table caption {
+    text-align: left;
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-bottom: var(--space-sm);
 }
 
 @media (max-width: 599px) {
@@ -417,26 +417,4 @@ ul:has(> li > h4) > li::before {
 .article-body p img {
     max-width: 100%;
     height: auto;
-}
-
-/* ========================================
-   Blockquote — structural styling for article-body
-   ======================================== */
-.article-body > blockquote {
-    margin: var(--space-xl) 0;
-    padding: var(--space-lg) var(--space-xl);
-    background: var(--surface-subtle);
-    border-radius: var(--radius-lg);
-    border-left: 4px solid var(--primary-navy);
-}
-
-.article-body > blockquote p {
-    font-size: 1.05em;
-    font-style: italic;
-    margin: 0 0 8px;
-}
-
-.article-body > blockquote cite {
-    font-size: 0.9em;
-    opacity: 0.8;
 }
