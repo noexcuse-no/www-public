@@ -244,6 +244,27 @@ Examples:
 
 Since IAL (Inline Attribute Lists) and raw HTML divs are **prohibited** in `_pages/*.md`, all article content styling uses CSS structural selectors targeting element position and relationships within `.article-body`.
 
+### List Heading Layout System
+
+The article layout system uses a **heading-level-driven** approach: content sections are wrapped in lists (`ul`/`ol`) whose items contain a heading (`h2`–`h5`). The heading level determines the card layout:
+
+| Heading level | Layout | Image display | Use case |
+|---------------|--------|---------------|----------|
+| `li h2` | 1-per-row card | Square, floated beside heading (~140px) | Section openers, Hovedelementer |
+| `li h3` | 2-per-row grid | Landscape, `aspect-ratio: 16/9`, full card width | Info cards, numbered flow steps |
+| `li h4` | 1-per-row card | Square, floated beside heading (~80px) | Challenge cards, sub-sections |
+| `li h5` | 2-per-row grid | Landscape, `aspect-ratio: 16/9`, full card width | Sub-section lists |
+
+**Principle:** Content is **rewritten to fit the system** — not the other way around. When a section's content doesn't fit a card layout (e.g., odd-count items, sequential steps), the content is restructured (e.g., `ul`→`ol` for sequential stages) or the heading level is adjusted to match the intended layout.
+
+**List markers:**
+- `ol` lists get number badges (CSS counters) — grid cards (h3/h5) place the badge top-left of the card; 1-per-row cards (h2/h4) place it inline beside the heading.
+- `ul` lists get bullet markers — grid cards place the bullet top-left; 1-per-row cards place it inline beside the heading.
+
+**Normal heading typography scale** (h1–h5) is defined in `typography.css` — the list-heading selectors only adjust margins/display within cards, not the base font sizes.
+
+**Removed special-case selectors:** The old per-concept selectors (`verdi-`, `metode-t4`, `t4-signal`, `step-`, `frame-`, `challenge-card`) have been removed. All card-like content now uses the generic `:has(> li > hN)` structural selectors.
+
 ### Accepted patterns (use freely)
 
 | Pattern | Targets | Example |

@@ -44,7 +44,7 @@ Completed items belong in `CHANGELOG.md` only.
 | R58 | Color system — WCAG contrast fixes | Done | PR #216. Fixed 7 contrast issues (focus outline, back-to-top, stat-bridge, blockquote border, gold accent, dark-mode button text). |
 | R59 | Color system — documentation update | Done | PR #217. Rewrote `.design/colors.md` + `.design/css-architecture.md` to match the refactored variable architecture. |
 
-| AL1 | Article layout system | Pending | `.omo/plans/article-layout-system.md` |
+| AL1 | Article layout system | Done | `.omo/plans/article-layout-system.md` — implemented (heading-level-driven layout, all 15 articles rewritten, `.specs/article-layout/README.md` added). Record in CHANGELOG. |
 | BU1 | Button CTA URL uniformity | Pending | `.omo/plans/button-cta-url-uniformity.md` |
 | AI1 | AI Act alignment | Pending | `.omo/plans/ai-act-alignment.md` |
 | RI1 | Risk reduction cleanup | Pending | `.omo/plans/risk-reduction-cleanup.md` |
