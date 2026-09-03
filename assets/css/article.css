@@ -2,7 +2,7 @@
    Article body — content card on page background
    ======================================== */
 .article-body {
-    background: var(--box-background-light);
+    background: var(--box-background);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-sm);
     padding: var(--space-2xl) var(--space-xl);
@@ -39,48 +39,48 @@
     margin-bottom: var(--space-xl);
 }
 
-/* Dark mode — article body */
-.dark-mode .article-body {
-    background: var(--box-background-dark);
-    box-shadow: var(--shadow-sm-dark);
-}
-
-/* Info card list — UL containing h3 subheadings (structural selector) */
-ul:has(> li > h3) {
+/* Info card list — UL containing h3 subheadings (structural selector, 2-per-row grid) */
+ul:has(> li > h3),
+ol:has(> li > h3) {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    margin: 24px 0;
 }
 
-ul:has(> li > h3) > li {
-    background: var(--surface-subtle-light);
+ul:has(> li > h3) > li,
+ol:has(> li > h3) > li {
+    background: var(--box-background);
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
-    margin: 24px 0;
-    border-left: 4px solid var(--primary-accent);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-sm);
     display: flow-root;
     min-width: 0;
 }
 
-ul:has(> li > h3) > li:hover {
+ul:has(> li > h3) > li:hover,
+ol:has(> li > h3) > li:hover {
     box-shadow: var(--shadow-md);
 }
 
-ul:has(> li > h3) > li h3 {
+ul:has(> li > h3) > li h3,
+ol:has(> li > h3) > li h3 {
     margin-top: 0;
 }
 
 ul:has(> li > h3) > li > p:first-of-type img,
-ul:has(> li > h3) > li img {
+ul:has(> li > h3) > li img,
+ol:has(> li > h3) > li > p:first-of-type img,
+ol:has(> li > h3) > li img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: var(--radius-lg);
     margin-bottom: var(--space-md);
-}
-
-.dark-mode ul:has(> li > h3) > li {
-    background: var(--surface-subtle-dark);
 }
 
 /* Section — content sections */
@@ -103,46 +103,230 @@ ul:has(> li > h3) > li img {
     margin-bottom: 16px;
 }
 
-/* Challenge grid — UL containing h4 subheadings (structural selector, 2-column grid) */
-ul:has(> li > h4) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin: 24px 0;
+/* Challenge list — UL containing h4 subheadings (structural selector, 1-per-row card) */
+ul:has(> li > h4),
+ol:has(> li > h4) {
     list-style: none;
     padding: 0;
+    margin: 24px 0;
 }
 
-ul:has(> li > h4) > li {
-    background: var(--surface-subtle-light);
-    padding: 20px;
+ul:has(> li > h4) > li,
+ol:has(> li > h4) > li {
+    background: var(--box-background);
+    padding: var(--space-lg);
     border-radius: var(--radius-lg);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-md);
+    display: flow-root;
     min-width: 0;
 }
 
-ul:has(> li > h4) > li:hover {
-    box-shadow: var(--shadow-lg);
+ul:has(> li > h4) > li:hover,
+ol:has(> li > h4) > li:hover {
+    box-shadow: var(--shadow-md);
 }
 
-ul:has(> li > h4) > li h4 {
+ul:has(> li > h4) > li h4,
+ol:has(> li > h4) > li h4 {
     margin: 0 0 8px 0;
     font-size: 1em;
 }
 
-ul:has(> li > h4) > li p {
+ul:has(> li > h4) > li p,
+ol:has(> li > h4) > li p {
     margin: 0;
     font-size: 0.95em;
     opacity: 0.85;
 }
 
 ul:has(> li > h4) > li > p:first-of-type img,
-ul:has(> li > h4) > li img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+ul:has(> li > h4) > li img,
+ol:has(> li > h4) > li > p:first-of-type img,
+ol:has(> li > h4) > li img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    margin: 0 var(--space-md) var(--space-sm) 0;
+}
+
+/* Section list — UL containing h2 subheadings (structural selector, 1-per-row card, larger) */
+ul:has(> li > h2),
+ol:has(> li > h2) {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+}
+
+ul:has(> li > h2) > li,
+ol:has(> li > h2) > li {
+    background: var(--box-background);
+    padding: var(--space-xl);
     border-radius: var(--radius-lg);
-    margin-bottom: var(--space-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-lg);
+    display: flow-root;
+    min-width: 0;
+}
+
+ul:has(> li > h2) > li:hover,
+ol:has(> li > h2) > li:hover {
+    box-shadow: var(--shadow-md);
+}
+
+ul:has(> li > h2) > li h2,
+ol:has(> li > h2) > li h2 {
+    margin: 0 0 12px 0;
+}
+
+ul:has(> li > h2) > li p,
+ol:has(> li > h2) > li p {
+    margin: 0;
+    font-size: 1em;
+    opacity: 0.9;
+}
+
+ul:has(> li > h2) > li > p:first-of-type img,
+ul:has(> li > h2) > li img,
+ol:has(> li > h2) > li > p:first-of-type img,
+ol:has(> li > h2) > li img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    margin: 0 var(--space-lg) var(--space-sm) 0;
+}
+
+/* Sub-section list — UL containing h5 subheadings (structural selector, 2-per-row grid, smaller) */
+ul:has(> li > h5),
+ol:has(> li > h5) {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    margin: 24px 0;
+}
+
+ul:has(> li > h5) > li,
+ol:has(> li > h5) > li {
+    background: var(--box-background);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    display: flow-root;
+    min-width: 0;
+}
+
+ul:has(> li > h5) > li:hover,
+ol:has(> li > h5) > li:hover {
+    box-shadow: var(--shadow-md);
+}
+
+ul:has(> li > h5) > li h5,
+ol:has(> li > h5) > li h5 {
+    margin-top: 0;
+}
+
+ul:has(> li > h5) > li > p:first-of-type img,
+ul:has(> li > h5) > li img,
+ol:has(> li > h5) > li > p:first-of-type img,
+ol:has(> li > h5) > li img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-sm);
+}
+
+/* ========================================
+   List markers — ol number badges, ul bullet markers
+   ======================================== */
+ol:has(> li > h2),
+ol:has(> li > h3),
+ol:has(> li > h4),
+ol:has(> li > h5) {
+    counter-reset: list-heading;
+}
+
+ol:has(> li > h2) > li,
+ol:has(> li > h3) > li,
+ol:has(> li > h4) > li,
+ol:has(> li > h5) > li {
+    counter-increment: list-heading;
+    position: relative;
+}
+
+/* Grid cards (h3/h5) — number badge top-left of card */
+ol:has(> li > h3) > li::before,
+ol:has(> li > h5) > li::before {
+    content: counter(list-heading);
+    position: absolute;
+    top: var(--space-md);
+    left: var(--space-md);
+    z-index: 1;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-azure);
+    color: var(--primary-navy);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.85em;
+}
+
+/* 1-per-row cards (h2/h4) — number badge beside heading, not over image */
+ol:has(> li > h2) > li::before,
+ol:has(> li > h4) > li::before {
+    content: counter(list-heading);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-right: var(--space-sm);
+    background: var(--primary-azure);
+    color: var(--primary-navy);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.85em;
+    vertical-align: middle;
+}
+
+/* Unordered lists — bullet marker */
+ul:has(> li > h2) > li::before,
+ul:has(> li > h3) > li::before,
+ul:has(> li > h4) > li::before,
+ul:has(> li > h5) > li::before {
+    content: "•";
+    color: var(--primary-azure);
+    font-weight: 700;
+}
+
+/* Grid cards (h3/h5) — bullet top-left of card */
+ul:has(> li > h3) > li::before,
+ul:has(> li > h5) > li::before {
+    position: absolute;
+    top: var(--space-md);
+    left: var(--space-md);
+    z-index: 1;
+    font-size: 1.2em;
+}
+
+/* 1-per-row cards (h2/h4) — bullet beside heading, not over image */
+ul:has(> li > h2) > li::before,
+ul:has(> li > h4) > li::before {
+    display: inline-block;
+    margin-right: var(--space-sm);
+    font-size: 1.2em;
+    vertical-align: middle;
 }
 
 /* Standalone section images — paragraph images whose parent is not a list item */
@@ -152,18 +336,16 @@ ul:has(> li > h4) > li img {
     display: block;
     margin: 0 auto 24px;
     border-radius: var(--radius-lg);
-    box-shadow: var(--box-shadow-light);
-}
-
-.dark-mode :not(li) > p:has(> img:only-child) > img:not([class]) {
-    box-shadow: var(--box-shadow-dark);
+    box-shadow: var(--shadow-sm);
 }
 
 @media (max-width: 599px) {
-    ul:has(> li > h4) {
+    ul:has(> li > h3),
+    ol:has(> li > h3),
+    ul:has(> li > h5),
+    ol:has(> li > h5) {
         grid-template-columns: 1fr;
     }
-
 }
 
 .citation {
@@ -177,7 +359,7 @@ ul:has(> li > h4) > li img {
 
 /* Info box — GRC perspective cards */
 .info-box {
-    background: var(--box-background-light);
+    background: var(--box-background);
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
     margin: 24px 0;
@@ -192,10 +374,6 @@ ul:has(> li > h4) > li img {
     margin-top: 0;
 }
 
-/* Dark mode overrides */
-.dark-mode .info-box {
-    background: var(--surface-subtle-dark);
-}
 /* ========================================
    Table styles — structural for article-body
    ======================================== */
@@ -211,22 +389,15 @@ ul:has(> li > h4) > li img {
 .article-body > table td {
     padding: 12px 16px;
     text-align: left;
-    border-bottom: 1px solid var(--border-color-subtle-light);
+    border-bottom: 1px solid var(--border-color-subtle);
     vertical-align: top;
 }
 .article-body > table th {
     font-weight: 600;
-    background: var(--surface-subtle-light);
+    background: var(--surface-subtle);
 }
 .article-body > table tr:last-child td {
     border-bottom: none;
-}
-.dark-mode .article-body > table th {
-    background: var(--surface-subtle-dark);
-}
-.dark-mode .article-body > table th,
-.dark-mode .article-body > table td {
-    border-color: var(--border-color-dark);
 }
 
 @media (max-width: 599px) {
@@ -249,81 +420,14 @@ ul:has(> li > h4) > li img {
 }
 
 /* ========================================
-   Ordered list with h3 headings — flow steps (structural)
-   ======================================== */
-.article-body > ol:has(> li > h3) {
-    list-style: none;
-    padding: 0;
-    counter-reset: flow-step;
-}
-
-.article-body > ol:has(> li > h3) > li {
-    counter-increment: flow-step;
-    position: relative;
-    background: var(--surface-subtle-light);
-    padding: var(--space-lg) var(--space-lg) var(--space-lg) 56px;
-    border-radius: var(--radius-lg);
-    margin-bottom: 8px;
-    display: flow-root;
-    border-left: 4px solid var(--primary-accent);
-}
-
-.article-body > ol:has(> li > h3) > li:not(:last-child)::after {
-    content: "↓";
-    display: block;
-    text-align: center;
-    font-size: 1.5em;
-    color: var(--primary-accent);
-    margin-top: var(--space-md);
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.article-body > ol:has(> li > h3) > li h3 {
-    margin: 0 0 12px 0;
-}
-
-.article-body > ol:has(> li > h3) > li::before {
-    content: counter(flow-step);
-    position: absolute;
-    left: 12px;
-    top: var(--space-lg);
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-accent);
-    color: var(--primary-accent-contrast);
-    border-radius: 50%;
-    font-weight: 700;
-    font-size: 0.9em;
-}
-
-.dark-mode .article-body > ol:has(> li > h3) > li {
-    background: var(--surface-subtle-dark);
-}
-
-.article-body > ol:has(> li > h3) > li > p:first-of-type img,
-.article-body > ol:has(> li > h3) > li img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--radius-lg);
-    margin-bottom: var(--space-md);
-}
-
-/* ========================================
    Blockquote — structural styling for article-body
    ======================================== */
 .article-body > blockquote {
     margin: var(--space-xl) 0;
     padding: var(--space-lg) var(--space-xl);
-    background: var(--surface-subtle-light);
+    background: var(--surface-subtle);
     border-radius: var(--radius-lg);
-    border-left: 4px solid var(--primary-accent);
+    border-left: 4px solid var(--primary-navy);
 }
 
 .article-body > blockquote p {
@@ -334,55 +438,5 @@ ul:has(> li > h4) > li img {
 
 .article-body > blockquote cite {
     font-size: 0.9em;
-    opacity: 0.8;
-}
-
-.dark-mode .article-body > blockquote {
-    background: var(--surface-subtle-dark);
-}
-
-/* ========================================
-   Small icon images (value cards, ethics columns) — structural
-   Override the generic standalone image max-width for icon-sized images
-   ======================================== */
-:not(li) > p:has(> img:only-child) > img[src*="verdi-"],
-:not(li) > p:has(> img:only-child) > img[src*="metode-t4"] {
-    max-width: 60px;
-    width: 60px;
-    height: 60px;
-    margin: 24px auto 12px;
-    border-radius: var(--radius-md);
-    box-shadow: none;
-    object-fit: cover;
-}
-
-/* Value card heading + text after icon image */
-.article-body > p:has(> img[src*="verdi-"]) + h3 {
-    text-align: center;
-    font-size: 1.1em;
-    margin: 0 auto 8px;
-}
-
-.article-body > p:has(> img[src*="verdi-"]) + h3 + p {
-    text-align: center;
-    font-size: 0.9em;
-    line-height: 1.5;
-    margin: 0 auto 24px;
-    max-width: 400px;
-    opacity: 0.8;
-}
-
-/* Ethics column heading + text after icon image */
-.article-body > p:has(> img[src*="metode-t4"]) + h4 {
-    text-align: center;
-    font-size: 1em;
-    margin: 0 auto 8px;
-}
-
-.article-body > p:has(> img[src*="metode-t4"]) + h4 + p {
-    text-align: center;
-    font-size: 0.85em;
-    line-height: 1.4;
-    margin: 0 auto 24px;
     opacity: 0.8;
 }
