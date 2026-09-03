@@ -97,31 +97,31 @@ Spørsmålet ledergrupper bør stille seg i usikre tider er ikke «hva er kultur
 
 David Logan deler organisasjoner inn i fem kulturstadier, basert på hvordan medlemmene ser på seg selv og andre:
 
-*   ![Abstrakt illustrasjon av Logans kulturstadium 1: «Livet suger»](/assets/images/banners/usikkerhet-t3-stage-1.webp)
+1.  ![Abstrakt illustrasjon av Logans kulturstadium 1: «Livet suger»](/assets/images/banners/usikkerhet-t3-stage-1.webp)
 
     ### Trinn 1: «Livet suger»
 
     En subkultur preget av apati og offermentalitet. Folk tror ingenting kan endres. Dette finnes sjelden i fungerende organisasjoner, men kan oppstå i nedlagte avdelinger eller under kriser.
 
-*   ![Abstrakt illustrasjon av Logans kulturstadium 2: «Mitt liv suger»](/assets/images/banners/usikkerhet-t3-stage-2.webp)
+2.  ![Abstrakt illustrasjon av Logans kulturstadium 2: «Mitt liv suger»](/assets/images/banners/usikkerhet-t3-stage-2.webp)
 
     ### Trinn 2: «Mitt liv suger»
 
     Individuell apati. Folk er offer for omstendighetene. «Hva er vitsen?» er den dominerende holdningen. Rundt 25% av befolkningen opererer på dette stadiet.
 
-*   ![Abstrakt illustrasjon av Logans kulturstadium 3: «Jeg er great»](/assets/images/banners/usikkerhet-t3-stage-3.webp)
+3.  ![Abstrakt illustrasjon av Logans kulturstadium 3: «Jeg er great»](/assets/images/banners/usikkerhet-t3-stage-3.webp)
 
     ### Trinn 3: «Jeg er great, du er det ikke»
 
     Individualistisk egoisme. «Jeg er god, andre er dårligere.» Konkurranse innad. Seige på «vi er best»-mentality. Rundt 48% av organisasjoner befinner seg her.
 
-*   ![Abstrakt illustrasjon av Logans kulturstadium 4: «Vi er great»](/assets/images/banners/usikkerhet-t3-stage-4.webp)
+4.  ![Abstrakt illustrasjon av Logans kulturstadium 4: «Vi er great»](/assets/images/banners/usikkerhet-t3-stage-4.webp)
 
     ### Trinn 4: «Vi er great, andre er ikke»
 
     Tribe-tenkning. «Vi er gode, andre grupper er dårligere.» Sterk intern identitet, men kan føre til fiendskap mot andre. Rundt 22% av organisasjoner.
 
-*   ![Abstrakt illustrasjon av Logans kulturstadium 5: «Livet er great»](/assets/images/banners/usikkerhet-t3-stage-5.webp)
+5.  ![Abstrakt illustrasjon av Logans kulturstadium 5: «Livet er great»](/assets/images/banners/usikkerhet-t3-stage-5.webp)
 
     ### Trinn 5: «Livet er great»
 

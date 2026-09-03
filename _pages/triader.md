@@ -91,21 +91,21 @@ Dyader er den mest grunnleggende sosiale enheten. To mennesker som har en relasj
 
 Logan og kolleger identifiserer flere strukturelle svakheter ved dyader som gjør dem til en risikabel byggestein for organisasjonskultur:
 
-### 1. Konflikt blir personlig
+1.  ### Konflikt blir personlig
 
-I en dyad er det ingen tredjepart som kan nøytralisere spenning. Når uenighet oppstår, blir det fort et spørsmål om «du mot meg» i stedet for «oss mot problemet.» Uten en tredje person som kan balansere perspektivet, eskalerer små uenigheter til personlige konflikter.
+    I en dyad er det ingen tredjepart som kan nøytralisere spenning. Når uenighet oppstår, blir det fort et spørsmål om «du mot meg» i stedet for «oss mot problemet.» Uten en tredje person som kan balansere perspektivet, eskalerer små uenigheter til personlige konflikter.
 
-### 2. Informasjon blir fanget
+2.  ### Informasjon blir fanget
 
-I en ren dyade har to personer informasjon som resten av teamet ikke har. Dette skaper asymmetri som svekker tilliten og gjør at beslutninger tas på ufullstendig grunnlag. «Visste du ikke det?» er symptom på et dyade-drevet informasjonssystem.
+    I en ren dyade har to personer informasjon som resten av teamet ikke har. Dette skaper asymmetri som svekker tilliten og gjør at beslutninger tas på ufullstendig grunnlag. «Visste du ikke det?» er symptom på et dyade-drevet informasjonssystem.
 
-### 3. Når én slutter, forsvinner alt
+3.  ### Når én slutter, forsvinner alt
 
-Den mest åpenbare svakheten: Hvis én person i en dyade forsvinner (slutter, blir syk, omorganiseres), brytes relasjonen fullstendig. Kunnskap, relasjoner og beslutningskapasitet forsvinner med personen. Organisasjonen må starte på nytt.
+    Den mest åpenbare svakheten: Hvis én person i en dyade forsvinner (slutter, blir syk, omorganiseres), brytes relasjonen fullstendig. Kunnskap, relasjoner og beslutningskapasitet forsvinner med personen. Organisasjonen må starte på nytt.
 
-### 4. Kulturell modenhet
+4.  ### Kulturell modenhet
 
-I Logans stadiummodell er dyader kjennetegnende for Stage 2 («livet suger, min spesielt») og Stage 3 («jeg er best»). I Stage 2 er relasjonene preget av avmakt og isolasjon. I Stage 3 bygges relasjonene rundt individuelle prestasjoner — «jeg og min allierte» — ikke rundt felles mål. Dette er ikke onde mennesker, det er folk som opererer i en kultur som belønner individet fremfor teamet.
+    I Logans stadiummodell er dyader kjennetegnende for Stage 2 («livet suger, min spesielt») og Stage 3 («jeg er best»). I Stage 2 er relasjonene preget av avmakt og isolasjon. I Stage 3 bygges relasjonene rundt individuelle prestasjoner — «jeg og min allierte» — ikke rundt felles mål. Dette er ikke onde mennesker, det er folk som opererer i en kultur som belønner individet fremfor teamet.
 
 Problemet er ikke at dyader er onde. Problemet er at de er utilstrekkelige som eneste byggestein. Ethvert team har dyader. Spørsmålet er om dere også har triader.
 

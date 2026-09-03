@@ -40,17 +40,23 @@ Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals [fire p
 
 ![Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet](/assets/images/banners/banner-verdier.webp)
 
-![Abstrakt illustrasjon av kjerneverdien ansvarlighet](/assets/images/banners/verdi-ansvarlighet.webp)
-### Ansvarlighet
-Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse
+*   ![Abstrakt illustrasjon av kjerneverdien ansvarlighet](/assets/images/banners/verdi-ansvarlighet.webp)
 
-![Abstrakt illustrasjon av kjerneverdien tillit](/assets/images/banners/verdi-tillit.webp)
-### Tillit
-Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget
+    #### Ansvarlighet
 
-![Abstrakt illustrasjon av kjerneverdien ærlighet](/assets/images/banners/verdi-aerlighet.webp)
-### Ærlighet
-Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater
+    Ansvarlighet er grunnmuren i all god ledelse. Vi hjelper ledergrupper med å ta eierskap til egne beslutninger og konsekvensene av dem. Når roller er tydelige og ansvar er forankret, forsvinner ansvarsskyvning — og organisasjonen får gjennomføringskraft. Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse.
+
+*   ![Abstrakt illustrasjon av kjerneverdien tillit](/assets/images/banners/verdi-tillit.webp)
+
+    #### Tillit
+
+    Tillit er ikke en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid. Vi bygger tillitsgrunnlaget som gjør at folk tør si ifra, dele informasjon og ta risiko. Vårt mål er å gjøre organisasjoner mer bærekraftige ved å styrke tillitsgrunnlaget.
+
+*   ![Abstrakt illustrasjon av kjerneverdien ærlighet](/assets/images/banners/verdi-aerlighet.webp)
+
+    #### Ærlighet
+
+    Ærlighet er forutsetningen for læring og utvikling. Uten ærlig tilbakemelding blir feil skjult og problemer uløst. Vi skaper rom for ærlige samtaler om det som faktisk skjer — ikke det vi ønsker skulle skje. Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater.
 
 ## Slik jobber vi
 

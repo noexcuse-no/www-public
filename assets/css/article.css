@@ -193,8 +193,8 @@ ul:has(> li > h2) > li img,
 ol:has(> li > h2) > li > p:first-of-type img,
 ol:has(> li > h2) > li img {
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: var(--radius-md);
     margin: 0 var(--space-lg) var(--space-sm) 0;
