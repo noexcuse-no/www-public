@@ -22,31 +22,14 @@
     pointer-events: auto; /* restore clicks on buttons */
 }
 
-/* --- Circle Buttons --- */
+/* --- Circle Buttons — styled by unified button system in buttons.css (.btn-ghost.btn--icon) --- */
 .carousel-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 44px;
     height: 44px;
-    border: none;
     border-radius: 50%;
     background: var(--carousel-btn-bg);
     color: var(--primary-navy);
-    cursor: pointer;
-    box-shadow: var(--shadow-sm);
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
     text-decoration: none;
-}
-
-.carousel-btn:hover {
-    background: var(--carousel-btn-bg-hover);
-    color: var(--primary-azure);
-    box-shadow: var(--shadow-md);
-}
-
-.carousel-btn:active {
-    transform: scale(0.95);
 }
 
 /* --- Scroll-up button: transitions to fixed/sticky --- */

@@ -75,12 +75,6 @@
     text-decoration: none;
     font-size: 0.8em;
     word-break: break-all;
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.profile-contact-btn:hover {
-    background: var(--surface-hover);
-    transform: translateY(-1px);
 }
 
 .profile-contact-btn .contact-icon {
@@ -107,12 +101,6 @@
     background-color: transparent;
     border-color: var(--border-color);
     color: var(--text-color);
-}
-
-.profile-ctas .cta--secondary:hover {
-    background-color: var(--surface-hover);
-    color: var(--text-color);
-    border-color: var(--primary-azure);
 }
 
 /* --- Modal overlay --- */
@@ -163,10 +151,6 @@
     justify-content: center;
     z-index: 10001;
     box-shadow: var(--shadow-sm);
-}
-
-.profile-close:hover {
-    background: var(--box-background);
 }
 
 .profile-header {
@@ -310,12 +294,6 @@
     border-radius: 10px;
     font-weight: 600;
     font-size: 1.05em;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.profile-booking-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
 }
 
 .profile-details {

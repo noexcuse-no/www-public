@@ -44,12 +44,6 @@ html {
     z-index: 100;
 }
 
-.back-to-top:hover {
-    background: var(--primary-azure);
-    color: var(--primary-navy);
-    text-decoration: none;
-}
-
 /* Use :target to trigger via JS-less approach — relies on IntersectionObserver in existing animation.js to toggle a visible class */
 .back-to-top.is-visible {
     opacity: 0.85;
