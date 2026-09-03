@@ -1,16 +1,6 @@
 /* Utilities.css */
-.button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 img {
     max-width: 100%;
-}
-
-.btn:hover {
-    transform: scale(1.1);
 }
 
 .shadow {
