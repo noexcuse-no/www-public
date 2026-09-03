@@ -3,17 +3,38 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.7;
-    color: var(--text-color-light);
+    color: var(--text-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+    color: var(--link-color);
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
 a, a:link, a:visited {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: var(--border-color);
+    text-underline-offset: 2px;
 }
 
 a:hover, a:active {
     text-decoration: underline;
+    text-decoration-color: var(--link-hover);
+}
+
+a:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible) {
+    outline: none;
 }
 
 /* Heading Scale — Desktop */
@@ -53,9 +74,9 @@ small {
 blockquote {
     margin: var(--space-lg) 0;
     padding: var(--space-md) var(--space-lg);
-    border-left: 3px solid var(--primary-azure);
+    border-left: 3px solid var(--primary-navy);
     font-style: italic;
-    color: var(--text-color-light);
+    color: var(--text-color);
     opacity: 0.9;
     line-height: 1.7;
 }

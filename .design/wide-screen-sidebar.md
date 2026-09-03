@@ -53,10 +53,13 @@ Replace the current single-column container with a CSS grid on wide screens:
 │                      │
 │  CTA SECTION         │
 │  ──────────────────  │
-│  [Book samtale]      │ ← same content as cta-section.html
-│  [Les mer →]         │
+│  [Utforsk privat med din KI] │ ← AI reflection (Apply column)
+│  [Se hvordan 60:2…]  │
+│  [Book 20 min]       │ ← Route B / samtale
 └──────────────────────┘
 ```
+
+**Apply column (two-route):** The right rail is the "Apply" column — it carries the AI reflection topics (primary) plus the commercial secondary CTA ("Se hvordan 60:2 kan avdekke dette" → /ledelse-60-2/). On commercial surfaces the hierarchy reverses (60:2 primary, AI secondary). The single "book a conversation" CTA is replaced by the two-route pattern (Route A /bestill/ + Route B /samtale/).
 
 **Styling:**
 - Background: `var(--box-background-light)` / `var(--box-background-dark)` — matches `.article-body`

@@ -15,7 +15,7 @@
 
 .nav-links a {
     text-decoration: none;
-    color: var(--nav-link-color-light);
+    color: var(--header-text);
     font-size: 1.05em;
     font-weight: 600;
     padding: 10px 16px;
@@ -27,20 +27,20 @@
 }
 
 .nav-links a:hover {
-    color: var(--nav-link-color-light);
-    background-color: var(--nav-hover-bg-light);
+    color: var(--header-text);
+    background-color: var(--nav-hover-bg);
 }
 
 /* Featured nav item — subtle CTA pill for Ledelse 60:2 */
 .nav-links a.nav-featured {
-    border: 2px solid var(--primary-accent);
-    color: var(--primary-accent);
+    border: 2px solid var(--primary-azure);
+    color: var(--primary-azure);
     padding: 8px 18px;
 }
 
 .nav-links a.nav-featured:hover {
-    background-color: var(--primary-accent);
-    color: var(--primary-accent-contrast);
+    background-color: var(--primary-azure);
+    color: var(--primary-navy);
 }
 
 /* Nav overlay — inline on desktop, full-screen modal on mobile */
@@ -77,7 +77,7 @@ body.no-scroll {
     display: block;
     width: 24px;
     height: 2px;
-    background: var(--nav-link-color-light);
+    background: var(--header-text);
     border-radius: 2px;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -114,32 +114,6 @@ body.no-scroll {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Dark mode overrides */
-.dark-mode .nav-links a {
-    color: var(--primary-azure);
-}
-
-.dark-mode .nav-links a:hover {
-    color: var(--primary-azure);
-    background-color: var(--nav-hover-bg-dark);
-}
-
-.dark-mode .nav-links a.nav-featured {
-    border-color: var(--primary-accent);
-    color: var(--primary-accent);
-}
-
-.dark-mode .nav-links a.nav-featured:hover {
-    background-color: var(--primary-accent);
-    color: var(--primary-accent-contrast);
-}
-
-.dark-mode .nav-toggle-icon,
-.dark-mode .nav-toggle-icon::before,
-.dark-mode .nav-toggle-icon::after {
-    background: var(--primary-azure);
-}
-
 /* Mobile — ≤768px: full-screen burger menu overlay */
 @media (max-width: 768px) {
     .nav-overlay {
@@ -151,7 +125,7 @@ body.no-scroll {
         position: fixed;
         inset: 0;
         z-index: 200;
-        background: var(--box-background-light);
+        background: var(--box-background);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -169,15 +143,11 @@ body.no-scroll {
         background: none;
         border: none;
         font-size: 2em;
-        color: var(--text-color-light);
+        color: var(--text-color);
         cursor: pointer;
         border-radius: var(--radius-md);
         min-height: 44px;
         min-width: 44px;
-    }
-
-    .nav-overlay-close:hover {
-        background: var(--surface-hover-light);
     }
 
     .nav-overlay .nav-links {
@@ -192,38 +162,18 @@ body.no-scroll {
         padding: 16px 32px;
         width: auto;
         text-align: center;
-        color: var(--text-color-light);
+        color: var(--text-color);
     }
 
     .nav-overlay .nav-links a:hover {
-        color: var(--text-color-light);
-        background: var(--surface-hover-light);
+        color: var(--text-color);
+        background: var(--surface-hover);
     }
 
     .nav-toggle {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .dark-mode .nav-overlay {
-        background: var(--box-background-dark);
-    }
-
-    .dark-mode .nav-overlay a {
-        color: var(--text-color-dark);
-    }
-
-    .dark-mode .nav-overlay a:hover {
-        background: var(--surface-hover-dark);
-    }
-
-    .dark-mode .nav-overlay-close {
-        color: var(--text-color-dark);
-    }
-
-    .dark-mode .nav-overlay-close:hover {
-        background: var(--surface-hover-dark);
     }
 }
 
