@@ -39,6 +39,10 @@ Completed items belong in `CHANGELOG.md` only.
 | V5 | Article conversion rails | Planned | ai-private-reflection, analytics-events, navigation-ia-split. Two-CTA pattern, related-perspectives block, recognition hook, return sections. See `.specs/article-conversion-rails/README.md`. |
 | V6 | Founder credibility | Planned | bestill-booking-page, foredrag-media, product-signature. Practitioner module + reusable CTA panel (Dagfinn) on /bestill/ + /foredrag-og-media/. See `.specs/founder-credibility/README.md`. |
 | CS1 | Color system review | Done | `.omo/plans/color-system-review.md` |
+| R56 | Color system — variable-only dark mode refactor | Done | PR #216. Eliminated 136 `.dark-mode` selectors; variable-only mode switching via unsuffixed active variables. |
+| R57 | Color system — dark card background fix | Done | PR #216. Changed dark card background from `#333333` to `#1e2a3a`. |
+| R58 | Color system — WCAG contrast fixes | Done | PR #216. Fixed 7 contrast issues (focus outline, back-to-top, stat-bridge, blockquote border, gold accent, dark-mode button text). |
+| R59 | Color system — documentation update | Done | PR #217. Rewrote `.design/colors.md` + `.design/css-architecture.md` to match the refactored variable architecture. |
 
 | AL1 | Article layout system | Pending | `.omo/plans/article-layout-system.md` |
 | BU1 | Button CTA URL uniformity | Pending | `.omo/plans/button-cta-url-uniformity.md` |
