@@ -69,7 +69,7 @@ layout: default
           {% if product.image %}
           <img src="{{ product.image | relative_url }}" alt="" class="sidebar-product-banner-bg" aria-hidden="true">
           {% endif %}
-          <h4 class="sidebar-card-heading">{{ product.name }}</h4>
+          <h4 class="sidebar-card-heading">{{ product.display_name }}</h4>
         </div>
           {% if product.short_description %}
         <p class="sidebar-card-desc">{{ product.short_description }}</p>
