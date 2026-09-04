@@ -1,0 +1,21 @@
+# ========================================
+# Commercial data — SINGLE SOURCE OF TRUTH for the Ledelse 60:2 price.
+# Every price card, JSON-LD Offer, and commercial surface renders from here.
+# NEVER hardcode the figure anywhere else.
+# ========================================
+
+price_nok: 14850
+price_display: "kr 14 850,-"
+price_note: "eks. mva"
+inclusions:
+  - "60 diagnostiske spørsmål"
+  - "Inntil fem ledere"
+  - "To timer strukturert intervju"
+  - "Analyse og prioriterte funn"
+  - "Rapport og anbefalinger innen én uke"
+inclusions:
+  - "60 diagnostiske spørsmål"
+  - "Inntil fem ledere"
+  - "To timer strukturert intervju"
+  - "Analyse og prioriterte funn"
+  - "Rapport og anbefalinger innen én uke"
