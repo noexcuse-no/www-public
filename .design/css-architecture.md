@@ -7,7 +7,7 @@
 | **Base** | `colors.css` (183), `typography.css` (99), `layout.css` (199) |
 | **Utilities** | `utilities.css` (18), `animations.css` (89) |
 | **Components** | `assets/css/components/hero.css` (112), `assets/css/components/card.css` (157), `assets/css/components/buttons.css` (92), `assets/css/components/carousel.css` (76), `assets/css/components/cta-inline.css` (56), `assets/css/components/cta-section.css` (36), `assets/css/components/disclaimer.css` (21), `assets/css/components/footnotes.css` (35), `assets/css/components/illustrations.css` (63), `assets/css/components/questions.css` (236), `assets/css/components/sidebar.css` (560), `assets/css/components/stat-bridge.css` (18), `assets/css/components/step-timeline.css` (98), `assets/css/components/tag-cloud.css` (78) |
-| **Pages** | `article.css` (355), `products.css` (470), `profiles.css` (387), `avtale.css` (69), `perspektiv-styles.css` (39), `metode.css` (101), `partners.css` (42) |
+| **Pages** | `article.css` (420), `products.css` (470), `profiles.css` (387), `avtale.css` (69), `perspektiv-styles.css` (39), `partners.css` (42) |
 | **Layout** | `header.css` (54), `navbar.css` (189), `footer.css` (43) |
 | **Themes** | `styles-light.css` (26), `styles-dark.css` (26) |
 
@@ -278,3 +278,88 @@ Instead of applying class names in markdown, target elements by:
 ### What to avoid
 
 Do NOT add class-based selectors for content-level elements in `.article-body`. Template-level components (CTAs, hero, navigation) in `_includes/` may still use classes.
+
+## Article Element Styling System
+
+The article element styling system defines how individual content elements (headings, blockquotes, tables, cards) are styled within `.article-body`. It complements the structural selector system above.
+
+### Complete heading scale (h1–h5)
+
+Defined in `typography.css`. The full scale:
+
+| Heading | Desktop size | Mobile size | Weight |
+|---------|-------------|-------------|--------|
+| h1 | 2.5em | 2em | 700 |
+| h2 | 2em | 1.5em | 700 |
+| h3 | 1.5em | 1.25em | 600 |
+| h4 | 1.15em | 1em | 600 |
+| h5 | 1em | 0.9em | 600 |
+
+### Section divider
+
+A 1px `border-top` in `var(--border-color)` separates top-level sections. Applied via `h2:not(:first-of-type)` — the **first** h2 on a page gets no divider (it follows the hero/intro, not a preceding section).
+
+### Blockquote
+
+Single definition in `typography.css` — no `article.css` override. Uses `var(--accent-color)` border (navy in light mode, azure in dark mode), `padding: 0 0 0 var(--space-lg)`, no background. Attribution rendered via `blockquote cite` below the quote.
+
+### Table
+
+Zebra striping via `nth-child(even)` + `var(--surface-subtle)`. Caption styling for raw-HTML tables. Horizontal scroll preserved (`display: block; overflow-x: auto; max-width: 100%`).
+
+### Card hover
+
+Cards (all 4 groups: h2/h3/h4/h5) use a subtle shadow transition: base `var(--shadow-xs)` → hover `var(--shadow-sm)`, `transition: box-shadow 0.2s ease`. **No transform/lift** on hover.
+
+### Dead CSS removal
+
+- **`assets/css/metode.css`** — deleted entirely. All selectors were dead (frame-item/founder-card family rendered on zero pages — no page uses `layout: product`).
+- **`.info-box` block** — removed from `article.css`. Its only consumer was `metodikk-callout.html`, included only by `_layouts/product.html`, and zero pages use `layout: product`.
+- **`metode.css` `<link>`** — removed from `_includes/styles.html`.
+
+### Future cleanup candidates
+
+- `_layouts/product.html` and `_includes/metodikk-callout.html` remain in the repo unused — future cleanup decision.
+- The color plan's `--frame-struct/human/political/symbol` variables become unreferenced after the metode.css deletion — left in place (harmless); future cleanup decision.
+
+## Article Element Styling System
+
+The article element styling system defines the visual treatment of headings, blockquotes, tables, and cards within `.article-body`. All rules live in `article.css` and `typography.css` — no per-element overrides in component files.
+
+### Complete heading scale (h1–h5)
+
+| Heading | Desktop size | Mobile size | Weight |
+|---------|-------------|-------------|--------|
+| h1 | 2.2em | 1.8em | 700 |
+| h2 | 1.6em | 1.4em | 700 |
+| h3 | 1.3em | 1.2em | 600 |
+| h4 | 1.15em | 1em | 600 |
+| h5 | 1em | 0.9em | 600 |
+
+h4/h5 were added to the typography scale (2026-09-03) to support the list-heading layout system's sub-section cards.
+
+### Section divider
+
+A 1px `border-top` in `var(--border-color)` is applied to `h2:not(:first-of-type)` — every h2 section after the first gets a thin divider above it. The first h2 on a page (or the first h2 after a paragraph opener) has **no** divider.
+
+### Blockquote
+
+Single definition in `typography.css` — `var(--accent-color)` border (navy in light mode, azure in dark mode), `padding: 0 0 0 var(--space-lg)`, no background. Attribution rendered via `blockquote cite` below the quote. No `article.css` override.
+
+### Table
+
+Zebra striping via `nth-child(even)` + `var(--surface-subtle)` background. Caption styling for raw-HTML tables. Horizontal scroll preserved (`display: block; overflow-x: auto; max-width: 100%`).
+
+### Card hover
+
+Cards (list-heading cards, info cards, challenge cards) use a subtle shadow transition: base `var(--shadow-xs)` → hover `var(--shadow-sm)`, `transition: box-shadow 0.2s ease`. **No transform/lift** on hover.
+
+### Deletions (2026-09-03)
+
+- **`assets/css/metode.css`** removed entirely — all selectors were dead (frame-item/founder-card family rendered on zero pages). The `--frame-struct/human/political/symbol` color variables become unreferenced after this deletion — left in place (harmless); future cleanup decision.
+- **`.info-box` block** removed from `article.css` — its only consumer was `metodikk-callout.html`, included only by `_layouts/product.html`, and zero pages use `layout: product`.
+- **`metode.css` `<link>`** removed from `_includes/styles.html`.
+
+### Future cleanup candidates
+
+`_layouts/product.html` and `_includes/metodikk-callout.html` remain in the repo unused — future cleanup decision.

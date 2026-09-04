@@ -46,6 +46,7 @@ Completed items belong in `CHANGELOG.md` only.
 
 | AL1 | Article layout system | Pending | `.omo/plans/article-layout-system.md` |
 | BU1 | Button CTA URL uniformity | Pending | `.omo/plans/button-cta-url-uniformity.md` |
+| AE1 | Article element styling | Done | `.omo/plans/article-element-styling.md` — implemented (h4/h5 heading scale, section dividers, blockquote unification, table zebra striping, card hover refinement, metode.css + .info-box deletion). Record in CHANGELOG. |
 | AI1 | AI Act alignment | Pending | `.omo/plans/ai-act-alignment.md` |
 | RI1 | Risk reduction cleanup | Pending | `.omo/plans/risk-reduction-cleanup.md` |
 | CI1 | CI reuse gating flip | Pending | mixed-rights:507 |
