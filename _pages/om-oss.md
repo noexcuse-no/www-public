@@ -36,9 +36,21 @@ json_ld:
 
 No Excuse AS ble grunnlagt i juni 2025. Vi så et behov for å forbedre ledelsesfunksjonen i norske virksomheter uten dyre konsulentrapporter og unødvendig kompleksitet.
 
+Norske ledergrupper har et særegent utgangspunkt. Vi forventer flate strukturer, tillitsbasert ledelse og at folk sier ifra — men i praksis er det ofte langt mellom forventning og virkelighet. Møtene er høflige, uenigheten kommer på gangen, og de viktige spørsmålene blir aldri stilt i rommet. Vi startet No Excuse fordi vi mener norsk arbeidsliv fortjener bedre enn det.
+
 Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals [fire perspektiver](/perspektiv/)) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse, refleksjon fremfor skjemaer, og at de beste svarene ofte finnes internt — om man stiller de riktige spørsmålene.
 
+## Forankret i norsk ledelsestradisjon
+
+Metodikken vår er ikke importert fra et konsulenthus i London eller New York. Bolman & Deals fire perspektiver undervises ved BI og andre norske handelshøyskoler, og er en del av den norske ledelsesutdanningen. Vi har tatt det teoretiske grunnlaget og gjort det praktisk anvendelig for norske ledergrupper.
+
+Skandinavisk ledelsestradisjon kjennetegnes av lav avstand mellom leder og ansatt, konsensusdrevet beslutningstaking og psykologisk trygghet som en kulturell norm — ikke en intervensjon. Det er dette vi bygger på. Ledelse 60:2 er et norsk samtaleverktøy, ikke en amerikansk vurdering.
+
 ![Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet](/assets/images/banners/banner-verdier.webp)
+
+## Våre verdier er norske
+
+Våre tre kjerneverdier — ansvarlighet, tillit og ærlighet — er ikke tilfeldige. De er forankret i norsk ledelsestradisjon, der de er forutsetninger for hvordan norske virksomheter faktisk fungerer.
 
 *   ![Abstrakt illustrasjon av kjerneverdien ansvarlighet](/assets/images/banners/verdi-ansvarlighet.webp)
 
@@ -58,11 +70,21 @@ Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals [fire p
 
     Ærlighet er forutsetningen for læring og utvikling. Uten ærlig tilbakemelding blir feil skjult og problemer uløst. Vi skaper rom for ærlige samtaler om det som faktisk skjer — ikke det vi ønsker skulle skje. Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målbare resultater.
 
+## Beste praksis fra norsk arbeidsliv
+
+Metodikken vår er forankret i norsk arbeidsliv, ikke importert ledelsesteori. Norske virksomheter har lenge eksperimentert med tillitsreformer, flatere strukturer og kortere arbeidsuker — og funnet at tillit og tydelige roller gir bedre resultater enn kontroll og hierarki.
+
+Vi bygger på denne praksisen. Når vi jobber med en ledergruppe, tar vi utgangspunkt i det som allerede fungerer i norsk arbeidsliv — den flate strukturen, den høye tilliten, viljen til å si ifra — og hjelper ledergruppen med å få det til å fungere i praksis. Ikke ved å innføre nye systemer, men ved å stille de riktige spørsmålene.
+
 ## Slik jobber vi
 
 Vår metodikk bygger på Bolman & Deals fire perspektiver og er utviklet gjennom praktisk anvendelse i norske ledergrupper. Vi bruker strukturerte intervjuer og diagnostiske spørsmål for å skape et felles bilde av virkeligheten — uten scoring, uten ranking.
 
 Les mer om [hvordan vi jobber og det teoretiske grunnlaget](/metode/).
+
+## En norsk ledelsesbedrift
+
+No Excuse er en norsk ledelsesbedrift. Vår tilnærming bygger på skandinavisk ledelsestradisjon — lav avstand mellom leder og ansatt, psykologisk trygghet, og tillit som bærebjelke. Det er dette som gjør oss relevante også utenfor Norge, i markeder som verdsetter tillit, transparens og flat struktur.
 
 ## Standard avtalevilkår
 
