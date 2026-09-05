@@ -31,7 +31,7 @@
     left: 25%;
     right: 25%;
     height: 0;
-    border-top: 2px dashed var(--border-color-light);
+    border-top: 2px dashed var(--border-color);
     z-index: 0;
 }
 
@@ -47,8 +47,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary-accent);
-    color: var(--primary-accent-contrast);
+    background: var(--primary-azure);
+    color: var(--primary-navy);
     border-radius: 50%;
     font-weight: 700;
     font-size: 1.3em;
@@ -63,15 +63,6 @@
 .stagger-parent.is-visible .card--numbered {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* Dark mode connector */
-.dark-mode .section--step-grid .card-grid--steps::before {
-    border-top-color: var(--border-color-dark);
-}
-
-.dark-mode .section--step-grid .card-grid--steps .card--numbered:not(:last-child)::after {
-    border-left-color: var(--border-color-dark);
 }
 
 /* Mobile — vertical timeline */
@@ -102,6 +93,6 @@
         width: 0;
         height: calc(100% - var(--space-lg) - 24px);
         border-top: none;
-        border-left: 2px dashed var(--border-color-light);
+        border-left: 2px dashed var(--border-color);
     }
 }

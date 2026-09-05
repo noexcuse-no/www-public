@@ -54,35 +54,35 @@ Dave Logan og medforfattere beskriver i «Tribal Leadership» fem stadier organi
 
 ## De 3 hovedelementene
 
-![Illustrasjon: Kultur og språk](/assets/images/banners/spot-identitet-verdier.webp)
+*   ![Illustrasjon: Kultur og språk](/assets/images/banners/spot-identitet-verdier.webp)
 
-### Kultur og språk
+    ## Kultur og språk
 
-Kultur lever i språket. Hvordan folk snakker om arbeidet, om lederne, om kundene — det avslører hvilket stadium kulturen befinner seg på. Ledergrupper kan analysere sin egen kommunikasjon for å forstå kulturen — Logans stadier fungerer som et diagnostisk kart: hva er det dominerende kulturstadiet i deres organisasjon?
+    Kultur lever i språket. Hvordan folk snakker om arbeidet, om lederne, om kundene — det avslører hvilket stadium kulturen befinner seg på. Ledergrupper kan analysere sin egen kommunikasjon for å forstå kulturen — Logans stadier fungerer som et diagnostisk kart: hva er det dominerende kulturstadiet i deres organisasjon?
 
-**Tegn på god kultur og språk:** Ledere snakker i «vi»-form. Det finnes historier som fortelles om hvordan ting ble gjort. Feiring av suksess er synlig og inkluderende.
+    **Tegn på god kultur og språk:** Ledere snakker i «vi»-form. Det finnes historier som fortelles om hvordan ting ble gjort. Feiring av suksess er synlig og inkluderende.
 
-**Tegn på kultur og språk-problemer:** «Jeg»-dominerende språk. Klaging på møter, kunder, ledelse. Historiefortelling preget av «de» vs. «vi».
+    **Tegn på kultur og språk-problemer:** «Jeg»-dominerende språk. Klaging på møter, kunder, ledelse. Historiefortelling preget av «de» vs. «vi».
 
-![Illustrasjon: Verdier og mening](/assets/images/banners/spot-identitet-ritualer.webp)
+*   ![Illustrasjon: Verdier og mening](/assets/images/banners/spot-identitet-ritualer.webp)
 
-### Verdier og mening
+    ## Verdier og mening
 
-Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
+    Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
 
-**Tegn på gode verdier og mening:** Folk kan fortelle om situasjoner der verdiene ble levd ut i praksis. Nye folk læres opp i «hvordan vi gjør ting her» med konkrete eksempler.
+    **Tegn på gode verdier og mening:** Folk kan fortelle om situasjoner der verdiene ble levd ut i praksis. Nye folk læres opp i «hvordan vi gjør ting her» med konkrete eksempler.
 
-**Tegn på verdier og mening-problemer:** Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert.
+    **Tegn på verdier og mening-problemer:** Verdiene er «de vanlige» (respekt, integritet, excellence). Ingen kan gi eksempler. Verdiene ble skrevet av konsulenter for fem år siden og aldri oppdatert.
 
-![Illustrasjon: Ritualer og identitet](/assets/images/banners/spot-identitet-fortelling.webp)
+*   ![Illustrasjon: Ritualer og identitet](/assets/images/banners/spot-identitet-fortelling.webp)
 
-### Ritualer og identitet
+    ## Ritualer og identitet
 
-Ritualer er de gjentatte handlingene som holder kulturen i live: møter, feiringer, seremonier. Identitet er følelsen av tilhørighet til noe større enn seg selv.
+    Ritualer er de gjentatte handlingene som holder kulturen i live: møter, feiringer, seremonier. Identitet er følelsen av tilhørighet til noe større enn seg selv.
 
-**Tegn på gode ritualer og identitet:** Det finnes «ting man gjør» som nye folk tar opp naturlig. Suksesser feires på måter som faller seg naturlig for gruppen. Spesielle tradisjoner som forplanter seg.
+    **Tegn på gode ritualer og identitet:** Det finnes «ting man gjør» som nye folk tar opp naturlig. Suksesser feires på måter som faller seg naturlig for gruppen. Spesielle tradisjoner som forplanter seg.
 
-**Tegn på ritualer og identitet-problemer:** Møter er blitt rutine uten innhold. Feiringer er pålagt og føles falske. Nyansatte opplever silo raskt.
+    **Tegn på ritualer og identitet-problemer:** Møter er blitt rutine uten innhold. Feiringer er pålagt og føles falske. Nyansatte opplever silo raskt.
 
 ![Illustrasjon av de 3 hovedelementene i identitetsperspektivet](/assets/images/banners/illustrasjon-identitet-hovedelementer.webp)
 
@@ -127,7 +127,7 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
 
 Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gjennomfør en uforpliktende samtale for å lære mer om metoden.
 
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthensted)
+[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ## Det teoretiske grunnlaget

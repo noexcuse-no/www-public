@@ -1,93 +1,267 @@
-/* Button and CTA styles — extracted from products, about, article */
+/* ========================================
+   Unified Button System
+   Three types: Primary, Secondary, Ghost.
+   Shared base, unified transition/hover/active/focus.
+   Existing .cta* classes kept as aliases (no HTML changes in Branch 1).
+   ======================================== */
 
-/* CTA buttons */
-.cta {
+/* --- Shared base (all types) --- */
+.btn,
+.cta,
+.card-link,
+.card-link--cta,
+.carousel-btn,
+.profile-contact-btn,
+.profile-booking-btn,
+.profile-close,
+.share-btn,
+.copy-btn,
+.provider-btn,
+.modal-close,
+.nav-overlay-close,
+.questions-toggle,
+.toc-mobile-toggle,
+.toc-mobile-close,
+.change-provider-btn,
+.back-to-top,
+.landing-scroll-link,
+.tag-cloud-item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 6px;
     min-height: 44px;
     padding: 14px 32px;
-    background-color: var(--cta-primary-bg);
-    color: var(--cta-primary-text);
-    text-decoration: none;
-    border-radius: 4px;
     font-weight: 600;
     font-size: 1.05em;
-    border: 2px solid var(--cta-primary-border);
+    text-decoration: none;
+    border-radius: var(--radius-md);
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
-.cta:hover {
-    background-color: var(--cta-primary-text);
-    color: var(--cta-primary-bg);
-    border-color: var(--cta-primary-bg);
+/* --- Unified hover (all types) --- */
+.btn:hover,
+.cta:hover,
+.card-link:hover,
+.card-link--cta:hover,
+.carousel-btn:hover,
+.profile-contact-btn:hover,
+.profile-booking-btn:hover,
+.profile-close:hover,
+.share-btn:hover,
+.copy-btn:hover,
+.provider-btn:hover,
+.modal-close:hover,
+.nav-overlay-close:hover,
+.questions-toggle:hover,
+.toc-mobile-toggle:hover,
+.toc-mobile-close:hover,
+.change-provider-btn:hover,
+.back-to-top:hover,
+.landing-scroll-link:hover,
+.tag-cloud-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
-.cta--spaced {
-    margin-left: 16px;
+/* --- Unified active (all types) --- */
+.btn:active,
+.cta:active,
+.card-link:active,
+.card-link--cta:active,
+.carousel-btn:active,
+.profile-contact-btn:active,
+.profile-booking-btn:active,
+.profile-close:active,
+.share-btn:active,
+.copy-btn:active,
+.provider-btn:active,
+.modal-close:active,
+.nav-overlay-close:active,
+.questions-toggle:active,
+.toc-mobile-toggle:active,
+.toc-mobile-close:active,
+.change-provider-btn:active,
+.back-to-top:active,
+.landing-scroll-link:active,
+.tag-cloud-item:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: var(--shadow-sm);
 }
 
-.cta--secondary {
+/* --- Unified focus-visible (all types) --- */
+.btn:focus-visible,
+.cta:focus-visible,
+.card-link:focus-visible,
+.card-link--cta:focus-visible,
+.carousel-btn:focus-visible,
+.profile-contact-btn:focus-visible,
+.profile-booking-btn:focus-visible,
+.profile-close:focus-visible,
+.share-btn:focus-visible,
+.copy-btn:focus-visible,
+.provider-btn:focus-visible,
+.modal-close:focus-visible,
+.nav-overlay-close:focus-visible,
+.questions-toggle:focus-visible,
+.toc-mobile-toggle:focus-visible,
+.toc-mobile-close:focus-visible,
+.change-provider-btn:focus-visible,
+.back-to-top:focus-visible,
+.landing-scroll-link:focus-visible,
+.tag-cloud-item:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 2px;
+}
+
+/* --- Type: Primary (alias .cta) --- */
+.btn-primary,
+.cta,
+.cta--primary,
+.card-link--cta,
+.profile-booking-btn {
+    background-color: var(--cta-primary-bg);
+    color: var(--cta-primary-text);
+    border: 2px solid var(--cta-primary-border);
+}
+
+/* --- Type: Secondary (alias .cta--secondary) --- */
+.btn-secondary,
+.cta--secondary,
+.copy-btn {
     background-color: var(--cta-secondary-bg);
     color: var(--cta-secondary-text);
     border: 2px solid var(--cta-secondary-border);
 }
 
-.cta--secondary:hover {
-    background-color: var(--cta-secondary-text);
-    color: var(--cta-secondary-bg);
-    border-color: var(--cta-secondary-bg);
+/* --- Type: Ghost (text-only, surface hover bg) --- */
+.btn-ghost,
+.card-link,
+.carousel-btn,
+.profile-contact-btn,
+.profile-close,
+.share-btn,
+.provider-btn,
+.modal-close,
+.nav-overlay-close,
+.questions-toggle,
+.toc-mobile-toggle,
+.toc-mobile-close,
+.change-provider-btn,
+.back-to-top,
+.landing-scroll-link,
+.tag-cloud-item {
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
 }
 
+.btn-ghost:hover,
+.card-link:hover,
+.carousel-btn:hover,
+.profile-contact-btn:hover,
+.profile-close:hover,
+.share-btn:hover,
+.provider-btn:hover,
+.modal-close:hover,
+.nav-overlay-close:hover,
+.questions-toggle:hover,
+.toc-mobile-toggle:hover,
+.toc-mobile-close:hover,
+.change-provider-btn:hover,
+.back-to-top:hover,
+.landing-scroll-link:hover,
+.tag-cloud-item:hover {
+    background-color: var(--surface-hover);
+}
+
+/* --- Variant: size --- */
+.btn--large,
 .cta--large {
     padding: 18px 48px;
     font-size: 1.2em;
 }
 
-/* Benefit link (article pages) */
-.benefit-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 16px;
-    padding: 10px 20px;
-    font-size: 0.95em;
-    font-weight: 500;
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
-    text-decoration: none;
-    border-radius: var(--radius-md);
-    min-height: 44px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.btn--small,
+.profile-contact-btn,
+.provider-btn,
+.toc-mobile-toggle,
+.change-provider-btn,
+.tag-cloud-item {
+    padding: 8px 16px;
+    font-size: 0.9em;
 }
 
-.benefit-link:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
+.btn--icon,
+.carousel-btn,
+.profile-close,
+.share-btn,
+.modal-close,
+.nav-overlay-close,
+.toc-mobile-close,
+.back-to-top {
+    padding: 10px;
+    font-size: 1.1em;
 }
 
-/* Responsive */
+/* --- Variant: spacing --- */
+.btn--spaced,
+.cta--spaced {
+    margin-left: var(--space-md);
+}
+
+.btn--block {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- Brand-color hover for share buttons (brand-mandated) --- */
+.share-btn--teams {
+    background: var(--brand-teams);
+    color: #fff;
+}
+
+.share-btn--teams:hover {
+    background: var(--brand-teams-hover);
+    color: #fff; /* brand-mandated: white text on brand-colored buttons */
+}
+
+.share-btn--linkedin {
+    background: var(--brand-linkedin);
+    color: #fff;
+}
+
+.share-btn--linkedin:hover {
+    background: var(--brand-linkedin-hover);
+    color: #fff; /* brand-mandated: white text on brand-colored buttons */
+}
+
+/* --- Provider selected state (functional, not decorative) --- */
+.provider-btn.is-selected {
+    border-color: var(--primary-azure);
+    background: var(--surface-subtle);
+    box-shadow: 0 0 0 1px var(--primary-azure);
+}
+
+/* --- Responsive --- */
 @media (max-width: 768px) {
     .cta-buttons-row {
         flex-direction: column;
     }
 
-    .cta {
+    .cta,
+    .btn--block {
         width: 100%;
         box-sizing: border-box;
         text-align: center;
     }
 
-    .cta--spaced {
+    .cta--spaced,
+    .btn--spaced {
         margin-left: 0;
         margin-top: 12px;
         display: block;
     }
-}
-
-/* Dark mode overrides */
-.dark-mode .benefit-link {
-    color: var(--primary-accent-contrast);
-    background-color: var(--primary-accent);
 }
