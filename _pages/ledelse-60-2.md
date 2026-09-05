@@ -55,6 +55,7 @@ process_steps:
 image: "assets/images/hero-illustration.webp"
 tags: "#ledelse #orientering #analyse #ledelse60-2"
 product_tag: ledelse-60-2
+price_source: commercial
 json_ld:
   - type: "Service"
     name: "Ledelse 60:2"
@@ -73,7 +74,7 @@ json_ld:
     offers:
       type: "Offer"
       priceCurrency: "NOK"
-      description: "Orientering for ledergruppen"
+      description: "Orientering for ledergruppen — fastpris eks. mva"
     hasOfferCatalog:
       type: "OfferCatalog"
       name: "Ledelse 60:2 Tjenester"
@@ -89,12 +90,12 @@ json_ld:
             name: "Katalysator"
             description: "Kontinuerlig oppfølging og coaching for organisasjonsvekst"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Bestill Ledelse 60:2"
+    url: "/bestill/ledelse-60-2/"
+  - text: "Book 20 min avklaring"
+    url: "/samtale/"
   - text: "Les mer →"
     url: "/ledelse-60-2/"
-  - text: "Book en uforpliktende samtale"
-    url: "https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no"
 ---
 
 ## Hva er Ledelse 60:2?
@@ -155,6 +156,59 @@ Metoden er også relevant for [governance, risikostyring og compliance (GRC)](/g
 
 Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verktøyet som gir ledergruppen et felles språk for å bryte mønstrene. Les mer om [hvordan metoden er bygget opp](/metode/) og [hvorfor vi bruker Bolman & Deals fire perspektiver](/perspektiv/) som rammeverk.
 
+## Når passer det? {#passer}
+
+Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et felles språk for hvor de står — og som er klare for å bruke to timer på en strukturert samtale.
+
+**Passer for dere hvis:**
+
+*   Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg.
+*   Det er ny ledergruppe, ny daglig leder eller ny organisering.
+*   Dere er usikre på om strategien faktisk blir gjennomført.
+*   Dere opererer i en regulert eller operasjonell bransje der styring må sitte.
+
+**Passer ikke for dere hvis:**
+
+*   Dere er flere enn fem ledere — da bør vi først ta en [avklaring](/samtale/) om hvordan vi kan tilpasse opplegget.
+*   Dere ønsker et utviklingsprogram eller løpende coaching fremfor en avgrenset orientering.
+*   Dere trenger implementeringsrådgivning som følger opp funnene over tid.
+
+{% include price-card.html %}
+
+## Hva skjer før, under og etter?
+
+**Før:** Vi tar en kort [uforpliktende samtale](/samtale/) for å avklare om metoden passer for dere. Ingen kontrakter, ingen binding.
+
+**Under:** Et strukturert intervju med inntil fem ledere over to timer, med 60 diagnostiske spørsmål fordelt på fire perspektiver.
+
+**Etter:** Du får en rapport med prioriterte funn og konkrete anbefalinger innen én uke. Ingen løpende forpliktelser — men vi kan gjerne snakke om [oppfølging](/katalysator/) hvis dere ønsker det.
+
+## Hva får du?
+
+*   60 diagnostiske spørsmål testet i norske ledergrupper.
+*   Inntil fem ledere i samme rom — felles språk, felles bilde.
+*   To timer strukturert intervju — ikke en survey.
+*   Analyse og prioriterte funn fra en erfaren rådgiver.
+*   Rapport og anbefalinger innen én uke.
+
+## Ofte stilte spørsmål
+
+**Hva koster Ledelse 60:2?**
+
+Prisen er {{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }}. En fast pris for hele opplegget — ingen skjulte kostnader eller løpende forpliktelser.
+
+**Hvorfor er det bare to timer?**
+
+Fordi orienteringen er avgrenset til å gi ledergruppen et felles bilde. To timer er nok til å gå gjennom 60 spørsmål og få et godt grunnlag for videre arbeid — uten at det blir et stort prosjekt.
+
+**Hva skjer etter at vi har fått rapporten?**
+
+Rapporten er deres. Dere kan bruke den som den er, eller ta en prat med oss om [oppfølging](/katalysator/) hvis dere ønsker å jobbe videre med funnene.
+
+**Er det noe som ikke er inkludert?**
+
+Ledelse 60:2 er en orientering, ikke et utviklingsprogram. Implementeringsrådgivning, coaching og løpende oppfølging er ikke inkludert i prisen.
+
 ## Slik er metoden bygget opp
 
 Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert perspektiv avdekker en dimensjon av ledelsesfunksjonen som ellers lett overses. Poenget er ikke å skåre — men å få et felles språk for hva som fungerer og hva som trenger oppmerksomhet.
@@ -184,5 +238,7 @@ Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert pers
     Kultur, verdier og felles retning. Handler om hva organisasjonen står for.
 
 De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene er designet for å skape refleksjon og innsikt — ikke for å gi enkle poengsummer eller rangeringer.
+
+{% include cta-panel.html %}
 
 {% include profiles.html tags="ledelse" %}
