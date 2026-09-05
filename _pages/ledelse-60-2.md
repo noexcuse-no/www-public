@@ -186,6 +186,8 @@ Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et
 *   Dere ønsker et utviklingsprogram eller løpende coaching fremfor en avgrenset orientering.
 *   Dere trenger implementeringsrådgivning som følger opp funnene over tid.
 
+**Allerede rådgiver hos kunden?** 60:2 kan skjerpe mandatet — dere beholder oppfølgingen.
+
 {% include price-card.html %}
 
 ## Hva skjer før, under og etter?

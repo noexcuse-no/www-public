@@ -94,6 +94,23 @@ Du finner våre standard avtalevilkår [her](/avtale/).
 
 {% include profiles.html %}
 
+## Vi diagnostiserer. Dere kan gjerne hjelpe kunden videre.
+
+Vi jobber med ledelsesdiagnostikk — ikke implementering. Vårt mandat er å gi ledergruppen en ærlig, uavhengig diagnose. Hva dere velger å gjøre med den, er deres valg.
+
+- **Ingen eksklusivitet** — dere er fri til å bruke andre rådgivere for oppfølging
+- **Ingen automatisk implementeringsforslag** — vi leverer diagnose, ikke pakkeløsninger
+- **Kunden eier funnene** — rapporten og anbefalingene er deres, ikke vår
+- **Innleidne rådgivere velkomne** — eksisterende rådgivere kan bygge videre på våre funn
+
+---
+
+## Allerede rådgiver hos kunden?
+
+60:2 kan skjerpe mandatet — dere beholder oppfølgingen.
+
+---
+
 ## Vil du vite mer?
 
 Ta en uforpliktende samtale med oss — vi snakker om ledelse, ikke salg.
