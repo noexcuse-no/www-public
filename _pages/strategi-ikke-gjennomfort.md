@@ -59,3 +59,37 @@ Resultatet er en rapport som viser *hvor* gapet befinner seg — og konkrete anb
 - [Svak gjennomføring](/svak-gjennomforing/) — når beslutninger ikke blir til handling
 - [Forankring](/forankring/) — hvordan få beslutninger til å bli til handling
 - [Endringsledelse](/endringsledelse/) — når hele organisasjonen må endres
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Strategi på veggen, handling i skogen:** Strategien er god, men ingenting skjer. Gapet mellom plan og handling er ikke broet.
+*   **Kultur som bremse:** «Sånn har det alltid vært» er sterkere enn nye retningslinjer.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når ingen eier strategien
+*   [Menneskeperspektivet](/mennesker/) — når ingen tør si at strategien ikke fungerer
+*   [Påvirkningsperspektivet](/pavirkning/) — når interesser blokkerer gjennomføring
+*   [Identitetsperspektivet](/identitet/) — når strategien ikke er forankret i kulturen
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/strategi-ikke-gjennomfort/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Strategi ikke gjennomført](/strategi-ikke-gjennomfort/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Svak gjennomføring](/svak-gjennomforing/) — når beslutninger ikke blir til handling
+*   [Forankring](/forankring/) — hvordan få beslutninger til å bli til handling
+*   [Endringsledelse](/endringsledelse/) — når hele organisasjonen må endres

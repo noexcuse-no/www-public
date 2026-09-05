@@ -138,6 +138,41 @@ Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonfli
 [Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
+---
+
+## Kjenner du deg igjen?
+
+*   **Usynlig makt:** De som formelt har makt, har ikke reell makt. Beslutninger tas «der» men av dem som «ikke skal ha noe med det å gjøre».
+*   **For mye enighet:** En ledelsesgruppe som altfor sjelden er uenig, klarer heller ikke å utfordre hverandre. Uenighet er et sunnhetstegn.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når formell og reell makt avviker
+*   [Menneskeperspektivet](/mennesker/) — når maktforhold skaper frykt for å si ifra
+*   [Identitetsperspektivet](/identitet/) — når kulturen belønner stillhet
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/pavirkning/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Påvirkningsperspektivet](/pavirkning/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Usynlig beslutningsmakt](/pavirkning/#usynlig-beslutningsmakt) — når formell og reell makt avviker
+*   [Skjulte agendaer](/pavirkning/#skjulte-agendaer) — når interesser skjules
+*   [For mye enighet](/pavirkning/#for-mye-enighet) — når uenighet mangler
+
+---
+
 ## Det teoretiske grunnlaget
 
 Påvirkningsperspektivet i Ledelse 60:2 bygger på Bolman & Deals politiske ramme, kombinert med Jeffrey Pfeffers forskning på makt og organisasjonspolitikk fra «Power».

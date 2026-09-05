@@ -100,3 +100,37 @@ Les også: [Usikkerhetshåndtering henger tett sammen med informasjonssikkerhet 
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **IT-eierskap av sikkerhet:** Sikkerhet delegeres til IT-avdelingen, men ledergruppen eier risikoen.
+*   **Kultur der «det har gått bra så langt»:** Sikkerhetskulturen sitter ikke i veggene — den leverer falsk trygghet.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når roller for informasjonseierskap er uklare
+*   [Menneskeperspektivet](/mennesker/) — når frykt for å melde fra skaper sikkerhetshull
+*   [Påvirkningsperspektivet](/pavirkning/) — når ledere overstyrer sikkerhetsråd
+*   [Identitetsperspektivet](/identitet/) — når «vi har aldri blitt hacket» blir identitet
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/informasjonssikkerhet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Informasjonssikkerhet og cyberresiliens](/informasjonssikkerhet/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Fire perspektiver — fire sikkerhetsdimensjoner](/informasjonssikkerhet/#fire-perspektiver-fire-sikkerhetsdimensjoner) — struktur, mennesker, påvirkning, identitet
+*   [Cyberresiliens](/informasjonssikkerhet/#cyberresiliens-mer-enn-forebygging) — mer enn forebygging
+*   [GRC og helhetlig styring](/grc/) — helhetlig rammeverk

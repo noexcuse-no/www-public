@@ -190,7 +190,40 @@ Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid
     Tidligere svik sitter i kulturen. Nye ledere møtes med «vi har hørt dette før»-holdning. Initiativ blir møtt med skepsis.
 *   ![Abstrakt illustrasjon av inkonsekvent oppfølging som tillitsutfordring](/assets/images/banners/tillit-t4-inconsistent-followup.webp)
 
-    #### Inkonsekvent oppfølging
+#### Inkonsekvent oppfølging
 
-    Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring. Prioriteringer som stadig endres.
+Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring. Prioriteringer som stadig endres.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Hierarkisk blindhet:** Det som føles som «direkte» oppfattes som «domsnutt» av underordnede.
+*   **Inkonsekvent oppfølging:** Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring.
+
+---
+
+## Relaterte perspektiver
+
+*   [Menneskeperspektivet](/mennesker/) — når tillit mangler, blir siloer normen
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold skaper frykt for å si ifra
+*   [Identitetsperspektivet](/identitet/) — når kulturen belønner stillhet
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/tillit/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Tillit og psykologisk trygghet](/tillit/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Psykologisk trygghet](/tillit/#psykologisk-trygghet) — fundamentet for tillit
+*   [Tjenende lederskap](/tillit/#tjenende-lederskap) — ledelse som tjener
+*   [Tillit som system](/tillit/#tillit-som-system) — når tillit blir system
 

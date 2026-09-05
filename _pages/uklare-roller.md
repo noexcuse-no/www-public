@@ -59,3 +59,37 @@ Resultatet er en rapport som viser *hvor* rollekonflikter befinner seg — og ko
 - [Gjentatte diskusjoner](/gjentatte-diskusjoner/) — når samme problem dukker opp igjen
 - [Svak gjennomføring](/svak-gjennomforing/) — når beslutninger ikke blir til handling
 - [Ny ledergruppe](/ny-ledergruppe/) — når roller må fornyes
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Uklart ansvar:** To personer tror de eier samme område. Eller ingen som eier det i det hele tatt.
+*   **Målkonflikter:** Avdeling A optimaliserer for sitt mål, som bremser Avdeling B.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når roller og ansvar er uklare
+*   [Menneskeperspektivet](/mennesker/) — når folk ikke vet hva som forventes
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold skaper rollekonflikter
+*   [Identitetsperspektivet](/identitet/) — når «ansvar» er en verdi som ikke leves
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/uklare-roller/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Uklare roller](/uklare-roller/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Gjentatte diskusjoner](/gjentatte-diskusjoner/) — når samme problem dukker opp igjen
+*   [Svak gjennomføring](/svak-gjennomforing/) — når beslutninger ikke blir til handling
+*   [Ny ledergruppe](/ny-ledergruppe/) — når roller må fornyes

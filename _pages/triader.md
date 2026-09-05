@@ -222,3 +222,36 @@ Triader er ikke en magisk løsning. De kan også gå galt, og når de gjør det,
 
 Felles for alle disse feilmodiene er at de oppstår når kulturen ikke er moden nok til å bære triaden. En organisasjon som fortsatt er preget av Stage 3-tenkning («jeg er best») vil ha store problemer med å opprettholde ekte triader. Triader er et symptom på kulturmodenhet, ikke en snarvei til den.
 
+---
+
+## Kjenner du deg igjen?
+
+*   **Triangulering:** A snakker med C om B, i stedet for at A og B løser konflikten direkte.
+*   **Maktkonsentrasjon:** Én person i triaden nekter å dele nettverket sitt og holder de to andre adskilt.
+
+---
+
+## Relaterte perspektiver
+
+*   [Menneskeperspektivet](/mennesker/) — når dyader erstatter triader i teamet
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktdynamikk ødelegger triader
+*   [Identitetsperspektivet](/identitet/) — når kulturen ikke bærer triader
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/triader/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Triader](/triader/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Når triader ikke fungerer](/triader/#når-triader-ikke-fungerer) — advarselstegn
+*   [Prosjekttriaden](/triader/#prosjekttriaden-sponsor-leder-ekspert) — sponsor, leder, ekspert
+*   [Overbroende triader](/triader/#overbroende-triader-brobygging-mellom-siloer) — brobygging mellom siloer
+

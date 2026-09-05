@@ -150,6 +150,41 @@ Ledelse 60:2 inneholder spørsmål som handler om tillit, motivasjon og relasjon
 [Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
+---
+
+## Kjenner du deg igjen?
+
+*   **Tause rom i møter:** Alle er enige i møtet — på overflaten. Når tillitsbasert ledelse mangler, blir tause rom normen.
+*   **Siloer som skaper flaskehalser:** Avdelinger jobber i siloer. Kunden matcher med én person som blir en flaskehals.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når rollene er klare, men tilliten mangler
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold saboterer samarbeidet
+*   [Identitetsperspektivet](/identitet/) — når kulturen æder tilliten
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/mennesker/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Menneskeperspektivet](/mennesker/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Psykologisk trygghet](/mennesker/#psykologisk-trygghet) — fundamentet for tillit
+*   [Tjenende lederskap](/mennesker/#tjenende-lederskap) — ledelse som tjener
+*   [Tillit som system](/mennesker/#tillit-som-system) — når tillit blir system
+
+---
+
 ## Det teoretiske grunnlaget
 
 Menneskeperspektivet i Ledelse 60:2 bygger på Bolman & Deals HR-ramme, kombinert med Ken Blanchards og Colleen Barretts forskning på tjenerledelse fra «Lead with LUV».

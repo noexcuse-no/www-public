@@ -59,3 +59,37 @@ Resultatet er en rapport som viser *hvor* gjennomføringen stagner — og konkre
 - [Gjentatte diskusjoner](/gjentatte-diskusjoner/) — når samme problem dukker opp igjen og igjen
 - [Uklare roller](/uklare-roller/) — når ingen vet hvem som bestemmer
 - [Strategi ikke gjennomført](/strategi-ikke-gjennomfort/) — når strategien ikke blir virkelighet
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Beslutninger uten handling:** Ledergruppen er enig i møtet, men ingenting skjer etterpå.
+*   **Ingen eierskap:** Strategien eies av ingen — eller av alle (som betyr ingen).
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når ingen eier gjennomføringen
+*   [Menneskeperspektivet](/mennesker/) — når psykologisk trygghet mangler for oppfølging
+*   [Påvirkningsperspektivet](/pavirkning/) — når interesser blokkerer gjennomføring
+*   [Identitetsperspektivet](/identitet/) — når gjennomføring ikke er en del av kulturen
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/svak-gjennomforing/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Svak gjennomføring](/svak-gjennomforing/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Gjentatte diskusjoner](/gjentatte-diskusjoner/) — når samme problem dukker opp igjen og igjen
+*   [Uklare roller](/uklare-roller/) — når ingen vet hvem som bestemmer
+*   [Strategi ikke gjennomført](/strategi-ikke-gjennomfort/) — når strategien ikke blir virkelighet

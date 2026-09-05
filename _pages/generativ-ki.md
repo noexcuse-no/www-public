@@ -173,12 +173,46 @@ Den som kontrollerer KI, former retningen. Det er et spørsmål om [makt](/makt/
     Brukt som begrunnelse for beslutninger. Modellen blir autoritet, ikke verktøy.
 *   ![Abstrakt illustrasjon av rødt flagg: kvantitet over kvalitet i KI-bruk](/assets/images/banners/genki-t4-quantity-over-quality.webp)
 
-    #### Kvantitet over kvalitet
+#### Kvantitet over kvalitet
 
-    Organisasjonen måler hvor mye KI som brukes, ikke om det faktisk fungerer. Høyere volum maskerer lavere verdi.
+Organisasjonen måler hvor mye KI som brukes, ikke om det faktisk fungerer. Høyere volum maskerer lavere verdi.
 *   ![Abstrakt illustrasjon av rødt flagg: raskere men mindre nøyaktig med KI](/assets/images/banners/genki-t4-faster-less-accurate.webp)
 
     #### Raskere, men mindre nøyaktig
 
     Team produserer mer output med KI, men feilraten øker. Ingen har lagt merke til det fordi ingen måler det.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **KI-adopsjon uten ledelse:** Verktøyene er kjøpt, men ingen leder bruken. Output går direkte til beslutninger uten menneskelig review.
+*   **Kvantitet over kvalitet:** Organisasjonen måler hvor mye KI som brukes, ikke om det faktisk fungerer.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når KI-ansvar er uklart
+*   [Menneskeperspektivet](/mennesker/) — når KI erstatter menneskelig dømmekraft
+*   [Påvirkningsperspektivet](/pavirkning/) — når KI-makt konsentreres hos få
+*   [Identitetsperspektivet](/identitet/) — når KI-kultur ikke er moden
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/generativ-ki/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Generativ KI-ledelse](/generativ-ki/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [KI-ledelseskompetanser](/generativ-ki/#fire-ki-ledelseskompetanser) — fire kompetanser i en modell
+*   [Røde flagg](/generativ-ki/#røde-flagg) — advarselstegn
+*   [OKR og KPI for KI](/generativ-ki/#okr-og-kpi-for-ki-assistert-arbeid) — måle KI-verdi
 

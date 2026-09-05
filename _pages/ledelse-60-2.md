@@ -252,6 +252,40 @@ Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert pers
 
 De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene er designet for å skape refleksjon og innsikt — ikke for å gi enkle poengsummer eller rangeringer.
 
+---
+
+## Kjenner du deg igjen?
+
+*   **Blindsoner i styringen:** Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg.
+*   **Uklare beslutningslinjer:** Det er usikkerhet om hvem som bestemmer hva.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — rolleklarhet, prosesser, beslutningslinjer
+*   [Menneskeperspektivet](/mennesker/) — psykologisk trygghet, tillit, kompetanseutnyttelse
+*   [Påvirkningsperspektivet](/pavirkning/) — maktforhold, interesser, allianser
+*   [Identitetsperspektivet](/identitet/) — kultur, verdier, felles retning
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/ledelse-60-2/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Ledelse 60:2](/ledelse-60-2/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Når passer det?](/ledelse-60-2/#passer) — passer for dere / passer ikke for dere
+*   [Hva får du?](/ledelse-60-2/#hva-får-du) — 60 spørsmål, 2 timer, rapport
+*   [Ofte stilte spørsmål](/ledelse-60-2/#ofte-stilte-spørsmål) — pris, tid, etterarbeid, innhold
+
 {% include cta-panel.html %}
 
 {% include profiles.html tags="ledelse" %}

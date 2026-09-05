@@ -155,3 +155,37 @@ Logans [forskning på kulturstadier](/usikkerhet/) (Stage 4–5) peker på en in
 
 Dette er ikke naiv optimisme. Det er en empirisk observasjon av hva som faktisk fungerer i organisasjoner som presterer over tid. Når makt distribueres og samtidig forankres i et felles oppdrag, reduseres både risikoen for maktmisbruk og risikoen for beslutningsvegring.
 
+---
+
+## Kjenner du deg igjen?
+
+*   **Makt uten tjeneste:** Ledere som bruker makt til å posisjonere seg, ikke for å tjene oppdraget.
+*   **Tjeneste uten makt:** Ledere som unngår upopulære beslutninger i frykt for å såre.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når formell og reell makt avviker
+*   [Menneskeperspektivet](/mennesker/) — når tjeneste blir beslutningsvegring
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold styrer beslutninger
+*   [Identitetsperspektivet](/identitet/) — når kulturen belønner makt over tjeneste
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/makt/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Makt eller tjeneste](/makt/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Maktsiden](/makt/#maktsiden-når-det-å-få-ting-gjort-blir-alt) — når makt blir alt
+*   [Tjenestesiden](/makt/#tjenestesiden-når-det-å-tjene-andre-blir-alt) — når tjeneste blir alt
+*   [Spekteret](/makt/#spekteret-fra-utvinning-til-balanse) — fra utvinning til balanse
+

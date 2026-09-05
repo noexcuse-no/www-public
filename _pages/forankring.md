@@ -163,7 +163,41 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
     Vi fortsetter med feil investeringer fordi vi allerede har brukt så mye. Å kutte tap oppfattes som å innrømme feil.
 *   ![Abstrakt illustrasjon av overdreven selvtillit som beslutningsfelle](/assets/images/banners/forankring-t4-overconfidence.webp)
 
-    #### Overdreven selvtillit
+#### Overdreven selvtillit
 
-    Vi tror vi forstår mer enn vi faktisk gjør. «This time is different» blir gjentatt til tross for klare bevis på motsatt.
+Vi tror vi forstår mer enn vi faktisk gjør. «This time is different» blir gjentatt til tross for klare bevis på motsatt.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Bekreftelsesbias:** Vi søker informasjon som støtter det vi allerede tror, og ignorerer det som utfordrer det.
+*   **Sunk cost-fallacy:** Vi fortsetter med feil investeringer fordi vi allerede har brukt så mye.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når beslutningslinjer er uklare
+*   [Menneskeperspektivet](/mennesker/) — når psykologisk trygghet mangler for å utfordre beslutninger
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold styrer beslutninger
+*   [Identitetsperspektivet](/identitet/) — når kulturen belønner enighet over kritisk tenkning
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/forankring/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Forankre initiativer i ledergruppen](/forankring/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [De fem dimensjonene](/forankring/#de-fem-dimensjonene-av-beslutningstaking) — makt, interesser, bias, konflikt, kultur
+*   [Formell vs reell makt](/forankring/#1-formell-vs-reell-beslutningsmakt) — hvem som faktisk bestemmer
+*   [Konflikt og forhandling](/forankring/#4-konflikt-og-forhandling) — Fisher, Ury & Patton
 

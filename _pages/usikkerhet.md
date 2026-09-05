@@ -240,7 +240,41 @@ Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av k
     Historisk suksess blir institusjonlisert. «Vi har alltid gjort det sånn» blir argumentet mot fornyelse.
 *   ![Abstrakt illustrasjon av strukturell usikkerhet](/assets/images/banners/usikkerhet-t4-structural-uncertainty.webp)
 
-    #### Strukturell usikkerhet
+#### Strukturell usikkerhet
 
-    Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen.
+Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Teateret i usikkerhet:** Det som var «hvordan vi gjør ting her» avsløres som overflate når presset kommer.
+*   **Kulturstadie 3 («Jeg er flink»):** Individualisme som demper kollektiv vekst. De mest effektive har nådd stadium 4 («Vi er flinke»).
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når mål i ulike avdelinger motvirker hverandre
+*   [Menneskeperspektivet](/mennesker/) — når psykologisk trygghet mangler i usikre tider
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold blokkerer endring
+*   [Identitetsperspektivet](/identitet/) — når kulturen mister sin kraft under press
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/usikkerhet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Usikkerhet og endring](/usikkerhet/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Teateret i usikkerhet](/usikkerhet/#teateret-i-usikkerhet) — når fasaden sprenger
+*   [Logans fem kulturstadier](/usikkerhet/#de-fem-kulturstadiene-fra-logan) — fra apati til felles suksess
+*   [Kotters 8 steg](/usikkerhet/#kotters-8-steg-for-endring) — hvorfor 70% feiler
 

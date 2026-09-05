@@ -136,6 +136,41 @@ Ledelse 60:2 inneholder 15 spørsmål som handler om strukturperspektivet. Gjenn
 [Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
+---
+
+## Kjenner du deg igjen?
+
+*   **Målkonflikter i skjul:** Avdeling A optimaliserer for sitt mål, som bremser Avdeling B. Ingen oppdager det før resultatet vises i tallene.
+*   **Koordinering som erstatter ledelse:** Mye tid brukes på å samordne arbeid som burde vært koordinert fra start. Fokus på «å skape buy-in» i stedet for å bygge struktur som sikrer involvering.
+
+---
+
+## Relaterte perspektiver
+
+*   [Menneskeperspektivet](/mennesker/) — når strukturen er klar, men folk ikke trives
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold saboterer strukturen
+*   [Identitetsperspektivet](/identitet/) — når kulturen æder strukturen
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/struktur/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Strukturperspektivet](/struktur/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Målkonflikter](/struktur/#målkonflikter) — når avdelinger jobber mot hverandre
+*   [Koordineringsproblemer](/struktur/#koordineringsproblemer) — når samordning erstatter ledelse
+*   [Uklar rolleavklaring](/struktur/#uklar-rolleavklaring) — når ansvar er uklart
+
+---
+
 ## Det teoretiske grunnlaget
 
 Strukturperspektivet i Ledelse 60:2 bygger på Lee Bolman og Terrence Deals fire perspektiver-modell fra «Reframing Organizations», kombinert med Douglas Hubbards metoder for måling av immaterielle størrelser fra «How to Measure Anything».

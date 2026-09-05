@@ -230,6 +230,42 @@ Teori er én ting. Slik ser multiframe thinking ut i virkelige situasjoner:
 
     Felles for alle tre casene: Multiframe thinking gir ikke «det rette svaret.» Det gir bedre spørsmål. Og i en kompleks verden er bedre spørsmål ofte mer verdifullt enn raske svar.
 
+---
+
+## Kjenner du deg igjen?
+
+*   **Enrammefellen i praksis:** Du har et favorittperspektiv. Problemet er at du bruker det på alle problemer, uavhengig av hva situasjonen krever.
+*   **Manglande perspektiv i teamet:** Teamet ditt har ingen «utpekt skeptiker» for hvert rammeverk — ingen som aktivt utfordrer det dominerende perspektivet.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når strukturen blir tvangstrøye
+*   [Menneskeperspektivet](/mennesker/) — når mennesker blir overfladisk
+*   [Påvirkningsperspektivet](/pavirkning/) — når politikk blir kynisme
+*   [Identitetsperspektivet](/identitet/) — når symbolikk blir tom
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/perspektiv/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Fire perspektiver](/perspektiv/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Enrammefellen](/perspektiv/#enrammefellen) — når ett filter blir hele bildet
+*   [Multiframe thinking](/perspektiv/#hvordan-utvikle-multiframe-kapabilitet) — fire konkrete praksiser
+*   [Ledelse 60:2 som multiframe-praksis](/perspektiv/#4-ledelse-60-2-som-multiframe-praksis) — intervjuet som øvelse
+
+---
+
 ## Hvordan utvikle multiframe-kapabilitet
 
 Multiframe thinking er en ferdighet som kan trenes. Her er fire konkrete praksiser:

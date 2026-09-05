@@ -128,3 +128,37 @@ Ledelse 60:2 er ikke et GRC-verktøy. Det er et verktøy for å forstå hvor led
 ![Hvordan Ledelse 60:2 styrker GRC gjennom fire perspektiver](/assets/images/banners/grc-t2-ledelse60-2-grc-enabler.webp)
 
 GRC uten ledelsesmodenhet er papirarbeid. Ledelse 60:2 gir deg en baseline — slik at du vet hvor innsatsen faktisk gir effekt. [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **GRC som papirarbeid:** Rapporter produseres, men ingen leser dem. Compliance-avdelingen «gjør» GRC, men ledergruppen eier det ikke.
+*   **Sertifisering uten kultur:** ISO-sertifisering på veggen, men ingen forstår hvorfor kravene er der.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når roller og ansvar for GRC er uklare
+*   [Menneskeperspektivet](/mennesker/) — når ansatte ikke tør melde avvik
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold bestemmer hva som er risiko
+*   [Identitetsperspektivet](/identitet/) — når GRC ikke er en del av identiteten
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/grc/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [GRC — Governance, Risk and Compliance](/grc/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Fire perspektiver — fire GRC-dimensjoner](/grc/#fire-perspektiver-fire-grc-dimensjoner) — struktur, mennesker, påvirkning, identitet
+*   [Informasjonssikkerhet og cyberresiliens](/grc/#informasjonssikkerhet-og-cyberresiliens) — fire perspektiver på sikkerhet
+*   [Kvalitetsledelse](/grc/#kvalitetsledelse) — kvalitet som system, ikke byråkrati

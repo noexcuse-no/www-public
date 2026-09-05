@@ -60,3 +60,37 @@ Resultatet er en rapport innen én uke som gir ny leder det hun trenger mest: et
 - [Ny ledergruppe](/ny-ledergruppe/) — når hele gruppen endres
 - [Forankring](/forankring/) — hvordan få beslutninger til å bli til handling
 - [Makt](/makt/) — maktdynamikk i nye lederforhold
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Ny leder, gammel gruppe:** Lederen har sin egen stil, gruppen har sine vaner. Friksjonen er uunngåelig.
+*   **Beslutningsvegring:** Ny leder unngår upopulære beslutninger for å ikke «forstyrre» gruppen.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når nye roller og forventninger oppstår
+*   [Menneskeperspektivet](/mennesker/) — når tillit må bygges på nytt
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktdynamikk endres
+*   [Identitetsperspektivet](/identitet/) — når kulturen må tilpasses ny ledelse
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/ny-leder/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Ny leder](/ny-leder/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Ny ledergruppe](/ny-ledergruppe/) — når hele gruppen endres
+*   [Forankring](/forankring/) — hvordan få beslutninger til å bli til handling
+*   [Makt](/makt/) — maktdynamikk i nye lederforhold

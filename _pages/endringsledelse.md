@@ -121,3 +121,37 @@ Vellykket endringsledelse handler ikke om å ha den beste planen. Det handler om
 Ledelse 60:2 gir deg verktøyet for det første steget — en baseline for hvor ledergruppen din står.
 
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Kotters 70% feilrate:** Over 70% av endringsinitiativ feiler — ofte fordi ledere hopper over steg 1 og 2.
+*   **Kultur som bremse:** Organisasjoner på stadium 3 («Jeg er flink») opplever endring som trussel mot individets posisjon.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når strukturen bremser endring
+*   [Menneskeperspektivet](/mennesker/) — når psykologisk trygghet mangler for endring
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold blokkerer endring
+*   [Identitetsperspektivet](/identitet/) — når kulturen motarbeider endring
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/endringsledelse/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Endringsledelse](/endringsledelse/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Kotters 8 steg](/endringsledelse/#kotters-8-steg-for-endring) — hvorfor 70% feiler
+*   [Kultur som endringsmotor](/endringsledelse/#kultur-som-endringsmotor) — Logans stadier
+*   [Maktdynamikk i endring](/endringsledelse/#maktdynamikk-i-endring) — Pfeffer og Keltner

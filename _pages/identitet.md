@@ -136,6 +136,41 @@ Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gje
 [Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
+---
+
+## Kjenner du deg igjen?
+
+*   **Tomme verdier på veggen:** Verdiene står på veggen, men ingen kan gi eksempler på når de ble levd ut i praksis.
+*   **Historieløshet:** Nye folk får ingen kontekst. Kulturen er usynlig fordi den aldri er blitt eksplisitt.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når kulturen æder strukturen
+*   [Menneskeperspektivet](/mennesker/) — når kulturen skaper siloer
+*   [Påvirkningsperspektivet](/pavirkning/) — når kulturen belønner stillhet
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/identitet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Identitetsperspektivet](/identitet/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Tomme verdier](/identitet/#tomme-verdier) — når verdier ikke lever i praksis
+*   [Historieløshet](/identitet/#historieloshet) — når kulturen har ingen fortellinger
+*   [Forandringstretthet](/identitet/#forandringstretthet) — når kynisme dominerer
+
+---
+
 ## Det teoretiske grunnlaget
 
 Identitetsperspektivet i Ledelse 60:2 bygger på Bolman & Deals symbolske ramme, kombinert med Dave Logans forskning på tribal ledelse fra «Tribal Leadership».
