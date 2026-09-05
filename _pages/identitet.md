@@ -127,7 +127,7 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
 
 Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gjennomfør en uforpliktende samtale for å lære mer om metoden.
 
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthensted)
+[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ## Det teoretiske grunnlaget
