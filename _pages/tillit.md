@@ -98,14 +98,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "tillit"
-questions_title: "Spør din LLM om tillit"
-questions:
-  - "Hvor ofte gir du feedback som folk faktisk husker — og bruker?"
-  - "Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?"
-  - "Når ble siste gang du omgjorde en beslutning uten å forklare hvorfor?"
-  - "Finnes det informasjon du har som du bevisst holder tilbake fra teamet?"
-  - "Hvordan håndterer du folk som sier ifra mot strømmen?"
+conversation_topics:
+  - conversation_label: "Feedback som virker"
+    opening_question: "Hvor ofte gir du feedback som folk faktisk husker — og bruker?"
+    source_url: "/tillit/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Reaksjon på dårlig nyhet"
+    opening_question: "Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?"
+    source_url: "/tillit/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Beslutningsgjennomsiktighet"
+    opening_question: "Når ble siste gang du omgjorde en beslutning uten å forklare hvorfor?"
+    source_url: "/tillit/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hvorfor tillit er ledelsens valuta

@@ -73,6 +73,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
+conversation_topics:
+  - conversation_label: "Teamets robusthet"
+    opening_question: "Hvem i teamet ditt ville fortsette å samarbeide effektivt hvis du forsvant i morgen?"
+    source_url: "/triader/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Dyader vs triader"
+    opening_question: "Er viktige relasjoner i organisasjonen din dyader eller triader? Hvordan vet du det?"
+    source_url: "/triader/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Informasjonsflyt i par-relasjoner"
+    opening_question: "Hvilken informasjon er fanget i par-relasjoner og når aldri frem til dem som trenger den?"
+    source_url: "/triader/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 Tenk på teamet ditt. Hvem snakker med hvem? Hvilke relasjoner er avhengige av at én bestemt person er til stede? Hva skjer med informasjonsflyten når den personen er borte?

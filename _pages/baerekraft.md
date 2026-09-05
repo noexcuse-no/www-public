@@ -35,13 +35,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-questions_title: "Spør din LLM om bærekraftsarbeid"
-questions:
-  - "Hvem i ledergruppen har reelt ansvar for bærekraft — og er dette en del av den daglige ledelsen eller et sideprosjekt?"
-  - "Hvordan prioriterer dere mellom bærekraft og lønnsomhet når det oppstår en konflikt?"
-  - "Hva ville skjedd hvis dere mistet Miljøfyrtårn-sertifiseringen i morgen — ville noe faktisk endre seg?"
-  - "Er bærekraft en del av organisasjonens identitet — eller noe dere gjør fordi dere må?"
-  - "Hvordan måler dere effekten av bærekraftsarbeidet — og hvem ser rapportene?"
+conversation_topics:
+  - conversation_label: "Ansvar for bærekraft"
+    opening_question: "Hvem i ledergruppen har reelt ansvar for bærekraft — og er dette en del av den daglige ledelsen eller et sideprosjekt?"
+    source_url: "/baerekraft/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Bærekraft vs lønnsomhet"
+    opening_question: "Hvordan prioriterer dere mellom bærekraft og lønnsomhet når det oppstår en konflikt?"
+    source_url: "/baerekraft/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Effektmåling av bærekraft"
+    opening_question: "Hvordan måler dere effekten av bærekraftsarbeidet — og hvem ser rapportene?"
+    source_url: "/baerekraft/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Bærekraftsarbeid er mer enn rapportering

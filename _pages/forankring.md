@@ -61,14 +61,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "beslutningstaking"
-questions_title: "Spør din LLM om beslutningstaking"
-questions:
-  - "Hvem hadde reell innflytelse på de siste tre viktige beslutningene — og var det de som burde hatt det?"
-  - "Når ble en beslutning tatt mot bedre vitende — og hvorfor?"
-  - "Hvordan håndterer vi uenighet når den oppstår?"
-  - "Har vi noen som bevisst utfordrer premissene våre?"
-  - "Når ble siste gang en beslutning omgjort på grunn av nye facts?"
+conversation_topics:
+  - conversation_label: "Reell beslutningsmakt"
+    opening_question: "Hvem hadde reell innflytelse på de siste tre viktige beslutningene — og var det de som burde hatt det?"
+    source_url: "/forankring/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Beslutninger mot bedre vitende"
+    opening_question: "Når ble en beslutning tatt mot bedre vitende — og hvorfor?"
+    source_url: "/forankring/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Uenighet og forankring"
+    opening_question: "Hvordan håndterer vi uenighet når den oppstår?"
+    source_url: "/forankring/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hvorfor ledere ofte tar dårlige beslutninger

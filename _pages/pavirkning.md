@@ -37,13 +37,19 @@ card_description: "Makt, interesser, konflikt, ressurser, politikk"
 detail: "Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet."
 weight: 3
 topic: "påvirkningsperspektivet"
-questions_title: "Spør din LLM om påvirkningsperspektivet"
-questions:
-  - "Hvem har reell innflytelse på viktige beslutninger — og er det de som bør ha det?"
-  - "Hvor transparente er agendaer og interesser i ledergruppen?"
-  - "Finnes det «uskrevne regler» som nye ledere må anstrenge seg for å forstå?"
-  - "Hvordan håndterer ledergruppen uenighet — åpent eller bak lukkede dører?"
-  - "Er det balanse i makt — eller er noen stemmer for dominerende?"
+conversation_topics:
+  - conversation_label: "Reell innflytelse på beslutninger"
+    opening_question: "Hvem har reell innflytelse på viktige beslutninger — og er det de som bør ha det?"
+    source_url: "/pavirkning/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Transparente agendaer"
+    opening_question: "Hvor transparente er agendaer og interesser i ledergruppen?"
+    source_url: "/pavirkning/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Uskrevne regler og uenighet"
+    opening_question: "Finnes det «uskrevne regler» som nye ledere må anstrenge seg for å forstå?"
+    source_url: "/pavirkning/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hva er påvirkningsperspektivet?

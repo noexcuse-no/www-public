@@ -81,14 +81,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "multiframe-kapabilitet"
-questions_title: "Spør din LLM om multiframe-kapabilitet"
-questions:
-  - "Hvilket rammeverk strekker du deg først etter når noe går galt — struktur, mennesker, politikk eller symboler?"
-  - "Når endret du sist mening fordi du så situasjonen fra et annet perspektiv?"
-  - "Har teamet ditt en «utpekt skeptiker» for hvert rammeverk — noen som aktivt utfordrer det dominerende perspektivet?"
-  - "Hva ville ditt største problem sett ut som gjennom linsen du bruker minst?"
-  - "Hvilket rammeverk mangler i ledergruppens naturlige samtale — og hva koster det dere å ikke ha det med?"
+conversation_topics:
+  - conversation_label: "Dominerende rammeverk"
+    opening_question: "Hvilket rammeverk strekker du deg først etter når noe går galt — struktur, mennesker, politikk eller symboler?"
+    source_url: "/perspektiv/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Perspektivskifte"
+    opening_question: "Når endret du sist mening fordi du så situasjonen fra et annet perspektiv?"
+    source_url: "/perspektiv/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Manglande perspektiv i ledergruppen"
+    opening_question: "Hvilket rammeverk mangler i ledergruppens naturlige samtale — og hva koster det dere å ikke ha det med?"
+    source_url: "/perspektiv/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 En ingeniør som blir leder ser strukturelle problemer: uklare roller, manglende prosesser, feil rapporteringslinjer. En HR-sjef ser menneskelige problemer: motivasjon, trivsel, relasjoner. En politisk aktør ser maktdynamikk: allianser, agendaer, budsjettkamper. En markedsfører ser symboler: historier, identitet, mening.

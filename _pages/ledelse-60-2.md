@@ -56,6 +56,19 @@ image: "assets/images/hero-illustration.webp"
 tags: "#ledelse #orientering #analyse #ledelse60-2"
 product_tag: ledelse-60-2
 price_source: commercial
+conversation_topics:
+  - conversation_label: "Fire perspektiver i praksis"
+    opening_question: "Hvilke av de fire perspektivene (struktur, mennesker, påvirkning, identitet) er sterkest i vår ledergruppe — og hvilket er mest fraværende?"
+    source_url: "/ledelse-60-2/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Diagnostiske spørsmål og retning"
+    opening_question: "Hvordan kan ledergruppen bruke 60 diagnostiske spørsmål til å finne felles retning uten å bli sittende fast i detaljer?"
+    source_url: "/ledelse-60-2/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Blindsoner i styring"
+    opening_question: "Hvilke signaler tyder på at ledergruppen har blindsoner i styringen av organisasjonen?"
+    source_url: "/ledelse-60-2/"
+    sixty_two_url: "/ledelse-60-2/"
 json_ld:
   - type: "Service"
     name: "Ledelse 60:2"

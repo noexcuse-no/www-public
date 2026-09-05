@@ -37,13 +37,19 @@ card_description: "Kultur, mening, symboler, verdier, historier"
 detail: "Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier."
 weight: 4
 topic: "identitetsperspektivet"
-questions_title: "Spør din LLM om identitetsperspektivet"
-questions:
-  - "Hvordan snakker lederne om organisasjonen — i «jeg» eller «vi»?"
-  - "Kan dere gi konkrete eksempler på når verdiene ble levd ut i praksis?"
-  - "Finnes det historier om organisasjonens historie som nye folk læres opp i?"
-  - "Hvordan feirer vi suksess — og gjør vi det i det hele tatt?"
-  - "Har vi en felles forståelse av hva slags organisasjon vi vil være?"
+conversation_topics:
+  - conversation_label: "Lederens språk og identitet"
+    opening_question: "Hvordan snakker lederne om organisasjonen — i «jeg» eller «vi»?"
+    source_url: "/identitet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Verdier i praksis"
+    opening_question: "Kan dere gi konkrete eksempler på når verdiene ble levd ut i praksis?"
+    source_url: "/identitet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Organisasjonsidentitet og historie"
+    opening_question: "Finnes det historier om organisasjonens historie som nye folk læres opp i?"
+    source_url: "/identitet/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hva er identitetsperspektivet?

@@ -37,13 +37,19 @@ card_description: "Tillit, motivasjon, relasjoner, medvirkning"
 detail: "Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at «servant leadership» er et konkurransefortrinn."
 weight: 2
 topic: "menneskeperspektivet"
-questions_title: "Spør din LLM om menneskeperspektivet"
-questions:
-  - "Ville de ansatte si at de blir sett og verdsatt på arbeidsplassen?"
-  - "Er det trygt å si ifra om problemer uten å bli straffet?"
-  - "Har vi en kultur preget av samarbeid — eller er hver for seg?"
-  - "Finnes det historier som fortelles om hvordan vi behandler hverandre?"
-  - "Tilbyr vi muligheter for læring og karriereutvikling?"
+conversation_topics:
+  - conversation_label: "Sett og verdsatt"
+    opening_question: "Ville de ansatte si at de blir sett og verdsatt på arbeidsplassen?"
+    source_url: "/mennesker/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Psykologisk trygghet"
+    opening_question: "Er det trygt å si ifra om problemer uten å bli straffet?"
+    source_url: "/mennesker/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Samarbeid vs silo"
+    opening_question: "Har vi en kultur preget av samarbeid — eller er hver for seg?"
+    source_url: "/mennesker/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hva er menneskeperspektivet?

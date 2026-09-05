@@ -47,14 +47,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "risikostyring"
-questions_title: "Spør din LLM om risikostyring"
-questions:
-  - "Hvem i ledergruppen har ansvar for å identifisere nye risikoer — og når ble siste gang noen gjorde det?"
-  - "Hvordan håndterer dere risikoer som ikke kan tallfestes?"
-  - "Når ble siste gang en beslutning ble omgjort fordi ny risikoinformasjon kom frem?"
-  - "Er det trygt å ta opp risikoer som kan true ledergruppens egne prioriteringer?"
-  - "Hva er det verste som kan skje — og har dere faktisk forberedt dere på det?"
+conversation_topics:
+  - conversation_label: "Ansvar for risikoidentifisering"
+    opening_question: "Hvem i ledergruppen har ansvar for å identifisere nye risikoer — og når ble siste gang noen gjorde det?"
+    source_url: "/risikostyring/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Kvantifiserbare vs ukvantifiserbare risikoer"
+    opening_question: "Hvordan håndterer dere risikoer som ikke kan tallfestes?"
+    source_url: "/risikostyring/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Beslutningsendring basert på risiko"
+    opening_question: "Når ble siste gang en beslutning ble omgjort fordi ny risikoinformasjon kom frem?"
+    source_url: "/risikostyring/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Risikostyring er mer enn årlige kartlegginger

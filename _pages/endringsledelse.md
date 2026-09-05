@@ -55,13 +55,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-questions_title: "Spør din LLM om endringsevne"
-questions:
-  - "Når ble siste gang dere gjennomførte en større endring — og hva gikk galt?"
-  - "Hvem i organisasjonen bremser endring — og hvorfor?"
-  - "Hva ville skjedd hvis dere stoppet alle pågående endringsinitiativ i morgen?"
-  - "Har dere et felles språk for å snakke om endring?"
-  - "Hvordan vet dere at en endring faktisk har funnet sted?"
+conversation_topics:
+  - conversation_label: "Endringsfeil og læring"
+    opening_question: "Når ble siste gang dere gjennomførte en større endring — og hva gikk galt?"
+    source_url: "/endringsledelse/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Motstand mot endring"
+    opening_question: "Hvem i organisasjonen bremser endring — og hvorfor?"
+    source_url: "/endringsledelse/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Endringsmåling"
+    opening_question: "Hvordan vet dere at en endring faktisk har funnet sted?"
+    source_url: "/endringsledelse/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hvorfor endringsledelse er vanskeligere enn det ser ut til

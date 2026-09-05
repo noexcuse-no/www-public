@@ -34,14 +34,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "GRC-modenhet"
-questions_title: "Spør din LLM om GRC-modenhet"
-questions:
-  - "Hvem i organisasjonen har reelt ansvar for styring, risiko og compliance — og vet de at de har det?"
-  - "Når ble siste gang noen i ledergruppen stilte spørsmål ved om GRC-arbeidet faktisk fungerer, eller om det bare er papirarbeid?"
-  - "Hvordan reagerer organisasjonen når noen melder fra om et avvik — belønnes åpenhet eller stillhet?"
-  - "Finnes det risikoer dere har identifisert, men ikke gjort noe med, fordi «det har gått bra så langt»?"
-  - "Hva ville skjedd hvis sertifiseringen deres ble trukket i morgen — ville noe faktisk endre seg?"
+conversation_topics:
+  - conversation_label: "Ansvar for GRC"
+    opening_question: "Hvem i organisasjonen har reelt ansvar for styring, risiko og compliance — og vet de at de har det?"
+    source_url: "/grc/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "GRC-kultur vs papirarbeid"
+    opening_question: "Når ble siste gang noen i ledergruppen stilte spørsmål ved om GRC-arbeidet faktisk fungerer, eller om det bare er papirarbeid?"
+    source_url: "/grc/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Avvikshåndtering og sertifisering"
+    opening_question: "Hva ville skjedd hvis sertifiseringen deres ble trukket i morgen — ville noe faktisk endre seg?"
+    source_url: "/grc/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hva er GRC — og hvorfor det ikke fungerer uten ledelse

@@ -53,14 +53,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "KI-ledelse"
-questions_title: "Spør din LLM om KI-ledelse"
-questions:
-  - "Hvem i organisasjonen har ansvaret for kvaliteten på KI-output — og vet de det?"
-  - "Hvordan vet du at KI-svar faktisk er riktige, ikke bare overbevisende?"
-  - "Finnes det beslutninger som nå tas av KI uten at et menneske ser på dem?"
-  - "Måler du effektivitet med KI, eller bare aktivitet?"
-  - "Hva skjer når KI gir feil svar — hvem bærer konsekvensen?"
+conversation_topics:
+  - conversation_label: "Ansvar for KI-kvalitet"
+    opening_question: "Hvem i organisasjonen har ansvaret for kvaliteten på KI-output — og vet de det?"
+    source_url: "/generativ-ki/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Kritisk vurdering av KI-svar"
+    opening_question: "Hvordan vet du at KI-svar faktisk er riktige, ikke bare overbevisende?"
+    source_url: "/generativ-ki/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Måling av KI-effekt"
+    opening_question: "Måler du effektivitet med KI, eller bare aktivitet?"
+    source_url: "/generativ-ki/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Lederbristen i KI-æraen

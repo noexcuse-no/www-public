@@ -37,13 +37,19 @@ card_description: "Roller, mål, prosesser, koordinering, ansvar"
 detail: "Ser organisasjonen som et system av roller, regler og mål. Effektivitet oppstår når struktur og oppgave henger sammen. <strong>Hubbard (2014)</strong> støtter denne rammen med metode for å måle det som ofte antas å være umålelig."
 weight: 1
 topic: "strukturperspektivet"
-questions_title: "Spør din LLM om strukturperspektivet"
-questions:
-  - "Er det områder der ansvar er uklart eller overlappende?"
-  - "Finnes det mål i organisasjonen som motvirker hverandre?"
-  - "Bruker ledelsen tid på koordinering som burde vært unødvendig?"
-  - "Har vi bygd strukturer som støtter vekst — eller strukturer som begrenser den?"
-  - "Er det regler og prosesser som ble laget for et problem som ikke lenger eksisterer?"
+conversation_topics:
+  - conversation_label: "Uklart ansvar og overlapp"
+    opening_question: "Er det områder der ansvar er uklart eller overlappende?"
+    source_url: "/struktur/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Motstridende mål"
+    opening_question: "Finnes det mål i organisasjonen som motvirker hverandre?"
+    source_url: "/struktur/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Unødvendig koordinering"
+    opening_question: "Bruker ledelsen tid på koordinering som burde vært unødvendig?"
+    source_url: "/struktur/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hva er strukturperspektivet?

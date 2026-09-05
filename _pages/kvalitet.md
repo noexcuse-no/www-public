@@ -33,14 +33,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "kvalitetskultur"
-questions_title: "Spør din LLM om kvalitetskultur"
-questions:
-  - "Hvem i organisasjonen har reelt ansvar for kvalitet — og har de myndighet til å stoppe produksjonen hvis kvaliteten svikter?"
-  - "Når ble siste gang et kvalitetsavvik førte til en reell endring i prosessene, ikke bare en registrering i systemet?"
-  - "Hvordan belønnes ansatte som melder fra om kvalitetsproblemer — blir de sett på som nyttige eller besværlige?"
-  - "Hva ville skjedd hvis ISO 9001-sertifiseringen deres ble trukket i morgen — ville noe faktisk endre seg?"
-  - "Finnes det områder der dere aksepterer lav kvalitet fordi «sånn har det alltid vært»?"
+conversation_topics:
+  - conversation_label: "Ansvar for kvalitet"
+    opening_question: "Hvem i organisasjonen har reelt ansvar for kvalitet — og har de myndighet til å stoppe produksjonen hvis kvaliteten svikter?"
+    source_url: "/kvalitet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Avvik som driver forbedring"
+    opening_question: "Når ble siste gang et kvalitetsavvik førte til en reell endring i prosessene, ikke bare en registrering i systemet?"
+    source_url: "/kvalitet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Sertifisering vs reell kvalitet"
+    opening_question: "Hva ville skjedd hvis ISO 9001-sertifiseringen deres ble trukket i morgen — ville noe faktisk endre seg?"
+    source_url: "/kvalitet/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Kvalitet handler om mer enn ISO 9001

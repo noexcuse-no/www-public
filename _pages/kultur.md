@@ -61,14 +61,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "organisasjonskultur"
-questions_title: "Spør din LLM om organisasjonskultur"
-questions:
-  - "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
-  - "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"
-  - "Hva skjer hvis noen bryter med «hvordan vi gjør ting her»?"
-  - "Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?"
-  - "Hvilket kulturstadie ville du plassere organisasjonen på i dag?"
+conversation_topics:
+  - conversation_label: "Kulturbeskrivelse fra nyansatte"
+    opening_question: "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
+    source_url: "/kultur/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Historier og helter"
+    opening_question: "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"
+    source_url: "/kultur/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Verdier på veggen vs i praksis"
+    opening_question: "Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?"
+    source_url: "/kultur/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ![Illustrasjon som viser organisasjonskultur som røttene til et tre — det usynlige som former det synlige](/assets/images/banners/kultur-t1-hero.webp)

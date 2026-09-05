@@ -34,14 +34,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "informasjonssikkerhet"
-questions_title: "Spør din LLM om informasjonssikkerhet"
-questions:
-  - "Hvem i organisasjonen har reelt ansvar for informasjonssikkerhet — og vet de at de har det?"
-  - "Når ble siste gang noen meldte fra om et sikkerhetsavvik — og hva skjedde med den som meldte?"
-  - "Hvordan prioriterer ledergruppen mellom sikkerhet og produksjon når det oppstår en konflikt?"
-  - "Finnes det systemer eller data dere vet er sårbare, men ikke har gjort noe med fordi «det har gått bra så langt»?"
-  - "Hva ville skjedd hvis dere ble utsatt for et alvorlig cyberangrep i morgen — ville dere oppdaget det?"
+conversation_topics:
+  - conversation_label: "Ansvar for informasjonssikkerhet"
+    opening_question: "Hvem i organisasjonen har reelt ansvar for informasjonssikkerhet — og vet de at de har det?"
+    source_url: "/informasjonssikkerhet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Avviksmelding og kultur"
+    opening_question: "Når ble siste gang noen meldte fra om et sikkerhetsavvik — og hva skjedde med den som meldte?"
+    source_url: "/informasjonssikkerhet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Sikkerhet vs produksjon"
+    opening_question: "Hvordan prioriterer ledergruppen mellom sikkerhet og produksjon når det oppstår en konflikt?"
+    source_url: "/informasjonssikkerhet/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Informasjonssikkerhet er et ledelsesproblem

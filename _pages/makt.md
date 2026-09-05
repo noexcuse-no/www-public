@@ -59,14 +59,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "makt og tjeneste"
-questions_title: "Spør din LLM om makt og tjeneste"
-questions:
-  - "Når du tar beslutninger — tenker du først på konsekvensene for oppdraget, eller på hvem som støtter deg?"
-  - "Hvor mange mennesker ville hjulpet deg hvis du mistet din formelle myndighet i morgen?"
-  - "Belønner organisasjonen din maktakvisisjon eller tjenesteleveranse? Vær ærlig — ikke svar hva du skulle ønske var sant."
-  - "Hva ville endret seg hvis teamet ditt visste dine private motivasjoner?"
-  - "Når ble siste gang en medarbeider ga deg en ærlig, ubehagelig tilbakemelding — og du tok den imot uten å forsvare deg?"
+conversation_topics:
+  - conversation_label: "Beslutningsmotivasjon"
+    opening_question: "Når du tar beslutninger — tenker du først på konsekvensene for oppdraget, eller på hvem som støtter deg?"
+    source_url: "/makt/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Maktbasert lojalitet"
+    opening_question: "Hvor mange mennesker ville hjulpet deg hvis du mistet din formelle myndighet i morgen?"
+    source_url: "/makt/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Tilbakemeldingskultur"
+    opening_question: "Når ble siste gang en medarbeider ga deg en ærlig, ubehagelig tilbakemelding — og du tok den imot uten å forsvare deg?"
+    source_url: "/makt/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 To sitater, to verdenssyn. Jeffrey Pfeffer, en av forskningen mest siterte stemmer på maktdynamikk, slår fast: «Power is the ability to get things done.» Uten makt — ingenting skjer. På den andre siden står Ken Blanchard og Colleen Barrett: «Leadership is not about you; it's about the people you serve.» Ledelse som tjeneste.
