@@ -47,14 +47,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "risikostyring"
-questions_title: "Spør din LLM om risikostyring"
-questions:
-  - "Hvem i ledergruppen har ansvar for å identifisere nye risikoer — og når ble siste gang noen gjorde det?"
-  - "Hvordan håndterer dere risikoer som ikke kan tallfestes?"
-  - "Når ble siste gang en beslutning ble omgjort fordi ny risikoinformasjon kom frem?"
-  - "Er det trygt å ta opp risikoer som kan true ledergruppens egne prioriteringer?"
-  - "Hva er det verste som kan skje — og har dere faktisk forberedt dere på det?"
+conversation_topics:
+  - conversation_label: "Ansvar for risikoidentifisering"
+    opening_question: "Hvem i ledergruppen har ansvar for å identifisere nye risikoer — og når ble siste gang noen gjorde det?"
+    source_url: "/risikostyring/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Kvantifiserbare vs ukvantifiserbare risikoer"
+    opening_question: "Hvordan håndterer dere risikoer som ikke kan tallfestes?"
+    source_url: "/risikostyring/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Beslutningsendring basert på risiko"
+    opening_question: "Når ble siste gang en beslutning ble omgjort fordi ny risikoinformasjon kom frem?"
+    source_url: "/risikostyring/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Risikostyring er mer enn årlige kartlegginger
@@ -106,3 +111,41 @@ For ledergrupper som ønsker å styrke risikostyringen, handler første steg om 
 Ledelse 60:2 kartlegger disse dimensjonene på to timer.
 
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Årlig risikokalender:** Dere oppdaterer risikobildet én gang i året. Så kommer hverdagen, og alt ser annerledes ut.
+*   **Overconfidence i ledergruppen:** Ledere overvurderer sannsynligheten for kjente risikoer og undervurderer ukjente.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når risikoansvar er fragmentert
+*   [Menneskeperspektivet](/mennesker/) — når kognitiv bias forvrenger risikovurderinger
+*   [Påvirkningsperspektivet](/pavirkning/) — når makt bestemmer hva som er risiko
+*   [Identitetsperspektivet](/identitet/) — når kulturen ser risiko som fiende
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/risikostyring/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Risikostyring](/risikostyring/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Risikostyring som GRC-kjerne](/risikostyring/#risikostyring-som-grc-kjerne) — integrert med styring og compliance
+*   [Usikkerhet som mulighet](/risikostyring/#usikkerhet-som-mulighet) — måle det umålelige
+*   [Veien videre](/risikostyring/#veien-videre) — ledelsesdisiplin for risikostyring
+
+---
+
+<a href="/grc/" class="benefit-link">Les mer om GRC og helhetlig styring →</a>

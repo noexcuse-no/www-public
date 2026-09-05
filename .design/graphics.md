@@ -35,7 +35,7 @@ All pages use a **uniform 4-tier taxonomy** for inline images. This applies to a
 | **T1** | 3840×2160 (4K) | Hero banners, page entry | Style 1 or 2 (atmospheric) | ≤500KB |
 | **T2** | ~800px wide | Framework overviews, multi-element models | Style 3 (infographic, relational) | ≤150KB |
 | **T3** | ~400px wide | Section spots, individual elements | Style 3 (single concept) | ≤80KB |
-| **T4** | ~80px square | Challenge cards, list items, micro concepts | Style 3 iconic variant | ≤30KB |
+| **T4** | ~80px square | Square, 1-per-row list card accent, ~80-100px display | Style 3 iconic variant | ≤30KB |
 
 **Naming convention:** `{page-id}-{tier}-{concept}.webp`
 
@@ -44,6 +44,19 @@ Example: `tillit-t2-four-pillars.webp`, `usikkerhet-t4-silo-thinking.webp`
 **File placement:** All images in `assets/images/banners/`
 
 See `.specs/illustration-system/README.md` for per-page inventory and CSS treatment.
+
+### Tier → Heading-Level Mapping
+
+The article layout system maps illustration tiers to heading levels in list-based content cards. This determines how images are displayed (landscape vs square, grid vs 1-per-row):
+
+| Tier | Heading level | Layout | Image display |
+|------|---------------|--------|---------------|
+| **T3** (landscape) | `li h3` / `li h5` | 2-per-row grid | Landscape, `aspect-ratio: 16/9`, `object-fit: cover`, full card width |
+| **T4** (square) | `li h2` / `li h4` | 1-per-row | Square, `object-fit: cover`, floated beside heading (~80-140px display) |
+
+**Image format constraint:** T3 images must be landscape (16:9) and T4 images must be square (1:1). The CSS `object-fit: cover` crops to the required aspect ratio, so source images should match the target format to avoid unexpected cropping. Current resolutions are acceptable — no regeneration required.
+
+**Note:** The `li h2` display size was increased from 100px to 140px (2026-09-03) to better fit landscape T3 images used as Hovedelementer section openers on frame pages.
 
 ### CSS Classes (F7)
 

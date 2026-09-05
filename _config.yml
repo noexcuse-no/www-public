@@ -2,13 +2,14 @@ url: "https://noexcuse.no"
 license: "CC0-1.0"
 license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
 
+include:
+  - _pages
+  - .well-known
+
 kramdown:
   footnote_backlink: "↩"
 
 collections:
-  pages:
-    output: true
-    permalink: /:path/
   tags:
     output: true
     permalink: /emne/:path/
@@ -27,3 +28,10 @@ defaults:
     values:
       layout: tag
       lang: no
+
+# Multilingual substrate (future-proofing):
+# - Per-language dir convention: _pages/no/, _pages/en/ (not implemented yet)
+# - Commercial-copy ownership: website owns commercial copy/pricing/VAT/privacy per language
+# - Scheduler (Bookings) sits beneath — handles language at form level
+# - URL convention: /no/bestill/..., /en/book/... (future, substrate only)
+# - hreflang guard in _includes/metadata.html emits link tags ONLY when site.data.languages exists

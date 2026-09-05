@@ -1,0 +1,27 @@
+# EXAMPLE — replace with real appearances (user input required)
+# This file is seeded with example entries. Replace with real appearances.
+# The component filters out entries with example: true
+
+- title: "Diagnose før lederutvikling"
+  type: konferanse
+  source: "NHO Ledelsekonferanse 2024"
+  date: "2024-03-15"
+  url: "https://example.com/nho-ledelsekonferanse-2024"
+  related_topic: "ledelse-60-2"
+  example: true
+
+- title: "Hvem bestemmer egentlig?"
+  type: podcast
+  source: "Ledelse i praksis podcast"
+  date: "2024-02-20"
+  url: "https://example.com/ledelse-i-praksis-podcast"
+  related_topic: "pavirkning"
+  example: true
+
+- title: "Når GRC blir papirarbeid"
+  type: artikkel
+  source: "Compliance Norway"
+  date: "2023-11-10"
+  url: "https://example.com/compliance-norway-2023"
+  related_topic: "grc"
+  example: true

@@ -24,16 +24,28 @@ Vi samler kun inn opplysninger du selv gir oss:
 - **E-postadresse:** Når du melder deg på nyhetsbrev
 - **Navn, e-post og melding:** Når du sender oss en henvendelse via kontaktskjemaet
 
+## Analyse og statistikk (Simple Analytics)
+
+Vi bruker Simple Analytics for å samle inn anonymiserte besøksstatistikk. Ingen personopplysninger samles inn. Følgende data registreres:
+
+- Sidebesøk (URL, referrer, tidspunkt)
+- Land (basert på IP, IP lagres ikke)
+- Nettleser, operativsystem, skjermoppløsning
+- Hendelser: topic_landing_view, problem_page_view, ai_topic_selected, ai_prompt_copied, ai_return, related_topic_opened, product_view, fit_view, price_view, method_view, booking_click, referral_source
+
+Ingen cookies brukes. IP-adresser anonymiseres umiddelbart. Data lagres i EU.
+
 ## Formål og rettslig grunnlag
 
 | Formål | Opplysninger | Rettslig grunnlag |
 |--------|-------------|-------------------|
 | Nyhetsbrev | E-postadresse | Samtykke (GDPR art. 6(1)a) |
 | Kontaktskjema | Navn, e-post, melding | Samtykke (GDPR art. 6(1)a) |
+| Besøksstatistikk | Anonymiserte metadata | Beregnet interesse (GDPR art. 6(1)f) |
 
 ## Lagring og behandling
 
-Opplysningene lagres sikkert og benyttes kun til det formålet de er samlet inn for. Nyhetsbrev-abonnenter beholdes inntil du melder deg av. Kontakthenvendelser slettes når saken er avsluttet, med mindre annet er avtalt.
+Opplysningene lagres sikkert og benyttes kun til det formålet de er samlet inn for. Nyhetsbrev-abonnenter beholdes inntil du melder deg av. Kontakthenvendelser slettes når saken er avsluttet, med mindre annet er avtalt. Analyse-data lagres i 24 måneder.
 
 ## Dine rettigheter
 

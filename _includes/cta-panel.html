@@ -1,0 +1,24 @@
+{% comment %}
+  Reusable CTA panel — "Usikker på om 60:2 passer?" + reassurance points +
+  "Book 20 min" CTA (Route B → /samtale/). Includes Dagfinn thumbnail.
+  Used on /bestill/ and /foredrag-og-media/.
+
+  Usage:
+    {% include cta-panel.html %}
+{% endcomment %}
+<div class="cta-panel">
+  <div class="cta-panel-body">
+    <h3 class="cta-panel-heading">Usikker på om 60:2 passer?</h3>
+    <ul class="cta-panel-points">
+      <li>Uavhengig diagnose — ingen binding til videre rådgivning.</li>
+      <li>Ingen lock-in — dere eier funnene og anbefalingene.</li>
+      <li>Kunden eier resultatet — vi leverer, dere bestemmer.</li>
+    </ul>
+    <a href="/samtale/" class="cta">Book 20 min avklaring</a>
+  </div>
+  <div class="cta-panel-person">
+    <img src="/assets/images/dagfinn.webp" alt="Dagfinn Bang-Johansen, daglig leder i No Excuse" class="cta-panel-thumb" width="96" height="96" loading="lazy">
+    <p class="cta-panel-name">Dagfinn Bang-Johansen</p>
+    <p class="cta-panel-role">Daglig leder, No Excuse</p>
+  </div>
+</div>

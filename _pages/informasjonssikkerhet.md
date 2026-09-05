@@ -34,14 +34,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "informasjonssikkerhet"
-questions_title: "Spør din LLM om informasjonssikkerhet"
-questions:
-  - "Hvem i organisasjonen har reelt ansvar for informasjonssikkerhet — og vet de at de har det?"
-  - "Når ble siste gang noen meldte fra om et sikkerhetsavvik — og hva skjedde med den som meldte?"
-  - "Hvordan prioriterer ledergruppen mellom sikkerhet og produksjon når det oppstår en konflikt?"
-  - "Finnes det systemer eller data dere vet er sårbare, men ikke har gjort noe med fordi «det har gått bra så langt»?"
-  - "Hva ville skjedd hvis dere ble utsatt for et alvorlig cyberangrep i morgen — ville dere oppdaget det?"
+conversation_topics:
+  - conversation_label: "Ansvar for informasjonssikkerhet"
+    opening_question: "Hvem i organisasjonen har reelt ansvar for informasjonssikkerhet — og vet de at de har det?"
+    source_url: "/informasjonssikkerhet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Avviksmelding og kultur"
+    opening_question: "Når ble siste gang noen meldte fra om et sikkerhetsavvik — og hva skjedde med den som meldte?"
+    source_url: "/informasjonssikkerhet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Sikkerhet vs produksjon"
+    opening_question: "Hvordan prioriterer ledergruppen mellom sikkerhet og produksjon når det oppstår en konflikt?"
+    source_url: "/informasjonssikkerhet/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Informasjonssikkerhet er et ledelsesproblem
@@ -95,3 +100,37 @@ Les også: [Usikkerhetshåndtering henger tett sammen med informasjonssikkerhet 
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **IT-eierskap av sikkerhet:** Sikkerhet delegeres til IT-avdelingen, men ledergruppen eier risikoen.
+*   **Kultur der «det har gått bra så langt»:** Sikkerhetskulturen sitter ikke i veggene — den leverer falsk trygghet.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når roller for informasjonseierskap er uklare
+*   [Menneskeperspektivet](/mennesker/) — når frykt for å melde fra skaper sikkerhetshull
+*   [Påvirkningsperspektivet](/pavirkning/) — når ledere overstyrer sikkerhetsråd
+*   [Identitetsperspektivet](/identitet/) — når «vi har aldri blitt hacket» blir identitet
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/informasjonssikkerhet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Informasjonssikkerhet og cyberresiliens](/informasjonssikkerhet/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Fire perspektiver — fire sikkerhetsdimensjoner](/informasjonssikkerhet/#fire-perspektiver-fire-sikkerhetsdimensjoner) — struktur, mennesker, påvirkning, identitet
+*   [Cyberresiliens](/informasjonssikkerhet/#cyberresiliens-mer-enn-forebygging) — mer enn forebygging
+*   [GRC og helhetlig styring](/grc/) — helhetlig rammeverk

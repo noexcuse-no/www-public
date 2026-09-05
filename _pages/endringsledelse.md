@@ -55,13 +55,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-questions_title: "Spør din LLM om endringsevne"
-questions:
-  - "Når ble siste gang dere gjennomførte en større endring — og hva gikk galt?"
-  - "Hvem i organisasjonen bremser endring — og hvorfor?"
-  - "Hva ville skjedd hvis dere stoppet alle pågående endringsinitiativ i morgen?"
-  - "Har dere et felles språk for å snakke om endring?"
-  - "Hvordan vet dere at en endring faktisk har funnet sted?"
+conversation_topics:
+  - conversation_label: "Endringsfeil og læring"
+    opening_question: "Når ble siste gang dere gjennomførte en større endring — og hva gikk galt?"
+    source_url: "/endringsledelse/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Motstand mot endring"
+    opening_question: "Hvem i organisasjonen bremser endring — og hvorfor?"
+    source_url: "/endringsledelse/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Endringsmåling"
+    opening_question: "Hvordan vet dere at en endring faktisk har funnet sted?"
+    source_url: "/endringsledelse/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hvorfor endringsledelse er vanskeligere enn det ser ut til
@@ -115,3 +121,37 @@ Vellykket endringsledelse handler ikke om å ha den beste planen. Det handler om
 Ledelse 60:2 gir deg verktøyet for det første steget — en baseline for hvor ledergruppen din står.
 
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Kotters 70% feilrate:** Over 70% av endringsinitiativ feiler — ofte fordi ledere hopper over steg 1 og 2.
+*   **Kultur som bremse:** Organisasjoner på stadium 3 («Jeg er flink») opplever endring som trussel mot individets posisjon.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når strukturen bremser endring
+*   [Menneskeperspektivet](/mennesker/) — når psykologisk trygghet mangler for endring
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold blokkerer endring
+*   [Identitetsperspektivet](/identitet/) — når kulturen motarbeider endring
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/endringsledelse/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Endringsledelse](/endringsledelse/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Kotters 8 steg](/endringsledelse/#kotters-8-steg-for-endring) — hvorfor 70% feiler
+*   [Kultur som endringsmotor](/endringsledelse/#kultur-som-endringsmotor) — Logans stadier
+*   [Maktdynamikk i endring](/endringsledelse/#maktdynamikk-i-endring) — Pfeffer og Keltner

@@ -15,6 +15,7 @@ _site/
 *.swp
 *.swo
 *~
+.playwright-mcp/
 assets/bibliography/extracts/.omo/
 .omo/*
 !.omo/rules/
