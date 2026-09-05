@@ -43,6 +43,29 @@ layout: default
       {% endif %}
     </div>
 
+    <!-- Mobile AI inline module (visible ≤1199px) -->
+    <div class="ai-mobile-module section container--wide animate-on-scroll fade-in-up">
+      {% if page.conversation_topics %}
+      <div class="sidebar-card sidebar-card--questions is-collapsible">
+        {% include questions.html topics=page.conversation_topics collapsible="true" %}
+      </div>
+      <noscript>
+        <div class="section container--wide" style="margin-top: 2rem;">
+          <h2>Utforsk dette privat med din egen KI</h2>
+          <p class="privacy-note">Vi stiller spørsmålene. Du beholder svarene.</p>
+          <ul>
+            {% for topic in page.conversation_topics %}
+            <li>
+              <strong>{{ topic.conversation_label }}</strong>: {{ topic.opening_question }}
+              <br><a href="{{ topic.sixty_two_url }}">Se hvordan 60:2 kan avdekke dette</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </noscript>
+      {% endif %}
+    </div>
+
     <aside class="article-questions" aria-label="AI-refleksjon og tilbud">
       {% if page.conversation_topics %}
       <div class="sidebar-card sidebar-card--questions is-collapsible">
