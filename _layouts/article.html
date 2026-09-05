@@ -43,6 +43,9 @@ layout: default
       {% endif %}
     </div>
 
+    <!-- Contextual appearance cards (appearance→topic mapping) -->
+    {% include appearance-contextual.html %}
+
     <!-- Mobile AI inline module (visible ≤1199px) -->
     <div class="ai-mobile-module section container--wide animate-on-scroll fade-in-up">
       {% if page.conversation_topics %}
