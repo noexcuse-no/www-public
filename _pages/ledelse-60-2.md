@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: ai-assisted
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: product
 layout: article
 title: "Ledelse 60:2 — Orientering for ledergruppen"

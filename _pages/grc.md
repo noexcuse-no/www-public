@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: ai-assisted
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: article
 layout: article
 title: "GRC — Governance, Risk and Compliance"

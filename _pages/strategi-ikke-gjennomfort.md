@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: ai-assisted
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: buying-situation
 layout: article
 title: "Strategi ikke gjennomført — når planen ikke blir virkelighet"

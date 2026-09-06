@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: ai-assisted
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 layout: page
 title: "Personvern for AI-refleksjon"
 description: "Hva skjer når du bruker AI-refleksjonsverktøyet på noexcuse.no? Hva forlater nettstedet, hva logger vi, og hva mottar KI-leverandøren?"

@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: ai-assisted
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 layout: page
 title: "Personvernerklæring"
 description: "Hvordan No Excuse AS behandler dine personopplysninger — i tråd med GDPR (forordning 2016/679)."
