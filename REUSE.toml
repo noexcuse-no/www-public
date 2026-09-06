@@ -58,3 +58,9 @@ SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
 path = ["assets/images/hero-illustration.webp"]
 SPDX-FileCopyrightText = "NONE"
 SPDX-License-Identifier = "CC0-1.0"
+
+# AI-generated rights page → CC0 (announced default)
+[[annotations]]
+path = ["_pages/rettigheter.md"]
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"

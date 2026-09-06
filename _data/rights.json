@@ -193,6 +193,11 @@
       "copyrightText": "2026 No Excuse AS",
       "url": "https://noexcuse.no/rettigheter/#proprietary"
     },
+    "_pages/rettigheter.md": {
+      "spdxId": "CC0-1.0",
+      "copyrightText": "NONE",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
     "_pages/risikostyring.md": {
       "spdxId": "LicenseRef-NoExcuse-All-Rights-Reserved",
       "copyrightText": "2026 No Excuse AS",
