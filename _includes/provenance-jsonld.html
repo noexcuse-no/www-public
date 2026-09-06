@@ -1,24 +1,33 @@
 {% comment %}
-  Provenance JSON-LD structured data — injects digitalSourceType + license on every page.
-  Respects page-level frontmatter overrides via page.provenance:
-    - unset / "ai"       → TrainedAlgorithmicMediaDigitalSource (default)
-    - "editorial"        → CompositeWithTrainedAlgorithmicMediaDigitalSource
-    - "human"            → no digitalSourceType (omit)
+  Provenance JSON-LD — per-page license/copyright from generated rights.json
+  plus the provenance vocabulary mapped from frontmatter.
+  No blanket defaults: unresolved pages omit license entirely.
 {% endcomment %}
-{% assign source = page.provenance | default: "ai" %}
-{% if source == "human" %}
-  {% assign digital_source = false %}
-{% elsif source == "editorial" %}
-  {% assign digital_source = "https://schema.org/CompositeWithTrainedAlgorithmicMediaDigitalSource" %}
-{% else %}
-  {% assign digital_source = "https://schema.org/TrainedAlgorithmicMediaDigitalSource" %}
+{% assign rights = site.data.rights.pages[page.path] %}
+{% assign prov = page.provenance %}
+{% assign cr = rights.copyrightText | default: '' %}
+{% assign cr_year = '' %}
+{% assign holder = '' %}
+{% assign first4 = cr | slice: 0, 4 %}
+{% if first4 == '2024' or first4 == '2025' or first4 == '2026' or first4 == '2027' or first4 == '2028' %}
+  {% assign cr_year = first4 %}
+  {% assign holder = cr | remove_first: first4 | strip %}
+{% elsif cr != '' and cr != 'NONE' %}
+  {% assign holder = cr %}
 {% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "url": "https://noexcuse.no{{ page.url | default: '/' }}",
-  "license": "https://creativecommons.org/publicdomain/zero/1.0/"{% if digital_source %},
-  "digitalSourceType": "{{ digital_source }}"{% endif %}
+  "url": "https://noexcuse.no{{ page.url | default: '/' }}"{% if rights %},
+  "license": "{{ rights.url }}"{% endif %}{% if holder != '' %},
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "{{ holder }}"
+  }{% endif %}{% if cr_year != '' %},
+  "copyrightYear": "{{ cr_year }}"{% endif %}{% if prov.creation %},
+  "creation": "{{ prov.creation }}"{% endif %}{% if prov.editorial_review %},
+  "editorialReview": "{{ prov.editorial_review }}"{% endif %}{% if prov.editorial_responsibility %},
+  "editorialResponsibility": "{{ prov.editorial_responsibility }}"{% endif %}
 }
 </script>
