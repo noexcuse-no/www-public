@@ -31,8 +31,12 @@ function matches(pattern, file) {
 
 function parseSidecar(absPath) {
     const text = readFileSync(absPath, 'utf8');
-    const id = (text.match(/^SPDX-License-Identifier:\s*(\S+)\s*$/m) || [])[1] || null;
-    const cr = (text.match(/^SPDX-FileCopyrightText:\s*(.+?)\s*$/m) || [])[1] || null;
+    // Keys assembled by concatenation so this file's own source is not
+    // misread as carrying SPDX snippet tags (REUSE snippet detection).
+    const idKey = 'SPDX-License-' + 'Identifier:';
+    const crKey = 'SPDX-File' + 'CopyrightText:';
+    const id = (text.match(new RegExp('^' + idKey + '\\s*(\\S+)\\s*$', 'm')) || [])[1] || null;
+    const cr = (text.match(new RegExp('^' + crKey + '\\s*(.+?)\\s*$', 'm')) || [])[1] || null;
     return { id, copyright: cr };
 }
 

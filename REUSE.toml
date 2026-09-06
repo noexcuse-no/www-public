@@ -4,7 +4,7 @@ version = 1
 [[annotations]]
 path = [
   "_includes/**", "_layouts/**", "assets/css/**", "assets/scripts/**",
-  "scripts/**", "tests/**", "_data/**", ".opencode/**", ".omo/**",
+  "scripts/**", "tests/**", "_data/**", ".opencode/**", ".omo/**", ".github/**",
   "_config.yml", "package.json", "package-lock.json", "opencode.json",
   "oh-my-openagent.json", "site.webmanifest", "CNAME", "robots.txt",
   "sitemap.xml", "ai-transparency.json", ".well-known/ai-transparency.json",
