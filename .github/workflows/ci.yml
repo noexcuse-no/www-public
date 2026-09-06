@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run lint
+
+  reuse:
+    runs-on: ubuntu-latest
+    # Non-blocking while the unresolved set is non-empty (documented
+    # expected failures — see .specs/mixed-rights-licensing/README.md).
+    # Gating rule: flip continue-on-error off once the unresolved set is
+    # empty (BACKLOG CI1 tracks the flip).
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: fsfe/reuse-action@v6
+      - name: Surface failure list
+        if: always()
+        run: echo "See the reuse step output above for the unresolved-file list."
+  rights-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run rights:check
+      - run: git diff --exit-code -- _data/rights.json
+
+  site-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+      - run: gem install jekyll -v 3.10.0
+      - run: jekyll build -d /tmp/site-out --safe
+      - run: jq . /tmp/site-out/.well-known/ai-transparency.json
+      - run: test -f /tmp/site-out/rettigheter/index.html && grep -q 'id="proprietary"' /tmp/site-out/rettigheter/index.html
+      - run: grep -q 'rel="license"' /tmp/site-out/index.html && grep -q 'href="/rettigheter/"' /tmp/site-out/index.html
