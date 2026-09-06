@@ -9,7 +9,9 @@
     "lint:css": "stylelint 'assets/css/**/*.css'",
     "lint:js": "eslint 'assets/scripts/**/*.js'",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "rights:generate": "node scripts/generate-rights-metadata.mjs",
+    "rights:check": "npm run rights:generate && git diff --exit-code -- _data/rights.json"
   },
   "devDependencies": {
     "eslint": "^6.4.0",
