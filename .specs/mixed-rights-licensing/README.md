@@ -70,7 +70,7 @@ Every file in the public repository needs a verified license: 0BSD for repo-crea
 | Path | Why unresolved |
 |------|----------------|
 | `assets/images/og-image.webp` | No prompt documentation in `.design/graphics.md` (only a spec-table row: 1920×1080 social card); no photo evidence in `.design/photography-brief.md`. Left unannotated. |
-| `.design/graphics/originals/assets/images/og-image.png` | Same as above (its source original). Left unannotated. |
+| `.design/graphics/originals/assets/images/og-image.png` | Same as above (its source original). Left unannotated — NOTE: incidentally covered by the `.design/**` CC0 blanket, so `reuse lint` does not flag it; it is reported here as unresolved by policy (never blanket-classified to make checks pass). The generated `_data/rights.json` omits it. |
 
 ## Audit Table (Wave 2 census: 617 tracked files)
 
@@ -101,7 +101,7 @@ Evidence: first-commit year/author via single `git log --diff-filter=A` pass; pr
 
 ### Reconciliation
 
-617 = blanket-covered (code, docs, image bulk) + exact-path text entries (46 _pages + 22 _tags + index + favicon.svg + 9 logo SVGs) + sidecars (12 binaries) + unresolved (2) + CC0 hero-illustration exact entry.
+617 = blanket-covered (code, docs, image bulk) + exact-path text entries (46 _pages + 22 _tags + index + favicon.svg + 9 logo SVGs) + sidecars (11 binaries) + unresolved (2: 1 lint-flagged + 1 blanket-covered-but-reported) + CC0 hero-illustration exact entry.
 
 ## TDM follow-up
 
