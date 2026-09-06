@@ -50,3 +50,4 @@ Completed items belong in `CHANGELOG.md` only.
 | AI1 | AI Act alignment | Pending | `.omo/plans/ai-act-alignment.md` |
 | RI1 | Risk reduction cleanup | Pending | `.omo/plans/risk-reduction-cleanup.md` |
 | CI1 | CI reuse gating flip | Pending | mixed-rights:507 |
+| MR1 | Mixed-rights licensing & provenance | Doing | `.omo/plans/mixed-rights-licensing-provenance.md` — 29 todos, Waves 0–6 (REUSE/SPDX census, provenance metadata, site emission, image pipeline, CI). See `.specs/mixed-rights-licensing/README.md`. |
