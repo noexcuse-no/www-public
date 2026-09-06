@@ -3,6 +3,7 @@
 > Created: 2026-06-03
 > Status: Draft
 > Replaces: `.specs/c2pa-cc0-licensing/README.md` (absorbed into this broader spec)
+> SUPERSEDED: the legacy `ai_provenance` vocabulary (`machine_assisted|machine_generated`) and the never-created `_data/licenses.yml`/`provenance.yml`/`creator.yml`/`ai_tools.yml` design are superseded by the `provenance:` frontmatter schema (`creation`, `editorial_review`, `editorial_responsibility`) — see `.specs/mixed-rights-licensing/README.md`. This document is retained as reference only.
 
 ---
 

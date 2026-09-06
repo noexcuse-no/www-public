@@ -42,6 +42,7 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/ny-leder/` | `_pages/ny-leder.md` | Buying situation: ny CEO/leder |
 | `/strategi-ikke-gjennomfort/` | `_pages/strategi-ikke-gjennomfort.md` | Buying situation: strategi ikke gjennomført |
 | `/personvern/` | `_pages/personvern.md` | Privacy policy |
+| `/rettigheter/` | `_pages/rettigheter.md` | Rights & licenses (REUSE/SPDX, proprietary anchor) |
 
 ## Tag Pages
 
