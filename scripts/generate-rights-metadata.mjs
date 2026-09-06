@@ -144,7 +144,7 @@ const addAsset = (rel, creation) => {
     assets[rel] = {
         creation,
         spdxId: resolved.id,
-        copyrightText: resolved.copy,
+        copyrightText: resolved.copyright,
         url: LICENSE_URLS[resolved.id],
         digitalSourceType: dst,
     };
