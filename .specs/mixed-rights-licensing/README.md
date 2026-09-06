@@ -65,9 +65,43 @@ Every file in the public repository needs a verified license: 0BSD for repo-crea
 
 ## Unresolved files
 
-*(Living section — filled by Wave 2 audit. Empty initially.)*
+*(Living section — filled by Wave 2 audit.)*
 
-No unresolved files recorded yet.
+| Path | Why unresolved |
+|------|----------------|
+| `assets/images/og-image.webp` | No prompt documentation in `.design/graphics.md` (only a spec-table row: 1920×1080 social card); no photo evidence in `.design/photography-brief.md`. Left unannotated. |
+| `.design/graphics/originals/assets/images/og-image.png` | Same as above (its source original). Left unannotated. |
+
+## Audit Table (Wave 2 census: 617 tracked files)
+
+Evidence: first-commit year/author via single `git log --diff-filter=A` pass; prompt tables in `.design/graphics.md`; photography brief; CHANGELOG task records; `git blame -e` third-party check (todo 10: zero surviving Adbaa006 lines in `_includes/header.html`, `_includes/footer.html`, `_layouts/default.html`); exiftool baseline (todo 11: no XMP/IPTC on banner samples — clean slate for Wave 5).
+
+### Bucket 0BSD — repo-created code/tooling (REUSE.toml dir defaults, no exact entries)
+
+`_includes/**`, `_layouts/**` (46 files incl. `_data/**` 5), `assets/css/**` (31), `assets/scripts/**` (10), `scripts/apply-provenance.sh`, `tests/**` (4), `.opencode/**`, `.omo/rules` (19), `_config.yml`, `package.json`, `package-lock.json`, `opencode.json`, `oh-my-openagent.json`, `site.webmanifest`, `CNAME`, `robots.txt`, `sitemap.xml`, `.well-known/ai-transparency.json`, `.well-known/security.txt`, `.eslintrc.yml`, `.htmlhintrc`, `stylelint.config.mjs`, `vitest.config.mjs`, `AGENTS.md`, `VERSION`, `.gitignore`. (`ai-transparency.json` root + `.research/**` match nothing — harmless.)
+
+### Bucket CC0-1.0 — purely AI-generated (blankets + 1 exact entry)
+
+- `.design/**` (89), `.specs/**` (68), `README.md`, `BACKLOG.md`, `CHANGELOG.md`, `assets/ai-agent-cheat-sheet.md` — blanket.
+- `assets/images/banners/**` (226), `assets/images/icons/**` (7) — blanket (prompt-documented bulk).
+- `assets/images/hero-illustration.webp` — exact-path entry (prompt-documented `.design/graphics.md` Style 1).
+- Banner/icon PNG originals in `.design/graphics/originals/` — covered by `.design/**` blanket, no action (incl. `grc-t1-hero.png`, prompt-documented Style 1).
+
+### Bucket LicenseRef-NoExcuse-All-Rights-Reserved — human-created (exact-path entries after blankets, `2026 No Excuse AS` unless noted)
+
+- `_pages/*.md` (46: 404, avtale, baerekraft, bestill_ledelse-60-2, compliance, dagfinn, emne, endringsledelse, forankring, foredrag_og_media, generativ-ki, gjentatte-diskusjoner, grc, identitet, informasjonssikkerhet, intervju, kultur, kvalitet, ledelse-60-2, makt, mennesker, metode, ny-leder, ny-ledergruppe, om-oss, pavirkning, personvern, personvern_ki, perspektiv, rapport, risikostyring, samtale, strategi-ikke-gjennomfort, struktur, svak-gjennomforing, tillit, triader, uklare-roller, usikkerhet + 7 `go/*`), `_tags/*.md` (22), all first-committed 2026 by Rasmus S. Olsen.
+- `index.md` — `2025 No Excuse AS` (first-committed 2025).
+- `favicon.svg` (2026) — exact-path entry (text).
+- `.design/graphics/logo-{azure,dark,horizontal-azure,horizontal-dark,horizontal-light,light,stamp-black}.svg` (2026) + `originals/noexcuse-logo-{dark,light}.svg` (2026) — exact-path entries (brand; trademark carve-out in LICENSE).
+- Binaries via `.license` sidecars (`2026 No Excuse AS` unless noted): `assets/avtale.pdf`, `assets/samtykke.pdf` (uploaded legal docs), `favicon.ico` (`2025 No Excuse AS`), `apple-touch-icon.webp`, `assets/images/noexcuse-logo-azure.webp`, `assets/images/noexcuse-logo-horizontal.webp`, `assets/images/dagfinn.webp` (commissioned portrait per photography brief), `originals/noexcuse-logo-azure.png`, `originals/noexcuse-logo-horizontal.png`, `originals/dagfinn.png`, `originals/apple-touch-icon.png` (brand derivative).
+
+### Bucket third-party — none surviving
+
+`git blame -e` on `_includes/header.html`, `_includes/footer.html`, `_layouts/default.html` shows zero Adbaa006 lines (all Feb 2026 changes superseded by later Rasmus rewrites). No annotation needed.
+
+### Reconciliation
+
+617 = blanket-covered (code, docs, image bulk) + exact-path text entries (46 _pages + 22 _tags + index + favicon.svg + 9 logo SVGs) + sidecars (12 binaries) + unresolved (2) + CC0 hero-illustration exact entry.
 
 ## TDM follow-up
 
