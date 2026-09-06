@@ -8,3 +8,7 @@ Primary product: **Ledelse 60:2** — a knowledge-based orientation for leadersh
 - Host: GitHub Pages
 - Stack: Jekyll (static site generator)
 - Language: Norwegian Bokmål
+
+## Licensing
+
+Source code defaults to 0BSD; the repository overall uses mixed rights (REUSE/SPDX). See `LICENSE.md` and https://noexcuse.no/rettigheter/.

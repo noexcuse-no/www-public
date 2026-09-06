@@ -60,6 +60,15 @@ Design/architecture documents live in `.design/*.md` — loaded on demand via RE
 
 Maps action types to reads/checks/runs/updates. Reference this file directly (not via instructions) when determining what to verify for a given task type (css, js, html, commit, etc.).
 
+## Rights & provenance
+
+- Classify new material before commit (0BSD / CC0-1.0 / LicenseRef-NoExcuse-All-Rights-Reserved / unresolved).
+- never CC0 just for AI involvement — AI-assisted human work → `LicenseRef-NoExcuse-All-Rights-Reserved`.
+- New publishable content requires `provenance:` frontmatter (`creation`, `editorial_review: human`, `editorial_responsibility: No Excuse AS`).
+- New images require a `_data/assets.yml` registry entry + REUSE annotation (`.license` sidecar or exact-path entry placed after any matching blanket).
+- Unresolved → report in `.specs/mixed-rights-licensing/README.md`, never hide behind blanket defaults.
+- Canonical reference: `.specs/mixed-rights-licensing/README.md`.
+
 ## Quick Reference
 
 ### On Task Initiation
