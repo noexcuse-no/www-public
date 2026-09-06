@@ -520,29 +520,6 @@
     display: flex;
 }
 
-/*--- Responsive: hide sidebars on narrow screens --- */
-
-@media (max-width: 1199px) {
-    .article-layout {
-        display: block;
-    }
-
-    .article-pager,
-    .article-questions {
-        display: none;
-    }
-
-    /* Mobile AI inline module — visible ≤1199px */
-    .ai-mobile-module {
-        display: block;
-    }
-}
-
-/* Mobile AI inline module — hidden on wide screens */
-.ai-mobile-module {
-    display: none;
-}
-
 /*--- Responsive: sidebar visible on wide screens --- */
 
 @media (min-width: 1200px) {
@@ -632,7 +609,7 @@
     /* Collapsible rail */
     .article-questions .questions-toggle {
         display: flex;
-        align-items: center,
+        align-items: center;
         justify-content: center;
         gap: 6px;
         width: 100%;

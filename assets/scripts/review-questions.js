@@ -52,7 +52,6 @@
     var currentTopic = null;
     var selectedProvider = getSavedProvider() || '';
     var copyTimer = null;
-    var isCollapsed = false;
 
     /* ── Init ───────────────────────────────── */
     function init() {
@@ -110,7 +109,6 @@
 
     /* ── Collapse / Expand ──────────────────── */
     function collapseList() {
-        isCollapsed = true;
         var grid = modalEl.querySelector('.provider-grid');
         var selected = modalEl.querySelector('.provider-selected');
         var provider = getProvider(selectedProvider);
@@ -122,7 +120,6 @@
     }
 
     function expandList() {
-        isCollapsed = false;
         var grid = modalEl.querySelector('.provider-grid');
         var selected = modalEl.querySelector('.provider-selected');
         grid.hidden = false;
@@ -252,20 +249,20 @@
         var baseUrl = provider.url;
 
         switch (provider.capability) {
-            case 'official-prefill':
-                // Claude: official prefill URL
-                return baseUrl + '/?q=' + encodeURIComponent(prompt);
-            case 'community-prefill':
-                // ChatGPT, Perplexity, Grok: best-effort prefill
-                var separator = baseUrl.indexOf('?') === -1 ? '?' : '&';
-                return baseUrl + separator + 'q=' + encodeURIComponent(prompt);
-            case 'copy-open':
-            default:
-                // Gemini, DeepSeek, Copilot: copy prompt and open home/chat page
-                copyToClipboard(prompt, function () {
-                    // Clipboard copy handled in callback
-                });
-                return baseUrl;
+        case 'official-prefill':
+            // Claude: official prefill URL
+            return baseUrl + '/?q=' + encodeURIComponent(prompt);
+        case 'community-prefill':
+            // ChatGPT, Perplexity, Grok: best-effort prefill
+            var separator = baseUrl.indexOf('?') === -1 ? '?' : '&';
+            return baseUrl + separator + 'q=' + encodeURIComponent(prompt);
+        case 'copy-open':
+        default:
+            // Gemini, DeepSeek, Copilot: copy prompt and open home/chat page
+            copyToClipboard(prompt, function () {
+                // Clipboard copy handled in callback
+            });
+            return baseUrl;
         }
     }
 
@@ -324,9 +321,6 @@
     }
 
     function buildPrompt(topic) {
-        var pageUrl = location.href;
-        var pageTitle = document.title || 'noexcuse.no';
-
         return META_PROMPT
             .replace('{{QUESTION}}', topic.question)
             .replace('{{TOPIC_LABEL}}', topic.label)
