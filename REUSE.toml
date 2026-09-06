@@ -1,0 +1,28 @@
+version = 1
+
+# Repo-created source code & tooling → 0BSD
+[[annotations]]
+path = [
+  "_includes/**", "_layouts/**", "assets/css/**", "assets/scripts/**",
+  "scripts/**", "tests/**", "_data/**", ".opencode/**", ".omo/**",
+  "_config.yml", "package.json", "package-lock.json", "opencode.json",
+  "oh-my-openagent.json", "site.webmanifest", "CNAME", "robots.txt",
+  "sitemap.xml", "ai-transparency.json", ".well-known/ai-transparency.json",
+  ".well-known/security.txt", ".eslintrc.yml", ".htmlhintrc",
+  "stylelint.config.mjs", "vitest.config.mjs", "AGENTS.md",
+  "VERSION", ".gitignore",
+]
+SPDX-FileCopyrightText = "No Excuse AS"
+SPDX-License-Identifier = "0BSD"
+
+# AI-generated project documentation → CC0
+[[annotations]]
+path = [".design/**", ".specs/**", ".research/**", "README.md", "BACKLOG.md", "CHANGELOG.md", "assets/ai-agent-cheat-sheet.md"]
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"
+
+# AI-generated image bulk → CC0 (prompt-documented in .design/graphics.md)
+[[annotations]]
+path = ["assets/images/banners/**", "assets/images/icons/**"]
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"
