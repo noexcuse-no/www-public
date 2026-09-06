@@ -1,0 +1,84 @@
+---
+layout: null
+permalink: /.well-known/ai-transparency.json
+---
+{% assign pc_human = 0 %}{% assign pc_ai_assisted = 0 %}{% assign pc_ai_generated = 0 %}{% assign pc_third = 0 %}{% assign pc_unresolved = 0 %}
+{% assign all_docs = site.pages | concat: site.documents %}
+{% for p in all_docs %}
+{% assign col = p.collection | default: 'pages' %}
+{% if col == 'pages' or col == 'tags' %}
+{% assign c = p.provenance.creation %}
+{% if c == 'human-created' %}{% assign pc_human = pc_human | plus: 1 %}
+{% elsif c == 'ai-assisted' %}{% assign pc_ai_assisted = pc_ai_assisted | plus: 1 %}
+{% elsif c == 'ai-generated' %}{% assign pc_ai_generated = pc_ai_generated | plus: 1 %}
+{% elsif c == 'third-party' %}{% assign pc_third = pc_third | plus: 1 %}
+{% elsif c %}{% assign pc_unresolved = pc_unresolved | plus: 1 %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% assign ac_human = 0 %}{% assign ac_ai_assisted = 0 %}{% assign ac_ai_generated = 0 %}{% assign ac_third = 0 %}{% assign ac_unresolved = 0 %}
+{% for pair in site.data.rights.assets %}
+{% assign a = pair[1] %}
+{% if a.creation == 'human-created' %}{% assign ac_human = ac_human | plus: 1 %}
+{% elsif a.creation == 'ai-assisted' %}{% assign ac_ai_assisted = ac_ai_assisted | plus: 1 %}
+{% elsif a.creation == 'ai-generated' %}{% assign ac_ai_generated = ac_ai_generated | plus: 1 %}
+{% elsif a.creation == 'third-party' %}{% assign ac_third = ac_third | plus: 1 %}
+{% else %}{% assign ac_unresolved = ac_unresolved | plus: 1 %}
+{% endif %}
+{% endfor %}
+{
+  "publisher": {
+    "name": "No Excuse AS",
+    "orgnr": "934 418 880",
+    "contact": "mailto:firmapost@noexcuse.no",
+    "url": "https://noexcuse.no"
+  },
+  "counts": {
+    "pages_by_creation": {
+      "human-created": {{ pc_human }},
+      "ai-assisted": {{ pc_ai_assisted }},
+      "ai-generated": {{ pc_ai_generated }},
+      "third-party": {{ pc_third }},
+      "unresolved": {{ pc_unresolved }}
+    },
+    "assets_by_creation": {
+      "human-created": {{ ac_human }},
+      "ai-assisted": {{ ac_ai_assisted }},
+      "ai-generated": {{ ac_ai_generated }},
+      "third-party": {{ ac_third }},
+      "unresolved": {{ ac_unresolved }}
+    }
+  },
+  "routes": [
+    {% assign first = true %}
+    {% for p in all_docs %}
+    {% assign col = p.collection | default: 'pages' %}
+    {% if col == 'pages' or col == 'tags' %}
+    {% assign r = site.data.rights.pages[p.path] %}
+    {% if r and r.spdxId == 'LicenseRef-NoExcuse-All-Rights-Reserved' %}
+    {% unless first %},{% endunless %}{% assign first = false %}
+    {
+      "path": "{{ p.url }}",
+      "license": "{{ r.url }}",
+      "ai_usage": {
+        "training": "disallow",
+        "search": "allow"
+      }
+    }
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  ],
+  "cc0_dedication": {
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "scope": "AI-generated text, images, and code as attributed in rights metadata"
+  },
+  "licensing": {
+    "CC0-1.0": {
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "LicenseRef-NoExcuse-All-Rights-Reserved": {
+      "url": "https://noexcuse.no/rettigheter/#proprietary"
+    }
+  }
+}

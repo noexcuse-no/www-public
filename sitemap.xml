@@ -10,7 +10,7 @@ permalink: /sitemap.xml
     <priority>1.0</priority>
   </url>
   {% for page in site.pages %}
-  {% if page.permalink and page.permalink != "/sitemap.xml" and page.published != false %}
+  {% if page.permalink and page.permalink != "/sitemap.xml" and page.permalink != "/.well-known/ai-transparency.json" and page.published != false %}
   <url>
     <loc>https://noexcuse.no{{ page.permalink }}</loc>
     <changefreq>monthly</changefreq>
