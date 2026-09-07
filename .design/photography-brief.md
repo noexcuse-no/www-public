@@ -100,6 +100,13 @@ Tenk:
 - **Stil:** Miljøbilder som viser kunden i deres egen kontekst — møterom, produksjon, kontorlandskap
 - **Personer:** Kan inkludere mennesker, men ansikter trenger samtykke. Unngå iscenesatte «teamwork»-bilder.
 
+### 3. Ledergruppe-kontekst (50–250 ansatte)
+
+- **Format:** 16:9 landskap / 1:1 kvadratisk
+- **Størrelse:** Minimum 1200×675 px
+- **Stil:** Miljøbilder som viser en ledergruppe (5–8 personer) i møte — trebord, dagslys, uformell samtale. Skal kommunisere den primære målgruppen (50–250 ansatte, CEO/MD-buyer) og den diagnostiske, ubyråkratiske arbeidsformen.
+- **Personer:** Kan inkludere mennesker, men ansikter trenger samtykke. Unngå stive «boardroom»-positurer.
+
 ---
 
 ## Leveranse
@@ -107,6 +114,36 @@ Tenk:
 - **Antall:** 1–3 profilbilder + eventuelle case-bilder
 - **Filstruktur:** Vi sorterer bildene i `assets/images/` på prosjektet
 - **Originalfiler:** Behold originaler — vi konverterer til WebP og lagrer kopier i `.design/graphics/originals/`
+
+---
+
+## Metadata og personvern
+
+### Offentlige vs. originale filer
+
+- **`assets/images/`** — kun sanitiserte publikasjonsderivater (WebP/PNG). Disse er offentlige og skal ikke inneholde privat metadata.
+- **`.design/graphics/originals/`** — høyoppløselige originaler med eventuell privat metadata (GPS, serienummer, kommentarer). Disse er interne og publiseres aldri direkte.
+
+### Metadatapolicy
+
+Før en original konverteres til et offentlig derivat, kjøres:
+
+```bash
+bash scripts/sanitize-metadata.sh --check assets/images/
+```
+
+Sanitiseringen fjerner GPS-koordinater, kamera-/serienumre, lokale filstier, kommentarer, skaper-/kontaktfelt og redigeringshistorikk. Følgende beholdes bevisst:
+
+- `XMP-dc:Rights` — rettighetshaver
+- `IPTC:CopyrightNotice` — copyright-merknad
+- `XMP-xmpRights:WebStatement` — lenke til rettighetsinformasjon
+- `XMP-iptcExt:DigitalSourceType` — AI-proveniens (digital kilde)
+
+AI-proveniens og opphavsrett er separate forhold: begge bevares, men blandes aldri.
+
+### Dokumenter (PDF)
+
+PDF-er inspiseres med `bash scripts/inspect-doc-metadata.sh <fil.pdf>` før publisering. Interne verdier (forfatter, brukernavn, internt tittel/company-felt, innebygde stier) fjernes eller erstattes med sanitiserte web-derivater.
 
 ---
 
