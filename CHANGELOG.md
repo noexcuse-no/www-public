@@ -6,6 +6,33 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.7.1] - 2026-06-04
+## [Unreleased]
+
+
+### Added
+- Mixed-rights licensing framework (REUSE/SPDX) with 0BSD for code, CC0-1.0 for AI-generated content, LicenseRef-NoExcuse-All-Rights-Reserved for human-created content
+- REUSE.toml with directory defaults and exact-path entries
+- Canonical license texts (0BSD, CC0-1.0) from SPDX
+- REUSE.toml directory defaults for code (0BSD) and assets (CC0-1.0)
+- Provenance frontmatter on all renderable sources
+- _data/assets.yml registry with 4-type classification
+- generate-rights-metadata.mjs generator → _data/rights.json
+- Per-page <link rel="license"> and provenance-jsonld.html rewrite
+- .well-known/ai-transparency.json refactored (generated, superset, dead $schema dropped)
+- _pages/rettigheter.md + footer link + information-architecture update
+- CC0 claim removal from _config.yml, _data/metadata.yml, package.json
+- apply-provenance.sh rework (registry-driven, correct IPTC/XMP tags, human images -> proprietary WebStatement)
+- vitest tests, npm scripts rights:generate/rights:check, .github/workflows/ci.yml (4 jobs)
+
+### Changed
+- LICENSE renamed to LICENSE.md (content preserved)
+- REUSE.toml added with directory defaults and exact-path entries
+- CC0 claim removal from _config.yml, _data/metadata.yml, package.json
+- apply-provenance.sh reworked (registry-driven, correct IPTC/XMP tags)
+
+### Fixed
+- LICENSE filename consistency (LICENSE → LICENSE.md)
+
 
 ### Changed
 - **HTML→MD refactor — Page content migration**: Extracted all inline HTML from 22 `_pages/*.md` files into includes and markdown body. Created 20 new `_includes/` components (benefit-cards, step-cards, cases-cards, frame-cards, grc-perspective-cards, science-section, ethics-columns, science-highlight, science-quote, science-divider, section-illustration, framework-illustration, section-wrapper, section-container, info-box, challenge-card, challenge-grid, question-list, cta-section, tag-cloud, avtate-section, about-values, about-section, about-team, kotter-flow). Consolidated CTA, Hero, Section patterns (Phase 3). Inline styling tags (`<a class="product-cta">`, `<p class="lead">`) converted to kramdown IAL syntax in captures with `markdownify_body` support.

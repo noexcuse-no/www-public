@@ -2,7 +2,12 @@ name: CI
 
 on:
   push:
+    branches: [main]
   pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
 
 jobs:
   test:
@@ -22,12 +27,15 @@ jobs:
     # Gating rule: flip continue-on-error off once the unresolved set is
     # empty (BACKLOG CI1 tracks the flip).
     continue-on-error: true
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: fsfe/reuse-action@v6
-      - name: Surface failure list
-        if: always()
-        run: echo "See the reuse step output above for the unresolved-file list."
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m venv /tmp/reuse-venv && /tmp/reuse-venv/bin/pip install 'reuse[charset-normalizer]==6.2.0'
+      - run: /tmp/reuse-venv/bin/reuse lint
+
   rights-drift:
     runs-on: ubuntu-latest
     steps:
@@ -51,3 +59,31 @@ jobs:
       - run: jq . /tmp/site-out/.well-known/ai-transparency.json
       - run: test -f /tmp/site-out/rettigheter/index.html && grep -q 'id="proprietary"' /tmp/site-out/rettigheter/index.html
       - run: grep -q 'rel="license"' /tmp/site-out/index.html && grep -q 'href="/rettigheter/"' /tmp/site-out/index.html
+
+  dependency-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/dependency-review-action@v4
+        with:
+          fail-on-severity: high
+          comment-summary-in-pr: true
+
+  codeql:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [javascript]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          queries: +security-and-quality
+      - uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:${{ matrix.language }}"

@@ -38,6 +38,7 @@ Completed items belong in `CHANGELOG.md` only.
 | V4 | Buying-situation pages | Planned | ai-private-reflection, analytics-events. 6 Tier-1 situations (gjentatte diskusjoner, svak gjennomføring, uklare roller, ny ledergruppe, ny leder, strategi ikke gjennomført). See `.specs/buying-situation-pages/README.md`. |
 | V5 | Article conversion rails | Planned | ai-private-reflection, analytics-events, navigation-ia-split. Two-CTA pattern, related-perspectives block, recognition hook, return sections. See `.specs/article-conversion-rails/README.md`. |
 | V6 | Founder credibility | Planned | bestill-booking-page, foredrag-media, product-signature. Practitioner module + reusable CTA panel (Dagfinn) on /bestill/ + /foredrag-og-media/. See `.specs/founder-credibility/README.md`. |
+| MR1 | **Mixed-rights licensing + provenance** | Doing | Wave 0–6 complete. See `.specs/mixed-rights-licensing/README.md`. |
 | CS1 | Color system review | Done | `.omo/plans/color-system-review.md` |
 | R56 | Color system — variable-only dark mode refactor | Done | PR #216. Eliminated 136 `.dark-mode` selectors; variable-only mode switching via unsuffixed active variables. |
 | R57 | Color system — dark card background fix | Done | PR #216. Changed dark card background from `#333333` to `#1e2a3a`. |

@@ -1,7 +1,6 @@
 // Generates _data/rights.json from REUSE.toml + .license sidecars + _data/assets.yml.
 // Resolution mirrors the official REUSE tool exactly:
 // sidecar beats annotations; last matching annotation in file wins.
-// Output is deterministic (sorted keys, stable serialization, no timestamp).
 import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -103,8 +102,12 @@ const registry = YAML.parse(readFileSync(path.join(root, '_data/assets.yml'), 'u
 const byPath = new Map(registry.assets.map((e) => [e.path, e]));
 const defaultFor = (f) => registry.defaults.find((d) => f.startsWith(d.path)) || null;
 
+const out = { licenses: {}, pages: {}, assets: {} };
+for (const [id, url] of Object.entries(LICENSE_URLS)) {
+    out.licenses[id] = { url };
+}
+
 // Pages: every renderable source (_pages incl. go/, _tags, index.md).
-const pages = {};
 for (const rel of [...walkMd('_pages'), ...walkMd('_tags'), 'index.md']) {
     const resolved = resolveLicense(annotations, rel);
     if (!resolved.id) {

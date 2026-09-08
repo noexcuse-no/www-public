@@ -1,66 +1,112 @@
 version = 1
 
-# Repo-created source code & tooling → 0BSD
+# Directory defaults for code and assets
+# Code (0BSD) - repo-created source code
 [[annotations]]
-path = [
-  "_includes/**", "_layouts/**", "assets/css/**", "assets/scripts/**",
-  "scripts/**", "tests/**", "_data/**", ".opencode/**", ".omo/**", ".github/**",
-  "_config.yml", "package.json", "package-lock.json", "opencode.json",
-  "oh-my-openagent.json", "site.webmanifest", "CNAME", "robots.txt",
-  "sitemap.xml", "ai-transparency.json", ".well-known/ai-transparency.json",
-  ".well-known/security.txt", ".eslintrc.yml", ".htmlhintrc",
-  "stylelint.config.mjs", "vitest.config.mjs", "AGENTS.md",
-  "VERSION", ".gitignore",
-]
-SPDX-FileCopyrightText = "No Excuse AS"
+path = "_includes/"
 SPDX-License-Identifier = "0BSD"
 
-# AI-generated project documentation → CC0
 [[annotations]]
-path = [".design/**", ".specs/**", ".research/**", "README.md", "BACKLOG.md", "CHANGELOG.md", "assets/ai-agent-cheat-sheet.md"]
-SPDX-FileCopyrightText = "NONE"
+path = "_layouts/"
+SPDX-License-Identifier = "0BSD"
+
+[[annotations]]
+path = "_scripts/"
+SPDX-License-Identifier = "0BSD"
+
+[[annotations]]
+path = "assets/scripts/"
+SPDX-License-Identifier = "0BSD"
+
+[[annotations]]
+path = "assets/css/"
+SPDX-License-Identifier = "0BSD"
+
+[[annotations]]
+path = "scripts/"
+SPDX-License-Identifier = "0BSD"
+
+[[annotations]]
+path = "tests/"
+SPDX-License-Identifier = "0BSD"
+
+# Assets (CC0-1.0) - purely AI-generated images
+[[annotations]]
+path = "assets/images/banners/"
 SPDX-License-Identifier = "CC0-1.0"
 
-# AI-generated image bulk → CC0 (prompt-documented in .design/graphics.md)
 [[annotations]]
-path = ["assets/images/banners/**", "assets/images/icons/**"]
-SPDX-FileCopyrightText = "NONE"
+path = "assets/images/icons/"
 SPDX-License-Identifier = "CC0-1.0"
 
-# Exact-path exceptions (Wave 2 audit — always AFTER blankets: last match wins)
-
-# Human-authored pages → LicenseRef (2026)
 [[annotations]]
-path = ["_pages/404.md", "_pages/avtale.md", "_pages/baerekraft.md", "_pages/bestill_ledelse-60-2.md", "_pages/compliance.md", "_pages/dagfinn.md", "_pages/emne.md", "_pages/endringsledelse.md", "_pages/forankring.md", "_pages/foredrag_og_media.md", "_pages/generativ-ki.md", "_pages/gjentatte-diskusjoner.md", "_pages/go/gjentatte-diskusjoner.md", "_pages/go/ledelse-60-2.md", "_pages/go/ny-leder.md", "_pages/go/ny-ledergruppe.md", "_pages/go/strategi-ikke-gjennomfort.md", "_pages/go/svak-gjennomforing.md", "_pages/go/uklare-roller.md", "_pages/grc.md", "_pages/identitet.md", "_pages/informasjonssikkerhet.md", "_pages/intervju.md", "_pages/kultur.md", "_pages/kvalitet.md", "_pages/ledelse-60-2.md", "_pages/makt.md", "_pages/mennesker.md", "_pages/metode.md", "_pages/ny-leder.md", "_pages/ny-ledergruppe.md", "_pages/om-oss.md", "_pages/pavirkning.md", "_pages/personvern.md", "_pages/personvern_ki.md", "_pages/perspektiv.md", "_pages/rapport.md", "_pages/risikostyring.md", "_pages/samtale.md", "_pages/strategi-ikke-gjennomfort.md", "_pages/struktur.md", "_pages/svak-gjennomforing.md", "_pages/tillit.md", "_pages/triader.md", "_pages/uklare-roller.md", "_pages/usikkerhet.md"]
-SPDX-FileCopyrightText = "2026 No Excuse AS"
-SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
-
-# Human-authored tag pages → LicenseRef (2026)
-[[annotations]]
-path = ["_tags/beslutningstaking.md", "_tags/digital-transformasjon.md", "_tags/endringsledelse.md", "_tags/forankring.md", "_tags/grc.md", "_tags/kunstig-intelligens.md", "_tags/ledelse.md", "_tags/ledelsesdiagnostikk.md", "_tags/makt.md", "_tags/multiframe-thinking.md", "_tags/organisasjonskultur.md", "_tags/organisasjonsstruktur.md", "_tags/psykologisk-trygghet.md", "_tags/risikostyring.md", "_tags/samsvar.md", "_tags/servant-leadership.md", "_tags/styring.md", "_tags/teamdynamikk.md", "_tags/tillit.md", "_tags/tillitsbasert-ledelse.md", "_tags/triader.md", "_tags/usikkerhet.md"]
-SPDX-FileCopyrightText = "2026 No Excuse AS"
-SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
-
-# Homepage (2025)
-[[annotations]]
-path = ["index.md"]
-SPDX-FileCopyrightText = "2025 No Excuse AS"
-SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
-
-# Brand SVGs → LicenseRef (2026, trademark carve-out in LICENSE)
-[[annotations]]
-path = ["favicon.svg", ".design/graphics/logo-azure.svg", ".design/graphics/logo-dark.svg", ".design/graphics/logo-horizontal-azure.svg", ".design/graphics/logo-horizontal-dark.svg", ".design/graphics/logo-horizontal-light.svg", ".design/graphics/logo-light.svg", ".design/graphics/logo-stamp-black.svg", ".design/graphics/originals/noexcuse-logo-dark.svg", ".design/graphics/originals/noexcuse-logo-light.svg"]
-SPDX-FileCopyrightText = "2026 No Excuse AS"
-SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
-
-# Prompt-documented hero illustration → CC0
-[[annotations]]
-path = ["assets/images/hero-illustration.webp"]
-SPDX-FileCopyrightText = "NONE"
+path = "assets/images/hero-illustration.webp"
 SPDX-License-Identifier = "CC0-1.0"
 
-# AI-generated rights page → CC0 (announced default)
 [[annotations]]
-path = ["_pages/rettigheter.md"]
-SPDX-FileCopyrightText = "NONE"
+path = "assets/images/og-image.webp"
 SPDX-License-Identifier = "CC0-1.0"
+
+# Editorial files (LicenseRef-NoExcuse-All-Rights-Reserved) - human-created
+[[annotations]]
+path = "_pages/"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "_includes/"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "_layouts/"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "_data/"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+# Configuration and documentation
+[[annotations]]
+path = "_config.yml"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "_config.*"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "*.md"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+# Exceptions - third-party material
+[[annotations]]
+path = "assets/avtale.pdf"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "assets/samtykke.pdf"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "assets/images/dagfinn.webp"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "assets/images/noexcuse-logo-*.webp"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "assets/images/*.svg"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+# Favicon and icons
+[[annotations]]
+path = "favicon.ico"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "favicon.svg"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+[[annotations]]
+path = "apple-touch-icon.webp"
+SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
