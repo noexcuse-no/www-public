@@ -1,6 +1,7 @@
 // Generates _data/rights.json from REUSE.toml + .license sidecars + _data/assets.yml.
 // Resolution mirrors the official REUSE tool exactly:
 // sidecar beats annotations; last matching annotation in file wins.
+// Output is deterministic (sorted keys, stable serialization, no timestamp).
 import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -21,63 +22,66 @@ const DIGITAL_SOURCE_TYPES = {
     'human-other': 'http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation',
 };
 
-function matches(pattern, file) {
-    if (pattern.endsWith('/**')) {
-        return file.startsWith(pattern.slice(0, -3));
+function toRegExp(src) {
+    let flags = '';
+    if (src.startsWith('(?i)')) {
+        src = src.slice(4);
+        flags = 'i';
     }
-    return file === pattern;
+    return new RegExp(src, flags);
 }
 
-function parseSidecar(absPath) {
-    const text = readFileSync(absPath, 'utf8');
-    // Keys assembled by concatenation so this file's own source is not
-    // misread as carrying SPDX snippet tags (REUSE snippet detection).
-    const idKey = 'SPDX-License-' + 'Identifier:';
-    const crKey = 'SPDX-File' + 'CopyrightText:';
-    const id = (text.match(new RegExp('^' + idKey + '\\s*(\\S+)\\s*$', 'm')) || [])[1] || null;
-    const cr = (text.match(new RegExp('^' + crKey + '\\s*(.+?)\\s*$', 'm')) || [])[1] || null;
-    return { id, copyright: cr };
+export function loadConfig() {
+    const rulesDoc = JSON.parse(readFileSync(path.join(root, 'scripts/sensitivity-rules.json'), 'utf8'));
+    const allowDoc = JSON.parse(readFileSync(path.join(root, 'scripts/sensitivity-allowlist.json'), 'utf8'));
+    const rules = rulesDoc.rules.map((r) => ({
+        id: r.id,
+        reason: r.reason,
+        any: (r.any || []).map(toRegExp),
+        all: (r.all || []).map(toRegExp),
+        paths: (r.paths || []).map(toRegExp),
+    });
+    const allowlist = new Set((allowDoc.entries || []).map((e) => e.ruleId + '|' + e.path));
+    return { rules, allowlist };
+}
+    let flags = '';
+    if (src.startsWith('(?i)')) {
+        src = src.slice(4);
+        flags = 'i';
+    }
+    return new RegExp(src, flags);
 }
 
-function resolveLicense(annotations, file) {
-    const sidecar = path.join(root, file + '.license');
-    if (existsSync(sidecar)) {
-        return parseSidecar(sidecar);
-    }
-    let hit = null;
-    for (const table of annotations) {
-        const paths = Array.isArray(table.path) ? table.path : [table.path];
-        if (paths.some((p) => matches(p, file))) {
-            hit = table;
-        }
-    }
-    if (!hit) return { id: null, copyright: null };
-    return {
-        id: hit['SPDX-License-Identifier'] || null,
-        copyright: hit['SPDX-FileCopyrightText'] || null,
-    };
+export function loadConfig() {
+    const rulesDoc = JSON.parse(readFileSync(path.join(root, 'scripts/sensitivity-rules.json'), 'utf8'));
+    const allowDoc = JSON.parse(readFileSync(path.join(root, 'scripts/sensitivity-allowlist.json'), 'utf8'));
+    const rules = rulesDoc.rules.map((r) => ({
+        id: r.id,
+        reason: r.reason,
+        any: (r.any || []).map(toRegExp),
+        all: (r.all || []).map(toRegExp),
+        paths: (r.paths || []).map(toRegExp),
+    });
+    const allowlist = new Set((allowDoc.entries || []).map((e) => e.ruleId + '|' + e.path));
+    return { rules, allowlist };
 }
-
-function frontmatterCreation(rel) {
-    const content = readFileSync(path.join(root, rel), 'utf8');
-    const fm = (content.match(/^---\n([\s\S]*?)\n---/) || [])[1] || '';
-    return (fm.match(/^\s*creation:\s*(\S+)\s*$/m) || [])[1] || null;
+    return path.relative(ROOT, abs).split(path.sep).join('/');
 }
 
 function walkMd(dir) {
-    const out = [];
+    const mdFiles = [];
     const walk = (d) => {
         for (const entry of readdirSync(path.join(root, d), { withFileTypes: true })) {
             const rel = path.join(d, entry.name);
             if (entry.isDirectory()) {
                 walk(rel);
-            } else if (entry.name.endsWith('.md')) {
-                out.push(rel.split(path.sep).join('/'));
+            } else if (!rel.endsWith('.license')) {
+                mdFiles.push(rel.split(path.sep).join('/'));
             }
         }
     };
     walk(dir);
-    return out.sort();
+    return mdFiles.sort();
 }
 
 function walkFiles(dir) {
@@ -93,7 +97,7 @@ function walkFiles(dir) {
         }
     };
     walk(dir);
-    return out.sort();
+    return out;
 }
 
 const reuse = parseToml(readFileSync(path.join(root, 'REUSE.toml'), 'utf8'));
@@ -111,7 +115,7 @@ for (const [id, url] of Object.entries(LICENSE_URLS)) {
 for (const rel of [...walkMd('_pages'), ...walkMd('_tags'), 'index.md']) {
     const resolved = resolveLicense(annotations, rel);
     if (!resolved.id) {
-        console.error(`unresolved page (omitted): ${rel}`);
+        console.error('unresolved page (omitted): ' + rel);
         continue;
     }
     pages[rel] = {
@@ -172,13 +176,13 @@ for (const rel of ['favicon.ico', 'favicon.svg', 'apple-touch-icon.webp', 'asset
     }
 }
 
-const out = { licenses: {}, pages: {}, assets: {} };
 for (const [id, url] of Object.entries(LICENSE_URLS)) {
     out.licenses[id] = { url };
 }
+
 for (const k of Object.keys(pages).sort()) out.pages[k] = pages[k];
 for (const k of Object.keys(assets).sort()) out.assets[k] = assets[k];
 
 writeFileSync(path.join(root, '_data/rights.json'), JSON.stringify(out, null, 2) + '\n');
-console.error(`omitted unresolved assets (${omitted.length}): ${omitted.sort().join(', ')}`);
-console.error(`pages: ${Object.keys(pages).length}, assets: ${Object.keys(assets).length}`);
+console.error('omitted unresolved assets (' + omitted.length + '): ' + omitted.sort().join(', '));
+console.error('pages: ' + Object.keys(pages).length + ', assets: ' + Object.keys(assets).length);

@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 // Resolve relative to this test file — robust to any cwd.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
-const VALID_CREATION = ['human-created', 'ai-assisted', 'ai-generated', 'third-party', 'unresolved'];
+const VALID_CREATION = ['editorial', 'human-created', 'ai-assisted', 'ai-generated', 'third-party', 'unresolved'];
 
 function renderableSources() {
     const out = [];
@@ -37,8 +37,8 @@ describe('provenance frontmatter on renderable sources', () => {
     const sources = renderableSources();
 
     it('covers every renderable source (_pages incl. go/, _tags, index.md)', () => {
-        // 47 _pages + 22 _tags + 1 index = 70 renderable sources
-        expect(sources.length).toBe(70);
+        // 48 _pages + 22 _tags + 1 index = 71 renderable sources
+        expect(sources.length).toBe(71);
     });
 
     it('every source has a provenance block with editorial fields', () => {

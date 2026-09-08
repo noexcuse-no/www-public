@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ai-transparency.dev/schema/v1.json",
+  "publisher": {
+    "name": "No Excuse AS",
+    "url": "https://noexcuse.no",
+    "contact": "firmapost@noexcuse.no"
+  },
+  "editorial_responsibility": "Dagfinn Bang-Johansen",
+  "contact": "dagfinn@noexcuse.no",
+  "disclosure_statement": "Innhold på dette nettstedet er delvis generert med kunstig intelligens (KI) og gjennomgått av redaksjon. LLM-er brukes kun i støttende og pyntende rolle — spørsmål, analyser og anbefalinger er menneskelig faglabor.",
+  "regulatory_contact": {
+    "name": "Nkom",
+    "url": "https://www.nkom.no/"
+  },
+  "routes": [
+    {
+      "path": "/",
+      "ai_content": "minimal",
+      "editorial_review": true
+    },
+    {
+      "path": "/ledelse-60-2/",
+      "ai_content": "none",
+      "editorial_review": true
+    },
+    {
+      "path": "/om-store-sprakmodeller/",
+      "ai_content": "editorial",
+      "editorial_review": true
+    }
+  ]
+}
