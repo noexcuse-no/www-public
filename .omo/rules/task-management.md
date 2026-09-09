@@ -107,8 +107,31 @@ Before opening a PR, verify locally:
 1. `npm run lint` — 0 errors, 0 warnings
 2. `npm test` — all tests pass (when test framework is operational)
 3. Jekyll build — `docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/srv/jekyll" -w /srv/jekyll -e JEKYLL_ENV=production jekyll/jekyll jekyll build` — exit 0
+4. **Local CI gate** — `npm run ci:local` — all gates PASS (reuse-lint, rights-drift, dependency-review; site-build may SKIP if jekyll unavailable, recorded in evidence)
 
 If any step fails: fix before opening PR. Pre-existing failures outside your changes must be documented in the PR description under "Pre-merge notes".
+
+## Local CI Gate (Mandatory)
+The local CI runner (`scripts/local-ci.mjs`) executes the complete validation stack that would run in CI:
+
+```bash
+npm run ci:local  # writes evidence to .omo/evidence/local-ci-<timestamp>.json
+```
+
+**Gates validated:**
+- `lint` — htmlhint + stylelint + eslint + vitest
+- `reuse-lint` — REUSE/SPDX compliance (clean worktree protocol)
+- `rights-drift` — rights manifest drift check (`npm run rights:check`)
+- `site-build` — Jekyll build + output validation (SKIP if jekyll not installed)
+- `dependency-review` — npm audit high-severity vulnerabilities
+
+**Requirements:**
+- Run `npm run ci:local` before **every** `gh pr create` or PR push
+- All gates must PASS (except `site-build` which may SKIP with documented fallback)
+- Evidence artifact `.omo/evidence/local-ci-*.json` must be referenced in PR description
+- If a gate fails: fix the underlying issue, re-run, confirm PASS before proceeding
+
+This is non-negotiable — no PR is opened without a passing local CI run.
 
 ## PR Preflight
 

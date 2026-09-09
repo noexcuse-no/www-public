@@ -69,6 +69,27 @@ Maps action types to reads/checks/runs/updates. Reference this file directly (no
 - Unresolved → report in `.specs/mixed-rights-licensing/README.md`, never hide behind blanket defaults.
 - Canonical reference: `.specs/mixed-rights-licensing/README.md`.
 
+## Local CI Gate (Mandatory)
+
+**Before creating any PR, the local CI runner MUST pass:**
+
+```bash
+npm run ci:local
+```
+
+This executes the complete validation stack (equivalent to CI):
+- `lint` — htmlhint + stylelint + eslint + vitest
+- `reuse-lint` — REUSE/SPDX compliance (clean worktree protocol)
+- `rights-drift` — rights manifest drift check (`npm run rights:check`)
+- `site-build` — Jekyll build + output validation (SKIP if jekyll unavailable, recorded)
+- `dependency-review` — npm audit high-severity vulnerabilities
+
+**Requirements:**
+- All gates PASS (except `site-build` SKIP with fallback documented)
+- Evidence artifact `.omo/evidence/local-ci-*.json` referenced in PR description
+- If a gate fails: fix, re-run, confirm PASS before `gh pr create`
+- No exceptions — this is the only validation pipeline (GitHub Actions workflow is optional/deferred)
+
 ## Quick Reference
 
 ### On Task Initiation
