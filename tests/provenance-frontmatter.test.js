@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 // Resolve relative to this test file — robust to any cwd.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
-const VALID_CREATION = ['editorial', 'human-created', 'ai-assisted', 'ai-generated', 'third-party', 'unresolved'];
+const VALID_CREATION = ['editorial', 'human-created', 'human', 'ai-assisted', 'ai-generated', 'third-party', 'unresolved'];
 
 function renderableSources() {
     const out = [];
