@@ -123,10 +123,14 @@ function addAsset(rel, creation) {
               : isPhoto
                 ? DIGITAL_SOURCE_TYPES['human-photo']
                 : DIGITAL_SOURCE_TYPES['human-other'];
+    let copyright = resolved.copyright;
+    if (!copyright && resolved.id === 'CC0-1.0') {
+        copyright = 'NONE';
+    }
     assets[rel] = {
         creation,
         spdxId: resolved.id,
-        copyrightText: resolved.copyright,
+        copyrightText: copyright,
         url: LICENSE_URLS[resolved.id],
         digitalSourceType: dst,
     };
