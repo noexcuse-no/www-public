@@ -36,6 +36,8 @@ json_ld:
       - "https://www.linkedin.com/company/noexcuse"
 ---
 
+Store språkmodeller brukes kun i støttende og pyntende roller på noexcuse.no — aldri til analyse eller anbefalinger. [Les mer om vår bruk av KI](/om-store-sprakmodeller/).
+
 ## Hvorfor No Excuse?
 
 No Excuse AS ble grunnlagt i juni 2025. Vi så et behov for å forbedre ledelsesfunksjonen i norske virksomheter uten dyre konsulentrapporter og unødvendig kompleksitet.
