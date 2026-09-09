@@ -149,9 +149,36 @@ The layout provides defaults. IAL is only needed when a specific element differs
 
 ---
 
+> **SUPERSEDED (2026-09-09):** This stance has been replaced by the EU AI Act alignment implementation.
+> See [EU AI Act alignment — updated stance](#eu-ai-act-alignment--updated-stance) below.
+
 ## No Visible AI Label
 
 The editorial exception (Article 50(4) of EU AI Act) applies to `machine_assisted` content — no visual label needed. For `machine_generated` content, the metadata (JSON-LD + RDFa + IPTC) is sufficient. No visible "AI-generert" warning is shown on any page.
+
+---
+
+## EU AI Act Alignment — Updated Stance
+
+The site now implements a layered disclosure approach per EU AI Act Article 50:
+
+1. **Visible disclosure (banner only):** EU basic AI icon inline in the site-wide header banner, with `aria-label` explaining AI use. The phrase "generativ KI" links to `/om-store-sprakmodeller/`. The banner text "går bananas" is preserved verbatim.
+
+2. **Machine-readable per-page provenance:** JSON-LD `@graph` in `<head>` with `WebPage` entry carrying `digitalSourceType` per page `provenance:` frontmatter (`human-created` → `DigitalCreation`, `editorial` → `CompositeWithTrainedAlgorithmicMediaDigitalSource`, `ai-generated` → `TrainedAlgorithmicMediaDigitalSource`).
+
+3. **Machine-readable per-image provenance:** JSON-LD `@graph` includes `ImageObject` entries for AI-generated images only (per `_data/image-provenance.yml` exclude-list). Non-AI images (dagfinn.webp, logos, og-image) are OMITTED from @graph entirely. Each `ImageObject` carries `digitalSourceType: TrainedAlgorithmicMediaDigitalSource` + `license: CC0-1.0` + `contentUrl`.
+
+4. **Inline RDFa on content images:** Client-side `ai-provenance-injector.js` injects `property="schema:digitalSourceType"` + `property="schema:license"` on AI-generated content `<img>` elements. Non-AI images skipped via exclude-list. NO visible badges — RDFa-only.
+
+5. **Transparency manifest:** `/.well-known/ai-transparency.json` with all four `editorialReview.reviewer` fields = "Dagfinn Bang-Johansen", `declarations.text.digitalSourceType = CompositeWithTrainedAlgorithmicMediaDigitalSource`, `images.editorialReview` block (new), `editorial_responsibility: /om-store-sprakmodeller/`, reconciled `routes[]` (30 entries), `images.count` = actual AI-generated count.
+
+6. **Editorial responsibility page:** `/om-store-sprakmodeller/` ("Om KI") documents the limited-use stance, names Dagfinn Bang-Johansen as reviewer, explicitly calls "kunstig intelligens" a misnomer ("store språkmodeller" is correct), states LLMs NEVER used for questions/analysis/recommendations, and does NOT contain "i arbeidet vårt".
+
+7. **No visible per-image badges:** The editorial exception applies to both text AND images (human-reviewed, not deepfakes). Visible per-image badges would over-disclose. Forward-readiness is machine-readable only (JSON-LD @graph + inline RDFa).
+
+8. **HTML prefix declaration:** `<html prefix="schema: https://schema.org/ cc: https://creativecommons.org/ns# iptc: http://cv.iptc.org/newscodes/digitalsourcetype/">` on root element for RDFa resolvability.
+
+9. **Supersession marker:** This document's "No Visible AI Label" section is preserved above with SUPERSEDED marker.
 
 ---
 
