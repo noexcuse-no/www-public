@@ -2,6 +2,7 @@
   Provenance JSON-LD @graph — per-page WebPage + per-image ImageObject entries.
   digitalSourceType per page.provenance frontmatter; per-image from _data/image-provenance.yml.
   Non-AI images (per exclude-list) are OMITTED from @graph entirely.
+  Also emits exclude-list JSON blob for ai-provenance-injector.js runtime consumption.
 {% endcomment %}
 {% assign rights = site.data.rights.pages[page.path] %}
 {% assign prov = page.provenance %}
@@ -39,6 +40,9 @@
   {% assign page_images = page_images | push: page.og_image %}
 {% endif %}
 
+{% comment %} Build exclude-list for ai-provenance-injector.js {% endcomment %}
+{% assign exclude_list = site.data.image-provenance.images | where_exp: "item", "item.ai_generated == false" | map: "path" %}
+
 {% comment %} Build @graph {% endcomment %}
 <script type="application/ld+json">
 {
@@ -71,4 +75,9 @@
     {% endfor %}
   ]
 }
+</script>
+
+{% comment %} Exclude-list JSON blob for ai-provenance-injector.js {% endcomment %}
+<script type="application/json" id="ai-provenance-exclude-list">
+{{ exclude_list | jsonify }}
 </script>
