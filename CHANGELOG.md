@@ -9,6 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+### AI Act alignment (R37/AI1) — KI-lov forward-readiness
+
+#### Added
+- EU basic icon disclosure in banner (`_includes/eu-ai-icon.html` + `aria-label` + "generativ KI" link to `/om-store-sprakmodeller/`), per Article 50 AI Act
+- `/om-store-sprakmodeller/` editorial-responsibility page explaining LLM oversight
+- `ai-provenance-injector.js` — runtime RDFa (`schema:digitalSourceType` + `schema:license`) on AI-generated content images, idempotent, non-AI exclude-list aware
+- `tests/non-ai-exclusion.test.js`, `tests/manifest-validation.test.js`, `tests/banner-verbatim.test.js`, `tests/supersession-marker.test.js` regression suites
+- Footer + `/om-oss/` links to `/om-store-sprakmodeller/`
+
+#### Changed
+- `provenance-jsonld.html` rewritten to emit JSON-LD `@graph` with per-page `WebPage` + per-image `ImageObject` entries; exclude-list blob for non-AI assets
+- `.well-known/ai-transparency.json` reconciled: 4 reviewer fields (Dagfinn Bang-Johansen), `declarations.*` blocks, `editorial_responsibility` → `/om-store-sprakmodeller/`, `regulatory_contact` (Nkom), dynamic `routes[]` from `site.pages`, corrected `images.count` filter (`item.creation`)
+- `provenance:` frontmatter set to `editorial` (human-reviewed) on pages; `<html prefix>` for RDFa resolvability
+- `.design/semantic-metadata.md` "No Visible AI Label" section superseded with EU alignment stance
+- `_includes/scripts.html` now loads the provenance injector after `go-params.js`
+
 ### Added
 - Mixed-rights licensing framework (REUSE/SPDX) with 0BSD for code, CC0-1.0 for AI-generated content, LicenseRef-NoExcuse-All-Rights-Reserved for human-created content
 - REUSE.toml with directory defaults and exact-path entries

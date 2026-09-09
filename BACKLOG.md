@@ -49,6 +49,7 @@ Completed items belong in `CHANGELOG.md` only.
 | BU1 | Button CTA URL uniformity | Done | `.omo/plans/button-cta-url-uniformity.md` — implemented (unified button system in buttons.css, rel=noopener target=_blank on external links, 12 .md files renamed to match permalinks). Record in CHANGELOG. |
 | AE1 | Article element styling | Done | `.omo/plans/article-element-styling.md` — implemented (h4/h5 heading scale, section dividers, blockquote unification, table zebra striping, card hover refinement, metode.css + .info-box deletion). Record in CHANGELOG. |
 | AI1 | AI Act alignment | Pending | `.omo/plans/ai-act-alignment.md` |
+| R37 | AI Act alignment (KI-lov forward-readiness) | Planned | Article 50 disclosure stack: EU basic icon banner label, /om-store-sprakmodeller/ editorial-responsibility page, per-image provenance (@graph + RDFa), non-AI exclude-list, manifest reconciliation. See `.specs/ai-transparency/README.md`. |
 | RI1 | Risk reduction cleanup | Pending | `.omo/plans/risk-reduction-cleanup.md` |
 | CI1 | CI reuse gating flip | Pending | mixed-rights:507 |
 | MR1 | Mixed-rights licensing & provenance | Doing | `.omo/plans/mixed-rights-licensing-provenance.md` — 29 todos, Waves 0–6 (REUSE/SPDX census, provenance metadata, site emission, image pipeline, CI). See `.specs/mixed-rights-licensing/README.md`. |
