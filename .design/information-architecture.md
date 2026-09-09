@@ -34,6 +34,7 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/compliance/` | `_pages/compliance.md` | Topical: Compliance |
 | `/bestill/ledelse-60-2/` | `_pages/bestill_ledelse-60-2.md` | Booking decision page — Ledelse 60:2 (Route A/B) |
 | `/personvern-ki/` | `_pages/personvern_ki.md` | AI privacy transparency page |
+| `/om-store-sprakmodeller/` | `_pages/om-store-sprakmodeller.md` | Om KI — editorial-responsibility page (EU AI Act transparency) |
 | `/foredrag-og-media/` | `_pages/foredrag_og_media.md` | Foredrag og media organizer page |
 | `/gjentatte-diskusjoner/` | `_pages/gjentatte-diskusjoner.md` | Buying situation: gjentatte diskusjoner |
 | `/svak-gjennomforing/` | `_pages/svak-gjennomforing.md` | Buying situation: svak gjennomføring |
@@ -100,6 +101,7 @@ Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningst
 | `/compliance/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om Ledelse 60:2 →" |
 | `/om-oss/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om produktet →" |
 | `/om-oss/` → Booking | `/bestill/ledelse-60-2/` | "Bestill Ledelse 60:2" |
+| `/om-oss/` → How AI is used | `/om-store-sprakmodeller/` | "Les om hvordan vi bruker KI →" |
 | `/ledelse-60-2/` → Booking | `/bestill/ledelse-60-2/` | "Bestill Ledelse 60:2" |
 | `/samtale/` → Booking (Route B) | `/bestill/ledelse-60-2/` | "Book 20 min avklaring" |
 

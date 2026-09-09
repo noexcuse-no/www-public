@@ -634,13 +634,16 @@ Scriptet er idempotent (`-if 'not $DigitalSourceType'` guard) — trygt å kjør
 
 ### AI Transparency Manifest
 
-The image provenance metadata is part of a three-layer AI content disclosure system:
+The image provenance metadata is part of a six-layer AI content disclosure system:
 
 | Layer | File | Scope |
 |-------|------|-------|
-| JSON-LD per page | `_includes/provenance-jsonld.html` | Per-page `digitalSourceType` + CC0 license in `<head>` |
-| Image EXIF metadata | `scripts/apply-provenance.sh` | IPTC/XMP on every WebP image file |
-| Route manifest | `/.well-known/ai-transparency.json` | All 22 site routes with tool attribution + editorial review status |
+| JSON-LD @graph (per-page + per-image) | `_includes/provenance-jsonld.html` | Per-page `digitalSourceType` + per-image `ImageObject` entries for AI-generated images in `<head>`; non-AI images excluded via `_data/image-provenance.yml` exclude-list |
+| Image IPTC/XMP bytes | `scripts/apply-provenance.sh` | IPTC/XMP on every WebP image file, skipping non-AI images in the exclude-list |
+| Transparency manifest | `/.well-known/ai-transparency.json` | All site routes with tool attribution + editorial review status + regulatory contact |
+| EU basic icon visible disclosure | `_includes/header.html` + `_includes/eu-ai-icon.html` | EU AI Act basic icon beside the banner text, linking to the editorial-responsibility page. Banner only — NO image badges |
+| Editorial-responsibility page | `_pages/om-store-sprakmodeller.md` | "Om KI" page documenting limited-use stance, editorial review, EU AI Act Art. 50(4) exception |
+| Per-image machine-readable RDFa | `assets/scripts/ai-provenance-injector.js` | Runtime RDFa injection of `schema:digitalSourceType` on content `<img>` elements (build-time + runtime; no visible badges) |
 
 The manifest at `/.well-known/ai-transparency.json` covers text, images, code, and styles — with per-tool attribution (Claude/GPT-4, EvoLink GPT Image 2) and human editorial review assertions. It's served as a static file by GitHub Pages at the standard `.well-known` path for automated discovery.
 

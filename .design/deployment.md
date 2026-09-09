@@ -48,13 +48,16 @@ There is no GitHub Actions workflow, no manual build step, and no CI/CD configur
 
 ### AI-generated Content Disclosure
 
-The site implements a three-layer AI content provenance system:
+The site implements a six-layer AI content provenance system:
 
 | Layer | File | Purpose |
 |-------|------|---------|
-| JSON-LD metadata | `_includes/provenance-jsonld.html` | Per-page `digitalSourceType` declaration in `<head>` |
-| Image EXIF metadata | `scripts/apply-provenance.sh` | IPTC/XMP metadata on all 186 WebP images (run after image generation) |
-| Transparency manifest | `/.well-known/ai-transparency.json` | Per-route AI scope manifest at standard `.well-known` path |
+| JSON-LD @graph (per-page + per-image) | `_includes/provenance-jsonld.html` | Per-page `digitalSourceType` + per-image `ImageObject` entries in `<head>`; non-AI images excluded via `_data/image-provenance.yml` exclude-list |
+| Image IPTC/XMP bytes | `scripts/apply-provenance.sh` | IPTC/XMP metadata on all WebP images (run after image generation), skipping non-AI images in the exclude-list |
+| Transparency manifest | `/.well-known/ai-transparency.json` | Per-route AI scope manifest at standard `.well-known` path; editorial review status + regulatory contact |
+| EU basic icon visible disclosure | `_includes/header.html` + `_includes/eu-ai-icon.html` | EU AI Act basic icon beside the banner, linking to the editorial-responsibility page. Banner only — NO image badges |
+| Editorial-responsibility page | `_pages/om-store-sprakmodeller.md` | "Om KI" page documenting limited-use stance, editorial review, EU AI Act Art. 50(4) exception |
+| Per-image machine-readable RDFa | `assets/scripts/ai-provenance-injector.js` | Runtime RDFa injection of `schema:digitalSourceType` on content `<img>` elements (no visible badges) |
 
 These files are static and served directly by GitHub Pages — no server-side processing required.
 

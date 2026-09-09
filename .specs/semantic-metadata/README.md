@@ -88,11 +88,11 @@ Two independent metadata layers work together:
 |--------|------|---------|
 | `_data/metadata.yml` | Site-wide Organization info | name, url, logo, foundingDate |
 | `_data/creator.yml` | Publisher / creator | name, orgno, url |
-| `_data/provenance.yml` | Provenance defaults, category->digitalSourceType mapping | `machine_assisted` → `compositeWithTrainedAlgorithmicMedia` |
+| `_data/provenance.yml` | Provenance defaults, category->digitalSourceType mapping | `editorial` → `CompositeWithTrainedAlgorithmicMediaDigitalSource` |
 | `_data/licenses.yml` | License references | cc0: { url, name } |
 | `page.json_ld` frontmatter | Page-specific JSON-LD data | Article type, author, citation |
-| `page.ai_provenance.category` | Per-page provenance (optional — only when known) | `machine_assisted` or `machine_generated` |
-| Hardcoded in include | Per-type defaults | Images always `trainedAlgorithmicMedia` |
+| `page.provenance.creation` | Per-page provenance (optional — only when known) | `human-created` | `editorial` | `ai-generated` | `ai-assisted` | `third-party` | `unresolved` |
+| Hardcoded in include | Per-type defaults | Images always `TrainedAlgorithmicMediaDigitalSource` |
 
 **Output** — One `@graph` array with entries for all asset types present on the page:
 
@@ -114,7 +114,7 @@ Two independent metadata layers work together:
       "name": "Bedre ledelse uten byråkrati",
       "description": "...",
       "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/compositeWithTrainedAlgorithmicMedia",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/CompositeWithTrainedAlgorithmicMediaDigitalSource",
       "mainEntity": {
         "@type": "Article",
         "headline": "...",
@@ -122,14 +122,14 @@ Two independent metadata layers work together:
         "digitalSourceType": "..."
       }
     },
-    /* ImageObject — one per image, all trainedAlgorithmicMedia */
+    /* ImageObject — one per image, all TrainedAlgorithmicMediaDigitalSource */
     { "@type": "ImageObject", "contentUrl": "...", "digitalSourceType": "...", "license": "..." },
     /* SoftwareSourceCode — site CSS/JS */
     {
       "@type": "SoftwareSourceCode",
       "name": "noexcuse.no CSS",
       "description": "AI-assisted CSS for the noexcuse.no website",
-      "digitalSourceType": "http://cv.iptc.org/.../compositeWithTrainedAlgorithmicMedia",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/CompositeWithTrainedAlgorithmicMediaDigitalSource",
       "license": "https://creativecommons.org/publicdomain/zero/1.0/"
     },
     /* BreadcrumbList — from existing breadcrumb-schema.html */
@@ -182,10 +182,10 @@ Two independent metadata layers work together:
 </article>
 
 <!-- _includes/hero.html — hero image -->
-<!-- All images are AI-generated — digitalSourceType is always trainedAlgorithmicMedia -->
+<!-- All images are AI-generated — digitalSourceType is always TrainedAlgorithmicMediaDigitalSource -->
 <section class="hero" typeof="schema:ImageObject">
   <meta property="schema:digitalSourceType"
-        content="http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia">
+        content="http://cv.iptc.org/newscodes/digitalsourcetype/TrainedAlgorithmicMediaDigitalSource">
   <meta property="schema:license"
         content="{{ site.data.licenses.cc0.url }}">
   <img property="schema:contentUrl"
@@ -223,7 +223,7 @@ Applied via `scripts/apply-provenance.sh`. Idempotent (`-if 'not $DigitalSourceT
 ```bash
 exiftool -overwrite_original \
   -if 'not $DigitalSourceType' \
-  -XMP-iptcExt:DigitalSourceType="trainedAlgorithmicMedia" \
+  -XMP-iptcExt:DigitalSourceType="TrainedAlgorithmicMediaDigitalSource" \
   -XMP-iptcExt:AISystemUsed="EvoLink GPT Image 2" \
   -XMP-cc:License="https://creativecommons.org/publicdomain/zero/1.0/" \
   -XMP-dc:rights="No Excuse AS — CC0 1.0 Universal" \
@@ -285,26 +285,49 @@ impressum:
 
 ```yaml
 # AI provenance classification — see .specs/semantic-metadata/README.md
-# Two categories: machine_assisted and machine_generated
+# Categories: human-created, editorial, ai-generated, ai-assisted, third-party, unresolved
 # No default category — digitalSourceType is only rendered when explicitly set
 
 digital_source_types:
-  machine_assisted: "http://cv.iptc.org/newscodes/digitalsourcetype/compositeWithTrainedAlgorithmicMedia"
-  machine_generated: "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia"
+  human-created: "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation"
+  editorial: "http://cv.iptc.org/newscodes/digitalsourcetype/CompositeWithTrainedAlgorithmicMediaDigitalSource"
+  ai-generated: "http://cv.iptc.org/newscodes/digitalsourcetype/TrainedAlgorithmicMediaDigitalSource"
+  ai-assisted: "http://cv.iptc.org/newscodes/digitalsourcetype/CompositeWithTrainedAlgorithmicMediaDigitalSource"
+  third-party: "http://cv.iptc.org/newscodes/digitalsourcetype/ThirdParty"
+  # unresolved: no digitalSourceType
 
 categories:
-  machine_assisted:
-    name: "Maskinassistert"
+  human-created:
+    name: "Menneskeskapt"
+    description: "Menneske har skapt innholdet uten AI-hjelp"
+    applies_to:
+      - text
+      - code
+  editorial:
+    name: "Redaksjonelt formet"
     description: "Menneske har formet output — i loop under skapelsen, signerer på resultatet"
     applies_to:
       - text
       - code
-  machine_generated:
-    name: "Maskingenert"
+  ai-generated:
+    name: "AI-generert"
     description: "Kun innledende menneskelig input (prompt), output ikke formet av menneske"
     applies_to:
       - text
       - images
+  ai-assisted:
+    name: "AI-assistert"
+    description: "Menneske har brukt AI som verktøy, men har formet output"
+    applies_to:
+      - text
+      - code
+  third-party:
+    name: "Tredjepart"
+    description: "Opprinnelig innhold fra tredjepart"
+    applies_to:
+      - text
+      - images
+      - code
 ```
 
 ### `_data/licenses.yml` (new)
@@ -351,8 +374,12 @@ Two mutually exclusive categories for AI-involved content:
 
 | Category | Kriterium | digitalSourceType | AI Act status |
 |---|---|---|---|
-| `machine_assisted` | Menneske i loop under skapelsen, har **formet** output, signerer på resultatet | `compositeWithTrainedAlgorithmicMedia` | Unntak (Art 50(4) — editorial exception) |
-| `machine_generated` | Kun innledende menneskelig input (prompt), output **ikke** formet av menneske | `trainedAlgorithmicMedia` | Merking kreves (metadata, ingen visuell label) |
+| `human-created` | Menneske har skapt innholdet uten AI-hjelp | `DigitalCreation` | Unntak (Art 50(4) — editorial exception) |
+| `editorial` | Menneske har formet output — i loop under skapelsen, signerer på resultatet | `CompositeWithTrainedAlgorithmicMediaDigitalSource` | Unntak (Art 50(4) — editorial exception) |
+| `ai-generated` | Kun innledende menneskelig input (prompt), output **ikke** formet av menneske | `TrainedAlgorithmicMediaDigitalSource` | Merking kreves (metadata, ingen visuell label) |
+| `ai-assisted` | Menneske har brukt AI som verktøy, men har formet output | `CompositeWithTrainedAlgorithmicMediaDigitalSource` | Unntak (Art 50(4) — editorial exception) |
+| `third-party` | Opprinnelig innhold fra tredjepart | Opphavsrettighetshaverens type | Opphavsrettighetshaverens lisens |
+| `unresolved` | Opprinnelse usikker — rapporteres, aldri gjetet | — | Rapporteres åpent |
 
 ### Kriteriet for "forming"
 
@@ -369,24 +396,16 @@ Mennesket må ha gjort mer enn å godkjenne eller avvise:
 ### Frontmatter schema
 
 ```yaml
-ai_provenance:
-  category: machine_assisted          # required when known; machine_assisted or machine_generated
-  classification_by: Rasmus S. Olsen  # required when category is set
-  classification_date: 2026-06-03     # required when category is set (ISO 8601)
-  tool: Claude 3.5 Sonnet             # optional — which tool was used
-  reviewer: Rasmus S. Olsen           # optional — who reviewed/signed off
-  review_date: 2026-06-01             # optional — when reviewed
-  review_type: "Structural edits, fact-checking, sources verified"
+provenance:
+  creation: editorial          # required when known; human-created|editorial|ai-generated|ai-assisted|third-party|unresolved
+  editorial_review: human      # required — always human
+  editorial_responsibility: No Excuse AS  # required — always No Excuse AS
 ```
 
 **Rules:**
-- `category` utelates helt hvis klassifisering ikke er kjent — ingen default-verdi
-- `classification_by` + `classification_date` kreves når `category` er satt
-- `digitalSourceType` rendres **kun** når `category` er eksplisitt satt i frontmatter
-
-### Images (always machine_generated)
-
-Alle 186 WebP-bilder er `machine_generated` (`trainedAlgorithmicMedia`) — de er generert fra prompt uten menneskelig forming av piksler. Dette settes i `scripts/apply-provenance.sh` (IPTC XMP) og hardkodes i JSON-LD-include.
+- `creation` utelates helt hvis klassifisering ikke er kjent — ingen default-verdi
+- `editorial_review: human` og `editorial_responsibility: No Excuse AS` er konstant på publiserbare sider
+- `digitalSourceType` rendres **kun** når `creation` er eksplisitt satt i frontmatter
 
 ---
 
@@ -403,7 +422,7 @@ Dette avsnittet har normal provenance (arver fra layout).
 Dette avsnittet er et unntak med annen digitalSourceType.
 {: property="description"}
 <meta property="digitalSourceType"
-      content="http://cv.iptc.org/.../trainedAlgorithmicMedia">
+      content="http://cv.iptc.org/newscodes/digitalsourcetype/TrainedAlgorithmicMediaDigitalSource">
 ```
 
 **Rules:**
@@ -479,7 +498,7 @@ Single line in footer, low opacity (0.6), small font (0.8em), linking to Om Oss 
 - [ ] `_includes/provenance-jsonld.html` exists and is included in `<head>`
 - [ ] JSON-LD `@graph` contains WebSite, WebPage, all ImageObject(er), SoftwareSourceCode
 - [ ] `digitalSourceType` reflects `page.ai_provenance.category` for text
-- [ ] All images use `trainedAlgorithmicMedia` digitalSourceType
+- [ ] All images use `TrainedAlgorithmicMediaDigitalSource` digitalSourceType
 - [ ] JSON-LD validates with schema.org validator
 
 ### Data files
@@ -490,11 +509,11 @@ Single line in footer, low opacity (0.6), small font (0.8em), linking to Om Oss 
 - [ ] `_data/metadata.yml` updated with org fields
 
 ### Provenance frontmatter
-- [ ] `ai_provenance.category` set **only** when classification is known — never guessed or defaulted
-- [ ] `machine_assisted` and `machine_generated` are the only valid values
-- [ ] `classification_by` (full name) and `classification_date` (ISO 8601) required when category is set
+- [ ] `provenance.creation` set **only** when classification is known — never guessed or defaulted
+- [ ] `human-created`, `editorial`, `ai-generated`, `ai-assisted`, `third-party`, `unresolved` are the only valid values
+- [ ] `editorial_review` (human) and `editorial_responsibility` (No Excuse AS) required when creation is set
 - [ ] Tools referenced exist in `_data/ai_tools.yml`
-- [ ] `digitalSourceType` is omitted from RDFa/JSON-LD when no `ai_provenance.category` is set
+- [ ] `digitalSourceType` is omitted from RDFa/JSON-LD when no `provenance.creation` is set
 
 ### CC0 declarations
 - [ ] `<link rel="license">` in `<head>` on all pages
@@ -502,7 +521,7 @@ Single line in footer, low opacity (0.6), small font (0.8em), linking to Om Oss 
 - [ ] JSON-LD `license` property on all assets
 
 ### Image metadata
-- [ ] All 186 WebP files have IPTC `DigitalSourceType` set to `trainedAlgorithmicMedia`
+- [ ] All 186 WebP files have IPTC `DigitalSourceType` set to `TrainedAlgorithmicMediaDigitalSource`
 - [ ] All 186 WebP files have CC0 XMP license metadata
 - [ ] `scripts/apply-provenance.sh` exists and is idempotent
 
@@ -544,12 +563,12 @@ Single line in footer, low opacity (0.6), small font (0.8em), linking to Om Oss 
 
 ## Existing Standards — Mapping
 
-| Standard | Our `machine_assisted` | Our `machine_generated` |
-|---|---|---|
-| IPTC Digital Source Type | `CompositeWithTrainedAlgorithmicMedia` | `TrainedAlgorithmicMedia` |
-| EU AI Act Code of Practice (1st draft) | "AI-assisted" | "Fully AI-generated" |
-| W3C AI Disclosure CG | `ai-assisted` | `ai-generated` |
-| schema.org `digitalSourceType` | Composite URI | TrainedAlgorithmicMedia URI |
-| declare-ai.org | `non-creative` | `total` |
+| Standard | Our `human-created` | Our `editorial` | Our `ai-generated` | Our `ai-assisted` |
+|---|---|---|---|---|
+| IPTC Digital Source Type | `DigitalCreation` | `CompositeWithTrainedAlgorithmicMedia` | `TrainedAlgorithmicMedia` | `CompositeWithTrainedAlgorithmicMedia` |
+| EU AI Act Code of Practice (1st draft) | "Human-authored" | "AI-assisted" | "Fully AI-generated" | "AI-assisted" |
+| W3C AI Disclosure CG | `ai-assisted` | `ai-assisted` | `ai-generated` | `ai-assisted` |
+| schema.org `digitalSourceType` | DigitalCreation URI | Composite URI | TrainedAlgorithmicMedia URI | Composite URI |
+| declare-ai.org | `non-creative` | `non-creative` | `total` | `non-creative` |
 
 Our framework is stricter than all existing standards: we require active *shaping* of output, not just review or oversight.
