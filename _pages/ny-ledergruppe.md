@@ -1,6 +1,6 @@
 ---
 provenance:
-  creation: ai-assisted
+  creation: editorial
   editorial_review: human
   editorial_responsibility: No Excuse AS
 class: buying-situation
