@@ -304,3 +304,11 @@ assets:
     creation: human-created
     license: LicenseRef-NoExcuse-All-Rights-Reserved
     note: "brand logo source (trademark carve-out in LICENSE)"
+  - path: assets/images/ai-icons/eu-ai-basic-black.svg
+    creation: third-party
+    license: LicenseRef-EU-AI-Basic-Icon
+    note: "EU official basic AI icon (black) — https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content"
+  - path: assets/images/ai-icons/eu-ai-basic-white.svg
+    creation: third-party
+    license: LicenseRef-EU-AI-Basic-Icon
+    note: "EU official basic AI icon (white) — https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content"

@@ -369,3 +369,12 @@ SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
 [[annotations]]
 path = ".design/graphics/originals/noexcuse-logo-light.svg"
 SPDX-License-Identifier = "LicenseRef-NoExcuse-All-Rights-Reserved"
+
+# Third-party EU official AI icons (basic variant)
+[[annotations]]
+path = "assets/images/ai-icons/eu-ai-basic-black.svg"
+SPDX-License-Identifier = "LicenseRef-EU-AI-Basic-Icon"
+
+[[annotations]]
+path = "assets/images/ai-icons/eu-ai-basic-white.svg"
+SPDX-License-Identifier = "LicenseRef-EU-AI-Basic-Icon"

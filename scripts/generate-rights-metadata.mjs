@@ -18,6 +18,7 @@ const root = path.resolve(__dirname, '..');
 const LICENSE_URLS = {
     'CC0-1.0': 'https://creativecommons.org/publicdomain/zero/1.0/',
     'LicenseRef-NoExcuse-All-Rights-Reserved': 'https://noexcuse.no/rettigheter/#proprietary',
+    'LicenseRef-EU-AI-Basic-Icon': 'https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content',
 };
 
 const DIGITAL_SOURCE_TYPES = {
@@ -34,23 +35,25 @@ const byPath = new Map(registry.assets.map((e) => [e.path, e]));
 const defaultFor = (f) => registry.defaults.find((d) => f.startsWith(d.path)) || null;
 
 function resolveLicense(annotations, relPath) {
+    let hit = null;
     for (const ann of annotations) {
         const paths = Array.isArray(ann.path) ? ann.path : [ann.path];
         for (const p of paths) {
             const pattern = p.replace('*', '');
             if (relPath === p || relPath.startsWith(pattern) || (p.includes('*') && matchGlob(relPath, p))) {
-                let copyright = ann['SPDX-CopyrightText'] || ann['spdx-copyright'] || ann.copyright;
-                if (!copyright && ann['SPDX-License-Identifier'] === 'LicenseRef-NoExcuse-All-Rights-Reserved') {
-                    copyright = '2026 No Excuse AS';
-                }
-                return {
-                    id: ann['SPDX-License-Identifier'] || ann['spdx-license'] || ann.license,
-                    copyright,
-                };
+                hit = ann;
             }
         }
     }
-    return { id: null, copyright: null };
+    if (!hit) return { id: null, copyright: null };
+    let copyright = hit['SPDX-CopyrightText'] || hit['spdx-copyright'] || hit.copyright || null;
+    if (!copyright && hit['SPDX-License-Identifier'] === 'LicenseRef-NoExcuse-All-Rights-Reserved') {
+        copyright = '2026 No Excuse AS';
+    }
+    return {
+        id: hit['SPDX-License-Identifier'] || hit['spdx-license'] || hit.license,
+        copyright,
+    };
 }
 
 function matchGlob(str, pattern) {

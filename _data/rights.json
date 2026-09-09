@@ -5,6 +5,9 @@
     },
     "LicenseRef-NoExcuse-All-Rights-Reserved": {
       "url": "https://noexcuse.no/rettigheter/#proprietary"
+    },
+    "LicenseRef-EU-AI-Basic-Icon": {
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content"
     }
   },
   "pages": {
@@ -825,6 +828,20 @@
       "spdxId": "LicenseRef-NoExcuse-All-Rights-Reserved",
       "copyrightText": "2026 No Excuse AS",
       "url": "https://noexcuse.no/rettigheter/#proprietary",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation"
+    },
+    "assets/images/ai-icons/eu-ai-basic-black.svg": {
+      "creation": "third-party",
+      "spdxId": "LicenseRef-EU-AI-Basic-Icon",
+      "copyrightText": null,
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation"
+    },
+    "assets/images/ai-icons/eu-ai-basic-white.svg": {
+      "creation": "third-party",
+      "spdxId": "LicenseRef-EU-AI-Basic-Icon",
+      "copyrightText": null,
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content",
       "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation"
     },
     "assets/images/banners/avtale-t4-paragraf-1.webp": {
