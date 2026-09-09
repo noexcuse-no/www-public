@@ -69,7 +69,7 @@ permalink: /.well-known/ai-transparency.json
     {
       "path": "{{ page.url | relative_url }}",
       "ai_content": "{{ ai_content }}",
-      "editorial_review": {{ prov.editorial_review | default: true }}
+      "editorial_review": {{ prov.editorial_review | default: true | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {% endif %}
 {% endfor %}
