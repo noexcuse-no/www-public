@@ -1,5 +1,8 @@
+---
+layout: none
+permalink: /.well-known/ai-transparency.json
+---
 {
-  "$schema": "https://ai-transparency.dev/schema/v1.json",
   "publisher": {
     "name": "No Excuse AS",
     "url": "https://noexcuse.no",
@@ -13,20 +16,30 @@
     "url": "https://www.nkom.no/"
   },
   "routes": [
+{% assign rights_pages = site.data.rights.pages %}
+{% assign all_pages = site.pages | concat: site.tags %}
+{% for page in all_pages %}
+  {% if page.path and page.path ends_with: ".md" or page.path == "index.md" %}
+    {% assign prov = page.provenance %}
+    {% assign page_rights = rights_pages[page.path] %}
+    {% assign ai_content = "none" %}
+    {% if prov.creation == "ai-generated" %}
+      {% assign ai_content = "full" %}
+    {% elsif prov.creation == "ai-assisted" %}
+      {% assign ai_content = "editorial" %}
+    {% elsif prov.creation == "unresolved" %}
+      {% assign ai_content = "unknown" %}
+    {% elsif prov.creation == "third-party" %}
+      {% assign ai_content = "third-party" %}
+    {% else %}
+      {% assign ai_content = "minimal" %}
+    {% endif %}
     {
-      "path": "/",
-      "ai_content": "minimal",
-      "editorial_review": true
-    },
-    {
-      "path": "/ledelse-60-2/",
-      "ai_content": "none",
-      "editorial_review": true
-    },
-    {
-      "path": "/om-store-sprakmodeller/",
-      "ai_content": "editorial",
-      "editorial_review": true
-    }
+      "path": "{{ page.url | relative_url }}",
+      "ai_content": "{{ ai_content }}",
+      "editorial_review": {{ prov.editorial_review | default: true }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endif %}
+{% endfor %}
   ]
 }

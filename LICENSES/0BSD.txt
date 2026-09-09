@@ -1,4 +1,6 @@
-Copyright (C) YEAR by AUTHOR EMAIL
+BSD Zero Clause License
+
+Copyright (c) 2006-2024 by the SPDX authors and contributors
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
 

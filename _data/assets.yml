@@ -24,17 +24,10 @@ assets:
     license: LicenseRef-NoExcuse-All-Rights-Reserved
     note: "brand logo (trademark carve-out in LICENSE)"
   - path: assets/images/og-image.webp
-    creation: unresolved
-    license: unresolved
-    note: "no prompt documentation, no photo evidence — reported unresolved"
-  - path: assets/images/ai-icons/eu-ai-basic-black.svg
-    creation: third-party
-    license: unresolved
-    note: "© European Commission, free for Article 50 labeling; no SPDX identifier — reported unresolved"
-  - path: assets/images/ai-icons/eu-ai-basic-white.svg
-    creation: third-party
-    license: unresolved
-    note: "© European Commission, free for Article 50 labeling; no SPDX identifier — reported unresolved"
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI-generated banner"
+  
   - path: assets/avtale.pdf
     creation: human-created
     license: LicenseRef-NoExcuse-All-Rights-Reserved
@@ -115,3 +108,199 @@ assets:
     creation: ai-generated
     license: CC0-1.0
     note: "AI original"
+  - path: .design/graphics/originals/apple-touch-icon.png
+    creation: human-created
+    license: LicenseRef-NoExcuse-All-Rights-Reserved
+    note: "brand icon source (2025)"
+  - path: .design/graphics/originals/assets/images/banners/banner-om-oss.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/benefit-ai.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/benefit-anchoring.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/benefit-control.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/benefit-future.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/frame-human.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/frame-political.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/frame-structure.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/frame-symbol.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-cta.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-identitet-cta.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-identitet-hovedelementer.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-identitet-utfordringer.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-mennesker-cta.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-mennesker-hovedelementer.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-mennesker-utfordringer.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-påvirkning-cta.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-påvirkning-hovedelementer.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-påvirkning-utfordringer.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-struktur-cta.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-struktur-hovedelementer.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/illustrasjon-struktur-utfordringer.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/perspektiv-identitet.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/perspektiv-mennesker.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/perspektiv-påvirkning.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/perspektiv-struktur.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/science-foundation.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/science-research.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/step-interview.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/step-report.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/banners/step-talk.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/dagfinn.png
+    creation: human-created
+    license: LicenseRef-NoExcuse-All-Rights-Reserved
+    note: "commissioned team portrait source"
+  - path: .design/graphics/originals/assets/images/hero-illustration.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/icons/benefit-ai.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/icons/benefit-anchoring.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/icons/benefit-control.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/icons/benefit-future.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/icons/step-interview.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/icons/step-report.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/icons/step-talk.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/assets/images/noexcuse-logo-azure.png
+    creation: human-created
+    license: LicenseRef-NoExcuse-All-Rights-Reserved
+    note: "brand logo source (trademark carve-out in LICENSE)"
+  - path: .design/graphics/originals/assets/images/noexcuse-logo-horizontal.png
+    creation: human-created
+    license: LicenseRef-NoExcuse-All-Rights-Reserved
+    note: "brand logo source (trademark carve-out in LICENSE)"
+  - path: .design/graphics/originals/assets/images/og-image.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/banners/banner-verdier.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/banners/grc-t2-four-perspectives-grc.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/banners/grc-t2-ledelse60-2-grc-enabler.png
+    creation: ai-generated
+    license: CC0-1.0
+    note: "AI original"
+  - path: .design/graphics/originals/noexcuse-logo-dark.svg
+    creation: human-created
+    license: LicenseRef-NoExcuse-All-Rights-Reserved
+    note: "brand logo source (trademark carve-out in LICENSE)"
+  - path: .design/graphics/originals/noexcuse-logo-light.svg
+    creation: human-created
+    license: LicenseRef-NoExcuse-All-Rights-Reserved
+    note: "brand logo source (trademark carve-out in LICENSE)"

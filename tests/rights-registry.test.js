@@ -11,11 +11,14 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const VALID_CREATION = ['human-created', 'ai-assisted', 'ai-generated', 'third-party', 'unresolved'];
 const EXPECTED_DEFAULTS = ['assets/images/banners/', 'assets/images/icons/'];
 
+function matchGlob(str, pattern) {
+    const regex = '^' + pattern.replace(/\*/g, '.*').replace(/\?/g, '.') + '$';
+    return new RegExp(regex).test(str);
+}
+
 function matches(pattern, file) {
-    if (pattern.endsWith('/**')) {
-        return file.startsWith(pattern.slice(0, -3));
-    }
-    return file === pattern;
+    const p = pattern.replace('*', '');
+    return file === pattern || file.startsWith(p) || (pattern.includes('*') && matchGlob(file, pattern));
 }
 
 // Resolve the REUSE license for a file: sidecar beats annotations,
@@ -24,8 +27,6 @@ function resolveLicense(annotations, file) {
     const sidecar = path.join(root, file + '.license');
     if (existsSync(sidecar)) {
         const text = readFileSync(sidecar, 'utf8');
-        // Keys assembled by concatenation so this file's own source is not
-        // misread as carrying SPDX snippet tags (REUSE snippet detection).
         const idKey = 'SPDX-License-' + 'Identifier:';
         const crKey = 'SPDX-File' + 'CopyrightText:';
         const id = (text.match(new RegExp('^' + idKey + '\\s*(\\S+)\\s*$', 'm')) || [])[1];
@@ -37,7 +38,8 @@ function resolveLicense(annotations, file) {
     for (const table of annotations) {
         const paths = Array.isArray(table.path) ? table.path : [table.path];
         for (const p of paths) {
-            if (matches(p, file)) {
+            const pattern = p.replace('*', '');
+            if (file === p || file.startsWith(pattern) || (p.includes('*') && matchGlob(file, p))) {
                 hit = table;
                 hitPattern = p;
             }

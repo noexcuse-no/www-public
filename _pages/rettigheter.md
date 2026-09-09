@@ -4,7 +4,7 @@ layout: article
 title: "Rettigheter og lisensiering"
 permalink: /rettigheter/
 provenance:
-  creation: editorial
+  creation: human-created
   editorial_review: human
   editorial_responsibility: No Excuse AS
 ---

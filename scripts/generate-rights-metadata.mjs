@@ -1,14 +1,19 @@
-// Generates _data/rights.json from REUSE.toml + .license sidecars + _data/assets.yml.
-// Resolution mirrors the official REUSE tool exactly:
-// sidecar beats annotations; last matching annotation in file wins.
-// Output is deterministic (sorted keys, stable serialization, no timestamp).
+#!/usr/bin/env node
+/**
+ * Generates _data/rights.json from REUSE.toml + .license sidecars + _data/assets.yml.
+ * Resolution mirrors the official REUSE tool exactly:
+ * sidecar beats annotations; last matching annotation in file wins.
+ * Output is deterministic (sorted keys, stable serialization, no timestamp).
+ */
 import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse as parseToml } from 'smol-toml';
 import YAML from 'yaml';
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const root = path.resolve(__dirname, '..');
 
 const LICENSE_URLS = {
     'CC0-1.0': 'https://creativecommons.org/publicdomain/zero/1.0/',
@@ -22,50 +27,35 @@ const DIGITAL_SOURCE_TYPES = {
     'human-other': 'http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation',
 };
 
-function toRegExp(src) {
-    let flags = '';
-    if (src.startsWith('(?i)')) {
-        src = src.slice(4);
-        flags = 'i';
+const reuse = parseToml(readFileSync(path.join(root, 'REUSE.toml'), 'utf8'));
+const annotations = reuse.annotations || [];
+const registry = YAML.parse(readFileSync(path.join(root, '_data/assets.yml'), 'utf8'));
+const byPath = new Map(registry.assets.map((e) => [e.path, e]));
+const defaultFor = (f) => registry.defaults.find((d) => f.startsWith(d.path)) || null;
+
+function resolveLicense(annotations, relPath) {
+    for (const ann of annotations) {
+        const paths = Array.isArray(ann.path) ? ann.path : [ann.path];
+        for (const p of paths) {
+            const pattern = p.replace('*', '');
+            if (relPath === p || relPath.startsWith(pattern) || (p.includes('*') && matchGlob(relPath, p))) {
+                let copyright = ann['SPDX-CopyrightText'] || ann['spdx-copyright'] || ann.copyright;
+                if (!copyright && ann['SPDX-License-Identifier'] === 'LicenseRef-NoExcuse-All-Rights-Reserved') {
+                    copyright = '2026 No Excuse AS';
+                }
+                return {
+                    id: ann['SPDX-License-Identifier'] || ann['spdx-license'] || ann.license,
+                    copyright,
+                };
+            }
+        }
     }
-    return new RegExp(src, flags);
+    return { id: null, copyright: null };
 }
 
-export function loadConfig() {
-    const rulesDoc = JSON.parse(readFileSync(path.join(root, 'scripts/sensitivity-rules.json'), 'utf8'));
-    const allowDoc = JSON.parse(readFileSync(path.join(root, 'scripts/sensitivity-allowlist.json'), 'utf8'));
-    const rules = rulesDoc.rules.map((r) => ({
-        id: r.id,
-        reason: r.reason,
-        any: (r.any || []).map(toRegExp),
-        all: (r.all || []).map(toRegExp),
-        paths: (r.paths || []).map(toRegExp),
-    });
-    const allowlist = new Set((allowDoc.entries || []).map((e) => e.ruleId + '|' + e.path));
-    return { rules, allowlist };
-}
-    let flags = '';
-    if (src.startsWith('(?i)')) {
-        src = src.slice(4);
-        flags = 'i';
-    }
-    return new RegExp(src, flags);
-}
-
-export function loadConfig() {
-    const rulesDoc = JSON.parse(readFileSync(path.join(root, 'scripts/sensitivity-rules.json'), 'utf8'));
-    const allowDoc = JSON.parse(readFileSync(path.join(root, 'scripts/sensitivity-allowlist.json'), 'utf8'));
-    const rules = rulesDoc.rules.map((r) => ({
-        id: r.id,
-        reason: r.reason,
-        any: (r.any || []).map(toRegExp),
-        all: (r.all || []).map(toRegExp),
-        paths: (r.paths || []).map(toRegExp),
-    });
-    const allowlist = new Set((allowDoc.entries || []).map((e) => e.ruleId + '|' + e.path));
-    return { rules, allowlist };
-}
-    return path.relative(ROOT, abs).split(path.sep).join('/');
+function matchGlob(str, pattern) {
+    const regex = '^' + pattern.replace(/\*/g, '.*').replace(/\?/g, '.') + '$';
+    return new RegExp(regex).test(str);
 }
 
 function walkMd(dir) {
@@ -75,7 +65,7 @@ function walkMd(dir) {
             const rel = path.join(d, entry.name);
             if (entry.isDirectory()) {
                 walk(rel);
-            } else if (!rel.endsWith('.license')) {
+            } else if (entry.name.endsWith('.md') && !rel.endsWith('.license')) {
                 mdFiles.push(rel.split(path.sep).join('/'));
             }
         }
@@ -100,36 +90,17 @@ function walkFiles(dir) {
     return out;
 }
 
-const reuse = parseToml(readFileSync(path.join(root, 'REUSE.toml'), 'utf8'));
-const annotations = reuse.annotations || [];
-const registry = YAML.parse(readFileSync(path.join(root, '_data/assets.yml'), 'utf8'));
-const byPath = new Map(registry.assets.map((e) => [e.path, e]));
-const defaultFor = (f) => registry.defaults.find((d) => f.startsWith(d.path)) || null;
-
 const out = { licenses: {}, pages: {}, assets: {} };
 for (const [id, url] of Object.entries(LICENSE_URLS)) {
     out.licenses[id] = { url };
 }
 
-// Pages: every renderable source (_pages incl. go/, _tags, index.md).
-for (const rel of [...walkMd('_pages'), ...walkMd('_tags'), 'index.md']) {
-    const resolved = resolveLicense(annotations, rel);
-    if (!resolved.id) {
-        console.error('unresolved page (omitted): ' + rel);
-        continue;
-    }
-    pages[rel] = {
-        spdxId: resolved.id,
-        copyrightText: resolved.copyright,
-        url: LICENSE_URLS[resolved.id],
-    };
-}
-
-// Assets: defaults expanded + explicit entries.
+const pages = {};
 const assets = {};
 const omitted = [];
 const seen = new Set();
-const addAsset = (rel, creation) => {
+
+function addAsset(rel, creation) {
     if (seen.has(rel)) return;
     seen.add(rel);
     const entry = byPath.get(rel);
@@ -159,7 +130,20 @@ const addAsset = (rel, creation) => {
         url: LICENSE_URLS[resolved.id],
         digitalSourceType: dst,
     };
-};
+}
+
+for (const rel of [...walkMd('_pages'), ...walkMd('_tags'), 'index.md']) {
+    const resolved = resolveLicense(annotations, rel);
+    if (!resolved.id) {
+        console.error('unresolved page (omitted): ' + rel);
+        continue;
+    }
+    pages[rel] = {
+        spdxId: resolved.id,
+        copyrightText: resolved.copyright,
+        url: LICENSE_URLS[resolved.id],
+    };
+}
 
 for (const d of registry.defaults) {
     for (const f of walkFiles(d.path)) {
@@ -174,10 +158,6 @@ for (const rel of ['favicon.ico', 'favicon.svg', 'apple-touch-icon.webp', 'asset
         const entry = byPath.get(rel);
         addAsset(rel, entry ? entry.creation : 'human-created');
     }
-}
-
-for (const [id, url] of Object.entries(LICENSE_URLS)) {
-    out.licenses[id] = { url };
 }
 
 for (const k of Object.keys(pages).sort()) out.pages[k] = pages[k];
