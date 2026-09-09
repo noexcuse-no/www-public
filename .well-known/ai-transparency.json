@@ -3,6 +3,7 @@ layout: none
 permalink: /.well-known/ai-transparency.json
 ---
 {
+  "$schema": "https://ai-transparency.dev/schema/v1.json",
   "publisher": {
     "name": "No Excuse AS",
     "url": "https://noexcuse.no",
@@ -10,16 +11,48 @@ permalink: /.well-known/ai-transparency.json
   },
   "editorial_responsibility": "Dagfinn Bang-Johansen",
   "contact": "dagfinn@noexcuse.no",
-  "disclosure_statement": "Innhold på dette nettstedet er delvis generert med kunstig intelligens (KI) og gjennomgått av redaksjon. LLM-er brukes kun i støttende og pyntende rolle — spørsmål, analyser og anbefalinger er menneskelig faglabor.",
+  "disclosure_statement": "Innhold på dette nettstedet er delvis generert med kunstig intelligens (KI) og gjennomgått av redaksjon. LLM-er brukes kun i støttende og pyntende rolle — spørsmål, analyser og anbefalinger er menneskelig faglabor. Vi bruker termen 'kunstig intelligens (KI)' som et felles uttrykk; det teknisk korrekte begrepet er 'store språkmodeller'.",
   "regulatory_contact": {
     "name": "Nkom",
     "url": "https://www.nkom.no/"
   },
+  "declarations": {
+    "text": {
+      "digitalSourceType": "CompositeWithTrainedAlgorithmicMediaDigitalSource",
+      "editorialReview": {
+        "reviewer": "Dagfinn Bang-Johansen",
+        "status": "human-reviewed"
+      }
+    },
+    "code": {
+      "digitalSourceType": "CompositeWithTrainedAlgorithmicMediaDigitalSource",
+      "editorialReview": {
+        "reviewer": "Dagfinn Bang-Johansen",
+        "status": "human-reviewed"
+      }
+    },
+    "styles": {
+      "digitalSourceType": "CompositeWithTrainedAlgorithmicMediaDigitalSource",
+      "editorialReview": {
+        "reviewer": "Dagfinn Bang-Johansen",
+        "status": "human-reviewed"
+      }
+    },
+    "images": {
+      "digitalSourceType": "TrainedAlgorithmicMediaDigitalSource",
+      "editorialReview": {
+        "reviewer": "Dagfinn Bang-Johansen",
+        "status": "human-reviewed"
+      },
+      "count": {{ site.data.rights.assets | where_exp: "item", "item.value.creation == 'ai-generated'" | size }}
+    }
+  },
+  "editorial_responsibility": "/om-store-sprakmodeller/",
   "routes": [
 {% assign rights_pages = site.data.rights.pages %}
 {% assign all_pages = site.pages | concat: site.tags %}
 {% for page in all_pages %}
-  {% if page.path and page.path ends_with: ".md" or page.path == "index.md" %}
+  {% if page.path and (page.path ends_with: ".md" or page.path == "index.md") %}
     {% assign prov = page.provenance %}
     {% assign page_rights = rights_pages[page.path] %}
     {% assign ai_content = "none" %}
