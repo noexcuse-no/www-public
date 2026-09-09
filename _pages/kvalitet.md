@@ -37,6 +37,8 @@ cta:
     url: "/kvalitet/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ## Kvalitet handler om mer enn ISO 9001
 
 ISO 9001 er verdens mest brukte kvalitetsstyringssystem. De fleste norske virksomheter har en eller annen form for kvalitetssystem — men langt fra alle opplever at det faktisk gjør organisasjonen bedre.

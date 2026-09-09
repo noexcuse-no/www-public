@@ -45,7 +45,7 @@ describe('.well-known/ai-transparency.json', () => {
 
   it('routes block generates from site.pages filtered to .md paths', () => {
     expect(manifest).toContain('site.pages | concat: site.tags');
-    expect(manifest).toContain('page.path ends_with: ".md" or page.path == "index.md"');
+    expect(manifest).toContain('page.path contains ".md"');
   });
 
   it('required routes resolve from actual pages on disk; count = pages + 1 (index.md)', () => {

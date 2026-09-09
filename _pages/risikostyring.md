@@ -51,6 +51,8 @@ cta:
     url: "/risikostyring/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ## Risikostyring er mer enn årlige kartlegginger
 
 De fleste organisasjoner har et system for risikostyring. En årlig kartlegging, en risikomatrise, noen sannsynlighetsvurderinger og en rapport til styret. Problemet er at risiko ikke oppfører seg etter årssyklusen.

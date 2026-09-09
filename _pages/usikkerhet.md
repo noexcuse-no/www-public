@@ -65,6 +65,8 @@ cta:
     url: "/usikkerhet/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.
 
 ## Hva er organisasjonskultur egentlig?

@@ -65,6 +65,8 @@ cta:
     url: "/forankring/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ## Hvorfor ledere ofte tar dårlige beslutninger
 
 Jeffrey Pfeffer har brukt karrieren sin på å dokumentere gapet mellom hvordan organisasjoner hevder beslutninger tas, og hvordan de faktisk tas. I «Power: Why Some People Have It — and Others Don't» viser han at [makt og politikk](/makt/) spiller en langt større rolle enn de fleste er villige til å innrømme.

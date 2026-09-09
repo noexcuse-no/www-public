@@ -57,6 +57,8 @@ cta:
     url: "/generativ-ki/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ## Lederbristen i KI-æraen
 
 KI-adopsjonen går raskere enn KI-ledelseskompetansen. Overalt hører vi om nye verktøy — ChatGPT, Midjourney, Claude — men nesten ingen snakker om hvordan lede menneskene som bruker dem. Spørsmålet er ikke lenger «skal vi bruke KI?» — det er «hvordan leder vi folk som styrer KI-modeller?»

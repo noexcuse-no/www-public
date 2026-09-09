@@ -39,6 +39,8 @@ cta:
     url: "/baerekraft/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ## Bærekraftsarbeid er mer enn rapportering
 
 Miljøfyrtårn, ISO 45001 (HMS), CSRD, FNs Global Compact — listen over standarder og rapporteringskrav for bærekraft og samfunnsansvar blir lengre for hvert år. Mange virksomheter oppfyller kravene på papiret, men erfaringen viser at rapportering alene sjelden fører til reell endring.

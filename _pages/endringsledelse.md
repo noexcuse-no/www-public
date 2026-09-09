@@ -59,6 +59,8 @@ cta:
     url: "/endringsledelse/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ## Hvorfor endringsledelse er vanskeligere enn det ser ut til
 
 John Kotter, en av verdens mest siterte forskere på endringsledelse, slo fast i Harvard Business Review i 1995 at over 70% av alle større endringsinitiativ feiler. Tretti år senere er tallet ikke vesentlig bedre.

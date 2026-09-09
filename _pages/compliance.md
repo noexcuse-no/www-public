@@ -39,6 +39,8 @@ cta:
     url: "/compliance/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ## Compliance er mer enn å unngå bøter
 
 Compliance — samsvarsstyring — handler ofte om å unngå sanksjoner, bøter eller omdømmetap. Det er forståelig, men utilstrekkelig. Organisasjoner som driver compliance utelukkende fra et risikoperspektiv, oppdager for sent at papiroverholdelse ikke er det samme som reell etterlevelse.

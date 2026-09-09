@@ -38,6 +38,8 @@ cta:
     url: "/informasjonssikkerhet/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ## Informasjonssikkerhet er et ledelsesproblem
 
 ISO 27001, DORA, NIS2, NORMEN, NSM Grunnprinsipper, GDPR — listen over krav til informasjonssikkerhet blir lengre for hvert år. Mange virksomheter oppfyller kravene på papiret, men oppdager for sent at sikkerhetskulturen ikke sitter i veggene.

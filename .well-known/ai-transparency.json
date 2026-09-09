@@ -51,7 +51,7 @@ permalink: /.well-known/ai-transparency.json
 {% assign rights_pages = site.data.rights.pages %}
 {% assign all_pages = site.pages | concat: site.tags %}
 {% for page in all_pages %}
-  {% if page.path and (page.path ends_with: ".md" or page.path == "index.md") %}
+  {% if page.path and page.path contains ".md" %}
     {% assign prov = page.provenance %}
     {% assign page_rights = rights_pages[page.path] %}
     {% assign ai_content = "none" %}

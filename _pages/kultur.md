@@ -65,6 +65,8 @@ cta:
     url: "/kultur/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ![Illustrasjon som viser organisasjonskultur som røttene til et tre — det usynlige som former det synlige](/assets/images/banners/kultur-t1-hero.webp)
 
 ## Hva er organisasjonskultur egentlig?

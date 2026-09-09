@@ -102,6 +102,8 @@ cta:
     url: "/tillit/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
+---
+
 ## Hvorfor tillit er ledelsens valuta
 
 Tenk på de beste teamene du har jobbet med. Hva var annerledes der? Sannsynligvis ikke at de hadde bedre verktøy eller flere møter. Det var sannsynligvis måten folk snakket til hverandre — ærlig, direkte, uten frykt for konsekvensene.
