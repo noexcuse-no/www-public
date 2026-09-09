@@ -20,25 +20,40 @@
   {% assign page_dst = "ThirdParty" %}
 {% endif %}
 
-{% comment %} Discover images on this page {% endcomment %}
+{% comment %} Discover images on this page — normalized to registry form (no leading slash) so
+   the exclude-list match and | uniq dedup both work.
+   NOTE: Liquid 4.0.4 has no string indexing; the first-character compare must be done
+   via capture + slice. A bare filter-chain equality inside an if-tag mis-parses, and
+   remove_first: "/" removes the first slash ANYWHERE — so strip only when the captured
+   first char is "/". {% endcomment %}
 {% assign page_images = "" | split: "," %}
 {% if page.hero and page.hero.image %}
-  {% assign page_images = page_images | push: page.hero.image %}
+  {% assign img = page.hero.image %}
+  {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
+  {% assign page_images = page_images | push: img %}
 {% endif %}
 {% if page.banner %}
-  {% assign page_images = page_images | push: page.banner %}
+  {% assign img = page.banner %}
+  {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
+  {% assign page_images = page_images | push: img %}
 {% endif %}
 {% if page.image %}
-  {% assign page_images = page_images | push: page.image %}
+  {% assign img = page.image %}
+  {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
+  {% assign page_images = page_images | push: img %}
 {% endif %}
 {% if page.images %}
   {% for img in page.images %}
+    {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
     {% assign page_images = page_images | push: img %}
   {% endfor %}
 {% endif %}
 {% if page.og_image %}
-  {% assign page_images = page_images | push: page.og_image %}
+  {% assign img = page.og_image %}
+  {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
+  {% assign page_images = page_images | push: img %}
 {% endif %}
+{% assign page_images = page_images | uniq %}
 
 {% comment %} Build exclude-list for ai-provenance-injector.js {% endcomment %}
 {% assign exclude_list = site.data.image-provenance.images | where_exp: "item", "item.ai_generated == false" | map: "path" %}
@@ -62,8 +77,9 @@
       "editorialResponsibility": "{{ prov.editorial_responsibility }}"{% endif %}
     }
     {% for img_path in page_images %}
-      {% assign img_data = img_provenance | where: "path", img_path | first %}
-      {% if img_data and img_data.ai_generated == true %}
+      {% assign img_norm = img_path %}
+      {% assign img_data = img_provenance | where: "path", img_norm | first %}
+      {% unless img_data and img_data.ai_generated == false %}
         ,
         {
           "@type": "ImageObject",
@@ -71,7 +87,7 @@
           "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/TrainedAlgorithmicMedia",
           "license": "https://creativecommons.org/publicdomain/zero/1.0/"
         }
-      {% endif %}
+      {% endunless %}
     {% endfor %}
   ]
 }

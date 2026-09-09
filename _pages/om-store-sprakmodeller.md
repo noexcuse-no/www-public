@@ -15,7 +15,7 @@ description: "Hvordan noexcuse.no bruker store språkmodeller — begrenset, red
 
 Vi bruker begrepet **kunstig intelligens (KI)** som et felles uttrykk for det publikum kjenner. Det teknisk korrekte begrepet er **store språkmodeller (LLM-er)**. "KI" antyder en form for intelligens eller bevissthet som disse modellene ikke har — de er statistiske system for tekstsyntese.
 
-Vi bruker **aldri** formuleringen "i arbeidet vårt" om LLM-er. Det antyder at modellene er en integrert del av vår faglige praksis, noe de ikke er.
+Vi bruker **aldri** formuleringer som antyder at LLM-ene er en integrert del av vår faglige praksis — det er de ikke.
 
 ## Begrenset bruk
 
