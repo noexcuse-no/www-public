@@ -9,7 +9,6 @@ permalink: /.well-known/ai-transparency.json
     "url": "https://noexcuse.no",
     "contact": "firmapost@noexcuse.no"
   },
-  "editorial_responsibility": "Dagfinn Bang-Johansen",
   "contact": "dagfinn@noexcuse.no",
   "disclosure_statement": "Innhold på dette nettstedet er delvis generert med kunstig intelligens (KI) og gjennomgått av redaksjon. LLM-er brukes kun i støttende og pyntende rolle — spørsmål, analyser og anbefalinger er menneskelig faglabor. Vi bruker termen 'kunstig intelligens (KI)' som et felles uttrykk; det teknisk korrekte begrepet er 'store språkmodeller'.",
   "regulatory_contact": {
@@ -44,7 +43,7 @@ permalink: /.well-known/ai-transparency.json
         "reviewer": "Dagfinn Bang-Johansen",
         "status": "human-reviewed"
       },
-      "count": {{ site.data.rights.assets | where_exp: "item", "item.value.creation == 'ai-generated'" | size }}
+      "count": {{ site.data.rights.assets | where_exp: "item", "item.creation == 'ai-generated'" | size }}
     }
   },
   "editorial_responsibility": "/om-store-sprakmodeller/",
