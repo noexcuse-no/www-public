@@ -1,45 +1,88 @@
 ---
-class: page
-layout: page
-title: "Om KI"
-permalink: /om-store-sprakmodeller/
 provenance:
   creation: editorial
   editorial_review: human
   editorial_responsibility: No Excuse AS
+layout: page
+title: "Om KI"
+permalink: /om-store-sprakmodeller/
+description: "Hvordan noexcuse.no bruker store språkmodeller — begrenset, redaksjonelt ansvarlig, og aldri til analyse eller anbefalinger."
 ---
 
-# Om KI
+# Om KI på noexcuse.no
 
-**Merk:** "Kunstig intelligens" er egentlig et misvisende begrep. Det vi bruker er *store språkmodeller* — systemer som forutsier tekst, ikke systemer som forstår. Vi skriver likevel "KI" på denne siden, fordi det er ordet folk flest bruker og leter etter.
+## Terminologisk forbehold
+
+Vi bruker begrepet **kunstig intelligens (KI)** som et felles uttrykk for det publikum kjenner. Det teknisk korrekte begrepet er **store språkmodeller (LLM-er)**. "KI" antyder en form for intelligens eller bevissthet som disse modellene ikke har — de er statistiske system for tekstsyntese.
+
+Vi bruker **aldri** formuleringen "i arbeidet vårt" om LLM-er. Det antyder at modellene er en integrert del av vår faglige praksis, noe de ikke er.
 
 ## Begrenset bruk
 
-Vi bruker store språkmodeller kun i en støttende og pyntende rolle. Arbeidet vårt prioriterer alltid det menneskelige aspektet. Store språkmodeller brukes aldri til spørsmål, analyser eller anbefalinger i Ledelse 60:2 — de diagnostiske spørsmålene, intervjuene og vurderingene er menneskelig faglabor.
+LLM-er brukes **kun** i støttende og pyntende roller:
+
+- **Tekstgenerering:** Utkast til artikkelinnledninger, meta-beskrivelser, sosiale medier-tekster — alltid redigert og kvalitetssikret av mennesker.
+- **Kodeassistanse:** Boilerplate, refaktorisering, testutkast — alltid revidert av utviklere.
+- **Bildegenerering:** Illustrasjoner, banner, ikoner via EvoLink GPT Image 2 — alltid kuratert og godkjent av redaksjon.
+- **Forskningssammendrag:** Oppsummering av lange dokumenter som utgangspunkt for egen analyse — aldri som erstatning for egen lesing.
+
+**LLM-er brukes ALDRI til:**
+- Å stille spørsmål til ledere eller medarbeidere
+- Å gjøre analyser av organisasjonskultur, ledelse eller risiko
+- Å formulere anbefalinger, strategier eller handlingsplaner
+- Å vurdere evidens, trekke konklusjoner eller ta avgjørelser
+
+Disse oppgavene er **eksklusivt menneskelige** — de krever dommekraft, kontekstuell forståelse og etisk ansvar som LLM-er ikke har.
 
 ## Hva vi bruker
 
-- **Claude** (Anthropic) og **GPT-4** (OpenAI) for tekstutkast, kode og analysearbeid.
-- **EvoLink GPT Image 2** for abstrakte illustrasjoner til artiklene.
+| Oppgave | Verktøy | Rolle |
+|---------|---------|-------|
+| Tekstutkast, meta-beskrivelser | Claude, GPT-4 | Støttende |
+| Kodeboilerplate, refaktorisering | Claude, GitHub Copilot | Støttende |
+| Illustrasjoner, banner, ikoner | EvoLink GPT Image 2 | Pyntende |
+| Forskningssammendrag | Claude | Støttende |
 
-## Hva som gjennomgås — og hvordan
+## Redaksjonell gjennomgang
 
-Alt innhold gjennomgår menneskelig redaksjonell gjennomgang før publisering: omskriving, omstrukturering, faktasjekk og tilpasning av tone. Ingenting publiseres slik modellen leverte det.
+**Allt** LLM-generert materiale går gjennom menneskelig redaksjonell gjennomgang før publisering. Ingen tekst, kode eller bilder publiseres uten at en ansvarlig redaktør har lest, vurdert og godkjent det.
 
-## Redaksjonelt ansvar
+**Redaksjonelt ansvarlig:** Dagfinn Bang-Johansen (CEO), dagfinn@noexcuse.no
 
-Redaksjonelt ansvarlig er **Dagfinn Bang-Johansen** (daglig leder), [dagfinn@noexcuse.no](mailto:dagfinn@noexcuse.no). Ansvaret omfatter alle beslutninger om hva som publiseres, og at det publiserte er gjennomgått som beskrevet over.
+Ansvar omfatter:
+- Godkjenning av all publisert innhold
+- Sikring av at LLM-bruk forblir i støttende/pyntende rolle
+- At ingen anbefalinger, analyser eller spørsmål genereres av LLM-er
 
-> Status: Teksten på denne siden avventer Dagfinns gjennomgang og godkjenning før den regnes som endelig bekreftet.
+## Åpenhetspipeline
 
-## Hvordan vi opplyser om bruken
+Vi dokumenterer vår LLM-bruk maskinlesbart på flere nivåer:
 
-- Denne siden (i klartekst).
-- EU-ikonet ved siden av informasjonsbanneret øverst på siden.
-- Maskinlesbar proveniens: JSON-LD på hver side, IPTC-metadata i bilder og manifestet på [/.well-known/ai-transparency.json](/.well-known/ai-transparency.json).
+1. **Per-side JSON-LD** i `<head>`: `digitalSourceType` per side (`editorial`, `human-created`, `ai-generated`).
+2. **Per-bilde JSON-LD + RDFa:** AI-genererte bilder mærkes med `digitalSourceType: TrainedAlgorithmicMediaDigitalSource` + `license: CC0-1.0`.
+3. **Transparensmanifest:** `/.well-known/ai-transparency.json` med full oversikt over redaksjonell ansvar, AI-bruk per side, og bilder.
+4. **EU AI Act-basisk ikon:** I header-banner, med lenke til denne siden.
+5. **IPTC/XMP i bildefiler:** `DigitalSourceType`, `Rights`, `WebStatement` inni WebP-filer.
 
-## Relevant regelverk
+## EU AI Act — Artikkel 50(4) unntak
 
-- [EU AI Act — Code of Practice](https://artificialintelligenceact.eu/) (generelle bestemmelser; norsk KI-lov er under innføring).
-- [Nkom](https://www.nkom.no/) (norsk kommunikasjonsmyndighet).
-- [EU AI Office Service Desk](https://artificialintelligenceact.eu/service-desk/) (veiledning om etterlevelse).
+Vi påstår at innholdet på noexcuse.no faller under **redaksjonelt unntaket** i Artikkel 50(4) av EU AI Act:
+
+- Allt innhold er **menneskelig redaksjonelt gjennomgått**.
+- LLM-er brukes **kun i støttende/pyntende rolle**.
+- Ingen innhold er "dypt forfalskning" (deepfake) — ingen bilder ligner på reale personer/steder.
+- Vi påtar oss fullt redaksjonelt ansvar.
+
+Dette unntaket gjelder for **både tekst og bilder** — vi skiller ikke mellom dem i vår offentliggjøringspraksis.
+
+## Kontakt
+
+Ved spørsmål om vår bruk av KI/LLM, kontakt:
+
+**Dagfinn Bang-Johansen**  
+CEO, No Excuse AS  
+dagfinn@noexcuse.no
+
+---
+
+*Denne siden er en del av vår EU AI Act-forberedelse. Sist oppdatert: {{ site.time | date: "%Y-%m-%d" }}.*
