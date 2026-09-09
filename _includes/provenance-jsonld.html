@@ -1,33 +1,74 @@
 {% comment %}
-  Provenance JSON-LD — per-page license/copyright from generated rights.json
-  plus the provenance vocabulary mapped from frontmatter.
-  No blanket defaults: unresolved pages omit license entirely.
+  Provenance JSON-LD @graph — per-page WebPage + per-image ImageObject entries.
+  digitalSourceType per page.provenance frontmatter; per-image from _data/image-provenance.yml.
+  Non-AI images (per exclude-list) are OMITTED from @graph entirely.
 {% endcomment %}
 {% assign rights = site.data.rights.pages[page.path] %}
 {% assign prov = page.provenance %}
-{% assign cr = rights.copyrightText | default: '' %}
-{% assign cr_year = '' %}
-{% assign holder = '' %}
-{% assign first4 = cr | slice: 0, 4 %}
-{% if first4 == '2024' or first4 == '2025' or first4 == '2026' or first4 == '2027' or first4 == '2028' %}
-  {% assign cr_year = first4 %}
-  {% assign holder = cr | remove_first: first4 | strip %}
-{% elsif cr != '' and cr != 'NONE' %}
-  {% assign holder = cr %}
+{% assign img_provenance = site.data.image-provenance.images %}
+
+{% comment %} Determine page digitalSourceType {% endcomment %}
+{% assign page_dst = "CompositeWithTrainedAlgorithmicMediaDigitalSource" %}
+{% if prov.creation == "human-created" or prov.creation == "human" %}
+  {% assign page_dst = "DigitalCreation" %}
+{% elsif prov.creation == "ai-generated" %}
+  {% assign page_dst = "TrainedAlgorithmicMediaDigitalSource" %}
+{% elsif prov.creation == "ai-assisted" %}
+  {% assign page_dst = "CompositeWithTrainedAlgorithmicMediaDigitalSource" %}
+{% elsif prov.creation == "third-party" %}
+  {% assign page_dst = "ThirdParty" %}
 {% endif %}
+
+{% comment %} Discover images on this page {% endcomment %}
+{% assign page_images = "" | split: "," %}
+{% if page.hero and page.hero.image %}
+  {% assign page_images = page_images | push: page.hero.image %}
+{% endif %}
+{% if page.banner %}
+  {% assign page_images = page_images | push: page.banner %}
+{% endif %}
+{% if page.image %}
+  {% assign page_images = page_images | push: page.image %}
+{% endif %}
+{% if page.images %}
+  {% for img in page.images %}
+    {% assign page_images = page_images | push: img %}
+  {% endfor %}
+{% endif %}
+{% if page.og_image %}
+  {% assign page_images = page_images | push: page.og_image %}
+{% endif %}
+
+{% comment %} Build @graph {% endcomment %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "url": "https://noexcuse.no{{ page.url | default: '/' }}"{% if rights %},
-  "license": "{{ rights.url }}"{% endif %}{% if holder != '' %},
-  "copyrightHolder": {
-    "@type": "Organization",
-    "name": "{{ holder }}"
-  }{% endif %}{% if cr_year != '' %},
-  "copyrightYear": "{{ cr_year }}"{% endif %}{% if prov.creation %},
-  "creation": "{{ prov.creation }}"{% endif %}{% if prov.editorial_review %},
-  "editorialReview": "{{ prov.editorial_review }}"{% endif %}{% if prov.editorial_responsibility %},
-  "editorialResponsibility": "{{ prov.editorial_responsibility }}"{% endif %}
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "url": "https://noexcuse.no{{ page.url | default: '/' }}",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/{{ page_dst }}"{% if rights %},
+      "license": "{{ rights.url }}"{% endif %}{% if rights.copyrightText and rights.copyrightText != 'NONE' %},
+      "copyrightHolder": {
+        "@type": "Organization",
+        "name": "{{ rights.copyrightText | replace: '2026 No Excuse AS', 'No Excuse AS' | replace: '2025 No Excuse AS', 'No Excuse AS' | strip }}"
+      }{% endif %}{% if prov.creation %},
+      "creation": "{{ prov.creation }}"{% endif %}{% if prov.editorial_review %},
+      "editorialReview": "{{ prov.editorial_review }}"{% endif %}{% if prov.editorial_responsibility %},
+      "editorialResponsibility": "{{ prov.editorial_responsibility }}"{% endif %}
+    }
+    {% for img_path in page_images %}
+      {% assign img_data = img_provenance | where: "path", img_path | first %}
+      {% if img_data and img_data.ai_generated == true %}
+        ,
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://noexcuse.no{{ img_path | relative_url }}",
+          "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/TrainedAlgorithmicMedia",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      {% endif %}
+    {% endfor %}
+  ]
 }
 </script>
