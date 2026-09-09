@@ -33,25 +33,10 @@ json_ld:
       - type: "Thing"
         name: "Kontinuerlig forbedring"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/kvalitet/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Ansvar for kvalitet"
-    opening_question: "Hvem i organisasjonen har reelt ansvar for kvalitet — og har de myndighet til å stoppe produksjonen hvis kvaliteten svikter?"
-    source_url: "/kvalitet/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Avvik som driver forbedring"
-    opening_question: "Når ble siste gang et kvalitetsavvik førte til en reell endring i prosessene, ikke bare en registrering i systemet?"
-    source_url: "/kvalitet/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Sertifisering vs reell kvalitet"
-    opening_question: "Hva ville skjedd hvis ISO 9001-sertifiseringen deres ble trukket i morgen — ville noe faktisk endre seg?"
-    source_url: "/kvalitet/"
-    sixty_two_url: "/ledelse-60-2/"
----
-
 ## Kvalitet handler om mer enn ISO 9001
 
 ISO 9001 er verdens mest brukte kvalitetsstyringssystem. De fleste norske virksomheter har en eller annen form for kvalitetssystem — men langt fra alle opplever at det faktisk gjør organisasjonen bedre.
@@ -110,7 +95,6 @@ For ledergrupper som ønsker å styrke kvalitetsarbeidet, handler første steg o
 
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ---
 

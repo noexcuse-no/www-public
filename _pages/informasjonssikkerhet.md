@@ -34,25 +34,10 @@ json_ld:
       - type: "Thing"
         name: "Ledelse"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/informasjonssikkerhet/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Ansvar for informasjonssikkerhet"
-    opening_question: "Hvem i organisasjonen har reelt ansvar for informasjonssikkerhet — og vet de at de har det?"
-    source_url: "/informasjonssikkerhet/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Avviksmelding og kultur"
-    opening_question: "Når ble siste gang noen meldte fra om et sikkerhetsavvik — og hva skjedde med den som meldte?"
-    source_url: "/informasjonssikkerhet/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Sikkerhet vs produksjon"
-    opening_question: "Hvordan prioriterer ledergruppen mellom sikkerhet og produksjon når det oppstår en konflikt?"
-    source_url: "/informasjonssikkerhet/"
-    sixty_two_url: "/ledelse-60-2/"
----
-
 ## Informasjonssikkerhet er et ledelsesproblem
 
 ISO 27001, DORA, NIS2, NORMEN, NSM Grunnprinsipper, GDPR — listen over krav til informasjonssikkerhet blir lengre for hvert år. Mange virksomheter oppfyller kravene på papiret, men oppdager for sent at sikkerhetskulturen ikke sitter i veggene.
@@ -103,7 +88,6 @@ Les også: [Usikkerhetshåndtering henger tett sammen med informasjonssikkerhet 
 
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ---
 

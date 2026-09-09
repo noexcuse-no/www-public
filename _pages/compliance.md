@@ -35,25 +35,10 @@ json_ld:
       - type: "Thing"
         name: "Integritet"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/compliance/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Ansvar for compliance"
-    opening_question: "Hvem i organisasjonen har reelt ansvar for compliance — og har de faktisk myndighet til å stoppe aktiviteter som bryter med regelverket?"
-    source_url: "/compliance/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Compliance-kultur vs papirarbeid"
-    opening_question: "Når ble siste gang noen i ledergruppen stilte spørsmål ved om compliance-arbeidet faktisk fungerer, eller om det bare er papirarbeid?"
-    source_url: "/compliance/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Avvikshåndtering og integritet"
-    opening_question: "Hvordan reagerer organisasjonen når noen melder fra om et avvik — belønnes åpenhet eller stillhet?"
-    source_url: "/compliance/"
-    sixty_two_url: "/ledelse-60-2/"
----
-
 ## Compliance er mer enn å unngå bøter
 
 Compliance — samsvarsstyring — handler ofte om å unngå sanksjoner, bøter eller omdømmetap. Det er forståelig, men utilstrekkelig. Organisasjoner som driver compliance utelukkende fra et risikoperspektiv, oppdager for sent at papiroverholdelse ikke er det samme som reell etterlevelse.
@@ -111,7 +96,6 @@ For ledergrupper som ønsker å styrke compliance-kulturen, handler første steg
 
 Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og gir dere en baseline for hvor samsvarsarbeidet faktisk står.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ---
 

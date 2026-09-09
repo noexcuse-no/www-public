@@ -98,25 +98,10 @@ json_ld:
           "@type": "Answer"
           text: "De fleste ledere tror de er mer tilgjengelige og gir mer konstruktiv feedback enn de faktisk er. Det er gapet mellom intensjon og opplevelse som er tillitsproblemet. Tillit bygges av konsekvent atferd over tid, ikke av gode intensjoner."
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/tillit/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Feedback som virker"
-    opening_question: "Hvor ofte gir du feedback som folk faktisk husker — og bruker?"
-    source_url: "/tillit/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Reaksjon på dårlig nyhet"
-    opening_question: "Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?"
-    source_url: "/tillit/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Beslutningsgjennomsiktighet"
-    opening_question: "Når ble siste gang du omgjorde en beslutning uten å forklare hvorfor?"
-    source_url: "/tillit/"
-    sixty_two_url: "/ledelse-60-2/"
----
-
 ## Hvorfor tillit er ledelsens valuta
 
 Tenk på de beste teamene du har jobbet med. Hva var annerledes der? Sannsynligvis ikke at de hadde bedre verktøy eller flere møter. Det var sannsynligvis måten folk snakket til hverandre — ærlig, direkte, uten frykt for konsekvensene.

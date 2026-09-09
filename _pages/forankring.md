@@ -61,25 +61,10 @@ json_ld:
       - type: "Thing"
         name: "Kognitiv bias"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/forankring/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Reell beslutningsmakt"
-    opening_question: "Hvem hadde reell innflytelse på de siste tre viktige beslutningene — og var det de som burde hatt det?"
-    source_url: "/forankring/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Beslutninger mot bedre vitende"
-    opening_question: "Når ble en beslutning tatt mot bedre vitende — og hvorfor?"
-    source_url: "/forankring/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Uenighet og forankring"
-    opening_question: "Hvordan håndterer vi uenighet når den oppstår?"
-    source_url: "/forankring/"
-    sixty_two_url: "/ledelse-60-2/"
----
-
 ## Hvorfor ledere ofte tar dårlige beslutninger
 
 Jeffrey Pfeffer har brukt karrieren sin på å dokumentere gapet mellom hvordan organisasjoner hevder beslutninger tas, og hvordan de faktisk tas. I «Power: Why Some People Have It — and Others Don't» viser han at [makt og politikk](/makt/) spiller en langt større rolle enn de fleste er villige til å innrømme.
