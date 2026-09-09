@@ -58,6 +58,15 @@
       return;
     }
 
+    // Normalize to a lookup map. provenance-jsonld.html emits an ARRAY of paths
+    // (`map: "path" | jsonify`); indexing an array with a string key returns
+    // undefined and would inject RDFa on non-AI images.
+    if (Array.isArray(excludeList)) {
+      const map = {};
+      excludeList.forEach((p) => { map[p] = true; });
+      excludeList = map;
+    }
+
     // Find all content images
     const images = document.querySelectorAll('img');
     
