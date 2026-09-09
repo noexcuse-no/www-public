@@ -1,4 +1,7 @@
 .ai-disclaimer {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
     text-align: center;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -8,6 +11,12 @@
     border-bottom: 1px solid var(--border-color);
 }
 
+.ai-disclaimer .eu-ai-icon {
+    flex-shrink: 0;
+    width: 1.2em;
+    height: 1.2em;
+}
+
 .ai-disclaimer a {
     color: inherit;
     text-decoration: underline;
@@ -15,6 +24,9 @@
 
 @media (max-width: 599px) {
     .ai-disclaimer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         text-align: left;
         padding: var(--space-xs) var(--space-md);
     }
