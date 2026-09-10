@@ -23,6 +23,7 @@ globs: ["**/*.js", "**/*.css", "**/*.html", "tests/*"]
 | `npm run inspect:docs` | PDF document-info check — flags author, creator, producer, internal filenames |
 | `npm run audit:deps` | Dependency audit — npm audit + outdated + slopsquat detection |
 | `npm run check:supply-chain` | Supply-chain static analysis — eslint + semgrep (if available) + dangerous pattern scan |
+| `npm run audit:site` | Post-build publication audit — scans `_site/` for internal material, local paths, secrets |
 
 ## Tools
 
