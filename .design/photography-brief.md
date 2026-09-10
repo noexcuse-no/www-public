@@ -110,6 +110,32 @@ Tenk:
 
 ---
 
+## Originaler vs. offentlige derivater
+
+Originalbilder i høy oppløsning ligger i `.design/graphics/originals/` (versjonsstyrt). Disse er sannhetskilden — de serveres **ikke** av Jekyll og er aldri lenket fra sider.
+
+Offentlige derivater ligger i `assets/images/` (WebP) og `assets/images/icons/` (PNG/WebP). Det er disse Jekyll pakker og nettlesere laster ned.
+
+| Sti | Innhold | Servert |
+|-----|---------|---------|
+| `.design/graphics/originals/` | PNG-bannere, SVG-logotyper, ikonkilder | Nei |
+| `assets/images/` | WebP-spot-/bannerillustrasjoner | Ja |
+| `assets/images/icons/` | Små ikon-PNG/WebP | Ja |
+| `assets/*.pdf` | Offentlige dokumentvedlegg | Ja (lenket fra sider) |
+
+**Regel:** rediger originaler, generer deretter derivater — server aldri originaler direkte.
+
+### Metadata-hygiene
+
+Alle bilder og PDF-er i det offentlige treet sjekkes av to skript:
+
+- **`scripts/sanitize-metadata.sh`** (`npm run sanitize:media`): fjerner personvernsensitiv metadata fra bilder — GPS, kamera-/serienummer, maker notes, innebygde kommentarer, skaperattribusjon og Photoshop-redigeringshistorikk. Bevarer bevisst rettigheter (rettighetshaver, opphavsrett, `XMP-xmpRights:WebStatement`) og AI-proveniens (`DigitalSourceType`, C2PA content credentials).
+- **`scripts/inspect-doc-metadata.sh`** (`npm run inspect:docs`): inspiserer PDF-dokumentegenskaper (forfatter, oppretter, produsent, tittel) og flagger personnavn, programvareidentitet og interne filnavn/stier. Strip-modus fjerner flaggede verdier uten å ødelegge innholdet.
+
+Nye bilder/PDF-er skal kjøres gjennom skriptene før de legges til i det offentlige treet.
+
+---
+
 ## Kontakt
 
 Ved spørsmål om briefen, kontakt No Excuse AS på firmapost@noexcuse.no.

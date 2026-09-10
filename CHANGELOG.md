@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- **Media & document metadata hygiene (T12)**: Added `scripts/sanitize-metadata.sh` — strips GPS, serial numbers, maker notes, embedded comments, creator attribution, and Photoshop history from images while preserving rights, copyright, Web Statement of Rights, and C2PA content credentials. Added `scripts/inspect-doc-metadata.sh` — inspects PDF document-info fields (author, creator, producer, title) and flags personal names, software identities, and internal filenames/paths; strip mode clears flagged fields non-destructively. Stripped personal name and internal filename metadata from `assets/samtykke.pdf` and `assets/avtale.pdf`. Added `npm run sanitize:media` and `npm run inspect:docs` (check mode). Added `tests/metadata-sanitize.test.mjs` — synthetic-image test verifying GPS/serial/comment/creator are stripped, rights are retained, and misnamed files are skipped without corruption. Updated `.omo/rules/linting.md` with new commands and tools. Documented originals-vs-public structure in `.design/photography-brief.md`.
+
 ## [1.7.1] - 2026-06-04
 
 ### Changed

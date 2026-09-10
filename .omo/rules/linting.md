@@ -19,6 +19,8 @@ globs: ["**/*.js", "**/*.css", "**/*.html", "tests/*"]
 | `npm run scan:secrets:history` | Gitleaks full-history audit (`git --log-opts=--all`, `--redact`) |
 | `npm test` | Unit tests (Vitest) |
 | `npm run test:secrets` | Secret-scanner smoke test (install + clean scan + redaction) |
+| `npm run sanitize:media` | Image metadata hygiene check — flags GPS, serial, comments, creator (exiftool) |
+| `npm run inspect:docs` | PDF document-info check — flags author, creator, producer, internal filenames |
 
 ## Tools
 
@@ -29,6 +31,7 @@ globs: ["**/*.js", "**/*.css", "**/*.html", "tests/*"]
 | `eslint` | JavaScript linting |
 | `vitest` | Unit tests |
 | `gitleaks` (pinned v8.30.1) | Secret scanning — run via `npm run scan:secrets` / `npm run scan:secrets:history` |
+| `exiftool` (Perl Image::ExifTool) | Media/PDF metadata inspection and sanitisation |
 
 ## Secret scanning
 
