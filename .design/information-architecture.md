@@ -94,6 +94,12 @@ Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningst
 | `/kontakt/` → Om oss | `/om-oss/` | "Les om No Excuse AS →" |
 | `/kontakt/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om produktet →" |
 
+## Special Resources
+
+| Path | Purpose | Published |
+|------|---------|-----------|
+| `/.well-known/security.txt` | RFC 9116 security contact + policy (renewed 2026-09-10, Expires 2027-09-10) | Yes |
+
 ## Rules
 
 1. Every cross-link should be bidirectional — if page A links to page B, verify B has a relevant context or return link.
