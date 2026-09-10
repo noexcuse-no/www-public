@@ -129,6 +129,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - **Spec cleanup (T4)**: Deleted the archived spec collection (24 completed one-time plans) and 21 superseded one-time plan specs in `.specs/` (hero-layout-fixes, homepage-overhaul, image-optimization, metode-overhaul, profile-card-redesign, profile-filter, profile-tag-formatting, regression-fixes-phase6, ui-upgrade, usikkerhet-rename, and more). Reduced `.specs/cta-frontmatter/README.md` to its current-state contract (CTA frontmatter schema + template rendering rules). Fixed the dangling spec pointer in `.design/ui-upgrade.md` and reworded the spec-discipline collapse-rule examples to live specs. All specs holding canonical or functional contracts remain.
 
+**Backlog prune (T5)**: Trimmed BACKLOG.md from 130 to 21 lines — removed all 40+ Done rows (completed items live in CHANGELOG only), leaving only Planned/Doing/Blocked items. Corrected FF2: no i18n infrastructure exists (spec ready, nothing implemented). Corrected G4: newsletter ships as localStorage MVP with manual export (no JSON-file storage), contact form (F4b) removed in favor of direct booking via Outlook. Dropped dependency references to removed Done rows.
+
 ## [1.9.0] - 2026-06-08
 
 ### Added
