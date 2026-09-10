@@ -14,6 +14,14 @@ globs: ["**/*.js", "**/*.css", "**/*.html", "tests/*"]
 | `npm run lint:css` | CSS linting |
 | `npm run lint:js` | JavaScript linting |
 | `npm test` | Unit tests (Vitest) |
+| `npm run test:secrets` | Secret-scanner smoke test (install + clean scan + redaction) |
+| `npm run sanitize:media` | Image metadata hygiene check — flags GPS, serial, comments, creator (exiftool) |
+| `npm run inspect:docs` | PDF document-info check — flags author, creator, producer, internal filenames |
+| `npm run audit:deps` | Dependency audit — npm audit + outdated + slopsquat detection |
+| `npm run check:supply-chain` | Supply-chain static analysis — eslint + semgrep (if available) + dangerous pattern scan |
+| `npm run audit:site` | Post-build publication audit — scans `_site/` for internal material, local paths, secrets |
+| `npm run check:stale` | Stale-reference integrity check — scans active docs for references to deleted/archived paths |
+| `npm run check:docs` | Document structure validation — flags archived/superseded/obsolete/done docs in active locations |
 
 ## Tools
 
