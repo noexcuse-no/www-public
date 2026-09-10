@@ -41,7 +41,7 @@ When starting work on a feature: read the listed design docs and specs first.
 | Tag | Feature | Files | Design Docs | Specs |
 |-----|---------|-------|------------|-------|
 | `[home]` | Home page | `index.md` | `layouts.md`, `components.md`, `colors.md`, `typography.md`, `ui-upgrade.md` | — |
-| `[products]` | Products (Ledelse 60:2, Katalysator) | `_products/*.md`, `_includes/products.html` | `layouts.md`, `components.md`, `colors.md`, `typography.md`, `ui-upgrade.md`, `graphics.md` | `.specs/products/`, `.specs/shared/product-katalysator.txt` |
+| `[products]` | Products (Ledelse 60:2, Katalysator) | `_products/*.md`, `_includes/products.html` | `layouts.md`, `components.md`, `colors.md`, `typography.md`, `ui-upgrade.md`, `graphics.md` | `.specs/product-card-frontmatter/` |
 | `[profiles]` | Team profiles | `_profiles/*.md`, `_includes/profiles.html` | `components.md`, `layouts.md`, `colors.md` | `.specs/profiles/` |
 | `[perspektiv]` | Frame articles (Struktur, Mennesker, Pavirkning, Identitet) | `_pages/ledelse_*.md`, `_layouts/perspektiv.html`, `_frames/*.md` | `layouts.md`, `ui-upgrade.md`, `graphics.md`, `colors.md` | `.specs/perspektiv/` |
 | `[triader]` | Triader article (N1) | `_pages/ledelse_triader.md` | `layouts.md`, `ui-upgrade.md`, `graphics.md`, `colors.md` | `.specs/triader/README.md` |

@@ -19,7 +19,7 @@ Files and directories to be changed:
 - `.specs/partners/README.md` — fix stale implementation references
 - `.specs/cases/README.md` — fix stale implementation references
 - `.design/archive/` — archive directory for superseded design docs
-- `.research/` — new top-level directory for content research (not implementation specs)
+- Research directory — new top-level directory for content research (not implementation specs)
 - BACKLOG.md — update references
 
 ## Design Documents
@@ -29,7 +29,7 @@ Files and directories to be changed:
 ## Acceptance Criteria
 
 - [ ] `.specs/archive/` contains all specs for BL items marked Done (Z1, Y1-Y9, FF4, R4, R15, X2, A1, P5, etc.) — exactly those, no active specs moved
-- [ ] `.research/` directory contains `.specs/shared/`, `.specs/ledelse-60-2/`, `.specs/grc/`, `.specs/generativ-ki/`, `.specs/frames/` — these are removed from `.specs/`
+- [ ] Content research directories (`.specs/shared/`, `.specs/ledelse-60-2/`, `.specs/grc/`, `.specs/generativ-ki/`, `.specs/frames/`) are removed from `.specs/`
 - [ ] Gap-analysis specs renamed: `homepage-gaps` → `homepage-overhaul`, `om-oss-gaps` → `om-oss-forbedringer`, `conversion-gaps` → `conversion-infrastructure`, `missing-landing-pages` → `topical-landing-pages`
 - [ ] `.specs/partners/README.md` correctly describes: page-class query model, existing templates and CSS, correct layout reference (`home.html`, not `default.html`)
 - [ ] `.specs/cases/README.md` correctly describes: page-query model (`site.pages where: class: "case"`), existing CSS classes used by `cases-cards.html`

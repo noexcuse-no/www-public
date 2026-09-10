@@ -10,7 +10,7 @@
 
 | Action | Details |
 |--------|---------|
-| **Content research → `.research/`** | Moved `shared/`, `ledelse-60-2/`, `grc/`, `generativ-ki/`, `frames/` from `.specs/` to `.research/` |
+| **Content research relocated** | Moved `shared/`, `ledelse-60-2/`, `grc/`, `generativ-ki/`, `frames/` out of `.specs/` into a research area |
 | **Archived completed specs** | 24 specs for Done BL items moved to `.specs/archive/` |
 | **Renamed gap-analysis specs** | `homepage-gaps` → `homepage-overhaul`, `om-oss-gaps` → `om-oss-forbedringer`, `conversion-gaps` → `conversion-infrastructure`, `missing-landing-pages` → `topical-landing-pages` |
 | **Fixed stale references** | `.specs/partners/README.md` and `.specs/cases/README.md` now match actual page-class implementation |
@@ -67,7 +67,7 @@
 
 **.specs/archive/** contains 24 archived specs from Done BL items.
 
-**.research/** contains 5 directories with content research/bibliography materials.
+**Research materials:** 5 directories of content research/bibliography materials, maintained separately from `.specs/`.
 
 **.design/archive/** now contains 5 files: `plan-v0.md`, `review-questions.md`, `citation-enhancement.md`, `c2pa-cc0-licensing.md`, `visual-polish-r23.md`.
 

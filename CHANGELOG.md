@@ -120,6 +120,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - **R51 — Stale dark mode test and dead toggle CSS**: Deleted `tests/dark-mode.test.js` (referenced non-existent `#dark-mode-toggle`). Removed `#dark-mode-toggle` rules from `assets/css/utilities.css` (31 lines of dead code). Deleted orphaned `_includes/newsletter-signup.html`.
 
+### Changed
+- **Research cleanup (T2)**: Deleted the research directory (17 files with content research, bibliography syntheses, AI instructions, and commercial drafts). Migrated the still-current frame page contract to a new canonical spec `.specs/frames/README.md` and updated `.omo/rules/frames.md` to the live `frame_id`/`layout: article` model. Neutralized all retired references to the deleted research files (design index, codebase-integrity docs, BACKLOG, AI agent cheat sheets).
+
 ## [1.9.0] - 2026-06-08
 
 ### Added
