@@ -137,6 +137,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **Repository noise untracking (T7)**: Removed three tracked `.DS_Store` files (repo root, `assets/`, `assets/images/`) from version control — `.gitignore` already covered the pattern; files kept on disk locally. Added narrow `.playwright-mcp/` ignore pattern (Playwright MCP artifacts). No other tracked noise found (no `.swp`/`.tmp`/`.bak`/`.log`/editor/cache/build files tracked); `.gitignore` already covers `node_modules/`, `_site/`, `.jekyll-cache/`, `.omo/*` (except rules), logs, caches, and build outputs.
 
+### Changed
+- **Blanket license declaration removal (T8)**: Removed the repo-wide CC0 claim so no single license is implied for the whole repository. `package.json` now declares `"private": true` and `"license": "SEE LICENSE IN LICENSE"` (pointing at the existing multi-regime summary); `_config.yml` and `_data/metadata.yml` no longer carry a blanket license field; `_includes/metadata.html` no longer emits a site-wide `<link rel="license">`; `_includes/provenance-jsonld.html` no longer injects a license URL into page JSON-LD. The root `LICENSE` multi-regime summary (and per-resource asset declarations) are untouched — the sibling mixed-rights migration owns canonical per-page emission.
+
 ## [1.9.0] - 2026-06-08
 
 ### Added

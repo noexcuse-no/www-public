@@ -26,5 +26,6 @@
     "norway"
   ],
   "author": "No Excuse AS",
-  "license": "CC0-1.0"
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE"
 }
