@@ -22,10 +22,6 @@ Files and directories to be changed:
 - Research directory — new top-level directory for content research (not implementation specs)
 - BACKLOG.md — update references
 
-## Design Documents
-
-- `.design/codebase-integrity.md` — full analysis with findings and per-item details
-
 ## Acceptance Criteria
 
 - [ ] `.specs/archive/` contains all specs for BL items marked Done (Z1, Y1-Y9, FF4, R4, R15, X2, A1, P5, etc.) — exactly those, no active specs moved

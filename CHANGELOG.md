@@ -123,6 +123,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **Research cleanup (T2)**: Deleted the research directory (17 files with content research, bibliography syntheses, AI instructions, and commercial drafts). Migrated the still-current frame page contract to a new canonical spec `.specs/frames/README.md` and updated `.omo/rules/frames.md` to the live `frame_id`/`layout: article` model. Neutralized all retired references to the deleted research files (design index, codebase-integrity docs, BACKLOG, AI agent cheat sheets).
 
+### Removed
+- **Obsolete design docs (T3)**: Deleted `.design/SPEC.md`, `.design/codebase-integrity.md`, `.design/website-gaps-overview.md`, and `.design/archive/` (plan-v0, review-questions, citation-enhancement, c2pa-cc0-licensing, visual-polish-r23). All still-current invariants (brand tone, 44px touch targets, Norwegian Bokmål, GitHub Pages/Jekyll, Microsoft Bookings, JSON-LD) remain documented in the canonical `.design/` and `.specs/` docs. Repointed `.omo/rules/spec-discipline.md` from the deleted SPEC.md to the canonical design doc set.
+
 ## [1.9.0] - 2026-06-08
 
 ### Added
