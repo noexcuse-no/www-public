@@ -2,21 +2,20 @@
 
 ## Purpose and Scope
 
-Map the visitor journey from first page view to booked conversation and ultimately to paid invoice. Define analytics instrumentation, UTM conventions, funnel definitions, and event tracking so that No Excuse AS can attribute inbound marketing efforts to real outcomes.
+Define the technical telemetry contract for visitor behavior on noexcuse.no:
+analytics instrumentation, UTM-sporing, egendefinerte events,
+lenke-instrumentering og personvernkrav. Formålet er at besøksatferd kan
+tilskrives faktiske utfall.
 
 This spec covers **C4 — Visitor Flow / Inbound Sales Journey** in the backlog.
 
-## Three-Layer Funnel Architecture
+## Analytics-hook
 
-| Layer | Tool | Signal | Status |
-|-------|------|--------|--------|
-| 🟢 Top (awareness) | Simple Analytics | Sidevisninger, UTM-kampanjer, henvisningskilder, scroll-dybde | ✅ Allerede deployet (basisscript) |
-| 🟡 Middle (consideration) | Simple Analytics + Microsoft Bookings | CTA-klikk → bookingside → booket samtale | 🟡 Delvis — auto-events mangler |
-| 🔴 Bottom (conversion) | Fiken (fremtidig) | Booket samtale → betalende kunde (faktura) | 🔴 Fremtidig — krever ekstern tjeneste |
+- Simple Analytics-basisscriptet er inkludert i `_includes/scripts.html`
+  (linje 1): `<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>`
+- Sidevisninger fanges automatisk
 
-## Requirements
-
-### 1. UTM-sporing
+## UTM-sporing
 
 - Alle eksterne kampanjelinker må inneholde `utm_source`, `utm_medium`, `utm_campaign`
 - Simple Analytics fanger disse automatisk via URL-parameterne
@@ -25,30 +24,12 @@ This spec covers **C4 — Visitor Flow / Inbound Sales Journey** in the backlog.
 
 | Parameter | Tillatte verdier | Eksempel |
 |-----------|-----------------|----------|
-| `utm_source` | `linkedin`, `newsletter`, `google`, `referral`, `direct` | `utm_source=linkedin` |
-| `utm_medium` | `social`, `email`, `cpc`, `organic`, `referral` | `utm_medium=social` |
+| `utm_source` | `linkedin`, `newsletter`, `google`, `direct` | `utm_source=linkedin` |
+| `utm_medium` | `social`, `email`, `cpc`, `organic` | `utm_medium=social` |
 | `utm_campaign` | kebab-case: `<produkt>-<år>-<mnd>` | `utm_campaign=ledelse-60-2-2026-05` |
 | `utm_content` | `hero`, `cta-primary`, `cta-secondary`, `banner`, `footer` | `utm_content=cta-primary` |
 
-### 2. Simple Analytics Goals (Funnels)
-
-Opprett følgende flertrinns-funnels i Simple Analytics-dashbordet:
-
-| Funnel | Steps | Mål |
-|--------|-------|-----|
-| **Produkt → Booking** | Forsiden → Ledelse 60:2 → Book samtale | Hvor mange når bookingsida? |
-| **Artikkel → Booking** | `/struktur/` eller `/mennesker/` → Ledelse 60:2 → Book samtale | Hvilke artikler driver flest bookinger? |
-| **Kampanje → Booking** | UTM-kampanje → Book samtale | Hvilke kanaler konverterer best? |
-| **Full trakt (fremtidig)** | Book samtale → Betaling | Hvor mange bookinger blir kunder? |
-
-### 3. Automatiske events (auto-events.js)
-
-Legg til `auto-events.js`-scriptet for å fange:
-- **Outbound linker:** Klikk til LinkedIn, andre eksterne sider
-- **E-postklikk:** `mailto:firmapost@noexcuse.no`
-- **Nedlastinger:** PDF-filer (avtale, rapporter)
-
-### 4. Egendefinerte events
+## Egendefinerte events
 
 Spor følgende interaksjoner som egne events via Simple Analytics Events API:
 
@@ -59,54 +40,30 @@ Spor følgende interaksjoner som egne events via Simple Analytics Events API:
 | `cta_les_mer` | Klikk på "Les mer →" på benefit-kort | `page: current path, card: benefit name` |
 | `profile_expand` | Utvidelse av profil-kort | `profile: name` |
 
-### 5. Microsoft Bookings som konverteringsmål
+## Lenke-instrumentering
 
-- Bookings-sidens URL defineres som et funnel-trinn i Simple Analytics Goals
-- Når en besøkende når Bookings-siden telles det som en konvertering (midt i trakten)
-- Bookings-lenker på tvers av nettstedet må ha konsistent `target="_blank"` og kunne spores
+- **E-postklikk:** `mailto:firmapost@noexcuse.no` (i `_includes/share-section.html`,
+  `_includes/profiles.html`)
+- **Eksterne lenker:** konsistent `target="_blank"` med `rel="noopener"` på tvers
+  av nettstedet (partnere, profiler, deling)
+- **Nedlastinger (fremtidig):** PDF-filer (avtale, rapporter) via egendefinerte events
 
-### 6. Fiken-integrasjon (fremtidig)
+## Personvern
 
-- Når Fiken API v2 er tilgjengelig: opprett en webhook eller periodisk jobb (Zapier / Make / Cloud Function) som:
-  - Fanger nye fakturaer opprettet i Fiken
-  - Matcher fakturaens kundenavn mot bookinger i Bookings
-  - Rapporterer full trakt: besøk → booket samtale → betalende kunde
-- **Designbeslutning:** Jekyll er statisk — Fiken-integrasjonen krever en ekstern tjeneste. Dette er en fremtidig forbedring, ikke en blocker for C4.
-
-## Data Structures
-
-### UTM-konvensjon (kampanje-URL-mal)
-
-```text
-https://noexcuse.no/landing?utm_source={source}&utm_medium={medium}&utm_campaign={campaign}&utm_content={content}
-```
-
-### Simple Analytics Goal-definisjon (JSON)
-
-```json
-{
-  "goal": "Produkt til Booking",
-  "steps": [
-    { "path": "/", "label": "Home" },
-    { "path": "/ledelse-60-2/", "label": "Product page" },
-    { "path": "/booking/", "label": "Booking page" }
-  ],
-  "funnel": true
-}
-```
+- Telemetri følger `.specs/privacy/README.md`
+- Ingen personopplysninger committes til eller serveres fra dette offentlige repoet
+- Innsendt data går til godkjent ekstern/tjenerside-prosessor
+  (se `.specs/conversion-infrastructure/README.md`)
 
 ## Dependencies
 
-- **C1 (Case Planning):** Case-innhold brukes som bakgrunn for traktanalyse — hvilke sider/caser som driver mest trafikk
-- **Simple Analytics:** Allerede installert (`latest.js`). `auto-events.js` må legges til
-- **Microsoft Bookings:** Allerede i bruk — ingen endringer nødvendig på Bookings-siden
-- **Ingen designendringer:** C4 er ren analytics-konfigurasjon, ingen visuelle endringer på nettstedet
+- **Simple Analytics:** Allerede installert (`latest.js` i `_includes/scripts.html`)
+- **Microsoft Bookings:** Allerede i bruk
+- **Ingen designendringer:** C4 er ren telemetri-/konfigurasjonsarbeid, ingen
+  visuelle endringer på nettstedet
 
 ## Implementation Order
 
-1. Legg til `auto-events.js` i `_includes/scripts.html`
-2. Opprett UTM-konvensjon-dokument for internt bruk
-3. Definer Simple Analytics Goals i dashbordet (funnels)
-4. Implementer egendefinerte events på CTA-knapper
-5. Dokumentér alle events og målinger i denne spec-fila
-6. (Fremtidig) Koble Fiken API for full trakt-rapportering
+1. Implementer egendefinerte events på CTA-knapper og profil-kort
+2. Dokumentér alle events og målinger i denne spec-fila
+3. (Fremtidig) Nedlastings-sporing for PDF-filer
