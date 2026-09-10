@@ -126,6 +126,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - **Obsolete design docs (T3)**: Deleted `.design/SPEC.md`, `.design/codebase-integrity.md`, `.design/website-gaps-overview.md`, and `.design/archive/` (plan-v0, review-questions, citation-enhancement, c2pa-cc0-licensing, visual-polish-r23). All still-current invariants (brand tone, 44px touch targets, Norwegian Bokmål, GitHub Pages/Jekyll, Microsoft Bookings, JSON-LD) remain documented in the canonical `.design/` and `.specs/` docs. Repointed `.omo/rules/spec-discipline.md` from the deleted SPEC.md to the canonical design doc set.
 
+### Removed
+- **Spec cleanup (T4)**: Deleted the archived spec collection (24 completed one-time plans) and 21 superseded one-time plan specs in `.specs/` (hero-layout-fixes, homepage-overhaul, image-optimization, metode-overhaul, profile-card-redesign, profile-filter, profile-tag-formatting, regression-fixes-phase6, ui-upgrade, usikkerhet-rename, and more). Reduced `.specs/cta-frontmatter/README.md` to its current-state contract (CTA frontmatter schema + template rendering rules). Fixed the dangling spec pointer in `.design/ui-upgrade.md` and reworded the spec-discipline collapse-rule examples to live specs. All specs holding canonical or functional contracts remain.
+
 ## [1.9.0] - 2026-06-08
 
 ### Added

@@ -27,8 +27,8 @@ When multiple backlog items affect the **same file or the same logical scope**, 
 
 | Scenario | Old approach (wrong) | New approach (right) |
 |----------|---------------------|---------------------|
-| 7 items all needing changes to `metode` article | 7 separate `.specs/metode-*/` directories | 1 `.specs/metode-overhaul/README.md` |
-| 4 profile card fixes | 4 separate `.specs/profile-card-*/` directories | 1 `.specs/profile-card-redesign/README.md` |
+| 5 quiz feature items (BL Q1–Q5) | 5 separate `.specs/quiz-*/` directories | 1 `.specs/quiz/README.md` |
+| 2 booking CTA fixes | 2 separate `.specs/booking-*/` directories | 1 `.specs/booking-direct-links/README.md` |
 | Completely unrelated items (different feature, different files) | Still separate specs | Still separate specs — collapse only when scope overlaps |
 
 The spec title and directory should reflect the shared concern. Individual item IDs go in the **Backlog References** section.
