@@ -1,0 +1,12 @@
+[
+  {
+    "ruleId": "S-CONTACT-LIST",
+    "path": "CHANGELOG.md",
+    "reason": "historical reference to retired _data file names (accepted in T2 review)"
+  },
+  {
+    "ruleId": "S-WEAKNESS-GAP",
+    "path": "CHANGELOG.md",
+    "reason": "historical entry wording ('gap-analysis specs') describing a completed spec rename, not an assessment"
+  }
+]

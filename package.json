@@ -8,6 +8,8 @@
     "lint:html": "htmlhint _includes/ _layouts/ *.html",
     "lint:css": "stylelint 'assets/css/**/*.css'",
     "lint:js": "eslint 'assets/scripts/**/*.js'",
+    "scan:sensitivity": "node scripts/scan-sensitivity.mjs",
+    "scan:sensitivity:changed": "node scripts/scan-sensitivity.mjs --changed",
     "test": "vitest run",
     "test:watch": "vitest"
   },
