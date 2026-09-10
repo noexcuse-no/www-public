@@ -131,6 +131,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 **Backlog prune (T5)**: Trimmed BACKLOG.md from 130 to 21 lines — removed all 40+ Done rows (completed items live in CHANGELOG only), leaving only Planned/Doing/Blocked items. Corrected FF2: no i18n infrastructure exists (spec ready, nothing implemented). Corrected G4: newsletter ships as localStorage MVP with manual export (no JSON-file storage), contact form (F4b) removed in favor of direct booking via Outlook. Dropped dependency references to removed Done rows.
 
+### Removed
+- **Sensitive-content sweep (T6)**: Removed the two internal AI strategy conversation dumps and the empty `_data/` submission placeholder files (no submission storage may exist in this public repo). Sanitized remaining sensitive fragments in active files: the contact-form include now states submissions must go to an approved external/server-side processor and never be committed to or served from this repo; the C1 backlog row now states only the desired product outcome. Full-tree sweeps over all tracked files return clean — personal-data search found no non-public personal data (only intentional public business contact info: published org number and public booking link), and the single remaining weak-term occurrence in `.design/graphics.md` is part of a public banner illustration brief (kept). Sweeps were run locally only; their output may contain sensitive values and must never run in CI.
+
 ## [1.9.0] - 2026-06-08
 
 ### Added

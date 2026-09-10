@@ -22,7 +22,7 @@ Completed items belong in `CHANGELOG.md` only.
 | FF6 | Multi-product support | Planned | Q7 |
 | Q7 | Katalysator product | Blocked | User availability (deferred to June 2026) |
 | G4 | **Conversion infrastructure (F4)** — email capture (F4a) shipped as localStorage MVP with manual export (no JSON storage, no server-side processor yet; submitted data is never committed to the repo). Contact form (F4b) removed in favor of direct booking via Outlook. Step page enrichment (F4c) shipped via R25. Article recommendations (F4d, future). See `.specs/conversion-infrastructure/README.md`. | Doing | — (G1–G3 funnel contributors shipped) |
-| C1 | **Customer case intake & planning** — Intake toolkit ready (customer scorecard, interview script, writing template, approval workflow). Next: identify 1–3 real cases and conduct interviews with customer sign-off. | Doing | — |
+| C1 | **Customer case intake & planning** — Identify 1–3 real customer cases, conduct interviews, and obtain sign-off before publishing them on the site. | Doing | — |
 | C3 | **Case content creation** — Write full case descriptions with measurable results (anonymized if needed). Norwegian Bokmål. | Planned | C1 |
 | C4 | **Visitor flow / inbound sales journey** — Integrate cases into site nav (Om Oss cross-link, homepage section, product page filtering, article recommendations). See `.specs/cases/README.md` and `.specs/inbound-sales/README.md`. | Planned | C1, C3 |
 | P7 | **Partner content creation** — Create partner pages in `_pages/` with content produced from partner conversations. Frontmatter schema, guidelines, and page infrastructure ready (P6 shipped). Next: actual partner conversations. | Planned | — |
