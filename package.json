@@ -14,6 +14,8 @@
     "scan:secrets:history": "bash scripts/scan-secrets-history.sh",
     "sanitize:media": "bash scripts/sanitize-metadata.sh --check",
     "inspect:docs": "bash scripts/inspect-doc-metadata.sh --check",
+    "audit:deps": "node scripts/audit-deps.mjs",
+    "check:supply-chain": "node scripts/check-supply-chain.mjs",
     "test": "vitest run",
     "test:secrets": "bash tests/secrets-scanner-smoke.sh",
     "test:watch": "vitest"

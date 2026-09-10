@@ -21,6 +21,8 @@ globs: ["**/*.js", "**/*.css", "**/*.html", "tests/*"]
 | `npm run test:secrets` | Secret-scanner smoke test (install + clean scan + redaction) |
 | `npm run sanitize:media` | Image metadata hygiene check — flags GPS, serial, comments, creator (exiftool) |
 | `npm run inspect:docs` | PDF document-info check — flags author, creator, producer, internal filenames |
+| `npm run audit:deps` | Dependency audit — npm audit + outdated + slopsquat detection |
+| `npm run check:supply-chain` | Supply-chain static analysis — eslint + semgrep (if available) + dangerous pattern scan |
 
 ## Tools
 
@@ -32,6 +34,7 @@ globs: ["**/*.js", "**/*.css", "**/*.html", "tests/*"]
 | `vitest` | Unit tests |
 | `gitleaks` (pinned v8.30.1) | Secret scanning — run via `npm run scan:secrets` / `npm run scan:secrets:history` |
 | `exiftool` (Perl Image::ExifTool) | Media/PDF metadata inspection and sanitisation |
+| `semgrep` (optional) | Static analysis security rules (install via `pipx`/`brew`) |
 
 ## Secret scanning
 
