@@ -134,6 +134,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - **Sensitive-content sweep (T6)**: Removed the two internal AI strategy conversation dumps and the empty `_data/` submission placeholder files (no submission storage may exist in this public repo). Sanitized remaining sensitive fragments in active files: the contact-form include now states submissions must go to an approved external/server-side processor and never be committed to or served from this repo; the C1 backlog row now states only the desired product outcome. Full-tree sweeps over all tracked files return clean — personal-data search found no non-public personal data (only intentional public business contact info: published org number and public booking link), and the single remaining weak-term occurrence in `.design/graphics.md` is part of a public banner illustration brief (kept). Sweeps were run locally only; their output may contain sensitive values and must never run in CI.
 
+### Changed
+- **Repository noise untracking (T7)**: Removed three tracked `.DS_Store` files (repo root, `assets/`, `assets/images/`) from version control — `.gitignore` already covered the pattern; files kept on disk locally. Added narrow `.playwright-mcp/` ignore pattern (Playwright MCP artifacts). No other tracked noise found (no `.swp`/`.tmp`/`.bak`/`.log`/editor/cache/build files tracked); `.gitignore` already covers `node_modules/`, `_site/`, `.jekyll-cache/`, `.omo/*` (except rules), logs, caches, and build outputs.
+
 ## [1.9.0] - 2026-06-08
 
 ### Added
