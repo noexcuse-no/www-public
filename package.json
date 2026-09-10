@@ -10,7 +10,10 @@
     "lint:js": "eslint 'assets/scripts/**/*.js'",
     "scan:sensitivity": "node scripts/scan-sensitivity.mjs",
     "scan:sensitivity:changed": "node scripts/scan-sensitivity.mjs --changed",
+    "scan:secrets": "bash scripts/scan-secrets-changed.sh",
+    "scan:secrets:history": "bash scripts/scan-secrets-history.sh",
     "test": "vitest run",
+    "test:secrets": "bash tests/secrets-scanner-smoke.sh",
     "test:watch": "vitest"
   },
   "devDependencies": {
