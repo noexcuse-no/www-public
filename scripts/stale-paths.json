@@ -51,8 +51,9 @@
       "scripts/site-audit-allowlist.json",
       "scripts/stale-paths.json",
       "scripts/doc-conventions.json",
-      "tests/check-stale-references.test.mjs"
+      "tests/check-stale-references.test.mjs",
+      "tests/provenance-rights-validators.test.mjs"
     ],
-    "reason": "Historical references in CHANGELOG are legitimate; config files blocklist stale paths by design; test file references stale paths for fixture testing; doc-conventions.json lists allowlisted directories"
+    "reason": "Historical references in CHANGELOG are legitimate; config files blocklist stale paths by design; test file references stale paths for fixture testing; doc-conventions.json lists allowlisted directories; provenance test file references stale paths for fixture testing"
   }
 }
