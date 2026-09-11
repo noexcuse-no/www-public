@@ -19,6 +19,7 @@ const CHECKS = [
   { name: 'audit:site', cmd: 'npm', args: ['run', 'audit:site'], desc: 'Post-build publication audit' },
   { name: 'check:stale', cmd: 'npm', args: ['run', 'check:stale'], desc: 'Stale-reference integrity check (T17)' },
   { name: 'check:docs', cmd: 'npm', args: ['run', 'check:docs'], desc: 'Doc structure validation (T18)' },
+  { name: 'check:consistency', cmd: 'npm', args: ['run', 'check:consistency'], desc: 'AI/rights transparency consistency (T21)' },
 ];
 
 function runCheck({ name, cmd, args, desc }) {

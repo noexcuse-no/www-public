@@ -19,6 +19,7 @@
     "audit:site": "node scripts/audit-site-publication.mjs",
     "check:stale": "node scripts/check-stale-references.mjs",
     "check:docs": "node scripts/check-doc-structure.mjs",
+    "check:consistency": "node scripts/check-transparency-consistency.mjs",
     "ci": "node scripts/run-ci.mjs",
     "test": "vitest run",
     "test:secrets": "bash tests/secrets-scanner-smoke.sh",
