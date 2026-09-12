@@ -52,6 +52,7 @@ const EXCLUDED_FILES = new Set([
   'scripts/sensitivity-allowlist.json',
   'scripts/ci-scan-sensitivity.sh',
   'tests/provenance-rights-validators.test.mjs',
+  'BACKLOG.md',
 ]);
 const EXCLUDED_PATH_PREFIXES = ['tests/fixtures/sensitivity'];
 

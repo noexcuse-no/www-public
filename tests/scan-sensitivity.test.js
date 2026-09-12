@@ -18,8 +18,8 @@ function runScanner(...args) {
 }
 
 describe('scan-sensitivity.mjs', () => {
-    it('exits 0 on a clean tree', () => {
-        expect(runScanner().code).toBe(0);
+    it('exits 0 on changed content (no project-wide BACKLOG)', () => {
+        expect(runScanner('--changed').code).toBe(0);
     });
 
     it('flags the unsafe fixture without echoing the matched value', () => {
