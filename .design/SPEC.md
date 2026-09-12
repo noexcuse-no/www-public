@@ -13,11 +13,11 @@
 - **Anti-establishment:** Question the obvious, challenge conventions
 
 ## Target Audience
-- **Industry:** All SMB, focus on logistics
-- **Company size:** 5-50 employees
-- **Roles:** Founders + middle management
+- **Industry:** All sectors — primary: 50–250 employees; secondary: 20–49, 250+, public sector, regulated industries
+- **Company size:** 50–250 employees (primary); 20–49, 250+ (secondary)
+- **Roles:** CEO / administrerende direktør (primary buyer); HR-director, business-unit leader, strategy/transformation leader, quality/risk/governance leader, chair/owner
 - **Geographic:** National, Oslo/Østlandet focus
-- **Persona:** Down-to-earth, no-bullshit people who may consider electric bikes and caffe lattes pretentious
+- **Persona:** Executive buyers — direct, commercially credible, specific, mature. Low on consulting jargon. Not "founders and middle management"
 
 ## Competitive Differentiation
 1. **Method** - Reflection-driven approach (60 diagnostic questions vs surveys)
@@ -54,7 +54,7 @@ When starting work on a feature: read the listed design docs and specs first.
 | `[animations]` | Scroll-triggered animations | `assets/css/animations.css`, `assets/scripts/animations.js` | `ui-upgrade.md`, `css-architecture.md` | `.specs/ui-upgrade/README.md` |
 | `[cta]` | Reusable CTA component | `_includes/cta.html` | `components.md`, `colors.md`, `ui-upgrade.md` | — |
 | `[cta-design]` | CTA Type A/B design system | `assets/css/products.css`, `assets/css/article.css`, `_includes/cta.html` | `colors.md`, `components.md` | `.specs/cta-design/README.md` |
-| `[booking]` | Microsoft Bookings modal | `_includes/booking-modal.html` | `components.md` | — |
+| `[booking]` | Booking — /bestill/ wrapper + MS Bookings scheduler | `_pages/bestill_ledelse-60-2.md`, `_includes/price-card.html` | `components.md`, `inbound-strategy.md` | `.specs/bestill-booking-page/README.md` |
 | `[logo]` | Logos/branding assets | `assets/images/noexcuse-logo-*.webp` | `graphics.md`, `colors.md` | — |
 | `[seo]` | SEO foundation | `_includes/metadata.html`, `sitemap.xml`, `robots.txt`, `manifest.json` | — | — |
 | `[images]` | Image generation & optimization | `assets/images/*` | `graphics.md` | — |
@@ -83,11 +83,13 @@ When starting work on a feature: read the listed design docs and specs first.
 
 ## Technical Requirements
 - **Hosting:** GitHub Pages
-- **Booking:** Microsoft Bookings
-- **Analytics:** Clicky
+- **Booking:** Microsoft Bookings (background scheduler — site owns /bestill/ wrapper)
+- **Analytics:** Simple Analytics (cookie-free, Events API for site-side event tracking)
 - **CMS:** Jekyll (static)
 - **Language:** Norwegian Bokmal
 
 ## Conversion Flow
-1. **Primary:** Order Ledelse 60:2 directly -> select implementation date -> confirmation
-2. **Secondary:** Download lead magnet / Contact / Newsletter
+1. **Primary (Route A):** Bestill Ledelse 60:2 → /bestill/ledelse-60-2/ (price, inclusions, fit) → MS Bookings (time selection) → confirmation
+2. **Secondary (Route B):** Book 20 min avklaring → /samtale/ → MS Bookings (avklaring service) → clarification conversation
+3. **AI reflection:** Spør din KI → private AI conversation → return loop → /ledelse-60-2/
+4. **Buying-situation pages:** Situation recognition → fit check → Route A or B

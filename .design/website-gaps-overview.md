@@ -69,6 +69,20 @@ The site has a **top-and-bottom-only funnel**: awareness via articles → bookin
 | F4c | **Step pages empty** — Samtale/Intervju/Rapport have no body text, no CTA | 1 |
 | F4d | **No article recommendations** — no "neste steg" for visitors | 2 |
 
+> **F4b resolved by /bestill/ (2026-08-30):** The contact-form gap is superseded by the site-owned `/bestill/ledelse-60-2/` booking decision page. The site now owns the commercial context; MS Bookings handles time selection in the background. F4a (email capture) is deferred as future work. See `.design/inbound-strategy.md` §7.
+
+### New gaps identified by the inbound strategy (2026-08-30)
+
+| Gap | Status |
+|-----|--------|
+| Buying-situation landing pages (Tier 1 ×6) | Planned — `.specs/buying-situation-pages/README.md` |
+| Foredrag og media organizer page | Planned — `.specs/foredrag-media/README.md` |
+| Vanity URL/QR attribution | Planned — `.specs/vanity-qr-attribution/README.md` |
+| AI reflection repositioning (private, mobile-visible) | Planned — `.specs/ai-private-reflection/README.md` |
+| Analytics event vocabulary (15 events) | Planned — `.specs/analytics-events/README.md` |
+| 60/2/4 visual signature | Planned — `.specs/product-signature/README.md` |
+| Recognition cards (2×2) | Planned — `.specs/product-signature/README.md` |
+
 ### C1-C4 — Customer Cases (BL: C1-C4)
 
 **Spec:** `.specs/cases/README.md`

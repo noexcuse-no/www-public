@@ -162,8 +162,9 @@ Styled in `assets/css/article.css`.
 
 ## Form Elements
 - Input fields (44px height minimum)
-- Date picker (Microsoft Bookings)
 - Submit buttons
+
+> Note: No date picker form element exists on-site. Time selection happens on the external Microsoft Bookings page, reached from the site-owned /bestill/ wrapper.
 
 ---
 

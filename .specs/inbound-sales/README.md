@@ -1,5 +1,7 @@
 # Inbound Sales / Visitor Flow — Functional Specification
 
+> **Updated 2026-08-30 (strategy alignment):** The event model and funnel are superseded by `.specs/analytics-events/README.md` (15-event vocabulary, 12 site-side + 3 off-site conventions). The funnel is now **site-owned to /bestill/ledelse-60-2/** — the site owns the commercial context (price, fit, privacy, reassurance); MS Bookings is background time-selection. The old `cta_book_samtale`/`cta_book_60-2` events are replaced by the analytics-events vocabulary. This spec's funnel definitions below are retained as historical context; the authoritative event model lives in `.specs/analytics-events/README.md`.
+
 ## Purpose and Scope
 
 Map the visitor journey from first page view to booked conversation and ultimately to paid invoice. Define analytics instrumentation, UTM conventions, funnel definitions, and event tracking so that No Excuse AS can attribute inbound marketing efforts to real outcomes.
@@ -49,6 +51,8 @@ Legg til `auto-events.js`-scriptet for å fange:
 - **Nedlastinger:** PDF-filer (avtale, rapporter)
 
 ### 4. Egendefinerte events
+
+> **Superseded by `.specs/analytics-events/README.md` (2026-08-30).** The 15-event vocabulary (12 site-side via Simple Analytics Events API + 3 off-site documented conventions) replaces the ad-hoc `cta_book_samtale`/`cta_book_60-2`/`cta_les_mer`/`profile_expand` events below. The funnel is site-owned to `/bestill/ledelse-60-2/`; `booking_complete`/`sale_qualified`/`sale_won` are off-site conventions only (the booking completes on the external MS Bookings page with no redirect back).
 
 Spor følgende interaksjoner som egne events via Simple Analytics Events API:
 

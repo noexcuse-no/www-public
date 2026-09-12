@@ -1,5 +1,9 @@
 # AI Agent Instruction Cheat Sheets — Leadership Assessment Agent Specification
 
+> **Status: SUPERSEDED** — replaced by `.specs/ai-private-reflection/README.md` (2026-08-30).
+>
+> The strategy repositions the AI feature from a "Leadership Assessment Agent" that engages leaders in structured conversation toward a **private reflection tool** ("din egen KI") where the visitor's own AI does the reflecting. The cheat-sheet asset `assets/ai-agent-cheat-sheet.md` is kept as public AI-agent guidance, but it is no longer the feature core. Do not follow this spec's acceptance criteria.
+
 ## Purpose / Problem
 
 ### Context

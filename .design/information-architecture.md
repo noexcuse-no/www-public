@@ -18,7 +18,7 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/mennesker/` | `_pages/mennesker.md` | Frame: People (tilhørighet, mestring, autonomi) |
 | `/identitet/` | `_pages/identitet.md` | Frame: Identity (verdier, ritualer, fortelling) |
 | `/pavirkning/` | `_pages/pavirkning.md` | Frame: Influence (makt, nettverk, interesser) |
-| — | quiz modal (Q1-Q5) | No dedicated URL — modal overlay on existing pages. CTA on frontpage + frame articles. |
+| — | quiz modal (Q1-Q5) | No dedicated URL — modal overlay on existing pages. **Deferred** (Blocked in BACKLOG, no CTA placement until decided). |
 | `/forankring/` | `_pages/ledelse_forankring.md` | Benefit: Anchoring |
 | `/tillit/` | `_pages/ledelse_tillit.md` | Benefit: Trust |
 | `/makt/` | `_pages/ledelse_makt.md` | Benefit: Power dynamics |
@@ -32,7 +32,15 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/kvalitetsledelse/` | `_pages/kvalitetsledelse.md` | Topical: Kvalitetsledelse |
 | `/baerekraft/` | `_pages/baerekraft.md` | Topical: Bærekraft og samfunnsansvar |
 | `/compliance/` | `_pages/compliance.md` | Topical: Compliance |
-| `/kontakt/` | `_pages/kontakt.md` | Contact form |
+| `/bestill/ledelse-60-2/` | `_pages/bestill_ledelse-60-2.md` | Booking decision page — Ledelse 60:2 (Route A/B) |
+| `/personvern-ki/` | `_pages/personvern_ki.md` | AI privacy transparency page |
+| `/foredrag-og-media/` | `_pages/foredrag_og_media.md` | Foredrag og media organizer page |
+| `/gjentatte-diskusjoner/` | `_pages/gjentatte-diskusjoner.md` | Buying situation: gjentatte diskusjoner |
+| `/svak-gjennomforing/` | `_pages/svak-gjennomforing.md` | Buying situation: svak gjennomføring |
+| `/uklare-roller/` | `_pages/uklare-roller.md` | Buying situation: uklare roller |
+| `/ny-ledergruppe/` | `_pages/ny-ledergruppe.md` | Buying situation: ny ledergruppe |
+| `/ny-leder/` | `_pages/ny-leder.md` | Buying situation: ny CEO/leder |
+| `/strategi-ikke-gjennomfort/` | `_pages/strategi-ikke-gjennomfort.md` | Buying situation: strategi ikke gjennomført |
 | `/personvern/` | `_pages/personvern.md` | Privacy policy |
 
 ## Tag Pages
@@ -89,10 +97,10 @@ Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningst
 | `/compliance/` → Psychological safety | `/tillit/` | "Les om psykologisk trygghet →" |
 | `/compliance/` → Power and ethics | `/makt/` | "Les om makt og etisk ledelse →" |
 | `/compliance/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om Ledelse 60:2 →" |
-| `/om-oss/` → Contact | `/kontakt/` | "Kontakt oss →" |
-| `/kontakt/` → Booking | External | "Bestill uforpliktende samtale" |
-| `/kontakt/` → Om oss | `/om-oss/` | "Les om No Excuse AS →" |
-| `/kontakt/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om produktet →" |
+| `/om-oss/` → Ledelse 60:2 | `/ledelse-60-2/` | "Les mer om produktet →" |
+| `/om-oss/` → Booking | `/bestill/ledelse-60-2/` | "Bestill Ledelse 60:2" |
+| `/ledelse-60-2/` → Booking | `/bestill/ledelse-60-2/` | "Bestill Ledelse 60:2" |
+| `/samtale/` → Booking (Route B) | `/bestill/ledelse-60-2/` | "Book 20 min avklaring" |
 
 ## Rules
 
