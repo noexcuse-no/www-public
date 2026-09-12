@@ -1,0 +1,13 @@
+{
+  "allowedStatuses": ["Planned", "Current", "Active", "In Progress", "Draft"],
+  "flaggedStatuses": ["Done", "Completed", "Archived", "Superseded", "Obsolete", "Deprecated"],
+  "requiredFields": ["title", "status"],
+  "specDirs": [".specs/", ".design/"],
+  "allowlistedFiles": [
+    "CHANGELOG.md",
+    "BACKLOG.md",
+    "VERSION",
+    "AGENTS.md",
+    "README.md"
+  ]
+}
