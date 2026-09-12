@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: buying-situation
 layout: article
 title: "Svak gjennomføring — når beslutninger ikke blir til handling"

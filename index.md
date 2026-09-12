@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: ai-assisted
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 layout: home
 title: "No Excuse AS"
 description: "No Excuse AS hjelper ledergrupper med å bli bedre — uten byråkrati. 60 diagnostiske spørsmål på 2 timer."

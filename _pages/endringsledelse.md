@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -51,23 +55,10 @@ json_ld:
       - type: "Thing"
         name: "Kultur"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/endringsledelse/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Endringsfeil og læring"
-    opening_question: "Når ble siste gang dere gjennomførte en større endring — og hva gikk galt?"
-    source_url: "/endringsledelse/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Motstand mot endring"
-    opening_question: "Hvem i organisasjonen bremser endring — og hvorfor?"
-    source_url: "/endringsledelse/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Endringsmåling"
-    opening_question: "Hvordan vet dere at en endring faktisk har funnet sted?"
-    source_url: "/endringsledelse/"
-    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hvorfor endringsledelse er vanskeligere enn det ser ut til
@@ -120,7 +111,6 @@ Vellykket endringsledelse handler ikke om å ha den beste planen. Det handler om
 
 Ledelse 60:2 gir deg verktøyet for det første steget — en baseline for hvor ledergruppen din står.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ---
 

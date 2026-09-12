@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -49,23 +53,10 @@ json_ld:
       - type: "Thing"
         name: "Målstyring"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/generativ-ki/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Ansvar for KI-kvalitet"
-    opening_question: "Hvem i organisasjonen har ansvaret for kvaliteten på KI-output — og vet de det?"
-    source_url: "/generativ-ki/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Kritisk vurdering av KI-svar"
-    opening_question: "Hvordan vet du at KI-svar faktisk er riktige, ikke bare overbevisende?"
-    source_url: "/generativ-ki/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Måling av KI-effekt"
-    opening_question: "Måler du effektivitet med KI, eller bare aktivitet?"
-    source_url: "/generativ-ki/"
-    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Lederbristen i KI-æraen

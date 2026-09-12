@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: buying-situation
 layout: article
 title: "Gjentatte diskusjoner — når ledergruppen snakker forbi hverandre"

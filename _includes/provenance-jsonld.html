@@ -1,24 +1,99 @@
 {% comment %}
-  Provenance JSON-LD structured data — injects digitalSourceType + license on every page.
-  Respects page-level frontmatter overrides via page.provenance:
-    - unset / "ai"       → TrainedAlgorithmicMediaDigitalSource (default)
-    - "editorial"        → CompositeWithTrainedAlgorithmicMediaDigitalSource
-    - "human"            → no digitalSourceType (omit)
+  Provenance JSON-LD @graph — per-page WebPage + per-image ImageObject entries.
+  digitalSourceType per page.provenance frontmatter; per-image from _data/image-provenance.yml.
+  Non-AI images (per exclude-list) are OMITTED from @graph entirely.
+  Also emits exclude-list JSON blob for ai-provenance-injector.js runtime consumption.
 {% endcomment %}
-{% assign source = page.provenance | default: "ai" %}
-{% if source == "human" %}
-  {% assign digital_source = false %}
-{% elsif source == "editorial" %}
-  {% assign digital_source = "https://schema.org/CompositeWithTrainedAlgorithmicMediaDigitalSource" %}
-{% else %}
-  {% assign digital_source = "https://schema.org/TrainedAlgorithmicMediaDigitalSource" %}
+{% assign rights = site.data.rights.pages[page.path] %}
+{% assign prov = page.provenance %}
+{% assign img_provenance = site.data.image-provenance.images %}
+
+{% comment %} Determine page digitalSourceType {% endcomment %}
+{% assign page_dst = "CompositeWithTrainedAlgorithmicMediaDigitalSource" %}
+{% if prov.creation == "human-created" or prov.creation == "human" %}
+  {% assign page_dst = "DigitalCreation" %}
+{% elsif prov.creation == "ai-generated" %}
+  {% assign page_dst = "TrainedAlgorithmicMediaDigitalSource" %}
+{% elsif prov.creation == "ai-assisted" %}
+  {% assign page_dst = "CompositeWithTrainedAlgorithmicMediaDigitalSource" %}
+{% elsif prov.creation == "third-party" %}
+  {% assign page_dst = "ThirdParty" %}
 {% endif %}
+
+{% comment %} Discover images on this page — normalized to registry form (no leading slash) so
+   the exclude-list match and | uniq dedup both work.
+   NOTE: Liquid 4.0.4 has no string indexing; the first-character compare must be done
+   via capture + slice. A bare filter-chain equality inside an if-tag mis-parses, and
+   remove_first: "/" removes the first slash ANYWHERE — so strip only when the captured
+   first char is "/". {% endcomment %}
+{% assign page_images = "" | split: "," %}
+{% if page.hero and page.hero.image %}
+  {% assign img = page.hero.image %}
+  {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
+  {% assign page_images = page_images | push: img %}
+{% endif %}
+{% if page.banner %}
+  {% assign img = page.banner %}
+  {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
+  {% assign page_images = page_images | push: img %}
+{% endif %}
+{% if page.image %}
+  {% assign img = page.image %}
+  {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
+  {% assign page_images = page_images | push: img %}
+{% endif %}
+{% if page.images %}
+  {% for img in page.images %}
+    {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
+    {% assign page_images = page_images | push: img %}
+  {% endfor %}
+{% endif %}
+{% if page.og_image %}
+  {% assign img = page.og_image %}
+  {% capture fc %}{{ img | slice: 0, 1 }}{% endcapture %}{% if fc == "/" %}{% assign img = img | remove_first: "/" %}{% endif %}
+  {% assign page_images = page_images | push: img %}
+{% endif %}
+{% assign page_images = page_images | uniq %}
+
+{% comment %} Build exclude-list for ai-provenance-injector.js {% endcomment %}
+{% assign exclude_list = site.data.image-provenance.images | where_exp: "item", "item.ai_generated == false" | map: "path" %}
+
+{% comment %} Build @graph {% endcomment %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "url": "https://noexcuse.no{{ page.url | default: '/' }}",
-  "license": "https://creativecommons.org/publicdomain/zero/1.0/"{% if digital_source %},
-  "digitalSourceType": "{{ digital_source }}"{% endif %}
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "url": "https://noexcuse.no{{ page.url | default: '/' }}",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/{{ page_dst }}"{% if rights %},
+      "license": "{{ rights.url }}"{% endif %}{% if rights.copyrightText and rights.copyrightText != 'NONE' %},
+      "copyrightHolder": {
+        "@type": "Organization",
+        "name": "{{ rights.copyrightText | replace: '2026 No Excuse AS', 'No Excuse AS' | replace: '2025 No Excuse AS', 'No Excuse AS' | strip }}"
+      }{% endif %}{% if prov.creation %},
+      "creation": "{{ prov.creation }}"{% endif %}{% if prov.editorial_review %},
+      "editorialReview": "{{ prov.editorial_review }}"{% endif %}{% if prov.editorial_responsibility %},
+      "editorialResponsibility": "{{ prov.editorial_responsibility }}"{% endif %}
+    }
+    {% for img_path in page_images %}
+      {% assign img_norm = img_path %}
+      {% assign img_data = img_provenance | where: "path", img_norm | first %}
+      {% unless img_data and img_data.ai_generated == false %}
+        ,
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://noexcuse.no{{ img_path | relative_url }}",
+          "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/TrainedAlgorithmicMedia",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      {% endunless %}
+    {% endfor %}
+  ]
 }
+</script>
+
+{% comment %} Exclude-list JSON blob for ai-provenance-injector.js {% endcomment %}
+<script type="application/json" id="ai-provenance-exclude-list">
+{{ exclude_list | jsonify }}
 </script>

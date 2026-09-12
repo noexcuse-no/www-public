@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: buying-situation
 layout: article
 title: "Ny leder — når en ny administrerende direktør tar over"

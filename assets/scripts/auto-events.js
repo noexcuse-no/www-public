@@ -8,7 +8,6 @@
     'use strict';
 
     /* ── Constants ──────────────────────────── */
-    var SA_EVENT_NAME = 'sa_event';
     var EVENTS = {
         TOPIC_LANDING_VIEW: 'topic_landing_view',
         PROBLEM_PAGE_VIEW: 'problem_page_view',
@@ -66,13 +65,6 @@
         }
     }
 
-    function getHighestIntentSessionClass() {
-        // Documented classification logic (no lead scoring)
-        // Priority: booking_click > product_view > fit_view/price_view/method_view > problem_page_view > topic_landing_view
-        // This is documented for analytics consumers; actual classification happens server-side
-        return 'documented';
-    }
-
     /* ── Page View Events ───────────────────── */
     function firePageViewEvents() {
         var pageClass = getPageClass();
@@ -82,21 +74,21 @@
         if (!pageClass) return;
 
         switch (pageClass) {
-            case 'product':
-                fireEvent(EVENTS.PRODUCT_VIEW, baseMeta);
-                break;
-            case 'buying-situation':
-                fireEvent(EVENTS.PROBLEM_PAGE_VIEW, baseMeta);
-                break;
-            case 'frame':
-            case 'benefit':
-            case 'article':
-            case 'topic':
-                fireEvent(EVENTS.TOPIC_LANDING_VIEW, baseMeta);
-                break;
-            default:
-                // Other pages (home, etc.) don't fire topic_landing_view
-                break;
+        case 'product':
+            fireEvent(EVENTS.PRODUCT_VIEW, baseMeta);
+            break;
+        case 'buying-situation':
+            fireEvent(EVENTS.PROBLEM_PAGE_VIEW, baseMeta);
+            break;
+        case 'frame':
+        case 'benefit':
+        case 'article':
+        case 'topic':
+            fireEvent(EVENTS.TOPIC_LANDING_VIEW, baseMeta);
+            break;
+        default:
+            // Other pages (home, etc.) don't fire topic_landing_view
+            break;
         }
     }
 
@@ -114,19 +106,19 @@
                 var meta = { section: id, source: window.location.pathname };
 
                 switch (id) {
-                    case 'passer':
-                    case 'fit':
-                        fireEvent(EVENTS.FIT_VIEW, meta);
-                        break;
-                    case 'pris':
-                    case 'price':
-                        fireEvent(EVENTS.PRICE_VIEW, meta);
-                        break;
-                    case 'prosess':
-                    case 'method':
-                    case 'hvordan-det-fungerer':
-                        fireEvent(EVENTS.METHOD_VIEW, meta);
-                        break;
+                case 'passer':
+                case 'fit':
+                    fireEvent(EVENTS.FIT_VIEW, meta);
+                    break;
+                case 'pris':
+                case 'price':
+                    fireEvent(EVENTS.PRICE_VIEW, meta);
+                    break;
+                case 'prosess':
+                case 'method':
+                case 'hvordan-det-fungerer':
+                    fireEvent(EVENTS.METHOD_VIEW, meta);
+                    break;
                 }
             });
         }, { threshold: 0.5 });

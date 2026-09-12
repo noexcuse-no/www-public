@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: article
 layout: article
 title: "Triader — Bygg robuste team med trekantede relasjoner"
@@ -55,13 +59,6 @@ json_ld:
           "@type": "Answer"
           text: "Ifølge Logan trengs tre betingelser: felles verdier eller formål, komplementære evner, og vilje til å dele nettverket. Den siste er vanskeligst fordi den krever en kultur der relasjonsbygging ikke oppleves som en trussel mot individuell posisjon."
 topic: "triader"
-questions_title: "Spør din LLM om triader"
-questions:
-  - "Hvem i teamet ditt ville fortsette å samarbeide effektivt hvis du forsvant i morgen?"
-  - "Er viktige relasjoner i organisasjonen din dyader eller triader? Hvordan vet du det?"
-  - "Hvem tjener på at to personer i organisasjonen ikke snakker sammen?"
-  - "Hvilken informasjon er fanget i par-relasjoner og når aldri frem til dem som trenger den?"
-  - "Når introduserte du sist to personer for hverandre og trakk deg tilbake?"
 hero:
   image: /assets/images/banners/hero-triade.webp
   alt: "Abstrakt geometrisk illustrasjon av tre sammenkoblede noder"

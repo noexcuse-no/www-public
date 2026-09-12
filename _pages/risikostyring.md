@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -43,23 +47,10 @@ json_ld:
       - type: "Thing"
         name: "Beslutningstaking"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/risikostyring/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Ansvar for risikoidentifisering"
-    opening_question: "Hvem i ledergruppen har ansvar for å identifisere nye risikoer — og når ble siste gang noen gjorde det?"
-    source_url: "/risikostyring/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Kvantifiserbare vs ukvantifiserbare risikoer"
-    opening_question: "Hvordan håndterer dere risikoer som ikke kan tallfestes?"
-    source_url: "/risikostyring/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Beslutningsendring basert på risiko"
-    opening_question: "Når ble siste gang en beslutning ble omgjort fordi ny risikoinformasjon kom frem?"
-    source_url: "/risikostyring/"
-    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Risikostyring er mer enn årlige kartlegginger
@@ -110,7 +101,6 @@ For ledergrupper som ønsker å styrke risikostyringen, handler første steg om 
 
 Ledelse 60:2 kartlegger disse dimensjonene på to timer.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ---
 

@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: product-booking
 layout: article
 title: "Bestill Ledelse 60:2"

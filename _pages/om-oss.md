@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: article
 layout: article
 title: "Om oss"
@@ -31,6 +35,8 @@ json_ld:
     sameAs:
       - "https://www.linkedin.com/company/noexcuse"
 ---
+
+Store språkmodeller brukes kun i støttende og pyntende roller på noexcuse.no — aldri til analyse eller anbefalinger. [Les mer om vår bruk av KI](/om-store-sprakmodeller/).
 
 ## Hvorfor No Excuse?
 

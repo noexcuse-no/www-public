@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: media
 layout: article
 title: "Foredrag og media"
@@ -15,7 +19,7 @@ Vi tilbyr fem bookbare foredrag og workshops — alle bygget på samme diagnosti
 
 ## Bookbare forslag
 
-### 1. Diagnose før lederutvikling
+## Diagnose før lederutvikling
 
 **Hvorfor de fleste lederutviklingsprogram feiler — og hva man skal gjøre annerledes.**
 
@@ -28,7 +32,7 @@ De fleste organisasjoner starter med løsningen (et program) før de vet hva pro
 
 ---
 
-### 2. Hvem bestemmer egentlig?
+## Hvem bestemmer egentlig?
 
 **Makt, påvirkning og beslutninger i ledergrupper.**
 
@@ -41,7 +45,7 @@ Mange ledergrupper tror de tar beslutninger sammen. Men ofte er det en person so
 
 ---
 
-### 3. Når GRC blir papirarbeid
+## Når GRC blir papirarbeid
 
 **Hvorfor styring, risiko og compliance ofte blir en boks man krysser av — og hvordan man gjør det annerledes.**
 
@@ -54,7 +58,7 @@ GRC (Governance, Risk & Compliance) blir ofte en administrativ øvelse. Men GRC 
 
 ---
 
-### 4. KI-ledelse handler ikke om prompting
+## KI-ledelse handler ikke om prompting
 
 **Hvorfor ledelse i KI-tiden handler om dømmekraft — ikke om verktøy.**
 
@@ -67,7 +71,7 @@ Generativ KI vil ikke gjøre ansatte overflødige, men de må ledes annerledes. 
 
 ---
 
-### 5. Fire forklaringer på samme lederproblem
+## Fire forklaringer på samme lederproblem
 
 **Hvorfor enrammetenkning feiler — og hvordan multiframe thinking løser det.**
 

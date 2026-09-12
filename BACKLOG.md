@@ -25,7 +25,7 @@ Completed items belong in `CHANGELOG.md` only.
 | C3 | Case content creation | Blocked | C1, C2 — user decision 2026-08-31. Write full case descriptions with measurable results (anonymized if needed). Norwegian Bokmål. |
 | C4 | Visitor flow / case journey | Blocked | C1, C2, C3 — user decision 2026-08-31. Integrate cases into site nav (Om Oss cross-link, homepage section, product page filtering, article recommendations). See `.specs/cases/README.md` and `.specs/inbound-sales/README.md`. |
 | P7 | Partner content creation | Blocked | P6 — user decision 2026-08-31. Create partner pages in `_pages/` with content produced from partner conversations. Frontmatter schema, guidelines, and page infrastructure ready. Next: actual partner conversations. |
-| BR2 | Om Oss — Norwegian origin content update | Planned | BR1. Expand founding story, anchor methodology in Norwegian management tradition, make cultural values explicit as Norwegian, add "beste praksis fra norsk arbeidsliv" section, add international framing for FF2. |
+| BR2 | Om Oss — Norwegian origin content update | Done | BR1. Expand founding story, anchor methodology in Norwegian management tradition, make cultural values explicit as Norwegian, add "beste praksis fra norsk arbeidsliv" section, add international framing for FF2. |
 | R33 | Benefit & process step frontmatter as data source | Superseded | **Superseded 2026-08-30 (strategy alignment):** V1's 10-section homepage and V2's offer card render from shared components (`.specs/product-signature/README.md`), not R33's benefit/process frontmatter-card pattern. V1 + V2 dependency cells updated accordingly. |
 | Q1 | Quiz — question pool | Blocked | User decision 2026-08-30 — quiz conflicts with the no-scoring principle (strategy alignment). 15+ questions with 6+ answers each, mapped to Bolman & Deal's four frames. Inline in `quiz.js` as a JS array. See `.specs/quiz/README.md`. Q3 |
 | Q2 | Quiz — illustrations | Blocked | User decision 2026-08-30 — quiz conflicts with the no-scoring principle (strategy alignment). 10 question illustrations (240×240px) + 4 result illustrations (320×240px) + 4 OG share images (1200×630px). WebP. See `.design/quiz.md`. Q1 |
@@ -34,10 +34,11 @@ Completed items belong in `CHANGELOG.md` only.
 | Q5 | Quiz — page integration | Blocked | User decision 2026-08-30 — quiz conflicts with the no-scoring principle (strategy alignment). Deferred. No CTA placement until decided. |
 | V1 | Homepage repositioning | Planned | V3 (nav targets), product-signature (shared components). 10-section sequence (outcome hero → recognition → what changes → 60/2/4 → diagnosis-before-intervention → how it works → proof → fit → commercial info → CTA). See `.specs/homepage-repositioning/README.md`. |
 | V2 | Product-page offer | Planned | product-signature (price card), bestill-booking-page (Route A/B targets). fit/not-fit, public price, FAQ, bounded before/during/after, JSON-LD price. See `.specs/product-page-offer/README.md`. |
-| V3 | Navigation / IA split | Planned | —. Commercial vs insight surface classification; AI = insight; Bookings demoted to background scheduler. See `.specs/navigation-ia-split/README.md`. |
+| V3 | Navigation / IA split | Done | —. Commercial vs insight surface classification; AI = insight; Bookings demoted to background scheduler. See `.specs/navigation-ia-split/README.md`. |
 | V4 | Buying-situation pages | Planned | ai-private-reflection, analytics-events. 6 Tier-1 situations (gjentatte diskusjoner, svak gjennomføring, uklare roller, ny ledergruppe, ny leder, strategi ikke gjennomført). See `.specs/buying-situation-pages/README.md`. |
 | V5 | Article conversion rails | Planned | ai-private-reflection, analytics-events, navigation-ia-split. Two-CTA pattern, related-perspectives block, recognition hook, return sections. See `.specs/article-conversion-rails/README.md`. |
 | V6 | Founder credibility | Planned | bestill-booking-page, foredrag-media, product-signature. Practitioner module + reusable CTA panel (Dagfinn) on /bestill/ + /foredrag-og-media/. See `.specs/founder-credibility/README.md`. |
+| MR1 | **Mixed-rights licensing + provenance** | Done | Wave 0–6 complete. See `.specs/mixed-rights-licensing/README.md`. |
 | R20 | Generate and add illustrations to /perspektiv per page design rules | Done | PR #116 |
 | R16 | Article illustrations — 25 images for Makt, Perspektiv, Triader (T2 framework + T3 section + T4 micro) | Done | PR #117 |
 | R17 | Frame micro illustrations — 16 T4 micro spots for challenge cards on Struktur, Mennesker, Identitet, Påvirkning | Done | PR #118 |
@@ -147,8 +148,10 @@ Completed items belong in `CHANGELOG.md` only.
 | BU1 | Button CTA URL uniformity | Pending | `.omo/plans/button-cta-url-uniformity.md` |
 | AE1 | Article element styling | Done | `.omo/plans/article-element-styling.md` — implemented (h4/h5 heading scale, section dividers, blockquote unification, table zebra striping, card hover refinement, metode.css + .info-box deletion). Record in CHANGELOG. |
 | AI1 | AI Act alignment | Pending | `.omo/plans/ai-act-alignment.md` |
+| R37 | AI Act alignment (KI-lov forward-readiness) | Planned | Article 50 disclosure stack: EU basic icon banner label, /om-store-sprakmodeller/ editorial-responsibility page, per-image provenance (@graph + RDFa), non-AI exclude-list, manifest reconciliation. See `.specs/ai-transparency/README.md`. |
 | RI1 | Risk reduction cleanup | Pending | `.omo/plans/risk-reduction-cleanup.md` |
 | CI1 | CI reuse gating flip | Pending | mixed-rights:507 |
+| MR1 | Mixed-rights licensing & provenance | Doing | `.omo/plans/mixed-rights-licensing-provenance.md` — 29 todos, Waves 0–6 (REUSE/SPDX census, provenance metadata, site emission, image pipeline, CI). See `.specs/mixed-rights-licensing/README.md`. |
 | V1 | **Homepage commercial repositioning** — Reframe the homepage around buyer pain, recognition, outcomes, and the 60·2·4 product signature instead of method-first explanation. See `.specs/homepage-repositioning/README.md`. | Planned | R33 |
 | V2 | **Ledelse 60:2 product-page offer** — Make the product page easier to buy with fit/not-fit guidance, buying triggers, clearer before/during/after framing, and an offer-card structure with price-anchor placeholder. See `.specs/product-page-offer/README.md`. | Planned | R33 |
 | V3 | **Commercial vs insight navigation split** — Define which surfaces are commercial versus editorial, update navigation accordingly, and treat sales-surface components consistently. See `.specs/navigation-ia-split/README.md`. | Planned | — |

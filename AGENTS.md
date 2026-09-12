@@ -60,6 +60,36 @@ Design/architecture documents live in `.design/*.md` — loaded on demand via RE
 
 Maps action types to reads/checks/runs/updates. Reference this file directly (not via instructions) when determining what to verify for a given task type (css, js, html, commit, etc.).
 
+## Rights & provenance
+
+- Classify new material before commit (0BSD / CC0-1.0 / LicenseRef-NoExcuse-All-Rights-Reserved / unresolved).
+- never CC0 just for AI involvement — AI-assisted human work → `LicenseRef-NoExcuse-All-Rights-Reserved`.
+- New publishable content requires `provenance:` frontmatter (`creation`, `editorial_review: human`, `editorial_responsibility: No Excuse AS`).
+- New images require a `_data/assets.yml` registry entry + REUSE annotation (`.license` sidecar or exact-path entry placed after any matching blanket).
+- Unresolved → report in `.specs/mixed-rights-licensing/README.md`, never hide behind blanket defaults.
+- Canonical reference: `.specs/mixed-rights-licensing/README.md`.
+
+## Local CI Gate (Mandatory)
+
+**Before creating any PR, the local CI runner MUST pass:**
+
+```bash
+npm run ci:local
+```
+
+This executes the complete validation stack (equivalent to CI):
+- `lint` — htmlhint + stylelint + eslint + vitest
+- `reuse-lint` — REUSE/SPDX compliance (clean worktree protocol)
+- `rights-drift` — rights manifest drift check (`npm run rights:check`)
+- `site-build` — Jekyll build + output validation (SKIP if jekyll unavailable, recorded)
+- `dependency-review` — npm audit high-severity vulnerabilities
+
+**Requirements:**
+- All gates PASS (except `site-build` SKIP with fallback documented)
+- Evidence artifact `.omo/evidence/local-ci-*.json` referenced in PR description
+- If a gate fails: fix, re-run, confirm PASS before `gh pr create`
+- No exceptions — this is the only validation pipeline (GitHub Actions workflow is optional/deferred)
+
 ## Quick Reference
 
 ### On Task Initiation

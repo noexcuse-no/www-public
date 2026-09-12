@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -31,23 +35,10 @@ json_ld:
       - type: "Thing"
         name: "Miljøledelse"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/baerekraft/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Ansvar for bærekraft"
-    opening_question: "Hvem i ledergruppen har reelt ansvar for bærekraft — og er dette en del av den daglige ledelsen eller et sideprosjekt?"
-    source_url: "/baerekraft/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Bærekraft vs lønnsomhet"
-    opening_question: "Hvordan prioriterer dere mellom bærekraft og lønnsomhet når det oppstår en konflikt?"
-    source_url: "/baerekraft/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Effektmåling av bærekraft"
-    opening_question: "Hvordan måler dere effekten av bærekraftsarbeidet — og hvem ser rapportene?"
-    source_url: "/baerekraft/"
-    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Bærekraftsarbeid er mer enn rapportering
@@ -114,7 +105,6 @@ For ledergrupper som ønsker å ta bærekraft på alvor, handler første steg om
 
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ---
 

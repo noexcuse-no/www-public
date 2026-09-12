@@ -1,13 +1,10 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: product
 layout: article
-questions_title: "Spør din LLM om ledelsesorientering"
-questions:
-  - "Hvilke av de fire perspektivene (struktur, mennesker, påvirkning, identitet) er sterkest i vår ledergruppe — og hvilket er mest fraværende?"
-  - "Hva vil skje om vi bare bruker ett perspektiv når vi vurderer organisasjonens utfordringer?"
-  - "Hvordan kan ledergruppen bruke 60 diagnostiske spørsmål til å finne felles retning uten å bli sittende fast i detaljer?"
-  - "Hvilke signaler tyder på at ledergruppen har blindsoner i styringen av organisasjonen?"
-  - "Hvordan kan en ekstern vurdering avdekke mønstre som ledergruppen selv ikke ser?"
 title: "Ledelse 60:2 — Orientering for ledergruppen"
 description: "Tidseffektiv orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
 permalink: /ledelse-60-2/

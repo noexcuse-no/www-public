@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -57,23 +61,10 @@ json_ld:
       - type: "Thing"
         name: "Kognitiv bias"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/forankring/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Reell beslutningsmakt"
-    opening_question: "Hvem hadde reell innflytelse på de siste tre viktige beslutningene — og var det de som burde hatt det?"
-    source_url: "/forankring/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Beslutninger mot bedre vitende"
-    opening_question: "Når ble en beslutning tatt mot bedre vitende — og hvorfor?"
-    source_url: "/forankring/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Uenighet og forankring"
-    opening_question: "Hvordan håndterer vi uenighet når den oppstår?"
-    source_url: "/forankring/"
-    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hvorfor ledere ofte tar dårlige beslutninger

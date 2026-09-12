@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -57,23 +61,10 @@ json_ld:
       - type: "Thing"
         name: "Kulturutvikling"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/kultur/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-conversation_topics:
-  - conversation_label: "Kulturbeskrivelse fra nyansatte"
-    opening_question: "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
-    source_url: "/kultur/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Historier og helter"
-    opening_question: "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"
-    source_url: "/kultur/"
-    sixty_two_url: "/ledelse-60-2/"
-  - conversation_label: "Verdier på veggen vs i praksis"
-    opening_question: "Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?"
-    source_url: "/kultur/"
-    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ![Illustrasjon som viser organisasjonskultur som røttene til et tre — det usynlige som former det synlige](/assets/images/banners/kultur-t1-hero.webp)
