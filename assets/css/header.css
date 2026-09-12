@@ -1,8 +1,14 @@
 .header {
     text-align: center;
     padding: 0;
-    border-bottom: 1px solid var(--border-color-subtle-light);
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--header-bg);
+    color: var(--header-text);
     --header-height: 97px;
+}
+
+.header-margin {
+    background-color: var(--header-bg);
 }
 
 .banner {

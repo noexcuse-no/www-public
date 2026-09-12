@@ -4,7 +4,7 @@
 .footnotes {
     margin-top: 3rem;
     padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color-light);
+    border-top: 1px solid var(--border-color);
     font-size: 0.875em;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .footnotes li:target {
-    background: var(--surface-subtle-light);
+    background: var(--surface-subtle);
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
 }
@@ -32,13 +32,4 @@
 
 .footnote-backlink:hover {
     opacity: 1;
-}
-
-/* Dark mode overrides */
-.dark-mode .footnotes {
-    border-top-color: var(--border-color-dark);
-}
-
-.dark-mode .footnotes li:target {
-    background: var(--surface-subtle-dark);
 }

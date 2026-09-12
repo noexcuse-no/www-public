@@ -12,13 +12,7 @@
     font-size: 1.15em;
     font-weight: 600;
     letter-spacing: 0.03em;
-    color: var(--primary-accent-contrast);
+    color: var(--accent-color);
     opacity: 0.75;
     margin: 0;
-}
-
-/* Dark mode overrides */
-.dark-mode .stat-bridge-text {
-    color: var(--primary-azure);
-    opacity: 0.6;
 }
