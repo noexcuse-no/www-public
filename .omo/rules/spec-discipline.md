@@ -9,8 +9,10 @@ globs: ["BACKLOG.md", ".design/**", ".specs/**"]
 
 Before writing any code, read all relevant design and spec documents:
 
-1. Read the canonical design docs (`.design/brand-perception.md`, `.design/information-architecture.md`, `.design/components.md`, `.design/colors.md`, `.design/typography.md`, `.design/architecture.md`) to discover which feature tag, design docs, and functional specs apply
-2. Read every `.design/` document and `.specs/` file referenced by BACKLOG.md or the canonical design docs
+1. Read `.design/architecture.md` for site structure, URL conventions, and collection schemas
+2. Read the design docs covering the changed area as applicable: `.design/brand-perception.md` (tone/voice), `.design/information-architecture.md` (cross-link map), `.design/components.md`, `.design/colors.md`, `.design/typography.md`, `.design/css-architecture.md`, `.design/graphics.md`, `.design/deployment.md`
+3. Read the canonical design docs (`.design/brand-perception.md`, `.design/information-architecture.md`, `.design/components.md`, `.design/colors.md`, `.design/typography.md`, `.design/architecture.md`) to discover which feature tag, design docs, and functional specs apply
+4. Read every `.design/` document and `.specs/` file referenced by BACKLOG.md, the canonical design docs, or the files being changed
 
 ## Post-Implementation Updates
 
@@ -26,8 +28,8 @@ When multiple backlog items affect the **same file or the same logical scope**, 
 
 | Scenario | Old approach (wrong) | New approach (right) |
 |----------|---------------------|---------------------|
-| 7 items all needing changes to `metode` article | 7 separate `.specs/metode-*/` directories | 1 `.specs/metode-overhaul/README.md` |
-| 4 profile card fixes | 4 separate `.specs/profile-card-*/` directories | 1 `.specs/profile-card-redesign/README.md` |
+| 5 quiz feature items (BL Q1–Q5) | 5 separate `.specs/quiz-*/` directories | 1 `.specs/quiz/README.md` |
+| 2 booking CTA fixes | 2 separate `.specs/booking-*/` directories | 1 `.specs/booking-direct-links/README.md` |
 | Completely unrelated items (different feature, different files) | Still separate specs | Still separate specs — collapse only when scope overlaps |
 
 The spec title and directory should reflect the shared concern. Individual item IDs go in the **Backlog References** section.
