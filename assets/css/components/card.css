@@ -99,42 +99,10 @@
     margin-bottom: 12px;
 }
 
-/* Card Links */
+/* Card Links — styled by unified button system in buttons.css (.btn-ghost / .btn-primary) */
 .card-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
     margin-top: auto;
-    padding: 10px 20px;
-    font-size: 0.95em;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 4px;
-    min-height: 44px;
     align-self: flex-start;
-    cursor: pointer;
-    border: 2px solid var(--cta-primary-border);
-    background-color: var(--cta-primary-bg);
-    color: var(--cta-primary-text);
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.card-link:hover {
-    background-color: var(--cta-primary-text);
-    color: var(--cta-primary-bg);
-    border-color: var(--cta-primary-bg);
-}
-
-.card-link--cta {
-    background-color: var(--cta-secondary-bg);
-    color: var(--cta-secondary-text);
-    border: 2px solid var(--cta-secondary-border);
-}
-
-.card-link--cta:hover {
-    background-color: var(--cta-secondary-text);
-    color: var(--cta-secondary-bg);
-    border-color: var(--cta-secondary-bg);
 }
 
 /* Frame Card Accent Border */

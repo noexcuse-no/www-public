@@ -22,10 +22,17 @@
     min-height: 44px;
     display: inline-flex;
     align-items: center;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 .footer-nav a:hover {
     text-decoration: underline;
+}
+
+.footer-nav a:focus-visible,
+.footer-legal a:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 2px;
 }
 
 .footer-legal {
@@ -40,4 +47,5 @@
     min-height: 44px;
     padding: 0 4px;
     text-decoration: underline;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }

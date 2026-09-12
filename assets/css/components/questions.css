@@ -92,12 +92,7 @@
     font-size: 1.2em;
     cursor: pointer;
     color: var(--text-color);
-    transition: background 0.2s ease;
     line-height: 1;
-}
-
-.review-questions-modal .modal-close:hover {
-    background: var(--box-background);
 }
 
 /* ── Modal Question (quotation block) ───── */
@@ -133,7 +128,6 @@
     border-radius: var(--radius-md);
     background: transparent;
     cursor: pointer;
-    transition: background 0.2s ease, border-color 0.2s ease;
     font-family: inherit;
     font-size: 1em;
     text-align: left;
@@ -184,10 +178,6 @@
     white-space: nowrap;
 }
 
-.review-questions-modal .change-provider-btn:hover {
-    opacity: 0.8;
-}
-
 /* ── Preference Checkbox ────────────────── */
 .review-questions-modal .preference-row {
     display: flex;
@@ -222,7 +212,6 @@
     font-family: inherit;
     font-size: 0.9em;
     cursor: pointer;
-    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .review-questions-modal .copy-btn:hover {

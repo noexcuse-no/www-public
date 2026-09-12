@@ -13,18 +13,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 14px 18px;
-    background: var(--box-background);
-    border: 1px solid var(--border-color-subtle);
-    border-radius: var(--radius-lg);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-decoration: none;
     min-height: 44px;
-}
-
-.tag-cloud-item:hover {
-    box-shadow: var(--shadow-md);
-    text-decoration: none;
 }
 
 .tag-name {
