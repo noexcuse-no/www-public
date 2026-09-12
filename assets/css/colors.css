@@ -1,78 +1,129 @@
 :root {
-
     /* ========================================
-       Twin Primary Colors
+       Constants (never change between modes)
        ======================================== */
     --primary-navy: #003060;
     --primary-azure: #F0FFFF;
-
-    /* Legacy aliases (backward compat) */
-    --primary-accent: var(--primary-azure);
-    --primary-accent-contrast: var(--primary-navy);
-
-    /* Logo fill (inverted per mode) */
     --logo-fill: var(--primary-azure);
 
     /* CTA System */
     --cta-primary-bg: var(--primary-azure);
     --cta-primary-text: var(--primary-navy);
     --cta-primary-border: var(--primary-navy);
-
     --cta-secondary-bg: var(--primary-navy);
     --cta-secondary-text: var(--primary-azure);
     --cta-secondary-border: var(--primary-azure);
 
-    /* Nav link colors */
-    --nav-link-color-light: var(--primary-azure);
-    --nav-link-color-dark: var(--primary-navy);
+    /* Header (constant across modes) */
+    --header-bg: var(--primary-navy);
+    --header-text: var(--primary-azure);
+
+    /* Nav hover */
+    --nav-hover-bg: rgba(255, 255, 255, 0.15);
+
+    /* Frame accent colors */
+    --frame-struct: #2A4D6E;
+    --frame-human: #B8901E;
+    --frame-political: #355E3B;
+    --frame-symbol: #8E0D3C;
+
+    /* Brand colors */
+    --brand-linkedin: #0a66c2;
+    --brand-linkedin-hover: #084d91;
+    --brand-teams: #6264A7;
+    --brand-teams-hover: #5050A0;
+
+    /* Semantic colors */
+    --error-color: #c62828;
+    --success-color: #2e7d32;
+    --success-ring: rgba(46, 125, 50, 0.15);
+    --success-ring-dark: rgba(102, 187, 106, 0.2);
 
     /* ========================================
-       Light Mode Colors
+       Raw Pairs (--X-light / --X-dark)
        ======================================== */
+
+    /* Background */
     --background-color-light: #c0d4e8;
-    --bg-neutral-light: #e2e8f0;
-    --text-color-light: #37474f;
-    --banner-background-light: var(--primary-navy);
-    --banner-text-light: var(--primary-azure);
-    --box-background-light: #ffffff;
-    --link-color-light: var(--primary-navy);
-    --link-hover-light: #000a1f;
-    --footer-background-light: var(--primary-azure);
-    --footer-text-light: var(--primary-navy);
-
-    /* ========================================
-       Dark Mode Colors
-       ======================================== */
     --background-color-dark: #121212;
+    --box-background-light: #ffffff;
+    --box-background-dark: #1e2a3a;
+
+    /* Text & Links */
+    --text-color-light: #37474f;
     --text-color-dark: #ffffff;
-    --banner-background-dark: var(--primary-azure);
-    --banner-text-dark: var(--primary-navy);
-    --box-background-dark: #333333;
+    --link-color-light: var(--primary-navy);
     --link-color-dark: var(--primary-azure);
+    --link-hover-light: #000a1f;
     --link-hover-dark: #8ab4f8;
-    --footer-background-dark: var(--primary-navy);
+
+    /* Footer */
+    --footer-bg-light: var(--primary-azure);
+    --footer-bg-dark: var(--primary-navy);
+    --footer-text-light: var(--primary-navy);
     --footer-text-dark: var(--primary-azure);
 
-    /* ========================================
-       Heading Colors
-       ======================================== */
-    --heading-color-light: var(--text-color-light);
-    --heading-color-dark: var(--text-color-dark);
+    /* Disclaimer */
+    --disclaimer-bg-light: var(--primary-navy);
+    --disclaimer-bg-dark: var(--primary-azure);
+    --disclaimer-text-light: var(--primary-azure);
+    --disclaimer-text-dark: var(--primary-navy);
 
-    /* ========================================
-       Elevation / Shadows
-       ======================================== */
+    /* Focus & Accent */
+    --focus-color-light: var(--primary-navy);
+    --focus-color-dark: var(--primary-azure);
+    --accent-color-light: var(--primary-navy);
+    --accent-color-dark: var(--primary-azure);
+
+    /* Shadows */
     --shadow-xs: 0 2px 4px rgba(0, 0, 0, 0.08);
     --shadow-xs-dark: 0 2px 4px rgba(0, 0, 0, 0.25);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.12);
-    --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
-    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
-
     --shadow-sm-dark: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.12);
     --shadow-md-dark: 0 8px 20px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
     --shadow-lg-dark: 0 12px 24px rgba(0, 0, 0, 0.35);
+    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
     --shadow-xl-dark: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+    /* Surfaces */
+    --surface-subtle-light: rgba(0, 0, 0, 0.04);
+    --surface-subtle-dark: rgba(255, 255, 255, 0.06);
+    --surface-hover-light: rgba(0, 0, 0, 0.08);
+    --surface-hover-dark: rgba(255, 255, 255, 0.12);
+
+    /* Border Colors */
+    --border-color-light: rgba(0, 0, 0, 0.1);
+    --border-color-subtle-light: rgba(0, 0, 0, 0.08);
+    --border-color-dark: rgba(255, 255, 255, 0.1);
+    --border-color-subtle-dark: rgba(255, 255, 255, 0.08);
+
+    /* Modal Overlay */
+    --overlay-modal-light: rgba(0, 0, 0, 0.6);
+    --overlay-modal-dark: rgba(0, 0, 0, 0.8);
+
+    /* Profile Card */
+    --profile-gradient-start-light: rgba(58, 78, 88, 0.06);
+    --profile-gradient-end-light: rgba(58, 78, 88, 0.02);
+    --profile-image-border-light: rgba(58, 78, 88, 0.12);
+    --profile-gradient-start-dark: rgba(255, 255, 255, 0.05);
+    --profile-gradient-end-dark: rgba(255, 255, 255, 0.02);
+    --profile-image-border-dark: rgba(255, 255, 255, 0.1);
+
+    /* Carousel Buttons */
+    --carousel-btn-bg-light: rgba(255, 255, 255, 0.9);
+    --carousel-btn-bg-hover-light: #ffffff;
+    --carousel-btn-bg-dark: rgba(30, 30, 40, 0.85);
+    --carousel-btn-bg-hover-dark: rgba(50, 50, 65, 0.95);
+
+    /* Hero Text & Overlay */
+    --hero-text-light: var(--primary-navy);
+    --hero-text-dark: #ffffff;
+    --hero-overlay-light: linear-gradient(to top, var(--primary-navy) 0%, transparent 40%);
+    --hero-overlay-dark: linear-gradient(to top, #000 0%, rgba(0,0,0,0.3) 40%);
+    --hero-overlay-opacity-light: 0.5;
+    --hero-overlay-opacity-dark: 0.8;
 
     /* ========================================
        Spacing Scale (4px base)
@@ -96,79 +147,37 @@
     --radius-xl: 16px;
 
     /* ========================================
-       Borders
-       ======================================== */
-    --border-light: 1px solid rgba(0, 0, 0, 0.08);
-    --border-medium: 1px solid rgba(0, 0, 0, 0.1);
-    --border-dark: 1px solid rgba(255, 255, 255, 0.1);
-
-    /* ========================================
        Content Widths
        ======================================== */
     --content-max: 1100px;
     --content-narrow: 65ch;
     --content-wide: 800px;
 
-    /* Legacy aliases (keep for backward compat) */
-    --box-shadow-light: var(--shadow-sm);
-    --box-shadow-hover-light: var(--shadow-md);
-    --box-shadow-dark: var(--shadow-sm-dark);
-    --box-shadow-hover-dark: var(--shadow-md-dark);
-
     /* ========================================
-       Surface Colors (subtle backgrounds)
+       Active Defaults (Light mode)
        ======================================== */
-    --surface-subtle-light: rgba(0, 0, 0, 0.04);
-    --surface-raised-light: rgba(0, 0, 0, 0.03);
-    --surface-raised-hover-light: rgba(0, 0, 0, 0.06);
-    --surface-hover-light: rgba(0, 0, 0, 0.08);
-    --surface-subtle-dark: rgba(255, 255, 255, 0.06);
-    --surface-hover-dark: rgba(255, 255, 255, 0.12);
-    --surface-raised-dark: rgba(255, 255, 255, 0.05);
-    --surface-raised-hover-dark: rgba(255, 255, 255, 0.10);
-    --surface-tag-bg-dark: rgba(255, 255, 255, 0.08);
-
-    /* ========================================
-       Border Colors (color-only, not shorthand)
-       ======================================== */
-    --border-color-light: rgba(0, 0, 0, 0.1);
-    --border-color-subtle-light: rgba(0, 0, 0, 0.08);
-    --border-color-dark: rgba(255, 255, 255, 0.1);
-
-    /* ========================================
-       Overlays & Modals
-       ======================================== */
-    --overlay-light: rgba(0, 0, 0, 0.6);
-    --overlay-dark: rgba(0, 0, 0, 0.8);
-    --close-bg-light: rgba(255, 255, 255, 0.95);
-    --close-bg-hover-light: #ffffff;
-    --close-bg-dark: rgba(255, 255, 255, 0.9);
-
-    /* ========================================
-       Profile Card Components
-       ======================================== */
-    --profile-gradient-start-light: rgba(58, 78, 88, 0.06);
-    --profile-gradient-end-light: rgba(58, 78, 88, 0.02);
-    --profile-image-border-light: rgba(58, 78, 88, 0.12);
-    --profile-gradient-start-dark: rgba(255, 255, 255, 0.05);
-    --profile-gradient-end-dark: rgba(255, 255, 255, 0.02);
-    --profile-image-border-dark: rgba(255, 255, 255, 0.1);
-
-    /* ========================================
-       Nav Hover
-       ======================================== */
-    --nav-hover-bg-light: rgba(255, 255, 255, 0.15);
-    --nav-hover-bg-dark: rgba(0, 0, 0, 0.1);
-
-    /* ========================================
-       Component Aliases (referenced by other files)
-       ======================================== */
-    --heading-color-light: var(--text-color-light);
-    --heading-color-dark: var(--text-color-dark);
-    --navbar-background-light: var(--box-background-light);
-    --navbar-background-dark: var(--box-background-dark);
-    --button-background-light: var(--primary-accent);
-    --button-background-dark: var(--box-background-dark);
-    --button-text-color-light: var(--primary-accent-contrast);
-    --button-text-color-dark: var(--text-color-light);
+    --text-color: var(--text-color-light);
+    --background-color: var(--background-color-light);
+    --box-background: var(--box-background-light);
+    --link-color: var(--link-color-light);
+    --link-hover: var(--link-hover-light);
+    --footer-bg: var(--footer-bg-light);
+    --footer-text: var(--footer-text-light);
+    --disclaimer-bg: var(--disclaimer-bg-light);
+    --disclaimer-text: var(--disclaimer-text-light);
+    --focus-color: var(--focus-color-light);
+    --accent-color: var(--accent-color-light);
+    --surface-subtle: var(--surface-subtle-light);
+    --surface-hover: var(--surface-hover-light);
+    --border-color: var(--border-color-light);
+    --border-color-subtle: var(--border-color-subtle-light);
+    --overlay-modal: var(--overlay-modal-light);
+    --profile-gradient-start: var(--profile-gradient-start-light);
+    --profile-gradient-end: var(--profile-gradient-end-light);
+    --profile-image-border: var(--profile-image-border-light);
+    --carousel-btn-bg: var(--carousel-btn-bg-light);
+    --carousel-btn-bg-hover: var(--carousel-btn-bg-hover-light);
+    --hero-text: var(--hero-text-light);
+    --hero-overlay: var(--hero-overlay-light);
+    --hero-overlay-opacity: var(--hero-overlay-opacity-light);
 }

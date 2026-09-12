@@ -30,8 +30,8 @@ A single `cta` list on any page frontmatter. Zero or more items, each with `text
 
 ```yaml
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Bestill Ledelse 60:2"
+    url: "/bestill/ledelse-60-2/"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
 ```
@@ -170,7 +170,6 @@ Pages:
 | `assets/css/components/buttons.css` | `.product-cta` → `.cta` |
 | `assets/css/components/sidebar.css` | `.product-cta` → `.cta` |
 | `assets/css/components/sticky-cta.css` | `.product-cta` → `.cta` |
-| `assets/css/components/newsletter.css` | `.product-cta` → `.cta` |
 | `assets/css/products.css` | `.product-cta` → `.cta` |
 | `assets/css/perspektiv-styles.css` | `.product-cta` → `.cta` |
 | `assets/css/avtale.css` | `.product-cta` → `.cta` |

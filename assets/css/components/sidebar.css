@@ -30,17 +30,13 @@
 .sidebar-section {
     margin-bottom: var(--space-lg);
     padding-bottom: var(--space-lg);
-    border-bottom: 1px solid var(--border-color-light);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .sidebar-section:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
-}
-
-.dark-mode .sidebar-section {
-    border-bottom-color: var(--border-color-dark);
 }
 
 .sidebar-section h3 {
@@ -66,7 +62,7 @@
     padding-left: var(--space-sm);
     font-size: 0.9em;
     line-height: 1.4;
-    color: var(--text-color-light);
+    color: var(--text-color);
     text-decoration: none;
     border-left: 2px solid transparent;
     transition: color 0.2s ease, border-color 0.2s ease;
@@ -74,8 +70,8 @@
 }
 
 .toc-item:hover {
-    color: var(--link-hover-light);
-    border-left-color: var(--border-color-light);
+    color: var(--link-hover);
+    border-left-color: var(--border-color);
 }
 
 .toc-item--h3 {
@@ -86,22 +82,9 @@
 
 /* Active heading — scroll-spy highlight */
 .toc-item--active {
-    color: var(--primary-navy);
-    border-left-color: var(--primary-accent);
+    color: var(--accent-color);
+    border-left-color: var(--accent-color);
     font-weight: 600;
-}
-
-.dark-mode .toc-item {
-    color: var(--text-color-dark);
-}
-
-.dark-mode .toc-item:hover {
-    color: var(--link-hover-dark);
-}
-
-.dark-mode .toc-item--active {
-    color: var(--primary-azure);
-    border-left-color: var(--primary-azure);
 }
 
 /* --- Left Pager Panel --- */
@@ -133,14 +116,9 @@
     padding: var(--space-lg);
     font-size: 0.9em;
 
-    background: var(--box-background-light);
+    background: var(--box-background);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-sm);
-}
-
-.dark-mode .pager-scroll {
-    background: var(--box-background-dark);
-    box-shadow: var(--shadow-sm-dark);
 }
 
 /* --- Questions Sidebar (Right Panel) --- */
@@ -175,18 +153,14 @@
 }
 
 .article-questions::-webkit-scrollbar-thumb {
-    background: var(--border-color-light);
+    background: var(--border-color);
     border-radius: 2px;
-}
-
-.dark-mode .article-questions::-webkit-scrollbar-thumb {
-    background: var(--border-color-dark);
 }
 
 /* --- Sidebar Cards (distinct sections inside right panel) --- */
 
 .sidebar-card {
-    background: var(--box-background-light);
+    background: var(--box-background);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-sm);
     padding: var(--space-lg);
@@ -194,11 +168,6 @@
 
 .sidebar-card:last-child {
     margin-bottom: 0;
-}
-
-.dark-mode .sidebar-card {
-    background: var(--box-background-dark);
-    box-shadow: var(--shadow-sm-dark);
 }
 
 /* Card heading */
@@ -244,10 +213,6 @@
     padding: var(--space-sm) var(--space-md);
     margin: 0;
     z-index: 1;
-    color: var(--primary-navy);
-}
-
-.dark-mode .sidebar-product-banner .sidebar-card-heading {
     color: var(--primary-navy);
 }
 
@@ -333,15 +298,10 @@
 
 .sidebar-section--share {
     padding: var(--space-lg);
-    background: var(--box-background-light);
+    background: var(--box-background);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-sm);
     border-bottom: none;
-}
-
-.dark-mode .sidebar-section--share {
-    background: var(--box-background-dark);
-    box-shadow: var(--shadow-sm-dark);
 }
 
 .sidebar-section--share h3 {
@@ -366,31 +326,26 @@
     color: #fff;
     border: none;
     cursor: pointer;
-    transition: background 0.2s ease, transform 0.1s ease;
     min-height: 44px;
     white-space: nowrap;
 }
 
-.share-btn:active {
-    transform: scale(0.97);
-}
-
 .share-btn--teams {
-    background: #6264A7;
+    background: var(--brand-teams);
 }
 
 .share-btn--teams:hover {
-    background: #5050A0;
-    color: #fff;
+    background: var(--brand-teams-hover);
+    color: #fff; /* brand-mandated: white text on brand-colored buttons */
 }
 
 .share-btn--linkedin {
-    background: #0A66C2;
+    background: var(--brand-linkedin);
 }
 
 .share-btn--linkedin:hover {
-    background: #084d91;
-    color: #fff;
+    background: var(--brand-linkedin-hover);
+    color: #fff; /* brand-mandated: white text on brand-colored buttons */
 }
 
 .share-btn svg {
@@ -408,28 +363,13 @@
     padding: 8px var(--space-sm);
     margin-top: var(--space-sm);
     background: transparent;
-    border: 1px solid var(--border-color-light);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     font-family: inherit;
     font-size: 0.78em;
-    color: var(--text-color-light);
+    color: var(--text-color);
     cursor: pointer;
-    transition: background 0.2s ease, border-color 0.2s ease;
     min-height: 44px;
-}
-
-.questions-toggle:hover {
-    background: var(--surface-hover-light);
-    border-color: var(--primary-accent);
-}
-
-.dark-mode .questions-toggle {
-    color: var(--text-color-dark);
-    border-color: var(--border-color-dark);
-}
-
-.dark-mode .questions-toggle:hover {
-    background: var(--surface-hover-dark);
 }
 
 .questions-toggle .toggle-icon {
@@ -505,15 +445,6 @@
     box-shadow: var(--shadow-md);
     border: none;
     cursor: pointer;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.toc-mobile-toggle:hover {
-    transform: translateY(-1px);
-}
-
-.toc-mobile-toggle:active {
-    transform: translateY(0);
 }
 
 .toc-mobile-toggle-icon {
@@ -528,18 +459,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--overlay-light);
+    background: var(--overlay-modal);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
 
-.dark-mode .toc-mobile-overlay {
-    background: var(--overlay-dark);
-}
-
 /* Modal card */
 .toc-mobile-modal {
-    background: var(--box-background-light);
+    background: var(--box-background);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-lg);
     padding: var(--space-lg);
@@ -548,11 +475,6 @@
     max-height: calc(100vh - var(--space-xl) * 2);
     overflow-y: auto;
     overscroll-behavior: contain;
-}
-
-.dark-mode .toc-mobile-modal {
-    background: var(--box-background-dark);
-    box-shadow: var(--shadow-lg-dark);
 }
 
 /* Modal header: title + close button */
@@ -582,22 +504,7 @@
     border: none;
     border-radius: var(--radius-sm);
     cursor: pointer;
-    color: var(--text-color-light);
-    transition: background 0.2s ease, color 0.2s ease;
-}
-
-.toc-mobile-close:hover {
-    background: var(--surface-hover-light);
-    color: var(--primary-navy);
-}
-
-.dark-mode .toc-mobile-close {
-    color: var(--text-color-dark);
-}
-
-.dark-mode .toc-mobile-close:hover {
-    background: var(--surface-hover-dark);
-    color: var(--primary-azure);
+    color: var(--text-color);
 }
 
 /* Bottom close button inside modal */

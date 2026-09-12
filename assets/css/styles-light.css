@@ -1,54 +1,26 @@
-body {
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
-}
-
-a {
-    color: var(--link-color-light);
-}
-
-a:hover {
-    color: var(--link-hover-light);
-}
-
-.header {
-    background-color: var(--banner-background-light);
-    color: var(--banner-text-light);
-}
-
-.header-margin {
-    background-color: var(--banner-background-light);
-}
-
-/* .navbar intentionally inherits .header background (--banner-background-light) */
-
-.footer {
-    background-color: var(--footer-background-light);
-    color: var(--footer-text-light);
-}
-
-.button, .close-button {
-    background-color: var(--button-background-light);
-    color: var(--button-text-color-dark);
-}
-
-.banner {
-    background-color: var(--banner-background-light);
-    color: var(--banner-text-light);
-}
-
-.ai-disclaimer {
-    background-color: var(--banner-background-light);
-    color: var(--banner-text-light);
-    border-bottom: 1px solid var(--border-color-light);
-}
-
-.profile-detail-content {
-    background-color: var(--box-background-light);
-    color: var(--text-color-light);
-}
-
-.product {
-    background-color: var(--box-background-light);
-    color: var(--text-color-light);
+:root {
+    --text-color: var(--text-color-light);
+    --background-color: var(--background-color-light);
+    --box-background: var(--box-background-light);
+    --link-color: var(--link-color-light);
+    --link-hover: var(--link-hover-light);
+    --footer-bg: var(--footer-bg-light);
+    --footer-text: var(--footer-text-light);
+    --disclaimer-bg: var(--disclaimer-bg-light);
+    --disclaimer-text: var(--disclaimer-text-light);
+    --focus-color: var(--focus-color-light);
+    --accent-color: var(--accent-color-light);
+    --surface-subtle: var(--surface-subtle-light);
+    --surface-hover: var(--surface-hover-light);
+    --border-color: var(--border-color-light);
+    --border-color-subtle: var(--border-color-subtle-light);
+    --overlay-modal: var(--overlay-modal-light);
+    --profile-gradient-start: var(--profile-gradient-start-light);
+    --profile-gradient-end: var(--profile-gradient-end-light);
+    --profile-image-border: var(--profile-image-border-light);
+    --carousel-btn-bg: var(--carousel-btn-bg-light);
+    --carousel-btn-bg-hover: var(--carousel-btn-bg-hover-light);
+    --hero-text: var(--hero-text-light);
+    --hero-overlay: var(--hero-overlay-light);
+    --hero-overlay-opacity: var(--hero-overlay-opacity-light);
 }

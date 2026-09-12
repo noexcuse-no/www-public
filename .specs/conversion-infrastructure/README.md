@@ -10,23 +10,19 @@ Nettstedet mangler mellomrommet i konverteringstrakten. Toppen (artikler) og bun
 
 ### F4a — Epostinnsamling (Newsletter)
 
-**Hva:** Legg til et enkelt epost-skjemafelt på bunnen av hver artikkel og på forsiden. Epost lagres (foreløpig manuell eksport til eget system — ingen API-integrasjon i første fase).
+**Hva:** Legg til et enkelt epost-skjemafelt på bunnen av hver artikkel og på forsiden. Epost lagres via en godkjent ekstern tjeneste — aldri i repo.
 
 **Hvorfor:** Uten epostinnsamling har vi ingen mulighet til å følge opp besøkende. Eneste kontaktkanal er passiv (bok et møte).
 
-**Filer:** `_includes/newsletter-signup.html` (ny), `_layouts/article.html` (inkluder), `index.md` (inkluder ved stat-bridge), `_data/newsletter-subscribers.json` (lagring, midlertidig).
+**Filer:** `_includes/newsletter-signup.html` (ny), `_layouts/article.html` (inkluder), `index.md` (inkluder ved stat-bridge).
 
 **Samtykke:** Ett avkrysningsfelt for «Jeg samtykker til at No Excuse lagrer min epost for nyhetsbrev» (jf. GDPR art. 7). Lenke til personvernside.
 
 ### F4b — Kontaktformular
 
-**Hva:** Opprett en `/kontakt/`-side med et enkelt skjema (navn, epost, melding). Samme datalagring som F4a (JSON-fil). Krysslenkes fra Om Oss og artikkelfotnoter.
+**Status:** Superseded 2026-08-30 (strategy alignment). The contact form was removed in favor of direct booking via `/bestill/` (the site owns the commercial context; booking acts as the background scheduler). No contact form is planned; the feature is closed.
 
-**Hvorfor:** Booking er høy barriere. Et kontaktformular gir oss en lettere inngang for spørsmål, tilbudsforespørsler og generelle henvendelser.
-
-**Filer:** `_pages/kontakt.md` (ny), `_includes/contact-form.html` (ny), `_data/contact-messages.json` (lagring).
-
-**Samtykke:** Samme som F4a.
+**Filer:** None (former `_pages/kontakt.md` and `_includes/contact-form.html` removed).
 
 ### F4c — Stegside-berikelse
 
@@ -40,31 +36,25 @@ Nettstedet mangler mellomrommet i konverteringstrakten. Toppen (artikler) og bun
 
 Når F4a er på plass og vi har grunnleggende innsamling, implementer «neste artikkel»-anbefalinger på bunnen av hver side. Dette er en enkel cross-link-funksjon (manuelt eller via frontmatter-vekter), ikke en ML-algoritme.
 
-## Midlertidig datalagring (alle sub-features)
+## Datalagring (alle sub-features)
 
-I første fase lagres data til lokale JSON-filer:
-- `_data/newsletter-subscribers.json`
-- `_data/contact-messages.json`
-
-Dette er **ikke produksjonsklart** — det er en MVP-løsning inntil et API eller tredjepartstjeneste (Mailchimp, HubSpot, eget API) settes opp.
+Innsamlet data (epostadresser, kontakthenvendelser) må sendes til en godkjent ekstern eller server-side tjeneste og må aldri committes til eller serveres fra dette repo. Bruk en egnet leverandør (f.eks. Mailchimp, HubSpot, eller egen API-løsning) med VPN/SSL og samtykkehåndtering.
 
 **Sikkerhetshensyn:**
 - Ingen epostadresser committes til repo ved en feil (`.gitignore` for sensitive datafiler)
 - Samtykke lagres med hver post
-- Eposter eksporteres manuelt ved behov
+- Datalagring skjer kun i ekstern tjeneste
 
 ## Dependencies
 
-- F4a og F4b deler datalagringsmekanisme — kan utvikles samtidig
+- F4a og F4b deler datalagringsmekanisme — kan utvikles samtidig (F4b er imidlertid superseded, se over)
 - F4c er uavhengig
 - F4d forutsetter F4a
 
 ## Acceptance Criteria
 
-- [ ] Nyhetsbrev-skjema vises på bunnen av hver artikkel og på forsiden
-- [ ] Samtykke-avkrysning er påkrevd før innsending
-- [ ] `/kontakt/`-side eksisterer med fungerende skjema
-- [ ] Stegsidene (Samtale/Intervju/Rapport) har brødtekst og CTA
-- [ ] Data lagres i `_data/`-JSON-filer (MVP)
+- [ ] Nyhetsbrev-skjema (F4a) vises på bunnen av hver artikkel og på forsiden, hvis/viss F4a bygges
+- [ ] Samtykke-avkrysning er påkrevd før innsending (F4a)
+- [ ] Stegsidene (Samtale/Intervju/Rapport) har brødtekst og CTA (F4c)
+- [ ] Innsamlet data sendes til ekstern tjeneste — ingen lagring i repo
 - [ ] Jekyll build exit 0
-- [ ] `lsp_diagnostics` pass på alle endrede filer
