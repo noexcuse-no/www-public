@@ -1,0 +1,29 @@
+{% comment %}
+  Price card — shared commercial component rendering the Ledelse 60:2 price
+  from the single source `_data/commercial.yml`. Used on the product page,
+  /bestill/ledelse-60-2/, and the homepage commercial-info section.
+
+  Usage:
+    {% include price-card.html %}
+    {% include price-card.html heading="Ledelse 60:2" %}
+
+  Parameters:
+    heading   — Optional card heading (default: "Ledelse 60:2")
+    inclusions — Optional array of inclusion strings (defaults to commercial.inclusions)
+{% endcomment %}
+
+{% assign commercial = site.data.commercial %}
+{% assign card_inclusions = include.inclusions | default: commercial.inclusions %}
+<div class="price-card">
+  <h3 class="price-card-heading">{{ include.heading | default: "Ledelse 60:2" }}</h3>
+  <p class="price-card-price">{{ commercial.price_display }} <span class="price-card-note">{{ commercial.price_note }}</span></p>
+  {% if card_inclusions.size %}
+  <ul class="price-card-inclusions">
+    {% for item in card_inclusions %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <a href="/bestill/ledelse-60-2/" class="cta">Bestill Ledelse 60:2</a>
+  <p class="price-card-uncertain"><a href="/samtale/">Usikker? Book 20 min avklaring →</a></p>
+</div>

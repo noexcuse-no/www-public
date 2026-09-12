@@ -38,6 +38,8 @@ No Excuse AS ble grunnlagt i juni 2025 med et tydelig mål: å forbedre ledelses
 
 Norske ledergrupper har et særegent utgangspunkt. Vi forventer flate strukturer, tillitsbasert ledelse og at folk sier ifra — men i praksis er det ofte langt mellom forventning og virkelighet. Møtene er høflige, uenigheten kommer på gangen, og de viktige spørsmålene blir aldri stilt i rommet. Vi startet No Excuse fordi vi mener norsk arbeidsliv fortjener bedre enn det.
 
+Norske ledergrupper har et særegent utgangspunkt. Vi forventer flate strukturer, tillitsbasert ledelse og at folk sier ifra — men i praksis er det ofte langt mellom forventning og virkelighet. Møtene er høflige, uenigheten kommer på gangen, og de viktige spørsmålene blir aldri stilt i rommet. Vi startet No Excuse fordi vi mener norsk arbeidsliv fortjener bedre enn det.
+
 Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals [fire perspektiver](/perspektiv/)) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse, refleksjon fremfor skjemaer, og at de beste svarene ofte finnes internt — om man stiller de riktige spørsmålene.
 
 ## Norsk opprinnelse — en kvalitetssignal

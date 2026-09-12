@@ -129,7 +129,7 @@ Pfeffers research viser at politisk dyktighet korrelerer sterkt med ledereffekti
 
 Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonflikter og konflikthåndtering. Bestill en uforpliktende samtale for å lære mer.
 
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthensted)
+[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ## Det teoretiske grunnlaget

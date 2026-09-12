@@ -1,0 +1,38 @@
+{% comment %}
+  Four-perspective interactive — expandable component letting visitors explore
+  the four perspectives (Struktur, Mennesker, Påvirkning, Identitet).
+  Diagnosis-before-intervention category differentiation.
+
+  Usage:
+    {% include four-perspectives.html %}
+{% endcomment %}
+<div class="four-perspectives">
+  <details class="perspective-card" open>
+    <summary class="perspective-summary">
+      <span class="perspective-name">Struktur</span>
+      <span class="perspective-tag">Rolleklarhet · prosesser · beslutningslinjer</span>
+    </summary>
+    <p class="perspective-body">Handler om å få organisasjonen til å fungere teknisk. Rolleklarhet, prosesser og beslutningslinjer som gjør at ting faktisk skjer.</p>
+  </details>
+  <details class="perspective-card">
+    <summary class="perspective-summary">
+      <span class="perspective-name">Mennesker</span>
+      <span class="perspective-tag">Psykologisk trygghet · tillit · kompetanse</span>
+    </summary>
+    <p class="perspective-body">Handler om å få folk til å fungere sammen. Psykologisk trygghet, tillit og kompetanseutnyttelse.</p>
+  </details>
+  <details class="perspective-card">
+    <summary class="perspective-summary">
+      <span class="perspective-name">Påvirkning</span>
+      <span class="perspective-tag">Maktforhold · interesser · allianser</span>
+    </summary>
+    <p class="perspective-body">Handler om å forstå hvem som egentlig bestemmer. Maktforhold, interesser og allianser som former beslutninger.</p>
+  </details>
+  <details class="perspective-card">
+    <summary class="perspective-summary">
+      <span class="perspective-name">Identitet</span>
+      <span class="perspective-tag">Kultur · verdier · felles retning</span>
+    </summary>
+    <p class="perspective-body">Handler om hva organisasjonen står for. Kultur, verdier og felles retning som binder folk sammen.</p>
+  </details>
+</div>

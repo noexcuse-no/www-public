@@ -1,50 +1,52 @@
 ---
-class: step
+class: article
 layout: article
-category: step
-step_number: 1
-title: "1. Uforpliktende samtale"
-description: "Vi tar en prat for å raskt avklare om dette er en metode som kan passe for dere, og peke ut områder dere ønsker å forbedre hvordan ledelsen fungerer."
-banner: "assets/images/banners/step-talk.webp"
-micro_image: "assets/images/banners/ledelse-60-2-t4-samtale.webp"
+title: "Book 20 min avklaring"
+description: "Gratis 20-minutters avklaringssamtale. Vi finner ut om Ledelse 60:2 passer for dere. Hvis ikke, sier vi det."
 permalink: /samtale/
-url: "/samtale/"
-hero:
-  image: assets/images/banners/step-talk.webp
-  alt: "Uforpliktende samtale om Ledelse 60:2"
-  title: "1. Uforpliktende samtale"
-  intro: "Vi tar en prat for å raskt avklare om dette er en metode som kan passe for dere."
 og_image: /assets/images/banners/samtale-og.webp
+route_b_live: false
 ---
 
-![Uforpliktende samtale](/assets/images/banners/samtale-t3-samtale.webp)
+## Book 20 min avklaring
 
-En uforpliktende prat for å bli kjent med hverandre og metoden. Ingen kontrakter, ingen forpliktelser. Bare en ærlig samtale om situasjonen deres.
+Gratis. Vi finner ut om Ledelse 60:2 passer for dere. Hvis ikke, sier vi det.
 
-## Hva skjer?
+### Hva skjer i avklaringen?
 
-- Et videomøte på 30–45 minutter
-- Du beskriver situasjonen, utfordringene og forventningene deres
-- Vi gir en umiddelbar vurdering av om Ledelse 60:2 passer for dere
-- Dere får anledning til å stille spørsmål om metoden og prosessen
+Vi bruker 20 minutter på å forstå situasjonen deres:
 
-## Hvorfor dette er viktig
+*   Hva er utfordringen dere ser?
+*   Hvor mange ledere er det snakk om?
+*   Hva har dere prøvd allerede?
+*   Passer 60:2 — eller trenger dere noe annet?
 
-Mange ledergrupper hopper rett på løsninger før de har stoppet opp og vurdert om problemet er riktig forstått. Denne samtalen gir dere en sjanse til å kjenne på om tilnærmingen passer, uten å bruke tid eller penger på noe som ikke treffer.
+Ingen salgspitch. Ingen forpliktelse. Vi leverer en ærlig vurdering av om metoden vår kan hjelpe.
 
-Vi har ingen interesse av å presse dere inn i en prosess som ikke passer. Er ikke Ledelse 60:2 rett for dere, sier vi ifra. Da sparer begge parter tid.
+### Etter avklaringen
 
-## Hva du trenger
+Hvis 60:2 passer: Vi sender forslag på tidspunkt for det strukturerte intervjuet (to timer, inntil fem ledere).
 
-- 30–45 minutter til en videosamtale
-- En leder som kan gi et ærlig bilde av situasjonen
-- Et rolig sted med god nok internettforbindelse
+Hvis 60:2 **ikke** passer: Vi peker dere i riktig retning — enten internt, hos en annen partner, eller mot en annen type innsats.
 
-## Neste steg
+### Book tid her
 
-Høres dette riktig ut? Da booker vi inn et strukturert intervju med ledergruppen.
+{% if page.route_b_live %}
+Vi bruker Microsoft Bookings for tidsvalg. Velg en tid som passer.
 
-[Bestill intervju →](/intervju/)
+[Gå til booking for avklaring](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
+{% else %}
+**Avklaringstjenesten er ikke ennå publisert i Microsoft Bookings.**
 
-**Les mer:** [Om metoden](/metode/) | [Ledelse 60:2](/ledelse-60-2/)
+Når den er klart, vil denne siden linke direkte til booking-siden. I mellomtiden: send en e-post til [ledelse@noexcuse.no](mailto:ledelse@noexcuse.no) for å avtale en uforpliktende samtale.
+{% endif %}
 
+### Personvern
+
+Vi behandler dine opplysninger i tråd med GDPR. [Les personvernerklæringen](/personvern/).
+
+---
+
+*Route B (sekundær): Book 20 min avklaring → /samtale/ → MS Bookings (avklaringstjeneste) → avklaringssamtale*
+
+*Staging-flagg `route_b_live: false` i frontmatter (standard). Denne siden renderes kun når flagget er true på relevante sider. Flagget flippes i en oppfølgende commit når brukeren bekrefter at 20-min Bookings-tjenesten eksisterer.*

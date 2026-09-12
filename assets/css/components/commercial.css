@@ -1,0 +1,271 @@
+/* ========================================
+   Shared commercial components — todo 7
+   price-card · signature-60-2-4 · recognition-cards
+   four-perspectives · cta-panel
+   ======================================== */
+
+/* ---------- Price card ---------- */
+.price-card {
+    background: var(--box-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.price-card-heading {
+    font-size: 1.25em;
+    margin: 0 0 var(--space-sm);
+}
+
+.price-card-price {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin: 0 0 var(--space-xs);
+}
+
+.price-card-note {
+    font-size: 0.6em;
+    font-weight: 400;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.price-card-inclusions {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-md) 0;
+}
+
+.price-card-inclusions li {
+    padding: var(--space-xs) 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.price-card-inclusions li::before {
+    content: "✓ ";
+    color: var(--success-color);
+    font-weight: 700;
+}
+
+.price-card .cta {
+    display: block;
+    text-align: center;
+    margin: var(--space-md) 0 var(--space-sm);
+}
+
+.price-card-uncertain {
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* ---------- 60/2/4 signature ---------- */
+.signature-60-2-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: var(--space-lg) var(--space-md);
+    max-width: var(--content-wide);
+    margin: 0 auto;
+}
+
+.signature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.signature-number {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--accent-color);
+    line-height: 1;
+}
+
+.signature-label {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-top: var(--space-xs);
+}
+
+.signature-slash {
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--accent-color);
+    opacity: 0.5;
+}
+
+/* ---------- Recognition cards (2×2) ---------- */
+.recognition-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    max-width: var(--content-wide);
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md);
+}
+
+.recognition-card {
+    background: var(--box-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+}
+
+.recognition-card-title {
+    font-size: 1.05em;
+    margin: 0 0 var(--space-xs);
+}
+
+.recognition-card-text {
+    font-size: 0.9em;
+    margin: 0;
+    opacity: 0.85;
+}
+
+/* ---------- Four-perspective interactive ---------- */
+.four-perspectives {
+    max-width: var(--content-wide);
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md);
+}
+
+.perspective-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-sm);
+    background: var(--box-background);
+}
+
+.perspective-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    cursor: pointer;
+    min-height: 44px;
+    list-style: none;
+}
+
+.perspective-summary::-webkit-details-marker {
+    display: none;
+}
+
+.perspective-name {
+    font-weight: 700;
+    font-size: 1.05em;
+}
+
+.perspective-tag {
+    font-size: 0.85em;
+    opacity: 0.75;
+}
+
+.perspective-body {
+    padding: 0 var(--space-md) var(--space-md);
+    margin: 0;
+    font-size: 0.95em;
+}
+
+/* ---------- CTA panel ---------- */
+.cta-panel {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    background: var(--box-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    max-width: var(--content-wide);
+    margin: 0 auto;
+}
+
+.cta-panel-body {
+    flex: 1;
+}
+
+.cta-panel-heading {
+    margin: 0 0 var(--space-sm);
+}
+
+.cta-panel-points {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-md);
+}
+
+.cta-panel-points li {
+    padding: var(--space-xs) 0;
+}
+
+.cta-panel-points li::before {
+    content: "✓ ";
+    color: var(--success-color);
+    font-weight: 700;
+}
+
+.cta-panel-person {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.cta-panel-thumb {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+}
+
+.cta-panel-name {
+    font-weight: 700;
+    margin: var(--space-xs) 0 0;
+    font-size: 0.9em;
+}
+
+.cta-panel-role {
+    font-size: 0.8em;
+    opacity: 0.75;
+    margin: 0;
+}
+
+/* ---------- Mobile (snap-scroll recognition, stacked panel) ---------- */
+@media (max-width: 768px) {
+    .recognition-cards {
+        grid-template-columns: 1fr;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        display: flex;
+        gap: var(--space-sm);
+    }
+
+    .recognition-card {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+    }
+
+    .cta-panel {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-panel-points {
+        text-align: left;
+    }
+
+    .signature-60-2-4 {
+        gap: var(--space-sm);
+    }
+
+    .signature-number {
+        font-size: 2em;
+    }
+}
