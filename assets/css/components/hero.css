@@ -28,6 +28,7 @@
 }
 
 /* Dark mode: black-based overlay (image has no dark variant) */
+/* intentional: black gradient overlay on hero image */
 .dark-mode .hero-image::after {
     background: linear-gradient(to top, #000 0%, rgba(0,0,0,0.3) 40%);
     opacity: 0.8;
@@ -69,15 +70,15 @@
 /* Dark mode — white text on dark overlay */
 .dark-mode .hero-content,
 .dark-mode .product-hero-content {
-    color: #fff;
+    color: var(--text-color-dark);
 }
 
 .dark-mode .hero-title {
-    color: #fff;
+    color: var(--text-color-dark);
 }
 
 .dark-mode .hero-intro {
-    color: #fff;
+    color: var(--text-color-dark);
     opacity: 0.85;
 }
 
