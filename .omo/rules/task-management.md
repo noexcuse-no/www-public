@@ -7,7 +7,8 @@ globs: ["BACKLOG.md", "CHANGELOG.md", "VERSION", ".omo/plans/**", ".omo/todos/**
 
 ## Files
 - `VERSION` — Semver version (e.g. `1.0.0`)
-- `BACKLOG.md` — Task tracking and prioritization
+- `BACKLOG.md` — Task tracking and prioritization (project-wide, at repo root)
+- `BACKLOG-WORKTREE.md` — Task tracking for a specific worktree/plan scope (e.g., `BACKLOG-WORKTREE.md` in a worktree directory). **Convention:** worktree backlogs use `-WORKTREE` suffix, include a header reference to the project-wide `BACKLOG.md` at repo root for context switching.
 - `CHANGELOG.md` — Version history
 
 ## Spec File Convention
@@ -67,7 +68,7 @@ When GitHub Projects/Issues (via MCP) and `BACKLOG.md` contain conflicting infor
 
 ## On Task Initiation
 1. `git fetch origin main --quiet 2>/dev/null` — ensure local main reference is current
-2. Read `BACKLOG.md`, `CHANGELOG.md`, `VERSION`
+2. Read `BACKLOG.md` (project-wide at repo root), `BACKLOG-WORKTREE.md` (if working in a worktree with plan scope), `CHANGELOG.md`, `VERSION`
 3. Read relevant `.design/` and `.specs/` documents
 4. Check git branch with `git branch && git log --oneline -3`
 
@@ -164,8 +165,9 @@ When the GitHub MCP server connection is confirmed working:
 - On PR merge: issue is automatically closed via squash commit body
 
 ### BACKLOG Reconciliation
-- On each sync point (before branch, before first commit, after merge): fetch open issues for the current milestone/project, compare with BACKLOG.md, update BACKLOG.md to match GitHub state
+- On each sync point (before branch, before first commit, after merge): fetch open issues for the current milestone/project, compare with BACKLOG.md (project-wide), update BACKLOG.md to match GitHub state
 - If GitHub has a status that contradicts BACKLOG.md: **GitHub wins** — update BACKLOG.md
+- **Worktree backlogs** (`BACKLOG-WORKTREE.md`): sync separately against their plan scope; they reference project-wide `BACKLOG.md` for full context but track only their plan's items
 
 ## Version Bumping
 - Major (X.0.0): Breaking changes
