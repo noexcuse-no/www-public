@@ -3,7 +3,7 @@ class: profile
 layout: article
 title: "Daglig leder"
 permalink: /dagfinn/
-name: "Dagfinn Bang-Johansen"
+display_name: "Dagfinn Bang-Johansen"
 person_title: "Daglig leder"
 image: "assets/images/dagfinn.webp"
 linkedin: "https://linkedin.com/in/bang"

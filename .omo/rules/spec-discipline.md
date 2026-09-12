@@ -11,7 +11,8 @@ Before writing any code, read all relevant design and spec documents:
 
 1. Read `.design/architecture.md` for site structure, URL conventions, and collection schemas
 2. Read the design docs covering the changed area as applicable: `.design/brand-perception.md` (tone/voice), `.design/information-architecture.md` (cross-link map), `.design/components.md`, `.design/colors.md`, `.design/typography.md`, `.design/css-architecture.md`, `.design/graphics.md`, `.design/deployment.md`
-3. Read every `.specs/` file referenced by those design docs, by the relevant BACKLOG.md rows, or by the files being changed
+3. Read the canonical design docs (`.design/brand-perception.md`, `.design/information-architecture.md`, `.design/components.md`, `.design/colors.md`, `.design/typography.md`, `.design/architecture.md`) to discover which feature tag, design docs, and functional specs apply
+4. Read every `.design/` document and `.specs/` file referenced by BACKLOG.md, the canonical design docs, or the files being changed
 
 ## Post-Implementation Updates
 

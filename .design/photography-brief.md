@@ -100,6 +100,13 @@ Tenk:
 - **Stil:** Miljøbilder som viser kunden i deres egen kontekst — møterom, produksjon, kontorlandskap
 - **Personer:** Kan inkludere mennesker, men ansikter trenger samtykke. Unngå iscenesatte «teamwork»-bilder.
 
+### 3. Ledergruppe-kontekst (50–250 ansatte)
+
+- **Format:** 16:9 landskap / 1:1 kvadratisk
+- **Størrelse:** Minimum 1200×675 px
+- **Stil:** Miljøbilder som viser en ledergruppe (5–8 personer) i møte — trebord, dagslys, uformell samtale. Skal kommunisere den primære målgruppen (50–250 ansatte, CEO/MD-buyer) og den diagnostiske, ubyråkratiske arbeidsformen.
+- **Personer:** Kan inkludere mennesker, men ansikter trenger samtykke. Unngå stive «boardroom»-positurer.
+
 ---
 
 ## Leveranse

@@ -1,5 +1,7 @@
 # Inbound Sales / Visitor Flow — Functional Specification
 
+> **Superseded by `.specs/analytics-events/README.md` for event vocabulary and funnel architecture.** This spec retains UTM conventions, auto-events, and Simple Analytics goals as the implemented technical contract.
+
 ## Purpose and Scope
 
 Define the technical telemetry contract for visitor behavior on noexcuse.no:
@@ -40,6 +42,8 @@ Spor følgende interaksjoner som egne events via Simple Analytics Events API:
 | `cta_les_mer` | Klikk på "Les mer →" på benefit-kort | `page: current path, card: benefit name` |
 | `profile_expand` | Utvidelse av profil-kort | `profile: name` |
 
+> **Superseded by `.specs/analytics-events/README.md` (2026-08-30).** The 15-event vocabulary replaces ad-hoc events. See `.specs/analytics-events/README.md` for the authoritative event model.
+
 ## Lenke-instrumentering
 
 - **E-postklikk:** `mailto:firmapost@noexcuse.no` (i `_includes/share-section.html`,
@@ -55,6 +59,45 @@ Spor følgende interaksjoner som egne events via Simple Analytics Events API:
 - Innsendt data går til godkjent ekstern/tjenerside-prosessor
   (se `.specs/conversion-infrastructure/README.md`)
 
+## Simple Analytics Goals (Funnels)
+
+Opprett følgende flertrinns-funnels i Simple Analytics-dashbordet:
+
+| Funnel | Steps | Mål |
+|--------|-------|-----|
+| **Produkt → Booking** | Forsiden → Ledelse 60:2 → Book samtale | Hvor mange når bookingsida? |
+| **Artikkel → Booking** | `/struktur/` eller `/mennesker/` → Ledelse 60:2 → Book samtale | Hvilke artikler driver flest bookinger? |
+| **Kampanje → Booking** | UTM-kampanje → Book samtale | Hvilke kanaler konverterer best? |
+
+## Automatiske events (auto-events.js)
+
+Legg til `auto-events.js`-scriptet for å fange:
+- **Outbound linker:** Klikk til LinkedIn, andre eksterne sider
+- **E-postklikk:** `mailto:firmapost@noexcuse.no`
+- **Nedlastinger:** PDF-filer (avtale, rapporter)
+
+## Data Structures
+
+### UTM-konvensjon (kampanje-URL-mal)
+
+```text
+https://noexcuse.no/landing?utm_source={source}&utm_medium={medium}&utm_campaign={campaign}&utm_content={content}
+```
+
+### Simple Analytics Goal-definisjon (JSON)
+
+```json
+{
+  "goal": "Produkt til Booking",
+  "steps": [
+    { "path": "/", "label": "Home" },
+    { "path": "/ledelse-60-2/", "label": "Product page" },
+    { "path": "/booking/", "label": "Booking page" }
+  ],
+  "funnel": true
+}
+```
+
 ## Dependencies
 
 - **Simple Analytics:** Allerede installert (`latest.js` i `_includes/scripts.html`)
@@ -64,6 +107,8 @@ Spor følgende interaksjoner som egne events via Simple Analytics Events API:
 
 ## Implementation Order
 
-1. Implementer egendefinerte events på CTA-knapper og profil-kort
-2. Dokumentér alle events og målinger i denne spec-fila
-3. (Fremtidig) Nedlastings-sporing for PDF-filer
+1. Legg til `auto-events.js` i `_includes/scripts.html`
+2. Opprett UTM-konvensjon-dokument
+3. Definer Simple Analytics Goals i dashbordet (funnels)
+4. Implementer egendefinerte events på CTA-knapper
+5. Dokumentér alle events og målinger i denne spec-fila

@@ -11,6 +11,7 @@ real customer engagements.
 Cases appear in two contexts:
 1. **Product pages** — filtered by `product_tags` to show relevant cases
 2. **Article pages** — full case list rendered below the article body
+3. **Front page** — rendered via `_includes/cases-cards.html`
 
 ## Data Model
 
@@ -69,9 +70,18 @@ CSS classes live in `assets/css/products.css`:
 - Images require descriptive `alt` text; no text embedded in images
 - Site-wide WCAG AA rules apply (see `.specs/accessibility/README.md`)
 
+## Visitor Flow Integration
+
+Cases appear as trust signals in the visitor journey, between article reading and booking. Cases are referenced from:
+- Forsiden (via `cases-cards.html`)
+- Produktsider (tag-filtered)
+- Om Oss (lenke til cases-seksjonen)
+- Artikkelanbefalinger (hvis relevant)
+
 ## Acceptance Criteria
 
 - [ ] At least 1 real case exists in `_pages/` with `class: case`, `title`, `description`, `result`
 - [ ] `_includes/cases-cards.html` renders case content on article pages
 - [ ] Cases are filtered correctly on product pages via `product_tags`
+- [ ] Cases render on front page
 - [ ] Jekyll build exit 0

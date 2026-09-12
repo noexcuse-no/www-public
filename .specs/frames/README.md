@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frame Pages — Bolman & Deal Perspectives
 
 > Status: Active

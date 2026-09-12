@@ -14,7 +14,7 @@
     align-items: flex-start;
     gap: var(--space-md);
     padding: var(--space-md) var(--space-lg);
-    border-bottom: 1px solid var(--border-color-light);
+    border-bottom: 1px solid var(--border-color);
     cursor: pointer;
     transition: background 0.2s ease, box-shadow 0.2s ease;
     border-radius: var(--radius-md);
@@ -22,7 +22,7 @@
 }
 
 .review-questions li:hover {
-    background: var(--surface-hover-light);
+    background: var(--surface-hover);
     box-shadow: var(--shadow-xs);
 }
 
@@ -33,19 +33,7 @@
 .review-questions li span {
     font-size: 1em;
     line-height: 1.5;
-    color: var(--text-color-light);
-}
-
-.dark-mode .review-questions li {
-    border-bottom-color: var(--border-color-dark);
-}
-
-.dark-mode .review-questions li:hover {
-    background: var(--surface-hover-dark);
-}
-
-.dark-mode .review-questions li span {
-    color: var(--text-color-dark);
+    color: var(--text-color);
 }
 
 /* ── Modal Overlay ──────────────────────── */
@@ -54,7 +42,7 @@
     position: fixed;
     inset: 0;
     z-index: 1000;
-    background: var(--overlay-light);
+    background: var(--overlay-modal);
     backdrop-filter: blur(4px);
     align-items: center;
     justify-content: center;
@@ -67,7 +55,7 @@
 
 /* ── Modal Card ─────────────────────────── */
 .review-questions-modal .modal-card {
-    background: var(--box-background-light);
+    background: var(--box-background);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
     max-width: 520px;
@@ -88,11 +76,6 @@
     }
 }
 
-.dark-mode .review-questions-modal .modal-card {
-    background: var(--box-background-dark);
-    box-shadow: var(--shadow-xl-dark);
-}
-
 /* ── Modal Close Button ─────────────────── */
 .review-questions-modal .modal-close {
     position: absolute;
@@ -103,23 +86,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--close-bg-light);
+    background: var(--box-background);
     border: none;
     border-radius: 50%;
     font-size: 1.2em;
     cursor: pointer;
-    color: var(--text-color-light);
-    transition: background 0.2s ease;
+    color: var(--text-color);
     line-height: 1;
-}
-
-.review-questions-modal .modal-close:hover {
-    background: var(--close-bg-hover-light);
-}
-
-.dark-mode .review-questions-modal .modal-close {
-    background: var(--close-bg-dark);
-    color: var(--text-color-dark);
 }
 
 /* ── Modal Question (quotation block) ───── */
@@ -130,15 +103,10 @@
     margin: 0 0 var(--space-lg);
     padding: var(--space-md) var(--space-lg);
     padding-right: var(--space-xl);
-    color: var(--text-color-light);
-    border-left: 4px solid var(--primary-accent);
-    background: var(--surface-subtle-light);
+    color: var(--text-color);
+    border-left: 4px solid var(--primary-azure);
+    background: var(--surface-subtle);
     border-radius: 0 var(--radius-md) var(--radius-md) 0;
-}
-
-.dark-mode .review-questions-modal .modal-question {
-    color: var(--text-color-dark);
-    background: var(--surface-subtle-dark);
 }
 
 /* ── Provider List (single column) ───────── */
@@ -156,39 +124,25 @@
     width: 100%;
     padding: 12px 16px;
     min-height: 44px;
-    border: 1px solid var(--border-color-light);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     background: transparent;
     cursor: pointer;
-    transition: background 0.2s ease, border-color 0.2s ease;
     font-family: inherit;
     font-size: 1em;
     text-align: left;
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 
 .review-questions-modal .provider-btn:hover {
-    background: var(--surface-hover-light);
-    border-color: var(--primary-accent);
+    background: var(--surface-hover);
+    border-color: var(--primary-azure);
 }
 
 .review-questions-modal .provider-btn.is-selected {
-    border-color: var(--primary-accent);
-    background: var(--surface-subtle-light);
-    box-shadow: 0 0 0 1px var(--primary-accent);
-}
-
-.dark-mode .review-questions-modal .provider-btn {
-    border-color: var(--border-color-dark);
-    color: var(--text-color-dark);
-}
-
-.dark-mode .review-questions-modal .provider-btn:hover {
-    background: var(--surface-hover-dark);
-}
-
-.dark-mode .review-questions-modal .provider-btn.is-selected {
-    background: var(--surface-subtle-dark);
+    border-color: var(--primary-azure);
+    background: var(--surface-subtle);
+    box-shadow: 0 0 0 1px var(--primary-azure);
 }
 
 /* ── Collapsed Provider View ─────────────── */
@@ -198,30 +152,22 @@
     gap: var(--space-sm);
     margin-bottom: var(--space-lg);
     padding: 12px 16px;
-    border: 1px solid var(--primary-accent);
+    border: 1px solid var(--primary-azure);
     border-radius: var(--radius-md);
-    background: var(--surface-subtle-light);
-}
-
-.dark-mode .review-questions-modal .provider-selected {
-    background: var(--surface-subtle-dark);
+    background: var(--surface-subtle);
 }
 
 .review-questions-modal .provider-selected-name {
     font-weight: 600;
     font-size: 1em;
-    color: var(--text-color-light);
+    color: var(--text-color);
     flex: 1;
-}
-
-.dark-mode .review-questions-modal .provider-selected-name {
-    color: var(--text-color-dark);
 }
 
 .review-questions-modal .change-provider-btn {
     background: none;
     border: none;
-    color: var(--primary-accent);
+    color: var(--primary-azure);
     cursor: pointer;
     font-family: inherit;
     font-size: 0.85em;
@@ -232,10 +178,6 @@
     white-space: nowrap;
 }
 
-.review-questions-modal .change-provider-btn:hover {
-    opacity: 0.8;
-}
-
 /* ── Preference Checkbox ────────────────── */
 .review-questions-modal .preference-row {
     display: flex;
@@ -244,7 +186,7 @@
     margin-bottom: var(--space-lg);
     font-size: 0.85em;
     line-height: 1.4;
-    color: var(--text-color-light);
+    color: var(--text-color);
     opacity: 0.75;
 }
 
@@ -252,11 +194,7 @@
     margin-top: 2px;
     min-width: 16px;
     min-height: 16px;
-    accent-color: var(--primary-accent);
-}
-
-.dark-mode .review-questions-modal .preference-row {
-    color: var(--text-color-dark);
+    accent-color: var(--primary-azure);
 }
 
 /* ── Copy Button (secondary action) ─────── */
@@ -267,36 +205,21 @@
     width: 100%;
     padding: 10px 20px;
     min-height: 44px;
-    border: 1px solid var(--border-color-light);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
     background: transparent;
-    color: var(--text-color-light);
+    color: var(--text-color);
     font-family: inherit;
     font-size: 0.9em;
     cursor: pointer;
-    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .review-questions-modal .copy-btn:hover {
-    background: var(--surface-hover-light);
-    border-color: var(--primary-accent);
+    background: var(--surface-hover);
+    border-color: var(--primary-azure);
 }
 
 .review-questions-modal .copy-btn.is-copied {
-    border-color: var(--primary-navy);
-    background: var(--surface-subtle-light);
-}
-
-.dark-mode .review-questions-modal .copy-btn {
-    border-color: var(--border-color-dark);
-    color: var(--text-color-dark);
-}
-
-.dark-mode .review-questions-modal .copy-btn:hover {
-    background: var(--surface-hover-dark);
-}
-
-.dark-mode .review-questions-modal .copy-btn.is-copied {
-    border-color: var(--primary-azure);
-    background: var(--surface-subtle-dark);
+    border-color: var(--accent-color);
+    background: var(--surface-subtle);
 }

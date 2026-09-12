@@ -11,7 +11,7 @@ This document describes the architectural patterns, site structure, and developm
 
 ```
 www-public/
-├── _pages/                    # All content pages (unified collection)
+├── _pages/                    # Native Jekyll pages loaded via `include:`
 │   ├── ledelse-60-2.md       # Product page (class: product)
 │   ├── dagfinn.md            # Profile page (class: profile)
 │   ├── struktur.md           # Frame page (class: frame)
@@ -43,17 +43,12 @@ www-public/
 
 ### Collections
 
-All content lives in the unified `_pages/` collection with a `class` frontmatter property that declares the entity type:
+All content lives in native Jekyll pages loaded via `include: ["_pages"]` with a `class` frontmatter property that declares the entity type:
 
 ```yaml
+include:
+  - _pages
 collections:
-  pages:
-    output: true
-    permalink: /:path/
-  cases:
-    output: true
-  partners:
-    output: true
   tags:
     output: true
     permalink: /emne/:path/
@@ -149,7 +144,7 @@ Product landing pages with hero, benefits, process steps, and CTAs.
 
 | Required | Optional |
 |----------|----------|
-| `name` | `benefits`, `process_steps` |
+| `display_name` | `benefits`, `process_steps` |
 | `short_description` | `cta_a/b/c`, `story` |
 | `permalink` | `image`, `tags` |
 
@@ -159,7 +154,7 @@ Team member profiles with contact information and bio.
 
 | Required | Optional |
 |----------|----------|
-| `name` | `linkedin`, `booking_url` |
+| `display_name` | `linkedin`, `booking_url` |
 | `image` | `tags`, `bio` |
 | `phone`, `email` | |
 | `permalink` | |
@@ -192,7 +187,7 @@ Benefit article pages that also appear as cards on the product page.
 |----------|----------|
 | `category: benefit` | `title`, `description` |
 | `banner` | |
-| `url` | |
+| `url` | Inert — explicit `permalink` drives `page.url` |
 
 ### `class: step`
 
@@ -205,7 +200,7 @@ Process step pages that appear as cards on the product page. Uses `layout: artic
 | `category: step` | `title`, `description` |
 | `step_number` | |
 | `banner` | |
-| `url` | |
+| `url` | Inert — explicit `permalink` drives `page.url` |
 
 ### `class: case` / `class: partner`
 
@@ -262,7 +257,7 @@ All schemas are for `_pages/*.md` files. Use `class` to declare the entity type.
 ```yaml
 ---
 class: product
-name: "Ledelse 60:2"
+display_name: "Ledelse 60:2"
 short_description: "..."
 permalink: /ledelse-60-2/
 image: "assets/images/hero.png"
@@ -288,7 +283,7 @@ See `.specs/ledelse-60-2/README.md` for full product schema.
 ```yaml
 ---
 class: profile
-name: "Full Name"
+display_name: "Full Name"
 permalink: /profile-name/
 image: "assets/images/profile.png"
 phone: "+4799999999"
@@ -367,7 +362,7 @@ Members of `_pages/*.md` with `class: profile`:
 ```yaml
 ---
 class: profile
-name: "Full Name"
+display_name: "Full Name"
 permalink: /profile-name/
 image: "assets/images/profile.png"
 phone: "+4799999999"
@@ -404,14 +399,14 @@ json_ld:
 
 - Use kebab-case: `/page-slug/` not `/page_slug/` or `/pageSlug/`
 - Trailing slash required
-- Must match the filename convention (underscore → hyphen mapping is handled by Jekyll)
+- URLs come from the explicit `permalink` frontmatter on each page — not from filename mapping
 
 ## Build Checks
 
 Before pushing, run locally:
 
 ```bash
-bundle exec jekyll build
+docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/srv/jekyll" -w /srv/jekyll -e JEKYLL_ENV=production jekyll/jekyll jekyll build
 ```
 
 Check for:

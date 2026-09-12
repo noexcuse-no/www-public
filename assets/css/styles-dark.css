@@ -1,45 +1,26 @@
-body {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
-}
-a {
-    color: var(--link-color-dark);
-}
-a:hover {
-    color: var(--link-hover-dark);
-}
-.header {
-    background-color: var(--primary-navy);
-    color: var(--primary-azure);
-    border-bottom-color: var(--border-color-dark);
-    --logo-fill: var(--primary-azure);
-}
-.header-margin {
-    background-color: var(--primary-navy);
-}
-.footer {
-    background-color: var(--footer-background-dark);
-    color: var(--footer-text-dark);
-}
-.button, .close-button {
-    background-color: var(--button-background-dark);
-    color: var(--button-text-color-light);
-}
-.banner {
-    background-color: transparent;
-    color: inherit;
-}
-
-.ai-disclaimer {
-    background-color: var(--banner-background-dark);
-    color: var(--banner-text-dark);
-    border-bottom: 1px solid var(--border-color-dark);
-}
-.profile-detail-content {
-    background-color: var(--box-background-dark);
-    color: var(--text-color-dark);
-}
-.product {
-    background-color: var(--box-background-dark);
-    color: var(--text-color-dark);
+:root {
+    --text-color: var(--text-color-dark);
+    --background-color: var(--background-color-dark);
+    --box-background: var(--box-background-dark);
+    --link-color: var(--link-color-dark);
+    --link-hover: var(--link-hover-dark);
+    --footer-bg: var(--footer-bg-dark);
+    --footer-text: var(--footer-text-dark);
+    --disclaimer-bg: var(--disclaimer-bg-dark);
+    --disclaimer-text: var(--disclaimer-text-dark);
+    --focus-color: var(--focus-color-dark);
+    --accent-color: var(--accent-color-dark);
+    --surface-subtle: var(--surface-subtle-dark);
+    --surface-hover: var(--surface-hover-dark);
+    --border-color: var(--border-color-dark);
+    --border-color-subtle: var(--border-color-subtle-dark);
+    --overlay-modal: var(--overlay-modal-dark);
+    --profile-gradient-start: var(--profile-gradient-start-dark);
+    --profile-gradient-end: var(--profile-gradient-end-dark);
+    --profile-image-border: var(--profile-image-border-dark);
+    --carousel-btn-bg: var(--carousel-btn-bg-dark);
+    --carousel-btn-bg-hover: var(--carousel-btn-bg-hover-dark);
+    --hero-text: var(--hero-text-dark);
+    --hero-overlay: var(--hero-overlay-dark);
+    --hero-overlay-opacity: var(--hero-overlay-opacity-dark);
 }
