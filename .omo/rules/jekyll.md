@@ -7,4 +7,4 @@ globs: ["_config.yml"]
 
 Full spec: `.specs/architecture/README.md`
 
-Key: all content dirs registered in `collections:` with `output: true`. Each collection needs a `defaults` entry setting `layout:` and `lang: no`. Run `bundle exec jekyll build` before pushing.
+Key: `_pages` loaded via `include:`; only `_tags` is a collection. Each collection needs a `defaults` entry setting `layout:` and `lang: no`. Run `docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/srv/jekyll" -w /srv/jekyll -e JEKYLL_ENV=production jekyll/jekyll jekyll build` before pushing.

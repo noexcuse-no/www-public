@@ -4,7 +4,7 @@
 
 ```
 www-public/
-├── _pages/              # Standalone content pages
+├── _pages/              # Native Jekyll pages via `include:`
 ├── _layouts/            # Page templates (default, perspektiv, tag)
 ├── _includes/           # Reusable HTML partials (hero, card, header, footer, profiles, styles, scripts, metadata)
 ├── _products/           # Product frontmatter data
@@ -26,7 +26,7 @@ www-public/
 
 | Directory | Purpose | Output |
 |-----------|---------|--------|
-| `_pages/` | Content pages (ledelse-60-2, om-oss, frame articles, etc.) | Static HTML at `/:permalink/` |
+| `_pages/` | Content pages — native Jekyll pages via `include:` | Static HTML at `/:permalink/` |
 | `_products/` | Product frontmatter data (used by includes) | None (data only) |
 | `_profiles/` | Team member profiles | Static HTML at `/profiles/:name/` |
 | `_topics/` | Topic cards — frames (4), benefits (4), process steps (3) | None (data only) |

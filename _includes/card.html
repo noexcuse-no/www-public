@@ -4,7 +4,7 @@
   {% assign card_class = card_class | append: " card--numbered" %}
 {% endif %}
 
-<article class="{{ card_class }}"{% if topic.id %} data-topic-id="{{ topic.id }}"{% endif %} style="{% if topic.color_accent %}--card-accent: {{ topic.color_accent }};{% endif %}">
+<article class="{{ card_class }}"{% if topic.frame_id %} data-topic-id="/{{ topic.frame_id }}"{% endif %} style="{% if topic.color_accent %}--card-accent: {{ topic.color_accent }};{% endif %}">
   {% if topic.banner %}
   <img src="{{ topic.banner | relative_url }}" alt="{{ topic.title }}" class="card-image">
   {% endif %}
