@@ -103,44 +103,55 @@ Et strukturert intervju med ledergruppen — 60 spørsmål fordelt på fire pers
 
 Metoden er også relevant for [governance, risikostyring og compliance (GRC)](/grc/). De fire perspektivene — struktur, mennesker, påvirkning og identitet — speiler kjernedimensjonene i enhver styringsmodell. Ledelse 60:2 gir ledergruppen et felles språk for å identifisere hvor styringen fungerer og hvor den har blindsoner.
 
-![Samtale](/assets/images/banners/step-talk.webp)
-### 1. Uforpliktende samtale
-Vi blir kjent og avklarer om metoden passer for dere. Ingen kontrakter, ingen binding. [Les mer →](/samtale/)
+1.  ![Samtale](/assets/images/banners/step-talk.webp)
 
-![Intervju](/assets/images/banners/step-interview.webp)
-### 2. Strukturert intervju
-60 diagnostiske spørsmål med inntil fem ledere. Selve samtalen er like verdifull som analysen. [Les mer →](/intervju/)
+    ### 1. Uforpliktende samtale
 
-![Rapport](/assets/images/banners/step-report.webp)
-### 3. Rapport og anbefalinger
-Konkrete funn og anbefalinger basert på intervjuet — ikke generisk teoristoff. Leveres innen en uke. [Les mer →](/rapport/)
+    Vi blir kjent og avklarer om metoden passer for dere. Ingen kontrakter, ingen binding. [Les mer →](/samtale/)
+
+2.  ![Intervju](/assets/images/banners/step-interview.webp)
+
+    ### 2. Strukturert intervju
+
+    60 diagnostiske spørsmål med inntil fem ledere. Selve samtalen er like verdifull som analysen. [Les mer →](/intervju/)
+
+3.  ![Rapport](/assets/images/banners/step-report.webp)
+
+    ### 3. Rapport og anbefalinger
+
+    Konkrete funn og anbefalinger basert på intervjuet — ikke generisk teoristoff. Leveres innen en uke. [Les mer →](/rapport/)
 
 ## Kjenner du deg igjen?
 
-![Stille rom](/assets/images/banners/ledelse-60-2-t4-signal-stille-rom.webp)
-#### Du får vite hva folk egentlig mener på vei ut av møtet.
+*   ![Stille rom](/assets/images/banners/ledelse-60-2-t4-signal-stille-rom.webp)
 
-I rommet var alle enige — på overflaten. Når [tillitsbasert ledelse](/tillit/) mangler, blir tause rom normen, og [organisasjonskulturen](/kultur/) svekkes uten at noen snakker om det.
+    #### Du får vite hva folk egentlig mener på vei ut av møtet.
 
-![Risikokalender](/assets/images/banners/ledelse-60-2-t4-signal-risikokalender.webp)
-#### Dere oppdaterer risikobildet én gang i året.
+    I rommet var alle enige — på overflaten. Når [tillitsbasert ledelse](/tillit/) mangler, blir tause rom normen, og [organisasjonskulturen](/kultur/) svekkes uten at noen snakker om det.
 
-Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert [risikostyring](/risikostyring/) og løpende [compliance](/compliance/) blir håndteringen reaktiv, og [informasjonssikkerhet](/informasjonssikkerhet/) reduseres til en årlig avkrysning.
+*   ![Risikokalender](/assets/images/banners/ledelse-60-2-t4-signal-risikokalender.webp)
 
-![Endringsstabel](/assets/images/banners/ledelse-60-2-t4-signal-endringsstabel.webp)
-#### Du har mistet tellingen på endringsprosjektene.
+    #### Dere oppdaterer risikobildet én gang i året.
 
-De du helst vil beholde, forsvinner stille. Vellykket [endringsledelse](/endringsledelse/) handler ikke om flere initiativer, men om å lede mennesker gjennom endring — og [generativ KI](/generativ-ki/) endrer premissene for hva som kreves av lederne.
+    Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert [risikostyring](/risikostyring/) og løpende [compliance](/compliance/) blir håndteringen reaktiv, og [informasjonssikkerhet](/informasjonssikkerhet/) reduseres til en årlig avkrysning.
 
-![Lukket presentasjon](/assets/images/banners/ledelse-60-2-t4-signal-lukket-presentasjon.webp)
-#### Bærekraftsmålene står i en PowerPoint ingen åpner.
+*   ![Endringsstabel](/assets/images/banners/ledelse-60-2-t4-signal-endringsstabel.webp)
 
-Strategien er på plass, men uten [forankring](/forankring/) i ledergruppen blir [bærekraft](/baerekraft/) og [kvalitetsledelse](/kvalitetsledelse/) til ord uten eierskap i hverdagen.
+    #### Du har mistet tellingen på endringsprosjektene.
 
-![Samme diskusjon](/assets/images/banners/ledelse-60-2-t4-signal-samme-diskusjon.webp)
-#### Du har hatt den samme diskusjonen tre ganger denne måneden.
+    De du helst vil beholde, forsvinner stille. Vellykket [endringsledelse](/endringsledelse/) handler ikke om flere initiativer, men om å lede mennesker gjennom endring — og [generativ KI](/generativ-ki/) endrer premissene for hva som kreves av lederne.
 
-Beslutninger tas i enighet, men ingenting endrer seg. Uforløst [makt](/makt/) og manglende [perspektivskifte](/perspektiv/) låser mønstre som [triader](/triader/) kan bryte.
+*   ![Lukket presentasjon](/assets/images/banners/ledelse-60-2-t4-signal-lukket-presentasjon.webp)
+
+    #### Bærekraftsmålene står i en PowerPoint ingen åpner.
+
+    Strategien er på plass, men uten [forankring](/forankring/) i ledergruppen blir [bærekraft](/baerekraft/) og [kvalitetsledelse](/kvalitetsledelse/) til ord uten eierskap i hverdagen.
+
+*   ![Samme diskusjon](/assets/images/banners/ledelse-60-2-t4-signal-samme-diskusjon.webp)
+
+    #### Du har hatt den samme diskusjonen tre ganger denne måneden.
+
+    Beslutninger tas i enighet, men ingenting endrer seg. Uforløst [makt](/makt/) og manglende [perspektivskifte](/perspektiv/) låser mønstre som [triader](/triader/) kan bryte.
 
 Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verktøyet som gir ledergruppen et felles språk for å bryte mønstrene. Les mer om [hvordan metoden er bygget opp](/metode/) og [hvorfor vi bruker Bolman & Deals fire perspektiver](/perspektiv/) som rammeverk.
 
@@ -148,21 +159,29 @@ Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verkt
 
 Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert perspektiv avdekker en dimensjon av ledelsesfunksjonen som ellers lett overses. Poenget er ikke å skåre — men å få et felles språk for hva som fungerer og hva som trenger oppmerksomhet.
 
-[![Struktur](/assets/images/banners/frame-structure.webp)](/struktur/)
-### Struktur
-Rolleklarhet, prosesser og beslutningslinjer. Handler om å få organisasjonen til å fungere teknisk.
+*   [![Struktur](/assets/images/banners/frame-structure.webp)](/struktur/)
 
-[![Mennesker](/assets/images/banners/frame-human.webp)](/mennesker/)
-### Mennesker
-Psykologisk trygghet, tillit og kompetanseutnyttelse. Handler om å få folk til å fungere sammen.
+    ### Struktur
 
-[![Påvirkning](/assets/images/banners/frame-political.webp)](/pavirkning/)
-### Påvirkning
-Maktforhold, interesser og allianser. Handler om å forstå hvem som egentlig bestemmer.
+    Rolleklarhet, prosesser og beslutningslinjer. Handler om å få organisasjonen til å fungere teknisk.
 
-[![Identitet](/assets/images/banners/frame-symbol.webp)](/identitet/)
-### Identitet
-Kultur, verdier og felles retning. Handler om hva organisasjonen står for.
+*   [![Mennesker](/assets/images/banners/frame-human.webp)](/mennesker/)
+
+    ### Mennesker
+
+    Psykologisk trygghet, tillit og kompetanseutnyttelse. Handler om å få folk til å fungere sammen.
+
+*   [![Påvirkning](/assets/images/banners/frame-political.webp)](/pavirkning/)
+
+    ### Påvirkning
+
+    Maktforhold, interesser og allianser. Handler om å forstå hvem som egentlig bestemmer.
+
+*   [![Identitet](/assets/images/banners/frame-symbol.webp)](/identitet/)
+
+    ### Identitet
+
+    Kultur, verdier og felles retning. Handler om hva organisasjonen står for.
 
 De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene er designet for å skape refleksjon og innsikt — ikke for å gi enkle poengsummer eller rangeringer.
 

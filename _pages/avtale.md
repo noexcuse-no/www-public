@@ -17,8 +17,6 @@ avtale: true
 
 ## §1 Endring og erstatning
 
-![Abstrakt illustrasjon av avtalevilkår §1 endring og erstatning](/assets/images/banners/avtale-t4-paragraf-1.webp)
-
 §1.1 Endringer i Oppdragets innhold eller omfang kan avtales særskilt. Som tillegg til Avtalen kan partene bli enige om nye oppdrag, rammetall for tid og kostnad, som avtales særskilt i hvert tilfelle. I den utstrekning ikke annet avtales i forbindelse med det nye oppdraget, gjelder Avtalen også for det.
 
 §1.2 Kunden skal lojalt medvirke til Oppdragets gjennomføring. Henvendelser skal besvares snarest mulig. NO EXCUSE AS skal varsles om forhold Kunden forstår eller bør forstå kan få betydning for gjennomføringen av Oppdraget.
@@ -29,8 +27,6 @@ avtale: true
 
 ## §2 Fakturering og reise
 
-![Abstrakt illustrasjon av avtalevilkår §2 fakturering og reise](/assets/images/banners/avtale-t4-paragraf-2.webp)
-
 §2.1 Fakturering skjer etterskuddsvis en gang pr. måned. Betalingsbetingelsene er netto pr. 15 dager. Det påløper forsinkelsesrenter ved for sen betaling etter bestemmelsene i Forsinkelsesrenteloven.
 
 §2.2 Alle priser er oppgitt eksklusiv mva. Offentlige avgifter og gebyrer i forbindelse med offentlig saksbehandling og lignende viderefaktureres Kunden. Ved krav om uavhengig kontroll vil kostnadene for dette faktureres Kunden.
@@ -38,8 +34,6 @@ avtale: true
 §2.3 Prisen inkluderer utgifter til reise inntil 5 kilometer (en vei) mellom Kunden og NO EXCUSE AS. Utgifter i forbindelse med reiser utover 5 kilometer og andre reiser som er pålagt eller godkjent av Kunden, kommer i tillegg og dekkes etter statens reiserepartement.
 
 ## §3 Rettigheter
-
-![Abstrakt illustrasjon av avtalevilkår §3 rettigheter](/assets/images/banners/avtale-t4-paragraf-3.webp)
 
 §3.1 Alle resultater som oppnås under bistanden er Kundens eiendom dersom ikke annet er avtalt. NO EXCUSE AS kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale.
 
@@ -51,19 +45,13 @@ avtale: true
 
 ## §4 Taushetsplikt og sikkerhet
 
-![Abstrakt illustrasjon av avtalevilkår §4 taushetsplikt og sikkerhet](/assets/images/banners/avtale-t4-paragraf-4.webp)
-
 §4.1 NO EXCUSE AS sitt personale har taushetsplikt for alle opplysninger, inklusive informasjon om personlige forhold, som han / hun blir kjent med under arbeidet for Kunden, og skal ivareta Kundens kommuniserte sikkerhets- og kvalitetskrav. NO EXCUSE AS sitt personale forholder seg for øvrig til gjeldende regelverk ved utførelsen av arbeidet.
 
 ## §5 Mislighold og force majeur
 
-![Abstrakt illustrasjon av avtalevilkår §5 mislighold og force majeur](/assets/images/banners/avtale-t4-paragraf-5.webp)
-
 §5.1 Ved mislighold av denne kjøpekontrakt kan den part som rammes kreve erstatning for dokumentert økonomisk tap etter alminnelige prinsipper for erstatning i avtaleforhold, erstatningskravet kan ikke overstige kontraktssummen (eks mva). Skadeerstatning omfatter ikke indirekte tap eller følgesskader hos tredjemann. Dette gjelder også i force majeurtilfeller.
 
 ## §6 Tvister og verneting
-
-![Abstrakt illustrasjon av avtalevilkår §6 tvister og verneting](/assets/images/banners/avtale-t4-paragraf-6.webp)
 
 §6.1 Norsk rett gjelder for Avtalen og dens inngåelse. Kundens verneting vedtas som verneting.
 

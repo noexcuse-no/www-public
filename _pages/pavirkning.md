@@ -58,35 +58,35 @@ I komplekse beslutningsmiljøer — der problemer, løsninger, deltakere og valg
 
 ## De 3 hovedelementene
 
-![Illustrasjon: Makt og innflytelse](/assets/images/banners/spot-pavirkning-makt.webp)
+*   ![Illustrasjon: Makt og innflytelse](/assets/images/banners/spot-pavirkning-makt.webp)
 
-### Makt og innflytelse
+    ## Makt og innflytelse
 
-Makt i organisasjoner er ikke noe mystisk — det er evnen til å få ting gjort. Den kan komme fra formell autoritet, fra ekspertise, fra relasjoner, eller fra det å befinne seg i sentrale posisjoner. Men få ledergrupper snakker åpent om makt — strukturerte, anonyme verktøy kan avdekke mønstre som ellers forblir usynlige i møterommet.
+    Makt i organisasjoner er ikke noe mystisk — det er evnen til å få ting gjort. Den kan komme fra formell autoritet, fra ekspertise, fra relasjoner, eller fra det å befinne seg i sentrale posisjoner. Men få ledergrupper snakker åpent om makt — strukturerte, anonyme verktøy kan avdekke mønstre som ellers forblir usynlige i møterommet.
 
-**Tegn på god makt og innflytelse:** Ledere vet hvem som har innflytelse på viktige beslutninger. De bygger allianser før de trenger dem. De er synlige der beslutninger tas.
+    **Tegn på god makt og innflytelse:** Ledere vet hvem som har innflytelse på viktige beslutninger. De bygger allianser før de trenger dem. De er synlige der beslutninger tas.
 
-**Tegn på makt og innflytelse-problemer:** Ledere som tror «godt arbeid snakker for seg selv» ender sjelden øverst. De som unngår «politikk» ender opp med å bli utkonkurrert av de som omfavner det.
+    **Tegn på makt og innflytelse-problemer:** Ledere som tror «godt arbeid snakker for seg selv» ender sjelden øverst. De som unngår «politikk» ender opp med å bli utkonkurrert av de som omfavner det.
 
-![Illustrasjon: Interesser og agendaer](/assets/images/banners/spot-pavirkning-nettverk.webp)
+*   ![Illustrasjon: Interesser og agendaer](/assets/images/banners/spot-pavirkning-nettverk.webp)
 
-### Interesser og agendaer
+    ## Interesser og agendaer
 
-Hver leder og hver avdeling har sine interesser. Ikke nødvendigvis egoistiske — de kan være faglige, strategiske, eller personlige. Påvirkningsperspektivet handler om å forstå disse interessene og hvordan de samhandler. Når interessekartlegging gjøres systematisk, blir det mulig å diskutere prioriteringer ærlig — i stedet for å la dem forbli usagte driver for beslutninger.
+    Hver leder og hver avdeling har sine interesser. Ikke nødvendigvis egoistiske — de kan være faglige, strategiske, eller personlige. Påvirkningsperspektivet handler om å forstå disse interessene og hvordan de samhandler. Når interessekartlegging gjøres systematisk, blir det mulig å diskutere prioriteringer ærlig — i stedet for å la dem forbli usagte driver for beslutninger.
 
-**Tegn på gode interesser og agendaer:** Det diskuteres åpent om ulike avdelingers agendaer og hvordan de kan bringes på line. Prioriteringsdiskusjoner er ærlige om hva som står på spill.
+    **Tegn på gode interesser og agendaer:** Det diskuteres åpent om ulike avdelingers agendaer og hvordan de kan bringes på line. Prioriteringsdiskusjoner er ærlige om hva som står på spill.
 
-**Tegn på interesser og agendaer-problemer:** Beslutninger tas bak lukkede dører. Enighet i møter maskerer uenighet utenfor. Viktige hensyn dukker opp sent i prosessen.
+    **Tegn på interesser og agendaer-problemer:** Beslutninger tas bak lukkede dører. Enighet i møter maskerer uenighet utenfor. Viktige hensyn dukker opp sent i prosessen.
 
-![Illustrasjon: Konflikt og forhandling](/assets/images/banners/spot-pavirkning-interesser.webp)
+*   ![Illustrasjon: Konflikt og forhandling](/assets/images/banners/spot-pavirkning-interesser.webp)
 
-### Konflikt og forhandling
+    ## Konflikt og forhandling
 
-Konflikt er ikke noe galt i seg selv — det er et tegn på at ulike perspektiver kommer til syne. Vekst skjer ofte nettopp der motsetninger møtes. Problemet er ikke konflikt, men mangel på arenaer for å håndtere den. Strukturerte spørsmål om konflikthåndtering gir ledergruppen et felles språk for å adressere uenighet før den eskalerer.
+    Konflikt er ikke noe galt i seg selv — det er et tegn på at ulike perspektiver kommer til syne. Vekst skjer ofte nettopp der motsetninger møtes. Problemet er ikke konflikt, men mangel på arenaer for å håndtere den. Strukturerte spørsmål om konflikthåndtering gir ledergruppen et felles språk for å adressere uenighet før den eskalerer.
 
-**Tegn på god konflikt og forhandling:** Uenighet diskuteres åpent og med respekt. Beslutninger tas etter at ulike synspunkter er vurdert. Kompromisser er «eide» av begge parter.
+    **Tegn på god konflikt og forhandling:** Uenighet diskuteres åpent og med respekt. Beslutninger tas etter at ulike synspunkter er vurdert. Kompromisser er «eide» av begge parter.
 
-**Tegn på konflikt og forhandling-problemer:** Konflikter begraves til de eskalerer. «Vi er enig» betyr «jeg våger ikke si ifra». Passiv-aggressiv kommunikasjon. Koalisjoner som jobber mot hverandre.
+    **Tegn på konflikt og forhandling-problemer:** Konflikter begraves til de eskalerer. «Vi er enig» betyr «jeg våger ikke si ifra». Passiv-aggressiv kommunikasjon. Koalisjoner som jobber mot hverandre.
 
 ![Illustrasjon av de 3 hovedelementene i påvirkningsperspektivet](/assets/images/banners/illustrasjon-pavirkning-hovedelementer.webp)
 

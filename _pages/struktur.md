@@ -54,37 +54,37 @@ En leder som mestrer strukturperspektivet, stiller spørsmål som: Har vi klare 
 
 ## De 3 hovedelementene
 
-![Illustrasjon: Roller og ansvar](/assets/images/banners/spot-struktur-roller.webp)
+*   ![Illustrasjon: Roller og ansvar](/assets/images/banners/spot-struktur-roller.webp)
 
-### Roller og ansvar
+    ## Roller og ansvar
 
-Hvem gjør hva? Roller er de minste meningsfulle enhetene i en organisasjon. Når roller er utydelige, oppstår det ansvarsskyvning. Når de er klare, vet folk hva som forventes av dem — og hva de kan forvente av andre. Uten en strukturert måte å kartlegge roller på, risikerer ledergruppen å overse uklarheter inntil de skaper konflikter.
+    Hvem gjør hva? Roller er de minste meningsfulle enhetene i en organisasjon. Når roller er utydelige, oppstår det ansvarsskyvning. Når de er klare, vet folk hva som forventes av dem — og hva de kan forvente av andre. Uten en strukturert måte å kartlegge roller på, risikerer ledergruppen å overse uklarheter inntil de skaper konflikter.
 
-**Tegn på god roller og ansvar:** Ledere kan beskrive sine ansvarsområder presist. De vet hvem som signerer hva. Beslutninger tas på riktig nivå.
+    **Tegn på god roller og ansvar:** Ledere kan beskrive sine ansvarsområder presist. De vet hvem som signerer hva. Beslutninger tas på riktig nivå.
 
-**Tegn på roller og ansvar-problemer:** «Det er ikke min jobb» eller «Hvem skal jeg egentlig spørre?» Dominans av e-post og møter for å koordinere arbeid som burde gå av seg selv.
+    **Tegn på roller og ansvar-problemer:** «Det er ikke min jobb» eller «Hvem skal jeg egentlig spørre?» Dominans av e-post og møter for å koordinere arbeid som burde gå av seg selv.
 
-![Illustrasjon: Mål og koordinering](/assets/images/banners/spot-struktur-mal-og-koordinering.webp)
+*   ![Illustrasjon: Mål og koordinering](/assets/images/banners/spot-struktur-mal-og-koordinering.webp)
 
-### Mål og koordinering
+    ## Mål og koordinering
 
-Organisasjoner eksisterer for å oppnå noe. Mål er det som gir retning. Koordinering er det som får ulike deler til å trekke i samme retning. Strukturerte spørsmål om måljustering avdekker silotenking før den koster resultater — uten dem forblir konkurrerende prioriteringer usynlige for ledelsen.
+    Organisasjoner eksisterer for å oppnå noe. Mål er det som gir retning. Koordinering er det som får ulike deler til å trekke i samme retning. Strukturerte spørsmål om måljustering avdekker silotenking før den koster resultater — uten dem forblir konkurrerende prioriteringer usynlige for ledelsen.
 
-**Tegn på god mål og koordinering:** Mål i ulike avdelinger forsterker hverandre. Det er enkelt å spores hvordan delmål bidrar til hovedmål. Prioriteringer er relativt entydige.
+    **Tegn på god mål og koordinering:** Mål i ulike avdelinger forsterker hverandre. Det er enkelt å spores hvordan delmål bidrar til hovedmål. Prioriteringer er relativt entydige.
 
-**Tegn på mål og koordinering-problemer:** Silotenking. Mål som konkurrerer med hverandre. Avdelinger som driver egne initiativ uten å kjenne til hverandre. Mye tid brukt på «å samordne» arbeid som burde ha vært koordinert fra start.
+    **Tegn på mål og koordinering-problemer:** Silotenking. Mål som konkurrerer med hverandre. Avdelinger som driver egne initiativ uten å kjenne til hverandre. Mye tid brukt på «å samordne» arbeid som burde ha vært koordinert fra start.
 
-![Illustrasjon: Prosesser og regler](/assets/images/banners/spot-struktur-prosesser-og-regler.webp)
+*   ![Illustrasjon: Prosesser og regler](/assets/images/banners/spot-struktur-prosesser-og-regler.webp)
 
-### Prosesser og regler
+    ## Prosesser og regler
 
-Prosesser er hvordan arbeid faktisk utføres. Regler er de formelle og uformelle normene som styrer atferd. En god struktur har balanse: nok regler til å gi trygghet, få nok til å stimulere vekst.
+    Prosesser er hvordan arbeid faktisk utføres. Regler er de formelle og uformelle normene som styrer atferd. En god struktur har balanse: nok regler til å gi trygghet, få nok til å stimulere vekst.
 
-Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen glitter og prakt som fører til at viktige oppgaver faller mellom stoler. Kartlegging av prosessbyrde avdekker hvorvidt reglene faktisk tjener formålet — eller har blitt mål i seg selv.
+    Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen glitter og prakt som fører til at viktige oppgaver faller mellom stoler. Kartlegging av prosessbyrde avdekker hvorvidt reglene faktisk tjener formålet — eller har blitt mål i seg selv.
 
-**Tegn på gode prosesser og regler:** Folk vet hvordan de skal få ting gjort. Unntak håndteres på en standardisert måte. Nye folk læres opp raskt fordi prosessene er tydelige.
+    **Tegn på gode prosesser og regler:** Folk vet hvordan de skal få ting gjort. Unntak håndteres på en standardisert måte. Nye folk læres opp raskt fordi prosessene er tydelige.
 
-**Tegn på prosesser og regler-problemer:** Unødvendig byråkrati. Prosesser som ble laget for å løse et problem som ikke lenger eksisterer. Unntak som tar mer tid enn normalen.
+    **Tegn på prosesser og regler-problemer:** Unødvendig byråkrati. Prosesser som ble laget for å løse et problem som ikke lenger eksisterer. Unntak som tar mer tid enn normalen.
 
 ![Illustrasjon av de 3 hovedelementene i strukturperspektivet](/assets/images/banners/illustrasjon-struktur-hovedelementer.webp)
 

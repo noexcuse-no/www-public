@@ -85,7 +85,7 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
 ![Diagram av fem dimensjoner i beslutningstaking: makt, interesser, bias, konflikt og kultur](/assets/images/banners/forankring-t2-five-dimensions.webp)
 
-## De fire dimensjonene av beslutningstaking
+## De fem dimensjonene av beslutningstaking
 
 *   ![Abstrakt illustrasjon av gapet mellom formell og reell beslutningsmakt](/assets/images/banners/forankring-t3-formal-vs-real-power.webp)
 

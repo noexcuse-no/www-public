@@ -50,6 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- **Article layout system (article-layout-system, Branch 1+2)**: Implemented a heading-level-driven layout system for article content. Content sections are wrapped in lists (`ul`/`ol`) whose items contain a heading (`h2`–`h5`); the heading level determines the card layout: `li h2`/`li h4` = 1-per-row card with square floated image, `li h3`/`li h5` = 2-per-row grid with landscape image. Added `ol` number badges (CSS counters) and `ul` bullet markers. Added h4/h5 to the typography scale (desktop + mobile). Rewrote all 15 article `.md` files to fit the system (content rewritten to fit the layout, not the other way around). Removed old special-case selectors (verdi, metode-t4, t4-signal, step-, frame-, challenge-card). Added `.specs/article-layout/README.md` spec. Updated `.design/graphics.md` (tier→heading-level mapping) and `.design/css-architecture.md` (list heading layout system).
 - **Backlog cleanup (risk-reduction Phase 1)**: Pruned `BACKLOG.md` to current open work only — removed all completed (Done) archaeology rows whose records already live in CHANGELOG/git history, removed rows disclosing internal business reasoning, and rewrote still-open rows into product-request phrasing. Removed `.research/` (deleted), `.specs/archive/`, and completed one-time implementation specs (see Removed below). Each remaining open row maps to a live `.specs/`/`.design/` file.
 
 ### Removed

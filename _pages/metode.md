@@ -74,21 +74,29 @@ Hvert intervju produserer strukturerte, sammenliknbare data som anonymiseres og 
 
 Databehandlingen følger **De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer** (2014).
 
-![Abstrakt illustrasjon av forskningsetisk prinsipp: respekt](/assets/images/banners/metode-t4-respekt.webp)
-#### Respekt
-Informantene behandles med verdighet og integritet
+*   ![Abstrakt illustrasjon av forskningsetisk prinsipp: respekt](/assets/images/banners/metode-t4-respekt.webp)
 
-![Abstrakt illustrasjon av forskningsetisk prinsipp: gode konsekvenser](/assets/images/banners/metode-t4-konsekvenser.webp)
-#### Gode konsekvenser
-Forskningen skal ha positiv nytteverdi for deltakerne og samfunnet
+    #### Respekt
 
-![Abstrakt illustrasjon av forskningsetisk prinsipp: rettferdighet](/assets/images/banners/metode-t4-rettferdighet.webp)
-#### Rettferdighet
-Prosjektet er rettferdig utformet og gjennomført
+    Informantene behandles med verdighet og integritet
 
-![Abstrakt illustrasjon av forskningsetisk prinsipp: integritet](/assets/images/banners/metode-t4-integritet.webp)
-#### Integritet
-Prosjektet følger anerkjente normer og opptrer ansvarlig
+*   ![Abstrakt illustrasjon av forskningsetisk prinsipp: gode konsekvenser](/assets/images/banners/metode-t4-konsekvenser.webp)
+
+    #### Gode konsekvenser
+
+    Forskningen skal ha positiv nytteverdi for deltakerne og samfunnet
+
+*   ![Abstrakt illustrasjon av forskningsetisk prinsipp: rettferdighet](/assets/images/banners/metode-t4-rettferdighet.webp)
+
+    #### Rettferdighet
+
+    Prosjektet er rettferdig utformet og gjennomført
+
+*   ![Abstrakt illustrasjon av forskningsetisk prinsipp: integritet](/assets/images/banners/metode-t4-integritet.webp)
+
+    #### Integritet
+
+    Prosjektet følger anerkjente normer og opptrer ansvarlig
 
 **Forskningsetikkloven § 4** bestemmer at "Forskere skal opptre med aktsomhet for å sikre at all forskning skjer i henhold til anerkjente forskningsetiske normer. Dette gjelder også under forberedelser til forskning, rapportering av forskning og andre forskningsrelaterte aktiviteter."
 
