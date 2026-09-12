@@ -6,18 +6,50 @@
     var STORE_EXPIRY_DAYS = 365;
 
     var PROVIDERS = [
-        { id: 'chatgpt', name: 'ChatGPT', url: 'https://chatgpt.com' },
-        { id: 'claude', name: 'Claude', url: 'https://claude.ai' },
-        { id: 'gemini', name: 'Gemini', url: 'https://gemini.google.com' },
-        { id: 'deepseek', name: 'DeepSeek', url: 'https://chat.deepseek.com' },
-        { id: 'perplexity', name: 'Perplexity', url: 'https://www.perplexity.ai' },
-        { id: 'copilot', name: 'Copilot', url: 'https://copilot.microsoft.com' },
-        { id: 'grok', name: 'Grok', url: 'https://grok.com' }
+        { id: 'chatgpt', name: 'ChatGPT', url: 'https://chatgpt.com', capability: 'community-prefill' },
+        { id: 'claude', name: 'Claude', url: 'https://claude.ai', capability: 'official-prefill' },
+        { id: 'gemini', name: 'Gemini', url: 'https://gemini.google.com', capability: 'copy-open' },
+        { id: 'deepseek', name: 'DeepSeek', url: 'https://chat.deepseek.com', capability: 'copy-open' },
+        { id: 'perplexity', name: 'Perplexity', url: 'https://www.perplexity.ai', capability: 'community-prefill' },
+        { id: 'copilot', name: 'Copilot', url: 'https://copilot.microsoft.com', capability: 'copy-open' },
+        { id: 'grok', name: 'Grok', url: 'https://grok.com', capability: 'community-prefill' }
     ];
+
+    /* ── Shared Critical-Reflection Meta-Prompt ──────────────────────────── */
+    var META_PROMPT = (
+        'Oppgave: Veiled brukeren i å utforske et spørsmål om ledelse og organisasjonskultur.\n\n' +
+        '**Spørsmål:** {{QUESTION}}\n\n' +
+        '**Utgangspunkt:** Spørsmålet er fra "{{TOPIC_LABEL}}" på noexcuse.no ({{SOURCE_URL}}). ' +
+        'Bruk innholdet på denne siden som kontekst for veiledningen. Siden inneholder JSON-LD strukturert data.\n\n' +
+        '**Bakgrunn:** No Excuse AS hjelper ledergrupper med å få bedre blikk for ' +
+        'mennesker, identitet, struktur og påvirkning — basert på Bolman & Deals ' +
+        'fire perspektiver. Kjerneproduktet er Ledelse 60:2, en kunnskapsbasert ' +
+        'orientering for ledergrupper: 60 diagnostiske spørsmål på 2 timer ' +
+        '(https://noexcuse.no/ledelse-60-2/).\n\n' +
+        '**AI-agent instruksjoner:** Se https://noexcuse.no/assets/ai-agent-cheat-sheet.md for full rollebeskrivelse (Diagnostiker, Omrammer, Syntetisør, Djevelens Advokat, Coach), samtaleoppskrifter, merkevarestemme og sideindeks.\n\n' +
+        '**Retningslinjer:**\n' +
+        '- Still oppfølgingsspørsmål som hjelper brukeren å reflektere over egen praksis\n' +
+        '- Vis til relevant innhold på noexcuse.no som utgangspunkt for videre lesning\n' +
+        '- Unngå å gi forhastede svar eller premature løsninger — målet er utforskning, ikke fasit\n' +
+        '- Bruk norsk bokmål, vær konkret og praktisk rettet mot ledergrupper\n' +
+        '- Vær direkte, kompetent og kortfattet — skandinavisk minimalistisk. Ingen konsulentspråk (unngå: synergi, verdiskapning, helhetlig, skreddersydde løsninger)\n' +
+        '- Still én ting om gangen. Korte setninger. Konkrete eksempler.\n\n' +
+        '**Kritisk refleksjon (8 regler):**\n' +
+        '1. Still ÉN ting om gangen.\n' +
+        '2. Be om konkrete nylige eksempler.\n' +
+        '3. Skille evidens / observasjon / tolkning / antakelse.\n' +
+        '4. Utfordr forhastede konklusjoner.\n' +
+        '5. Vurder de fire perspektivene (Struktur, Mennesker, Påvirkning, Identitet).\n' +
+        '6. Generer alternative hypoteser.\n' +
+        '7. INGEN scoring, diagnostisering, navn, sensitive data, eller leverandør-anbefaling.\n' +
+        '8. Avslutt med å forklare opprinnelsen av spørsmålene + valgfri retursti til noexcuse.no.\n\n' +
+        '**Retursti:** Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. ' +
+        'Du kan gå tilbake til {{SIXTY_TWO_URL}} hvis du vil utforske videre.'
+    );
 
     /* ── State ──────────────────────────────── */
     var modalEl = null;
-    var currentQuestion = '';
+    var currentTopic = null;
     var selectedProvider = getSavedProvider() || '';
     var copyTimer = null;
     var isCollapsed = false;
@@ -26,7 +58,7 @@
     function init() {
         if (!document.querySelector('.review-questions')) return;
         buildModal();
-        attachQuestionClicks();
+        attachTopicClicks();
     }
 
     /* ── Build Modal DOM ────────────────────── */
@@ -41,14 +73,15 @@
             '<div class="modal-card">' +
             '<button class="modal-close" aria-label="Lukk">&times;</button>' +
             '<blockquote class="modal-question"></blockquote>' +
+            '<p class="modal-topic-label"></p>' +
             '<div class="provider-grid"></div>' +
             '<div class="provider-selected" hidden>' +
             '<span class="provider-selected-name"></span>' +
-            '<button class="change-provider-btn">Skift leverand&oslash;r</button>' +
+            '<button class="change-provider-btn">Skift leverandør</button>' +
             '</div>' +
             '<label class="preference-row">' +
             '<input type="checkbox" id="remember-provider" />' +
-            '<span>Husk valget mitt &mdash; <em>vi lagrer kun ditt valg av KI-leverand&oslash;r lokalt i nettleseren din. Ingen data sendes til v&aring;re servere.</em></span>' +
+            '<span>Husk valget mitt &mdash; <em>vi lagrer kun ditt valg av KI-leverandør lokalt i nettleseren din. Ingen data sendes til våre servere.</em></span>' +
             '</label>' +
             '<button class="copy-btn">Kopier prompt</button>' +
             '</div>';
@@ -118,26 +151,37 @@
         modalEl.querySelector('.change-provider-btn').addEventListener('click', expandList);
     }
 
-    /* ── Attach Question Click Handlers ─────── */
-    function attachQuestionClicks() {
-        var items = document.querySelectorAll('.review-questions li[data-question]');
-        Array.prototype.forEach.call(items, function (li) {
-            li.addEventListener('click', function () {
-                openModal(li.dataset.question);
+    /* ── Attach Topic Click Handlers ─────── */
+    function attachTopicClicks() {
+        var items = document.querySelectorAll('.ai-topic-btn');
+        Array.prototype.forEach.call(items, function (btn) {
+            btn.addEventListener('click', function () {
+                openModal({
+                    label: btn.dataset.topicLabel,
+                    question: btn.dataset.openingQuestion,
+                    sourceUrl: btn.dataset.sourceUrl,
+                    sixtyTwoUrl: btn.dataset.sixtyTwoUrl
+                });
             });
-            li.addEventListener('keydown', function (e) {
+            btn.addEventListener('keydown', function (e) {
                 if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    openModal(li.dataset.question);
+                    openModal({
+                        label: btn.dataset.topicLabel,
+                        question: btn.dataset.openingQuestion,
+                        sourceUrl: btn.dataset.sourceUrl,
+                        sixtyTwoUrl: btn.dataset.sixtyTwoUrl
+                    });
                 }
             });
         });
     }
 
     /* ── Open / Close Modal ─────────────────── */
-    function openModal(question) {
-        currentQuestion = question;
-        modalEl.querySelector('.modal-question').textContent = question;
+    function openModal(topic) {
+        currentTopic = topic;
+        modalEl.querySelector('.modal-question').textContent = topic.question;
+        modalEl.querySelector('.modal-topic-label').textContent = topic.label;
         var copyBtn = modalEl.querySelector('.copy-btn');
         copyBtn.classList.remove('is-copied');
         copyBtn.textContent = 'Kopier prompt';
@@ -198,14 +242,31 @@
         var provider = getProvider(id);
         if (!provider) return;
 
-        var url = buildPromptUrl(provider.url, currentQuestion);
-        window.open(url, '_blank');
+        var url = buildPromptUrl(provider, currentTopic);
+        window.open(url, '_blank', 'noopener,noreferrer');
         closeModal();
     }
 
-    function buildPromptUrl(baseUrl, question) {
-        var separator = baseUrl.indexOf('?') === -1 ? '?' : '&';
-        return baseUrl + separator + 'q=' + encodeURIComponent(question);
+    function buildPromptUrl(provider, topic) {
+        var prompt = buildPrompt(topic);
+        var baseUrl = provider.url;
+
+        switch (provider.capability) {
+            case 'official-prefill':
+                // Claude: official prefill URL
+                return baseUrl + '/?q=' + encodeURIComponent(prompt);
+            case 'community-prefill':
+                // ChatGPT, Perplexity, Grok: best-effort prefill
+                var separator = baseUrl.indexOf('?') === -1 ? '?' : '&';
+                return baseUrl + separator + 'q=' + encodeURIComponent(prompt);
+            case 'copy-open':
+            default:
+                // Gemini, DeepSeek, Copilot: copy prompt and open home/chat page
+                copyToClipboard(prompt, function () {
+                    // Clipboard copy handled in callback
+                });
+                return baseUrl;
+        }
     }
 
     function highlightSelected() {
@@ -246,7 +307,8 @@
 
     /* ── Copy Prompt ────────────────────────── */
     function copyPrompt() {
-        var prompt = buildPrompt(currentQuestion);
+        if (!currentTopic) return;
+        var prompt = buildPrompt(currentTopic);
         copyToClipboard(prompt, function () {
             var btn = modalEl.querySelector('.copy-btn');
             btn.classList.add('is-copied');
@@ -261,29 +323,15 @@
         });
     }
 
-    function buildPrompt(question) {
+    function buildPrompt(topic) {
         var pageUrl = location.href;
         var pageTitle = document.title || 'noexcuse.no';
 
-        return (
-            'Oppgave: Veiled brukeren i \u00e5 utforske et sp\u00f8rsm\u00e5l om ledelse og organisasjonskultur.\n\n' +
-            '**Sp\u00f8rsm\u00e5l:** ' + question + '\n\n' +
-            '**Utgangspunkt:** Sp\u00f8rsm\u00e5let er fra "' + pageTitle + '" p\u00e5 noexcuse.no (' + pageUrl + '). ' +
-            'Bruk innholdet p\u00e5 denne siden som kontekst for veiledningen. Siden inneholder JSON-LD strukturert data.\n\n' +
-            '**Bakgrunn:** No Excuse AS hjelper ledergrupper med \u00e5 f\u00e5 bedre blikk for ' +
-            'mennesker, identitet, struktur og p\u00e5virkning — basert p\u00e5 Bolman & Deals ' +
-            'fire perspektiver. Kjerneproduktet er Ledelse 60:2, en kunnskapsbasert ' +
-            'orientering for ledergrupper: 60 diagnostiske sp\u00f8rsm\u00e5l p\u00e5 2 timer ' +
-            '(https://noexcuse.no/ledelse-60-2/).\n\n' +
-            '**AI-agent instruksjoner:** Se https://noexcuse.no/assets/ai-agent-cheat-sheet.md for full rollebeskrivelse (Diagnostiker, Omrammer, Syntetis\u00f8r, Djevelens Advokat, Coach), samtaleoppskrifter, merkevarestemme og sideindeks.\n\n' +
-            '**Retningslinjer:**\n' +
-            '- Still oppf\u00f8lgingssp\u00f8rsm\u00e5l som hjelper brukeren \u00e5 reflektere over egen praksis\n' +
-            '- Vis til relevant innhold p\u00e5 noexcuse.no som utgangspunkt for videre lesning\n' +
-            '- Unng\u00e5 \u00e5 gi forhastede svar eller premature l\u00f8sninger — m\u00e5let er utforskning, ikke fasit\n' +
-            '- Bruk norsk bokm\u00e5l, v\u00e6r konkret og praktisk rettet mot ledergrupper\n' +
-            '- V\u00e6r direkte, kompetent og kortfattet — skandinavisk minimalistisk. Ingen konsulentspr\u00e5k (unng\u00e5: synergi, verdiskapning, helhetlig, skreddersydde l\u00f8sninger)\n' +
-            '- Still \u00e9n ting om gangen. Korte setninger. Konkrete eksempler.'
-        );
+        return META_PROMPT
+            .replace('{{QUESTION}}', topic.question)
+            .replace('{{TOPIC_LABEL}}', topic.label)
+            .replace('{{SOURCE_URL}}', location.origin + topic.sourceUrl)
+            .replace('{{SIXTY_TWO_URL}}', location.origin + topic.sixtyTwoUrl);
     }
 
     function copyToClipboard(text, callback) {

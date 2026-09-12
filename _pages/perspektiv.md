@@ -81,14 +81,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "multiframe-kapabilitet"
-questions_title: "Spør din LLM om multiframe-kapabilitet"
-questions:
-  - "Hvilket rammeverk strekker du deg først etter når noe går galt — struktur, mennesker, politikk eller symboler?"
-  - "Når endret du sist mening fordi du så situasjonen fra et annet perspektiv?"
-  - "Har teamet ditt en «utpekt skeptiker» for hvert rammeverk — noen som aktivt utfordrer det dominerende perspektivet?"
-  - "Hva ville ditt største problem sett ut som gjennom linsen du bruker minst?"
-  - "Hvilket rammeverk mangler i ledergruppens naturlige samtale — og hva koster det dere å ikke ha det med?"
+conversation_topics:
+  - conversation_label: "Dominerende rammeverk"
+    opening_question: "Hvilket rammeverk strekker du deg først etter når noe går galt — struktur, mennesker, politikk eller symboler?"
+    source_url: "/perspektiv/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Perspektivskifte"
+    opening_question: "Når endret du sist mening fordi du så situasjonen fra et annet perspektiv?"
+    source_url: "/perspektiv/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Manglande perspektiv i ledergruppen"
+    opening_question: "Hvilket rammeverk mangler i ledergruppens naturlige samtale — og hva koster det dere å ikke ha det med?"
+    source_url: "/perspektiv/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 En ingeniør som blir leder ser strukturelle problemer: uklare roller, manglende prosesser, feil rapporteringslinjer. En HR-sjef ser menneskelige problemer: motivasjon, trivsel, relasjoner. En politisk aktør ser maktdynamikk: allianser, agendaer, budsjettkamper. En markedsfører ser symboler: historier, identitet, mening.
@@ -224,6 +229,42 @@ Teori er én ting. Slik ser multiframe thinking ut i virkelige situasjoner:
     Struktur: Hvem må gjøre hva de neste 48 timene? Politikk: Hvem må informeres, og hvem kan bli en alliert? Mennesker: Hvem er mest påvirket og trenger støtte? Symboler: Hvilken historie forteller vi — både internt og eksternt?
 
     Felles for alle tre casene: Multiframe thinking gir ikke «det rette svaret.» Det gir bedre spørsmål. Og i en kompleks verden er bedre spørsmål ofte mer verdifullt enn raske svar.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Enrammefellen i praksis:** Du har et favorittperspektiv. Problemet er at du bruker det på alle problemer, uavhengig av hva situasjonen krever.
+*   **Manglande perspektiv i teamet:** Teamet ditt har ingen «utpekt skeptiker» for hvert rammeverk — ingen som aktivt utfordrer det dominerende perspektivet.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når strukturen blir tvangstrøye
+*   [Menneskeperspektivet](/mennesker/) — når mennesker blir overfladisk
+*   [Påvirkningsperspektivet](/pavirkning/) — når politikk blir kynisme
+*   [Identitetsperspektivet](/identitet/) — når symbolikk blir tom
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/perspektiv/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Fire perspektiver](/perspektiv/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Enrammefellen](/perspektiv/#enrammefellen) — når ett filter blir hele bildet
+*   [Multiframe thinking](/perspektiv/#hvordan-utvikle-multiframe-kapabilitet) — fire konkrete praksiser
+*   [Ledelse 60:2 som multiframe-praksis](/perspektiv/#4-ledelse-60-2-som-multiframe-praksis) — intervjuet som øvelse
+
+---
 
 ## Hvordan utvikle multiframe-kapabilitet
 

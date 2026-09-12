@@ -37,13 +37,19 @@ card_description: "Tillit, motivasjon, relasjoner, medvirkning"
 detail: "Ser organisasjonen som et fellesskap av mennesker med behov for tilhørighet, vekst og mening. <strong>Blanchard & Barrett (2011)</strong> viser at «servant leadership» er et konkurransefortrinn."
 weight: 2
 topic: "menneskeperspektivet"
-questions_title: "Spør din LLM om menneskeperspektivet"
-questions:
-  - "Ville de ansatte si at de blir sett og verdsatt på arbeidsplassen?"
-  - "Er det trygt å si ifra om problemer uten å bli straffet?"
-  - "Har vi en kultur preget av samarbeid — eller er hver for seg?"
-  - "Finnes det historier som fortelles om hvordan vi behandler hverandre?"
-  - "Tilbyr vi muligheter for læring og karriereutvikling?"
+conversation_topics:
+  - conversation_label: "Sett og verdsatt"
+    opening_question: "Ville de ansatte si at de blir sett og verdsatt på arbeidsplassen?"
+    source_url: "/mennesker/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Psykologisk trygghet"
+    opening_question: "Er det trygt å si ifra om problemer uten å bli straffet?"
+    source_url: "/mennesker/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Samarbeid vs silo"
+    opening_question: "Har vi en kultur preget av samarbeid — eller er hver for seg?"
+    source_url: "/mennesker/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hva er menneskeperspektivet?
@@ -143,6 +149,41 @@ Ledelse 60:2 inneholder spørsmål som handler om tillit, motivasjon og relasjon
 
 [Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Tause rom i møter:** Alle er enige i møtet — på overflaten. Når tillitsbasert ledelse mangler, blir tause rom normen.
+*   **Siloer som skaper flaskehalser:** Avdelinger jobber i siloer. Kunden matcher med én person som blir en flaskehals.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når rollene er klare, men tilliten mangler
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold saboterer samarbeidet
+*   [Identitetsperspektivet](/identitet/) — når kulturen æder tilliten
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/mennesker/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Menneskeperspektivet](/mennesker/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Psykologisk trygghet](/mennesker/#psykologisk-trygghet) — fundamentet for tillit
+*   [Tjenende lederskap](/mennesker/#tjenende-lederskap) — ledelse som tjener
+*   [Tillit som system](/mennesker/#tillit-som-system) — når tillit blir system
+
+---
 
 ## Det teoretiske grunnlaget
 

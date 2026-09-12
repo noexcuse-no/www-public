@@ -37,13 +37,19 @@ card_description: "Makt, interesser, konflikt, ressurser, politikk"
 detail: "Ser organisasjonen som en arena der ulike interesser kjemper om knappe ressurser. <strong>Pfeffer (2010)</strong> dokumenterer at politisk dyktighet er sterkt korrelert med ledereffektivitet."
 weight: 3
 topic: "påvirkningsperspektivet"
-questions_title: "Spør din LLM om påvirkningsperspektivet"
-questions:
-  - "Hvem har reell innflytelse på viktige beslutninger — og er det de som bør ha det?"
-  - "Hvor transparente er agendaer og interesser i ledergruppen?"
-  - "Finnes det «uskrevne regler» som nye ledere må anstrenge seg for å forstå?"
-  - "Hvordan håndterer ledergruppen uenighet — åpent eller bak lukkede dører?"
-  - "Er det balanse i makt — eller er noen stemmer for dominerende?"
+conversation_topics:
+  - conversation_label: "Reell innflytelse på beslutninger"
+    opening_question: "Hvem har reell innflytelse på viktige beslutninger — og er det de som bør ha det?"
+    source_url: "/pavirkning/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Transparente agendaer"
+    opening_question: "Hvor transparente er agendaer og interesser i ledergruppen?"
+    source_url: "/pavirkning/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Uskrevne regler og uenighet"
+    opening_question: "Finnes det «uskrevne regler» som nye ledere må anstrenge seg for å forstå?"
+    source_url: "/pavirkning/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hva er påvirkningsperspektivet?
@@ -131,6 +137,41 @@ Ledelse 60:2 inneholder spørsmål som handler om maktfordeling, interessekonfli
 
 [Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Usynlig makt:** De som formelt har makt, har ikke reell makt. Beslutninger tas «der» men av dem som «ikke skal ha noe med det å gjøre».
+*   **For mye enighet:** En ledelsesgruppe som altfor sjelden er uenig, klarer heller ikke å utfordre hverandre. Uenighet er et sunnhetstegn.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når formell og reell makt avviker
+*   [Menneskeperspektivet](/mennesker/) — når maktforhold skaper frykt for å si ifra
+*   [Identitetsperspektivet](/identitet/) — når kulturen belønner stillhet
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/pavirkning/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Påvirkningsperspektivet](/pavirkning/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Usynlig beslutningsmakt](/pavirkning/#usynlig-beslutningsmakt) — når formell og reell makt avviker
+*   [Skjulte agendaer](/pavirkning/#skjulte-agendaer) — når interesser skjules
+*   [For mye enighet](/pavirkning/#for-mye-enighet) — når uenighet mangler
+
+---
 
 ## Det teoretiske grunnlaget
 

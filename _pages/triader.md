@@ -73,6 +73,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
+conversation_topics:
+  - conversation_label: "Teamets robusthet"
+    opening_question: "Hvem i teamet ditt ville fortsette å samarbeide effektivt hvis du forsvant i morgen?"
+    source_url: "/triader/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Dyader vs triader"
+    opening_question: "Er viktige relasjoner i organisasjonen din dyader eller triader? Hvordan vet du det?"
+    source_url: "/triader/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Informasjonsflyt i par-relasjoner"
+    opening_question: "Hvilken informasjon er fanget i par-relasjoner og når aldri frem til dem som trenger den?"
+    source_url: "/triader/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 Tenk på teamet ditt. Hvem snakker med hvem? Hvilke relasjoner er avhengige av at én bestemt person er til stede? Hva skjer med informasjonsflyten når den personen er borte?
@@ -208,4 +221,37 @@ Triader er ikke en magisk løsning. De kan også gå galt, og når de gjør det,
     Hvis én person i triaden bare mottar uten å gi, blir relasjonen utvinnende. Triaden opprettholdes av to personers generøsitet, men når den ene av dem trekker seg, kollapser strukturen. Bærekraftige triader krever at alle tre får noe verdifullt ut av relasjonen.
 
 Felles for alle disse feilmodiene er at de oppstår når kulturen ikke er moden nok til å bære triaden. En organisasjon som fortsatt er preget av Stage 3-tenkning («jeg er best») vil ha store problemer med å opprettholde ekte triader. Triader er et symptom på kulturmodenhet, ikke en snarvei til den.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Triangulering:** A snakker med C om B, i stedet for at A og B løser konflikten direkte.
+*   **Maktkonsentrasjon:** Én person i triaden nekter å dele nettverket sitt og holder de to andre adskilt.
+
+---
+
+## Relaterte perspektiver
+
+*   [Menneskeperspektivet](/mennesker/) — når dyader erstatter triader i teamet
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktdynamikk ødelegger triader
+*   [Identitetsperspektivet](/identitet/) — når kulturen ikke bærer triader
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/triader/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Triader](/triader/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Når triader ikke fungerer](/triader/#når-triader-ikke-fungerer) — advarselstegn
+*   [Prosjekttriaden](/triader/#prosjekttriaden-sponsor-leder-ekspert) — sponsor, leder, ekspert
+*   [Overbroende triader](/triader/#overbroende-triader-brobygging-mellom-siloer) — brobygging mellom siloer
 

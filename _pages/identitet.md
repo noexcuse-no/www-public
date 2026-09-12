@@ -37,13 +37,19 @@ card_description: "Kultur, mening, symboler, verdier, historier"
 detail: "Ser organisasjonen som en kultur preget av ritualer, historier og verdier. <strong>Logan, King & Fischer-Wright (2011)</strong> viser hvordan kulturen utvikler seg gjennom fem stadier."
 weight: 4
 topic: "identitetsperspektivet"
-questions_title: "Spør din LLM om identitetsperspektivet"
-questions:
-  - "Hvordan snakker lederne om organisasjonen — i «jeg» eller «vi»?"
-  - "Kan dere gi konkrete eksempler på når verdiene ble levd ut i praksis?"
-  - "Finnes det historier om organisasjonens historie som nye folk læres opp i?"
-  - "Hvordan feirer vi suksess — og gjør vi det i det hele tatt?"
-  - "Har vi en felles forståelse av hva slags organisasjon vi vil være?"
+conversation_topics:
+  - conversation_label: "Lederens språk og identitet"
+    opening_question: "Hvordan snakker lederne om organisasjonen — i «jeg» eller «vi»?"
+    source_url: "/identitet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Verdier i praksis"
+    opening_question: "Kan dere gi konkrete eksempler på når verdiene ble levd ut i praksis?"
+    source_url: "/identitet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Organisasjonsidentitet og historie"
+    opening_question: "Finnes det historier om organisasjonens historie som nye folk læres opp i?"
+    source_url: "/identitet/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hva er identitetsperspektivet?
@@ -129,6 +135,41 @@ Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gje
 
 [Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Tomme verdier på veggen:** Verdiene står på veggen, men ingen kan gi eksempler på når de ble levd ut i praksis.
+*   **Historieløshet:** Nye folk får ingen kontekst. Kulturen er usynlig fordi den aldri er blitt eksplisitt.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når kulturen æder strukturen
+*   [Menneskeperspektivet](/mennesker/) — når kulturen skaper siloer
+*   [Påvirkningsperspektivet](/pavirkning/) — når kulturen belønner stillhet
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/identitet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Identitetsperspektivet](/identitet/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Tomme verdier](/identitet/#tomme-verdier) — når verdier ikke lever i praksis
+*   [Historieløshet](/identitet/#historieloshet) — når kulturen har ingen fortellinger
+*   [Forandringstretthet](/identitet/#forandringstretthet) — når kynisme dominerer
+
+---
 
 ## Det teoretiske grunnlaget
 

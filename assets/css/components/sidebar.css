@@ -406,9 +406,144 @@
     .article-questions {
         display: none;
     }
+
+    /* Mobile AI inline module — visible ≤1199px */
+    .ai-mobile-module {
+        display: block;
+    }
 }
 
-/* --- Responsive: sidebar visible on wide screens --- */
+/* Mobile AI inline module — hidden on wide screens */
+.ai-mobile-module {
+    display: none;
+}
+
+.ai-mobile-module .review-questions {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+}
+
+.ai-mobile-module .review-questions.section {
+    padding-block: 0;
+}
+
+.ai-mobile-module .review-questions h2 {
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    margin: 0 0 var(--space-sm);
+    padding: 0;
+}
+
+.ai-mobile-module .review-questions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ai-mobile-module .review-questions li {
+    font-size: 0.85em;
+    padding: var(--space-xs) 0;
+    cursor: pointer;
+    line-height: 1.4;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+    border: none;
+    border-radius: 0;
+    min-height: auto;
+    gap: var(--space-sm);
+}
+
+.ai-mobile-module .review-questions li:hover {
+    opacity: 1;
+    background: transparent;
+    box-shadow: none;
+}
+
+.ai-mobile-module .review-questions li span {
+    font-size: 1em;
+}
+
+/* Sparkle: visible only on hover/focus/click */
+.ai-mobile-module .review-questions li .sparkle-icon {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.ai-mobile-module .review-questions li:hover .sparkle-icon,
+.ai-mobile-module .review-questions li:focus .sparkle-icon,
+.ai-mobile-module .review-questions li:active .sparkle-icon {
+    opacity: 1;
+}
+
+/* Collapsible mobile module */
+.ai-mobile-module .questions-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 8px var(--space-sm);
+    margin-top: var(--space-sm);
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: 0.78em;
+    color: var(--text-color);
+    cursor: pointer;
+    min-height: 44px;
+}
+
+.ai-mobile-module .questions-toggle .toggle-icon {
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+.ai-mobile-module .questions-toggle.is-collapsed .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.ai-mobile-module .review-questions ul.questions-list {
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.ai-mobile-module .review-questions ul.questions-list > li:nth-child(n+2) {
+    display: none;
+}
+
+.ai-mobile-module .review-questions.is-expanded ul.questions-list > li:nth-child(n+2) {
+    display: flex;
+}
+
+/*--- Responsive: hide sidebars on narrow screens --- */
+
+@media (max-width: 1199px) {
+    .article-layout {
+        display: block;
+    }
+
+    .article-pager,
+    .article-questions {
+        display: none;
+    }
+
+    /* Mobile AI inline module — visible ≤1199px */
+    .ai-mobile-module {
+        display: block;
+    }
+}
+
+/* Mobile AI inline module — hidden on wide screens */
+.ai-mobile-module {
+    display: none;
+}
+
+/*--- Responsive: sidebar visible on wide screens --- */
 
 @media (min-width: 1200px) {
     /* Hide bottom-of-page questions and CTA on wide screens
@@ -416,6 +551,123 @@
     .article-body .review-questions,
     .article-body > .cta-section {
         display: none;
+    }
+
+    /* Sticky Apply rail — context-sensitive topics per article section */
+    .article-questions {
+        position: sticky;
+        top: var(--space-md);
+        align-self: start;
+        max-height: calc(100vh - var(--space-xl, 40px));
+        overflow-y: auto;
+        overscroll-behavior: contain;
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+
+        /* Visible state — toggled by JS */
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .article-questions.sidebar-visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Rail card shows Layer 1 line + two-CTA pattern */
+    .article-questions .sidebar-card--questions .review-questions h2 {
+        font-size: 0.85em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.6;
+        margin: 0 0 var(--space-sm);
+        padding: 0;
+    }
+
+    .article-questions .sidebar-card--questions .review-questions ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .article-questions .sidebar-card--questions .review-questions li {
+        font-size: 0.85em;
+        padding: var(--space-xs) 0;
+        cursor: pointer;
+        line-height: 1.4;
+        opacity: 0.85;
+        transition: opacity 0.2s ease;
+        border: none;
+        border-radius: 0;
+        min-height: auto;
+        gap: var(--space-sm);
+    }
+
+    .article-questions .sidebar-card--questions .review-questions li:hover {
+        opacity: 1;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .article-questions .sidebar-card--questions .review-questions li span {
+        font-size: 1em;
+    }
+
+    /* Sparkle: visible only on hover/focus/click */
+    .article-questions .sidebar-card--questions .review-questions li .sparkle-icon {
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    .article-questions .sidebar-card--questions .review-questions li:hover .sparkle-icon,
+    .article-questions .sidebar-card--questions .review-questions li:focus .sparkle-icon,
+    .article-questions .sidebar-card--questions .review-questions li:active .sparkle-icon {
+        opacity: 1;
+    }
+
+    /* Collapsible rail */
+    .article-questions .questions-toggle {
+        display: flex;
+        align-items: center,
+        justify-content: center;
+        gap: 6px;
+        width: 100%;
+        padding: 8px var(--space-sm);
+        margin-top: var(--space-sm);
+        background: transparent;
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        font-family: inherit;
+        font-size: 0.78em;
+        color: var(--text-color);
+        cursor: pointer;
+        min-height: 44px;
+    }
+
+    .article-questions .questions-toggle .toggle-icon {
+        display: inline-block;
+        transition: transform 0.25s ease;
+    }
+
+    .article-questions .questions-toggle.is-collapsed .toggle-icon {
+        transform: rotate(180deg);
+    }
+
+    .article-questions .sidebar-card--questions.is-collapsible ul.questions-list {
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    .article-questions .sidebar-card--questions.is-collapsible ul.questions-list > li:nth-child(n+2) {
+        display: none;
+    }
+
+    .article-questions .sidebar-card--questions.is-collapsible.is-expanded ul.questions-list > li:nth-child(n+2) {
+        display: flex;
     }
 }
 

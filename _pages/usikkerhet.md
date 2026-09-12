@@ -61,14 +61,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "usikkerhetshåndtering"
-questions_title: "Spør din LLM om usikkerhetshåndtering"
-questions:
-  - "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
-  - "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"
-  - "Hva skjer hvis noen bryter med «hvordan vi gjør ting her»?"
-  - "Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?"
-  - "Hvilket kulturstadie ville du plassere organisasjonen på i dag?"
+conversation_topics:
+  - conversation_label: "Kulturbeskrivelse fra nyansatte"
+    opening_question: "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
+    source_url: "/usikkerhet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Historier og helter"
+    opening_question: "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"
+    source_url: "/usikkerhet/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Verdier på veggen vs i praksis"
+    opening_question: "Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?"
+    source_url: "/usikkerhet/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 Styr unna uønskede hendelser og fang mulighetene som byr seg. En moden ledelse ligger i forkant av endringer for å holde stø kurs. Forankre krav til informasjonssikkerhet, kvalitet og miljø på riktig sted: I ledelsen.
@@ -235,7 +240,41 @@ Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av k
     Historisk suksess blir institusjonlisert. «Vi har alltid gjort det sånn» blir argumentet mot fornyelse.
 *   ![Abstrakt illustrasjon av strukturell usikkerhet](/assets/images/banners/usikkerhet-t4-structural-uncertainty.webp)
 
-    #### Strukturell usikkerhet
+#### Strukturell usikkerhet
 
-    Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen.
+Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Teateret i usikkerhet:** Det som var «hvordan vi gjør ting her» avsløres som overflate når presset kommer.
+*   **Kulturstadie 3 («Jeg er flink»):** Individualisme som demper kollektiv vekst. De mest effektive har nådd stadium 4 («Vi er flinke»).
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når mål i ulike avdelinger motvirker hverandre
+*   [Menneskeperspektivet](/mennesker/) — når psykologisk trygghet mangler i usikre tider
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold blokkerer endring
+*   [Identitetsperspektivet](/identitet/) — når kulturen mister sin kraft under press
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/usikkerhet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Usikkerhet og endring](/usikkerhet/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Teateret i usikkerhet](/usikkerhet/#teateret-i-usikkerhet) — når fasaden sprenger
+*   [Logans fem kulturstadier](/usikkerhet/#de-fem-kulturstadiene-fra-logan) — fra apati til felles suksess
+*   [Kotters 8 steg](/usikkerhet/#kotters-8-steg-for-endring) — hvorfor 70% feiler
 

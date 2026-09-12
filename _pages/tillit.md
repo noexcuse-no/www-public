@@ -98,14 +98,19 @@ cta:
     url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
-topic: "tillit"
-questions_title: "Spør din LLM om tillit"
-questions:
-  - "Hvor ofte gir du feedback som folk faktisk husker — og bruker?"
-  - "Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?"
-  - "Når ble siste gang du omgjorde en beslutning uten å forklare hvorfor?"
-  - "Finnes det informasjon du har som du bevisst holder tilbake fra teamet?"
-  - "Hvordan håndterer du folk som sier ifra mot strømmen?"
+conversation_topics:
+  - conversation_label: "Feedback som virker"
+    opening_question: "Hvor ofte gir du feedback som folk faktisk husker — og bruker?"
+    source_url: "/tillit/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Reaksjon på dårlig nyhet"
+    opening_question: "Hva ville skjedd hvis en medarbeider kom til deg med en dårlig nyhet i dag?"
+    source_url: "/tillit/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Beslutningsgjennomsiktighet"
+    opening_question: "Når ble siste gang du omgjorde en beslutning uten å forklare hvorfor?"
+    source_url: "/tillit/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## Hvorfor tillit er ledelsens valuta
@@ -185,7 +190,40 @@ Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid
     Tidligere svik sitter i kulturen. Nye ledere møtes med «vi har hørt dette før»-holdning. Initiativ blir møtt med skepsis.
 *   ![Abstrakt illustrasjon av inkonsekvent oppfølging som tillitsutfordring](/assets/images/banners/tillit-t4-inconsistent-followup.webp)
 
-    #### Inkonsekvent oppfølging
+#### Inkonsekvent oppfølging
 
-    Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring. Prioriteringer som stadig endres.
+Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring. Prioriteringer som stadig endres.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Hierarkisk blindhet:** Det som føles som «direkte» oppfattes som «domsnutt» av underordnede.
+*   **Inkonsekvent oppfølging:** Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring.
+
+---
+
+## Relaterte perspektiver
+
+*   [Menneskeperspektivet](/mennesker/) — når tillit mangler, blir siloer normen
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold skaper frykt for å si ifra
+*   [Identitetsperspektivet](/identitet/) — når kulturen belønner stillhet
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/tillit/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Tillit og psykologisk trygghet](/tillit/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Psykologisk trygghet](/tillit/#psykologisk-trygghet) — fundamentet for tillit
+*   [Tjenende lederskap](/tillit/#tjenende-lederskap) — ledelse som tjener
+*   [Tillit som system](/tillit/#tillit-som-system) — når tillit blir system
 

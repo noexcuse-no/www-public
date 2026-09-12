@@ -56,6 +56,19 @@ image: "assets/images/hero-illustration.webp"
 tags: "#ledelse #orientering #analyse #ledelse60-2"
 product_tag: ledelse-60-2
 price_source: commercial
+conversation_topics:
+  - conversation_label: "Fire perspektiver i praksis"
+    opening_question: "Hvilke av de fire perspektivene (struktur, mennesker, påvirkning, identitet) er sterkest i vår ledergruppe — og hvilket er mest fraværende?"
+    source_url: "/ledelse-60-2/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Diagnostiske spørsmål og retning"
+    opening_question: "Hvordan kan ledergruppen bruke 60 diagnostiske spørsmål til å finne felles retning uten å bli sittende fast i detaljer?"
+    source_url: "/ledelse-60-2/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Blindsoner i styring"
+    opening_question: "Hvilke signaler tyder på at ledergruppen har blindsoner i styringen av organisasjonen?"
+    source_url: "/ledelse-60-2/"
+    sixty_two_url: "/ledelse-60-2/"
 json_ld:
   - type: "Service"
     name: "Ledelse 60:2"
@@ -173,6 +186,8 @@ Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et
 *   Dere ønsker et utviklingsprogram eller løpende coaching fremfor en avgrenset orientering.
 *   Dere trenger implementeringsrådgivning som følger opp funnene over tid.
 
+**Allerede rådgiver hos kunden?** 60:2 kan skjerpe mandatet — dere beholder oppfølgingen.
+
 {% include price-card.html %}
 
 ## Hva skjer før, under og etter?
@@ -238,6 +253,40 @@ Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert pers
     Kultur, verdier og felles retning. Handler om hva organisasjonen står for.
 
 De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene er designet for å skape refleksjon og innsikt — ikke for å gi enkle poengsummer eller rangeringer.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Blindsoner i styringen:** Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg.
+*   **Uklare beslutningslinjer:** Det er usikkerhet om hvem som bestemmer hva.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — rolleklarhet, prosesser, beslutningslinjer
+*   [Menneskeperspektivet](/mennesker/) — psykologisk trygghet, tillit, kompetanseutnyttelse
+*   [Påvirkningsperspektivet](/pavirkning/) — maktforhold, interesser, allianser
+*   [Identitetsperspektivet](/identitet/) — kultur, verdier, felles retning
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/ledelse-60-2/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Ledelse 60:2](/ledelse-60-2/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Når passer det?](/ledelse-60-2/#passer) — passer for dere / passer ikke for dere
+*   [Hva får du?](/ledelse-60-2/#hva-får-du) — 60 spørsmål, 2 timer, rapport
+*   [Ofte stilte spørsmål](/ledelse-60-2/#ofte-stilte-spørsmål) — pris, tid, etterarbeid, innhold
 
 {% include cta-panel.html %}
 

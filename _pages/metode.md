@@ -35,13 +35,19 @@ json_ld:
     sameAs:
       - "https://noexcuse.no"
 topic: "diagnostisk praksis"
-questions_title: "Spør din LLM om diagnostisk praksis"
-questions:
-  - "Hvordan vet dere at dere har en korrekt forståelse av organisasjonens utfordringer — ikke bare en gjengs oppfatning?"
-  - "Hvilke antakelser om organisasjonen har dere ikke testet på lenge?"
-  - "Når ble siste gang en beslutning ble påvirket av systematisk innsamlet data, ikke bare magefølelse?"
-  - "Finnes det områder i organisasjonen der dere opererer med udokumenterte sannheter som ingen lenger utfordrer?"
-  - "Hvilket av de fire perspektivene (struktur, mennesker, påvirkning, identitet) er dere svakest på — og hva koster det?"
+conversation_topics:
+  - conversation_label: "Korrekt forståelse vs gjengs oppfatning"
+    opening_question: "Hvordan vet dere at dere har en korrekt forståelse av organisasjonens utfordringer — ikke bare en gjengs oppfatning?"
+    source_url: "/metode/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Utestede antakelser"
+    opening_question: "Hvilke antakelser om organisasjonen har dere ikke testet på lenge?"
+    source_url: "/metode/"
+    sixty_two_url: "/ledelse-60-2/"
+  - conversation_label: "Datadrevne beslutninger"
+    opening_question: "Når ble siste gang en beslutning ble påvirket av systematisk innsamlet data, ikke bare magefølelse?"
+    source_url: "/metode/"
+    sixty_two_url: "/ledelse-60-2/"
 ---
 
 ## 1 — Teoretisk grunnlag for tilnærmingen
@@ -126,3 +132,37 @@ Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspekt
 - Lov om organisering av forskningsetisk arbeid (forskningsetikkloven). (2017). Hentet fra lovdata.no
 - No Excuse AS. (2026). *Standard avtalevilkår — Oppdrag*.
 - Pfeffer, J. (2010). *Power: Why Some People Have It — and Others Don't*. HarperBusiness.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Utestede antakelser:** Hvilke antakelser om organisasjonen har dere ikke testet på lenge?
+*   **Datadrevne beslutninger:** Når ble siste gang en beslutning ble påvirket av systematisk innsamlet data, ikke bare magefølelse?
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når strukturen blir tvangstrøye
+*   [Menneskeperspektivet](/mennesker/) — når mennesker blir overfladisk
+*   [Påvirkningsperspektivet](/pavirkning/) — når politikk blir kynisme
+*   [Identitetsperspektivet](/identitet/) — når symbolikk blir tom
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/metode/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Om metodikk](/metode/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Teoretisk grunnlag](/metode/#1-teoretisk-grunnlag-for-tilnærmingen) — fire perspektiver
+*   [Kunnskapsproduksjon](/metode/#2-kunnskapsproduksjon-i-praksis) — data blir kunnskap
+*   [Forskningsetikk](/metode/#norske-forskningetiske-standarder) — respekt, konsekvenser, rettferdighet, integritet
