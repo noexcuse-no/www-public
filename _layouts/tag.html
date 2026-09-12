@@ -12,7 +12,7 @@ layout: default
 </section>
 
 {% assign articles = site.pages | where: "class", "article" %}
-{% assign tagged_articles = articles | where_exp: "p", "p.tags contains page.tag" %}
+{% assign tagged_articles = articles | where_exp: "p", "p.tags contains page.tag" | sort: "title" %}
 
 <section class="section container--wide animate-on-scroll fade-in-up">
     {% if tagged_articles.size == 0 %}

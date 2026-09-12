@@ -9,9 +9,6 @@ kramdown:
   footnote_backlink: "↩"
 
 collections:
-  pages:
-    output: true
-    permalink: /:path/
   tags:
     output: true
     permalink: /emne/:path/

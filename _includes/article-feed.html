@@ -3,7 +3,7 @@
   Renders cards for all pages with class: article, limited to 6.
 {% endcomment %}
 
-{% assign articles = site.pages | where: "class", "article" %}
+{% assign articles = site.pages | where: "class", "article" | sort: "title" %}
 {% if articles.size > 0 %}
 <section class="section container article-feed">
   <h2 class="section-heading">Utforsk artiklene våre</h2>
