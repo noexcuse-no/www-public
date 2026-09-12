@@ -257,7 +257,7 @@ describe.sequential('Cross-cutting provenance/rights validator tests', () => {
   // ============================================================
   describe('No secret echo in scanner outputs', () => {
     it('sensitive scanner output does not contain secret values', () => {
-      const result = run('node scripts/scan-sensitivity.mjs');
+      const result = run('node scripts/scan-sensitivity.mjs --changed');
       const output = result.out;
       expect(output).not.toMatch(/sk-[a-zA-Z0-9]{20,}/);
       expect(output).not.toMatch(/AKIA[A-Z0-9]{16}/);
@@ -323,7 +323,7 @@ describe.sequential('Cross-cutting provenance/rights validator tests', () => {
   // ============================================================
   describe('Existing scans still pass', () => {
     it('sensitivity scan passes', () => {
-      const result = run('node scripts/scan-sensitivity.mjs');
+      const result = run('node scripts/scan-sensitivity.mjs --changed');
       expect(result.code).toBe(0);
     });
 
