@@ -36,6 +36,59 @@ All design tokens defined in `colors.css`:
 --cta-secondary-border: var(--primary-azure)
 ```
 
+## Unified Button System
+
+All interactive elements (buttons, links-as-buttons, icon buttons, toggles, close buttons) share a **single unified button system** centralized in `assets/css/components/buttons.css`. Per-element transition/hover/active/focus rules have been **removed from component files** and consolidated here.
+
+### Three types
+
+| Type | Class | Alias(es) | Style |
+|------|-------|-----------|-------|
+| **Primary** | `.btn-primary` | `.cta`, `.cta--primary`, `.card-link--cta`, `.profile-booking-btn` | Azure bg, navy text, navy border |
+| **Secondary** | `.btn-secondary` | `.cta--secondary`, `.copy-btn` | Navy bg, azure text, azure border |
+| **Ghost** | `.btn-ghost` | `.card-link`, `.carousel-btn`, `.profile-contact-btn`, `.profile-close`, `.share-btn`, `.provider-btn`, `.modal-close`, `.nav-overlay-close`, `.questions-toggle`, `.toc-mobile-toggle`, `.toc-mobile-close`, `.change-provider-btn`, `.back-to-top`, `.landing-scroll-link`, `.tag-cloud-item` | Transparent bg, `--text-color`, no border; `--surface-hover` bg on hover |
+
+### Shared base (all types)
+
+All button classes share a common base: `inline-flex`, centered, `gap: 6px`, `min-height: 44px` (touch target), `padding: 14px 32px`, `font-weight: 600`, `font-size: 1.05em`, `border-radius: var(--radius-md)`, `box-shadow: var(--shadow-sm)`, `cursor: pointer`.
+
+### Unified interaction states
+
+| State | Effect |
+|-------|--------|
+| **Transition** | `transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease` |
+| **Hover** | `transform: translateY(-2px)`, `box-shadow: var(--shadow-md)` |
+| **Active** | `transform: translateY(0) scale(0.98)`, `box-shadow: var(--shadow-sm)` |
+| **Focus-visible** | `outline: 3px solid var(--focus-color)`, `outline-offset: 2px` |
+
+### Size variants
+
+| Variant | Class | Alias(es) | Padding / Font |
+|---------|-------|-----------|----------------|
+| **Large** | `.btn--large` | `.cta--large` | `18px 48px`, `1.2em` |
+| **Small** | `.btn--small` | `.profile-contact-btn`, `.provider-btn`, `.toc-mobile-toggle`, `.change-provider-btn`, `.tag-cloud-item` | `8px 16px`, `0.9em` |
+| **Icon** | `.btn--icon` | `.carousel-btn`, `.profile-close`, `.share-btn`, `.modal-close`, `.nav-overlay-close`, `.toc-mobile-close`, `.back-to-top` | `10px`, `1.1em` |
+
+### Spacing variants
+
+| Variant | Class | Effect |
+|---------|-------|--------|
+| **Spaced** | `.btn--spaced` | `margin-left: var(--space-md)` (resets to `margin-top: 12px` on mobile) |
+| **Block** | `.btn--block` | `width: 100%`, `box-sizing: border-box` |
+
+### Alias mapping
+
+Existing `.cta*` classes are kept as **aliases** — no HTML changes were required. `.cta` → `.btn-primary`, `.cta--secondary` → `.btn-secondary`, `.cta--large` → `.btn--large`, `.cta--spaced` → `.btn--spaced`. New code should prefer the `.btn*` canonical classes; legacy `.cta*` classes continue to work.
+
+### Brand-mandated exceptions
+
+- **Share buttons** (`.share-btn--teams`, `.share-btn--linkedin`): brand-colored backgrounds with white text — these override the ghost type's transparent bg.
+- **Provider selected state** (`.provider-btn.is-selected`): functional border/background highlight, not decorative.
+
+### Responsive
+
+At `max-width: 768px`, `.cta-buttons-row` stacks vertically; `.cta` and `.btn--block` go full-width; `.cta--spaced`/`.btn--spaced` reset margin to `margin-top: 12px`.
+
 ### Header (constant across modes)
 
 ```
