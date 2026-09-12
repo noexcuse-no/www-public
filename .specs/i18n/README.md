@@ -3,7 +3,7 @@
 > Created: 2026-05-30
 > Status: Ready
 >
-> **Updated 2026-08-30 (strategy alignment):** Corrects the readiness claim. The `Status: Ready` line is **spec-status** (the spec is ready to implement), NOT a claim that infrastructure exists. **No i18n infrastructure is built** — there is no `_data/languages.yml`, no language switcher, no hreflang tags, no `Accept-Language` detection (verified: `_data/*` = {metadata, carousel, navigation, newsletter-subscribers.json, contact-messages}.yml/json — no languages.yml; `language-switcher|hreflang|Accept-Language` in `_includes/ _layouts/ _data/ assets/` → 0 matches). Scope is **substrate + commercial-layer ownership** (see below). The false "infrastructure ready" note at `BACKLOG.md:32` (FF2) is corrected in todo 6.
+> **Updated 2026-08-30 (strategy alignment):** Corrects the readiness claim. The `Status: Ready` line is **spec-status** (the spec is ready to implement), NOT a claim that infrastructure exists. **No i18n infrastructure is built** — there is no `_data/languages.yml`, no language switcher, no hreflang tags, no `Accept-Language` detection (no `languages.yml` exists; `language-switcher|hreflang|Accept-Language` in `_includes/ _layouts/ _data/ assets/` → 0 matches). Scope is **substrate + commercial-layer ownership** (see below). The false "infrastructure ready" note at `BACKLOG.md:32` (FF2) is corrected in todo 6.
 
 ## Purpose / Problem
 

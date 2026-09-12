@@ -170,7 +170,6 @@ Pages:
 | `assets/css/components/buttons.css` | `.product-cta` → `.cta` |
 | `assets/css/components/sidebar.css` | `.product-cta` → `.cta` |
 | `assets/css/components/sticky-cta.css` | `.product-cta` → `.cta` |
-| `assets/css/components/newsletter.css` | `.product-cta` → `.cta` |
 | `assets/css/products.css` | `.product-cta` → `.cta` |
 | `assets/css/perspektiv-styles.css` | `.product-cta` → `.cta` |
 | `assets/css/avtale.css` | `.product-cta` → `.cta` |

@@ -105,7 +105,7 @@ See `.design/css-architecture.md` for the full breakdown. Key patterns:
 ## JavaScript
 
 Vanilla JS only, no frameworks:
-- `dark-mode-toggle.js` — Theme switching via `[data-theme="dark"]` attribute
+- `dark-mode-toggle.js` — Theme switching via stylesheet `disabled` attribute toggle + `.dark-mode` class on `<body>` for JS feature detection
 - `profile-card.js` — Profile expansion modal
 - `animations.js` — Scroll-triggered animations (Intersection Observer)
 
