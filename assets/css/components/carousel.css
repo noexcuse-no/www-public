@@ -31,18 +31,18 @@
     height: 44px;
     border: none;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--carousel-btn-bg);
     color: var(--primary-navy);
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-sm);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
     text-decoration: none;
 }
 
 .carousel-btn:hover {
-    background: #fff;
+    background: var(--carousel-btn-bg-hover);
     color: var(--primary-azure);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-md);
 }
 
 .carousel-btn:active {
@@ -51,15 +51,15 @@
 
 /* Dark mode */
 .dark-mode .carousel-btn {
-    background: rgba(30, 30, 40, 0.85);
+    background: var(--carousel-btn-bg-dark);
     color: var(--text-color-dark);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-sm-dark);
 }
 
 .dark-mode .carousel-btn:hover {
-    background: rgba(50, 50, 65, 0.95);
+    background: var(--carousel-btn-bg-hover-dark);
     color: var(--link-hover-dark);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow-md-dark);
 }
 
 /* --- Scroll-up button: transitions to fixed/sticky --- */

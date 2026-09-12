@@ -18,7 +18,7 @@
 }
 
 .footnotes li:target {
-    background: rgba(0, 48, 96, 0.05);
+    background: var(--surface-subtle-light);
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
 }
@@ -40,5 +40,5 @@
 }
 
 .dark-mode .footnotes li:target {
-    background: rgba(240, 255, 255, 0.08);
+    background: var(--surface-subtle-dark);
 }

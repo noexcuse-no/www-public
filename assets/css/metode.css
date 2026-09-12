@@ -21,10 +21,10 @@
     border-left: 4px solid var(--primary-accent);
 }
 
-.frame-struct { border-color: #2A4D6E; }
-.frame-human { border-color: #B8901E; }
-.frame-political { border-color: #355E3B; }
-.frame-symbol { border-color: #8E0D3C; }
+.frame-struct { border-color: var(--frame-struct); }
+.frame-human { border-color: var(--frame-human); }
+.frame-political { border-color: var(--frame-political); }
+.frame-symbol { border-color: var(--frame-symbol); }
 
 .frame-image {
     width: 80px;
