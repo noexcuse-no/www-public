@@ -1,0 +1,48 @@
+{
+  "allowlist": [
+    "/.well-known/security.txt",
+    "/.well-known/ai-transparency.json",
+    "/sitemap.xml",
+    "/robots.txt",
+    "/site.webmanifest",
+    "/favicon.ico",
+    "/assets/avtale.pdf",
+    "/assets/samtykke.pdf",
+    "/package.json",
+    "/package-lock.json"
+  ],
+  "forbiddenPrefixes": [
+    ".design/",
+    ".specs/",
+    ".research/",
+    ".omo/",
+    ".git/",
+    ".github/",
+    "node_modules/",
+    "tests/",
+    "scripts/"
+  ],
+"forbiddenPatterns": [
+    "\\.map$",
+    "\\.DS_Store$",
+    "Thumbs\\.db$",
+    "\\.tmp$",
+    "\\.temp$",
+    "fixture",
+    "internal",
+    "secret",
+    "password",
+    "api[_-]?key",
+    "package-lock\\.json$",
+    "package\\.json$",
+    "yarn\\.lock$",
+    "pnpm-lock\\.yaml$"
+  ],
+  "localPathPatterns": [
+    "/home/",
+    "/Users/",
+    "C:\\\\",
+    "/tmp/",
+    "/private/"
+  ]
+}

@@ -12,13 +12,22 @@
     "test:watch": "vitest",
     "rights:generate": "node scripts/generate-rights-metadata.mjs",
     "rights:check": "npm run rights:generate && git diff --exit-code -- _data/rights.json",
+    "scan:sensitivity": "node scripts/scan-sensitivity.mjs",
+    "scan:sensitivity:changed": "node scripts/scan-sensitivity.mjs --changed",
+    "scan:secrets": "gitleaks detect --source . --redact --config .gitleaks.toml",
+    "scan:secrets:history": "bash scripts/scan-secrets-history.sh",
+    "sanitize:media": "bash scripts/sanitize-metadata.sh",
+    "audit:site": "node scripts/audit-site-publication.mjs",
+    "check:stale": "node scripts/check-stale-references.mjs",
+    "check:docs": "node scripts/check-doc-structure.mjs",
+    "check:consistency": "node scripts/check-transparency-consistency.mjs",
     "ci:local": "node scripts/local-ci.mjs"
   },
   "devDependencies": {
     "eslint": "^6.4.0",
     "happy-dom": "^14.0.0",
     "htmlhint": "^1.0.0",
-    "smol-toml": "^1.8.0",
+    "smol-toml": "1.8.0",
     "stylelint": "^16.0.0",
     "stylelint-config-standard": "^36.0.0",
     "vitest": "^2.0.0",
@@ -31,5 +40,6 @@
     "norway"
   ],
   "author": "No Excuse AS",
+  "private": true,
   "license": "SEE LICENSE IN LICENSE.md"
 }

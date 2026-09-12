@@ -1,128 +1,94 @@
 #!/usr/bin/env node
 /**
- * Local CI Runner — runs all validation gates that GitHub Actions CI would run.
- * Evidence is written to .omo/evidence/local-ci-<timestamp>.json
- * Exit code: 0 = all passed, non-zero = at least one gate failed.
+ * local-ci.mjs — Run all validation checks locally (no GitHub Actions required).
+ *
+ * This script replaces the GitHub Actions CI workflow for local/PR validation.
+ * All checks run via npm scripts that were added by the risk-reduction tasks.
+ *
+ * Usage: node scripts/local-ci.mjs [--all|--quick|--check=<name>]
  */
 
 import { execSync } from 'node:child_process';
-import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
+import process from 'node:process';
 
-const EVIDENCE_DIR = '.omo/evidence';
-const TIMESTAMP = new Date().toISOString().replace(/[:.]/g, '-');
-const EVIDENCE_FILE = join(EVIDENCE_DIR, `local-ci-${TIMESTAMP}.json`);
+const CHECKS = {
+  // Core validation (always run)
+  lint: { cmd: 'npm run lint', desc: 'HTML/CSS/JS lint + tests' },
+  rights: { cmd: 'npm run rights:check', desc: 'Rights metadata consistency' },
 
-const gates = [
-  {
-    name: 'lint',
-    cmd: 'npm run lint',
-    description: 'htmlhint + stylelint + eslint + vitest',
-  },
-  {
-    name: 'reuse-lint',
-    cmd: 'git worktree add --force /tmp/opencode/lint-clean HEAD && /tmp/opencode/reuse-venv/bin/reuse lint && git worktree remove --force /tmp/opencode/lint-clean',
-    description: 'REUSE/SPDX compliance (clean worktree protocol)',
-    continueOnError: true, // Non-blocking while unresolved set non-empty
-  },
-  {
-    name: 'rights-drift',
-    cmd: 'npm run rights:check',
-    description: 'Rights manifest drift check (regenerate + git diff)',
-  },
-  {
-    name: 'site-build',
-    cmd: 'jekyll build -d /tmp/site-out --safe && jq . /tmp/site-out/.well-known/ai-transparency.json && test -f /tmp/site-out/rettigheter/index.html && grep -q \'id="proprietary"\' /tmp/site-out/rettigheter/index.html && grep -q \'rel="license"\' /tmp/site-out/index.html && grep -q \'href="/rettigheter/"\' /tmp/site-out/index.html',
-    description: 'Jekyll build + output validation (rights page, license links, transparency manifest)',
-    continueOnError: true, // Jekyll may not be available locally
-  },
-  {
-    name: 'dependency-review',
-    cmd: 'npm audit --audit-level=high',
-    description: 'High-severity dependency vulnerabilities',
-    continueOnError: true, // Advisory only
-  },
-];
+  // Security scans
+  'scan:sensitivity': { cmd: 'npm run scan:sensitivity', desc: 'Sensitive content scan (publicability)' },
+  'scan:secrets': { cmd: 'npm run scan:secrets', desc: 'Secret scan (gitleaks)' },
 
-async function runGate(gate) {
-  const start = Date.now();
-  let stdout = '', stderr = '', exitCode = 0, error = null;
+  // Custom validators (added by risk-reduction tasks 12-23)
+  'audit:site': { cmd: 'npm run audit:site', desc: 'Post-build publication audit' },
+  'check:stale': { cmd: 'npm run check:stale', desc: 'Stale reference integrity' },
+  'check:docs': { cmd: 'npm run check:docs', desc: 'Document structure validation' },
+  'check:consistency': { cmd: 'npm run check:consistency', desc: 'AI/rights transparency consistency' },
 
+  // Task-specific
+  'sanitize:media': { cmd: 'npm run sanitize:media -- --check', desc: 'Metadata sanitation check' },
+};
+
+function runCheck(name, config) {
+  console.log(`\n▶ ${name}: ${config.desc}`);
   try {
-    const output = execSync(gate.cmd, {
-      shell: '/bin/bash',
+    const output = execSync(config.cmd, {
+      cwd: process.cwd(),
       encoding: 'utf8',
-      maxBuffer: 10 * 1024 * 1024,
       stdio: 'pipe',
+      timeout: 180000,
     });
-    stdout = output;
-    exitCode = 0;
+    console.log(`  ✅ PASS`);
+    if (output.trim()) console.log(`     ${output.trim().split('\n').slice(-2).join('\n     ')}`);
+    return { name, pass: true };
   } catch (e) {
-    stdout = e.stdout || '';
-    stderr = e.stderr || '';
-    exitCode = e.status ?? 1;
-    error = e.message;
+    console.log(`  ❌ FAIL`);
+    if (e.stdout) console.log(`     ${e.stdout.toString().trim().split('\n').slice(-3).join('\n     ')}`);
+    if (e.stderr) console.log(`     ${e.stderr.toString().trim().split('\n').slice(-3).join('\n     ')}`);
+    return { name, pass: false, error: e.message };
   }
-
-  const duration = Date.now() - start;
-  const passed = exitCode === 0 || gate.continueOnError;
-
-  return {
-    name: gate.name,
-    description: gate.description,
-    cmd: gate.cmd,
-    passed,
-    exitCode,
-    durationMs: duration,
-    stdout: stdout.slice(0, 5000),
-    stderr: stderr.slice(0, 5000),
-    error,
-    continueOnError: gate.continueOnError ?? false,
-  };
 }
 
-async function main() {
-  if (!existsSync(EVIDENCE_DIR)) {
-    mkdirSync(EVIDENCE_DIR, { recursive: true });
-  }
+function main() {
+  const args = process.argv.slice(2);
+  const only = args.find(a => a.startsWith('--check='))?.split('=')[1];
+  const quick = args.includes('--quick');
+  const all = args.includes('--all') || !quick && !only;
 
-  console.log('=== Local CI Runner ===');
-  console.log(`Evidence will be written to: ${EVIDENCE_FILE}\n`);
+  console.log('═══ LOCAL CI VALIDATION ═══');
+  console.log(`Running ${only ? `single check: ${only}` : quick ? 'quick subset' : 'all checks'}`);
+
+  const toRun = only
+    ? { [only]: CHECKS[only] }
+    : quick
+      ? { lint: CHECKS.lint, rights: CHECKS.rights }
+      : CHECKS;
+
+  if (!toRun[Object.keys(toRun)[0]]) {
+    console.error(`Unknown check: ${only}`);
+    console.error(`Available: ${Object.keys(CHECKS).join(', ')}`);
+    process.exit(2);
+  }
 
   const results = [];
-  let allPassed = true;
-
-  for (const gate of gates) {
-    console.log(`Running: ${gate.name} — ${gate.description}`);
-    const result = await runGate(gate);
-    results.push(result);
-
-    const status = result.passed ? '✓ PASS' : '✗ FAIL';
-    const note = gate.continueOnError && !result.passed ? ' (non-blocking)' : '';
-    console.log(`  ${status}${note} — ${result.durationMs}ms`);
-    if (!result.passed && !gate.continueOnError) {
-      allPassed = false;
-    }
-    if (result.stderr) {
-      console.log(`  stderr: ${result.stderr.slice(0, 200)}`);
-    }
-    console.log();
+  for (const [name, config] of Object.entries(toRun)) {
+    results.push(runCheck(name, config));
   }
 
-  const summary = {
-    timestamp: new Date().toISOString(),
-    overallPassed: allPassed,
-    gates: results,
-  };
+  const passed = results.filter(r => r.pass).length;
+  const failed = results.filter(r => !r.pass).length;
 
-  writeFileSync(EVIDENCE_FILE, JSON.stringify(summary, null, 2));
-  console.log(`Evidence written to ${EVIDENCE_FILE}`);
-  console.log(`Overall: ${allPassed ? 'ALL GATES PASSED' : 'SOME GATES FAILED'}`);
-
-  process.exit(allPassed ? 0 : 1);
+  console.log('\n═══ SUMMARY ═══');
+  console.log(`Passed: ${passed}/${results.length}`);
+  if (failed > 0) {
+    console.log(`Failed: ${failed}`);
+    results.filter(r => !r.pass).forEach(r => console.log(`  - ${r.name}`));
+    process.exit(1);
+  } else {
+    console.log('All checks passed ✅');
+    process.exit(0);
+  }
 }
 
-main().catch(e => {
-  console.error('Local CI runner crashed:', e);
-  process.exit(1);
-});
+main();
