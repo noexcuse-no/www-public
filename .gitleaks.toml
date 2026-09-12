@@ -1,0 +1,38 @@
+# Gitleaks configuration — noexcuse-no/www-public
+#
+# Scanner: Gitleaks v8.30.1 (pinned; installed from the official release
+# binary, checksum-verified). In CI, pin gitleaks/gitleaks-action to an
+# immutable commit SHA (see task 16 wiring).
+#
+# This config extends the default Gitleaks rule set. The only suppressions
+# are (1) verified false positives from the historical scanner-test commit,
+# and (2) gitignored build/dependency output directories that are never part
+# of the publication surface. No real secrets are allowlisted here.
+title = "noexcuse.no public repository secret scan"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Verified FPs (historical scanner-test commit 30375a2) + gitignored build/dependency output"
+
+# Verified false positives — commit 30375a2 (pre-RI1 scanner tests).
+# That commit's test wrote obviously synthetic credential-shaped strings
+# (hex-prefixed key values, a truncated fake private key block) into temp
+# files to exercise the sensitivity scanner. Gitleaks flags those synthetic
+# values; every finding in the commit was inspected and confirmed fake
+# (all 4 hits are in tests/scan-sensitivity.test.js). Suppression is
+# scoped to this commit only — any finding in any other commit still
+# fails the scan.
+commits = ["30375a2dfb51d4455ff420a93ce534c1249d7c2f"]
+
+# Gitignored build/dependency output — excluded from working-tree scans.
+# These directories are never committed and never deployed (see .gitignore).
+# They are scope exclusions, not secret suppressions.
+paths = [
+  ".*node_modules.*",
+  ".*_site.*",
+  ".*\\.git/.*",
+  ".*\\.jekyll-cache.*",
+  ".*\\.playwright-mcp.*",
+]
