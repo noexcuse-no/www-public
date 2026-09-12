@@ -117,6 +117,36 @@ Tenk:
 
 ---
 
+## Metadata og personvern
+
+### Offentlige vs. originale filer
+
+- **`assets/images/`** — kun sanitiserte publikasjonsderivater (WebP/PNG). Disse er offentlige og skal ikke inneholde privat metadata.
+- **`.design/graphics/originals/`** — høyoppløselige originaler med eventuell privat metadata (GPS, serienummer, kommentarer). Disse er interne og publiseres aldri direkte.
+
+### Metadatapolicy
+
+Før en original konverteres til et offentlig derivat, kjøres:
+
+```bash
+bash scripts/sanitize-metadata.sh --check assets/images/
+```
+
+Sanitiseringen fjerner GPS-koordinater, kamera-/serienumre, lokale filstier, kommentarer, skaper-/kontaktfelt og redigeringshistorikk. Følgende beholdes bevisst:
+
+- `XMP-dc:Rights` — rettighetshaver
+- `IPTC:CopyrightNotice` — copyright-merknad
+- `XMP-xmpRights:WebStatement` — lenke til rettighetsinformasjon
+- `XMP-iptcExt:DigitalSourceType` — AI-proveniens (digital kilde)
+
+AI-proveniens og opphavsrett er separate forhold: begge bevares, men blandes aldri.
+
+### Dokumenter (PDF)
+
+PDF-er inspiseres med `bash scripts/inspect-doc-metadata.sh <fil.pdf>` før publisering. Interne verdier (forfatter, brukernavn, internt tittel/company-felt, innebygde stier) fjernes eller erstattes med sanitiserte web-derivater.
+
+---
+
 ## Kontakt
 
 Ved spørsmål om briefen, kontakt No Excuse AS på firmapost@noexcuse.no.
