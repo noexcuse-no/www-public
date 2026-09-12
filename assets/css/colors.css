@@ -26,6 +26,10 @@
     --nav-link-color-light: var(--primary-azure);
     --nav-link-color-dark: var(--primary-navy);
 
+    /* Focus indicators — visible keyboard focus */
+    --focus-color-light: var(--primary-navy);
+    --focus-color-dark: var(--primary-azure);
+
     /* ========================================
        Light Mode Colors
        ======================================== */

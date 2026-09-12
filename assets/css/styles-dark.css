@@ -25,10 +25,6 @@ a:hover {
     background-color: var(--button-background-dark);
     color: var(--button-text-color-light);
 }
-.banner {
-    background-color: transparent;
-    color: inherit;
-}
 
 .ai-disclaimer {
     background-color: var(--banner-background-dark);
