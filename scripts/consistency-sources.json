@@ -1,0 +1,16 @@
+{
+  "canonicalSources": {
+    "rights": "_data/rights.json",
+    "assets": "_data/assets.yml",
+    "provenanceFrontmatter": "_pages/",
+    "aiTransparencyManifest": ".well-known/ai-transparency.json"
+  },
+  "allowedCreationValues": ["human-created", "ai-assisted", "ai-generated", "third-party", "unresolved"],
+  "allowedLicenseValues": ["CC0-1.0", "LicenseRef-NoExcuse-All-Rights-Reserved", "0BSD", "unresolved"],
+  "prohibitedSiteLevelClaims": [
+    "all content is AI",
+    "all content is CC0",
+    "everything is AI-generated",
+    "everything is CC0-1.0"
+  ]
+}

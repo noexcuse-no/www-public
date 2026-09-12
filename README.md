@@ -8,3 +8,13 @@ Primary product: **Ledelse 60:2** — a knowledge-based orientation for leadersh
 - Host: GitHub Pages
 - Stack: Jekyll (static site generator)
 - Language: Norwegian Bokmål
+
+## Licensing
+
+Source code defaults to 0BSD; the repository overall uses mixed rights (REUSE/SPDX). See `LICENSE.md` and https://noexcuse.no/rettigheter/.
+
+## Why this repository is public
+
+The public repository documents the current website, its implementation, and maintained current specifications. Temporary planning material, internal commercial reasoning, and obsolete working context are not part of the maintained public record.
+
+Public source and provenance support inspectability and accountability.
