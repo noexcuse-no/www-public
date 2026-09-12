@@ -34,9 +34,24 @@ json_ld:
 
 ## Hvorfor No Excuse?
 
-No Excuse AS ble grunnlagt i juni 2025. Vi så et behov for å forbedre ledelsesfunksjonen i norske virksomheter uten dyre konsulentrapporter og unødvendig kompleksitet.
+No Excuse AS ble grunnlagt i juni 2025 med et tydelig mål: å forbedre ledelsesfunksjonen i norske virksomheter — uten dyre konsulentrapporter og unødvendig kompleksitet.
 
 Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals [fire perspektiver](/perspektiv/)) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse, refleksjon fremfor skjemaer, og at de beste svarene ofte finnes internt — om man stiller de riktige spørsmålene.
+
+## Norsk opprinnelse — en kvalitetssignal
+
+Vi er stolt av å være et norsk selskap. Norge rangeres konsekvent blant verdens ledende nasjoner på tillit, transparent forretningskultur, sterke regulatoriske standarder (Arbeidsmiljøloven, GDPR),flate hierarkier og psykologisk trygghet — alle kjente drivere for bærekraftig organisasjonsutvikling.
+
+Dette er ikke nasjonal stolthet for egen skyld. Det er en kvalitetssignal: når du kjøper Ledelse 60:2, kjøper du en metodikk utviklet i et av verdens mest tillitsbaserte forretningsmiljøer. Vi leverer norske standarder — lav maktdistanse, høy inkludering, psykologisk trygghet — som en del av leveransen.
+
+## Metodikk forankret i norsk ledelsestradisjon
+
+Vår metodikk bygger på Bolman & Deals fire perspektiver, men er tilpasset og videreutviklet gjennom praktisk anvendelse i norske ledergrupper. Norsk ledelsestradisjon preger arbetet vårt:
+
+- **Tillitsbasert ledelse** — ikke kontrollbasert. Vi bruker strukturerte intervjuer og diagnostiske spørsmål for å skape et felles bilde av virkeligheten, uten scoring eller ranking.
+- **Refleksjon fremfor skjemaer** — i tradisjonen fra Handys kulturtypologier og Scheins organisasjonskulturanalyse.
+- **Mennesker først** — i linje med norsk arbeidslivstradisjon hvor mennesket står sentralt, ikke som ressurs, men som kilde til innsikt.
+- **Beste praksis fra norsk arbeidsliv** — vi trekker på erfaringer fra organisasjoner som har vist at tillit, autonomi og psykologisk trygghet gir bedre resultater enn mikrostyring.
 
 ![Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet](/assets/images/banners/banner-verdier.webp)
 
@@ -54,7 +69,7 @@ Våre metoder fokuserer på mennesker, vektlegger ærlighet og produserer målba
 
 ## Slik jobber vi
 
-Vår metodikk bygger på Bolman & Deals fire perspektiver og er utviklet gjennom praktisk anvendelse i norske ledergrupper. Vi bruker strukturerte intervjuer og diagnostiske spørsmål for å skape et felles bilde av virkeligheten — uten scoring, uten ranking.
+Vi bruker strukturerte intervjuer og diagnostiske spørsmål for å skape et felles bilde av virkeligheten — uten scoring, uten ranking. Metodikk vår bygger på Bolman & Deals fire perspektiver og er utviklet gjennom praktisk anvendelse i norske ledergrupper.
 
 Les mer om [hvordan vi jobber og det teoretiske grunnlaget](/metode/).
 
@@ -71,4 +86,3 @@ Du finner våre standard avtalevilkår [her](/avtale/).
 Ta en uforpliktende samtale med oss — vi snakker om ledelse, ikke salg.
 
 [Book en samtale](https://outlook.office.com/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no)
-

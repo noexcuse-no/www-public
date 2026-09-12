@@ -9,8 +9,8 @@ globs: ["BACKLOG.md", ".design/**", ".specs/**"]
 
 Before writing any code, read all relevant design and spec documents:
 
-1. Read `.design/SPEC.md` to discover which feature tag, design docs, and functional specs apply
-2. Read every `.design/` document and `.specs/` file referenced by SPEC.md or BACKLOG.md
+1. Read the canonical design docs (`.design/brand-perception.md`, `.design/information-architecture.md`, `.design/components.md`, `.design/colors.md`, `.design/typography.md`, `.design/architecture.md`) to discover which feature tag, design docs, and functional specs apply
+2. Read every `.design/` document and `.specs/` file referenced by BACKLOG.md or the canonical design docs
 
 ## Post-Implementation Updates
 

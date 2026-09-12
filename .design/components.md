@@ -1,5 +1,13 @@
 # Reusable Components — No Excuse AS
 
+## Design Principles
+
+- **Minimal text** — Short, punchy headlines only
+- **Visual-first** — Icons, graphics, clear hierarchy
+- **Direct CTAs** — One action per section
+- **Mobile-first** — Scannable content, large touch targets; 320px minimum breakpoint
+- **Touch targets** — 44px minimum
+
 ## Hero Component
 
 The hero is rendered via `_includes/hero.html` and styled by `assets/css/components/hero.css`.
