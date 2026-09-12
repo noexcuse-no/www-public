@@ -1,0 +1,17 @@
+{
+  "stalePaths": [
+    ".research/",
+    ".design/archive/",
+    ".specs/archive/",
+    ".design/SPEC.md",
+    ".design/website-gaps-overview.md",
+    ".design/codebase-integrity.md",
+    ".design/archive/",
+    ".specs/codebase-integrity/",
+    ".specs/ledelse-60-2-ui-ux/",
+    ".specs/production-ui-audit/",
+    ".specs/regression-fixes-phase6/",
+    ".specs/profile-card-test-fixes/",
+    ".research/"
+  ]
+}
