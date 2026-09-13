@@ -47,5 +47,5 @@ Completed items belong in `CHANGELOG.md` only.
 | R37 | AI Act alignment (KI-lov forward-readiness) | Done | Article 50 disclosure stack live. See `.specs/ai-act-alignment/README.md`. |
 | RI1 | Risk reduction cleanup | Done | Phase 1 PRs #208–#215; tasks 12–23 PR #229. Local CI stack green. |
 | CI1 | CI reuse gating flip | Pending | mixed-rights:507 |
-| RA1 | Spec-impl consistency audit — pre-flight baseline, evidence reconciliation, conformance audit, disposition register | Doing | risk-reduction-cleanup complete (T10+T23), mixed-rights & ai-act landed |
+| RA1 | Spec-impl consistency audit — pre-flight baseline, evidence reconciliation, conformance audit, disposition register | Done | Central report: `.specs/reconciliation-audit/README.md`. 9 doc corrections, i18n annotated (FF2), 7 orphans registered as RA2, 3 owner escalations. |
 | RA2 | Stale template cleanup — delete 7 confirmed-orphan templates (2 layouts, 5 includes) superseded by article-layout migration + homepage cleanup — See `.specs/cross-cutting/stale-template-cleanup/README.md` | Planned | — |
