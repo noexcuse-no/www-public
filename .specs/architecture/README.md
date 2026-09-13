@@ -204,7 +204,7 @@ Process step pages that appear as cards on the product page. Uses `layout: artic
 
 ### `class: case` / `class: partner`
 
-Future content types. When content is added, place in `_pages/` with the appropriate class. Empty `_cases/` and `_partners/` collections remain in `_config.yml` for backward compatibility. See `.specs/a2-unified-pages-architecture/README.md` for migration plan.
+Future content types. When content is added, place in `_pages/` with the appropriate class. Empty `_cases/` and `_partners/` collections remain in `_config.yml` for backward compatibility. This is the current state — the `class`-based unified collection model is fully migrated.
 
 ## Modules
 

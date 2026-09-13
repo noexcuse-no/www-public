@@ -8,7 +8,21 @@
     "lint:html": "htmlhint _includes/ _layouts/ *.html",
     "lint:css": "stylelint 'assets/css/**/*.css'",
     "lint:js": "eslint 'assets/scripts/**/*.js'",
+    "scan:sensitivity": "node scripts/scan-sensitivity.mjs",
+    "scan:sensitivity:changed": "node scripts/scan-sensitivity.mjs --changed",
+    "scan:secrets": "bash scripts/scan-secrets-changed.sh",
+    "scan:secrets:history": "bash scripts/scan-secrets-history.sh",
+    "sanitize:media": "bash scripts/sanitize-metadata.sh --check",
+    "inspect:docs": "bash scripts/inspect-doc-metadata.sh --check",
+    "audit:deps": "node scripts/audit-deps.mjs",
+    "check:supply-chain": "node scripts/check-supply-chain.mjs",
+    "audit:site": "node scripts/audit-site-publication.mjs",
+    "check:stale": "node scripts/check-stale-references.mjs",
+    "check:docs": "node scripts/check-doc-structure.mjs",
+    "check:consistency": "node scripts/check-transparency-consistency.mjs",
+    "ci": "node scripts/run-ci.mjs",
     "test": "vitest run",
+    "test:secrets": "bash tests/secrets-scanner-smoke.sh",
     "test:watch": "vitest"
   },
   "devDependencies": {
@@ -26,5 +40,6 @@
     "norway"
   ],
   "author": "No Excuse AS",
-  "license": "CC0-1.0"
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE"
 }
