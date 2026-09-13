@@ -761,3 +761,15 @@
         display: none !important;
     }
 }
+
+/* Noscript fallbacks (TOC / AI-reflection) — replaces inline margin styles */
+.noscript-note {
+    margin-top: var(--space-xl);
+}
+
+/* Sidebar tagline (homepage sidebar include) */
+.sidebar-tagline {
+    font-size: 0.85em;
+    line-height: 1.5;
+    opacity: 0.85;
+}
