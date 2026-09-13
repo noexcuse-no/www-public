@@ -2,7 +2,7 @@
 
 ## Purpose and Scope
 
-Create `_pages/ledelse_makt.md` exploring the central tension between power acquisition (Pfeffer) and servant leadership (Blanchard & Barrett). This article addresses the diagnostic question: does your leadership culture optimize for power or service?
+Create `_pages/makt.md` (renamed from `ledelse_makt.md` in the button-cta filename↔permalink alignment) exploring the central tension between power acquisition (Pfeffer) and servant leadership (Blanchard & Barrett). This article addresses the diagnostic question: does your leadership culture optimize for power or service?
 
 ## URL
 
@@ -141,7 +141,7 @@ CTA section linking to Ledelse 60:2 as the diagnostic that reveals where the org
 
 ## File
 
-**New file:** `_pages/ledelse_makt.md`
+**New file:** `_pages/makt.md` (renamed from `ledelse_makt.md` in the button-cta filename↔permalink alignment)
 
 **Frontmatter:**
 ```yaml

@@ -2,7 +2,7 @@
 
 ## Purpose and Scope
 
-Create `_pages/ledelse_perspektiv.md` as the capstone article explaining multiframe thinking as the actual leadership skill. This article synthesizes all four Bolman & Deal frames and provides the "no scoring" philosophical backing.
+Create `_pages/perspektiv.md` (renamed from `ledelse_perspektiv.md` in the button-cta filename↔permalink alignment) as the capstone article explaining multiframe thinking as the actual leadership skill. This article synthesizes all four Bolman & Deal frames and provides the "no scoring" philosophical backing.
 
 ## URL
 
@@ -148,7 +148,7 @@ This article is the canonical reference for why No Excuse doesn't score. All fou
 
 ## File
 
-**New file:** `_pages/ledelse_perspektiv.md`
+**New file:** `_pages/perspektiv.md` (renamed from `ledelse_perspektiv.md` in the button-cta filename↔permalink alignment)
 
 **Frontmatter:**
 ```yaml
