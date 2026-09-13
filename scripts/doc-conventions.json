@@ -1,0 +1,70 @@
+{
+  "description": "Document frontmatter conventions for .design/ and .specs/",
+  "frontmatter": {
+    "fields": {
+      "status": {
+        "description": "Document lifecycle status",
+        "type": "string",
+        "enum": [
+          "current",
+          "planned",
+          "in-progress",
+          "review",
+          "archived",
+          "superseded",
+          "obsolete",
+          "done"
+        ],
+        "default": "current",
+        "description_note": "Treat absent status as 'current'. In active locations (.design/, .specs/), flag if status is archived/superseded/obsolete/done."
+      },
+      "type": {
+        "description": "Document type",
+        "type": "string",
+        "enum": [
+          "design",
+          "spec",
+          "architecture",
+          "brand",
+          "process",
+          "template",
+          "research"
+        ],
+        "required": false
+      },
+      "owner": {
+        "description": "Owner/maintainer of the document",
+        "type": "string",
+        "required": false
+      },
+      "last-reviewed": {
+        "description": "ISO date of last review",
+        "type": "string",
+        "format": "date",
+        "required": false
+      }
+    },
+    "validation": {
+      "active_locations": [".design/", ".specs/"],
+      "flagged_statuses_in_active": [
+        "archived",
+        "superseded",
+        "obsolete",
+        "done"
+      ],
+      "allow_missing_status": true,
+      "allowlist_files": [
+        "CHANGELOG.md"
+      ],
+      "allowlist_directories": [
+        ".design/archive/",
+        ".specs/archive/",
+        ".design/graphics/",
+        "scripts/",
+        "tests/",
+        "_includes/",
+        "_layouts/"
+      ]
+    }
+  }
+}
