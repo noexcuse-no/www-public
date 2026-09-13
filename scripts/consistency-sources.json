@@ -1,0 +1,59 @@
+{
+  "description": "Canonical metadata sources for AI/rights consistency validation",
+  "sources": {
+    "ai_transparency": {
+      "path": ".well-known/ai-transparency.json",
+      "type": "ai_provenance",
+      "description": "AI provenance declarations per route and content type (text, images, code, styles)",
+      "canonical": true
+    },
+    "ai_policy_page": {
+      "path": "_pages/om_store_sprakmodeller.md",
+      "type": "ai_policy",
+      "description": "Human-readable AI policy principles (T19 placeholder)",
+      "canonical": true
+    },
+    "photography_brief": {
+      "path": ".design/photography-brief.md",
+      "type": "rights_provenance",
+      "description": "Documents rights preservation (CC0, WebStatement, C2PA) and metadata hygiene",
+      "canonical": true
+    },
+    "apply_provenance_script": {
+      "path": "scripts/apply-provenance.sh",
+      "type": "rights_provenance",
+      "description": "Adds rights metadata (IPTC/XMP) to images: copyright, WebStatement, C2PA",
+      "canonical": true
+    },
+    "site_metadata": {
+      "path": "_data/metadata.yml",
+      "type": "site_metadata",
+      "description": "Site-level metadata (title, description, copyright year, orgnr)",
+      "canonical": true
+    }
+  },
+  "validation_rules": {
+    "forbidden_blanket_assertions": [
+      {
+        "pattern": "all content is AI",
+        "description": "Site-level claim that all content is AI-generated"
+      },
+      {
+        "pattern": "all content is CC0",
+        "description": "Site-level claim that all content is CC0"
+      },
+      {
+        "pattern": "everything is AI",
+        "description": "Alternative phrasing for blanket AI assertion"
+      },
+      {
+        "pattern": "everything is CC0",
+        "description": "Alternative phrasing for blanket CC0 assertion"
+      }
+    ],
+    "required_per_resource_fields": {
+      "ai_transparency": ["digitalSourceType", "editorialReview"],
+      "image_metadata": ["IPTC:DigitalSourceType", "XMP:Rights", "XMP:WebStatement"]
+    }
+  }
+}
