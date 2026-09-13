@@ -144,7 +144,7 @@ At ≤599px, signal items collapse from float layout to stacked vertical layout 
 
 ## Dependencies
 
-- `.specs/html-to-md-refactor/README.md` — the HTML→MD rule that this architecture follows
+- `.design/html-templates.md` — the HTML→MD rule that this architecture follows (pure kramdown markdown; complex patterns rendered via `_includes/`)
 - `.specs/product-card-frontmatter/README.md` — frontmatter schema for homepage integration
 - `assets/css/article.css` — base structural selectors for `.article-body`
 - `assets/css/products.css` — product-specific structural selectors
@@ -156,7 +156,7 @@ At ≤599px, signal items collapse from float layout to stacked vertical layout 
 - [ ] All 5 T4 signal illustrations render with float-left 80×80 icon layout
 - [ ] 3 process steps render with full-width 16:9 images
 - [ ] 4 perspective cards render with linked images and hover lift effect
-- [ ] `.specs/html-to-md-refactor/README.md` compliance checkbox for `ledelse_60-2.md` can be checked
+- [ ] HTML→MD rule compliance for `ledelse_60-2.md` (per `.design/html-templates.md`) can be checked
 - [ ] Dark mode: all three patterns have dark mode styling
 - [ ] Mobile (≤599px): signal icons stack and shrink to 60×60
 - [ ] `benefits` and `process_steps` remain in frontmatter (homepage data source unchanged)

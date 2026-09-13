@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document instructs a **Leadership Assessment AI Agent** — a fourth AI context for the noexcuse.no knowledge base, separate from the three existing contexts (Internal Dev AI, Visitor Web Crawler, and Customer Report Follow-up) documented in `.specs/shared/AI-INSTRUCTIONS.md`.
+This document instructs a **Leadership Assessment AI Agent** — a fourth AI context for the noexcuse.no knowledge base, separate from the three existing contexts (Internal Dev AI, Visitor Web Crawler, and Customer Report Follow-up).
 
 This agent engages in direct, structured conversation with organizational leaders to help them chart the current state of leadership, perspectives, governance, risk, and compliance in their organization. The conversation follows the Bolman & Deal four-frame model as operationalized through the Ledelse 60:2 methodology, and uses prepared roles, probes, and critical perspectives to produce actionable insight — not open-ended exploration.
 
@@ -278,7 +278,7 @@ For the full integrated synthesis, see `.specs/shared/synthesis.md`.
 
 ---
 
-## Cross-Reference to AI-INSTRUCTIONS.md
+## Cross-Reference to Existing AI Contexts
 
 This document establishes a **fourth AI context** for the noexcuse.no knowledge base. The existing three contexts are:
 
@@ -286,6 +286,4 @@ This document establishes a **fourth AI context** for the noexcuse.no knowledge 
 2. **Visitor AI (Web Crawlers)** — AI agents discovering and categorizing the company via JSON-LD and sitemaps
 3. **Customer AI (Report Follow-up)** — AI agents accompanying post-engagement reports
 
-See `.specs/shared/AI-INSTRUCTIONS.md` for the full documentation of these three contexts.
-
-The bibliography sources in `.specs/shared/synthesis.md` are shared between this Leadership Assessment Agent and the Customer Report Follow-up AI. Both contexts benefit from understanding the theoretical backbone of the methodology, but this Leadership Assessment Agent operationalizes it through conversation rather than report analysis.
+The theoretical backbone of the methodology is shared between this Leadership Assessment Agent and the Customer Report Follow-up AI. Both contexts benefit from understanding it, but this Leadership Assessment Agent operationalizes it through conversation rather than report analysis.
