@@ -35,14 +35,13 @@ Available rule files:
 | File | Trigger | Scope |
 |------|---------|-------|
 | `.omo/rules/accessibility.md` | `**/*.html`, `**/*.md` | WCAG AA, Norwegian language, alt text, dark mode, touch targets |
-| `.omo/rules/brand-voice.md` | `**/*.html`, `**/*.md`, `_includes/*`, `_profiles/*`, `_products/*` | Tone, style, anti-patterns for content |
+| `.omo/rules/brand-voice.md` | `**/*.html`, `**/*.md`, `_includes/*` | Tone, style, anti-patterns for content |
 | `.omo/rules/css-conventions.md` | `assets/css/*.css` | CSS variable naming, theme patterns, file organization |
 | `.omo/rules/frames.md` | `_frames/*` | Frame page frontmatter, JSON-LD Article schema |
 | `.omo/rules/frontmatter.md` | `_profiles/*`, `_products/*` | Profile and product frontmatter schemas |
 | `.omo/rules/jekyll.md` | `_config.yml` | Jekyll collection registration, defaults, build checks |
 | `.omo/rules/linting.md` | `**/*.js`, `**/*.css`, `**/*.html`, `tests/*` | Lint/test commands, tools, config, prohibited patterns |
 | `.omo/rules/pages.md` | `_pages/*` | Page frontmatter, permalink, JSON-LD structured data |
-| `.omo/rules/linting.md` | `**/*.js`, `**/*.css`, `**/*.html`, `tests/*` | Lint/test commands, tools, config, prohibited patterns |
 | `.omo/rules/privacy.md` | `_data/*`, `_includes/*`, `_config*`, `**/*.html`, `**/*.js`, `**/*.yml` | Public repo data handling, tracking consent |
 | `.omo/rules/task-management.md` | `BACKLOG.md`, `CHANGELOG.md`, `VERSION` | Branch naming, commits, PR workflow, versioning |
 | `.omo/rules/rules-authoring.md` | `.omo/rules/*` | Meta-guide for writing effective rule files |

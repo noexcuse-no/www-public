@@ -1,6 +1,6 @@
 # Feature: Social Media & Chat Preview Optimization
 
-> **Status:** Planned | BL: S1, S2
+> **Status:** Done for R1–R4; R6 done via S2 (top 10 articles + homepage + 3 step pages + profile). R5 (title suffix) evaluated and not adopted. BL: S1, S2 (completed; records in CHANGELOG).
 
 ## Problem
 
