@@ -8,7 +8,7 @@
 
 ### Context
 
-The website noexcuse.no currently has an `AI-INSTRUCTIONS.md` file in `.specs/shared/` that documents three AI contexts:
+The noexcuse.no knowledge base recognizes three established AI contexts:
 
 1. **Internal Dev AI** — AI agents working on the website codebase
 2. **Visitor AI (Web Crawlers/Discovery)** — AI agents discovering and categorizing the company's offerings via JSON-LD and sitemap
@@ -37,9 +37,9 @@ Without structured instruction cheat sheets, visitor AI agents lack:
 
 The cheat sheets must be markdown-formatted reference material that gets included in prompts sent to the visiting AI agent.
 
-### Relationship to Existing AI-INSTRUCTIONS.md
+### Relationship to Existing AI Contexts
 
-This is a **new, separate AI context** — not a replacement for the existing three. The existing `AI-INSTRUCTIONS.md` (`specs/shared/AI-INSTRUCTIONS.md`) covers Internal Dev, Visitor (web crawler), and Customer (report follow-up) contexts. This spec covers a **Leadership Assessment Agent** that engages in direct conversation with organizational leaders.
+This is a **new, separate AI context** — not a replacement for the existing three. The three existing contexts cover Internal Dev, Visitor (web crawler), and Customer (report follow-up) use cases. This spec covers a **Leadership Assessment Agent** that engages in direct conversation with organizational leaders.
 
 Both documents should cross-reference each other where relevant (e.g., the bibliography sources from the synthesis doc are relevant to both Customer AI and Leadership Assessment AI).
 
@@ -117,7 +117,7 @@ Each critique must have a prepared response that:
 - Links to relevant noexcuse.no pages
 - Avoids defensive or consultant-speak tone
 
-References: `/perspektiv/`, `/metode/`, `/om-oss/`, `.specs/shared/bolman-deal-2017.md` (once created), `.specs/shared/synthesis.md`
+References: `/perspektiv/`, `/metode/`, `/om-oss/`
 
 **B. Critical Perspective on Ledelse 60:2**
 
@@ -132,9 +132,9 @@ Each critique must have a prepared response that:
 - References the "no scoring" philosophy from `/perspektiv/`
 - Connects to Hubbard's measurement methodology
 - Links to `/metode/` for the research ethics framework
-- References the theoretical backbone in `.specs/shared/synthesis.md`
+- References the theoretical backbone of the methodology
 
-References: `/ledelse-60-2/`, `/perspektiv/` (No Scoring section), `/metode/`, `.specs/shared/synthesis.md`
+References: `/ledelse-60-2/`, `/perspektiv/` (No Scoring section), `/metode/`
 
 **C. Critical Perspective on No Excuse AS**
 
