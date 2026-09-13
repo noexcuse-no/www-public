@@ -1,40 +1,49 @@
 {% comment %}
-  Review Questions — reusable interactive question section.
+  AI Private Reflection — renders conversation topics with "din egen KI" CTAs.
 
-  Each question is clickable, opening a modal with AI provider selection
-  and a copy-to-clipboard prompt for guided reflection.
+  Each topic has: conversation_label, opening_question, source_url, sixty_two_url.
+  Renders a list of topics with two-CTA pattern:
+  - Primary: "Utforsk dette privat med din egen KI" → opens modal with provider selection
+  - Secondary: "Se hvordan 60:2 kan avdekke dette" → links to sixty_two_url
 
   Parameters:
-    title       — h2 heading text (required)
-    questions   — pipe-separated (||) list of question strings (required)
-    id          — optional anchor ID for the section
-    collapsible — if "true", renders a collapse/expand toggle for the question list
+    topics       — page.conversation_topics array (required)
+    id           — optional anchor ID for the section
+    collapsible  — if "true", renders a collapse/expand toggle for the topic list
 {% endcomment %}
 
-{% assign q_title = include.title %}
-{% assign q_list  = include.questions | split: "||" %}
-{% assign q_id    = include.id %}
+{% assign topics = include.topics %}
+{% assign section_id = include.id %}
 {% assign is_collapsible = include.collapsible %}
 
-<section class="review-questions section container--wide animate-on-scroll fade-in-up"{% if q_id %} id="{{ q_id }}"{% endif %}>
-  <h2>{{ q_title }}</h2>
+<section class="review-questions section container--wide animate-on-scroll fade-in-up"{% if section_id %} id="{{ section_id }}"{% endif %}>
+  <h2>Utforsk dette privat med din egen KI</h2>
+  <p class="privacy-note">Vi stiller spørsmålene. Du beholder svarene. <a href="/personvern-ki/">Les mer om personvern →</a></p>
   <ul class="stagger-parent questions-list">
-    {% for q in q_list %}
-    {% assign q_trimmed = q | strip %}
-    <li class="animate-on-scroll slide-in-left stagger"
-        data-question="{{ q_trimmed | escape }}"
-        tabindex="0"
-        role="button"
-        aria-label="Åpne spørsmål i verktøy">
-      <span>{{ q_trimmed }}</span>
-      <span class="sparkle-icon" aria-hidden="true">✨</span>
+    {% for topic in topics %}
+    <li class="animate-on-scroll slide-in-left stagger">
+      <h3 class="topic-label">{{ topic.conversation_label }}</h3>
+      <p class="topic-question">{{ topic.opening_question }}</p>
+      <div class="topic-ctas">
+        <button class="cta cta--primary ai-topic-btn"
+                data-topic-label="{{ topic.conversation_label | escape }}"
+                data-opening-question="{{ topic.opening_question | escape }}"
+                data-source-url="{{ topic.source_url }}"
+                data-sixty-two-url="{{ topic.sixty_two_url }}"
+                aria-label="Utforsk '{{ topic.conversation_label }}' med din egen KI">
+          Utforsk dette privat med din egen KI
+        </button>
+        <a href="{{ topic.sixty_two_url }}" class="cta cta--secondary">
+          Se hvordan 60:2 kan avdekke dette
+        </a>
+      </div>
     </li>
     {% endfor %}
   </ul>
   {% if is_collapsible == "true" %}
   <button class="questions-toggle" type="button" aria-expanded="true">
     <span class="toggle-icon" aria-hidden="true">&#9650;</span>
-    <span class="toggle-label">Skjul spørsmål</span>
+    <span class="toggle-label">Skjul emner</span>
   </button>
   {% endif %}
 </section>

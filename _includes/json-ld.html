@@ -1,9 +1,20 @@
 {% comment %}
   JSON-LD structured data — renders page.json_ld frontmatter as <script> tags.
   Expects page.json_ld to be an array of schema objects.
+  When page.price_source == "commercial", injects the price from
+  site.data.commercial into the Offer schema (single source of truth).
+  Uses string injection because Liquid's merge filter cannot build
+  hash literals with variable values in Jekyll's Liquid.
 {% endcomment %}
 {% if page.json_ld %}
   {% for schema in page.json_ld %}
+    {% if page.price_source == "commercial" and schema.offers %}
+      {% assign schema_json = schema | jsonify %}
+      {% assign price_inject = '"offers":{"type":"Offer","price":' | append: site.data.commercial.price_nok | append: ',' %}
+      {% assign schema_json = schema_json | replace: '"offers":{"type":"Offer",', price_inject %}
+<script type="application/ld+json">{{ schema_json }}</script>
+    {% else %}
 <script type="application/ld+json">{{ schema | jsonify }}</script>
+    {% endif %}
   {% endfor %}
 {% endif %}

@@ -1,0 +1,12 @@
+EU AI Basic Icon License
+
+The EU basic AI icon (black and white variants) is provided by the European Commission
+under the terms of the EU's official AI labelling initiative.
+
+Source: https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content
+
+The icon may be used freely for the purpose of labelling AI-generated content
+in accordance with Article 50 of the EU AI Act.
+
+No warranty is provided. The European Commission is not liable for any use
+of the icon.

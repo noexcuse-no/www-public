@@ -1,0 +1,34 @@
+# Image provenance registry — per-image AI-generated flag for provenance metadata.
+# Used by: provenance-jsonld.html (build-time @graph), ai-provenance-injector.js (runtime RDFa), apply-provenance.sh (IPTC stamping).
+# ai_generated: true = purely AI-generated (EvoLink GPT Image 2), false = human-created/verified non-AI.
+# All images default to true unless explicitly listed here as false.
+
+images:
+  # Non-AI images (exclude from AI provenance metadata)
+  - path: assets/images/dagfinn.webp
+    ai_generated: false
+    note: "commissioned team portrait per .design/photography-brief.md"
+  - path: assets/images/noexcuse-logo-azure.webp
+    ai_generated: false
+    note: "brand logo (Inkscape, trademark carve-out in LICENSE)"
+  - path: assets/images/noexcuse-logo-horizontal.webp
+    ai_generated: false
+    note: "brand logo (Inkscape, trademark carve-out in LICENSE)"
+  - path: assets/images/og-image.webp
+    ai_generated: false
+    note: "unverified origin — excluded from AI provenance"
+  # .design/graphics/originals/ versions of non-AI images
+  - path: .design/graphics/originals/assets/images/dagfinn.png
+    ai_generated: false
+    note: "commissioned team portrait source"
+  - path: .design/graphics/originals/assets/images/noexcuse-logo-azure.png
+    ai_generated: false
+    note: "brand logo source (Inkscape, trademark carve-out in LICENSE)"
+  - path: .design/graphics/originals/assets/images/noexcuse-logo-horizontal.png
+    ai_generated: false
+    note: "brand logo source (Inkscape, trademark carve-out in LICENSE)"
+  - path: .design/graphics/originals/assets/images/og-image.png
+    ai_generated: false
+    note: "unverified origin — excluded from AI provenance"
+  # All other .webp/.png images in assets/images/ and .design/graphics/originals/ are AI-generated (EvoLink GPT Image 2)
+  # and do not need explicit entries here (default = true).

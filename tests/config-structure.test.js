@@ -69,8 +69,8 @@ describe('Jekyll config structure (A5 native pages conversion)', () => {
             }
         });
 
-        it('ledelse_60-2.md uses display_name for its product name', () => {
-            const page = pages.find(({ file }) => file === 'ledelse_60-2.md');
+        it('ledelse-60-2.md uses display_name for its product name', () => {
+            const page = pages.find(({ file }) => file === 'ledelse-60-2.md');
             expect(page).toBeDefined();
             expect(page.content).toMatch(/^display_name: "Ledelse 60:2"$/m);
         });

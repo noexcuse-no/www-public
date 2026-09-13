@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -31,17 +35,10 @@ json_ld:
       - type: "Thing"
         name: "Integritet"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/compliance/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-questions_title: "Spør din LLM om compliance-kultur"
-questions:
-  - "Hvem i organisasjonen har reelt ansvar for compliance — og har de faktisk myndighet til å stoppe aktiviteter som bryter med regelverket?"
-  - "Når ble siste gang noen i ledergruppen stilte spørsmål ved om compliance-arbeidet faktisk fungerer, eller om det bare er papirarbeid?"
-  - "Hvordan reagerer organisasjonen når noen melder fra om et avvik — belønnes åpenhet eller stillhet?"
-  - "Finnes det områder der dere aksepterer avvik fra regelverket fordi «alle andre gjør det» eller fordi «det har gått bra så langt»?"
-  - "Hva ville skjedd hvis en alvorlig compliance-hendelse ble offentlig kjent i morgen — ville organisasjonen håndtert det med integritet?"
 ---
 
 ## Compliance er mer enn å unngå bøter
@@ -101,4 +98,37 @@ For ledergrupper som ønsker å styrke compliance-kulturen, handler første steg
 
 Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og gir dere en baseline for hvor samsvarsarbeidet faktisk står.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Årlig compliance-teater:** Rapporten er ferdig, men ingen spør om det faktisk fungerer.
+*   **Compliance som papirarbeid:** Avvik meldes, men ingen spør *hvorfor* de skjedde.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når compliance-ansvar er fragmentert
+*   [Menneskeperspektivet](/mennesker/) — når psykologisk trygghet mangler for å melde avvik
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold bestemmer hva som er avvik
+*   [Identitetsperspektivet](/identitet/) — når compliance ikke er en del av identiteten
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/compliance/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Compliance og samsvarsstyring](/compliance/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Compliance-kultur vs papirarbeid](/compliance/#compliance-er-mer-enn-å-unngå-bøter) — fra papir til praksis
+*   [Integritet som ledelsesplikt](/compliance/#integritet-som-ledelsesplikt) — ledelse som går foran
+*   [GRC og helhetlig styring](/grc/) — helhetlig rammeverk

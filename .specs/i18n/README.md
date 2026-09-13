@@ -16,7 +16,7 @@ The site is currently Norwegian-only. To reach non-Norwegian-speaking visitors (
 - **Fallback:** Norwegian Bokmål
 - **Language switcher:** UI component for manual override
 - **Translation scope:** All articles — full site content translation in one pass
-- **Translation method:** AI-assisted — drafts produced by AI, reviewed and approved by domain expert (Rasmus)
+- **Translation method:** AI-assisted — drafts produced by AI, reviewed and approved by domain expert (Dagfinn Bang-Johansen)
 
 ## Scope
 
@@ -46,7 +46,7 @@ The multilingual principle (`.design/inbound-strategy.md` §13) governs: the web
 1. Infrastructure first: language detector, switcher, hreflang tags, directory structure
 2. Content migration: move existing Norwegian pages to `_pages/no/`
 3. Translation pass (AI-assisted): one article at a time, starting with landing/product pages, then articles
-4. Review pass: domain expert (Rasmus) reviews each translated article
+4. Review pass: domain expert (Dagfinn Bang-Johansen) reviews each translated article
 5. Polish: language switcher UX, edge cases (partial translations, fallback behavior)
 
 ### First target language

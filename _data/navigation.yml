@@ -1,9 +1,12 @@
 - title: Ledelse 60:2
   url: /ledelse-60-2/
   class: nav-featured
-- title: Perspektiv
-  url: /perspektiv/
-- title: GRC
-  url: /grc/
+- title: Når passer det?
+  url: /ledelse-60-2/#passer
+- title: Innsikt
+  url: /emne/
 - title: Om oss
   url: /om-oss/
+- title: Book 20 min
+  url: /samtale/
+  class: nav-cta

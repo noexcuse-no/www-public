@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -31,17 +35,10 @@ json_ld:
       - type: "Thing"
         name: "Miljøledelse"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/baerekraft/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-questions_title: "Spør din LLM om bærekraftsarbeid"
-questions:
-  - "Hvem i ledergruppen har reelt ansvar for bærekraft — og er dette en del av den daglige ledelsen eller et sideprosjekt?"
-  - "Hvordan prioriterer dere mellom bærekraft og lønnsomhet når det oppstår en konflikt?"
-  - "Hva ville skjedd hvis dere mistet Miljøfyrtårn-sertifiseringen i morgen — ville noe faktisk endre seg?"
-  - "Er bærekraft en del av organisasjonens identitet — eller noe dere gjør fordi dere må?"
-  - "Hvordan måler dere effekten av bærekraftsarbeidet — og hvem ser rapportene?"
 ---
 
 ## Bærekraftsarbeid er mer enn rapportering
@@ -108,4 +105,37 @@ For ledergrupper som ønsker å ta bærekraft på alvor, handler første steg om
 
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Grønnvasking i praksis:** Rapporteringen er fin, men ingen kan si hvordan bærekraft faktisk påvirker beslutninger.
+*   **Bærekraft som sideprosjekt:** Ansvarlig for bærekraft sitter i en avdeling uten mandat til å påvirke kjernebeslutninger.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når bærekraft mangler eierskap i strukturen
+*   [Menneskeperspektivet](/mennesker/) — når ansatte ikke tror på bærekraftsarbeidet
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold blokkerer bærekraft
+*   [Identitetsperspektivet](/identitet/) — når bærekraft ikke er en del av identiteten
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/baerekraft/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Bærekraft og samfunnsansvar](/baerekraft/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Bærekraft som GRC-del](/baerekraft/#bærekraft-som-en-del-av-grc) — integrert i styring, risiko, compliance
+*   [Veien videre](/baerekraft/#veien-videre) — fra sertifisering til identitet
+*   [GRC og helhetlig styring](/grc/) — helhetlig rammeverk

@@ -2,9 +2,155 @@
 layout: default
 ---
 <div class="home-content">
-  {{ content }}
-  {% assign has_products = site.pages | where: "class", "product" | where: "published", true | size %}
-  {% if has_products > 0 %}{% include products.html %}{% endif %}
+  <!-- 1. Outcome-led hero (55/45 desktop split) -->
+  <section class="hero hero--outcome section">
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <h1 class="hero__headline">Finn blindsonene i ledergruppen på to timer.</h1>
+        <p class="hero__support">60 diagnostiske spørsmål. Felles retningsvalg. Ingen byråkrati.</p>
+        <div class="hero__ctas">
+          <a href="/bestill/ledelse-60-2/" class="cta cta--primary">Bestill Ledelse 60:2</a>
+          <a href="/samtale/" class="cta cta--secondary">Book 20 min avklaring</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img src="/assets/images/hero-illustration.webp" alt="Ledelse 60:2 — orientering for ledergruppen" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Recognition (2×2 cards) -->
+  <section class="recognition section container">
+    <h2 class="section__heading">Kjenner dere igjen noe av dette?</h2>
+    <div class="recognition-cards">
+      <div class="recognition-card">
+        <h3 class="recognition-card-title">Tause rom</h3>
+        <p class="recognition-card-text">I rommet var alle enige — på overflaten. Når tillitsbasert ledelse mangler, blir tause rom normen.</p>
+      </div>
+      <div class="recognition-card">
+        <h3 class="recognition-card-title">Årlig risikokalender</h3>
+        <p class="recognition-card-text">Dere oppdaterer risikobildet én gang i året. Så kommer hverdagen, og alt ser annerledes ut.</p>
+      </div>
+      <div class="recognition-card">
+        <h3 class="recognition-card-title">Mistet endringstellingen</h3>
+        <p class="recognition-card-text">De du helst vil beholde, forsvinner stille. Vellykket endringsledelse handler om å lede mennesker gjennom endring.</p>
+      </div>
+      <div class="recognition-card">
+        <h3 class="recognition-card-title">Samme diskusjon på nytt</h3>
+        <p class="recognition-card-text">Du har hatt den samme diskusjonen tre ganger denne måneden. Beslutninger tas, ingenting endrer seg.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. What changes after 60:2 -->
+  <section class="outcomes section container">
+    <h2 class="section__heading">Hva endres etter 60:2?</h2>
+    <div class="outcomes-grid">
+      <div class="outcome-card">
+        <h3>Felles språk for hvor dere står</h3>
+        <p>Ledergruppen får et konkret bilde av styrken og svakheten i sin styring — ikke abstrakte verdier.</p>
+      </div>
+      <div class="outcome-card">
+        <h3>Prioriterte funn, ikke generisk teori</h3>
+        <p>Rapporten leverer konkrete anbefalinger basert på jeres situasjon, innen én uke.</p>
+      </div>
+      <div class="outcome-card">
+        <h3>Ingen løpende forpliktelser</h3>
+        <p>Dere eier funnene. Vi leverer orienteringen, dere bestemmer hva som skjer videre.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 60/2/4 mechanism -->
+  {% include signature-60-2-4.html %}
+
+  <!-- 5. Diagnosis-before-intervention -->
+  <section class="diagnosis-before section container">
+    <h2 class="section__heading">Diagnose før lederutvikling</h2>
+    <p class="section__lead">De fleste investerer i utvikling før de vet hva som egentlig trengs utvikles. 60:2 gir dere diagnosen først — så kan dere investere riktig.</p>
+    <div class="diagnosis-grid">
+      <div class="diagnosis-card">
+        <h3>Struktur</h3>
+        <p>Rolleklarhet, prosesser, beslutningslinjer. Fungerer organisasjonen teknisk?</p>
+      </div>
+      <div class="diagnosis-card">
+        <h3>Mennesker</h3>
+        <p>Psykologisk trygghet, tillit, kompetanseutnyttelse. Fungerer folk sammen?</p>
+      </div>
+      <div class="diagnosis-card">
+        <h3>Påvirkning</h3>
+        <p>Maktforhold, interesser, allianser. Hvem bestemmer egentlig?</p>
+      </div>
+      <div class="diagnosis-card">
+        <h3>Identitet</h3>
+        <p>Kultur, verdier, felles retning. Hva står organisasjonen for?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. How it works (3 steps) -->
+  <section class="process section container">
+    <h2 class="section__heading">Slik fungerer det</h2>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="process-step-number">1</div>
+        <h3>Uforpliktende samtale</h3>
+        <p>Vi tar en prat for å raskt avklare om metoden passer for dere. Ingen kontrakter, ingen binding.</p>
+        <a href="/samtale/" class="cta">Book samtale</a>
+      </div>
+      <div class="process-step">
+        <div class="process-step-number">2</div>
+        <h3>Strukturert intervju</h3>
+        <p>60 diagnostiske spørsmål med inntil fem ledere over to timer. Selve samtalen er like verdifull som analysen.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step-number">3</div>
+        <h3>Rapport og anbefalinger</h3>
+        <p>Du får en rapport som sammenlikner ledelsen med bestepraksis, med konkrete anbefalinger — innen én uke.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Proof (placeholder) -->
+  <section class="proof section container">
+    <h2 class="section__heading">Bevis</h2>
+    <p class="section__lead">Cases C1–C4 kommer. Her holder vi det minimalt: vi leverer orientering, dere eier resultatet.</p>
+  </section>
+
+  <!-- 8. Fit -->
+  <section class="fit section container">
+    <h2 class="section__heading">Passer 60:2 for dere?</h2>
+    <div class="fit-grid">
+      <div class="fit-column fit--for">
+        <h3>Passer for dere hvis:</h3>
+        <ul>
+          <li>Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg</li>
+          <li>Det er ny ledergruppe, ny daglig leder eller ny organisering</li>
+          <li>Dere er usikre på om strategien faktisk blir gjennomført</li>
+          <li>Dere opererer i en regulert eller operasjonell bransje der styring må sitte</li>
+        </ul>
+      </div>
+      <div class="fit-column fit--not">
+        <h3>Passer ikke for dere hvis:</h3>
+        <ul>
+          <li>Dere er flere enn fem ledere — da bør vi først ta en avklaring</li>
+          <li>Dere ønsker et utviklingsprogram eller løpende coaching</li>
+          <li>Dere trenger implementeringsrådgivning som følger opp funnene over tid</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Commercial info -->
+  <section class="commercial-info section container">
+    <h2 class="section__heading">Pris og hva dere får</h2>
+    {% include price-card.html %}
+  </section>
+
+  <!-- 10. CTA panel -->
+  {% include cta-panel.html %}
+
+  <!-- Preserve topical breadth as acquisition infrastructure -->
   {% assign has_frames = site.pages | where: "class", "frame" | size %}
   {% if has_frames > 0 %}
   <section id="perspektiver" class="section container">
@@ -12,6 +158,7 @@ layout: default
     {% include frame-benefit-cards.html %}
   </section>
   {% endif %}
+
   {% assign has_profiles = site.pages | where: "class", "profile" | where: "published", true | size %}
   {% if has_profiles > 0 %}{% include profiles.html tags="ledelse" %}{% endif %}
 </div>

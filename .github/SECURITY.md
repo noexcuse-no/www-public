@@ -1,22 +1,32 @@
 # Security Policy
 
-## Reporting a vulnerability
+## Reporting a Vulnerability
 
-If you discover a security issue in this repository or the website it publishes, please **report it privately** — do not file a public issue or open a PR with the details.
+We take security seriously. If you discover a security vulnerability in this repository or the deployed website, please report it **privately** via email:
 
-Send a report to: **firmapost@noexcuse.no**
+**mailto:firmapost@noexcuse.no**
 
-Include in your report:
+Please include:
+- A description of the vulnerability
+- Steps to reproduce (if applicable)
+- Potential impact assessment
 
-- The affected URL, file, or endpoint
-- A description of the vulnerability and how to reproduce it
-- Impact you believe the issue has
-- (Optional) a suggested fix
+We will acknowledge receipt within 5 business days and provide a preliminary assessment within 15 business days. Public disclosure is discouraged until the issue has been triaged and a fix is available.
 
 ## Scope
 
-This policy covers the `noexcuse-no/www-public` repository and the website published from it (https://www.noexcuse.no).
+This policy covers:
+- The noexcuse.no website (https://noexcuse.no)
+- This repository (noexcuse-no/www-public)
+- Associated build and deployment pipelines
 
-## Response
+## Supported Versions
 
-Reports are acknowledged and triaged as time permits. You will receive a response when the report has been assessed. Public disclosure is discouraged until the issue is triaged and, where applicable, fixed.
+Only the latest deployed version of the website is supported for security updates.
+
+## Contact
+
+For security-related inquiries, use the email above. This contact is also published in:
+- `/.well-known/security.txt`
+- `/.well-known/ai-transparency.json`
+- `_data/metadata.yml`

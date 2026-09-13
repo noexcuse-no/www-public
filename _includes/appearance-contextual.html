@@ -1,0 +1,32 @@
+{% comment %}
+  Contextual appearance cards — renders appearances whose related_topic matches the current page.
+  Used on topical pages to show "Hørte om dette i [source]?" cards.
+  Filters out example entries (example: true).
+{% endcomment %}
+
+{% assign appearances = site.data.appearances %}
+{% if appearances %}
+  {% assign matching_appearances = appearances | where: "related_topic", page.topic %}
+  {% if matching_appearances.size > 0 %}
+  <section class="appearance-contextual section container">
+    <h2 class="section__heading">Hørte om dette?</h2>
+    <div class="appearance-cards">
+      {% for appearance in matching_appearances %}
+        {% unless appearance.example %}
+        <article class="appearance-card">
+          <div class="appearance-meta">
+            <span class="appearance-type">{{ appearance.type | capitalize }}</span>
+            <time class="appearance-date" datetime="{{ appearance.date }}">{{ appearance.date | date: "%d. %B %Y" }}</time>
+          </div>
+          <h3 class="appearance-title">{{ appearance.title }}</h3>
+          <p class="appearance-source">Hørte om dette i <cite>{{ appearance.source }}</cite></p>
+          {% if appearance.url %}
+          <a href="{{ appearance.url }}" class="cta" target="_blank" rel="noopener">Les mer →</a>
+          {% endif %}
+        </article>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endif %}

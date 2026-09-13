@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -57,18 +61,10 @@ json_ld:
       - type: "Thing"
         name: "Kulturutvikling"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/kultur/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-topic: "organisasjonskultur"
-questions_title: "Spør din LLM om organisasjonskultur"
-questions:
-  - "Hvordan ville en nyansatt beskrive kulturen etter tre måneder?"
-  - "Hvilke historier fortelles om organisasjonens suksesser — og hvem er helten?"
-  - "Hva skjer hvis noen bryter med «hvordan vi gjør ting her»?"
-  - "Hvilke verdier står på veggen — og hvilke verdier belønnes faktisk?"
-  - "Hvilket kulturstadie ville du plassere organisasjonen på i dag?"
 ---
 
 ![Illustrasjon som viser organisasjonskultur som røttene til et tre — det usynlige som former det synlige](/assets/images/banners/kultur-t1-hero.webp)
@@ -122,3 +118,37 @@ For ledergrupper som ønsker å forstå og påvirke kulturen, er første steg al
 Les mer om [Kotters endringsmodell og praktisk endringsledelse →](/endringsledelse/)
 
 Organisasjonskultur er ikke et HR-prosjekt. Det er det viktigste ledelsesverktøyet dere har.
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Kultur på veggen vs i praksis:** Verdiene står på veggen, men ingen kan gi eksempler på når de ble levd ut i praksis.
+*   **Stadium 3 («Jeg er flink»):** Individualisme som demper kollektiv vekst. De mest effektive har nådd stadium 4 («Vi er flinke»).
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når kulturen æder strukturen
+*   [Menneskeperspektivet](/mennesker/) — når tillit og psykologisk trygghet mangler
+*   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold former kulturen
+*   [Identitetsperspektivet](/identitet/) — når kulturen er usynlig
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/kultur/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Organisasjonskultur](/kultur/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Scheins tre nivåer](/kultur/#scheins-tre-nivaer-av-kultur) — artefakter, verdier, grunnleggende antakelser
+*   [Logans fem kulturstadier](/kultur/#logans-fem-kulturstadier) — fra apati til felles suksess
+*   [Psykologisk trygghet](/kultur/#psykologisk-trygghet-som-kulturdriver) — fundamentet for tillit

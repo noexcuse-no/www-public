@@ -9,10 +9,12 @@ Primary product: **Ledelse 60:2** — a knowledge-based orientation for leadersh
 - Stack: Jekyll (static site generator)
 - Language: Norwegian Bokmål
 
-## Hvorfor dette repositoriet er offentlig
+## Licensing
 
-Det offentlige repositoriet dokumenterer den nåværende nettsiden, implementasjonen, og vedlikeholdte gjeldende spesifikasjoner. Midlertidig planleggingsmateriale, internt kommersielt resonnement, og foreldet arbeidskontekst er **ikke** en del av det vedlikeholdte offentlige arkivet.
+Source code defaults to 0BSD; the repository overall uses mixed rights (REUSE/SPDX). See `LICENSE.md` and https://noexcuse.no/rettigheter/.
 
-Offentlig kildekode og proveniens støtter **inspekterbarhet** og **ansvarlighet**. Dette er ikke skjuling eller sletting av en revisionsspor — det er en bevisst avgrensing av hva som utgjør det vedlikeholdte offentlige registeret vs. internt arbeidsunderlag.
+## Why this repository is public
 
-For AI-transparens og rettigheter, se [`/om-store-sprakmodeller/`](/om-store-sprakmodeller/) og [`/.well-known/ai-transparency.json`](/well-known/ai-transparency.json).
+The public repository documents the current website, its implementation, and maintained current specifications. Temporary planning material, internal commercial reasoning, and obsolete working context are not part of the maintained public record.
+
+Public source and provenance support inspectability and accountability.

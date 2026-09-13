@@ -1,177 +1,165 @@
 #!/usr/bin/env bash
 #
-# sanitize-metadata.sh — Strip privacy-sensitive metadata from image assets
-#                        while preserving intentional rights/provenance.
+# sanitize-metadata.sh — Strip privacy-sensitive metadata from tracked media.
 #
-# Strip set: GPS, camera/device serials, maker notes, embedded comments,
-# unwanted creator/contact attribution, and Photoshop editing history.
-# Preserved: rights (XMP-dc:Rights, XMP-cc:License), Web Statement of
-# Rights (XMP-xmpRights:WebStatement), and AI provenance (DigitalSourceType,
-# C2PA content credentials). Never runs -all=; targeted deletions only.
+# Removes tags that can leak private information:
+#   - GPS coordinates (GPS:all)
+#   - Camera/lens serial numbers (SerialNumber*)
+#   - MakerNotes (often embed serials + internal data)
+#   - Comments, captions, descriptions, keywords
+#   - Local filesystem paths (Photos/OS X fields, any tag matching /home/, /Users/, C:\)
+#   - Creator/contact fields (dc:Creator, Artist, OwnerName)
+#   - Editing history (xmp:History, xmpMM:History, DerivedFrom, Ingredients, CreatorTool)
+#   - Location fields (City, State, Country, Location)
 #
-# Requires: exiftool (perl-image-exiftool) — sole dependency.
-# Idempotent: reruns are no-ops.
+# Preserves intentional rights/provenance metadata (written by
+# apply-provenance.sh): XMP-dc:Rights, IPTC:CopyrightNotice,
+# XMP-xmpRights:WebStatement, XMP-iptcExt:DigitalSourceType.
+# AI provenance (digital source type) and copyright are separate concerns —
+# both preserved, never conflated.
+#
+# Modes:
+#   --check   verify no sensitive tags remain (exit 1 if any found)
+#   --dry     print what would be stripped without modifying files
+#   (default) strip sensitive tags in place
+#
+# Scope: tracked raster images (webp, png, jpg, jpeg, tif, tiff, gif) + PDFs
+# under assets/images/. Explicit file arguments override the default scope.
+# One failure never aborts the batch.
+#
+# Requires: exiftool
 #
 # Usage:
-#   bash scripts/sanitize-metadata.sh --check [file|dir ...]  # verify (exit 1 on findings)
-#   bash scripts/sanitize-metadata.sh --dry   [file|dir ...]  # preview what would be stripped
-#   bash scripts/sanitize-metadata.sh --apply [file|dir ...]  # strip in place
-#   bash scripts/sanitize-metadata.sh --help                  # this message
-#
-# Default target: assets/images (all webp/png). Files whose real type is
-# PNG but carry a .webp extension are scanned by --check but never
-# rewritten by --apply (exiftool cannot rewrite them in place).
+#   bash scripts/sanitize-metadata.sh [--check|--dry] [path...]
+#   bash scripts/sanitize-metadata.sh --help
 #
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-MODE="check"
-TARGETS=()
+CHECK=false
+DRY=false
 
-usage() { sed -n '3,21p' "$0"; exit "${1:-0}"; }
-info()  { printf "  [INFO]  %s\n" "$*"; }
-warn()  { printf "  [WARN]  %s\n" "$*" >&2; }
-err()   { printf "  [ERROR] %s\n" "$*" >&2; exit 1; }
+usage() { sed -n '3,34p' "$0"; exit "${1:-0}"; }
+info()  { printf '  [INFO]  %s\n' "$*"; }
+warn()  { printf '  [WARN]  %s\n' "$*" >&2; }
 
-# --- argument parsing -------------------------------------------------
-
+FILES=()
 for arg in "$@"; do
     case "$arg" in
         --help|-h) usage 0 ;;
-        --check)   MODE="check" ;;
-        --dry)     MODE="dry" ;;
-        --apply)   MODE="apply" ;;
-        -*)        err "Unknown argument: $arg" ;;
-        *)         TARGETS+=("$arg") ;;
+        --check) CHECK=true ;;
+        --dry) DRY=true ;;
+        -*) printf '  [ERROR] Unknown argument: %s\n' "$arg" >&2; exit 1 ;;
+        *) FILES+=("$arg") ;;
     esac
 done
 
-if [[ ${#TARGETS[@]} -eq 0 ]]; then
-    TARGETS=("$ROOT_DIR/assets/images")
-fi
+command -v exiftool &>/dev/null || { printf '  [ERROR] exiftool not found\n' >&2; exit 1; }
+exiftool -ver >/dev/null || { printf '  [ERROR] exiftool failed to run\n' >&2; exit 1; }
 
-# --- prerequisites ----------------------------------------------------
-
-if ! command -v exiftool &>/dev/null; then
-    err "exiftool not found. Install: apt install libimage-exiftool-perl / brew install exiftool"
-fi
-
-# --- privacy-sensitive deletions (never includes rights/provenance) ---
-
-PRIVACY_TAGS=(
-    "-GPS:all="
-    "-EXIF:SerialNumber="
-    "-EXIF:DeviceSerialNumber="
-    "-EXIF:BodySerialNumber="
-    "-EXIF:LensSerialNumber="
-    "-EXIF:MakerNote="
-    "-EXIF:UserComment="
-    "-EXIF:Comment="
-    "-XPComment="
-    "-XMP-dc:Creator="
-    "-XMP-dc:Contributor="
-    "-IPTC:By-line="
-    "-IPTC:Contact="
-    "-XMP-photoshop:History="
-    "-XMP-photoshop:DocumentAncestors="
+# Sensitive tags: extracted in --check mode, deleted in strip mode.
+SENSITIVE_TAGS=(
+    '-gps:all'
+    '-SerialNumber*'
+    '-MakerNote'
+    '-UserComment'
+    '-ImageDescription'
+    '-XMP-dc:Description'
+    '-IPTC:Caption-Abstract'
+    '-Keywords'
+    '-XMP-photoshop:City'
+    '-XMP-photoshop:State'
+    '-XMP-photoshop:Country'
+    '-XMP-photoshop:Location'
+    '-XMP-iptc:Location'
+    '-XMP-iptc:CreatorCity'
+    '-XMP-iptc:CreatorCountry'
+    '-XMP-iptc:CreatorRegion'
+    '-XMP-xmp:CreatorTool'
+    '-XMP-xmp:History'
+    '-XMP-xmpMM:History'
+    '-XMP-xmpMM:DerivedFrom'
+    '-XMP-xmpMM:Ingredients'
+    '-XMP-dc:Creator'
+    '-OwnerName'
+    '-Artist'
+    '-XMP-apple-fi:all'
 )
 
-# awk pattern matching exiftool -s -G1 output lines for the same fields
-# (group-qualified so e.g. XMP-dc:Creator matches but CreatorTool does not)
-CHECK_PATTERN='^\[GPS\]|^\[ExifIFD\] +(SerialNumber|DeviceSerialNumber|BodySerialNumber|LensSerialNumber|UserComment|Comment)|^\[MakerNotes\]|^\[Canon\]|^\[XMP-dc\] +(Creator|Contributor)|^\[IPTC\] +(By-line|Contact)|^\[XMP-iptcExt\] +Contact|^\[XMP-photoshop\] +(History|DocumentAncestors)|^\[Composite\] +GPS'
-
-# --- collect image files (real image content only, by extension scan) --
-
-FILES=()
-for target in "${TARGETS[@]}"; do
-    if [[ -f "$target" ]]; then
-        FILES+=("$target")
-    elif [[ -d "$target" ]]; then
-        while IFS= read -r -d '' f; do
-            FILES+=("$f")
-        done < <(find "$target" -type f \( -name '*.webp' -o -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' \) -print0)
-    else
-        err "Not a file or directory: $target"
-    fi
+STRIP_ARGS=()
+for tag in "${SENSITIVE_TAGS[@]}"; do
+    STRIP_ARGS+=("${tag}=")
 done
 
-TOTAL=${#FILES[@]}
-[[ $TOTAL -eq 0 ]] && { info "No image files found — nothing to do."; exit 0; }
-
-# --- per-file helpers -------------------------------------------------
-
-# real_type <file> -> lowercase exiftool FileType (WEBP/PNG/JPEG/...)
-real_type() { exiftool -s -s -s -FileType "$1" 2>/dev/null | tr '[:upper:]' '[:lower:]'; }
-
-# privacy_findings <file> -> "TAG[,TAG...]"? via awk; prints tag names only
-privacy_findings() {
-    exiftool -s -G1 -q "$1" 2>/dev/null | awk -v pat="$CHECK_PATTERN" \
-        'match($0, pat) {
-            tg = $0; sub(/^\[[^]]*\] +/, "", tg); sub(/ *:.*$/, "", tg); printf "%s,", tg
-        }'
-}
-
-# real_image <file> -> 0 if exiftool FileType is a raster image
-real_image() { real_type "$1" | grep -qE 'webp|png|jpeg|jpg'; }
-
-# --- check mode -------------------------------------------------------
+# Local-path patterns that must never appear in any metadata value.
+PATH_PATTERN='(/home/|/Users/|C:\\|/tmp/|/private/)'
 
 check_all() {
-    local findings=0 f tags
-    for f in "${FILES[@]}"; do
-        real_image "$f" || { warn "$f: unsupported type ($(real_type "$f")) — skipped"; continue; }
-        tags=$(privacy_findings "$f")
-        if [[ -n "$tags" ]]; then
-            printf "  [FIND]  %s: %s\n" "${f#$ROOT_DIR/}" "${tags%,}"
-            findings=$((findings + 1))
-        fi
-    done
-    if [[ $findings -eq 0 ]]; then
-        info "clean — $TOTAL files, no privacy metadata"
-        return 0
+    local found=0 out paths
+    out=$(exiftool -s -G1 "${SENSITIVE_TAGS[@]}" "${FILES[@]}" 2>/dev/null \
+        | grep -v '^========' \
+        | grep -vE '^[[:space:]]*[0-9]+ image files' || true)
+    if [[ -n "$out" ]]; then
+        warn "sensitive tags found:"
+        printf '%s\n' "$out" | sed 's/^/    /'
+        found=1
     fi
-    warn "$findings file(s) carry privacy metadata (values never printed)"
-    return 1
+    paths=$(exiftool -s -G1 -a "${FILES[@]}" 2>/dev/null \
+        | grep -v '^\[System\]' \
+        | grep -v '^\[File\]' \
+        | grep -vE '^[[:space:]]*[0-9]+ image files' \
+        | grep -Ei -B1 "$PATH_PATTERN" || true)
+    if [[ -n "$paths" ]]; then
+        warn "local paths found:"
+        printf '%s\n' "$paths" | sed 's/^/    /'
+        found=1
+    fi
+    return $found
 }
 
-# --- dry mode: report findings + the would-be exiftool command ---------
+# Default scope: tracked raster images + PDFs under assets/images/.
+if [[ ${#FILES[@]} -eq 0 ]]; then
+    mapfile -t FILES < <(git -C "$ROOT_DIR" ls-files 'assets/images/' 2>/dev/null \
+        | grep -Ei '\.(webp|png|jpe?g|tiff?|gif|pdf)$' || true)
+fi
+if [[ ${#FILES[@]} -eq 0 ]]; then
+    mapfile -t FILES < <(find "$ROOT_DIR/assets/images" -type f \
+        \( -iname '*.webp' -o -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \
+           -o -iname '*.tif' -o -iname '*.tiff' -o -iname '*.gif' -o -iname '*.pdf' \) \
+        2>/dev/null || true)
+fi
 
-dry_all() {
-    check_all || true
-    printf '  [DRY]   would run: exiftool -overwrite_original -P %s <webp files>\n' "${PRIVACY_TAGS[*]}"
-    info "no files modified"
-}
+existing=()
+for file in "${FILES[@]}"; do
+    if [[ -f "$file" ]]; then
+        existing+=("$file")
+    else
+        warn "not found, skipping: $file"
+    fi
+done
+FILES=("${existing[@]}")
 
-# --- apply mode: strip privacy tags from real-WEBP files ---------------
+$DRY && info "DRY-RUN — no files will be modified"
 
-apply_all() {
-    local stripped=0 skipped=0 f ext rtype
-    for f in "${FILES[@]}"; do
-        real_image "$f" || { warn "$f: unsupported type ($(real_type "$f")) — skipped"; continue; }
-        ext="${f##*.}"
-        [[ "$ext" == "jpg" ]] && ext="jpeg"
-        rtype="$(real_type "$f")"
-        if [[ "$ext" != "$rtype" ]]; then
-            warn "$f: $rtype content stored as .$ext — exiftool cannot rewrite in place; skipped"
-            skipped=$((skipped + 1))
-            continue
-        fi
-        exiftool -overwrite_original -P "${PRIVACY_TAGS[@]}" "$f" >/dev/null 2>&1 || {
-            warn "$f: exiftool write failed; skipped"
-            skipped=$((skipped + 1))
-            continue
-        }
-        stripped=$((stripped + 1))
+if $CHECK; then
+    if check_all; then
+        info "OK — no sensitive metadata found in ${#FILES[@]} file(s)"
+    else
+        printf '  [ERROR] Sensitive metadata found — run sanitize (no args) to strip\n' >&2
+        exit 1
+    fi
+elif $DRY; then
+    for file in "${FILES[@]}"; do
+        info "would sanitize: $file"
+        printf '    exiftool -overwrite_original %s "%s"\n' "${STRIP_ARGS[*]}" "$file"
     done
-    info "stripped privacy metadata from $stripped file(s); $skipped skipped"
-    # verify nothing privacy-sensitive remains anywhere
-    check_all || return 1
-}
-
-# --- execute ----------------------------------------------------------
-
-case "$MODE" in
-    check) check_all ;;
-    dry)   dry_all ;;
-    apply) apply_all ;;
-esac
+    info "Done. would-sanitize=${#FILES[@]}"
+else
+    errs=$(exiftool -overwrite_original "${STRIP_ARGS[@]}" "${FILES[@]}" 2>&1 >/dev/null | grep -c 'Error' || true)
+    if [[ "$errs" -eq 0 ]]; then
+        info "Done. sanitized=${#FILES[@]} skipped=0"
+    else
+        warn "$errs file(s) failed — run per-file to identify"
+        info "Done. sanitized=$(( ${#FILES[@]} - errs )) skipped=$errs"
+    fi
+fi

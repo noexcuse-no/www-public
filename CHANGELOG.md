@@ -32,6 +32,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added cross-cutting tests for provenance/rights validators, human asset non-inheritance, secret echo prevention, fixture hygiene (T22).
 
 ## [1.7.1] - 2026-06-04
+## [Unreleased]
+
+
+### AI Act alignment (R37/AI1) — KI-lov forward-readiness
+
+#### Added
+- EU basic icon disclosure in banner (`_includes/eu-ai-icon.html` + `aria-label` + "generativ KI" link to `/om-store-sprakmodeller/`), per Article 50 AI Act
+- `/om-store-sprakmodeller/` editorial-responsibility page explaining LLM oversight
+- `ai-provenance-injector.js` — runtime RDFa (`schema:digitalSourceType` + `schema:license`) on AI-generated content images, idempotent, non-AI exclude-list aware
+- `tests/non-ai-exclusion.test.js`, `tests/manifest-validation.test.js`, `tests/banner-verbatim.test.js`, `tests/supersession-marker.test.js` regression suites
+- Footer + `/om-oss/` links to `/om-store-sprakmodeller/`
+
+#### Changed
+- `provenance-jsonld.html` rewritten to emit JSON-LD `@graph` with per-page `WebPage` + per-image `ImageObject` entries; exclude-list blob for non-AI assets
+- `.well-known/ai-transparency.json` reconciled: 4 reviewer fields (Dagfinn Bang-Johansen), `declarations.*` blocks, `editorial_responsibility` → `/om-store-sprakmodeller/`, `regulatory_contact` (Nkom), dynamic `routes[]` from `site.pages`, corrected `images.count` filter (`item.creation`)
+- `provenance:` frontmatter set to `editorial` (human-reviewed) on pages; `<html prefix>` for RDFa resolvability
+- `.design/semantic-metadata.md` "No Visible AI Label" section superseded with EU alignment stance
+- `_includes/scripts.html` now loads the provenance injector after `go-params.js`
+
+### Added
+- Mixed-rights licensing framework (REUSE/SPDX) with 0BSD for code, CC0-1.0 for AI-generated content, LicenseRef-NoExcuse-All-Rights-Reserved for human-created content
+- REUSE.toml with directory defaults and exact-path entries
+- Canonical license texts (0BSD, CC0-1.0) from SPDX
+- REUSE.toml directory defaults for code (0BSD) and assets (CC0-1.0)
+- Provenance frontmatter on all renderable sources
+- _data/assets.yml registry with 4-type classification
+- generate-rights-metadata.mjs generator → _data/rights.json
+- Per-page <link rel="license"> and provenance-jsonld.html rewrite
+- .well-known/ai-transparency.json refactored (generated, superset, dead $schema dropped)
+- _pages/rettigheter.md + footer link + information-architecture update
+- CC0 claim removal from _config.yml, _data/metadata.yml, package.json
+- apply-provenance.sh rework (registry-driven, correct IPTC/XMP tags, human images -> proprietary WebStatement)
+- vitest tests, npm scripts rights:generate/rights:check, .github/workflows/ci.yml (4 jobs)
+
+### Changed
+- LICENSE renamed to LICENSE.md (content preserved)
+- REUSE.toml added with directory defaults and exact-path entries
+- CC0 claim removal from _config.yml, _data/metadata.yml, package.json
+- apply-provenance.sh reworked (registry-driven, correct IPTC/XMP tags)
+
+### Fixed
+- LICENSE filename consistency (LICENSE → LICENSE.md)
+
 
 ### Changed
 - **HTML→MD refactor — Page content migration**: Extracted all inline HTML from 22 `_pages/*.md` files into includes and markdown body. Created 20 new `_includes/` components (benefit-cards, step-cards, cases-cards, frame-cards, grc-perspective-cards, science-section, ethics-columns, science-highlight, science-quote, science-divider, section-illustration, framework-illustration, section-wrapper, section-container, info-box, challenge-card, challenge-grid, question-list, cta-section, tag-cloud, avtate-section, about-values, about-section, about-team, kotter-flow). Consolidated CTA, Hero, Section patterns (Phase 3). Inline styling tags (`<a class="product-cta">`, `<p class="lead">`) converted to kramdown IAL syntax in captures with `markdownify_body` support.
@@ -75,7 +118,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Mixed-rights licensing & provenance (mixed-rights-licensing-provenance)**: REUSE/SPDX coverage across the full tracked-file census (`REUSE.toml` + `.license` sidecars; 0BSD code, CC0 AI-generated material, LicenseRef-NoExcuse-All-Rights-Reserved human material, 2 reported unresolved files). Provenance frontmatter (`creation`, `editorial_review`, `editorial_responsibility`) on all 70 renderable sources + validation tests. `_data/assets.yml` registry + REUSE cross-check tests. Generated `_data/rights.json` (`rights:generate`/`rights:check`). Per-page `<link rel="license">`, rewritten provenance JSON-LD, generated `/.well-known/ai-transparency.json`, Norwegian `/rettigheter/` page + footer link. Registry-driven image metadata pipeline (IPTC/XMP embedded). 4-job CI (test, reuse, rights-drift, site-build). See `.specs/mixed-rights-licensing/README.md`.
+
 ### Changed
+- **Article element styling (article-element-styling, Branch 1+2)**: Refined article element visuals to the subtle, typography-driven brand direction. Added h4/h5 to the heading scale (h4 1.15em/600, h5 1em/600, mobile 1em/0.9em). Added section dividers (1px `border-top` `var(--border-color)` on `h2:not(:first-of-type)`). Unified blockquote in typography.css with `var(--accent-color)` border (navy light / azure dark), no article.css override. Added table zebra striping via `nth-child(even)` + `var(--surface-subtle)` + caption styling. Refined card hover (base `var(--shadow-xs)` → hover `var(--shadow-sm)`, `transition: box-shadow 0.2s ease`, no transform). Deleted `assets/css/metode.css` entirely (all selectors dead — frame-item/founder-card family rendered on zero pages). Removed `.info-box` block from article.css (dead — only consumer was unused metodikk-callout.html). Removed metode.css `<link>` from styles.html. Updated `.design/css-architecture.md` (element styling system + deletions). Added `.specs/article-element-styling/README.md` spec.
+- **Unified button system (button-cta-url-uniformity, Branch 1+2)**: Consolidated all interactive elements into a single unified button system in `assets/css/components/buttons.css`. Three types (Primary `.btn-primary`, Secondary `.btn-secondary`, Ghost `.btn-ghost`) with shared base properties, unified transition (`transform 0.2s + box-shadow 0.2s + background-color 0.2s`), unified hover (`translateY(-2px)` + `shadow-md`), unified active (`scale(0.98)` + `shadow-sm`), unified focus-visible (`--focus-color` outline). Size variants (large, small, icon) and spacing variants (spaced, block). Existing `.cta*` classes kept as aliases (`.cta` → `.btn-primary`, etc.) — no HTML changes required. Removed all per-element button transition/hover rules from component files. Added `rel="noopener" target="_blank"` to all external links (tab-nabbing prevention). Renamed 12 `.md` files to match their permalinks (om_oss → om-oss, etc.). Updated `.design/css-architecture.md` (unified button system) and `.design/html-templates.md` (button usage patterns + external link policy).
+- **Article layout system (article-layout-system, Branch 1+2)**: Implemented a heading-level-driven layout system for article content. Content sections are wrapped in lists (`ul`/`ol`) whose items contain a heading (`h2`–`h5`); the heading level determines the card layout: `li h2`/`li h4` = 1-per-row card with square floated image, `li h3`/`li h5` = 2-per-row grid with landscape image. Added `ol` number badges (CSS counters) and `ul` bullet markers. Added h4/h5 to the typography scale (desktop + mobile). Rewrote all 15 article `.md` files to fit the system (content rewritten to fit the layout, not the other way around). Removed old special-case selectors (verdi, metode-t4, t4-signal, step-, frame-, challenge-card). Added `.specs/article-layout/README.md` spec. Updated `.design/graphics.md` (tier→heading-level mapping) and `.design/css-architecture.md` (list heading layout system).
+- **Unified button system (button-cta-url-uniformity, Branch 1+2)**: Consolidated all interactive elements into a single unified button system in `assets/css/components/buttons.css`. Three types (Primary `.btn-primary`, Secondary `.btn-secondary`, Ghost `.btn-ghost`) with shared base properties, unified transition (`transform 0.2s + box-shadow 0.2s + background-color 0.2s`), unified hover (`translateY(-2px)` + `shadow-md`), unified active (`scale(0.98)` + `shadow-sm`), unified focus-visible (`--focus-color` outline). Size variants (large, small, icon) and spacing variants (spaced, block). Existing `.cta*` classes kept as aliases (`.cta` → `.btn-primary`, etc.) — no HTML changes required. Removed all per-element button transition/hover rules from component files. Added `rel="noopener" target="_blank"` to all external links (tab-nabbing prevention). Renamed 12 `.md` files to match their permalinks (om_oss → om-oss, etc.). Updated `.design/css-architecture.md` (unified button system) and `.design/html-templates.md` (button usage patterns + external link policy).
+- **Article element styling (article-element-styling, Branch 1+2)**: Refined article element visuals to the subtle, typography-driven brand direction. Added h4/h5 to the heading scale (h4 1.15em/600, h5 1em/600, mobile 1em/0.9em). Added section dividers (1px `border-top` `var(--border-color)` on `h2:not(:first-of-type)`). Unified blockquote in typography.css with `var(--accent-color)` border (navy light / azure dark), no article.css override. Added table zebra striping via `nth-child(even)` + `var(--surface-subtle)` + caption styling. Refined card hover (base `var(--shadow-xs)` → hover `var(--shadow-sm)`, `transition: box-shadow 0.2s ease`, no transform). Deleted `assets/css/metode.css` entirely (all selectors dead — frame-item/founder-card family rendered on zero pages). Removed `.info-box` block from article.css (dead — only consumer was unused metodikk-callout.html). Removed metode.css `<link>` from styles.html. Updated `.design/css-architecture.md` (element styling system + deletions). Added `.specs/article-element-styling/README.md` spec.
 - **Backlog cleanup (risk-reduction Phase 1)**: Pruned `BACKLOG.md` to current open work only — removed all completed (Done) archaeology rows whose records already live in CHANGELOG/git history, removed rows disclosing internal business reasoning, and rewrote still-open rows into product-request phrasing. Removed `.research/` (deleted), `.specs/archive/`, and completed one-time implementation specs (see Removed below). Each remaining open row maps to a live `.specs/`/`.design/` file.
 
 ### Removed

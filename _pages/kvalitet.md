@@ -1,4 +1,8 @@
 ---
+provenance:
+  creation: editorial
+  editorial_review: human
+  editorial_responsibility: No Excuse AS
 class: benefit
 layout: article
 category: benefit
@@ -29,18 +33,10 @@ json_ld:
       - type: "Thing"
         name: "Kontinuerlig forbedring"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
-  - text: "Les mer om Ledelse 60:2 →"
+  - text: "Utforsk dette privat med din egen KI"
+    url: "/kvalitet/"
+  - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
-topic: "kvalitetskultur"
-questions_title: "Spør din LLM om kvalitetskultur"
-questions:
-  - "Hvem i organisasjonen har reelt ansvar for kvalitet — og har de myndighet til å stoppe produksjonen hvis kvaliteten svikter?"
-  - "Når ble siste gang et kvalitetsavvik førte til en reell endring i prosessene, ikke bare en registrering i systemet?"
-  - "Hvordan belønnes ansatte som melder fra om kvalitetsproblemer — blir de sett på som nyttige eller besværlige?"
-  - "Hva ville skjedd hvis ISO 9001-sertifiseringen deres ble trukket i morgen — ville noe faktisk endre seg?"
-  - "Finnes det områder der dere aksepterer lav kvalitet fordi «sånn har det alltid vært»?"
 ---
 
 ## Kvalitet handler om mer enn ISO 9001
@@ -101,4 +97,37 @@ For ledergrupper som ønsker å styrke kvalitetsarbeidet, handler første steg o
 
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
+
+---
+
+## Kjenner du deg igjen?
+
+*   **Kvalitet som parallellaktivitet:** Kvalitetsavvik registreres, men fører sjelden til reell endring. Audits blir en øvelse i å vise frem papirer.
+*   **Kvalitet som kontrollbyråkrati:** Prosesser som ble laget for å løse et problem, men nå lever sitt eget liv.
+
+---
+
+## Relaterte perspektiver
+
+*   [Strukturperspektivet](/struktur/) — når uklare prosesser skaper gjentatte feil
+*   [Menneskeperspektivet](/mennesker/) — når opplæring ikke når frem
+*   [Påvirkningsperspektivet](/pavirkning/) — når feil insentiver driver produksjon foran kvalitet
+*   [Identitetsperspektivet](/identitet/) — når «vi har alltid gjort det sånn» står i veien
+
+---
+
+## Utforsk dette privat med din egen KI
+
+[Utforsk dette privat med din egen KI →](/kvalitet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+
+---
+
+## Etter refleksjon {#etter-refleksjon}
+
+Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Kvalitet](/kvalitet/) hvis du vil utforske videre.
+
+### Relaterte emner å utforske videre
+
+*   [Fire perspektiver — fire kvalitetsdimensjoner](/kvalitet/#fire-perspektiver-fire-kvalitetsdimensjoner) — struktur, mennesker, påvirkning, identitet
+*   [Kvalitetsavvik er sjelden tekniske feil](/kvalitet/#kvalitetsavvik-er-sjelden-tekniske-feil) — menneskelige og organisatoriske rotårsaker
+*   [Kvalitetsledelse og lønnsomhet](/kvalitet/#kvalitetsledelse-og-lønnsomhet-er-samme-samtale) — kvalitet som investering

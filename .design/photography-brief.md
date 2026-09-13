@@ -117,29 +117,33 @@ Tenk:
 
 ---
 
-## Originaler vs. offentlige derivater
+## Metadata og personvern
 
-Originalbilder i høy oppløsning ligger i `.design/graphics/originals/` (versjonsstyrt). Disse er sannhetskilden — de serveres **ikke** av Jekyll og er aldri lenket fra sider.
+### Offentlige vs. originale filer
 
-Offentlige derivater ligger i `assets/images/` (WebP) og `assets/images/icons/` (PNG/WebP). Det er disse Jekyll pakker og nettlesere laster ned.
+- **`assets/images/`** — kun sanitiserte publikasjonsderivater (WebP/PNG). Disse er offentlige og skal ikke inneholde privat metadata.
+- **`.design/graphics/originals/`** — høyoppløselige originaler med eventuell privat metadata (GPS, serienummer, kommentarer). Disse er interne og publiseres aldri direkte.
 
-| Sti | Innhold | Servert |
-|-----|---------|---------|
-| `.design/graphics/originals/` | PNG-bannere, SVG-logotyper, ikonkilder | Nei |
-| `assets/images/` | WebP-spot-/bannerillustrasjoner | Ja |
-| `assets/images/icons/` | Små ikon-PNG/WebP | Ja |
-| `assets/*.pdf` | Offentlige dokumentvedlegg | Ja (lenket fra sider) |
+### Metadatapolicy
 
-**Regel:** rediger originaler, generer deretter derivater — server aldri originaler direkte.
+Før en original konverteres til et offentlig derivat, kjøres:
 
-### Metadata-hygiene
+```bash
+bash scripts/sanitize-metadata.sh --check assets/images/
+```
 
-Alle bilder og PDF-er i det offentlige treet sjekkes av to skript:
+Sanitiseringen fjerner GPS-koordinater, kamera-/serienumre, lokale filstier, kommentarer, skaper-/kontaktfelt og redigeringshistorikk. Følgende beholdes bevisst:
 
-- **`scripts/sanitize-metadata.sh`** (`npm run sanitize:media`): fjerner personvernsensitiv metadata fra bilder — GPS, kamera-/serienummer, maker notes, innebygde kommentarer, skaperattribusjon og Photoshop-redigeringshistorikk. Bevarer bevisst rettigheter (rettighetshaver, opphavsrett, `XMP-xmpRights:WebStatement`) og AI-proveniens (`DigitalSourceType`, C2PA content credentials).
-- **`scripts/inspect-doc-metadata.sh`** (`npm run inspect:docs`): inspiserer PDF-dokumentegenskaper (forfatter, oppretter, produsent, tittel) og flagger personnavn, programvareidentitet og interne filnavn/stier. Strip-modus fjerner flaggede verdier uten å ødelegge innholdet.
+- `XMP-dc:Rights` — rettighetshaver
+- `IPTC:CopyrightNotice` — copyright-merknad
+- `XMP-xmpRights:WebStatement` — lenke til rettighetsinformasjon
+- `XMP-iptcExt:DigitalSourceType` — AI-proveniens (digital kilde)
 
-Nye bilder/PDF-er skal kjøres gjennom skriptene før de legges til i det offentlige treet.
+AI-proveniens og opphavsrett er separate forhold: begge bevares, men blandes aldri.
+
+### Dokumenter (PDF)
+
+PDF-er inspiseres med `bash scripts/inspect-doc-metadata.sh <fil.pdf>` før publisering. Interne verdier (forfatter, brukernavn, internt tittel/company-felt, innebygde stier) fjernes eller erstattes med sanitiserte web-derivater.
 
 ---
 
