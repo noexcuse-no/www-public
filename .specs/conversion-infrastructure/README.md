@@ -4,15 +4,15 @@
 
 ## Problem
 
-Nettstedet mangler mellomrommet i konverteringstrakten. Toppen (artikler) og bunnen (Outlook booking) er på plass, men det finnes ingen ledelsmekanismer: ingen epostinnsamling, ingen kontaktformular, ingen lead capture, ingen ressursnedlastinger, ingen anbefalinger. Besøkende leser en artikkel og har ingen steg-2-handling.
+Nettstedet har innhold (artikler) og bestilling (Outlook-booking), men mangler
+mellomsteg: ingen epostinnsamling, ingen kontaktformular, ingen ressursnedlasting,
+ingen anbefalinger. Besøkende leser en artikkel og har ingen steg-2-handling.
 
 ## Sub-features
 
 ### F4a — Epostinnsamling (Newsletter)
 
 **Hva:** Legg til et enkelt epost-skjemafelt på bunnen av hver artikkel og på forsiden. Epost lagres via en godkjent ekstern tjeneste — aldri i repo.
-
-**Hvorfor:** Uten epostinnsamling har vi ingen mulighet til å følge opp besøkende. Eneste kontaktkanal er passiv (bok et møte).
 
 **Filer:** `_includes/newsletter-signup.html` (ny), `_layouts/article.html` (inkluder), `index.md` (inkluder ved stat-bridge).
 
@@ -26,15 +26,17 @@ Nettstedet mangler mellomrommet i konverteringstrakten. Toppen (artikler) og bun
 
 ### F4c — Stegside-berikelse
 
-**Hva:** Legg til brødtekst og CTA på stegsidene (Samtale/Intervju/Rapport). Disse sidene har i dag kun et bilde hver — ingen tekst, ingen neste-steg-lenker, ingen call-to-action.
-
-**Hvorfor:** Stegsidene er en naturlig del av trakten (besøkende som er nysgjerrige nok til å klikke seg inn på prosessen). Uten innhold går de i en blindvei.
+**Hva:** Brødtekst og CTA på stegsidene (Samtale/Intervju/Rapport). Disse sidene
+har i dag kun et bilde hver — ingen tekst, ingen neste-steg-lenker, ingen
+call-to-action.
 
 **Filer:** `_pages/samtale.md`, `_pages/intervju.md`, `_pages/rapport.md`
 
 ### F4d (fremtidig) — Artikkelanbefalinger
 
-Når F4a er på plass og vi har grunnleggende innsamling, implementer «neste artikkel»-anbefalinger på bunnen av hver side. Dette er en enkel cross-link-funksjon (manuelt eller via frontmatter-vekter), ikke en ML-algoritme.
+Når F4a er på plass: «neste artikkel»-anbefalinger på bunnen av hver side.
+Enkel cross-link-funksjon (manuelt eller via frontmatter-vekter), ikke en
+ML-algoritme.
 
 ## Datalagring (alle sub-features)
 
