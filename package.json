@@ -37,13 +37,13 @@
     "ci:local": "node scripts/local-ci.mjs"
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
-    "happy-dom": "^14.0.0",
+    "eslint": "^10.10.0",
+    "happy-dom": "^20.14.3",
     "htmlhint": "^1.0.0",
     "smol-toml": "1.8.0",
-    "stylelint": "^16.0.0",
-    "stylelint-config-standard": "^36.0.0",
-    "vitest": "^2.0.0",
+    "stylelint": "^17.15.0",
+    "stylelint-config-standard": "^40.0.0",
+    "vitest": "^5.0.0",
     "yaml": "2.9.0"
   },
   "keywords": [
