@@ -32,7 +32,7 @@ describe('audit-site-publication.mjs', () => {
   it('passes on clean post-build _site/', () => {
     const result = run('node scripts/audit-site-publication.mjs');
     expect(result.code).toBe(0);
-    expect(result.out).toContain('✅ Publication audit passed');
+    expect(result.out).toContain('Publication audit passed');
   });
 
   it('fails on internal path reference (.design/)', () => {

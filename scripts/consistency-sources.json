@@ -6,7 +6,7 @@
     "aiTransparencyManifest": ".well-known/ai-transparency.json"
   },
   "allowedCreationValues": ["human-created", "ai-assisted", "ai-generated", "third-party", "unresolved"],
-  "allowedLicenseValues": ["CC0-1.0", "LicenseRef-NoExcuse-All-Rights-Reserved", "0BSD", "unresolved"],
+  "allowedLicenseValues": ["CC0-1.0", "LicenseRef-NoExcuse-All-Rights-Reserved", "0BSD", "LicenseRef-EU-AI-Basic-Icon", "unresolved"],
   "prohibitedSiteLevelClaims": [
     "all content is AI",
     "all content is CC0",

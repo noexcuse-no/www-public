@@ -31,7 +31,7 @@ describe('check-stale-references.mjs', () => {
   it('passes on clean tree', () => {
     const result = run(SCRIPT);
     expect(result.code).toBe(0);
-    expect(result.out).toContain('✅ No stale references found');
+    expect(result.out).toContain('Stale reference check passed');
   });
 
   it('detects .research/ reference in active doc', () => {

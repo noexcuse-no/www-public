@@ -1,6 +1,6 @@
 ---
 description: Cross-link accuracy maintenance for content pages
-globs: ["_pages/**", "_products/**", "_profiles/**", "index.md", ".design/information-architecture.md"]
+globs: ["_pages/**", "index.md", ".design/information-architecture.md"]
 ---
 
 # Content Management & Cross-Link Maintenance

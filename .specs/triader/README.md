@@ -2,7 +2,7 @@
 
 ## Purpose and Scope
 
-Create `_pages/ledelse_triader.md` as a standalone article exploring triads as a structural tool for building resilient teams and organizations, based on Logan, King & Fischer-Wright's *Tribal Leadership* (2011).
+Create `_pages/triader.md` (renamed from `ledelse_triader.md` in the button-cta filename↔permalink alignment) as a standalone article exploring triads as a structural tool for building resilient teams and organizations, based on Logan, King & Fischer-Wright's *Tribal Leadership* (2011).
 
 ## URL
 
@@ -136,7 +136,7 @@ CTA section linking to Ledelse 60:2 as the diagnostic tool for understanding tea
 
 ## File
 
-**New file:** `_pages/ledelse_triader.md`
+**New file:** `_pages/triader.md` (renamed from `ledelse_triader.md` in the button-cta filename↔permalink alignment)
 
 **Frontmatter:**
 ```yaml

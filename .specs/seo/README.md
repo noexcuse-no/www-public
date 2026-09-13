@@ -1,5 +1,7 @@
 # SEO Improvements — Functional Specification
 
+> **Status:** Partially implemented (2026-09-13 audit). Implemented: S1 sitemap, S2 canonical URLs, S3 page-specific meta descriptions, S4 robots.txt sitemap reference, S6 BreadcrumbList JSON-LD. Not implemented: S5 manifest icons (icon-192.png/icon-512.png not generated), S7 FAQPage schema on /tillit/.
+
 ## Purpose and Scope
 
 This document describes SEO foundation improvements for the No Excuse AS website. These are technical improvements to ensure search engines can properly index, understand, and rank the site's content.

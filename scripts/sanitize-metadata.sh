@@ -105,6 +105,7 @@ check_all() {
         found=1
     fi
     paths=$(exiftool -s -G1 -a "${FILES[@]}" 2>/dev/null \
+        | grep -v '^========' \
         | grep -v '^\[System\]' \
         | grep -v '^\[File\]' \
         | grep -vE '^[[:space:]]*[0-9]+ image files' \

@@ -39,6 +39,10 @@ function isAllowlisted(filePath, line) {
   if (filePath.startsWith('tests/')) return true;
   // mixed-rights-licensing spec documents audit where .research/ was checked and found empty
   if (filePath === '.specs/mixed-rights-licensing/README.md') return true;
+  // reconciliation-audit spec documents completed deletions
+  if (filePath === '.specs/reconciliation-audit/README.md') return true;
+  // _config.yml excludes the directories by design
+  if (filePath === '_config.yml') return true;
   return false;
 }
 

@@ -68,3 +68,7 @@ FF2
 ## Dependencies
 
 None. Independent of other features.
+
+## Implementation status
+
+Not implemented as of 2026-09-13. Planned in BACKLOG FF2 (i18n multilingual support), status Blocked. This spec describes the target state; deviations between it and the current tree are expected until the item completes. Verified absent: `_data/languages.yml`, language switcher include, unguarded hreflang emission, `Accept-Language` detection. The guarded hreflang block in `_includes/metadata.html` emits nothing while no language data exists (substrate-ready).

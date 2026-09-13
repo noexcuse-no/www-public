@@ -1,6 +1,6 @@
 ---
 description: Quick reference — see .design/brand-perception.md for full brand voice guide
-globs: ["**/*.html", "**/*.md", "_includes/*", "_profiles/*", "_products/*"]
+globs: ["**/*.html", "**/*.md", "_includes/*"]
 ---
 
 # Brand Voice
