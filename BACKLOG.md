@@ -49,3 +49,4 @@ Completed items belong in `CHANGELOG.md` only.
 | CI1 | CI reuse gating flip | Pending | mixed-rights:507 |
 | RA1 | Spec-impl consistency audit — pre-flight baseline, evidence reconciliation, conformance audit, disposition register | Done | Central report: `.specs/reconciliation-audit/README.md`. 9 doc corrections, i18n annotated (FF2), 7 orphans registered as RA2, 3 owner escalations. |
 | RA2 | Stale template cleanup — delete 7 confirmed-orphan templates (2 layouts, 5 includes) superseded by article-layout migration + homepage cleanup — See `.specs/cross-cutting/stale-template-cleanup/README.md` | Planned | — |
+| RA3 | Lint toolchain repair — eslint 10 flat-config migration, htmlhint Liquid/BEM compatibility, exact pins, vite+globals declared — See `.specs/cross-cutting/lint-toolchain/README.md` | Done | npm lint chain green (dependabot #261 drift) |
