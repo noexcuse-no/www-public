@@ -102,6 +102,12 @@ Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningst
 | `/ledelse-60-2/` → Booking | `/bestill/ledelse-60-2/` | "Bestill Ledelse 60:2" |
 | `/samtale/` → Booking (Route B) | `/bestill/ledelse-60-2/` | "Book 20 min avklaring" |
 
+## Special Resources
+
+| Path | Purpose | Published |
+|------|---------|-----------|
+| `/.well-known/security.txt` | RFC 9116 security contact + policy (renewed 2026-09-10, Expires 2027-09-10) | Yes |
+
 ## Rules
 
 1. Every cross-link should be bidirectional — if page A links to page B, verify B has a relevant context or return link.

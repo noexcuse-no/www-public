@@ -1,0 +1,93 @@
+{
+  "rules": [
+    {
+      "id": "S-COMMISSION",
+      "match": "line",
+      "flags": "gi",
+      "reason": "percent-based fee language",
+      "patterns": [
+        "\\b\\d{1,4}([.,]\\d+)?\\s*%\\s*(provisjon|provision|commi[ss]ion|rese[ll]er|referra[l]|margin|rabatt|discount)\\b",
+        "\\b(provisjon|provision|commi[ss]ion|rese[ll]er|referra[l] fee|revenue [sh]are)\\b[^\\n]{0,40}\\b(kr|nok|usd|eur|\\$|€)\\b",
+        "\\b\\d{1,4}([.,]\\d+)?\\s*(kr|nok|usd|eur|\\$)\\s*(provisjon|provision|commi[ss]ion|margin)\\b"
+      ]
+    },
+    {
+      "id": "S-NEGOTIATION",
+      "match": "line",
+      "flags": "gi",
+      "reason": "negotiation or non-disclosure wording",
+      "patterns": [
+        "\\b(forhandlingsposisjon|forhandlingsmakt|forhandlingsstrategi|non[- ]compete|confidentia[l]ity (agreement|clause|terms|provision|breach)|commercia[l] terms|paymen[t] terms|negotia[t]ion)\\b",
+        "\\bnegotiated per partne[r]\\b"
+      ]
+    },
+    {
+      "id": "S-WEAKNESS-GAP",
+      "match": "line",
+      "flags": "gi",
+      "reason": "internal weakness or gap assessment",
+      "patterns": [
+        "\\b(trust defi[c]it|gap[- ]analysis|intern (assessment|audit|vurdering)|internal (assessment|audit|weakness)|weakness assessment)\\b",
+        "\\bsvakeste (side|del|område|element)\\b",
+        "\\b(highest[- ]impact (conversion|konvertering)|høyeste[- ]konvertering|under one ye[ar])\\b"
+      ]
+    },
+    {
+      "id": "S-PIPELINE",
+      "match": "line",
+      "flags": "gi",
+      "reason": "customer pipeline or prospect material",
+      "patterns": [
+        "\\b(customer score[ca]rd|kunde[- ]score[ca]rd|interview scri[pt]|approval work[fl]ow|case[- ]intake[- ]toolkit|customer[- ]pipeline|kundepipeline|prospect list|prospektliste|paying custo[mer]|betalende kunde|customer[- ]name[- ]matching)\\b"
+      ]
+    },
+    {
+      "id": "S-CONTACT-LIST",
+      "match": "line",
+      "flags": "gi",
+      "reason": "raw contact list material",
+      "patterns": [
+        "\\b(contact list|kontaktliste|mailing list|newsletter[- ]subscribers|contact[- ]messages)\\b"
+      ]
+    },
+    {
+      "id": "S-PII",
+      "match": "line",
+      "collect": "contacts",
+      "threshold": 3,
+      "reason": "bulk personal contact data"
+    },
+    {
+      "id": "S-FORECAST",
+      "match": "line",
+      "flags": "gi",
+      "reason": "internal commercial forecast",
+      "patterns": [
+        "\\b(omsetningsprognose|salgsprognose|revenue forecast|sales forecast|budsjettutsikt|forventet omsetning|intern prognose|internal forecast)\\b"
+      ]
+    },
+    {
+      "id": "S-CREDENTIAL",
+      "match": "line",
+      "flags": "g",
+      "reason": "credential-shaped string",
+      "patterns": [
+        "\\bAKIA[0-9A-Z]{16}\\b",
+        "-----BEGIN [A-Z ]*PRIVATE KEY-----",
+        "\\bgh[pousr]_[A-Za-z0-9]{20,}\\b",
+        "\\bxox[baprs]-[A-Za-z0-9-]{10,}\\b",
+        "\\beyJ[A-Za-z0-9_-]{10,}\\.[A-Za-z0-9_-]{10,}\\.[A-Za-z0-9_-]{10,}\\b"
+      ]
+    },
+    {
+      "id": "S-TEMP-FILENAME",
+      "match": "filename",
+      "flags": "i",
+      "reason": "temporary or internal-working filename",
+      "patterns": [
+        "(internal[- ]?(notes|meeting|draft|memo|brief)|meeting[- ]notes|møtereferat|arbeidsnotat|commercial[- ]brief|prompt[- ]seed|research[- ](scratch|notes)|scratch(pad)?|[.]research)",
+        "(partner[- ]guidelines|case[- ]intake[- ]toolkit|company[- ]background|product[- ]katalysator|AI[- ]INSTRUCTIONS)"
+      ]
+    }
+  ]
+}
