@@ -2,7 +2,15 @@ import { Window } from 'happy-dom';
 
 global.window = new Window().window;
 global.document = window.document;
-global.navigator = window.navigator;
+try {
+    global.navigator = window.navigator;
+} catch (e) {
+    Object.defineProperty(global, 'navigator', {
+        value: window.navigator,
+        configurable: true,
+        writable: true
+    });
+}
 global.HTMLElement = window.HTMLElement;
 global.Element = window.Element;
 global.Node = window.Node;

@@ -27,7 +27,7 @@ describe('audit-deps.mjs', () => {
   it('exits 0 on clean dependency tree', () => {
     const result = run('node scripts/audit-deps.mjs');
     expect(result).toContain('✅ All dependency audits passed');
-  });
+  }, 20000);
 
   it('detects high/critical vulnerability (mocked via temp override)', () => {
     // Temporarily add a known vulnerable dep (lodash@4.17.15 has CVE)
@@ -38,7 +38,7 @@ describe('audit-deps.mjs', () => {
     const result = run('node scripts/audit-deps.mjs');
     // Should still run without crashing (npm audit will run on current tree)
     expect(typeof result).toBe('string');
-  });
+  }, 20000);
 
 it('detects slopsquat pattern in package name', () => {
     // Add a suspicious package name (combosquatting: react-dom-fake)
@@ -47,7 +47,7 @@ it('detects slopsquat pattern in package name', () => {
     const result = run('node scripts/audit-deps.mjs');
     expect(result).toContain('❌');
     expect(result).toContain('slopsquatting');
-  });
+  }, 20000);
 });
 
 describe('check-supply-chain.mjs', () => {

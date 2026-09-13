@@ -32,7 +32,7 @@ describe('check-transparency-consistency.mjs', () => {
   it('passes on current clean tree', () => {
     const result = run(SCRIPT);
     expect(result.code).toBe(0);
-    expect(result.out).toContain('✅ Transparency consistency check passed');
+    expect(result.out).toContain('Transparency consistency check passed');
   });
 
   it('detects blanket "all content is AI" assertion', () => {
@@ -83,10 +83,10 @@ describe('check-transparency-consistency.mjs', () => {
 
   it('validates canonical sources config', () => {
     const sources = JSON.parse(execSync(`cat ${SOURCES_FILE}`, { encoding: 'utf8' }));
-    expect(sources.sources.ai_transparency.canonical).toBe(true);
-    expect(sources.sources.ai_policy_page.canonical).toBe(true);
-    expect(sources.sources.photography_brief.canonical).toBe(true);
-    expect(sources.validation_rules.forbidden_blanket_assertions.length).toBeGreaterThan(0);
+    expect(sources.canonicalSources.rights).toBe('_data/rights.json');
+    expect(sources.canonicalSources.assets).toBe('_data/assets.yml');
+    expect(sources.allowedCreationValues.length).toBeGreaterThan(0);
+    expect(sources.prohibitedSiteLevelClaims.length).toBeGreaterThan(0);
   });
 
 it('detects contradiction: site-level "all AI" + per-resource "human"', () => {

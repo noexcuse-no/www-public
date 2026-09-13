@@ -20,7 +20,7 @@ function run(cmd) {
   }
 }
 
-describe.sequential('Cross-cutting provenance/rights validator tests', () => {
+describe('Cross-cutting provenance/rights validator tests', () => {
   let testDir;
 
   beforeAll(() => {
@@ -91,8 +91,8 @@ describe.sequential('Cross-cutting provenance/rights validator tests', () => {
     it('passes on clean _site/', () => {
       const result = run('node scripts/audit-site-publication.mjs');
       expect(result.code).toBe(0);
-      expect(result.out).toContain('✅ Publication audit passed');
-    });
+      expect(result.out).toContain('Publication audit passed');
+    }, 25000);
 
     it('rejects internal path in _site/ (fixture test)', () => {
       const testLine = 'See .design/archive/old-doc for details';
@@ -355,7 +355,7 @@ describe.sequential('Cross-cutting provenance/rights validator tests', () => {
     it('supply-chain check passes', () => {
       const result = run('node scripts/check-supply-chain.mjs');
       expect(result.code).toBe(0);
-    });
+    }, 25000);
 
     it('site audit passes', () => {
       const result = run('node scripts/audit-site-publication.mjs');

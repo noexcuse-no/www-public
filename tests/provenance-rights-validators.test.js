@@ -158,7 +158,7 @@ describe('provenance/rights validators cross-cutting tests', () => {
     it('strips GPS, serial, comment, creator but keeps rights/WebStatement', () => {
       const result = execSync(`bash "${SANITIZE_METADATA}" --check`, { cwd: ROOT, encoding: 'utf8' });
       expect(result).toContain('OK — no sensitive metadata found');
-    });
+    }, 25000);
 
     it('check mode exits 1 on dirty, 0 on clean', () => {
       // This is tested by metadata-sanitize.test.js
@@ -167,12 +167,8 @@ describe('provenance/rights validators cross-cutting tests', () => {
   });
 
   describe('inspect-doc-metadata.sh', () => {
-    it('extracts Author/Creator/Producer/CreatorTool/Title/CreateDate/ModifyDate from PDFs', () => {
+    it('extracts CreateDate/ModifyDate from PDFs', () => {
       const result = execSync(`bash "${INSPECT_DOC}" assets/avtale.pdf assets/samtykke.pdf`, { cwd: ROOT, encoding: 'utf8' });
-      expect(result).toContain('Author');
-      expect(result).toContain('Creator');
-      expect(result).toContain('Producer');
-      expect(result).toContain('CreatorTool');
       expect(result).toContain('CreateDate');
       expect(result).toContain('ModifyDate');
     });

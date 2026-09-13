@@ -41,6 +41,7 @@ const EXCLUDED_DIRS = new Set([
   'dist',
   'build',
   '.cache',
+  '.playwright-mcp',
 ]);
 
 // Paths that are detection data (synthetic fixtures + this scanner's own pattern

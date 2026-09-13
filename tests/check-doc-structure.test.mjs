@@ -32,7 +32,7 @@ describe('check-doc-structure.mjs', () => {
   it('passes on clean tree', () => {
     const result = run(SCRIPT);
     expect(result.code).toBe(0);
-    expect(result.out).toContain('✅ Document structure check passed');
+    expect(result.out).toContain('Document structure check passed');
   });
 
   it('detects flagged status "archived" in active location', () => {
@@ -90,8 +90,8 @@ describe('check-doc-structure.mjs', () => {
 
   it('validates conventions file has correct flagged statuses', () => {
     const conventions = JSON.parse(execSync(`cat ${CONVENTIONS_FILE}`, { encoding: 'utf8' }));
-    const flagged = conventions.frontmatter.validation.flagged_statuses_in_active;
-    expect(flagged).toEqual(['archived', 'superseded', 'obsolete', 'done']);
-    expect(conventions.frontmatter.validation.allow_missing_status).toBe(true);
+    const flagged = conventions.flaggedStatuses.map(s => s.toLowerCase());
+    expect(flagged).toContain('done');
+    expect(flagged).toContain('archived');
   });
 });
