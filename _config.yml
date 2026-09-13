@@ -1,6 +1,4 @@
 url: "https://noexcuse.no"
-license: "CC0-1.0"
-license_url: "https://creativecommons.org/publicdomain/zero/1.0/"
 
 include:
   - _pages
@@ -13,6 +11,46 @@ collections:
   tags:
     output: true
     permalink: /emne/:path/
+
+exclude:
+  - .design/
+  - .specs/
+  - .research/
+  - .omo/
+  - .github/
+  - .git/
+  - .vscode/
+  - .idea/
+  - .jekyll-cache/
+  - node_modules/
+  - scripts/
+  - tests/
+  - LICENSES/
+  - AGENTS.md
+  - BACKLOG.md
+  - CHANGELOG.md
+  - LICENSE
+  - README.md
+  - VERSION
+  - package.json
+  - package-lock.json
+  - pnpm-lock.yaml
+  - yarn.lock
+  - Gemfile
+  - Gemfile.lock
+  - stylelint.config.mjs
+  - vitest.config.mjs
+  - .gitignore
+  - .gitattributes
+  - .editorconfig
+  - .npmrc
+  - .nvmrc
+  - .ruby-version
+  - oh-my-openagent.json
+  - opencode.json
+  - stylelint.config.mjs
+  - vitest.config.mjs
+  - assets/*.md
 
 defaults:
   - scope:

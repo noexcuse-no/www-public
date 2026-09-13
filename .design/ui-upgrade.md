@@ -2,7 +2,7 @@
 
 ## Overview
 
-Visual design upgrade for No Excuse AS article pages. This document describes the visual design aspects: spacing, motion curves, color usage, and exact visual states. For implementation details, see `.specs/ui-upgrade/README.md`.
+Visual design upgrade for No Excuse AS article pages. This document describes the visual design aspects: spacing, motion curves, color usage, and exact visual states.
 
 ---
 
