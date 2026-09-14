@@ -28,6 +28,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Stripped personal name ("Rasmus Olsen") and internal Microsoft Word filename metadata from `assets/samtykke.pdf` and `assets/avtale.pdf` (T12).
 - Renewed expired security.txt `Expires` from 2026-06-30 to 2027-09-10 (T13).
+
+### Removed
+- **Stale template cleanup (RA2)**: Deleted 7 confirmed-orphan templates superseded by article-layout migration and homepage cleanup: `_layouts/perspektiv.html`, `_layouts/product.html`, `_includes/article-feed.html`, `_includes/benefit-cards.html`, `_includes/products.html`, `_includes/sidebar-home.html`, `_includes/step-cards.html`. Jekyll build passes, no live references remain.
+
+- **Om Oss Norwegian origin content (BR2)**: Content already complete — page includes founding story anchored in Norwegian leadership challenges, methodology origin tied to BI/management education, cultural values (ansvarlighet, tillit, ærlighet) explicitly linked to Norwegian tradition, "Beste praksis fra norsk arbeidsliv" section with concrete examples (tillitsreformer, flatere strukturer, kortere arbeidsuker), and international framing statement ("No Excuse er en norsk ledelsesbedrift...").
 - Added local dependency audit with slopsquat detection and lockfile integrity (T14).
 - Added post-build site publication audit to catch internal material leaks in rendered output (T15).
 - Added stale-reference and doc-structure integrity checks (T17, T18).
