@@ -115,6 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const closeBtn = expanded.querySelector('.profile-close');
         
         compact.addEventListener('click', (e) => {
+            // Don't open modal if clicking on links/buttons with data-no-modal
             if (e.target.closest('[data-no-modal]')) {
                 return;
             }
