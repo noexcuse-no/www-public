@@ -1,0 +1,30 @@
+{% comment %}
+  Topic cards grid — renders curated topic pages as rich benefit-style cards.
+  Three items per row on desktop, responsive to single column on mobile.
+  Each card links to the topic landing page and uses its banner or hero image.
+  Related tagged articles can be listed within each card.
+{% endcomment %}
+
+{% assign topic_urls = "/struktur/,/mennesker/,/identitet/,/pavirkning/,/kultur/,/endringsledelse/,/tillit/,/usikkerhet/,/forankring/,/makt/,/grc/,/triader/,/generativ-ki/,/baerekraft/,/compliance/,/informasjonssikkerhet/,/risikostyring/,/perspektiv/" | split: "," %}
+
+<div class="section container--wide">
+  <div class="grid grid--3">
+    {% for url in topic_urls %}
+      {% assign topic = site.pages | where: "url", url | first %}
+      {% if topic %}
+        {% assign topic_image = topic.banner | default: topic.hero.image %}
+        {% if topic_image %}
+          <div class="benefit-card">
+            <a href="{{ topic.url | relative_url }}" class="benefit-card-link" aria-label="{{ topic.title }}">
+              <img src="{{ topic_image | relative_url }}" alt="" class="benefit-banner" loading="lazy">
+              <div class="benefit-card-content">
+                <h4>{{ topic.title }}</h4>
+                <p>{{ topic.card_description | default: topic.description | truncate: 120 }}</p>
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

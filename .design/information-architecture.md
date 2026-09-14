@@ -42,12 +42,12 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/ny-ledergruppe/` | `_pages/ny-ledergruppe.md` | Buying situation: ny ledergruppe |
 | `/ny-leder/` | `_pages/ny-leder.md` | Buying situation: ny CEO/leder |
 | `/strategi-ikke-gjennomfort/` | `_pages/strategi-ikke-gjennomfort.md` | Buying situation: strategi ikke gjennomført |
-| `/personvern/` | `_pages/personvern.md` | Privacy policy |
+| `/tema/` | `_pages/tema.md` | Topic overview page |
 | `/rettigheter/` | `_pages/rettigheter.md` | Rights & licenses (REUSE/SPDX, proprietary anchor) |
 
 ## Tag Pages
 
-Generated from `_tags/` collection at `/emne/:tag/`. Current tags: `beslutningstaking`, `digital-transformasjon`, `endringsledelse`, `forankring`, `kunstig-intelligens`, `ledelse`, `makt`, `organisasjonskultur`, `psykologisk-trygghet`, `servant-leadership`, `tillit`, `usikkerhet`.
+Generated from `_tags/` collection at `/tema/:tag/`. Current tags: `beslutningstaking`, `digital-transformasjon`, `endringsledelse`, `forankring`, `kunstig-intelligens`, `ledelse`, `makt`, `organisasjonskultur`, `psykologisk-trygghet`, `servant-leadership`, `tillit`, `usikkerhet`.
 
 ## Cross-Reference Map
 
