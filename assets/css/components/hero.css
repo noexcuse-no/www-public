@@ -110,3 +110,48 @@
         font-size: 1em;
     }
 }
+
+/* Simple frame hero (no background image) — used for tag pages and topic overview */
+.frame-hero {
+    padding: var(--space-4xl) var(--space-md);
+    text-align: center;
+    background-color: var(--surface-subtle);
+    border-radius: var(--radius-xl);
+    margin: var(--space-2xl) var(--space-md);
+}
+
+.frame-hero-content {
+    max-width: var(--content-wide);
+    margin: 0 auto;
+}
+
+.frame-hero .hero-title {
+    font-size: 2.5em;
+    margin-bottom: var(--space-md);
+    color: var(--text-color);
+    line-height: 1.15;
+}
+
+.frame-hero .frame-intro {
+    font-size: 1.15em;
+    line-height: 1.7;
+    color: var(--text-color);
+    opacity: 0.85;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .frame-hero {
+        padding: var(--space-2xl) var(--space-md);
+        margin: var(--space-lg) var(--space-md);
+    }
+
+    .frame-hero .hero-title {
+        font-size: 2em;
+    }
+
+    .frame-hero .frame-intro {
+        font-size: 1em;
+    }
+}

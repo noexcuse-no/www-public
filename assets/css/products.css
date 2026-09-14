@@ -141,6 +141,22 @@
     flex: 1;
 }
 
+/* Topic cards — prevent title wrapping, tighter spacing */
+.benefit-card--topic .benefit-card__title {
+    font-size: 1.1em;
+    margin: var(--space-md) var(--space-lg) 6px;
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.benefit-card--topic .benefit-card__desc {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0 var(--space-lg) var(--space-md);
+}
+
 .product-cta-footer {
     text-align: center;
     margin-top: 40px;
