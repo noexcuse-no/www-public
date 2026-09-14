@@ -11,6 +11,7 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 | `/` | `index.md` | Frontpage |
 | `/ledelse-60-2/` | `_pages/ledelse_60-2.md` | Product landing — Ledelse 60:2 |
 | `/om-oss/` | `_pages/om_oss.md` | About the company |
+| `/om-dagfinn/` | `_pages/om_dagfinn.md` | About Dagfinn Bang-Johansen |
 | `/metode/` | `_pages/om_metode.md` | Method overview with 4 frames, 4 benefits, 3 steps |
 | `/perspektiv/` | `_pages/ledelse_perspektiv.md` | Scientific background: multiframe thinking |
 | `/triader/` | `_pages/ledelse_triader.md` | Triads concept |

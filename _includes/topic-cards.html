@@ -14,12 +14,12 @@
       {% if topic %}
         {% assign topic_image = topic.banner | default: topic.hero.image %}
         {% if topic_image %}
-          <div class="benefit-card">
+          <div class="benefit-card benefit-card--topic">
             <a href="{{ topic.url | relative_url }}" class="benefit-card-link" aria-label="{{ topic.title }}">
               <img src="{{ topic_image | relative_url }}" alt="" class="benefit-banner" loading="lazy">
               <div class="benefit-card-content">
-                <h4>{{ topic.title }}</h4>
-                <p>{{ topic.card_description | default: topic.description | truncate: 120 }}</p>
+                <h4 class="benefit-card__title">{{ topic.title }}</h4>
+                <p class="benefit-card__desc">{{ topic.card_description | default: topic.description | truncate: 120 }}</p>
               </div>
             </a>
           </div>

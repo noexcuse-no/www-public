@@ -27,7 +27,7 @@ layout: default
                 {% if article.tags %}
                 <p class="tag-links">
                     {% for tag in article.tags %}
-                    <a href="{{ '/emne/' | append: tag | slugify | relative_url }}" class="tag-badge">{{ tag }}</a>
+                    <a href="{{ '/tema/' | append: tag | slugify | relative_url }}" class="tag-badge">{{ tag }}</a>
                     {% endfor %}
                 </p>
                 {% endif %}
@@ -39,9 +39,9 @@ layout: default
 
 <section class="cta-section animate-on-scroll fade-in-up">
     <h2>Fant du ikke det du lette etter?</h2>
-    <p>Utforsk alle emner på vår <a href="{{ '/emne/' | relative_url }}">emneoversikt</a>, eller <a href="https://outlook.office.com/book/ledelse@noexcuse.no/">bestill en uforpliktende samtale</a> for å diskutere dine utfordringer.</p>
+    <p>Utforsk alle temaer på vår <a href="{{ '/tema/' | relative_url }}">temaoversikt</a>, eller <a href="https://outlook.office.com/book/ledelse@noexcuse.no/">bestill en uforpliktende samtale</a> for å diskutere dine utfordringer.</p>
     <div class="cta-buttons">
-<a href="{{ '/emne/' | relative_url }}" class="cta">Alle emner →</a>
+<a href="{{ '/tema/' | relative_url }}" class="cta">Alle temaer →</a>
 <a href="https://outlook.office.com/book/ledelse@noexcuse.no/" class="cta cta--secondary">Bestill samtale</a>
     </div>
 </section>

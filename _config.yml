@@ -10,7 +10,7 @@ kramdown:
 collections:
   tags:
     output: true
-    permalink: /emne/:path/
+    permalink: /tema/:path/
 
 exclude:
   - .design/

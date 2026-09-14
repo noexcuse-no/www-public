@@ -6,14 +6,17 @@ provenance:
 class: article
 layout: article
 show_toc: false
+show_cases: false
+show_references: false
 title: "Temaoversikt — Artikler om ledelse sortert etter tema"
 description: "Utforsk artikler om ledelse, organisasjonskultur, endringsledelse og mer. Sortert etter tema."
 permalink: /tema/
 hero:
   simple: true
   title: "Temaer"
-  intro: "Fire perspektiver på ledelse. Flere temaer du kan dykke dypere ned i. Velg et tema for å se alle tilhørende artikler."
 ---
+
+Finn temaet som matcher utfordringen din. Fire perspektiver — struktur, mennesker, påvirkning, identitet — og de konkrete temaene der ledergrupper sliter mest. Velg ett og se alle tilhørende artikler.
 
 {% include topic-cards.html %}
 

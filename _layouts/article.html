@@ -148,5 +148,10 @@ layout: default
 </div>
 <!-- /Mobile TOC -->
 
+{% unless page.show_cases == false %}
 {% include cases-cards.html %}
+{% endunless %}
+
+{% unless page.show_references == false %}
 {% include references.html %}
+{% endunless %}
