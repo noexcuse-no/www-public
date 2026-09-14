@@ -140,17 +140,30 @@
                 sentinel.style.height = '1px';
                 document.body.appendChild(sentinel);
 
-                // rootMargin extends viewport 100vh upward so the sentinel at
-                // document top stays "intersecting" for the first viewport of scroll
-                new IntersectionObserver(function(entries) {
-                    var isPastViewport = !entries[0].isIntersecting;
-                    backToTop.classList.toggle('is-visible', isPastViewport);
-                    if (isPastViewport && reduceMotion.matches) {
-                        document.documentElement.style.scrollBehavior = 'auto';
-                    } else if (isPastViewport) {
-                        document.documentElement.style.scrollBehavior = 'smooth';
+                // rootMargin extends viewport height upward so the sentinel at
+                // document top stays "intersecting" for the first viewport of scroll.
+                // IntersectionObserver rootMargin only accepts px or % — vh is invalid.
+                // Compute px from innerHeight and re-observe on resize.
+                var observer = null;
+                var observeSentinel = function() {
+                    if (observer) {
+                        observer.disconnect();
                     }
-                }, { rootMargin: '100vh 0px 0px 0px' }).observe(sentinel);
+                    var vhPx = window.innerHeight;
+                    observer = new IntersectionObserver(function(entries) {
+                        var isPastViewport = !entries[0].isIntersecting;
+                        backToTop.classList.toggle('is-visible', isPastViewport);
+                        if (isPastViewport && reduceMotion.matches) {
+                            document.documentElement.style.scrollBehavior = 'auto';
+                        } else if (isPastViewport) {
+                            document.documentElement.style.scrollBehavior = 'smooth';
+                        }
+                    }, { rootMargin: vhPx + 'px 0px 0px 0px' });
+                    observer.observe(sentinel);
+                };
+
+                observeSentinel();
+                window.addEventListener('resize', observeSentinel, { passive: true });
             } else {
                 var ticking = false;
                 var onScrollTop = function() {

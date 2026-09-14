@@ -102,7 +102,7 @@ json_ld:
 cta:
   - text: "Bestill Ledelse 60:2"
     url: "/bestill/ledelse-60-2/"
-  - text: "Book 20 min avklaring"
+  - text: "Bestill 20 min avklaring"
     url: "/samtale/"
   - text: "Les mer →"
     url: "/ledelse-60-2/"

@@ -35,7 +35,7 @@ route_b_live: false
 {% if page.route_b_live %}
 ### Ikke sikker ennå?
 
-[Book en gratis 20-minutters avklaring](/samtale/) — en uforpliktende samtale for å avklare om Ledelse 60:2 passer for dere.
+[Bestill en gratis 20-minutters avklaring](/samtale/) — en uforpliktende samtale for å avklare om Ledelse 60:2 passer for dere.
 {% endif %}
 
 ## Hva skjer etter bestilling?
@@ -62,6 +62,6 @@ Dagfinn tar kontakt for å bekrefte deltakere og praktiske forhold.
 
 *Route A (primær): Bestill Ledelse 60:2 → /bestill/ledelse-60-2/ → pris + inkluderinger + steg → MS Bookings (tidsvalg) → bekrefteise*
 
-*Route B (sekundær): Book 20 min avklaring → /samtale/ → MS Bookings (avklaringstjeneste) → avklaringssamtale*
+*Route B (sekundær): Bestill 20 min avklaring → /samtale/ → MS Bookings (avklaringstjeneste) → avklaringssamtale*
 
 *Staging-flagg `route_b_live: false` i frontmatter (standard). Route B-blokker renderes kun når true. Flagget flippes i en oppfølgende commit når brukeren bekrefter at 20-min Bookings-tjenesten eksisterer.*

@@ -1,0 +1,462 @@
+/* ========================================
+   Homepage (V1) Component Styles
+   Implements the 10-section sequence from .specs/homepage-repositioning/README.md
+   Reuses shared components from commercial.css where applicable
+   ======================================== */
+
+/* ---------- Homepage Container ---------- */
+.home-content {
+    max-width: var(--content-wide, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+/* ---------- Section Base (extends layout.css .section) ---------- */
+.section {
+    padding-block: var(--space-2xl);
+}
+
+.section__heading {
+    font-size: var(--text-3xl, 2em);
+    font-weight: 700;
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.section__lead {
+    font-size: var(--text-lg, 1.125rem);
+    line-height: 1.7;
+    color: var(--text-color);
+    opacity: 0.85;
+    max-width: 700px;
+    margin: 0 auto var(--space-xl);
+    text-align: center;
+}
+
+/* ---------- 1. Hero (Outcome-led, 55/45 desktop split) ---------- */
+.hero--outcome {
+    display: grid;
+    gap: var(--space-xl);
+    align-items: start;
+    padding: 0;
+    margin-bottom: var(--space-2xl);
+}
+
+.hero__inner {
+    display: grid;
+    gap: var(--space-xl);
+    align-items: start;
+    width: 100%;
+}
+
+.hero__content {
+    text-align: left;
+    padding: var(--space-xl) 0;
+}
+
+.hero__headline {
+    font-size: var(--text-4xl, 2.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: var(--space-md);
+    color: var(--hero-text, var(--text-color));
+}
+
+.hero__support {
+    font-size: var(--text-xl, 1.25rem);
+    line-height: 1.7;
+    color: var(--hero-text, var(--text-color));
+    opacity: 0.85;
+    max-width: 600px;
+    margin-bottom: var(--space-xl);
+}
+
+.hero__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.hero__visual {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+
+.hero__visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ---------- 2. Recognition Cards (2×2) ---------- */
+/* Reuses .recognition-cards, .recognition-card from commercial.css */
+/* Only homepage-specific overrides here if needed */
+
+.recognition-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    max-width: var(--content-wide, 1200px);
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md);
+}
+
+.recognition-cards > * {
+    min-width: 0;
+}
+
+.recognition-card-title {
+    font-size: var(--text-lg, 1.125rem);
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--text-color);
+}
+
+.recognition-card-text {
+    font-size: var(--text-base, 1rem);
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.85;
+}
+
+/* ---------- 3. Outcomes Grid (3 cards) ---------- */
+.outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    max-width: var(--content-wide, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.outcomes-grid > * {
+    min-width: 0;
+}
+
+.outcome-card {
+    background: var(--box-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    text-align: center;
+}
+
+.outcome-card h3 {
+    font-size: var(--text-lg, 1.125rem);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-color);
+}
+
+.outcome-card p {
+    font-size: var(--text-base, 1rem);
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.85;
+}
+
+/* ---------- 4. 60/2/4 Signature ---------- */
+/* Reuses .signature-60-2-4 from commercial.css — no additional styles needed */
+
+/* ---------- 5. Diagnosis Grid (4 cards) ---------- */
+.diagnosis-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+    max-width: var(--content-wide, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.diagnosis-grid > * {
+    min-width: 0;
+}
+
+.diagnosis-card {
+    background: var(--box-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    text-align: center;
+}
+
+.diagnosis-card h3 {
+    font-size: var(--text-lg, 1.125rem);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--accent-color);
+}
+
+.diagnosis-card p {
+    font-size: var(--text-sm, 0.875rem);
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.85;
+}
+
+/* ---------- 6. Process Steps (3 steps) ---------- */
+.process-steps {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: var(--content-wide, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.process-step {
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    text-align: center;
+    padding: var(--space-xl) var(--space-md);
+    background: var(--box-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+}
+
+.process-step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: var(--hero-text, var(--primary-azure));
+    font-size: var(--text-xl, 1.25rem);
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+}
+
+.process-step h3 {
+    font-size: var(--text-lg, 1.125rem);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-color);
+}
+
+.process-step p {
+    font-size: var(--text-base, 1rem);
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.85;
+    margin-bottom: var(--space-md);
+}
+
+.process-step .cta {
+    display: inline-block;
+}
+
+/* ---------- 8. Fit Grid (2 columns) ---------- */
+.fit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    max-width: var(--content-wide, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.fit-grid > * {
+    min-width: 0;
+}
+
+.fit-column {
+    background: var(--box-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+}
+
+.fit-column h3 {
+    font-size: var(--text-lg, 1.125rem);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    color: var(--text-color);
+}
+
+.fit-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fit-column li {
+    position: relative;
+    padding-left: var(--space-xl);
+    margin-bottom: var(--space-sm);
+    font-size: var(--text-base, 1rem);
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.85;
+}
+
+.fit-column li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: 700;
+}
+
+.fit--not .fit-column li::before {
+    content: "✕";
+    color: var(--error-color);
+}
+
+/* ---------- 9. Commercial Info (Price Card) ---------- */
+/* Reuses .price-card from commercial.css — no additional styles needed */
+
+/* ---------- 10. CTA Panel ---------- */
+/* Reuses .cta-panel, .cta-panel-body, .cta-panel-person from commercial.css */
+
+/* ========================================
+   Responsive Breakpoints
+   ======================================== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .hero__headline {
+        font-size: var(--text-3xl, 2rem);
+    }
+
+    .diagnosis-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+    .home-content {
+        padding: 0 var(--space-md);
+    }
+
+    .hero--outcome,
+    .hero__inner {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .hero__content {
+        text-align: center;
+        padding: var(--space-lg) 0;
+    }
+
+    .hero__headline {
+        font-size: var(--text-2xl, 1.75rem);
+    }
+
+    .hero__support {
+        font-size: var(--text-lg, 1.125rem);
+    }
+
+    .hero__ctas {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero__ctas .cta {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero__visual {
+        order: -1;
+        min-height: 350px;
+        aspect-ratio: 16 / 9;
+    }
+
+    .section__heading {
+        font-size: var(--text-2xl, 1.75rem);
+    }
+
+    .section__lead {
+        font-size: var(--text-base, 1rem);
+    }
+
+    .recognition-cards {
+        grid-template-columns: 1fr;
+        padding: var(--space-md);
+    }
+
+    .outcomes-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .diagnosis-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .process-steps {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .process-step {
+        width: 100%;
+        max-width: none;
+    }
+
+    .fit-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+    .hero__headline {
+        font-size: var(--text-xl, 1.5rem);
+    }
+
+    .hero__support {
+        font-size: var(--text-base, 1rem);
+    }
+
+    .section__heading {
+        font-size: var(--text-xl, 1.5rem);
+    }
+}
+
+/* ========================================
+   Dark Mode Adjustments
+   Controlled via styles-dark.css variables
+   ======================================== */
+/* All colors use CSS variables — dark mode works automatically */
+/* Only specific overrides if needed */
+
+/* Ensure hero text visibility in dark mode */
+.hero__headline,
+.hero__support {
+    color: var(--hero-text, var(--text-color));
+}
+
+/* Ensure CTA visibility in dark mode */
+.cta--primary {
+    background: var(--cta-primary-bg);
+    color: var(--cta-primary-text);
+    border-color: var(--cta-primary-border);
+}
+
+.cta--secondary {
+    background: var(--cta-secondary-bg);
+    color: var(--cta-secondary-text);
+    border-color: var(--cta-secondary-border);
+}
