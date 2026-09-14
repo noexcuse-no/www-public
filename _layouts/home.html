@@ -2,59 +2,81 @@
 layout: default
 ---
 <div class="home-content">
-  <!-- 1. Outcome-led hero (55/45 desktop split) -->
-  <section class="hero hero--outcome section">
+  <!-- 1. Outcome-led hero with blended background image -->
+  <section class="hero hero--outcome section" aria-labelledby="hero-headline">
+    <div class="hero__background" aria-hidden="true">
+      <img src="/assets/images/hero-illustration.webp" alt="" loading="eager">
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__inner container">
       <div class="hero__content">
-        <h1 class="hero__headline">Finn blindsonene i ledergruppen på to timer.</h1>
+        <h1 id="hero-headline" class="hero__headline">Finn blindsonene i ledergruppen på to timer.</h1>
         <p class="hero__support">60 diagnostiske spørsmål. Felles retningsvalg. Ingen byråkrati.</p>
         <div class="hero__ctas">
           <a href="/bestill/ledelse-60-2/" class="cta cta--primary">Bestill Ledelse 60:2</a>
           <a href="/samtale/" class="cta cta--secondary">Bestill 20 min avklaring</a>
         </div>
       </div>
-      <div class="hero__visual">
-        <img src="/assets/images/hero-illustration.webp" alt="Ledelse 60:2 — orientering for ledergruppen" loading="eager">
-      </div>
     </div>
   </section>
 
-  <!-- 2. Recognition (2×2 cards) -->
+  <!-- 2. Recognition (2×2 cards with illustrations) -->
   <section class="recognition section container">
     <h2 class="section__heading">Kjenner dere igjen noe av dette?</h2>
     <div class="recognition-cards">
       <div class="recognition-card">
+        <div class="recognition-card__illustration">
+          <img src="/assets/images/banners/spot-mennesker-tilhorighet.webp" alt="" loading="lazy">
+        </div>
         <h3 class="recognition-card-title">Tause rom</h3>
         <p class="recognition-card-text">I rommet var alle enige — på overflaten. Når tillitsbasert ledelse mangler, blir tause rom normen.</p>
       </div>
       <div class="recognition-card">
+        <div class="recognition-card__illustration">
+          <img src="/assets/images/banners/spot-struktur-roller.webp" alt="" loading="lazy">
+        </div>
         <h3 class="recognition-card-title">Årlig risikokalender</h3>
         <p class="recognition-card-text">Dere oppdaterer risikobildet én gang i året. Så kommer hverdagen, og alt ser annerledes ut.</p>
       </div>
       <div class="recognition-card">
+        <div class="recognition-card__illustration">
+          <img src="/assets/images/banners/spot-pavirkning-makt.webp" alt="" loading="lazy">
+        </div>
         <h3 class="recognition-card-title">Tapt oversikt over endringer</h3>
         <p class="recognition-card-text">De du helst vil beholde, forsvinner stille. Vellykket endringsledelse handler om å lede mennesker gjennom endring.</p>
       </div>
       <div class="recognition-card">
+        <div class="recognition-card__illustration">
+          <img src="/assets/images/banners/spot-identitet-fortelling.webp" alt="" loading="lazy">
+        </div>
         <h3 class="recognition-card-title">Samme diskusjon på nytt</h3>
         <p class="recognition-card-text">Du har hatt den samme diskusjonen tre ganger denne måneden. Beslutninger tas, ingenting endrer seg.</p>
       </div>
     </div>
   </section>
 
-  <!-- 3. What changes after 60:2 -->
+  <!-- 3. What changes after 60:2 (with illustrations) -->
   <section class="outcomes section container">
     <h2 class="section__heading">Hva endres etter 60:2?</h2>
     <div class="outcomes-grid">
       <div class="outcome-card">
+        <div class="outcome-card__illustration">
+          <img src="/assets/images/banners/spot-struktur-hvorfor-struktur-betyr-noe.webp" alt="" loading="lazy">
+        </div>
         <h3>Felles språk for hvor dere står</h3>
         <p>Ledergruppen får et konkret bilde av styrken og svakheten i sin styring — ikke abstrakte verdier.</p>
       </div>
       <div class="outcome-card">
+        <div class="outcome-card__illustration">
+          <img src="/assets/images/banners/spot-pavirkning-hvorfor-pavirkning-betyr-noe.webp" alt="" loading="lazy">
+        </div>
         <h3>Prioriterte funn, ikke generisk teori</h3>
         <p>Rapporten leverer konkrete anbefalinger basert på deres situasjon, innen én uke.</p>
       </div>
       <div class="outcome-card">
+        <div class="outcome-card__illustration">
+          <img src="/assets/images/banners/spot-mennesker-hvorfor-mennesker-betyr-noe.webp" alt="" loading="lazy">
+        </div>
         <h3>Ingen løpende forpliktelser</h3>
         <p>Dere eier funnene. Vi leverer orienteringen, dere bestemmer hva som skjer videre.</p>
       </div>
@@ -64,46 +86,31 @@ layout: default
   <!-- 4. 60/2/4 mechanism -->
   {% include signature-60-2-4.html %}
 
-  <!-- 5. Diagnosis-before-intervention -->
-  <section class="diagnosis-before section container">
-    <h2 class="section__heading">Diagnose før lederutvikling</h2>
-    <p class="section__lead">De fleste investerer i utvikling før de vet hva som egentlig må utvikles. 60:2 gir dere diagnosen først — så kan dere investere riktig.</p>
-    <div class="diagnosis-grid">
-      <div class="diagnosis-card">
-        <h3>Struktur</h3>
-        <p>Rolleklarhet, prosesser, beslutningslinjer. Fungerer organisasjonen teknisk?</p>
-      </div>
-      <div class="diagnosis-card">
-        <h3>Mennesker</h3>
-        <p>Psykologisk trygghet, tillit, kompetanseutnyttelse. Fungerer folk sammen?</p>
-      </div>
-      <div class="diagnosis-card">
-        <h3>Påvirkning</h3>
-        <p>Maktforhold, interesser, allianser. Hvem bestemmer egentlig?</p>
-      </div>
-      <div class="diagnosis-card">
-        <h3>Identitet</h3>
-        <p>Kultur, verdier, felles retning. Hva står organisasjonen for?</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. How it works (3 steps) -->
+  <!-- 6. How it works (3 steps with illustrations) -->
   <section class="process section container">
     <h2 class="section__heading">Slik fungerer det</h2>
     <div class="process-steps">
       <div class="process-step">
+        <div class="process-step__illustration">
+          <img src="/assets/images/banners/step-talk.webp" alt="" loading="lazy">
+        </div>
         <div class="process-step-number">1</div>
         <h3>Uforpliktende samtale</h3>
         <p>Vi tar en prat for å raskt avklare om metoden passer for dere. Ingen kontrakter, ingen binding.</p>
         <a href="/samtale/" class="cta">Book samtale</a>
       </div>
       <div class="process-step">
+        <div class="process-step__illustration">
+          <img src="/assets/images/banners/step-interview.webp" alt="" loading="lazy">
+        </div>
         <div class="process-step-number">2</div>
         <h3>Strukturert intervju</h3>
         <p>60 diagnostiske spørsmål med inntil fem ledere over to timer. Selve samtalen er like verdifull som analysen.</p>
       </div>
       <div class="process-step">
+        <div class="process-step__illustration">
+          <img src="/assets/images/banners/step-report.webp" alt="" loading="lazy">
+        </div>
         <div class="process-step-number">3</div>
         <h3>Rapport og anbefalinger</h3>
         <p>Du får en rapport som sammenlikner ledelsen med bestepraksis, med konkrete anbefalinger — innen én uke.</p>
