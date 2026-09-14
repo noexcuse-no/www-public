@@ -6,7 +6,7 @@ provenance:
 class: media
 layout: article
 title: "Foredrag og media"
-description: "Dagfinn Bang-Johansen holder foredrag og workshops om ledelse, organisasjonskultur og KI-ledelse. Book en foredragsholder som leverer innsikt — ikke bare inspirasjon."
+description: "Dagfinn Bang-Johansen holder foredrag og workshops om ledelse, organisasjonskultur og KI-ledelse. Bestill en foredragsholder som leverer innsikt — ikke bare inspirasjon."
 permalink: /foredrag-og-media/
 og_image: /assets/images/banners/foredrag-og-media-og.webp
 ---
@@ -106,11 +106,11 @@ Dagfinn har nesten 30 års erfaring fra ledelse, salg og organisasjonsutvikling 
 
 ---
 
-## Book en foredragsholder
+## Bestill en foredragsholder
 
 Klar for å booke Dagfinn til ditt neste arrangement? Eller vil du ha en uforpliktende prat om hva som passer best?
 
-[Book en avklaringssamtale →](/samtale/)
+[Bestill en avklaringssamtale →](/samtale/)
 
 ---
 
@@ -139,4 +139,4 @@ Vi svarer innen 24 timer på virkedager.
 
 ---
 
-*Ønsker du å booke et foredrag? [Ta kontakt her →](/samtale/)*
+*Ønsker du å bestille et foredrag? [Ta kontakt her →](/samtale/)*

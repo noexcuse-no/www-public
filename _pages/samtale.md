@@ -5,14 +5,14 @@ provenance:
   editorial_responsibility: No Excuse AS
 class: article
 layout: article
-title: "Book 20 min avklaring"
+title: "Bestill 20 min avklaring"
 description: "Gratis 20-minutters avklaringssamtale. Vi finner ut om Ledelse 60:2 passer for dere. Hvis ikke, sier vi det."
 permalink: /samtale/
 og_image: /assets/images/banners/samtale-og.webp
 route_b_live: false
 ---
 
-## Book 20 min avklaring
+## Bestill 20 min avklaring
 
 Gratis. Vi finner ut om Ledelse 60:2 passer for dere. Hvis ikke, sier vi det.
 
@@ -33,7 +33,7 @@ Hvis 60:2 passer: Vi sender forslag på tidspunkt for det strukturerte intervjue
 
 Hvis 60:2 **ikke** passer: Vi peker dere i riktig retning — enten internt, hos en annen partner, eller mot en annen type innsats.
 
-### Book tid her
+### Bestill tid her
 
 {% if page.route_b_live %}
 Vi bruker Microsoft Bookings for tidsvalg. Velg en tid som passer.
@@ -51,6 +51,6 @@ Vi behandler dine opplysninger i tråd med GDPR. [Les personvernerklæringen](/p
 
 ---
 
-*Route B (sekundær): Book 20 min avklaring → /samtale/ → MS Bookings (avklaringstjeneste) → avklaringssamtale*
+*Route B (sekundær): Bestill 20 min avklaring → /samtale/ → MS Bookings (avklaringstjeneste) → avklaringssamtale*
 
 *Staging-flagg `route_b_live: false` i frontmatter (standard). Denne siden renderes kun når flagget er true på relevante sider. Flagget flippes i en oppfølgende commit når brukeren bekrefter at 20-min Bookings-tjenesten eksisterer.*
