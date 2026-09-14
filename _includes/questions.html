@@ -17,7 +17,7 @@
 {% assign is_collapsible = include.collapsible %}
 
 <section class="review-questions section container--wide animate-on-scroll fade-in-up"{% if section_id %} id="{{ section_id }}"{% endif %}>
-  <h2>Utforsk dette privat med din egen KI</h2>
+  <h2>Utforsk dette med din egen KI</h2>
   <p class="privacy-note">Vi stiller spørsmålene. Du beholder svarene. <a href="/personvern-ki/">Les mer om personvern →</a></p>
   <ul class="stagger-parent questions-list">
     {% for topic in topics %}
@@ -31,7 +31,7 @@
                 data-source-url="{{ topic.source_url }}"
                 data-sixty-two-url="{{ topic.sixty_two_url }}"
                 aria-label="Utforsk '{{ topic.conversation_label }}' med din egen KI">
-          Utforsk dette privat med din egen KI
+          Utforsk dette med din egen KI
         </button>
         <a href="{{ topic.sixty_two_url }}" class="cta cta--secondary">
           Se hvordan 60:2 kan avdekke dette

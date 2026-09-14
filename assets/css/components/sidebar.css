@@ -272,7 +272,8 @@
     min-height: auto;
     gap: var(--space-sm);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .sidebar-card--questions .review-questions li:hover {
