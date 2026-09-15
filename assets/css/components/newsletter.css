@@ -1,0 +1,221 @@
+/* Newsletter Signup Component */
+
+.newsletter {
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: var(--space-2xl);
+}
+
+.newsletter__heading {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.newsletter__lead {
+  font-size: var(--text-base);
+  color: var(--text-color-muted);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter__form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.newsletter__field-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.newsletter__label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.newsletter__input {
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--text-base);
+  font-family: inherit;
+  color: var(--text-color);
+  background-color: var(--surface-color);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.newsletter__input:focus {
+  outline: none;
+  border-color: var(--focus-color);
+  box-shadow: 0 0 0 3px var(--focus-ring-color);
+}
+
+.newsletter__input::placeholder {
+  color: var(--text-color-muted);
+  opacity: 0.7;
+}
+
+.newsletter__input[aria-invalid="true"] {
+  border-color: var(--error-color);
+}
+
+.newsletter__input[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 3px var(--error-ring-color);
+}
+
+.newsletter__error {
+  font-size: var(--text-sm);
+  color: var(--error-color);
+  min-height: 1.25em;
+}
+
+.newsletter__error:not([hidden]) {
+  display: block;
+}
+
+.newsletter__consent-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.newsletter__consent-label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: var(--space-xs);
+  padding-left: var(--space-sm);
+}
+
+.newsletter__checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.newsletter__checkbox {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.newsletter__checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--focus-ring-color);
+  border-radius: var(--radius-sm);
+}
+
+.newsletter__checkbox-label {
+  font-size: var(--text-sm);
+  color: var(--text-color);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.newsletter__privacy-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.newsletter__privacy-link:hover,
+.newsletter__privacy-link:focus {
+  color: var(--primary-color-dark);
+}
+
+.newsletter__submit {
+  width: 100%;
+  padding: var(--space-md) var(--space-xl);
+  font-size: var(--text-base);
+  font-weight: 600;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  transition: all var(--transition-fast);
+}
+
+.newsletter__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.newsletter__spinner {
+  animation: newsletter-spin 1s linear infinite;
+}
+
+.newsletter__spinner-circle {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+@keyframes newsletter-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.newsletter__status {
+  font-size: var(--text-sm);
+  text-align: center;
+  min-height: 1.5em;
+  margin-top: var(--space-sm);
+}
+
+.newsletter__status:not([hidden]) {
+  display: block;
+}
+
+.newsletter__status--success {
+  color: var(--success-color);
+}
+
+.newsletter__status--error {
+  color: var(--error-color);
+}
+
+/* Mobile adjustments */
+@media (max-width: 599px) {
+  .newsletter {
+    padding: var(--space-lg) 0;
+    margin-top: var(--space-xl);
+  }
+
+  .newsletter__heading {
+    font-size: var(--text-xl);
+  }
+
+  .newsletter__lead {
+    font-size: var(--text-sm);
+  }
+
+  .newsletter__form {
+    gap: var(--space-md);
+  }
+
+  .newsletter__input {
+    padding: var(--space-md);
+  }
+}
+
+/* Dark mode adjustments handled via CSS variables in styles-light.css / styles-dark.css */
