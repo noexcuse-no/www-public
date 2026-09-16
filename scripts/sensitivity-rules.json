@@ -44,15 +44,6 @@
     {
       "id": "S-CONTACT-LIST",
       "match": "line",
-      "flags": "gi",
-      "reason": "raw contact list material",
-      "patterns": [
-        "\\b(contact list|kontaktliste|mailing list|newsletter[- ]subscribers|contact[- ]messages)\\b"
-      ]
-    },
-    {
-      "id": "S-PII",
-      "match": "line",
       "collect": "contacts",
       "threshold": 3,
       "reason": "bulk personal contact data"
@@ -87,6 +78,20 @@
       "patterns": [
         "(internal[- ]?(notes|meeting|draft|memo|brief)|meeting[- ]notes|møtereferat|arbeidsnotat|commercial[- ]brief|prompt[- ]seed|research[- ](scratch|notes)|scratch(pad)?|[.]research)",
         "(partner[- ]guidelines|case[- ]intake[- ]toolkit|company[- ]background|product[- ]katalysator|AI[- ]INSTRUCTIONS)"
+      ]
+    },
+    {
+      "id": "S-COMMERCIAL-STRATEGY",
+      "match": "line",
+      "flags": "gi",
+      "reason": "commercial strategy document",
+      "patterns": [
+        "\\b(commercial thesis|kommersiell tesis|positioning|posisjonering|differentiation|differensiering|competitor|konkurrent)\\b",
+        "\\b(target segment|målgruppe|employee band|ansattbånd|geographic targeting|geografisk målsetting)\\b",
+        "\\b(acquisition channel|oppkjøpskanal|inbound strategy|inbound-strategi|conversion strategy|konverteringsstrategi|conversion rate|konverteringsrate)\\b",
+        "\\b(north star|north-star|nordstjerne|sales metric|salgsmåltall|market sizing|markedssizing|market validation|markedvalidering)\\b",
+        "\\b(unresolved business decision|uavklart forretningsbeslutning|pricing strategy|prisstrategi|compensation strategy|kompensasjonsstrategi|capacity constraint|kapasitetsbegrensning)\\b",
+        "\\b(referral compensation|henvisningskompensasjon|consultant channel|konsulentkanal|go-to-market|go-to-market-strategi)\\b"
       ]
     }
   ]

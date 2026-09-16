@@ -38,7 +38,7 @@ json_ld:
     dateModified: "2025-06-01"
     sameAs:
       - "https://noexcuse.no"
-topic: "diagnostisk praksis"
+topic: "strukturert praksis"
 conversation_topics:
   - conversation_label: "Korrekt forståelse vs gjengs oppfatning"
     opening_question: "Hvordan vet dere at dere har en korrekt forståelse av organisasjonens utfordringer — ikke bare en gjengs oppfatning?"
@@ -56,11 +56,11 @@ conversation_topics:
 
 ## 1 — Teoretisk grunnlag for tilnærmingen
 
-Med intervjuer samler vi da om hvordan medlemmer av ledergrupper ser på sin egen funksjon. Ved å stille 60 diagnostiske spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kunnskapsproduksjon om kultur og beslutningsvitenskap - som gir den høye fleksible anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.
+Med intervjuer samler vi da om hvordan medlemmer av ledergrupper ser på sin egen funksjon. Ved å stille 60 strukturerte spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kunnskapsproduksjon om kultur og beslutningsvitenskap, som gir høy fleksibel anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.
 
 Intervjustrukturen i «Ledelse 60:2» tar direkte utgangspunkt i Lee G. Bolman og Terrence E. Deals [fire perspektiver på organisasjonsanalyse](/perspektiv/), først presentert i *Reframing Organizations* (1984) og senere revidert i seks utgaver fram til 2017 (Bolman & Deal, 2017), utgitt på norsk som *Nytt perspektiv på organisasjon og ledelse* (Bolman & Deal, 2024).
 
-De [fire perspektivene](/perspektiv/) — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — er den analytiske strukturen for de 60 spørsmålene. Med Bolman & Deal legger vi til grunn antakelsen at hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold. De fire valgte perspektivene er ikke nødvendigvis de eneste, de mest riktige, uttømmende eller uten overlapp; først og fremst har vi valgt å anvende disse fire perspektivene som ordnende prinsipp fordi (a) de er relativt ukontroversielle og godt innarbeidet i domenet, and (b) perspektivene gjenspeiler en gjenkjennbarn og legitim kunnskapsontologi fra samtidens vestlige samfunn. De instrumentaliseres i moderne nyprofesjons- og fagstudier slik som **Ledelse** og **HR**
+De [fire perspektivene](/perspektiv/) — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — er den analytiske strukturen for de 60 spørsmålene. Med Bolman & Deal legger vi til grunn antakelsen at hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold. De fire valgte perspektivene er ikke nødvendigvis de eneste, de mest riktige, uttømmende eller uten overlapp; først og fremst har vi valgt å anvende disse fire perspektivene som ordnende prinsipp fordi (a) de er relativt ukontroversielle og godt innarbeidede i domenet, og (b) perspektivene gjenspeiler en gjenkjennbar og legitim kunnskapsontologi fra samtidens vestlige samfunn. De instrumentaliseres i moderne nyprofesjons- og fagstudier slik som **Ledelse** og **HR**.
 
 ![Teoretisk grunnlag — fire perspektiver](/assets/images/banners/metode-t3-teori.webp)
 
@@ -82,7 +82,7 @@ Hvert intervju produserer strukturerte, sammenliknbare data som anonymiseres og 
 
 ### Norske forskningsetiske standarder
 
-Databehandlingen følger **De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer** (2014).
+Databehandlingen tar utgangspunkt i **De nasjonale forskningsetiske komiteenes (FEK) generelle forskningsetiske retningslinjer** (2014).
 
 *   ![Abstrakt illustrasjon av forskningsetisk prinsipp: respekt](/assets/images/banners/metode-t4-respekt.webp)
 
@@ -110,11 +110,15 @@ Databehandlingen følger **De nasjonale forskningsetiske komiteenes (FEK) genere
 
 **Forskningsetikkloven § 4** bestemmer at "Forskere skal opptre med aktsomhet for å sikre at all forskning skjer i henhold til anerkjente forskningsetiske normer. Dette gjelder også under forberedelser til forskning, rapportering av forskning og andre forskningsrelaterte aktiviteter."
 
-Vi følger **NESH-retningslinjene** (2021, 5. utg.) og anvender [et standardskjema (link)](https://noexcuse.no/assets/samtykke.pdf) for å sikre at samtykke fra personer er informert, frivillig, utvetydig og dokumentert. Det får ingen konsekvenser for den enkelte eller for virksomheten om enkeltpersoner ikke ønsker å bidra, det betyr bare at de ikke inngår som datakilde og kun eventuelt bidrar lokalt innenfor oppdraget hos virksomheten.
+Arbeidet tar utgangspunkt i **NESH-retningslinjene** (2021, 5. utg.) og anvender et [standardskjema](https://noexcuse.no/assets/samtykke.pdf) for å sikre at samtykke fra personer er informert, frivillig, utvetydig og dokumentert. Det får ingen konsekvenser for den enkelte eller for virksomheten om enkeltpersoner ikke ønsker å bidra, det betyr bare at de ikke inngår som datakilde og kun eventuelt bidrar lokalt innenfor oppdraget hos virksomheten.
+
+### Hva skjer med data fra gjennomføringen?
+
+Svarene fra strukturerte intervjuer og strukturerte spørsmål brukes til å lage orienteringen for deres ledergruppe. Enkeltpersoner siteres ikke uten samtykke, og materialet deles ikke med tredjeparter. Kundene eier resultatene av bistanden, jf. standard avtalevilkår § 3.1.
 
 ### Metoden blir bedre jo flere som bruker den
 
-Standard avtalevilkår § 3.1 fastslår at kunden eier resultatene av bistanden, men at No Excuse AS «kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale». Dette er et prinsipp som kommer alle kunder til gode - slik blir vi ledere i stand til å sikkert sammenlikne seg selv med praksisen i andre organisasjoner. Metodegrunnlaget forbedres kontinuerlig — ikke gjennom teoretiske antakelser, men gjennom praktisk erfaring fra virkelige ledergrupper.
+Standard avtalevilkår § 3.1 fastslår at kunden eier resultatene av bistanden, men at No Excuse AS «kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale». Dette er et prinsipp som kommer alle kunder til gode — slik blir ledere i stand til å sammenlikne seg selv med praksisen i andre organisasjoner. Metodegrunnlaget forbedres kontinuerlig — ikke gjennom teoretiske antakelser, men gjennom praktisk erfaring fra virkelige ledergrupper.
 
 ## 3 — Hvorfor vi gjør dette
 
@@ -137,14 +141,10 @@ Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspekt
 - No Excuse AS. (2026). *Standard avtalevilkår — Oppdrag*.
 - Pfeffer, J. (2010). *Power: Why Some People Have It — and Others Don't*. HarperBusiness.
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Utestede antakelser:** Hvilke antakelser om organisasjonen har dere ikke testet på lenge?
 *   **Datadrevne beslutninger:** Når ble siste gang en beslutning ble påvirket av systematisk innsamlet data, ikke bare magefølelse?
-
----
 
 ## Relaterte perspektiver
 
@@ -153,17 +153,14 @@ Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspekt
 *   [Påvirkningsperspektivet](/pavirkning/) — når politikk blir kynisme
 *   [Identitetsperspektivet](/identitet/) — når symbolikk blir tom
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/metode/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/metode/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Om metodikk](/metode/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Om metodikk](/metode/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

@@ -2,170 +2,222 @@
 layout: default
 ---
 <div class="home-content">
-  <!-- 1. Outcome-led hero with blended background image -->
-  <section class="hero hero--outcome section" aria-labelledby="hero-headline">
-    <div class="hero__background" aria-hidden="true">
-      <img src="/assets/images/hero-illustration.webp" alt="" loading="eager">
+
+  <!-- 1. Hero — two-column, illustration beside the text (never as background) -->
+  <section class="home-hero" aria-labelledby="hero-headline">
+    <div class="home-container home-hero__grid">
+      <div class="home-hero__text">
+        <p class="home-eyebrow">Ledelse 60:2</p>
+        <h1 id="hero-headline" class="home-hero__headline">Finn ut hva som faktisk står i veien for bedre ledelse.</h1>
+        <p class="home-hero__support">Ledelse 60:2 viser hvor ledergruppen er samstemt, hvor den spriker, og hva det er mest nyttig å ta tak i først.</p>
+        <div class="home-hero__ctas">
+          <a href="/samtale/" class="cta cta--primary">Bestill 20 min avklaring</a>
+          <a href="#slik-fungerer-det" class="cta cta--secondary">Slik fungerer 60:2</a>
+        </div>
+        <p class="home-hero__credibility">60 spørsmål · 2 timer · rapport med prioriteringer</p>
+      </div>
+      <div class="home-hero__media">
+        <img src="/assets/images/hero-illustration.webp" alt="" width="1920" height="1084" fetchpriority="high">
+      </div>
     </div>
-    <div class="hero__overlay" aria-hidden="true"></div>
-    <div class="hero__inner container">
-      <div class="hero__content">
-        <h1 id="hero-headline" class="hero__headline">Finn blindsonene i ledergruppen på to timer.</h1>
-        <p class="hero__support">60 diagnostiske spørsmål. Felles retningsvalg. Ingen byråkrati.</p>
-        <div class="hero__ctas">
-          <a href="/bestill/ledelse-60-2/" class="cta cta--primary">Bestill Ledelse 60:2</a>
-          <a href="/samtale/" class="cta cta--secondary">Bestill 20 min avklaring</a>
+  </section>
+
+  <!-- 2. Recognition — four problem signals -->
+  <section class="home-section home-recognition" aria-labelledby="recognition-heading">
+    <div class="home-container">
+      <p class="home-eyebrow">Kjenner dere igjen noe av dette?</p>
+      <h2 id="recognition-heading" class="home-section__title">Fire tegn på at problemet ligger et annet sted enn i manglende ledertrening</h2>
+      <p class="home-section__intro">Når de samme situasjonene gjentar seg, er det sjelden nok å legge på enda et tiltak. Først må dere finne ut hva som holder mønsteret i gang.</p>
+      <div class="recognition-cards">
+        <div class="recognition-card">
+          <img src="/assets/images/banners/ledelse-60-2-t4-signal-stille-rom.webp" alt="Illustrasjon: stille møterom" width="1024" height="1024" loading="lazy">
+          <h3 class="recognition-card-title">Tause rom</h3>
+          <p class="recognition-card-text">I rommet var alle enige — på overflaten. Når tillitsbasert ledelse mangler, blir tause rom normen.</p>
+        </div>
+        <div class="recognition-card">
+          <img src="/assets/images/banners/ledelse-60-2-t4-signal-risikokalender.webp" alt="Illustrasjon: kalender for årlig risikogjennomgang" width="1024" height="1024" loading="lazy">
+          <h3 class="recognition-card-title">Årlig risikokalender</h3>
+          <p class="recognition-card-text">Dere oppdaterer risikobildet én gang i året. Så kommer hverdagen, og alt ser annerledes ut.</p>
+        </div>
+        <div class="recognition-card">
+          <img src="/assets/images/banners/ledelse-60-2-t4-signal-endringsstabel.webp" alt="Illustrasjon: stabel av endringsprosjekter" width="1024" height="1024" loading="lazy">
+          <h3 class="recognition-card-title">Tapt oversikt over endringer</h3>
+          <p class="recognition-card-text">Nye initiativer kommer til, mens få har oversikt over hva som allerede belaster organisasjonen.</p>
+        </div>
+        <div class="recognition-card">
+          <img src="/assets/images/banners/ledelse-60-2-t4-signal-samme-diskusjon.webp" alt="Illustrasjon: gjentatt diskusjon rundt bordet" width="1024" height="1024" loading="lazy">
+          <h3 class="recognition-card-title">Samme diskusjon på nytt</h3>
+          <p class="recognition-card-text">Du har hatt den samme diskusjonen tre ganger denne måneden. Beslutninger tas, ingenting endrer seg.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 2. Recognition (2×2 cards with illustrations) -->
-  <section class="recognition section container">
-    <h2 class="section__heading">Kjenner dere igjen noe av dette?</h2>
-    <div class="recognition-cards">
-      <div class="recognition-card">
-        <div class="recognition-card__illustration">
-          <img src="/assets/images/banners/spot-mennesker-tilhorighet.webp" alt="" loading="lazy">
-        </div>
-        <h3 class="recognition-card-title">Tause rom</h3>
-        <p class="recognition-card-text">I rommet var alle enige — på overflaten. Når tillitsbasert ledelse mangler, blir tause rom normen.</p>
+  <!-- 3. Outcomes — what changes after 60:2 -->
+  <section class="home-section home-outcomes" aria-labelledby="outcomes-heading">
+    <div class="home-container">
+      <p class="home-eyebrow">Dette sitter dere igjen med</p>
+      <h2 id="outcomes-heading" class="home-section__title">Bedre grunnlag for å velge hva dere faktisk skal gjøre</h2>
+      <p class="home-section__intro">60:2 skal ikke gi dere mer teori. Det skal gjøre det enklere å skille det viktige fra det som bare tar oppmerksomhet.</p>
+      <ol class="outcomes-list">
+        <li class="outcome-item">
+          <span class="outcome-item__number" aria-hidden="true">01</span>
+          <h3>Et språk som treffer</h3>
+          <p>Dere får ord for mønstre som ellers er vanskelige å få tak i, og lettere å snakke presist om dem.</p>
+        </li>
+        <li class="outcome-item">
+          <span class="outcome-item__number" aria-hidden="true">02</span>
+          <h3>Prioriteringer som henger sammen</h3>
+          <p>Dere ser hva som bør få oppmerksomhet nå, hva som kan vente, og hva dere kan slutte å bruke tid på.</p>
+        </li>
+        <li class="outcome-item">
+          <span class="outcome-item__number" aria-hidden="true">03</span>
+          <h3>Ingen binding</h3>
+          <p>Dere får rapporten og anbefalingene. Hva dere gjør videre, bestemmer dere selv.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4. Diagnose before leadership development — full-width light surface -->
+  <section class="home-diagnosis" aria-labelledby="diagnosis-heading">
+    <div class="home-container home-diagnosis__grid">
+      <div class="home-diagnosis__intro">
+        <p class="home-eyebrow">Før dere velger tiltak</p>
+        <h2 id="diagnosis-heading" class="home-section__title">Finn årsaken før dere bestiller løsningen.</h2>
       </div>
-      <div class="recognition-card">
-        <div class="recognition-card__illustration">
-          <img src="/assets/images/banners/spot-struktur-roller.webp" alt="" loading="lazy">
-        </div>
-        <h3 class="recognition-card-title">Årlig risikokalender</h3>
-        <p class="recognition-card-text">Dere oppdaterer risikobildet én gang i året. Så kommer hverdagen, og alt ser annerledes ut.</p>
-      </div>
-      <div class="recognition-card">
-        <div class="recognition-card__illustration">
-          <img src="/assets/images/banners/spot-pavirkning-makt.webp" alt="" loading="lazy">
-        </div>
-        <h3 class="recognition-card-title">Tapt oversikt over endringer</h3>
-        <p class="recognition-card-text">De du helst vil beholde, forsvinner stille. Vellykket endringsledelse handler om å lede mennesker gjennom endring.</p>
-      </div>
-      <div class="recognition-card">
-        <div class="recognition-card__illustration">
-          <img src="/assets/images/banners/spot-identitet-fortelling.webp" alt="" loading="lazy">
-        </div>
-        <h3 class="recognition-card-title">Samme diskusjon på nytt</h3>
-        <p class="recognition-card-text">Du har hatt den samme diskusjonen tre ganger denne måneden. Beslutninger tas, ingenting endrer seg.</p>
+      <div class="home-diagnosis__body">
+        <p>Den samme situasjonen kan ha helt ulike årsaker. Stillhet i ledergruppen kan skyldes utrygghet, uklare roller, maktforhold eller ganske enkelt at folk tolker det som skjer forskjellig.</p>
+        <p>Ledelse 60:2 ser derfor på problemet fra fire sider før dere bestemmer hva som bør gjøres. Poenget er å bruke tid og penger på det som faktisk kan flytte noe.</p>
+        <p><a class="home-text-link" href="#fire-perspektiver">Se de fire perspektivene <span aria-hidden="true">→</span></a></p>
       </div>
     </div>
   </section>
 
-  <!-- 3. What changes after 60:2 (with illustrations) -->
-  <section class="outcomes section container">
-    <h2 class="section__heading">Hva endres etter 60:2?</h2>
-    <div class="outcomes-grid">
-      <div class="outcome-card">
-        <div class="outcome-card__illustration">
-          <img src="/assets/images/banners/spot-struktur-hvorfor-struktur-betyr-noe.webp" alt="" loading="lazy">
+  <!-- 5. Process — how 60:2 works -->
+  <section class="home-section home-process" id="slik-fungerer-det" aria-labelledby="process-heading">
+    <div class="home-container">
+      <p class="home-eyebrow">Slik foregår det</p>
+      <h2 id="process-heading" class="home-section__title">Fra første samtale til rapport</h2>
+      <p class="home-section__intro">Et kort og avgrenset forløp. Målet er å gi ledergruppen et bedre grunnlag for å velge neste steg – ikke å starte et nytt program.</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <img src="/assets/images/banners/step-talk.webp" alt="Illustrasjon av en samtale" width="1920" height="1078" loading="lazy">
+          <span class="process-step__number" aria-hidden="true">1</span>
+          <h3>Avklaring</h3>
+          <p>Vi går gjennom situasjonen, hvem som bør delta og hva dere trenger å få klarhet i.</p>
         </div>
-        <h3>Felles språk for hvor dere står</h3>
-        <p>Ledergruppen får et konkret bilde av styrken og svakheten i sin styring — ikke abstrakte verdier.</p>
-      </div>
-      <div class="outcome-card">
-        <div class="outcome-card__illustration">
-          <img src="/assets/images/banners/spot-pavirkning-hvorfor-pavirkning-betyr-noe.webp" alt="" loading="lazy">
+        <div class="process-step">
+          <img src="/assets/images/banners/step-interview.webp" alt="Illustrasjon av et strukturert intervju" width="1920" height="1078" loading="lazy">
+          <span class="process-step__number" aria-hidden="true">2</span>
+          <h3>60 spørsmål</h3>
+          <p>Inntil fem ledere svarer på de samme 60 spørsmålene. Det gjør både likheter og forskjeller i vurderingene synlige.</p>
         </div>
-        <h3>Prioriterte funn, ikke generisk teori</h3>
-        <p>Rapporten leverer konkrete anbefalinger basert på deres situasjon, innen én uke.</p>
-      </div>
-      <div class="outcome-card">
-        <div class="outcome-card__illustration">
-          <img src="/assets/images/banners/spot-mennesker-hvorfor-mennesker-betyr-noe.webp" alt="" loading="lazy">
+        <div class="process-step">
+          <img src="/assets/images/banners/step-report.webp" alt="Illustrasjon av en rapport" width="1920" height="1078" loading="lazy">
+          <span class="process-step__number" aria-hidden="true">3</span>
+          <h3>Rapport og prioriteringer</h3>
+          <p>Dere får en kort rapport som viser hovedmønstre, uenigheter og hva det er mest naturlig å ta tak i først. Rapporten leveres innen én uke.</p>
         </div>
-        <h3>Ingen løpende forpliktelser</h3>
-        <p>Dere eier funnene. Vi leverer orienteringen, dere bestemmer hva som skjer videre.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. 60/2/4 mechanism -->
-  {% include signature-60-2-4.html %}
-
-  <!-- 6. How it works (3 steps with illustrations) -->
-  <section class="process section container">
-    <h2 class="section__heading">Slik fungerer det</h2>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="process-step__illustration">
-          <img src="/assets/images/banners/step-talk.webp" alt="" loading="lazy">
-        </div>
-        <div class="process-step-number">1</div>
-        <h3>Uforpliktende samtale</h3>
-        <p>Vi tar en prat for å raskt avklare om metoden passer for dere. Ingen kontrakter, ingen binding.</p>
-        <a href="/samtale/" class="cta">Book samtale</a>
-      </div>
-      <div class="process-step">
-        <div class="process-step__illustration">
-          <img src="/assets/images/banners/step-interview.webp" alt="" loading="lazy">
-        </div>
-        <div class="process-step-number">2</div>
-        <h3>Strukturert intervju</h3>
-        <p>60 diagnostiske spørsmål med inntil fem ledere over to timer. Selve samtalen er like verdifull som analysen.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step__illustration">
-          <img src="/assets/images/banners/step-report.webp" alt="" loading="lazy">
-        </div>
-        <div class="process-step-number">3</div>
-        <h3>Rapport og anbefalinger</h3>
-        <p>Du får en rapport som sammenlikner ledelsen med bestepraksis, med konkrete anbefalinger — innen én uke.</p>
       </div>
     </div>
   </section>
 
-  <!-- 7. Proof (placeholder) removed — real cases to be added per BACKLOG C1–C4 -->
+  <!-- 6. Fit / not fit -->
+  <section class="home-section home-fit" aria-labelledby="fit-heading">
+    <div class="home-container">
+      <p class="home-eyebrow">Når 60:2 passer – og når det ikke gjør det</p>
+      <h2 id="fit-heading" class="home-section__title">For ledergrupper som trenger å forstå situasjonen før de velger tiltak</h2>
+      <div class="fit-grid">
+        <div class="fit-column fit--for">
+          <h3>Passer når</h3>
+          <ul>
+            <li>Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg</li>
+            <li>Det er ny ledergruppe, ny daglig leder eller ny organisering</li>
+            <li>Dere er usikre på om strategien faktisk blir gjennomført</li>
+            <li>Dere opererer i en regulert eller operasjonell bransje der styring må sitte</li>
+          </ul>
+        </div>
+        <div class="fit-column fit--not">
+          <h3>Passer ikke når</h3>
+          <ul>
+            <li>Dere er flere enn fem ledere — da bør vi først ta en avklaring</li>
+            <li>Dere ønsker et utviklingsprogram eller løpende coaching</li>
+            <li>Dere trenger implementeringsrådgivning som følger opp funnene over tid</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- 8. Fit -->
-  <section class="fit section container">
-    <h2 class="section__heading">Passer 60:2 for dere?</h2>
-    <div class="fit-grid">
-      <div class="fit-column fit--for">
-        <h3>Passer for dere hvis:</h3>
-        <ul>
-          <li>Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg</li>
-          <li>Det er ny ledergruppe, ny daglig leder eller ny organisering</li>
-          <li>Dere er usikre på om strategien faktisk blir gjennomført</li>
-          <li>Dere opererer i en regulert eller operasjonell bransje der styring må sitte</li>
+  <!-- 7. Price — single strong card, commercial data from _data/commercial.yml -->
+  <section class="home-section home-price" id="pris" aria-labelledby="price-heading">
+    <div class="home-container">
+      <p class="home-eyebrow">Pris</p>
+      <h2 id="price-heading" class="home-section__title">Én leveranse. Ingen binding.</h2>
+      <p class="home-section__intro">Dere betaler for analysen og rapporten. Det følger ikke med abonnement, videre program eller automatisk oppfølging.</p>
+      {% assign commercial = site.data.commercial %}
+      <div class="home-price-card">
+        <h3 class="home-price-card__heading">{{ commercial.price_display }} <span class="home-price-card__note">{{ commercial.price_note }}</span></h3>
+        <ul class="home-price-card__inclusions">
+          {% for item in commercial.inclusions %}
+          <li>{{ item }}</li>
+          {% endfor %}
         </ul>
-      </div>
-      <div class="fit-column fit--not">
-        <h3>Passer ikke for dere hvis:</h3>
-        <ul>
-          <li>Dere er flere enn fem ledere — da bør vi først ta en avklaring</li>
-          <li>Dere ønsker et utviklingsprogram eller løpende coaching</li>
-          <li>Dere trenger implementeringsrådgivning som følger opp funnene over tid</li>
-        </ul>
+        <a href="/samtale/" class="cta cta--primary">Bestill 20 min avklaring</a>
       </div>
     </div>
   </section>
 
-  <!-- 9. Commercial info -->
-  <section class="commercial-info section container">
-    <h2 class="section__heading">Pris og hva dere får</h2>
-    {% include price-card.html %}
+  <!-- 8. Methodology — four perspectives, compact links -->
+  <section class="home-section home-perspectives" id="fire-perspektiver" aria-labelledby="perspectives-heading">
+    <div class="home-container">
+      <p class="home-eyebrow">Fire måter å se samme problem på</p>
+      <h2 id="perspectives-heading" class="home-section__title">Det er sjelden bare struktur, bare mennesker eller bare makt</h2>
+      <p class="home-section__intro">Det som ser ut som ett problem, kan ha flere forklaringer. Derfor undersøker 60:2 ledergruppen fra fire perspektiver.</p>
+      <div class="perspectives-grid">
+        <div class="perspective-item">
+          <h3>Struktur og roller</h3>
+          <p>Rolleklarhet, prosesser og beslutningslinjer.</p>
+          <a href="/struktur/" class="home-text-link">Les mer <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="perspective-item">
+          <h3>Mennesker og tilhørighet</h3>
+          <p>Psykologisk trygghet, tillit og kompetanseutnyttelse.</p>
+          <a href="/mennesker/" class="home-text-link">Les mer <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="perspective-item">
+          <h3>Påvirkning og makt</h3>
+          <p>Maktforhold, interesser og allianser.</p>
+          <a href="/pavirkning/" class="home-text-link">Les mer <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="perspective-item">
+          <h3>Identitet og fortelling</h3>
+          <p>Kultur, verdier og felles retning.</p>
+          <a href="/identitet/" class="home-text-link">Les mer <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- 10. CTA panel -->
-  {% include cta-panel.html %}
-
-  <!-- Preserve topical breadth as acquisition infrastructure -->
-  {% assign has_frames = site.pages | where: "class", "frame" | size %}
-  {% if has_frames > 0 %}
-  <section id="perspektiver" class="section container">
-    <h2>Fire perspektiver på ledelse</h2>
-    {% include frame-benefit-cards.html %}
+  <!-- 9. Final CTA — Dagfinn. Last substantial block before the footer. -->
+  <section class="home-final-cta" aria-labelledby="final-cta-heading">
+    <div class="home-container home-final-cta__grid">
+      <div class="home-final-cta__body">
+        <p class="home-eyebrow">Usikker på om dette er riktig for dere?</p>
+        <h2 id="final-cta-heading" class="home-section__title">Ta en kort prat før dere bestemmer dere.</h2>
+        <p class="home-final-cta__text">På 20 minutter kan vi finne ut om 60:2 er relevant for situasjonen deres, og om det er verdt å gå videre.</p>
+        <div class="home-final-cta__actions">
+          <a href="/samtale/" class="cta cta--primary">Bestill 20 min avklaring</a>
+          <a href="/dagfinn/" class="home-text-link">Les om Dagfinn</a>
+        </div>
+      </div>
+      <div class="home-final-cta__person">
+        <img src="/assets/images/dagfinn.webp" alt="Dagfinn Bang-Johansen, daglig leder i No Excuse" width="96" height="96" loading="lazy">
+        <p class="home-final-cta__name">Dagfinn Bang-Johansen</p>
+        <p class="home-final-cta__role">Daglig leder</p>
+      </div>
+    </div>
   </section>
-  {% endif %}
 
-  {% assign has_profiles = site.pages | where: "class", "profile" | where: "published", true | size %}
-  {% if has_profiles > 0 %}{% include profiles.html tags="ledelse" %}{% endif %}
-
-  <!-- Newsletter signup (F4a) -->
-  {% include newsletter-signup.html %}
 </div>
-{% include partners.html %}

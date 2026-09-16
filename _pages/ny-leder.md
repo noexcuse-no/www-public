@@ -55,9 +55,7 @@ Resultatet er en rapport innen én uke som gir ny leder det hun trenger mest: et
 
 [Se om 60:2 passer for dere →](/ledelse-60-2/#passer)
 
-[Utforsk dette privat med din egen KI →](/ny-leder/) *(emnet er forhåndsvalgt)*
-
----
+[Utforsk med din egen KI →](/ny-leder/) *(emnet er forhåndsvalgt)*
 
 ## Relaterte emner
 
@@ -65,14 +63,10 @@ Resultatet er en rapport innen én uke som gir ny leder det hun trenger mest: et
 - [Forankring](/forankring/) — hvordan få beslutninger til å bli til handling
 - [Makt](/makt/) — maktdynamikk i nye lederforhold
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Ny leder, gammel gruppe:** Lederen har sin egen stil, gruppen har sine vaner. Friksjonen er uunngåelig.
 *   **Beslutningsvegring:** Ny leder unngår upopulære beslutninger for å ikke «forstyrre» gruppen.
-
----
 
 ## Relaterte perspektiver
 
@@ -81,17 +75,14 @@ Resultatet er en rapport innen én uke som gir ny leder det hun trenger mest: et
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktdynamikk endres
 *   [Identitetsperspektivet](/identitet/) — når kulturen må tilpasses ny ledelse
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/ny-leder/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/ny-leder/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Ny leder](/ny-leder/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Ny leder](/ny-leder/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

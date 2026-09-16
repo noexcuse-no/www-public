@@ -1,7 +1,6 @@
 # bestill-booking-page — Feature Specification
 
 > Status: Ready
-> Strategy source: `.design/inbound-strategy.md` §7, §6, §2
 > Backlog: P0 (todo 9)
 
 ## Purpose / Problem
@@ -59,4 +58,3 @@ The site currently sends visitors straight to the external Microsoft Bookings sc
 
 - `.specs/product-signature/README.md` (price card, shared components)
 - `.specs/product-page-offer/README.md` (price source)
-- `.design/inbound-strategy.md` (strategy)

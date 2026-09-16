@@ -8,7 +8,7 @@ layout: article
 category: step
 step_number: 2
 title: "2. To timers strukturert intervju"
-description: "Vi gjennomfører et strukturert intervju med inntil fem ledere, hvor vi finner svar på 60 diagnostiske spørsmål. Refleksjonsprosessen er like viktig som rapporten."
+description: "Vi gjennomfører et strukturert intervju med inntil fem ledere, hvor vi finner svar på 60 strukturerte spørsmål. Refleksjonsprosessen er like viktig som rapporten."
 banner: "assets/images/banners/step-interview.webp"
 micro_image: "assets/images/banners/ledelse-60-2-t4-intervju.webp"
 permalink: /intervju/
@@ -17,7 +17,7 @@ hero:
   image: assets/images/banners/step-interview.webp
   alt: "To timers strukturert intervju med ledergruppen"
   title: "2. To timers strukturert intervju"
-  intro: "Vi gjennomfører et strukturert intervju med inntil fem ledere, hvor vi finner svar på 60 diagnostiske spørsmål."
+  intro: "Vi gjennomfører et strukturert intervju med inntil fem ledere, hvor vi finner svar på 60 strukturerte spørsmål."
 og_image: /assets/images/banners/intervju-og.webp
 ---
 
@@ -28,7 +28,7 @@ Dette er kjernen i Ledelse 60:2. Et strukturert intervju der ledergruppen sammen
 ## Hva skjer?
 
 - Et strukturert intervju på to timer med inntil fem ledere
-- 60 diagnostiske spørsmål fordelt på fire rammer: struktur, mennesker, påvirkning og identitet
+- 60 strukturerte spørsmål fordelt på fire rammer: struktur, mennesker, påvirkning og identitet
 - Dere svarer på spørsmålene og reflekterer underveis
 - Vi noterer og observerer uten å avbryte refleksjonene deres
 
@@ -51,4 +51,3 @@ Etter intervjuet setter vi oss ned og analyserer svarene. Innen en uke har dere 
 [Se rapport og anbefalinger →](/rapport/)
 
 **Les mer:** [Om metoden](/metode/) | [Ledelse 60:2](/ledelse-60-2/)
-

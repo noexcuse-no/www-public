@@ -15,13 +15,13 @@ Denne siden gir oversikt over lisensiering og rettigheter for innhold og ressurs
 
 ## Lisensmodell
 
-Vi bruker et blandet lisensmodell (REUSE/SPDX) hvor hver fil og ressurs har en eksplisitt lisens:
+Vi bruker en blandet lisensmodell (REUSE/SPDX) hvor hver fil og ressurs har en eksplisitt lisens:
 
 | Kategori | Lisens | Beskrivelse |
 |----------|--------|-------------|
 | **Kildekode** | 0BSD | Kode vi har skrevet selv (scripts, layouts, includes, CSS) |
 | **AI-generert innhold** | CC0-1.0 | Rent AI-generert materiale (bilder, tekst, kode) som vi har rettigheter til |
-| **Menneskeskapt innhold** | LicenseRef-NoExcuse-All-Rights-Reserved | Artikler, artikler, foto, illustrasjoner, PDFer skapt av mennesker |
+| **Menneskeskapt innhold** | LicenseRef-NoExcuse-All-Rights-Reserved | Artikler, foto, illustrasjoner, PDFer skapt av mennesker |
 | **Tredjeparts materiale** | Opprinnelig lisens | Beholder opprinnelige rettigheter, ingen om-lisensiering |
 | **Usikkert** | Uavklart | Materiale hvor opprinnelse eller rettigheter er usikre — vises åpent |
 
@@ -31,21 +31,23 @@ Vi bruker et blandet lisensmodell (REUSE/SPDX) hvor hver fil og ressurs har en e
 Permissiv lisens som tillater fri bruk, modifikasjon og distribusjon uten krav om opphavsmannsoppgivelse.
 
 ### CC0 1.0 Universal (AI-generert innhold)
-Offentlig eigendomsfrigivelse. Verket er gitt til offentligheten så langt det er mulig ved lov.
+Offentlig eiendomsfrigivelse. Verket er gitt til offentligheten så langt det er mulig ved lov.
 
 ### LicenseRef-NoExcuse-All-Rights-Reserved (Menneskeskapt)
 Alle rettigheter forbeholdes. Ingen bruk uten skriftlig tillatelse unntatt som lov tillater (sitatregel, privatkopiering, osv.).
 
 ## Opphavsrett og metadata
 
-Alle filer på dette nettstedet er mærket med SPDX/REUSE-metadata:
+Alle **publiserte filer på dette nettstedet** er merket med SPDX/REUSE-metadata:
 
 - **JSON-LD** i sidens `<head>` (schema.org `@graph` med `WebPage` + `ImageObject`)
 - **RDFa** på bilder (`property="schema:digitalSourceType"` + `schema:license`)
 - **IPTC/XMP** inni bildefiler (DigitalSourceType, Rights, WebStatement)
 - `.well-known/ai-transparency.json` — maskinlesbar manifest over AI-bruk og proveniens
 
-## Bilder og multimedie
+Repository-interne dokumentasjonsfiler (`.design/`, `.specs/`, `.omo/rules/`, `.opencode/`, rot-konfigurasjonsfiler) er **intensjonalt uavklart** og dokumenteres i `.specs/mixed-rights-licensing/README.md`. Disse filene er ikke del av det publiserte nettstedet.
+
+## Bilder og multimedia
 
 | Type | Lisens | Merking |
 |------|--------|---------|

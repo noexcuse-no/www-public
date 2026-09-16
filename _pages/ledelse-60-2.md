@@ -6,11 +6,11 @@ provenance:
 class: product
 layout: article
 title: "Ledelse 60:2 — Orientering for ledergruppen"
-description: "Tidseffektiv orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
+description: "Tidseffektiv orientering for ledergruppen — 60 strukturerte spørsmål, 2 timer, felles retningsvalg."
 permalink: /ledelse-60-2/
 og_image: /assets/images/banners/ledelse-60-2-og.webp
 display_name: "Ledelse 60:2"
-short_description: "Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 diagnostiske spørsmål, finn retningen."
+short_description: "Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 strukturerte spørsmål, finn retningen."
 url: "/ledelse-60-2/"
 hero:
   image: /assets/images/hero-illustration.webp
@@ -42,11 +42,11 @@ process_steps:
     banner: "assets/images/banners/step-talk.webp"
     url: "/samtale/"
   - title: "2. To timers strukturert intervju"
-    description: "Vi gjennomfører et strukturert intervju med inntil fem ledere, med 60 diagnostiske spørsmål."
+    description: "Vi gjennomfører et strukturert intervju med inntil fem ledere, med 60 strukturerte spørsmål."
     banner: "assets/images/banners/step-interview.webp"
     url: "/intervju/"
   - title: "3. Rapport og anbefalinger"
-    description: "Du får en rapport som sammenlikner ledelsen med typisk bestepraksis, og konkrete anbefalinger."
+    description: "Du får en rapport som synliggjør mønstre og forskjeller i ledergruppen, med konkrete anbefalinger."
     banner: "assets/images/banners/step-report.webp"
     url: "/rapport/"
 image: "assets/images/hero-illustration.webp"
@@ -59,7 +59,7 @@ conversation_topics:
     source_url: "/ledelse-60-2/"
     sixty_two_url: "/ledelse-60-2/"
   - conversation_label: "Diagnostiske spørsmål og retning"
-    opening_question: "Hvordan kan ledergruppen bruke 60 diagnostiske spørsmål til å finne felles retning uten å bli sittende fast i detaljer?"
+    opening_question: "Hvordan kan ledergruppen bruke 60 strukturerte spørsmål til å finne felles retning uten å bli sittende fast i detaljer?"
     source_url: "/ledelse-60-2/"
     sixty_two_url: "/ledelse-60-2/"
   - conversation_label: "Blindsoner i styring"
@@ -69,7 +69,7 @@ conversation_topics:
 json_ld:
   - type: "Service"
     name: "Ledelse 60:2"
-    description: "Tidseffektiv orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg."
+    description: "Tidseffektiv orientering for ledergruppen — 60 strukturerte spørsmål, 2 timer, felles retningsvalg."
     provider:
       type: "Organization"
       name: "No Excuse AS"
@@ -93,7 +93,7 @@ json_ld:
           itemOffered:
             type: "Service"
             name: "Ledelse 60:2 Grunnpakke"
-            description: "60 diagnostiske spørsmål, 2 timers intervju, rapport og anbefalinger"
+            description: "60 strukturerte spørsmål, 2 timers intervju, rapport og anbefalinger"
         - type: "Offer"
           itemOffered:
             type: "Service"
@@ -124,7 +124,7 @@ Metoden er også relevant for [governance, risikostyring og compliance (GRC)](/g
 
     ### 2. Strukturert intervju
 
-    60 diagnostiske spørsmål med inntil fem ledere. Selve samtalen er like verdifull som analysen. [Les mer →](/intervju/)
+    60 strukturerte spørsmål med inntil fem ledere. Selve samtalen er like verdifull som analysen. [Les mer →](/intervju/)
 
 3.  ![Rapport](/assets/images/banners/step-report.webp)
 
@@ -191,13 +191,13 @@ Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et
 
 **Før:** Vi tar en kort [uforpliktende samtale](/samtale/) for å avklare om metoden passer for dere. Ingen kontrakter, ingen binding.
 
-**Under:** Et strukturert intervju med inntil fem ledere over to timer, med 60 diagnostiske spørsmål fordelt på fire perspektiver.
+**Under:** Et strukturert intervju med inntil fem ledere over to timer, med 60 strukturerte spørsmål fordelt på fire perspektiver.
 
 **Etter:** Du får en rapport med prioriterte funn og konkrete anbefalinger innen én uke. Ingen løpende forpliktelser — men vi kan gjerne snakke om [oppfølging](/katalysator/) hvis dere ønsker det.
 
 ## Hva får du?
 
-*   60 diagnostiske spørsmål testet i norske ledergrupper.
+*   60 strukturerte spørsmål utviklet gjennom bruk i norske ledergrupper.
 *   Inntil fem ledere i samme rom — felles språk, felles bilde.
 *   To timer strukturert intervju — ikke en survey.
 *   Analyse og prioriterte funn fra en erfaren rådgiver.
@@ -220,6 +220,10 @@ Rapporten er deres. Dere kan bruke den som den er, eller ta en prat med oss om [
 **Er det noe som ikke er inkludert?**
 
 Ledelse 60:2 er en orientering, ikke et utviklingsprogram. Implementeringsrådgivning, coaching og løpende oppfølging er ikke inkludert i prisen.
+
+{% include trust-block.html %}
+
+{% include sample-report-preview.html %}
 
 ## Slik er metoden bygget opp
 
@@ -251,14 +255,10 @@ Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert pers
 
 De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene er designet for å skape refleksjon og innsikt — ikke for å gi enkle poengsummer eller rangeringer.
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Blindsoner i styringen:** Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg.
 *   **Uklare beslutningslinjer:** Det er usikkerhet om hvem som bestemmer hva.
-
----
 
 ## Relaterte perspektiver
 
@@ -268,16 +268,11 @@ De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er teste
 *   [Identitetsperspektivet](/identitet/) — kultur, verdier, felles retning
 
 ---
-
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/ledelse-60-2/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Ledelse 60:2](/ledelse-60-2/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Ledelse 60:2](/ledelse-60-2/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

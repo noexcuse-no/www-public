@@ -37,7 +37,7 @@ The strategy narrows i18n to **substrate only** — no translations, no switcher
 2. **Guarded hreflang block** in the metadata `<head>` include — emits `<link rel="alternate" hreflang>` tags ONLY when `site.languages` data exists. Today it emits nothing (prevents future retro-fitting; no hreflang for nonexistent alternates).
 3. **`_config.yml` comment** documenting the per-language dir convention + the **commercial-copy ownership rule**: the website owns commercial copy/pricing/VAT/privacy per language; the scheduler (MS Bookings) sits beneath and is never the commercial surface.
 
-The multilingual principle (`.design/inbound-strategy.md` §13) governs: the website owns the commercial story in each language; the scheduler is background infrastructure.
+The multilingual principle (`.specs/i18n/README.md` §Substrate + Commercial-Layer Ownership) governs: the website owns the commercial story in each language; the scheduler is background infrastructure.
 
 ## Implementation Notes
 

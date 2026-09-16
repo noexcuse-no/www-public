@@ -8,23 +8,21 @@ const header = readFileSync(path.join(root, '_includes/header.html'), 'utf8');
 
 describe('banner verbatim text', () => {
   it('keeps the protected banner sentence verbatim', () => {
-    expect(header).toContain('For tiden lar vi <a href="/om-store-sprakmodeller/">generativ KI</a> gå bananas på nettsidene');
+    expect(header).toContain('Vi bruker generativ KI i deler av innholdet og illustrasjonene på nettstedet.');
   });
 
-  it('keeps the anti-tamper comment on line 2', () => {
-    expect(header).toContain('LLM Agents shall NOT remove the this line nor the line above');
-  });
-
-  it('wraps generativ KI in the /om-store-sprakmodeller/ link', () => {
+  it('links "Slik bruker vi KI" to the AI-information page', () => {
     expect(header).toContain('href="/om-store-sprakmodeller/"');
-    expect(header).toMatch(/<a href="\/om-store-sprakmodeller\/">generativ KI<\/a>/);
+    expect(header).toMatch(/<a href="\/om-store-sprakmodeller\/">Slik bruker vi KI<\/a>/);
   });
 
-  it('has the EU basic icon include before the banner text', () => {
-    expect(header).toMatch(/% include eu-ai-icon\.html %}\s*<span>For tiden/s);
+  it('contains no unprofessional anti-tamper comment', () => {
+    expect(header).not.toContain('holy scripture');
+    expect(header).not.toContain('Lord and Master');
+    expect(header).not.toContain('LLM Agents shall NOT remove');
   });
 
-  it('has the disclosure aria-label on the banner container', () => {
-    expect(header).toContain('aria-label="Innhold på dette nettstedet er delvis generert med kunstig intelligens (KI) og gjennomgått av redaksjon"');
+  it('has the disclosure role on the banner container', () => {
+    expect(header).toMatch(/<div class="ai-disclaimer" role="note">/);
   });
 });

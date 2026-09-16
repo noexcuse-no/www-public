@@ -10,7 +10,7 @@ kramdown:
 collections:
   tags:
     output: true
-    permalink: /tema/:path/
+    permalink: /emne/:path/
 
 exclude:
   - .design/
@@ -57,7 +57,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: page
+      layout: article
       lang: no
       published: true
   - scope:

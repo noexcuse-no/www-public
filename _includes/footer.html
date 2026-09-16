@@ -1,14 +1,18 @@
 <footer class="footer">
     <nav class="footer-nav" aria-label="Sidenavigasjon">
-        <a href="/perspektiv/">Perspektiv</a>
-        <a href="/grc/">GRC</a>
+        <a href="/ledelse-60-2/">Ledelse 60:2</a>
+        <a href="/emne/">Innsikt</a>
         <a href="/om-oss/">Om oss</a>
         <a href="/om-store-sprakmodeller/">Om KI</a>
+        <a href="/personvern/">Personvern</a>
+        <a href="/avtale/">Avtalevilkår</a>
+        <a href="/rettigheter/" aria-label="Rettigheter og lisenser">Rettigheter</a>
     </nav>
-    <p class="footer-legal">&copy; {{ site.data.metadata.impressum.copyright_year }} {{ site.data.metadata.title }},
+    {% assign copyright_start = site.data.metadata.impressum.copyright_year %}
+    {% assign build_year = site.time | date: '%Y' | plus: 0 %}
+    <p class="footer-legal">{% if build_year > copyright_start %}&copy; {{ copyright_start }}–{{ build_year }}{% else %}&copy; {{ copyright_start }}{% endif %} {{ site.data.metadata.title }},
         <a href="https://virksomhet.brreg.no/nb/oppslag/enheter/935794420">{{ site.data.metadata.impressum.orgnr }}</a>,
         <a href="mailto:{{ site.data.metadata.impressum.email }}">{{ site.data.metadata.impressum.email }}</a>,
-        <a href="/rettigheter/" aria-label="Rettigheter og lisenser">Rettigheter</a>.
         Oslo, Norge
     </p>
 </footer>

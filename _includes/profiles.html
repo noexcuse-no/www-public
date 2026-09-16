@@ -39,17 +39,17 @@
                 {% endif %}
             </div>
             <div class="profile-ctas">
-                <a href="{{ profile.booking_url }}" class="cta" target="_blank" rel="noopener" data-no-modal>Bestill samtale</a>
-                <button class="cta cta--secondary" type="button" aria-label="Vis detaljer om {{ profile.display_name }}">Les mer</button>
+                <a href="{{ profile.booking_url }}" class="cta" target="_blank" rel="noopener">Bestill samtale</a>
+                <button class="cta cta--secondary profile-more-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="profile-expanded-{{ forloop.index }}">Les mer</button>
             </div>
         </div>
-        <div class="profile-expanded" id="profile-expanded-{{ forloop.index }}">
+        <div class="profile-expanded" id="profile-expanded-{{ forloop.index }}" role="dialog" aria-modal="true" aria-labelledby="profile-dialog-title-{{ forloop.index }}">
             <div class="profile-modal-content">
                 <button class="profile-close" aria-label="Lukk">&times;</button>
                 <div class="profile-header">
                     <img class="profile-image-large" src="{{ profile.image | relative_url }}" alt="{{ profile.display_name }}s profilbilde">
                     <div class="profile-header-info">
-                        <h3 class="profile-name">{{ profile.display_name }}</h3>
+                        <h3 class="profile-name" id="profile-dialog-title-{{ forloop.index }}">{{ profile.display_name }}</h3>
                         {% assign tag_list = profile.tags | default: "" | join: " " | split: " " %}
                         {% if tag_list.size > 0 %}
                         <p class="profile-tags">
@@ -104,47 +104,3 @@
     </div>
     {% endfor %}
 </section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const profiles = document.querySelectorAll('.profile');
-    
-    profiles.forEach(profile => {
-        const compact = profile.querySelector('.profile-compact');
-        const expanded = profile.querySelector('.profile-expanded');
-        const closeBtn = expanded.querySelector('.profile-close');
-        
-        compact.addEventListener('click', (e) => {
-            // Don't open modal if clicking on links/buttons with data-no-modal
-            if (e.target.closest('[data-no-modal]')) {
-                return;
-            }
-            expanded.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        });
-        
-        closeBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            expanded.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-        
-        expanded.addEventListener('click', (e) => {
-            if (e.target === expanded) {
-                expanded.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-    });
-
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            const active = document.querySelector('.profile-expanded.active');
-            if (active) {
-                active.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        }
-    });
-});
-</script>

@@ -26,7 +26,7 @@ I de fleste organisasjoner er formelle roller klare på papiret. Men i praksis o
 - **Uklare beslutningslinjer:** Ingen vet hvem som har mandat til å avgjøre
 - **Konflikt unngås:** Uenighet om roller løses ikke — man håper det løser seg
 
-Bolman & Deals strukturperspektiv viser at uklare roller skaper koordineringskostnader som dypere enn man tror. Menneskeperspektivet viser at det skaper frustrasjon og tap av tillit. Påvirkningsperspektivet viser at maktkamper oppstår i vakuumet. Identitetsperspektivet viser at kulturen blir preget av unntakelse.
+Bolman & Deals strukturperspektiv viser at uklare roller skaper koordineringskostnader som dypere enn man tror. Menneskeperspektivet viser at det skaper frustrasjon og tap av tillit. Påvirkningsperspektivet viser at maktkamper oppstår i vakuumet. Identitetsperspektivet viser at kulturen blir preget av stadige unntak.
 
 ## Hva 60:2 undersøker her
 
@@ -35,7 +35,7 @@ Ledelse 60:2 kartlegger gjennom 60 spørsmål:
 - **Struktur:** Er roller, ansvar og beslutningslinjer klare og kommunisert?
 - **Mennesker:** Vet folk hva som forventes av dem? Er det trygt å spørre om forventninger?
 - **Påvirkning:** Er det maktkamper som skyldes uklare roller?
-- **Identitet:** Er «ansvar» en verd som faktisk leves i praksis?
+- **Identitet:** Er «ansvar» en verdi som faktisk levdes i praksis?
 
 Resultatet er en rapport som viser *hvor* rollekonflikter befinner seg — og konkrete anbefalinger for å klargjøre ansvar.
 
@@ -54,9 +54,7 @@ Resultatet er en rapport som viser *hvor* rollekonflikter befinner seg — og ko
 
 [Se om 60:2 passer for dere →](/ledelse-60-2/#passer)
 
-[Utforsk dette privat med din egen KI →](/uklare-roller/) *(emnet er forhåndsvalgt)*
-
----
+[Utforsk med din egen KI →](/uklare-roller/) *(emnet er forhåndsvalgt)*
 
 ## Relaterte emner
 
@@ -64,14 +62,10 @@ Resultatet er en rapport som viser *hvor* rollekonflikter befinner seg — og ko
 - [Svak gjennomføring](/svak-gjennomforing/) — når beslutninger ikke blir til handling
 - [Ny ledergruppe](/ny-ledergruppe/) — når roller må fornyes
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Uklart ansvar:** To personer tror de eier samme område. Eller ingen som eier det i det hele tatt.
 *   **Målkonflikter:** Avdeling A optimaliserer for sitt mål, som bremser Avdeling B.
-
----
 
 ## Relaterte perspektiver
 
@@ -80,17 +74,14 @@ Resultatet er en rapport som viser *hvor* rollekonflikter befinner seg — og ko
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold skaper rollekonflikter
 *   [Identitetsperspektivet](/identitet/) — når «ansvar» er en verdi som ikke leves
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/uklare-roller/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/uklare-roller/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Uklare roller](/uklare-roller/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Uklare roller](/uklare-roller/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

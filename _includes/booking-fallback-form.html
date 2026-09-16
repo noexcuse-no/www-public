@@ -1,0 +1,57 @@
+<form class="booking-form" action="https://formspree.io/f/{{ site.data.forms.booking_fallback }}" method="POST" novalidate>
+  <input type="hidden" name="_next" value="/samtale/takk/">
+  <input type="hidden" name="_subject" value="Ny avklaringsforespørsel fra noexcuse.no">
+
+  <div class="booking-form__row">
+    <div class="booking-form__field">
+      <label for="booking-name" class="booking-form__label">Navn <span class="required" aria-hidden="true">*</span></label>
+      <input type="text" id="booking-name" name="name" class="booking-form__input" required autocomplete="name" aria-required="true">
+    </div>
+    <div class="booking-form__field">
+      <label for="booking-company" class="booking-form__label">Bedrift <span class="required" aria-hidden="true">*</span></label>
+      <input type="text" id="booking-company" name="company" class="booking-form__input" required autocomplete="organization" aria-required="true">
+    </div>
+  </div>
+
+  <div class="booking-form__row">
+    <div class="booking-form__field">
+      <label for="booking-email" class="booking-form__label">E-post <span class="required" aria-hidden="true">*</span></label>
+      <input type="email" id="booking-email" name="email" class="booking-form__input" required autocomplete="email" aria-required="true">
+    </div>
+    <div class="booking-form__field">
+      <label for="booking-phone" class="booking-form__label">Telefon</label>
+      <input type="tel" id="booking-phone" name="phone" class="booking-form__input" autocomplete="tel">
+    </div>
+  </div>
+
+  <div class="booking-form__field booking-form__field--full">
+    <label for="booking-message" class="booking-form__label">Kort beskrivelse av utfordringen (valgfritt)</label>
+    <textarea id="booking-message" name="message" class="booking-form__textarea" rows="4" autocomplete="off"></textarea>
+  </div>
+
+  <div class="booking-form__field booking-form__field--full">
+    <label for="booking-preferred-time" class="booking-form__label">Ønsket tidspunkt eller ring meg heller (valgfritt)</label>
+    <input type="text" id="booking-preferred-time" name="preferred_time" class="booking-form__input" autocomplete="off" placeholder="F.eks. «ukedager kl. 09–11» eller «ring meg på 12:30»">
+  </div>
+
+  <div class="booking-form__consent">
+    <label class="booking-form__checkbox-label">
+      <input type="checkbox" name="consent" class="booking-form__checkbox" required aria-required="true">
+      <span class="booking-form__checkbox-text">Jeg samtykker til at No Excuse lagrer opplysningene mine for å kunne kontakte meg angående avklaringssamtalen (iflg. GDPR art. 6). <a href="/personvern/">Les personvernerklæring</a>.</span>
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn--primary booking-form__submit">Send forespørsel</button>
+
+  <p class="booking-form__note">Vi svarer innen ett arbeidsdag for å avtale tid.</p>
+</form>
+
+<div class="booking-form__success" hidden>
+  <h3>Takk for forespørselen</h3>
+  <p>Vi tar kontakt innen ett arbeidsdag for å avtale en tid som passer.</p>
+</div>
+
+<div class="booking-form__error" hidden>
+  <h3>Noe gikk galt</h3>
+  <p>Kunne ikke sende forespørselen. Vennligst prøv på nytt, eller send e-post direkte til <a href="mailto:ledelse@noexcuse.no">ledelse@noexcuse.no</a>.</p>
+</div>

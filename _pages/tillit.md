@@ -96,9 +96,9 @@ json_ld:
         name: "Hvorfor feiler de fleste ledere på tillit?"
         acceptedAnswer:
           "@type": "Answer"
-          text: "De fleste ledere tror de er mer tilgjengelige og gir mer konstruktiv feedback enn de faktisk er. Det er gapet mellom intensjon og opplevelse som er tillitsproblemet. Tillit bygges av konsekvent atferd over tid, ikke av gode intensjoner."
+          text: "De fleste ledere tror de er mer tilgjengelige og gir mer konstruktive tilbakemeldinger enn de faktisk er. Det er gapet mellom intensjon og opplevelse som er tillitsproblemet. Tillit bygges av konsekvent atferd over tid, ikke av gode intensjoner."
 cta:
-  - text: "Utforsk dette privat med din egen KI"
+  - text: "Utforsk med din egen KI"
     url: "/tillit/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
@@ -158,7 +158,7 @@ Robert Greenleaf introduserte begrepet «servant leadership» i 1970. Han argume
 
 ## Hvorfor de fleste ledere feiler på tillit
 
-De fleste ledere tror de er mer tilgjengelige enn de faktisk er. En undersøkelse viser at 94% av ledere mener de gir constructive feedback, men bare 65% av medarbeidere er enige. Denne gapen — mellom lederes intensjon og medarbeideres opplevelse — er tillitsproblemet.
+De fleste ledere tror de er mer tilgjengelige enn de faktisk er. En undersøkelse viser at 94% av ledere mener de gir konstruktive tilbakemeldinger, men bare 65% av medarbeidere er enige. Dette gapet — mellom lederes intensjon og medarbeideres opplevelse — er tillitsproblemet.
 
 Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid. En leder som en gang svikter, kan miste tillit som tar år å bygge opp igjen.
 
@@ -171,12 +171,12 @@ Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid
     Ledere som ikke ser at deres atferd oppfattes annerledes avhengig av posisjon. Det som føles som «direkte» oppfattes som «domsnutt» av underordnede.
 *   ![Abstrakt illustrasjon av informasjonsasymmetri som tillitsutfordring](/assets/images/banners/tillit-t4-info-asymmetry.webp)
 
-    #### Informerings asymmetri
+    #### Informasjonsasymmetri
 
     Ledere vet mer enn de deler. Medarbeidere tolker dette som mistillit. Kommunikasjonen blir formell og overfladisk.
 *   ![Abstrakt illustrasjon av historisk bagasje som tillitsutfordring](/assets/images/banners/tillit-t4-historical-baggage.webp)
 
-    #### Historisk baggage
+    #### Historisk bagasje
 
     Tidligere svik sitter i kulturen. Nye ledere møtes med «vi har hørt dette før»-holdning. Initiativ blir møtt med skepsis.
 *   ![Abstrakt illustrasjon av inkonsekvent oppfølging som tillitsutfordring](/assets/images/banners/tillit-t4-inconsistent-followup.webp)
@@ -185,14 +185,10 @@ Tillit bygges ikke av gode intensjoner. Det bygges av konsekvent atferd over tid
 
 Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring. Prioriteringer som stadig endres.
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Hierarkisk blindhet:** Det som føles som «direkte» oppfattes som «domsnutt» av underordnede.
 *   **Inkonsekvent oppfølging:** Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten forklaring.
-
----
 
 ## Relaterte perspektiver
 
@@ -200,21 +196,17 @@ Ledere som sier én ting og gjør noe annet. Beslutninger som omgjøres uten for
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold skaper frykt for å si ifra
 *   [Identitetsperspektivet](/identitet/) — når kulturen belønner stillhet
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/tillit/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/tillit/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Tillit og psykologisk trygghet](/tillit/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Tillit og psykologisk trygghet](/tillit/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
 *   [Psykologisk trygghet](/tillit/#psykologisk-trygghet) — fundamentet for tillit
 *   [Tjenende lederskap](/tillit/#tjenende-lederskap) — ledelse som tjener
 *   [Tillit som system](/tillit/#tillit-som-system) — når tillit blir system
-

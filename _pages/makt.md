@@ -59,8 +59,8 @@ json_ld:
       - type: "Thing"
         name: "Organisasjonskultur"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Bestill 20 min avklaring"
+    url: "/samtale/"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
 conversation_topics:
@@ -84,7 +84,7 @@ Begge har rett. Og begge tar feil — hvis de står alene.
 
 Makt uten tjeneste blir utvinning. Tjeneste uten makt blir martyrdom. Effektive ledelseskulturer vet hvor de sitter på dette spekteret — og hvorfor.
 
-Denne artikkelen kartlegger spenningen mellom makt og tjeneste i ledergrupper, med utgangspunkt i Pfeffers forskning på maktens dynamikk og Blanchard & Barretts arbeid med servant leadership. Målet er ikke å kåre en vinner, men å gi deg et verktøy for å diagnostisere din egen ledelseskultur.
+Denne artikkelen kartlegger spenningen mellom makt og tjeneste i ledergrupper, med utgangspunkt i Pfeffers forskning på maktens dynamikk og Blanchard & Barretts arbeid med servant leadership. Målet er ikke å kåre en vinner, men å gi deg et verktøy for å analysere din egen ledelseskultur.
 
 ![Abstrakt framstilling av spekteret mellom makt og tjeneste i ledelse](/assets/images/banners/makt-t2-power-service-spectrum.webp)
 
@@ -159,14 +159,10 @@ Logans [forskning på kulturstadier](/usikkerhet/) (Stage 4–5) peker på en in
 
 Dette er ikke naiv optimisme. Det er en empirisk observasjon av hva som faktisk fungerer i organisasjoner som presterer over tid. Når makt distribueres og samtidig forankres i et felles oppdrag, reduseres både risikoen for maktmisbruk og risikoen for beslutningsvegring.
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Makt uten tjeneste:** Ledere som bruker makt til å posisjonere seg, ikke for å tjene oppdraget.
 *   **Tjeneste uten makt:** Ledere som unngår upopulære beslutninger i frykt for å såre.
-
----
 
 ## Relaterte perspektiver
 
@@ -175,21 +171,17 @@ Dette er ikke naiv optimisme. Det er en empirisk observasjon av hva som faktisk 
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold styrer beslutninger
 *   [Identitetsperspektivet](/identitet/) — når kulturen belønner makt over tjeneste
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/makt/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/makt/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Makt eller tjeneste](/makt/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Makt eller tjeneste](/makt/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
 *   [Maktsiden](/makt/#maktsiden-når-det-å-få-ting-gjort-blir-alt) — når makt blir alt
 *   [Tjenestesiden](/makt/#tjenestesiden-når-det-å-tjene-andre-blir-alt) — når tjeneste blir alt
 *   [Spekteret](/makt/#spekteret-fra-utvinning-til-balanse) — fra utvinning til balanse
-

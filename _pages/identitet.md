@@ -54,6 +54,7 @@ conversation_topics:
     opening_question: "Finnes det historier om organisasjonens historie som nye folk læres opp i?"
     source_url: "/identitet/"
     sixty_two_url: "/ledelse-60-2/"
+
 ---
 
 ## Hva er identitetsperspektivet?
@@ -68,7 +69,7 @@ Dave Logan og medforfattere beskriver i «Tribal Leadership» fem stadier organi
 
     ## Kultur og språk
 
-    Kultur lever i språket. Hvordan folk snakker om arbeidet, om lederne, om kundene — det avslører hvilket stadium kulturen befinner seg på. Ledergrupper kan analysere sin egen kommunikasjon for å forstå kulturen — Logans stadier fungerer som et diagnostisk kart: hva er det dominerende kulturstadiet i deres organisasjon?
+    Kultur lever i språket. Hvordan folk snakker om arbeidet, om lederne, om kundene — det avslører hvilket stadium kulturen befinner seg på. Ledergrupper kan analysere sin egen kommunikasjon for å forstå kulturen — Logans stadier fungerer som et kart over mulige stadier: hva er det dominerende kulturstadiet i deres organisasjon?
 
     **Tegn på god kultur og språk:** Ledere snakker i «vi»-form. Det finnes historier som fortelles om hvordan ting ble gjort. Feiring av suksess er synlig og inkluderende.
 
@@ -90,7 +91,7 @@ Dave Logan og medforfattere beskriver i «Tribal Leadership» fem stadier organi
 
     Ritualer er de gjentatte handlingene som holder kulturen i live: møter, feiringer, seremonier. Identitet er følelsen av tilhørighet til noe større enn seg selv.
 
-    **Tegn på gode ritualer og identitet:** Det finnes «ting man gjør» som nye folk tar opp naturlig. Suksesser feires på måter som faller seg naturlig for gruppen. Spesielle tradisjoner som forplanter seg.
+    **Tegn på gode ritualer og identitet:** Det finnes «ting man gjør» som nye folk tar opp naturlig. Suksesser feires på måter som faller naturlig for gruppen. Spesielle tradisjoner som forplanter seg.
 
     **Tegn på ritualer og identitet-problemer:** Møter er blitt rutine uten innhold. Feiringer er pålagt og føles falske. Nyansatte opplever silo raskt.
 
@@ -100,7 +101,7 @@ Dave Logan og medforfattere beskriver i «Tribal Leadership» fem stadier organi
 
 ## Hvorfor identitetsperspektivet betyr noe for ledergruppen
 
-Logan og medarbeidere fant at organisasjoner på stadium fire («Vi er flinke») presterer bedre økonomisk, har lavere turnover, og sterkere kunde lojalitet. Stadium tre («Jeg er flink») er vanlig — men individualisme har en ceilings-effekt.
+Logan og medarbeidere beskriver i *Tribal Leadership* hvordan organisasjoner på stadium fire («Vi er flinke») ifølge studien deres presterer bedre økonomisk, har lavere turnover og sterkere kundelojalitet. Stadium tre («Jeg er flink») er vanlig — men individualisme fungerer som et tak for gruppen.
 
 For ledergruppen er spørsmålene: Sier vi «vi» når vi snakker om organisasjonen? Har vi verdier som faktisk styrer beslutninger? Har vi en kultur der folk vil bidra, eller der de bare leverer output?
 
@@ -114,17 +115,20 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
 
     #### Tomme verdier
 
-    Verdier som ikke reflekterer faktisk atferd. Konsulentlede verdiprogrammer som aldri ble forankret.
+    Verdier som ikke reflekterer faktisk atferd. Konsulentledede verdiprogrammer som aldri ble forankret.
+
 *   ![Abstrakt illustrasjon av individuell dominans i organisasjonskultur](/assets/images/banners/identitet-t4-individual-dominance.webp)
 
     #### Individuell dominans
 
     En kultur preget av «stjerneledere» og individualisme. Belønning av «helt-innsats» heller enn samarbeid. Individualistisk tankegang som demper kollektiv vekst.
+
 *   ![Abstrakt illustrasjon av historieløs organisasjon uten fortellinger](/assets/images/banners/identitet-t4-storylessness.webp)
 
     #### Historieløshet
 
     En organisasjon uten fortellinger — nye folk får ingen kontekst. Kulturen er usynlig fordi den aldri er blitt eksplisitt.
+
 *   ![Abstrakt illustrasjon av forandringstretthet i organisasjonen](/assets/images/banners/identitet-t4-change-fatigue.webp)
 
     #### Forandringstretthet
@@ -133,21 +137,16 @@ En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i �
 
 ![Illustrasjon for kartlegging av kultur](/assets/images/banners/illustrasjon-identitet-cta.webp)
 
-## Få kartlagt ledergruppens kulturelle modenhet
+## Få synliggjort ledergruppens kulturelle mønstre
 
 Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gjennomfør en uforpliktende samtale for å lære mer om metoden.
 
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
-[Les mer om Ledelse 60:2 →](/ledelse-60-2/)
-
----
+[Bestill 20 min avklaring](/samtale/) [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ## Kjenner du deg igjen?
 
 *   **Tomme verdier på veggen:** Verdiene står på veggen, men ingen kan gi eksempler på når de ble levd ut i praksis.
 *   **Historieløshet:** Nye folk får ingen kontekst. Kulturen er usynlig fordi den aldri er blitt eksplisitt.
-
----
 
 ## Relaterte perspektiver
 
@@ -155,25 +154,17 @@ Ledelse 60:2 inneholder spørsmål som handler om kultur, språk og verdier. Gje
 *   [Menneskeperspektivet](/mennesker/) — når kulturen skaper siloer
 *   [Påvirkningsperspektivet](/pavirkning/) — når kulturen belønner stillhet
 
----
-
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/identitet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Identitetsperspektivet](/identitet/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Identitetsperspektivet](/identitet/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
 *   [Tomme verdier](/identitet/#tomme-verdier) — når verdier ikke lever i praksis
 *   [Historieløshet](/identitet/#historieloshet) — når kulturen har ingen fortellinger
 *   [Forandringstretthet](/identitet/#forandringstretthet) — når kynisme dominerer
-
----
 
 ## Det teoretiske grunnlaget
 

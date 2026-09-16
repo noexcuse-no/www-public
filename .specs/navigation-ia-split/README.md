@@ -1,8 +1,7 @@
 # navigation-ia-split — Feature Specification
 
-Status: Ready
-> **Strategy source:** `.design/inbound-strategy.md` §4, §8, §11
-> **Backlog:** V3
+> Status: Ready
+> Backlog: V3
 
 ## Purpose / Problem
 
@@ -57,5 +56,4 @@ Microsoft Bookings is background infrastructure. The site owns the commercial co
 
 ## Dependencies
 
-- `.design/inbound-strategy.md` (strategy)
 - `.specs/homepage-repositioning/README.md` (nav targets)

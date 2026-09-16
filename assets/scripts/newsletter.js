@@ -95,25 +95,25 @@
                     'Accept': 'application/json'
                 }
             })
-            .then(function (response) {
-                if (response.ok) {
-                    return response.json().catch(function () { return {}; });
-                }
-                return response.json().catch(function () { return {}; })
-                    .then(function (data) {
-                        throw new Error(data.message || 'Kunne ikke registrere epost');
-                    });
-            })
-            .then(function () {
-                setLoading(false);
-                showStatus('Du er nå registrert på nyhetsbrevet!', 'success');
-                form.reset();
-                validateForm(); // Re-validate to disable button
-            })
-            .catch(function (err) {
-                setLoading(false);
-                showStatus(err.message || 'Noe gikk galt. Prøv igjen senere.', 'error');
-            });
+                .then(function (response) {
+                    if (response.ok) {
+                        return response.json().catch(function () { return {}; });
+                    }
+                    return response.json().catch(function () { return {}; })
+                        .then(function (data) {
+                            throw new Error(data.message || 'Kunne ikke registrere epost');
+                        });
+                })
+                .then(function () {
+                    setLoading(false);
+                    showStatus('Du er nå registrert på nyhetsbrevet!', 'success');
+                    form.reset();
+                    validateForm(); // Re-validate to disable button
+                })
+                .catch(function (err) {
+                    setLoading(false);
+                    showStatus(err.message || 'Noe gikk galt. Prøv igjen senere.', 'error');
+                });
         }
 
         // Event listeners

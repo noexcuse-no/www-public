@@ -22,7 +22,7 @@ Dette er ikke uvanlig. Det er den mest kritiske fasen i en ledergruppes livssykl
 Forsknings viser at de første 90 dagene bestemmer om en ledergruppe lykkes eller feiler. I denne fasen etableres:
 
 - **Uskrevne regler:** Hvordan vi snakker med hverandre, hvordan vi tar beslutninger, hvordan vi håndterer uenighet
-- **Tillitsbaseline:** Om vi tør være sårbare, om vi tør si «jeg vet ikke», om vi tør utfordre hverandre
+- **Tillitsgrunnlag:** Om vi tør være sårbare, om vi tør si «jeg vet ikke», om vi tør utfordre hverandre
 - **Felles retning:** Om vi drar i samme retning — eller om vi drar hver sin vei
 
 Bolman & Deals fire perspektiver viser at en ny ledergruppe ofte mangler felles rammeverk i alle fire perspektiver samtidig: struktur (roller), mennesker (tillit), påvirkning (makt), identitet (kultur).
@@ -53,9 +53,7 @@ Resultatet er en rapport innen én uke som gir ledergruppen et konkret utgangspu
 
 [Se om 60:2 passer for dere →](/ledelse-60-2/#passer)
 
-[Utforsk dette privat med din egen KI →](/ny-ledergruppe/) *(emnet er forhåndsvalgt)*
-
----
+[Utforsk med din egen KI →](/ny-ledergruppe/) *(emnet er forhåndsvalgt)*
 
 ## Relaterte emner
 
@@ -63,14 +61,10 @@ Resultatet er en rapport innen én uke som gir ledergruppen et konkret utgangspu
 - [Forankring](/forankring/) — hvordan få beslutninger til å bli til handling
 - [Endringsledelse](/endringsledelse/) — når hele organisasjonen endres
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Første 90 dager avgjør:** Ny ledergruppe, ny dynamikk. De første månedene er avgjørende for om det blir et samarbeid som fungerer.
 *   **Uskrevne regler:** Hvordan vi snakker med hverandre, hvordan vi tar beslutninger, hvordan vi håndterer uenighet.
-
----
 
 ## Relaterte perspektiver
 
@@ -79,17 +73,14 @@ Resultatet er en rapport innen én uke som gir ledergruppen et konkret utgangspu
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktdynamikk endres
 *   [Identitetsperspektivet](/identitet/) — når kulturen må bygges på nytt
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/ny-ledergruppe/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/ny-ledergruppe/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Ny ledergruppe](/ny-ledergruppe/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Ny ledergruppe](/ny-ledergruppe/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

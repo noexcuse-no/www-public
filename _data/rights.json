@@ -31,17 +31,22 @@
       "copyrightText": "2026 No Excuse AS",
       "url": "https://noexcuse.no/rettigheter/#proprietary"
     },
+    "_pages/case-ledelse-60-2-1.md": {
+      "spdxId": "LicenseRef-NoExcuse-All-Rights-Reserved",
+      "copyrightText": "2026 No Excuse AS",
+      "url": "https://noexcuse.no/rettigheter/#proprietary"
+    },
+    "_pages/case-ledelse-60-2-2.md": {
+      "spdxId": "LicenseRef-NoExcuse-All-Rights-Reserved",
+      "copyrightText": "2026 No Excuse AS",
+      "url": "https://noexcuse.no/rettigheter/#proprietary"
+    },
     "_pages/compliance.md": {
       "spdxId": "LicenseRef-NoExcuse-All-Rights-Reserved",
       "copyrightText": "2026 No Excuse AS",
       "url": "https://noexcuse.no/rettigheter/#proprietary"
     },
     "_pages/dagfinn.md": {
-      "spdxId": "LicenseRef-NoExcuse-All-Rights-Reserved",
-      "copyrightText": "2026 No Excuse AS",
-      "url": "https://noexcuse.no/rettigheter/#proprietary"
-    },
-    "_pages/emne.md": {
       "spdxId": "LicenseRef-NoExcuse-All-Rights-Reserved",
       "copyrightText": "2026 No Excuse AS",
       "url": "https://noexcuse.no/rettigheter/#proprietary"
@@ -227,6 +232,11 @@
       "url": "https://noexcuse.no/rettigheter/#proprietary"
     },
     "_pages/svak-gjennomforing.md": {
+      "spdxId": "LicenseRef-NoExcuse-All-Rights-Reserved",
+      "copyrightText": "2026 No Excuse AS",
+      "url": "https://noexcuse.no/rettigheter/#proprietary"
+    },
+    "_pages/tema.md": {
       "spdxId": "LicenseRef-NoExcuse-All-Rights-Reserved",
       "copyrightText": "2026 No Excuse AS",
       "url": "https://noexcuse.no/rettigheter/#proprietary"
@@ -670,13 +680,6 @@
       "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia"
     },
     ".design/graphics/originals/assets/images/icons/benefit-control.png": {
-      "creation": "ai-generated",
-      "spdxId": "CC0-1.0",
-      "copyrightText": "NONE",
-      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia"
-    },
-    ".design/graphics/originals/assets/images/icons/benefit-future.png": {
       "creation": "ai-generated",
       "spdxId": "CC0-1.0",
       "copyrightText": "NONE",

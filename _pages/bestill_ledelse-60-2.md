@@ -6,10 +6,9 @@ provenance:
 class: product-booking
 layout: article
 title: "Bestill Ledelse 60:2"
-description: "Bestill orientering for ledergruppen — 60 diagnostiske spørsmål, 2 timer, felles retningsvalg. Fastpris kr 14 850,- eks. mva."
+description: "Bestill orientering for ledergruppen — 60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris kr 14 850,- eks. mva."
 permalink: /bestill/ledelse-60-2/
 og_image: /assets/images/banners/ledelse-60-2-og.webp
-route_b_live: false
 ---
 
 ## Bestill Ledelse 60:2
@@ -18,7 +17,7 @@ route_b_live: false
 
 ### Hva er inkludert
 
-*   60 diagnostiske spørsmål
+*   60 strukturerte spørsmål
 *   Inntil fem ledere
 *   To timer strukturert intervju
 *   Analyse og prioriterte funn
@@ -28,15 +27,13 @@ route_b_live: false
 
 ### Slik går det
 
-1.  **Velg tidspunkt** — Vi bruker Microsoft Bookings for tidsvalg. Du velger en tid som passer ledergruppen.
+1.  **Velg tidspunkt** — Velg en tid som passer ledergruppen via [Microsoft Bookings](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled).
 2.  **Kontaktinformasjon** — Fyll inn navn, e-post og telefon. Vi bruker dette kun til å bekrefte avtalen.
-3.  **Bekreft** — Du får en bekrefteise på e-post med praktisk info og forberedelse.
+3.  **Bekreft** — Du får en bekreftelse på e-post med praktisk info og forberedelse.
 
-{% if page.route_b_live %}
 ### Ikke sikker ennå?
 
-[Bestill en gratis 20-minutters avklaring](/samtale/) — en uforpliktende samtale for å avklare om Ledelse 60:2 passer for dere.
-{% endif %}
+[Bestill 20 min avklaring](/samtale/) — en uforpliktende samtale for å avklare om Ledelse 60:2 passer for dere.
 
 ## Hva skjer etter bestilling?
 
@@ -58,10 +55,6 @@ Dagfinn tar kontakt for å bekrefte deltakere og praktiske forhold.
 *   Spesiell tilpasning (flere enn 5 deltakere, andre behov): avklares i forkant
 *   Flere enn 5 deltakere: vi anbefaler en [avklaring](/samtale/) først
 
+{% include trust-block.html %}
+
 ---
-
-*Route A (primær): Bestill Ledelse 60:2 → /bestill/ledelse-60-2/ → pris + inkluderinger + steg → MS Bookings (tidsvalg) → bekrefteise*
-
-*Route B (sekundær): Bestill 20 min avklaring → /samtale/ → MS Bookings (avklaringstjeneste) → avklaringssamtale*
-
-*Staging-flagg `route_b_live: false` i frontmatter (standard). Route B-blokker renderes kun når true. Flagget flippes i en oppfølgende commit når brukeren bekrefter at 20-min Bookings-tjenesten eksisterer.*

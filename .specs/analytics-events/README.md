@@ -1,7 +1,6 @@
 # analytics-events — Feature Specification
 
 > Status: Ready
-> Strategy source: `.design/inbound-strategy.md` §10, §11
 > Backlog: P1 (todo 20)
 
 ## Purpose / Problem
@@ -69,4 +68,3 @@ The site needs a single, authoritative event vocabulary so inbound marketing can
 - `.specs/privacy/README.md` (cookie-free, metadata-only)
 - `.specs/privacy-communication/README.md` (L2 "ser"-box must match these events)
 - `.specs/inbound-sales/README.md` (superseded event model)
-- `.design/inbound-strategy.md` (strategy)

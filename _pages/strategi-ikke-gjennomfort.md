@@ -54,9 +54,7 @@ Resultatet er en rapport som viser *hvor* gapet befinner seg — og konkrete anb
 
 [Se om 60:2 passer for dere →](/ledelse-60-2/#passer)
 
-[Utforsk dette privat med din egen KI →](/strategi-ikke-gjennomfort/) *(emnet er forhåndsvalgt)*
-
----
+[Utforsk med din egen KI →](/strategi-ikke-gjennomfort/) *(emnet er forhåndsvalgt)*
 
 ## Relaterte emner
 
@@ -64,14 +62,10 @@ Resultatet er en rapport som viser *hvor* gapet befinner seg — og konkrete anb
 - [Forankring](/forankring/) — hvordan få beslutninger til å bli til handling
 - [Endringsledelse](/endringsledelse/) — når hele organisasjonen må endres
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Strategi på veggen, handling i skogen:** Strategien er god, men ingenting skjer. Gapet mellom plan og handling er ikke broet.
 *   **Kultur som bremse:** «Sånn har det alltid vært» er sterkere enn nye retningslinjer.
-
----
 
 ## Relaterte perspektiver
 
@@ -80,17 +74,14 @@ Resultatet er en rapport som viser *hvor* gapet befinner seg — og konkrete anb
 *   [Påvirkningsperspektivet](/pavirkning/) — når interesser blokkerer gjennomføring
 *   [Identitetsperspektivet](/identitet/) — når strategien ikke er forankret i kulturen
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/strategi-ikke-gjennomfort/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/strategi-ikke-gjennomfort/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Strategi ikke gjennomført](/strategi-ikke-gjennomfort/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Strategi ikke gjennomført](/strategi-ikke-gjennomfort/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

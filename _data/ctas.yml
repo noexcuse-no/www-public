@@ -1,0 +1,21 @@
+# _data/ctas.yml
+# Canonical CTA registry (decision D9, plan: production-release-readiness)
+# Equivalent actions MUST share wording. Link labels come from here or match exactly.
+#
+# PRIMARY   — product booking (direct to scheduler allowed only on mid-conversion
+#             surfaces: /bestill/ledelse-60-2/ and _includes/price-card.html)
+# SECONDARY — 20-min clarification funnel (all discovery surfaces: frame pages,
+#             grc/makt/triader/perspektiv, tag overview, article tails)
+# TERTIARY  — product information (no booking intent)
+
+primary:
+  text: "Bestill Ledelse 60:2"
+  url: "/bestill/ledelse-60-2/"
+
+secondary:
+  text: "Bestill 20 min avklaring"
+  url: "/samtale/"
+
+tertiary:
+  text: "Les mer om Ledelse 60:2 →"
+  url: "/ledelse-60-2/"

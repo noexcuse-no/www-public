@@ -5,7 +5,7 @@
 - **Competent:** Proven results, real experience
 - **Nordic (Scandinavian minimal):** Clean, functional, no fluff. Democratic design — accessible to everyone, not exclusive.
 - **Rebellious / Anti-establishment:** Question the obvious, challenge conventions. We say what others think.
-- **Practical:** «Folk som synes latte er pretensiøst» — down-to-earth, no bullshit. Primary buyer is the executive (CEO/MD) of a 50–250 employee company, not the SMB founder.
+- **Practical:** Down-to-earth, no bullshit.
 
 ## Target Perception
 - "We say what others think but don't say out loud" — slightly rebellious
@@ -80,10 +80,3 @@ Product pages, pain-point sections, benefit cards — anywhere you want a visito
 - "Vi skaper verdier gjennom strategisk transformasjon"
 - "Bærekraftig kompetanseutvikling"
 - "Helhetlige løsninger for fremtidens organisasjoner"
-
-## Target Audience Alignment
-- Executive buyers: CEO / administrerende direktør, HR-director, business-unit leader, strategy/transformation leader, quality/risk/governance leader, chair/owner
-- Primary segment: 50–250 employees; secondary: 20–49, 250+, public sector, regulated industries
-- Direct, commercially credible, specific, mature — low on consulting jargon
-- Oslo/Østlandet region
-- Tone kept: down-to-earth, no-nonsense, "folk som synes latte er pretensiøst"

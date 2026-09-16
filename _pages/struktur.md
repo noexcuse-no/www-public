@@ -70,7 +70,7 @@ En leder som mestrer strukturperspektivet, stiller spørsmål som: Har vi klare 
 
     Hvem gjør hva? Roller er de minste meningsfulle enhetene i en organisasjon. Når roller er utydelige, oppstår det ansvarsskyvning. Når de er klare, vet folk hva som forventes av dem — og hva de kan forvente av andre. Uten en strukturert måte å kartlegge roller på, risikerer ledergruppen å overse uklarheter inntil de skaper konflikter.
 
-    **Tegn på god roller og ansvar:** Ledere kan beskrive sine ansvarsområder presist. De vet hvem som signerer hva. Beslutninger tas på riktig nivå.
+    **Tegn på gode roller og ansvar:** Ledere kan beskrive sine ansvarsområder presist. De vet hvem som signerer hva. Beslutninger tas på riktig nivå.
 
     **Tegn på roller og ansvar-problemer:** «Det er ikke min jobb» eller «Hvem skal jeg egentlig spørre?» Dominans av e-post og møter for å koordinere arbeid som burde gå av seg selv.
 
@@ -80,7 +80,7 @@ En leder som mestrer strukturperspektivet, stiller spørsmål som: Har vi klare 
 
     Organisasjoner eksisterer for å oppnå noe. Mål er det som gir retning. Koordinering er det som får ulike deler til å trekke i samme retning. Strukturerte spørsmål om måljustering avdekker silotenking før den koster resultater — uten dem forblir konkurrerende prioriteringer usynlige for ledelsen.
 
-    **Tegn på god mål og koordinering:** Mål i ulike avdelinger forsterker hverandre. Det er enkelt å spores hvordan delmål bidrar til hovedmål. Prioriteringer er relativt entydige.
+    **Tegn på gode mål og koordinering:** Mål i ulike avdelinger forsterker hverandre. Det er enkelt å spores hvordan delmål bidrar til hovedmål. Prioriteringer er relativt entydige.
 
     **Tegn på mål og koordinering-problemer:** Silotenking. Mål som konkurrerer med hverandre. Avdelinger som driver egne initiativ uten å kjenne til hverandre. Mye tid brukt på «å samordne» arbeid som burde ha vært koordinert fra start.
 
@@ -90,7 +90,7 @@ En leder som mestrer strukturperspektivet, stiller spørsmål som: Har vi klare 
 
     Prosesser er hvordan arbeid faktisk utføres. Regler er de formelle og uformelle normene som styrer atferd. En god struktur har balanse: nok regler til å gi trygghet, få nok til å stimulere vekst.
 
-    Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen glitter og prakt som fører til at viktige oppgaver faller mellom stoler. Kartlegging av prosessbyrde avdekker hvorvidt reglene faktisk tjener formålet — eller har blitt mål i seg selv.
+    Compliance er ikke byråkrati — det er tydelighet. Når roller er definerte og ansvar er dokumentert, unngår man den typen glitter og prakt som fører til at viktige oppgaver faller mellom stolene. Kartlegging av prosessbyrde avdekker hvorvidt reglene faktisk tjener formålet — eller har blitt mål i seg selv.
 
     **Tegn på gode prosesser og regler:** Folk vet hvordan de skal få ting gjort. Unntak håndteres på en standardisert måte. Nye folk læres opp raskt fordi prosessene er tydelige.
 
@@ -133,21 +133,17 @@ Douglas Hubbard, forfatteren av «How to Measure Anything», påpeker at mye som
 
 ![Illustrasjon for kartlegging av struktur](/assets/images/banners/illustrasjon-struktur-cta.webp)
 
-## Få kartlagt ledergruppens strukturelle modenhet
+## Få synliggjort ledergruppens strukturelle mønstre
 
 Ledelse 60:2 inneholder 15 spørsmål som handler om strukturperspektivet. Gjennomfør en uforpliktende samtale for å lære mer om hvordan metoden kan hjelpe ledergruppen din.
 
-[Bestill uforpliktende samtale](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
+[Bestill 20 min avklaring](/samtale/)
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
-
----
 
 ## Kjenner du deg igjen?
 
 *   **Målkonflikter i skjul:** Avdeling A optimaliserer for sitt mål, som bremser Avdeling B. Ingen oppdager det før resultatet vises i tallene.
 *   **Koordinering som erstatter ledelse:** Mye tid brukes på å samordne arbeid som burde vært koordinert fra start. Fokus på «å skape buy-in» i stedet for å bygge struktur som sikrer involvering.
-
----
 
 ## Relaterte perspektiver
 
@@ -155,17 +151,11 @@ Ledelse 60:2 inneholder 15 spørsmål som handler om strukturperspektivet. Gjenn
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold saboterer strukturen
 *   [Identitetsperspektivet](/identitet/) — når kulturen æder strukturen
 
----
-
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/struktur/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Strukturperspektivet](/struktur/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Strukturperspektivet](/struktur/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
@@ -173,14 +163,12 @@ Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagno
 *   [Koordineringsproblemer](/struktur/#koordineringsproblemer) — når samordning erstatter ledelse
 *   [Uklar rolleavklaring](/struktur/#uklar-rolleavklaring) — når ansvar er uklart
 
----
-
 ## Det teoretiske grunnlaget
 
 Strukturperspektivet i Ledelse 60:2 bygger på Lee Bolman og Terrence Deals fire perspektiver-modell fra «Reframing Organizations», kombinert med Douglas Hubbards metoder for måling av immaterielle størrelser fra «How to Measure Anything».
 
 Hubbard argumenterer for at all måling reduserer usikkerhet — ikke eliminerer den. Ledelse 60:2 hevder ikke presise scorer, bare perspektiver. Når vi kartlegger roller, mål og prosesser, gir vi ledergruppen et felles utgangspunkt — ikke en endelig dom.
 
-Hubbarts «Applied Information Economics» (AIE) er en strukturert tilnærming til måling av det som virker umålelig. De sju stegene er: (1) Definer beslutningen, (2) Bestem hva som er ukjent, (3) Verdsett informasjonen, (4) Design måleinstrumentet, (5) Samle data, (6) Analyser, og (7) Gjør den informerte beslutningen. Ledelse 60:2 anvender prinsippet — ikke hele metoden — ved å gi ledergruppen strukturerte spørsmål som reduserer usikkerhet om egen modenhet.
+Hubbards «Applied Information Economics» (AIE) er en strukturert tilnærming til måling av det som virker umålelig. De sju stegene er: (1) Definer beslutningen, (2) Bestem hva som er ukjent, (3) Verdsett informasjonen, (4) Design måleinstrumentet, (5) Samle data, (6) Analyser, og (7) Gjør den informerte beslutningen. Ledelse 60:2 anvender prinsippet — ikke hele metoden — ved å gi ledergruppen strukturerte spørsmål som reduserer usikkerhet om egen situasjon.
 
 [Les det teoretiske grunnlaget for Ledelse 60:2 →](/metode/)

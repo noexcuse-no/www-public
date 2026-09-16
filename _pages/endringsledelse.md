@@ -17,7 +17,7 @@ hero:
   alt: "Tre abstrakte menneskesilhuetter ved en forgrening i en nordisk skogssti — én ser tilbake på den godt opptråkkede stien (fortid og hvor vi har vært), én står ved veiskillet og ser fremover mot en ny retning (endring og fremtid), én bygger bro mellom dem med utstrakte armer (endringsprosessen)"
 
   title: "Endringsledelse"
-  intro: "De fleste endringsinitiativ feiler — ikke fordi ideene var dårlige, men fordi ledelsen undervurderte hva som skulle til. Lær hvordan forskningsbasert endringsledelse ser ut i praksis."
+  intro: "De fleste endringsinitiativ feiler — ikke fordi ideene var dårlige, men fordi ledelsen undervurderte hva som skulle til for å få en hel organisasjon til å endre atferd. Endring er ikke en lineær prosess fra A til B — det er en reise gjennom usikkerhet, motstand og kulturelle barrierer."
 tags: ["endringsledelse", "organisasjonsendring", "kultur", "usikkerhet"]
 json_ld:
   - type: "Article"
@@ -54,11 +54,6 @@ json_ld:
         name: "Organisasjonsendring"
       - type: "Thing"
         name: "Kultur"
-cta:
-  - text: "Utforsk dette privat med din egen KI"
-    url: "/endringsledelse/"
-  - text: "Se hvordan 60:2 kan avdekke dette →"
-    url: "/ledelse-60-2/"
 ---
 
 ## Hvorfor endringsledelse er vanskeligere enn det ser ut til
@@ -108,18 +103,12 @@ Vellykket endringsledelse handler ikke om å ha den beste planen. Det handler om
 - Forståelse av maktforhold og interesser
 - Tålmodighet til å følge endringsprosessen gjennom alle steg
 - Mot til å opprettholde retning når det blir vanskelig
-
-Ledelse 60:2 gir deg verktøyet for det første steget — en baseline for hvor ledergruppen din står.
-
-
----
+Ledelse 60:2 gir deg verktøyet for det første steget — et strukturert utgangspunkt for hvor ledergruppen din står.
 
 ## Kjenner du deg igjen?
 
 *   **Kotters 70% feilrate:** Over 70% av endringsinitiativ feiler — ofte fordi ledere hopper over steg 1 og 2.
 *   **Kultur som bremse:** Organisasjoner på stadium 3 («Jeg er flink») opplever endring som trussel mot individets posisjon.
-
----
 
 ## Relaterte perspektiver
 
@@ -128,17 +117,11 @@ Ledelse 60:2 gir deg verktøyet for det første steget — en baseline for hvor 
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold blokkerer endring
 *   [Identitetsperspektivet](/identitet/) — når kulturen motarbeider endring
 
----
-
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/endringsledelse/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Endringsledelse](/endringsledelse/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Endringsledelse](/endringsledelse/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

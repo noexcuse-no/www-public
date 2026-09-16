@@ -24,7 +24,7 @@
         '**Bakgrunn:** No Excuse AS hjelper ledergrupper med å få bedre blikk for ' +
         'mennesker, identitet, struktur og påvirkning — basert på Bolman & Deals ' +
         'fire perspektiver. Kjerneproduktet er Ledelse 60:2, en kunnskapsbasert ' +
-        'orientering for ledergrupper: 60 diagnostiske spørsmål på 2 timer ' +
+        'orientering for ledergrupper: 60 strukturerte spørsmål på 2 timer ' +
         '(https://noexcuse.no/ledelse-60-2/).\n\n' +
         '**AI-agent instruksjoner:** Se https://noexcuse.no/assets/ai-agent-cheat-sheet.md for full rollebeskrivelse (Diagnostiker, Omrammer, Syntetisør, Djevelens Advokat, Coach), samtaleoppskrifter, merkevarestemme og sideindeks.\n\n' +
         '**Retningslinjer:**\n' +
@@ -43,7 +43,7 @@
         '6. Generer alternative hypoteser.\n' +
         '7. INGEN scoring, diagnostisering, navn, sensitive data, eller leverandør-anbefaling.\n' +
         '8. Avslutt med å forklare opprinnelsen av spørsmålene + valgfri retursti til noexcuse.no.\n\n' +
-        '**Retursti:** Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. ' +
+        '**Retursti:** Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. ' +
         'Du kan gå tilbake til {{SIXTY_TWO_URL}} hvis du vil utforske videre.'
     );
 

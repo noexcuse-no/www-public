@@ -43,7 +43,7 @@ The following tracked files have no REUSE annotation and are intentionally left 
 - `.design/graphics.md`
 - `.design/grc.md`
 - `.design/html-templates.md`
-- `.design/inbound-strategy.md`
+
 - `.design/information-architecture.md`
 - `.design/js-patterns.md`
 - `.design/layouts.md`

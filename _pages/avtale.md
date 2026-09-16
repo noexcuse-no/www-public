@@ -35,7 +35,7 @@ avtale: true
 
 §2.2 Alle priser er oppgitt eksklusiv mva. Offentlige avgifter og gebyrer i forbindelse med offentlig saksbehandling og lignende viderefaktureres Kunden. Ved krav om uavhengig kontroll vil kostnadene for dette faktureres Kunden.
 
-§2.3 Prisen inkluderer utgifter til reise inntil 5 kilometer (en vei) mellom Kunden og NO EXCUSE AS. Utgifter i forbindelse med reiser utover 5 kilometer og andre reiser som er pålagt eller godkjent av Kunden, kommer i tillegg og dekkes etter statens reiserepartement.
+§2.3 Prisen inkluderer utgifter til reise inntil 5 kilometer (en vei) mellom Kunden og NO EXCUSE AS. Utgifter i forbindelse med reiser utover 5 kilometer og andre reiser som er pålagt eller godkjent av Kunden, kommer i tillegg og dekkes etter Statens reiseregulativ.
 
 ## §3 Rettigheter
 
@@ -49,11 +49,11 @@ avtale: true
 
 ## §4 Taushetsplikt og sikkerhet
 
-§4.1 NO EXCUSE AS sitt personale har taushetsplikt for alle opplysninger, inklusive informasjon om personlige forhold, som han / hun blir kjent med under arbeidet for Kunden, og skal ivareta Kundens kommuniserte sikkerhets- og kvalitetskrav. NO EXCUSE AS sitt personale forholder seg for øvrig til gjeldende regelverk ved utførelsen av arbeidet.
+§4.1 NO EXCUSE AS sitt personale har taushetsplikt for alle opplysninger, inklusive informasjon om personlige forhold, som vedkommende blir kjent med under arbeidet for Kunden, og skal ivareta Kundens kommuniserte sikkerhets- og kvalitetskrav. NO EXCUSE AS sitt personale forholder seg for øvrig til gjeldende regelverk ved utførelsen av arbeidet.
 
-## §5 Mislighold og force majeur
+## §5 Mislighold og overmakt (force majeure)
 
-§5.1 Ved mislighold av denne kjøpekontrakt kan den part som rammes kreve erstatning for dokumentert økonomisk tap etter alminnelige prinsipper for erstatning i avtaleforhold, erstatningskravet kan ikke overstige kontraktssummen (eks mva). Skadeerstatning omfatter ikke indirekte tap eller følgesskader hos tredjemann. Dette gjelder også i force majeurtilfeller.
+§5.1 Ved mislighold av denne kjøpekontrakt kan den part som rammes kreve erstatning for dokumentert økonomisk tap etter alminnelige prinsipper for erstatning i avtaleforhold, erstatningskravet kan ikke overstige kontraktssummen (eks mva). Skadeerstatning omfatter ikke indirekte tap eller følgesskader hos tredjemann. Dette gjelder også i overmaktssituasjoner.
 
 ## §6 Tvister og verneting
 

@@ -1,8 +1,7 @@
 # homepage-repositioning — Feature Specification
 
-Status: Ready
-> **Strategy source:** `.design/inbound-strategy.md` §1, §2, §11, §5
-> **Backlog:** V1
+> Status: Ready
+> Backlog: V1
 
 ## Purpose / Problem
 
@@ -51,4 +50,3 @@ The homepage currently leads with methodology ("Enkel, kunnskapsbasert orienteri
 
 - `.specs/product-signature/README.md` (shared components)
 - `.specs/navigation-ia-split/README.md` (nav targets)
-- `.design/inbound-strategy.md` (strategy)

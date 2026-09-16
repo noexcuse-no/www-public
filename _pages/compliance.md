@@ -34,11 +34,7 @@ json_ld:
         name: "Regelverksetterlevelse"
       - type: "Thing"
         name: "Integritet"
-cta:
-  - text: "Utforsk dette privat med din egen KI"
-    url: "/compliance/"
-  - text: "Se hvordan 60:2 kan avdekke dette →"
-    url: "/ledelse-60-2/"
+
 ---
 
 ## Compliance er mer enn å unngå bøter
@@ -95,18 +91,12 @@ Les mer om [makt og etisk ledelse →](/makt/)
 ## Veien videre
 
 For ledergrupper som ønsker å styrke compliance-kulturen, handler første steg om en ærlig vurdering: Fungerer compliance-arbeidet i praksis, eller bare på papiret?
-
-Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og gir dere en baseline for hvor samsvarsarbeidet faktisk står.
-
-
----
+Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og gir dere et strukturert utgangspunkt for hvor samsvarsarbeidet faktisk står.
 
 ## Kjenner du deg igjen?
 
 *   **Årlig compliance-teater:** Rapporten er ferdig, men ingen spør om det faktisk fungerer.
 *   **Compliance som papirarbeid:** Avvik meldes, men ingen spør *hvorfor* de skjedde.
-
----
 
 ## Relaterte perspektiver
 
@@ -115,17 +105,11 @@ Ledelse 60:2 kartlegger de fire perspektivene på ledelse på to timer — og gi
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold bestemmer hva som er avvik
 *   [Identitetsperspektivet](/identitet/) — når compliance ikke er en del av identiteten
 
----
-
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/compliance/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Compliance og samsvarsstyring](/compliance/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Compliance og samsvarsstyring](/compliance/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

@@ -34,8 +34,8 @@ json_ld:
       type: "Organization"
       name: "No Excuse AS"
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Bestill 20 min avklaring"
+    url: "/samtale/"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
 conversation_topics:
@@ -113,15 +113,15 @@ ISO 9001 er det mest brukte kvalitetsstyringssystemet i verden. Likevel opplever
 
 ![Abstrakt illustrasjon av kvalitetsledelse](/assets/images/banners/grc-t3-kvalitet.webp)
 
-Kvalitetsledelse og lønnsomhet er samme samtale. Organisasjoner med høy kvalitetsmodenhet har færre avvik, mindre svinn, mer fornøyde kunder og lavere risiko for kontraktsbrudd. En ledergruppe som forstår kvalitet som et system, ser at kvalitetsforbedring er det samme som resultatforbedring.
+Kvalitetsledelse og lønnsomhet er samme samtale. Organisasjoner der kvalitet er forankret i ledergruppen har færre avvik, mindre svinn, mer fornøyde kunder og lavere risiko for kontraktsbrudd. En ledergruppe som forstår kvalitet som et system, ser at kvalitetsforbedring er det samme som resultatforbedring.
 
 Les mer i [strukturperspektivet →](/perspektiv/) og [beslutningsforankring →](/forankring/)
 
 ## Slik styrker Ledelse 60:2 GRC-arbeidet ditt
 
-Ledelse 60:2 er ikke et GRC-verktøy. Det er et verktøy for å forstå hvor ledergruppen din faktisk befinner seg — og det er forutsetningen for all meningsfull GRC. Uten en ærlig baseline blir styring, risikostyring og samsvarsarbeid gjetning.
+Ledelse 60:2 er ikke et GRC-verktøy. Det er et verktøy for å forstå hvor ledergruppen din faktisk befinner seg — og det er forutsetningen for all meningsfull GRC. Uten et ærlig utgangspunkt blir styring, risikostyring og samsvarsarbeid gjetning.
 
-| GRC-utfordring | Hva Ledelse 60:2 måler | Perspektiv |
+| GRC-utfordring | Hva Ledelse 60:2 synliggjør | Perspektiv |
 |---|---|---|
 | Er styringsstrukturen reell? | Gap mellom formell og reell beslutningsmyndighet | Påvirkning |
 | Tør ansatte å si ifra om avvik? | Psykologisk trygghet og åpenhetskultur | Mennesker |
@@ -131,16 +131,12 @@ Ledelse 60:2 er ikke et GRC-verktøy. Det er et verktøy for å forstå hvor led
 
 ![Hvordan Ledelse 60:2 styrker GRC gjennom fire perspektiver](/assets/images/banners/grc-t2-ledelse60-2-grc-enabler.webp)
 
-GRC uten ledelsesmodenhet er papirarbeid. Ledelse 60:2 gir deg en baseline — slik at du vet hvor innsatsen faktisk gir effekt. [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
-
----
+GRC uten forankring i ledergruppen er papirarbeid. Ledelse 60:2 gir deg et strukturert utgangspunkt — slik at du vet hvor innsatsen faktisk gir effekt. [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
 ## Kjenner du deg igjen?
 
 *   **GRC som papirarbeid:** Rapporter produseres, men ingen leser dem. Compliance-avdelingen «gjør» GRC, men ledergruppen eier det ikke.
 *   **Sertifisering uten kultur:** ISO-sertifisering på veggen, men ingen forstår hvorfor kravene er der.
-
----
 
 ## Relaterte perspektiver
 
@@ -149,17 +145,13 @@ GRC uten ledelsesmodenhet er papirarbeid. Ledelse 60:2 gir deg en baseline — s
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold bestemmer hva som er risiko
 *   [Identitetsperspektivet](/identitet/) — når GRC ikke er en del av identiteten
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/grc/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [GRC — Governance, Risk and Compliance](/grc/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [GRC — Governance, Risk and Compliance](/grc/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
