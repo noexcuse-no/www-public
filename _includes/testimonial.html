@@ -1,0 +1,22 @@
+{% comment %}
+  Testimonial component — only renders when ALL fields have approved real data.
+  Used for customer testimonials with quote, name, role, company, optional logo.
+{% endcomment %}
+{% assign t = include.testimonial %}
+{% if t.quote and t.name and t.role and t.company %}
+<div class="testimonial" {% if t.logo %}data-has-logo="true"{% endif %}>
+  <blockquote class="testimonial__quote">
+    <p>{{ t.quote }}</p>
+  </blockquote>
+  <footer class="testimonial__footer">
+    {% if t.logo %}
+    <img src="{{ t.logo | relative_url }}" alt="{{ t.company }}" class="testimonial__logo" loading="lazy">
+    {% endif %}
+    <div class="testimonial__attribution">
+      <cite class="testimonial__name">{{ t.name }}</cite>
+      <span class="testimonial__role">{{ t.role }}</span>
+      <span class="testimonial__company">{{ t.company }}</span>
+    </div>
+  </footer>
+</div>
+{% endif %}

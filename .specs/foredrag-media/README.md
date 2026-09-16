@@ -1,7 +1,6 @@
 # foredrag-media — Feature Specification
 
 > Status: Ready
-> Strategy source: `.design/inbound-strategy.md` §12, §11
 > Backlog: P2 (todo 22)
 
 ## Purpose / Problem
@@ -35,7 +34,7 @@ The site has no organizer-facing surface for Dagfinn's talks and media appearanc
 4. **KI-ledelse handler ikke om prompting** — AI as a leadership question
 5. **Fire forklaringer på samme lederproblem** — the four perspectives
 
-Each proposition links to its related topical page (publicity→topic mapping per `.design/inbound-strategy.md` §12).
+Each proposition links to its related topical page (publicity→topic mapping per `.specs/foredrag-media/README.md`).
 
 ## Design Constraints
 
@@ -49,4 +48,3 @@ Each proposition links to its related topical page (publicity→topic mapping pe
 ## Dependencies
 
 - `.specs/founder-credibility/README.md` (presenter module)
-- `.design/inbound-strategy.md` (strategy, publicity→topic mapping)

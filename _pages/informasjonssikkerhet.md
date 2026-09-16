@@ -34,7 +34,7 @@ json_ld:
       - type: "Thing"
         name: "Ledelse"
 cta:
-  - text: "Utforsk dette privat med din egen KI"
+  - text: "Utforsk med din egen KI"
     url: "/informasjonssikkerhet/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
@@ -90,15 +90,10 @@ Les også: [Usikkerhetshåndtering henger tett sammen med informasjonssikkerhet 
 
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 
-
----
-
 ## Kjenner du deg igjen?
 
 *   **IT-eierskap av sikkerhet:** Sikkerhet delegeres til IT-avdelingen, men ledergruppen eier risikoen.
 *   **Kultur der «det har gått bra så langt»:** Sikkerhetskulturen sitter ikke i veggene — den leverer falsk trygghet.
-
----
 
 ## Relaterte perspektiver
 
@@ -107,17 +102,13 @@ Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 *   [Påvirkningsperspektivet](/pavirkning/) — når ledere overstyrer sikkerhetsråd
 *   [Identitetsperspektivet](/identitet/) — når «vi har aldri blitt hacket» blir identitet
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/informasjonssikkerhet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Informasjonssikkerhet og cyberresiliens](/informasjonssikkerhet/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Informasjonssikkerhet og cyberresiliens](/informasjonssikkerhet/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

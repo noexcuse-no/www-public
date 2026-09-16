@@ -33,9 +33,7 @@
     --brand-teams: #6264A7;
     --brand-teams-hover: #5050A0;
 
-    /* Semantic colors */
-    --error-color: #c62828;
-    --success-color: #2e7d32;
+    /* Semantic colors (error/success themed — see raw pairs below) */
     --success-ring: rgba(46, 125, 50, 0.15);
     --success-ring-dark: rgba(102, 187, 106, 0.2);
 
@@ -56,6 +54,12 @@
     --link-color-dark: var(--primary-azure);
     --link-hover-light: #000a1f;
     --link-hover-dark: #8ab4f8;
+
+    /* Error & success (themed for contrast on dark surfaces) */
+    --error-color-light: #c62828;
+    --error-color-dark: #ef9a9a;
+    --success-color-light: #2e7d32;
+    --success-color-dark: #81c784;
 
     /* Footer */
     --footer-bg-light: var(--primary-azure);
@@ -171,6 +175,8 @@
     --surface-hover: var(--surface-hover-light);
     --border-color: var(--border-color-light);
     --border-color-subtle: var(--border-color-subtle-light);
+    --error-color: var(--error-color-light);
+    --success-color: var(--success-color-light);
     --overlay-modal: var(--overlay-modal-light);
     --profile-gradient-start: var(--profile-gradient-start-light);
     --profile-gradient-end: var(--profile-gradient-end-light);

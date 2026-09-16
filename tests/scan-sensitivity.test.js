@@ -36,8 +36,26 @@ describe('scan-sensitivity.mjs', () => {
         expect(stdout).not.toContain(marker);
     });
 
+    it('flags commercial-strategy content in unsafe fixture', () => {
+        const { code, stdout } = runScanner('--path', 'tests/fixtures/sensitivity/unsafe/commercial-strategy.md');
+        expect(code).toBe(1);
+        const lines = stdout.trim().split('\n').filter(Boolean);
+        // Should flag S-COMMERCIAL-STRATEGY rule
+        const commercialHits = lines.filter(l => l.startsWith('S-COMMERCIAL-STRATEGY|'));
+        expect(commercialHits.length).toBeGreaterThan(0);
+        // Should not echo matched content
+        expect(stdout).not.toContain('kommersiell tesis');
+        expect(stdout).not.toContain('Target segment');
+        expect(stdout).not.toContain('North Star');
+    });
+
     it('does not flag benign public copy', () => {
         const { code } = runScanner('--path', 'tests/fixtures/sensitivity/benign');
+        expect(code).toBe(0);
+    });
+
+    it('does not flag benign om-ledelse.md', () => {
+        const { code } = runScanner('--path', 'tests/fixtures/sensitivity/benign/om-ledelse.md');
         expect(code).toBe(0);
     });
 

@@ -61,7 +61,7 @@ json_ld:
       - type: "Thing"
         name: "Organisasjonskultur"
 cta:
-  - text: "Utforsk dette privat med din egen KI"
+  - text: "Utforsk med din egen KI"
     url: "/usikkerhet/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
@@ -129,7 +129,7 @@ John Kotter dokumenterte at rundt 70% av alle endringsinitiativer feiler. Årsak
 
 - For mye fokus på planlegging, for lite på implementering
 - Mangel på bred forankring blant nøkkelpersoner
-- Undervurdering av motstand og historisk baggage
+- Undervurdering av motstand og historisk bagasje
 - Kortsiktig tenkning — endring tar tid, de fleste gir opp for tidlig
 
 En moden ledelse forstår at risiko ikke er noe man setter på lista en gang i året — det er en daglig holdning. Organisasjoner som leser signalene tidlig, justerer kurs før krisen er et faktum. Muligheter og risikoer hører sammen. De som bare ser risiko, misser mulighetene. De som bare ser muligheter, ender i brann.
@@ -235,14 +235,10 @@ Scheins tre kulturnivåer kobler seg til Kotters steg: artefakter påvirkes av k
 
 Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært automatisk, krever stadige møter. Det oppleves som kulturproblem, men er egentlig strukturproblem — målene er ikke samordnet, og ingen har sett på om de henger sammen.
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Teateret i usikkerhet:** Det som var «hvordan vi gjør ting her» avsløres som overflate når presset kommer.
 *   **Kulturstadie 3 («Jeg er flink»):** Individualisme som demper kollektiv vekst. De mest effektive har nådd stadium 4 («Vi er flinke»).
-
----
 
 ## Relaterte perspektiver
 
@@ -251,21 +247,17 @@ Mål i ulike avdelinger som motvirker hverandre. Koordinering som skulle vært a
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold blokkerer endring
 *   [Identitetsperspektivet](/identitet/) — når kulturen mister sin kraft under press
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/usikkerhet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/usikkerhet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Usikkerhet og endring](/usikkerhet/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Usikkerhet og endring](/usikkerhet/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
 *   [Teateret i usikkerhet](/usikkerhet/#teateret-i-usikkerhet) — når fasaden sprenger
 *   [Logans fem kulturstadier](/usikkerhet/#de-fem-kulturstadiene-fra-logan) — fra apati til felles suksess
 *   [Kotters 8 steg](/usikkerhet/#kotters-8-steg-for-endring) — hvorfor 70% feiler
-

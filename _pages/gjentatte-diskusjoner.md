@@ -19,7 +19,7 @@ Dette er ikke en kommunikasjonsfeil. Det er et symptom på at ledergruppen mangl
 
 ## Hvorfor det vedvarer
 
-Når en ledergruppe ikke har et felles diagnostisk rammeverk, ender alle diskusjoner i symptombehandling. Man diskuterer *hvordan* man skal løse problemet, før man er enig om *hva* problemet er.
+Når en ledergruppe ikke har et felles analytisk rammeverk, ender alle diskusjoner i symptombehandling. Man diskuterer *hvordan* man skal løse problemet, før man er enig om *hva* problemet er.
 
 Bolman & Deals fire perspektiver viser at gjentatte diskusjoner ofte skyldes at ledergruppen bare ser én side av saken:
 
@@ -28,11 +28,11 @@ Bolman & Deals fire perspektiver viser at gjentatte diskusjoner ofte skyldes at 
 - **Påvirkning:** Skjulte agendaer og maktkamper gjør at avgjørelser tas bak lukkede dører
 - **Identitet:** Ulike forståelser av hva organisasjonen står for, skaper tvetydighet
 
-Uten et felles språk for å diagnostisere, blir hver diskusjon en ny forsøk på å kurere symptomer — i stedet for å behandle rotsårsaken.
+Uten et felles språk for å analysere, blir hver diskusjon en ny forsøk på å kurere symptomer — i stedet for å behandle rotsårsaken.
 
 ## Hva 60:2 undersøker her
 
-Ledelse 60:2 bruker 60 diagnostiske spørsmål fordelt på de fire perspektivene for å kartlegge:
+Ledelse 60:2 bruker 60 strukturerte spørsmål fordelt på de fire perspektivene for å kartlegge:
 
 - **Struktur:** Er roller og beslutningslinjer klare? Henger mål sammen?
 - **Mennesker:** Er det trygt å si ifra? Fungerer samarbeidet?
@@ -50,15 +50,13 @@ Resultatet er en rapport med prioriterte funn og konkrete anbefalinger — innen
 
 **Passer ikke for dere hvis:**
 - Dere trenger en rask teknisk løsning på et enkelt problem
-- Dere allerede har et felles diagnostisk rammeverk
+- Dere allerede har et felles analytisk rammeverk
 
 ## Neste steg
 
 [Se om 60:2 passer for dere →](/ledelse-60-2/#passer)
 
-[Utforsk dette privat med din egen KI →](/gjentatte-diskusjoner/) *(emnet er forhåndsvalgt)*
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Relaterte emner
 

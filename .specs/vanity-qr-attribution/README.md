@@ -1,7 +1,6 @@
 # vanity-qr-attribution — Feature Specification
 
 > Status: Ready
-> Strategy source: `.design/inbound-strategy.md` §10, §11
 > Backlog: P2 (todo 21)
 
 ## Purpose / Problem
@@ -52,4 +51,3 @@ Documented mapping of slug → canonical URL. Examples (per strategy):
 ## Dependencies
 
 - `.specs/analytics-events/README.md` (referral_source event)
-- `.design/inbound-strategy.md` (strategy)

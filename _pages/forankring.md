@@ -61,7 +61,7 @@ json_ld:
       - type: "Thing"
         name: "Kognitiv bias"
 cta:
-  - text: "Utforsk dette privat med din egen KI"
+  - text: "Utforsk med din egen KI"
     url: "/forankring/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
@@ -158,14 +158,10 @@ Daniel Kahneman og Amos Tversky dokumenterte hvordan menneskelig tenkning system
 
 Vi tror vi forstår mer enn vi faktisk gjør. «This time is different» blir gjentatt til tross for klare bevis på motsatt.
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Bekreftelsesbias:** Vi søker informasjon som støtter det vi allerede tror, og ignorerer det som utfordrer det.
 *   **Sunk cost-fallacy:** Vi fortsetter med feil investeringer fordi vi allerede har brukt så mye.
-
----
 
 ## Relaterte perspektiver
 
@@ -174,21 +170,16 @@ Vi tror vi forstår mer enn vi faktisk gjør. «This time is different» blir gj
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold styrer beslutninger
 *   [Identitetsperspektivet](/identitet/) — når kulturen belønner enighet over kritisk tenkning
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/forankring/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Forankre initiativer i ledergruppen](/forankring/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Forankre initiativer i ledergruppen](/forankring/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
 *   [De fem dimensjonene](/forankring/#de-fem-dimensjonene-av-beslutningstaking) — makt, interesser, bias, konflikt, kultur
 *   [Formell vs reell makt](/forankring/#1-formell-vs-reell-beslutningsmakt) — hvem som faktisk bestemmer
 *   [Konflikt og forhandling](/forankring/#4-konflikt-og-forhandling) — Fisher, Ury & Patton
-

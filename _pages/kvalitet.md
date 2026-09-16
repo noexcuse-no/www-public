@@ -33,7 +33,7 @@ json_ld:
       - type: "Thing"
         name: "Kontinuerlig forbedring"
 cta:
-  - text: "Utforsk dette privat med din egen KI"
+  - text: "Utforsk med din egen KI"
     url: "/kvalitet/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
@@ -80,7 +80,7 @@ Les mer om [psykologisk trygghet og tillit →](/tillit/)
 
 ## Kvalitetsledelse og lønnsomhet er samme samtale
 
-Organisasjoner med høy kvalitetsmodenhet har færre avvik, mindre svinn, mer fornøyde kunder og lavere risiko for kontraktsbrudd. De bruker mindre tid på brannslukking og mer tid på forbedring.
+Organisasjoner der kvalitet er forankret i ledergruppen har færre avvik, mindre svinn, mer fornøyde kunder og lavere risiko for kontraktsbrudd. De bruker mindre tid på brannslukking og mer tid på forbedring.
 
 Kvalitetsforbedring er ikke en kostnad — det er en investering. Men det forutsetter at ledergruppen ser kvalitet som et system, ikke som en kontrollfunksjon. Når kvalitet blir en integrert del av hvordan dere leder — ikke noe kvalitetsavdelingen «passer på» — skjer forbedringen av seg selv.
 
@@ -97,15 +97,10 @@ For ledergrupper som ønsker å styrke kvalitetsarbeidet, handler første steg o
 
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 
-
----
-
 ## Kjenner du deg igjen?
 
 *   **Kvalitet som parallellaktivitet:** Kvalitetsavvik registreres, men fører sjelden til reell endring. Audits blir en øvelse i å vise frem papirer.
 *   **Kvalitet som kontrollbyråkrati:** Prosesser som ble laget for å løse et problem, men nå lever sitt eget liv.
-
----
 
 ## Relaterte perspektiver
 
@@ -114,17 +109,14 @@ Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 *   [Påvirkningsperspektivet](/pavirkning/) — når feil insentiver driver produksjon foran kvalitet
 *   [Identitetsperspektivet](/identitet/) — når «vi har alltid gjort det sånn» står i veien
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/kvalitet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/kvalitet/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Kvalitet](/kvalitet/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Kvalitet](/kvalitet/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

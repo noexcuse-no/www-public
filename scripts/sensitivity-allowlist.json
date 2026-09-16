@@ -8,5 +8,95 @@
     "ruleId": "S-WEAKNESS-GAP",
     "path": "CHANGELOG.md",
     "reason": "historical entry wording ('gap-analysis specs') describing a completed spec rename, not an assessment"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": "CHANGELOG.md",
+    "reason": "historical references to deleted .design/inbound-strategy.md in changelog entries"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": "_pages/foredrag_og_media.md",
+    "reason": "published speaker page uses 'Målgruppe' (target audience) and 'Pris' (price) in normal commercial context"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": "_pages/makt.md",
+    "reason": "published article uses normal business terminology"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": "_pages/perspektiv.md",
+    "reason": "published article uses normal business terminology"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": "_includes/four-perspectives.html",
+    "reason": "published component uses normal business terminology"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": ".design/graphics.md",
+    "reason": "design documentation uses normal project terminology"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": ".design/grc.md",
+    "reason": "design documentation uses normal project terminology"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": ".design/norwegian-origin-branding.md",
+    "reason": "brand documentation uses normal branding terminology (market weighting, etc.)"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": ".design/scroll-affordances.md",
+    "reason": "design documentation uses normal project terminology"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": ".specs/analytics-events/README.md",
+    "reason": "specification documents analytics events including North Star metric"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": ".specs/homepage-repositioning/README.md",
+    "reason": "specification uses 'category differentiation' in normal feature context"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": ".specs/product-signature/README.md",
+    "reason": "specification uses 'category differentiation' in normal feature context"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": ".specs/topical-landing-pages/README.md",
+    "reason": "specification uses 'Målgruppe' (target audience) in normal feature context"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": "assets/css/components/cta-inline.css",
+    "reason": "CSS file uses 'positioning' in CSS layout context"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": "BACKLOG-WORKTREE.md",
+    "reason": "worktree backlog uses 'positioning' in design doc reference"
+  },
+  {
+    "ruleId": "S-COMMERCIAL-STRATEGY",
+    "path": "tests/scan-sensitivity.test.js",
+    "reason": "test file contains 'Target segment' and 'North Star' in test expectations"
+  },
+  {
+    "ruleId": "S-NEGOTIATION",
+    "path": ".opencode/opencode.json",
+    "reason": "config file contains 'negotiation material' in publicability rule text"
+  },
+  {
+    "ruleId": "S-PIPELINE",
+    "path": ".opencode/opencode.json",
+    "reason": "config file contains 'customer-pipeline material' in publicability rule text"
   }
 ]

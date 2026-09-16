@@ -13,7 +13,7 @@ og_image: /assets/images/banners/foredrag-og-media-og.webp
 
 # Foredrag og media
 
-Vi tilbyr fem bookbare foredrag og workshops — alle bygget på samme diagnostiske tilnærming som Ledelse 60:2. Ingen generiske inspirasjonsforedrag. Hvert innlegg leverer et konkret verktøy eller perspektiv som organisasjonen kan bruke umiddelbart.
+Vi tilbyr fem bookbare foredrag og workshops — alle bygget på samme strukturerte tilnærming som Ledelse 60:2. Ingen generiske inspirasjonsforedrag. Hvert innlegg leverer et konkret verktøy eller perspektiv som organisasjonen kan bruke umiddelbart.
 
 ---
 
@@ -23,7 +23,7 @@ Vi tilbyr fem bookbare foredrag og workshops — alle bygget på samme diagnosti
 
 **Hvorfor de fleste lederutviklingsprogram feiler — og hva man skal gjøre annerledes.**
 
-De fleste organisasjoner starter med løsningen (et program) før de vet hva problemet er. Dette foredrag viser hvorfor diagnostikk må komme før utvikling — og hvordan Ledelse 60:2 gir ledergruppen et felles språk for å identifisere hva som egentlig trenger å utvikles.
+De fleste organisasjoner starter med løsningen (et program) før de vet hva problemet er. Dette foredrag viser hvorfor strukturert orientering må komme før utvikling — og hvordan Ledelse 60:2 gir ledergruppen et felles språk for å identifisere hva som egentlig trenger å utvikles.
 
 - **Målgruppe:** Ledergrupper, HR-ledere, organisasjonsutviklere
 - **Tid:** 45–60 min (+ spørsmål)

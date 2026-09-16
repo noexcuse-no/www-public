@@ -14,6 +14,8 @@
     --surface-hover: var(--surface-hover-dark);
     --border-color: var(--border-color-dark);
     --border-color-subtle: var(--border-color-subtle-dark);
+    --error-color: var(--error-color-dark);
+    --success-color: var(--success-color-dark);
     --overlay-modal: var(--overlay-modal-dark);
     --profile-gradient-start: var(--profile-gradient-start-dark);
     --profile-gradient-end: var(--profile-gradient-end-dark);

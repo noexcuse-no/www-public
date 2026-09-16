@@ -1,8 +1,7 @@
 # buying-situation-pages — Feature Specification
 
-Status: Ready
-> **Strategy source:** `.design/inbound-strategy.md` §4, §11, §5
-> **Backlog:** V4
+> Status: Ready
+> Backlog: V4
 
 ## Purpose / Problem
 
@@ -54,7 +53,6 @@ The site has broad topical content but no pages built around the specific buying
 
 ## Dependencies
 
-- `.design/inbound-strategy.md` (strategy)
 - `.specs/ai-private-reflection/README.md` (reflection links)
 - `.specs/analytics-events/README.md` (problem_page_view)
 - `.specs/architecture/README.md` (pages frontmatter schemas)

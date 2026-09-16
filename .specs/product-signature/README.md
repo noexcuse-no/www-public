@@ -1,7 +1,6 @@
 # product-signature — Feature Specification
 
 > Status: Ready
-> Strategy source: `.design/inbound-strategy.md` §11, §6, §2
 > Backlog: P0 (todo 7)
 
 ## Purpose / Problem
@@ -61,4 +60,3 @@ Shared price card rendering from `_data/commercial.yml` (single source). Shows k
 - `.specs/product-page-offer/README.md` (consumer)
 - `.specs/bestill-booking-page/README.md` (consumer)
 - `.specs/founder-credibility/README.md` (CTA panel)
-- `.design/inbound-strategy.md` (strategy)

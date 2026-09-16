@@ -3,54 +3,105 @@ provenance:
   creation: editorial
   editorial_review: human
   editorial_responsibility: No Excuse AS
-class: article
-layout: article
+layout: default
 title: "Bestill 20 min avklaring"
 description: "Gratis 20-minutters avklaringssamtale. Vi finner ut om Ledelse 60:2 passer for dere. Hvis ikke, sier vi det."
 permalink: /samtale/
 og_image: /assets/images/banners/samtale-og.webp
-route_b_live: false
 ---
 
-## Bestill 20 min avklaring
+<div class="stat-bridge">
+  <div class="stat-bridge-text">GRATIS · 20 MIN · UFORPLIKTENDE</div>
+</div>
 
-Gratis. Vi finner ut om Ledelse 60:2 passer for dere. Hvis ikke, sier vi det.
+<h1>Finn ut om Ledelse 60:2 passer for dere</h1>
 
-### Hva skjer i avklaringen?
+<p>På 20 minutter får vi et bilde av situasjonen deres og vurderer om Ledelse 60:2 er et fornuftig neste steg. Passer det ikke, sier vi det.</p>
 
-Vi bruker 20 minutter på å forstå situasjonen deres:
+<a href="#bestill" class="cta">Bestill gratis avklaring</a>
 
-*   Hva er utfordringen dere ser?
-*   Hvor mange ledere er det snakk om?
-*   Hva har dere prøvd allerede?
-*   Passer 60:2 — eller trenger dere noe annet?
+<p><small>Ingen salgspitch · Ingen forpliktelse</small></p>
 
-Ingen salgspitch. Ingen forpliktelse. Vi leverer en ærlig vurdering av om metoden vår kan hjelpe.
+<p><a href="/ledelse-60-2/" class="card-link">Se hva Ledelse 60:2 inneholder →</a></p>
 
-### Etter avklaringen
+<div class="cta-panel">
+  <div class="cta-panel-body">
+    <p><strong>Du møter Dagfinn</strong></p>
+    <p>Videosamtale · ca. 20 minutter</p>
+    <p>Gratis · ingen forpliktelse</p>
+  </div>
+  <div class="cta-panel-person">
+    <img src="/assets/images/dagfinn.webp" alt="Dagfinn Bang-Johansen, daglig leder i No Excuse" class="cta-panel-thumb" width="96" height="96" loading="eager">
+    <p class="cta-panel-name">Dagfinn Bang-Johansen</p>
+    <p class="cta-panel-role">Daglig leder, No Excuse</p>
+  </div>
+</div>
 
-Hvis 60:2 passer: Vi sender forslag på tidspunkt for det strukturerte intervjuet (to timer, inntil fem ledere).
+<section class="process section" id="prosess">
+  <h2 class="section__heading">Dette skjer på 20 minutter</h2>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="process-step-number">1</div>
+      <h3>Kartlegge utfordringen</h3>
+      <p>Vi lytter til hva dere ser som problemet — og hva dere har prøvd allerede.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-step-number">2</div>
+      <h3>Vurdere passeform</h3>
+      <p>Vi matcher utfordringen mot hva 60:2 leverer — og sier nei hvis det ikke passer.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-step-number">3</div>
+      <h3>Gi anbefaling</h3>
+      <p>Enten forslag på neste steg med 60:2, eller peke dere i riktig retning annet sted.</p>
+    </div>
+  </div>
+</section>
 
-Hvis 60:2 **ikke** passer: Vi peker dere i riktig retning — enten internt, hos en annen partner, eller mot en annen type innsats.
+<section class="outcomes section" id="utfall">
+  <h2 class="section__heading">To mulige utfall</h2>
+  <div class="fit-grid">
+    <div class="fit-column">
+      <h3>Hvis 60:2 passer</h3>
+      <p>Vi sender forslag på tidspunkt for det strukturerte intervjuet (to timer, inntil fem ledere). Dere bestemmer om dere vil gå videre.</p>
+    </div>
+    <div class="fit-column">
+      <h3>Hvis 60:2 ikke passer</h3>
+      <p>Vi peker dere i riktig retning — enten internt, hos en annen partner, eller mot en annen type innsats. Ingen binding, ingen kostnad.</p>
+    </div>
+  </div>
+</section>
 
-### Bestill tid her
+<section class="dagfinn section" id="dagfinn">
+  <h2 class="section__heading">Du snakker med Dagfinn</h2>
+  <div class="cta-panel">
+    <div class="cta-panel-body">
+      <blockquote>
+        «Jeg bruker samtalen til å forstå situasjonen deres og vurdere om 60:2 kan være nyttig. Hvis svaret er nei, er det også et godt resultat.»
+      </blockquote>
+      <p><a href="/om-oss/" class="card-link">Mer om No Excuse →</a></p>
+    </div>
+    <div class="cta-panel-person">
+      <img src="/assets/images/dagfinn.webp" alt="Dagfinn Bang-Johansen, daglig leder i No Excuse" class="cta-panel-thumb" width="96" height="96" loading="lazy">
+      <p class="cta-panel-name">Dagfinn Bang-Johansen</p>
+      <p class="cta-panel-role">Daglig leder, No Excuse</p>
+    </div>
+  </div>
+</section>
 
-{% if page.route_b_live %}
-Vi bruker Microsoft Bookings for tidsvalg. Velg en tid som passer.
+<section class="booking section" id="bestill">
+  <h2 class="section__heading">Bestill 20 min avklaring</h2>
+  <div class="cta-panel">
+    <div class="cta-panel-body">
+      <h3>Avtal et tidspunkt</h3>
+      <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="cta">Bestill 20 min avklaring</a>
+      <p>Velg et tidspunkt som passer i kalenderen.</p>
+    </div>
+  </div>
 
-[Gå til booking for avklaring](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled)
-{% else %}
-**Avklaringstjenesten er ikke ennå publisert i Microsoft Bookings.**
+  <p><small>{{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }} — kun hvis dere velger å gå videre med Ledelse 60:2 etter avklaringen.</small></p>
 
-Når den er klart, vil denne siden linke direkte til booking-siden. I mellomtiden: send en e-post til [ledelse@noexcuse.no](mailto:ledelse@noexcuse.no) for å avtale en uforpliktende samtale.
-{% endif %}
+  <p><small>Ved bestilling behandles kontaktopplysningene i tråd med vår personvernerklæring. <a href="/personvern/">Les personvernerklæringen</a>.</small></p>
+</section>
 
-### Personvern
-
-Vi behandler dine opplysninger i tråd med GDPR. [Les personvernerklæringen](/personvern/).
-
----
-
-*Route B (sekundær): Bestill 20 min avklaring → /samtale/ → MS Bookings (avklaringstjeneste) → avklaringssamtale*
-
-*Staging-flagg `route_b_live: false` i frontmatter (standard). Denne siden renderes kun når flagget er true på relevante sider. Flagget flippes i en oppfølgende commit når brukeren bekrefter at 20-min Bookings-tjenesten eksisterer.*
+{% include trust-block.html %}

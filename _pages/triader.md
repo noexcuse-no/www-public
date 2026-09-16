@@ -66,8 +66,8 @@ hero:
   title: "Triader — styrken i trekantrelasjoner"
   intro: "To personer er en samtale. Tre personer er et system. Lær hvorfor triader er den mest undervurderte byggesteinen i velfungerende organisasjoner."
 cta:
-  - text: "Bestill uforpliktende samtale"
-    url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+  - text: "Bestill 20 min avklaring"
+    url: "/samtale/"
   - text: "Les mer om Ledelse 60:2 →"
     url: "/ledelse-60-2/"
 conversation_topics:
@@ -113,7 +113,7 @@ Logan og kolleger identifiserer flere strukturelle svakheter ved dyader som gjø
 
     Den mest åpenbare svakheten: Hvis én person i en dyade forsvinner (slutter, blir syk, omorganiseres), brytes relasjonen fullstendig. Kunnskap, relasjoner og beslutningskapasitet forsvinner med personen. Organisasjonen må starte på nytt.
 
-4.  ### Kulturell modenhet
+4.  ### Kulturstadier
 
     I Logans stadiummodell er dyader kjennetegnende for Stage 2 («livet suger, min spesielt») og Stage 3 («jeg er best»). I Stage 2 er relasjonene preget av avmakt og isolasjon. I Stage 3 bygges relasjonene rundt individuelle prestasjoner — «jeg og min allierte» — ikke rundt felles mål. Dette er ikke onde mennesker, det er folk som opererer i en kultur som belønner individet fremfor teamet.
 
@@ -217,16 +217,12 @@ Triader er ikke en magisk løsning. De kan også gå galt, og når de gjør det,
 
     Hvis én person i triaden bare mottar uten å gi, blir relasjonen utvinnende. Triaden opprettholdes av to personers generøsitet, men når den ene av dem trekker seg, kollapser strukturen. Bærekraftige triader krever at alle tre får noe verdifullt ut av relasjonen.
 
-Felles for alle disse feilmodiene er at de oppstår når kulturen ikke er moden nok til å bære triaden. En organisasjon som fortsatt er preget av Stage 3-tenkning («jeg er best») vil ha store problemer med å opprettholde ekte triader. Triader er et symptom på kulturmodenhet, ikke en snarvei til den.
-
----
+Felles for alle disse feilmodiene er at de oppstår når kulturen ikke er moden nok til å bære triaden. En organisasjon som fortsatt er preget av Stage 3-tenkning («jeg er best») vil ha store problemer med å opprettholde ekte triader. Triader er et symptom på kulturen de vokser ut av, ikke en snarvei forbi den.
 
 ## Kjenner du deg igjen?
 
 *   **Triangulering:** A snakker med C om B, i stedet for at A og B løser konflikten direkte.
 *   **Maktkonsentrasjon:** Én person i triaden nekter å dele nettverket sitt og holder de to andre adskilt.
-
----
 
 ## Relaterte perspektiver
 
@@ -234,21 +230,17 @@ Felles for alle disse feilmodiene er at de oppstår når kulturen ikke er moden 
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktdynamikk ødelegger triader
 *   [Identitetsperspektivet](/identitet/) — når kulturen ikke bærer triader
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/triader/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/triader/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Triader](/triader/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Triader](/triader/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
 *   [Når triader ikke fungerer](/triader/#når-triader-ikke-fungerer) — advarselstegn
 *   [Prosjekttriaden](/triader/#prosjekttriaden-sponsor-leder-ekspert) — sponsor, leder, ekspert
 *   [Overbroende triader](/triader/#overbroende-triader-brobygging-mellom-siloer) — brobygging mellom siloer
-

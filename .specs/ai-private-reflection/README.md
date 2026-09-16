@@ -1,7 +1,6 @@
 # ai-private-reflection — Feature Specification
 
 > Status: Ready
-> Strategy source: `.design/inbound-strategy.md` §8, §9, §11
 > Backlog: P1 (todos 14–16)
 
 ## Purpose / Problem
@@ -85,4 +84,3 @@ After reflection, the visitor can return to the site via attribution-only URLs (
 - `.specs/privacy-communication/README.md` (privacy layers)
 - `.specs/analytics-events/README.md` (ai_topic_selected, ai_prompt_copied, ai_return)
 - `.specs/navigation-ia-split/README.md` (AI = insight surface)
-- `.design/inbound-strategy.md` (strategy)

@@ -1,8 +1,7 @@
 # product-page-offer — Feature Specification
 
-Status: Ready
-> **Strategy source:** `.design/inbound-strategy.md` §6, §7, §2
-> **Backlog:** V2
+> Status: Ready
+> Backlog: V2
 
 ## Purpose / Problem
 
@@ -57,4 +56,3 @@ All rendering from ONE data source: `_data/commercial.yml`. Never hardcoded in p
 
 - `.specs/product-signature/README.md` (price card, shared components)
 - `.specs/bestill-booking-page/README.md` (Route A/B targets)
-- `.design/inbound-strategy.md` (strategy)

@@ -54,9 +54,7 @@ Resultatet er en rapport som viser *hvor* gjennomføringen stagner — og konkre
 
 [Se om 60:2 passer for dere →](/ledelse-60-2/#passer)
 
-[Utforsk dette privat med din egen KI →](/svak-gjennomforing/) *(emnet er forhåndsvalgt)*
-
----
+[Utforsk med din egen KI →](/svak-gjennomforing/) *(emnet er forhåndsvalgt)*
 
 ## Relaterte emner
 
@@ -64,14 +62,10 @@ Resultatet er en rapport som viser *hvor* gjennomføringen stagner — og konkre
 - [Uklare roller](/uklare-roller/) — når ingen vet hvem som bestemmer
 - [Strategi ikke gjennomført](/strategi-ikke-gjennomfort/) — når strategien ikke blir virkelighet
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Beslutninger uten handling:** Ledergruppen er enig i møtet, men ingenting skjer etterpå.
 *   **Ingen eierskap:** Strategien eies av ingen — eller av alle (som betyr ingen).
-
----
 
 ## Relaterte perspektiver
 
@@ -80,17 +74,14 @@ Resultatet er en rapport som viser *hvor* gjennomføringen stagner — og konkre
 *   [Påvirkningsperspektivet](/pavirkning/) — når interesser blokkerer gjennomføring
 *   [Identitetsperspektivet](/identitet/) — når gjennomføring ikke er en del av kulturen
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/svak-gjennomforing/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+[Utforsk med din egen KI →](/svak-gjennomforing/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Svak gjennomføring](/svak-gjennomforing/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Svak gjennomføring](/svak-gjennomforing/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

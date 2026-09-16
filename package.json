@@ -25,7 +25,9 @@
     "test:watch": "vitest",
     "rights:generate": "node scripts/generate-rights-metadata.mjs",
     "rights:check": "npm run rights:generate && git diff --exit-code -- _data/rights.json",
-    "ci:local": "node scripts/local-ci.mjs"
+    "ci:local": "node scripts/local-ci.mjs",
+    "validate:build": "node scripts/validate-production-build.mjs",
+    "check:links": "node scripts/check-links.mjs"
   },
   "devDependencies": {
     "eslint": "10.10.0",

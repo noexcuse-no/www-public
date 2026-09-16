@@ -1,0 +1,11 @@
+{% comment %}
+  AI Reflection CTA — single reusable component for "Utforsk med din egen KI"
+  Replaces all inline variations across article pages.
+  Usage: {% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
+{% endcomment %}
+<div class="ai-reflection-cta" data-source-url="{{ include.source_url }}" data-sixty-two-url="{{ include.sixty_two_url }}">
+  <p class="ai-reflection-cta__text">
+    <span class="ai-reflection-cta__primary">Utforsk med din egen KI →</span>
+    <span class="ai-reflection-cta__secondary"> | Se hvordan 60:2 kan avdekke dette →</span>
+  </p>
+</div>

@@ -9,6 +9,8 @@ permalink: /om-store-sprakmodeller/
 description: "Hvordan noexcuse.no bruker store språkmodeller — begrenset, redaksjonelt ansvarlig, og aldri til analyse eller anbefalinger."
 ---
 
+> **Vi bruker generativ KI som støtte i utvikling og innholdsarbeid. Publisert innhold gjennomgås og kvalitetssikres av oss.**
+
 # Om KI på noexcuse.no
 
 ## Terminologisk forbehold
@@ -26,7 +28,7 @@ LLM-er brukes **kun** i støttende og pyntende roller:
 - **Bildegenerering:** Illustrasjoner, banner, ikoner via EvoLink GPT Image 2 — alltid kuratert og godkjent av redaksjon.
 - **Forskningssammendrag:** Oppsummering av lange dokumenter som utgangspunkt for egen analyse — aldri som erstatning for egen lesing.
 
-**LLM-er brukes ALDRI til:**
+**LLM-er brukes ikke til:**
 - Å stille spørsmål til ledere eller medarbeidere
 - Å gjøre analyser av organisasjonskultur, ledelse eller risiko
 - Å formulere anbefalinger, strategier eller handlingsplaner
@@ -59,7 +61,7 @@ Ansvar omfatter:
 Vi dokumenterer vår LLM-bruk maskinlesbart på flere nivåer:
 
 1. **Per-side JSON-LD** i `<head>`: `digitalSourceType` per side (`editorial`, `human-created`, `ai-generated`).
-2. **Per-bilde JSON-LD + RDFa:** AI-genererte bilder mærkes med `digitalSourceType: TrainedAlgorithmicMediaDigitalSource` + `license: CC0-1.0`.
+2. **Per-bilde JSON-LD + RDFa:** AI-genererte bilder merkes med `digitalSourceType: TrainedAlgorithmicMediaDigitalSource` + `license: CC0-1.0`.
 3. **Transparensmanifest:** `/.well-known/ai-transparency.json` med full oversikt over redaksjonell ansvar, AI-bruk per side, og bilder.
 4. **EU AI Act-basisk ikon:** I header-banner, med lenke til denne siden.
 5. **IPTC/XMP i bildefiler:** `DigitalSourceType`, `Rights`, `WebStatement` inni WebP-filer.
@@ -68,12 +70,12 @@ Vi dokumenterer vår LLM-bruk maskinlesbart på flere nivåer:
 
 Vi påstår at innholdet på noexcuse.no faller under **redaksjonelt unntaket** i Artikkel 50(4) av EU AI Act:
 
-- Allt innhold er **menneskelig redaksjonelt gjennomgått**.
+- Alt innhold er **menneskelig redaksjonelt gjennomgått**.
 - LLM-er brukes **kun i støttende/pyntende rolle**.
 - Ingen innhold er "dypt forfalskning" (deepfake) — ingen bilder ligner på reale personer/steder.
 - Vi påtar oss fullt redaksjonelt ansvar.
 
-Dette unntaket gjelder for **både tekst og bilder** — vi skiller ikke mellom dem i vår offentliggjøringspraksis.
+Dette unntaket gjelder for tekst og bilder som er redaksjonelt gjennomgått. Visuelle dypt forfalskninger (deepfakes) er ikke aktuelt for dette nettstedet.
 
 ## Kontakt
 

@@ -16,7 +16,7 @@ hero:
   image: /assets/images/banners/baerekraft-t1-hero.webp
   alt: "Tre abstrakte menneskesilhuetter i et nordisk kystlandskap — én planter et ungt tre i sanddynene (miljøansvar), én holder en gjenbrukssirkel i hendene (sirkulærøkonomi), én peker mot horisonten med en sol som stiger opp (fremtid og samfunnsansvar)"
   title: "Bærekraft og samfunnsansvar"
-  intro: "Miljøfyrtårn, ISO 45001, FNs Global Compact, CSRD — kravene til bærekraftsrapportering øker. Men rapportering alene endrer ingenting. Bærekraftsarbeid må forankres i ledelsens identitet."
+  intro: "Miljøfyrtårn, ISO 45001 (HMS), CSRD, FNs Global Compact — kravene til bærekraftsrapportering øker. Men rapportering alene endrer ingenting. Bærekraftsarbeid må forankres i ledelsens identitet."
 tags: ["bærekraft", "esg", "samfunnsansvar", "miljø", "grc"]
 json_ld:
   - type: "Article"
@@ -34,11 +34,6 @@ json_ld:
         name: "ESG"
       - type: "Thing"
         name: "Miljøledelse"
-cta:
-  - text: "Utforsk dette privat med din egen KI"
-    url: "/baerekraft/"
-  - text: "Se hvordan 60:2 kan avdekke dette →"
-    url: "/ledelse-60-2/"
 ---
 
 ## Bærekraftsarbeid er mer enn rapportering
@@ -102,18 +97,12 @@ Samlet handler GRC-perspektivet på bærekraft om å gå fra rapportering til re
 Bærekraftsarbeid som fungerer, starter med en ærlig vurdering: Er bærekraft en del av hvem vi er — eller noe vi gjør fordi vi må?
 
 For ledergrupper som ønsker å ta bærekraft på alvor, handler første steg om å forstå hvor dere faktisk står. Ikke hvilke sertifiseringer dere har, men hvordan bærekraft er forankret i ledelsens identitet, struktur og prioriteringer.
-
 Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
-
-
----
 
 ## Kjenner du deg igjen?
 
 *   **Grønnvasking i praksis:** Rapporteringen er fin, men ingen kan si hvordan bærekraft faktisk påvirker beslutninger.
 *   **Bærekraft som sideprosjekt:** Ansvarlig for bærekraft sitter i en avdeling uten mandat til å påvirke kjernebeslutninger.
-
----
 
 ## Relaterte perspektiver
 
@@ -122,17 +111,11 @@ Ledelse 60:2 gir dere et verktøy for å kartlegge dette på to timer.
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold blokkerer bærekraft
 *   [Identitetsperspektivet](/identitet/) — når bærekraft ikke er en del av identiteten
 
----
-
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/baerekraft/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Bærekraft og samfunnsansvar](/baerekraft/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Bærekraft og samfunnsansvar](/baerekraft/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

@@ -16,7 +16,6 @@
     box-shadow: var(--shadow-sm);
     padding: var(--space-lg);
     margin: 0;
-    cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: var(--box-background);
     text-align: center;

@@ -36,12 +36,19 @@ const EXCLUDED_DIRS = new Set([
   '_site',
   '.git',
   '.omo',
-  '.opencode',
   '.jekyll-cache',
   'dist',
   'build',
   '.cache',
   '.playwright-mcp',
+  '.codegraph',
+]);
+
+// Allow scanning tracked config/rule directories even if parent is excluded
+const SCAN_ALLOWED_SUBDIRS = new Set([
+  '.omo/rules',
+  '.opencode/lookup.json',
+  '.opencode/opencode.json',
 ]);
 
 // Paths that are detection data (synthetic fixtures + this scanner's own pattern
@@ -53,7 +60,6 @@ const EXCLUDED_FILES = new Set([
   'scripts/sensitivity-allowlist.json',
   'scripts/ci-scan-sensitivity.sh',
   'tests/provenance-rights-validators.test.mjs',
-  'BACKLOG.md',
 ]);
 const EXCLUDED_PATH_PREFIXES = ['tests/fixtures/sensitivity'];
 
@@ -72,6 +78,12 @@ function toRel(p) {
 }
 
 function isExcluded(relPath) {
+  // Allow specific tracked subdirectories even if parent is excluded
+  for (const allowed of SCAN_ALLOWED_SUBDIRS) {
+    if (relPath === allowed || relPath.startsWith(allowed + '/')) {
+      return false;
+    }
+  }
   if (EXCLUDED_FILES.has(relPath)) return true;
   if (EXCLUDED_PATH_PREFIXES.some((p) => relPath === p || relPath.startsWith(p + '/'))) return true;
   return relPath.split('/').some((seg) => EXCLUDED_DIRS.has(seg));

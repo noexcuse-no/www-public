@@ -1,0 +1,6 @@
+# Form endpoints for external form processors
+# These are public form IDs (e.g., Formspree, Netlify Forms) — not secrets.
+# Actual submission endpoints are handled by the external service.
+
+booking_fallback: "your-formspree-id-here"
+newsletter: "your-formspree-id-here"

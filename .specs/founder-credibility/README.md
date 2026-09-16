@@ -1,8 +1,7 @@
 # founder-credibility — Feature Specification
 
-Status: Ready
-> **Strategy source:** `.design/inbound-strategy.md` §3, §12, §11
-> **Backlog:** V6
+> Status: Ready
+> Backlog: V6
 
 ## Purpose / Problem
 
@@ -44,7 +43,6 @@ A reusable component showing Dagfinn (name, role, brief bio) with a reassurance 
 
 ## Dependencies
 
-- `.design/inbound-strategy.md` (strategy)
 - `.specs/bestill-booking-page/README.md` (practitioner on /bestill/)
 - `.specs/foredrag-media/README.md` (presenter on media page)
 - `.specs/product-signature/README.md` (shared CTA panel component)

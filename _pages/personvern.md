@@ -11,19 +11,21 @@ permalink: /personvern/
 
 # Personvernerklæring
 
-**Sist oppdatert:** 11. juni 2026
+**Sist oppdatert:** 16. september 2026
 
-No Excuse AS (org. nr. 934 418 880) behandler personopplysninger i samsvar med gjeldende personvernlovgivning, herunder EUs personvernforordning (GDPR). Denne erklæringen forklarer hvilke opplysninger vi samler inn, hvorfor vi samler dem inn, og hvilke rettigheter du har.
+No Excuse AS (org. nr. 935 794 420) behandler personopplysninger i samsvar med gjeldende personvernlovgivning, herunder EUs personvernforordning (GDPR). Denne erklæringen forklarer hvilke opplysninger vi samler inn, hvorfor vi samler dem inn, og hvilke rettigheter du har.
 
 ## Behandlingsansvarlig
 
 No Excuse AS\
 E-post: [ledelse@noexcuse.no](mailto:ledelse@noexcuse.no)\
-Org. nr.: 934 418 880
+Org. nr.: 935 794 420
+
+<!-- PRIVACY-LEGAL-REVIEW: Innsamlingsformål og skjemaflyt (nyhetsbrev/kontaktskjema) venter eier-/juss-godkjenning. Skjemaendepunkt i _data/forms.yml er fortsatt plassholdere. -->
 
 ## Hvilke opplysninger samler vi inn?
 
-Vi samler kun inn opplysninger du selv gir oss:
+Vi samler inn opplysninger du selv gir oss:
 
 - **E-postadresse:** Når du melder deg på nyhetsbrev
 - **Navn, e-post og melding:** Når du sender oss en henvendelse via kontaktskjemaet
@@ -45,7 +47,9 @@ Ingen cookies brukes. IP-adresser anonymiseres umiddelbart. Data lagres i EU.
 |--------|-------------|-------------------|
 | Nyhetsbrev | E-postadresse | Samtykke (GDPR art. 6(1)a) |
 | Kontaktskjema | Navn, e-post, melding | Samtykke (GDPR art. 6(1)a) |
-| Besøksstatistikk | Anonymiserte metadata | Beregnet interesse (GDPR art. 6(1)f) |
+| Besøksstatistikk | Anonymiserte metadata | Berettiget interesse (GDPR art. 6(1)f) |
+
+<!-- PRIVACY-LEGAL-REVIEW: Rettslig grunnlag og lagringsperioder over skal vurderes av eier/juss før publisering videres. -->
 
 ## Lagring og behandling
 

@@ -61,7 +61,7 @@ json_ld:
       - type: "Thing"
         name: "Kulturutvikling"
 cta:
-  - text: "Utforsk dette privat med din egen KI"
+  - text: "Utforsk med din egen KI"
     url: "/kultur/"
   - text: "Se hvordan 60:2 kan avdekke dette →"
     url: "/ledelse-60-2/"
@@ -93,7 +93,7 @@ Dave Logan og medforfattere beskriver i *Tribal Leadership* en alternativ måte 
 
 Fra stadium 1 («Livet suger» — apati og håpløshet) til stadium 5 («Livet er fantastisk» — innovasjon og undring) er det et tydelig mønster. De fleste organisasjoner befinner seg i stadium 3 («Jeg er flink»), preget av individualisme og intern konkurranse. De mest effektive har nådd stadium 4 («Vi er flinke»), der samarbeid og felles suksess er normen.
 
-Logans forskning viser at organisasjoner på stadium 4 presterer bedre økonomisk, har lavere turnover og sterkere kundelojalitet. 
+Logan og medarbeidere beskriver i *Tribal Leadership* hvordan organisasjoner på stadium fire ifølge studien deres presterer bedre økonomisk, har lavere turnover og sterkere kundelojalitet. 
 
 Les mer om [de fem kulturstadiene →](/identitet/)
 
@@ -119,14 +119,10 @@ Les mer om [Kotters endringsmodell og praktisk endringsledelse →](/endringsled
 
 Organisasjonskultur er ikke et HR-prosjekt. Det er det viktigste ledelsesverktøyet dere har.
 
----
-
 ## Kjenner du deg igjen?
 
 *   **Kultur på veggen vs i praksis:** Verdiene står på veggen, men ingen kan gi eksempler på når de ble levd ut i praksis.
 *   **Stadium 3 («Jeg er flink»):** Individualisme som demper kollektiv vekst. De mest effektive har nådd stadium 4 («Vi er flinke»).
-
----
 
 ## Relaterte perspektiver
 
@@ -135,17 +131,13 @@ Organisasjonskultur er ikke et HR-prosjekt. Det er det viktigste ledelsesverktø
 *   [Påvirkningsperspektivet](/pavirkning/) — når maktforhold former kulturen
 *   [Identitetsperspektivet](/identitet/) — når kulturen er usynlig
 
----
+## Utforsk med din egen KI
 
-## Utforsk dette privat med din egen KI
-
-[Utforsk dette privat med din egen KI →](/kultur/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-
----
+{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside for ledelsesdiagnostikk. Du kan gå tilbake til [Organisasjonskultur](/kultur/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Organisasjonskultur](/kultur/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 

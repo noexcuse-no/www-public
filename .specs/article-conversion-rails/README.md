@@ -1,8 +1,7 @@
 # article-conversion-rails — Feature Specification
 
-Status: Ready
-> **Strategy source:** `.design/inbound-strategy.md` §8, §11, §4
-> **Backlog:** V5
+> Status: Ready
+> Backlog: V5
 
 ## Purpose / Problem
 
@@ -55,7 +54,6 @@ Formalize the existing related-links pattern into a consistent block at content 
 
 ## Dependencies
 
-- `.design/inbound-strategy.md` (strategy)
 - `.specs/ai-private-reflection/README.md` (reflection links, return loop)
 - `.specs/analytics-events/README.md` (related_topic_opened)
 - `.specs/navigation-ia-split/README.md` (surface classification)

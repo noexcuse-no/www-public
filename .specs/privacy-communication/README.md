@@ -1,7 +1,6 @@
 # privacy-communication — Feature Specification
 
 > Status: Ready
-> Strategy source: `.design/inbound-strategy.md` §9, §11
 > Backlog: P0/P1 (todos 12, 17)
 
 ## Purpose / Problem
@@ -63,4 +62,3 @@ Never claim "samtalen er privat". The exact wording is **"Samtalen deles ikke me
 - `.specs/ai-private-reflection/README.md` (feature surface)
 - `.specs/analytics-events/README.md` (what analytics records)
 - `.specs/privacy/README.md` (privacy invariants)
-- `.design/inbound-strategy.md` (strategy)

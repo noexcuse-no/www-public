@@ -1,8 +1,8 @@
 # Norwegian Origin Brand Positioning
 
-> **Purpose:** Market-specific brand notes for how No Excuse AS should express its Norwegian origin when expanding internationally. To be consumed by FF2 (i18n) when unblocked, and by Om Oss content updates (BR2).
+> **Purpose:** Current brand notes for how No Excuse AS expresses its Norwegian origin. Consumed by Om Oss content (BR2) and i18n substrate (FF2).
 >
-> **Three-strategy approach:** Quality signal + Cultural context + Humility — all three used in combination, weighted differently per market.
+> **Approach:** Quality signal + Cultural context + Humility — used in combination.
 
 ## Strategy Overview
 
@@ -56,48 +56,6 @@ Position small size and Norwegian origin as a feature, not a bug. Aligns with ex
 - Use the anti-establishment tone that already works in Norwegian — it translates well to international audiences tired of big consulting
 - "We say what others think" — this is universal, not culturally specific
 
-## Market-Specific Positioning
-
-### Nordic Markets (Sweden, Denmark)
-
-**Audience perception:** Norwegian origin is familiar, slightly exotic (different dialect, different regulatory context), and viewed positively.
-
-**Weighting:** 40% cultural context, 35% quality signal, 25% humility
-
-**Specific notes:**
-- Do not over-explain Norwegian origin — Nordic audiences already know the context
-- Emphasize specific Norwegian regulatory/cultural differences that are advantages (e.g., Norway's unique position on oil/energy transition, or Norwegian work culture nuances)
-- The anti-establishment tone works well — Scandinavian audiences share the cultural reference
-- Use examples and case references that resonate across the region (similar labor laws, union structures)
-- Language: Swedish and Danish visitors may prefer English over "Norsk, men litt annerledes" — offer English as default with Norwegian as signal of authenticity
-
-### Continental Europe (Germany, Benelux)
-
-**Audience perception:** Norwegian origin is premium — associated with oil wealth, clean energy, high quality of life, and trust. Less familiar with specific leadership culture than Nordic neighbors.
-
-**Weighting:** 50% quality signal, 30% cultural context, 20% humility
-
-**Specific notes:**
-- Lead with quality signal — Norway's regulatory rigor and trust metrics are compelling to German and Benelux business audiences
-- The flat hierarchy message is both familiar (German Mittelstand also values directness) and differentiating (Norway takes it further)
-- Reference specific Norwegian institutions that have credibility: BI Norwegian Business School, Norwegian governance model
-- The "small company" humility message works well here — German Mittelstand companies respect founder-led businesses
-- Avoid over-using the flag — use Norwegian landscape imagery and design language instead
-- Language: German market may expect some German-language content; Benelux is comfortable with English
-
-### United Kingdom
-
-**Audience perception:** Norwegian origin is positive but neutral — associated with oil, salmon, and social democracy. Less immediate brand recognition than Germany.
-
-**Weighting:** 40% quality signal, 35% humility, 25% cultural context
-
-**Specific notes:**
-- UK has its own strong consulting industry — the anti-establishment/humility angle is the strongest differentiator
-- "Not another London consultancy" is a genuine positioning
-- The Scandinavian leadership model is known and respected in HR/leadership circles but not mainstream
-- Quality signal works but needs substantiation — cite specific Norwegian practices, not just origin
-- Language: English-native market — translation quality must be impeccable, preferably with a British English copy editor
-
 ## Visual Identity Considerations for International Pages
 
 - **Flag usage:** Use the Norwegian flag only in the footer / contact section, not in hero or primary branding. It signals origin without making it the headline.
@@ -128,9 +86,3 @@ The following content additions strengthen Norwegian identity for both domestic 
 4. **"Beste praksis fra norsk arbeidsliv":** A section that showcases specific Norwegian workplace practices (6-timers eksperimenter, tillitsreformer, flat struktur) as evidence that the methodology is grounded in real Norwegian work-life, not imported management theory.
 
 5. **International framing (for when FF2 adds English):** "No Excuse er en norsk ledelsesbedrift. Vår tilnærming bygger på skandinavisk ledelsestradisjon — lav avstand mellom leder og ansatt, psykologisk trygghet, og tillit som bærebjelke."
-
-## Related Specs
-
-- `.specs/partners/README.md` — partner presentation (partners may co-brand Norwegian origin)
-- `.specs/inbound-sales/README.md` — UTM conventions for international campaigns
-- `.design/brand-perception.md` — brand voice and tone (for international adaptation)
