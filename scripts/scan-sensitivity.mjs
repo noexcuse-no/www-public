@@ -19,7 +19,7 @@
  * own rule/allowlist files are excluded by design (they are detection data,
  * never production content); tests prove scanner behaviour via --path.
  */
-import { readFileSync, readdirSync, statSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative, resolve, dirname, basename, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
@@ -162,7 +162,9 @@ function changedFiles() {
       .filter(Boolean)
       .filter((rel) => !isExcluded(rel)),
   );
-  return [...set].map((rel) => join(ROOT, rel));
+  // Changed paths may have been deleted or renamed in the working tree since
+  // the base — nothing left to scan on disk (renames are covered by the new path).
+  return [...set].map((rel) => join(ROOT, rel)).filter((abs) => existsSync(abs));
 }
 
 function scanFile(file) {
