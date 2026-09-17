@@ -11,7 +11,7 @@ Primary product: **Ledelse 60:2** — a knowledge-based orientation for leadersh
 
 ## Licensing
 
-Source code defaults to 0BSD; the repository overall uses mixed rights (REUSE/SPDX). See `LICENSE.md` and https://noexcuse.no/rettigheter/.
+Source code defaults to 0BSD; the repository overall uses mixed rights (REUSE/SPDX). See `LICENSE.md` and https://noexcuse.no/opphavsrett/.
 
 ## Why this repository is public
 

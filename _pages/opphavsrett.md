@@ -1,15 +1,15 @@
 ---
-class: page
-layout: article
-title: "Rettigheter og lisensiering"
-permalink: /rettigheter/
+layout: page
+title: "Opphavsrett"
+description: "Lisensiering og opphavsrett for innhold og ressurser på noexcuse.no — REUSE/SPDX, AI-transparens og bildemetadata."
+permalink: /opphavsrett/
 provenance:
   creation: editorial
   editorial_review: human
   editorial_responsibility: No Excuse AS
 ---
 
-# Rettigheter og lisensiering
+# Opphavsrett
 
 Denne siden gir oversikt over lisensiering og rettigheter for innhold og ressurser på noexcuse.no.
 

@@ -46,7 +46,7 @@ describe('metadata sanitation (sanitize-metadata.sh)', () => {
             `-SerialNumber=ABC123XYZ -UserComment="internal test comment" ` +
             `-XMP-dc:Creator="Rasmus S. Olsen" ` +
             `-XMP-dc:Rights="2026 No Excuse AS" ` +
-            `-XMP-xmpRights:WebStatement="https://noexcuse.no/rettigheter/#proprietary" ` +
+            `-XMP-xmpRights:WebStatement="https://noexcuse.no/opphavsrett/#proprietary" ` +
             `"${dirtyImg}"`,
             { encoding: 'utf8', cwd: root }
         );
@@ -54,7 +54,7 @@ describe('metadata sanitation (sanitize-metadata.sh)', () => {
         execSync(
             `"${EXIFTOOL}" -overwrite_original ` +
             `-XMP-dc:Rights="2026 No Excuse AS" ` +
-            `-XMP-xmpRights:WebStatement="https://noexcuse.no/rettigheter/#proprietary" ` +
+            `-XMP-xmpRights:WebStatement="https://noexcuse.no/opphavsrett/#proprietary" ` +
             `"${cleanImg}"`,
             { encoding: 'utf8', cwd: root }
         );
@@ -88,7 +88,7 @@ describe('metadata sanitation (sanitize-metadata.sh)', () => {
         expect(out).not.toContain('UserComment');
         expect(out).not.toContain('Creator');
         expect(out).toContain('2026 No Excuse AS');
-        expect(out).toContain('https://noexcuse.no/rettigheter/#proprietary');
+        expect(out).toContain('https://noexcuse.no/opphavsrett/#proprietary');
     });
 
     it.skipIf(!EXIFTOOL)('--check exits 1 on dirty file and 0 on clean file', () => {
@@ -117,6 +117,6 @@ describe('metadata sanitation (sanitize-metadata.sh)', () => {
             { encoding: 'utf8', cwd: root }
         );
         expect(out).toContain('2026 No Excuse AS');
-        expect(out).toContain('https://noexcuse.no/rettigheter/#proprietary');
+        expect(out).toContain('https://noexcuse.no/opphavsrett/#proprietary');
     });
 });

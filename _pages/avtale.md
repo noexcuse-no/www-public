@@ -3,8 +3,7 @@ provenance:
   creation: editorial
   editorial_review: human
   editorial_responsibility: No Excuse AS
-class: article
-layout: article
+layout: page
 title: "Standard Avtalevilkår for Oppdrag"
 permalink: /avtale/
 avtale: true

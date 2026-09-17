@@ -82,7 +82,7 @@ const PRIVACY_TAGS = [
 
 const RIGHTS_TAGS = [
     '-XMP-dc:Rights=Copyright No Excuse AS',
-    '-XMP-xmpRights:WebStatement=https://noexcuse.no/rettigheter',
+    '-XMP-xmpRights:WebStatement=https://noexcuse.no/opphavsrett',
     '-XMP-iptcExt:DigitalSourceType=http://cv.iptc.org/newscodes/digitalsourcetype/digitalArt',
 ];
 
@@ -119,7 +119,7 @@ describe.skipIf(!hasExiftool())('sanitize-metadata.sh', () => {
         expect(exiftoolTag(file, 'Creator')).toBe('');
 
         expect(exiftoolTag(file, 'Rights')).toBe('Copyright No Excuse AS');
-        expect(exiftoolTag(file, 'WebStatement')).toBe('https://noexcuse.no/rettigheter');
+        expect(exiftoolTag(file, 'WebStatement')).toBe('https://noexcuse.no/opphavsrett');
         expect(exiftoolTag(file, 'DigitalSourceType')).toBe(
             'http://cv.iptc.org/newscodes/digitalsourcetype/digitalArt'
         );
