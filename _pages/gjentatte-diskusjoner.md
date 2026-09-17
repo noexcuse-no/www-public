@@ -13,7 +13,7 @@ og_image: /assets/images/banners/gjentatte-diskusjoner-og.webp
 
 ## Kjenner du deg igjen?
 
-Du har hatt den samme diskusjonen tre ganger denne måneden. Alle er enige i møtet — på overflaten. Men når møtet er over, fortsetter alle som før. Ingen tar ansvar, ingen følger opp, og to uker senere sitter dere igjen med akkurat det samme problemet.
+Du har hatt den samme diskusjonen tre ganger denne måneden. Alle er enige i møtet, i hvert fall på overflaten. Men når møtet er over, fortsetter alle som før. Ingen tar ansvar, ingen følger opp, og to uker senere sitter dere igjen med akkurat det samme problemet.
 
 Dette er ikke en kommunikasjonsfeil. Det er et symptom på at ledergruppen mangler et felles språk for hva problemet egentlig er.
 

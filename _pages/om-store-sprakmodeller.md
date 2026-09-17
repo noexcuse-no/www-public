@@ -15,7 +15,7 @@ description: "Hvordan noexcuse.no bruker store språkmodeller — begrenset, red
 
 ## Terminologisk forbehold
 
-Vi bruker begrepet **kunstig intelligens (KI)** som et felles uttrykk for det publikum kjenner. Det teknisk korrekte begrepet er **store språkmodeller (LLM-er)**. "KI" antyder en form for intelligens eller bevissthet som disse modellene ikke har — de er statistiske system for tekstsyntese.
+Vi bruker begrepet **kunstig intelligens (KI)** som et felles uttrykk for det publikum kjenner. Det teknisk korrekte begrepet er **store språkmodeller (LLM-er)**. "KI" antyder en form for intelligens eller bevissthet som disse modellene ikke har — de er statistiske systemer for tekstsyntese.
 
 Vi bruker **aldri** formuleringer som antyder at LLM-ene er en integrert del av vår faglige praksis — det er de ikke.
 
@@ -47,7 +47,7 @@ Disse oppgavene er **eksklusivt menneskelige** — de krever dommekraft, konteks
 
 ## Redaksjonell gjennomgang
 
-**Allt** LLM-generert materiale går gjennom menneskelig redaksjonell gjennomgang før publisering. Ingen tekst, kode eller bilder publiseres uten at en ansvarlig redaktør har lest, vurdert og godkjent det.
+**Alt** LLM-generert materiale går gjennom menneskelig redaksjonell gjennomgang før publisering. Ingen tekst, kode eller bilder publiseres uten at en ansvarlig redaktør har lest, vurdert og godkjent det.
 
 **Redaksjonelt ansvarlig:** Dagfinn Bang-Johansen (CEO), dagfinn@noexcuse.no
 
@@ -72,10 +72,10 @@ Vi påstår at innholdet på noexcuse.no faller under **redaksjonelt unntaket** 
 
 - Alt innhold er **menneskelig redaksjonelt gjennomgått**.
 - LLM-er brukes **kun i støttende/pyntende rolle**.
-- Ingen innhold er "dypt forfalskning" (deepfake) — ingen bilder ligner på reale personer/steder.
+- Ingen innhold er "dype forfalskninger" (deepfakes) — ingen bilder ligner på virkelige personer/steder.
 - Vi påtar oss fullt redaksjonelt ansvar.
 
-Dette unntaket gjelder for tekst og bilder som er redaksjonelt gjennomgått. Visuelle dypt forfalskninger (deepfakes) er ikke aktuelt for dette nettstedet.
+Dette unntaket gjelder for tekst og bilder som er redaksjonelt gjennomgått. Visuelle dype forfalskninger (deepfakes) er ikke aktuelle for dette nettstedet.
 
 ## Kontakt
 

@@ -99,7 +99,7 @@ Ken Blanchard og Colleen Barrett beskriver dette som «tjenerledelse» — en le
 
     ## Verdier og mening
 
-    Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
+    Verdier er ikke noe som bestemmes og henger på veggen. Det er adferd som belønnes. Mening er ikke noe som kan pålegges. Det er noe som oppstår når folk opplever at arbeidet betyr noe.
 
     Dave Logan skiller mellom kjerneverdier og edle formål (noble cause): Kjerneverdier beskriver eksisterende atferd — «slik gjør vi ting her». De er ikke aspirerende plakater, men observerbare mønstre. Det edle formålet svarer på hvorfor organisasjonen eksisterer utover profitt — det inspirerer ny atferd. No Excuse AS' kjerneverdier er ansvarlighet, tillit og ærlighet. Vårt edle formål er å styrke det unikt menneskelige i organisasjoner — å bygge tillitsgrunnlaget som gjør at folk trives, lærer og bidrar.
 
@@ -159,7 +159,7 @@ Ledelse 60:2 inneholder spørsmål som handler om tillit, motivasjon og relasjon
 
 ## Kjenner du deg igjen?
 
-*   **Tause rom i møter:** Alle er enige i møtet — på overflaten. Når tillitsbasert ledelse mangler, blir tause rom normen.
+*   **Tause rom i møter:** Alle er enige i møtet, i hvert fall på overflaten. Når tillitsbasert ledelse mangler, blir tause rom normen.
 *   **Siloer som skaper flaskehalser:** Avdelinger jobber i siloer. Kunden matcher med én person som blir en flaskehals.
 
 ## Relaterte perspektiver
