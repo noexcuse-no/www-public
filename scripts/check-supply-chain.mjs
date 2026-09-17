@@ -63,7 +63,6 @@ function checkSecurityPatterns() {
     'assets/scripts/cross-links.js',
     'assets/scripts/dark-mode-toggle.js',
     'assets/scripts/navbar.js',
-    'assets/scripts/newsletter.js',
     'assets/scripts/review-questions.js',
     'assets/scripts/sidebar.js',
     'assets/scripts/stagger-observer.js',
