@@ -1,0 +1,148 @@
+/* ========================================
+   /dagfinn/ page-specific layout
+   Scoped to .dagfinn-page. All shared primitives
+   (container, hero grid, buttons, text links, cards,
+   section rhythm, final CTA) come from home.css,
+   buttons.css and card.css — this file only adds
+   what the existing system does not already provide:
+   the evidence strip, the 4:5 hero portrait crop,
+   the principle panel and the editorial measure.
+   ======================================== */
+
+/* Editorial body measure (spec: 720px) */
+.dagfinn-page {
+    --dagfinn-measure: 720px;
+}
+
+.dagfinn-prose {
+    max-width: var(--dagfinn-measure);
+}
+
+/* ---------- Hero: top-aligned columns ---------- */
+.dagfinn-page .home-hero__grid {
+    align-items: start;
+}
+
+.dagfinn-page .home-hero__ctas {
+    align-items: center;
+}
+
+/* ---------- Hero portrait: 4:5 cover crop ---------- */
+.dagfinn-hero__portrait {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    display: block;
+}
+
+/* ---------- Evidence strip (four factual columns) ---------- */
+.dagfinn-evidence {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 88px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    border-top: 1px solid var(--border-color-subtle);
+}
+
+.dagfinn-evidence__item {
+    border-left: 1px solid var(--border-color);
+    padding-left: var(--space-lg);
+}
+
+.dagfinn-evidence__item:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.dagfinn-evidence__value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0 0 var(--space-xs);
+}
+
+.dagfinn-evidence__label {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* ---------- Multi-paragraph card copy ---------- */
+.dagfinn-page .recognition-card-text + .recognition-card-text {
+    margin-top: 1em;
+}
+
+/* ---------- Section link below a grid ---------- */
+.dagfinn-section-link {
+    margin: var(--space-xl) 0 0;
+}
+
+/* ---------- Principle panel (dark surface) ---------- */
+.dagfinn-principle {
+    background: var(--primary-navy);
+    color: var(--primary-azure);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+}
+
+.dagfinn-principle .home-eyebrow {
+    color: var(--primary-azure);
+    opacity: 0.8;
+}
+
+.dagfinn-principle__line {
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--primary-azure);
+    margin: 0 0 var(--space-md);
+}
+
+.dagfinn-principle__line:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================================
+    Responsive Breakpoints (mirror home.css)
+    ======================================== */
+
+/* ≤1099px: tablet rhythm */
+@media (max-width: 1099px) {
+    .dagfinn-evidence {
+        padding-bottom: 72px;
+    }
+}
+
+/* ≤899px: evidence strip two columns */
+@media (max-width: 899px) {
+    .dagfinn-evidence {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 72px;
+    }
+
+    .dagfinn-evidence__item {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid var(--border-color);
+        padding-top: var(--space-md);
+    }
+
+    .dagfinn-evidence__item:first-child,
+    .dagfinn-evidence__item:nth-child(2) {
+        border-top: none;
+        padding-top: 0;
+    }
+}
+
+/* <768px: mobile rhythm */
+@media (max-width: 767px) {
+    .dagfinn-evidence {
+        padding-bottom: 56px;
+    }
+}
