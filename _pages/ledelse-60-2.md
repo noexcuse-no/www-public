@@ -5,7 +5,7 @@ provenance:
   editorial_responsibility: No Excuse AS
 class: product
 layout: article
-title: "Ledelse 60:2 — Orientering for ledergruppen"
+title: "Ledelse 60:2: Orientering for ledergruppen"
 description: "Tidseffektiv orientering for ledergruppen — 60 strukturerte spørsmål, 2 timer, felles retningsvalg."
 permalink: /ledelse-60-2/
 og_image: /assets/images/banners/ledelse-60-2-og.webp
@@ -55,7 +55,7 @@ product_tag: ledelse-60-2
 price_source: commercial
 conversation_topics:
   - conversation_label: "Fire perspektiver i praksis"
-    opening_question: "Hvilke av de fire perspektivene (struktur, mennesker, påvirkning, identitet) er sterkest i vår ledergruppe — og hvilket er mest fraværende?"
+    opening_question: "Hvilke perspektiver preger ledergruppen vår, og hvilke bruker vi sjeldnere?"
     source_url: "/ledelse-60-2/"
     sixty_two_url: "/ledelse-60-2/"
   - conversation_label: "Diagnostiske spørsmål og retning"
@@ -110,9 +110,9 @@ cta:
 
 ## Hva er Ledelse 60:2?
 
-Et strukturert intervju med ledergruppen — 60 spørsmål fordelt på fire perspektiver, gjennomført på to timer. Ikke en survey, ikke en scoreboard, men en samtale som gir et felles språk for hvor ledergruppen står og hva som trenger oppmerksomhet.
+Et strukturert intervju med ledergruppen: 60 spørsmål fordelt på fire perspektiver, gjennomført på to timer. Det er en strukturert samtale, ikke en spørreundersøkelse eller poengmåling. Samtalen gir ledergruppen et felles språk for hvor den står og hva som trenger oppmerksomhet.
 
-Metoden er også relevant for [governance, risikostyring og compliance (GRC)](/grc/). De fire perspektivene — struktur, mennesker, påvirkning og identitet — speiler kjernedimensjonene i enhver styringsmodell. Ledelse 60:2 gir ledergruppen et felles språk for å identifisere hvor styringen fungerer og hvor den har blindsoner.
+Metoden er også relevant for [virksomhetsstyring, risikostyring og etterlevelse (GRC)](/grc/). De fire perspektivene er struktur, mennesker, påvirkning og identitet. De dekker sentrale sider ved virksomhetsstyringen. Ledelse 60:2 gir ledergruppen et felles språk for å identifisere hvor styringen fungerer og hvor den har blindsoner.
 
 1.  ![Samtale](/assets/images/banners/step-talk.webp)
 
@@ -130,7 +130,7 @@ Metoden er også relevant for [governance, risikostyring og compliance (GRC)](/g
 
     ### 3. Rapport og anbefalinger
 
-    Konkrete funn og anbefalinger basert på intervjuet — ikke generisk teoristoff. Leveres innen en uke. [Les mer →](/rapport/)
+    Konkrete funn og anbefalinger basert på intervjuet. Leveres innen en uke. [Les mer →](/rapport/)
 
 ## Kjenner du deg igjen?
 
@@ -138,19 +138,19 @@ Metoden er også relevant for [governance, risikostyring og compliance (GRC)](/g
 
     #### Du får vite hva folk egentlig mener på vei ut av møtet.
 
-    I rommet var alle enige — på overflaten. Når [tillitsbasert ledelse](/tillit/) mangler, blir tause rom normen, og [organisasjonskulturen](/kultur/) svekkes uten at noen snakker om det.
+    I rommet var alle enige. Når [tillitsbasert ledelse](/tillit/) mangler, blir tause rom normen, og [organisasjonskulturen](/kultur/) svekkes uten at noen snakker om det.
 
 *   ![Risikokalender](/assets/images/banners/ledelse-60-2-t4-signal-risikokalender.webp)
 
     #### Dere oppdaterer risikobildet én gang i året.
 
-    Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert [risikostyring](/risikostyring/) og løpende [compliance](/compliance/) blir håndteringen reaktiv, og [informasjonssikkerhet](/informasjonssikkerhet/) reduseres til en årlig avkrysning.
+    Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert [risikostyring](/risikostyring/) og løpende [etterlevelsesarbeid](/compliance/) blir håndteringen reaktiv, og [informasjonssikkerhet](/informasjonssikkerhet/) reduseres til en årlig avkrysning.
 
 *   ![Endringsstabel](/assets/images/banners/ledelse-60-2-t4-signal-endringsstabel.webp)
 
     #### Du har mistet tellingen på endringsprosjektene.
 
-    De du helst vil beholde, forsvinner stille. Vellykket [endringsledelse](/endringsledelse/) handler ikke om flere initiativer, men om å lede mennesker gjennom endring — og [generativ KI](/generativ-ki/) endrer premissene for hva som kreves av lederne.
+    De du helst vil beholde, forsvinner stille.     God [endringsledelse](/endringsledelse/) handler om å lede mennesker gjennom endring.
 
 *   ![Lukket presentasjon](/assets/images/banners/ledelse-60-2-t4-signal-lukket-presentasjon.webp)
 
@@ -168,7 +168,7 @@ Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verkt
 
 ## Når passer det? {#passer}
 
-Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et felles språk for hvor de står — og som er klare for å bruke to timer på en strukturert samtale.
+Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et felles språk for hvor de står og er villige til å bruke to timer på en strukturert samtale.
 
 **Passer for dere hvis:**
 
@@ -179,11 +179,11 @@ Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et
 
 **Passer ikke for dere hvis:**
 
-*   Dere er flere enn fem ledere — da bør vi først ta en [avklaring](/samtale/) om hvordan vi kan tilpasse opplegget.
+*   Er dere flere enn fem ledere, tar vi først en [avklaring](/samtale/) om hvordan opplegget kan tilpasses.
 *   Dere ønsker et utviklingsprogram eller løpende coaching fremfor en avgrenset orientering.
 *   Dere trenger implementeringsrådgivning som følger opp funnene over tid.
 
-**Allerede rådgiver hos kunden?** 60:2 kan skjerpe mandatet — dere beholder oppfølgingen.
+**Allerede rådgiver hos kunden?** 60:2 kan gi et tydeligere grunnlag for deres videre oppfølging av kunden.
 
 {% include price-card.html %}
 
@@ -193,13 +193,13 @@ Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et
 
 **Under:** Et strukturert intervju med inntil fem ledere over to timer, med 60 strukturerte spørsmål fordelt på fire perspektiver.
 
-**Etter:** Du får en rapport med prioriterte funn og konkrete anbefalinger innen én uke. Ingen løpende forpliktelser — men vi kan gjerne snakke om [oppfølging](/katalysator/) hvis dere ønsker det.
+**Etter:** Du får en rapport med prioriterte funn og konkrete anbefalinger innen én uke. Det følger ingen løpende forpliktelser med leveransen.
 
 ## Hva får du?
 
 *   60 strukturerte spørsmål utviklet gjennom bruk i norske ledergrupper.
-*   Inntil fem ledere i samme rom — felles språk, felles bilde.
-*   To timer strukturert intervju — ikke en survey.
+*   Inntil fem ledere deltar i samme intervju.
+*   To timer strukturert intervju.
 *   Analyse og prioriterte funn fra en erfaren rådgiver.
 *   Rapport og anbefalinger innen én uke.
 
@@ -207,11 +207,11 @@ Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et
 
 **Hva koster Ledelse 60:2?**
 
-Prisen er {{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }}. En fast pris for hele opplegget — ingen skjulte kostnader eller løpende forpliktelser.
+Prisen er {{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }}. Den er fast og dekker hele opplegget. Det kommer ingen løpende kostnader i tillegg.
 
 **Hvorfor er det bare to timer?**
 
-Fordi orienteringen er avgrenset til å gi ledergruppen et felles bilde. To timer er nok til å gå gjennom 60 spørsmål og få et godt grunnlag for videre arbeid — uten at det blir et stort prosjekt.
+Fordi orienteringen er avgrenset til å gi ledergruppen et felles bilde. To timer er nok til å gå gjennom 60 spørsmål og gi et grunnlag for videre arbeid.
 
 **Hva skjer etter at vi har fått rapporten?**
 
@@ -227,7 +227,7 @@ Ledelse 60:2 er en orientering, ikke et utviklingsprogram. Implementeringsrådgi
 
 ## Slik er metoden bygget opp
 
-Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert perspektiv avdekker en dimensjon av ledelsesfunksjonen som ellers lett overses. Poenget er ikke å skåre — men å få et felles språk for hva som fungerer og hva som trenger oppmerksomhet.
+Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert perspektiv avdekker en dimensjon av ledelsesfunksjonen som ellers lett overses. Målet er å gi ledergruppen et felles språk for hva som fungerer og hva som trenger oppmerksomhet.
 
 *   [![Struktur](/assets/images/banners/frame-structure.webp)](/struktur/)
 
@@ -253,7 +253,7 @@ Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert pers
 
     Kultur, verdier og felles retning. Handler om hva organisasjonen står for.
 
-De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene er designet for å skape refleksjon og innsikt — ikke for å gi enkle poengsummer eller rangeringer.
+De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene skal skape refleksjon og gi ledergruppen et bedre beslutningsgrunnlag.
 
 ## Kjenner du deg igjen?
 
@@ -262,23 +262,23 @@ De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er teste
 
 ## Relaterte perspektiver
 
-*   [Strukturperspektivet](/struktur/) — rolleklarhet, prosesser, beslutningslinjer
-*   [Menneskeperspektivet](/mennesker/) — psykologisk trygghet, tillit, kompetanseutnyttelse
-*   [Påvirkningsperspektivet](/pavirkning/) — maktforhold, interesser, allianser
-*   [Identitetsperspektivet](/identitet/) — kultur, verdier, felles retning
+*   [Strukturperspektivet](/struktur/): rolleklarhet, prosesser og beslutningslinjer
+*   [Menneskeperspektivet](/mennesker/): psykologisk trygghet, tillit og kompetanseutnyttelse
+*   [Påvirkningsperspektivet](/pavirkning/): maktforhold, interesser og allianser
+*   [Identitetsperspektivet](/identitet/): kultur, verdier og felles retning
 
 ---
 {% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Ledelse 60:2](/ledelse-60-2/) hvis du vil utforske videre.
+Du startet denne refleksjonen fra noexcuse.no. Du kan gå tilbake til [Ledelse 60:2](/ledelse-60-2/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
-*   [Når passer det?](/ledelse-60-2/#passer) — passer for dere / passer ikke for dere
-*   [Hva får du?](/ledelse-60-2/#hva-får-du) — 60 spørsmål, 2 timer, rapport
-*   [Ofte stilte spørsmål](/ledelse-60-2/#ofte-stilte-spørsmål) — pris, tid, etterarbeid, innhold
+*   [Når passer Ledelse 60:2?](/ledelse-60-2/#passer)
+*   [Hva får du?](/ledelse-60-2/#hva-får-du)
+*   [Ofte stilte spørsmål](/ledelse-60-2/#ofte-stilte-spørsmål)
 
 {% include cta-panel.html %}
 
