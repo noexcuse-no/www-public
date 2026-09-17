@@ -37,8 +37,8 @@ describe('provenance frontmatter on renderable sources', () => {
     const sources = renderableSources();
 
     it('covers every renderable source (_pages incl. go/, _tags, index.md)', () => {
-        // 48 _pages + 22 _tags + 1 index = 71 renderable sources
-        expect(sources.length).toBe(71);
+        // 50 _pages + 22 _tags + 1 index = 73 renderable sources
+        expect(sources.length).toBe(73);
     });
 
     it('every source has a provenance block with editorial fields', () => {

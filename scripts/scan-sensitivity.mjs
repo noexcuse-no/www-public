@@ -19,7 +19,7 @@
  * own rule/allowlist files are excluded by design (they are detection data,
  * never production content); tests prove scanner behaviour via --path.
  */
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative, resolve, dirname, basename, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
@@ -95,6 +95,8 @@ function collectFiles(dir, explicit) {
     const p = join(dir, entry.name);
     const rel = toRel(p);
     if (entry.isDirectory()) {
+      // Vendored/VCS dirs are never meaningful scan targets, even with --path
+      if (EXCLUDED_DIRS.has(entry.name)) continue;
       if (!explicit && isExcluded(rel)) continue;
       out.push(...collectFiles(p, explicit));
     } else if (entry.isFile()) {
@@ -106,6 +108,13 @@ function collectFiles(dir, explicit) {
     }
   }
   return out;
+}
+
+/** Collect scan targets for an explicit --path value: a single file or a directory tree. */
+function collectExplicit(target) {
+  const st = statSync(target);
+  if (st.isFile()) return [target];
+  return collectFiles(target, true);
 }
 
 function readText(file) {
@@ -206,12 +215,12 @@ function scanFile(file) {
 }
 
 function usage() {
-  const used = `Usage: node scripts/scan-sensitivity.mjs [--changed] [--path <dir>] [--help]
+  const used = `Usage: node scripts/scan-sensitivity.mjs [--changed] [--path <dir|file>] [--help]
 
-  default        full-tree scan of the project root
-  --changed      scan files changed against the branch base
-  --path <dir>   scan a specific path (relative to project root)
-  --help         print this help
+  default          full-tree scan of the project root
+  --changed        scan files changed against the branch base
+  --path <dir|file> scan a specific path (relative to project root)
+  --help           print this help
 
 Output format (one line per hit, NEVER the matched content):
   ruleId|path|line|genericReason
@@ -247,7 +256,7 @@ for (let i = 0; i < args.length; i++) {
 
 let files;
 if (explicitPath) {
-  files = collectFiles(resolve(ROOT, explicitPath), true);
+  files = collectExplicit(resolve(ROOT, explicitPath));
 } else if (changed) {
   files = changedFiles();
 } else {

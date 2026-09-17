@@ -5,6 +5,8 @@ provenance:
   editorial_responsibility: No Excuse AS
 class: case
 published: false
+layout: article
+permalink: /case-ledelse-60-2-1/
 title: "Kundesaker — Ledelse 60:2"
 description: "Plassholder for kundecasestudie. Fyll inn når reell casestudie er godkjent."
 image: "assets/images/placeholder-case.webp"
