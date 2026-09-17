@@ -10,7 +10,7 @@ og_image: /assets/images/banners/identitet-og.webp
 frame_id: "identitet"
 category: "frame"
 title: "Identitetsperspektivet i ledelse"
-description: "Lær hvordan identitetsperspektivet kan hjelpe ledergruppen å forstå organisasjonskultur, meningsskaping og hvordan verdier faktisk lever — eller bare henger på veggen."
+description: "Lær hvordan identitetsperspektivet kan hjelpe ledergruppen å forstå organisasjonskultur, meningsskaping og hvordan verdier faktisk lever, eller bare henger på veggen."
 banner: "assets/images/banners/perspektiv-identitet.webp"
 url: "/identitet/"
 
@@ -79,7 +79,7 @@ Dave Logan og medforfattere beskriver i «Tribal Leadership» fem stadier organi
 
     ## Verdier og mening
 
-    Verdier er ikke noe som bestemmes og henger på veggen — det er adferd som belønnes. Mening er ikke noe som kan pålegges — det er noe som oppstår når folk opplever at arbeidet betyr noe.
+    Verdier er ikke noe som bestemmes og henger på veggen. Det er adferd som belønnes. Mening er ikke noe som kan pålegges. Det er noe som oppstår når folk opplever at arbeidet betyr noe.
 
     **Tegn på gode verdier og mening:** Folk kan fortelle om situasjoner der verdiene ble levd ut i praksis. Nye folk læres opp i «hvordan vi gjør ting her» med konkrete eksempler.
 

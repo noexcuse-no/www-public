@@ -36,13 +36,15 @@ json_ld:
       - "https://www.linkedin.com/company/noexcuse"
 ---
 
+På noexcuse.no brukes store språkmodeller kun i støttende og pyntende roller — aldri til analyse eller anbefalinger. [Les mer om vår bruk av KI](/om-store-sprakmodeller/)
+
 ## Hvorfor No Excuse?
 
-No Excuse AS ble grunnlagt i juni 2025 med et tydelig mål: å forbedre ledelsesfunksjonen i norske virksomheter — uten dyre konsulentrapporter og unødvendig kompleksitet.
+No Excuse AS ble grunnlagt i juni 2025 for å forbedre ledelsesfunksjonen i norske virksomheter.
 
-Norske ledergrupper har et særegent utgangspunkt. Vi forventer flate strukturer, tillitsbasert ledelse og at folk sier ifra — men i praksis er det ofte langt mellom forventning og virkelighet. Møtene er høflige, uenigheten kommer først etterpå, og de viktige spørsmålene blir aldri stilt i rommet. Vi startet No Excuse fordi vi mener norsk arbeidsliv fortjener bedre enn det.
+Norske ledergrupper har et særegent utgangspunkt. Vi forventer flate strukturer, tillit og at folk sier ifra. I praksis er det ofte et gap mellom idealene og det som skjer i møterommet. Møtene er høflige, uenigheten kommer først etterpå, og de viktige spørsmålene blir aldri stilt i rommet. Vi startet No Excuse fordi vi mener norsk arbeidsliv fortjener bedre enn det.
 
-Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals [fire perspektiver](/perspektiv/)) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse, refleksjon fremfor skjemaer, og at de beste svarene ofte finnes internt — om man stiller de riktige spørsmålene.
+Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals [fire perspektiver](/perspektiv/)) og er utviklet for å gi konkrete, handlingsrettede innsikter som ledergrupper kan bruke umiddelbart. Vi tror på tillitsbasert ledelse og refleksjon fremfor skjemaer. Vi mener ledergruppen ofte har mer av kunnskapen den trenger enn den selv er klar over.
 
 ## Norsk utgangspunkt
 
@@ -54,16 +56,16 @@ Når du kjøper Ledelse 60:2, får du en metodikk som bygger på den norske lede
 
 Vår metodikk bygger på Bolman & Deals fire perspektiver, men er tilpasset og videreutviklet gjennom praktisk anvendelse i norske ledergrupper. Norsk ledelsestradisjon preger arbeidet vårt:
 
-- **Tillitsbasert ledelse** — ikke kontrollbasert.
-- **Refleksjon fremfor skjemaer** — i tradisjonen fra Handys kulturtypologier og Scheins organisasjonskulturanalyse.
-- **Mennesker først** — i linje med norsk arbeidslivstradisjon hvor mennesket står sentralt, ikke som ressurs, men som kilde til innsikt.
-- **Erfaring fra norsk arbeidsliv** — vi trekker på erfaringer fra organisasjoner der tillit, autonomi og psykologisk trygghet er i daglig bruk.
+- Vi legger vekt på tillitsbasert ledelse.
+- Vi bruker samtale og refleksjon fremfor standardiserte skjemaer, i tradisjon fra Handys kulturtypologier og Scheins organisasjonskulturanalyse.
+- Metoden tar utgangspunkt i menneskene som kjenner virksomheten.
+- Vi bygger også på erfaringer fra norsk arbeidsliv med tillit, autonomi og psykologisk trygghet.
 
 ![Abstrakt fremstilling av våre tre kjerneverdier: ansvarlighet, tillit og ærlighet](/assets/images/banners/banner-verdier.webp)
 
 ## Våre verdier
 
-Våre tre kjerneverdier — ansvarlighet, tillit og ærlighet — styrer hvordan arbeidet utføres.
+Våre tre kjerneverdier er ansvarlighet, tillit og ærlighet. De styrer hvordan arbeidet utføres.
 
 *   ![Abstrakt illustrasjon av kjerneverdien ansvarlighet](/assets/images/banners/verdi-ansvarlighet.webp)
 
@@ -75,29 +77,29 @@ Våre tre kjerneverdier — ansvarlighet, tillit og ærlighet — styrer hvordan
 
     #### Tillit
 
-    Tillit er ikke en følelse — det er et system av forventninger og atferd som enten forsterker eller underminerer samarbeid. Vi bygger tillitsgrunnlaget som gjør at folk tør si ifra, dele informasjon og ta risiko. Vårt mål er å styrke tillitsgrunnlaget som samarbeidet hviler på.
+    Tillit bygges gjennom forventninger og atferd som gjør samarbeid mulig. Vi bygger tillitsgrunnlaget som gjør at folk tør si ifra, dele informasjon og ta risiko. Vårt mål er å styrke tillitsgrunnlaget som samarbeidet hviler på.
 
 *   ![Abstrakt illustrasjon av kjerneverdien ærlighet](/assets/images/banners/verdi-aerlighet.webp)
 
     #### Ærlighet
 
-    Ærlighet er forutsetningen for læring og utvikling. Uten ærlig tilbakemelding blir feil skjult og problemer uløst. Vi skaper rom for ærlige samtaler om det som faktisk skjer — ikke det vi ønsker skulle skje. Våre metoder fokuserer på mennesker, vektlegger ærlighet og synliggjør mønstre i ledergruppen.
+    Ærlighet er forutsetningen for læring og utvikling. Uten ærlig tilbakemelding blir feil skjult og problemer uløst. Vi skaper rom for ærlige samtaler om det som faktisk skjer. Våre metoder fokuserer på mennesker, vektlegger ærlighet og synliggjør mønstre i ledergruppen.
 
 ## Erfaring fra norsk arbeidsliv
 
 Metodikken vår er forankret i norsk arbeidsliv, ikke importert ledelsesteori. Norske virksomheter har lenge arbeidet med tillitsreformer, flatere strukturer og kortere arbeidsuker. Erfaringene peker i samme retning: tillit og tydelige roller er et godt utgangspunkt.
 
-Vi bygger på denne praksisen. Når vi jobber med en ledergruppe, tar vi utgangspunkt i det som allerede fungerer i norsk arbeidsliv — den flate strukturen, den høye tilliten, viljen til å si ifra — og hjelper ledergruppen med å få det til å fungere i praksis. Ikke ved å innføre nye systemer, men ved å stille de riktige spørsmålene.
+Vi bygger på denne praksisen. Når vi jobber med en ledergruppe, tar vi utgangspunkt i norske arbeidsformer som flate strukturer, høy tillit og lav terskel for å si ifra, og hjelper ledergruppen med å få det til å fungere i praksis. Ikke ved å innføre nye systemer, men ved å stille de riktige spørsmålene.
 
 ## Slik jobber vi
 
-Vi bruker strukturerte intervjuer og strukturerte spørsmål for å skape et felles bilde av virkeligheten — uten scoring, uten ranking. Metodikken vår bygger på Bolman & Deals fire perspektiver og er utviklet gjennom praktisk anvendelse i norske ledergrupper.
+Vi bruker strukturerte intervjuer og strukturerte spørsmål for å skape et felles bilde av virkeligheten — uten poengsetting eller rangering. Metodikken vår bygger på Bolman & Deals fire perspektiver og er utviklet gjennom praktisk anvendelse i norske ledergrupper.
 
 Les mer om [hvordan vi jobber og det teoretiske grunnlaget](/metode/).
 
 ## En norsk ledelsesbedrift
 
-No Excuse er en norsk ledelsesbedrift. Vår tilnærming bygger på skandinavisk ledelsestradisjon — lav avstand mellom leder og ansatt, psykologisk trygghet, og tillit som bærebjelke. Det er dette som gjør oss relevante også utenfor Norge, i markeder som verdsetter tillit, transparens og flat struktur.
+No Excuse er en norsk ledelsesbedrift. Vår tilnærming bygger på skandinavisk ledelsestradisjon med lav avstand mellom leder og ansatt, psykologisk trygghet og tillit. Det er dette som gjør oss relevante også utenfor Norge, i markeder som verdsetter tillit, transparens og flat struktur.
 
 ## Standard avtalevilkår
 
@@ -109,23 +111,23 @@ Du finner våre standard avtalevilkår [her](/avtale/).
 
 ## Vi undersøker. Dere kan gjerne hjelpe kunden videre.
 
-Vi jobber med strukturert orientering av ledergrupper — ikke implementering. Vårt mandat er å gi ledergruppen et ærlig, uavhengig grunnlag for videre beslutninger. Hva dere velger å gjøre med det, er deres valg.
+Vi jobber med strukturert orientering av ledergrupper. Vårt mandat er å gi ledergruppen et ærlig, uavhengig grunnlag for videre beslutninger. Hva dere velger å gjøre med det, er deres valg.
 
-- **Ingen eksklusivitet** — dere er fri til å bruke andre rådgivere for oppfølging
-- **Ingen automatisk implementeringsforslag** — vi leverer observasjoner og anbefalinger, ikke pakkeløsninger
-- **Kunden eier funnene** — rapporten og anbefalingene er deres, ikke vår
-- **Innleidne rådgivere velkomne** — eksisterende rådgivere kan bygge videre på våre funn
+- Dere står fritt til å bruke andre rådgivere i oppfølgingen.
+- Vi leverer observasjoner og anbefalinger, ikke ferdige implementeringspakker.
+- Kunden eier rapporten, funnene og anbefalingene.
+- Eksisterende rådgivere kan arbeide videre med funnene.
 
 ---
 
 ## Allerede rådgiver hos kunden?
 
-60:2 kan skjerpe mandatet — dere beholder oppfølgingen.
+60:2 kan gi et tydeligere grunnlag for den videre rådgivningen.
 
 ---
 
 ## Vil du vite mer?
 
-Ta en uforpliktende samtale med oss — vi snakker om ledelse, ikke salg.
+Ta en uforpliktende samtale med oss om hva ledergruppen trenger.
 
 [Bestill 20 min avklaring](/samtale/)

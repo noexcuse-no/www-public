@@ -14,7 +14,7 @@
  */
 
 import { readFileSync, readdirSync, statSync, existsSync } from 'fs';
-import { join, extname, relative, resolve, sep } from 'path';
+import { join, extname, relative, resolve, sep, dirname } from 'path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const SITE_DIR = '_site';
@@ -73,6 +73,13 @@ export function resolveTargetPath(rawPath, sourceAbsPath, siteDirAbs) {
   if (!resolved.startsWith(siteDirAbs + sep) && resolved !== siteDirAbs) return null;
 
   const candidates = [];
+  const isFile = (p) => {
+    try {
+      return statSync(p).isFile();
+    } catch {
+      return false;
+    }
+  };
   if (rawPath.endsWith('/')) {
     candidates.push(join(resolved, 'index.html'));
   } else {
@@ -80,7 +87,8 @@ export function resolveTargetPath(rawPath, sourceAbsPath, siteDirAbs) {
     candidates.push(resolved + '.html');
     candidates.push(join(resolved, 'index.html'));
   }
-  return candidates.find((c) => existsSync(c)) ?? null;
+  // existsSync alone accepts directories; only real files are valid link targets
+  return candidates.find(isFile) ?? null;
 }
 
 /** True when the anchor exists in the target HTML (id= or name=, quote variants). */

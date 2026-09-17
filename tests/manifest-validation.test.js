@@ -56,7 +56,7 @@ describe('.well-known/ai-transparency.json', () => {
     expect(existsSync(path.join(root, 'index.md'))).toBe(true);
 
     const expectedRoutes = pageFiles.length + 1; // +1 = root index.md
-    expect(expectedRoutes).toBe(42);
+    expect(expectedRoutes).toBe(44);
   });
 
   it('images.count matches the actual ai-generated asset count', () => {

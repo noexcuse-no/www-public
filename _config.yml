@@ -57,7 +57,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: article
+      layout: page
       lang: no
       published: true
   - scope:
