@@ -18,6 +18,10 @@
     max-width: var(--dagfinn-measure);
 }
 
+body:has(.dagfinn-page) {
+    overflow-x: clip;
+}
+
 /* ---------- Hero: top-aligned columns ---------- */
 .dagfinn-page .home-hero__grid {
     align-items: start;
@@ -28,7 +32,7 @@
 }
 
 /* ---------- Hero portrait: 4:5 cover crop ---------- */
-.dagfinn-hero__portrait {
+.dagfinn-page .home-hero__media .dagfinn-hero__portrait {
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 5;
