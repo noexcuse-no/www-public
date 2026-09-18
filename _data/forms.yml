@@ -3,4 +3,3 @@
 # Actual submission endpoints are handled by the external service.
 
 booking_fallback: "your-formspree-id-here"
-newsletter: "your-formspree-id-here"

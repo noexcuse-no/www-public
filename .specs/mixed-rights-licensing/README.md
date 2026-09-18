@@ -7,21 +7,21 @@
 
 ## Purpose / Problem
 
-Every file in the public repository needs a verified license: 0BSD for repo-created code, CC0-1.0 for purely AI-generated material, LicenseRef-NoExcuse-All-Rights-Reserved for human-created material, upstream rights preserved for third-party material, and genuinely uncertain material left unresolved and reported. REUSE/SPDX metadata is the canonical rights source; site emission (per-page license links, JSON-LD, transparency manifest, `/rettigheter/` page) and the image metadata pipeline are generated from it; CI validates everything.
+Every file in the public repository needs a verified license: 0BSD for repo-created code, CC0-1.0 for purely AI-generated material, LicenseRef-NoExcuse-All-Rights-Reserved for human-created material, upstream rights preserved for third-party material, and genuinely uncertain material left unresolved and reported. REUSE/SPDX metadata is the canonical rights source; site emission (per-page license links, JSON-LD, transparency manifest, `/opphavsrett/` page) and the image metadata pipeline are generated from it; CI validates everything.
 
 ## Scope
 
 ### Must have
 
-Implement the mixed-rights model across the entire repository: **0BSD** for repo-created source code, **CC0-1.0** for purely AI-generated material, **LicenseRef-NoExcuse-All-Rights-Reserved** for human-created/materially human-authored material, third-party rights preserved, and genuinely uncertain material left **unresolved and reported**. REUSE/SPDX metadata is the canonical rights source; site emission (per-page license links, JSON-LD, transparency manifest, `/rettigheter/` page) and the image metadata pipeline are generated from it; CI validates everything. Deliverable: a PR to `main` (never pushed directly) with the 10-item report in the body.
+Implement the mixed-rights model across the entire repository: **0BSD** for repo-created source code, **CC0-1.0** for purely AI-generated material, **LicenseRef-NoExcuse-All-Rights-Reserved** for human-created/materially human-authored material, third-party rights preserved, and genuinely uncertain material left **unresolved and reported**. REUSE/SPDX metadata is the canonical rights source; site emission (per-page license links, JSON-LD, transparency manifest, `/opphavsrett/` page) and the image metadata pipeline are generated from it; CI validates everything. Deliverable: a PR to `main` (never pushed directly) with the 10-item report in the body.
 
 The six committed components:
 
 1. **canonical-licensing** — `LICENSES/0BSD.txt` + `LICENSES/CC0-1.0.txt` canonical texts, root `REUSE.toml` (dir defaults for code/assets, exact-path entries for editorial/binaries), `.license` sidecars for non-default binaries, full tracked-file audit with git-evidence protocol, unresolved set reported.
 2. **governance-tracking** — AGENTS.md rights/provenance section (always-loaded), this spec, BACKLOG `Doing` → `Done`, CHANGELOG `[Unreleased]`, VERSION 1.12.0 → 1.13.0 on merge.
 3. **provenance-metadata** — provenance frontmatter on `_pages/`/`_tags/`/`index.md` (`creation` 5-value enum incl. `unresolved`, `editorial_review: human`, `editorial_responsibility: No Excuse AS`), `_data/assets.yml` registry (4-type classification, default blocks, 307 explicit entries with `license:` field).
-4. **site-emission** — `scripts/generate-rights-metadata.mjs` → committed `_data/rights.json` (71 pages, 307 assets); per-page `<link rel="license">`; `provenance-jsonld.html` rewrite; `.well-known/ai-transparency.json` refactored (generated, superset, dead `$schema` dropped); `_pages/rettigheter.md` + footer link + IA update; CC0 claim removal (`_config.yml`, `_data/metadata.yml`, `package.json`); TDM `ai_usage` data model only (no emission, documented follow-up).
-5. **image-pipeline** — `apply-provenance.sh` rework: registry-driven, correct IPTC/XMP tags, force-overwrite legacy values, human images → proprietary WebStatement `/rettigheter/#proprietary`. 277 raster images tagged.
+4. **site-emission** — `scripts/generate-rights-metadata.mjs` → committed `_data/rights.json` (71 pages, 307 assets); per-page `<link rel="license">`; `provenance-jsonld.html` rewrite; `.well-known/ai-transparency.json` refactored (generated, superset, dead `$schema` dropped); `_pages/opphavsrett.md` + footer link + IA update; CC0 claim removal (`_config.yml`, `_data/metadata.yml`, `package.json`); TDM `ai_usage` data model only (no emission, documented follow-up).
+5. **image-pipeline** — `apply-provenance.sh` rework: registry-driven, correct IPTC/XMP tags, force-overwrite legacy values, human images → proprietary WebStatement `/opphavsrett/#proprietary`. 277 raster images tagged.
 6. **validation-ci** — vitest tests (registry↔REUSE cross-check, frontmatter enums, manifest shape), npm scripts `rights:generate`/`rights:check`, local CI runner (`scripts/local-ci.mjs`), `.github/workflows/ci.yml` (committed locally, pushed manually when token has scope).
 
 ### Must NOT have (guardrails, anti-slop, scope boundaries)

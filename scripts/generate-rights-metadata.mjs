@@ -17,7 +17,7 @@ const root = path.resolve(__dirname, '..');
 
 const LICENSE_URLS = {
     'CC0-1.0': 'https://creativecommons.org/publicdomain/zero/1.0/',
-    'LicenseRef-NoExcuse-All-Rights-Reserved': 'https://noexcuse.no/rettigheter/#proprietary',
+    'LicenseRef-NoExcuse-All-Rights-Reserved': 'https://noexcuse.no/opphavsrett/#proprietary',
     'LicenseRef-EU-AI-Basic-Icon': 'https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content',
 };
 
