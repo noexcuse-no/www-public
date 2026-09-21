@@ -262,28 +262,50 @@
 
 .sidebar-card--questions .review-questions li {
     font-size: 0.85em;
-    padding: var(--space-xs) 0;
-    cursor: pointer;
+    padding: var(--space-sm) 0;
+    cursor: default;
     line-height: 1.4;
-    opacity: 0.85;
-    transition: opacity 0.2s ease;
     border: none;
     border-radius: 0;
     min-height: auto;
-    gap: var(--space-sm);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: block;
 }
 
 .sidebar-card--questions .review-questions li:hover {
-    opacity: 1;
     background: transparent;
     box-shadow: none;
 }
 
 .sidebar-card--questions .review-questions li span {
     font-size: 1em;
+}
+
+/* Sidebar topic card — stacked label, question, full-width CTAs */
+.sidebar-card--questions .review-questions .topic-label {
+    margin: 0 0 var(--space-xs);
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+.sidebar-card--questions .review-questions .topic-question {
+    margin: 0 0 var(--space-sm);
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.sidebar-card--questions .review-questions .topic-ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+}
+
+.sidebar-card--questions .review-questions .topic-ctas .cta {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    font-size: 0.9em;
+    text-align: center;
 }
 
 /* --- Sparkle: visible only on hover/focus/click --- */
@@ -424,9 +446,12 @@
     }
 }
 
-/* Mobile AI inline module — hidden on wide screens */
-.ai-mobile-module {
-    display: none;
+/* Mobile AI inline module — hidden on wide screens (min-width query so
+   it cannot override the ≤1199px display:block above) */
+@media (min-width: 1200px) {
+    .ai-mobile-module {
+        display: none;
+    }
 }
 
 /*--- Responsive: sidebar visible on wide screens --- */

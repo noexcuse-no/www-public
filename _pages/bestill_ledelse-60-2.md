@@ -27,7 +27,7 @@ og_image: /assets/images/banners/ledelse-60-2-og.webp
 
 ### Slik går det
 
-1.  **Velg tidspunkt** — Velg en tid som passer ledergruppen via [Microsoft Bookings](https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled).
+1.  **Velg tidspunkt** — Velg en tid som passer ledergruppen via [Microsoft Bookings](https://bookings.cloud.microsoft/book/ledelse@noexcuse.no/?ismsaljsauthenabled).
 2.  **Kontaktinformasjon** — Fyll inn navn, e-post og telefon. Vi bruker dette kun til å bekrefte avtalen.
 3.  **Bekreft** — Du får en bekreftelse på e-post med praktisk info og forberedelse.
 
