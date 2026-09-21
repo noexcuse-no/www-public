@@ -31,8 +31,9 @@ const CHECKS = {
 
   // Production build validation
   'site-build': { cmd: 'docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/srv/jekyll" -w /srv/jekyll -e JEKYLL_ENV=production jekyll/jekyll jekyll build', desc: 'Jekyll production build', optional: true },
-  'validate-build': { cmd: 'node scripts/validate-production-build.mjs', desc: 'Validate production build for debug/staging leakage', dependsOn: 'site-build' },
-  'check:links': { cmd: 'npm run check:links', desc: 'Internal link + anchor validation (built site)', dependsOn: 'site-build' },
+  'prune-unpublished': { cmd: 'npm run prune:unpublished', desc: 'Rollout pruning (unpublished page deps)' },
+  'validate-build': { cmd: 'node scripts/validate-production-build.mjs', desc: 'Validate production build for debug/staging leakage', dependsOn: 'prune-unpublished' },
+  'check:links': { cmd: 'npm run check:links', desc: 'Internal link + anchor validation (built site)', dependsOn: 'prune-unpublished' },
 };
 
 function runCheck(name, config, skipOptional = false) {
