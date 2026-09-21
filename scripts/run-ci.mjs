@@ -3,6 +3,8 @@
  * Local CI runner — runs all repository checks sequentially and reports
  * individual pass/fail. Exits with count of failed checks (0 = all pass).
  * Per project model: no GitHub Actions; GitHub Pages builds natively.
+ * Controlled rollout (npm run prune:unpublished) is enforced locally as
+ * part of the mandatory pre-PR gate: npm run ci:local.
  */
 
 import { spawn } from 'node:child_process';
