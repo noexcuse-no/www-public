@@ -112,7 +112,7 @@ cta:
 
 Et strukturert intervju med ledergruppen: 60 spørsmål fordelt på fire perspektiver, gjennomført på to timer. Det er en strukturert samtale, ikke en spørreundersøkelse eller poengmåling. Samtalen gir ledergruppen et felles språk for hvor den står og hva som trenger oppmerksomhet.
 
-Metoden er også relevant for [virksomhetsstyring, risikostyring og etterlevelse (GRC)](/grc/). De fire perspektivene er struktur, mennesker, påvirkning og identitet. De dekker sentrale sider ved virksomhetsstyringen. Ledelse 60:2 gir ledergruppen et felles språk for å identifisere hvor styringen fungerer og hvor den har blindsoner.
+Metoden er også relevant for virksomhetsstyring, risikostyring og etterlevelse (GRC). De fire perspektivene er struktur, mennesker, påvirkning og identitet. De dekker sentrale sider ved virksomhetsstyringen. Ledelse 60:2 gir ledergruppen et felles språk for å identifisere hvor styringen fungerer og hvor den har blindsoner.
 
 1.  ![Samtale](/assets/images/banners/step-talk.webp)
 
@@ -124,13 +124,13 @@ Metoden er også relevant for [virksomhetsstyring, risikostyring og etterlevelse
 
     ### 2. Strukturert intervju
 
-    60 strukturerte spørsmål med inntil fem ledere. Selve samtalen er like verdifull som analysen. [Les mer →](/intervju/)
+    60 strukturerte spørsmål med inntil fem ledere. Selve samtalen er like verdifull som analysen.
 
 3.  ![Rapport](/assets/images/banners/step-report.webp)
 
     ### 3. Rapport og anbefalinger
 
-    Konkrete funn og anbefalinger basert på intervjuet. Leveres innen en uke. [Les mer →](/rapport/)
+    Konkrete funn og anbefalinger basert på intervjuet. Leveres innen en uke.
 
 ## Kjenner du deg igjen?
 
@@ -138,33 +138,33 @@ Metoden er også relevant for [virksomhetsstyring, risikostyring og etterlevelse
 
     #### Du får vite hva folk egentlig mener på vei ut av møtet.
 
-    I rommet var alle enige. Når [tillitsbasert ledelse](/tillit/) mangler, blir tause rom normen, og [organisasjonskulturen](/kultur/) svekkes uten at noen snakker om det.
+    I rommet var alle enige. Når tillitsbasert ledelse mangler, blir tause rom normen, og organisasjonskulturen svekkes uten at noen snakker om det.
 
 *   ![Risikokalender](/assets/images/banners/ledelse-60-2-t4-signal-risikokalender.webp)
 
     #### Dere oppdaterer risikobildet én gang i året.
 
-    Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert [risikostyring](/risikostyring/) og løpende [etterlevelsesarbeid](/compliance/) blir håndteringen reaktiv, og [informasjonssikkerhet](/informasjonssikkerhet/) reduseres til en årlig avkrysning.
+    Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert risikostyring og løpende etterlevelsesarbeid blir håndteringen reaktiv, og informasjonssikkerhet reduseres til en årlig avkrysning.
 
 *   ![Endringsstabel](/assets/images/banners/ledelse-60-2-t4-signal-endringsstabel.webp)
 
     #### Du har mistet tellingen på endringsprosjektene.
 
-    De du helst vil beholde, forsvinner stille.     God [endringsledelse](/endringsledelse/) handler om å lede mennesker gjennom endring.
+    De du helst vil beholde, forsvinner stille. God endringsledelse handler om å lede mennesker gjennom endring.
 
 *   ![Lukket presentasjon](/assets/images/banners/ledelse-60-2-t4-signal-lukket-presentasjon.webp)
 
     #### Bærekraftsmålene står i en PowerPoint ingen åpner.
 
-    Strategien er på plass, men uten [forankring](/forankring/) i ledergruppen blir [bærekraft](/baerekraft/) og [kvalitetsledelse](/kvalitetsledelse/) til ord uten eierskap i hverdagen.
+    Strategien er på plass, men uten forankring i ledergruppen blir bærekraft og kvalitetsledelse til ord uten eierskap i hverdagen.
 
 *   ![Samme diskusjon](/assets/images/banners/ledelse-60-2-t4-signal-samme-diskusjon.webp)
 
     #### Du har hatt den samme diskusjonen tre ganger denne måneden.
 
-    Beslutninger tas i enighet, men ingenting endrer seg. Uforløst [makt](/makt/) og manglende [perspektivskifte](/perspektiv/) låser mønstre som [triader](/triader/) kan bryte.
+    Beslutninger tas i enighet, men ingenting endrer seg. Uforløst makt og manglende perspektivskifte låser mønstre som triader kan bryte.
 
-Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verktøyet som gir ledergruppen et felles språk for å bryte mønstrene. Les mer om [hvordan metoden er bygget opp](/metode/) og [hvorfor vi bruker Bolman & Deals fire perspektiver](/perspektiv/) som rammeverk.
+Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verktøyet som gir ledergruppen et felles språk for å bryte mønstrene. Les mer om [hvordan metoden er bygget opp](/metode/) og hvorfor vi bruker Bolman & Deals fire perspektiver som rammeverk.
 
 ## Når passer det? {#passer}
 
@@ -229,25 +229,25 @@ Ledelse 60:2 er en orientering, ikke et utviklingsprogram. Implementeringsrådgi
 
 Ledelse 60:2 bygger på Bolman & Deals fire perspektiver på ledelse. Hvert perspektiv avdekker en dimensjon av ledelsesfunksjonen som ellers lett overses. Målet er å gi ledergruppen et felles språk for hva som fungerer og hva som trenger oppmerksomhet.
 
-*   [![Struktur](/assets/images/banners/frame-structure.webp)](/struktur/)
+*   ![Struktur](/assets/images/banners/frame-structure.webp)
 
     ### Struktur
 
     Rolleklarhet, prosesser og beslutningslinjer. Handler om å få organisasjonen til å fungere teknisk.
 
-*   [![Mennesker](/assets/images/banners/frame-human.webp)](/mennesker/)
+*   ![Mennesker](/assets/images/banners/frame-human.webp)
 
     ### Mennesker
 
     Psykologisk trygghet, tillit og kompetanseutnyttelse. Handler om å få folk til å fungere sammen.
 
-*   [![Påvirkning](/assets/images/banners/frame-political.webp)](/pavirkning/)
+*   ![Påvirkning](/assets/images/banners/frame-political.webp)
 
     ### Påvirkning
 
     Maktforhold, interesser og allianser. Handler om å forstå hvem som egentlig bestemmer.
 
-*   [![Identitet](/assets/images/banners/frame-symbol.webp)](/identitet/)
+*   ![Identitet](/assets/images/banners/frame-symbol.webp)
 
     ### Identitet
 
@@ -262,10 +262,10 @@ De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er teste
 
 ## Relaterte perspektiver
 
-*   [Strukturperspektivet](/struktur/): rolleklarhet, prosesser og beslutningslinjer
-*   [Menneskeperspektivet](/mennesker/): psykologisk trygghet, tillit og kompetanseutnyttelse
-*   [Påvirkningsperspektivet](/pavirkning/): maktforhold, interesser og allianser
-*   [Identitetsperspektivet](/identitet/): kultur, verdier og felles retning
+*   **Strukturperspektivet:** rolleklarhet, prosesser og beslutningslinjer
+*   **Menneskeperspektivet:** psykologisk trygghet, tillit og kompetanseutnyttelse
+*   **Påvirkningsperspektivet:** maktforhold, interesser og allianser
+*   **Identitetsperspektivet:** kultur, verdier og felles retning
 
 ---
 {% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
