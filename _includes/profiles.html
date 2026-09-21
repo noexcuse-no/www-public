@@ -54,7 +54,13 @@
                         {% if tag_list.size > 0 %}
                         <p class="profile-tags">
                             {% for tag in tag_list %}
-                            <a href="{{ '/emne/' | append: tag | slugify | relative_url }}" class="profile-tag">{{ tag }}</a>
+                            {%- assign tag_slug = tag | remove: '#' | strip | downcase -%}
+                            {%- assign tag_page = site.tags | where: "tag", tag_slug | first -%}
+                            {%- if tag_page and tag_page.published != false -%}
+                            <a href="{{ tag_page.url | relative_url }}" class="profile-tag">{{ tag }}</a>
+                            {%- else -%}
+                            <span class="profile-tag">{{ tag }}</span>
+                            {%- endif -%}
                             {% endfor %}
                         </p>
                         {% endif %}
