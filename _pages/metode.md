@@ -58,9 +58,9 @@ conversation_topics:
 
 Med intervjuer samler vi da om hvordan medlemmer av ledergrupper ser på sin egen funksjon. Ved å stille 60 strukturerte spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kunnskapsproduksjon om kultur og beslutningsvitenskap, som gir høy fleksibel anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.
 
-Intervjustrukturen i «Ledelse 60:2» tar direkte utgangspunkt i Lee G. Bolman og Terrence E. Deals [fire perspektiver på organisasjonsanalyse](/perspektiv/), først presentert i *Reframing Organizations* (1984) og senere revidert i seks utgaver fram til 2017 (Bolman & Deal, 2017), utgitt på norsk som *Nytt perspektiv på organisasjon og ledelse* (Bolman & Deal, 2024).
+Intervjustrukturen i «Ledelse 60:2» tar direkte utgangspunkt i Lee G. Bolman og Terrence E. Deals fire perspektiver på organisasjonsanalyse, først presentert i *Reframing Organizations* (1984) og senere revidert i seks utgaver fram til 2017 (Bolman & Deal, 2017), utgitt på norsk som *Nytt perspektiv på organisasjon og ledelse* (Bolman & Deal, 2024).
 
-De [fire perspektivene](/perspektiv/) — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — er den analytiske strukturen for de 60 spørsmålene. Med Bolman & Deal legger vi til grunn antakelsen at hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold. De fire valgte perspektivene er ikke nødvendigvis de eneste, de mest riktige, uttømmende eller uten overlapp; først og fremst har vi valgt å anvende disse fire perspektivene som ordnende prinsipp fordi (a) de er relativt ukontroversielle og godt innarbeidede i domenet, og (b) perspektivene gjenspeiler en gjenkjennbar og legitim kunnskapsontologi fra samtidens vestlige samfunn. De instrumentaliseres i moderne nyprofesjons- og fagstudier slik som **Ledelse** og **HR**.
+De fire perspektivene — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — er den analytiske strukturen for de 60 spørsmålene. Med Bolman & Deal legger vi til grunn antakelsen at hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold. De fire valgte perspektivene er ikke nødvendigvis de eneste, de mest riktige, uttømmende eller uten overlapp; først og fremst har vi valgt å anvende disse fire perspektivene som ordnende prinsipp fordi (a) de er relativt ukontroversielle og godt innarbeidede i domenet, og (b) perspektivene gjenspeiler en gjenkjennbar og legitim kunnskapsontologi fra samtidens vestlige samfunn. De instrumentaliseres i moderne nyprofesjons- og fagstudier slik som **Ledelse** og **HR**.
 
 ![Teoretisk grunnlag — fire perspektiver](/assets/images/banners/metode-t3-teori.webp)
 
@@ -148,10 +148,10 @@ Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspekt
 
 ## Relaterte perspektiver
 
-*   [Strukturperspektivet](/struktur/) — når strukturen blir tvangstrøye
-*   [Menneskeperspektivet](/mennesker/) — når mennesker blir overfladisk
-*   [Påvirkningsperspektivet](/pavirkning/) — når politikk blir kynisme
-*   [Identitetsperspektivet](/identitet/) — når symbolikk blir tom
+*   **Strukturperspektivet** — når strukturen blir tvangstrøye
+*   **Menneskeperspektivet** — når mennesker blir overfladisk
+*   **Påvirkningsperspektivet** — når politikk blir kynisme
+*   **Identitetsperspektivet** — når symbolikk blir tom
 
 ## Utforsk med din egen KI
 
