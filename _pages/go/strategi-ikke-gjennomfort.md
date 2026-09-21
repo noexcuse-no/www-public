@@ -13,12 +13,12 @@ permalink: /go/strategi-ikke-gjennomfort/
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="noindex">
-  <meta http-equiv="refresh" content="0; url=/strategi-ikke-gjennomfort/?utm_source=strategi-ikke-gjennomfort&utm_medium=qr">
-  <link rel="canonical" href="/strategi-ikke-gjennomfort/">
-  <title>Omdirigerer til Strategi ikke gjennomført…</title>
+  <meta http-equiv="refresh" content="0; url=/ledelse-60-2/#passer?utm_source=strategi-ikke-gjennomfort&utm_medium=qr">
+  <link rel="canonical" href="/ledelse-60-2/">
+  <title>Omdirigerer til Ledelse 60:2…</title>
 </head>
 <body>
-  <p>Omdirigerer til <a href="/strategi-ikke-gjennomfort/?utm_source=strategi-ikke-gjennomfort&utm_medium=qr">Strategi ikke gjennomført</a>…</p>
+  <p>Omdirigerer til <a href="/ledelse-60-2/#passer?utm_source=strategi-ikke-gjennomfort&utm_medium=qr">Ledelse 60:2</a>…</p>
   <script src="/assets/scripts/go-params.js"></script>
 </body>
 </html>

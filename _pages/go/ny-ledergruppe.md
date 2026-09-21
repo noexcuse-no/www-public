@@ -13,12 +13,12 @@ permalink: /go/ny-ledergruppe/
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="noindex">
-  <meta http-equiv="refresh" content="0; url=/ny-ledergruppe/?utm_source=ny-ledergruppe&utm_medium=qr">
-  <link rel="canonical" href="/ny-ledergruppe/">
-  <title>Omdirigerer til Ny ledergruppe…</title>
+  <meta http-equiv="refresh" content="0; url=/ledelse-60-2/#passer?utm_source=ny-ledergruppe&utm_medium=qr">
+  <link rel="canonical" href="/ledelse-60-2/">
+  <title>Omdirigerer til Ledelse 60:2…</title>
 </head>
 <body>
-  <p>Omdirigerer til <a href="/ny-ledergruppe/?utm_source=ny-ledergruppe&utm_medium=qr">Ny ledergruppe</a>…</p>
+  <p>Omdirigerer til <a href="/ledelse-60-2/#passer?utm_source=ny-ledergruppe&utm_medium=qr">Ledelse 60:2</a>…</p>
   <script src="/assets/scripts/go-params.js"></script>
 </body>
 </html>

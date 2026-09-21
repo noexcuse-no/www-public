@@ -215,7 +215,7 @@ Fordi orienteringen er avgrenset til å gi ledergruppen et felles bilde. To time
 
 **Hva skjer etter at vi har fått rapporten?**
 
-Rapporten er deres. Dere kan bruke den som den er, eller ta en prat med oss om [oppfølging](/katalysator/) hvis dere ønsker å jobbe videre med funnene.
+Rapporten er deres. Dere kan bruke den som den er, eller ta en prat med oss om oppfølging hvis dere ønsker å jobbe videre med funnene.
 
 **Er det noe som ikke er inkludert?**
 

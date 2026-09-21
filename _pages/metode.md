@@ -164,6 +164,6 @@ Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbaser
 
 ### Relaterte emner å utforske videre
 
-*   [Teoretisk grunnlag](/metode/#1-teoretisk-grunnlag-for-tilnærmingen) — fire perspektiver
-*   [Kunnskapsproduksjon](/metode/#2-kunnskapsproduksjon-i-praksis) — data blir kunnskap
-*   [Forskningsetikk](/metode/#norske-forskningetiske-standarder) — respekt, konsekvenser, rettferdighet, integritet
+*   [Teoretisk grunnlag](/metode/#1--teoretisk-grunnlag-for-tilnærmingen) — fire perspektiver
+*   [Kunnskapsproduksjon](/metode/#2--kunnskapsproduksjon-i-praksis) — data blir kunnskap
+*   [Forskningsetikk](/metode/#norske-forskningsetiske-standarder) — respekt, konsekvenser, rettferdighet, integritet
