@@ -7,23 +7,35 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    display: block;
+}
+
+/* Neutralize the generic article structural card rules (ul:has(> li > h3))
+   that would otherwise force the topic list into a two-column grid. */
+.review-questions ul:has(> li > h3) {
+    display: block;
+    margin: 0;
+    gap: 0;
+}
+
+.review-questions ul:has(> li > h3) > li {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 .review-questions li {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-md);
+    display: block;
     padding: var(--space-md) var(--space-lg);
     border-bottom: 1px solid var(--border-color);
-    cursor: pointer;
-    transition: background 0.2s ease, box-shadow 0.2s ease;
     border-radius: var(--radius-md);
     min-height: 44px;
+    cursor: default;
 }
 
 .review-questions li:hover {
-    background: var(--surface-hover);
-    box-shadow: var(--shadow-xs);
+    background: transparent;
+    box-shadow: none;
 }
 
 .review-questions li:last-child {
@@ -34,6 +46,30 @@
     font-size: 1em;
     line-height: 1.5;
     color: var(--text-color);
+}
+
+/* ── Topic Card (single column: label → question → CTAs) ── */
+.review-questions .topic-label {
+    margin: 0 0 var(--space-xs);
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+.review-questions .topic-question {
+    margin: 0 0 var(--space-md);
+    font-size: 0.95em;
+    line-height: 1.55;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.review-questions .topic-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
 }
 
 /* ── Modal Overlay ──────────────────────── */

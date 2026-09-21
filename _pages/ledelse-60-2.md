@@ -77,7 +77,7 @@ json_ld:
       logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.webp"
       contactPoint:
         contactType: "booking"
-        url: "https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+        url: "https://bookings.cloud.microsoft/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
     url: "https://noexcuse.no/ledelse-60-2/"
     areaServed: "NO"
     serviceType: "Leadership Assessment"

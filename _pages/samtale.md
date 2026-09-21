@@ -94,7 +94,7 @@ og_image: /assets/images/banners/samtale-og.webp
   <div class="cta-panel">
     <div class="cta-panel-body">
       <h3>Avtal et tidspunkt</h3>
-      <a href="https://outlook.office.com/book/ledelse@noexcuse.no/?ismsaljsauthenabled" class="cta">Bestill 20 min avklaring</a>
+      <a href="https://bookings.cloud.microsoft/bookwithme/user/5abd33238853466689e2b7f79805b19d%40noexcuse.no?ismsaljsauthenabled=true&anonymous" class="cta">Bestill 20 min avklaring</a>
       <p>Velg et tidspunkt som passer i kalenderen.</p>
     </div>
   </div>

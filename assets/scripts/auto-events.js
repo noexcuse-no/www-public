@@ -196,7 +196,7 @@
 
     /* ── Booking Clicks ────────────────────── */
     function attachBookingClicks() {
-        var links = document.querySelectorAll('a[href*="/bestill/"], a[href*="/samtale/"], a[href="#bestill"], a[href*="outlook.office.com/book/"]');
+        var links = document.querySelectorAll('a[href*="/bestill/"], a[href*="/samtale/"], a[href="#bestill"], a[href*="bookings.cloud.microsoft/"]');
         links.forEach(function (link) {
             link.addEventListener('click', function () {
                 var meta = {
