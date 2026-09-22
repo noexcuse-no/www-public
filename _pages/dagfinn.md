@@ -32,7 +32,7 @@ json_ld:
       <div class="home-hero__text">
         <p class="home-eyebrow">Dagfinn Bang-Johansen · Daglig leder</p>
         <h1 id="dagfinn-hero-heading" class="home-hero__headline">Jeg er mest interessert i det som skjer mellom planlegging og gjennomføring.</h1>
-        <p class="home-hero__support">Daglig leder i No Excuse. Mer enn 20 års erfaring fra logistikk, teknologi, salg, kvalitet og virksomhetsstyring — med én rød tråd: å få beslutninger, mennesker og systemer til å fungere sammen i praksis.</p>
+        <p class="home-hero__support">Daglig leder i No Excuse. Mer enn 20 års erfaring fra logistikk, teknologi, salg, kvalitet og virksomhetsstyring, med én rød tråd: å få beslutninger, mennesker og systemer til å fungere sammen i praksis.</p>
         <div class="home-hero__ctas">
           <a href="/samtale/" class="cta cta--primary">Bestill 20 min avklaring</a>
           <a href="https://no.linkedin.com/in/bang" target="_blank" rel="noopener noreferrer" class="home-text-link">LinkedIn <span aria-hidden="true">↗</span></a>
@@ -69,7 +69,7 @@ json_ld:
       <p class="home-eyebrow">Utgangspunktet</p>
       <h2 id="dagfinn-utgangspunkt-heading" class="home-section__title">Det er lett å se symptomet. Det interessante er hva som skaper det.</h2>
       <div class="dagfinn-prose">
-        <p>En ledergruppe kan være enig om strategien og likevel ikke få den gjennomført. Et kvalitetsproblem kan se ut som et prosessproblem, men egentlig handle om ansvar. Stillhet i et møte kan være trygghet og enighet — eller det motsatte.</p>
+        <p>En ledergruppe kan være enig om strategien og likevel ikke få den gjennomført. Et kvalitetsproblem kan se ut som et prosessproblem, men egentlig handle om ansvar. Stillhet i et møte kan være trygghet og enighet, eller det motsatte.</p>
         <p>Jeg har jobbet store deler av yrkeslivet i skjæringspunktet mellom mennesker, teknologi, krav og drift. Der lærer man ganske raskt at gode intensjoner ikke er det samme som god gjennomføring.</p>
         <p>Det er også utgangspunktet mitt i No Excuse: Før vi foreslår et tiltak, prøver vi å forstå hva som faktisk står i veien.</p>
       </div>
@@ -96,7 +96,7 @@ json_ld:
           <span class="outcome-item__number" aria-hidden="true">03</span>
           <h3 class="recognition-card-title">Gode spørsmål slår raske svar</h3>
           <p class="recognition-card-text">Jeg har drevet med trening, mentoring og lederutvikling i ulike former i mange år. Noe av det viktigste jeg har lært, er å vente litt med løsningen.</p>
-          <p class="recognition-card-text">Når mennesker får gode nok spørsmål — og tid nok til å svare ordentlig — blir det ofte tydelig at problemet er et annet enn det man først trodde.</p>
+          <p class="recognition-card-text">Når mennesker får gode nok spørsmål, og tid nok til å svare ordentlig, blir det ofte tydelig at problemet er et annet enn det man først trodde.</p>
         </div>
       </div>
     </div>
@@ -109,7 +109,7 @@ json_ld:
       <div class="recognition-cards">
         <div class="recognition-card">
           <h3 class="recognition-card-title">Logistikk og verdikjeder</h3>
-          <p class="recognition-card-text">Erfaring fra blant annet Posten, TNT, Schenker og Consignor — fra transport og verdikjeder til teknologi som støtter logistikkarbeidet.</p>
+          <p class="recognition-card-text">Erfaring fra blant annet Posten, TNT, Schenker og Consignor, fra transport og verdikjeder til teknologi som støtter logistikkarbeidet.</p>
         </div>
         <div class="recognition-card">
           <h3 class="recognition-card-title">Teknologi og komplekst B2B-salg</h3>
@@ -159,7 +159,7 @@ json_ld:
       <h2 id="dagfinn-utenfor-heading" class="home-section__title">Litt utenfor møterommet</h2>
       <div class="dagfinn-prose">
         <p>Jeg har brukt mye av fritiden min på terrengsykkel, frivillig arbeid og fagmiljøer der folk deler erfaringer med hverandre. Det passer meg godt: Jeg liker folk som er nysgjerrige, som prøver noe i praksis og som gjerne deler det de lærer underveis.</p>
-        <p>Du finner meg også jevnlig på scenen og i logistikkmiljøet — som mentor, arrangør, intervjuer og konferansier.</p>
+        <p>Du finner meg også jevnlig på scenen og i logistikkmiljøet, som mentor, arrangør, intervjuer og konferansier.</p>
       </div>
     </div>
   </section>

@@ -10,7 +10,7 @@ permalink: /.well-known/ai-transparency.json
     "contact": "firmapost@noexcuse.no"
   },
   "contact": "dagfinn@noexcuse.no",
-  "disclosure_statement": "Innhold på dette nettstedet er delvis generert med kunstig intelligens (KI) og gjennomgått av redaksjon. LLM-er brukes kun i støttende og pyntende rolle — spørsmål, analyser og anbefalinger er menneskelig faglabor. Vi bruker termen 'kunstig intelligens (KI)' som et felles uttrykk; det teknisk korrekte begrepet er 'store språkmodeller'.",
+  "disclosure_statement": "Innhold på dette nettstedet er delvis generert med kunstig intelligens (KI) og gjennomgått av redaksjon. LLM-er brukes kun i støttende og pyntende rolle. Spørsmål, analyser og anbefalinger er menneskelig faglabor. Vi bruker termen 'kunstig intelligens (KI)' som et felles uttrykk; det teknisk korrekte begrepet er 'store språkmodeller'.",
   "regulatory_contact": {
     "name": "Nkom",
     "url": "https://www.nkom.no/"

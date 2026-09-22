@@ -5,7 +5,7 @@ provenance:
   editorial_responsibility: No Excuse AS
 layout: page
 title: "Personvernerklæring"
-description: "Hvordan No Excuse AS behandler dine personopplysninger — i tråd med GDPR (forordning 2016/679)."
+description: "Hvordan No Excuse AS behandler dine personopplysninger, i tråd med GDPR (forordning 2016/679)."
 permalink: /personvern/
 ---
 

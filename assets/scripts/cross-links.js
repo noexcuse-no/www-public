@@ -78,7 +78,7 @@
         if (link.desc) {
             var descEl = document.createElement('span');
             descEl.className = 'cross-link-desc';
-            descEl.textContent = ' — ' + link.desc;
+            descEl.textContent = ' · ' + link.desc;
             el.appendChild(descEl);
         }
 

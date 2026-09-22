@@ -6,7 +6,7 @@ provenance:
 class: product-booking
 layout: article
 title: "Bestill Ledelse 60:2"
-description: "Bestill orientering for ledergruppen — 60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris kr 14 850,- eks. mva."
+description: "Bestill orientering for ledergruppen: 60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris kr 14 850,- eks. mva."
 permalink: /bestill/ledelse-60-2/
 og_image: /assets/images/banners/ledelse-60-2-og.webp
 ---
@@ -27,13 +27,13 @@ og_image: /assets/images/banners/ledelse-60-2-og.webp
 
 ### Slik går det
 
-1.  **Velg tidspunkt** — Velg en tid som passer ledergruppen via [Microsoft Bookings](https://bookings.cloud.microsoft/book/ledelse@noexcuse.no/?ismsaljsauthenabled).
-2.  **Kontaktinformasjon** — Fyll inn navn, e-post og telefon. Vi bruker dette kun til å bekrefte avtalen.
-3.  **Bekreft** — Du får en bekreftelse på e-post med praktisk info og forberedelse.
+1.  **Velg tidspunkt:** Velg en tid som passer ledergruppen via [Microsoft Bookings](https://bookings.cloud.microsoft/book/ledelse@noexcuse.no/?ismsaljsauthenabled).
+2.  **Kontaktinformasjon:** Fyll inn navn, e-post og telefon. Vi bruker dette kun til å bekrefte avtalen.
+3.  **Bekreft:** Du får en bekreftelse på e-post med praktisk info og forberedelse.
 
 ### Ikke sikker ennå?
 
-[Bestill 20 min avklaring](/samtale/) — en uforpliktende samtale for å avklare om Ledelse 60:2 passer for dere.
+[Bestill 20 min avklaring](/samtale/): en uforpliktende samtale for å avklare om Ledelse 60:2 passer for dere.
 
 ## Hva skjer etter bestilling?
 
@@ -47,7 +47,7 @@ Dagfinn tar kontakt for å bekrefte deltakere og praktiske forhold.
   <p class="cta-panel-role">Daglig leder, No Excuse</p>
 </div>
 
-[Les personvernerklæringen](/personvern/) — vi behandler dine opplysninger i tråd med GDPR.
+[Les personvernerklæringen](/personvern/). Vi behandler dine opplysninger i tråd med GDPR.
 
 ### Ekstra notat
 

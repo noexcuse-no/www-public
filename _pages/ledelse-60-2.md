@@ -6,7 +6,7 @@ provenance:
 class: product
 layout: article
 title: "Ledelse 60:2: Orientering for ledergruppen"
-description: "Tidseffektiv orientering for ledergruppen — 60 strukturerte spørsmål, 2 timer, felles retningsvalg."
+description: "Tidseffektiv orientering for ledergruppen: 60 strukturerte spørsmål, 2 timer, felles retningsvalg."
 permalink: /ledelse-60-2/
 og_image: /assets/images/banners/ledelse-60-2-og.webp
 display_name: "Ledelse 60:2"
@@ -69,7 +69,7 @@ conversation_topics:
 json_ld:
   - type: "Service"
     name: "Ledelse 60:2"
-    description: "Tidseffektiv orientering for ledergruppen — 60 strukturerte spørsmål, 2 timer, felles retningsvalg."
+    description: "Tidseffektiv orientering for ledergruppen: 60 strukturerte spørsmål, 2 timer, felles retningsvalg."
     provider:
       type: "Organization"
       name: "No Excuse AS"
@@ -84,7 +84,7 @@ json_ld:
     offers:
       type: "Offer"
       priceCurrency: "NOK"
-      description: "Orientering for ledergruppen — fastpris eks. mva"
+      description: "Orientering for ledergruppen: fastpris eks. mva"
     hasOfferCatalog:
       type: "OfferCatalog"
       name: "Ledelse 60:2 Tjenester"

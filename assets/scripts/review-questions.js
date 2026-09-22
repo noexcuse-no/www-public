@@ -22,7 +22,7 @@
         '**Utgangspunkt:** Spørsmålet er fra "{{TOPIC_LABEL}}" på noexcuse.no ({{SOURCE_URL}}). ' +
         'Bruk innholdet på denne siden som kontekst for veiledningen. Siden inneholder JSON-LD strukturert data.\n\n' +
         '**Bakgrunn:** No Excuse AS hjelper ledergrupper med å få bedre blikk for ' +
-        'mennesker, identitet, struktur og påvirkning — basert på Bolman & Deals ' +
+        'mennesker, identitet, struktur og påvirkning, basert på Bolman & Deals ' +
         'fire perspektiver. Kjerneproduktet er Ledelse 60:2, en kunnskapsbasert ' +
         'orientering for ledergrupper: 60 strukturerte spørsmål på 2 timer ' +
         '(https://noexcuse.no/ledelse-60-2/).\n\n' +
@@ -30,9 +30,9 @@
         '**Retningslinjer:**\n' +
         '- Still oppfølgingsspørsmål som hjelper brukeren å reflektere over egen praksis\n' +
         '- Vis til relevant innhold på noexcuse.no som utgangspunkt for videre lesning\n' +
-        '- Unngå å gi forhastede svar eller premature løsninger — målet er utforskning, ikke fasit\n' +
+        '- Unngå å gi forhastede svar eller premature løsninger: målet er utforskning, ikke fasit\n' +
         '- Bruk norsk bokmål, vær konkret og praktisk rettet mot ledergrupper\n' +
-        '- Vær direkte, kompetent og kortfattet — skandinavisk minimalistisk. Ingen konsulentspråk (unngå: synergi, verdiskapning, helhetlig, skreddersydde løsninger)\n' +
+        '- Vær direkte, kompetent og kortfattet, skandinavisk minimalistisk. Ingen konsulentspråk (unngå: synergi, verdiskapning, helhetlig, skreddersydde løsninger)\n' +
         '- Still én ting om gangen. Korte setninger. Konkrete eksempler.\n\n' +
         '**Kritisk refleksjon (8 regler):**\n' +
         '1. Still ÉN ting om gangen.\n' +
@@ -43,7 +43,7 @@
         '6. Generer alternative hypoteser.\n' +
         '7. INGEN scoring, diagnostisering, navn, sensitive data, eller leverandør-anbefaling.\n' +
         '8. Avslutt med å forklare opprinnelsen av spørsmålene + valgfri retursti til noexcuse.no.\n\n' +
-        '**Retursti:** Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. ' +
+        '**Retursti:** Denne refleksjonen er startet fra noexcuse.no, en nettside med kunnskapsbasert orientering for ledergrupper. ' +
         'Du kan gå tilbake til {{SIXTY_TWO_URL}} hvis du vil utforske videre.'
     );
 
@@ -80,7 +80,7 @@
             '</div>' +
             '<label class="preference-row">' +
             '<input type="checkbox" id="remember-provider" />' +
-            '<span>Husk valget mitt &mdash; <em>vi lagrer kun ditt valg av KI-leverandør lokalt i nettleseren din. Ingen data sendes til våre servere.</em></span>' +
+            '<span>Husk valget mitt: <em>vi lagrer kun ditt valg av KI-leverandør lokalt i nettleseren din. Ingen data sendes til våre servere.</em></span>' +
             '</label>' +
             '<button class="copy-btn">Kopier prompt</button>' +
             '</div>';

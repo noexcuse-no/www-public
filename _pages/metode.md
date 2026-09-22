@@ -41,7 +41,7 @@ json_ld:
 topic: "strukturert praksis"
 conversation_topics:
   - conversation_label: "Korrekt forståelse vs gjengs oppfatning"
-    opening_question: "Hvordan vet dere at dere har en korrekt forståelse av organisasjonens utfordringer — ikke bare en gjengs oppfatning?"
+    opening_question: "Hvordan vet dere at dere har en korrekt forståelse av organisasjonens utfordringer, ikke bare en gjengs oppfatning?"
     source_url: "/metode/"
     sixty_two_url: "/ledelse-60-2/"
   - conversation_label: "Utestede antakelser"
@@ -54,19 +54,19 @@ conversation_topics:
     sixty_two_url: "/ledelse-60-2/"
 ---
 
-## 1 — Teoretisk grunnlag for tilnærmingen
+## 1. Teoretisk grunnlag for tilnærmingen
 
-Med intervjuer samler vi da om hvordan medlemmer av ledergrupper ser på sin egen funksjon. Ved å stille 60 strukturerte spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament — fra organisasjonsteori og maktanalyse til kunnskapsproduksjon om kultur og beslutningsvitenskap, som gir høy fleksibel anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.
+Med intervjuer samler vi da om hvordan medlemmer av ledergrupper ser på sin egen funksjon. Ved å stille 60 strukturerte spørsmål på to timer avdekker vi viktige refleksjoner om hvordan medlemmer av en ledergruppe ser på hverandres lederfunksjon. Metodikken bygger på et tverrfaglig teoretisk fundament, fra organisasjonsteori og maktanalyse til kunnskapsproduksjon om kultur og beslutningsvitenskap, som gir høy fleksibel anvendelighet for kunden på tvers av domener og problemstillinger. Den anonymiserte datafangsten fra de strukturerte intervjuene inngår som sammenliknende grunnlagsdata om organisasjoner.
 
 Intervjustrukturen i «Ledelse 60:2» tar direkte utgangspunkt i Lee G. Bolman og Terrence E. Deals fire perspektiver på organisasjonsanalyse, først presentert i *Reframing Organizations* (1984) og senere revidert i seks utgaver fram til 2017 (Bolman & Deal, 2017), utgitt på norsk som *Nytt perspektiv på organisasjon og ledelse* (Bolman & Deal, 2024).
 
-De fire perspektivene — eller "rammene" som det kalles på engelsk, derfor "rammeverk" — er den analytiske strukturen for de 60 spørsmålene. Med Bolman & Deal legger vi til grunn antakelsen at hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold. De fire valgte perspektivene er ikke nødvendigvis de eneste, de mest riktige, uttømmende eller uten overlapp; først og fremst har vi valgt å anvende disse fire perspektivene som ordnende prinsipp fordi (a) de er relativt ukontroversielle og godt innarbeidede i domenet, og (b) perspektivene gjenspeiler en gjenkjennbar og legitim kunnskapsontologi fra samtidens vestlige samfunn. De instrumentaliseres i moderne nyprofesjons- og fagstudier slik som **Ledelse** og **HR**.
+De fire perspektivene, eller "rammene" som det kalles på engelsk (derfor "rammeverk"), er den analytiske strukturen for de 60 spørsmålene. Med Bolman & Deal legger vi til grunn antakelsen at hvert perspektiv gir et gyldig, men ufullstendig bilde av virkeligheten. Bolman & Deals hovedpoeng er at ledere som bare ser organisasjonen med ett perspektiv, risikerer å ikke være oppmerksom på vesentlige forhold. De fire valgte perspektivene er ikke nødvendigvis de eneste, de mest riktige, uttømmende eller uten overlapp; først og fremst har vi valgt å anvende disse fire perspektivene som ordnende prinsipp fordi (a) de er relativt ukontroversielle og godt innarbeidede i domenet, og (b) perspektivene gjenspeiler en gjenkjennbar og legitim kunnskapsontologi fra samtidens vestlige samfunn. De instrumentaliseres i moderne nyprofesjons- og fagstudier slik som **Ledelse** og **HR**.
 
-![Teoretisk grunnlag — fire perspektiver](/assets/images/banners/metode-t3-teori.webp)
+![Teoretisk grunnlag: fire perspektiver](/assets/images/banners/metode-t3-teori.webp)
 
 {% include frame-cards.html %}
 
-## 2 — Kunnskapsproduksjon i praksis
+## 2. Kunnskapsproduksjon i praksis
 
 «Ledelse 60:2» er ikke bare en tjeneste som vi tilbyr organisasjoner for å hjelpe med å forbedre ledelsesfunksjonen, det er en metode for å *utvikle ny kunnskap om nordisk ledelses- og styringspraksis*.
 
@@ -78,7 +78,7 @@ Hvert intervju produserer strukturerte, sammenliknbare data som anonymiseres og 
 
 > «NO EXCUSE AS har rett til å vederlagsfritt anvende anonymiserte data fra bistanden og arbeidsresultatet til forskning i tråd med generelle og fagspesifikke forskningsetiske retningslinjer som bestemt av De nasjonale forskningsetiske komiteene.»
 >
-> — Standard avtalevilkår § 3.3
+> Standard avtalevilkår § 3.3
 
 ### Norske forskningsetiske standarder
 
@@ -118,15 +118,15 @@ Svarene fra strukturerte intervjuer og strukturerte spørsmål brukes til å lag
 
 ### Metoden blir bedre jo flere som bruker den
 
-Standard avtalevilkår § 3.1 fastslår at kunden eier resultatene av bistanden, men at No Excuse AS «kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale». Dette er et prinsipp som kommer alle kunder til gode — slik blir ledere i stand til å sammenlikne seg selv med praksisen i andre organisasjoner. Metodegrunnlaget forbedres kontinuerlig — ikke gjennom teoretiske antakelser, men gjennom praktisk erfaring fra virkelige ledergrupper.
+Standard avtalevilkår § 3.1 fastslår at kunden eier resultatene av bistanden, men at No Excuse AS «kan fritt utnytte de generelle erfaringer, metoder og teknikker som opparbeides og eventuelt utvikles gjennom denne avtale». Dette er et prinsipp som kommer alle kunder til gode. Slik blir ledere i stand til å sammenlikne seg selv med praksisen i andre organisasjoner. Metodegrunnlaget forbedres kontinuerlig, ikke gjennom teoretiske antakelser, men gjennom praktisk erfaring fra virkelige ledergrupper.
 
-## 3 — Hvorfor vi gjør dette
+## 3. Hvorfor vi gjør dette
 
 No Excuse AS ble stiftet i juni 2025. Forretningsidéen kom fra erfaring med å bistå virksomheter med etterlevelse av ISO-rammeverk, lov- og kundekrav. Innsikten var at god ledelse ofte blir erstattet av tungrodd administrasjon og byråkrati. Det er et kjerneproblem dersom virksomheten skal være i stand til å møte usikkerhet og nye muligheter. Det er intensjonen bak en regel som gjør den relevant og verdifull, det er liten vits i å "simulere" moden ledelse.
 
 ![Hvorfor vi gjør dette](/assets/images/banners/metode-t3-hvorfor.webp)
 
-Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspektiver — slik Bolman & Deal har argumentert for i over 40 år. De kvalitative metodene i «Ledelse 60:2» er vårt svar på en tid preget av KI, mistillit og helautomatiske løsninger. Ved å komme mennesker i møte og legge til rette for å lære av hverandre styrker vi det unikt menneskelige. Dette gjenspeiles også i hvordan vi har en skeptisk og kritisk innstilling til bruk av maskinlæring og maskingenerert innhold i det metodiske arbeidet. En statistisk algoritme kan ikke "tenke" eller "forstå".
+Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspektiver, slik Bolman & Deal har argumentert for i over 40 år. De kvalitative metodene i «Ledelse 60:2» er vårt svar på en tid preget av KI, mistillit og helautomatiske løsninger. Ved å komme mennesker i møte og legge til rette for å lære av hverandre styrker vi det unikt menneskelige. Dette gjenspeiles også i hvordan vi har en skeptisk og kritisk innstilling til bruk av maskinlæring og maskingenerert innhold i det metodiske arbeidet. En statistisk algoritme kan ikke "tenke" eller "forstå".
 
 ## Referanser
 
@@ -138,7 +138,7 @@ Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspekt
 - Hubbard, D. W. (2014). *How to Measure Anything* (3. utg.). Wiley.
 - Logan, D., King, J. & Fischer-Wright, H. (2011). *Tribal Leadership*. HarperCollins.
 - Lov om organisering av forskningsetisk arbeid (forskningsetikkloven). (2017). Hentet fra lovdata.no
-- No Excuse AS. (2026). *Standard avtalevilkår — Oppdrag*.
+- No Excuse AS. (2026). *Standard Avtalevilkår for Oppdrag*.
 - Pfeffer, J. (2010). *Power: Why Some People Have It — and Others Don't*. HarperBusiness.
 
 ## Kjenner du deg igjen?
@@ -148,10 +148,10 @@ Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspekt
 
 ## Relaterte perspektiver
 
-*   **Strukturperspektivet** — når strukturen blir tvangstrøye
-*   **Menneskeperspektivet** — når mennesker blir overfladisk
-*   **Påvirkningsperspektivet** — når politikk blir kynisme
-*   **Identitetsperspektivet** — når symbolikk blir tom
+*   **Strukturperspektivet:** når strukturen blir tvangstrøye
+*   **Menneskeperspektivet:** når mennesker blir overfladisk
+*   **Påvirkningsperspektivet:** når politikk blir kynisme
+*   **Identitetsperspektivet:** når symbolikk blir tom
 
 ## Utforsk med din egen KI
 
@@ -160,10 +160,10 @@ Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspekt
 
 ## Etter refleksjon {#etter-refleksjon}
 
-Denne refleksjonen er startet fra noexcuse.no — en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Om metodikk](/metode/) hvis du vil utforske videre.
+Denne refleksjonen er startet fra noexcuse.no, en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Om metodikk](/metode/) hvis du vil utforske videre.
 
 ### Relaterte emner å utforske videre
 
-*   [Teoretisk grunnlag](/metode/#1--teoretisk-grunnlag-for-tilnærmingen) — fire perspektiver
-*   [Kunnskapsproduksjon](/metode/#2--kunnskapsproduksjon-i-praksis) — data blir kunnskap
-*   [Forskningsetikk](/metode/#norske-forskningsetiske-standarder) — respekt, konsekvenser, rettferdighet, integritet
+*   [Teoretisk grunnlag](/metode/#1-teoretisk-grunnlag-for-tilnærmingen): fire perspektiver
+*   [Kunnskapsproduksjon](/metode/#2-kunnskapsproduksjon-i-praksis): data blir kunnskap
+*   [Forskningsetikk](/metode/#norske-forskningsetiske-standarder): respekt, konsekvenser, rettferdighet, integritet

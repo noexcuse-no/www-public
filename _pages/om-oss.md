@@ -16,7 +16,7 @@ hero_effect: parallax-fade
 json_ld:
   - type: "Organization"
     name: "No Excuse AS"
-    description: "Vi hjelper ledergrupper med å bli bedre — uten byråkrati. Forbedrer internkultur og kommunikasjon i bedrifter."
+    description: "Vi hjelper ledergrupper med å bli bedre, uten byråkrati. Forbedrer internkultur og kommunikasjon i bedrifter."
     url: "https://noexcuse.no"
     logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.webp"
     image: "https://noexcuse.no/assets/images/og-image.webp"
@@ -36,7 +36,7 @@ json_ld:
       - "https://www.linkedin.com/company/noexcuse"
 ---
 
-På noexcuse.no brukes store språkmodeller kun i støttende og pyntende roller — aldri til analyse eller anbefalinger. [Les mer om vår bruk av KI](/om-store-sprakmodeller/)
+På noexcuse.no brukes store språkmodeller kun i støttende og pyntende roller, aldri til analyse eller anbefalinger. [Les mer om vår bruk av KI](/om-store-sprakmodeller/)
 
 ## Hvorfor No Excuse?
 
@@ -48,7 +48,7 @@ Vår tilnærming bygger på anerkjent organisasjonsteori (Bolman & Deals fire pe
 
 ## Norsk utgangspunkt
 
-Vi er et norsk selskap, og metodikken er utviklet for norske ledergrupper. Flat struktur, tillitsbasert ledelse og psykologisk trygghet er ikke tilleggstjenester her — de er forutsetninger for hvordan arbeidet gjøres.
+Vi er et norsk selskap, og metodikken er utviklet for norske ledergrupper. Flat struktur, tillitsbasert ledelse og psykologisk trygghet er ikke tilleggstjenester her: de er forutsetninger for hvordan arbeidet gjøres.
 
 Når du kjøper Ledelse 60:2, får du en metodikk som bygger på den norske ledelsestradisjonen: lav maktdistanse, høy inkludering, psykologisk trygghet.
 
@@ -71,7 +71,7 @@ Våre tre kjerneverdier er ansvarlighet, tillit og ærlighet. De styrer hvordan 
 
     #### Ansvarlighet
 
-    Ansvarlighet er grunnmuren i all god ledelse. Vi hjelper ledergrupper med å ta eierskap til egne beslutninger og konsekvensene av dem. Når roller er tydelige og ansvar er forankret, forsvinner ansvarsskyvning — og organisasjonen får gjennomføringskraft. Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse.
+    Ansvarlighet er grunnmuren i all god ledelse. Vi hjelper ledergrupper med å ta eierskap til egne beslutninger og konsekvensene av dem. Når roller er tydelige og ansvar er forankret, forsvinner ansvarsskyvning, og organisasjonen får gjennomføringskraft. Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse.
 
 *   ![Abstrakt illustrasjon av kjerneverdien tillit](/assets/images/banners/verdi-tillit.webp)
 
@@ -93,7 +93,7 @@ Vi bygger på denne praksisen. Når vi jobber med en ledergruppe, tar vi utgangs
 
 ## Slik jobber vi
 
-Vi bruker strukturerte intervjuer og strukturerte spørsmål for å skape et felles bilde av virkeligheten — uten poengsetting eller rangering. Metodikken vår bygger på Bolman & Deals fire perspektiver og er utviklet gjennom praktisk anvendelse i norske ledergrupper.
+Vi bruker strukturerte intervjuer og strukturerte spørsmål for å skape et felles bilde av virkeligheten, uten poengsetting eller rangering. Metodikken vår bygger på Bolman & Deals fire perspektiver og er utviklet gjennom praktisk anvendelse i norske ledergrupper.
 
 Les mer om [hvordan vi jobber og det teoretiske grunnlaget](/metode/).
 
