@@ -1,6 +1,6 @@
 # homepage-repositioning — Feature Specification
 
-> Status: Ready
+> Status: Done (implementert — homepage-conversion-60-2)
 > Backlog: V1
 
 ## Purpose / Problem
