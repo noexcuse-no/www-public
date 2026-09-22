@@ -3,18 +3,19 @@ layout: default
 ---
 <div class="home-content">
 
-  <!-- 1. Hero: two-column, illustration beside the text (never as background) -->
+  <!-- 1. Hero: outcome-led proposition, product definition line, three paths -->
   <section class="home-hero" aria-labelledby="hero-headline">
     <div class="home-container home-hero__grid">
       <div class="home-hero__text">
         <p class="home-eyebrow">Ledelse 60:2</p>
         <h1 id="hero-headline" class="home-hero__headline">Finn ut hva som faktisk står i veien for bedre ledelse.</h1>
         <p class="home-hero__support">Ledelse 60:2 viser hvor ledergruppen er samstemt, hvor den spriker, og hva det er mest nyttig å ta tak i først.</p>
+        <p class="home-hero__credibility">60 spørsmål · 2 timer · rapport med prioriteringer</p>
         <div class="home-hero__ctas">
           <a href="/samtale/" class="cta cta--primary">Bestill 20 min avklaring</a>
           <a href="#slik-fungerer-det" class="cta cta--secondary">Slik fungerer 60:2</a>
         </div>
-        <p class="home-hero__credibility">60 spørsmål · 2 timer · rapport med prioriteringer</p>
+        <p class="home-hero__direct">Allerede bestemt? <a href="/bestill/ledelse-60-2/" class="home-text-link">Bestill Ledelse 60:2</a></p>
       </div>
       <div class="home-hero__media">
         <img src="/assets/images/hero-illustration.webp" alt="" width="1920" height="1084" fetchpriority="high">
@@ -22,7 +23,23 @@ layout: default
     </div>
   </section>
 
-  <!-- 2. Recognition: four problem signals -->
+  <!-- 60/2/4 signature: branded mechanism band beneath the hero (product-signature placement) -->
+  <div class="home-signature">
+    {% include signature-60-2-4.html %}
+  </div>
+
+  <!-- 2. Report preview: what the delivered report actually looks like (illustrative) -->
+  <section class="home-section home-report" aria-labelledby="report-heading">
+    <div class="home-container">
+      <p class="home-eyebrow">Rapporten</p>
+      <h2 id="report-heading" class="home-section__title">Slik ser resultatet ut</h2>
+      <p class="home-section__intro">Dere får en rapport med prioriterte funn og anbefalinger innen én uke. Den er deres å bruke som dere vil.</p>
+      {% include sample-report-preview.html hide_heading=true omit_cta=true %}
+      <p class="home-report__link"><a class="home-text-link" href="/ledelse-60-2/">Les mer om Ledelse 60:2 <span aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+  <!-- 3. Recognition: four problem signals -->
   <section class="home-section home-recognition" aria-labelledby="recognition-heading">
     <div class="home-container">
       <p class="home-eyebrow">Kjenner dere igjen noe av dette?</p>
@@ -53,7 +70,7 @@ layout: default
     </div>
   </section>
 
-  <!-- 3. Outcomes: what changes after 60:2 -->
+  <!-- 4. Outcomes: what changes after 60:2 -->
   <section class="home-section home-outcomes" aria-labelledby="outcomes-heading">
     <div class="home-container">
       <p class="home-eyebrow">Dette sitter dere igjen med</p>
@@ -79,7 +96,7 @@ layout: default
     </div>
   </section>
 
-  <!-- 4. Diagnose before leadership development: full-width light surface -->
+  <!-- 5. Diagnose before leadership development: full-width light surface -->
   <section class="home-diagnosis" aria-labelledby="diagnosis-heading">
     <div class="home-container home-diagnosis__grid">
       <div class="home-diagnosis__intro">
@@ -94,10 +111,10 @@ layout: default
     </div>
   </section>
 
-  <!-- 5. Process: how 60:2 works -->
+  <!-- 6. Process: how 60:2 works + 60/2/4 signature -->
   <section class="home-section home-process" id="slik-fungerer-det" aria-labelledby="process-heading">
     <div class="home-container">
-      <p class="home-eyebrow">Slik foregår det</p>
+      <p class="home-eyebrow">Slik foregår 60:2</p>
       <h2 id="process-heading" class="home-section__title">Fra første samtale til rapport</h2>
       <p class="home-section__intro">Et kort og avgrenset forløp. Målet er å gi ledergruppen et bedre grunnlag for å velge neste steg – ikke å starte et nytt program.</p>
       <div class="process-steps">
@@ -123,7 +140,7 @@ layout: default
     </div>
   </section>
 
-  <!-- 6. Fit / not fit -->
+  <!-- 7. Fit / not fit -->
   <section class="home-section home-fit" aria-labelledby="fit-heading">
     <div class="home-container">
       <p class="home-eyebrow">Når 60:2 passer – og når det ikke gjør det</p>
@@ -141,35 +158,17 @@ layout: default
         <div class="fit-column fit--not">
           <h3>Passer ikke når</h3>
           <ul>
-            <li>Er dere flere enn fem ledere, tar vi først en avklaring</li>
+            <li>Er dere flere enn fem ledere, tar vi først en <a href="/samtale/" class="home-text-link">avklaring</a></li>
             <li>Dere ønsker et utviklingsprogram eller løpende coaching</li>
             <li>Dere trenger implementeringsrådgivning som følger opp funnene over tid</li>
           </ul>
         </div>
       </div>
+      <p class="home-fit__unsure">Er dere usikre på om dette passer, kan en kort <a href="/samtale/" class="home-text-link">avklaring</a> være et bedre første steg.</p>
     </div>
   </section>
 
-  <!-- 7. Price: single strong card, commercial data from _data/commercial.yml -->
-  <section class="home-section home-price" id="pris" aria-labelledby="price-heading">
-    <div class="home-container">
-      <p class="home-eyebrow">Pris</p>
-      <h2 id="price-heading" class="home-section__title">Én leveranse. Ingen binding.</h2>
-      <p class="home-section__intro">Dere betaler for analysen og rapporten. Det følger ikke med abonnement, videre program eller automatisk oppfølging.</p>
-      {% assign commercial = site.data.commercial %}
-      <div class="home-price-card">
-        <h3 class="home-price-card__heading">{{ commercial.price_display }} <span class="home-price-card__note">{{ commercial.price_note }}</span></h3>
-        <ul class="home-price-card__inclusions">
-          {% for item in commercial.inclusions %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        <a href="/samtale/" class="cta cta--primary">Bestill 20 min avklaring</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8. Methodology: four perspectives, compact links -->
+  <!-- 8. Methodology: four perspectives, aligned naming with the product page -->
   <section class="home-section home-perspectives" id="fire-perspektiver" aria-labelledby="perspectives-heading">
     <div class="home-container">
       <p class="home-eyebrow">Fire måter å se samme problem på</p>
@@ -177,42 +176,66 @@ layout: default
       <p class="home-section__intro">Det som ser ut som ett problem, kan ha flere forklaringer. Derfor undersøker 60:2 ledergruppen fra fire perspektiver.</p>
       <div class="perspectives-grid">
         <div class="perspective-item">
-          <h3>Struktur og roller</h3>
-          <p>Rolleklarhet, prosesser og beslutningslinjer.</p>
+          <h3>Struktur</h3>
+          <p>Rolleklarhet, prosesser og beslutningslinjer. Handler om å få organisasjonen til å fungere teknisk.</p>
         </div>
         <div class="perspective-item">
-          <h3>Mennesker og tilhørighet</h3>
-          <p>Psykologisk trygghet, tillit og kompetanseutnyttelse.</p>
+          <h3>Mennesker</h3>
+          <p>Psykologisk trygghet, tillit og kompetanseutnyttelse. Handler om å få folk til å fungere sammen.</p>
         </div>
         <div class="perspective-item">
-          <h3>Påvirkning og makt</h3>
-          <p>Maktforhold, interesser og allianser.</p>
+          <h3>Påvirkning</h3>
+          <p>Maktforhold, interesser og allianser. Handler om å forstå hvem som egentlig bestemmer.</p>
         </div>
         <div class="perspective-item">
-          <h3>Identitet og fortelling</h3>
-          <p>Kultur, verdier og felles retning.</p>
+          <h3>Identitet</h3>
+          <p>Kultur, verdier og felles retning. Handler om hva organisasjonen står for.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 9. Final CTA: Dagfinn. Last substantial block before the footer. -->
-  <section class="home-final-cta" aria-labelledby="final-cta-heading">
-    <div class="home-container home-final-cta__grid">
-      <div class="home-final-cta__body">
-        <p class="home-eyebrow">Usikker på om dette er riktig for dere?</p>
-        <h2 id="final-cta-heading" class="home-section__title">Ta en kort prat før dere bestemmer dere.</h2>
-        <p class="home-final-cta__text">På 20 minutter kan vi finne ut om 60:2 er relevant for situasjonen deres, og om det er verdt å gå videre.</p>
-        <div class="home-final-cta__actions">
+  <!-- 9. Practitioner: who carries out the analysis -->
+  <section class="home-section home-practitioner" aria-labelledby="practitioner-heading">
+    <div class="home-container home-practitioner__grid">
+      <img src="/assets/images/dagfinn.webp" alt="Dagfinn Bang-Johansen, daglig leder i No Excuse" width="96" height="96" loading="lazy" class="home-practitioner__portrait">
+      <div class="home-practitioner__body">
+        <p class="home-eyebrow">Din kontaktperson</p>
+        <h2 id="practitioner-heading" class="home-practitioner__name">Dagfinn Bang-Johansen</h2>
+        <p class="home-practitioner__role">Daglig leder</p>
+        <p class="home-practitioner__text">Dagfinn tar kontakt før avtalt tid for å bekrefte deltakere og praktiske forhold. Mer enn 20 års erfaring fra logistikk, teknologi, kvalitet, ledelse og virksomhetsstyring.</p>
+        <p class="home-practitioner__link"><a href="/dagfinn/" class="home-text-link">Les om Dagfinn <span aria-hidden="true">→</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Decision: price + two routes (avklaring primary, direct order lower emphasis) + trust signals -->
+  <section class="home-decision" id="pris" aria-labelledby="decision-heading">
+    <div class="home-container">
+      <p class="home-eyebrow">Pris og neste steg</p>
+      <h2 id="decision-heading" class="home-section__title">Én leveranse. Ingen binding.</h2>
+      <p class="home-section__intro">Dere betaler for analysen og rapporten. Det følger ikke med abonnement, videre program eller automatisk oppfølging.</p>
+      {% assign commercial = site.data.commercial %}
+      <div class="decision-grid">
+        <div class="decision-card decision-card--primary">
+          <h3>Usikre på om 60:2 passer?</h3>
+          <p class="decision-card__text">På 20 minutter kan vi finne ut om 60:2 er relevant for situasjonen deres, og om det er verdt å gå videre.</p>
           <a href="/samtale/" class="cta cta--primary">Bestill 20 min avklaring</a>
-          <a href="/dagfinn/" class="home-text-link">Les om Dagfinn</a>
+          <p class="decision-card__helper">Velg tidspunkt i Microsoft Bookings. Ingen betaling.</p>
+        </div>
+        <div class="decision-card decision-card--secondary">
+          <h3>Allerede bestemt?</h3>
+          <p class="home-price-card__heading">{{ commercial.price_display }} <span class="home-price-card__note">{{ commercial.price_note }}</span></p>
+          <ul class="home-price-card__inclusions">
+            {% for item in commercial.inclusions %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          <a href="/bestill/ledelse-60-2/" class="cta cta--secondary">Bestill Ledelse 60:2</a>
+          <p class="decision-card__helper">Du velger tidspunkt i Microsoft Bookings og legger igjen navn, e-post og telefon. Vi bruker dette kun til å bekrefte avtalen.</p>
         </div>
       </div>
-      <div class="home-final-cta__person">
-        <img src="/assets/images/dagfinn.webp" alt="Dagfinn Bang-Johansen, daglig leder i No Excuse" width="96" height="96" loading="lazy">
-        <p class="home-final-cta__name">Dagfinn Bang-Johansen</p>
-        <p class="home-final-cta__role">Daglig leder</p>
-      </div>
+      {% include trust-block.html %}
     </div>
   </section>
 

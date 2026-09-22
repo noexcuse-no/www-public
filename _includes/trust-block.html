@@ -1,13 +1,14 @@
 {% comment %}
   Trust block — reusable component for trust signals near purchase CTAs.
   Includes: no subscription, no hidden commitment, customer owns findings, confidential handling.
+  Payment/cancellation terms are NOT claimed here — they live in /avtale/ only.
 {% endcomment %}
 <div class="trust-block" aria-labelledby="trust-block-heading">
   <h3 id="trust-block-heading" class="trust-block__heading">Trygt å bestille</h3>
   <ul class="trust-block__list">
     <li>
       <span class="trust-block__icon" aria-hidden="true">✓</span>
-      <span class="trust-block__text">Ingen abonnement: én gang betaling, fast pris</span>
+      <span class="trust-block__text">Ingen abonnement, fast pris</span>
     </li>
     <li>
       <span class="trust-block__icon" aria-hidden="true">✓</span>
@@ -20,10 +21,6 @@
     <li>
       <span class="trust-block__icon" aria-hidden="true">✓</span>
       <span class="trust-block__text">Konfidensiell håndtering: alt som diskuteres i intervjuet forblir internt</span>
-    </li>
-    <li>
-      <span class="trust-block__icon" aria-hidden="true">✓</span>
-      <span class="trust-block__text">Avbestilling/ombooking: gratis opp til 48 timer før avtalt tid</span>
     </li>
   </ul>
   <p class="trust-block__legal">

@@ -1,9 +1,19 @@
 {% comment %}
   Sample report preview — illustrative example of Ledelse 60:2 output.
   Clearly labeled as illustrative, not a real customer case.
+
+  Usage:
+    {% include sample-report-preview.html %}
+    {% include sample-report-preview.html hide_heading=true omit_cta=true %}
+  hide_heading: skip the section's own h2 (caller provides the heading).
+  omit_cta:    skip the closing "Forslag til neste steg" card (compact variant).
 {% endcomment %}
+{% if include.hide_heading %}
+<section class="sample-report">
+{% else %}
 <section class="sample-report" aria-labelledby="sample-report-heading">
   <h2 id="sample-report-heading" class="section__heading">Slik ser resultatet ut</h2>
+{% endif %}
   <p class="sample-report__disclaimer"><strong>Illustrativt eksempel</strong>: ikke en kundecase. Viser struktur og innholdstype i den levererte rapporten.</p>
 
   <div class="sample-report__grid">
@@ -53,9 +63,10 @@
         <li>Klardegjøre beslutningsmandater per område (RACI)</li>
         <li>Definere 3 felles ledelsesprinsipper, åpenlyst</li>
         <li>Involvere midtnivåledere i strategioversettelse</li>
-      </ul>
+      </ol>
     </div>
 
+    {% unless include.omit_cta %}
     <div class="sample-report__card sample-report__card--cta">
       <h3>Forslag til neste steg</h3>
       <ul class="sample-report__list">
@@ -65,5 +76,6 @@
       </ul>
       <a href="/bestill/ledelse-60-2/" class="cta cta--primary">Bestill Ledelse 60:2</a>
     </div>
+    {% endunless %}
   </div>
 </section>

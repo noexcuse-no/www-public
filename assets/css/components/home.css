@@ -53,6 +53,17 @@
     margin: 0 0 var(--space-xl);
 }
 
+/* ---------- Report preview (early output evidence) ---------- */
+.home-report .sample-report {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+}
+
+.home-report__link {
+    margin: var(--space-xl) 0 0;
+}
+
 /* ---------- Text links (informational — never primary-button styling) ---------- */
 .home-text-link {
     color: var(--link-color);
@@ -92,6 +103,14 @@
     margin: 0 0 var(--space-xl);
 }
 
+.home-hero__credibility {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin: 0 0 var(--space-xl);
+    max-width: var(--content-reading);
+}
+
 .home-hero__ctas {
     display: flex;
     flex-wrap: wrap;
@@ -99,11 +118,11 @@
     margin: 0 0 var(--space-lg);
 }
 
-.home-hero__credibility {
-    font-size: 0.9rem;
+.home-hero__direct {
+    font-size: 0.95rem;
     color: var(--text-color);
-    opacity: 0.7;
-    margin: 0;
+    opacity: 0.85;
+    margin: 0 0 var(--space-lg);
 }
 
 .home-hero__media img {
@@ -111,6 +130,11 @@
     height: auto;
     object-fit: contain;
     display: block;
+}
+
+/* ---------- 60/2/4 signature (band beneath the hero, per product-signature) ---------- */
+.home-signature {
+    border-bottom: 1px solid var(--border-color-subtle);
 }
 
 /* ---------- Recognition cards (strong cards) ---------- */
@@ -312,22 +336,21 @@
     font-weight: 700;
 }
 
-/* Negative column: marker must match .fit-column.fit--not directly */
+/* Not-fit column: neutral dash, no error/warning styling */
 .fit-column.fit--not li::before {
-    content: "×";
-    color: var(--error-color);
+    content: "–";
+    color: var(--text-color);
 }
 
-/* ---------- Price (strong card, single tier) ---------- */
-.home-price-card {
-    background: var(--box-background);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
-    padding: var(--space-2xl);
-    max-width: 720px;
+.home-fit__unsure {
+    margin: var(--space-xl) 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.85;
 }
 
+/* ---------- Price (heading + inclusions, embedded in decision cards) ---------- */
 .home-price-card__heading {
     font-size: 2rem;
     font-weight: 700;
@@ -385,18 +408,55 @@
     margin: 0 0 var(--space-md);
 }
 
-/* ---------- Final CTA (restrained brand surface) ---------- */
+/* ---------- Practitioner (compact trust element) ---------- */
+.home-practitioner__grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+.home-practitioner__portrait {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.home-practitioner__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-color);
+    margin: 0 0 var(--space-xs);
+}
+
+.home-practitioner__role {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin: 0 0 var(--space-sm);
+}
+
+.home-practitioner__text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    opacity: 0.85;
+    margin: 0 0 var(--space-sm);
+    max-width: var(--content-reading);
+}
+
+.home-practitioner__link {
+    margin: 0;
+}
+
+/* ---------- Final CTA (restrained brand surface, shared with /dagfinn/) ---------- */
 .home-final-cta {
     background: var(--surface-subtle);
     border-top: 1px solid var(--border-color-subtle);
     padding-block: 96px;
-}
-
-.home-final-cta__grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 64px;
-    align-items: center;
 }
 
 .home-final-cta__text {
@@ -407,10 +467,6 @@
     margin: 0 0 var(--space-lg);
 }
 
-.home-final-cta__body .home-section__title {
-    margin-bottom: var(--space-md);
-}
-
 .home-final-cta__actions {
     display: flex;
     flex-wrap: wrap;
@@ -418,31 +474,57 @@
     gap: var(--space-md);
 }
 
-.home-final-cta__person {
-    text-align: center;
+/* ---------- Decision area (price + two routes + trust) ---------- */
+.home-decision {
+    background: var(--surface-subtle);
+    border-top: 1px solid var(--border-color-subtle);
+    padding-block: 96px;
 }
 
-.home-final-cta__person img {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto var(--space-sm);
+.decision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
 }
 
-.home-final-cta__name {
+.decision-card {
+    background: var(--box-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-2xl);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.decision-card--primary {
+    border-top: 3px solid var(--accent-color);
+}
+
+.decision-card h3 {
+    font-size: 1.25rem;
     font-weight: 700;
-    font-size: 0.95rem;
     color: var(--text-color);
-    margin: 0 0 2px;
+    margin: 0 0 var(--space-md);
 }
 
-.home-final-cta__role {
-    font-size: 0.85rem;
+.decision-card__text {
+    font-size: 1rem;
+    line-height: 1.7;
     color: var(--text-color);
-    opacity: 0.75;
-    margin: 0;
+    opacity: 0.85;
+    margin: 0 0 var(--space-lg);
+    max-width: 52ch;
+}
+
+.decision-card__helper {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin: var(--space-md) 0 0;
 }
 
 /* ========================================
@@ -453,7 +535,8 @@
 @media (max-width: 1099px) {
     .home-section,
     .home-diagnosis,
-    .home-final-cta {
+    .home-final-cta,
+    .home-decision {
         padding-block: 72px;
     }
 
@@ -462,12 +545,16 @@
     }
 }
 
-/* ≤899px: outcomes and process stack to avoid cramped text */
+/* ≤899px: outcomes/process/decision routes stack to avoid cramped text */
 @media (max-width: 899px) {
     .outcomes-list,
     .process-steps {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    .decision-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -479,7 +566,8 @@
 
     .home-section,
     .home-diagnosis,
-    .home-final-cta {
+    .home-final-cta,
+    .home-decision {
         padding-block: 56px;
     }
 
@@ -521,17 +609,10 @@
         grid-template-columns: 1fr;
     }
 
-    .home-final-cta__grid {
+    .home-practitioner__grid {
         grid-template-columns: 1fr;
-        gap: var(--space-xl);
-    }
-
-    .home-final-cta__person {
-        text-align: left;
-    }
-
-    .home-final-cta__person img {
-        margin-left: 0;
+        gap: var(--space-md);
+        align-items: start;
     }
 }
 
