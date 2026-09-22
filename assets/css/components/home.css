@@ -132,6 +132,11 @@
     display: block;
 }
 
+/* ---------- 60/2/4 signature (band beneath the hero, per product-signature) ---------- */
+.home-signature {
+    border-bottom: 1px solid var(--border-color-subtle);
+}
+
 /* ---------- Recognition cards (strong cards) ---------- */
 .recognition-cards {
     display: grid;
@@ -276,13 +281,6 @@
     opacity: 0.85;
     margin: 0;
     max-width: var(--content-reading);
-}
-
-/* 60/2/4 signature ties into the process section as a mechanism recap */
-.home-process .signature-60-2-4 {
-    margin-top: var(--space-xl);
-    border-top: 1px solid var(--border-color-subtle);
-    padding-block: var(--space-lg);
 }
 
 /* ---------- Fit / not fit (medium structural treatment) ---------- */
