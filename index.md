@@ -5,13 +5,13 @@ provenance:
   editorial_responsibility: No Excuse AS
 layout: home
 title: "No Excuse AS"
-description: "No Excuse AS hjelper ledergrupper med å bli bedre — uten byråkrati. 60 strukturerte spørsmål på 2 timer."
+description: "No Excuse AS hjelper ledergrupper med å bli bedre, uten byråkrati. 60 strukturerte spørsmål på 2 timer."
 class: home
 
 json_ld:
   - type: "Organization"
     name: "No Excuse AS"
-    description: "No Excuse AS hjelper ledergrupper med å bli bedre — uten byråkrati. 60 strukturerte spørsmål på 2 timer."
+    description: "No Excuse AS hjelper ledergrupper med å bli bedre, uten byråkrati. 60 strukturerte spørsmål på 2 timer."
     url: "https://noexcuse.no"
     logo: "https://noexcuse.no/assets/images/noexcuse-logo-azure.webp"
     image: "https://noexcuse.no/assets/images/og-image.webp"

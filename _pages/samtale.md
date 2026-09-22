@@ -43,12 +43,12 @@ og_image: /assets/images/banners/samtale-og.webp
     <div class="process-step">
       <div class="process-step-number">1</div>
       <h3>Kartlegge utfordringen</h3>
-      <p>Vi lytter til hva dere ser som problemet — og hva dere har prøvd allerede.</p>
+      <p>Vi lytter til hva dere ser som problemet, og hva dere har prøvd allerede.</p>
     </div>
     <div class="process-step">
       <div class="process-step-number">2</div>
       <h3>Vurdere passeform</h3>
-      <p>Vi matcher utfordringen mot hva 60:2 leverer — og sier nei hvis det ikke passer.</p>
+      <p>Vi matcher utfordringen mot hva 60:2 leverer, og sier nei hvis det ikke passer.</p>
     </div>
     <div class="process-step">
       <div class="process-step-number">3</div>
@@ -67,7 +67,7 @@ og_image: /assets/images/banners/samtale-og.webp
     </div>
     <div class="fit-column">
       <h3>Hvis 60:2 ikke passer</h3>
-      <p>Vi peker dere i riktig retning — enten internt, hos en annen partner, eller mot en annen type innsats. Ingen binding, ingen kostnad.</p>
+      <p>Vi peker dere i riktig retning: enten internt, hos en annen partner, eller mot en annen type innsats. Ingen binding, ingen kostnad.</p>
     </div>
   </div>
 </section>
@@ -99,7 +99,7 @@ og_image: /assets/images/banners/samtale-og.webp
     </div>
   </div>
 
-  <p><small>{{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }} — kun hvis dere velger å gå videre med Ledelse 60:2 etter avklaringen.</small></p>
+  <p><small>{{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }}, kun hvis dere velger å gå videre med Ledelse 60:2 etter avklaringen.</small></p>
 
   <p><small>Ved bestilling behandles kontaktopplysningene i tråd med vår personvernerklæring. <a href="/personvern/">Les personvernerklæringen</a>.</small></p>
 </section>

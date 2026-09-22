@@ -97,6 +97,6 @@ Du har de samme rettighetene som beskrevet i [Personvernerklæringen](/personver
 | Sidebruk (side, tidspunkt) | Samtalen med KI-en | Hele samtalen |
 | Valgt tema | Svarene dine | Dine svar og resonnering |
 | At promptet er kopiert | Personopplysninger du velger å dele | Eventuelle personopplysninger du deler |
-| Retur til noexcuse.no | Forretningshemmeligheter | — |
+| Retur til noexcuse.no | Forretningshemmeligheter | Ingen |
 
-**Husk:** «Samtalen deles ikke med No Excuse» — ikke «samtalen er privat.» Vi har ingen tilgang til samtalen din.
+**Husk:** «Samtalen deles ikke med No Excuse», ikke «samtalen er privat.» Vi har ingen tilgang til samtalen din.

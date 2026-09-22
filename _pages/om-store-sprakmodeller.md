@@ -6,7 +6,7 @@ provenance:
 layout: page
 title: "Om KI"
 permalink: /om-store-sprakmodeller/
-description: "Hvordan noexcuse.no bruker store språkmodeller — begrenset, redaksjonelt ansvarlig, og aldri til analyse eller anbefalinger."
+description: "Hvordan noexcuse.no bruker store språkmodeller: begrenset, redaksjonelt ansvarlig, og aldri til analyse eller anbefalinger."
 ---
 
 > **Vi bruker generativ KI som støtte i utvikling og innholdsarbeid. Publisert innhold gjennomgås og kvalitetssikres av oss.**
@@ -15,18 +15,18 @@ description: "Hvordan noexcuse.no bruker store språkmodeller — begrenset, red
 
 ## Terminologisk forbehold
 
-Vi bruker begrepet **kunstig intelligens (KI)** som et felles uttrykk for det publikum kjenner. Det teknisk korrekte begrepet er **store språkmodeller (LLM-er)**. "KI" antyder en form for intelligens eller bevissthet som disse modellene ikke har — de er statistiske systemer for tekstsyntese.
+Vi bruker begrepet **kunstig intelligens (KI)** som et felles uttrykk for det publikum kjenner. Det teknisk korrekte begrepet er **store språkmodeller (LLM-er)**. "KI" antyder en form for intelligens eller bevissthet som disse modellene ikke har: de er statistiske systemer for tekstsyntese.
 
-Vi bruker **aldri** formuleringer som antyder at LLM-ene er en integrert del av vår faglige praksis — det er de ikke.
+Vi bruker **aldri** formuleringer som antyder at LLM-ene er en integrert del av vår faglige praksis. Det er de ikke.
 
 ## Begrenset bruk
 
 LLM-er brukes **kun** i støttende og pyntende roller:
 
-- **Tekstgenerering:** Utkast til artikkelinnledninger, meta-beskrivelser, sosiale medier-tekster — alltid redigert og kvalitetssikret av mennesker.
-- **Kodeassistanse:** Boilerplate, refaktorisering, testutkast — alltid revidert av utviklere.
-- **Bildegenerering:** Illustrasjoner, banner, ikoner via EvoLink GPT Image 2 — alltid kuratert og godkjent av redaksjon.
-- **Forskningssammendrag:** Oppsummering av lange dokumenter som utgangspunkt for egen analyse — aldri som erstatning for egen lesing.
+- **Tekstgenerering:** Utkast til artikkelinnledninger, meta-beskrivelser, sosiale medier-tekster, alltid redigert og kvalitetssikret av mennesker.
+- **Kodeassistanse:** Boilerplate, refaktorisering, testutkast, alltid revidert av utviklere.
+- **Bildegenerering:** Illustrasjoner, banner, ikoner via EvoLink GPT Image 2, alltid kuratert og godkjent av redaksjon.
+- **Forskningssammendrag:** Oppsummering av lange dokumenter som utgangspunkt for egen analyse, aldri som erstatning for egen lesing.
 
 **LLM-er brukes ikke til:**
 - Å stille spørsmål til ledere eller medarbeidere
@@ -34,7 +34,7 @@ LLM-er brukes **kun** i støttende og pyntende roller:
 - Å formulere anbefalinger, strategier eller handlingsplaner
 - Å vurdere evidens, trekke konklusjoner eller ta avgjørelser
 
-Disse oppgavene er **eksklusivt menneskelige** — de krever dommekraft, kontekstuell forståelse og etisk ansvar som LLM-er ikke har.
+Disse oppgavene er **eksklusivt menneskelige**: de krever dommekraft, kontekstuell forståelse og etisk ansvar som LLM-er ikke har.
 
 ## Hva vi bruker
 
@@ -66,13 +66,13 @@ Vi dokumenterer vår LLM-bruk maskinlesbart på flere nivåer:
 4. **EU AI Act-basisk ikon:** I header-banner, med lenke til denne siden.
 5. **IPTC/XMP i bildefiler:** `DigitalSourceType`, `Rights`, `WebStatement` inni WebP-filer.
 
-## EU AI Act — Artikkel 50(4) unntak
+## EU AI Act: Artikkel 50(4) unntak
 
 Vi påstår at innholdet på noexcuse.no faller under **redaksjonelt unntaket** i Artikkel 50(4) av EU AI Act:
 
 - Alt innhold er **menneskelig redaksjonelt gjennomgått**.
 - LLM-er brukes **kun i støttende/pyntende rolle**.
-- Ingen innhold er "dype forfalskninger" (deepfakes) — ingen bilder ligner på virkelige personer/steder.
+- Ingen innhold er "dype forfalskninger" (deepfakes); ingen bilder ligner på virkelige personer/steder.
 - Vi påtar oss fullt redaksjonelt ansvar.
 
 Dette unntaket gjelder for tekst og bilder som er redaksjonelt gjennomgått. Visuelle dype forfalskninger (deepfakes) er ikke aktuelle for dette nettstedet.

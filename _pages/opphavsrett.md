@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Opphavsrett"
-description: "Lisensiering og opphavsrett for innhold og ressurser på noexcuse.no — REUSE/SPDX, AI-transparens og bildemetadata."
+description: "Lisensiering og opphavsrett for innhold og ressurser på noexcuse.no: REUSE/SPDX, AI-transparens og bildemetadata."
 permalink: /opphavsrett/
 provenance:
   creation: editorial
@@ -23,7 +23,7 @@ Vi bruker en blandet lisensmodell (REUSE/SPDX) hvor hver fil og ressurs har en e
 | **AI-generert innhold** | CC0-1.0 | Rent AI-generert materiale (bilder, tekst, kode) som vi har rettigheter til |
 | **Menneskeskapt innhold** | LicenseRef-NoExcuse-All-Rights-Reserved | Artikler, foto, illustrasjoner, PDFer skapt av mennesker |
 | **Tredjeparts materiale** | Opprinnelig lisens | Beholder opprinnelige rettigheter, ingen om-lisensiering |
-| **Usikkert** | Uavklart | Materiale hvor opprinnelse eller rettigheter er usikre — vises åpent |
+| **Usikkert** | Uavklart | Materiale hvor opprinnelse eller rettigheter er usikre, vises åpent |
 
 ## Lisensdetaljer
 
@@ -43,7 +43,7 @@ Alle **publiserte filer på dette nettstedet** er merket med SPDX/REUSE-metadata
 - **JSON-LD** i sidens `<head>` (schema.org `@graph` med `WebPage` + `ImageObject`)
 - **RDFa** på bilder (`property="schema:digitalSourceType"` + `schema:license`)
 - **IPTC/XMP** inni bildefiler (DigitalSourceType, Rights, WebStatement)
-- `.well-known/ai-transparency.json` — maskinlesbar manifest over AI-bruk og proveniens
+- `.well-known/ai-transparency.json`: maskinlesbar manifest over AI-bruk og proveniens
 
 Repository-interne dokumentasjonsfiler (`.design/`, `.specs/`, `.omo/rules/`, `.opencode/`, rot-konfigurasjonsfiler) er **intensjonalt uavklart** og dokumenteres i `.specs/mixed-rights-licensing/README.md`. Disse filene er ikke del av det publiserte nettstedet.
 
