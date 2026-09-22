@@ -28,6 +28,8 @@ exclude:
   - LICENSES/
   - AGENTS.md
   - BACKLOG.md
+  - BACKLOG-WORKTREE.md
+  - REUSE.toml
   - CHANGELOG.md
   - LICENSE
   - README.md
