@@ -12,8 +12,6 @@
 .card-link--cta,
 .carousel-btn,
 .profile-contact-btn,
-.profile-booking-btn,
-.profile-close,
 .share-btn,
 .copy-btn,
 .provider-btn,
@@ -48,8 +46,6 @@
 .card-link--cta:hover,
 .carousel-btn:hover,
 .profile-contact-btn:hover,
-.profile-booking-btn:hover,
-.profile-close:hover,
 .share-btn:hover,
 .copy-btn:hover,
 .provider-btn:hover,
@@ -73,8 +69,6 @@
 .card-link--cta:active,
 .carousel-btn:active,
 .profile-contact-btn:active,
-.profile-booking-btn:active,
-.profile-close:active,
 .share-btn:active,
 .copy-btn:active,
 .provider-btn:active,
@@ -98,8 +92,6 @@
 .card-link--cta:focus-visible,
 .carousel-btn:focus-visible,
 .profile-contact-btn:focus-visible,
-.profile-booking-btn:focus-visible,
-.profile-close:focus-visible,
 .share-btn:focus-visible,
 .copy-btn:focus-visible,
 .provider-btn:focus-visible,
@@ -120,8 +112,7 @@
 .btn-primary,
 .cta,
 .cta--primary,
-.card-link--cta,
-.profile-booking-btn {
+.card-link--cta {
     background-color: var(--cta-primary-bg);
     color: var(--cta-primary-text);
     border: 2px solid var(--cta-primary-border);
@@ -141,7 +132,6 @@
 .card-link,
 .carousel-btn,
 .profile-contact-btn,
-.profile-close,
 .share-btn,
 .provider-btn,
 .modal-close,
@@ -162,7 +152,6 @@
 .card-link:hover,
 .carousel-btn:hover,
 .profile-contact-btn:hover,
-.profile-close:hover,
 .share-btn:hover,
 .provider-btn:hover,
 .modal-close:hover,
@@ -196,7 +185,6 @@
 
 .btn--icon,
 .carousel-btn,
-.profile-close,
 .share-btn,
 .modal-close,
 .nav-overlay-close,
