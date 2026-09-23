@@ -11,14 +11,14 @@ permalink: /personvern/
 
 # Personvernerklæring
 
-**Sist oppdatert:** 16. september 2026
+**Sist oppdatert:** 23. september 2026
 
 No Excuse AS (org. nr. 935 794 420) behandler personopplysninger i samsvar med gjeldende personvernlovgivning, herunder EUs personvernforordning (GDPR). Denne erklæringen forklarer hvilke opplysninger vi samler inn, hvorfor vi samler dem inn, og hvilke rettigheter du har.
 
 ## Behandlingsansvarlig
 
 No Excuse AS\
-E-post: [ledelse@noexcuse.no](mailto:ledelse@noexcuse.no)\
+E-post: [firmapost@noexcuse.no](mailto:firmapost@noexcuse.no)\
 Org. nr.: 935 794 420
 
 <!-- PRIVACY-LEGAL-REVIEW: Innsamlingsformål og skjemaflyt (nyhetsbrev/kontaktskjema) venter eier-/juss-godkjenning. Skjemaendepunkt i _data/forms.yml er fortsatt plassholdere. -->
@@ -65,7 +65,7 @@ Du har rett til:
 - Dataportabilitet
 - Når som helst trekke tilbake samtykke
 
-Ta kontakt på [ledelse@noexcuse.no](mailto:ledelse@noexcuse.no) for å benytte deg av dine rettigheter. Vi svarer innen 30 dager.
+Ta kontakt på [firmapost@noexcuse.no](mailto:firmapost@noexcuse.no) for å benytte deg av dine rettigheter. Vi svarer innen 30 dager.
 
 ## Klagemulighet
 

@@ -9,14 +9,9 @@ permalink: /avtale/
 avtale: true
 ---
 
-<div class="print-only">
-
-![No Excuse AS](/assets/images/noexcuse-logo-horizontal.webp)
-</div>
-
 # Standard Avtalevilkår
 
-*Sist oppdatert: 2026.03.02*
+*Sist oppdatert: 23. september 2026*
 
 ## §1 Endring og erstatning
 

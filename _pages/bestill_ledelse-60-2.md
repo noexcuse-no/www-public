@@ -5,7 +5,7 @@ provenance:
   editorial_responsibility: No Excuse AS
 layout: commercial
 title: "Bestill Ledelse 60:2"
-description: "Bestill orientering for ledergruppen: 60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris kr 14 850,- eks. mva."
+description: "Bestill strukturert kartlegging for ledergruppen: 60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris kr 14 850,- eks. mva."
 permalink: /bestill/ledelse-60-2/
 og_image: /assets/images/banners/ledelse-60-2-og.webp
 ---
@@ -15,7 +15,7 @@ og_image: /assets/images/banners/ledelse-60-2-og.webp
   <div class="home-container home-hero__grid">
     <div class="home-hero__text">
       <p class="home-eyebrow">Bestill Ledelse 60:2</p>
-      <h1 id="bestill-hero-heading" class="home-hero__headline">Bestill orientering for ledergruppen</h1>
+      <h1 id="bestill-hero-heading" class="home-hero__headline">Bestill strukturert kartlegging for ledergruppen</h1>
       <p class="home-hero__support">60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris, ingen binding.</p>
       <p class="home-hero__credibility">{{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }}</p>
       <div class="home-hero__ctas">
