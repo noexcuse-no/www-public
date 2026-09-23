@@ -163,7 +163,7 @@ json_ld:
 </section>
 
 <!-- 5. Who it is for / not for -->
-<section class="home-section home-fit" aria-labelledby="fit-heading">
+<section class="home-section home-fit" id="passer" aria-labelledby="fit-heading">
   <div class="home-container">
     <p class="home-eyebrow">Når 60:2 passer – og når det ikke gjør det</p>
     <h2 id="fit-heading" class="home-section__title">For ledergrupper som trenger å forstå situasjonen før de velger tiltak</h2>
