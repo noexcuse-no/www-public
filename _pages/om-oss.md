@@ -44,7 +44,7 @@ På noexcuse.no brukes store språkmodeller **kun i støttende og pyntende rolle
       <p class="home-eyebrow">No Excuse AS</p>
       <h1 id="om-oss-hero-heading" class="home-hero__headline">Vi hjelper ledergrupper å bli bedre, uten byråkrati</h1>
       <p class="home-hero__support">Vi hjelper ledergrupper å få bedre blikk for mennesker, identitet, struktur og påvirkning.</p>
-      <p class="home-hero__credibility">Kunnskapsbasert orientering · 60 spørsmål · 2 timer</p>
+      <p class="home-hero__credibility">Strukturert kartlegging · 60 spørsmål · 2 timer</p>
       <div class="home-hero__ctas">
         <a href="/samtale/" class="cta cta--primary">Bestill 20 min avklaring</a>
         <a href="/ledelse-60-2/" class="cta cta--secondary">Se hva 60:2 inneholder</a>
@@ -127,7 +127,7 @@ På noexcuse.no brukes store språkmodeller **kun i støttende og pyntende rolle
 <section class="home-section" aria-labelledby="norsk-bedrift-heading">
   <div class="home-container">
     <p class="home-eyebrow">En norsk ledelsesbedrift</p>
-    <h2 id="norsk-bedrift-heading" class="home-section__title">Scandinavisk ledelsestradisjon med lav avstand</h2>
+    <h2 id="norsk-bedrift-heading" class="home-section__title">Skandinavisk ledelsestradisjon med lav avstand</h2>
     <div class="home-diagnosis__body" style="max-width: var(--content-reading);">
       <p>No Excuse er en norsk ledelsesbedrift. Vår tilnærming bygger på skandinavisk ledelsestradisjon med lav avstand mellom leder og ansatt, psykologisk trygghet og tillit. Det er dette som gjør oss relevante også utenfor Norge, i markeder som verdsetter tillit, transparens og flat struktur.</p>
     </div>

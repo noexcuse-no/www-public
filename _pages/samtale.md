@@ -19,7 +19,7 @@ og_image: /assets/images/banners/samtale-og.webp
       <p class="home-hero__support">På 20 minutter får vi et bilde av situasjonen deres og vurderer om Ledelse 60:2 er et fornuftig neste steg. Passer det ikke, sier vi det.</p>
       <p class="home-hero__credibility">Gratis · 20 min · uforpliktende</p>
       <div class="home-hero__ctas">
-        <a href="#bestill" class="cta cta--primary">Velg tidspunkt</a>
+        <a href="#bestill" class="cta cta--primary">Bestill 20 min avklaring</a>
         <a href="/ledelse-60-2/" class="cta cta--secondary">Se hva 60:2 inneholder</a>
       </div>
     </div>
@@ -61,7 +61,7 @@ og_image: /assets/images/banners/samtale-og.webp
 <!-- Outcomes: two possible results -->
 <section class="home-section" id="utfall" aria-labelledby="utfall-heading">
   <div class="home-container">
-    <p class="home-eyebrow">To mulige utfall</h2>
+    <p class="home-eyebrow">To mulige utfall</p>
     <h2 id="utfall-heading" class="home-section__title">Enten 60:2 passer – eller så peker vi dere i riktig retning</h2>
     <div class="fit-grid">
       <div class="fit-column fit--for">

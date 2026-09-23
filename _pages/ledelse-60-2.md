@@ -5,18 +5,18 @@ provenance:
   editorial_responsibility: No Excuse AS
 class: product
 layout: commercial
-title: "Ledelse 60:2: Orientering for ledergruppen"
-description: "Tidseffektiv orientering for ledergruppen: 60 strukturerte spørsmål, 2 timer, felles retningsvalg."
+title: "Ledelse 60:2: Strukturert kartlegging for ledergruppen"
+description: "Tidseffektiv strukturert kartlegging for ledergruppen: 60 strukturerte spørsmål, 2 timer, felles retningsvalg."
 permalink: /ledelse-60-2/
 og_image: /assets/images/banners/ledelse-60-2-og.webp
 display_name: "Ledelse 60:2"
-short_description: "Enkel, kunnskapsbasert orientering for ledergruppen. Sett av 2 timer for 60 strukturerte spørsmål, finn retningen."
+short_description: "Enkel, kunnskapsbasert strukturert kartlegging for ledergruppen. Sett av 2 timer for 60 strukturerte spørsmål, finn retningen."
 url: "/ledelse-60-2/"
 hero:
   image: /assets/images/hero-illustration.webp
   alt: "Ledelse 60:2"
   title: "Ledelse 60:2"
-  intro: "Enkel, kunnskapsbasert orientering for ledergruppen. 60 spørsmål på 2 timer."
+  intro: "Enkel, kunnskapsbasert strukturert kartlegging for ledergruppen. 60 spørsmål på 2 timer."
 hero_effect: parallax-fade
 stat_bridge: "4 perspektiver · 60 spørsmål · 2 timer"
 price_source: commercial
@@ -100,7 +100,7 @@ json_ld:
       <div class="recognition-card">
         <img src="/assets/images/banners/ledelse-60-2-t4-signal-samme-diskusjon.webp" alt="Illustrasjon: gjentatt diskusjon rundt bordet" width="1024" height="1024" loading="lazy">
         <h3 class="recognition-card-title">Samme diskusjon på nytt</h3>
-        <p class="recognition-card-text">Du har hatt den samme diskusjonen tre ganger denne måneden. Beslutninger tas, ingenting endrer seg.</p>
+        <p class="recognition-card-text">Dere har hatt den samme diskusjonen tre ganger denne måneden. Beslutninger tas, ingenting endrer seg.</p>
       </div>
     </div>
   </div>
@@ -163,7 +163,7 @@ json_ld:
 </section>
 
 <!-- 5. Who it is for / not for -->
-<section class="home-section home-fit" aria-labelledby="fit-heading">
+<section class="home-section home-fit" id="passer" aria-labelledby="fit-heading">
   <div class="home-container">
     <p class="home-eyebrow">Når 60:2 passer – og når det ikke gjør det</p>
     <h2 id="fit-heading" class="home-section__title">For ledergrupper som trenger å forstå situasjonen før de velger tiltak</h2>
