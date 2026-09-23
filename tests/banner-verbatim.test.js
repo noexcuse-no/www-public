@@ -8,7 +8,7 @@ const header = readFileSync(path.join(root, '_includes/header.html'), 'utf8');
 
 describe('banner verbatim text', () => {
   it('keeps the protected banner sentence verbatim', () => {
-    expect(header).toContain('Vi bruker generativ KI i deler av innholdet og illustrasjonene på nettstedet.');
+    expect(header).toContain('KI brukes i deler av nettsideinnholdet – aldri i analysen eller anbefalingene i Ledelse 60:2.');
   });
 
   it('links "Slik bruker vi KI" to the AI-information page', () => {

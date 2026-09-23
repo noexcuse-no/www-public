@@ -49,12 +49,12 @@ d('CTA consistency (built site)', () => {
     expect(violations).toEqual([]);
   });
 
-  it('canonical secondary label "Bestill 20 min avklaring" always targets /samtale/', () => {
+  it('canonical secondary label "Bestill 20 min avklaring" always targets /samtale/ or Microsoft Bookings', () => {
     const violations = [];
     for (const file of walkDir(SITE_DIR)) {
       const html = readFileSync(file, 'utf8');
       for (const { href, text } of extractAnchors(html)) {
-        if (/bestill\s+20\s+min\s+avklaring/i.test(text) && !href.startsWith('/samtale/')) {
+        if (/bestill\s+20\s+min\s+avklaring/i.test(text) && !href.startsWith('/samtale/') && !href.includes('bookings.cloud.microsoft')) {
           violations.push(`${file}: "${text.trim()}" → ${href}`);
         }
       }

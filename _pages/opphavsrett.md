@@ -65,7 +65,7 @@ Repository-interne dokumentasjonsfiler (`.design/`, `.specs/`, `.omo/rules/`, `.
 
 ## Redaksjonelt ansvar
 
-**Redaksjonelt ansvarlig:** Dagfinn Bang-Johansen (CEO), dagfinn@noexcuse.no
+**Redaksjonelt ansvarlig:** Dagfinn Bang-Johansen (Daglig leder), firmapost@noexcuse.no
 
 Ansvar omfatter alle beslutninger om hva som publiseres, og at det publiserte er gjennomgått som beskrevet ovenfor.
 
@@ -77,7 +77,7 @@ Inkluderer:
 - Per-side proveniens (`creation`: human|editorial|ai|third-party|unresolved)
 - AI-bruk per side (editorial|ai-assisted|ai-generated)
 - Redaksjonell gjennomgang (human-reviewed: true)
-- Redaksjonelt ansvarlig (Dagfinn Bang-Johansen, CEO)
+- Redaksjonelt ansvarlig (Dagfinn Bang-Johansen, Daglig leder)
 - Bildeproveniens (AI-generert vs menneskeskapt)
 - Lisens per ressurs
 

@@ -49,7 +49,7 @@ Disse oppgavene er **eksklusivt menneskelige**: de krever dommekraft, kontekstue
 
 **Alt** LLM-generert materiale går gjennom menneskelig redaksjonell gjennomgang før publisering. Ingen tekst, kode eller bilder publiseres uten at en ansvarlig redaktør har lest, vurdert og godkjent det.
 
-**Redaksjonelt ansvarlig:** Dagfinn Bang-Johansen (CEO), dagfinn@noexcuse.no
+**Redaksjonelt ansvarlig:** Dagfinn Bang-Johansen (Daglig leder), firmapost@noexcuse.no
 
 Ansvar omfatter:
 - Godkjenning av all publisert innhold
@@ -81,9 +81,9 @@ Dette unntaket gjelder for tekst og bilder som er redaksjonelt gjennomgått. Vis
 
 Ved spørsmål om vår bruk av KI/LLM, kontakt:
 
-**Dagfinn Bang-Johansen**  
-CEO, No Excuse AS  
-dagfinn@noexcuse.no
+**No Excuse AS**  
+firmapost@noexcuse.no  
+Oslo, Norge
 
 ---
 
