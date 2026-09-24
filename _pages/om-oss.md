@@ -55,17 +55,29 @@ Når dere kjøper Ledelse 60:2, får dere en metodikk som bygger på den norske 
 
 Våre tre kjerneverdier er ansvarlighet, tillit og ærlighet. De styrer hvordan arbeidet utføres.
 
-### Ansvarlighet
-
-Ansvarlighet er grunnmuren i all god ledelse. Vi hjelper ledergrupper med å ta eierskap til egne beslutninger og konsekvensene av dem. Når roller er tydelige og ansvar er forankret, forsvinner ansvarsskyvning, og organisasjonen får gjennomføringskraft. Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse.
-
-### Tillit
-
-Tillit bygges gjennom forventninger og atferd som gjør samarbeid mulig. Vi bygger tillitsgrunnlaget som gjør at folk tør si ifra, dele informasjon og ta risiko. Vårt mål er å styrke tillitsgrunnlaget som samarbeidet hviler på.
-
-### Ærlighet
-
-Ærlighet er forutsetningen for læring og utvikling. Uten ærlig tilbakemelding blir feil skjult og problemer uløst. Vi skaper rom for ærlige samtaler om det som faktisk skjer. Våre metoder fokuserer på mennesker, vektlegger ærlighet og synliggjør mønstre i ledergruppen.
+<div class="perspectives-grid">
+  <div class="perspective-item">
+    <div class="media-editorial media-editorial--illustration">
+      <img src="/assets/images/banners/verdi-ansvarlighet.webp" alt="Abstrakt illustrasjon av kjerneverdien ansvarlighet" width="1024" height="1024" loading="lazy">
+    </div>
+    <h3>Ansvarlighet</h3>
+    <p>Ansvarlighet er grunnmuren i all god ledelse. Vi hjelper ledergrupper med å ta eierskap til egne beslutninger og konsekvensene av dem. Når roller er tydelige og ansvar er forankret, forsvinner ansvarsskyvning, og organisasjonen får gjennomføringskraft. Vi får frem styrkene som ligger i ansvarlig og tillitsbasert ledelse.</p>
+  </div>
+  <div class="perspective-item">
+    <div class="media-editorial media-editorial--illustration">
+      <img src="/assets/images/banners/verdi-tillit.webp" alt="Abstrakt illustrasjon av kjerneverdien tillit" width="1024" height="1024" loading="lazy">
+    </div>
+    <h3>Tillit</h3>
+    <p>Tillit bygges gjennom forventninger og atferd som gjør samarbeid mulig. Vi bygger tillitsgrunnlaget som gjør at folk tør si ifra, dele informasjon og ta risiko. Vårt mål er å styrke tillitsgrunnlaget som samarbeidet hviler på.</p>
+  </div>
+  <div class="perspective-item">
+    <div class="media-editorial media-editorial--illustration">
+      <img src="/assets/images/banners/verdi-aerlighet.webp" alt="Abstrakt illustrasjon av kjerneverdien ærlighet" width="1024" height="1024" loading="lazy">
+    </div>
+    <h3>Ærlighet</h3>
+    <p>Ærlighet er forutsetningen for læring og utvikling. Uten ærlig tilbakemelding blir feil skjult og problemer uløst. Vi skaper rom for ærlige samtaler om det som faktisk skjer. Våre metoder fokuserer på mennesker, vektlegger ærlighet og synliggjør mønstre i ledergruppen.</p>
+  </div>
+</div>
 
 ## Erfaring fra norsk arbeidsliv
 

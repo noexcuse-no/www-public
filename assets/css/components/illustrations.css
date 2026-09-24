@@ -4,58 +4,98 @@
    Consolidates existing T2/T3/T4 tiers and card/hero patterns.
    ======================================== */
 
-/* -------------------------------------------------------------------------
-   A. EDITORIAL ILLUSTRATION
-   For conceptual illustrations, diagrams, process illustrations, icon-like
-   compositions, and generated editorial artwork.
-   Behavior: contain, breathing room, soft surface integration, no dominance.
-   ------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------
+     A. EDITORIAL ILLUSTRATION
+     For conceptual illustrations, diagrams, process illustrations, icon-like
+     compositions, and generated editorial artwork.
+     Behavior: contain, breathing room, soft surface integration, no dominance.
+     ------------------------------------------------------------------------- */
 
-/* Shared media wrapper for editorial illustrations */
-.media-editorial {
-    display: block;
-    background: var(--surface-subtle);
-    border-radius: var(--radius-md);
-    padding: var(--space-md);
-    overflow: hidden;
-}
+  /* Shared media wrapper for editorial illustrations */
+  .media-editorial {
+      display: block;
+      background: var(--surface-subtle);
+      border-radius: var(--radius-md);
+      padding: var(--space-md);
+      overflow: hidden;
+  }
 
-.media-editorial img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 320px;
-    object-fit: contain;
-    margin: 0 auto;
-}
+  .media-editorial img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 320px;
+      object-fit: contain;
+      margin: 0 auto;
+  }
 
-/* Landscape editorial (4:3-ish) — used for symptom cards, process steps */
-.media-editorial--landscape {
-    aspect-ratio: 4 / 3;
-    max-height: none;
-}
+  /* Landscape editorial (4:3-ish) — used for symptom cards, process steps */
+  .media-editorial--landscape {
+      aspect-ratio: 4 / 3;
+      max-height: none;
+  }
 
-.media-editorial--landscape img {
-    max-height: 100%;
-}
+  .media-editorial--landscape img {
+      max-height: 100%;
+  }
 
-/* Square editorial (1:1) — used for smaller conceptual spots */
-.media-editorial--square {
-    aspect-ratio: 1 / 1;
-    max-height: none;
-}
+  /* Illustration variant: controlled 4:3 viewport with independent subject scaling.
+     Use for conceptual illustrations where subject should not fill the frame. */
+  .media-editorial--illustration {
+      aspect-ratio: 4 / 3;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background: var(--surface-subtle);
+      border-radius: var(--radius-md);
+      padding: var(--space-md);
+  }
 
-.media-editorial--square img {
-    max-height: 100%;
-}
+  .media-editorial--illustration img {
+      width: auto;
+      height: auto;
+      max-width: 78%;
+      max-height: 78%;
+      object-fit: contain;
+      display: block;
+  }
 
-/* Inline editorial — flows with text, max-width constrained */
-.media-editorial--inline {
-    max-width: 400px;
-    margin-inline: auto;
-    margin-block: var(--space-lg);
-    padding: var(--space-sm);
-}
+  /* Scene variant: fills the 4:3 viewport using cover.
+     Use for pictorial scenes (architectural, environmental) where the scene
+     should fill the frame edge-to-edge. */
+  .media-editorial--scene {
+      aspect-ratio: 4 / 3;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      background: var(--box-background);
+  }
+
+  .media-editorial--scene img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+  }
+
+  /* Square editorial (1:1) — used for smaller conceptual spots */
+  .media-editorial--square {
+      aspect-ratio: 1 / 1;
+      max-height: none;
+  }
+
+  .media-editorial--square img {
+      max-height: 100%;
+  }
+
+  /* Inline editorial — flows with text, max-width constrained */
+  .media-editorial--inline {
+      max-width: 400px;
+      margin-inline: auto;
+      margin-block: var(--space-lg);
+      padding: var(--space-sm);
+  }
 
 /* -------------------------------------------------------------------------
    B. SCENE / BANNER IMAGE

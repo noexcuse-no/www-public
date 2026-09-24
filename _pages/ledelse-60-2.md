@@ -63,21 +63,36 @@ Metoden er også relevant for virksomhetsstyring, risikostyring og etterlevelse 
 
 ## Kjenner dere igjen?
 
-### Tause rom
-
-I rommet var alle enige. Når tillitsbasert ledelse mangler, blir tause rom normen, og organisasjonskulturen svekkes uten at noen snakker om det.
-
-### Årlig risikokalender
-
-Dere oppdaterer risikobildet én gang i året. Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert risikostyring og løpende etterlevelsesarbeid blir håndteringen reaktiv, og informasjonssikkerhet reduseres til en årlig avkrysning.
-
-### Tapt oversikt over endringer
-
-Nye initiativer kommer til, mens få har oversikt over hva som allerede belaster organisasjonen. De du helst vil beholde, forsvinner stille. God endringsledelse handler om å lede mennesker gjennom endring.
-
-### Samme diskusjon på nytt
-
-Dere har hatt den samme diskusjonen tre ganger denne måneden. Beslutninger tas i enighet, men ingenting endrer seg. Uforløst makt og manglende perspektivskifte låser mønstre som triader kan bryte.
+<div class="card-grid--recognition">
+  <div class="recognition-card">
+    <div class="media-editorial media-editorial--illustration">
+      <img src="/assets/images/banners/ledelse-60-2-t4-signal-stille-rom.webp" alt="Illustrasjon: stille møterom" width="1024" height="1024" loading="lazy">
+    </div>
+    <h3 class="recognition-card-title">Tause rom</h3>
+    <p class="recognition-card-text">I rommet var alle enige. Når tillitsbasert ledelse mangler, blir tause rom normen, og organisasjonskulturen svekkes uten at noen snakker om det.</p>
+  </div>
+  <div class="recognition-card">
+    <div class="media-editorial media-editorial--illustration">
+      <img src="/assets/images/banners/ledelse-60-2-t4-signal-risikokalender.webp" alt="Illustrasjon: kalender for årlig risikogjennomgang" width="1024" height="1024" loading="lazy">
+    </div>
+    <h3 class="recognition-card-title">Årlig risikokalender</h3>
+    <p class="recognition-card-text">Dere oppdaterer risikobildet én gang i året. Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert risikostyring og løpende etterlevelsesarbeid blir håndteringen reaktiv, og informasjonssikkerhet reduseres til en årlig avkrysning.</p>
+  </div>
+  <div class="recognition-card">
+    <div class="media-editorial media-editorial--illustration">
+      <img src="/assets/images/banners/ledelse-60-2-t4-signal-endringsstabel.webp" alt="Illustrasjon: stabel av endringsprosjekter" width="1024" height="1024" loading="lazy">
+    </div>
+    <h3 class="recognition-card-title">Tapt oversikt over endringer</h3>
+    <p class="recognition-card-text">Nye initiativer kommer til, mens få har oversikt over hva som allerede belaster organisasjonen. De du helst vil beholde, forsvinner stille. God endringsledelse handler om å lede mennesker gjennom endring.</p>
+  </div>
+  <div class="recognition-card">
+    <div class="media-editorial media-editorial--scene">
+      <img src="/assets/images/banners/ledelse-60-2-t4-signal-samme-diskusjon.webp" alt="Illustrasjon: gjentatt diskusjon rundt bordet" width="1024" height="1024" loading="lazy">
+    </div>
+    <h3 class="recognition-card-title">Samme diskusjon på nytt</h3>
+    <p class="recognition-card-text">Dere har hatt den samme diskusjonen tre ganger denne måneden. Beslutninger tas i enighet, men ingenting endrer seg. Uforløst makt og manglende perspektivskifte låser mønstre som triader kan bryte.</p>
+  </div>
+</div>
 
 Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verktøyet som gir ledergruppen et felles språk for å bryte mønstrene.
 
@@ -107,6 +122,32 @@ Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et
 **Under:** Et strukturert intervju med inntil fem ledere over to timer, med 60 strukturerte spørsmål fordelt på fire perspektiver.
 
 **Etter:** Du får en rapport med prioriterte funn og konkrete anbefalinger innen én uke. Det følger ingen løpende forpliktelser med leveransen.
+
+## Slik foregår 60:2
+
+### 1. Avklaring
+
+<div class="media-editorial media-editorial--illustration">
+  <img src="/assets/images/banners/step-talk.webp" alt="Illustrasjon av en samtale" width="1920" height="1078" loading="lazy">
+</div>
+
+Vi går gjennom situasjonen, hvem som bør delta og hva dere trenger å få klarhet i.
+
+### 2. 60 spørsmål
+
+<div class="media-editorial media-editorial--illustration">
+  <img src="/assets/images/banners/step-interview.webp" alt="Illustrasjon av et strukturert intervju" width="1920" height="1078" loading="lazy">
+</div>
+
+Inntil fem ledere svarer på de samme 60 spørsmålene. Det gjør både likheter og forskjeller i vurderingene synlige.
+
+### 3. Rapport og prioriteringer
+
+<div class="media-editorial media-editorial--illustration">
+  <img src="/assets/images/banners/step-report.webp" alt="Illustrasjon av en rapport" width="1920" height="1078" loading="lazy">
+</div>
+
+Dere får en kort rapport som viser hovedmønstre, uenigheter og hva det er mest naturlig å ta tak i først. Rapporten leveres innen én uke.
 
 ## Hva får du?
 
