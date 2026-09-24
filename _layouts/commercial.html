@@ -2,10 +2,22 @@
 layout: default
 ---
 {% comment %}
-  Commercial layout — shared template for commercial pages (homepage, Ledelse 60:2,
-  clarification/booking, purchase pages). Based on homepage component system.
-  No article TOC, strong commercial hierarchy, clear CTA progression.
+  Commercial layout — renders commercial pages from semantic markdown.
+  Frontmatter provides hero config and section type hints.
+  Markdown body = pure prose with semantic headings.
+  CSS applies visual treatments (cards, grids, asymmetric layouts).
 {% endcomment %}
+
 <div class="home-content">
-  {{ content }}
+  {% if page.hero %}
+    {% include commercial/hero.html data=page.hero %}
+  {% endif %}
+
+  <div class="commercial-prose">
+    {{ content }}
+  </div>
+
+  {% if page.final_cta %}
+    {% include commercial/final_cta.html data=page.final_cta %}
+  {% endif %}
 </div>

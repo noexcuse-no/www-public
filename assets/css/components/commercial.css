@@ -197,6 +197,11 @@
     object-fit: cover;
 }
 
+.cta-panel-person .media-portrait {
+    width: 96px;
+    height: 96px;
+}
+
 .cta-panel-name {
     font-weight: 700;
     margin: var(--space-xs) 0 0;

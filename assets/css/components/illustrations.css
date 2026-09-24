@@ -1,4 +1,142 @@
-/* Illustration System — T2/T3/T4 tier styling */
+/* ========================================
+   Shared Image Presentation Modes
+   Three canonical modes: editorial, scene, portrait.
+   Consolidates existing T2/T3/T4 tiers and card/hero patterns.
+   ======================================== */
+
+/* -------------------------------------------------------------------------
+   A. EDITORIAL ILLUSTRATION
+   For conceptual illustrations, diagrams, process illustrations, icon-like
+   compositions, and generated editorial artwork.
+   Behavior: contain, breathing room, soft surface integration, no dominance.
+   ------------------------------------------------------------------------- */
+
+/* Shared media wrapper for editorial illustrations */
+.media-editorial {
+    display: block;
+    background: var(--surface-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    overflow: hidden;
+}
+
+.media-editorial img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Landscape editorial (4:3-ish) — used for symptom cards, process steps */
+.media-editorial--landscape {
+    aspect-ratio: 4 / 3;
+    max-height: none;
+}
+
+.media-editorial--landscape img {
+    max-height: 100%;
+}
+
+/* Square editorial (1:1) — used for smaller conceptual spots */
+.media-editorial--square {
+    aspect-ratio: 1 / 1;
+    max-height: none;
+}
+
+.media-editorial--square img {
+    max-height: 100%;
+}
+
+/* Inline editorial — flows with text, max-width constrained */
+.media-editorial--inline {
+    max-width: 400px;
+    margin-inline: auto;
+    margin-block: var(--space-lg);
+    padding: var(--space-sm);
+}
+
+/* -------------------------------------------------------------------------
+   B. SCENE / BANNER IMAGE
+   For environmental scenes, landscape artwork, photographic-style compositions,
+   section banners.
+   Behavior: cover, consistent landscape ratio, cropped, no internal padding.
+   ------------------------------------------------------------------------- */
+
+.media-scene {
+    display: block;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--box-background);
+}
+
+.media-scene img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Standard banner ratio (approx 16:9) */
+.media-scene--banner {
+    aspect-ratio: 16 / 9;
+}
+
+/* Hero scene — larger, uses existing hero sizing but with scene behavior */
+.media-scene--hero {
+    aspect-ratio: 16 / 9;
+    max-height: 520px;
+}
+
+/* -------------------------------------------------------------------------
+   C. PERSON PHOTOGRAPHY
+   For Dagfinn and other real-person photography.
+   Behavior: dedicated portrait frame, consistent crop, restrained surface.
+   ------------------------------------------------------------------------- */
+
+.media-portrait {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--surface-subtle);
+    flex-shrink: 0;
+}
+
+.media-portrait img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Standard portrait sizes */
+.media-portrait--sm {
+    width: 64px;
+    height: 64px;
+}
+
+.media-portrait--md {
+    width: 96px;
+    height: 96px;
+}
+
+.media-portrait--lg {
+    width: 128px;
+    height: 128px;
+}
+
+/* Hero portrait (4:5 crop) — used on /dagfinn/ */
+.media-portrait--hero {
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 4 / 5;
+}
+
+/* -------------------------------------------------------------------------
+   Legacy T2/T3/T4 tiers (preserved for backward compatibility)
+   ------------------------------------------------------------------------- */
 
 /* T2: Framework illustration — multi-element models, infographics */
 .framework-illustration {
@@ -59,5 +197,24 @@
     .section-illustration--float-right {
         float: none;
         margin-inline: auto;
+    }
+
+    .media-editorial--inline {
+        max-width: 100%;
+    }
+
+    .media-portrait--hero {
+        max-width: 280px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 899px) {
+    .media-editorial img {
+        max-height: 280px;
+    }
+
+    .media-scene--hero {
+        max-height: 400px;
     }
 }
