@@ -1,0 +1,50 @@
+{% comment %}
+  Commercial Hero — unified hero component for commercial pages.
+  Reads from page.hero frontmatter or include parameters.
+{% endcomment %}
+
+{% assign hero_image = include.data.image | default: page.hero.image %}
+{% assign hero_alt = include.data.alt | default: page.hero.alt %}
+{% assign hero_title = include.data.title | default: page.hero.title %}
+{% assign hero_intro = include.data.intro | default: page.hero.intro %}
+{% assign hero_eyebrow = include.data.eyebrow | default: page.hero.eyebrow %}
+{% assign hero_credibility = include.data.credibility | default: page.hero.credibility %}
+{% assign hero_cta_primary = include.data.cta_primary | default: page.hero.cta_primary %}
+{% assign hero_cta_secondary = include.data.cta_secondary | default: page.hero.cta_secondary %}
+{% assign hero_cta_direct = include.data.cta_direct | default: page.hero.cta_direct %}
+{% assign hero_effect = include.data.hero_effect | default: page.hero_effect %}
+
+<section class="home-hero" aria-labelledby="hero-headline">
+  <div class="home-container home-hero__grid">
+    <div class="home-hero__text">
+      {% if hero_eyebrow %}
+      <p class="home-eyebrow">{{ hero_eyebrow }}</p>
+      {% endif %}
+      <h1 id="hero-headline" class="home-hero__headline">{{ hero_title }}</h1>
+      {% if hero_intro %}
+      <p class="home-hero__support">{{ hero_intro }}</p>
+      {% endif %}
+      {% if hero_credibility %}
+      <p class="home-hero__credibility">{{ hero_credibility }}</p>
+      {% endif %}
+      <div class="home-hero__ctas">
+        {% if hero_cta_primary %}
+        <a href="{{ hero_cta_primary.url }}" class="cta cta--primary">{{ hero_cta_primary.label }}</a>
+        {% endif %}
+        {% if hero_cta_secondary %}
+        <a href="{{ hero_cta_secondary.url }}" class="cta cta--secondary">{{ hero_cta_secondary.label }}</a>
+        {% endif %}
+      </div>
+      {% if hero_cta_direct %}
+      <p class="home-hero__direct">{{ hero_cta_direct.text }}<a href="{{ hero_cta_direct.url }}" class="home-text-link">{{ hero_cta_direct.label }}</a></p>
+      {% endif %}
+    </div>
+    <div class="home-hero__media">
+      {% if hero_image %}
+      <div class="media-scene media-scene--hero">
+        <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}" width="1920" height="1084" fetchpriority="high">
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

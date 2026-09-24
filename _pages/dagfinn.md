@@ -39,7 +39,9 @@ json_ld:
         </div>
       </div>
       <div class="home-hero__media">
-        <img src="/assets/images/dagfinn.webp" alt="Dagfinn Bang-Johansen, daglig leder i No Excuse" width="681" height="681" fetchpriority="high" class="dagfinn-hero__portrait">
+        <div class="media-portrait media-portrait--hero">
+          <img src="/assets/images/dagfinn.webp" alt="Dagfinn Bang-Johansen, daglig leder i No Excuse" width="681" height="681" fetchpriority="high">
+        </div>
       </div>
     </div>
     <div class="home-container">

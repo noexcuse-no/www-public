@@ -5,11 +5,10 @@
    section rhythm, final CTA) come from home.css,
    buttons.css and card.css — this file only adds
    what the existing system does not already provide:
-   the evidence strip, the 4:5 hero portrait crop,
-   the principle panel and the editorial measure.
+   the evidence strip, the principle panel and the editorial measure.
    ======================================== */
 
-/* Editorial body measure (spec: 720px) */
+ /* Editorial body measure (spec: 720px) */
 .dagfinn-page {
     --dagfinn-measure: 720px;
 }
@@ -22,7 +21,7 @@ body:has(.dagfinn-page) {
     overflow-x: clip;
 }
 
-/* ---------- Hero: top-aligned columns ---------- */
+ /* ---------- Hero: top-aligned columns ---------- */
 .dagfinn-page .home-hero__grid {
     align-items: start;
 }
@@ -31,15 +30,7 @@ body:has(.dagfinn-page) {
     align-items: center;
 }
 
-/* ---------- Hero portrait: 4:5 cover crop ---------- */
-.dagfinn-page .home-hero__media .dagfinn-hero__portrait {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    border-radius: var(--radius-lg);
-    display: block;
-}
+/* Hero portrait now uses shared .media-portrait--hero from illustrations.css */
 
 /* ---------- Evidence strip (four factual columns) ---------- */
 .dagfinn-evidence {

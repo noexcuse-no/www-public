@@ -1,0 +1,26 @@
+{% comment %}
+  Commercial Final CTA — shared final CTA section for commercial pages.
+  Reads from page.final_cta frontmatter or include parameters.
+{% endcomment %}
+
+{% assign cta_eyebrow = include.data.eyebrow | default: page.final_cta.eyebrow %}
+{% assign cta_headline = include.data.headline | default: page.final_cta.headline %}
+{% assign cta_text = include.data.text | default: page.final_cta.text %}
+{% assign cta_actions = include.data.actions | default: page.final_cta.actions %}
+
+<section class="home-final-cta" aria-labelledby="final-cta-heading">
+  <div class="home-container">
+    {% if cta_eyebrow %}
+    <p class="home-eyebrow">{{ cta_eyebrow }}</p>
+    {% endif %}
+    <h2 id="final-cta-heading" class="home-section__title">{{ cta_headline }}</h2>
+    {% if cta_text %}
+    <p class="home-final-cta__text">{{ cta_text }}</p>
+    {% endif %}
+    <div class="home-final-cta__actions">
+      {% for action in cta_actions %}
+      <a href="{{ action.url }}" class="cta cta--{{ action.style | default: 'primary' }}">{{ action.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
