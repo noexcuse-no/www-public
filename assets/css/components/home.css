@@ -182,6 +182,34 @@
     max-height: 200px;
 }
 
+.recognition-card .media-editorial.media-editorial--scene img {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+}
+
+.recognition-card .media-editorial.media-editorial--contained img {
+    width: auto;
+    height: auto;
+    max-width: 64%;
+    max-height: 64%;
+    object-fit: contain;
+}
+
+.commercial-prose .media-editorial--reference {
+    aspect-ratio: 16 / 9;
+    padding: 0;
+}
+
+.commercial-prose .media-editorial--reference img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+}
+
 .recognition-card-title {
     font-size: 1.05rem;
     font-weight: 600;
