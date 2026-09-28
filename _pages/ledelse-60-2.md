@@ -96,7 +96,7 @@ Metoden er også relevant for virksomhetsstyring, risikostyring og etterlevelse 
 
 Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verktøyet som gir ledergruppen et felles språk for å bryte mønstrene.
 
-## Når passer det?
+## Når passer det? {#passer}
 
 Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et felles språk for hvor de står og er villige til å bruke to timer på en strukturert samtale.
 
@@ -157,11 +157,11 @@ Dere får en kort rapport som viser hovedmønstre, uenigheter og hva det er mest
 * Analyse og prioriterte funn fra en erfaren rådgiver.
 * Rapport og anbefalinger innen én uke.
 
-## Ofte stilte spørsmål
-
-**Hva koster Ledelse 60:2?**
+## Pris {#pris}
 
 Prisen er {{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }}. Den er fast og dekker hele opplegget. Det kommer ingen løpende kostnader i tillegg.
+
+## Ofte stilte spørsmål
 
 **Hvorfor er det bare to timer?**
 
