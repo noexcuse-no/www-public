@@ -626,7 +626,7 @@
     }
 
     .home-hero__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 0;
         padding-top: 48px;
         padding-bottom: 56px;
@@ -637,7 +637,7 @@
     }
 
     .home-hero__media img {
-        max-width: 520px;
+        max-width: min(520px, 100%);
         margin-inline: auto;
     }
 
