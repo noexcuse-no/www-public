@@ -4,6 +4,25 @@
    Recognition cards are owned by home.css (homepage-only component).
    ======================================== */
 
+/* ---------- Prose container ---------- */
+/* Same width recipe as .home-container — keep the two in sync or
+   commercial pages drift from homepage geometry. */
+.commercial-prose {
+    max-width: var(--content-wide);
+    margin-inline: auto;
+    padding-inline: var(--space-xl);
+}
+
+.commercial-prose > h2,
+.commercial-prose > h3,
+.commercial-prose > h4,
+.commercial-prose > p,
+.commercial-prose > ul,
+.commercial-prose > ol,
+.commercial-prose > blockquote {
+    max-width: var(--content-reading);
+}
+
 /* ---------- Price card ---------- */
 .price-card {
     background: var(--box-background);
