@@ -27,3 +27,4 @@ Completed items belong in `CHANGELOG.md` only.
 | P7 | Partner content creation | Blocked | P6 — user decision 2026-08-31. Create partner pages in `_pages/` with content produced from partner conversations. Frontmatter schema, guidelines, and page infrastructure ready. Next: actual partner conversations. |
 | G4 | **Conversion infrastructure (F4)** — step page enrichment (F4c, done via R25), article recommendations (F4d, future). Newsletter email capture (F4a) removed 2026-09-17 (broke the site). All via approved external service — no repo storage. See `.specs/conversion-infrastructure/README.md`. | Doing | G1, G2, G3 (all contribute to the funnel) |
 | CI1 | CI reuse gating flip | Pending | mixed-rights:507 |
+| UX1 | Homepage hero mobile overflow — hero renders 520px text columns at ≤767px viewports (horizontal scroll on phones) | Doing | — |
