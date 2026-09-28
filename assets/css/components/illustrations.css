@@ -75,9 +75,11 @@
 
   /* Scene variant: fills the 4:3 viewport using cover.
      Use for pictorial scenes (architectural, environmental) where the scene
-     should fill the frame edge-to-edge. */
+     should fill the frame edge-to-edge. The image is absolutely positioned so
+     its own aspect ratio can never inflate or escape the fixed viewport. */
   .media-editorial--scene {
       aspect-ratio: 4 / 3;
+      position: relative;
       display: grid;
       place-items: center;
       overflow: hidden;
@@ -87,6 +89,8 @@
   }
 
   .media-editorial.media-editorial--scene img {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
