@@ -63,30 +63,30 @@ Metoden er også relevant for virksomhetsstyring, risikostyring og etterlevelse 
 
 ## Kjenner dere igjen?
 
-<div class="card-grid--recognition">
+<div class="recognition-cards">
   <div class="recognition-card">
-    <div class="media-editorial media-editorial--illustration">
+    <div class="media-editorial media-editorial--scene">
       <img src="/assets/images/banners/ledelse-60-2-t4-signal-stille-rom.webp" alt="Illustrasjon: stille møterom" width="1024" height="1024" loading="lazy">
     </div>
     <h3 class="recognition-card-title">Tause rom</h3>
     <p class="recognition-card-text">I rommet var alle enige. Når tillitsbasert ledelse mangler, blir tause rom normen, og organisasjonskulturen svekkes uten at noen snakker om det.</p>
   </div>
   <div class="recognition-card">
-    <div class="media-editorial media-editorial--illustration">
+    <div class="media-editorial media-editorial--illustration media-editorial--contained">
       <img src="/assets/images/banners/ledelse-60-2-t4-signal-risikokalender.webp" alt="Illustrasjon: kalender for årlig risikogjennomgang" width="1024" height="1024" loading="lazy">
     </div>
     <h3 class="recognition-card-title">Årlig risikokalender</h3>
     <p class="recognition-card-text">Dere oppdaterer risikobildet én gang i året. Så kommer hverdagen, og alt ser annerledes ut. Uten strukturert risikostyring og løpende etterlevelsesarbeid blir håndteringen reaktiv, og informasjonssikkerhet reduseres til en årlig avkrysning.</p>
   </div>
   <div class="recognition-card">
-    <div class="media-editorial media-editorial--illustration">
+    <div class="media-editorial media-editorial--illustration media-editorial--contained">
       <img src="/assets/images/banners/ledelse-60-2-t4-signal-endringsstabel.webp" alt="Illustrasjon: stabel av endringsprosjekter" width="1024" height="1024" loading="lazy">
     </div>
     <h3 class="recognition-card-title">Tapt oversikt over endringer</h3>
     <p class="recognition-card-text">Nye initiativer kommer til, mens få har oversikt over hva som allerede belaster organisasjonen. De du helst vil beholde, forsvinner stille. God endringsledelse handler om å lede mennesker gjennom endring.</p>
   </div>
   <div class="recognition-card">
-    <div class="media-editorial media-editorial--scene">
+    <div class="media-editorial media-editorial--illustration media-editorial--contained">
       <img src="/assets/images/banners/ledelse-60-2-t4-signal-samme-diskusjon.webp" alt="Illustrasjon: gjentatt diskusjon rundt bordet" width="1024" height="1024" loading="lazy">
     </div>
     <h3 class="recognition-card-title">Samme diskusjon på nytt</h3>
@@ -127,7 +127,7 @@ Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et
 
 ### 1. Avklaring
 
-<div class="media-editorial media-editorial--illustration">
+<div class="media-editorial media-editorial--illustration media-editorial--reference">
   <img src="/assets/images/banners/step-talk.webp" alt="Illustrasjon av en samtale" width="1920" height="1078" loading="lazy">
 </div>
 
@@ -135,7 +135,7 @@ Vi går gjennom situasjonen, hvem som bør delta og hva dere trenger å få klar
 
 ### 2. 60 spørsmål
 
-<div class="media-editorial media-editorial--illustration">
+<div class="media-editorial media-editorial--illustration media-editorial--reference">
   <img src="/assets/images/banners/step-interview.webp" alt="Illustrasjon av et strukturert intervju" width="1920" height="1078" loading="lazy">
 </div>
 
@@ -143,7 +143,7 @@ Inntil fem ledere svarer på de samme 60 spørsmålene. Det gjør både likheter
 
 ### 3. Rapport og prioriteringer
 
-<div class="media-editorial media-editorial--illustration">
+<div class="media-editorial media-editorial--illustration media-editorial--reference">
   <img src="/assets/images/banners/step-report.webp" alt="Illustrasjon av en rapport" width="1920" height="1078" loading="lazy">
 </div>
 
