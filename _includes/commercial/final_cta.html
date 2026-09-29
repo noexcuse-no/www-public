@@ -3,11 +3,10 @@
   Reads from page.final_cta frontmatter or include parameters.
 {% endcomment %}
 
-{% assign c = page.final_cta %}
-{% assign cta_eyebrow = include.data.eyebrow | default: c.eyebrow %}
-{% assign cta_headline = include.data.headline | default: c.headline %}
-{% assign cta_text = include.data.intro | default: c.intro %}
-{% assign cta_cards = include.data.cards | default: c.cards %}
+{% assign cta_eyebrow = include.data.eyebrow | default: page.final_cta.eyebrow %}
+{% assign cta_headline = include.data.headline | default: page.final_cta.headline %}
+{% assign cta_text = include.data.text | default: page.final_cta.text %}
+{% assign cta_actions = include.data.actions | default: page.final_cta.actions %}
 
 <section class="home-final-cta" aria-labelledby="final-cta-heading">
   <div class="home-container">
@@ -18,26 +17,10 @@
     {% if cta_text %}
     <p class="home-final-cta__text">{{ cta_text }}</p>
     {% endif %}
-    <div class="home-final-cta__actions decision-grid">
-      {% for card in cta_cards %}
-      <div class="decision-card decision-card--{{ card.type }}">
-        <h3>{{ card.headline }}</h3>
-        <p class="decision-card__text">{{ card.text }}</p>
-        {% if card.price %}
-        <p class="home-price-card__heading">{{ card.price }} <span class="home-price-card__note">{{ card.price_note }}</span></p>
-        {% endif %}
-        {% if card.inclusions %}
-        <ul class="home-price-card__inclusions">
-          {% for item in card.inclusions %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        <a href="{{ card.cta_url }}" class="cta cta--{{ card.type }}">{{ card.cta_text }}</a>
-        <p class="decision-card__helper">{{ card.helper }}</p>
-      </div>
+    <div class="home-final-cta__actions">
+      {% for action in cta_actions %}
+      <a href="{{ action.url }}" class="cta cta--{{ action.style | default: 'primary' }}">{{ action.label }}</a>
       {% endfor %}
     </div>
-    {% include trust-block.html %}
   </div>
 </section>
