@@ -7,14 +7,15 @@
       title="Tause rom"
       text="I rommet var alle enige. Når tillitsbasert ledelse mangler, blir tause rom normen."
       mode="scene" %}
-  Modes: scene | illustration-contained
+  Modes: scene | illustration (both render a 4:3 media frame so card
+  image areas stay compatible; illustration centers the subject).
 {% endcomment %}
 
 {% assign card_image = include.image %}
 {% assign card_alt = include.alt %}
 {% assign card_title = include.title %}
 {% assign card_text = include.text %}
-{% assign card_mode = include.mode | default: "illustration-contained" %}
+{% assign card_mode = include.mode | default: "illustration" %}
 
 <div class="recognition-card">
   <div class="media-editorial media-editorial--{{ card_mode }}">

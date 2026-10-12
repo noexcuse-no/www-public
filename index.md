@@ -56,13 +56,6 @@ final_cta:
       helper: "Velg tidspunkt i Microsoft Bookings. Ingen betaling."
     - type: secondary
       headline: "Allerede bestemt?"
-      price: "kr 14 850,-"
-      price_note: "eks. mva"
-      inclusions:
-        - "Avklaringssamtale (20 min)"
-        - "60 spørsmål per leder"
-        - "Rapport med prioriterte funn og anbefalinger"
-        - "Gjennomgang av rapport (45 min)"
       cta_text: "Bestill Ledelse 60:2"
       cta_url: "/bestill/ledelse-60-2/"
       helper: "Du velger tidspunkt i Microsoft Bookings og legger igjen navn, e-post og telefon. Vi bruker dette kun til å bekrefte avtalen."
@@ -87,39 +80,33 @@ Rapporten leveres innen én uke. Den er deres, uten binding til videre rådgivni
 Når de samme situasjonene gjentar seg, er det sjelden nok å legge på enda et tiltak. Først må dere finne ut hva som holder mønsteret i gang.
 
 <div class="recognition-cards">
-
-### Tause rom
-{% include recognition-card.html 
+{%- include recognition-card.html
   image="/assets/images/banners/ledelse-60-2-t4-signal-stille-rom.webp"
   alt="Illustrasjon: stille møterom"
   title="Tause rom"
   text="I rommet var alle enige. Når tillitsbasert ledelse mangler, blir tause rom normen."
-  mode="scene" %}
+  mode="scene" -%}
 
-### Årlig risikokalender
-{% include recognition-card.html 
+{%- include recognition-card.html
   image="/assets/images/banners/ledelse-60-2-t4-signal-risikokalender.webp"
   alt="Illustrasjon: kalender for årlig risikogjennomgang"
   title="Årlig risikokalender"
   text="Dere oppdaterer risikobildet én gang i året. Så kommer hverdagen, og alt ser annerledes ut."
-  mode="illustration-contained" %}
+  mode="illustration" -%}
 
-### Tapt oversikt over endringer
-{% include recognition-card.html 
+{%- include recognition-card.html
   image="/assets/images/banners/ledelse-60-2-t4-signal-endringsstabel.webp"
   alt="Illustrasjon: stabel av endringsprosjekter"
   title="Tapt oversikt over endringer"
   text="Nye initiativer kommer til, mens få har oversikt over hva som allerede belaster organisasjonen."
-  mode="illustration-contained" %}
+  mode="illustration" -%}
 
-### Samme diskusjon på nytt
-{% include recognition-card.html 
+{%- include recognition-card.html
   image="/assets/images/banners/ledelse-60-2-t4-signal-samme-diskusjon.webp"
   alt="Illustrasjon: gjentatt diskusjon rundt bordet"
   title="Samme diskusjon på nytt"
   text="Dere har hatt den samme diskusjonen tre ganger denne måneden. Beslutninger tas, ingenting endrer seg."
-  mode="illustration-contained" %}
-
+  mode="illustration" -%}
 </div>
 
 ---
@@ -169,31 +156,26 @@ Den samme situasjonen kan ha helt ulike årsaker. Stillhet i ledergruppen kan sk
 Et kort og avgrenset forløp. Målet er å gi ledergruppen et bedre grunnlag for å velge neste steg – ikke å starte et nytt program.
 
 <div class="process-steps">
-
-#### 1. Avklaring
-{% include process-step.html 
+{%- include process-step.html
   image="/assets/images/banners/step-talk.webp"
   alt="Illustrasjon av en samtale"
   number="1"
   title="Avklaring"
-  text="Vi går gjennom situasjonen, hvem som bør delta og hva dere trenger å få klarhet i." %}
+  text="Vi går gjennom situasjonen, hvem som bør delta og hva dere trenger å få klarhet i." -%}
 
-#### 2. 60 spørsmål
-{% include process-step.html 
+{%- include process-step.html
   image="/assets/images/banners/step-interview.webp"
   alt="Illustrasjon av et strukturert intervju"
   number="2"
   title="60 spørsmål"
-  text="Inntil fem ledere svarer på de samme 60 spørsmålene. Det gjør både likheter og forskjeller i vurderingene synlige." %}
+  text="Inntil fem ledere svarer på de samme 60 spørsmålene. Det gjør både likheter og forskjeller i vurderingene synlige." -%}
 
-#### 3. Rapport og prioriteringer
-{% include process-step.html 
+{%- include process-step.html
   image="/assets/images/banners/step-report.webp"
   alt="Illustrasjon av en rapport"
   number="3"
   title="Rapport og prioriteringer"
-  text="Dere får en kort rapport som viser hovedmønstre, uenigheter og hva det er mest naturlig å ta tak i først. Rapporten leveres innen én uke." %}
-
+  text="Dere får en kort rapport som viser hovedmønstre, uenigheter og hva det er mest naturlig å ta tak i først. Rapporten leveres innen én uke." -%}
 </div>
 
 ---
