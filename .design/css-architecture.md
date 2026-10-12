@@ -46,7 +46,7 @@ All interactive elements (buttons, links-as-buttons, icon buttons, toggles, clos
 |------|-------|-----------|-------|
 | **Primary** | `.btn-primary` | `.cta`, `.cta--primary`, `.card-link--cta`, `.profile-booking-btn` | Azure bg, navy text, navy border |
 | **Secondary** | `.btn-secondary` | `.cta--secondary`, `.copy-btn` | Navy bg, azure text, azure border |
-| **Ghost** | `.btn-ghost` | `.card-link`, `.carousel-btn`, `.profile-contact-btn`, `.profile-close`, `.share-btn`, `.provider-btn`, `.modal-close`, `.nav-overlay-close`, `.questions-toggle`, `.toc-mobile-toggle`, `.toc-mobile-close`, `.change-provider-btn`, `.back-to-top`, `.landing-scroll-link`, `.tag-cloud-item` | Transparent bg, `--text-color`, no border; `--surface-hover` bg on hover |
+| **Ghost** | `.btn-ghost` | `.card-link`, `.carousel-btn`, `.profile-contact-btn`, `.profile-close`, `.share-btn`, `.provider-btn`, `.modal-close`, `.nav-overlay-close`, `.questions-toggle`, `.toc-mobile-toggle`, `.toc-mobile-close`, `.change-provider-btn`, `.landing-scroll-link`, `.tag-cloud-item` | Transparent bg, `--text-color`, no border; `--surface-hover` bg on hover. Note: `.back-to-top` is intentionally not a family member — the floating control is fully owned by `layout.css`. |
 
 ### Shared base (all types)
 
@@ -67,7 +67,7 @@ All button classes share a common base: `inline-flex`, centered, `gap: 6px`, `mi
 |---------|-------|-----------|----------------|
 | **Large** | `.btn--large` | `.cta--large` | `18px 48px`, `1.2em` |
 | **Small** | `.btn--small` | `.profile-contact-btn`, `.provider-btn`, `.toc-mobile-toggle`, `.change-provider-btn`, `.tag-cloud-item` | `8px 16px`, `0.9em` |
-| **Icon** | `.btn--icon` | `.carousel-btn`, `.profile-close`, `.share-btn`, `.modal-close`, `.nav-overlay-close`, `.toc-mobile-close`, `.back-to-top` | `10px`, `1.1em` |
+| **Icon** | `.btn--icon` | `.carousel-btn`, `.profile-close`, `.share-btn`, `.modal-close`, `.nav-overlay-close`, `.toc-mobile-close` | `10px`, `1.1em` |
 
 ### Spacing variants
 
