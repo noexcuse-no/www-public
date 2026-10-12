@@ -23,6 +23,17 @@
     max-width: var(--content-reading);
 }
 
+/* ---------- Section rhythm (markdown `---` dividers + heading top margin) ---------- */
+.commercial-prose > hr {
+    border: 0;
+    border-top: 1px solid var(--border-color-subtle);
+    margin-block: var(--space-2xl);
+}
+
+.commercial-prose > h2 {
+    margin-top: var(--space-xl);
+}
+
 /* ---------- Price card ---------- */
 .price-card {
     background: var(--box-background);
