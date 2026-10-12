@@ -10,10 +10,15 @@
   Parameters:
     heading   — Optional card heading (default: "Ledelse 60:2")
     inclusions — Optional array of inclusion strings (defaults to commercial.inclusions)
+    cta_url   — Optional primary CTA target (default: "/bestill/ledelse-60-2/");
+                external http(s) URLs open in a new tab.
+    cta_text  — Optional primary CTA label (default: "Bestill Ledelse 60:2")
 {% endcomment %}
 
 {% assign commercial = site.data.commercial %}
 {% assign card_inclusions = include.inclusions | default: commercial.inclusions %}
+{% assign card_cta_url = include.cta_url | default: "/bestill/ledelse-60-2/" %}
+{% assign card_cta_text = include.cta_text | default: "Bestill Ledelse 60:2" %}
 <div class="price-card">
   <h3 class="price-card-heading">{{ include.heading | default: "Ledelse 60:2" }}</h3>
   <p class="price-card-price">{{ commercial.price_display }} <span class="price-card-note">{{ commercial.price_note }}</span></p>
@@ -24,6 +29,6 @@
     {% endfor %}
   </ul>
   {% endif %}
-  <a href="/bestill/ledelse-60-2/" class="cta">Bestill Ledelse 60:2</a>
+  <a href="{{ card_cta_url }}" class="cta"{% if card_cta_url contains "http" %} target="_blank" rel="noopener"{% endif %}>{{ card_cta_text }}</a>
   <p class="price-card-uncertain"><a href="/samtale/">Usikker? Bestill 20 min avklaring →</a></p>
 </div>
