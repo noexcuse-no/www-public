@@ -50,6 +50,17 @@ Documents all cross-references between content pages on noexcuse.no. When adding
 
 Generated from `_tags/` collection at `/tema/:tag/`. Current tags: `beslutningstaking`, `digital-transformasjon`, `endringsledelse`, `forankring`, `kunstig-intelligens`, `ledelse`, `makt`, `organisasjonskultur`, `psykologisk-trygghet`, `servant-leadership`, `tillit`, `usikkerhet`.
 
+## Header Navigation
+
+`_data/navigation.yml` drives the header menu:
+
+| Label | Target | Class |
+|-------|--------|-------|
+| Ledelse 60:2 | `/ledelse-60-2/` | `nav-featured` |
+| Er dette noe for dere? | `/ledelse-60-2/#passer` | — |
+| Om oss | `/om-oss/` | — |
+| Bestill 20 min avklaring | `/samtale/` | `nav-cta` |
+
 ## Cross-Reference Map
 
 | From | To | Link Text |
@@ -104,7 +115,7 @@ Generated from `_tags/` collection at `/tema/:tag/`. Current tags: `beslutningst
 | `/om-oss/` → Booking | `/bestill/ledelse-60-2/` | "Bestill Ledelse 60:2" |
 | `/om-oss/` → How AI is used | `/om-store-sprakmodeller/` | "Les om hvordan vi bruker KI →" |
 | `/ledelse-60-2/` → Booking | `/bestill/ledelse-60-2/` | "Bestill Ledelse 60:2" |
-| `/samtale/` → Booking (Route B) | `/bestill/ledelse-60-2/` | "Book 20 min avklaring" |
+| `/samtale/` → Booking (Route B) | `/bestill/ledelse-60-2/` | "Bestill 20 min avklaring" |
 
 ## Special Resources
 
