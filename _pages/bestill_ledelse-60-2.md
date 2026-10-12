@@ -5,31 +5,30 @@ provenance:
   editorial_responsibility: No Excuse AS
 layout: commercial
 title: "Bestill Ledelse 60:2"
-description: "Bestill strukturert kartlegging for ledergruppen: 60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris kr 14 850,- eks. mva."
+description: "Bestill strukturert kartlegging for ledergruppen: 60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris, ingen binding."
 permalink: /bestill/ledelse-60-2/
 og_image: /assets/images/banners/ledelse-60-2-og.webp
 hero:
   eyebrow: "Bestill Ledelse 60:2"
-  title: "Bestill strukturert kartlegging for ledergruppen"
-  intro: "60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris, ingen binding."
-  credibility: "{{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }}"
-  cta_primary: {label: "Bestill Ledelse 60:2", url: "https://bookings.cloud.microsoft/book/ledelse@noexcuse.no/?ismsaljsauthenabled"}
-  cta_secondary: {label: "Først 20 min avklaring", url: "/samtale/"}
-  cta_direct: {text: "Allerede bestemt? ", label: "Gå direkte til booking", url: "https://bookings.cloud.microsoft/book/ledelse@noexcuse.no/?ismsaljsauthenabled"}
-  media:
-    src: /assets/images/hero-illustration.webp
-    alt: ""
-    mode: "scene"
+  headline: "Bestill strukturert kartlegging for ledergruppen"
+  support: "60 strukturerte spørsmål, 2 timer, felles retningsvalg. Fastpris, ingen binding."
+  credibility: "60 spørsmål · 2 timer · ingen binding"
+  image: /assets/images/hero-illustration.webp
+  alt: "Illustrasjon av Ledelse 60:2"
+  style: "default"
+  ctas:
+    - text: "Bestill Ledelse 60:2"
+      url: "https://bookings.cloud.microsoft/book/ledelse@noexcuse.no/?ismsaljsauthenabled"
+      primary: true
+    - text: "Først 20 min avklaring"
+      url: "/samtale/"
+      primary: false
 stat_bridge: "4 perspektiver · 60 spørsmål · 2 timer"
 ---
 
-## Hva er inkludert
+## Pris og hva som er inkludert
 
-* 60 strukturerte spørsmål
-* Inntil fem ledere
-* To timer strukturert intervju
-* Analyse og prioriterte funn
-* Rapport og anbefalinger innen én uke
+{% include price-card.html cta_url="https://bookings.cloud.microsoft/book/ledelse@noexcuse.no/?ismsaljsauthenabled" %}
 
 **Ingen binding til videre rådgivning.**
 

@@ -10,15 +10,19 @@ permalink: /samtale/
 og_image: /assets/images/banners/samtale-og.webp
 hero:
   eyebrow: "Avklaringssamtale"
-  title: "Finn ut om Ledelse 60:2 passer for dere"
-  intro: "På 20 minutter får vi et bilde av situasjonen deres og vurderer om Ledelse 60:2 er et fornuftig neste steg. Passer det ikke, sier vi det."
-  credibility: "Gratis · 20 min · uforpliktende"
-  cta_primary: {label: "Bestill 20 min avklaring", url: "#bestill"}
-  cta_secondary: {label: "Se hva 60:2 inneholder", url: "/ledelse-60-2/"}
-  media:
-    src: /assets/images/dagfinn.webp
-    alt: "Dagfinn Bang-Johansen, daglig leder i No Excuse"
-    mode: "portrait"
+  headline: "Finn ut om Ledelse 60:2 passer for dere"
+  support: "En gratis samtale på 20 minutter med Dagfinn. Vi ser på situasjonen deres og vurderer om Ledelse 60:2 er et fornuftig neste steg. Passer det ikke, sier vi det."
+  credibility: "Gratis · 20 min · uforpliktende · med Dagfinn"
+  image: /assets/images/dagfinn.webp
+  alt: "Dagfinn Bang-Johansen, daglig leder i No Excuse"
+  style: "portrait"
+  ctas:
+    - text: "Bestill 20 min avklaring"
+      url: "#bestill"
+      primary: true
+    - text: "Se hva 60:2 inneholder"
+      url: "/ledelse-60-2/"
+      primary: false
 stat_bridge: "GRATIS · 20 MIN · UFORPLIKTENDE"
 ---
 
@@ -28,7 +32,7 @@ stat_bridge: "GRATIS · 20 MIN · UFORPLIKTENDE"
 
 Vi lytter til hva dere ser som problemet, og hva dere har prøvd allerede.
 
-### 2. Vurdere passeform
+### 2. Vurdere om 60:2 passer
 
 Vi matcher utfordringen mot hva 60:2 leverer, og sier nei hvis det ikke passer.
 
@@ -54,7 +58,7 @@ Dagfinn Bang-Johansen — Daglig leder, No Excuse
 
 [Mer om No Excuse →](/om-oss/)
 
-## Bestill 20 min avklaring
+## Bestill 20 min avklaring {#bestill}
 
 ### Klar til å booke?
 
