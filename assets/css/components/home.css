@@ -143,6 +143,11 @@
     display: block;
 }
 
+/* Portrait hero (e.g. /samtale/) — 4:5 frame, never wider than the column. */
+.home-hero__media .media-portrait {
+    max-width: 100%;
+}
+
 /* ---------- 60/2/4 signature (band beneath the hero, per product-signature) ---------- */
 .home-signature {
     border-bottom: 1px solid var(--border-color-subtle);

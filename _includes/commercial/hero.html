@@ -1,32 +1,50 @@
 {% comment %}
   Commercial Hero — unified hero component for commercial pages.
-  Reads from page.hero frontmatter or include parameters.
-  Styles: default (media-scene wrapper) | full (direct img, like homepage)
+  Reads from page.hero frontmatter (passed as include.data) with an optional
+  legacy-key fallback so pages written against the earlier contract keep working.
+
+  Canonical contract:
+    eyebrow, headline, support, credibility, image, alt, style,
+    ctas: [{ text, url, primary }], direct (markdown string)
+  Legacy contract (supported for compatibility):
+    title, intro, media: { src, alt, mode },
+    cta_primary: { label, url }, cta_secondary: { label, url },
+    cta_direct: { text, label, url }
+  Styles: default (media-scene frame) | full (direct img) | portrait (4:5 frame)
 {% endcomment %}
 
+{% assign d = include.data %}
 {% assign h = page.hero %}
-{% assign is_homepage = page.class == "home" %}
 
-{% if include.data.style %}
-  {% assign hero_style = include.data.style %}
-{% elsif h.style %}
-  {% assign hero_style = h.style %}
-{% elsif is_homepage %}
-  {% assign hero_style = "full" %}
-{% else %}
-  {% assign hero_style = "default" %}
+{% assign hero_style = d.style | default: h.style %}
+{% assign hero_image = d.image | default: h.image | default: d.media.src | default: h.media.src %}
+{% assign hero_alt = d.alt | default: h.alt | default: d.media.alt | default: h.media.alt %}
+{% assign hero_title = d.headline | default: h.headline | default: d.title | default: h.title %}
+{% assign hero_intro = d.support | default: h.support | default: d.intro | default: h.intro %}
+{% assign hero_eyebrow = d.eyebrow | default: h.eyebrow %}
+{% assign hero_credibility = d.credibility | default: h.credibility %}
+
+{% assign hero_cta_primary = d.ctas[0] | default: h.ctas[0] %}
+{% assign hero_cta_secondary = d.ctas[1] | default: h.ctas[1] %}
+{% assign hero_cta_primary_text = hero_cta_primary.text | default: d.cta_primary.label | default: h.cta_primary.label %}
+{% assign hero_cta_primary_url = hero_cta_primary.url | default: d.cta_primary.url | default: h.cta_primary.url %}
+{% assign hero_cta_secondary_text = hero_cta_secondary.text | default: d.cta_secondary.label | default: h.cta_secondary.label %}
+{% assign hero_cta_secondary_url = hero_cta_secondary.url | default: d.cta_secondary.url | default: h.cta_secondary.url %}
+
+{% assign hero_direct = d.direct | default: h.direct %}
+{% assign hero_cta_direct = d.cta_direct | default: h.cta_direct %}
+
+{% comment %} Derive a style when none is set: legacy portrait mode, then homepage default. {% endcomment %}
+{% if hero_style == nil or hero_style == "" %}
+  {% assign media_mode = d.media.mode | default: h.media.mode %}
+  {% if media_mode == "portrait" %}
+    {% assign hero_style = "portrait" %}
+  {% elsif page.class == "home" %}
+    {% assign hero_style = "full" %}
+  {% else %}
+    {% assign hero_style = "default" %}
+  {% endif %}
 {% endif %}
-
-{% assign hero_image = include.data.image | default: h.image %}
-{% assign hero_alt = include.data.alt | default: h.alt %}
-{% assign hero_title = include.data.headline | default: h.headline %}
-{% assign hero_intro = include.data.support | default: h.support %}
-{% assign hero_eyebrow = include.data.eyebrow | default: h.eyebrow %}
-{% assign hero_credibility = include.data.credibility | default: h.credibility %}
-{% assign hero_cta_primary = include.data.ctas[0] | default: h.ctas[0] %}
-{% assign hero_cta_secondary = include.data.ctas[1] | default: h.ctas[1] %}
-{% assign hero_cta_direct = include.data.direct | default: h.direct %}
-{% assign hero_effect = include.data.hero_effect | default: page.hero_effect %}
 
 <section class="home-hero" aria-labelledby="hero-headline">
   <div class="home-container home-hero__grid">
@@ -42,24 +60,30 @@
       <p class="home-hero__credibility">{{ hero_credibility }}</p>
       {% endif %}
       <div class="home-hero__ctas">
-        {% if hero_cta_primary %}
-        <a href="{{ hero_cta_primary.url }}" class="cta cta--primary">{{ hero_cta_primary.text }}</a>
+        {% if hero_cta_primary_text %}
+        <a href="{{ hero_cta_primary_url }}" class="cta cta--primary">{{ hero_cta_primary_text }}</a>
         {% endif %}
-        {% if hero_cta_secondary %}
-        <a href="{{ hero_cta_secondary.url }}" class="cta cta--secondary">{{ hero_cta_secondary.text }}</a>
+        {% if hero_cta_secondary_text %}
+        <a href="{{ hero_cta_secondary_url }}" class="cta cta--secondary">{{ hero_cta_secondary_text }}</a>
         {% endif %}
       </div>
-      {% if hero_cta_direct %}
-      <p class="home-hero__direct">{{ hero_cta_direct }}</p>
+      {% if hero_direct %}
+      <p class="home-hero__direct">{{ hero_direct | markdownify | remove_first: "<p>" | remove_first: "</p>" | strip }}</p>
+      {% elsif hero_cta_direct.text %}
+      <p class="home-hero__direct">{{ hero_cta_direct.text }}<a href="{{ hero_cta_direct.url }}">{{ hero_cta_direct.label }}</a></p>
       {% endif %}
     </div>
     <div class="home-hero__media">
       {% if hero_image %}
       {% if hero_style == "full" %}
-      <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}" width="1920" height="1084" fetchpriority="high">
+      <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}" width="1920" height="1084" fetchpriority="high" decoding="async">
+      {% elsif hero_style == "portrait" %}
+      <div class="media-portrait media-portrait--hero">
+        <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}" width="960" height="1200" fetchpriority="high" decoding="async">
+      </div>
       {% else %}
       <div class="media-scene media-scene--hero">
-        <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}" width="1920" height="1084" fetchpriority="high">
+        <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}" width="1920" height="1084" fetchpriority="high" decoding="async">
       </div>
       {% endif %}
       {% endif %}

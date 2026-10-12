@@ -13,10 +13,20 @@ display_name: "Ledelse 60:2"
 short_description: "Enkel, kunnskapsbasert strukturert kartlegging for ledergruppen. Sett av 2 timer for 60 strukturerte spørsmål, finn retningen."
 url: "/ledelse-60-2/"
 hero:
+  eyebrow: "Ledelse 60:2"
+  headline: "Kartlegg ledergruppen på to timer."
+  support: "60 strukturerte spørsmål gir et felles bilde av hvor ledergruppen er samstemt, hvor den spriker, og hva det er mest nyttig å ta tak i først."
+  credibility: "60 spørsmål · 2 timer · rapport innen én uke"
   image: /assets/images/hero-illustration.webp
-  alt: "Ledelse 60:2"
-  title: "Ledelse 60:2"
-  intro: "Enkel, kunnskapsbasert strukturert kartlegging for ledergruppen. 60 spørsmål på 2 timer."
+  alt: "Illustrasjon av Ledelse 60:2"
+  style: "default"
+  ctas:
+    - text: "Bestill 20 min avklaring"
+      url: "/samtale/"
+      primary: true
+    - text: "Bestill Ledelse 60:2"
+      url: "/bestill/ledelse-60-2/"
+      primary: false
 hero_effect: parallax-fade
 stat_bridge: "4 perspektiver · 60 spørsmål · 2 timer"
 price_source: commercial
@@ -57,6 +67,9 @@ cta:
     url: "/ledelse-60-2/"
 ---
 
+<!-- 60/2/4 signature: branded mechanism band beneath the hero (product-signature placement) -->
+{% include signature-60-2-4.html %}
+
 Ledelse 60:2 er en strukturert kartlegging av ledergruppen: 60 spørsmål fordelt på fire perspektiver, gjennomført på to timer. Det er en strukturert samtale, ikke en spørreundersøkelse eller poengmåling. Samtalen gir ledergruppen et felles språk for hvor den står og hva som trenger oppmerksomhet.
 
 Metoden er også relevant for virksomhetsstyring, risikostyring og etterlevelse (GRC). De fire perspektivene er struktur, mennesker, påvirkning og identitet. De dekker sentrale sider ved virksomhetsstyringen. Ledelse 60:2 gir ledergruppen et felles språk for å identifisere hvor styringen fungerer og hvor den har blindsoner.
@@ -96,18 +109,18 @@ Metoden er også relevant for virksomhetsstyring, risikostyring og etterlevelse 
 
 Gjenkjenner du deg i noen av disse situasjonene? Da kan Ledelse 60:2 være verktøyet som gir ledergruppen et felles språk for å bryte mønstrene.
 
-## Når passer det? {#passer}
+## Passer Ledelse 60:2 for dere? {#passer}
 
 Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et felles språk for hvor de står og er villige til å bruke to timer på en strukturert samtale.
 
-**Passer for dere hvis:**
+**Dette passer for dere hvis:**
 
 * Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg.
 * Det er ny ledergruppe, ny daglig leder eller ny organisering.
 * Dere er usikre på om strategien faktisk blir gjennomført.
 * Dere opererer i en regulert eller operasjonell bransje der styring må sitte.
 
-**Passer ikke for dere hvis:**
+**Dette passer ikke hvis:**
 
 * Er dere flere enn fem ledere, tar vi først en [avklaring](/samtale/) om hvordan opplegget kan tilpasses.
 * Dere ønsker et utviklingsprogram eller løpende coaching fremfor en avgrenset orientering.
@@ -123,43 +136,15 @@ Ledelse 60:2 passer best for ledergrupper på inntil fem personer som trenger et
 
 **Etter:** Du får en rapport med prioriterte funn og konkrete anbefalinger innen én uke. Det følger ingen løpende forpliktelser med leveransen.
 
-## Slik foregår 60:2
-
-### 1. Avklaring
-
-<div class="media-editorial media-editorial--illustration media-editorial--reference">
-  <img src="/assets/images/banners/step-talk.webp" alt="Illustrasjon av en samtale" width="1920" height="1078" loading="lazy">
-</div>
-
-Vi går gjennom situasjonen, hvem som bør delta og hva dere trenger å få klarhet i.
-
-### 2. 60 spørsmål
-
-<div class="media-editorial media-editorial--illustration media-editorial--reference">
-  <img src="/assets/images/banners/step-interview.webp" alt="Illustrasjon av et strukturert intervju" width="1920" height="1078" loading="lazy">
-</div>
-
-Inntil fem ledere svarer på de samme 60 spørsmålene. Det gjør både likheter og forskjeller i vurderingene synlige.
-
-### 3. Rapport og prioriteringer
-
-<div class="media-editorial media-editorial--illustration media-editorial--reference">
-  <img src="/assets/images/banners/step-report.webp" alt="Illustrasjon av en rapport" width="1920" height="1078" loading="lazy">
-</div>
-
-Dere får en kort rapport som viser hovedmønstre, uenigheter og hva det er mest naturlig å ta tak i først. Rapporten leveres innen én uke.
-
 ## Hva får du?
 
-* 60 strukturerte spørsmål utviklet gjennom bruk i norske ledergrupper.
-* Inntil fem ledere deltar i samme intervju.
-* To timer strukturert intervju.
-* Analyse og prioriterte funn fra en erfaren rådgiver.
-* Rapport og anbefalinger innen én uke.
+Dere får en kort rapport med hovedmønstre, ulike vurderinger i ledergruppen og konkrete anbefalinger. Rapporten leveres innen én uke og er deres å bruke videre.
 
 ## Pris {#pris}
 
-Prisen er {{ site.data.commercial.price_display }} {{ site.data.commercial.price_note }}. Den er fast og dekker hele opplegget. Det kommer ingen løpende kostnader i tillegg.
+{% include price-card.html %}
+
+Prisen er fast og dekker hele opplegget. Det kommer ingen løpende kostnader i tillegg.
 
 ## Ofte stilte spørsmål
 
@@ -197,17 +182,16 @@ Kultur, verdier og felles retning. Handler om hva organisasjonen står for.
 
 De 60 spørsmålene er fordelt på tvers av disse fire perspektivene og er testet i norske ledergrupper på tvers av bransjer. Spørsmålene skal skape refleksjon og gi ledergruppen et bedre beslutningsgrunnlag.
 
-## Kjenner du deg igjen?
+## Din kontaktperson
 
-* **Blindsoner i styringen:** Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg.
-* **Uklare beslutningslinjer:** Det er usikkerhet om hvem som bestemmer hva.
+**Dagfinn Bang-Johansen**
+Daglig leder
 
-## Relaterte perspektiver
+![Dagfinn Bang-Johansen](/assets/images/dagfinn.webp){:width="96" height="96" loading="lazy"}
 
-* **Strukturperspektivet:** rolleklarhet, prosesser og beslutningslinjer
-* **Menneskeperspektivet:** psykologisk trygghet, tillit og kompetanseutnyttelse
-* **Påvirkningsperspektivet:** maktforhold, interesser og allianser
-* **Identitetsperspektivet:** kultur, verdier og felles retning
+Dagfinn tar kontakt før avtalt tid for å bekrefte deltakere og praktiske faktorer. Mer enn 20 års erfaring fra logistikk, teknologi, kvalitet, ledelse og virksomhetsstyring.
+
+[Les om Dagfinn →](/dagfinn/)
 
 ---
 {% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}

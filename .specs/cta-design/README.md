@@ -10,6 +10,20 @@ Define the visual design rules for Call-to-Action buttons across the No Excuse w
 
 ---
 
+## Canonical CTA labels (D9)
+
+Equivalent actions must share wording. The canonical registry lives in `_data/ctas.yml`:
+
+| Tier | Label | Target |
+|------|-------|--------|
+| Primary | "Bestill Ledelse 60:2" | `/bestill/ledelse-60-2/` |
+| Secondary | "Bestill 20 min avklaring" | `/samtale/` |
+| Tertiary | "Les mer om Ledelse 60:2 →" | `/ledelse-60-2/` |
+
+Direct-to-scheduler links are allowed only on mid-conversion surfaces (`/bestill/ledelse-60-2/` and `_includes/price-card.html`); all discovery surfaces use the secondary clarification funnel. Link labels come from the registry or match it exactly.
+
+---
+
 ## Type A / Type B System
 
 There are exactly **two CTA button styles**, used in strict alternation depending on position.

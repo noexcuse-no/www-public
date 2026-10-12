@@ -71,14 +71,12 @@ final_cta:
 <!-- 60/2/4 signature: branded mechanism band beneath the hero (product-signature placement) -->
 {% include signature-60-2-4.html %}
 
-<!-- 2. Report preview: what the delivered report actually looks like (illustrative) -->
-## Rapporten
+<!-- 2. Deliverable: what the leadership group gets, in plain terms -->
+## En rapport dere kan bruke.
 
-Slik ser resultatet ut
+Dere får en rapport med hovedfunn, ulike vurderinger i ledergruppen og konkrete anbefalinger om hva dere bør prioritere.
 
-Dere får en rapport med prioriterte funn og anbefalinger innen én uke. Den er deres å bruke som dere vil.
-
-{% include sample-report-preview.html hide_heading=true omit_cta=true %}
+Rapporten leveres innen én uke. Den er deres, uten binding til videre rådgivning.
 
 [Les mer om Ledelse 60:2 →](/ledelse-60-2/)
 
@@ -158,13 +156,13 @@ Bedre grunnlag for å velge hva dere faktisk skal gjøre
 
 Den samme situasjonen kan ha helt ulike årsaker. Stillhet i ledergruppen kan skyldes utrygghet, uklare roller, maktforhold eller ganske enkelt at folk tolker det som skjer forskjellig.
 
-60:2 ser derfor på problemet fra fire sider før dere bestemmer hva som bør gjøres. Poengdet er å bruke tid og penger på det som faktisk kan flytte noe.
+60:2 ser derfor på problemet fra fire sider før dere bestemmer hva som bør gjøres. Poenget er å bruke tid og penger på det som faktisk kan flytte noe.
 
 [Se de fire perspektivene →](#fire-perspektiver)
 
 ---
 
-## Slik foregår 60:2
+## Slik foregår 60:2 {#slik-fungerer-det}
 
 ### Fra første samtale til rapport
 
@@ -206,7 +204,7 @@ Et kort og avgrenset forløp. Målet er å gi ledergruppen et bedre grunnlag for
 
 <div class="fit-grid">
   <div class="fit-column fit--for">
-    <h3>Passer når</h3>
+    <h3>Dette passer for dere hvis</h3>
     <ul>
       <li>Dere har hatt den samme diskusjonen flere ganger uten at noe endrer seg</li>
       <li>Det er ny ledergruppe, ny daglig leder eller ny organisering</li>
@@ -215,7 +213,7 @@ Et kort og avgrenset forløp. Målet er å gi ledergruppen et bedre grunnlag for
     </ul>
   </div>
   <div class="fit-column fit--not">
-    <h3>Passer ikke når</h3>
+    <h3>Dette passer ikke hvis</h3>
     <ul>
       <li>Er dere flere enn fem ledere, tar vi først en <a href="/samtale/" class="home-text-link">avklaring</a></li>
       <li>Dere ønsker et utviklingsprogram eller løpende coaching</li>
@@ -228,7 +226,7 @@ Er dere usikre på om dette passer, kan en kort [avklaring](/samtale/) være et 
 
 ---
 
-## Fire måter å se samme problem på
+## Fire måter å se samme problem på {#fire-perspektiver}
 
 ### Det er sjelden bare struktur, bare mennesker eller bare makt
 

@@ -1,6 +1,6 @@
 # product-signature — Feature Specification
 
-> Status: Ready
+> Status: Done (implemented)
 > Backlog: P0 (todo 7)
 
 ## Purpose / Problem
@@ -40,11 +40,11 @@ An interactive component letting visitors explore the four perspectives (Struktu
 
 ## Reusable CTA Panel
 
-"Usikker på om 60:2 passer?" + 2–3 reassurance points (independent diagnosis, no lock-in, customer owns findings) + "Book 20 min" CTA (Route B → /samtale/). Includes Dagfinn thumbnail. Used on /bestill/ and /foredrag-og-media/.
+"Usikker på om 60:2 passer?" + 2 reassurance points (independent analysis with no requirement for further consulting; no lock-in, customer owns the report and findings) + "Bestill 20 min avklaring" CTA (→ /samtale/). Includes Dagfinn thumbnail. Used on /bestill/ and /foredrag-og-media/.
 
 ## Price Card
 
-Shared price card rendering from `_data/commercial.yml` (single source). Shows kr 14 850,- eks. mva + inclusions + Bestill CTA + "Usikker? Book 20 min avklaring →". Used on product page, /bestill/, and homepage commercial-info section.
+Shared price card rendering from `_data/commercial.yml` (single source). Shows kr 14 850,- eks. mva + inclusions + Bestill CTA + "Usikker? Bestill 20 min avklaring →". Used on the product page and /bestill/. Optional `cta_url`/`cta_text` parameters override the primary CTA target and label; external http(s) targets open with `target="_blank" rel="noopener"` (used by /bestill/ to hand off to Microsoft Bookings).
 
 ## Design Constraints
 
