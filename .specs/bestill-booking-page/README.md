@@ -1,6 +1,6 @@
 # bestill-booking-page — Feature Specification
 
-> Status: Ready
+> Status: Done (implemented)
 > Backlog: P0 (todo 9)
 
 ## Purpose / Problem
@@ -58,3 +58,10 @@ The site currently sends visitors straight to the external Microsoft Bookings sc
 
 - `.specs/product-signature/README.md` (price card, shared components)
 - `.specs/product-page-offer/README.md` (price source)
+
+## Implementation Notes (shipped)
+
+- Hero renders through `_includes/commercial/hero.html` (canonical contract; see `.specs/architecture/README.md`), eyebrow "Bestill Ledelse 60:2"; the credibility line is static copy (no Liquid).
+- The price card is included with `cta_url` pointing at the Microsoft Bookings product scheduler (`https://bookings.cloud.microsoft/book/ledelse@noexcuse.no/?ismsaljsauthenabled`), so the primary CTA hands off directly; the card opens it in a new tab.
+- The hardcoded price figure was removed from the page `description`; `_data/commercial.yml` is the single price source.
+- Section heading is "Pris og hva som er inkludert".

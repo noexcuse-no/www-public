@@ -1,6 +1,8 @@
 # Feature: Customer Cases
 
 > Status: Planned | BL: C1-C4
+>
+> Note: case pages are authored but unpublished (`published: false`); no case section renders on any surface until real, signed-off cases exist.
 
 ## Purpose and Scope
 

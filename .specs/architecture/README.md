@@ -332,6 +332,55 @@ permalink: /path/
 ---
 ```
 
+## Commercial Hero Component
+
+Commercial pages (`index.md`, `_pages/ledelse-60-2.md`,
+`_pages/bestill_ledelse-60-2.md`, `_pages/samtale.md`) render their hero through
+`_includes/commercial/hero.html`, passing `page.hero` as `include.data`. Two
+frontmatter contracts are supported.
+
+### Canonical contract
+
+```yaml
+hero:
+  eyebrow: "Ledelse 60:2"
+  headline: "Kartlegg ledergruppen på to timer."
+  support: "60 spørsmål · 2 timer · rapport med prioriteringer"
+  credibility: "Gratis · 20 min · uforpliktende · med Dagfinn"
+  image: "/assets/images/dagfinn.webp"
+  alt: "Dagfinn Bang-Johansen, daglig leder i No Excuse"
+  style: "default | full | portrait"
+  ctas:
+    - text: "Bestill Ledelse 60:2"
+      url: "/bestill/ledelse-60-2/"
+      primary: true
+    - text: "Bestill 20 min avklaring"
+      url: "/samtale/"
+  direct: "Allerede bestemt? [Bestill Ledelse 60:2](/bestill/ledelse-60-2/)"
+```
+
+- `ctas[0]` renders `.cta--primary`, `ctas[1]` renders `.cta--secondary`.
+- `direct` is a markdown string rendered inline (no surrounding `<p>`), so a
+  link inside it becomes a real `<a>` element.
+
+### Legacy contract (compatibility)
+
+```yaml
+hero:
+  title: "..."
+  intro: "..."
+  media: { src: "...", alt: "...", mode: "portrait" }
+  cta_primary: { label: "...", url: "..." }
+  cta_secondary: { label: "...", url: "..." }
+  cta_direct: { text: "...", label: "...", url: "..." }
+```
+
+Canonical keys win when both are present. `style` is derived when unset: legacy
+`media.mode: portrait` → `portrait`, `page.class == "home"` → `full`, otherwise
+`default`. `full` renders a bare `<img>`; `default` wraps it in
+`.media-scene--hero` (scene frame); `portrait` wraps it in
+`.media-portrait--hero` (4:5 frame).
+
 ## Accessibility Requirements
 
 All pages must meet WCAG AA standards:

@@ -1,6 +1,6 @@
 # founder-credibility — Feature Specification
 
-> Status: Ready
+> Status: Done (implemented)
 > Backlog: V6
 
 ## Purpose / Problem
@@ -10,7 +10,7 @@ The site's commercial surfaces need a credible practitioner presence. Dagfinn is
 ## Scope
 
 - Practitioner module (Dagfinn) on /bestill/ledelse-60-2/ and /foredrag-og-media/
-- Reusable CTA panel with Dagfinn thumbnail ("Usikker på om 60:2 passer?" + 2–3 reassurance points + Book 20 min)
+- Reusable CTA panel with Dagfinn thumbnail ("Usikker på om 60:2 passer?" + 2 reassurance points + "Bestill 20 min avklaring")
 - `_pages/dagfinn.md` — presenter basis (existing)
 - `.specs/foredrag-media/README.md` — presenter module integration
 
@@ -18,7 +18,7 @@ The site's commercial surfaces need a credible practitioner presence. Dagfinn is
 
 - [ ] Practitioner module present on /bestill/ and /foredrag-og-media/
 - [ ] Reusable CTA panel with Dagfinn thumbnail implemented (shared component)
-- [ ] CTA panel: "Usikker på om 60:2 passer?" + 2–3 reassurance points + Book 20 min
+- [x] CTA panel: "Usikker på om 60:2 passer?" + 2 reassurance points + "Bestill 20 min avklaring"
 - [ ] Reassurance points: independent diagnosis, no lock-in, customer owns findings
 - [ ] Dark mode tested
 - [ ] Mobile layout tested
@@ -31,7 +31,7 @@ A reusable component showing Dagfinn (name, role, brief bio) with a reassurance 
 
 ## Reusable CTA Panel
 
-"Usikker på om 60:2 passer?" + 2–3 reassurance points (independent diagnosis, no lock-in, customer owns findings) + "Book 20 min" CTA (Route B → /samtale/).
+"Usikker på om 60:2 passer?" + 2 reassurance points (independent analysis with no requirement for further consulting; no lock-in, customer owns the report and findings) + "Bestill 20 min avklaring" CTA (→ /samtale/).
 
 ## Design Constraints
 

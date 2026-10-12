@@ -19,7 +19,7 @@ The homepage currently leads with methodology ("Enkel, kunnskapsbasert orienteri
 - [ ] Homepage implements the exact 10-section sequence (below)
 - [ ] Hero is outcome-led with 55/45 desktop split
 - [ ] One dominant + one secondary CTA style
-- [ ] Header nav targets: "Ledelse 60:2" → /ledelse-60-2/ · "Når passer det?" → /ledelse-60-2/#passer · "Innsikt" → /emne/ · "Om oss" → /om-oss/ + high-contrast "Book 20 min" → /samtale/
+- [x] Header nav targets: "Ledelse 60:2" → /ledelse-60-2/ · "Er dette noe for dere?" → /ledelse-60-2/#passer · "Om oss" → /om-oss/ + high-contrast "Bestill 20 min avklaring" → /samtale/ (the "Tema"/"Innsikt" entry was removed in the review-core rollout)
 - [ ] Three above-fold paths only
 - [ ] "Les mer" demoted on commercial surfaces
 - [ ] Dark mode tested
@@ -50,3 +50,11 @@ The homepage currently leads with methodology ("Enkel, kunnskapsbasert orienteri
 
 - `.specs/product-signature/README.md` (shared components)
 - `.specs/navigation-ia-split/README.md` (nav targets)
+
+## Implementation Notes (shipped)
+
+- Hero renders through `_includes/commercial/hero.html` (canonical contract; see `.specs/architecture/README.md`). The homepage uses `style: full` (derived from `page.class == "home"`), with the de-emphasized direct link rendered from the `direct` markdown string.
+- Suitability labels are `**Dette passer for dere hvis:**` / `**Dette passer ikke hvis:**` (homepage fit columns and the product page `#passer` section).
+- The sample-report preview block was replaced by deliverable copy («En rapport dere kan bruke.»); the `_includes/sample-report-preview.html` include is retained for other surfaces.
+- Cases remain unpublished (`published: false`), so no case/testimonial section is rendered; the proof section stays minimal per C1–C4.
+- Section rhythm for commercial prose is owned by `assets/css/components/commercial.css` (`.commercial-prose > hr`, `> h2`).
