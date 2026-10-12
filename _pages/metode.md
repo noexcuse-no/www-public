@@ -153,11 +153,6 @@ Idéen bygger på en overbevisning om at ledelse må forstås fra flere perspekt
 *   **Påvirkningsperspektivet:** når politikk blir kynisme
 *   **Identitetsperspektivet:** når symbolikk blir tom
 
-## Utforsk med din egen KI
-
-[Utforsk med din egen KI →](/metode/) | [Se hvordan 60:2 kan avdekke dette →](/ledelse-60-2/)
-{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
-
 ## Etter refleksjon {#etter-refleksjon}
 
 Denne refleksjonen er startet fra noexcuse.no, en nettside med kunnskapsbasert orientering for ledergrupper. Du kan gå tilbake til [Om metodikk](/metode/) hvis du vil utforske videre.

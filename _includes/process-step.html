@@ -16,7 +16,9 @@
 {% assign step_text = include.text %}
 
 <div class="process-step">
-  <img src="{{ step_image | relative_url }}" alt="{{ step_alt }}" width="1920" height="1078" loading="lazy">
+  <div class="media-editorial media-editorial--reference">
+    <img src="{{ step_image | relative_url }}" alt="{{ step_alt }}" width="1920" height="1078" loading="lazy">
+  </div>
   <span class="process-step__number" aria-hidden="true">{{ step_number }}</span>
   <h3>{{ step_title }}</h3>
   <p>{{ step_text }}</p>

@@ -46,7 +46,7 @@ html {
 
 /* Use :target to trigger via JS-less approach — relies on IntersectionObserver in existing animation.js to toggle a visible class */
 .back-to-top.is-visible {
-    opacity: 0.85;
+    opacity: 0.95;
     pointer-events: auto;
 }
 

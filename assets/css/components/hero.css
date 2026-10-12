@@ -7,6 +7,9 @@
     display: grid;
     padding: 0;
     position: relative;
+    /* The parallax effect scales .hero-image itself; overflow on the child
+       cannot clip its own transformed box, so the parent must contain it. */
+    overflow: hidden;
 }
 
 .hero-image {

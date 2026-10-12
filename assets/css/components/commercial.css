@@ -285,7 +285,7 @@
     padding: var(--space-sm) var(--space-md);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-sm);
-    background: var(--surface-color);
+    background: var(--surface-subtle);
     color: var(--text-color);
     font: inherit;
     font-size: 1em;
@@ -297,7 +297,7 @@
 .booking-form__textarea:focus {
     outline: none;
     border-color: var(--focus-color);
-    box-shadow: 0 0 0 3px var(--focus-ring-color);
+    box-shadow: 0 0 0 3px var(--focus-color);
 }
 
 .booking-form__input::placeholder {

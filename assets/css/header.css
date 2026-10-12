@@ -1,10 +1,15 @@
+/* Header-height contract lives on :root so fixed-position elements outside
+   .header (mobile TOC toggle, hero viewport calc) resolve it. */
+:root {
+    --header-height: 97px;
+}
+
 .header {
     text-align: center;
     padding: 0;
     border-bottom: 1px solid var(--border-color);
     background-color: var(--header-bg);
     color: var(--header-text);
-    --header-height: 97px;
 }
 
 .header-margin {
@@ -38,7 +43,7 @@
 }
 
 @media (max-width: 599px) {
-    .header {
+    :root {
         --header-height: 85px;
     }
 

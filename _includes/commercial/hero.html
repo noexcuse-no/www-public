@@ -76,7 +76,7 @@
     <div class="home-hero__media">
       {% if hero_image %}
       {% if hero_style == "full" %}
-      <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}" width="1920" height="1084" fetchpriority="high" decoding="async">
+      <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}" width="1920" height="1084" fetchpriority="high" decoding="async" class="home-hero__img-full">
       {% elsif hero_style == "portrait" %}
       <div class="media-portrait media-portrait--hero">
         <img src="{{ hero_image | relative_url }}" alt="{{ hero_alt }}" width="960" height="1200" fetchpriority="high" decoding="async">
