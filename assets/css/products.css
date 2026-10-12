@@ -204,7 +204,9 @@
     justify-content: center;
 }
 
-.process-step {
+/* Scoped to the legacy landing-page flow. Unscoped .process-step rules here
+   used to override home.css's homepage treatment (products.css loads last). */
+.landing-process-steps .process-step {
     flex: 1;
     text-align: center;
     padding: var(--space-xl) var(--space-md);
@@ -222,18 +224,18 @@
     margin-bottom: 12px;
 }
 
-.process-step:hover {
+.landing-process-steps .process-step:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.process-step h3 {
+.landing-process-steps .process-step h3 {
     font-size: 1.1em;
     margin-bottom: 8px;
 }
 
-.process-step p {
+.landing-process-steps .process-step p {
     font-size: 0.95em;
     line-height: 1.5;
     opacity: 0.8;
