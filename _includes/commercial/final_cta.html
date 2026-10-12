@@ -8,6 +8,10 @@
 {% assign cta_headline = include.data.headline | default: c.headline %}
 {% assign cta_text = include.data.intro | default: c.intro %}
 {% assign cta_cards = include.data.cards | default: c.cards %}
+{% comment %} Price and inclusions fall back to the single commercial source. {% endcomment %}
+{% assign price_display = site.data.commercial.price_display %}
+{% assign price_note = site.data.commercial.price_note %}
+{% assign shared_inclusions = site.data.commercial.inclusions %}
 
 <section class="home-final-cta" aria-labelledby="final-cta-heading">
   <div class="home-container">
@@ -23,12 +27,13 @@
       <div class="decision-card decision-card--{{ card.type }}">
         <h3>{{ card.headline }}</h3>
         <p class="decision-card__text">{{ card.text }}</p>
-        {% if card.price %}
-        <p class="home-price-card__heading">{{ card.price }} <span class="home-price-card__note">{{ card.price_note }}</span></p>
+        {% if card.price or card.type == "secondary" %}
+        <p class="home-price-card__heading">{{ card.price | default: price_display }} <span class="home-price-card__note">{{ card.price_note | default: price_note }}</span></p>
         {% endif %}
-        {% if card.inclusions %}
+        {% assign card_inclusions = card.inclusions | default: shared_inclusions %}
+        {% if card_inclusions %}
         <ul class="home-price-card__inclusions">
-          {% for item in card.inclusions %}
+          {% for item in card_inclusions %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>

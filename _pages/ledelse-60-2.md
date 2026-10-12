@@ -194,7 +194,6 @@ Dagfinn tar kontakt før avtalt tid for å bekrefte deltakere og praktiske fakto
 [Les om Dagfinn →](/dagfinn/)
 
 ---
-{% include ai-reflection-cta.html source_url=page.url sixty_two_url="/ledelse-60-2/" %}
 
 ## Etter refleksjon {#etter-refleksjon}
 
